@@ -1,0 +1,293 @@
+﻿<style>
+
+.Files-main{
+ 
+ overflow-x:scroll !important;
+	
+}
+
+</style>
+
+<script>
+var myOwnDocumentsUrl  ="";
+$(document).ready(function(){
+	SP.SOD.executeFunc('sp.js', 'SP.ClientContext', getProjectDocuments);
+	$(".addProjectDocument").hide();
+});
+
+function getProjectDocuments()
+{
+	var clientContext = new SP.ClientContext.get_current();
+
+	var projectID=titanForWork.getQueryStringParameter('ProjectID');
+	var companyID=titanForWork.getQueryStringParameter('CompanyId');
+
+	if(companyID>0 && projectID>0)
+	{   
+	    BindProjectDocuments('ProjectDetails',projectID);
+	}
+}
+
+//to check if UrL exists or not
+function UrlExists(url, cb) {
+    jQuery.ajax({
+        url: url,
+        dataType: 'text',
+        type: 'GET',
+        complete: function (xhr) {
+            if (typeof cb === 'function')
+                cb.apply(this, [xhr.status]);
+        }
+    });
+}
+function BindProjectDocuments(listName,ItemId)
+{
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,ProjectName,ProjectSiteURL,ProjectInternalName&$filter=ID eq '" + ItemId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var siteURL=items[0].ProjectName;
+                if(items[0].ProjectInternalName!=null && items[0].ProjectInternalName!="")
+                {
+                  siteURL=items[0].ProjectInternalName;
+                }
+                
+				//var clientContext = new SP.ClientContext(siteURL);
+                myOwnDocumentsUrl=titanForWork.getQueryStringParameter("CompanySiteUrl") + "/DMS/" + siteURL + "/Shared%20Documents/Forms/AllItems.aspx";
+                UrlExists(myOwnDocumentsUrl, function (status) {
+			    if (status === 200) {
+                	setTimeout(function () { $('#myDocumentsIframe').append('<iframe width="100%" id="viewMyDocuments" style="min-height:500px;" src="' + myOwnDocumentsUrl + '"></iframe>'); }, 2000);
+			    } 
+			    else {
+			    	var htmlNotAuthorized = '<div class="col-md-12">' +
+					    '<div class="panel panel-default shadow2" style="margin:100px;">' +
+					    '<div class="panel-body" style="padding:60px;"><div class="row text-center"><br>' +
+					    '<span><h2 class="text-center">Project site has been deleted. Please contact administrator.</h2></span>';
+	                setTimeout(function () { $('#myDocumentsIframe').append('<div width="100%" id="viewMyDocuments" style="min-height:500px;">' + htmlNotAuthorized + '</div>'); }, 2000);
+			    }
+			});
+			//	DisplayProjectDocuments(siteURL,clientContext);
+			//	checkDocumentPermission();
+            }
+           
+        }, error: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function DisplayProjectDocuments(siteURL,clientContext) 
+{
+    var oList = clientContext.get_web().get_lists().getByTitle('Documents');
+
+    var camlQuery = new SP.CamlQuery();
+    camlQuery.set_viewXml('<View><Query><OrderBy><FieldRef Name="ID" Ascending="FALSE" /></OrderBy></Query><RowLimit>6</RowLimit></View>');
+    var collListItem = oList.getItems(camlQuery);        
+    clientContext.load(collListItem);        
+    clientContext.executeQueryAsync(function(){
+    var listItemEnumerator = collListItem.getEnumerator();
+
+    var mainHTML='';  
+    while (listItemEnumerator.moveNext()) 
+    {
+	var oListItem = listItemEnumerator.get_current();
+        var FileLeafRef=oListItem.get_item('FileLeafRef');
+        var fileNameWithPath= siteURL+"/Shared%20Documents/"+FileLeafRef;
+        mainHTML+="<div class=\"row\">";
+        mainHTML+="<div class=\"col-md-12\">";
+		mainHTML+="<a class=\"uploaded-doc-title\" target=\"_blank\" href='"+fileNameWithPath+"'><h4 class=\"event-text-head \">"+FileLeafRef+"</h4></a>";
+        mainHTML+="</div></div>";
+    }
+    $("#departmentalDocuments").append(mainHTML);
+
+    }, function()
+       {
+          console.log('Documents : Something went wrong');
+       });        
+}
+
+
+
+
+function checkDocumentPermission()
+{
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	
+	var listName='ProjectDetails';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=ID eq '" + txtProjectID + "' and ManagerNameId eq '"+_spPageContextInfo.userId+"'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+			if(items.length>0)
+			{
+				$(".addProjectDocument").show();
+			}
+			else
+			{
+				getMemberHaveDocumanePermission();
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function getMemberHaveDocumanePermission()
+{
+	var listName='ProjectTeamDetails';
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=ProjectId eq '" + txtProjectID + "' and TeamMemberId eq '"+_spPageContextInfo.userId+"' and Status eq 'Active' and DocumentPermission eq '1'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+            if(items.length>0)
+			{
+				$(".addProjectDocument").show();
+			}
+			else
+			{
+				$(".addProjectDocument").hide();
+				
+				CheckProjectAdminRights_ProjectDocuments();
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+function CheckProjectAdminRights_ProjectDocuments()
+{
+	var deffered= $.Deferred();
+	
+	var listName='ProcessApprovers';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'Project Admin'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+               $(".addProjectDocument").show();
+            }
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+    deffered.promise();
+}
+
+
+
+
+/**************************************Department Documents******************************/
+/*
+_spBodyOnLoadFunctionNames.push("HideBrandingsuite");
+function HideBrandingsuite() {
+    SetFullScreenMode(true);
+}
+
+setInterval(function () {
+
+    var iFrameDOM1 = $("iframe#viewMyDocuments").contents();
+    iFrameDOM1.find("#suiteBarDelta").css("display", "none");
+    iFrameDOM1.find("#RibbonContainer-TabRowRight").css("display", "none");
+    iFrameDOM1.find("#titleAreaBox").css("display", "none");
+    iFrameDOM1.find('ul.BreadcrumbBar-list li:first-child').hide();
+    iFrameDOM1.find('.StandaloneList-title').hide();
+    iFrameDOM1.find('.od-Files-topBar').css('margin-left', '50px');
+    iFrameDOM1.find('button[name="All Documents"]').hide();//to customize view
+
+}, 1000);
+*/
+
+$(document).ready(function () {
+    $('#btnMyDOcumentReload').click(function () 
+    {
+        $('#myDocumentsIframe').html('');
+        $('#myDocumentsIframe').append('<iframe width="100%" id="viewMyDocuments" style="min-height:500px;" src="' + myOwnDocumentsUrl + '"></iframe>');
+
+    });
+    $('#btnFullViewMyDocumens').click(function ()
+    {
+        window.open(myOwnDocumentsUrl, "_blank");
+    });
+});
+
+/*******************************************************************************************/
+
+
+
+
+</script>
+
+<style>
+
+
+.Files-contentAreaFlexContainer.Files-fullscreen {
+    margin-top: -49px !important;
+}
+
+
+.btn-outline-success, input.btn.btn-outline-success {
+    color: black !important;
+    background-color:white !important;
+       padding: 1px 8px !important;
+}
+
+</style>
+<div id="departmentalDocuments" style="display:none;">
+  
+</div>
+<!--<button type="button" class="btn btn-outline-success" id='btnMyDOcumentReload' value='Reload'>Reload</button>
+<button type="button" class="btn btn-outline-success" id='btnFullViewMyDocumens' value='View Full Mode'>View Full Mode</button>-->
+<!--<div class="container">-->
+		
+			<div id="myDocumentsIframe">			
+	
+		    </div>
+		
+	<!--</div>-->
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-323</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">27f437ae-86f6-41b4-8eb0-7fa2f5172f47</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-323, ADMIN-1645029823-323</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

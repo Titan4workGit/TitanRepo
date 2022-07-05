@@ -1,0 +1,1957 @@
+﻿<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11" >
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta charset="utf-8">
+<title>TITAN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="icon" href="images/titan.ico">
+<link rel="stylesheet" href="../SiteAssets/OccasionView/css/occasion-view-all-style.css">
+<link rel="stylesheet" href="../SiteAssets/OccasionView/css/padding.css">
+
+<script src="../SiteAssets/OccasionView/js/moment.min.js"></script>
+<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+<script type="text/javascript" src="_layouts/15/autofill.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+<script src="../SiteAssets/OccasionView/js/OccasionView.js"></script>
+
+<style>
+
+#myModal .modal-dialog{
+  
+  max-width:770px;	
+	
+}
+#myModal {
+    overflow-x: hidden;
+}
+
+#LogUserImage{
+  
+  width:5.5rem;	
+   height:5.5rem;	
+
+}
+#AddComment{
+	
+    padding: 1.5rem 3rem;	
+}
+
+.emojionearea .emojionearea-editor{
+	min-height:5.4rem;	
+	
+}
+
+.modal-body{
+	color:#4A4A4A;	
+	font-family:sans-serif;	
+}
+.reply-author-detail span{
+
+    font-size: 14px;
+    font-weight: 700;
+    font-family:sans-serif;	
+    display: inline-block;	
+	
+}
+
+#EmpName{
+  
+  font-weight:700; 	
+	
+}
+.reply-author-detail{
+	color:#4A4A4A;	
+	font-size: 14px;
+    font-weight: 700;
+   }
+
+#ReplyHere h4{
+	
+	display:block;
+	clear:both;	
+	font-size: 13px;
+   
+}
+
+
+.container-fluid.container-content{
+
+	width:100% !important; 	
+
+}
+
+.container-fluid.container-content.pt40{
+	
+	padding-top:0px !important;
+
+}
+
+#occasionEmpName_TopSpan.sp-peoplepicker-topLevel{
+	
+	padding:7px 25px 7px 10px !important;
+
+}
+#occasionEmpName_TopSpan_EditorInput{
+	border:none !important;	
+}
+
+#occasionEmpName_TopSpan_InitialHelpText{
+
+	top: 5px !important;	
+}
+
+.occasion-all-card{
+    min-height: 335px !important;	
+	
+}
+input[type="date"]{
+
+	line-height:23px !important;	
+}
+
+#occasionEmpName_TopSpan{
+	width:100% !important;	
+}
+.occasion-all-card{
+	
+	background:linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+	background:-webkit-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+    background:-moz-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+    background:-o-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+
+}
+.occasion-all-card .occasion-all-content-detail img{
+ border-radius:50%;
+ border:1px solid #828282;
+ box-shadow:0px 8px 13px -7px #4aa0f7;	
+
+}
+.occasion-all-card .occasions-all-button{
+	background-color: #ff9e20;
+	border: 1px solid #a8a8a8;
+	box-shadow: inset 0 0.08em 0 rgba(255, 255, 255, 0.4), inset 0 0 0.1em rgba(255, 255, 255, 0.9);
+	background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image:-webkit-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image:-moz-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	background-image:-o-linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.05) 49%, rgba(0,0,0,.05) 51%, rgba(0,0,0,.1));
+	/*border:1px solid #a6a6a6 !important;*/
+	padding:5px 16px !important;
+	border-radius:2px;
+
+}
+
+.occsn-head-date-text-lg{
+ position:relative;
+ left:0px;	
+ z-index:2;
+ font-size:15px !important;
+}
+
+/* new css added for chat box 19/05/2021 */
+
+
+/* message panel classes   */
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+.chat-main-panel {
+  overflow: auto;
+  max-height: 385px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 16px;
+}
+.view-more-replies {
+    color: #1d6ec0;
+}
+.reply-box-ext {
+    padding: 2px 5px;
+    background: #ffffff;
+    clear: both;
+    width: auto;
+    max-width: 80%;
+    margin-bottom: 5px;
+}
+.reply-author-detail {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+}
+.reply-author-detail span {
+    font-size: 14px;
+    display: inline-block;
+}
+.chat-user-image {
+    border: 1px solid #e1e1e1;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+}
+.b-500 {
+    font-weight: 500;
+}
+.msg-like-img {
+    max-width: 16px;
+    margin: 0px 4px 0px 6px;
+}
+.my-chat-edit-delete-panel {
+    position: relative;
+}
+.reply-box-ext h4 {
+    font-size: 14px;
+    margin-top: 0px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+    margin-bottom: 5px;
+}
+.mt-4 {
+    margin-top: 4px;
+}
+.chat-edit-delete-panel {
+    position: absolute;
+    top: -15px;
+    right: 3px;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.chat-edit-delete-panel img {
+    max-width: 20px;
+    width: 100%;
+}
+.my-chat-edit-delete-panel:hover .chat-edit-delete-panel {
+    opacity: 1;
+}
+.chat-edit-delete-dropdown {
+    top: 0px;
+    border-radius: 10px;
+    min-width: 100px;
+    border: 0;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+}
+.chat-edit-delete-dropdown li {
+    padding-left: 10px;
+}
+.chat-edit-delete-dropdown li a, .chat-edit-delete-dropdown li button {
+    padding: 3px 10px 3px 4px;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
+}
+.chat-edit-delete-dropdown li:last-child a, .chat-edit-delete-dropdown li:last-child button {
+    border-bottom: 0;
+}
+.attachment-badge {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.chip-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 3px 0;
+}
+.attachment-badge .upload-chip {
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 3px;
+    margin-right: 4px;
+    padding: 3px 5px;
+    color: #666 !important;
+    background-color: white !important;
+    border: 1px solid #e1e1e1 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    padding-right: 16px;
+}
+.chip-text-box {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.chip-icon-box {
+    position: absolute;
+    right: 4px;
+    background: #fff;
+}
+.reply-box-my {
+    padding: 2px 0px;
+    background: #ffffff;
+    text-align: right;
+    width: 100%;
+    float: right;
+    max-width: 80%;
+    margin-bottom: 5px;
+}
+.reply-box-my h4 {
+    font-size: 14px;
+    margin-top: 0px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+    margin-bottom: 5px;
+}
+.reply-box-my .chip-box {
+    justify-content: flex-end;
+}
+.reply-box-my .attachment-badge .upload-chip {
+    margin-right: 0px;
+    margin-left: 4px;
+}
+.mt-14 {
+    margin-top: 14px;
+}
+.reply-text-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.comment-reply-user-name-info {
+    color: #2a6496;
+    padding-right: 4px;
+}
+.reply-text-box {
+    font-size: 14px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+}
+/*.upload-outer-chip-box-3 {
+    position: absolute;
+    z-index: 100;
+    bottom: 74px;
+    width: calc(100% - 18px);
+    padding: 5px 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0),rgb(255 255 255 / 60%),rgb(255 255 255 / 80%), rgb(255 255 255 / 88%), rgb(255 255 255 / 90%), rgba(255,255,255,1));
+} */  
+.reply-text-line-cross {
+    text-align: right;
+}
+
+.reply-text-line-cross a {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  /*background: rgb(0 0 0 / 30%);*/
+  background: #ccc;
+  color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.4s;
+}
+.reply-text-line-cross a:hover {
+  background: rgb(0 0 0 / 35%);
+  color: #000000;
+}
+.upload-outer-chip-box-2 .attachment-badge .upload-chip {
+    padding-right: 32px;
+}
+.main-comment-panel {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.main-comment-panel .comment-area {
+  width: 100%;
+  margin-right: 8px;
+}
+.main-comment-panel .comment-area .custom-form-group .form-control {
+    border-radius: 10px;
+    resize: none;
+    border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+}
+.main-comment-panel .comment-btn-pannel {
+    display: flex;
+}
+.main-comment-panel .comment-btn-pannel .btn {
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #e1e1e1;
+    box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+    position: relative;
+}
+.main-comment-panel .mr-8 {
+    margin-right: 8px;
+}
+.main-comment-panel .btn-file-upload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.main-comment-panel input.btn-file-upload[type=file] {
+    font-size: 0px;
+}
+.main-comment-panel .comment-btn-pannel .btn img {
+    max-width: 22px;
+}
+.main-comment-panel .comment-btn-pannel .btn {
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #e1e1e1;
+    box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+    position: relative;
+}
+.main-chat-text-area {
+  position: relative;
+}
+.experiences-inner-card-btn-panel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+}
+.experiences-inner-card-btn-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.experiences-inner-card-btn-panel li {
+    line-height: 0px;
+    font-size: 14px;
+}
+.experiences-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+.experiences-inner-card-btn-panel-icon button {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 0px;
+}
+.experiences-inner-card-btn-panel-icon button:active {
+    box-shadow: none;
+}
+.experiences-inner-card-btn-panel-icon img {
+    max-width: 16px;
+}
+.experiences-inner-card-btn-panel-dot span {
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 0px 8px;
+    margin-top: 2px;
+    opacity: 0.4;
+}
+
+    /* occassion chat top views, comments and likes section css START */
+
+    .mr-8 {
+        margin-right: 8px;
+    }
+
+    .mr-4 {
+        margin-right: 4px;
+    }
+
+    .chat-main-panel {
+        overflow: auto;
+        max-height: 210px;
+        /*max-height: 186px;*/
+        padding-right: 12px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 16px;
+        margin-bottom: 1px;
+    }
+
+    .view-more-replies {
+        color: #1d6ec0;
+    }
+
+    .reply-box-ext {
+        padding: 2px 5px;
+        background: #ffffff;
+        clear: both;
+        width: auto;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-ext .chip-box {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-author-detail {
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+        .reply-author-detail span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+    .chat-user-image {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+    }
+
+    .b-500 {
+        font-weight: 500;
+    }
+
+    .msg-like-img {
+        max-width: 16px;
+        margin: 0px 4px 0px 6px;
+    }
+
+    .my-chat-edit-delete-panel {
+        position: relative;
+    }
+
+    .reply-box-ext h4 {
+        /*font-size: 14px;*/
+        font-size: 13.5px;
+        margin-top: 0px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 8px 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        margin-bottom: 5px;
+        color: #4a4a4a;
+        background: #e6e6e6;
+    }
+
+    .reply-box-ext .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .mt-4 {
+        margin-top: 4px;
+    }
+
+    .chat-edit-delete-panel {
+        position: absolute;
+        top: -15px;
+        right: 3px;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+        border-radius: 50%;
+        /*border: 1px solid #e1e1e1;*/
+        border: 1px solid #bbbbbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+        .chat-edit-delete-panel img {
+            max-width: 20px;
+            width: 100%;
+        }
+
+    .my-chat-edit-delete-panel:hover .chat-edit-delete-panel {
+        opacity: 1;
+    }
+
+    .chat-edit-delete-dropdown {
+        top: 0px;
+        border-radius: 10px;
+        min-width: 100px;
+        border: 0;
+        /*box-shadow: 0 2px 12px rgb(0 0 0 / 18%);*/
+        box-shadow: 0 2px 12px rgb(74 74 74 / 44%);
+    }
+
+        .chat-edit-delete-dropdown li {
+            padding-left: 10px;
+        }
+
+            .chat-edit-delete-dropdown li a, .chat-edit-delete-dropdown li button {
+                padding: 3px 10px 3px 4px;
+                border-bottom: 1px solid #cccccc;
+                background: #ffffff;
+                width: 100%;
+                text-align: left;
+                border-radius: 0px;
+                color: #262626;
+            }
+
+            .chat-edit-delete-dropdown li:last-child a, .chat-edit-delete-dropdown li:last-child button {
+                border-bottom: 0;
+            }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > button:hover, .dropdown-menu > li > button:focus {
+        text-decoration: none;
+        color: #262626;
+        background-color: #f5f5f5;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        cursor: pointer !important;
+    }
+
+    .main-comment-panel .comment-btn-pannel button {
+        min-width: 2em !important;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 3px 0;
+    }
+
+    .attachment-badge .upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 5px;
+        color: #666 !important;
+        background-color: white !important;
+        /*border: 1px solid #e1e1e1 !important;*/
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /*border-radius: 20px;*/
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        padding-right: 16px;
+    }
+
+    .chip-text-box {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .chip-icon-box {
+        position: absolute;
+        right: 4px;
+        background: #fff;
+    }
+
+    .reply-box-my .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .reply-box-my {
+        padding: 2px 0px;
+        background: #ffffff;
+        text-align: right;
+        width: 100%;
+        float: right;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-my h4 {
+            /*font-size: 14px;*/
+            font-size: 13.5px;
+            margin-top: 0px;
+            word-break: break-all;
+            text-align: justify;
+            font-weight: 400;
+            border-radius: 10px;
+            padding: 8px 10px;
+            /*box-shadow: 0 0 2px #9c9c9c;*/
+            box-shadow: 0 0 2px #4a4a4a;
+            margin-bottom: 5px;
+            color: #4a4a4a;
+        }
+
+        .reply-box-my .chip-box {
+            justify-content: flex-end;
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+        .reply-box-my .attachment-badge .upload-chip {
+            margin-right: 0px;
+            margin-left: 4px;
+        }
+
+    .mt-14 {
+        margin-top: 14px;
+    }
+
+   /* .reply-text-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }*/
+
+    .comment-reply-user-name-info {
+        color: #2a6496;
+        padding-right: 4px;
+    }
+
+    .reply-text-box {
+        /*font-size: 14px;*/
+        font-size: 13.8px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        color: #4a4a4a;
+    }
+
+    .upload-outer-chip-box-3 {
+        /*position: absolute;
+    z-index: 100;
+    bottom: auto;
+    top: -59px;
+    width: calc(100% - 9px);
+    padding: 5px 5px;
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+    border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);*/
+        position: relative;
+        z-index: 100;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        /*padding: 0px 2px 5px 2px;*/
+        padding: 0px 30px 5px 2px;
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+
+        .upload-outer-chip-box-3 .attachment-badge {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-text-line-cross {
+        text-align: right;
+        cursor: pointer;
+        position: absolute;
+        right: -4px;
+        top: -5px;
+
+    }
+
+        .reply-text-line-cross a {
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            line-height: 20px;
+            /*background: rgb(0 0 0 / 30%);*/
+            background: #ccc;
+            color: #000;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+            .reply-text-line-cross a:hover {
+                background: rgb(0 0 0 / 35%);
+                color: #000000;
+            }
+
+    .upload-outer-chip-box-2 .attachment-badge .upload-chip {
+        padding-right: 32px;
+    }
+
+    .main-comment-panel {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+    }
+
+        .main-comment-panel .comment-area {
+            width: 100%;
+            margin-right: 8px;
+        }
+
+            .main-comment-panel .comment-area .custom-form-group .form-control {
+                border-radius: 10px;
+                resize: none;
+                /* border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);*/
+                border-color: #c7c7c7;
+                box-shadow: 0 4px 12px 0px rgb(0 0 0 / 14%);
+            }
+
+        .main-comment-panel .comment-btn-pannel {
+            display: flex;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn {
+                padding: 5px;
+                border-radius: 10px !important;
+                background: #ffffff;
+                border-color: #e1e1e1;
+                box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+                position: relative;
+            }
+
+        .main-comment-panel .mr-8 {
+            margin-right: 8px;
+        }
+
+        .main-comment-panel .btn-file-upload {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .main-comment-panel input.btn-file-upload[type=file] {
+            font-size: 0px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn img {
+            max-width: 22px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn {
+            padding: 5px;
+            border-radius: 10px;
+            background: #ffffff;
+            /*border-color: #e1e1e1;*/
+            border-color: #bbbbbb;
+            box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+            position: relative;
+            transition: all 0.35s;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn:hover {
+                /* border-color: #bbbbbb;*/
+                box-shadow: 0 0 0 3px rgb(0 0 0 / 9%);
+            }
+
+                .main-comment-panel .comment-btn-pannel .btn:hover > div {
+                    transform: rotate(-45deg);
+                    transition: all 0.35s;
+                }
+
+        .main-comment-panel .comment-btn-pannel a.btn:hover img {
+            transform: rotate(45deg);
+            transition: all 0.35s;
+        }
+
+    .main-chat-text-area {
+        position: relative;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        color: #4a4a4a;
+    }
+
+    .main-chat-text-area-border {
+        padding: 10px;
+        margin: 0px 1px 0px 4px;
+        box-shadow: 0 0 2px #4a4a4a;
+        border-radius: 10px;
+        background: #e6e6e6;
+    }
+
+    .experiences-inner-card-btn-panel {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        padding-left: 4px;
+    }
+
+    .experiences-inner-card-btn-item {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .experiences-inner-card-btn-panel li {
+        line-height: 0px;
+        font-size: 14px;
+    }
+
+    .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count > a {
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #000000;
+        position: relative;
+        top: -3px;
+        /*padding-left: 0px;
+        padding-right: 0px;
+        color: #000000;
+        position: relative;
+        top: 0px;
+        margin-top: 0;*/
+    }
+
+    .experiences-inner-card-btn-panel-icon {
+        margin-right: 8px;
+    }
+
+        .experiences-inner-card-btn-panel-icon button {
+            padding: 0;
+            background: transparent;
+            border: 0;
+            font-size: 14px;
+            line-height: 0px;
+        }
+
+            .experiences-inner-card-btn-panel-icon button:active {
+                box-shadow: none;
+            }
+
+        .experiences-inner-card-btn-panel-icon img {
+            max-width: 16px;
+        }
+
+    .experiences-inner-card-btn-panel-dot span {
+        display: block;
+        height: 4px;
+        /* width: 4px; */
+        width: 10px;
+        border-radius: 50%;
+        background-color: #000000;
+        margin: 0px 8px;
+        margin-top: 2px;
+        opacity: 0.4;
+    }
+
+    .experiences-inner-card-btn-panel .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-dot span {
+        margin-top: 2px !important;
+        padding: 0px 0px !Important;
+        visibility: hidden;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+        .show-comment-panel::-webkit-scrollbar-track {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #999;
+        }
+
+    .pb-40 {
+        padding-bottom: 40px;
+    }
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .pt-8 {
+        padding-top: 8px;
+    }
+
+    .pt-15 {
+        padding-top: 15px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .like-user-name {
+        /* padding-left: 10px; */
+        padding-left: 10px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 28px);
+    }
+
+        .like-user-name h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    .likes-panel .likes-box:last-child {
+        padding-bottom: 0;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+        .likes-box::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 38px);
+            height: 1px;
+            background: #cccccc;
+        }
+
+    .likes-panel .likes-box:last-child::after {
+        display: none;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .show-inner-likes-box {
+        max-width: 259px;
+        width: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 98px;
+        right: 14px;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+
+    .comment-container {
+        box-shadow: 0 2px 13px 1px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+
+    .likes-close-box {
+        padding: 8px 14px 0px 14px;
+        text-align: right;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box .likes-panel {
+        max-height: 200px;
+        overflow: auto;
+        padding-left: 14px;
+    }
+
+    .show-inner-likes-box-hide {
+        /*transform: translate(106%);*/
+        transform: translate(146%);
+    }
+
+    .hide-comment-box-scroll {
+        /*overflow: hidden;*/
+    }
+
+    .countInnerLikes {
+        cursor: pointer;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        padding: 0 0 3px 0;
+        flex-wrap: wrap;
+    }
+
+    .comment-container .attachment-badge {
+        margin-top: 8px;
+        word-break: break-all;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box-hide {
+        transform: translate(146%);
+        /*transform: translate(16%);*/
+        opacity: 0;
+    }
+
+    .my-chat-edit-delete-panel-inside .emojioneemoji {
+        width: 22px;
+    }
+
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-left, .emojionearea .emojionearea-picker.emojionearea-picker-position-right {
+        margin-right: -104px !important;
+        top: 30px !important;
+    }
+
+    #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-left, #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-right {
+        margin-right: -92px !important;
+        top: 30px !important;
+    }
+
+    #myModalforwish {
+        overflow-x: hidden;
+    }
+
+    .reply-author-detail span {
+        font-size: 13.5px !important;
+        font-weight: 400 !important;
+    }
+
+    .msg-like-img {
+        position: relative;
+        top: -2px;
+    }
+
+    .my-chat-edit-delete-panel .emojioneemoji, .upload-outer-chip-box-3 .emojioneemoji {
+        /*width: 22px;*/
+        /*width: 19.5px;*/
+        width: 17px;
+    }
+
+    .reply-text-line {
+        overflow: hidden;
+        /*max-height: 70px;*/
+        max-height: 18px;
+        line-height: 17px;
+    }
+    .replymsg {
+        display: inline;
+    }
+    .attachment-badge-name {
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+    }
+    #oldfilename .attachment-badge-name:first-child {
+        margin: 0px 5px 0px 0px;
+    }
+    #oldfilename .Closebtn {
+        cursor: pointer;
+    }
+    #NewAttachmentFiles {
+        margin: 1px 0px 0px 0px;
+        float: left;
+        /*overflow: auto;*/
+        /*max-height: 48px;*/
+    }
+    .comment-upload-chip .closeBtn {
+        cursor: pointer;
+    }
+    .comment-upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 6px;
+        color: #666 !important;
+        background-color: white !important;
+        /* border: 1px solid #e1e1e1 !important; */
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /* border-radius: 20px; */
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-comment-panel .emojionearea .emojionearea-editor {
+        /*max-height: 7em;*/
+        max-height: 6em;
+    }
+    .reply-inside-text-box {
+        background: #fff;
+    }
+    .others-reply-text-box {
+        background: #e6e6e6;
+    }
+    .main-comment-panel .emojionearea-editor {
+        margin-right: 0px;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar-track {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #999;
+    }
+    .chat-main-panel {
+        padding-bottom: 10px;
+    }
+
+    /* occassion chat top views, comments and likes section css END */
+
+/* new css added on 22/6/2021 */
+
+.attendance-btn-position .occasions-search {
+    margin-right: 5px;
+    height: 36px;
+    width: 215px;
+}
+
+/* new css added on 27/7/2021 - 29/7/2021 for modal-chat-boxses START */
+
+.toast {
+    opacity: 1;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 15%;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
+    height: 40px;
+    font-size: 19px;
+    background: aliceblue;
+}
+.toast-body {
+    padding-left: 10px;
+    font-weight: bold;
+}
+.info-content-detail #description {
+    margin-bottom: 16px;
+    padding-bottom: 0;
+}
+.link-container {
+    margin-bottom: 16px;
+}
+.link-box {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    white-space: normal !important;
+    word-break: break-all;
+}
+.link-box .link-item {
+    color: #337ab7 !important;
+}
+.view-more-replies {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: #e6e6e6 !important;
+    width: 110px;
+    float: none;
+    border-radius: 20px;
+    margin: 5px auto;
+    cursor: pointer;
+    box-shadow: 0 0 2px #4a4a4a;
+}
+.chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a,
+.chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+    padding: 9px 0px;
+    font-size: 13px;
+}
+.attachment-badge .upload-chip.chatAttach_Image {
+    padding: 5px 2px !important;
+    border: none !important;
+    white-space: normal;
+}
+.attachment-badge .upload-chip.chatAttach_Image .chip-text-box {
+    white-space: normal !important;
+    width: 100%;
+    display: block;
+}
+.attachment-badge .upload-chip.chatAttach_Image .chip-text-box img {
+    width: 100%;
+}
+#ToastPopup {
+    border-radius: 20px;
+    background: #fff;
+    /*padding: 7px 14px;*/
+    padding: 8px 10px;
+    width: auto;
+    font-size: 17px;
+    z-index: 9999;
+}
+#ToastPopup .toast-body {
+    padding: 0px 0px;
+}
+#ToastPopup .toast-body span {
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+#ToastPopup .toast-body #scrollChat {
+    color: #000;
+    min-width: 1em !important;
+    top: 0px !important;
+    right: auto !important;
+    left: 0px !important;
+    text-align: center;
+    position: relative;
+    font-size: 23px;
+}
+#AttachDoc div a {
+    color: #333 !important;
+}
+#AttachDoc {
+    float: left;
+    margin-bottom: 20px;
+}
+#AttachDoc div {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-left: 0px;
+    margin-right: 6px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #999999 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+#AttachDoc div a:last-child {
+    margin-left: 10px;
+}
+.chatAttach_Docx, .chatAttach_PDF, .chatAttach_xlsx, .chatAttach_Others {
+    height: 41px !important;
+}
+.attachment-badge .upload-chip {
+    padding-right: 18px;
+}
+#seemorebtnOccasion {
+    padding-bottom: 10px;
+}
+#AttachmentView .modal-dialog {
+    margin: 10px auto;
+}
+#AttachmentView .modal-title {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+#AttachmentView .modal-footer {
+    text-align: center;
+}
+
+/* new css added on 27/7/2021 - 29/7/2021 for modal-chat-boxses END */
+
+/* responsive css for modal-chat-boxses START */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    #myModal .modal-dialog {
+        width: 730px;
+        margin: 20px auto;
+    }
+    
+}
+    
+@media only screen and (max-width: 767px) {
+
+    .reply-box-my .attachment-badge a {
+        max-width: 51.3ch !important;
+        overflow: hidden !important;
+        position: relative;
+        top: 5px;
+    }
+    .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+        padding: 6px 0px 0px 0px;
+        margin-left: 3px;
+    }
+    
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+    .reply-box-my .attachment-badge a {
+        max-width: 19.3ch !important;
+        overflow: hidden !important;
+        position: relative;
+        top: 5px;
+    }
+    .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+        padding: 6px 0px 0px 0px;
+        margin-left: 3px;
+    }
+
+}
+
+/* responsive css for modal-chat-boxses END */
+
+
+/* responsive css start */
+
+@media(min-width: 992px) {
+
+    #myModal .modal-dialog {
+        margin: 10px auto;
+    }
+
+}
+
+@media(max-width:991px){
+
+    #AddComment{
+
+    	padding:0.5rem 2rem;	
+    }
+    
+}
+
+@media(max-width:767px){
+	
+    #DeltaPlaceHolderMain div.article, div.welcome{
+
+      /*margin:19px 15px !important;*/	
+      margin: 0px 15px !important;
+    	
+    }
+    .all-align-gap-container {
+        padding: 0px 0px !important;
+    }
+
+}
+
+@media(max-width: 504px){
+    
+
+    #occasions-filter .modal-body .row .col-xs-6{
+
+        width:100% !important;  
+
+    }
+    
+}
+
+@media(max-width:360px){
+
+    .reply-author-detail span{
+
+        font-size:12px !important;
+        font-weight:600;
+    }
+    #LogUserImage{
+        
+        width:4rem !important;
+        height:4rem !important; 
+    }
+
+}
+
+</style>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1466</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">c8855652-6eda-45bb-ac8c-183044bbcc6d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1466, ADMIN-1645029823-1466</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">146600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head><body class="custom-scroll">
+<!--New Messsage toast popup starts-->
+<div class="toast" id="ToastPopup" style="display:none;">
+    <div class="toast-body">
+      <span>New message</span>
+      <button type="button" class="ml-2 mb-1 close" id="scrollChat">
+      	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+      </button>
+    </div>
+</div>
+<!--New Messsage toast popup ends-->
+
+<div class="container-fluid container-content all-align-gap-container">
+	<div  class="occasion-all-area">
+		<div class="panel panel-default ">
+			<div class="panel-heading panel-heading-occasion-all">
+				<span class="occasion-head-text-all">Occasions</span>
+			</div>
+			<div class="row m-0 mb15">
+				<div class="col-lg-8 col-md-7 col-sm-6">
+					<div class="scrollbar-panel chip-panel">
+						<div class="chip-box" id="occasionChip">
+							<!--<div class="upload-chip">Marketing</div>
+							<div class="upload-chip">Developer</div>
+							<div class="upload-chip">Full Day</div>-->
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-5 col-sm-6">
+					<div class="text-right attendance-btn-position">
+                        <input type="text" id="myInput" placeholder="Search" class="occasions-search" onkeyup="myFunction()">
+						<button  type="button" class="btn custom-btn w-121" data-toggle="modal" data-target="#occasions-filter">Filter</button>
+					</div>
+				</div>
+			</div>
+			<div class="panel-body pl10 pr10 pt0 pb0">
+			<ul class="card-area-occasion" id="view_all_occassion" >
+			</ul>
+			<div style="display: none;" id="noOccRecode">
+				<div class="col-md-12 pl10 pr10 pb15 text-center text-bold">
+					<h1>No Record Found</h1>
+				</div>
+				<div class="col-md-12 pl10 pr10 pb15">
+			    <img src="images/Happy birthday.gif" class="img-responsive center-block" alt=""/> </div>
+			</div>
+			
+				<div class="col-md-12 text-right occasion-pagination" style="display:none;">
+				  <ul class="pagination">
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+				  </ul>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	
+<!-- /Modal -->
+<div id="myModal" data-backdrop="static" data-keyboard="false" class="modal fade custom-scroll" role="dialog" aria-hidden="false">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btnPopupClose" data-dismiss="modal">×</button>
+        <h3 class="modal-title text-bold" style="background-color: transparent !important;">Write a Message</h3>
+      </div>
+      <div class="modal-body">
+			 <div class="col-md-12 pb15 pl0 pr0">
+				<div class="col-md-7 col-sm-6 pl0 pr0">
+					
+					<div class="col-md-3 col-xs-4 pl0 wish-popup-area-image">
+								<img src="../SiteAssets/OccasionView/images/1.png" id="SelectedUserImage" style="width: 92px; height:103px;" >
+					</div>
+					<div class="col-md-9 col-xs-8">
+							<p class="wish-popup-name" id="EmpName">John Davis</p>
+							<p class="wish-popup-designation" id="EmpDesigation">Sales Manager</p>
+							<p><span id="EmpDepartment">Sales</span> | <span id="EmpLocation">Gurgaon</span></p>
+					</div>
+				</div>
+				<div class="col-md-5 col-sm-6 pl0 pr0">
+				<img src="../SiteAssets/OccasionView/images/birthday.png" class="img-responsive center-block image-area-popup" alt="" id="HeadImage"> </div>
+		  		<div class="clearfix"></div>
+
+		  		<!-- chat box code start -->
+
+		  		<div class="col-sm-12 pl0 pr0">
+
+				 		<div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+							<ul class="nav experiences-inner-card-btn-item">
+								<li class="experiences-inner-card-btn-panel-icon">
+									<img src="../SiteAssets/Biography/Experience/assets/images/visibility-icon.png?ctag=210426" data-themekey="#">
+								</li>
+								<li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#views" id="TotalHits">3</a></li>
+								<li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+								<li class="experiences-inner-card-btn-panel-icon">
+									<img class="like-img" id="like-Img-color" src="../SiteAssets/Biography/Experience/assets/images/like-icon.png" onclick="TriggerLikes();" data-themekey="#">
+								</li>
+								
+								<!-- id="TotalLikes" -->
+								<li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likes" id="TotalLikes">20</a></li>
+
+								<li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+								<li class="experiences-inner-card-btn-panel-icon">
+									<img src="../SiteAssets/Biography/Experience/assets/images/chat-icon.png?ctag=210426" data-themekey="#">
+								</li>
+								<li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#comments" id="TotalComments">0</a></li>
+							</ul>
+						</div>
+
+						<div class="tab-content">
+										<div id="views" class="tab-pane fade">
+											<ul class="show-comment-panel likes-panel" id="ViewHitList">
+												
+											</ul>
+										</div>
+										<div id="likes" class="tab-pane fade">
+											<ul class="show-comment-panel likes-panel" id="Likeshitlist">
+												
+											</ul>
+										</div>
+										<div id="comments" class="tab-pane fade in active">
+											<div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+			                <div class="row ml0 mr0" id="reply_area">
+			                  <div class="col-xs-12 text-center pt-15" id="seemorebtnOccasion" style="cursor:pointer;">
+			                    <a class="view-more-replies" href="javascript:void(0);" style="cursor:pointer;" onclick="ReadOccasionComment('GetAll', 'Logged_InUser', Url4ViewallOcc, 'ViewMore');">View Previous</a>
+			                  </div>
+			                  <div id="CommentsArea4OCC"></div>
+			                  
+			                  
+			                </div>
+		             	</div>
+
+			            <div class="clearfix"></div>
+
+		              	<div class="main-chat-text-area main-chat-text-area-border">
+			                <div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3">
+			                  <div class="reply-text-line">
+			                    <div class="reply-text-line-cross">
+			                      <a id="replyHide" type="button" onclick="ReactiveCtrl();"><i class="fa fa-times"></i></a>
+			                    </div>
+			                    <a href="#" class="comment-reply-user-name-info">@ <span id="replyforuser"></span> :</a>
+			                    <span id="ReplyforMsg"></span>
+			                  </div>
+			                  			                </div>
+			                <div class="main-comment-panel">
+			                  <div class="comment-area">
+			                    <div class="custom-form-group">
+			                      <textarea class="form-control" rows="3" id="CommentEditor"></textarea>
+				                      <div id="NewAttachmentFiles" class="oldfilename1 scrollbar-panel"></div>
+	    								<div id="oldfilename" class="oldfilename scrollbar-panel"></div>
+
+			                    </div>
+			                  </div>
+			                  <div class="comment-btn-pannel">
+			                    <div class="btn mr-8">
+			                    	<div id="drop-zone">
+  									<div id="clickHere">
+			                      		<input class="btn-file-upload" type="file" name="" multiple="" id="AttachmentFilesOcc">
+			                      		<img src="../SiteAssets/Biography/Experience/assets/images/attach-file.png?ctag=210426">
+			                      	</div>
+			                      	</div>
+			                    </div>
+			                    <a type="button" class="btn" onclick="PushRootComment();">
+			                      <img src="../SiteAssets/Biography/Experience/assets/images/send.png?ctag=210426">
+			                    </a>
+			                  </div>
+			                </div>
+		              	</div>	
+										</div>
+
+                        <!-- Side tab on like click to see who has liked the post  -->
+                        <div id="showInnerLikes" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                                    <div class="likes-close-box">
+                                        <i id="likeCloseBox" class="fa fa-times cursor-pointer"></i>
+                                    </div>
+                                    <ul class="likes-panel scrollbar-panel" id="CommentLikeList">
+                                    </ul>
+                                </div>
+                        <!-- Side tab on like click to see who has liked the post  -->
+
+									</div>
+
+					</div>
+
+        </div>
+    </div><div class="clearfix"></div>	
+</div>
+  </div>
+</div>
+<!-- /Modal -->
+
+<!-- /Modal -->
+<div id="occasions-filter" class="modal fade" role="dialog" aria-hidden="false">
+	<div class="modal-dialog modal-lg">
+	  <!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h3 class="modal-title text-bold" style="background-color: transparent !important;">Filter</h3>
+			</div>
+			<div class="modal-body attendance-inbox-istab">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="form-group custom-form-group">
+							<label class="font-12">Month:</label>
+							<input type="date" placeholder="mm/dd/yyyy" class="form-control" id="timesheetFrom" name="From" style="display:none;">
+							<select class="form-control" id='getMonth'>
+							    <!--option value=''>--Select Month--</option-->
+							    <option value='1'>Janaury</option>
+							    <option value='2'>February</option>
+							    <option value='3'>March</option>
+							    <option value='4'>April</option>
+							    <option value='5'>May</option>
+							    <option value='6'>June</option>
+							    <option value='7'>July</option>
+							    <option value='8'>August</option>
+							    <option value='9'>September</option>
+							    <option value='10'>October</option>
+							    <option value='11'>November</option>
+							    <option value='12'>December</option>
+							</select> 
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="form-group custom-form-group">
+							<label class="font-12">Year:</label>
+							<input type="date" placeholder="mm/dd/yyyy" class="form-control" id="timesheetTo" name="To"style="display:none;">
+							<select class="form-control" id="getYear"></select>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="form-group custom-form-group">
+							<label for="Project">Type:</label>
+							<select class="form-control" id="EmpWishType">
+								<option value="All">All</option>
+								<option value="Birthday">Birthday</option>
+								<option value="Anniversary">Anniversary</option>
+								<option value="Workiversary">Workiversary</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="form-group custom-form-group">
+							<label for="Project">Department:</label>
+							<select class="form-control" id="EmpDeptType">
+							</select>
+						</div>
+					</div>
+					<!--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+						<div class="form-group custom-form-group">
+							<label for="Project">Name:</label>
+							<div id="occasionEmpName"></div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div class="modal-footer occasions-modal-footer">
+			      <p id="Pwloading" style="display:none">Processing Please Wailt...</p>
+				<button type="button" id="occasionMutipleFilter" class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
+				<button type="button" id="CancelFilter" class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--Iframe Image POpup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="modal-title">
+                        Attachment View
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                        <div id="doc-viewer" style="height:415px"><iframe src="https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/Lists/AnnouncementsChild/Attachments/1609/imageicon.png?web=1" id="iframe-viewer" frameborder="0" scrolling="yes" style="width: 100%; height: 98%;"></iframe></div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<!--Iframe Image POpup ends-->
+<script>
+$(document).ready(function() {
+	$("#CommentEditor").emojioneArea({    
+    	pickerPosition: "right",
+      	tonesStyle: "bullet",
+    	events:{
+          	keyup: function (editor, event) {
+         
+          }
+      	}
+  	});
+  	
+  	
+		    $("#replyTextarea").hide();
+		 
+
+  	
+});
+
+</script>
+	
+<!-- CodeCommentScroll -->
+	<script>
+		$(document).ready(function(){
+		  $("#replyHide").click(function(){
+		    $("#replyTextarea").hide();
+		  });
+		});					
+	</script>	
+
+<!-- CodeCommentScroll -->
+   
+</body>

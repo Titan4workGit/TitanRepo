@@ -1,0 +1,3634 @@
+﻿<script type="text/javascript" src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script><!--Added -->
+<link type="text/css" rel="stylesheet" href="../SiteAssets/DevelopersCode/DefaultHome/css/home_style.css">
+<link type="text/css" rel="stylesheet" href="../SiteAssets/DevelopersCode/DefaultHome/css/owl.carousel.min.css">
+<link type="text/css" rel="stylesheet" href="../SiteAssets/DevelopersCode/DefaultHome/css/owl.theme.default.min.css">
+<link type="text/css" rel="stylesheet" href="../SiteAssets/DevelopersCode/DefaultHome/css/emojionearea.min.css">
+<script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/emojionearea.min.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.runtime.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.js"></script>
+
+<style type="text/css">
+    /*media and mazine */
+    .resultdeclare {
+        font-weight: 600;
+    }
+
+    .Media-left, .Magazine-left {
+        width: auto;
+    }
+
+    .Media-right, .Magazine-right {
+        float: left;
+        cursor: pointer;
+    }
+
+    .magazineNoRecord {
+        color: #999 !important;
+        font-weight: bold !important;
+        font-size: 13px !important;
+        padding-top: 35px;
+    }
+
+    #myModalforwish .modal-dialog {
+        width: 770px;
+        /*width: 70%;*/
+    }
+
+    #myModalforwish .modal-content .close {
+        opacity: 1;
+        position: absolute;
+        top: 11px;
+        min-width: auto !important;
+        padding: 0px 7px !important;
+        background: #fff;
+        border-radius: 50%;
+        font-size: 24px;
+        color: #000;
+    }
+
+        #myModalforwish .modal-content .close:active, #myModalforwish .modal-content .close:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        #myModalforwish .modal-content .close:focus {
+            outline: none;
+        }
+
+    .albumNoRecord {
+        color: #999 !important;
+        font-weight: bold !important;
+        font-size: 13px !important;
+        padding-top: 35px;
+    }
+
+
+    .caption .caption-text p a {
+        color: #fff !important;
+    }
+
+    .thumb {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .mb-15 {
+        margin-bottom: 15px !important;
+    }
+
+    .cuadro_intro_hover {
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+
+        .cuadro_intro_hover:hover .caption {
+            opacity: 1;
+            transform: translateY(-208px);
+            -webkit-transform: translateY(-208px);
+            -moz-transform: translateY(-208px);
+            -ms-transform: translateY(-208px);
+            -o-transform: translateY(-208px);
+        }
+
+        .cuadro_intro_hover .caption {
+            position: absolute;
+            top: 175px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .cuadro_intro_hover .blur {
+            background-color: rgba(0,0,0,0.7);
+            height: 330px;
+            z-index: 5;
+            position: absolute;
+            width: 100%;
+        }
+
+        .cuadro_intro_hover .caption-text {
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 5px;
+            width: 100%;
+            padding: 2px 5px;
+        }
+
+    .cuadro_intro_hover2 {
+        padding: 0px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+
+        .cuadro_intro_hover2:hover .caption {
+            opacity: 1;
+            transform: translateY(-90px);
+            -webkit-transform: translateY(-90px);
+            -moz-transform: translateY(-90px);
+            -ms-transform: translateY(-90px);
+            -o-transform: translateY(-90px);
+        }
+
+        .cuadro_intro_hover2 .caption {
+            position: absolute;
+            top: 64px;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            width: 100%;
+        }
+
+        .cuadro_intro_hover2 .blur {
+            background-color: rgba(0,0,0,0.7);
+            height: 330px;
+            z-index: 5;
+            position: absolute;
+            width: 100%;
+        }
+
+        .cuadro_intro_hover2 .caption-text {
+            z-index: 10;
+            color: #fff;
+            position: absolute;
+            text-align: center;
+            top: 0px;
+            width: 100%;
+            padding: 5px;
+            font-size: 13px;
+            line-height: 1.1;
+        }
+
+    #Magazine #carousel-exampleMagzine ol {
+        display: block !important;
+    }
+
+    /* message panel classes   */
+
+    /* occassion chat top views, comments and likes section css START */
+
+    .mr-8 {
+        margin-right: 8px;
+    }
+
+    .mr-4 {
+        margin-right: 4px;
+    }
+
+    .chat-main-panel {
+        overflow: auto;
+        max-height: 210px;
+        /*max-height: 186px;*/
+        padding-right: 12px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 16px;
+        margin-bottom: 1px;
+    }
+
+    .view-more-replies {
+        color: #1d6ec0;
+    }
+
+    .reply-box-ext {
+        padding: 2px 5px;
+        background: #ffffff;
+        clear: both;
+        width: auto;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-ext .chip-box {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-author-detail {
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+        .reply-author-detail span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+    .chat-user-image {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+    }
+
+    .b-500 {
+        font-weight: 500;
+    }
+
+    .msg-like-img {
+        max-width: 16px;
+        margin: 0px 4px 0px 6px;
+    }
+
+    .my-chat-edit-delete-panel {
+        position: relative;
+    }
+
+    .reply-box-ext h4 {
+        /*font-size: 14px;*/
+        font-size: 13.5px;
+        margin-top: 0px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 8px 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        margin-bottom: 5px;
+        color: #4a4a4a;
+        background: #e6e6e6;
+    }
+
+    .reply-box-ext .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .mt-4 {
+        margin-top: 4px;
+    }
+
+    .chat-edit-delete-panel {
+        position: absolute;
+        top: -15px;
+        right: 3px;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+        border-radius: 50%;
+        /*border: 1px solid #e1e1e1;*/
+        border: 1px solid #bbbbbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+        .chat-edit-delete-panel img {
+            max-width: 20px;
+            width: 100%;
+        }
+
+    .my-chat-edit-delete-panel:hover .chat-edit-delete-panel {
+        opacity: 1;
+    }
+
+    .chat-edit-delete-dropdown {
+        top: 0px;
+        border-radius: 10px;
+        min-width: 100px;
+        border: 0;
+        /*box-shadow: 0 2px 12px rgb(0 0 0 / 18%);*/
+        box-shadow: 0 2px 12px rgb(74 74 74 / 44%);
+    }
+
+        .chat-edit-delete-dropdown li {
+            padding-left: 10px;
+        }
+
+            .chat-edit-delete-dropdown li a, .chat-edit-delete-dropdown li button {
+                padding: 3px 10px 3px 4px;
+                border-bottom: 1px solid #cccccc;
+                background: #ffffff;
+                width: 100%;
+                text-align: left;
+                border-radius: 0px;
+                color: #262626;
+            }
+
+            .chat-edit-delete-dropdown li:last-child a, .chat-edit-delete-dropdown li:last-child button {
+                border-bottom: 0;
+            }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > button:hover, .dropdown-menu > li > button:focus {
+        text-decoration: none;
+        color: #262626;
+        background-color: #f5f5f5;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        cursor: pointer !important;
+    }
+
+    .main-comment-panel .comment-btn-pannel button {
+        min-width: 2em !important;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 3px 0;
+    }
+
+    .attachment-badge .upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 5px;
+        color: #666 !important;
+        background-color: white !important;
+        /*border: 1px solid #e1e1e1 !important;*/
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /*border-radius: 20px;*/
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        padding-right: 16px;
+    }
+
+    .chip-text-box {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .chip-icon-box {
+        position: absolute;
+        right: 4px;
+        background: #fff;
+    }
+
+    .reply-box-my .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .reply-box-my {
+        padding: 2px 0px;
+        background: #ffffff;
+        text-align: right;
+        width: 100%;
+        float: right;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-my h4 {
+            /*font-size: 14px;*/
+            font-size: 13.5px;
+            margin-top: 0px;
+            word-break: break-all;
+            text-align: justify;
+            font-weight: 400;
+            border-radius: 10px;
+            padding: 8px 10px;
+            /*box-shadow: 0 0 2px #9c9c9c;*/
+            box-shadow: 0 0 2px #4a4a4a;
+            margin-bottom: 5px;
+            color: #4a4a4a;
+        }
+
+        .reply-box-my .chip-box {
+            justify-content: flex-end;
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+        .reply-box-my .attachment-badge .upload-chip {
+            margin-right: 0px;
+            margin-left: 4px;
+        }
+
+    .mt-14 {
+        margin-top: 14px;
+    }
+
+    .comment-reply-user-name-info {
+        color: #2a6496;
+        padding-right: 4px;
+    }
+
+    .reply-text-box {
+        /*font-size: 14px;*/
+        font-size: 13.8px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        color: #4a4a4a;
+    }
+
+    .upload-outer-chip-box-3 {
+        position: relative;
+        z-index: 100;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        /*padding: 0px 2px 5px 2px;*/
+        padding: 0px 30px 5px 2px;
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+
+        .upload-outer-chip-box-3 .attachment-badge {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-text-line-cross {
+        text-align: right;
+        cursor: pointer;
+        position: absolute;
+        right: -4px;
+        top: -5px;
+    }
+
+        .reply-text-line-cross a {
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            line-height: 20px;
+            /*background: rgb(0 0 0 / 30%);*/
+            background: #ccc;
+            color: #000;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+            .reply-text-line-cross a:hover {
+                background: rgb(0 0 0 / 35%);
+                color: #000000;
+            }
+
+    .upload-outer-chip-box-2 .attachment-badge .upload-chip {
+        padding-right: 32px;
+    }
+
+    .main-comment-panel {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+    }
+
+        .main-comment-panel .comment-area {
+            width: 100%;
+            margin-right: 8px;
+        }
+
+            .main-comment-panel .comment-area .custom-form-group .form-control {
+                border-radius: 10px;
+                resize: none;
+                /* border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);*/
+                border-color: #c7c7c7;
+                box-shadow: 0 4px 12px 0px rgb(0 0 0 / 14%);
+            }
+
+        .main-comment-panel .comment-btn-pannel {
+            display: flex;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn {
+                padding: 5px;
+                border-radius: 10px !important;
+                background: #ffffff;
+                border-color: #e1e1e1;
+                box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+                position: relative;
+            }
+
+        .main-comment-panel .mr-8 {
+            margin-right: 8px;
+        }
+
+        .main-comment-panel .btn-file-upload {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .main-comment-panel input.btn-file-upload[type=file] {
+            font-size: 0px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn img {
+            max-width: 22px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn {
+            padding: 5px;
+            border-radius: 10px;
+            background: #ffffff;
+            /*border-color: #e1e1e1;*/
+            border-color: #bbbbbb;
+            box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+            position: relative;
+            transition: all 0.35s;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn:hover {
+                /* border-color: #bbbbbb;*/
+                box-shadow: 0 0 0 3px rgb(0 0 0 / 9%);
+            }
+
+                .main-comment-panel .comment-btn-pannel .btn:hover > div {
+                    transform: rotate(-45deg);
+                    transition: all 0.35s;
+                }
+
+        .main-comment-panel .comment-btn-pannel button.btn:hover img {
+            transform: rotate(45deg);
+            transition: all 0.35s;
+        }
+
+    .main-chat-text-area {
+        position: relative;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        color: #4a4a4a;
+    }
+
+    .main-chat-text-area-border {
+        padding: 10px;
+        margin: 0px 1px 0px 4px;
+        box-shadow: 0 0 2px #4a4a4a;
+        border-radius: 10px;
+        background: #e6e6e6;
+    }
+
+    .experiences-inner-card-btn-panel {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        padding-left: 4px;
+    }
+
+    .experiences-inner-card-btn-item {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .experiences-inner-card-btn-panel li {
+        line-height: 0px;
+        font-size: 14px;
+    }
+
+    .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count > a {
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #000000;
+        position: relative;
+        top: -3px;
+    }
+
+    .experiences-inner-card-btn-panel-icon {
+        margin-right: 8px;
+    }
+
+        .experiences-inner-card-btn-panel-icon button {
+            padding: 0;
+            background: transparent;
+            border: 0;
+            font-size: 14px;
+            line-height: 0px;
+        }
+
+            .experiences-inner-card-btn-panel-icon button:active {
+                box-shadow: none;
+            }
+
+        .experiences-inner-card-btn-panel-icon img {
+            max-width: 16px;
+        }
+
+    .experiences-inner-card-btn-panel-dot span {
+        display: block;
+        height: 4px;
+        /* width: 4px; */
+        width: 10px;
+        border-radius: 50%;
+        background-color: #000000;
+        margin: 0px 8px;
+        margin-top: 2px;
+        opacity: 0.4;
+    }
+
+    .experiences-inner-card-btn-panel .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-dot span {
+        margin-top: 2px !important;
+        padding: 0px 0px !Important;
+        visibility: hidden;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+        .show-comment-panel::-webkit-scrollbar-track {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #999;
+        }
+
+    .pb-40 {
+        padding-bottom: 40px;
+    }
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .pt-8 {
+        padding-top: 8px;
+    }
+
+    .pt-15 {
+        padding-top: 15px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .like-user-name {
+        /* padding-left: 10px; */
+        padding-left: 10px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 28px);
+    }
+
+        .like-user-name h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    .likes-panel .likes-box:last-child {
+        padding-bottom: 0;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+        .likes-box::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 38px);
+            height: 1px;
+            background: #cccccc;
+        }
+
+    .likes-panel .likes-box:last-child::after {
+        display: none;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .show-inner-likes-box {
+        max-width: 259px;
+        width: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 98px;
+        right: 14px;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+
+    .comment-container {
+        box-shadow: 0 2px 13px 1px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+
+    .likes-close-box {
+        padding: 8px 14px 0px 14px;
+        text-align: right;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box .likes-panel {
+        max-height: 200px;
+        overflow: auto;
+        padding-left: 14px;
+    }
+
+    .show-inner-likes-box-hide {
+        /*transform: translate(106%);*/
+        transform: translate(146%);
+    }
+
+    .hide-comment-box-scroll {
+        /*overflow: hidden;*/
+    }
+
+    .countInnerLikes {
+        cursor: pointer;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        padding: 0 0 3px 0;
+        flex-wrap: wrap;
+    }
+
+    .comment-container .attachment-badge {
+        margin-top: 8px;
+        word-break: break-all;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box-hide {
+        transform: translate(146%);
+        /*transform: translate(16%);*/
+        opacity: 0;
+    }
+
+    .my-chat-edit-delete-panel-inside .emojioneemoji {
+        width: 22px;
+    }
+
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-left, .emojionearea .emojionearea-picker.emojionearea-picker-position-right {
+        margin-right: -104px !important;
+        top: 30px !important;
+    }
+
+    #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-left, #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-right {
+        margin-right: -92px !important;
+        top: 30px !important;
+    }
+
+    #myModalforwish {
+        overflow-x: hidden;
+    }
+
+    .reply-author-detail span {
+        font-size: 13.5px !important;
+        font-weight: 400 !important;
+    }
+
+    .msg-like-img {
+        position: relative;
+        top: -2px;
+    }
+
+    .my-chat-edit-delete-panel .emojioneemoji, .upload-outer-chip-box-3 .emojioneemoji {
+        /*width: 22px;*/
+        /*width: 19.5px;*/
+        width: 17px;
+    }
+
+    .reply-text-line {
+        overflow: hidden;
+        /*max-height: 70px;*/
+        max-height: 19px;
+        line-height: 17px;
+    }
+
+    .replymsg {
+        /*display: inline-block;*/
+    }
+
+    .attachment-badge-name {
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+    }
+
+    #oldfilename .attachment-badge-name:first-child {
+        margin: 0px 5px 0px 0px;
+    }
+
+    #oldfilename .Closebtn {
+        cursor: pointer;
+    }
+
+    #NewAttachmentFiles {
+        margin: 1px 0px 0px 0px;
+        float: left;
+        /*overflow: auto;*/
+        /*max-height: 48px;*/
+    }
+
+    .comment-upload-chip .closeBtn {
+        cursor: pointer;
+    }
+
+    .comment-upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 6px;
+        color: #666 !important;
+        background-color: white !important;
+        /* border: 1px solid #e1e1e1 !important; */
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /* border-radius: 20px; */
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-comment-panel .emojionearea .emojionearea-editor {
+        /*max-height: 7em;*/
+        max-height: 6em;
+    }
+
+    .reply-inside-text-box {
+        background: #fff;
+    }
+
+    .others-reply-text-box {
+        background: #e6e6e6;
+    }
+
+    .main-comment-panel .emojionearea-editor {
+        margin-right: 0px;
+    }
+
+        .main-comment-panel .emojionearea-editor::-webkit-scrollbar-track {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .main-comment-panel .emojionearea-editor::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .main-comment-panel .emojionearea-editor::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #999;
+        }
+
+    .experiences-inner-card-btn-panel-icon .like-img {
+        cursor: pointer;
+    }
+
+    .chat-main-panel {
+        padding-bottom: 10px;
+    }
+
+    /* occassion chat top views, comments and likes section css END */
+
+    /* New Announcement & Alert Popup Css Start */
+
+    .new-announcement-alert-modal .common-popup-description-text {
+        font-size: 12px;
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    .new-announcement-alert-modal .common-popup-like-button a {
+        font-size: 20px;
+        color: #333333;
+        background-color: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+        .new-announcement-alert-modal .common-popup-like-button a:hover {
+            color: #24bad6;
+        }
+
+    .new-announcement-alert-modal .common-popup-like-button p {
+        display: inline-block;
+        font-size: 14px;
+        margin: 0px;
+    }
+
+    .new-announcement-alert-modal .image-toggle {
+        display: inline-block;
+        float: right;
+    }
+
+    .new-announcement-alert-modal .attachment-badge-popup {
+        display: block;
+        text-align: center;
+    }
+
+        .new-announcement-alert-modal .attachment-badge-popup a {
+            font-size: 12px;
+            margin-top: 3px;
+            margin-left: 3px;
+            padding: 5px 10px;
+            color: #333 !important;
+            background-color: transparent !important;
+            border: 1px solid #999999 !important;
+            width: auto;
+            float: left;
+            border-radius: 20px;
+        }
+
+            .new-announcement-alert-modal .attachment-badge-popup a:first-child {
+                margin-left: 0px;
+            }
+
+    /*New code added on 05-06-2020*/
+    .new-announcement-alert-modal .modal-body {
+        padding: 0px !important;
+    }
+
+    .new-announcement-alert-modal .modal-body-bg {
+        height: 150px !important;
+        border-radius: 6px !important;
+    }
+
+    .new-announcement-alert-modal .common-modal-close, #AttachmentView .close {
+        min-width: auto !important;
+        font-weight: bold !important;
+        font-size: 18px;
+        top: 10px;
+        background: #fff;
+        text-shadow: 0px 0px 4px #fff;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        box-shadow: 0 0px 7px 0 rgb(0 0 0 / 23%);
+        opacity: 1;
+        text-align: center;
+        line-height: 22px;
+        padding: 0px 0px 0px 0px !important;
+        color: #000;
+    }
+
+        #Announcement_Alert .common-modal-close:hover, #Announcement_Alert .common-modal-close:focus,
+        #AttachmentView .close:hover, #AttachmentView .close:focus {
+            background: #000;
+            color: #fff !important;
+        }
+
+    #AttachmentView .close {
+        top: 12.5px;
+    }
+
+    .new-announcement-alert-modal .common-modal-header {
+        position: absolute;
+        z-index: 10;
+    }
+
+    .new-announcement-alert-modal .common-title-popup {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+
+    .new-announcement-alert-modal .common-name-popup {
+        font-size: 14px;
+    }
+
+    .new-announcement-alert-modal .common-type-popup {
+        font-size: 12px;
+    }
+
+    .new-announcement-alert-modal .common-head-text-popup-Alert {
+        font-size: 16px;
+        padding: 4px 10px;
+        color: #000;
+        letter-spacing: 1px;
+        background-color: #f00 !important;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .new-announcement-alert-modal .common-head-text-popup {
+        font-size: 16px;
+        padding: 4px 10px;
+        color: #000;
+        letter-spacing: 1px;
+        background-color: #ff9e20 !important;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .new-announcement-alert-modal .panel-heading-common-popup {
+        padding: 14px 0px 7px 0px !important;
+        border: none !important;
+        background-color: transparent !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .new-announcement-alert-modal .common-popup-link {
+        font-size: 12px;
+        padding-top: 10px !important;
+    }
+
+        .new-announcement-alert-modal .common-popup-link a {
+            word-break: break-word;
+            color: #337ab7 !important;
+        }
+
+    .new-announcement-alert-modal .common-content-popup {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: #000;
+        word-break: break-word;
+        padding-bottom: 10px;
+    }
+
+        .new-announcement-alert-modal .common-content-popup p {
+            margin-bottom: 5px;
+        }
+
+    .new-announcement-alert-modal .shade-common-popup {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .new-announcement-alert-modal .common-media-image .carousel-inner .item img {
+        display: block;
+        width: 100%;
+        /*height: 350px;*/
+        height: 300px;
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .new-announcement-alert-modal .carousel-inner {
+        border-radius: 5px;
+    }
+
+    .new-announcement-alert-modal .carousel-indicators-custom {
+        bottom: -30px;
+    }
+
+        .new-announcement-alert-modal .carousel-indicators-custom li {
+            background: #D6D6D6 !important;
+            border: 1px solid #D6D6D6 !important;
+            border-radius: 10px;
+        }
+
+        .new-announcement-alert-modal .carousel-indicators-custom .active {
+            width: 12px !important;
+            height: 12px !important;
+            background: #869791 !important;
+        }
+
+    .new-announcement-alert-modal .arrow-custom {
+        background-image: none !important;
+        width: 100% !important;
+        /*top: 340px !important;*/
+        top: 290px !important;
+        left: 13px;
+        color: #333 !important;
+        opacity: 1 !important;
+    }
+
+    .new-announcement-alert-modal .left.arrow-custom .glyphicon {
+        left: 0px !important;
+        top: 20px !important;
+        transform: rotate(180deg) translate(20px,0px);
+    }
+
+    .new-announcement-alert-modal .right.arrow-custom .glyphicon {
+        /*left: 13px !important;*/
+        /*top: 19px !important;*/
+        left: 0px !important;
+        top: 17px !important;
+    }
+
+    .new-announcement-alert-modal .common-popup-description-more {
+        -webkit-transition: 1s;
+        -o-transition: 1s;
+        transition: 1s;
+        font-weight: 600;
+        padding: 3px 8px;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+        .new-announcement-alert-modal .common-popup-description-more:hover {
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+            padding-left: 8px;
+            margin-left: 5px;
+            color: #fff;
+        }
+
+    .new-announcement-alert-modal .common-image-section-popup {
+        height: 100%;
+    }
+
+        .new-announcement-alert-modal .common-image-section-popup img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 4px;
+        }
+
+    .new-announcement-alert-modal .commom-user-image-popup img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .new-announcement-alert-modal .attachment-badge-popup a > i.fa {
+        padding-left: 5px;
+    }
+
+    #AttachmentView .modal-title {
+        font-size: 19px;
+        margin-top: 0px;
+    }
+
+    #AttachmentView .modal-footer {
+        text-align: center;
+    }
+
+        #AttachmentView .modal-footer .btn-outline-secondary:hover, #AttachmentView .modal-footer .btn-outline-secondary:focus {
+            border-color: #7b7a7a;
+            color: #4c4c4c;
+            background: #fff;
+        }
+
+    @media (max-width: 767px) and (min-width: 320px) {
+
+        .new-announcement-alert-modal .commom-user-details-popup {
+            padding-top: 10px;
+        }
+
+        .new-announcement-alert-modal .commom-user-image-popup img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .new-announcement-alert-modal .shade-common-popup {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    @media (max-width: 425px) and (min-width: 320px) {
+
+        .new-announcement-alert-modal .common-media-image .carousel-inner .item img {
+            display: block;
+            width: 100%;
+            height: 200px;
+            /*object-fit: cover;*/
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .new-announcement-alert-modal .arrow-custom {
+            top: auto !important;
+            bottom: -25px !important;
+        }
+    }
+
+    /* New Announcement & Alert Popup Css End */
+
+    /* new css added on 02/8/2021 for modal-chat-boxses START */
+
+    .toast {
+        opacity: 1;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        width: 15%;
+        z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
+        height: 40px;
+        font-size: 19px;
+        background: aliceblue;
+    }
+    .toast-body {
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    .info-content-detail #description {
+        margin-bottom: 16px;
+        padding-bottom: 0;
+    }
+    .link-container {
+        margin-bottom: 16px;
+    }
+    .link-box {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        white-space: normal !important;
+        word-break: break-all;
+    }
+    .link-box .link-item {
+        color: #337ab7 !important;
+    }
+    .view-more-replies {
+        font-size: 12px;
+        padding: 5px 10px;
+        color: #333 !important;
+        background-color: #e6e6e6 !important;
+        width: 110px;
+        float: none;
+        border-radius: 20px;
+        margin: 5px auto;
+        cursor: pointer;
+        box-shadow: 0 0 2px #4a4a4a;
+    }
+    .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a,
+    .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+        padding: 9px 0px;
+        font-size: 13px;
+    }
+    .attachment-badge .upload-chip.chatAttach_Image {
+        padding: 5px 2px !important;
+        border: none !important;
+        white-space: normal;
+    }
+    .attachment-badge .upload-chip.chatAttach_Image .chip-text-box {
+        white-space: normal !important;
+        width: 100%;
+        display: block;
+    }
+    .attachment-badge .upload-chip.chatAttach_Image .chip-text-box img {
+        width: 100%;
+    }
+    #ToastPopup {
+        border-radius: 20px;
+        background: #fff;
+        /*padding: 7px 14px;*/
+        padding: 8px 10px;
+        width: auto;
+        font-size: 17px;
+        z-index: 9999;
+    }
+    #ToastPopup .toast-body {
+        padding: 0px 0px;
+    }
+    #ToastPopup .toast-body span {
+        text-transform: capitalize;
+        margin-right: 7px;
+    }
+    #ToastPopup .toast-body #scrollChat {
+        color: #000;
+        min-width: 1em !important;
+        top: 0px !important;
+        right: auto !important;
+        left: 0px !important;
+        text-align: center;
+        position: relative;
+        font-size: 23px;
+    }
+    #AttachDoc div a {
+        color: #333 !important;
+    }
+    #AttachDoc {
+        float: left;
+        margin-bottom: 20px;
+    }
+    #AttachDoc div {
+        font-size: 12px;
+        margin-top: 6px;
+        margin-left: 0px;
+        margin-right: 6px;
+        padding: 5px 10px;
+        color: #333 !important;
+        background-color: transparent !important;
+        border: 1px solid #999999 !important;
+        width: auto;
+        float: left;
+        border-radius: 20px;
+    }
+    #AttachDoc div a:last-child {
+        margin-left: 10px;
+    }
+    .chatAttach_Docx, .chatAttach_PDF, .chatAttach_xlsx, .chatAttach_Others {
+        height: 41px !important;
+    }
+    .attachment-badge .upload-chip {
+        padding-right: 18px;
+    }
+    #seemorebtnOccasion {
+        padding-bottom: 10px;
+    }
+    #AttachmentView .modal-dialog {
+        margin: 10px auto;
+    }
+    #AttachmentView .modal-title {
+        /*font-size: 17px;
+        margin-top: 0px;
+        margin-left: 0px;*/
+        font-size: 19px;
+        margin-top: 0px;
+        margin-left: 0px;
+        /*font-weight: 600;*/
+    }
+    #AttachmentView .modal-footer {
+        text-align: center;
+    }
+
+    .chatAttach_Docx, .chatAttach_PDF, .chatAttach_xlsx, .chatAttach_Others {
+        height: 44px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chatAttach_Docx .chip-text-box, .chatAttach_PDF .chip-text-box, .chatAttach_xlsx .chip-text-box, .chatAttach_Others .chip-text-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #AttachmentView {
+        z-index: 1060;
+    }
+    .wish-popup-area-image img {
+        /*border-radius: 4px;*/
+        border-radius: 50%;
+        width: 103px !important;
+        height: 103px !important;
+        object-fit: cover;
+    }
+    #myModalforwish .modal-title {
+        font-size: 19px;
+    }
+
+    /* announce/alert code */
+
+    .experiences-inner-card-btn-panel {
+        padding: 14px 14px 0;
+    }
+    #Announcement_Alert {
+        overflow-x: hidden;
+    }
+    .home-announce-alert-chat-area {
+        padding-bottom: 20px;
+        float: left;
+        width: 100%;
+    }
+    #_AttachDocument a {
+        word-break: break-word;
+    }
+    #ToastPopupAnn {
+        border-radius: 20px;
+        background: #fff;
+        /* padding: 7px 14px; */
+        padding: 8px 10px;
+        width: auto;
+        font-size: 17px;
+        z-index: 9999;
+    }
+    #ToastPopupAnn .toast-body {
+        padding: 0px 0px;
+    }
+    #ToastPopupAnn .toast-body span {
+        text-transform: capitalize;
+        margin-right: 7px;
+    }
+    #ToastPopupAnn .toast-body #scrollChatAnn {
+        color: #000;
+        min-width: 1em !important;
+        top: 0px !important;
+        right: auto !important;
+        left: 0px !important;
+        text-align: center;
+        position: relative;
+        font-size: 23px;
+    }
+
+    /* new css added on 02/8/2021 for modal-chat-boxses END */
+
+    /* responsive css for modal-chat-boxses START */
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        #myModal .modal-dialog {
+            width: 730px;
+            margin: 20px auto;
+        }
+        
+    }
+        
+    @media only screen and (max-width: 767px) {
+
+        .reply-box-my .attachment-badge a {
+            max-width: 51.3ch !important;
+            overflow: hidden !important;
+            /*position: relative;
+            top: 5px;*/
+        }
+        .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+            padding: 0px 0px 0px 0px;
+            margin-left: 3px;
+        }
+        #AttachmentView .modal-dialog {
+            width: auto;
+            margin: 10px;        
+        }
+        .experiences-inner-card-btn-panel {
+            margin-top: 25px;
+        }
+        
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 575px) {
+
+        .reply-box-my .attachment-badge a {
+            max-width: 19.3ch !important;
+            overflow: hidden !important;
+            /*position: relative;
+            top: 5px;*/
+        }
+        .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+            padding: 0px 0px 0px 0px;
+            margin-left: 3px;
+        }
+        .wish-popup-area-image img {
+            width: 92px !important;
+            height: 92px !important;
+        }
+        /* announce/alert code */
+        .new-announcement-alert-modal .modal-body-bg {
+            height: 170px !important;
+        }
+        .new-announcement-alert-modal .common-content-popup {
+            padding-left: 10px !important;
+            padding-bottom: 5px;
+        }
+        .new-announcement-alert-modal .common-content-popup p {
+            font-size: 12px;
+        }
+
+    }
+
+    /* responsive css for modal-chat-boxses END */
+
+    /* new css added on 26/8/2021 */
+
+    .reply-text-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-height: 18px;
+    }
+    .main-chat-text-area-border {
+        margin: 0px 1px 0px 0px;
+    }
+
+    /* responsive css starts */
+
+    @media only screen and (min-width: 1600px) {
+        .chat-main-panel {
+            max-height: 310px;
+        }
+    }
+
+    @media(max-width:1024px) {
+        .cuadro_intro_hover2 .caption {
+            top: 64px !important;
+        }
+
+        .cuadro_intro_hover .caption {
+            top: 175px !important;
+        }
+
+        .pic-height {
+            height: 148px;
+        }
+    }
+
+    @media(min-width: 992px) {
+
+        #myModalforwish .modal-dialog {
+            margin: 10px auto;
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+        #myModalforwish .modal-dialog {
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count > a {
+            padding-left: 0px;
+            padding-right: 0px;
+            color: #000000;
+            position: relative;
+            top: 0px;
+            margin-top: 0;
+        }
+
+        .new-announcement-alert-modal .common-popup-description-more {
+            width: 77px;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        img.thumb.imageThumView2 {
+            height: 98px;
+            object-fit: cover;
+        }
+
+        img.thumb.pic-height.imageThumView1 {
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .cuadro_intro_hover .caption .caption-text h5 {
+            margin-top: 0px;
+        }
+
+        .cuadro_intro_hover2 .caption .caption-text h5 {
+            line-height: 1.8;
+            margin-top: 0px;
+        }
+
+        .cuadro_intro_hover2 .caption {
+            /*top:64px !important;*/
+        }
+
+        .cuadro_intro_hover .caption {
+            top: 175px !important;
+        }
+
+        .media-box-height {
+            height: auto !important;
+        }
+
+        .pic-height {
+            height: 226px;
+            width: 100% !Important;
+        }
+
+        .cuadro_intro_hover:hover .caption {
+            opacity: 1;
+            transform: translateY(-220px);
+            -webkit-transform: translateY(-220px);
+            -moz-transform: translateY(-220px);
+            -ms-transform: translateY(-220px);
+            -o-transform: translateY(-220px);
+        }
+
+        .cuadro_intro_hover2:hover .caption {
+            opacity: 1;
+            transform: translateY(-100px);
+            -webkit-transform: translateY(-100px);
+            -moz-transform: translateY(-100px);
+            -ms-transform: translateY(-100px);
+            -o-transform: translateY(-100px);
+        }
+
+        .magazineimg {
+            height: 210px;
+            object-fit: cover;
+        }
+    }
+
+    @media only screen and (min-width: 520px) and (max-width: 767px) {
+
+        #myModalforwish .modal-dialog {
+            width: auto;
+            margin: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 320px) and (max-width: 519px) {
+
+        #myModalforwish .modal-dialog {
+            width: auto;
+            margin: 10px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .cuadro_intro_hover .caption {
+            /*top: 180px !important;*/
+        }
+
+        img.thumb.pic-height.imageThumView1 {
+            height: 175px;
+            /*height: 210px;*/
+            object-fit: cover;
+        }
+
+        img.thumb.imageThumView2 {
+            height: 85px !important;
+        }
+
+        .cuadro_intro_hover2 .caption .caption-text h5,
+        .cuadro_intro_hover .caption .caption-text h5 {
+            font-size: 13px;
+        }
+
+        .cuadro_intro_hover .caption .caption-text p,
+        .cuadro_intro_hover2 .caption .caption-text p {
+            font-size: 12px;
+            padding-top: 20px;
+        }
+
+        .cuadro_intro_hover .caption .caption-text h5,
+        .cuadro_intro_hover2 .caption .caption-text h5 {
+            line-height: 1.2;
+        }
+
+        .cuadro_intro_hover2 .caption {
+            top: 58px !important;
+        }
+
+        .cuadro_intro_hover .caption {
+            top: 151px !important;
+        }
+
+        .magazineimg {
+            height: 175px;
+            object-fit: cover;
+        }
+
+        .cuadro_intro_hover .caption .caption-text p {
+            padding-top: 30px !important;
+        }
+
+        .tab-gallery-area .panel-body-media-gallery, .tab-gallery-area .panel-body-magazine {
+            height: 180px;
+        }
+    }
+
+    @media(min-width:769px) {
+        img.thumb.imageThumView2 {
+            height: 98px;
+            object-fit: cover;
+        }
+
+        img.thumb.pic-height.imageThumView1 {
+            height: 210px;
+            /*object-fit: cover;*/
+            object-fit: contain;
+        }
+
+        .cuadro_intro_hover2 .caption .caption-text h5 {
+            line-height: 1.1;
+        }
+
+        .magazineimg {
+            height: 210px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width:1024px) {
+        .pb-3 {
+            padding-bottom: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .pb-2 {
+            padding-bottom: 20px;
+        }
+
+        .magazine-padd {
+            /*padding-bottom: 60px;*/
+            padding-bottom: 0px;
+        }
+    }
+
+    @media (max-width:767px) {
+        .magazine-padd {
+            /*padding-bottom: 40px;*/
+            padding-bottom: 0px;
+        }
+
+        .carousel-indicators li {
+            margin-right: 4px;
+            margin-left: 4px;
+        }
+
+        .mb-10 {
+            margin-bottom: 5px !important;
+        }
+
+        .top46 {
+            top: 48% !important;
+        }
+
+        .pb-2 {
+            padding-bottom: 20px;
+        }
+
+        .pb-3 {
+            padding-bottom: 20px;
+        }
+
+        .carousel-showsixmoveone .carousel-control.right {
+            margin-right: -6px;
+        }
+
+        .carousel-showsixmoveone .carousel-control.left {
+            margin-left: -6px;
+        }
+
+        .pbt {
+            padding-top: 5px;
+        }
+
+        .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count > a {
+            padding-left: 0px;
+            padding-right: 0px;
+            color: #000000;
+            position: relative;
+            top: 0px;
+            margin-top: 0;
+        }
+
+        .reply-box-my .attachment-badge a, .reply-box-ext .attachment-badge a {
+            max-width: 200px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .new-announcement-alert-modal .common-popup-description-more {
+            width: 77px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .new-announcement-alert-modal .arrow-custom {
+            top: auto !important;
+            bottom: -25px !important;
+        }
+    }
+
+
+    /* end of media and magzine*/
+
+
+
+    .row:after, .row:before {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+    .span6 {
+        float: left;
+        width: 80%;
+    }
+
+    .emojionearea-standalone {
+        float: right;
+    }
+
+    .emojionearea-editor {
+        min-height: 4em !important;
+    }
+
+    .ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+        display: block !important;
+    }
+
+    .panel-body-media-gallery {
+        padding: 5px 0px !important;
+    }
+
+
+
+    .panel-body-magazine {
+        padding: 5px 0px !important;
+    }
+
+    /* new css added on 07/10/2021 */
+
+    .null-survey {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 5px 0px 5px 0px !important;
+    }
+    .null-survey .No-Survey {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 287px;
+    }
+    .Null-Case-learning {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+    .Null-Case-learning .LearningNull {
+        width: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+    .null-QA {
+        min-height: auto !important;
+        height: auto !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+    .null-QA .No-QuestionAnswer {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        /*height: 201px;*/
+        height: 235px;
+    }
+
+
+    @media (max-width: 768px) {
+
+        .ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+            display: block !important;
+        }
+
+        @media (max-width: 360px) and (min-width: 320px) {
+
+            #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-left, #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-right {
+                margin-right: -104px !important;
+                top: 30px !important;
+            }
+
+            .reply-box-my .attachment-badge a, .reply-box-ext .attachment-badge a {
+                max-width: 170px;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+
+</style>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-841</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f90aa62c-caaa-42b6-af98-b5864b31444d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-841, ADMIN-1645029823-841</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">84100.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><body class="custom-scroll">
+	<!--New Messsage toast popup starts-->
+	<div class="toast" id="ToastPopup" style="display:none;">
+	    <div class="toast-body">
+	      <span>New message</span>
+	      <button type="button" class="ml-2 mb-1 close" id="scrollChat">
+	      	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	      </button>
+	    </div>
+	</div>
+	<!--New Messsage toast popup ends-->
+	<!--New Messsage toast popup starts for Announcement-->
+	<div class="toast" id="ToastPopupAnn" style="display:none;">
+	    <div class="toast-body">
+	      <span>New message</span>
+	      <button type="button" class="ml-2 mb-1 close" id="scrollChatAnn">
+	      	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+	      </button>
+	    </div>
+	</div>
+	<!--New Messsage toast popup ends for Announcement-->
+
+    <div class="overlay"></div>
+    <div class="timeline-toggle">
+        <a class="timeline-open">
+            <img src="../SiteAssets/DevelopersCode/DefaultHome/images/timeline-logo-300.png" width="20" height="20" alt="" />
+        </a>
+    </div>
+    <div class="container-fluid container-mobile mb15 my_home_container">
+        <div class="col-lg-9 col-md-12 pl5 pr5">
+            <div class="col-md-12 p0 pb5" style="display: block;">
+                <div class="panel panel-default panel-mb5">
+                    <div class="panel-body p0">
+                        <div class="col-md-12 col-sm-12 info-part-lg pl0 pr0">
+                            <a href="#" class="info-web-plus" id="addslider"><strong>+</strong></a>
+                            <div class="owl-carousel owl-carousel-info-web info-web owl-theme" id="divslider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 p0" style="display: none;">
+                <div class="panel panel-default panel-mb5">
+                    <div class="panel-body panel-body-prayer">
+                        <div class="col-sm-12 p0">
+                            <div class="col-sm-3 col-xs-12 pl5 pr5">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Location</option>
+                                        <option>Location 1</option>
+                                        <option>Location 2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-9 col-xs-12">
+                                <div class="owl-carousel owl-carousel-prayer prayer owl-theme">
+                                    <div class="item">
+                                        <h5 class="event-text-head-new">Fajr - 03:33</h5>
+                                    </div>
+                                    <div class="item">
+                                        <h5 class="event-text-head-new">Dhuhr - 11:52</h5>
+                                    </div>
+                                    <div class="item">
+                                        <h5 class="event-text-head-new">Asr - 15:14</h5>
+                                    </div>
+                                    <div class="item">
+                                        <h5 class="event-text-head-new">Maghrib - 18:39</h5>
+                                    </div>
+                                    <div class="item">
+                                        <h5 class="event-text-head-new">Isha - 20:41</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 p0" style="margin-bottom: 14px !important;">
+                <div class="col-lg-4 col-md-5 col-sm-6 column-sm p0 pr5 mob-QA-align-all">
+                    <div class="col-md-12 p0 pb5" style="display: none;" id="QuestionDiv">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-question">
+                                <span class="question-head-text panel-heading-bg-txt-clr"> Questions & Answers </span>
+                                <a href="#" class="question-plus"><strong>+</strong></a>
+                            </div>
+                            <div class="panel-body panel-body-question custom-scroll" id="QuestionList"> </div>
+                            <div class="question-view pl5 pr5 pb5">
+                                <a href="#" class="my_view_arrow_w" id="ViewQuestion">
+                                    <i class="fa fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p0 pb5" id="BonuslyDiv">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-feed">
+                                <span class="feed-head-text panel-heading-bg-txt-clr" id="Title_Bonusly-1"></span>
+                                <a class="feed-refresh"><strong><i class="fa fa-refresh" aria-hidden="true" onclick="GetBonusly();"></i></strong></a>
+                            </div>
+                            <div class="panel-body panel-body-feed custom-scroll" id="Bonusly"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p0 pb5">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-new-learn">
+                                <span class="events-head-text panel-heading-bg-txt-clr"> Learning </span>
+                                <a class="learn-refresh"></a>
+                            </div>
+                            <div class="panel-body panel-body-new-learn">
+                                <div class="owl-carousel owl-carousel-learn new-learn owl-theme" id="H_learning">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p0 pb5" style="display: none;">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-rss"><span class="rss-head-text panel-heading-bg-txt-clr" id="feed_title"></span> <a class="rss-refresh"><strong><i class="fa fa-refresh" aria-hidden="true" onclick="GetRssFeedUrl();"></i></strong></a></div>
+                            <div class="panel-body panel-body-rss">
+                                <div class="list-group rss-list" id="rssfeed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p0 pb5">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-survey">
+                                <span class="survey-head-text panel-heading-bg-txt-clr">Survey </span>
+                                <a href="#" class="survey-plus" id="addsuryey"><strong>+</strong></a>
+                            </div>
+                            <div class="panel-body panel-body-survey custom-scroll" id="divViewPolls">
+                            </div>
+                            <div class="survey-view pl5 pb5"><a href="#" class="my_view_arrow_w" id="surveyurl"><i class="fa fa-chevron-right"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 p0">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-body panel-body-occasions">
+                                <a href="#" class="occasion-plus"></a>
+                                <div class="owl-carousel owl-carousel-occasions occasions owl-theme" id="employeeOccasions">
+                                    <div class='item active my_occasion_null_case_box'>
+                                        <img src='../SiteAssets/DevelopersCode/DefaultHome/images/occasion.png' class='img-responsive' alt=''>
+                                        <div class='shade-occasion'></div>
+                                        <div class='occasion-content'>
+                                            <h5 class='event-text-head-new'></h5>
+                                            <p><span></span><span></span></p>
+                                            <div class='col-sm-12 col-xs-12 pl5 pr5'>
+                                                <a href="../Pages/occasion.aspx" class="my_view_arrow_w"><i class="fa fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class='panel-heading panel-heading-occsn-date-lg'>
+                                            <span class='occsn-head-date-text-lg panel-heading-bg-txt-clr'>Occasion</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-7 col-sm-6 column-md p0">
+                    <div class="col-md-12 pl5 pr0 pb5 mob-up-events-align-all">
+                        <div class="panel panel-default panel-mb5">
+                            <div class="panel-heading panel-heading-events">
+                                <span class="events-head-text panel-heading-bg-txt-clr">Event</span>
+                            </div>
+                            <div class="panel-body panel-body-events">
+                                <div class="owl-carousel owl-carousel-events events owl-theme" id="EventData">
+                                </div>
+                                <div class="event-view pl5 pr5"><a href="#" class="my_view_arrow_w" id="_ViewEvents"><i class="fa fa-chevron-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pl5 pr0 panel-mb5 pb5 mob-social-media-align-all">
+                        <ul class="nav nav-tabs nav-custom">
+                            <li id="mediatab1" class="active my_active_tab_all" style="display:none">
+                                <a data-toggle="tab" href="#yammer">
+                                    <i id="icon1"></i>
+                                </a>
+                            </li>
+                            <li id="mediatab2" style="display:none">
+                                <a data-toggle="tab" href="#instagram">
+                                    <i id="icon2"></i>
+                                </a>
+                            </li>
+                            <li id="mediatab3" style="display:none">
+                                <a data-toggle="tab" href="#twitter">
+                                    <i id="icon3"></i>
+                                </a>
+                            </li>
+                            <li id="mediatab4" style="display:none">
+                                <a data-toggle="tab" href="#facebook">
+                                    <i id="icon4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-social-area panel-default custom-scroll">
+                            <script type="text/javascript" src=""></script>
+                            <div id="yammer" class="tab-pane fade in active"></div>
+                            <div id="instagram" class="tab-pane fade"></div>
+                            <div id="twitter" class="tab-pane fade"></div>
+                            <div id="facebook" class="tab-pane fade"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 pl5 pr0 mob-media-gallery-align-all">
+                        <ul class="nav nav-tabs nav-custom-gallery">
+                            <li class="active my_active_tab_all"><a data-toggle="tab" href="#MediaGallery">Media Gallery</a></li>
+                            <li style="display: none;"><a data-toggle="tab" href="#Magazine">Magazines</a></li>
+                        </ul>
+                        <div class="tab-content tab-gallery-area panel-default">
+                            <div id="MediaGallery" class="tab-pane fade in active">
+                                <div>
+                                    <div class="panel-body panel-body-media-gallery">
+                                        <div id="" class="carousel slide">
+                                            <div class="carousel-inner ">
+                                                <div class="item active">
+                                                    <div class="col-sm-5 col-xs-5" id="galleryFirstImgThumb"></div>
+                                                    <div class="col-sm-7 col-xs-7">
+                                                        <div class="row media-pad" id="gallerySecondImgThumb">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="media-view pl5 pr5"><a href="#" class="my_view_arrow_w" id="viewmedia-1"><i class="fa fa-chevron-right"></i></a></div>
+                                </div>
+                            </div>
+                            <div id="Magazine" class="tab-pane fade">
+                                <div>
+                                    <div class="panel-body panel-body-magazine">
+                                        <div id="carousel-exampleMagzine" class="carousel slide gall-margin top17" data-ride="carousel">
+                                            <div class="carousel-inner magazine-padd magazinePanel">
+                                                <div class="item active firstCarSoulSlide">
+                                                </div>
+                                                <div class="item SecondCarSoulSlide">
+                                                </div>
+                                                <div class="item thirdCarSoulSlide">
+                                                </div>
+                                            </div>
+                                            <ol class="carousel-indicators magazineCarouselIndicators"></ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="magazine-view pl5 pr5"><a href="#" class="my_view_arrow_w" id="magazineview"><i class="fa fa-chevron-right"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pl5 pr5 slide-area">
+            <div class="timeline-back"> <a class="timeline-close"><i class="fa fa-arrow-circle-left"></i> Back to Home</a></div>
+            <div class="panel panel-default panel-mb5 panel-mob-mt5">
+                <div class="panel-body panel-padding-area custom-scroll">
+                    <div class="popup-menu">
+                        <ul>
+                            <li><a href="#" class="announcement-new" id="Menu_Alert">Alert</a></li>
+                            <li><a href="#" class="announcement-new" id="Menu_announcement">Announcement</a></li>
+                            <li><a href="#" class="general-new" id="Menu_general">Experience</a></li>
+                            <li><a href="#" class="recognition-new" id="Menu_recognition">Recognition</a></li>
+                            <li><a href="#" class="welcome-new" id="Menu_welcome">Welcome</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-heading p0">
+                        <a class="popup-toggle timeline-plus" href="#"><strong>+</strong></a>
+                        <div class="owl-carousel timeline-filter owl-theme">
+                            <a href="#" id="F_All"><span>All</span></a>
+                            <a href="#" id="F_Alert"><span>Alert</span></a>
+                            <a href="#" id="F_Announcement"><span>Announcement</span></a>
+                            <a href="#" id="F_General"><span>Experience</span></a>
+                            <a href="#" id="F_Recognition"><span>Recognition</span></a>
+                            <a href="#" id="F_Welcome"><span>Welcome</span></a>
+                        </div>
+                    </div>
+                    <div class="TimelineDesign custom-scroll">
+
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="col-sm-6 col-xs-5 ma0 text-center pt5 pb5">
+                            <a id="seemorebtn" style="display:none" class="timeline-extend" onclick="ReadTimeLine();"><span>See More</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Slider Back To Home END -->
+
+    </div>
+    <!--new Display Announcements popup starts-->
+    <div id="Announcement_Alert" data-backdrop="static" data-keyboard="false" class="modal fade" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-lg new-announcement-alert-modal">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                        <button type="button" class="close common-modal-close annClosePopup" data-dismiss="modal">×</button>
+                        <div class="panel-heading panel-heading-common-popup">
+                            <span class="common-head-text-popup" id="_ModelHeading">Announcement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+                        <div class="common-image-section-popup">
+                            <img src="../SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png" id="NoticeBgImage" class="img-responsive" alt="" />
+                            <div class="shade-common-popup"></div>
+                        </div>
+
+                        <div class="col-md-9 col-sm-9 col-xs-12 common-content-popup pl20 pr0">
+                            <p class="common-title-popup" id="_TextTitle"></p>
+                            <p><span class="date-time-card" id="AnnouncmntAuthor"></span> | <span class="date-time-card" id="AnnouncmntCreated"> </span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pt15 pl20 pr20 pb15">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-popup-description-text">
+                            <p id="_DtlDescription"><a class="common-popup-description-more panel-heading-bg-txt-clr" href="javascript:void(0);" id="annReadMore" style="display:none;">Read More</a></p>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 common-popup-link p0" id="divLink">
+                            <strong>Link :</strong>
+                            <a href="javascript:void(0);" id="_WebLink"></a>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                        <div class="col-md-12 col-sm-12 col-xs-12 pt10 pl0 pr0">
+                            <div class="attachment-badge-popup mt-10" id="_AttachDocument">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-10 col-sm-12 col-xs-12 p0 ma0">
+                            <div id="imagesgeneral" class="col-sm-12 pt10 pl0 pr0 pb40">
+                                <div id="myCarousel" class="carousel slide common-media-image " data-ride="carousel" data-interval="false">
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" id="AnnouncemntImages">
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control arrow-custom ImageArrow" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control arrow-custom ImageArrow" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Announcement chatting starts -->
+                    <div class="col-lg-12 col-md-12 detail-view-right-chat-area home-announce-alert-chat-area Allow-Comments">
+                        <div class="comment-container">
+                            <div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+                                <ul class="nav experiences-inner-card-btn-item">
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img src="../SiteAssets/Biography/Experience/assets/images/visibility-icon.png">
+                                    </li>
+                                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#viewsAnncmnt" id="TotalHitsAnncmnt">0</a></li>
+                                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img id="like-Img-color-Anncmnt" class="like-img-Ann" src="">
+                                    </li>
+                                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likesAnncmnt" id="TotalLikesAnncmnt">0</a></li>
+                                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img src="../SiteAssets/Biography/Experience/assets/images/chat-icon.png">
+                                    </li>
+                                    <li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#commentsAnncmnt" id="TotalCommentsAnncmnt">0</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="viewsAnncmnt" class="tab-pane fade">
+                                    <ul class="show-comment-panel likes-panel" id="ViewHitListAnncmnt"></ul>
+                                </div>
+                                <div id="likesAnncmnt" class="tab-pane fade">
+                                    <ul class="show-comment-panel likes-panel" id="LikeshitlistAnncmnt"></ul>
+                                </div>
+                                <div id="commentsAnncmnt" class="tab-pane fade in active">
+                                    <div class="chat-main-panel scrollbar-panel" id="hideCommentScrollAnncmnt">
+                                        <div class="row ml0 mr0" id="reply_areaAnncmnt">
+                                            <div class="col-xs-12 text-center pt-15">
+                                                <a style="display:none;cursor:pointer;" class="view-more-replies" id="seemorebtnGeneralAnncmnt">View Previous</a><!-- onclick="ReadTimeLine('')"-->
+                                            </div>
+                                            <div id="CommentsAreaAnncmnt"></div>
+                                            <div id="showInnerLikesAnncmnt" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                                                <div class="likes-close-box">
+                                                    <i id="likeCloseBoxAnncmnt" class="fa fa-times cursor-pointer"></i>
+                                                </div>
+                                                <ul class="likes-panel scrollbar-panel" id="CommentLikeListAnncmnt"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="main-chat-text-area main-chat-text-area-border Stop-Allow-Comments">
+                                        <div id="replyTextareaAnncmnt" class="upload-outer-chip-box-2 upload-outer-chip-box-3">
+                                            <div class="reply-text-line">
+                                                <div class="reply-text-line-cross">
+                                                    <a id="replyHideAnncmnt" type="button"><i class="fa fa-times"></i></a><!--onclick="DeActiveReplyControl()"-->
+                                                </div>
+                                                <a href="#" class="comment-reply-user-name-info">@<span id="replyforuserAnncmnt"></span> :</a>
+                                                <span id="ReplyforMsgAnncmnt"></span>
+                                            </div>
+                                            <div class="attachment-badge chip-box">
+
+                                            </div>
+                                        </div>
+                                        <div class="main-comment-panel">
+                                            <div class="comment-area">
+                                                <div class="custom-form-group" id="">
+                                                    <textarea class="form-control" rows="3" id="commentTextAnncmnt"></textarea>
+                                                </div>
+                                                <div id='NewAttachmentFilesAnncmnt' class="oldfilename1Anncmnt"></div>
+                                                <div id='oldfilenameAnncmnt' class="oldfilenameAnncmnt"></div>
+                                            </div>
+                                            <div class="comment-btn-pannel">
+                                                <div class="btn mr-8">
+                                                    <div id="drop-zone-Anncmnt">
+                                                        <div id="clickHereAnncmnt">
+                                                            <input class="btn-file-upload" id="AnnoncmntUpload" type="file" multiple>
+                                                            <img src="../SiteAssets/Biography/Experience/assets/images/attach-file.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn" id="saveAnncmntChat">
+                                                    <img src="../SiteAssets/Biography/Experience/assets/images/send.png">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Announcement chatting ends -->
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--new Display Announcements popup ends-->
+    <!--Iframe Image POpup starts-->
+    <div class="modal fade" id="AttachmentView" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Attachment View
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                        <div id="doc-viewer" style="height:415px">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                	                <div class="dropdown detail-view-table-btn" style="margin-top:10px; display:inline-block">
+	                   <a href="#" class="btn custom-btn mr-8 wpx-87" id="DownloadDocs" download style="font-size:13px !important;">
+                                <i class="fa fa-download" id="DownloadFileSRC" alt="Download"></i>
+                                <span>Download</span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--Iframe Image POpup ends-->
+    <!-- /Modal for wishes -->
+    <div id="myModalforwish" data-backdrop="static" data-keyboard="false" class="modal fade custom-scroll" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close OccClosePopup" data-dismiss="modal">×</button>
+                    <h3 class="modal-title text-bold" style="background-color: transparent !important;">Write a Message</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12 pb15 pl0 pr0">
+                        <div class="col-md-7 col-sm-6 pl0 pr0">
+                            <div class="col-md-3 col-xs-4 pl0 wish-popup-area-image">
+                                <img src="" id="GEtuserpic" style="width: 92px; height:103px;">
+                            </div>
+                            <div class="col-md-9 col-xs-8">
+                                <p class="wish-popup-name">John Davis</p>
+                                <p class="wish-popup-designation">Sales Manager</p>
+                                <p><span id="Department">Sales</span><span id="pipe"> | </span><span id="City">Gurgaon</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-6 pl0 pr0">
+                            <img src="" class="img-responsive center-block image-area-popup" alt="" id="Bannerimage">
+                        </div>
+
+                        <div class="col-sm-12 pl0 pr0">
+
+                            <div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+                                <ul class="nav experiences-inner-card-btn-item">
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img src="../SiteAssets/Biography/Experience/assets/images/visibility-icon.png?ctag=210426" data-themekey="#">
+                                    </li>
+                                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#views" id="TotalHits">0</a></li>
+                                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img class="like-img" id="like-Img-color" src="../SiteAssets/Biography/Experience/assets/images/like-icon.png" onclick="TriggerLikes();" data-themekey="#">
+                                    </li>
+
+                                    <!-- id="TotalLikes" -->
+                                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likes" id="TotalLikes">20</a></li>
+
+                                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                    <li class="experiences-inner-card-btn-panel-icon">
+                                        <img src="../SiteAssets/Biography/Experience/assets/images/chat-icon.png?ctag=210426" data-themekey="#">
+                                    </li>
+                                    <li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#comments" id="TotalComments">0</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-content">
+                                <div id="views" class="tab-pane fade">
+                                    <ul class="show-comment-panel likes-panel" id="ViewHitList">
+                                        
+                                    </ul>
+                                </div>
+                                <div id="likes" class="tab-pane fade">
+                                    <ul class="show-comment-panel likes-panel" id="Likeshitlist">
+                                        
+                                    </ul>
+                                </div>
+                                <div id="comments" class="tab-pane fade in active">
+                                    <div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+                                        <div class="row ml0 mr0" id="reply_area">
+                                            <div class="col-xs-12 text-center pt-15" id="seemorebtnOccasion">
+                                                <a class="view-more-replies" href="#" onclick="ReadOccasionComment('GetAll', 'Logged_InUser', Ownurl, 'ViewMore');">View Previous</a>
+                                            </div>
+                                            <div id="CommentsArea">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="main-chat-text-area main-chat-text-area-border">
+                                        <div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3">
+                                            <div class="reply-text-line">
+                                                <div class="reply-text-line-cross">
+                                                    <a id="replyHide" type="button" onclick="DeActiveReplyControl()"><i class="fa fa-times"></i></a>
+                                                </div>
+                                                <a href="#" class="comment-reply-user-name-info">@<span id="replyforuser"></span> :</a>
+                                                <span id="ReplyforMsg"></span>
+
+                                            </div>
+                                            <div class="attachment-badge chip-box">
+                                            </div>
+                                        </div>
+                                        <div class="main-comment-panel">
+                                            <div class="comment-area">
+                                                <div class="custom-form-group" id="OccArea">
+                                                    <textarea class="form-control" rows="3" id="commentText"></textarea>
+
+                                                    <!-- style="padding:10px 10px 0px 10px;" -->
+                                                    <div id="NewAttachmentFiles" class="oldfilename1 scrollbar-panel"></div>
+                                                    <div id="oldfilename" class="oldfilename scrollbar-panel"></div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-btn-pannel">
+                                                <div class="btn mr-8">
+                                                    <div id="drop-zone">
+                                                        <div id="clickHere">
+                                                            <input class="btn-file-upload" type="file" name="" id="" multiple="">
+                                                            <img src="../SiteAssets/Biography/Experience/assets/images/attach-file.png" data-themekey="#">
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>		
+                            	                    <button type="button" class="btn" onclick="PushRootComment();">
+                                                    <img src="../SiteAssets/Biography/Experience/assets/images/send.png?ctag=210426">
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Side tab on like click to see who has liked the post  -->
+                                <div id="showInnerLikes" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                                    <div class="likes-close-box">
+                                        <i id="likeCloseBox" class="fa fa-times cursor-pointer"></i>
+                                    </div>
+                                    <ul class="likes-panel scrollbar-panel" id="CommentLikeList">
+                                        
+                                    </ul>
+                                </div>
+                                <!-- Side tab on like click to see who has liked the post  -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+
+    <style>
+        .btn.focus, .btn:focus, .btn:hover {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .shadow3 {
+            box-shadow: 0px -3px 25px -1px #dfdede;
+        }
+
+        .main-area {
+            background: #fff !important;
+            -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin-bottom: 90px;
+            padding: 20px;
+        }
+
+        .text-bold {
+            font-weight: 600;
+        }
+
+        .close {
+            position: absolute;
+            /*    top: 13px;*/
+            right: 15px;
+            color: #ffffff;
+            font-size: 21px;
+            font-weight: bold;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            text-align: right;
+            text-shadow: none;
+            opacity: 1;
+        }
+
+        .modal-header {
+            padding: 10px 15px 10px 15px !important;
+            margin: 0px !important;
+            border-bottom: none;
+            height: 40px;
+            padding: 0px;
+            background: #666;
+            color: #ffffff;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            margin-top: -4px;
+            margin-left: 0px;
+        }
+
+        .wish-view-detail-button a {
+            font-size: 12px;
+            padding: 5px 10px;
+            color: #666;
+            background-color: transparent;
+            border: 1px solid #666 !important;
+            border-radius: 10px;
+            cursor: pointer;
+            line-height: 28px;
+        }
+
+            .wish-view-detail-button a:hover {
+                color: #fff !important;
+                background-color: #333 !important;
+                border: 1px solid #333 !important;
+            }
+
+        .wish-popup-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .wish-popup-designation {
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+
+        .wish-popup-area-image {
+            display: inline-block;
+        }
+
+        .wish-comment-area {
+            width: 80%;
+            float: left;
+            resize: none !important;
+            min-height: 50px !important;
+        }
+
+        .wish-comment-btn {
+            width: 18%;
+            height: 54px;
+            margin-right: 0px;
+            margin-left: 10px !important;
+        }
+
+        .wish-popup-title-text {
+            color: #000;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .wish-popup-description-text {
+            color: #000;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .wish-popup-like-button a {
+            font-size: 23px;
+            color: #ff9e20;
+            background-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .wish-popup-like-button a:hover {
+                color: #e08207;
+            }
+
+        .wish-popup-like-button p {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .question-like-button, .question-reply-button, .question-edit-button, .question-delete-button {
+            display: inline-block;
+        }
+
+            .question-like-button a, .question-reply-button a, .question-edit-button a, .question-delete-button a {
+                font-size: 16px;
+                color: #666;
+                background-color: transparent;
+                border-radius: 10px;
+                cursor: pointer;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+                .question-like-button a:hover, .question-reply-button a:hover, .question-edit-button a:hover, .question-delete-button a:hover {
+                    color: #333;
+                }
+
+            .question-like-button p, .question-reply-button p, .question-edit-button p, .question-delete-button p {
+                display: inline-block;
+                font-size: 14px;
+            }
+
+        .reply-area-box {
+            height: 225px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .reply-box {
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 8px;
+            clear: both;
+        }
+
+            .reply-box h4 {
+                font-size: 14px;
+                margin-top: 0px;
+                word-break: break-word;
+                float: left;
+            }
+
+        .reply-author-detail {
+            font-size: 16px;
+            font-weight: 500;
+            /*display: inline-block;*/
+            display: block;
+        }
+
+            .reply-author-detail span {
+                font-size: 16px;
+                font-weight: 700;
+                display: inline-block;
+            }
+
+        .comment-box {
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 8px;
+        }
+
+        .like-count span {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn-post {
+            background-color: #386cbb;
+            color: #fff;
+            height: 53px;
+        }
+
+        .image-area-popup {
+            display: block;
+            width: 100%;
+            height: 155px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width:767px) and (min-width:320px) {
+            .image-area-popup {
+                display: block;
+                width: 100%;
+                height: 230px;
+                object-fit: none;
+                object-position: unset;
+            }
+        }
+
+
+
+        .custom-scroll::-webkit-scrollbar-track {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .custom-scroll::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #999;
+        }
+    </style>
+
+    <style type="text/css">
+        .common-popup-description-text {
+            font-size: 12px;
+            text-align: justify;
+            word-break: break-word;
+            margin: 0 auto;
+            float: none;
+        }
+
+        .common-popup-like-button a {
+            font-size: 20px;
+            color: #333333;
+            background-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .common-popup-like-button a:hover {
+                color: #386cbb;
+            }
+
+        .common-popup-like-button p {
+            display: inline-block;
+            font-size: 14px;
+            margin: 0px;
+        }
+
+        a.common-popup-show-button {
+            display: block;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            float: left;
+            font-style: italic;
+        }
+
+            a.common-popup-show-button:hover {
+                color: #fff !important;
+            }
+
+        a.common-popup-hide-button {
+            display: block;
+            font-size: 14px;
+            color: #fff;
+            cursor: pointer;
+            float: left;
+            font-style: italic;
+        }
+
+            a.common-popup-hide-button:hover {
+                color: #fff !important;
+            }
+
+        .image-toggle {
+            display: inline-block;
+            float: right;
+        }
+
+        .attachment-badge-popup {
+            display: block;
+            text-align: center;
+        }
+
+            .attachment-badge-popup a {
+                font-size: 12px;
+                margin-top: 3px;
+                margin-left: 3px;
+                padding: 5px 10px;
+                color: #333 !important;
+                background-color: transparent !important;
+                border: 1px solid #999999 !important;
+                width: auto;
+                float: left;
+                border-radius: 20px;
+            }
+
+                .attachment-badge-popup a:first-child {
+                    margin-left: 0px;
+                }
+
+
+        .modal-body {
+            padding: 0px;
+        }
+
+        .modal-body-bg {
+            height: 220px;
+            border-radius: 6px;
+        }
+
+        .common-modal-close {
+            float: right;
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0px 0px 3px #fff;
+            filter: alpha(opacity=20);
+            opacity: .7;
+            padding: 5px 10px 0px 0px !important;
+        }
+
+        .common-modal-header {
+            position: absolute;
+            z-index: 10;
+        }
+
+
+        .common-title-popup {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0px;
+        }
+
+        .common-name-popup {
+            font-size: 14px;
+        }
+
+        .common-type-popup {
+            font-size: 12px;
+        }
+
+        .common-head-text-popup {
+            font-size: 16px;
+            padding: 4px 10px;
+            color: #ffffff;
+            letter-spacing: 1px;
+            background-color: #24bad6 !important;
+            width: 100%;
+            font-weight: 600;
+        }
+
+        .panel-heading-common-popup {
+            padding: 14px 0px 7px 0px !important;
+            border: none !important;
+            background-color: transparent !important;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .common-popup-link {
+            font-size: 12px;
+            float: none;
+            margin: 0 auto;
+        }
+
+            .common-popup-link a {
+                word-break: break-word;
+            }
+
+        .common-content-popup {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            color: #fff;
+            width: 100%;
+            word-break: break-word;
+        }
+
+            .common-content-popup p {
+                margin-bottom: 5px;
+            }
+
+        .shade-common-popup {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.9), rgba(0,0,0,1));
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        .cmt-edit-button, .cmt-delete-button {
+            display: inline-block;
+        }
+
+        .cmt-edit-button, .cmt-delete-button {
+            font-size: 14px;
+            color: #666;
+            background-color: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+            .cmt-edit-button, .cmt-delete-button a:hover {
+                color: #333;
+            }
+
+                .cmt-edit-button p, .cmt-delete-button p {
+                    display: inline-block;
+                    font-size: 12px;
+                    margin: 0px;
+                }
+
+        .reply-area-box {
+            height: 225px;
+            overflow-y: auto;
+            margin-top: 10px;
+            word-break: break-word;
+        }
+
+        .reply-box {
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 8px;
+            clear: both;
+        }
+
+            .reply-box h4 {
+                font-size: 12px;
+                margin-top: 0px;
+                word-break: break-word;
+                float: left;
+            }
+
+        .reply-author-detail {
+            font-size: 14px;
+            font-weight: 500;
+            /*display: inline-block;*/
+            display: block;
+        }
+
+            .reply-author-detail span {
+                font-size: 14px;
+                font-weight: 700;
+                display: inline-block;
+            }
+
+        .comment-box {
+            display: block;
+            float: left;
+            width: 100%;
+            padding: 10px;
+            background: #e6e6e6;
+            border-radius: 8px;
+        }
+
+        .like-count span {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn-post {
+            background-color: #386cbb;
+            color: #fff;
+            height: 53px;
+        }
+
+        .common-media-image .carousel-inner .item img {
+            display: block;
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .carousel-inner {
+            border-radius: 5px;
+        }
+
+        .carousel-indicators-custom {
+            bottom: -30px;
+        }
+
+
+            .carousel-indicators-custom li {
+                background: #D6D6D6 !important;
+                border: 1px solid #D6D6D6 !important;
+                border-radius: 10px;
+            }
+
+            .carousel-indicators-custom .active {
+                width: 12px !important;
+                height: 12px !important;
+                background: #869791 !important;
+            }
+
+        .arrow-custom {
+            background-image: none !important;
+            width: 100% !important;
+            top: 340px !important;
+            left: 13px;
+            color: #333 !important;
+            opacity: 1 !important;
+        }
+
+
+        .left.arrow-custom .glyphicon {
+            left: 0px !important;
+            top: 20px !important;
+            transform: rotate(180deg) translate(20px,0px);
+        }
+
+        .right.arrow-custom .glyphicon {
+            left: 13px !important;
+            top: 19px !important;
+        }
+
+        .common-popup-description-more {
+            -webkit-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+            font-weight: 600;
+        }
+
+            .common-popup-description-more:hover {
+                -webkit-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+                padding-left: 5px;
+            }
+
+        .common-image-section-popup {
+            height: 100%;
+        }
+
+            .common-image-section-popup img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 4px;
+            }
+
+
+        .commom-user-image-popup img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        /*************************Experiences(General) Popup End************************/
+
+        @media (max-width: 767px) and (min-width: 320px) {
+
+            .commom-user-image-popup {
+                text-align: center;
+                position: relative;
+                top: 25px;
+            }
+
+            .commom-user-details-popup {
+                text-align: left;
+                padding-top: 10px;
+            }
+
+            .commom-user-image-popup img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .shade-common-popup {
+                background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.9), rgba(0,0,0,1));
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0px;
+                left: 0px;
+            }
+
+            .my_experience_controls .left.carousel-control {
+                position: absolute;
+                top: -30px;
+                left: 48%;
+                transform: translate(-15px, 0px);
+            }
+
+            .my_experience_controls .right.carousel-control {
+                position: absolute;
+                top: -30px;
+                right: 49%;
+                transform: translate(15px, 0px);
+            }
+        }
+
+        @media (max-width: 425px) and (min-width: 320px) {
+
+            .common-media-image .carousel-inner .item img {
+                display: block;
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .arrow-custom {
+                top: 190px !important;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+        $('.timeline-filter').owlCarousel({
+            speed: 500,
+            margin: 4,
+            autoWidth: true,
+            slideBy: 7,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+    </script>
+
+    <script type="text/javascript">
+        $('.info-filter').owlCarousel({
+            speed: 500,
+            margin: 5,
+            autoWidth: true,
+            slideBy: 7,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 7
+                }
+            }
+        })
+
+        $('.event-filter').owlCarousel({
+            speed: 500,
+            margin: 5,
+            autoWidth: true,
+            slideBy: 7,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 8
+                }
+            }
+        })
+
+        var fixOwl = function () {
+            var $stage = $('.owl-stage'),
+                stageW = $stage.width(),
+                $el = $('.owl-item'),
+                elW = 0;
+            $el.each(function () {
+                elW += $(this).width() + +($(this).css("margin-right").slice(0, -2))
+            });
+            if (elW > stageW) {
+                $stage.width(elW);
+            };
+        }
+
+        $('.prayer').owlCarousel({
+            smartSpeed: 1000,
+            margin: 20,
+            autoWidth: true,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5600,
+            autoplayHoverPause: true,
+            onInitialized: fixOwl,
+            onRefreshed: fixOwl,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 8
+                }
+            }
+        })
+
+        $('.media-filter').owlCarousel({
+            speed: 500,
+            margin: 5,
+            autoWidth: true,
+            slideBy: 7,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 9
+                }
+            }
+        })
+
+        $('.magazine-filter').owlCarousel({
+            speed: 1000,
+            margin: 5,
+            autoWidth: true,
+            slideBy: 7,
+            nav: true,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 9
+                }
+            }
+        })
+        $('.general-popup').owlCarousel({
+            smartSpeed: 800,
+            margin: 5,
+            nav: true,
+            dots: false,
+            slideBy: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#replyTextarea").hide();
+            $("#replyTextareaAnncmnt").hide();
+            
+            $("#employeeOccasions .owl-dots").addClass("custom-scroll");
+
+            $(".timeline-open").click(function () {
+                $(".slide-area").addClass("slide-open");
+                // $(".overlay").show();
+                $("body").css("overflow-y", "hidden");
+            });
+
+            $(".timeline-close").click(function () {
+                $(".slide-area").removeClass("slide-open");
+                $(".overlay").hide();
+                $("body").css("overflow-y", "");
+            });
+
+        });
+
+    </script>
+
+    <script type="text/javascript">
+
+        $(".popup-toggle").click(function () {
+            $(".popup-menu").toggle();
+        });
+
+
+        $(".announcement-new, .welcome-new, .recognition-new, .general-new").on("click", function () {
+            $(".popup-menu").hide();
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $("#showbutton").click(function () {
+            $("#imagesgeneral").show();
+            $("#hidebutton").show();
+            $("#showbutton").hide();
+        });
+
+        $("#hidebutton").click(function () {
+            $("#imagesgeneral").hide();
+            $("#showbutton").show();
+            $("#hidebutton").hide();
+
+        });
+
+        $(document).ready(function () {
+            $("#TextComment").emojioneArea({
+                pickerPosition: "right",
+                tonesStyle: "bullet",
+                events: {
+                    keyup: function (editor, event) {
+
+                    }
+                }
+            });
+
+            $("#_TextComment_").emojioneArea({
+                pickerPosition: "right",
+                tonesStyle: "bullet",
+                events: {
+                    keyup: function (editor, event) {
+
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <!-- CodeCommentScroll -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#replyHide").click(function () {
+                $("#replyTextarea").hide();
+            });
+
+            $(".countInnerLikes").click(function () {
+                $("#showInnerLikes").toggleClass("show-inner-likes-box-hide");
+                $("#CommentsArea").toggleClass("hide-comment-box-scroll");
+            });
+
+            $("#likeCloseBox").click(function () {
+                $("#showInnerLikes").toggleClass("show-inner-likes-box-hide");
+                $("#CommentsArea").toggleClass("hide-comment-box-scroll");
+            });
+
+            userActivityNotificationEntry(_spPageContextInfo.userId, window.location);
+        });
+    </script>
+
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Slider/Slider.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/Timeline.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/Event.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/QuestionAnswer.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/ApplicationLink.js"></script>    
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/moment.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Occasions/Occasions.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/survey/ViewSurvey.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/AnnouncementChatting.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/platform_embed.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/SocialMedia/SocialMediaWebPart.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/MediaGallary/MediaGallary.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/gfapi.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/Bonusly.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/Scripting/Rssfeed.js"></script>
+    <!--<script type="text/javascript" src="../SiteAssets/Attendance/assets/moment.min.js"></script>-->
+
+    <script type="text/javascript">
+
+        $( window ).on("load", function() {
+
+            if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+
+                alert("SAFARI");
+
+                if($(".navbar-custom").is(":visible")) { 
+                    // alert("navbar header is visible, not in teams mode");
+                    //do nothing if visible that means we are not on teams mode
+                }
+                else { 
+                    // this means that we are open in teams mode
+                    // alert("we are in teams mode");
+                    $('.timeline-plus').addClass("mac-teams-mode-timeline-plus");
+                    $('.question-plus').addClass("mac-teams-mode-question-plus");
+                    // $('.survey-plus').addClass("mac-teams-mode-survey-plus");
+                }
+
+            } 
+
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        $("#commentText").emojioneArea({
+            pickerPosition: "right",
+            tonesStyle: "bullet",
+            events: {
+                keyup: function (editor, event) {
+
+                }
+            }
+        });
+        $("#commentTextAnncmnt").emojioneArea({
+            pickerPosition: "right",
+            tonesStyle: "bullet",
+            events: {
+                keyup: function (editor, event) {
+
+                }
+            }
+        });
+
+    </script>
+
+</body>

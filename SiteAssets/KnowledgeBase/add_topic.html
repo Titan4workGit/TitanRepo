@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+
+	<script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+	<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+	<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script> 
+	<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+	<script src="../SiteAssets/EmployeeSynchronous/CommonJS.js"></script>
+	<script src="../SiteAssets/KnowledgeBase/AddTopic.js"></script>
+	<link href="../SiteAssets/KnowledgeBase/Plugin/editor.css" type="text/css">
+
+<style type="text/css">	
+
+div#paletteCntr {
+	width: 140px !important;
+	position: absolute;
+	z-index: 2;
+	background: #ffffff;
+	top: 38px;
+}
+ul#color_ui li:first-child {
+	width: 100% !important;
+	text-align: center;
+	height: 18px;
+	font-size: 12px;
+}
+ul#color_ui li {
+	width:12%;
+	height: 10px;
+	float: left;
+	cursor: pointer;
+}
+ul#bgcolor_ui li:first-child {
+	width: 100% !important;
+	float: left;
+	text-align: center;
+	height: 18px;
+	font-size: 12px;
+}
+ul#bgcolor_ui li {
+	width: 12%;
+	height: 10px;
+	float: left;
+	cursor: pointer;
+}
+.modal-footer {
+	text-align:center !important;
+}
+#statusbar_txtEditor {
+	float: right!important;
+}
+#statusbar_txtEditor>.label{
+	color:black !important;
+}
+select{ 
+	color:#232323 !important;
+}
+.head_border:after {
+	content: "";
+	display: block;
+	width: 50px;
+	margin-top: 10px;
+}
+.table2 td { 
+	border-top:none !important;
+}
+.form-control2 {
+	font-size: 13px;
+	border: 0px !important;
+	color: #232323;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid #6d6c6c !important;
+	border-radius: 0;
+	padding: 3px 0px !important;
+	box-shadow: none;
+	height:auto;
+	padding:10px 0 !important;
+}
+.form-control3 {
+	font-size: 13px;
+	border: 0px !important;
+	color: #555;
+	background-color: transparent;
+	background-image: none;
+	border-bottom: 1px solid #6d6c6c !important;
+	border-radius: 0;
+	padding: 3px 0px !important;
+	box-shadow: none;
+	height:auto;
+	padding:10px 0 !important;
+}
+
+html [type=button] {
+	-webkit-appearance: initial;
+}	
+
+h3.head_border {
+	margin-top: 0px;
+    width: 128px;
+    margin-left: -16px;
+    color: #fff;
+    font-weight: 600;
+    line-height:34px;
+    text-align:center;
+}
+
+.Editor-container {
+	border: 1px solid #a9a9a9;
+}
+#menuBarDiv_txtEditor{
+	background-color: #f5f5f5;
+	border-bottom: 1px solid #a9a9a9;
+}
+.nopadding {
+	padding-left: 0px;
+	padding-right: 0px;
+	/*padding-bottom:20px;*/
+}
+.Editor-editor
+{
+	min-height:300px;
+	/*border:1px solid #ccc;*/
+}
+.btn .caret {
+	margin-left:2px !important;
+}
+.Editor-container a.btn-default {
+	border: 1px solid #ccc !important;
+	font-size:12px !important;
+	padding: 5px 10px !important;
+	margin: 5px !important;
+}
+div#specialchar {
+	position: absolute;
+	background: #ffffff;
+	border: 1px solid #ddd;
+	z-index:2;
+	top: 38px;
+	right: 5px;
+}
+ul#special_ui li {
+	float: left;
+	margin: 5px;
+	cursor:pointer;
+}
+div#InsertImage_txtEditor .tabbable .tab-content {
+	margin-top: 10px;
+}
+div#InsertImage_txtEditor .modal-content .modal-body .tabbable .nav li a {
+	padding: 5px 10px !important;
+	margin-top: 0px !important;
+}
+button.btn.btn-outline-success.go-btn{
+    padding: 5px 12px !important;
+}
+/*Start label styles*/
+.newform {
+	position: relative;		
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top:20px;
+}
+.newform div.form-group {
+	position: relative;
+}
+.newform input {
+	padding: 10px 0 !important;
+	/* margin-bottom: 10px; */
+	border-left: 0 !important;
+	border-top: 0 !important;
+	border-right: 0 !important;
+	border-bottom: 1px solid #999 !important;
+}
+.newform div label{
+	position: absolute;
+	top:-10px;
+	color: #383737;
+	transition: .5s;
+	pointer-events: none;
+	left: 0 !important;
+	margin-top:2px;
+}
+/*.newform input:focus ~ label,
+.newform input:not([value=""]) ~ label,
+.newform textarea:focus ~ label,
+.newform .people-picker-label
+
+{
+	top: -10px;
+	left: 0px;
+	color: #EF5350;
+	font-size: 14px;
+	font-weight: bold;	
+}*/
+.newform input, .newform textarea {
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border: none;
+	color: #232323;
+	border: 1px solid #6d6c6c !important;
+}
+/*End label styles*/
+/*people picker*/
+.mt-15 {
+	margin-top: 15px !important;
+}
+#newEmployeePicker, #customShareingPoplePicker{
+    padding:10px 0px !important;
+}
+#newEmployeePicker #newEmployeePicker_TopSpan{
+	width:100% !important;
+	padding: 0 0 8px 0;
+    border: 1px solid #6d6c6c !important;
+}	
+#newEmployeePicker #newEmployeePicker_TopSpan input {
+	/*border: 1px solid #999 !important;
+	width: 215px !important;
+	margin: 5px 0px 5px 0px !important;*/
+	border: none!important;
+    width: 100px !important;
+    margin: 8px 0px 4px 5px !important;
+}	
+ul, li {
+list-style: unset !important;
+}
+.panel ul {
+  margin-left: 24px !important;
+}
+.add-topic-filter .form-group {
+	float: left;
+	width: 100%;
+}
+.add-topic-filter .form-group label {
+    position: relative;
+    float: left;
+    display: block;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.add-topic-filter .form-group .add-topic-category {
+    padding-left: 0;
+}
+.add-topic-filter .form-group .add-topic-title {
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+.add-topic-filter .form-group .add-topic-co-author #newEmployeePicker {
+    padding: 0px 0px !important;
+}
+.add-topic-co-author {
+    padding-left: 0;
+}
+.add-topic-attachment .people-picker-label {
+    margin-top: 0 !important;
+    margin-right: 15px;
+}
+.add-topic-attachment #txtAttachment {
+    padding: 10px 0px 10px 10px !important;
+}
+
+
+
+.Editor-container a.btn-default{
+  margin:5px 1px !important;	
+}
+
+#newEmployeePicker_TopSpan_InitialHelpText{
+  top:8px !important;	
+}
+
+.ajusting_sec{
+ display:block !important;	
+}
+
+h3.head_border{
+ font-weight:600 !important;
+ font-size:16px !important;	
+ 
+}
+
+/* Responsive css start */
+
+@media (min-width: 992px) {
+
+	.add-topic-filter .form-group {
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-pack: justify;
+	    -webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    -webkit-box-align: center;
+	    -webkit-align-items: center;
+	    -ms-flex-align: center;
+	    align-items: center;
+	}
+	.add-topic-filter .form-group label {
+	    position: relative;
+	     float: left; 
+	     display: inline-block; 
+	     top: 0;
+	     width: auto; 
+	     margin-bottom: 0px; 
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+
+	.newform div label{
+		position: absolute;
+		top:-10px;
+		color: #383737;
+		transition: .5s;
+		pointer-events: none;
+		left: 0 !important;
+		margin-top:20px;
+	}
+	.add-topic-filter-category-main {
+	    margin-top: 0px !important;
+	}
+	.add-topic-filter-title-main {
+	    margin-top: 0px !important;
+	}
+	.add-topic-filter-co-author-main {
+	    margin-top: 0px !important;
+	}
+	.add-topic-co-author {
+	    padding-left: 0;
+	    padding-right: 0;
+	    margin-bottom: 20px;
+	}
+	.add-topic-filter .form-group .add-topic-title {
+	    margin-top: 0;
+	    margin-left: 0;
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.add-topic-filter .form-group .add-topic-category {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.add-topic-footer-buttons button {
+	    margin-bottom: 6px;
+	}
+
+}
+
+/*.mtb-10{
+	margin-top:-15px;
+	margin-left:70px;
+	margin-bottom:10px;
+}
+*/
+/*@media (max-width: 767px) and (min-width: 320px) {
+.mtb-10{
+	margin-top:-15px;
+	margin-left:70px;
+	margin-bottom:35px;
+}
+}*/
+
+</style>  
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-409</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">0278bdf7-138e-4761-b8c3-a8e2aa2dd763</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-409, ADMIN-1645029823-409</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">40900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Department</title></head>
+        
+        
+<body>
+<!-- header -->
+
+<!-- Main -->
+<div class="row">
+<div class="clearfix"></div>
+	<div class="col-xs-12 col-sm-12">
+		<div class="row top15">
+			<div class="col-xs-12 col-sm-12">
+				<div class="panel panel-default shadow2 media-box-height">
+					<div class="panel-body pt-5">
+						<div class="col-xs-12 col-sm-12">
+							<div class="row mt-10">
+							<h3 class="head_border panel-heading-bg-txt-clr" data-localize="AddTopic">Add Topic</h3>				                    
+								<div class="newform add-topic-filter">
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 mt-15 add-topic-filter-category-main">
+											<div class="form-group">
+												<label>
+													<span data-localize="Category">Category</span>
+												</label>
+												<div class="col-xs-12 col-sm-10 add-topic-category">
+													<select class="form-control form-control2" id="ddlCategory">
+														<option>Category</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>	
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-6 mt-15 add-topic-filter-title-main">
+											<div class="form-group">
+												<label><span data-localize="Title">Title</span><span style="color:#ff0000">*</span></label>
+												<div class="col-xs-12 col-sm-10 mtb-10 add-topic-title">
+													<input type="text" name="text"  value="" maxlength="250" onkeyup="this.setAttribute('value', this.value);" id="txtTopicTitle">
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 mt-15  add-topic-filter-co-author-main">
+											<div class="form-group">
+												<label class="people-picker-label" data-localize="CoDashAuthor">Co-Author</label>
+												<div class="col-xs-12 col-sm-10 add-topic-co-author">
+													<div id="newEmployeePicker" class="coauthorpicker" style="" ></div> 
+												</div>
+											</div>
+										</div>
+									</div>
+									
+
+									<div class="form-group">
+										<div class="col-xs-12 col-lg-12 nopadding">
+											<textarea style="min-height:300px" id="txtEditor"></textarea> 
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-xs-12 col-sm-5 mt-15 add-topic-attachment">
+											<div class="form-group ajusting_sec">
+												<label class="people-picker-label" data-localize="Attachments" style="float:left; margin-top:-15px;">Attachments</label>
+												<input name="" type="file" class="form-control form-control2" id="txtAttachment">
+												<span class="form-control form-control3" id="spanAttachmentCollection"></span>
+											</div>
+										</div>
+									</div>
+																	
+								</div>
+
+								<div class="row text-center mt-20 add-topic-footer-buttons">
+									<button type="button" class="btn btn-outline-success btn-sm" id="btnDraft" data-localize="Draft">Draft</button>
+									<button type="button" class="btn btn-outline-success btn-sm" id="btnApproved" data-localize="Publish" >Publish</button>
+									<button type="button" class="btn btn-outline-danger btn-sm" id="btnDelete" style="display:none;" data-localize="Delete">Delete</button>
+									<button type="button" class="btn btn-outline-secondary btn-sm" id="btnCloseTopicForm" data-localize="Cancel">Cancel</button>
+								</div>
+							</div>
+						</div>            
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="clearfix"></div>
+<script src="../SiteAssets/KnowledgeBase/Plugin/editor.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#txtEditor").Editor();
+			});
+		</script>
+                       
+	</body>
+</html>

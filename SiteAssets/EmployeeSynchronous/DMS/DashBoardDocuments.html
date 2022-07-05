@@ -1,0 +1,2618 @@
+﻿<!--<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>-->
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+
+<script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/uploadDocuments.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/CustomizeDMS.js"></script>
+
+<style>
+    .cont_breadcrumbs_1 > ul > li {
+        box-shadow: none !important;
+    }
+
+        .cont_breadcrumbs_1 > ul > li a {
+            color: rgb(96, 94, 92) !important;
+            font-size: 16px !important;
+            padding: 10px 5px !important;
+        }
+
+        .cont_breadcrumbs_1 > ul > li:last-child a {
+            font-weight: 600 !important;
+            color: #2e2e2e !important;
+        }
+
+        .cont_breadcrumbs_1 > ul > li:first-child a {
+            color: rgb(96, 94, 92) !important;
+        }
+
+    #generateBradCumbNew li:not(:first-child):before {
+        content: "\f105 " !important;
+        font-size: 16px !important;
+        color: rgb(96, 94, 92) !important;
+        position: relative;
+        top: -1px;
+        font-family: FontAwesome;
+    }
+
+    #drop-zone2 {
+        width: 40%;
+        min-height: 74px;
+        border: 1px dashed rgb(204, 204, 204);
+        border-radius: 5px;
+        font-family: Arial;
+        text-align: center;
+        position: relative;
+        font-size: 20px;
+        color: #7E7E7E;
+        margin-top: 11px;
+        /* margin-left: 286px; */
+        float: right;
+        margin-right: 12px;
+    }
+
+        #drop-zone2 input {
+            position: absolute;
+            cursor: pointer;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+            width: 99%;
+            /* height:120%;*/
+            height: 230%;
+        }
+        /*Important*/
+
+        #drop-zone2.mouse-over {
+            border: 3px dashed rgba(0, 0, 0, .3);
+            color: #7E7E7E;
+        }
+
+    .required:after {
+        content: "*";
+        color: red;
+    }
+
+    ul#ulcontextMenuItems li a span {
+        margin: 0px 5px;
+    }
+
+    .doc-icon img {
+        margin-bottom: 5px;
+        margin-right: 6px;
+    }
+
+    .pdngbtm10 {
+        padding-bottom: 10px;
+    }
+
+    .tinytable .desc h6, .tinytable .asc h6, .tinytable th h6 {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    tbody#thbodyControl tr {
+        vertical-align: middle !important;
+    }
+
+        tbody#thbodyControl tr td {
+            padding: 0px 5px 5px 0px !Important;
+        }
+
+    table.my-share-group thead tr td {
+        padding-left: 0px;
+        padding-right: 5px;
+    }
+
+    /*.sp-peoplepicker-initialHelpText {
+        top: 7px !Important;
+        padding-left: 10px;
+    }*/
+
+    .sp-peoplepicker-userSpan {
+        margin: 0px 5px 1px 10px !Important;
+    }
+
+    .wrapinbox {
+        width: 100%;
+        height: 371px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 10px;
+    }
+
+        .wrapinbox::-webkit-scrollbar {
+            width: 7px;
+            height: 7px;
+        }
+
+        .wrapinbox::-webkit-scrollbar-thumb {
+            background: #9d9d9d;
+            border-radius: 10px;
+        }
+
+        .wrapinbox::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #b5b5b5;
+            border-radius: 0px;
+        }
+
+    #CustomizeDMSModal .modal-body {
+        padding: 10px 3px !important;
+    }
+
+    #CustomMutipleDms tr td:last-child {
+        vertical-align: middle;
+    }
+
+    #ddlCustomDMS,
+    #SharedProjectDMS,
+    #ddlGuestClient {
+        width: 27% !important;
+    }
+
+    #viewMyDocuments .panel.shadow2 {
+        margin: 50px auto !important;
+        width: 85% !important;
+    }
+
+        #viewMyDocuments .panel.shadow2 .panel-body {
+            padding: 30px !important;
+        }
+
+            #viewMyDocuments .panel.shadow2 .panel-body h2 {
+                margin-top: 0px;
+            }
+
+    h4.panel-title a {
+        text-decoration: none !important;
+    }
+
+    #ulcontextMenuItems li:nth-child(6) .fa-files-o {
+        margin-right: 5px;
+    }
+
+    #mainDivAreaMyDocuments tr td li {
+        margin-left: 0 !important;
+    }
+
+    a.accordion-toggle {
+        text-decoration: none !important;
+    }
+
+
+    .MultiCheckBox {
+        border: 1px solid #c3c3c3;
+        padding: 5px;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+
+        .MultiCheckBox .k-icon {
+            font-size: 15px;
+            float: right;
+            font-weight: bolder;
+            margin-top: -7px;
+            height: 10px;
+            width: 14px;
+            color: #787878;
+        }
+
+    .MultiCheckBoxDetail {
+        display: none;
+        border: 1px solid #e2e2e2;
+        overflow-y: hidden;
+    }
+
+    .MultiCheckBoxDetailBody {
+        overflow-y: scroll;
+    }
+
+    .MultiCheckBoxDetail .cont {
+        clear: both;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+        .MultiCheckBoxDetail .cont:hover {
+            background-color: #cfcfcf;
+        }
+
+    .MultiCheckBoxDetailBody > div > div {
+        float: left;
+    }
+
+    .MultiCheckBoxDetail > div > div:nth-child(1) {
+    }
+
+    .MultiCheckBoxDetailHeader {
+        overflow: hidden;
+        position: relative;
+        height: 28px;
+        background-color: #3d3d3d;
+    }
+
+        .MultiCheckBoxDetailHeader > input {
+            position: absolute;
+            top: 4px;
+            left: 3px;
+        }
+
+        .MultiCheckBoxDetailHeader > div {
+            position: absolute;
+            top: 5px;
+            left: 24px;
+            color: #fff;
+        }
+
+
+
+    #mainDivAreaOffice365 tr td:last-child {
+        text-align: center !important;
+    }
+
+
+
+
+    /***Aug-3-21****/
+
+    .total-item-div {
+        width: auto !important;
+        margin-right: 15px;
+    }
+
+    #tablenavMyDocuments div:last-child {
+        margin-left: 10px;
+    }
+
+    #tablenavMyDepartment {
+        margin-top: 13px;
+    }
+
+    .total-items-value,
+    .total-items-value {
+        margin-left: 3px !important;
+    }
+
+    @media(max-width:820px) {
+
+        #tablenavMyDocuments div:last-child {
+            margin-left: 2px;
+        }
+
+        #tablenavMyDocuments div {
+            margin-right: 5px !important;
+        }
+    }
+
+
+    @media(max-width:767px) {
+
+        .tablefooter-doc-center {
+            margin: 10px 0px;
+        }
+
+        .total-item-div.mang_itm {
+            width: 320px !important;
+            left: 34% !important;
+        }
+    }
+
+
+
+    /***Aug-3-21 end****/
+
+
+
+    @media only screen and (min-width: 320px) and (max-width: 767px) {
+
+        .removeDMS {
+            top: 0 !important;
+            left: 4px !important;
+        }
+
+        #viewMyDocuments .panel.shadow2 {
+            margin: 30px auto !important;
+            width: 98% !important;
+        }
+
+            #viewMyDocuments .panel.shadow2 .panel-body {
+                padding: 15px !important;
+            }
+
+                #viewMyDocuments .panel.shadow2 .panel-body h2 {
+                    font-size: 20px !important;
+                }
+
+        .wrapinbox {
+            overflow-x: scroll;
+        }
+
+        #CustomMutipleDms {
+            min-width: 450px !important;
+        }
+
+        #mainDivAreaOffice365 tr td:last-child li {
+            margin-left: 0 !important;
+        }
+
+        #mainDivAreaOffice365 tr td:last-child a {
+            margin: 5px 2px !important;
+        }
+    }
+
+
+    @media(max-width:700px) {
+
+        #ddlCustomDMS,
+        #SharedProjectDMS,
+        #ddlGuestClient {
+            width: 100% !important;
+        }
+    }
+
+
+
+    @media(max-width:485px) {
+        table.my-share-group {
+            width: 400px !important;
+        }
+
+        .nav-fix {
+            z-index: 0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .modal-content {
+            width: 100% !important;
+        }
+
+        table.my-share-group {
+            margin-left: 5px;
+        }
+
+        .table-width {
+            width: 800px;
+            table-layout: inherit !Important;
+        }
+
+        .ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical, .ms-webpart-cell-horizontal {
+            display: block !important;
+        }
+
+        .container {
+            padding-left: 15px !important;
+        }
+
+        #drop-zone2 {
+            width: 50%;
+            min-height: 74px;
+            border: 1px dashed rgb(204, 204, 204);
+            border-radius: 5px;
+            font-family: Arial;
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+            color: #7E7E7E;
+            float: none;
+            margin: 30px auto 0 auto;
+        }
+    }
+
+    .ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical, .ms-webpart-cell-horizontal {
+        display: block !important;
+    }
+
+    #page-inner {
+        margin: 0px !important;
+    }
+
+    .table-width {
+        width: 100% !important;
+        table-layout: fixed;
+    }
+
+    table.dataTable thead > tr > th, table.dataTable thead > tr > td {
+        padding-right: 10px !important;
+    }
+
+    #page-wrapper {
+        margin: 0 !important;
+        padding: 0px !important;
+    }
+
+    .sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox {
+        border: 0px !important;
+        /*width:167px !important;*/
+        height: auto;
+        padding: 0px !important;
+    }
+
+    .ms-helperText {
+        top: 0px !Important;
+        left: 0px !important;
+    }
+
+    .sp-peoplepicker-userSpan {
+        margin: 0px 5px 1px 0px !Important;
+    }
+
+    input.sp-peoplepicker-editorInput[type=text] {
+        border: 0px !important;
+        padding: 0px 0px 0px 0px !important;
+    }
+
+    .blue-color {
+        color: #1d6ec0 !important;
+    }
+
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    span.multiselect-native-select {
+        position: relative;
+    }
+
+        span.multiselect-native-select select {
+            border: 0 !important;
+            clip: rect(0 0 0 0) !important;
+            height: 1px !important;
+            margin: -1px -1px -1px -3px !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            position: absolute !important;
+            width: 1px !important;
+            left: 50%;
+            top: 30px;
+        }
+
+    .multiselect-container {
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .multiselect-container .input-group {
+            margin: 5px;
+        }
+
+        .multiselect-container > li {
+            padding: 0;
+        }
+
+            .multiselect-container > li > a.multiselect-all label {
+                font-weight: 700;
+            }
+
+            .multiselect-container > li.multiselect-group label {
+                margin: 0;
+                padding: 3px 20px 3px 20px;
+                height: 100%;
+                font-weight: 700;
+            }
+
+            .multiselect-container > li.multiselect-group-clickable label {
+                cursor: pointer;
+            }
+
+            .multiselect-container > li > a {
+                padding: 0;
+            }
+
+                .multiselect-container > li > a > label {
+                    margin: 0;
+                    height: 100%;
+                    cursor: pointer;
+                    font-weight: 400;
+                    padding: 3px 0 3px 30px;
+                }
+
+                    .multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox {
+                        margin: 0;
+                    }
+
+                    .multiselect-container > li > a > label > input[type=checkbox] {
+                        margin-bottom: 5px;
+                    }
+
+    .btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+        padding: 3px 20px 3px 40px;
+    }
+
+    .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+        margin-left: -20px;
+        margin-right: 0;
+    }
+
+    .panel-heading .accordion-toggle:after {
+        /* symbol for "opening" panels */
+        font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+        content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+        float: right; /* adjust as needed */
+        /*color: #ffffff;*/ /* adjust as needed */
+    }
+
+    .panel-heading .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\e080"; /* adjust as needed, taken from bootstrap.css */
+    }
+
+    #page-wrapper {
+        margin: 0 0 0 0px;
+    }
+
+    #tablefooterMyDocuments {
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+
+    #tablenavMyDocuments {
+        float: left;
+    }
+
+        #tablenavMyDocuments img {
+            cursor: pointer;
+        }
+
+        #tablenavMyDocuments div {
+            float: left;
+            margin-right: 15px;
+        }
+
+
+
+    #tablenavMyDepartment {
+        float: left;
+    }
+
+        #tablenavMyDepartment img {
+            cursor: pointer;
+        }
+
+        #tablenavMyDepartment div {
+            float: left;
+            margin-right: 15px;
+        }
+
+
+
+    #tablelocationMyDepartment {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationMyDepartment select {
+            margin-right: 3px;
+        }
+
+        #tablelocationMyDepartment div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    #tablelocationMyDocuments {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationMyDocuments select {
+            margin-right: 3px;
+        }
+
+        #tablelocationMyDocuments div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    .page {
+        margin-top: 2px;
+        font-style: italic;
+    }
+
+    #selectedrowMyDocuments td {
+        /* background:#c6d5e1 */
+    }
+
+    #tablefooter {
+        margin-bottom: 10px;
+    }
+
+    #tablefooterSharedWithMe {
+        height: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tablenavSharedWithMe {
+        float: left;
+    }
+
+        #tablenavSharedWithMe img {
+            cursor: pointer;
+        }
+
+        #tablenavSharedWithMe div {
+            float: left;
+            margin-right: 15px;
+        }
+
+    #tablelocationSharedWithMe {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationSharedWithMe select {
+            margin-right: 3px;
+        }
+
+        #tablelocationSharedWithMe div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    .dropzone2 {
+        color: #333 !important;
+        line-height: 42px;
+        vertical-align: middle;
+        margin-left: 27px !important;
+        margin-top: -5px !important;
+        /* margin-left:20px !important;*/
+    }
+
+    .nniicc-dropzoneParent {
+        width: 27% !important;
+    }
+
+
+    /*  .divDocumetProgressStyle {
+         overflow: hidden;
+        height: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    }*/
+
+    .divInsideDOcumentProgressStyle {
+        float: left;
+        width: 17% !important;
+        height: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        background-color: #5cb85c !important;
+        margin: 0px 0px 0px -165px !important;
+    }
+
+    @media(min-width:992px) {
+
+        .modal-dialog.modal-lg {
+            width: 1200px !important;
+        }
+    }
+
+
+    #mainDivAreaOffice365 tr td li a {
+        margin: 0 5px;
+    }
+
+    #mainDivAreaMyDocuments tr td:last-child {
+        text-align: center !important;
+    }
+
+
+    /*****july-8-21*******/
+
+    #myModalupload .modal-body {
+        padding: 10px !important;
+    }
+
+        #myModalupload .modal-body label.col-sm-2 {
+            padding-left: 4px !important;
+            padding-right: 4px !important;
+        }
+
+
+    /**july-17-21**/
+
+    #customShareingFolderPoplePicker,
+    #customSharingDeptFolderPplPickr {
+        height: auto !important;
+    }
+    
+
+/***Aug-16-21****/
+
+#uploadOrganization .MultiCheckBox,
+#uploadOrganization .MultiCheckBoxDetail{
+
+ width:100% !important;
+ 	
+}
+
+#uploadOrganization .MultiCheckBoxDetail{
+	
+ padding:5px 5px !important;
+
+}  
+
+#uploadOrganization .MultiCheckBox{
+	
+ padding:7px 5px !important;
+
+}   
+.cont div:last-child{
+  margin-left:5px;	
+} 
+
+.cont div:first-child input{
+  margin:0;	
+} 
+
+.dms-my-documents-right-icons ul li a,
+.dms-department-document-right-icons ul li a{
+  cursor:pointer !important;	
+}
+
+   
+</style>
+
+<script>
+    function CreatDocfromTemplateWordFile() {
+        CommonFileCreate('dotx', 1);
+    }
+    function CreatDocfromTemplateExcelFile() {
+        CommonFileCreate('xlsx', 2);
+    }
+    function CreatDocfromTemplatePPTFile() {
+        CommonFileCreate('pptx', 3);
+    }
+    function CommonFileCreate(extensionofFile, fileNumbers) {
+        var event = "";
+        var outOfBoxDocumentUrl = $('#currentSubFolder').val();
+        outOfBoxDocumentUrl = outOfBoxDocumentUrl.slice(25, -1)
+
+        createNewDocumentWithRedirect2(event, myCompanyUrl + '/DocumentManagementSystem/Forms/template.' + extensionofFile,
+           myCompanyUrl + '/DocumentManagementSystem/' + outOfBoxDocumentUrl,
+          'SharePoint.OpenDocuments',
+          false, myCompanyUrl + '/_layouts/CreateNewDocument.aspx?id=' + myCompanyUrl + '/DocumentManagementSystem/Forms/template.' + extensionofFile, true, fileNumbers);
+    }
+
+</script>
+
+<style>
+    /*right click*/
+    .context-menu ul {
+        z-index: 1000;
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: #FFF;
+        color: #333;
+        border-radius: 5px;
+        padding: 0;
+    }
+        /* Each of the items in the list */
+        .context-menu ul li {
+            padding: 8px 12px;
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+            .context-menu ul li:hover {
+                background-color: #DEF;
+            }
+
+
+    /**Aug-10-21***/
+
+    .check_sec h5 {
+        color: #232323;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .two_option_checkbox {
+        padding-left: 18px;
+        margin-top: 5px;
+    }
+
+    .check_sec label {
+        color: #313131 !important;
+    }
+
+
+    @media(max-width:345px) {
+
+        .check_sec .radio-inline {
+            margin-left: 0px;
+        }
+
+        .two_option_checkbox {
+            padding-left: 18px;
+            margin-top: 8px;
+        }
+    }
+</style>
+
+<!------------------Advance Search----------------------------------------------------------->
+
+<div class="divAdvanceSearchContents">
+    <script>
+
+        $(document).ready(function () {
+            $(".divAdvanceSearchContents").load(_spPageContextInfo.webAbsoluteUrl + "/SiteAssets/EmployeeSynchronous/DMS/AdvanceSearch.html");
+        });
+    </script>
+</div>
+
+<!--------------------Context Menu--------------->
+<div class="context-menu" id="context-menu" style="display:none;position:absolute;z-index:10000">
+    <ul style="background:#ffffffe8" id="ulcontextMenuItems"></ul>
+</div>
+
+<!------------------End Here----------------->
+<!------------------Iframe popup starts----------------->
+
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div id="doc-viewer" style="height:400px;width:"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!------------------Iframe popup ends----------------->
+<!---------------------------Start form Properties metadata----------------------------------->
+
+
+<div class="modal fade" id="modalMyDocumentProperties" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="width:600px;">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Update">Update</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal" id="formMyDocumentProperties">
+                    <div class="container">
+                        <h5 style="font-weight:bold">To update properties of required columns, select the checkboxes</h5>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Title" class="">Title</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <input type="text" class="form-control" id="txtMyDocumentPropertiesTitle">
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
+                                <input type="checkbox" id="txtMyDocumentPropertiesTitleCHK">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="DocumentNo">Reference No.</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <input type="text" class="form-control" id="txtMyDocumentPropertiesReferenceNo">
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
+                                <input type="checkbox" id="txtMyDocumentPropertiesReferenceNoCHK">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Type" class="">Type</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <select id="ddlMyDocumentPropertiesType" class="form-control"></select>
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
+                                <input type="checkbox" id="ddlMyDocumentPropertiesTypeCHK">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Author">Author</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <input type="text" class="form-control" id="txtMyDocumentPropertiesAuthor">
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
+                                <input type="checkbox" id="txtMyDocumentPropertiesAuthorCHK">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Details">Details</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-8">
+                                <textarea id="ddlMyDocumentPropertiesDetails" class="form-control"></textarea>
+                            </div>
+                            <div class="col-xs-12 col-sm-1">
+                                <input type="checkbox" id="ddlMyDocumentPropertiesDetailsCHK">
+                            </div>
+                        </div>
+                        <div class="row form-group" style="text-align: center;">
+                            <div class="col-xs-12">
+                                <button type="button" style="display:none" id="btnSubmitFormProperties" class="btn  btn-outline-success"><label data-localize="Update">Update</label></button>
+                                <button type="button" style="display:none" id="btnSubmitFormProperties2" class="btn  btn-outline-success"><label data-localize="Update">Update</label></button>
+                                <button type="button" id="btnCancelFormProperties" class="btn btn-outline-secondary"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---------------------------End Properties form-------------------------------------->
+<!--------------Version HTML---------------->
+
+<div class="modal fade" id="myModalVersions" role="dialog">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="FileVersion">File Version</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <table border='1' style='width:100%'>
+                        <label style="margin-bottom:3px" data-localize="File">File:</label>
+                        <span id="VisionFileName" style="margin-left:3px"></span>
+                        <p style="margin-bottom:-4px"><label data-localize="Title">Title:</label><span id="VisionTitleName" style="margin-left:3px"> </span></p>
+                        <p><label data-localize="Refrence#">Refrence#:</label><span id="VersionreferNo" style="margin-left:3px"></span></p>
+
+
+                        <tr>
+                            <td style='padding: 5px;' data-localize="Version">Version</td>
+                            <td style='padding: 5px;' data-localize="CreatedOn">Created On</td>
+                            <td style='padding: 5px;' data-localize="ModifiedBy">Modified By</td>
+                            <td style='padding: 5px;' data-localize="Download">Download</td>
+                        </tr>
+                        <tbody id="allVersionList"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!------------------------------------------>
+<div class="modal fade" id="myModalShareHistory" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <div class=" row department-header" style="display:none;">
+            <ol class="breadcrumb">
+                <li><h4><b></b></h4></li>
+            </ol>
+        </div>
+        <section class="content panel panel-default mrgn-tp10">
+            <div class="panel-heading   panel-head-4">
+                <div class="panel-title">
+                    <h4 class="h4-color" data-localize="SharingHistory">Sharing History</h4>
+                    <button type="button" class="close h4-color" data-dismiss="modal" style="color: #fff;">&times;</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" style="padding: 0px 31px;">
+
+                        <div id="tableheader" style="height: auto !important;">
+                            <div class="search" style="display:none;">
+
+
+                                <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                            </div>
+                            <div>
+                                <span class="details">
+                                    <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                    <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mrg-top-10m  btm10 container">
+
+                            <label style="margin-bottom:3px;margin-left: -15px;">File:</label><span id="filenamee" style="margin-left:3px"></span>
+                            <p style="margin-bottom:-3px;margin-left: -15px;"><label>Title:</label><span id="filetitle" style="margin-left:3px"> </span></p>
+                            <p style="margin-left: -15px;"><label>Refrence#:</label><span id="referNo" style="margin-left:3px"></span></p>
+
+                            <div class="row sharing_history_shared_to_box">
+
+
+                                <input type="text" id="query1" onkeyup="sorter.search('query1')" placeholder="Type here for search..." class="doc-search" style="width: 200px;font-size: 13px;padding:8px 5px !Important;float: right;margin-bottom: 12px;margin-top: -5px;" />
+
+
+                                <label data-localize="SharedTo">Shared To</label>
+
+                                <select class="form-control" id="shreduser" onchange="sorter.search('shreduser');$('#TotalItemscount').text($('#totalrecords').text());" style="width:25%;margin-left: 76px;margin-top: -28px;"></select>
+
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table cellpadding='0' cellspacing='0' border='1' id='sharedHistoryTable' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                <thead class='panel-heading '>
+                                    <tr>
+                                        <th class='nosort' style="width:2%"><h6><input class="select_all" id="selectAll" type='checkbox'></h6></th>
+                                        <th style="width:20%"><h6 data-localize="SharedTo">Shared To</h6></th>
+                                        <th style="width:20%"><h6 data-localize="PermissionType">Premission Type</h6></th>
+                                        <th style="width:20%"><h6 data-localize="Shared On">Shared On</h6></th>
+                                        <th class='nosort' style='width:20%'><h6 data-localize="Action">Action</h6></th>
+                                    </tr>
+                                </thead>
+                                <tbody class='panel mainDivAllAnnouncements' id="sharedHistoryList"></tbody>
+                            </table>
+
+                            <div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+
+                            <div id="mainDivAllAnnouncements">
+                            </div>
+                        </div>
+                        <div id="tablefooter">
+                            <div id="tablenav">
+                                <div>
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                </div>
+                                <div>
+                                    <select id="pagedropdown"></select>
+                                </div>
+                                <div>
+                                    <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                                </div>
+                            </div>
+                            <div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+
+
+                            <div id="tablelocation">
+
+                                <div>
+
+                                    <span data-localize="LinesPerPage"></span>
+                                    <select onchange="sorter.size(this.value)">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                            </div>
+                        </div>
+                        <div class="sharing_history_modal_btns">
+                            <button type="button" id="revokebtn" style="display:none" onclick="RevokeOnCheckBox()" class="btn  btn-outline-success" style="margin-left:0px;height: 36px !important"><label data-localize="Revoke">Revoke</label></button>
+                            <button type="button" id="revokebtnFolder" style="display:none" onclick="FolderRevoke()" class="btn  btn-outline-success" style="margin-left:0px;height: 36px !important"><label data-localize="Revoke">Revoke_Folder</label></button>
+                            <button type="button" id="" class="btn btn-outline-secondary" data-dismiss="modal"><label data-localize="Close">Close</label></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<!--------------Version HTML---------------->
+<!------------------------------------------>
+<!----------------Documetn Sharing ----------------------->
+<div class="modal fade" id="myModalDocumentSharing" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="width:600px;">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" id="btnCloseShare">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Sharing">Sharing</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal" id="DocumentShareingList">
+                    <div class="container">
+                        <div class="row form-group" id="sharefilename">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="File">File</label>
+                                <input type="text" style="display:none" id="txtSharedDocumetnOnDemandId">
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <label id='lblFileName' class="control-label event-label-right-md"></label>
+                                <label id='lblSelectedFileUrl' style="display:none;"></label>
+                                <label id='lblSelectedCurrentUserDisplayName' style="display:none;"></label>
+                                <label id='lblSelectedCurrentEmail' style="display:none;"></label>
+                            </div>
+                        </div>
+
+                        <div class="row form-group" id="sharefiletilte">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Title">Title</label>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <label id='lblDocTiltle' class="control-label event-label-right-md"></label>
+                            </div>
+                        </div>
+
+                        <div class="row form-group" id="filedocumentname">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="DocumentNo">Document No.</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <label id='lblDocNumber' class="control-label event-label-right-md"></label>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                Share With
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select name="securityLelelele" id="shareingTypePermissionLevel" class="form-control"></select>
+                                <div id="sharedUsersLists" class="peoplepickerdivshowhidesharedUsersLists"></div>
+                            </div>
+                        </div>
+
+                        <!--Organizations name dropdown starts -->
+                        <div class="row form-group orgDropdowndiv" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Organization">Organization</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="ddlOrgName" class="form-control"></select>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown ends -->
+                        <div class="row form-group peoplepickerdivshowhide" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Users">Users</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <div id="customShareingPoplePicker" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">Permission Type</div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="sharedWithPermission" class="form-control">
+                                    <option>--select--</option>
+                                    <option value="Contribute">Contribute (Read, Edit, Download, Delete)</option>
+                                    <option value="Read">Read (Read, Download)</option>
+                                    <option value="Restricted View">Restricted view (Only view, No download)</option>
+                                </select>
+                                <input type="text" style="display:none" id="txtPermissionLevelId">
+                            </div>
+                        </div>
+
+                        <div class="row form-group sendEmailClassHide">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="send-email" data-localize="SendEmail">    Send Email</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <input id="chekedSendEmail" class="" type="checkbox">
+                            </div>
+                        </div>
+                        <!--Added by Priyanshu (17-Feb-2021)-->
+                        <div class="row form-group" style="text-align: center;">
+                            <div class="col-xs-12">
+                                <button type="button" id="btnShareDocumetns" class="btn  btn-outline-success MyDocsShare"><label data-localize="Share"></label></button>
+                                <button type="button" id="mutiplesharefile" onclick="sharmutiplefile()" class="MyDocsShare" style="display:none; margin-right: 3px;color: #ffffff;background-color: #1d6ec0;background-image: none;border-color: #1d6ec0 !Important;padding: 5.1px 12px !important; min-width:85px; border-radius:2px;"><label data-localize="Share" style="margin-bottom:0 !important; font-size:14px;"></label></button>
+                                <button type="button" id="Deptmutiplesharefile" style="display:none; cursor:pointer;margin-right: 3px;color: #ffffff;background-color: #1d6ec0;background-image: none;border-color: #1d6ec0 !Important;padding: 5.1px 12px !important; min-width:85px; border-radius:2px;"><label data-localize="Share" style="margin-bottom:0 !important; font-size:14px;">Share</label></button>
+                                <button type="button" id="btnCancelShareDocumetns" class="btn btn-outline-secondary"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------>
+<!----------------Department Documents Sharing ----------------------->
+<div class="modal fade" id="DeptDocumentSharing" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="width:600px;">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" id="btnCloseDept">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Sharing">Sharing</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal" id="DeptDocShareingList">
+                    <div class="container">
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                Share With
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select name="securityLelelele" id="DeptsharngTypePermissionLevel" class="form-control"></select>
+                            </div>
+                        </div>
+
+                        <!--Organizations name dropdown starts -->
+                        <div class="row form-group orgDropdowndiv" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Organization">Organization</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="ddlDeptOrgName" class="form-control"></select>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown ends -->
+                        <div class="row form-group peoplepickerdivshowhide" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Users">Users</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <div id="DeptDocPoplePicker" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">Permission Type</div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="DeptDocPermission" class="form-control">
+                                    <option>--select--</option>
+                                    <option value="Contribute">Contribute (Read, Edit, Download, Delete)</option>
+                                    <option value="Read">Read (Read, Download)</option>
+                                    <option value="Restricted View">Restricted view (Only view, No download)</option>
+                                </select>
+                                <input type="text" style="display:none" id="DeptPermissionLevelId">
+                            </div>
+                        </div>
+
+                        <div class="row form-group sendEmailClassHide">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="send-email" data-localize="SendEmail">    Send Email</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <input id="DeptchekedSendEmail" class="" type="checkbox">
+                            </div>
+                        </div>
+                        <!--Added by Priyanshu (17-Feb-2021)-->
+                        <div class="row form-group" style="text-align: center;">
+                            <div class="col-xs-12">
+                                <button type="button" id="btnDeptShareDocumetns" class="btn  btn-outline-success"><label data-localize="Share"></label></button>
+                                <button type="button" id="Deptmutiplesharefile" style="display:none; margin-right: 3px;color: #ffffff;background-color: #1d6ec0;background-image: none;border-color: #1d6ec0 !Important;padding: 4.5px 12px !important;"><label data-localize="Share"></label></button>
+                                <button type="button" id="btnDeptDocCancel" class="btn btn-outline-secondary"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------>
+<!----------------Folder Sharing ----------------------->
+<div class="modal fade" id="myModalFolderSharing" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="width:600px;">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color btnCancelShareFolder" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="SharedWith">Shared With</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal" id="DocumentFolderShareingList">
+                    <div class="container">
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Folder">Folder</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <label id='lblFolderTiltle' class="control-label event-label-right-md"></label>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Shared With">Shared With</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="shareingTypeFolderPermissionLevel" class="form-control"></select>
+                                <div id="sharedFolderUsersLists" class="folderpeoplepickerdivshowhidesharedUsersLists"></div>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown starts -->
+                        <div class="row form-group orgDropdowndivFolder" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Organization">Organization</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="ddlOrgNameFolder" class="form-control"></select>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown ends -->
+                        <div class="row form-group folderpeoplepickerdivshowhide" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Users">Users</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <div id="customShareingFolderPoplePicker" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">Permission Type</div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="sharedWithFolderPermission" class="form-control">
+                                    <option>--select--</option>
+                                    <option value="Contribute">Contribute (Read, Edit, Download, Delete)</option>
+                                    <option value="Read">Read (Read, Download)</option>
+                                    <option value="Restricted View">Restricted view (Only view, No download)</option>
+                                </select>
+                                <input type="text" style="display:none" id="txtPermissionLevelId">
+                            </div>
+                        </div>
+                        <div class="row form-group sendEmailClassHideFolder">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="send-email" data-localize="SendEmail">    Send Email</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <input id="chekedFolderSendEmail" class="" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row form-group" style="text-align: center;">
+                            <div class="col-xs-12">
+                                <button type="button" id="btnShareFolder" class="btn  btn-outline-success"><label data-localize="Share"></label></button>
+                                <button type="button" class="btn btn-outline-secondary btnCancelShareFolder"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------>
+<!----------------Folder Sharing for Departmental documents starts ----------------------->
+<div class="modal fade" id="myDeptFolderSharing" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content" style="width:600px;">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" id="btnCloseDeptShare">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="SharedWith">Shared With</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal" id="DeptDocumentFolderSharingList">
+                    <div class="container">
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Folder">Folder</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <label id='lblFolderDeptTiltle' class="control-label event-label-right-md"></label>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Shared With">Shared With</label>
+
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="sharingTypeDeptFolderPermissionLvl" class="form-control"></select>
+                                <div id="deptSharedFolderUsersLists" class="folderpeoplepickerdivshowhidesharedUsersLists"></div>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown starts -->
+                        <div class="row form-group orgDropdowndivDeptFolder" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+
+                                <label data-localize="Organization">Organization</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="ddlOrgNameDeptFolder" class="form-control"></select>
+                            </div>
+                        </div>
+                        <!--Organizations name dropdown ends -->
+                        <div class="row form-group folderpeoplepickerdivshowhide" style="display:none">
+                            <div class="col-xs-12 col-sm-3 control-label">
+                                <label data-localize="Users">Users</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <div id="customSharingDeptFolderPplPickr" class="form-control"></div>
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <div class="col-xs-12 col-sm-3 control-label">Permission Type</div>
+                            <div class="col-xs-12 col-sm-9">
+                                <select id="shareWithDeptFolderPermission" class="form-control">
+                                    <option>--select--</option>
+                                    <option value="Contribute">Contribute (Read, Edit, Download, Delete)</option>
+                                    <option value="Read">Read (Read, Download)</option>
+                                    <option value="Restricted View">Restricted view (Only view, No download)</option>
+                                </select>
+                                <input type="text" style="display:none" id="txtPermissionLevelId">
+                            </div>
+                        </div>
+
+                        <div class="row form-group sendEmailClassHideFolder">
+                            <div class="col-xs-12 col-sm-3">
+                                <label class="send-email" data-localize="SendEmail">    Send Email</label>
+                            </div>
+                            <div class="col-xs-12 col-sm-9">
+                                <input id="chkDeptFolderSendEmail" class="" type="checkbox">
+                            </div>
+                        </div>
+                        <div class="row form-group" style="text-align: center;">
+                            <div class="col-xs-12">
+                                <button type="button" id="btnDeptShareFolder" class="btn  btn-outline-success"><label data-localize="Share"></label></button>
+                                <button type="button" id="btnDeptCancelShareFolder" class="btn btn-outline-secondary"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------Folder Sharing for Departmental documents ends------------------------>
+<!----------------Shared Folder's Files and Folder Sharing ----------------------->
+<div class="modal fade" id="myModalGetSharedFilesFolder" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md" style="width:966px">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Shared">Shared File/Folder</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div>
+                                    <div id='mainTableareaSharedFolder' class='table-responsive'>
+                                        <table cellpadding='0' cellspacing='0' border='1' id='tableTempMyDocumentsSharedFolder' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydocuments_table'>
+                                            <thead class='panel-heading'>
+                                                <tr>
+                                                    <th class='nosort'><h6 data-localize='File'>File</h6></th>
+                                                    <th class='nosort'><h6 data-localize='DocumentNo'>Reference#</h6></th>
+                                                    <th class='nosort'><h6 data-localize='ModifiedDate'>Modified Date</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Details'>Details</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Download'>Download</h6></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class='panel' id="mainDivAreaSharedFolderDocuments"></tbody>
+                                        </table>
+                                    </div>
+                                    <div style='text-align: center;font-size:14px;display:none' id="mydmsNorecordFoundSharedFolder" data-localize='NoRecordFound'>No Record Found</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------------------------>
+
+
+
+
+
+
+
+
+<div id="page-wrapper" class="paddtop0">
+    <div id="page-inner" style="min-height:auto;">
+        <!--  <div class="row">
+                      <div class="col-md-12">
+                       <h3 class="top5"> <span class="glyphicon glyphicon-home icon-size"></span> Home </h3>
+                      </div>
+                  </div>  -->
+        <!-- /. ROW  -->
+        <div class="col-md-12">
+            <div class="row">
+                <!--<ul id="myTab" class="nav nav-tabs nav-justified shadow3 hidden-xs" style="margin-bottom: 15px; margin-top:0px">
+                    <li class="active"><a href="#home" data-toggle="tab">Home </a></li>
+                    <li><a href="#approvals" data-toggle="tab">Approvals </a></li>
+                    <li><a href="#tasks" data-toggle="tab">Tasks </a></li>
+                    <li><a href="#documents" data-toggle="tab">Documents</a></li>
+                </ul><div class="panel-group visible-xs" id="myTab-accordion"></div>-->
+                <!--Tab Content-->
+                <div id="myTabContent" class="tab-content">
+                    <div class="row ">
+                        <div class="tab-pane fade active in" id="home">
+                            <div class="col-lg-12">
+                                <div class="col-md-12">
+                                    <div class="row ">
+                                        <!-- <div class="col-md-4 pull-left"> -->
+                                        <div class="col-md-12 my_documents_groups_btn" style="display:none">
+                                            <div class="row">
+                                                <button type="button" class="btn btn-outline-primary openMuSharingGroupPopup" style="margin-top:10px;margin-bottom:5px;font-size: 13px;" data-toggle="modal" data-target="#myModal">
+                                                    <!-- <span class="glyphicon glyphicon-user"></span> -->
+                                                    <i class="fa fa-users" aria-hidden="true"></i>
+                                                    <!-- data-localize="MySharingGroups" -->
+                                                    <label data-localize=""> My Group </label>
+                                                </button>
+                                                <button id="btnAdvanceSearchMyDocumentModelPopup" type="button" class="btn btn-outline-primary" style="font-size: 13px;margin-bottom:5px;margin-top: 10px;display:none;"><span class="glyphicon glyphicon-search"></span>&nbsp;<label data-localize="Search">Advance Search</label></button>
+
+                                            </div>
+                                        </div>
+                                        <!-- Filter--><!-- Filter-->
+                                        <div class="col-md-5 pull-right col-md-offset-3">
+
+                                            <div class="row">
+
+                                                <div class="input-group">
+                                                    <div class="input-group-btn search-panel">
+
+                                                    </div>
+                                                    <!--<input type="hidden" name="search_param" value="all" id="search_param">
+                                                    <input type="text" class="form-control" name="x" id="query" onkeyup="sorterTableMyDepartmentDocuments.search('query')"  placeholder="Filter...">
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                                    </span>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!--Modal-->
+                                <!-- <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
+                                     <div class="modal-dialog modal-md">
+                                         <div class="modal-content" style="width:600px;">
+                                             <div class="modal-header panel-head-4">
+                                                 <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                                                 <h4 class="modal-title h4-color" data-localize="MySharingGroups"></h4>
+                                             </div>
+                                             <div class="modal-body  table-responsive" style="border:none;margin-bottom:0px;">
+                                                 <div class="form-horizontal">
+                                                     <table class="my-share-group " style='width:100%' id='myTable'>
+                                                         <thead>
+                                                             <tr style="width:30%"><td data-localize="GroupName"></td><td style="width:58%" data-localize="Users"></td><td style="width:15%"></td></tr>
+                                                         </thead>
+                                                         <tbody id="thbodyControl"></tbody>
+                                                     </table>
+                                                     <div class="row text-center">
+                                                     <button type="button"  class="btn  btn-outline-success" style="margin-right: 8px;" onclick="AddRowGroups2();"><label>Add More</label></button>
+                                                     <button type="button" id="addgoupItems" class="btn  btn-outline-success"><label>Submit</label></button>
+                                                     </div>
+                                                 </div>
+                                             </div>
+
+                                         </div>
+                                     </div>
+                                 </div>-->
+
+
+                                <div class="modal fade" id="myModalCreateNewFolder" role="dialog" data-backdrop="static">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modal-content" style="width:600px;">
+                                            <div class="modal-header panel-head-4">
+                                                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title h4-color" data-localize="AddFolder"></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-horizontal">
+                                                    <table style='width:100%' id='myTableCreateNewFolder'>
+                                                        <!--<thead>
+                                                            <tr style="width:30%"><td>GroupName</td><td style="width:58%">Users</td><td style="width:12%"></td></tr>
+                                                        </thead>-->
+                                                        <tbody id="thbodyNewFolder">
+                                                            <tr style="width:30%"><td><label data-localize="FolderName"></label></td><td style="width:70%"><input id="txtnewSubFolderName" style="width:100%" type="text" maxlength="40" /></td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row text-center top15">
+                                                    <!--    <input id="createNewGroup" class="btn  btn-outline-success" type="button" value="Add New Folder" />-->
+                                                    <button type="button" id="createNewGroup" class="btn  btn-outline-success"><label data-localize="AddFolder">Add New Folder</label></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal fade" id="myModalMyDepartmentCreateNewFolder" role="dialog" data-backdrop="static">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modal-content" style="width:600px;">
+                                            <div class="modal-header panel-head-4">
+                                                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title h4-color" data-localize="AddFolder"></h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-horizontal">
+                                                    <table style='width:100%' id='myTableMyDepartmentCreateNewFolder'>
+                                                        <!--<thead>
+                                                            <tr style="width:30%"><td>GroupName</td><td style="width:58%">Users</td><td style="width:12%"></td></tr>
+                                                        </thead>-->
+                                                        <tbody id="thbodyNewFolder">
+                                                            <tr style="width:30%"><td><label data-localize="FolderName"></label></td><td style="width:70%"><input id="txtnewMydepartmentSubFolderName" style="width:100%" type="text" maxlength="40" /></td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row text-center top15">
+                                                    <!--    <input id="createNewGroup" class="btn  btn-outline-success" type="button" value="Add New Folder" />-->
+                                                    <button type="button" id="myDepartmentcreateNewGroup" class="btn  btn-outline-success"><label data-localize="AddFolder">Add New Folder</label></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Modal-->
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <!-- Shared me-->
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default doc-resp-cls" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 my-doc-res-title">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                            <span class="glyphicon glyphicon-user"></span><label data-localize="MyDocuments">My Documents</label>
+                                                        </a>
+
+                                                    </h4>
+
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse in">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-sm-12">
+                                                                <div class=" ">
+                                                                    <div id="tablewrapper">
+                                                                        <div id="divMyDocumentsBradCumbControl" style="margin-top:5px">
+                                                                            <input type="text" id="currentSubFolder" style="display:none;" />
+                                                                            <select class="form-control" id="columnsMyDocuments" style="height:37px;float:left;width:200px;" onchange="sorterMyDocuments.search('query')"></select>
+                                                                            <input type="text" class="form-control" id="MyDocuments" onkeyup="sorterMyDocuments.search('MyDocuments')" placeholder="Filter..." style="width:200px;margin-left:4px;font-size: 13px;padding:8px 5px;float:left">
+                                                                            <!--<input type="button" id="EditMetadata" class="btn  btn-outline-info" style="display:none;width:200px;padding:8px 5px;" value="Edit Metadata" />-->
+                                                                            <div class="dms-my-documents-right-icons">
+                                                                                <ul>
+
+                                                                                    <li style="float:left; font-size:20px; line-height:1.3"><a title="Upload" onclick="UploadDocumentsDashBoard()"><span class="fa fa-upload"></span></a></li>
+                                                                                    <li style="float:left;margin-left: 9px; font-size:20px"><a title="Download" onclick="mutiplefiledownload()"><span class="fa fa-download"></span></a></li>
+                                                                                    <li style="float:left;margin-left: 9px; font-size:20px"><a title="Edit Properties" id="EditMetadata"><span class="fa fa-pencil-square-o"></span></a></li>
+                                                                                    <li style="float:left;margin-left: 9px; font-size:20px"><a title="Share"><span class="fa fa-share-alt" onclick="mutiplefileshare()"></span></a></li>
+                                                                                    <li style="float:left;margin-left: 9px; font-size:20px"><a title="Add Folder"><span class="fa fa-folder-open" data-toggle="modal" data-target="#myModalCreateNewFolder"></span></a></li>
+                                                                                    <li style="float:left; font-size:20px;margin-left: 9px;"><a title="Delete" onclick="deleteMutipleDocuments()"><i class="fa fa-trash"></i></a></li>
+                                                                                    <li class="btnAdvanceSearch" style="float:left; font-size:20px;margin-left: 9px;display:none;"><a title="Search"><img src="../SiteAssets/EmployeeSynchronous/DMS/lens.png" alt="search" style="width:21px"></a></li>
+                                                                                    <li style="float:left; font-size:20px;margin-left: 9px;"><a title="Word" onclick='CreatDocfromTemplateWordFile()' class='link-color pull-right doc-icon ' href='#'><img src="../SiteAssets/EmployeeSynchronous/DMS/word.png" alt="create word document"></a></li>
+                                                                                    <li class="dms-my-documents-right-excel-icon" style="float:left; font-size:20px;margin-left: 9px;"><a title="Excel" onclick='CreatDocfromTemplateExcelFile()' class='link-color pull-right doc-icon ' href='#'><img src="../SiteAssets/EmployeeSynchronous/DMS/xls.png" alt="create excel document"></a></li>
+                                                                                    <li class="dms-my-documents-right-powerpoint-icon" style="float:left; font-size:20px;margin-left: 9px;"><a title="PowerPoint" onclick='CreatDocfromTemplatePPTFile()' class='link-color pull-right doc-icon ' href='#'><img src="../SiteAssets/EmployeeSynchronous/DMS/powerpoint.png" alt="create powerpoint document"></a></li>
+
+                                                                                </ul>
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="search-addnew-res pdng-top-5 pdng-btm-5">
+                                                                            <div class="rcrumbs cont_breadcrumbs_1" id="breadcrumbs" style="width:99.4%">
+                                                                                <ul id="generateBradCumbNew"></ul>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div style="display:none;">
+                                                                            <span class="details">
+                                                                                <input type="text" id="queryMyDocuments" onkeyup="sorterMyDocuments.search('MyDocuments')" placeholder="Filter..." style="width:200px;padding:8px 5px;" />
+
+
+
+                                                                                <div style="display:none;">Records  <span id="startrecordMyDocuments"></span>-<span id="endrecordMyDocuments"></span> PagesOf  <span id="totalrecordsMyDocuments"></span></div>
+                                                                                <div style="display:none;"><a href="javascript:sorterMyDocuments.reset()">Reset </a></div>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div>
+
+                                                                            <div id='mainTablearea' class='table-responsive'>
+                                                                                <table cellpadding='0' cellspacing='0' border='1' id='tableTempMyDocuments' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydocuments_table'>
+
+                                                                                    <thead class='panel-heading'>
+                                                                                        <tr>
+                                                                                            <th class='nosort' style='max-width:30px;width:30px'><h6></h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='File'>File</h6></th>
+                                                                                            <th class='nosort' style='max-width:60px;width:60px'><h6 data-localize='Action'>Action</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='Title'>Title</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='DocumentNo'>Reference#</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='Type'>Type</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='Author'>Author</h6></th>
+                                                                                            <th class='nosort' style='width:14%'><h6 data-localize='ModifiedDate'>Modified Date</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize='Details'>Details</h6></th>
+                                                                                            <th class='nosort' style='width:8%'><h6 data-localize='SharedWith'>Shared With</h6></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody class='panel' id="mainDivAreaMyDocuments"></tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div style='text-align: center;font-size:14px;display:none' id="mydmsNorecordFound" data-localize='NoRecordFound'>No Record Found</div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12" id="tablefooterMyDocuments">
+                                                                            <div class="col-sm-4 col-xs-12 tablefooter-doc-left">
+
+                                                                                <div class="total-item-div mang_itm" style="float:left;margin-top:-15px">
+                                                                                    <label class="total-items" data-localize="TotalItems"></label>  <label class="total-items-value" id="lblMYDocumentCount"></label>
+                                                                                    <!--<button type="button" class="btn btn-outline-primary" style="font-size: 13px;float:right;margin-bottom:5px;margin-right:0px;" data-toggle="modal" data-target="#myModalCreateNewFolder"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;<label data-localize="AddFolder"></label></button>-->
+
+                                                                                </div>
+
+
+                                                                                <div id="tablenavMyDocuments">
+                                                                                    <div>
+                                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterMyDocuments.move(-1, true)" />
+                                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterMyDocuments.move(-1)" />
+                                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterMyDocuments.move(1)" />
+                                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterMyDocuments.move(1, true)" />
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        <select id="pagedropdownMyDocuments"></select>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                        <a href="javascript:sorterMyDocuments.showall()" data-localize="ViewAll">ViewAll </a>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div id="uploadingDocumentsStatus" style="font-size:20px;display:none;">
+                                                                                    <div class="divDocumetProgressStyle">
+                                                                                        <div class="divInsideDOcumentProgressStyle" id="divprogressBarControl" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                                                            File is uploading...
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-4 col-xs-12 tablefooter-doc-center">
+                                                                                <div class="dropzone2" data-localize="DropFilesHereToUpload" style="width:25%;border:1px dashed rgb(204,204,204);text-align: center;-webkit-box-align: center;-webkit-box-pack: center;z-index: 100;cursor: default;margin: -10px 0px 0px 170px;"></div>
+                                                                            </div>
+
+                                                                            <div class="col-sm-4 col-xs-12 tablefooter-doc-right">
+                                                                                <div id="tablelocationMyDocuments">
+                                                                                    <div>
+                                                                                        <span data-localize="LinesPerPage"></span>
+                                                                                        <select class="mydocumentsPagingValue" onchange="sorterMyDocuments.size(this.value)">
+                                                                                            <option value="5">5</option>
+                                                                                            <option value="10" selected="selected">10</option>
+                                                                                            <option value="20">20</option>
+                                                                                            <option value="50">50</option>
+                                                                                            <option value="100">100</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                    <div><span data-localize="Page"></span><span id="currentpageMyDocuments"></span><span data-localize="Of"></span><span id="totalpagesMyDocuments"></span></div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default doc-resp-cls" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 my-doc-res-title">
+                                                    <h4 class="panel-title h4-color ">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                            <span class="glyphicon glyphicon-home"></span><label data-localize="DepartmentDocuments">Department Documents</label>
+                                                        </a>
+                                                        <!--  <a id="btnuploadDepartmentDocuments" style="display:none" href="#" class="link-color pull-right blue-color doc-upload"><span class="glyphicon glyphicon-upload "></span>  <label data-localize="Upload"></label> &nbsp;</a>-->
+                                                        <!--   <a id="btnuploadDepartmentDocuments" style="display:none" href="#" class="link-color pull-right blue-color doc-upload" onclick="departmentDoc.UploadDepartmentDocuments()"><span class="glyphicon glyphicon-upload "></span>  <label data-localize="Upload"></label> &nbsp;</a>-->
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class=" ">
+
+
+
+
+
+
+                                                                    <input type="text" id="currentSubFolderMyDepartment" style="display:none;">
+                                                                    <div class="col-sm-12" id="divMyDocumentsBradCumbControl">
+                                                                        <div class="row search-addnew-res pdng-top-5 pdng-btm-5">
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-department-document-search">
+                                                                                <select id="columnsMyDepartment" class="form-control" onchange="sorterTableMyDepartmentDocuments.search('query')"></select>
+                                                                            </div>
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-department-document-filter">
+                                                                                <input type="text" class="form-control" id="MyDepartment" onkeyup="sorterTableMyDepartmentDocuments.search('MyDepartment')" placeholder="Filter...">
+                                                                            </div>
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-department-document-department">
+                                                                                <label>Department:</label>
+                                                                                <select class="form-control" id="alldepartment"></select>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="col-sm-12 col-xs-12 dms-department-document-right-icons">
+                                                                            <ul>
+                                                                                <li style="float:left; font-size:20px; line-height:1.3"><a id="btnuploadDepartmentDocuments" style="display:none" title="Upload"><span class="fa fa-upload"></span></a></li>
+                                                                                <li style="float:left;margin-left: 9px; font-size:20px"><a title="Download" onclick="mutipleDepartDocfiledownload()"><span class="fa fa-download"></span></a></li>
+                                                                                <li style="float:left;margin-left: 9px; font-size:20px"><a title="Edit Properties" id="EditMetadata2" style="display:none"><span class="fa fa-pencil-square-o"></span></a></li>
+                                                                                <li style="float:left;margin-left: 9px; font-size:20px"><a title="Share"><span class="fa fa-share-alt" id="deptDocShare"></span></a></li>
+                                                                                <li style="float:left;margin-left: 9px; font-size:20px"><a title="Add Folder" id="btnMyDepartmentAddFolders" style="display:none"><span class="fa fa-folder-open" data-toggle="modal" data-target="#myModalMyDepartmentCreateNewFolder"></span></a></li>
+                                                                                <li style="float:left; font-size:20px;margin-left: 9px;"><a title="Delete" id="deleteMutipleDepFile" style="display:none" onclick="deleteMutipleDepartmentDocs()"><i class="fa fa-trash"></i></a></li>
+                                                                                <li class="btnAdvanceSearch" style="float:left; font-size:20px;margin-left: 9px;display:none;"><a title="Search"><img src="../SiteAssets/EmployeeSynchronous/DMS/lens.png" alt="search" style="width:21px"></a></li>
+                                                                                <li style="float:left; font-size:20px;margin-left: 9px;"><a title="Word" onclick='CreatDeptDocfromTemplateWordFile()' class='link-color pull-right doc-icon ' href='javascript:void(0);'><img src="../SiteAssets/EmployeeSynchronous/DMS/word.png" alt="create word document"></a></li>
+                                                                                <li class="dms-my-documents-right-excel-icon" style="float:left; font-size:20px;margin-left: 9px;"><a title="Excel" onclick='CreatDeptDocfromTemplateExcelFile()' class='link-color pull-right doc-icon ' href='javascript:void(0);'><img src="../SiteAssets/EmployeeSynchronous/DMS/xls.png" alt="create excel document"></a></li>
+                                                                                <li class="dms-my-documents-right-powerpoint-icon" style="float:left; font-size:20px;margin-left: 9px;"><a title="PowerPoint" onclick='CreatDeptDocfromTemplatePPTFile()' class='link-color pull-right doc-icon ' href='javascript:void(0);'><img src="../SiteAssets/EmployeeSynchronous/DMS/powerpoint.png" alt="create powerpoint document"></a></li>
+                                                                            </ul>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+
+                                                                    <!--Table for my DepartmentsDocuents -->
+                                                                    <div id="tablewrapper">
+                                                                        <div class="rcrumbs cont_breadcrumbs_1" id="breadcrumbs" style="width:99.4%">
+                                                                            <ul id="generateBradCumbNewMyDepartment"></ul>
+                                                                        </div>
+
+                                                                        <div style="display:none;">
+                                                                            <span class="details">
+                                                                                <input type="text" id="query" onkeyup="sorterTableMyDepartmentDocuments.search('query')" placeholder="Filter..." style="width:200px;padding:8px 5px;" />
+
+                                                                                <div style="display:none;">Records  <span id="startrecordMyDepartment"></span>-<span id="endrecordMyDepartment"></span> PagesOf  <span id="totalrecordsMyDepartment"></span></div>
+                                                                                <div style="display:none;"><a href="javascript:sorterTableMyDepartmentDocuments.reset()">Reset </a></div>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div>
+
+                                                                            <div id='mainTablearea' class='table-responsive'>
+                                                                                <table cellpadding='0' cellspacing='0' border='1' id='tableTempEmpOffice365DepartmentDocument' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+
+                                                                                    <thead class='panel-heading '>
+                                                                                        <tr>
+                                                                                            <th class='nosort' style='max-width:30px;width:30px'><h6></h6></th>
+                                                                                            <th><h6 data-localize="File">File Name</h6></th>
+                                                                                            <th class='nosort' style='max-width:60px;width:60px'><h6 data-localize='Action'>Action</h6></th>
+                                                                                            <th><h6 data-localize="Title">Title</h6></th>
+                                                                                            <th><h6 data-localize="DocumentNo">Reference#</h6></th>
+                                                                                            <th><h6 data-localize="Type">Type</h6></th>
+                                                                                            <th><h6 data-localize="Author">Author</h6></th>
+                                                                                            <th style="width: 150px;"><h6 data-localize="ModifiedDate">Modified Date</h6></th>
+                                                                                            <th><h6 data-localize="Details">Details</h6></th>
+                                                                                            <th class='nosort' style='max-width:120px;width:120px'><h6 data-localize="SharedWith">Shared With</h6></th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody class='panel' id="mainDivAreaOffice365"></tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div style='text-align: center;font-size:14px;display:none' id="norecordFoundMydepartment" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+
+
+
+
+                                                                        </div>
+                                                                        <div id="tablefooterMyDepartment">
+
+                                                                            <div class="total-item-div" style="float:left">
+                                                                                <label class="total-items" data-localize="TotalItems"></label>  <label class="total-items-value" id="lblMYDepartmentsDocumentCount"></label>
+                                                                                <!--<button type="button" id="btnMyDepartmentAddFolders" class="btn btn-outline-primary" style="font-size: 13px;float:right;margin-bottom:5px;margin-right:0px; display:none;" data-toggle="modal" data-target="#myModalMyDepartmentCreateNewFolder"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;<label data-localize="AddFolder"></label></button>-->
+                                                                            </div>
+
+                                                                            <div id="tablenavMyDepartment">
+                                                                                <div>
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocuments.move(-1,true)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocuments.move(-1)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocuments.move(1)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableMyDepartmentDocuments.move(1,true)" />
+                                                                                </div>
+                                                                                <div>
+                                                                                    <select id="pagedropdownMyDepartment"></select>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:sorterTableMyDepartmentDocuments.showall()">ViewAll </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="tablelocationMyDepartment">
+                                                                                <div>
+                                                                                    <span data-localize="LinesPerPage">Lines Per Page </span>
+                                                                                    <select onchange="sorterTableMyDepartmentDocuments.size(this.value)">
+                                                                                        <option value="5">5</option>
+                                                                                        <option value="10" selected="selected">10</option>
+                                                                                        <option value="20">20</option>
+                                                                                        <option value="50">50</option>
+                                                                                        <option value="100">100</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div><span data-localize="Page"></span><span id="currentpageMyDepartment"></span><span data-localize="Of"></span><span id="totalpagesMyDepartment"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default doc-resp-cls" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 ">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                            <span class="glyphicon glyphicon-share-alt"></span><label data-localize="SharedWithMe"></label>
+                                                        </a>
+
+                                                        <a href="javascript:GetDocumentsSharedWithMe()" style="margin-right:19px" class="link-color pull-right doc-upload"><span class="glyphicon glyphicon-refresh"></span></a>
+
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class=" ">
+                                                                    <div class="col-sm-12" id="tablewrapper">
+                                                                        <div class="row search-addnew-res pdng-top-5 pdng-btm-5">
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-shared-with-me-dropdown">
+                                                                                <select class="form-control" id="columnsSharedWithMe" onchange="sorterSharedWithMe.search('query')"></select>
+                                                                            </div>
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-shared-with-me-filter">
+                                                                                <input type="text" class="form-control" id="columnsSharedWithMe1" onkeyup="sorterSharedWithMe.search('columnsSharedWithMe1')" placeholder="Filter...">
+                                                                            </div>
+                                                                            <div class="col-md-3 col-sm-6 col-xs-12 dms-shared-with-me-permission">
+                                                                                <label data-localize="Permission">Permission:</label>
+                                                                                <select class="form-control" id="permissionStatus">
+                                                                                    <option value="permited">Read & Contribute</option>
+                                                                                    <option value="Read">Read Only</option>
+                                                                                    <option value="Contribute">Contribute</option>
+                                                                                    <option value="Restricted View">Restricted View</option>
+                                                                                    <option value="Revoked">Revoked</option>
+                                                                                    <option value="Deleted">Deleted</option>
+                                                                                    <option value="All" selected="selected">All</option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div style="display:none;">
+                                                                            <span class="details">
+
+                                                                                <div style="display:none;">Records  <span id="startrecordSharedWithMe"></span>-<span id="endrecordSharedWithMe"></span> PagesOf  <span id="totalrecordsSharedWithMe"></span></div>
+                                                                                <div style="display:none;"><a href="javascript:sorterSharedWithMe.reset()">Reset </a></div>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div>
+
+                                                                            <div id='mainTablearea' class='table-responsive'>
+                                                                                <table cellpadding='0' cellspacing='0' border='1' id='tableTempSharedWithMe' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+
+                                                                                    <thead class='panel-heading '>
+                                                                                        <tr>
+                                                                                            <th><h6 data-localize="File">File Name</h6></th>
+                                                                                            <th><h6 data-localize="Title">Title</h6></th>
+                                                                                            <th><h6 data-localize="DocumentNo">Reference#</h6></th>
+                                                                                            <th style="display:none"><h6 data-localize="Type">Type</h6></th>
+                                                                                            <th class='nosort'><h6 data-localize="Type">Type</h6></th>    <!--display source doc type-->
+                                                                                            <th><h6 data-localize="SharedBy">Shared By</h6></th>
+                                                                                            <th style="display:none"><h6 data-localize="Sharedtype">Shared type</h6></th>
+                                                                                            <th><h6 data-localize="Sharedfrom">Shared from</h6></th>
+                                                                                            <th><h6 data-localize="Permission">Permission</h6></th>
+                                                                                            <th class='nosort' style='max-width:80px;width:80px'><h6 data-localize="Download">Download</h6></th>
+
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody class='panel' id="mainDivAreaSharedWithMe"></tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div style='text-align: center;font-size:14px' id="documentShareWithmeNoRecordFound" data-localize="NoRecordFound">No Record Found</div>
+                                                                        </div>
+                                                                        <div id="tablefooterSharedWithMe">
+                                                                            <div id="tablenavSharedWithMe">
+                                                                                <div>
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterSharedWithMe.move(-1, true)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterSharedWithMe.move(-1)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterSharedWithMe.move(1)" />
+                                                                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterSharedWithMe.move(1, true)" />
+                                                                                </div>
+                                                                                <div>
+                                                                                    <select id="pagedropdownSharedWithMe"></select>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <a href="javascript:sorterSharedWithMe.showall()" data-localize="ViewAll">ViewAll </a>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id="tablelocationSharedWithMe">
+                                                                                <div>
+                                                                                    <span data-localize="LinesPerPage">Lines Per Page </span>
+                                                                                    <select onchange="sorterSharedWithMe.size(this.value)">
+                                                                                        <option value="5">5</option>
+                                                                                        <option value="10" selected="selected">10</option>
+                                                                                        <option value="20">20</option>
+                                                                                        <option value="50">50</option>
+                                                                                        <option value="100">100</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div><span data-localize="Page"></span><span id="currentpageSharedWithMe"></span><span data-localize="Of"></span><span id="totalpagesSharedWithMe"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default doc-resp-cls oneDrive" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 ">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                            <span class="fa fa-folder-open" style="font-size:20px"></span><label id="CustomizeDMSName"></label>
+                                                        </a>
+
+
+                                                        <a href="#" class="link-color pull-right doc-upload" style="margin-right:20px" onclick="getDataFromDMS()"><span class="fa fa-cog"></span></a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFour" class="panel-collapse collapse">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+
+
+
+                                                                <label style="float: left;margin-top: 12px;margin-left: 22px;" data-localize="SelectDMS" value="">Select DMS:</label>
+                                                                <select class="form-control" id="ddlCustomDMS" style="height:37px;float:left;width:200px;margin-left: 5px;margin-bottom: 6px;margin-top: 6px;"></select>
+                                                                <div id="oneDriveDocuments">
+                                                                    <!-- <script>
+
+                                                                    $(document).ready(function(){
+                                                                         $(".oneDriveDocuments").load(_spPageContextInfo.webAbsoluteUrl+"/SiteAssets/EmployeeSynchronous/OneDrive/index.html");
+                                                                        });
+                                                                         </script>-->
+
+
+
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- Start ProjectDMS-->
+                                            <div class="panel panel-default doc-resp-cls ProjectDMS" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 ">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" onclick="myShareDocumentDMS()">
+                                                            <span class="fa fa-product-hunt" style="font-size:20px"></span><label data-localize="ProjectDocument">Project Document</label>
+                                                        </a>
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFive" class="panel-collapse collapse">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label style="float: left;margin-top: 12px;margin-left: 22px;" data-localize="SelectProject">Select Project:</label>
+                                                                <select class="form-control" id="SharedProjectDMS" style="height:37px;float:left;width:200px;margin-left: 5px;margin-bottom: 6px;margin-top: 6px;"></select>
+
+                                                                <div id="ProjectDocuments">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End ProjectDMS-->
+                                            <!-- Start GuestPortal DMS-->
+                                            <div class="panel panel-default doc-resp-cls GuestDMS" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 ">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                                                            <span class="fa fa-users" style="font-size:20px"></span><label data-localize="GuestPortalDocuments">Guest Portal Documents</label>
+                                                        </a>
+
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseSix" class="panel-collapse collapse">
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <label style="float: left;margin-top: 12px;margin-left: 22px;" data-localize="SelectProject">Select Client:</label>
+                                                                <select class="form-control" id="ddlGuestClient" style="height:37px;float:left;width:200px;margin-left: 5px;margin-bottom: 6px;margin-top: 6px;"></select>
+                                                                <select class="form-control" id="ddlGuestLibrary" style="display:none;height:37px;float:left;width:200px;margin-left: 5px;margin-bottom: 6px;margin-top: 6px;"></select>
+                                                                <div id="GuestDocuments">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Ends GuestPortal DMS-->
+                                        </div>
+                                    </div>
+                                    <!-- Shared me-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Tab Content-->
+    </div>
+</div>
+
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModalupload" role="dialog" ng-app="myApp" ng-controller="myCtrl" data-ng-init="GetSiteUrl()">
+    <div class="container custom-container mrgn-tp10">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header panel-head-4">
+                    <button type="button" class="close h4-color uploadAttachmentCancel" data-dismiss="modal">×</button>
+                    <h4 class="h4-color" data-localize="ManageDocument">Manage Document</h4>
+                </div>
+
+
+                <div class="modal-body">
+                    <div class="form-horizontal">
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label" data-localize="Title">Title</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="titlle" maxlength="50" ng-model="title">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label" data-localize="DocumentNo">Document#</label>
+                            <div class="col-sm-10">
+                                <input type="text" maxlength="20" class="form-control" ng-model="documentNo" id="documentNo">
+                            </div>
+                        </div>
+
+                        <div class="form-group doc-type-div">
+                            <label for="" class="col-sm-2 control-label  required" data-localize="Type">Document Type</label>
+                            <div class="col-sm-10">
+                                <select name="documentType" id="documentType" class="form-control" ng-model="documentType">
+                                    <option value="{{entity}}" ng-repeat="entity in DocumentTYpesBind">{{entity}} </option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label" data-localize="Author">Author</label>
+                            <div class="col-sm-10">
+                                <input type="text" maxlength="50" class="form-control" id="author" ng-model="author">
+                            </div>
+                        </div>
+                        <div class="form-group" style="display:none;">
+                            <label for="" class="col-sm-2 control-label" data-localize="Regarding">Regarding</label>
+                            <div class="col-sm-10">
+                                <input type="text" maxlength="50" class="form-control" ng-model="regarding" id="regarding">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label" data-localize="Details">Details</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="comment" ng-model="details"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group" id="sharedwith">
+                            <label for="" class="col-sm-2 control-label  required" data-localize="ShareWith">Share With</label>
+                            <div class="col-sm-10">
+                                <select name="shareType" id="ddlShareWith" class="form-control" ng-model="accessLevel" ng-change="GetDepartmentOnlyAccessLevelUsers()" ng-show="departmenalDocuments=='Yes'">
+                                    <option>--select--</option>
+                                    <option value="Department Only">Department Only</option>
+                                    <option value="Everyone">Everyone (View, Download)</option>
+                                    <option value="Everyone_Nodownload">Everyone (Only view, No download)</option>
+
+                                </select>
+                                <select name="security" class="form-control" ng-model="secirityLevel" ng-change="GetAllAccessLevelUsers()" ng-show="departmenalDocuments=='No'">
+                                    <option value="{{secirityLevelItem}}" ng-repeat="secirityLevelItem in secirityLevelCollection">{{secirityLevelItem}} </option>
+                                </select>
+                                <!--div id="usersList" style="margin-top: 10px;" ng-show="secirityLevel!='Private' && secirityLevel!='Selective' && secirityLevel!='--select--'">{{usersDisplayName}}</div-->
+                                <div ng-hide="secirityLevel=='Private' || secirityLevel=='Organization'"> <div id="newEmployeePicker" style="margin-top: 10px;" class="form-control"></div> </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group" id="uploadOrganization" ng-hide="secirityLevel!='Organization'">
+                            <label for="" class="col-sm-2 control-label required" data-localize="Organization">Organization</label>
+                            <div class="col-sm-10"><select id="ddlOrgNameUpload" class="form-control"></select></div>
+
+                        </div>
+
+
+                        <div class="form-group" id="changeProperties" ng-show="showhideUploader=='Show'">
+
+                            <div class="col-md-10 col-md-offset-2">
+
+                                <div class="check_sec">
+
+                                    <h5>If any file already exists in destination, then</h5>
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" checked="checked" id="chkReplaceVer">Replace with new version
+                                    </label>
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" id="chkNotUpload">Do not upload
+                                    </label>
+
+                                    <div class="two_option_checkbox">
+
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio1" id="chkKeepExist" checked="checked">Keep existing properties</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio1" id="chkUploadNew">Upload new properties</label>
+                                        </div>
+
+                                    </div><!--two option ed-->
+
+                                </div><!---check_sec ed--->
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group" id="permissionlevel">
+                            <div ng-show="secirityLevel!='Private' && secirityLevel!='--select--'">
+                                <label for="" class="col-sm-2 control-label required" ng-show="departmenalDocuments=='No'" data-localize="PermissionLevel">Permission Level</label>
+                                <div class="col-sm-10">
+                                    <select name="permissionLevel" class="form-control uploadMyDocs" ng-model="permissionLevel" ng-change="getTargetRoleDefinitionId()" ng-show="departmenalDocuments=='No'">
+                                        <option>--select--</option>
+                                        <option value="Contribute">Contribute (Read, Edit, Download, Delete)</option>
+                                        <option value="Read">Read (Read, Download)</option>
+                                        <option value="Restricted View">Restricted view (Only view, No download)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label required" data-localize="File">File</label>
+                            <div class="col-sm-10" id="drop-zone">
+                                <div id="clickHere"> <input name="" id="AttachmentUploadField" type="file" ng-show="showhideUploader=='Show'" style="width: 100%;" class="browse" multiple></div>
+                                <label for="" class="control-label" ng-show="showhideUploader=='Hide'">{{fileName}}</label>
+
+
+
+
+                            </div>
+                            <div id="drop-zone2" class="col-sm-8">
+
+                                <div id="clickHere2">
+                                    <input type="file" name="file" id="file2" multiple />
+                                    <label style="font-size: small;font-weight: 100;margin-top: 15px;">Drag and Drop here</label>
+                                </div>
+
+                            </div>
+
+                            <div id='filename' class=" col-sm-4 oldfilename1" style="padding:10px 0px 0px 0px;width: 45%;margin-left: 65px;"></div>
+                            <div id='OldImagename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-10 doc-btn-center" style="width: 100%;text-align: center;">
+                                <button type="button" id="AttachAttachmentButton" class="btn  btn-outline-success" ng-show="showhideUploader=='Hide'" ng-click="updateFromDashBoard()" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Update"></label></button>
+                                <button type="button" id="DeleteAttachmentButton" class="btn btn-outline-danger" ng-show="showhideUploader=='Hide'" ng-click="deleteDocuments()" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Delete"></label></button>
+                                <button type="button" id="AttachAttachmentButton" class="btn  btn-outline-success" style="margin-bottom: 5px;margin-top: 4px;" ng-show="showhideUploader=='Show'" ng-click="saveAttachment()"><label data-localize="Upload"></label></button>
+                                <button type="button" id="AttachAttachmentCancel" class="btn btn-outline-secondary uploadAttachmentCancel" data-dismiss="modal"><label data-localize="Close"></label></button>
+                                <!--<button type="button" id="DeleteAttachmentButton" class="btn btn-outline-danger" ng-show="showhideUploader=='Hide'" ng-click="deleteDocuments()"><label  data-localize="Delete"></label></button>-->
+                                <!--
+                                        <input id="AttachAttachmentButton" class="btn  btn-outline-success" ng-show="showhideUploader=='Hide'" ng-click="updateFromDashBoard()" style="margin-left:0px !important;" type="button" value="Update" />
+                                        <input id="AttachAttachmentButton" class="btn  btn-outline-success" style="margin-left:0px;" ng-show="showhideUploader=='Show'" ng-click="saveAttachment()" type="button" value="Upload" />
+                                        <input id="AttachAttachmentCancel" class="btn btn-outline-secondary" ng-click="redirectCancel()" type="button" value="Close" />
+                                        <input id="DeleteAttachmentButton" class="btn btn-outline-danger" ng-show="showhideUploader=='Hide'" ng-click="deleteDocuments()" type="button" value="Delete" />
+                                        -->
+
+
+                                <div id="message"></div>
+                                <label id="lblResult" class="result"></label>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Modal CustomizeDMS -->
+<!-- Modal -->
+<div class="modal fade" id="CustomizeDMSModal">
+    <div class="container custom-container mrgn-tp10">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header panel-head-4">
+                    <button type="button" class="close h4-color" data-dismiss="modal">×</button>
+                    <h4 class="h4-color" data-localize="ManageDocument">Customize DMS</h4>
+                </div>
+
+
+                <div class="modal-body">
+                    <div class="form-horizontal">
+
+
+                        <div class="wrapinbox">
+
+                            <table id='CustomMutipleDms' style='width:100%'>
+                                <thead>
+                                    <tr style="width:30%"><td style="width:30%" data-localize="Name">Name</td><td style="width:58%" data-localize="DMSLink">DMS Link</td><td style="width:30%" data-localize="Status">Status</td><td style="width:15%"></td></tr>
+                                </thead>
+                                <tbody id="thbodyDMS">
+                                    <!-- <tr style='vertical-align: top'><td><label style='display:none' class='DMSitemID0'></label><input type='text' class='DMSName0' style='width:100%'></td> <td><input type='text' id='DMSLink0' style='width:100%'></td><td><select style='width:100%' class='DMSStausType0'> <option value="0">--select--</option> <option value="Active">Active</option><option value="Inactive">Inactive</option> </select></td></tr>-->
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                        <div class="form-group">
+                            <!-- <label for="" class="col-sm-2 control-label"></label> -->
+                            <div class="col-sm-10 doc-btn-center dms-manage-doc-popup">
+                                <button type="button" class="btn  btn-outline-success" style="margin-left:0px;margin-bottom: 5px;" onclick="AddNewDms()"><label data-localize="Add Links"></label>Add Links</button>
+                                <button type="button" class="btn  btn-outline-success" id="addNewDms" style="margin-left:0px;margin-bottom: 5px;" onclick="InsertDMSData()"><label data-localize="Submit"></label></button>
+                                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal" style="margin-bottom: 5px;"><label data-localize="Close"></label></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal content  CustomizeDMS-->
+
+<script>
+
+    function uploaddocument() {
+        var DMSType;
+        $("#myModalupload").modal("show");
+        myFunc(DMSType, DeptId, itemID, fileName);
+        GetSiteUrlf(DeptId, itemID, fileName);
+        //resetAllControlClick();
+        $("#AttachmentUploadField").val("");
+        $("#file2").val("");
+        $("#filename").empty();
+        finalFiles = [];
+        FinalFiles4Upload = [];
+        Tcounter = 0;
+        RemoveDuplicate = [];
+
+        //resetcontrol2();
+
+
+    }
+
+
+
+    function editdocument(DMSType, DeptId, itemID, fileName) {
+        $(".context-menu").hide();
+        $("#myModalupload").modal("show");
+        myFunc(DMSType, DeptId, itemID, fileName);
+        GetSiteUrlf(DeptId, itemID, fileName);
+        $("#AttachmentUploadField").val("");
+        $("#file2").val("");
+        $("#filename").empty();
+        finalFiles = [];
+        FinalFiles4Upload = [];
+        Tcounter = 0;
+        RemoveDuplicate = [];
+		$("#uploadOrganization").hide();
+		$("#newEmployeePicker").hide();
+		
+    }
+
+
+
+
+    var dropZoneId = "drop-zone";
+    var dropZone = $("#" + dropZoneId);
+    var inputFile = dropZone.find("input");
+    var finalFiles = [];
+    var FinalFiles4Upload = [];
+    var Tcounter = 0;
+    var RemoveDuplicate = [];
+
+
+    $(document).ready(function () {
+
+
+        //  SP.SOD.executeFunc('sp.js', 'SP.ClientContext', readyFunction);
+        SP.SOD.executeFunc('clientpeoplepicker.js', 'SPClientPeoplePicker', function () {
+            //your code goes here
+            SetPeoplePicker_Multiselect("newEmployeePicker", true);
+        });
+
+
+        $(function () {
+            $("#AttachmentUploadField,#file2").on('change', function (e) {
+                FinalFiles4Upload = [];
+                var fileNum = this.files.length, initial = 0;
+                $.each(this.files, function (idx, elm) {
+                    finalFiles[finalFiles.length] = elm;
+                });
+
+                RemoveDuplicate = [];
+                var arr = finalFiles.filter(function (el) {
+                    if (RemoveDuplicate.indexOf(el.name) == -1) {
+                        RemoveDuplicate.push(el.name);
+                        return true;
+                    }
+                    return false;
+                });
+                console.log(arr);
+                FinalFiles4Upload = ReinitializeArray(arr);
+                $('#filename').empty();
+                for (initial; initial < FinalFiles4Upload.length; initial++) {
+                    if (checkSpecialCharaters(RemoveDuplicate[initial]) == true) {
+                        var changedFileName = RemoveDuplicate[initial].replace(/[&\/\\#,+()$~%'":*?<>{}]/g, '');
+                    }
+                    else {
+                        var changedFileName = RemoveDuplicate[initial];
+                    }
+
+                    $('#filename').append('<div id="file_' + Tcounter + '"><span class="fa-stack fa-lg" style="line-height: 1em; height: 1em;"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i><strong class="fa-stack-1x" style="color:#FFF; font-size:12px; margin-top:2px;">' + Tcounter + '</strong></span> ' + changedFileName + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="removeLine(this.id);" id="file_' + Tcounter + '"" title="remove"></span></div>');
+                    Tcounter = Tcounter + 1;
+                    filevalidation(FinalFiles4Upload[initial].name);
+                }
+
+            });
+
+
+        })
+
+    });
+
+
+    function removeLine(id) {
+        var index = id.split('_')[1];
+        $("#" + id).remove();
+        delete finalFiles[parseInt(index)];
+        RemoveDuplicate = [];
+        //    finalFiles=[];
+
+        var arr = finalFiles.filter(function (el) {
+            if (RemoveDuplicate.indexOf(el.name) == -1) {
+                RemoveDuplicate.push(el.name);
+                return true;
+            }
+            return false;
+        });
+        FinalFiles4Upload = ReinitializeArray(arr);
+    }
+
+
+    function ReinitializeArray(arr) {
+        var newArr = [];
+        var count = 0;
+        for (var i = 0; i < arr.length; i++) {
+            if (i != "exists") {
+                newArr[count++] = arr[i];
+            }
+        }
+        return newArr;
+    }
+
+
+    function filevalidation(valueoffile) {
+        /*if (ValidFiles(valueoffile) == true) {
+        }
+        else {
+            alert(valueoffile + "'This type of file not allowed.'")
+            finalFiles = [];
+            $("#AttachmentUploadField").val("");
+            $("#file2").val("");
+            $("#filename").empty();
+            finalFiles = [];
+            FinalFiles4Upload = [];
+            Tcounter = 0;
+            RemoveDuplicate = [];
+            return false;
+        }*/
+    }
+
+    //}
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/DMS/jquery.rcrumbs.css">
+<script src="../SiteAssets/EmployeeSynchronous/DMS/ViewAllDocuments.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/DepartmentDocuments.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/DepartmentDocSharing.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/DMS/CreateFolder_MyDocs.js'></script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/GuestPortalDMS.js"></script>
+
+<!--------Files Drag drop functionlity-->
+<script src="../SiteAssets/EmployeeSynchronous/DMS/dropzone.js"></script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+    <mso:Order msdt:dt="string">23400.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+    </xml><![endif]-->
+    <title></title>
+</head>
+

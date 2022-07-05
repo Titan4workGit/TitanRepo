@@ -1,0 +1,223 @@
+﻿<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+
+<style>
+.hidden-xs {
+  display:block !important;
+}
+.btm10{
+	padding-bottom:10px;
+}
+    #tabPanelId.nav > li > a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+	background-color:#eee;
+	margin-top:0px; !important;
+	
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tabPanelId.nav-tabs>li.active>a {
+  background-color:#c7c5c5;
+    
+}
+.doc_icon img{
+    padding: 4px;	
+}
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+
+/* new css added on 07/7/2021 */
+
+#TempTableAnnouncements .btn-outline-primary, #TempTableAnnouncements .btn-outline-danger {
+    height: 30px !important;
+    width: 30px !important;
+    line-height: 30px;
+    font-size: 13px !important;
+    text-align: center;
+    border-radius: 50% !important;
+    border: 0;
+    padding: 0 !important;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+    color: #1d6ec0 !important;
+}
+
+#TempTableAnnouncements .btn-outline-primary:hover, #TempTableAnnouncements .btn-outline-danger:hover,
+#TempTableAnnouncements .btn-outline-primary:focus, #TempTableAnnouncements .btn-outline-danger:focus {
+	background-color: #ccc !important;
+} 
+
+/* resposive css start */
+
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+	.table-responsive>.table>tbody>tr>td{
+		white-space: normal !Important;
+	}
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+   min-width: 991px !important;	
+}
+	
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+@media(max-width:478px){
+
+input#query{
+	width:100% !important;	
+}	
+
+button#addManamegemntMessage.pull-right,
+button#closeManagementMessage.pull-right{
+	float: none !important;
+	}	
+.row.manage_phone{
+	text-align:center;	
+}	
+	
+}
+
+</style>
+
+
+
+<div class=" row department-header" style="display:none;">
+	<ol class="breadcrumb">                
+		<li><h4><b>Management Message</b></h4></li>
+	</ol>
+</div>
+
+<section class="content panel panel-default mrgn-tp10">
+<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+<!--			<h4 class="h4-color" style="color: rgb(255, 255, 255) !important;" data-localize="Announcements">Announcements</h4> -->
+<h4 class="h4-color"  data-localize="ManagementMessage">Management Message</h4>
+		</div>
+	</div>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">		
+		<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+		
+		
+		<div id="tableheader" style="height: auto !important;">
+				<div class="search" style="display:none;">
+				   <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+				</div>
+					<div>
+					 <span class="details">
+						<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+						<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+					</span>
+				</div>
+		   </div>
+		  <div class="mrg-top-10m  btm10 container">
+			 <div class="row manage_phone">
+						<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important;" />
+				    	
+				    	<button type="button" id="closeManagementMessage" style="font-size:13px;margin-right:0px;" class="btn btn-outline-secondary  pull-right " data-localize="Close">Close</button>
+
+						<button type="button" id="addManamegemntMessage" style="font-size:13px;" class="btn btn-outline-success pull-right " data-localize="Add">Add</button>	
+			 </div>
+   		  </div>
+   		  
+   		  <div class="table-responsive">
+						<table cellpadding='0' cellspacing='0' border='1' id='TempTableAnnouncements' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading '><tr>
+								<!--<th><h6 data-localize="Title">Title</h6></th>--> 
+								<th style="width:15%"><h6 data-localize="Title">Title</h6></th>
+								<th style="width:15%"><h6 data-localize="DisplayName">Display Name</h6></th> 
+								<th style="width:40%"><h6 data-localize="Message">Message</h6></th>								
+								<th style="width:15%"><h6 data-localize="Company">Company</h6></th> 
+								<th style="width:8%"><h6 data-localize="Order">Order</h6></th>
+								<th class='nosort' style='width:12%'><h6 data-localize="Action">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllAnnouncements'>					
+							</tbody>
+						</table>
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No Record Found</div>
+						
+					<div id="mainDivAllAnnouncements">
+					</div>				
+					</div>
+					
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdown"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize='LinesPerPage'>Lines per page</span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize='Page'>Page</span><span id="currentpage"></span><span data-localize='Of'>Of</span><span id="totalpages"></span></div>
+						</div>
+					</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src="../SiteAssets/AdminPortal/ManagementMessages/ViewManagementMessages.js"></script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-351</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">63076826-dc6a-4c2e-8011-bb79366ee601</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-351, ADMIN-1645029823-351</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">35100.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

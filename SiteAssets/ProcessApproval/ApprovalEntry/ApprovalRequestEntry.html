@@ -1,0 +1,957 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>New Request Entry</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css"
+		href="../SiteAssets/ProcessApproval/NewEntryAssets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+	<!-- <meta charset="utf-8"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/ProcessApproval/NewEntryAssets/css/padding.css">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/ProcessApproval/NewEntryAssets/css/styles.css">
+<!--	<link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'> -->
+	<link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+
+	<style>
+		.modal-header .close-round {
+			min-width: 1em !important;
+		}
+
+		.topsec h3,		.topsec button {
+			display: inline-block;
+		}
+
+		.topsec h3 {
+			margin: 0;
+			padding: 0;
+			font-size: 14px;
+			font-weight: 600;
+			color: #333;
+		}
+
+		.stepingbox {
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			max-height: 400px;
+			overflow: auto;
+		}
+
+		.stepingbox::-webkit-scrollbar-thumb {
+			background: #333333eb;
+			border: 2px solid transparent;
+			background-clip: content-box;
+			-webkit-background-clip: content-box;
+			border-radius: 5px;
+		}
+
+		.stepingbox::-webkit-scrollbar-thumb:hover {
+			background-clip: border-box;
+			-webkit-background-clip: border-box;
+		}
+
+		.stepingbox::-webkit-scrollbar {
+			width: 9px;
+			height: 9px;
+
+		}
+
+		.stepbox>li {
+			padding: 10px;
+			border: 1px solid #cccccc9e;
+			border-radius: 3px;
+			margin-bottom: 15px;
+		}
+
+		.stepbox>li:last-child {
+
+			margin-bottom: 0;
+
+		}
+
+		.topsec button {
+			float: right;
+			background: transparent;
+			border: none;
+			outline: none;
+			opacity: 0;
+			transition: 0.5s;
+			width: 23px;
+			height: 23px;
+			background: #fff;
+			border-radius: 50%;
+			box-shadow: 1px 1px 5px #aeaeae;
+			display: block;
+			text-align: center;
+			padding: 0;
+			line-height: 1.5;
+			min-width: auto !important;
+			transition: 0.5s;
+		}
+
+
+		.stepbox>li:hover .topsec button {
+
+			opacity: 1;
+
+		}
+
+		.imagecontent {
+			padding: 0 10px;
+		}
+
+		.topsec {
+			margin-bottom: 10px;
+		}
+
+		.topsec button.dropdown-toggle::after {
+
+			display: none;
+
+		}
+
+		.stepbox {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			padding: 15px;
+		}
+
+
+		.flexitem {
+			display: -webkit-box;
+			display: -moz-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			-ms-flex-align: center;
+			align-items: center;
+		}
+
+		.imagecontent h4 {
+			font-size: 13px;
+			margin: 0 0 3px 0;
+			padding: 0;
+			color: #333;
+		}
+
+		.imagecontent a {
+			font-size: 12px;
+			color: #1d6ec0;
+			text-decoration: none;
+			word-wrap: break-word;
+			word-break: break-word;
+			word-break: break-all;
+		}
+
+		.imgsetion img {
+			width: 35px;
+			border-radius: 50%;
+			height: 35px;
+		}
+
+		@media(min-width:991px) {
+
+			#stepsapprover .modal-dialog {
+				max-width: 680px;
+			}
+
+		}
+	</style>
+
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3572</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f6831c3d-adac-4ce9-a51d-63ad003c9645</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3572, ADMIN-1645029823-3572</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">357200.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="custom-panel">
+			<div class="panel-head">
+				<h1 class="panel-head-text">New Request</h1>
+			</div>
+			<div class="panel-body pl0 pb0 pr0">
+				<div class="row ml0 mr0 new-request-top-panel">
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="new-request-top-left new-request-top-left-main">
+							<div class="new-request-top-left-img" id="approvalprocessimgid">
+
+							</div>
+							<div class="new-request-top-left-text">
+								<div class="new-request-top-left-title ellipsis-1 mb10" id="requestfrid"></div>
+								<div class="new-request-top-left-title-pera ellipsis-1" id="templatenameid"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="ellipsis-4 font-16" id='titleid'></div>
+					</div>
+					<div class="col-md-4 col-xs-12">
+						<div class="text-right new-request-top-right-change">
+							<a class="btn custom-btn" href="#newRequestModal" data-toggle="modal">Change Template</a>
+						</div>
+						<div class="new-request-top-right">
+							<a class="btn process-approvers-btn" href="#" data-toggle="modal"
+								data-target="#stepsapprover" onclick="ViewStep()">Steps and Approvers</a>
+						</div>
+					</div>
+				</div>
+				<div class="row ml0 mr0 pt15" id="appenddyamicboxes">
+
+				</div>
+				<div class="pl15 pr15 pb15">
+					<div class="approve-process-upload-image-box-btn">
+						<div class="form-group custom-form-group">
+							<input type="file" class="form-control approve-process-upload-image-inp" id="attachmentsupload" name="" multiple >
+							<button type="button" class="btn custom-btn" for="attachmentsupload">Attachements</button>
+						</div>
+						<!--	<input type="file" id="attachmentsupload" multiple />  -->
+						<div class="approve-process-upload-data scrollbar-panel" id="Docfilename">
+							<!--	<div class="approve-process-upload-data-chip">
+                            		<i class="fa fa-paperclip"></i>
+                            		<span>test-img.png</span>
+                            		<i class="fa fa-times-circle-o"></i>
+                            	</div>                           -->
+						</div>
+					</div>
+					<div class="pl15 pr15 pb15 text-center">
+						<button type="button" class="btn custom-btn" id="savenewrequest">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade new-request-modal" id="newRequestModal" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span
+								class="close-icon">&times;</span></button>
+						<h4 class="modal-title">New Request</h4>
+					</div>
+					<div class="modal-body pb0">
+						<div class="row new-request-action-panel scrollbar-panel" id="TemplatedBinding1">
+
+						</div>
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" data-dismiss="modal" id="gettemplatenameid" class="btn custom-btn">New
+							Request</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- stepsapprover popup start -->
+		<div id="stepsapprover" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Steps and Approvers</h4>
+					</div>
+					<div class="modal-body">
+						<div class="stepingbox">
+							<ul class="stepbox" id="stepboxView">
+								<!--	<li>
+						<div class="topsec">
+							<h3>Step1</h3>
+							<button type="button">
+						  	 <i class="fa fa-times" aria-hidden="true"></i>
+						    </button>  
+						</div>
+						<div style="clear:both"></div>
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+
+					</li>
+
+					<li>
+						<div class="topsec">
+							<h3>Step2</h3>
+					<!--	<button type="button">
+						  	 <i class="fa fa-times" aria-hidden="true"></i>
+						    </button>  
+						</div>
+
+						<div style="clear:both"></div>
+
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+
+					</li>
+
+					<li>
+						<div class="topsec">
+							<h3>Step3</h3>
+					<!--		<button type="button">
+						  	 <i class="fa fa-times" aria-hidden="true"></i>
+						    </button>  
+						</div>
+
+						<div style="clear:both"></div>
+
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+
+					</li>  -->
+							</ul>
+						</div>
+
+						<!---rowlbox--->
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<!-- stepsapprover start -->
+
+
+
+
+		<style>
+			#s4-workspace {
+				height: auto !important;
+			}
+		</style>
+		<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+		<!--		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" >    </script>      -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">   </script>
+		<script src="../SiteAssets/ProcessApproval/ApprovalEntry/Common.js"></script>
+		<script src="../SiteAssets/ProcessApproval/TemplateSetup/ProcessSteps_approvers.js?v13"></script>
+
+		<script>
+			$(document).ready(function () {
+
+				$("#newRequestModal").modal();
+				getDynamicTemplateName();
+				$("#gettemplatenameid").click(function () {
+					PageColomnsDisplay().done(function(datarespo){
+						CreateLabesDynamically(datarespo);
+						
+					})
+					
+					apendlogoandtemplate();
+				});
+				$("#savenewrequest").click(function () {
+					saverecord();
+				});
+				$("#attachmentsupload").on('change', function (e) {
+					bindAttachments(this);
+				});
+			});
+			var pagenumbers = "";
+			function getDynamicTemplateName() {
+				$.ajax({
+					async: false,
+					url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=Id,Title,ProcessType,RequestFor,FileIcon,TemplateName,Active&$filter=Active eq '1' and ProcessType eq 'Process'",
+					type: "GET",
+					headers: {
+						"accept": "application/json;odata=verbose",
+					},
+					success: function (data) {
+						const items = data.d.results;
+						var uniqueOb = {}
+						var uniqueArray = items.filter(obj => !uniqueOb[obj.TemplateName] && (uniqueOb[obj.TemplateName] = true));
+						var incrementidnum = 0;
+						$.each(uniqueArray, function (i, value) {
+							incrementidnum++;
+							var iconurl = "";
+							if (value.FileIcon != null && value.FileIcon != undefined && value.FileIcon != "") {
+								iconurl += value.FileIcon['Url'] ? value.FileIcon['Url'] : "";
+							}
+							if(value.ProcessType == 'Document'){
+								iconurl += '../SiteAssets/ProcessApproval/assets/images/default.png'
+							}
+							var template = "<div class='col-md-4 col-sm-6 col-xs-12 new-request-panel'>\
+												<div class='new-request-panel-card new-process-panel-group'>\
+													<div class='panel panel-default radio-container'>\
+														<input type='radio' id='new-process-option"+ incrementidnum + "' requestfor='"+value.RequestFor+"' templateid='"+value.Id+"' value='" + value.TemplateName + "' name='selector'>\
+														<label for='new-process-option"+ incrementidnum + "'></label>\
+														<div class='check'></div>\
+														<div class='panel-heading panel-heading-checked'>\
+															<h4 class='panel-title'>\
+																<a>\
+																	<div class='new-request-top-left'>\
+																		<div class='new-request-top-left-img'>\
+																			<img src='"+ iconurl + "' alt='process'>\
+																		</div>\
+																		<div class='new-request-top-left-text'>\
+																			<div class='new-request-top-left-title ellipsis-1 mb10'>"+ value.RequestFor + "</div>\
+																			<div class='new-request-top-left-title-pera ellipsis-1'>"+ value.TemplateName + "</div>\
+																		</div>\
+																	</div>\
+																</a>\
+															</h4>\
+														</div>\
+													</div>\
+												</div>\
+											</div>";
+							if (value.TemplateName) {
+								$("#TemplatedBinding1").append(template);
+							}
+						});
+
+					},
+					error: function (error) {
+
+					}
+				});
+
+			}
+
+			function saverecord() {
+				var requiredfileds = [];
+				var datacreate = "";
+				var intarr = $("input[name='selector']:checked").attr('templateid');
+				var nu = parseInt(intarr);
+				var requestforstring = $("input[name='selector']:checked").attr('requestfor'); 
+				var requestTile = $('#titleid').text();
+				// $("#appenddyamicboxes").each(function () {
+				// 	datamanipulation += $(this).find(".columnnametxt").val() + ":" + $(this).find(".dynamicvaltext").val(); +",";
+				// })
+				var itemProperties = {};
+				itemProperties['RequestFor'] = requestforstring;
+				itemProperties['Title'] = requestTile;
+				itemProperties['TemplateIDId'] = nu;
+			//	itemProperties['RequestById'] = _spPageContextInfo.userId;
+				$("#appenddyamicboxes > .dynamicdatatexboxes").map(function () {
+					var key = $(this).find(".columnnametxt").attr("value");
+					itemProperties[key] = $(this).find(".dynamicvalfeachcls").val();
+					if($(this).find(".dynamicvalfeachcls").val() == "Yes"){
+						itemProperties[key] = true;
+					}else if($(this).find(".dynamicvalfeachcls").val() == "No"){
+						itemProperties[key] = false;
+					}else{
+						var val = $(this).find(".dynamicvalfeachcls").val();
+						if(val == ''){
+							itemProperties[key] = '0'; //$(this).find(".dynamicvalfeachcls").val();
+						}else{
+							itemProperties[key] = val;
+						}
+					}
+					if ($(this).find(".columnnametxt").attr("mandatorycol") == "true" && $(this).find(".dynamicvalfeachcls").val() == "") {
+						var dyanmicvalhtml = $(this).find(".columnnametxt").attr('alerttext');
+						requiredfileds.push(dyanmicvalhtml);
+					}
+				})
+				//if (datacreate != null) {
+				//var objcreate = "__metadata : { 'type': 'SP.Data.ApprovalProcessListListItem' }", datacreate;
+				//var obj = {
+				//	objcreate					
+				//}
+				var itemType = "SP.Data.ApprovalProcessListListItem";
+				itemProperties["__metadata"] = { "type": itemType };
+				if (requiredfileds.length > 0) {
+					for (let i = 0; i < requiredfileds.length; i++) {
+						alert("Please enter the value for " + requiredfileds[i] + "");
+						break;
+					} 
+					// requiredfileds.map(function (datacall) {
+					// 	alert("Please enter " + datacall + " Value");
+
+					// })
+				} else {  
+					savedata(JSON.stringify(itemProperties));
+				}
+
+				//	} else {
+				//	alert("poraray");
+				//}
+
+			}
+			var savedata = function (data) {
+			var dfd = $.Deferred()
+				$.ajax({
+					url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ApprovalProcessList')/items",
+					type: "POST",
+					async: false,
+					headers: {
+						"accept": "application/json;odata=verbose",
+						"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+						"content-Type": "application/json;odata=verbose"
+					},
+					data: data,
+					/*where Title is column name and you can add more columns by splitting with ,*/
+					success: function (data) {
+						if ($('#attachmentsupload').val() == "") {
+							var NewlyCreatedItemId = data.d.ID;
+							if(SavedStpApprovers.length > 0){
+							/*	$.when(SaveApproverQueue(NewlyCreatedItemId)).done(function (ProcessListResult) {
+							        dfd.resolve(true);
+							        location.reload();					   																								
+								 }); */
+								 SaveApproverQueue(NewlyCreatedItemId)
+							 }else{
+							 	alert('The approval reuqest has been submitted successfully.');
+							 	window.location.replace("approvals.aspx");
+							 }
+						}
+						if ($('#attachmentsupload').val() == "")
+							return;						
+						var fileInput = jQuery('#attachmentsupload');
+						var fileCount = fileInput[0].files.length;
+						console.log(fileCount);
+						var filecountset = 0;
+						for (var i = 0; i < fileCount; i++) {
+							filecountset++;
+							console.log(i);
+							getFileBuffer(i)
+								.done(function (arrayBuffer, index) {
+									console.log("Success " + index);
+									//uploadFileInList(arrayBuffer, id, index);
+									uploadFileSP("ApprovalProcessList", data.d.Id, arrayBuffer, index);
+
+								})
+								.fail(function (error) {
+									console.log(error);
+									LogError("uploadFile", error);
+									alert("Error while uploading file for ID" + id);
+								});
+							if (fileCount == filecountset) {
+								alert("Details are saved successfully.");
+								location.reload();
+							}
+						}
+
+					
+					},
+					error: function (error) {
+						alert(JSON.stringify(error));
+					}
+				});
+			}
+			function apendlogoandtemplate() {
+				var templatename = $("input[name='selector']:checked").val();
+				GetData("/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=*,TemplateName&$filter=TemplateName eq '" + templatename + "'").done(function (templatename) {
+
+					$("#titleid").empty();
+					$("#approvalprocessimgid").empty();
+					$("#templatenameid").empty();
+					$("#templatenameid").empty();
+
+					if (templatename.d.results.length > 0) {
+						$.map(templatename.d.results, function (datre) {
+							var fileiconurl = "";
+							if (datre.FileIcon != null && datre.FileIcon != undefined && datre.FileIcon != "") {
+								fileiconurl += "<img src='" + datre.FileIcon.Url + "' />";
+							}
+							$("#titleid").append(datre.Title);
+							$("#approvalprocessimgid").append(fileiconurl);
+							$("#templatenameid").append(datre.TemplateName);
+							$("#requestfrid").append(datre.RequestFor);
+
+						})
+					}
+				});
+			}
+			function PageColomnsDisplay() {
+				let promi = $.Deferred();
+
+				var templatename = $("input[name='selector']:checked").val();
+				GetData("/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=*,PageColumn,TemplateName&$filter=TemplateName eq '" + templatename + "'").done(function (templatename) {
+					if (templatename.d.results.length > 0) {
+						//$.map(templatename.d.results, function (datre) {
+
+						//	pagenumbers = datre.PageColumn;
+							promi.resolve(templatename.d.results[0].PageColumn)
+						//})
+					}else{
+						
+						promi.resolve("");
+					}
+				});
+				return promi.promise();
+			}
+			function CreateLabesDynamically(pagenumbers) {
+				var templatename = $("input[name='selector']:checked").val();
+				debugger;
+				GetData("/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$select=Title,SequenceNo,DefaultValue,ColumnName,ColumnType,Mandatory,DateValidation,NumberValidation,DropdownValues,Active,TemplateID/Id,TemplateID/TemplateName&$expand=TemplateID&$filter=TemplateID/TemplateName eq '" + templatename + "'&$orderby= SequenceNo asc").done(function (plantsdata) {
+					$("#appenddyamicboxes").empty();
+					resultColumns = plantsdata.d.results;
+					CurrTenplateID = resultColumns[0].TemplateID.Id;
+					if (plantsdata.d.results.length > 0) {
+						$.map(plantsdata.d.results, function (datarepeter) {
+							var dynamictempalte = "";
+							var valuefordefault = "";
+							if (datarepeter.DefaultValue != null && datarepeter.DefaultValue != undefined && datarepeter.DefaultValue != "") {
+								valuefordefault += datarepeter.DefaultValue ? datarepeter.DefaultValue : "";
+							}
+							var datatypeval = "";
+							if (datarepeter.ColumnType != null && datarepeter.ColumnType != undefined && datarepeter.ColumnType != "") {
+								if (datarepeter.ColumnType == "Number") {
+									datatypeval += "onkeypress=' return isNumber(event)'";
+								}
+							}
+							var datetypevalstop = "";
+							if (datarepeter.ColumnType != null && datarepeter.ColumnType != undefined && datarepeter.ColumnType != "") {
+								if (datarepeter.ColumnType == "Date" || datarepeter.ColumnType == "DueDate") {
+									datetypevalstop += "stopenterdata"; 
+								}
+							}
+							var setnumberlimit = "";
+							if(datarepeter.NumberValidation != null && datarepeter.NumberValidation != undefined && datarepeter.NumberValidation != ""){
+                                if(datarepeter.NumberValidation == "1 to 5"){
+									setnumberlimit +="maxlength='5'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 10"){
+									setnumberlimit +="maxlength='10'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 20"){
+									setnumberlimit +="maxlength='20'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 30"){
+									setnumberlimit +="maxlength='30'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 40"){
+									setnumberlimit +="maxlength='40'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 50"){
+									setnumberlimit +="maxlength='50'";
+								}
+								else if(datarepeter.NumberValidation == "1 to 100"){
+									setnumberlimit +="maxlength='100'";
+								}								
+							}
+							var datalimitset = "";
+							if (datarepeter.ColumnType != null && datarepeter.ColumnType != undefined && datarepeter.ColumnType != "") {
+								if (datarepeter.ColumnType == "Text") {
+									datalimitset += "maxlength='250'"; 
+								}
+							}
+
+							
+							if (pagenumbers == 1) {
+								if (datarepeter.Mandatory) {
+									dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+													<div class='form-group custom-form-group'>\
+														<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
+														<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+													</div>\
+												</div>";
+								} else {
+									dynamictempalte = "<div class='col-md-12 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+															<div class='form-group custom-form-group'>\
+																<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+																<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + "' value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+															</div>\
+														</div>";
+								}
+							}
+							else if (pagenumbers == 2) {
+								if (datarepeter.Mandatory) {
+									dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+													<div class='form-group custom-form-group'>\
+														<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
+														<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+													</div>\
+												</div>";
+								} else {
+									dynamictempalte = "<div class='col-md-6 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+														<div class='form-group custom-form-group'>\
+															<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+															<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+														</div>\
+													</div>";
+								}
+							}
+							else if (pagenumbers == 3) {
+								if (datarepeter.Mandatory) {
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+													<div class='form-group custom-form-group'>\
+														<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
+														<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+													</div>\
+												</div>";
+								} else {
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+															<div class='form-group custom-form-group'>\
+																<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+																<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+															</div>\
+														</div>";
+								}
+							}
+							else {
+								if (datarepeter.Mandatory) {
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+													<div class='form-group custom-form-group'>\
+														<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='true' alerttext='" + datarepeter.Title + "'>" + datarepeter.Title + " : <span style='color:red'>*</style></label>\
+														<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+													</div>\
+												</div>";
+								} else {
+									dynamictempalte = "<div class='col-md-4 col-sm-6 col-xs-12 dynamicdatatexboxes'>\
+															<div class='form-group custom-form-group'>\
+																<label class='columnnametxt' value='" + datarepeter.ColumnName + "' mandatorycol='false' alerttext=''>" + datarepeter.Title + " :</label>\
+																<input type='text' class='dynamicvalfeachcls form-control "+ datetypevalstop + "' " + datatypeval + " value='" + valuefordefault + "' id='" + datarepeter.ColumnName + "' />\
+															</div>\
+														</div>";
+								}
+							}
+
+
+							$("#appenddyamicboxes").append(dynamictempalte);
+							console.log(valuefordefault);
+							console.log(datarepeter.ColumnName);
+							selectddrval(datarepeter.ColumnName, valuefordefault);
+						})
+						$('.stopenterdata').keydown(function (e) {
+							e.preventDefault();
+							return false;
+						});
+						SetDatpickerNdropDown();						
+					}
+					getTempID(CurrTenplateID);
+				});
+			}
+			// this is end or new change code in botla peraiah
+			function selectddrval(idval, appendval){
+				return $("#"+idval).append(appendval);
+			}
+
+			function isNumber(evt) {
+				evt = (evt) ? evt : window.event;
+				var charCode = (evt.which) ? evt.which : evt.keyCode;
+				if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+					return false;
+				}
+				return true;
+			}
+			function GetData(restURL) {
+				var def = $.Deferred();
+				$.ajax({
+					url: _spPageContextInfo.webAbsoluteUrl + restURL,
+					async:false,
+					contentType: "application/json;odata=verbose",
+					headers: { "accept": "application/json;odata=verbose" },
+					success: function (data) {
+						def.resolve(data);
+					},
+					error: function (data) {
+						def.reject(data);
+					}
+				});
+
+				return def.promise();
+			}
+			function uploadFileSP(listName, id, fileArray, fileCount) {
+				//var FilesCount = 0;
+				var deferred = $.Deferred();
+				//	var uploadStatus = "";
+				//var file = fileArray[0];
+				//var getFile = getFileBuffer(file);
+
+				//	getFile.done(function (buffer, status, xhr) {
+				//var bytes = new Uint8Array(buffer);
+				//var content = new SP.Base64EncodedByteArray();
+
+				var fileInput = jQuery('#attachmentsupload');
+				//var parts = fileInput[0].value.split('\\');
+				//var fileName = parts[parts.length - 1];
+				var fileName = fileInput[0].files[fileCount].name;
+
+				var queryUrl = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/GetByTitle('" + listName + "')/items(" + id + ")/AttachmentFiles/add(FileName='" + fileName + "')";
+				//var uploadCount = 0;
+				$.ajax({
+					url: queryUrl,
+					type: "POST",
+					processData: false,
+					contentType: "application/json;odata=verbose",
+					data: fileArray,
+					headers: {
+						"accept": "application/json;odata=verbose",
+						"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+						"content-length": fileArray.byteLength
+					},
+					success: function (data) {
+
+						if (fileArray.length > 0) {
+							//uploadFileSP("ListName", id, fileArray, fileArray.length);
+						}
+						else {
+							//	alert("Your item has been submitted successfully!");
+						}
+					},
+					error: function (err) {
+						alert("Idea has been submitted but some files failed to upload.");
+					}
+				});
+				//deferred.resolve(data);
+				//	});
+
+				// getFile.fail(function (err) {
+				// 	deferred.reject(err);
+				// });
+				return deferred.promise();
+			}
+
+
+			function getFileBuffer(i) {
+				var deferred = jQuery.Deferred();
+				var fileInput = jQuery('#attachmentsupload');
+				var reader = new FileReader();
+
+				reader.onloadend = function (e) {
+					deferred.resolve(e.target.result, i);
+				}
+				reader.onerror = function (e) {
+					deferred.reject(e.target.error);
+				}
+				reader.readAsArrayBuffer(fileInput[0].files[i]);
+				return deferred.promise();
+			}
+			var arrFileUpload = [];
+			var finalFiles = [];
+			var RemoveDuplicate = [];
+			//Bind selected attachment in popup
+			function bindAttachments(Action) {
+				arrFileUpload = [];
+				var fileNum = Action.files.length, initial = 0;
+				$.each(Action.files, function (idx, elm) {
+					finalFiles[finalFiles.length] = elm;
+				});
+				RemoveDuplicate = [];
+				var arr = finalFiles.filter(function (el) {
+					if (RemoveDuplicate.indexOf(el.name) == -1) {
+						RemoveDuplicate.push(el.name);
+						return true;
+					}
+					return false;
+				});
+				arrFileUpload = ReinitializeArray(arr);
+				$('#Docfilename').empty();
+				var bindfile = '';
+				Tcounter = 0;
+				for (initial; initial < arrFileUpload.length; initial++) {
+					/*    bindfile += '<div class="upload-chip" id="Ifile_' + Tcounter + '">';
+						bindfile += '<span class="d-flex align-items-center upload-chip-title">';
+						bindfile += '<i class="fa fa-paperclip color-sky-blue" aria-hidden="true"></i>';
+						bindfile += '<span class="px-2 font-14 upload-chip-title" title=' + RemoveDuplicate[initial] + '>' + RemoveDuplicate[initial] + '</span></span>';
+						bindfile += '<button type="button" onclick="RemoveDocument(this.id);" id="Ifile_' + Tcounter + '"" class="btn p-0 upload-chip-delete-btn"><i class="fa fa-times-circle-o text-danger"></i></button></div>';
+						//$('#Docfilename').append('<div id="Ifile_' + Tcounter2 + '"><span class="fa-stack fa-lg" style="line-height: 1em; height: 1em;"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i><strong class="fa-stack-1x" style="color:#FFF; font-size:12px; margin-top:2px;">' + Tcounter2 + '</strong></span> ' + RemoveDuplicate2[initial] + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="RemoveDocument(this.id);" id="Ifile_' + Tcounter2 + '"" title="remove"></span></div>');
+					  */
+					bindfile += '<div class="approve-process-upload-data-chip upload-chip" id="Ifile_' + Tcounter + '">';
+					bindfile += '<i class="fa fa-paperclip color-sky-blue" aria-hidden="true"></i>';
+					bindfile += '<span class="px-2 font-14 upload-chip-title" title=' + RemoveDuplicate[initial] + '>' + RemoveDuplicate[initial] + '</span>';
+					bindfile += '<i class="fa fa-times-circle-o text-danger" onclick="RemoveDocument(this.id);" id="Ifile_' + Tcounter + '""></i></div>';
+					//  bindfile += 
+
+					Tcounter = Tcounter + 1;
+				}
+				$('#Docfilename').append(bindfile);
+				//   getDocWeight();   // commented to remove file size validaion.
+			}
+
+
+			//remove the attached document
+			function RemoveDocument(id) {
+				var index = id.split('_')[1];
+				$("#" + id).remove();
+				//delete finalFiles[parseInt(index)];
+				finalFiles.splice(parseInt(index), 1);
+				if ($('#Docfilename').html() == '') {
+					finalFiles = [];
+					$("#uploadFileAttach").val('');
+				}
+				RemoveDuplicate = [];
+				var arr = finalFiles.filter(function (el) {
+					if (RemoveDuplicate.indexOf(el.name) == -1) {
+						RemoveDuplicate.push(el.name);
+						return true;
+					}
+					return false;
+				});
+				arrFileUpload = ReinitializeArray(arr);
+			}
+
+			//Loop on documents to get the details
+			function ReinitializeArray(arr) {
+				var newArr = [];
+				var count = 0;
+				//for (var i in arr) 
+				for (var i = 0; i < arr.length; i++) {
+					newArr[count++] = arr[i];
+				}
+				return newArr;
+			}
+			// function uploadFile(id) {
+			// 	if ($('#attachmentsupload').val() == "")
+			// 		return;
+
+			// 	var fileInput = jQuery('#attachmentsupload');
+			// 	var fileCount = fileInput[0].files.length;
+			// 	console.log(fileCount);
+
+			// 	for (var i = 0; i < fileCount; i++) {
+			// 		console.log(i);
+			// 		getFileBuffer(i)
+			// 			.done(function (arrayBuffer, index) {
+			// 				console.log("Success " + index);
+			// 				uploadFileInList(arrayBuffer, id, index);
+			// 			})
+			// 			.fail(function (error) {
+			// 				console.log(error);
+			// 				LogError("uploadFile", error);
+			// 				alert("Error while uploading file for ID" + id);
+			// 			});
+			// 	}
+			// }
+		</script>
+
+</body>
+
+</html>

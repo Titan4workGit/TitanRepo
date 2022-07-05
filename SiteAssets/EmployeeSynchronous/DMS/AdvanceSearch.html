@@ -1,0 +1,198 @@
+﻿<style>
+.commonMarginTopDiv{
+	margin-bottom:5px;
+}
+</style>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/DMS/AdvanceSearch.js'></script>
+<div class="modal fade" id="myModalAdvancedSearch" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Search">Search</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="container">
+                        <div class="row commonMarginTopDiv">
+                            <div class="col-md-12">
+                                <div>
+                                <div class="container">
+                                
+                                <div class="row commonMarginTopDiv">
+								<div class="col-sm-3">Source</div>
+								<div class="col-sm-4">
+								<select class="form-control" id="ddlSearchSource">
+								<option value="All">All</option>
+								<option value="DMS">My DMS</option>
+								<option value="Department">Department</option>
+								</select>
+								</div>
+								</div>
+                                
+                                <div class="row commonMarginTopDiv">
+								<div class="col-sm-3">Search By</div>
+								<div class="col-sm-4">
+								<select class="form-control" id="ddlSearchBy">
+								<option value="Title">Title</option>
+								<option value="FileName">File Name</option>
+								<option value="DocumentNo">Document No</option>
+								<option value="DocumentType">Document Type</option>
+								<option value="ModifiedDate">Modified Date</option>
+								</select>
+								</div>
+								</div>
+								<div class="row commonMarginTopDiv hideSearchDIVCategory">
+								<div class="col-sm-3">Document Type</div>
+								<div class="col-sm-4">
+								<select class="form-control" id="ddlSearchCategory">
+								
+								</select>
+								</div>
+								
+								</div>
+								
+								<div class="row commonMarginTopDiv hideSearchDIVTitle">
+								<div class="col-sm-3">Title</div>
+								<div class="col-sm-4">
+								<input class="form-control" type="text" id="txtAdvanceSearchTitle">
+							    </div>
+								</div>
+								
+								<div class="row commonMarginTopDiv hideSearchDIVFileName">
+								<div class="col-sm-3">File Name</div>
+								<div class="col-sm-4">
+								<input class="form-control" type="text" id="txtAdvanceSearchFileName">
+							    </div>
+								</div>
+								
+								<div class="row commonMarginTopDiv hideSearchDIVDocumentNumber">
+								<div class="col-sm-3">Document#</div>
+								<div class="col-sm-4">
+								<input class="form-control" type="text" id="txtAdvanceSearchDocumentNumber">
+							    </div>
+								</div>
+								
+								<div class="row commonMarginTopDiv hideSearchDIVModifiedDate">
+								<div class="col-sm-3">From Date</div>
+								<div class="col-sm-3">
+								<input class="form-control" type="text" id="txtAdvanceSearchFromDate">
+							    </div>
+							    <div class="col-sm-2">To Date</div>
+								<div class="col-sm-3">
+								<input class="form-control" type="text" id="txtAdvanceSearchTODate">
+							    </div>
+
+								</div>
+
+								<div class="row commonMarginTopDiv">
+								<div class="col-sm-3"></div>
+								<div class="col-sm-4">
+							    <button id="btnSearchEvent" type="button" class="btn btn-outline-primary" style="font-size: 13px;margin-bottom:5px;margin-right:0px;"><span class="glyphicon glyphicon-search"></span>&nbsp;<label data-localize="Search">Search</label></button></div>
+								</div>
+								</div>                                    
+		                            <div id='divAdvancedSearch' class='table-responsive divAdvancedSearch'>
+		                            <div id="tableheaderAdvanceSearch" style="height: auto !important;">
+									<div class="search" style="display:none;">
+										<select style="display:none;" id="advanceSearchcolumns" onchange="advanceSearchSorter.search('query')"></select>
+									</div>
+									<div>
+										<span class="details">
+											<div style="display:none;">Records  <span id="advanceSearchstartrecord"></span>-<span id="advanceSearchendrecord"></span> PagesOf  <span id="advanceSearchtotalrecords"></span></div>
+											<div style="display:none;"><a href="javascript:advanceSearchSorter.reset()">Reset </a></div>
+										</span>
+									</div>
+									
+									<div class="mrg-top-10m  btm10 container">
+									<div class="row">
+									
+										<input type="text" id="query" onkeyup="advanceSearchSorter.search('query')" placeholder="Filter..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important;" />
+									
+										</div>
+									</div>
+									
+									
+									
+									
+								</div>
+		                            
+		                            
+                                        <table cellpadding='0' cellspacing='0' border='1' id='advanceSearchDocumentstable' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydocuments_table'>
+                                            <thead class='panel-heading'>
+                                                <tr>
+                                                    <th class='nosort'><h6 data-localize='File'>File</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Source'>Source</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Title'>Title</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Document#'>Document#</h6></th>
+                                                    <th class='nosort'><h6 data-localize='DocumentType'>Document Type</h6></th>
+                                                    <th class='nosort'><h6 data-localize='ModifiedDate'>Modified Date</h6></th>
+                                                    <th class='nosort'><h6 data-localize='Download'>Download</h6></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class='panel' id="mainDivAdvanceSearhedDoument"></tbody>
+                                        </table>
+                                    </div>
+                                    <div style='text-align: center;font-size:14px;display:none' id="mainDivAdvanceSearhedDoumentNoRecordFound" data-localize='NoRecordFound'>No Record Found</div>
+                                    
+                                    <div id="advanceSearchtablefooter" class="row" style="margin-bottom: 10px;">
+									<div id="advanceSearchtablenav" class="col-md-6">
+										<div class="col-md-4">
+											<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="advanceSearchSorter.move(-1,true)" />
+											<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="advanceSearchSorter.move(-1)" />
+											<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="advanceSearchSorter.move(1)" />
+											<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="advanceSearchSorter.move(1,true)" />
+										</div>
+										<div class="col-md-2">
+											<select id="advanceSearchpagedropdown"></select>
+										</div>
+										<div class="col-md-4">
+											<a href="javascript:advanceSearchSorter.showall()" data-localize="ViewAll">ViewAll </a>
+										</div>
+									</div>
+									<div id="advanceSearchtablelocation" class="col-md-6">
+										<div class="col-md-6">
+											<span>Lines Per Page </span>
+											<select onchange="advanceSearchSorter.size(this.value)">
+											<option value="5">5</option>
+											<option value="10" selected="selected">10</option>
+											<option value="20">20</option>
+											<option value="50">50</option>
+											<option value="100">100</option>
+											</select>
+										</div>						
+										<div class="col-md-4">Page <span id="advanceSearchcurrentpage"></span> Of  <span id="advanceSearchtotalpages"></span></div>
+									</div>
+								</div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-229</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">e3f5b326-a47f-4eaf-8b5c-0d08f9395600</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-229, ADMIN-1645029823-229</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">22900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

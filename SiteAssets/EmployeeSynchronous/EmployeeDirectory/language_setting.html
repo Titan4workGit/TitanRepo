@@ -1,0 +1,200 @@
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<style>
+.blue-color{ color: #1d6ec0; padding-top: 7px;}
+</style>
+
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b>Language Settings</b></h4></li>           
+	</ol>
+</div>
+
+<div class="row" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLod()">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-8">
+          <div class="row">
+            <div class="panel panel-default shadow2" style="overflow:auto">
+            <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color">Choose Languages</h4>
+                </div>
+              </div>
+              <div class="col-sm-12 top20 bottom15">
+                <div class="form-horizontal">
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color" >1<small>st</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language <br/>
+					<small>(Default)</small></label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault" ng-disabled="allcontrols=='default'">
+                  <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option>   
+					 </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-disabled="allcontrols=='default'" ng-model="deFaultStatus">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1 blue-color">2<small>nd</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault2" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault2, '{{LinkTitleDefault2}}')">
+                     <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus2">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">3<small>rd</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault3" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault3, '{{LinkTitleDefault3}}')">
+                       <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                        
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus3">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1   blue-color">4<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault4" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault4, '{{LinkTitleDefault4}}')" >
+                     
+                    <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus4">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">5<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault5" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault5, '{{LinkTitleDefault5}}')" >
+                        <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                        
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus5">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">6<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5"> 
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault6" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault6, '{{LinkTitleDefault6}}')" >
+                      
+                       <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus6">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-sm-1 blue-color">7<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault7" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault7, '{{LinkTitleDefault7}}')" >
+                      
+                        <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus7">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">8<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault8" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault8, '{{LinkTitleDefault8}}')">
+                        <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                        
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus8" >Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">9<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault9" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault9, '{{LinkTitleDefault9}}')" >
+                       
+                       <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus9">Activated</label>
+                    </div>
+                  </div>
+                  <div class="form-group"> 
+                  <span class="col-xs-3 col-sm-1  blue-color">10<small>th</small></span>
+                    <label for="" class="col-xs-9 col-sm-3 control-label">Language</label>
+                    <div class="col-sm-5">
+                      <select class="form-control" id="sel1" ng-model="LinkTitleDefault10" ng-disabled="true" ng-change="dropdownValueChange(LinkTitleDefault10, '{{LinkTitleDefault10}}')">
+                      
+                         <option value="{{entity}}"  ng-repeat="entity in showLanguanges">{{entity}} </option> 
+                      </select>
+                    </div>
+
+<div class="col-sm-3">
+                      <label class="checkbox-inline"><input type="checkbox" ng-model="deFaultStatus10">Activated</label>
+                    </div>
+                  </div>
+                  <br/>
+
+                  <div class="row text-center">
+				  <input type="button" style="font-size:13px" ng-disabled="dublicate=='dublicate'"  class="btn btn-outline-success" value="Submit" ng-click="updateLanguage()">
+                  <input type="button" style="font-size:13px"  class="btn btn-outline-secondary" value="Close" ng-click="redirectPage()">
+                  </div>
+                  
+                </div>
+              </div>
+              <!--/panel content-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/language_setting.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-255</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">53f8adad-78ab-48a6-abbd-7024ec2cc909</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-255, ADMIN-1645029823-255</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">25500.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,608 @@
+﻿<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script><!--Added -->	
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/AdminPortal/ManageEmployee/assets/css/styles.css">
+		<script src="https://smtpjs.com/v3/smtp.js"></script> 	
+		<script type="text/javascript" src="../SiteAssets/AdminPortal/ManageEmployee/Invite-add-an-external-user.js"></script>
+		<link rel="stylesheet" href="../SiteAssets/AdminPortal/ManageEmployee/assets/css/jquery-ui.css">
+
+
+<style>
+
+.msg {
+    display: none;
+}
+.error {
+    color: red;
+}
+.success {
+    color: green;
+}
+
+#internalsupervisor,
+#InternalStakeholders{
+
+	height:auto !important;	
+}
+
+#internalsupervisor .sp-peoplepicker-topLevel,
+#InternalStakeholders .sp-peoplepicker-topLevel{
+
+	width:100% !important;	
+	border:none !important;
+	background:transparent !important;
+
+}
+
+.external-guest-user-org-name-search {
+    display: flex;
+    align-items: center;
+}
+.external-guest-user-org-name-search>input {
+    margin-right: 10px;
+}
+.external-guest-user-org-name-search>button {
+    padding: 5px 12px;
+}
+.add-guest-user-radio-btn-box {
+    margin-bottom: 20px !important;
+}
+.UpdateEmp-box-2-p-text {
+    margin-bottom: 20px !important;
+}
+.UpdateEmp-box-3-p-text {
+    margin-bottom: 20px !important;
+}
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+.custom-table tbody tr {
+    border-top: 1px solid #d2d2d2;
+}
+.custom-table-border {
+    border: 1px solid #d2d2d2;
+}
+#otherOrganizationSearch .clients-footer-btn-group {
+    text-align: center;
+}
+.client-name-search {
+    margin-top: 23px;
+}
+
+/* responsive css start */
+
+@media(min-width: 992px) {
+
+	#Customer-box .emp-upload-image-box {
+		margin: 16px auto 61px auto;
+	}
+	#Employee-box .emp-upload-image-box {
+		margin: 16px auto 52px auto;
+	}
+
+}
+
+@media(max-width:767px){
+
+#MSOZoneCell_WebPartWPQ2.ms-webpart-cell-vertical-inline-table,
+.ms-webpart-chrome-vertical{
+	
+	display:block !important;	
+}
+.article-content{
+	margin:20px 10px !important;	
+}	
+	
+}
+
+@media(max-width:451px){
+
+.adst{
+	margin-left:1px !important;
+}	
+
+}
+
+input#InternalStakeholders_TopSpan_EditorInput,
+input#internalsupervisor_TopSpan_EditorInput{
+	
+	width: 100% !important;
+    border: none !important;	
+
+}
+
+
+
+</style>
+	
+	<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1680</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3da4225d-ebbd-45f4-9acb-d25191eb3cb3</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1680, ADMIN-1645029823-1680</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">168000.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Manage Employees</title></head><body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Add an Guest User
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0 mb-8">
+									<div class="col-xs-12">
+										<div class="form-group custom-form-group custom-form-group-radio-inline add-guest-user-radio-btn-box">
+											<label class="radio-inline"><input type="radio" name="UpdateEmp" value="2" checked="">Invite an Guest User</label>
+											<label class="radio-inline adst"><input type="radio" name="UpdateEmp" value="3">Proceed with Invited Guest User</label>
+										</div>
+									</div>
+									<div id="UpdateEmp-box-2" class="col-xs-12 d-none toHide type-set-two manage-employees-inbox-istab" style="display: block;">
+										<div class="row">
+											<div class="col-xs-12">
+												<p class="UpdateEmp-box-2-p-text">Invite a new guest user to collaborate with your organization. The user will be emailed an invitation they can accept in order to begin collaborating.</p>
+											</div>
+											<div class="col-xs-6">
+												<div class="form-group custom-form-group custom-form-group-manage-employee">
+													<label for="">Name:</label>
+													<input class="form-control" type="text" name="" id="txtinvitename" placeholder="Name" required="required">
+												</div>
+											</div>
+											<div class="col-xs-6">
+												<div class="form-group custom-form-group custom-form-group-manage-employee">
+													<label for="">Email Address:</label>
+													<input type="email" class="form-control" id="txtinviteemail" placeholder="Email Address" required="required">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group custom-form-group-manage-employee">
+													<div class="form-group">
+													  	<label for="comment">Message:</label>
+													  	<textarea class="form-control" rows="4" id="txtinvitemessage" placeholder="Message" style="resize: none;"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 text-center">
+										    	<button type="button" class="btn custom-btn mr-8 w-87" onclick="Inviteuser()" data-dismiss="modal">Invite</button>
+										    	
+											</div>
+										</div>
+									</div>
+									<div id="UpdateEmp-box-3" class="col-xs-12 d-none toHide type-set-two" style="display: none;">
+										<div class="row">
+											<div class="col-xs-12">
+												<p class="UpdateEmp-box-3-p-text">Enter the details of already invited Guest user. Be sure the invited user must accept email invitation before proceed.</p>
+											</div>
+											<div class="col-xs-12">
+												<div class="row">
+													<!-- <div class="col-md-offset-6 col-md-6 col-sm-12"> -->
+													
+												</div>
+											</div>
+											<!-- Employee box -->
+											<div class="col-xs-12 d-none" id="Employee-box">
+												<div class="row">
+
+													<div class="col-md-6">
+														<div class="row">
+														<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Email:</label>
+																	<input type="email" class="form-control" placeholder="Email Address">
+																</div>
+															</div>
+														
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Login Name:</label>
+																	<input type="text" class="form-control" placeholder="Logon Name">
+																</div>
+															</div>
+															
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Designation:</label>
+																	<input class="form-control" type="text" name="" id="" placeholder="Designation">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Group Name:</label>
+																	<input type="text" class="form-control" placeholder="Employee Code">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Extention:</label>
+																	<input class="form-control" type="text" name="" id="" placeholder="Extention">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Mobile Number:</label>
+																	<input class="form-control" type="text" name="" id="" placeholder="Mobile Number">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Date of Joining:</label>
+																	<input type="date" id="datepickerAD4" class="form-control">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="" checked="">Manager</label>
+																	<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Top Executive</label>
+																	<input type="text" class="form-control" placeholder="Enter names or email address...">
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-6">
+														<div class="row">
+															<div class="col-xs-12">
+																<div class="emp-upload-image-box">
+																	<img class="emp-upload-image" src="../SiteAssets/AdminPortal/ManageEmployee/assets/images/user_pic.jpg" alt="user image">
+																	<div class="emp-upload-image-box-btn">
+																		<input type="file" class="emp-upload-image-inp" name="">
+																		<span class="emp-upload-image-span">Upload<br>Profile Picture</span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-xs-12">
+															
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Company:</label>
+																	<select class="form-control">
+																		<option>Current company and freezed</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Department:</label>
+																	<select class="form-control">
+																		<option>All</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Office Location:</label>
+																	<select class="form-control">
+																		<option>Gurgaon</option>
+																	</select>
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Employee Code:</label>
+																	<input type="text" class="form-control" placeholder="Employee Code">
+																</div>
+															</div>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+											<!-- Customer box -->
+											<div class="col-xs-12" id="Customer-box">
+												<div class="row">
+
+													<div class="col-md-6">
+														<div class="row">
+														<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Email:</label>
+																	<input type="email" class="form-control" id="txtExtEmail"  placeholder="Email Address">
+																	 <span class="msg error">Not a valid email address</span>
+																	  <span class="msg success">A valid email address!</span>
+																	  <span class="" id="msgExtEmail" style="color:red;display:none"></span>
+
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Name:</label>
+																	<input type="text" class="form-control" readonly="readonly" id="txtExtLoginName" placeholder="Logon Name">
+																</div>
+															</div>
+															
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Designation:</label>
+																	<input class="form-control" type="text" name="" id="txtExtDesignation" placeholder="Designation">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee" id="divMembers">
+																	<label for="" title="Internal Stakeholders who can communicate:">Members:</label>
+																	<!--<input type="text" class="form-control" placeholder="Internal Stakeholders">-->
+																	<div class="form-control" id="InternalStakeholders"></div>
+																	
+																</div>
+															</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee" id="divSupervisor">
+																	<label for="">Internal Supervisor:</label>
+																	<!--<input type="text" class="form-control" placeholder="Internal Stakeholders">-->
+																	<div class="form-control" id="internalsupervisor"></div>
+																	
+																</div>
+															</div>
+															 <div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Reference Code:</label>
+																	<input type="text" class="form-control" id="txtReferenceCodeExt" placeholder="Employee Code">
+																</div>															</div> 
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Status:</label>
+																	<select class="form-control" id="txtExtStatus" readolny>
+																		<option>Active</option>
+																	</select>
+																</div>
+												    		</div>
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Validity Upto:</label>
+																	<input class="form-control" type="text" name="" placeholder="dd/mm/yyyy" id="datepickerAD5">
+																</div>
+															</div>
+															<div class="col-xs-12">
+																
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-6">
+														<div class="row">
+															<div class="col-xs-12">
+																<div class="emp-upload-image-box">
+																	<img class="emp-upload-image" src="../SiteAssets/AdminPortal/ManageEmployee/assets/images/user_pic.jpg" id="extrenalImage" alt="user image">
+																	<div class="emp-upload-image-box-btn">
+																		<input type="file" class="emp-upload-image-inp" id="GueastextinputFile" name="">
+																		<span class="emp-upload-image-span">Upload<br>Profile Picture</span>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group external-guest-user-org-name-box">
+																	<label for="Project">Organization Name:</label>
+																	<div class="external-guest-user-org-name-search">
+																		<input type="text" id="txtAddOrganization" readonly="readonly" class="form-control" placeholder="Organization Name">
+																		<button  type="button" class="btn custom-btn ml-8 w-87" id="btnotherOrganizationSearch" onclick="GetClientMasterTeamDeails()" data-toggle="modal" data-target="#otherOrganizationSearch">Search</button>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xs-12">
+															
+															
+																<div class="form-group custom-form-group" >
+																	
+													                
+													                <label for="">Collaboration Type:</label>
+															<select class="form-control" id="selectByUser">
+																<option value="Employee">Employee</option>
+																<option value="Guest">Guest User</option>
+															</select>
+												            	</div>
+															</div>
+															
+															
+															<div class="col-xs-12">
+																<div class="form-group custom-form-group">
+																	<label for="" class="font-12">External Supervisor:</label>
+																	<input type="text" id="txtExternalSupervisor" readonly="readonly" class="form-control" placeholder="External Supervisor">
+																</div>
+															</div>
+															<div class="col-xs-12">
+															<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Portal View :</label>
+																	<select class="form-control" id="TemplateType" readolny>
+																      <option value="Template1">Template1</option>
+															        </select>
+																</div>
+																
+															</div>
+															<!-- <div class="col-xs-12">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Portal View :</label>
+																	<select class="form-control" id="TemplateType" readolny>
+																      <option value="Template1">Template1</option>
+															        </select>
+																</div>
+															</div> -->
+
+															<div class="col-xs-12 manage-employees-inbox-istab d-none">
+																<div class="form-group custom-form-group custom-form-group-manage-employee">
+																	<label for="">Services:</label>
+																	<div class="row">
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Project Task</label>
+																		</div>
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Project Document</label>
+																		</div>
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Team Progress</label>
+																		</div>
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Invoices</label>
+																		</div>
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Tenders</label>
+																		</div>
+																		<div class="col-xs-6">
+																			<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="">Procurement</label>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+
+											<div class="col-xs-12 text-center">
+										    	<button type="button" class="btn custom-btn mr-8 w-87" id="btnExtSubmit" style="display:none" data-dismiss="modal">Submit</button>
+										    	<button type="button" class="btn custom-btn mr-8 w-87" id="btnExtUpdate" style="display:none" data-dismiss="modal">Update</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Other Organization Name Search Modal-->
+		<div class="modal fade organization-entry-search-modal" id="otherOrganizationSearch" role="dialog">
+		    <div class="modal-dialog modal-lg">
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <!-- <button type="button" class="close close-round" data-dismiss="modal">&times;</button> -->
+		          <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+		          <h4 class="modal-title">Clients</h4>
+		        </div>
+		        <div class="modal-body">
+		        	<div class="row mb-8">
+		        		<div class="col-md-4 col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Status:</label>
+								<select class="form-control">
+									<option>Open</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-4 col-md-offset-4 col-sm-6">
+							<div class="form-group custom-form-group client-name-search">
+								<input class="form-control" type="text" name="" placeholder="Search">
+							</div>
+						</div>
+					</div>
+					<div class="table-responsive px-15  scrollbar-panel">
+						<table class="table custom-table custom-table-border">
+							<thead>
+								<tr>
+									<th></th>
+									<th class="text-left w-25">Code</th>
+									<th class="text-left w-20">Client Name</th>
+									<th class="text-left w-10">Attn Name</th>
+									<th class="text-left w-10">Status</th>
+								</tr>
+							</thead>
+							<tbody id="masterClientgrid">
+								<tr class="text-center">
+									<td class="text-left">
+										<div class="checkbox m-0">
+										  	<label><input type="checkbox" value=""></label>
+										</div>
+									</td>
+									<td class="text-left">
+										<span>ADAPT</span>
+									</td>
+									<td class="text-left">
+										<span>Adapt Softwaer India Pvt. Ltd.</span>
+									</td>
+									<td class="text-left">
+										<span>Manoj Kumar</span>
+									</td>
+									<td class="text-left">
+										<span>Active</span>
+									</td>
+								</tr>
+								<tr class="text-center">
+									<td class="text-left">
+										<div class="checkbox m-0">
+										  	<label><input type="checkbox" value=""></label>
+										</div>
+									</td>
+									<td class="text-left">
+										<span>AlFajar Enterprises</span>
+									</td>
+									<td class="text-left">
+										<span>AlFajar Enterprises Softwaer India Pvt. Ltd.</span>
+									</td>
+									<td class="text-left">
+										<span>Manoj Kumar</span>
+									</td>
+									<td class="text-left">
+										<span>Active</span>
+									</td>
+								</tr>
+								<tr class="text-center">
+									<td class="text-left">
+										<div class="checkbox m-0">
+										  	<label><input type="checkbox" value=""></label>
+										</div>
+									</td>
+									<td class="text-left">
+										<span>ADAPT</span>
+									</td>
+									<td class="text-left">
+										<span>Adapt Softwaer India Pvt. Ltd.</span>
+									</td>
+									<td class="text-left">
+										<span>Manoj Kumar</span>
+									</td>
+									<td class="text-left">
+										<span>Active</span>
+									</td>
+								</tr>
+								<tr class="text-center">
+									<td class="text-left">
+										<div class="checkbox m-0">
+										  	<label><input type="checkbox" value=""></label>
+										</div>
+									</td>
+									<td class="text-left">
+										<span>AlFajar Enterprises</span>
+									</td>
+									<td class="text-left">
+										<span>AlFajar Enterprises Softwaer India Pvt. Ltd.</span>
+									</td>
+									<td class="text-left">
+										<span>Manoj Kumar</span>
+									</td>
+									<td class="text-left">
+										<span>Active</span>
+									</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+		        </div>
+		        <div class="modal-footer clients-footer-btn-group footer-btn-group">
+		          <button type="button" class="btn custom-btn w-87" id="btnselectclinte" onclick="Selectedcclinte()" data-dismiss="modal">Select</button>
+		          <button type="button" class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+		        </div>
+		      </div>
+		    </div>
+		</div>	 
+		
+		
+		<!--Added by Subhankar -->
+    <script type="text/javascript" src="../SiteAssets/AdminPortal/ManageEmployee/AuthenticationContext.js?325"></script>
+
+		
+		
+	</body>

@@ -1,0 +1,869 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>Experiences</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/assets/css/styles.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+
+
+	<style>
+
+		#description blockquote{
+			padding:15px !important;
+			margin-bottom:15px !important;	
+		}
+
+		#description ul li{
+
+			margin:0 0 10px 0px !important; 
+			display:block;	
+			color:#323232 !important;
+		}
+		.arrow-custom{
+			/*top:353px !important;	*/
+			top: 244px !important;
+		}
+
+		ul#ViewHitList,
+		ul#Likeshitlist{
+			padding:3px 5px !important;
+		}
+
+		.comment-reply-user-name-img{
+			/*height:auto !important;	*/
+			height: 105% !important;
+		}
+
+		#CommentsData button.btn img{
+			width:16px;
+		}
+
+		#CommentsData button.btn{
+			padding:5px !important;	
+		}
+
+
+		.reply-box-in{
+
+			padding-left: 38px !important;	
+			padding-bottom:2px !important;
+		}
+
+		.show-comment-panel{  
+			scrollbar-color: #090909 #D0D0D0;	
+			scrollbar-width: thin;
+		}
+
+		.comment-reply-box-info{
+			padding: 0px 5px;
+			line-height: 20px;
+			font-size:12px !important;
+		}
+
+
+		.comment-reply-box-head-text > h4{
+
+			color: #0782c3;
+			font-weight: 600;	
+
+		}
+
+		.comment-container input[type="button"],.comment-container input[type="reset"],comment-container input[type="submit"], button {
+
+			min-width: 2em !important;
+
+		}    
+
+		a img.like-img{
+
+			width:18px !important;	
+		}
+		.toast {
+		    opacity: 1;
+		    top: 20px;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    position: fixed;
+		    width: 15%;
+		    z-index: 1000;
+		    background: #ffffff;
+		    box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
+		    height: 40px;
+		    font-size: 19px;
+		    background: aliceblue;
+		}
+		.toast-body{
+			padding-left: 10px;
+			font-weight: bold;
+		}
+		a.view_more{
+			text-decoration:none;
+			display: block;
+			padding: 7px 15px;
+			margin: 0 auto;
+			background: linear-gradient(to bottom,#fff,#ccc);
+			background:-webkit-linear-gradient(to bottom,#fff,#ccc);
+			background:-moz-linear-gradient(to bottom,#fff,#ccc);
+			background:-o-linear-gradient(to bottom,#fff,#ccc);
+
+			width: 105px;
+			border: 1px solid #a8a5a5;
+			margin: 15px auto;
+			border-radius: 15px;
+			box-shadow: 0px 10px 12px -10px #616060;	
+			transition:0.5s;
+
+		}
+
+		a.view_more:hover{
+			border: 1px solid #68b0fc;
+			color: #2980dd;
+		}
+
+		.comment-reply-box-head-dir {
+			flex-direction: column;
+		}
+
+		.ChildCommentArea-seemore {
+			margin: 15px auto;
+			text-align: center;
+		}
+		.Parent-name-comment {
+			flex-direction: row;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			width: 100%;
+		}
+		.ChildCommentArea {
+			width: 100%;
+		}
+		.fa fa-close{
+			display:none;
+		}
+
+		.AttachmentEdit {
+			border: 1px solid #c3c3c3 !important;
+			padding: 4px 4px;
+			background: #fff;
+			box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+		}
+		.AttachmentEditbtn {
+			width: 22px;
+		}
+		#CommentsData .chat-editable-comment-btns .comment-update {
+			padding: 4px 4px !important;
+		}
+		.comment-update {
+			border: 1px solid #c3c3c3 !important;
+			background: #fff !important;
+			box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+		}
+		.comment-update img {
+			width: 22px !important;
+		}
+		.comment-reply-box-info {
+			margin-bottom: 10px;
+		}
+		.entry-screen-page-full .header-container {
+			width: 100% !important;
+			margin-right: auto;
+			margin-left: auto;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		.entry-screen-page-full .article-content {
+			margin: 0px 0px;
+		}
+		.comment-reply-box-info .chat-editable-comment>div[contenteditable="true"]:hover, .comment-reply-box-info .chat-editable-comment>div[contenteditable="true"]:focus {
+			border-color: #66afe9 !important;
+			outline: 0 #66afe9 !important;
+		}
+		.comment-reply-box-info .chat-editable-comment>div[contenteditable="true"] {
+			border-radius: 10px;
+			resize: none;
+			border-color: #e1e1e1;
+			box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+			border: 1px solid #e1e1e1 !important;
+			padding: 4px 8px 4px 8px;
+			word-break: break-word;
+			min-height: 54px;
+			max-height: 54px;
+			overflow: auto;
+		}
+		.comment-reply-box-info .chat-editable-comment>div {
+			word-break: break-word;
+			display: inline;
+		}
+		.attachment-badge .attachment-badge-name a {
+			padding: 6px 10px;
+			word-break: break-word;
+		}
+		.chat-editable-comment-btns {
+			padding-left: 6px;
+		}
+		.Parent-name-comment .comment-reply-box-info[contenteditable="true"] {
+			border-radius: 10px;
+			resize: none;
+			border-color: #e1e1e1;
+			box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+			border: 1px solid #e1e1e1 !important;
+			padding: 4px 8px 4px 8px;
+			word-break: break-word;
+			min-height: 54px;
+			max-height: 54px;
+			overflow: auto;
+		}
+		.Parent-name-comment .comment-reply-box-info[contenteditable="true"]:hover, .Parent-name-comment .comment-reply-box-info[contenteditable="true"]:focus {
+			border-color: #66afe9 !important;
+			outline: 0 #66afe9 !important;
+		}
+		.comment-reply-box-info .chat-editable-comment>div[contenteditable="true"] {
+			display: block;
+			margin-top: 10px;
+		}
+		.attachment-badge-edit-mode .attachment-badge-name {
+			display: block;
+			width: 90%;
+			float: left;
+		}
+		.attachment-badge-edit-mode .Closebtn {
+			padding-left: 5px;
+			padding-right: 5px;
+			display: block;
+			width: 10%;
+			float: left;
+			text-align: center;
+			position: relative;
+			top: 6px;
+		}
+		.attachment-badge-edit-mode+.experiences-inner-card-btn-panel {
+			float: left;
+		}
+		.experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count>a {
+			position: relative;
+			top: -3px;
+		}
+		.Parent-name-comment .comment-area .custom-form-group .form-control, .ChildCommentArea .comment-area .custom-form-group .form-control {
+			min-height: 54px;
+			max-height: 54px;
+		}
+		.chat-editable-comment-btns .btn {
+			border-radius: 10px !important;
+		}
+		.outer-chat {
+			float: left;
+			width: 100%;
+		}
+		.ChildCommentArea-seemore a.see_more {
+			cursor: pointer;
+		}
+
+		.replymsg>div {
+			display: inline;
+		}
+
+		#comments .main-chat-text-area .emojionearea .emojionearea-button.active+.emojionearea-picker-position-left, #comments .main-chat-text-area .emojionearea .emojionearea-button.active+.emojionearea-picker-position-right
+		{
+			margin-right: -118px !important;
+			top: 30px !important;
+		}
+		.my-general-view-team-member-box {
+    /*position: absolute;
+    right: 0px;
+    top: -58px;*/
+    position: relative !important;
+    right: auto !important;
+    top: auto !important;
+    margin-bottom: 15px;
+}
+
+/* new css added on 01/7/2021 - 05/7/2021, 09/7/2021, 12/7/2021 */
+
+.chat-main-panel {
+	padding-bottom: 17px;
+}
+/*.reply-box-my .attachment-badge a {
+	max-width: 41.3ch !important;
+	overflow: hidden !important;
+}*/
+.detail-view-right-chat-area {
+    width: 85%;
+    margin: 10px auto 0 auto;
+    float: none;
+}
+.video-media-area-p, .image-media-area-p {
+    margin-bottom: 20px !important;
+}
+.video-media-area-p-alone {
+    /*width: 85%;*/
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+}
+.image-media-area-p-alone {
+    /* width: 85%; */
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+}
+
+.info-detail .relatedWord {
+    font-size: 16px;
+    margin-bottom: 16px;
+    margin-left: 2px;
+}
+.info-detail #RelatedWordArea {
+    padding-left: 10px;
+}
+
+/* new css added on 04/8/2021 */
+
+.chatAttach_Docx, .chatAttach_PDF, .chatAttach_xlsx, .chatAttach_Others {
+    height: 44px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatAttach_Docx .chip-text-box, .chatAttach_PDF .chip-text-box, .chatAttach_xlsx .chip-text-box, .chatAttach_Others .chip-text-box {
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-head-bg {
+    margin: -10px 0px 0px -18px !important;
+}
+
+/* responsive css start */
+
+@media (max-width: 1280px) and (min-width: 426px) {
+    .arrow-custom {
+        top: auto !important;
+        bottom: -89px;
+    }
+}
+
+@media(max-width:767px){
+	
+	#MSOZoneCell_WebPartWPQ2,
+	.ms-webpart-chrome-vertical{
+		display:block !important;	
+	}	
+	
+}
+
+@media(max-width:1200px){
+
+	/*.arrow-custom{
+		top:225px !important;	
+	}*/
+	.arrow-custom {
+        top: auto !important;
+    	bottom: 41px;
+    }
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .reply-box-my .attachment-badge a {
+	    max-width: 51.3ch !important;
+	    overflow: hidden !important;
+	    margin-right: 10px;
+	}
+	.chip-icon-box {
+	    right: -3px;
+	}
+}
+
+@media(max-width:767px){
+
+	.arrow-custom{
+
+		top:98px !important;	
+
+	}
+	.info-detail-area {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.detail-view-right-chat-area {
+	    width: 100%;
+	    margin: 25px auto 0 auto;
+	    float: none;
+	    padding-left: 0;
+	    padding-right: 2px;
+	}
+	.reply-box-my .attachment-badge a {
+        max-width: 51.3ch !important;
+        overflow: hidden !important;
+        /*position: relative;
+        top: 5px;*/
+    }
+    .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+        padding: 0px 0px 0px 0px;
+        margin-left: 3px;
+    }
+	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+    .reply-box-my .attachment-badge a {
+        max-width: 19.3ch !important;
+        overflow: hidden !important;
+        /*position: relative;
+        top: 5px;*/
+    }
+    .chatAttach_xlsx .chip-icon-box a, .chatAttach_Others .chip-icon-box a, .chatAttach_PDF .chip-icon-box a, .chatAttach_Docx .chip-icon-box a {
+        padding: 0px 0px 0px 0px;
+        margin-left: 3px;
+    }
+ 
+}
+
+@media (max-width: 375px) {​​​​​​​
+   .toast {​​​​​​​
+        max-width: 310px;
+    }​​​​​​​
+}​​​​​​​
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {
+
+	.experiences-inner-card-btn-panel {
+		display: block !important;
+	}
+	.experiences-inner-card-btn-panel .experiences-inner-card-btn-item {
+		display: block !important;
+	}
+	.experiences-inner-card-btn-panel .experiences-inner-card-btn-item li {
+		display: inline-block;
+		margin-bottom: 3px;
+		margin-top: 6px;
+	}
+	.experiences-inner-card-btn-panel .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-icon {
+		margin-bottom: 10px;
+	}
+
+}
+
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2066</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3cd65b27-ec95-48c4-96de-eee64965da99</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2066, ADMIN-1645029823-2066</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	
+	<div class="info-head-bg">
+		<div class="image-detail-section"> <img src="" class="img-responsive" alt="" id="sliderimg">
+			<div class="shade-detail"></div>
+		</div>
+		<div class="panel-heading panel-heading-info-detail">
+			<span class="info-head-text-detail panel-heading-bg-txt-clr" id="slidertype"></span>
+		</div>
+	</div>
+	<div class="container-fluid container-content">
+		<div id="info_detail_main_area" class="col-sm-12 info-detail-area">
+			<div class="panel panel-default">
+				<div class="panel-body pl20 pr20 pt20 pb20">
+					<div id="title_author_area" class="info-detail">
+						<h1 id="slidertitle"></h1>
+						<i class="fa fa-bars relatedWord" style="display:none;"><span id="RelatedWordArea"></span></i>
+						<div class="experiences-inner-card experiences-details-inner-card">
+							<div class="experiences-inner-card-head">
+								<img src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user" id="UserProfile">
+							</div>
+							<div class="experiences-inner-card-body">
+								<div class="experiences-inner-card-body-info text-ellipsis">
+									<h3 class="member-name text-ellipsis" id="username"></h3>
+									<p class="member-deg text-ellipsis">
+										<span id="TitleDesignation">Leader</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="TitleDepartment">Marketing</span>
+									</p>
+									<p class="member-date text-ellipsis">
+										<span class="mr-4">Posted on:</span><span id="mydate"></span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<!-- <div class="col-lg-8 col-md-7 detail-view-left"> -->
+								<div class="col-lg-12 col-md-12">
+									<div id="detail_text_area" class="info-content-detail pl0 pr0">
+
+										<div class="dropdown my-general-view-team-member-box" id="TeamMembersBtn" style="display:none;" onclick="GetAllTeamMembers();">
+											<button id="general-view-team-member" class="btn btn-primary dropdown-toggle new-team-member-btn panel-heading-bg-txt-clr" type="button" data-toggle="dropdown"><span data-localize="TeamMember"> Team Member </span>
+											</button>
+											<ul class="dropdown-menu show-comment-panel likes-panel" id="TeamLists">
+
+											</ul>
+										</div>
+
+										<p id="description">
+
+										</p>
+										<div class="link-container" id="LinkArea">
+											<div class="link-box">
+												<span class="link-label">Web Link:</span>
+												<a class="link-item" href="#" id="weblinkUrl"></a>
+											</div>
+										</div>
+										
+										<div class="link-container" id="AttachDoc"></div>
+										<div class="">
+											<div class="attachment-badge mt-10 mb-20" id="fileattach">
+											<!--<a href="#"><span>Attachment1.png</span> <span><i
+														class="fa fa-eye"></i></span></a>
+											<a href="#"><span>Img1.png</span> <span><i class="fa fa-eye"></i></span></a>
+											<a href="#"><span>Img2.png</span> <span><i class="fa fa-eye"></i></span></a>
+											<a href="#"><span>Img3.png</span> <span><i class="fa fa-eye"></i></span></a>-->
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div></div>
+									<div id="media_area" class="row info-content-media">
+										<div id="image_media_area" class="col-lg-6 col-md-6 pb-40 image-media-area-p image-media-area-p-alone">
+											<div id="myCarousel" class="carousel slide info-content-media-image "
+											data-ride="carousel" data-interval="false">
+											<!-- Wrapper for slides -->
+											<div class="carousel-inner" id="mediaimg">
+													<!--<div class="item active">
+														<img src="../SiteAssets/Biography/Experience/assets/images/i1.jpeg" alt="">
+													</div>
+													<div class="item">
+														<img src="../SiteAssets/Biography/Experience/assets/images/i2.jpg" alt="">
+													</div>-->
+
+												</div>
+												<!-- Left and right controls -->
+												<a class="left carousel-control arrow-custom" href="#myCarousel"
+												data-slide="prev">
+												<span class="glyphicon"><img src="../SiteAssets/Biography/Experience/assets/images/c_ar.png" width="35"
+													height="35" alt=""></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="right carousel-control arrow-custom" href="#myCarousel"
+												data-slide="next">
+												<span class="glyphicon"><img src="../SiteAssets/Biography/Experience/assets/images/c_ar.png" width="35"
+													height="35" alt=""></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+										</div>
+										<div id="video_media_area" class="col-lg-6 col-md-6 pb-40 video-media-area-p video-media-area-p-alone">
+											<div id="myCarousel1" class="carousel slide" data-ride="carousel"
+											data-interval="false">
+											<div class="carousel-inner" id="allvideolink1">													
+											</div>
+											<a class="left carousel-control arrow-custom-video" href="javascript:void(0);"	data-slide="prev" data-target="#myCarousel1">
+												<span class="glyphicon" id="LeftArrowSign"><img src="../SiteAssets/Biography/Experience/assets/images/c_ar.png" width="35" height="35" alt=""></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="right carousel-control arrow-custom-video" href="javascript:void(0);" data-slide="next" data-target="#myCarousel1">
+												<span class="glyphicon" id="RightArrowSign"><img src="../SiteAssets/Biography/Experience/assets/images/c_ar.png" width="35" height="35" alt="" ></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="col-lg-4 col-md-5 detail-view-right-chat-area detail-view-right" style="position: sticky;top: 20px;"> -->
+								<div class="col-lg-12 col-md-12 detail-view-right-chat-area" style="position: sticky;top: 20px;">
+									<div class="comment-container">
+										<div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+											<ul class="nav experiences-inner-card-btn-item">
+												<li class="experiences-inner-card-btn-panel-icon">
+													<img src="../SiteAssets/Biography/Experience/assets/images/visibility-icon.png">
+												</li>
+												<li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#views" id="TotalHits">0</a></li>
+												<li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+												<li class="experiences-inner-card-btn-panel-icon">
+													<img id="like-Img-color" class="like-img" src="" onclick="TriggerLikes();">
+												</li>
+												<li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likes" id="TotalLikes">0</a></li>
+												<li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+												<li class="experiences-inner-card-btn-panel-icon">
+													<img src="../SiteAssets/Biography/Experience/assets/images/chat-icon.png">
+												</li>
+												<li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#comments" id="TotalComments">0</a></li>
+											</ul>
+										</div>
+										<div class="tab-content">
+											<div id="views" class="tab-pane fade">
+												<ul class="show-comment-panel likes-panel" id="ViewHitList">
+													<!--li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Tom Dalton</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">DG</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Dipankar Goswami</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">PN</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Parrick Norman</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">VD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Veslina Drew</h4>
+														</div>
+													</li-->
+												</ul>
+											</div>
+											<div id="likes" class="tab-pane fade">
+												<ul class="show-comment-panel likes-panel" id="Likeshitlist">
+													<!--li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Tom Dalton</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">DG</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Dipankar Goswami</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">PN</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Parrick Norman</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">VD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Veslina Drew</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Tom Dalton</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">DG</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Dipankar Goswami</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">PN</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Parrick Norman</h4>
+														</div>
+													</li>
+													<li class="likes-box">
+														<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">VD</span><img class="comment-reply-user-name-img" src="../SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user"></div>
+														<div class="like-user-name">
+															<h4>Veslina Drew</h4>
+														</div>
+													</li-->
+												</ul>
+											</div>
+											<div id="comments" class="tab-pane fade in active">
+
+
+
+
+
+												<div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+													<div class="row ml0 mr0" id="reply_area">
+														<div class="col-xs-12 text-center pt-15">
+															<a style="display:none;cursor:pointer;" class="view-more-replies" id="seemorebtnGeneral" onclick="ReadTimeLine('GetAll', 'Logged_InUser', Url4ViewallOcc, 'ViewMore')">View Previous</a>
+														</div>
+														<div id="CommentsArea"></div>
+														<div id="showInnerLikes" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+															<div class="likes-close-box">
+																<i id="likeCloseBox" class="fa fa-times cursor-pointer"></i>
+															</div>
+															<ul class="likes-panel scrollbar-panel" id="CommentLikeList">
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Tom Dalton</h4>
+																	</div>
+																</li>
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">DG</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Dipankar Goswami</h4>
+																	</div>
+																</li>
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">PN</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Parrick Norman</h4>
+																	</div>
+																</li>
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">VD</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Veslina Drew</h4>
+																	</div>
+																</li>
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Tom Dalton</h4>
+																	</div>
+																</li>
+																<li class="likes-box">
+																	<div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">DG</span><img class="comment-reply-user-name-img" src="" alt="user"></div>
+																	<div class="like-user-name">
+																		<h4>Dipankar Goswami</h4>
+																	</div>
+																</li>
+															</ul>
+														</div>
+
+													</div>
+												</div>
+												<div class="clearfix"></div>
+												<div class="main-chat-text-area main-chat-text-area-border">
+													<div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3">
+														<div class="reply-text-line">
+															<div class="reply-text-line-cross">
+																<a id="replyHide" type="button" onclick="DeActiveReplyControl()"><i class="fa fa-times"></i></a>
+															</div>
+															<a href="#" class="comment-reply-user-name-info">@<span id="replyforuser"></span> :</a>
+															<span id="ReplyforMsg"></span>
+														</div>
+														<div class="attachment-badge chip-box">
+
+														</div>
+													</div>
+													<div class="main-comment-panel">
+														<div class="comment-area">
+															<div class="custom-form-group">
+																<textarea class="form-control" rows="3" id="commentText"></textarea>
+															</div>
+															<div id='NewAttachmentFiles' class="oldfilename1"></div>
+															<div id='oldfilename' class="oldfilename"></div>
+														</div>
+														<div class="comment-btn-pannel">
+															<div class="btn mr-8">
+																<div id="drop-zone">
+																	<div id="clickHere">
+																		<input class="btn-file-upload" type="file" name="" id="" multiple>
+																		<img src="../SiteAssets/Biography/Experience/assets/images/attach-file.png">
+																	</div>
+
+																</div>
+
+															</div>
+
+															<button type="button" class="btn" onclick="PushRootComment();">
+																<img src="../SiteAssets/Biography/Experience/assets/images/send.png">
+															</button>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--<a href="#" class="view_more" id="seemorebtnGeneral" style="display:none;" onclick="ReadTimeLine();">View More</a>-->	
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Iframe Image POpup starts-->
+    <div class="modal fade" id="AttachmentView" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Attachment View
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                        <div id="doc-viewer" style="height:415px">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--Iframe Image POpup ends-->
+<div class="toast" id="ToastPopup" style="display:none;">
+        <div class="toast-body">
+          <span>New message</span>
+          <button type="button" class="ml-2 mb-1 close" id="scrollChat">
+          	<i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
+          </button>
+        </div>
+    </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){ 
+		$("#s4-bodyContainer").addClass("entry-screen-page-full"); 
+		$('[data-toggle="tooltip"]').tooltip();
+		$("#likeCloseBox").click(function(){ 
+			$("#showInnerLikes").toggleClass("show-inner-likes-box-hide"); 
+		});
+		$(".like-img").click(function () {
+			var src = $(this).attr('src');
+			var newsrc = (src == '../SiteAssets/Biography/Experience/assets/images/like-icon.png') ? '../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' : '../SiteAssets/Biography/Experience/assets/images/like-icon.png';
+			});
+		$("#replyTextarea").hide();
+
+		$("#commentText").emojioneArea({    
+			pickerPosition: "right",
+			tonesStyle: "bullet",
+			events:{
+				keyup: function (editor, event) {
+
+				}
+			}
+		});
+	});
+</script>
+<script type="text/javascript" src="../SiteAssets/CompanyHomePage/Sliders/ManageSliders/ViewSlider.js?v=5"></script>
+<script type="text/javascript" src="../SiteAssets/Chatting/Chatting.js?v=5"></script>
+
+</body>
+
+</html>

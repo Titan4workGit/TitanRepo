@@ -1,0 +1,452 @@
+﻿<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js?123'></script>
+<script src="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js?123"></script>
+
+<style>
+
+.ms-webpart-chrome-title{
+	margin-bottom:-20px;
+}
+#DeltaPlaceHolderMain p{
+	display:none;
+}
+
+.ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+    display: block !important;
+}
+
+.fa-pencil-square-o:before{
+  content:'\f040' !important;
+  font-family:fontAwesome;	
+}
+
+#TempTableCategory tr td a.btn-outline-primary,
+#TempTableCategory tr td a.btn-outline-danger{
+
+    height: 30px !important;
+    width: 30px !important;
+    line-height: 30px;
+    font-size: 13px !important;
+    text-align: center;
+    border-radius: 50% !important;
+    border: 0;
+    padding: 0 !important;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+    color:#1d6ec0 !important;
+}
+
+#TempTableCategory tr td a.btn-outline-primary:hover,
+#TempTableCategory tr td a.btn-outline-danger:hover{
+   background-color:#ccc !important;
+}
+
+/* new css added on 07/7/2021 */
+
+#closeCategory {
+    margin-right: 0 !important;
+}
+
+/* responsive css start */
+
+@media (max-width: 768px) {
+	.ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+	    display: block !important;
+	}
+	.ms-webpart-cell-vertical {
+	      display: block;
+	}
+	
+#modalApprovalCategory .panel-body label{
+	margin-bottom:10px !important;
+	padding-left: 6px !important;
+}
+
+	
+}
+
+.ms-webpart-titleText{display: none;}
+label.required:after {content: " *"; color: red;}
+
+.hidden-xs {
+  display:block !important;
+}
+.btm10{
+	padding-bottom:10px;
+}
+#tabPanelId.nav > li > a {
+position: relative;
+display: block;
+font-size: 15px;
+color: #333 !important;
+padding: 10px 15px !important;
+background-color:#eee;
+margin-top:0px; !important;
+
+}
+
+/*New Css Add for Search box 17/07/2020 
+input[type=password], input[type=text], input[type=file], input:not([type]), select, textarea, .sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox {
+      margin-left: 12px;
+}*/
+
+
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tabPanelId.nav-tabs>li.active>a {
+  background-color:#c7c5c5;
+    
+}
+.doc_icon img{
+    padding: 4px;	
+}
+img{
+  max-width:100%;
+}
+input[type=file]{
+padding:10px;
+}
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+
+.category-main-section {
+    margin-top: 28px !important;
+}
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+	.table-responsive>.table>tbody>tr>td{
+		white-space: normal !Important;
+	}
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+.navbar-custom{
+	margin-bottom:0 !important;	
+}
+
+.article-content{
+	margin-top:0px !important;
+}
+
+.custom-panel{
+
+	margin-top:0px !important;	
+}
+
+@media(max-width:767px){
+
+	div.ms-webpart-cell-vertical-inline-table{
+	  display:block !important; 
+	}
+	.ms-webpart-chrome-vertical{
+	  display:block !important; 
+	}	
+	div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+		min-width:901px !important;	
+	}
+	
+}
+
+@media all and (max-width: 952px) and (min-width: 768px){
+	
+#managesec label{
+	width:12%;	
+}	
+	
+	
+}
+
+@media all and (max-width: 767px) and (min-width: 600px){
+
+
+#managesec{
+
+	display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+  	display:flex;
+  	-webkit-flex-wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+  	justify-content:center;
+
+}
+	
+#managesec label{
+	width:15%;	
+}	
+
+#managesec select,
+#managesec input{	
+	width:40% !important;
+}
+
+#managesec button{
+	margin-top:10px;
+}
+
+}
+
+@media(max-width: 599px){
+
+
+#managesec{
+
+	display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+  	display:flex;
+  	-webkit-flex-wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; 
+  	justify-content:center;
+}
+	
+#managesec label{
+	width:80px;	
+}	
+
+#managesec select{	
+	width:75% !important;
+}
+
+
+#managesec input{	
+	width:88% !important;
+	margin-top:15px;
+}
+
+#managesec button{
+	margin-top:10px;
+}
+
+}
+
+
+</style>
+
+<section class="content panel panel-default category-main-section">
+	<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="Category">Category</h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">			
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="mrg-top-10m  btm10 container">
+					<div class="row" id="managesec">
+						<label for="" style="margin-top:9px;margin-left:-5px;" class="col-sm-1 control-label" data-localize="Type">Type</label>
+						<select id="ddlCategoryTypet" style="width:200px;font-size: 13px;margin-left:-25px;padding:8px 5px !Important;"  class="pull-left"> 
+						<option value="0">All</option>
+						<option value="7">Activity</option>
+						<option value="2">Document</option>
+						<option value="5">Event</option>
+						<option value="1">Experience</option>
+						<option value="1">Guest Type</option>						
+						<option value="4">Information</option>
+						<option value="9">Project Type</option>
+						<option value="10">Questions</option>				
+					    <option value="3">Recognition</option>					    		          
+					    <option value="6">Welcome</option>
+					    <option value="8">Work Type</option>
+					          
+						</select>
+					   <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." class="doc-search"style="margin-left:12px;width:200px;font-size: 13px;padding:8px 5px !Important;" />
+
+						<button type="button" id="closeCategory" style="font-size:13px;margin-right:20px;" class="btn btn-outline-secondary  pull-right " data-localize="Close">Close</button>				
+						<button type="button" id="addCategory" style="font-size:13px;" class="btn btn-outline-success pull-right " data-localize="Add">Add</button>	
+					</div>
+					</div>	
+					<div class="table-responsive">
+						<table cellpadding='0' cellspacing='0' border='1' id='TempTableCategory' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading'><tr>
+								<th><h6 data-localize="Type">Type</h6></th>
+								<th><h6 data-localize="Categories">Categories</h6></th>
+								<th><h6 data-localize="Status">Status</h6></th>
+								<th class='nosort' style='width:140px; text-align:center'><h6 data-localize="Action">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllCategory'>					
+							</tbody>
+						</table>
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No Record Found</div>
+						
+					<div id="mainDivAllCategory">
+					</div>				
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdown"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage">Lines Per Page</span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">Page</span><span id="currentpage"></span><span data-localize="Of">Of</span><span id="totalpages"></span></div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<div id="modalApprovalCategory" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+            	
+                <button type="button" id="tbnClose" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Category">Category</h4>
+            </div>
+			<div class="modal-body">
+ <div class="panel-body">
+    <div class="form-horizontal">
+    <div class="form-group">
+        <label for="" class="col-sm-3 control-label popup_label" data-localize="Type">Type</label>       
+         <div class="col-sm-9">
+          <select id="ddlCategorytype" class="form-control">
+          <!--<option value="">Select Module</option>-->
+                        <option value="Activity">Activity</option>
+						<option value="Document">Document</option>
+						<option value="Event">Event</option>
+						<option value="Experience">Experience</option>
+						<option value="Guest Type">Guest Type</option>			
+						<option value="Information">Information</option>
+						<option value="Project Type">Project Type</option>
+						<option value="Questions">Questions</option>			
+					    <option value="Recognition">Recognition</option>					    		          
+					    <option value="Welcome">Welcome</option>
+					    <option value="Work Type">Work Type</option>		        			          
+          </select>
+         </div>
+       </div>    
+	<div class="form-group" id="myfromgroup">
+        <label for="" class="col-sm-3 control-label popup_label" data-localize="Category">Category</label>
+       
+         <div class="col-sm-9">
+          <input type="" class="form-control" id="txtCategoryName" name="txtCategoryName">
+         </div>
+       </div>  
+     
+
+      <div class="form-group">
+        <label for="" class="col-sm-3 control-label popup_label" data-localize="Active">Active</label>       
+         <div class="col-sm-9">
+		<input type="checkbox" name="" id="checkbox" value="0" checked></div>
+     </div>
+     
+     
+     <!--new -->
+    <div class="panel panel-default" style="display:none">
+<div class="panel-heading panel-head-4" role="tab" id="headingOne">
+	<h4 class="panel-title h4-color">
+		<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapslang" aria-expanded="false" aria-controls="collapslang" class="collapsed">
+		<i class="short-full glyphicon-chevron-down glyphicon"></i>
+		<span data-localize="OtherLanguages">Other Languages</span>
+		</a>
+	</h4>
+</div>
+<div id="collapslang" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"  style="height: 0px;">
+<div class="panel-body PollCategory">
+
+
+</div>
+</div>
+</div>
+     
+     
+	 <div class="row text-center">               
+		<button type="button" class="btn  btn-outline-success" name="createCategory" id="createCategory" data-localize="Add">Add</button>
+	 </div>
+    </div>
+   </div>
+   </div>
+		</div>
+	</div>
+</div>	
+
+</section>
+
+
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+<script src="../SiteAssets/AdminPortal/Category/Category.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " />
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1315</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">293f790b-41ec-4c91-b0d3-151513b5ee70</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1315, ADMIN-1645029823-1315</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">2600.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rahul  Rana</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>

@@ -1,0 +1,128 @@
+﻿<script>
+    var documentCategoryCounter = 0;
+$(document).ready(function()
+{
+    GetDocumentCategory();
+});
+
+
+function GetDocumentCategory()
+{
+
+    var siteURL = titanForWork.getQueryStringParameter('DepartmentSiteUrl');
+   // var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentType')/items?$select=ID,Title"
+    var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('CategoryMaster')/items?$select=CategoryType,CatogeryName&$filter=CategoryType eq 'Document'"
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            var ItemCount = data.d.results.length;
+            if (ItemCount == 0)
+            {
+                mainHTML = "<div class=\"norecordfound col-sm-8 col-xs-8 col-md-8\">";
+                mainHTML += "<h3 data-localize='NoRecord_Documents' class=\"top5\"></h3>";
+                mainHTML += "</div>";
+                $("#departmentalDocuments").append(mainHTML);
+                return;
+            }
+            var documentsType=new Array();
+            for (var i = 0; i < items.length; i++)
+            {
+               // var Title = items[i].Title;
+               var Title = items[i].CatogeryName;
+                
+                if (Title != null && Title!="")
+                {
+                      documentsType.push(Title);
+                 //   GetDocuments(siteURL, Title, items.length,i);
+                }
+            }
+            
+            documentsType.sort();
+            for (var i = 0; i < documentsType.length; i++)
+            {
+                 console.log(documentsType[i]);
+                 GetDocuments(siteURL, documentsType[i], items.length,i);
+            }
+          
+            
+
+        }, eror: function (data) {
+
+            console.log('error');
+        }
+    });
+}
+function GetDocuments(siteURL,documentType,categoryCounter,currentCtegoryIndex)
+{
+    if(documentCategoryCounter > 4)
+    {
+        return;
+    }
+    var query = "&$orderby=Modified desc&$filter=AccessLevel eq 'Everyone' and (ApprovalStatus eq 'Approved' or ApprovalStatus eq null) and DocumentType eq '" + documentType + "'";
+    var Ownurl = siteURL + "/_api/web/Lists/GetByTitle('DepartmentalDMS')/Items?$select=ID,Modified,File_x0020_Type,DocumentType,Title,AccessLevel,File/Name,File/ServerRelativeUrl&$top=7&$expand=File"+query;
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async:false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            var mainHTML='';
+			// No Record Found Logic
+            var ItemCount = data.d.results.length;
+          
+			if (ItemCount == 0 && documentCategoryCounter==0 && categoryCounter-1 == currentCtegoryIndex)
+			{
+				mainHTML="<div class=\"norecordfound col-sm-8 col-xs-8 col-md-8\">";
+		        mainHTML+="<h3 data-localize='NoRecord_Documents' class=\"top5\"></h3>";
+		        mainHTML+="</div>";
+				$("#departmentalDocuments").append(mainHTML);
+				return;
+			}
+			if (ItemCount > 0) {
+			    var dates = [];
+			    for (var i = 0; i < items.length; i++) {
+			        dates.push(new Date(items[i].Modified))
+			    }
+			    var maxDate = new Date(Math.max.apply(null, dates));
+			  
+			    var departmentId = titanForWork.getQueryStringParameter("DepartmentId");
+			    var redirectUrl = "../Pages/ViewAllDocuments.aspx?WebAppId=2&DepartmentId=" + departmentId + "&DocumentType=" + documentType + "&undefined=undefined";
+			    var trCollection = "";
+			    trCollection += '<li class="list-group-item"><a href="'+redirectUrl+'">' + documentType + ' <span class="badge-text2 pull-right mt-10">' + ItemCount + '</span></a>';
+			    trCollection += '<div><small>Last Modified : ' + ShowCommonDateFormat(maxDate) + '</small></div>';
+			    trCollection += '</li>';
+			    $("#departmentalDocuments").append(trCollection);
+			    documentCategoryCounter++;
+			}
+        },eror: function (data)
+        {
+            console.log('error');
+        }
+    });
+}
+</script>
+<div id="departmentalDocuments1" class="list-group doc-box">
+    <ul id="departmentalDocuments" class="list-group panel-height-new"></ul>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-404</mso:_dlc_DocId>
+    <mso:_dlc_DocIdItemGuid msdt:dt="string">c6546f8d-8050-46c7-bf2f-09cdd214bf91</mso:_dlc_DocIdItemGuid>
+    <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-404, ADMIN-1645029823-404</mso:_dlc_DocIdUrl>
+    <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">40400.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+    </xml><![endif]-->
+<title></title></head>

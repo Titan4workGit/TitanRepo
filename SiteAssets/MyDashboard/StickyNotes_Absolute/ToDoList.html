@@ -1,0 +1,461 @@
+﻿<style>
+	#notes { 
+    display:none; /* Hide the DIV */
+    position:fixed;  
+    _position:absolute; /* hack for internet explorer 6 */  
+	    <!-- height:300px;   -->
+	    width:300px;  
+	    <!-- background:#FFFFFF;   -->
+	    left: 300px;
+	    top: 150px;
+	    z-index:100; /* Layering ( on-top of others), if you have lots of layers: I just maximized, you can change it yourself */
+	    margin-left: 15px;  
+	
+	    /* additional features, can be omitted */
+	    <!-- border:2px solid #ff0000; --> 		
+        <!-- padding:15px; -->  
+        <!-- font-size:15px; --> 
+        <!-- -moz-box-shadow: 0 0 5px #ff0000;-->
+        <!-- -webkit-box-shadow: 0 0 5px #ff0000; -->
+        <!-- box-shadow: 0 0 5px #ff0000;  -->
+	
+        }
+	
+.sticky-note { color: #7f6c04; background: #f9dd45; border-radius: 10px; border: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 13px; box-shadow: 2px 2px 10px rgba(0,0,0,0.4); overflow: hidden;  min-height: 200px;min-width: 300px;  max-height: 200px;max-width: 392px;}
+.contents { background: #f9e055; margin: 20px; outline: none; }
+.Title { background: #ffffff29; margin: 20px; outline: none; color: black;}
+.sticky-note .handle { cursor: move; background: #7f6c04; border-radius: 8px 8px 0px 0px; height: 30px; }
+.handle .close { cursor: pointer }
+html body .sticky-note div.close { color: #3d3402; opacity: 1; text-shadow: 1px 0px 1px #a08805; padding: 2px; }
+[contentEditable=true]:empty:not(:focus):before{
+    content:attr(data-text)
+}
+.closeNotes{cursor: pointer}
+.saveNotes{cursor: pointer}
+.deleteNotes{cursor: pointer}
+</style>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventToDoList,"sp.js");
+    toDoListHTML();
+  //  TextEdiorEvent();
+      
+});
+
+function TextEdiorEvent()
+{
+    $("#words").keydown(function(){
+
+            GetWordCount($(this).val());
+      
+    });
+    $("#words").keyup(function(){     
+
+            GetWordCount($(this).val());
+       
+    });
+}
+function GetWordCount(totallength)
+{
+    var remaingValue=250-totallength.length;
+    $('#wordCount').text(remaingValue);
+}
+
+
+function getCurrentURL_EventToDoList()
+{
+    var listName='Companies';
+    var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                CompanySiteURL = items[0].SiteURL;
+                siteClientContext = new SP.ClientContext(CompanySiteURL);
+                getToDoItems();
+            }
+           
+        }, eror: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function toDoListHTML()
+{
+    zIndex = 10;
+    $('#new').click(function()
+    {
+        $('#notesItemID').html('');
+        $('#words').val('');
+        $('#wordstitle').val('');
+        $(".deleteNotes").hide();
+       // $(".btn-xs").hide();
+      //  $("#new").hide();
+        loadPopupBox();
+        $('.sticky-note-pre')
+            .draggable({
+                handle: '.handle'    
+            })
+            .resizable({
+                resize: function(){
+                    var n = $(this);
+                    n.find('.contents').css({
+                        width: n.width() - 40,
+                        height: n.height() - 60
+                    });
+                    n.find('.Title').css({
+                        width: n.width() - 40,
+                        height: n.height() - 60
+                    });
+                }
+            })
+            .find('.closeNotes')
+                .click(function(){
+                 //   $(this).parents('.sticky-note').remove();
+                    $(".btn-xs").show();
+                    $("#new").show();
+                    unloadPopupBox();
+                })
+            .end()
+            .dblclick(function(){
+               // $(this).remove();
+            })
+            .addClass('sticky-note')
+            .removeClass('sticky-note-pre');       
+    });
+    
+    $('.deleteNotes').click(function()
+    {
+        complatedtodoTask($('#notesItemID').html());
+    });
+
+    $('#save').click(function()
+    {
+       $('#save').hide();
+        var title =$('#words').val();
+       var wordstitle =$('#wordstitle').val();
+        
+           if(wordstitle.trim().length==0)
+	        {
+	         $('#save').show();
+	         alert("Please enter note's title.");
+	         return false;
+	        }
+	        if(title.trim().length==0)
+	        {
+	         $('#save').show();
+	         alert("Please enter notes.");
+	         return false;
+	        }
+
+	        if(title.trim().length<=5000)
+            {
+               
+	            if($('#notesItemID').html().length==0)
+	            {
+	                saveToDoItems();
+	            }
+	            else
+	            {
+	                updateToDoItems($('#notesItemID').html());
+	            }
+	           // getToDoItems();
+	           
+
+           }
+           else
+           {
+           alert('Maximum 5000 characters allowed in note.');
+           }
+        
+    });
+}
+
+function showEdit(){
+    var numberOfChecked= $('input:checkbox:checked').length;
+    if(numberOfChecked>1)
+    {
+        $('.editItem').prop('disabled',true);
+    }
+    else
+    {
+        $('.editItem').prop('disabled',false);
+    }
+}
+
+function getToDoItems(){
+    $("#todoList").empty();
+    var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('ToDoList')/items?$select=*&$Filter=CompanyId eq '"+txtCompanyId+"' and AuthorId eq '"+_spPageContextInfo.userId+"' and Status eq 'Pending'";
+    //var siteURL= _spPageContextInfo.webAbsoluteUrl;
+    $.ajax({
+        url: requestUri,
+        type: "GET",
+        async:false,
+        headers: { "ACCEPT": "application/json;odata=verbose" },
+        success: function (data) {
+            var items=data.d.results;
+                	
+            var todoList='';
+            for(i = 0; i < items.length;i++) {
+                //var toDoNotes=items[i]["Notes"];
+                var toDoTitle=items[i].Title;
+                if(toDoTitle!=null)
+                {
+                    if(toDoTitle.length > 50)
+                    {					
+                        toDoTitle = toDoTitle.substring(0,50);
+                        toDoTitle=toDoTitle +"...";
+                    }
+                }
+                var toDoID=items[i].ID;
+					  
+                todoList +='<div class="row todoborder" style="padding-right: 12px;">';
+                todoList +='<label class="col-sm-11 sticky-note-text">'+toDoTitle+'</label>';
+                todoList +='<div class="col-sm-1 sticky-note-btn pull-right hidden-phone"><button type="button" class="btn btn-default btn-xs editItem" onclick="gettodoItem('+toDoID+');" style="min-width:2em;"><i class="fa fa-pencil"></i></button>  ';
+                todoList +='<button type="button" class="btn btn-default btn-xs" style="min-width:2em;" onclick="complatedtodoTask('+toDoID+');" ><i class="fa fa-trash-o "></i></button></div></div>';
+            }
+            $("#todoList").append(todoList);
+					
+        },
+        error: function () {
+            console.log("Error getting the Notes.");
+        }                     
+    });
+}
+
+function complatedtodoTask(toDoID){
+
+    if (confirm('Are you sure,you want to delete this note?')) 
+    {
+    //    var clientContext = new SP.ClientContext.get_current();
+    //    var oList = clientContext.get_web().get_lists().getByTitle('ToDoList');
+    //    oListItem = oList.getItemById(toDoID);
+    //    oListItem.set_item('Status', 'Completed');
+    //    oListItem.update();
+    //    clientContext.load(oListItem);
+    //    clientContext.executeQueryAsync(function(){
+    //        alert('Note deleted sucsessfully.');
+    //        getToDoItems();
+    //    },
+    //function(){
+    //    console.log('error : On Task Completed of to do list');
+        //});
+
+        var dfd = $.Deferred();
+
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('ToDoList')/items(" + toDoID + ")",
+            type: "POST",
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "IF-MATCH": "*",
+                "X-HTTP-Method": "DELETE"
+            },
+            success: function (data) {
+                dfd.resolve(data);
+                unloadPopupBox();
+                getToDoItems();
+               // alert('Note deleted sucsessfully.');
+            },
+            error: function (error) {
+                console.log(JSON.stringify(error));
+                dfd.reject(error);
+
+            }
+        });
+        return dfd.promise();
+
+
+
+    } 
+    else {
+        // alert('');
+    }
+}
+function gettodoItem(itemId)
+{
+    $('#notesItemID').html(itemId);
+    $(".deleteNotes").show();
+    var clientContext = new SP.ClientContext.get_current();
+    var oList = clientContext.get_web().get_lists().getByTitle('ToDoList');
+    var camlQuery = new SP.CamlQuery();
+    var camlXML = "<View><Query><Where><Eq><FieldRef Name='ID' /><Value Type='Number'>"+itemId+"</Value></Eq></Where></Query></View>";
+    camlQuery.set_viewXml(camlXML);
+    var collListItem = oList.getItems(camlQuery);        
+    clientContext.load(collListItem);        
+    clientContext.executeQueryAsync(function(){
+        var listItemEnumerator = collListItem.getEnumerator();
+        var ItemCount=collListItem.get_count();
+        var counter=1;
+        while (listItemEnumerator.moveNext()) 
+        {	
+            var oListItem = listItemEnumerator.get_current();
+            //var Notes=oListItem.get_item('Notes');
+            var title=oListItem.get_item('Title');
+            var notes=oListItem.get_item('Notes');
+            if(title==null)
+            {
+                title='';
+            }
+           // $(".btn-xs").hide();
+           // $("#new").hide();
+            loadPopupBox();
+            
+            $('#words').val(notes);
+            $('#wordstitle').val(title);
+            $('.sticky-note-pre')
+                .draggable({
+                    handle: '.handle'    
+                })
+                .resizable({
+                    resize: function(){
+                        var n = $(this);
+                        n.find('.contents').css({
+                            width: n.width() - 40,
+                            height: n.height() - 60
+                        });
+                        n.find('.Title').css({
+                            width: n.width() - 40,
+                            height: n.height() - 60
+                        });
+                    }
+                })
+                .find('.closeNotes')
+                    .click(function()
+                    {
+                      //  $(this).parents('.sticky-note').remove();
+                        $(".btn-xs").show();
+                        $("#new").show();
+                        unloadPopupBox();
+                    })
+                .end()
+                .dblclick(function(){
+                 //  $(this).remove();
+                })
+                .addClass('sticky-note')
+                .removeClass('sticky-note-pre');			
+        }
+    }, 
+		
+	function(){
+	    console.log('error : Department Details web part');
+	});
+	
+}
+
+function updateToDoItems(itemId){
+    var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var clientContext = new SP.ClientContext.get_current();
+    var oList = clientContext.get_web().get_lists().getByTitle('ToDoList');
+    oListItem = oList.getItemById(itemId);
+    var title =$('#wordstitle').val();
+    var notes =$('#words').val();
+    oListItem.set_item('Title', title);
+    oListItem.set_item('Notes', notes);	
+    oListItem.update();
+    clientContext.load(oListItem);
+    clientContext.executeQueryAsync(function(){
+        //  $('.sticky-note').remove();
+        getToDoItems();
+        alert('Note updated sucsessfully');
+         $('#save').show();
+        $(".btn-xs").show();
+        $("#new").show();
+        unloadPopupBox();
+    },
+	function(){
+	    console.log('error : Department Details web part');
+	});
+	
+}
+
+function saveToDoItems()
+{
+    var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var clientContext = new SP.ClientContext.get_current();
+    var oList = clientContext.get_web().get_lists().getByTitle('ToDoList');
+    var itemCreateInfo = new SP.ListItemCreationInformation();
+    oListItem = oList.addItem(itemCreateInfo);
+    var title =$('#wordstitle').val();// [], j, title;
+    var notes =$('#words').val();
+    oListItem.set_item('Title', title);
+    oListItem.set_item('Notes', notes);
+    oListItem.set_item('Status', 'Pending');	
+    var companyvalue = new SP.FieldLookupValue();
+    companyvalue.set_lookupId(txtCompanyId);
+    oListItem.set_item('Company', companyvalue);
+    oListItem.update();
+    clientContext.load(oListItem);
+    clientContext.executeQueryAsync(function(){
+        //   $('.sticky-note').remove();
+        getToDoItems();
+        alert('Note added sucsessfully.');
+       $('#save').show();
+        $(".btn-xs").show();
+        $("#new").show();
+        unloadPopupBox();
+    },
+	function(){
+	    console.log('error : Department Details web part');
+	});
+}
+
+
+function unloadPopupBox() {	// TO Unload the Popupbox
+    $('#notes').fadeOut("slow");
+
+}
+function loadPopupBox() {	// To Load the Popupbox
+    $('#notes').fadeIn("slow");
+		
+}
+
+</script>
+
+<div class="panel-heading  panel-head-4">
+ <div class="panel-title">
+  <h4 class="h4-color"><span class="glyphicon glyphicon-list-alt"></span> <span data-localize="StickyNotes"></span><span class="glyphicon glyphicon-plus-sign pull-right text-size" style="cursor:pointer;" id="new"></span></h4>
+ </div>
+</div>
+<div id="notes">
+ <div class="sticky-note-pre ui-widget-content">
+                <div class="handle">&nbsp;<div class="fa fa-check saveNotes" aria-hidden="true" id="save" style="float:left;padding: 8px 0px 0px 6px; color:white;"></div>  <div class="fa fa-times closeNotes" aria-hidden="true" style="float: right;padding: 8px 8px 0px 6px; color:white;"></div> <div class="fa fa-trash-o deleteNotes" aria-hidden="true" style="float: right;padding: 8px 8px 0px 6px; color:white;"></div></div>
+				<input type="text" maxlength="50" style="width:100%;font-size:15px" id="wordstitle" placeholder="Enter title"></input><br>
+                <textarea style="resize: none;width:100%" id="words" rows="8" cols="50" placeholder="Enter your notes here"></textarea>                
+            </div>
+</div>
+
+<div id="todoList" class="container sticky-notes"> 
+
+</div>
+<label id="notesItemID" style="display:none"></label>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-83</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b11f88de-37ed-4554-ba7d-3cc451417303</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-83, ADMIN-1645029823-83</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mulla Khadar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">8300.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

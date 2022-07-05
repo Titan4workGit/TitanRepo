@@ -1,0 +1,274 @@
+﻿
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<style>
+
+    .messageBoxWarnning {
+        color: white; /* Add a text color */
+        padding:10px 15px; /* Add some padding */
+        cursor: pointer; /* Add a pointer cursor on mouse-over */
+        background-color: #46a049;
+        border: 1px white solid;
+    }
+
+ /*   #tabPanelId.nav > li > a {
+        position: relative;
+        display: block;
+        font-size: 15px;
+        color: #333 !important;
+        padding: 10px 15px !important;
+        margin-top: 0px;      
+    }*/
+
+    #tabPanelId.nav-tabs > li.active > a {
+        background-color: #c7c5c5;
+    }
+	input[type=text]::-ms-clear {
+		display: none;
+	}
+	#tablefooter {
+		margin-bottom: 10px;
+	} 
+	.ms-webpart-zone, .ms-webpart-cell-horizontal, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+		display: block !important;
+	}
+</style>
+<div id='synchedMessage' class='messageBoxWarnning top15' style='display:none;'></div>
+<div class="synch-div">
+<input type="button" value="Load more" class="btnMoreEmployeeListSynch btn  btn-outline-success" >
+    <a tool href='' data-toggle="tooltip" title="Employee Synchronization" id='idsynch'>
+        <img src='../SiteAssets/EmployeeSynchronous/emp_sync.png' alt='Sync' />
+    </a>
+</div>
+<div class="top15">
+    <ul class="nav nav-tabs nav-justified shadow3" id='tabPanelId'>
+        <li class="active"><a data-toggle="tab" href="#home" data-localize="UnassignedEmployees"></a></li>
+        <!--<li><a data-toggle="tab" href="#menu1">Allocated Companies</a></li>-->
+        <li><a data-toggle="tab" href="#menu2" data-localize="EmployeesNotAvailableInOffice365"></a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+			<div class="row">
+				<div class="col-md-12">
+					<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." class="form-control" />
+					<input type='button' id='btnGetEmp' value='Get Employee' style='background-color:#f1b80d;color:white;display:none' />
+				    <div class="col-sm-2"><select id='ddlTempCompany' class="form-control"></select></div>
+				    <div class="col-sm-2"><select id='ddlTempDepartment' class="form-control"></select></div>
+				    <div class="col-sm-2"><select id='ddlTempOfficeLocation' class="form-control"></select></div>
+				    <div class="col-sm-2 btn-div"><input  class='btn  btn-outline-success' type='button' id='btnEmpSubmit' value='Submit' />
+				    <input  class='btn  btn-outline-success' type='button' id='btnEmpUpdate' value='Update' /></div>
+				</div>
+			</div>
+        
+            <!-- <div id='mainDivArea'></div> -->
+            <!-- MainDivTable Not Allocated -->
+            <div id="div1">
+                <div id="tablewrapper">
+                    <div id="tableheader" style="display:none;">
+
+                        <div class="search" style="display:none;">
+                            <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                        </div>
+                        <div style="display:none;">
+                            <span class="details">
+                                <div>Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+                                <div><a href="javascript:sorter.reset()">Reset </a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="mainDivArea">
+                    </div>
+                    <div id="tablefooter">
+                        <div id="tablenav">
+                            <div>
+                                <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                            </div>
+                            <div>
+                                <select id="pagedropdown"></select>
+                            </div>
+                            <div>
+                                <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                            </div>
+                        </div>
+                        <div id="tablelocation">
+                            <div>
+                                <span data-localize="LinesPerPage"></span>
+                                <select onchange="sorter.size(this.value)" class="ddlpagingNotAllocated" >
+                                    <option value="5">5</option>
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+
+                            </div>
+                            <div><span data-localize="Page"></span><span id="currentpage"></span><span data-localize="Of"></span><span id="totalpages"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EndMainTable -->
+        </div>
+       <!-- <div id="menu1" class="tab-pane fade">
+            <!-- MainDivTable Allocated -->
+          <!--  <input type="text" id="queryAllocated" onkeyup="sorterAllocated.search('queryAllocated')" placeholder="Search..." style="width:270px" />
+            <select id='ddlTempCompanyAllocated'></select>
+            <select id='ddlTempDepartmentAllocated'></select>
+            <select id='ddlTempOfficeLocationAllocated'></select>
+            <input style='color: black;' class='btn btn-success' type='button' id='btnEmpSubmitAllocated' value='Submit' />
+            <input style='color: black;' class='btn btn-success' type='button' id='btnEmpUpdateAllocated' value='Update' />
+            <div id="div1">
+                <div id="tablewrapper">
+                    <div id="tableheader">
+                        <div class="search">
+
+                            <br />
+
+                            <select style="display:none;" id="columnsAllocated" onchange="sorterAllocated.search('query')"></select>
+                        </div>
+                        <div>
+                            <span class="details">
+                                <div>Records  <span id="startrecordAllocated"></span>-<span id="endrecordAllocated"></span> PagesOf  <span id="totalrecordsAllocated"></span></div>
+                                <div><a href="javascript:sorterAllocated.reset()">Reset </a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="mainDivAreaAllocated">
+                    </div>
+                    <div id="tablefooterAllocated">
+                        <div id="tablenavAllocated">
+                            <div>
+                                <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterAllocated.move(-1,true)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterAllocated.move(-1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterAllocated.move(1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterAllocated.move(1,true)" />
+                            </div>
+                            <div>
+                                <select id="pagedropdownAllocated"></select>
+                            </div>
+                            <div>
+                                <a href="javascript:sorterAllocated.showall()">ViewAll </a>
+                            </div>
+                        </div>
+                        <div id="tablelocationAllocated">
+                            <div>
+                                <span>Lines Per Page </span>
+                                <select onchange="sorterAllocated.size(this.value)" class="ddlpagingAllocated" >
+                                    <option value="5">5</option>
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+
+                            </div>
+                            <div>Page <span id="currentpageAllocated"></span> Of  <span id="totalpagesAllocated"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>-->
+
+            <!-- EndMainTable -->
+       <!-- </div>-->
+        <div id="menu2" class="tab-pane fade">
+            <input type="text" id="queryOffice365" onkeyup="sorterOffice365.search('queryOffice365')" placeholder="Search..." class="form-control" style="width:200px" />
+            <br />
+            <br />
+            <div id="div1">
+                <div id="tablewrapper">
+                    <div id="tableheader" style="display:none;">
+                        <div class="search" style="display:none;">
+                            <select style="display:none;" id="columnsOffice365" onchange="sorterOffice365.search('query')"></select>
+                        </div>
+                        <div style="display:none;">
+                            <span class="details">
+                                <div>Records  <span id="startrecordOffice365"></span>-<span id="endrecordOffice365"></span> PagesOf  <span id="totalrecordsOffice365"></span></div>
+                                <div><a href="javascript:sorterOffice365.reset()">Reset </a></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div id="mainDivAreaOffice365">
+                    </div>
+                    <div id="tablefooterOffice365">
+                        <div id="tablenavOffice365">
+                            <div>
+                                <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterOffice365.move(-1,true)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterOffice365.move(-1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterOffice365.move(1)" />
+                                <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterOffice365.move(1,true)" />
+                            </div>
+                            <div>
+                                <select id="pagedropdownOffice365"></select>
+                            </div>
+                            <div>
+                                <a href="javascript:sorterOffice365.showall()" data-localize="ViewAll"></a>
+                            </div>
+                        </div>
+                        <div id="tablelocationOffice365">
+                            <div>
+                                <span data-localize="LinesPerPage"></span>
+                                <select onchange="sorterOffice365.size(this.value)" class="ddlpagingSync" >
+                                    <option value="5">5</option>
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <div class="page"><span data-localize="Page"></span><span id="currentpageOffice365"></span><span data-localize="Of"></span><span id="totalpagesOffice365"></span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div id='mainDivArea'></div> -->
+        </div>
+    </div>
+</div>
+<div id="modalTitanPreview" class="modal fade" style="left:30%">
+    <div style="padding:40px;width:550px">
+        <div class="modal-content">
+            <div class="modal-header" style="padding:15px 15px 0 15px!important">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Associated Companies</h4>
+            </div>
+            <div class="modal-body">
+                <div id="mainDivCompanies"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/GetTempEpmloyee.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Get_NotAvailableUsersListO365.js'></script>
+
+
+
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-56</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">7175a30b-3654-4291-aef6-b803aaeb4995</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-56, ADMIN-1645029823-56</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">5600.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

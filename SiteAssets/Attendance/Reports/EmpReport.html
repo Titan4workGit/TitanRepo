@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Attendance Report</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Attendance/assets/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Attendance/assets/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">		
+		<script type="text/javascript" src="../SiteAssets/Attendance/assets/moment.min.js"></script>
+		<script type="text/javascript" src="../SiteAssets/MyTask/assets/MyNewTable.js"></script>		
+		<script type="text/javascript" src="../SiteAssets/Attendance/assets/jquery-ui.js"></script>		
+		<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+       	<script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+       	<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+        <script type="text/javascript" src="_layouts/15/autofill.js"></script>
+		<script type="" src="../SiteAssets/Attendance/Reports/EmpReport.js"></script>
+
+		<style type="text/css">
+		
+#HoliaysTotal{
+
+	color:#ff0000;
+
+}
+
+.color-black{
+	color:black !important;
+}
+.custom-edit-btn{
+
+box-shadow: 2px 2px 5px -1px #c3c3c3;
+background: #e7e7e7;
+display: inline-block;
+width: 30px;
+height: 30px;
+line-height: 30px;
+border-radius: 50%;
+cursor:pointer;
+transition:0.5s;
+	
+}
+	
+.custom-edit-btn:hover{
+	
+		background:#cccaca;
+
+}
+				
+.employee-report-heading-name {
+    text-transform: capitalize;
+}
+.attendance-report-table-ellipsis-2 span:first-child {
+    display: block;
+    float: left;
+}
+.employee-report-holiday {
+    /* padding-left: 30px; */
+    display: block;
+    float: right;
+}
+.attendance-report-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    background-color: #ffffff;
+}
+.attendance-report-right-time-box-one, .attendance-report-right-time-box-two, .attendance-report-right-time-box-three {
+    padding: 10px;
+    width: 20%;
+}
+.attendance-report-right-time-box-one, .attendance-report-right-time-box-two {
+    border-right: 1px solid #d2d2d2;
+}
+.emp-report-footer-show-items {
+    padding-left: 9px;
+}
+.attendance-report-all-boxes {
+    width: 14.28571428%;
+}
+
+.Withdraw-Leave-link {
+    color: #1d6ec0 !important;
+    float: right;
+}
+
+/* Responsive Css Start */
+
+@media (min-width: 1400px) {
+
+	.attendance-report-all-boxes p {
+	    font-size: 15px;
+	}
+	.attendance-report-btn-position .custom-btn {
+	    margin-right: 0;
+	    margin-left: 11px;
+	}
+	.attendance-report-all-boxes {
+	    min-height: 112px;
+	}
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+	.attendance-report-all-boxes h3 {
+	    font-size: 21px;
+	}
+	.attendance-report-btn-position .custom-btn {
+	    margin-right: 0;
+	    margin-left: 5px;
+	    width: 112px;
+	}
+	.attendance-report-all-boxes {
+	    min-height: 112px;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.attendance-report-all-boxes h3 {
+	    font-size: 17px;
+	}
+	.attendance-report-btn-position .custom-btn {
+	    margin-right: 0;
+	    margin-left: 11px;
+	}
+	.attendance-report-all-boxes h4#StartDate {
+	    font-size: 17px;
+	}
+	.attendance-report-all-boxes h4#EndDate {
+	    font-size: 17px;
+	}
+	.attendance-report-all-boxes h4#OfficeLoc {
+	    font-size: 17px;
+	}
+	.attendance-report-all-boxes {
+	    min-height: 112px;
+	}
+
+}
+		
+@media(max-width:900px){
+	
+div.ms-webpart-cell-vertical-inline-table{
+  display:block !important;
+}
+
+.ms-webpart-chrome-vertical{
+
+ display:block !important;
+
+}	
+
+}		
+
+@media(max-width:776px){
+
+.attendance-report-btn-position a.mr-8{
+	margin-right:5px !important;	
+
+}	
+	
+}
+
+@media(max-width:767px){
+
+.attendance-report-right-time-box-one, .attendance-report-right-time-box-two, .attendance-report-right-time-box-three{
+
+	width:100% !important;
+	border-bottom:1px solid #d2d2d2 !important;
+	
+}	
+.table-responsive>#EmpReportTableData>thead>tr>th:first-child{
+
+ width:23% !important;
+	
+}
+	
+}
+
+@media all and (max-width: 380px) and (min-width: 320px){
+
+.attendance-report-btn-position a.w-121{
+	width:92px !important;
+	font-size:12px !important;
+}	
+
+}
+
+.navbar-custom{
+	margin-bottom:0 !important;	
+}
+
+.article-content{
+	margin-top:0px !important;
+}
+
+.custom-panel{
+
+	margin-top:0px !important;	
+}
+
+/*.attendance-report-btn-position.text-right{
+
+	text-align:center !important;	
+}*/
+
+#tablefooter{
+
+	width:auto !important;	
+}
+
+#attendance-report-filter .modal-footer{
+
+	text-align:center !important;	
+}
+
+a.LinkBtn span{
+
+display: inline-block;
+margin: 0 auto;
+background: #1d6ec0;
+padding: 2px 20px;
+border-radius: 30px;
+color: #fff;
+font-size: 12px;
+border: 1px solid #1d6ec0;
+line-height: 12px;
+box-shadow: 3px 5px 5px -2px #00000063;	
+transition:.5s; 	
+
+}
+
+a.LinkBtn:hover span{
+
+ background:transparent; 
+ color:#1d6ec0;
+ border: 1px solid #1d6ec0;
+}
+
+
+/**Aug-6-21***/
+
+.space_manage div,
+.space_manage label{
+ margin:7px 5px;	
+
+}
+
+#AttendanceDDL{
+ margin-top:5px;	
+
+}
+
+@media (min-width: 768px){
+
+#attendance-reportEdit .modal-dialog{
+ 
+ width:500px !important;
+ 	
+}
+
+}
+
+
+@media all and (max-width: 340px) and (min-width: 320px){
+
+#tablelocation{
+
+	padding-right:0px;	
+}
+	
+}
+
+
+@media all and (max-width: 888px) and (min-width: 768px){
+  
+.attendance-report-right-time-box-one, .attendance-report-right-time-box-two, .attendance-report-right-time-box-three{
+
+  padding:4px  0px !important;
+  
+}
+.attendance-report-right-time-box-one h3, .attendance-report-right-time-box-two h3, .attendance-report-right-time-box-three h3{
+  font-size:14px !important;  
+}
+
+}
+
+@media(max-width:778px){
+  
+.attendance-report-btn-position a.w-121{
+  
+  width:100px !important;
+  
+} 
+  
+}
+
+@media(max-width:360px){
+  
+.article-content{
+
+  margin: 20px 5px !important; 
+} 
+.article-content{
+  padding:20px 5px;
+}
+  
+}
+
+
+#EmployeeName_TopSpan_EditorInput{
+
+  border:none !important;
+  
+}
+
+
+@media(max-width:500px){
+  
+#attendance-report-filter .col-xs-6{
+
+  width:100% !important;  
+} 
+  
+}
+
+@media (max-width: 1024px) and (min-width: 768px){
+
+	.table-responsive{
+		overflow-x:auto !important;	
+	}
+	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.attendance-report-all-boxes {
+	    padding: 4px 4px !important;
+	}
+	.attendance-report-all-boxes h3 {
+	    font-size: 14px !important;
+	}
+	.attendance-report-all-boxes {
+	    width: 25%;
+	    min-height: 95px;
+	    margin-bottom: 10px;
+	    margin-top: 15px;
+	    padding: 4px 10px !important;
+	}
+	.attendance-report-all-boxes h4#StartDate {
+	    font-size: 17px;
+	}
+	.attendance-report-all-boxes h4#EndDate {
+	    font-size: 17px;
+	}
+	.attendance-report-all-boxes h4#OfficeLoc {
+	    font-size: 17px;
+	}
+	.attendance-report-right-top-box .attendance-report-all-boxes:nth-of-type(15n+4) {
+	    border-right: none;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.table-responsive {
+		overflow-x:auto !important;	
+	}
+	.attendance-report-btn-position.text-right {
+		text-align:center !important;
+		margin-bottom: 15px;	
+	}
+	.employee-report-heading-name {
+	    font-size: 21px;
+	}
+	.attendance-report-right-time-box-one, .attendance-report-right-time-box-two {
+	    border-right: none;
+	}
+	
+}
+
+</style>
+		
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2759</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">94b5604b-c387-4c99-baca-7a14a64c5253</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2759, ADMIN-1645029823-2759</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0 employee-report-heading-name">
+									Attendance Report Of <span id="EmpName"></span>
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0 mb-8">
+									<div class="col-lg-9 col-md-8 col-sm-7">
+										<div class="scrollbar-panel chip-panel">
+											<div class="chip-box">
+												<!--<div class="upload-chip">23 Jan 2020</div>
+												<div class="upload-chip">23 Feb 2020</div>-->
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-5">
+										<div class="text-right attendance-report-btn-position">
+											<a class="btn custom-btn w-121 mr-8" data-toggle="modal" data-target="#attendance-report-filter" onclick="ValidateHrAdmin();">Filter</a>
+											<a class="btn custom-btn w-121" onclick="tableToExcel('EmpReportTableData', 'Timesheet Report')">Export</a>
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="row m-0 attendance-report-right-top-box">
+											<div class="col-xs-2 attendance-report-right-time-box-one attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">From</p>
+													<h4 class="m-0 color-black" id="StartDate"></h4>
+												</div>
+											</div>
+											<div class="col-xs-2 attendance-report-right-time-box-one attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">To</p>
+													<h4 class="m-0 color-black" id="EndDate"></h4>
+												</div>
+											</div>
+											<div class="col-xs-2 attendance-report-right-time-box-two attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">Office</p>
+													<h4 class="m-0 color-black" id="OfficeLoc"></h4>
+												</div>
+											</div>
+											<div class="col-xs-2 attendance-report-right-time-box-two attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">Attendance</p>
+													<h4 class="m-0 color-black" id="Total-Attendance">0</h4>
+												</div>
+											</div>
+
+
+											<div class="col-xs-2 attendance-report-right-time-box-two attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">Leaves/Absent</p>
+													<h4 class="m-0 color-black" id="Total-Leave-Absent">0</h4>
+													<!--<h4 class="m-0 color-black" id="Workingdays">0</h4>-->
+
+												</div>
+											</div>
+											<div class="col-xs-2 attendance-report-right-time-box-two attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">Working Days</p>
+													<h4 class="m-0 color-black" id="Workingdays">0</h4>
+												</div>
+											</div>
+											<div class="col-xs-2 attendance-report-right-time-box-three attendance-report-all-boxes">
+												<div class="text-center">
+													<p class="m-0">Holidays</p>
+													<h4 class="m-0 color-red" id="HoliaysTotal">0</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="table-responsive attendance-report-table scrollbar-panel">     
+										    										    
+										    <div class="row m-0">
+			<!-- <div class="col-xs-12"> -->
+				<div class="table-responsive attendance-table scrollbar-panel">
+					<div id="tablewrapper">
+						<div id="tableheader" style="height: auto !important;">
+							<div class="search" style="display:none;">
+								<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+							</div>
+							<div>
+								<span class="details">
+									<div style="display:none;">Records  <span id="Empstartrecord"></span>-<span id="Empendrecord"></span> &nbsp; PagesOf &nbsp; <span id="Emptotalrecords"></span></div>
+									<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+								</span>
+							</div>
+						</div>
+						<!--<div class="mrg-top-10m  btm10 container">
+						<div class="row">
+													
+									<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important; margin-left:10px;" />
+								
+						</div>
+						</div>	-->
+						<div class="table-responsive">
+							<table cellpadding='0' cellspacing='0' border='1' id='EmpReportTableData' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer table mb-0 custom-table'>
+								<thead>
+								<tr style="display:none;">
+									<th class="text-left border-bottom-0">From Date</th>
+									<th class="text-left border-bottom-0">End Date</th>
+									<th class="text-left border-bottom-0"></th>
+							        <th class="text-center border-bottom-0">Office</th>
+							        <th class="text-left border-bottom-0"></th>
+							        <th class="text-left border-bottom-0">Working Days</th>
+							        <th class="text-left border-bottom-0"></th>
+									<th class="text-left border-bottom-0"></th>
+							        <th class="text-center border-bottom-0">Holidays</th>
+								</tr>
+								<tr style="display:none;">
+									<th class="text-left border-bottom-0" id="FdateTH"></th>
+									<th class="text-left border-bottom-0" id="EdateTH"></th>
+									<th class="text-left border-bottom-0"></th>
+							        <th class="text-center border-bottom-0" id="officeLocTH"></th>
+							        <th class="text-left border-bottom-0"></th>
+							        <th class="text-left border-bottom-0" id="TotalWorkdayTH"></th>
+							        <th class="text-left border-bottom-0"></th>
+									<th class="text-left border-bottom-0"></th>
+							        <th class="text-center border-bottom-0" id="HolidaysTH" style="color:red;"></th>
+								</tr>
+								<tr></tr>
+								</thead>
+								<thead class='panel-heading '>
+									<tr>
+								      	<th class="text-left border-bottom-0">Date</th>
+										<th class="text-left border-bottom-0">Attendance</th>
+									    <th class="text-center border-bottom-0">Timesheet (HH:MM)</th>
+									    <th class="text-center border-bottom-0">HR Approved</th>
+									    <th class="text-center border-bottom-0 w-6"></th>
+									</tr>
+								</thead>
+								<tbody class='panel mainDivAllAnnouncements' id="EmpReportTable">
+											
+									<!--<tr class="text-center">
+												        <td class="text-left">
+												        	<div class="attendance-report-table-ellipsis-2">
+												        		28 Jan 2020
+												        	</div>
+												        </td>
+												        <td class="text-left"><div class="attendance-report-table-ellipsis-2">-</div></td>
+												        <td><div class="attendance-report-table-ellipsis-2">-</div></td>
+												        <td>
+												        	<div class="checkbox m-0">
+															  	<label><input type="checkbox" value=""></label>
+															</div>
+												        </td>
+												        <td>
+												        	<div class="attendance-report-edit-lock-btn-box text-center">
+															    <a href="#" class="custom-edit-btn" data-toggle="modal" data-target="#attendance-reportEdit">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+											        </tr>-->
+
+
+			
+								</tbody>
+							</table>
+						
+							<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+							
+							<div id="mainDivAllAnnouncements">
+							</div>				
+						</div>
+						<div id="tablefooter" style="margin-bottom: 10px;">
+							<div id="tablenav">
+								<div>
+									<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+									<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+									<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+									<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+								</div>
+								<div>
+									<select id="Emppagedropdown"></select>
+								</div>
+								<div>
+									<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+								</div>
+							</div>
+							<div class="emp-report-footer-show-items" style="float:left !important;"><span>Showing Items &nbsp</span><span id="EmpTotalItemscount"></span></div>
+							<div id="tablelocation">
+							
+								<div>
+								
+									<span data-localize="LinesPerPage"></span>
+									<select onchange="sorter.size(this.value)">
+									<option value="5">5</option>
+									<option value="10" selected="selected">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+									</select>
+								</div>						
+								<div class=""><span data-localize="Page">&nbsp;</span><span id="Empcurrentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="Emptotalpages"></span></div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>		
+									
+
+										</div>
+									</div>
+									<!--<div class="col-xs-12 text-center attendance-report-footer-btn-group">
+										<a class="btn custom-btn mr-8 w-87">Submit</a>
+										<a class="btn custom-btn-two-danger w-87">Close</a>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Attendance-report filter Modal -->
+		<div class="modal fade" id="attendance-report-filter" role="dialog">
+			<div class="modal-dialog modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">
+				      	<span class="cross-position">&times;</span>
+				      </button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body attendance-report-inbox-istab">
+						<div class="row">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>From Date:</label>
+									<input type="text" placeholder="DD/MM/YYYY" class="form-control" id="EmpreportFrom" name="attendance-reportDate">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>To Date:</label>
+									<input type="text" placeholder="DD/MM/YYYY" class="form-control" id="EmpreportTo" name="attendance-reportDate">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row" id="EmpRow">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Employee Name:</label>
+									<div class="peoplepicker" id="EmployeeName"></div>
+								</div>
+							</div>
+						</div>
+
+				    </div>
+				    <div class="modal-footer attendance-report-modal-footer">
+				    	<a class="btn custom-btn mr-8"  onclick="Applyfilter()">Apply</a>
+						<a class="btn custom-btn-two-cancel"  data-dismiss="modal">Clear</a>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+		<!-- Attendance-report Date Modal -->
+		<div class="modal fade" id="attendance-reportEdit" role="dialog">
+			<div class="modal-dialog modal-md attendance-reportEdit-modal-sm">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      	<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">
+				      		<span class="cross-position">&times;</span>
+				      	</button>
+				      	<h4 class="modal-title" style="font-size:16px;">Date: <span id="SelDate"></span></h4>
+				    </div>
+				    <div class="modal-body attendance-report-inbox-istab">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group space_manage">
+									<label>Employee:</label>
+									<div style="word-break: break-word;" id="EmpTitle"></div>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group">
+									<label for="Project">Attendance:</label>
+									<select class="form-control" id="AttendanceDDL">
+										<option value="Full Day">Full Day</option>
+										<option value="First Half">First Half</option>
+										<option value="Second Half">Second Half</option>
+										<option value="On-Leave">On-Leave</option>
+										<option value="Holiday">Holiday</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12" id="HolidayMessage" style="display: none;">
+							    <div class="form-group custom-form-group">
+							        <label for="Project" style="color: red;" id="HolidayMessagediv">Testing</label>
+							    </div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer attendance-report-modal-footer" style="text-align:center">
+				    	<a class="btn custom-btn mr-8" onclick="UpdateAttendance();">Apply</a>
+						<a class="btn custom-btn-two-cancel"  data-dismiss="modal">Clear</a>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript">
+		    var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="assets/css/date-picker.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="assets/js/datepicker-jquery.min.js"><\/script>\n')
+		        document.write('<script src="assets/js/datepicker-jquery-ui.min.js"><\/script>\n') 
+		    }
+		</script>
+		 
+		<script>
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+		    jQuery(function($){ //on document.ready From
+		        $('#attendance-reportFrom').datepicker();
+		        $('#attendance-reportTo').datepicker();
+		    })
+		}
+		</script>
+	</body>
+</html>

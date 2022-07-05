@@ -1,0 +1,203 @@
+﻿<!--<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>-->
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<style>
+
+.hidden-xs {
+  display:block !important;
+}
+.btm10{
+	padding-bottom:10px;
+}
+    #tabPanelId.nav > li > a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+	background-color:#eee;
+	margin-top:0px; !important;
+	
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tabPanelId.nav-tabs>li.active>a {
+  background-color:#c7c5c5; 
+}
+.doc_icon img{
+    padding: 4px;	
+}
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+#tablenavMyDepartmentEveryone {
+float: left;
+}
+
+#tablenavMyDepartmentEveryone img {
+cursor: pointer;
+}
+
+#tablenavMyDepartmentEveryone div {
+float: left;
+margin-right: 15px;
+}
+
+#tablelocationMyDepartmentEveryone {
+float: right;
+font-size: 12px;
+}
+
+#tablelocationMyDepartmentEveryone select {
+margin-right: 3px;
+}
+
+#tablelocationMyDepartmentEveryone div {
+float: left;
+margin-left: 15px;
+}
+
+#columnsMyDepartmentEveryone {
+    height: 36px;
+}
+
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+
+	#columnsMyDepartmentEveryone, #queryMyDepartmentEveryone {
+	    width: 100% !important;
+	    margin: 0px 0px 10px 0px !important;
+	}
+
+}
+
+</style>
+<div class=" row department-header">
+	<ol class="breadcrumb">                
+		<li><h4 data-localize="DepartmentDocuments" style="display:none"><b>Department Documents</b></h4></li>
+	</ol>
+</div>
+<section class="content panel panel-default">
+	<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="DepartmentDocuments"></h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">			
+				<div id="tablewrapper">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecordMyDepartmentEveryone"></span>-<span id="endrecordMyDepartmentEveryone"></span> PagesOf  <span id="totalrecordsMyDepartmentEveryone"></span></div>
+								<div style="display:none;"><a href="javascript:sorterTableMyDepartmentDocumentsEveryone.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="mrg-top-10m  btm10 container">
+					<div class="row">
+					    <select class="form-control" style="width:200px;font-size: 13px; float:left" id="columnsMyDepartmentEveryone" onchange="sorterTableMyDepartmentDocumentsEveryone.search('query')"></select>
+						<input type="text" id="queryMyDepartmentEveryone" onkeyup="sorterTableMyDepartmentDocumentsEveryone.search('queryMyDepartmentEveryone')" placeholder="Filter..." class="doc-search"style="width:200px;margin-left:4px; font-size: 13px;padding:8px 5px !Important; float:left;" />
+						<!--<button type="button" id="uploadDepartmentDocuments" style="display:none;font-size:13px;" class="btn btn-outline-success pull-right doc-upload-btn"><span class="glyphicon glyphicon-upload"></span>  <label  data-localize="UploadDocument"></label></button>-->				
+						</div>
+					</div>				
+					<div>
+					
+					  <div id='mainTablearea' class='table-responsive'><table cellpadding='0'  cellspacing='0' border='1' id='tableTempEmpOffice365DepartmentDocumentEveryone' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'></div>
+                                                                        <thead class='panel-heading '><tr>
+                                                                        <th><h6 data-localize="File">File Name</h6></th>
+                                                                        <th><h6 data-localize="Title">Title</h6></th>
+                                                                        <th><h6 data-localize="DocumentNo">Document#</h6></th>
+                                                                        <th><h6 data-localize="Type">Type</h6></th>
+                                                                        <th><h6 data-localize="Author">Author</h6></th>
+                                                                       
+                                                                        <th><h6 data-localize="Details">Details</h6></th>
+                                                                        <th ><h6 data-localize="ModifiedDate">Modified Date</h6></th>
+                                                                        <th class='nosort' style='max-width:62px;width:62px'><h6 data-localize="Action">Action</h6></th></tr></thead><tbody class='panel' id="mainDivAreaOffice365">
+                                                                        </tbody></table>
+                                                                        <div style='text-align: center;font-size:14px;display:none' id="norecordFoundMydepartment"  data-localize="NoRecordFound">No Record Found</div>
+                                                                        
+
+					
+					</div>
+					<div id="tablefooterMyDepartmentEveryone" style="margin-bottom: 10px;">
+						<div id="tablenavMyDepartmentEveryone">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocumentsEveryone.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocumentsEveryone.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyDepartmentDocumentsEveryone.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableMyDepartmentDocumentsEveryone.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdownMyDepartmentEveryone"></select>
+							</div>
+							<div>
+								<a href="javascript:sorterTableMyDepartmentDocumentsEveryone.showall()" data-localize="ViewAll">ViewAll </a>
+							</div>
+						</div>
+						<div id="tablelocationMyDepartmentEveryone">
+							<div>
+								<span data-localize="LinesPerPage"></span>
+								<select onchange="sorterTableMyDepartmentDocumentsEveryone.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class="">
+								<span data-localize="Page"></span>
+								<span id="currentpageMyDepartmentEveryone"></span>
+								<span data-localize="Of"></span>
+								<span id="totalpagesMyDepartmentEveryone"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+
+<script src="../SiteAssets/EmployeeSynchronous/DMS/DepartmentDocuments.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-242</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">19ab93bf-3159-415c-bba5-9f836d4d368f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-242, ADMIN-1645029823-242</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">24200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

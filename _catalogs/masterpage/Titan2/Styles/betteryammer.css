@@ -1,0 +1,71 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix("https://www.yammer.com/mozilla.com") {
+
+    /*
+     * Change header background
+     * ========================
+     *
+     */
+
+    #header-wrapper {
+        background: url("https://assets1.yammer.com/images/yammer_bkgd-new.png") repeat-x scroll left top #F9F9F9 !important;
+    }
+
+    body {
+        background: url("https://www.mozilla.org/images/template/background-paint.jpg") no-repeat scroll 0 30px #F9F9F9 !important;
+    }
+
+    #network-header {
+        background-color: #000 !important;
+        opacity: 0.7 !important;
+    }
+
+    /*
+     * Remove the RHS sidebar on the home page
+     * =======================================
+     *
+     * Hide useless divs and put the #online-now div in the LHS sidebar.
+     *
+     */
+
+    #home-index .page-content {
+        position: relative;
+    }
+
+    #home-index #column-two {
+        width: 770px !important;
+    }
+
+    #home-index .three-column-layout .column {
+        min-height: 0 !important;
+    }
+
+    #home-index #sidebar div {
+        display: none;
+    }
+
+    #home-index .sidebar-suggestions {
+        display: none !important;
+    }
+
+    #home-index #sidebar div#online-now {
+        display: block !important;
+        position: absolute;
+        top: 600px;
+        left: 5px;
+        width: 160px;
+        background-color: #fff;
+    }
+
+    /*
+     * Hide the thread topics links
+     * ============================
+     *
+     */
+
+    .thread-replies-container .thread-topics {
+        display: none !important;
+    }
+
+}

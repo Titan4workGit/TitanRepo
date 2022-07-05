@@ -1,0 +1,725 @@
+﻿    <script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+    <script src="../SiteAssets/Magazine/ViewAllMagazine.js"></script>    
+    <script src="../SiteAssets/Magazine/AddEditMagazine.js"></script>
+    <link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+	$("#input1").datepicker();
+	
+
+
+	searchItem();
+	});	
+	function searchItem(){	
+	$('#txtsearch').keyup(function () {
+    var term = $(this).val();
+    if (term != '') {
+        $('.item-div').hide();
+        $('.item-div').filter(function () {
+            return $(this).text().toLowerCase().indexOf(term.toLowerCase()) > -1
+        }).show();
+    } else {
+        $('.item-div').show();
+    }
+ 	});
+ 	}
+ 	
+ 	/*---------------------------------------23/4/2021--------------------------------*/
+ 	
+var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png",".tif"];    
+function ValidateSingleInput(oInput) {
+    if (oInput.type == "file") {
+        var sFileName = oInput.value;
+         if (sFileName.length > 0) {
+            var blnValid = false;
+            for (var j = 0; j < _validFileExtensions.length; j++) {
+                var sCurExtension = _validFileExtensions[j];
+                if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                    blnValid = true;
+                    break;
+                }
+            }             
+            if (!blnValid) {
+                alert("Sorry, " + sFileName + " is invalid, Upload Image only.");
+                oInput.value = "";
+                return false;
+            }                      
+        }
+    }
+    return true;
+}
+function Checkfiles()
+{
+var fup = document.getElementById('file2');
+var fileName = fup.value;
+var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+if(ext == "pdf" )
+{
+return true;
+} 
+else
+{
+alert("Sorry, " + fileName + " is invalid, Upload magazine in pdf format.");
+fup.focus();
+fup.value = "";
+return false;
+}
+}
+
+ 	
+ 	
+ 	
+ 	
+</script>
+
+    <style>
+    .top20 {
+    margin-top: 20px !important;
+}
+
+
+    .marginTop15 {
+    margin-top: 15px;
+}
+        .tile_box2 {
+            height: auto;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+            /*border-radius: 2px;*/
+            padding: 15px;
+            border: 1px solid #efefef;
+            min-height: 300px !important;
+           /* max-height: 355px !important;*/
+
+        }
+        .tile_box2.view-btn-magzine {
+    min-height: 300px !important;
+}
+
+            .tile_box2 img {
+                /*width: 100%;
+                height: 100px;
+				width: 184px;*/
+				margin:auto;
+				height: 210px;
+            }
+           .magzinetitle{
+	    font-weight: 700 !important;
+	        
+    }
+
+        .h4-color2 {
+            color: #666666;
+            margin-top: 15px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .blue_color {
+            color: #1d6ec0;
+        }
+
+        ul.list-group.list-group-striped li:nth-of-type(odd) {
+            background: #efefef;
+            padding: 7px;
+            color: #333;
+        }
+
+        ul.list-group.list-group-striped li:nth-of-type(even) {
+            background: #fff;
+            padding: 7px;
+            color: #333;
+        }
+
+        ul.list-group.list-group-hover li:hover {
+            background: #f2f2f2;
+        }
+
+
+        .list_border {
+            border: 1px solid #EAEAEA;
+            height: 150px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+        }
+
+        .color_bg {
+            background: #46b8da;
+            color: #fff;
+            border: #46b8da;
+        }
+
+        .text_black {
+            color: #000000 !important;
+        }
+
+        .h4-color2 {
+            color: #666666;
+            margin-top: 15px;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .accordion-text {
+            color: #333;
+        }
+
+        .marginTop {
+            margin-top: 65px;
+        }
+
+
+
+.staring{
+ position:relative;
+ text-align:right !important;	
+}
+.staring:after{
+ content:'*';
+ color:#ff0000;
+}
+
+/**new changes***/
+
+
+.ms-rtestate-field h4{
+ position:relative;	
+}
+.view-btn-magzine h4{
+	width:100% !important;
+	height:300px !important;
+	overflow:hidden;
+	box-shadow:0px 21px 9px -14px #5b5b5b;
+}
+
+.view-btn-magzine h4 img{
+	width:100% !important;
+	object-fit: cover;
+
+}
+
+.tile_box2{
+ padding:0 0 !important;	
+ box-shadow:none !important;
+}
+
+.tile_box2 img{
+	height:300px;
+	border:2px solid #727272;	
+}
+.tile_box2.view-btn-magzine{
+
+	position:relative; 
+
+}
+.tile_box2.view-btn-magzine span.magazinedate{
+
+	position: absolute;
+	left: 0px;
+	top: 12px;
+	width: 120px;	
+	padding: 3px 0;
+	color: #fff;
+    overflow:visible !important;
+    font-size:16px;
+    font-weight:600;  
+
+}
+
+h5.heading5{
+  
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  left: 0px;
+  text-align: left;
+  width: 100%;
+  background:linear-gradient(to bottom,#4141410f 5% ,#191919 95%);
+  padding: 30px 9px 30px 9px;
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+  font-size: 18px;
+
+}
+
+.tile_box2{
+ border:none !important;
+}
+
+h5.heading5::first-letter {
+  font-size: 150%;
+  color: #ffb777;
+  text-shadow:1px 1px 0px #000;
+}
+
+.tile_box2.view-btn-magzine .text-center{
+ text-align:left;	
+
+}
+
+.tile_box2.view-btn-magzine span span{
+	padding:0 5px;
+}
+.tile_box2.view-btn-magzine .text-center.marginTop15{
+ margin:5px;	
+ padding:0 5px;
+}
+
+.tile_box2.view-btn-magzine .text-center.marginTop15 a.custom-edit-btn{
+
+border-radius: 50% !important;
+text-align: center;
+font-size: 15px !important;
+background: linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-webkit-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-moz-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-ms-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+border: 1px solid #7d7d7dc9 !important;
+box-shadow: inset 0px 1px 0px #fff;
+color:#333233;
+padding: 8px 10px !important;
+transition:0.5s;
+cursor:pointer;
+}
+
+.tile_box2.view-btn-magzine .text-center.marginTop15 a.btn-outline-danger {
+width: 36px;
+height: 36px;
+text-align: center;
+padding: 0 !important;
+font-size: 14px !important;
+line-height: 34px;
+background: linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-webkit-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-moz-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+background:-ms-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+border: 1px solid #7d7d7dc9 !important;
+box-shadow: inset 0px 1px 0px #fff;
+border-radius: 50% !important;
+color:#9d3d66;
+margin-left:5px;
+transition:0.5s;
+
+}
+
+.tile_box2.view-btn-magzine .text-center.marginTop15 a.custom-edit-btn:hover,
+.tile_box2.view-btn-magzine .text-center.marginTop15 a.btn-outline-danger:hover{
+ background:none;
+ 
+}
+
+a#AddNewMagazine:visited{
+ color:#fff;	
+}
+
+.modal-header .close{
+
+	z-index: 44;
+	min-width: 1em !important;
+	color: #4f4e4e;
+	background: #fff;
+	line-height: 1;	
+    transition:0.5s;
+
+}
+.modal-header .close:hover{
+
+  color: #fffafa;
+  background: #4a4a4a;
+
+}
+
+
+#mazinemodle .modal-body .row{
+	margin:10px 0;
+}
+
+span.new_ajusthere {
+  position:absolute;
+  bottom:10px;
+  display: inline-block;
+  color: #fdcb8f;
+  font-weight: 600;
+
+}
+
+.notfic{
+  font-size: 11px;
+  font-weight: 600;
+  color: #e80000;	
+}
+
+.tile_box2.view-btn-magzine .text-center.marginTop15 {
+margin: 5px;
+padding: 0 5px;
+position: absolute;
+top: 5px;
+right: 0;
+background: #dfdfdf;
+padding: 5px 3px 3px 5px;
+border-radius: 30px;
+border: 1px solid #b7b7b7;
+opacity:0;
+transition:cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
+transition:-webkit-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
+transition:-moz-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
+transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
+
+}
+
+.tile_box2.view-btn-magzine:hover .text-center.marginTop15 {
+
+ top: -18px;
+ opacity:1;
+
+}
+
+.heading5 span{
+   white-space: normal !important;	
+}
+
+
+@media all and (max-width: 1600px) and (min-width: 1199px){
+
+
+#magview .col-lg-3{
+
+ width: 19.9% !important;
+ padding: 0 10px;		
+ 	
+}
+
+.view-btn-magzine h4 {
+    width: 100% !important;
+    height: 300px !important;
+
+}
+.tile_box2.view-btn-magzine {
+    min-height: 300px !important;
+}
+
+}
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+
+#magview .col-lg-3{
+
+ width:24% !important;		
+	
+}
+
+}
+
+@media all and (max-width: 767px) and (min-width: 500px){
+
+#magview{
+   display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+ 
+  -webkit-flex-wrap;
+ -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+
+#magview .col-lg-3{
+
+ width:48% !important;		
+	
+}
+
+}
+
+
+@media all and (max-width: 942px) and (min-width: 768px){
+
+.view-btn-magzine h4{
+ width: 100% !important;
+ height: 300px !important;	
+}
+
+}
+
+@media(max-width: 767px){
+
+.view-btn-magzine h4{
+ width: 100% !important;
+ height: 300px !important;	
+}
+
+.tile_box2.view-btn-magzine{
+
+ min-height:300px !important;	
+
+}
+
+#mazinemodle .modal-body label.text-center{
+	text-align:left;
+}
+
+.tile_box2.view-btn-magzine h4 a{
+	 display: block;
+	 width: 100% !important;
+     height: 300px !important;	
+
+}
+.tile_box2 a img.img-responsive{
+ width:100% !important;	
+}
+
+#btnAddNew{
+ margin:10px 0;	
+}
+
+}
+
+
+/**new changes***/
+
+
+
+        @media (max-width: 768px) {
+            .marginTop {
+                margin-top: 65px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .top10_m {
+                margin-top: 10px;
+            }			
+        }
+        @media (max-width:1024px) {
+			.tile_box2 a img {
+				margin-left: auto;
+				margin-right: auto;
+				float: none;
+				width: auto !Important;
+			}
+        }
+        
+        .btn
+        {
+	padding:3px 8px 3px 4px;
+}
+
+
+/*****Aug-16-21******/
+
+#year,#month{
+  display:inline-block;
+  width:91px;
+  margin:7px 0;
+  border-radius:30px;	
+}
+
+#year{
+ margin-right:5px;	
+}
+
+.search_ajdust #txtsearch{
+ width:208px;	
+}
+
+.breadcrumb li h4{
+ color:#1b1b1b !important;
+ font-size:24px !important;
+ padding:8px 15px;	
+
+}
+.padd_adjust{
+ padding:0 15px;	
+}
+
+.right_aligment{
+ text-align:right;
+ padding:5px 0;	
+}
+
+.flexingbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-align: center;
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+   align-items: center;	
+}
+
+.flexingbox .selectbox{
+ 
+ margin-right:15px;
+	
+}
+
+@media(max-width:550px){
+
+.right_aligment,
+.text_aligment{
+ text-align:center !important;	
+}
+
+#custom-search-input div.input-group.search_ajdust{
+    margin: 0 auto;	
+}
+
+.flexingbox{
+    display:block;
+}
+	
+}
+
+
+</style>
+
+    <!-- header -->
+    
+
+    <!-- Main -->
+	<div class="row">
+		<div class=" col-md-12 department-header">
+			<ol class="breadcrumb">
+				<li>
+					<h4>
+						<b data-localize="Magazines">Magazines</b>
+					</h4>
+				</li>
+			</ol>
+		</div>
+	</div> 
+	
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row padd_adjust">
+                        
+                        <div class="col-md-9 text_aligment flexingbox">
+                            
+                           <div class="selectbox">
+                        
+                        	 <select id="year" name="year" class="form-control" onchange= "yearOnChange()" >
+                          		<option value="-1">-Year-</option>
+                       		 </select>
+                        	
+                      		 <select name="month" id="month" class="form-control">
+                        		<option value="-1">-Month-</option>
+                      		 </select>
+                      
+                          </div>
+                      
+                            <div id="custom-search-input">
+                                <div class="input-group search_ajdust">
+                                    <input type="text" id="txtsearch"class=" form-control search-bg" placeholder=" Search" style="border:none" >
+                                    <span class="input-group-btn">                                        
+                                    </span>
+                                </div>
+                            </div>   
+                        
+                        </div>
+                        
+                        <div class="col-md-3 right_aligment">
+                        
+                          <button type="button"  id="btnAddNew" class="btn btn-outline-primary newMaazine" data-toggle="modal" data-target="#mazinemodle" data-localize="Add Magazine">Add Magazine</button>
+					<!--<a type="button" id="AddNewMagazine" class="btn btn-outline-primary newMaazine" href="#"><span class="glyphicon glyphicon-plus" style="padding-right: 5px;"></span><span>Add Magazine</span></a>-->
+                        				         
+  						</div>
+                        
+                    </div>    
+                        
+                        <div class="clearfix"></div>                     
+
+   						<div id="magview">                   
+   						</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+<!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#mazinemodle">Open Modal</button>-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="mazinemodle" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#1c4587">
+          <button type="button" class="close close-round" onclick="ClearFields();" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title" data-localize="AddMagazine">Add Magazine</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+          	<label for="tital" class="col-sm-3 staring" data-localize="Title">Title</label>
+          	<span class="col-sm-9">
+             	<input type="text" class="form-control" id="input2" placeholder="Title">
+            </span>	
+          </div>
+          <div class="row">
+          	<label for="tital" class="col-sm-3 staring" data-localize="PublishDate">Publish Date</label>
+          	<span class="col-sm-9">
+             	<input type="" class="form-control" id="input1"  placeholder="Publish Date">
+            </span>	
+          </div>
+          <div class="row">
+          	<label for="tital" class="col-sm-3 staring" data-localize="Volume">Volume</label>
+          	<span class="col-sm-9">
+             	<input type="" class="form-control" id="input" maxlenght = "50" placeholder="Volume">
+            </span>          
+          </div>
+		
+          <div class="row">
+          	<label for="tital" class="col-sm-3 staring" data-localize="CoverImage">Cover Image</label>
+          	<span class="col-sm-9">
+             	<input name="filename" type="file" class="form-control" id="file1" accept="image/*" onchange="ValidateSingleInput(this)">
+             	<span style="color:#1a1a1a; font-size:12px" data-localize="JpgJpegBmpGifPngTifOnly">Jpg,Jpeg, Bmp, Gif, Png, Tif Only</span><br>
+             	<span  style="color:#1a1a1a; font-size:12px">( Image size upload 100 kb, Best fit: 320 X 420 pixels )</span>
+            </span>	
+          </div>
+          <div class="row">
+          	<label for="tital" class="col-sm-3 staring" data-localize="Magazine"><br><b>(PDF File)</b></label>
+          	<span class="col-sm-9">
+             	<input name="filename" type="file" class="form-control" accept="application/pdf" id="file2" onchange="Checkfiles(this)" >
+                <span style="color:#1a1a1a; font-size:12px" data-localize="PdfOnly">PDF Only</span>
+
+            </span>	
+          </div>
+
+        </div><!--modal body-->
+        
+        <div class="modal-footer">
+         	<button type="button" id="Submit" class="btn custom-btn mr-8 w-70" data-localize="Submit">Submit</button>
+			<button type="button" class="btn custom-btn-two-cancel w-70" id=""  onclick="ClearFields()" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>   
+  <!-- Modal ed -->   
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-52</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">66965fe4-3c7a-42eb-97d6-8f6adc123a1d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-52, ADMIN-1645029823-52</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">5200.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Adapt Intranet</title></head>

@@ -1,0 +1,173 @@
+﻿<script>
+
+window.addEventListener("load", function(){
+
+	var x = $("#carousel_NewJoinee ol").children().size();
+
+	if( x == 1 ) {
+
+	$("#carousel_NewJoinee ol").children().css("visibility","hidden");
+	
+	}
+
+}, false);
+
+$(document).ready(function()
+{
+	var welcomePageCalled=titanForWork.getQueryStringParameter('WelcomePageCalled');
+	 
+	if(welcomePageCalled!=undefined)
+	{
+    	InitializationNewJoinee();
+    }
+    
+});
+
+function InitializationNewJoinee()
+{
+	DisplayNewJoineeWithPhoto();
+	
+	$('#carousel_NewJoinee').carousel();
+}
+
+function DisplayNewJoineeWithPhoto()
+{
+	var siteURL = _spPageContextInfo.webAbsoluteUrl;
+	var companyID=titanForWork.getQueryStringParameter('CompanyId');
+	var lastOneMonthDate=new Date();
+	lastOneMonthDate =new Date(lastOneMonthDate.setMonth(lastOneMonthDate.getMonth()-1));
+	var lastOneMonthDate= (lastOneMonthDate.getMonth()+1) + '/' + lastOneMonthDate.getDate() + '/' + lastOneMonthDate.getFullYear();
+	var siteHostURL = window.location.protocol + "//" + window.location.host;
+	var requestUri =siteURL + "/_api/lists/getbytitle('Employees')/items?$select=ID,Designation,FullName,Department/DepartmentName,City,Department/ID,Company/ID,OfficeLocation/OfficeName&$expand=AttachmentFiles,Department,Company,OfficeLocation&$Filter=Status eq 'Active' and JoiningDate gt '"+lastOneMonthDate+"' and Company/ID eq '"+companyID+"'";
+	var picUrl;
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data)
+            {
+           
+  			
+				var ItemCount=data.d.results.length;
+				if(ItemCount==0)
+				{
+					newJoineeHTML="<div class=\"norecordfound Empnorecordfound col-sm-8 col-xs-8 col-md-8\">";
+			        newJoineeHTML+="<h3 data-localize='NoRecord_NewJoinee' class=\"top5\">New employee joining soon!</h3>";
+			        newJoineeHTML+="</div>";
+					$(".newJoineeItemss").append(newJoineeHTML);
+					return;
+				}
+				var itemCounter = 0;
+				
+   		 		$.each(data.d.results, function (i, item)
+   		 		{
+    		 		var newJoineeCarsoulIndicationHtML = "";
+   		 		  	var newJoineeHTML='';
+                	var employeePicURL = '';
+                    if(item.AttachmentFiles.results.length>0)
+                    {
+					   employeePicURL = siteHostURL +"/"+item.AttachmentFiles.results[0].ServerRelativeUrl;
+					}
+					else
+					{
+						employeePicURL = siteURL+"/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+					}
+
+               var department = item.Department.DepartmentName;
+                if (department == null || department == "") {
+                    department = "NA";
+                }
+                var designation = item.Designation;
+                if (designation == null || designation == "") {
+                    designation = "NA";
+                }
+
+
+					var ItemID=item.ID;  
+					var viewSingleItem = siteURL + "/Pages/EmployeeDetails.aspx?WebAppId=" + companyID + "&mode=editview&department=" + item.Department.ID + "&employeedIddetails=" + ItemID + "&sourcelocation=../Pages/Default.aspx";
+					var empFullName=  item.FullName;
+					var empOfficeLocation=  item.OfficeLocation.OfficeName;
+					if(empOfficeLocation==null)
+					{
+					   empOfficeLocation="N/A";
+					}
+                    if (i == 0)
+   		 		    {
+   		 		        newJoineeCarsoulIndicationHtML += '<li data-target="#carousel_NewJoinee" data-slide-to="'+i+'" class="active"></li>';
+   		 		    }
+   		 		    else
+   		 		    {
+   		 		        newJoineeCarsoulIndicationHtML += '<li data-target="#carousel_NewJoinee" data-slide-to="'+i+'"></li>';
+   		 		    }
+
+
+					if (i == 0)
+   		 		    {
+   		 		
+					 newJoineeHTML +='<div class="item active">';
+					}
+					else
+					{
+				
+					 newJoineeHTML +='<div class="item">';
+					}
+					
+					newJoineeHTML +='<div class="media row">';
+					newJoineeHTML +='<div class="col-md-5 col-sm-3 col-xs-4 employee-pic">';
+					newJoineeHTML +='<a class="pull-left" href="#">';
+					newJoineeHTML +='<img class="media-object img-responsive" src="'+employeePicURL+'" alt="">';
+					newJoineeHTML +='</a>';
+					newJoineeHTML +='</div>';
+					newJoineeHTML +='<div class="col-md-6 col-sm-4 col-xs-8">';
+					newJoineeHTML +='<div class="media-body">';
+					//newJoineeHTML +='<h4 class="media-heading media-head  mt-10">June 2018</h4>';
+					newJoineeHTML +='<p class="text-left h4-color">'+empFullName+'</p>';
+					newJoineeHTML +='<p>'+designation+'</p>';
+					newJoineeHTML +='<p>'+department+'</p>';
+					newJoineeHTML +='<p>';
+					newJoineeHTML  += '<button type="button" class="btn btn-default btn-sm" data-localize="ReadMore" onclick="RedirectToNextPage(' + companyID + ','+item.Department.ID+','+ItemID+')"></button>';
+					//newJoineeHTML +='<p><a class="read-more" href='+viewSingleItem+'>Read more</a></p>';
+					newJoineeHTML +='</p>';
+					newJoineeHTML +='</div>';
+					newJoineeHTML +='</div>';
+					newJoineeHTML +='</div>';
+					newJoineeHTML += '</div>';
+					$(".newJoineeItemss").append(newJoineeHTML);
+   		 		   $(".newJoineeIndicator").append(newJoineeCarsoulIndicationHtML);
+				})
+   		 		
+			},
+            error: function () {
+                console.log("Error getting the new joinee with photo.");
+            }
+        });
+}
+function RedirectToNextPage(companyID,ID,ItemID)
+{
+		window.location.href= _spPageContextInfo.webAbsoluteUrl + "/Pages/EmployeeDetails.aspx?WebAppId=" + companyID + "&mode=editview&department=" + ID + "&employeedIddetails=" + ItemID + "&sourcelocation=../Pages/Default.aspx";
+}
+
+</script>
+<div id="carousel_NewJoinee" class="carousel slide transition-timer-carousel" data-ride="carousel">   
+    <div class="carousel-inner newJoineeItemss">
+    </div>
+    <ol class="carousel-indicators newJoineeIndicator">
+       
+    </ol>
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-385</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">c1a8470a-9ed7-4555-96fb-4321414495cf</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-385, ADMIN-1645029823-385</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Dipankar Goswami</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">38500.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

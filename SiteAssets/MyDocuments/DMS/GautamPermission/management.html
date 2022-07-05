@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-/*W3C/*DTD XHTML 1.0 Strict/*EN" "http:/*www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http:/*www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> Site Permission Manager</title>
+
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="../SiteAssets/MyDocuments/DMS/GautamPermission/management.css">
+<script type="text/javascript" src="../SiteAssets/MyDocuments/DMS/GautamPermission/ListManagement.js">
+</script >
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3652</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">53c9cb7f-8a5d-4fad-8f02-ec8f03b208fa</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3652, ADMIN-1645029823-3652</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">365200.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+<div class="div_cnt">
+<div id="div_siteurl">
+<label for="txtsite"  style="font-weight:bold;font-size:24px">Enter the site URL (eg:https://mysite.com/stt/sa)</label><input id="btn_siteurl" type="button" class="a_btn" value="How to enter a site Url">
+ <input id="txtsite" class="input_txt" type="text"> <input id="chk_site" type="button" class="input_btn" value="Enter"> 
+</div>
+
+<div class="sitegrpmngment">
+
+<div class="heading" style="background-color:#003e7e;padding:10px;">Manage Groups and Permission for <label id="sitetitle"></label></div>
+<div id="siteinherit_detail" class="ms-status-yellow"></div>
+<div id="chkpermission">
+<table>
+<tr>
+<td style="width:65%;border:1px solid" valign="top" >
+<input id="chksiteperm" type="button" class="input_btn" title="Check Site Permission" value="Check Site Permission"/>
+<input id="chkuserperm" type="button" class="input_btn" title="Check User Permission" value="Check User Permission"/>
+<input id="chklistperm" type="button" class="input_btn" title="Check List Permission" value="Check List Permission"/>
+<input id="adduserperm" type="button" class="input_btn" title="Add New Permission" value="Add New User"/>
+<input id="createnewgrp" type="button" class="input_btn" title="Create New Group" value="Create New Group"/>
+
+</td>
+<td valign="top" style="border:1px solid;padding:0px">
+<div class="heading">Button Defintions</div>
+<ul class="btn_def">
+<li><input id="btn_chkperm" type="button" class="a_btn" value="How to Check Site Permission"/></li>
+<li><input id="btn_chkuser" type="button"  class="a_btn" value="How to  Check User Permission"/></li>
+<li><input id="btn_chklist" type="button"  class="a_btn" value="How to  Check List Permission"/></li>
+<li><input id="btn_addusr" type="button"  class="a_btn" value="How to  Add New User"/></li>
+<li><input id="btn_addgrp" type="button"  class="a_btn" value="How to  Create New Group"/></li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id='div_sitegrpdisplay'>
+</div>
+</div>
+<div id="members"></div>
+<div id="btncontent"></div>
+<iframe id="siteinherit" style="height:0px;width:0px"></iframe>
+</div>
+
+
+
+</body>
+
+</html>

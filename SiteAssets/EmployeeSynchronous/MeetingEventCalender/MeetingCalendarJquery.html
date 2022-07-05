@@ -1,0 +1,495 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link href="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
+<script type="text/javascript" src="../_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/MeetingFullCalendar.js"></script>
+<style type="text/css">
+.required:after {
+    content: "*";
+    color: red;
+}
+</style> 
+<div class="calendar-top-row form-horizontal">
+	<div class="row">
+		<div class="col-sm-6 txt-align-left">
+			<button type="button" class="btn btn-outline-success btnAddNewMeeting"><label data-localize="AddNewMeeting">Add New Meeting</label></button>
+		</div>
+		<div class="col-sm-6 txt-align-right">
+			<div class="form-group">                              
+			<label  class="col-sm-6 control-label"  data-localize="Filter">Filter :</label>
+				<div class="col-sm-6">
+					<select name="ddlMeetingTypeLoad" id="ddlMeetingTypeLoad" class="form-control mrg-btm12-pop">
+						<option value="0">All Meetings</option>
+						<option value="1">My Meetings</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id='calendar' class="calendar-div search-results" style="margin-top:0px;"></div>  
+<!--------------------------View Meeting-----------------> 
+<div class="modal fade" id="myViewMeetingModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Meeting">Meeting</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Title">Title</label>
+                                <div class="col-sm-8">
+                                    <label for="" class="control-label event-label-right-md" id="labelMeetingTitle"></label>
+                                </div>
+                            </div>
+                             <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Location">Location</label>
+                                <div class="col-sm-8">
+                                    <label for="" class="control-label event-label-right-md" id="lblMeeTLocation"></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="MeetingRoom">Room</label>
+                                <div class="col-sm-8">
+                                    <label for="" class="control-label event-label-right-md"  id="labelMeetingLocation"></label>
+                                    <br/>
+                                    <label for="" class="control-label event-label-right-md"  data-localize="AvailableFacility">Available facilities.</label>
+                                    <div id="divVIewfacility"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="StartTime">Start Time</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <label for="" class="control-label event-label-right-md" id="labelMeetingStartDateTime"></label>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="EndTime">End Time</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <label for="" class="control-label event-label-right-md"  id="labelMeetingEndDateTime"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Description">Description</label>
+                                <div class="col-sm-8">
+                                  <!---  <textarea type="text" id="lblNewMeetingDescription" readonly="readonly" cols="10" rows="5" class="form-control"></textarea>-->
+                                     <label class="control-label event-label-right-md" id="lblNewMeetingDescription"></label>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Category">Category</label>
+                                <div class="col-sm-6">
+                                    <label for="" class="control-label event-label-right-md"  id="labelNewMeetingCategory"></label>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row text-center">
+                        <button type="button" class="btn btn-outline-primary addClickEditCompanyMeeting"><label data-localize="Edit">Edit</label></button>
+                        <button type="button" class="btn btn-outline-danger deleteClickEditCompanyMeeting"><label data-localize="Delete">Delete</label></button>
+                         <button type="button" class="btn btn-outline-secondary closeMeetingForm"><label data-localize="Close">Close</label></button>
+                    </div>
+                    
+                    <!--/panel content-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------Edit Meeting----------------------->
+<div class="modal fade" id="myEditMeetingModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Update">Update</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Title"></label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEditMeetingItemTitle" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Location">Location</label>
+                                <div class="col-sm-8">
+                                    <select id="ddlEditMeetingItemLocation" class="form-control"></select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="MeetingRoom">Room</label>
+                                <div class="col-sm-8">
+                                    <select id="txtEditMeetingItemLocation" class="form-control"></select>
+                                    <br/>
+                                    <label for="" class="control-label event-label-right-md"  data-localize="AvailableFacility">Below facility availale for this room.</label>
+                                    <div id="divfacility"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="StartTime">Start Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEditMeetingStartDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls">
+                                    <select name="select2" id="ddlEditMeetingStartTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEditMeetingStartMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="EndTime">End Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEditMeetingEndDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls">
+                                    <select name="select2" id="ddlEditMeetingEndTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEditMeetingEndMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Description">Description</label>
+                                <div class="col-sm-8">
+                                    <textarea type="text" id="txtEditMeetingDescription" cols="10" rows="5" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Category">Category</label>
+                                <div class="col-sm-7">
+                                    <select id="ddlEditNewMeetingCategory" class="form-control mrg-btm12-pop"></select>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!--/panel content-->
+                    <!-- <div class="form-group">-->
+                    <!--  <label for="" class="col-sm-4 control-label"></label> -->
+                    <div class="row text-center">
+                        <button type="button" class="btn btn-outline-success addEditCompanyMeeting"><label data-localize="Update">Update</label></button>
+                        <button type="button" class="btn btn-outline-secondary closeEditMeetingForm"><label data-localize="Close">Close</label></button>
+                    </div>
+                    <!-- </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-----------Add New Meeting Model Popup---------------->
+
+
+<div class="modal fade" id="myAddNewMeetingModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="AddNewMeeting">Add New Meeting</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">                                       
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Title"></label>
+                                    <div class="col-sm-8">
+                                        <input type="text"  id="txtMeetingItemTitle" class="form-control">
+                                    </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Location">Location</label>
+                                    <div class="col-sm-8">
+                                          <select id="ddlMeetingItemLocation" class="form-control">
+                                           
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="MeetingRoom">Room</label>
+                                    <div class="col-sm-8">
+                                          <select id="txtMeetingItemLocation" class="form-control">
+                                        </select>
+                                        <label for="" class="control-label event-label-right-md"  data-localize="AvailableFacility">Available facilities.</label>
+                                        <div id="divNewfacility"></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="StartTime">Start Time</label>
+                                    <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="date" readonly="readonly" id="txtMeetingStartDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 form-inline float-left-cls">
+                                        <select name="select2" id="ddlMeetingStartTime" class="form-control mrg-btm12-pop">
+                                            <option value="12 AM">12 AM</option>
+											<option value="1 AM">1 AM</option>
+											<option value="2 AM">2 AM</option>
+											<option value="3 AM">3 AM</option>
+											<option value="4 AM">4 AM</option>
+											<option value="5 AM">5 AM</option>
+											<option value="6 AM">6 AM</option>
+											<option value="7 AM">7 AM</option>
+											<option value="8 AM">8 AM</option>
+											<option value="9 AM">9 AM</option>
+											<option value="10 AM">10 AM</option>
+											<option value="11 AM">11 AM</option>
+											<option value="12 PM">12 PM</option>
+											<option value="1 PM">1 PM</option>
+											<option value="2 PM">2 PM</option>
+											<option value="3 PM">3 PM</option>
+											<option value="4 PM">4 PM</option>
+											<option value="5 PM">5 PM</option>
+											<option value="6 PM">6 PM</option>
+											<option value="7 PM">7 PM</option>
+											<option value="8 PM">8 PM</option>
+											<option value="9 PM">9 PM</option>
+											<option value="10 PM">10 PM</option>
+											<option value="11 PM">11 PM</option>       
+											</select>
+                                        <select name="select2" id="ddlMeetingStartMinutes" class="form-control mrg-btm12-pop">
+                                            <option value="00">00</option>
+											<option value="05">05</option>
+											<option value="10">10</option>
+											<option value="15">15</option>
+											<option value="20">20</option>
+											<option value="25">25</option>
+											<option value="30">30</option>
+											<option value="35">35</option>
+											<option value="40">40</option>
+											<option value="45">45</option>
+											<option value="50">50</option>
+											<option value="55">55</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="EndTime">End Time</label>
+                                    <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="date" readonly="readonly" id="txtMeetingEndDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 form-inline float-left-cls">
+                                        <select name="select2" id="ddlMeetingEndTime" class="form-control mrg-btm12-pop">
+                                            <option value="12 AM">12 AM</option>
+											<option value="1 AM">1 AM</option>
+											<option value="2 AM">2 AM</option>
+											<option value="3 AM">3 AM</option>
+											<option value="4 AM">4 AM</option>
+											<option value="5 AM">5 AM</option>
+											<option value="6 AM">6 AM</option>
+											<option value="7 AM">7 AM</option>
+											<option value="8 AM">8 AM</option>
+											<option value="9 AM">9 AM</option>
+											<option value="10 AM">10 AM</option>
+											<option value="11 AM">11 AM</option>
+											<option value="12 PM">12 PM</option>
+											<option value="1 PM">1 PM</option>
+											<option value="2 PM">2 PM</option>
+											<option value="3 PM">3 PM</option>
+											<option value="4 PM">4 PM</option>
+											<option value="5 PM">5 PM</option>
+											<option value="6 PM">6 PM</option>
+											<option value="7 PM">7 PM</option>
+											<option value="8 PM">8 PM</option>
+											<option value="9 PM">9 PM</option>
+											<option value="10 PM">10 PM</option>
+											<option value="11 PM">11 PM</option>                                
+											</select>
+                                        <select name="select2" id="ddlMeetingEndMinutes" class="form-control mrg-btm12-pop">
+                                            <option value="00">00</option>
+											<option value="05">05</option>
+											<option value="10">10</option>
+											<option value="15">15</option>
+											<option value="20">20</option>
+											<option value="25">25</option>
+											<option value="30">30</option>
+											<option value="35">35</option>
+											<option value="40">40</option>
+											<option value="45">45</option>
+											<option value="50">50</option>
+											<option value="55">55</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Description">Description</label>
+                                    <div class="col-sm-8">
+                                        <textarea type="text" id="txtNewMeetingDescription" cols="10" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Category">Category</label>
+                                    <div class="col-sm-5">
+                                        <select id="ddlNewMeetingCategory" class="form-control mrg-btm12-pop">
+                                           
+                                        </select>
+                                    </div>
+                                    <div class=" col-sm-2" style="">
+                               
+                                      <button type="button" class="btn btn-outline-primary addnewMeetingCategoryModel"><label data-localize="Add" >Add New</label></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <button type="button" class="btn btn-outline-success addNewCompanyMeeting"><label data-localize="Submit">Submit</label></button>
+                            <button type="button" class="btn btn-outline-secondary closeNewMeetingForm"><label data-localize="Close">Close</label></button>
+                        </div>
+               
+                </div>             
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------View Meeting----------------->
+
+<div class="modal fade" id="myMeetingCategoryModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="MeetingCategory">Meeting Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label required" data-localize="NewCategory">New Category</label>
+                                <div class="col-sm-8">
+                                      <input type="text" class="form-control" id="txtMeetingcategory" maxlength="100">                                     
+                                </div>
+                           </div>
+                           
+                        </div>
+						<div class="row text-center top15">
+							<button type="button" class="btn btn-outline-success addnewMeetingCategory"><label data-localize="Add">Add</label></button>
+						</div>
+                    </div>
+                    <!--/panel content-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-273</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d47a94cc-7c95-46d6-92bb-7311bf7e9bec</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-273, ADMIN-1645029823-273</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">27300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

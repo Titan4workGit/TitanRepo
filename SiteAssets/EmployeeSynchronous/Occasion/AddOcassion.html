@@ -1,0 +1,190 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/Occasion/AddOccasion.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+
+
+
+<style>
+        .text-color2 {
+            color: #000;
+        }
+
+        .tile_box {
+            background-color: #efefef;
+            height: auto;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+            /*border-radius: 2px;*/
+            padding: 15px;
+            border: 1px solid #efefef;
+            min-height: 167px;
+        }
+
+        .tile_box_height2 {
+            min-height: 265px;
+        }
+
+        .btn {
+            border-radius: 0px;
+        }
+
+        .form-horizontal .control-label {
+            text-align: left;
+        }
+
+        .form-control {
+            border-radius: 0px;
+        }
+
+        .browse {
+            padding: 5px;
+            border: 1px solid #ddd !important;
+            width: 100%;
+            background: transparent;
+        }
+
+        .panel-group .panel {
+            border-radius: 5px;
+            border-color: #EEEEEE;
+            padding: 0;
+        }
+
+        .panel-title {
+            font-size: 14px;
+        }
+
+            .panel-title > a {
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+            }
+
+        .short-full {
+            float: right;
+            color: #000;
+        }
+
+        /*	.panel-height-form {
+        min-height: 355px;
+
+    }*/
+
+        @media (max-width: 767px) {
+            .tile_box_height2 {
+                min-height: auto;
+            }
+        }
+        
+        
+        
+.required:after {
+  content:"*";
+  color:red;
+}
+.ms-webpart-zone.ms-fullWidth,.ms-webpart-cell-horizontal,.ms-webpart-chrome {
+    display: block !Important;
+}
+
+</style>
+<div id="messageNotAthorizedAcces" style="font-size:20px;font-weight:bold;"></div>
+<div class="container" style="display:none;" id="newOccasionbx">
+    <div class="row top15">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="panel panel-default shadow2" style="overflow:auto">
+                            <div class="panel-heading  panel-head-4">
+                                <div class="panel-title" >
+                                    <h4 class="h4-color"> Add New Occasion</h4>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-horizontal">
+
+                                    <div class="form-group" >
+                                        <label for="" class="col-sm-5 control-label required">Employee Name</label>
+                                        <div class="col-sm-7">
+                                            <select name="select2" id="ddlemployee" class="form-control">
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row bottom15" id="empinformation" style="display:none;">
+                                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 marginTop" style="float:right">
+                                            <div class="tile_box" style="min-height:auto">
+                                                <div class=" user_pic_content">
+                                                    <span id="spanEmailId">v.mishra@adapt-india.com</span>
+                                                    <span class="center-block" id="spandesination">Software Engineer</span>
+                                                    <span class="center-block" id="spandepartment">Department : IT </span>
+                                                    <span id="spanarea">Gurugram, India </span>
+                                                    <span id="spanemplyeePeopleId" style="display:none"></span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="form-group "  >
+                                        <label for="" class="col-sm-5 control-label  required">Occasion Date</label>
+                                        <div class="col-sm-7">
+                                            <div class="">
+                                                <input type="text" class="form-control" readonly="readonly" name="date" id="occasiondate">
+
+                                                <!--<span class="input-group-btn">
+                                                    <button type="button" class="btn btn-default" data-toggle="datepicker"><i class="fa fa-calendar"></i></button>
+                                                </span>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" >
+                                        <label for="" class="col-sm-5 control-label  required">Occasion Type</label>
+                                        <div class="col-sm-7">
+                                            <select name="select2" class="form-control" id="ddlOccasionType"></select>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group" >
+                                        <label for="" class="col-sm-5 control-label"></label>
+                                        <div class="col-sm-7">
+                                            <input type="button" value="Submit" id="btnsubmit" class="btn  btn-outline-success" style="margin-left:0px;" />
+                                            <input type="button" value="Close" id="btncancel" class="btn btn-outline-secondary" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--/panel content-->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- /Main -->
+    <br>
+    <br>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-277</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">ec1e1197-7363-4cb0-b268-a9793604d3a7</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-277, ADMIN-1645029823-277</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">27700.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

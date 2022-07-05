@@ -1,0 +1,941 @@
+﻿<link href="../_catalogs/masterpage/Titan2/Styles/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+<script src="../_catalogs/masterpage/Titan2/Scripts/jquery.dataTables.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/dataTables.bootstrap.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+
+<style type="text/css">
+
+
+	.stars-outer {
+	  display: inline-block;
+	  position: relative;
+	  font-family: FontAwesome;
+	}
+	 
+	.stars-outer::before {
+	  content: "\f006 \f006 \f006 \f006 \f006";
+	}
+	 
+	.stars-inner {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 0;
+	}
+	 
+	.stars-inner::before {
+	  content: "\f005 \f005 \f005 \f005 \f005";
+	  color: #f8ce0b;
+	}
+	@media (max-width:1024px){
+		.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical,.ms-webpart-cell-horizontal {
+			display: block !important;
+		}
+		.table-responsive{
+		width: 100%;
+		overflow-y: hidden;
+		overflow-x: scroll;
+		}	
+	}
+	
+	
+	
+	
+ /* 30-04-2020 for click more popup*/
+#myViewAllTeamMemberModal2 .modal-dialog .modal-content .modal-body {
+    height: 100%;
+    max-height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+	
+	
+
+</style>
+
+<script type="text/javascript">
+var PrjectgridInitiated=false;
+var CanCreateTask = false;
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_GetProjectTaskDetailsGridEvent,"sp.js"); 
+	 LableLoad();
+	
+}); 
+
+function getCurrentURL_GetProjectTaskDetailsGridEvent()
+{
+	var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var siteURL = items[0].SiteURL;
+				var clientContext = new SP.ClientContext(siteURL);
+				
+				
+				var projectstatus= $('#txtFilterStatusInbox').val();
+		        var assignto= $('#assigntodrp').val();
+				GetProjectTaskDetails(projectstatus,assignto);
+				
+				//checkTaskPermission();
+				CheckCreateTaskAuthorization();		// Only Project Authorized Team Members can create the task.
+				
+				var ProjectTaskStartEndHTML="<label style='font-size: 10pt; font-weight: 100; margin-left: 5px; display: none;'>[Planned Start Date: "+$.datepicker.formatDate('dd-mm-yy', PlanedStartDateGlobal)+" to End Date: "+$.datepicker.formatDate('dd-mm-yy', PlanedEndDateGlobal)+"]</label>";
+				$("#lblProjectTaskDetails").append(ProjectTaskStartEndHTML);
+            }
+           
+        }, eror: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+/*function checkTaskPermission()
+{
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	
+	var listName='ProjectDetails';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID&$filter=ID eq '" + txtProjectID + "' and ManagerNameId eq '"+_spPageContextInfo.userId+"'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+			if(items.length>0)
+			{
+				$("#NewTask").show();
+			}
+			else
+			{
+				CheckCreateTaskAuthorization();
+			}
+        }, eror: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}*/
+
+
+function CheckCreateTaskAuthorization()
+{
+	var listName='ProjectTeamDetails';
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID&$filter=ProjectId eq '" + txtProjectID + "' and TeamMemberId eq '"+_spPageContextInfo.userId+"' and Status eq 'Active' and TaskPermission eq '1'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+            if(items.length>0)
+			{
+				$("#NewTask").show();
+				CanCreateTask = true;
+			}
+			else
+			{
+				$("#NewTask").hide();
+				CanCreateTask = false;
+				//CheckProjectAdminRights_ProjecTask()
+			}
+        }, eror: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+/*function CheckProjectAdminRights_ProjecTask()
+{
+	var deffered= $.Deferred();
+	
+	var listName='ProcessApprovers';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'Project Admin'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+               $("#NewTask").show();
+            }
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+    deffered.promise();
+}*/
+
+
+function GetProjectTaskDetails(projectstatus,assignto){
+var restQuery;	
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	debugger;
+	    
+     if (projectstatus == "All" && assignto !== "All")
+    {
+         
+     restQuery = "&$filter=CompanyId eq '"+txtCompanyId+"' and ProjectName eq '"+txtProjectID+"' and TaskAssignToId eq '" + assignto + "'";
+      
+    
+    }
+    else if (assignto == "All" && projectstatus != "All") {
+        restQuery = "&$filter=CurrentPhase eq '" + projectstatus + "' and CompanyId eq '"+txtCompanyId+"' and ProjectName eq '"+txtProjectID+"'";
+        //camlXML = "<View><Query><Where><And><Eq><FieldRef Name='CompanyId' /><Value Type='Text'>" + txtCompanyId + "</Value></Eq><Eq><FieldRef Name='Status' /><Value Type='Text'>" + filterStatus + "</Value></Eq></And></Where><OrderBy><FieldRef Name='ID' Ascending='False' /></OrderBy></Query></View>";
+    }
+    else if (assignto != "All" && projectstatus != "All") {
+        restQuery = "&$filter=TaskAssignToId eq '" + assignto  + "' and CompanyId eq '"+txtCompanyId+"' and CurrentPhase eq '" + projectstatus +"' and ProjectName eq '"+txtProjectID+"'";
+       // camlXML = "<View><Query><Where><And><And><Eq><FieldRef Name='CompanyId' /><Value Type='Text'>" + txtCompanyId + "</Value></Eq><Eq><FieldRef Name='Status' /><Value Type='Text'>" + filterStatus + "</Value></Eq></And><Eq><FieldRef Name='DepartmentName' /><Value Type='Text'>" + filterDepartment + "</Value></Eq></And></Where><OrderBy><FieldRef Name='ID' Ascending='False' /></OrderBy></Query></View>";
+    }
+    else {
+        restQuery = "&$filter=CompanyId eq '"+txtCompanyId+"' and ProjectName eq '"+txtProjectID+"'";
+        //camlXML = "<View><Query><Where><Eq><FieldRef Name='CompanyId' /><Value Type='Text'>" + txtCompanyId + "</Value></Eq></Where><OrderBy><FieldRef Name='ID' Ascending='False' /></OrderBy></Query></View>";
+    }
+
+		
+	
+	var Location= window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+		$.ajax({
+             url: _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=*,Author/ID,Author/Title,TaskAssignTo/Title,TaskAssignTo/ID,AttachmentFiles&$Expand=Author,AttachmentFiles,TaskAssignTo&$orderby=DueDate asc" + restQuery,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+               var items = data.d.results;
+	            var tableItemsHTML = "";
+
+			     var myData=[];
+	          	for (var i = 0; i < items.length; i++) 
+	            {	
+            		var CompletionDate='';
+					var StarRating='';
+					var Title=items[i].Title;
+					var TaskAssignFrom=items[i].Author.Title;
+					var TaskAssignFromid=items[i].Author.ID;
+
+					var TaskPriority=items[i].TaskPriority;
+					var DueDate=items[i].DueDate;
+					var modifiedDate = new Date(DueDate);
+                        modifiedDate = new Date(modifiedDate);
+                        
+                        var totallength ='';
+                        var totallengt ='';
+
+					var diffDaysServices = Math.round(todayDate.getTime()-modifiedDate.getTime()) / (one_day);
+                    var OverDueDate=""
+					if(DueDate!=null)
+					{
+						DueDate=new Date(DueDate);
+						DueDate=titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+						
+					}
+					else
+					{
+						DueDate='N/A';
+					}
+					//var DueDate=new Date(items[i].DueDate);
+					//DueDate=$.datepicker.formatDate('dd-mm-yy', DueDate);
+					var CompletionPersent=items[i].CompletionPersent;
+					var CurrentPhase=items[i].CurrentPhase;
+					if(CurrentPhase=="Completed")
+					{
+						CompletionDate=new Date(items[i].CompletionDate);
+						CompletionDate=titanForWork.ShowCommonStandardDateFormat(CompletionDate);//.toLocaleDateString();
+						//CompletionDate=$.datepicker.formatDate('dd-mm-yy', CompletionDate);
+					}
+					else
+					{
+						CompletionDate="N/A";
+					}
+					
+					var ProjectFullName=items[i].ProjectFullName;
+									
+					var Rateing =items[i].TaskRating;
+					var RateingWidth=Rateing*11;
+					var taskStartDate=items[i].StartDate;
+					var ItemID=items[i].ID;
+					
+				 Title=items[i].Title;
+				
+					var TaskAssignTo=items[i].TaskAssignTo;
+					var TaskAssignToUsers='';
+					
+					for(var j=0;j<TaskAssignTo.results.length;j++)
+					{  
+					 var currentuser= _spPageContextInfo.userId;
+						if(TaskAssignTo.results[j].ID==currentuser)
+					{
+					var Titleurl="<a href='"+Location+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&TaskId="+window.btoa(ItemID)+"&EditMode="+window.btoa('False')+"&ProjectID="+txtProjectID+"'>"+Title+"</a>";
+					}
+					else if(currentuser==TaskAssignFromid)
+					{
+					
+					var Titleurl="<a href='"+Location+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&TaskId="+window.btoa(ItemID)+"&EditMode="+window.btoa('False')+"&ProjectID="+txtProjectID+"'>"+Title+"</a>";
+
+					}
+					else
+					{
+					Titleurl=Title;
+					}
+					 
+				     	
+					     if(TaskAssignTo.results.length>4)
+					    {
+					      					      
+					   totallengt = TaskAssignTo.results.length-3+ " more";
+					totallengt =  "<a style='cursor:pointer' onclick=mdalshow('" +ItemID+ "')>"+ totallengt
+					      totallength = "+"+totallengt;
+					        TaskAssignTo.results.length=4;					  
+                           }
+				     	else
+					     {
+						   var username=TaskAssignTo.results[j].Title;
+						    TaskAssignToUsers+=username+";";
+						}
+					}
+					
+					if(TaskAssignToUsers.length>0)
+					{
+					  TaskAssignToUsers=TaskAssignToUsers.substring(0, TaskAssignToUsers.length - 1)+ '<br>'+totallength ;
+                    }
+                    
+
+                      var fileServerRelativeUrl="";
+		                if (items[i].AttachmentFiles.results.length> 0)
+		                {
+		                    for (var indexitem = 0; indexitem < items[i].AttachmentFiles.results.length; indexitem++)
+		                    {
+		                        fileServerRelativeUrl+= "<a target='_blank' href='" + items[i].AttachmentFiles.results[indexitem].ServerRelativeUrl + "'>" + items[i].AttachmentFiles.results[indexitem].FileName + "</a>&nbsp<br><hr>"
+		                    }
+
+		                }
+		               
+
+
+
+					/////////////////////////////////////
+				//var Titleurl="<a href='"+Location+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&TaskId="+ItemID+"&EditMode=False&ProjectID="+txtProjectID+"'>"+Title+"</a>";
+				
+
+
+
+
+					
+					var editUrl='';
+					if(CurrentPhase=="Open")
+					{				
+						//editUrl="<a href='"+Location+"/Pages/EmployeeTimeSheet.aspx?WebAppId="+txtCompanyId+"&TaskId="+ItemID+"&TaskName="+Title+"&TaskCurrentPhase="+CurrentPhase+"'>Fill Time Sheet</a>";
+						//editUrl="<a style=\"cursor:pointer\" onclick=objTasksInbox.GetCurrentTaskDetails('"+ItemID+"','"+CurrentPhase+"','"+CompletionPersent+"','"+taskStartDate+"')>Action</a>";
+					}
+					else
+					{
+	                    // editUrl="<a style=\"cursor:pointer\"  onclick=objTasksInbox.GetCurrentTaskDetails('"+ItemID+"','"+CurrentPhase+"','"+CompletionPersent+"','"+taskStartDate+"')>Action</a>";
+						//editUrl="<a href='"+Location+"/Pages/EmployeeTimeSheet.aspx?WebAppId="+txtCompanyId+"&TaskId="+ItemID+"&TaskName="+Title+"&TaskCurrentPhase="+CurrentPhase+"'>Time Sheet</a>";
+					}
+					if(CurrentPhase=="Completed")
+					{
+						CurrentPhase="<p style='color:green;'>"+CurrentPhase+"</p>";
+						StarRating="<div class='stars-outer'><div class='stars-inner' style='width:"+RateingWidth+"px'></div></div>";
+					}
+					else
+					{
+						StarRating="N/A";
+					}
+					
+					
+		            // Generate Dynamic HTML
+		            if(diffDaysServices >1 && CurrentPhase=="Open")
+						{
+						tableItemsHTML += "<tr><td>" + Titleurl  + "</td><td>" +  TaskAssignToUsers + "</td><td>" + TaskAssignFrom + "</td><td>" + TaskPriority+ "</td><td style='font-weight: bold;color: red;'>" +DueDate+ "</td><td>" + CurrentPhase+ "</td><td>" + CompletionPersent+ "</td></tr>";
+					/*	if (uniqueValues.indexOf(ProjectFullName) == -1)
+                {
+                            uniqueValues.push(ProjectFullName);
+						option += "<option value='" + ProjectFullName + "'title='" + ProjectFullName + "'>" + ProjectFullName + "</option>";
+						}*/
+ 
+//$("#allProject").append(option);
+
+						}else
+						{
+						tableItemsHTML += "<tr><td>" + Titleurl +"</td><td>" + TaskAssignToUsers + "</td><td>" + TaskAssignFrom + "</td><td>" + TaskPriority+ "</td><td>" +DueDate+ "</td><td>" + CurrentPhase+ "</td><td>" + CompletionPersent+ "</td></tr>";	
+	/*	if (uniqueValues.indexOf(ProjectFullName) == -1)
+                {
+                       uniqueValues.push(ProjectFullName);
+						option += "<option value='" + ProjectFullName + "'title='" + ProjectFullName + "'>" + ProjectFullName + "</option>";
+  }*/
+				
+						}		            
+				}	
+	          	
+	          		                                    
+	//$("#allProject").append(option);
+	            //var completebody = tableHeadersHTML+ tableItemsHTML + "</tbody></table>";
+	            var completebody = tableItemsHTML;
+	            var dvTable = $(".mainDivTasksInbox");
+	          
+	            
+	            dvTable.html("");
+	            if (items.length == 0) 
+	            {
+	                //completebody = completebody + "<div style='text-align: center;font-size:14px' data-localize='NoRecordFound'>No Record Found</div>"
+	                $(".mainDivTasksInbox").hide()
+	                $(".NoRecordFound").show();
+	            }
+	            else
+	            {	
+	            	$(".mainDivTasksInbox").show()
+	            	 $(".NoRecordFound").hide();
+	            }
+	            
+	            dvTable.append(completebody);
+	            if (items.length > 0) 
+	            {
+	             TableConfiguration();				 // GenerateTableSharedWithMe();
+	            }
+	          // dvTable.append(completebody);
+	        },
+		    eror: function (data) {
+		
+		        console.log('error');
+		    }
+    });
+			
+}
+
+
+function parseDate(str) {
+    var mdy = str.split('-');
+    return new Date(mdy[2], mdy[1]-1, mdy[0]);
+}
+
+function daydiff(first, second) {
+    return Math.round((second-first)/(1000*60*60*24));
+}
+
+
+
+function GetTaskInboxGridFilter(TaskPhase){
+	$('#ProjectTaskDetails').dataTable().fnDestroy();
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var Location= window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+	var requestUri='';
+	if(TaskPhase=="All")
+	{
+		requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=*&$Filter=TaskAssignToId eq '"+_spPageContextInfo.userId+"' and CompanyId eq '"+txtCompanyId+"'";
+	}
+	else
+	{
+		requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=*&$Filter=TaskAssignToId eq '"+_spPageContextInfo.userId+"' and CompanyId eq '"+txtCompanyId+"' and CurrentPhase eq '"+TaskPhase+"'";
+	}
+	//var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=*&$Filter=TaskAssignToId eq '"+_spPageContextInfo.userId+"' and CompanyId eq '"+txtCompanyId+"' and CurrentPhase eq '"+TaskPhase+"'";
+	$.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+				var myData=[];
+				var items=data.d.results;
+				for(var i=0; i<items.length; i++)
+				{
+					var Title=items[i].Title;
+					//var TaskAssignTo=items[i].TaskAssignTo;
+					//var TaskAssignFrom=items[i].AuthorId;
+					//TaskAssignFrom=getUserName(TaskAssignFrom);
+					
+					var TaskAssignTo='';//items[i].TaskAssignToId;
+					for(var j=0;j<items[i].TaskAssignToId.results.length;j++)
+					{
+						UserName=getUserName(items[i].TaskAssignToId.results[j]);
+						TaskAssignTo +=UserName+";";
+					}
+					var TaskPriority=items[i].TaskPriority;
+					var DueDate=new Date(items[i].DueDate);
+					DueDate=$.datepicker.formatDate('dd-mm-yy', DueDate);
+					var CompletionPersent=items[i].CompletionPersent;
+					var CompletionDate=new Date(items[i].CompletionDate);
+					CompletionDate=$.datepicker.formatDate('dd-mm-yy', CompletionDate);
+					var CurrentPhase=items[i].CurrentPhase;
+					var ItemID=items[i].ID;
+					
+					var myObject=[];
+				    var Titleurl="<a href='"+Location+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&TaskId="+ItemID+"&EditMode=False&ProjectID="+txtProjectID+"'>"+Title+"</a>";
+					var editUrl="<a href='"+Location+"/Pages/EmployeeTimeSheet.aspx?WebAppId="+txtCompanyId+"&TaskId="+ItemID+"&TaskName="+Title+"&TaskCurrentPhase="+CurrentPhase+"'>Fill Time Sheet</a>";
+					
+					myObject.push(Titleurl);
+					myObject.push(TaskAssignFrom);
+					myObject.push(TaskPriority);
+					myObject.push(DueDate);
+					myObject.push(CurrentPhase);
+					myObject.push(CompletionPersent);
+                    myObject.push(CompletionDate);
+					myObject.push(editUrl);
+					myData.push(myObject);
+				}
+				
+				$('#ProjectTaskDetails').DataTable( {
+					data: myData,
+					columns: [
+						{ title: "Task Name" },
+						{ title: "Task Assign From" },
+						{ title: "Task Priority" },
+						{ title: "Task Due Date" },
+						{ title: "Task Current Phase" },
+						{ title: "Task Completion %"},
+						{ title: "Task Completion Date" },
+						{ title: "Time Sheet" }
+					]
+				});
+			},
+            error: function () {
+                alert("Error getting the Employee Aword.");
+            } 
+		});
+}
+
+
+
+function getUserName(createdBy)
+{	var items='';
+	//siteURL = _spPageContextInfo.webAbsoluteUrl + "/_vti_bin/ListData.svc/UserInformationList("+createdBy+")";
+	siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/GetUserByID("+createdBy+")";
+
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            //items = data.d.Name;
+            items = data.d.Title;
+        }, 
+        error: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+	return items;
+}
+
+$(document).ready(function(){
+assigntouser()
+	$("#NewTask").hide();
+	
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	//var NewTaskURL="<button type='button' class='btn btn-primary btn-md' onclick='location.href="+Location+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&ProjectID="+txtProjectID+"'><span class='glyphicon glyphicon-plus'></span>New Task</button>";
+	var NewTaskURL="<button type='button' class='btn btn-outline-primary btn-md  new-task' onclick='OpenNewTaskForm("+txtCompanyId+","+txtProjectID+")'><span class='glyphicon glyphicon-plus'></span> New Task</button>";
+	$("#NewTask").append(NewTaskURL);
+});
+
+function OpenNewTaskForm(txtCompanyId,txtProjectID)
+{
+	if(CanCreateTask == true){
+		var webAbsoluteURL= _spPageContextInfo.webAbsoluteUrl; //window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+		location.href=webAbsoluteURL+"/Pages/TaskDetails.aspx?WebAppId="+txtCompanyId+"&ProjectID="+txtProjectID;
+	}
+	else{
+		alert("You are not authorized to perform this action.");
+		return false;
+	}
+}
+
+
+function TableConfiguration()
+{
+	var Handler=this;
+	sorterTasksInbox = new TINY.table.sorter('sorterTasksInbox', 'TempTableTasksInbox', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: $("#columnsTasksInbox").attr('id'),
+        currentid: $("#currentpageTasksInbox").attr('id'),
+        totalid: $("#totalpagesTasksInbox").attr('id'),
+        startingrecid:$("#startrecordTasksInbox").attr('id'),
+        endingrecid: $("#endrecordTasksInbox").attr('id'),
+        totalrecid: $("#totalrecordsTasksInbox").attr('id'),
+        hoverid: $("#selectedrow").attr('id'),
+        pageddid:$("#pagedropdownTasksInbox").attr('id'),
+        navid:$("#tablenavTasksInbox").attr('id'),
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+/*
+function GetOwnerUser() {
+var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('Employees')/Items?$select=*,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID &$expand=LogonName,Department,Company &$filter= LogonName eq '"+_spPageContextInfo.userId+"' and CompanyId eq '"+txtCompanyId+"'"; 
+       $.ajax({
+        url: Ownurl,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var option = "";
+            var valuesArray = data.d.results;
+                 var id = valuesArray[0].ID;
+                 assigntouser(id);
+                },
+        error: function (data) {
+            console.log(data.responseJSON.error);
+
+        }
+    });
+}*/
+
+function assigntouser() {
+var uniqueValues=[];
+
+    $("#assigntodrp").empty();
+   var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+   	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=TaskAssignTo/ID,TaskAssignTo/Title,TaskAssignToId&$Expand=TaskAssignTo&$Filter=ProjectName eq '"+txtProjectID+"' and CompanyId eq '"+txtCompanyId+"'";
+
+    $.ajax({
+        url: Ownurl,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var option = "";
+            var listsresults= data.d.results;
+           // var subodinatdata =[];
+                            
+           $('<option value="All">All</option>').appendTo("#assigntodrp");
+          //  $('<option value="Subordinates">My Subordinates</option>').appendTo("#assigntodrp");
+
+          /*  $.each(valuesArray, function (i, el) {
+            
+            		if (uniqueValues.indexOf(el.TaskAssignTo.results[0].Title) == -1)
+                {
+               
+                   uniqueValues.push(el.TaskAssignTo.results[0].Title);
+                 option += "<option value='" + el.TaskAssignTo.results[0].ID+ "'title='" + el.TaskAssignTo.results[0].Title+ "'>" + el.TaskAssignTo.results[0].Title+ "</option>";
+               } // subodinatdata.push(el.LogonNameId);
+                 
+            });*/
+            
+            
+            if (listsresults.length!= null) {
+
+                    for (var subGrroupIndex = 0; subGrroupIndex < listsresults.length; subGrroupIndex++) {
+    for (var j = 0; j < listsresults[subGrroupIndex].TaskAssignTo.results.length; j++) {
+                        var userNamecurretn = listsresults[subGrroupIndex].TaskAssignTo.results[j].Title;
+                        	if (uniqueValues.indexOf(userNamecurretn) == -1)
+                {
+                               uniqueValues.push(userNamecurretn);
+
+                        if (userNamecurretn != null && userNamecurretn != "") {
+                         option += "<option value='" + listsresults[subGrroupIndex].TaskAssignTo.results[j].ID+ "'title='" + listsresults[subGrroupIndex].TaskAssignTo.results[j].Title + "'>" + listsresults[subGrroupIndex].TaskAssignTo.results[j].Title+ "</option>";
+              }
+              }
+    //listsresults[0].AssignedTo.results[subGrroupIndex].Title)
+
+                        }
+                    }
+                    }
+            
+            
+            
+            
+            // $('<option value="' + subodinatdata+ '">My Subordinates</option>').appendTo("#assigntodrp");
+            $("#assigntodrp").append(option);
+
+        },
+        error: function (data) {
+            console.log(data.responseJSON.error);
+
+        }
+    });
+}
+
+
+$(document).ready(function() { 
+  //  GetOwnerUser()
+
+filterdataClick();
+
+  $("#myInput").on("keyup", function() {
+  
+    var value = $(this).val().toLowerCase();
+    $("#TempTableTasksInbox tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+    $("#firstrow").show()
+  });
+
+
+ });
+
+
+function mdalshow(itemid)
+{
+$("#viewALLTealMemberes2").html("");
+$("#myViewAllTeamMemberModal2").modal("show");
+	var requestURL=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('EmployeeTaskDetails')/items?$select=TaskAssignTo/Title&$Expand=TaskAssignTo&$filter=ID eq'"+itemid+"'";
+	
+	$.ajax({
+		url:requestURL,
+		type:'GET',
+		headers:{"accept": "application/json;odata=verbose"},
+		success:function(data)
+		{
+		   var items = data.d.results;
+		if(items.length>0)
+	    {
+	    var TaskAssignTo=items[0].TaskAssignTo;
+        
+		    var tr='';
+					      
+					      for(var m=0;m<TaskAssignTo.results.length;m++)
+					     { 
+					       tr += '<tr>'; 
+					       tr += '<td>' + TaskAssignTo.results[m].Title + '</td>';
+					       tr += '</tr>';
+                         
+                        }
+                        $('#viewALLTealMemberes2').append(tr);
+                         }
+				},
+		error:function(error)
+		{
+			console.log("Error occured");
+		}
+	})
+}
+
+
+
+function filterdataClick() {
+	$("#Filterdata").on("click", function() {
+		var projectstatus= $('#txtFilterStatusInbox').val();
+		var assignto= $('#assigntodrp').val();
+		GetProjectTaskDetails(projectstatus,assignto)
+		                       //   $("#allProject").val(function(idx, val) {
+//  $(this).siblings('[value="'+ val +'"]').remove();
+//});
+
+	});
+}
+
+
+</script>
+
+	
+		<div class="margin10 paddBottom">
+			  <!--<label for="inputEmail6" class="col-sm-1 ">Status</label>
+			   <div class="col-sm-2">
+				<select name="select5" class="form-control" id="txtFilterStatus">
+					<option>All</option>
+					<option>Open</option>
+				   <option>Completed</option>
+				   <option>Hold</option>
+				   <option>Cancelled</option>
+				</select>
+			   </div>
+			   <label for="inputEmail6" class="col-sm-1">Priority</label>
+			   <div class="col-sm-2">
+				<select name="select5" class="form-control" id="txtFilterStatus">
+					<option>All</option>
+				   <option>Top</option>
+					<option>Medium</option>
+					<option>Low</option>
+				</select>
+			   </div>
+			   <label for="inputEmail6" class="col-sm-1">Target</label>
+			   <div class="col-sm-2">
+				<select name="select5" class="form-control" id="txtFilterStatus">
+					<option>All</option>
+				   <option>Missed</option>
+					<option>On-Time</option>
+					<option>Advanced</option>
+				</select>
+			   </div>
+			   <div class="col-sm-1">
+				<button type="button" class="btn btn-default btn-sm" >Filter</button></div>-->
+				
+				
+				
+				
+				<div class="row">
+			
+		<div class="vertical_align" style="padding-top:15px;">
+			<div class="row">
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" style="margin-left:10px" data-localize="Status"> Status</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4" style="margin-right:-14px">
+				   <select name="select5" class="form-control" id="txtFilterStatusInbox">
+						<option>Open</option>
+						<option>All</option>
+						<option>Completed</option>
+						<option>Hold</option>
+						<option>Cancelled</option>
+					</select>
+				</div>
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" data-localize="Subordinate">Subordinate</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4">
+				   <select name="select5" class="form-control" id="assigntodrp"></select>
+				</div>
+				<div class="col-sm-1 col-xs-2 filter-res" style="margin-left: -9px;">
+	                <button type="button" class="btn btn-outline-primary" id="Filterdata">Filter</button>
+	            </div>
+		
+				 <input id="myInput" type="text" style="width: 185px;height: 30px;border: 1px solid !important;margin-left: 41px;" placeholder="Search.."> 
+				
+				
+				
+			   <div class="col-sm-1 pull-right " id="NewTask" style="margin-right:27px">
+				</div>
+		</div>
+		<div class="clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="body">
+                            	<table cellpadding='0' cellspacing='0' border='1' id='TempTableTasksInbox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+					<thead class='panel-heading '><tr id="firstrow">
+					<th><h6 data-localize="Title">Title</h6></th>
+					
+					<th><h6 data-localize="AssignTo">Assigned To</h6></th>
+					<th><h6 data-localize="AssignBy">Assigned By</h6></th>
+					<th><h6 data-localize="Priority">Priority </h6></th>
+					<th><h6 data-localize="DueDate"> Due Date</h6></th>
+					<th><h6 data-localize="Status">Status</h6></th>
+					<th><h6 data-localize="CompletionPercentage">Completion %</h6></th>
+					</tr></thead>
+					<tbody class='panel mainDivTasksInbox'>					
+					</tbody></table>			
+					<div class="NoRecordFound" style='text-align: center; font-size:14px' data-localize="NoRecordFound">No Record Found</div>
+							
+					<div id="mainDivTasksInbox">
+					</div>					
+				</div>
+				<!--paging-->
+				<div id="tablefooter" style="margin-bottom: 10px;">
+					<div id="tablenavTasksInbox">
+						<div>
+							<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTasksInbox.move(-1,true)" />
+							<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTasksInbox.move(-1)" />
+							<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTasksInbox.move(1)" />
+							<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTasksInbox.move(1,true)" />
+						</div>
+						
+						<div>
+							<select id="pagedropdownTasksInbox"></select>
+						</div>
+						<div>
+							<a href="javascript:sorterTasksInbox.showall()" data-localize="ViewAll">View All</a>
+						</div>
+					</div>
+					<div id="tablelocation">
+						<div>
+							<span data-localize="LinesPerPage">Lines Per Page </span>
+							<select onchange="sorterTasksInbox.size(this.value)">
+							<option value="5">5</option>
+							<option value="10" selected="selected">10</option>
+							<option value="20">20</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+							</select>
+						</div>						
+						<div class=""><span data-localize="Page">Page</span><span id="currentpageTasksInbox"></span><span data-localize="Of">Of</span><span id="totalpagesTasksInbox"></span></div>
+					</div>
+				</div>
+	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+<!-------------------Team Members Modal--------->
+<div class="modal fade" id="myViewAllTeamMemberModal2" role="dialog" style="padding-top: 10% !important; z-index:58;aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog modal-1200">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-left:297px;margin-right:659px">
+        <div class="modal-header modal-head-new">
+          <button type="button" class="close modal-head-close" data-dismiss="modal" style="margin-top: 2px !important;">×</button>
+          <a class="pull-right"  style="padding-right:59px; display:none;"><span class="glyphicon glyphicon-plus-sign text-size"></span></a>
+           <h4 class="modal-title h4-color"><span class="modal-head-text">Assigned To</span></h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12">
+          <div class="row">
+          	<div class="table-responsive table-custom-border">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-custom-head">
+                                              </thead>
+                        <tbody id="viewALLTealMemberes2">
+                            
+                        </tbody>
+                    </table>
+                  </div>
+          
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-------------------Team Members Modal--------->
+           
+            
+            
+            <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-320</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a337b061-f586-4d6b-8db5-abaaef20d4d0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-320, ADMIN-1645029823-320</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

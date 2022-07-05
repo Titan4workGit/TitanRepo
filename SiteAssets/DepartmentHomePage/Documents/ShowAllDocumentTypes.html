@@ -1,0 +1,125 @@
+﻿<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+    <link rel="stylesheet" href="../SiteAssets/MyWorkplace/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.css">
+    <script type="text/javascript" src="../SiteAssets/MyWorkplace/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.js?1235"></script>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-490</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1c9eea05-e9df-4ad9-9cb1-e03f170e1c68</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=DOCID-1440631752-1179, DOCID-1440631752-1179</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">40400.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><body>
+		<div class="container">
+			<div class="row">
+				<div class="custom-panel">
+					<div class="panel-head">
+						<h1 class="panel-head-text">Company Documents</h1>
+						<!-- <p class="panel-head-sub-text">Department: <span id="txtDepartment"></span></p> -->
+                        <!-- <div class="owl-carousel documents-filter owl-theme">
+                        <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
+                          <a href="#"><span>Delivery</span></a>
+                          <a href="#"><span>Sales</span></a>
+                          <a href="#"><span>HR</span></a>currentDocDept
+                          <a href="#"><span>Technical</span></a>
+                        </div>  -->
+                        <div class="owl-carousel documents-filter owl-theme" id="documents-filter">
+
+                             <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
+                              <!-- <a href="#"><span>Admin</span></a>
+                              <a href="#"><span>Finance</span></a>
+                              <a href="#"><span>Hardware</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Information Technology</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Networkingg</span></a>
+                              <a href="#"><span>Purchase</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>R-Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>R-Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>Human Resource</span></a>
+                              <a href="#"><span>R-Human Resource</span></a>  --> 
+
+                            <!-- <div class="owl-nav">
+                                <button type="button" role="presentation" class="owl-prev disabled">
+                                    <span aria-label="Previous"></span>
+                                </button>
+                                <button type="button" role="presentation" class="owl-next">
+                                    <span aria-label="Next"></span>
+                                </button>
+                            </div> -->
+
+                        </div> 
+
+					</div>
+					<div class="panel-body pl0 pb0 pr0">
+						<div class="row ml0 mr0" id="departmentalDocuments">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+        <script type="text/javascript">
+            
+            //  new code for owl filters 16/03/2022
+
+            $('.hhdocuments-filter').owlCarousel({
+            //      loop:true,
+                    speed:500,
+                    margin:5,
+                    autoWidth:true,
+                    slideBy: 7,
+                    nav:true,
+                    dots:false,
+                    responsive:{
+                            0:{
+                                    items:1
+                            },
+                            768:{
+                                    items:3
+                            },
+                            1024:{
+                                    items:5
+                            },
+                            1366:{
+                                    items:10
+                            }
+                    }
+            });
+
+        </script>
+
+	</body>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<link type="text/css" rel="stylesheet" href="../SiteAssets/DepartmentHomePage/Documents/assets/styles.css">
+<link type="text/css"   rel="stylesheet" href="../SiteAssets/DepartmentHomePage/Documents/assets/padding.css">
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">DOCID-1440631752-1179</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">af944c4f-0c04-491c-b68c-daa8ef632b20</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/TITAN_RAII_DEV/_layouts/15/DocIdRedir.aspx?ID=DOCID-1440631752-1179, DOCID-1440631752-1179</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+</head>

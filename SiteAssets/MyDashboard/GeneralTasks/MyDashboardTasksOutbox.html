@@ -1,0 +1,212 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+<style type="text/css">
+	.form-horizontal .row
+	{
+		padding:5px;	
+	}
+	.stars-outer {
+	  display: inline-block;
+	  position: relative;
+	  font-family: FontAwesome;
+	}
+	 
+	.stars-outer::before {
+	  content: "\f006 \f006 \f006 \f006 \f006";
+	}
+	 
+	.stars-inner {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 0;
+	}
+	 
+	.stars-inner::before {
+	  content: "\f005 \f005 \f005 \f005 \f005";
+	  color: #f8ce0b;
+	}
+	
+.required:after {
+  content:"*";
+  color:red;
+}
+
+
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal,div.ms-webpart-cell-vertical-inline-table,.ms-webpart-chrome-vertical {
+		display:block !important;
+	}
+	#tablewrapper.table-responsive>.table>tbody>tr>td{
+		white-space: normal;
+	}
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+	$('#TempTableTasksOutbox').dataTable( {
+	/*	 'aoColumnDefs': [{
+           'bSortable': false,
+           'aTargets': -1,           
+		}], */
+		"order": []
+	});
+});
+</script>
+
+
+<div class=" row department-header" style="display:none;">
+	<ol class="breadcrumb">                
+		<li><h4><b>Manage Tasks</b></h4></li>
+	</ol>
+</div>
+
+<!--<div class="container">-->
+		<div class="row">	
+			<div class="vertical_align" style="padding-top:15px;">
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" data-localize="Status"> Status</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4">
+				   <select name="select5" class="form-control" id="txtFilterStatusOutbox">
+						<option>Open</option>
+						<option>All</option>
+						<option>Completed</option>
+						<option>Hold</option>
+						<option>Cancelled</option>
+					</select>
+				</div>
+				
+				
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" data-localize="Project"> Project</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4">
+				   <select name="select5" class="form-control" id="projectOutbox">
+					</select>
+				</div>
+				
+				<!--<input id="myInput2" type="text" style="width: 234px;height: 30px;margin-left: 20px;" placeholder="Search.."> -->
+
+
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">			
+				<div id="tablewrapper" class="table-responsive" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columnsTasksOutbox" onchange="sorterTasksOutbox.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecordTasksOutbox"></span>-<span id="endrecordTasksOutbox"></span> PagesOf  <span id="totalrecordsTasksOutbox"></span></div>
+								<div style="display:none;"><a href="javascript:sorterTasksOutbox.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<!--<div class="mrg-top-10m  btm10 container">
+					</div>-->	
+					<table cellpadding='0' cellspacing='0' border='1' id='TempTableTasksOutbox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+					<thead class='panel-heading '><tr id="firstRowOutbox">
+					<th><h6 data-localize="Title">Title</h6></th>
+					<th><h6 data-localize="ProjectName">Project Name</h6></th>
+					<th><h6 data-localize="AssignTo">Assigned To</h6></th>
+					<th><h6 data-localize="Priority">Priority</h6></th>
+					<th><h6 data-localize="DueDate">Due Date</h6></th>
+					<th><h6 data-localize="Status">Status</h6></th>
+					<th><h6 data-localize="CompletionPercentage">Completion %</h6></th>
+					<th><h6 data-localize="CompletionDate">Completion Date</h6></th>
+					
+					</tr></thead><tbody class='panel mainDivTasksOutbox'>
+					</tbody></table>
+					
+					<div id="mainDivTasksOutbox">
+					</div>					
+				</div>
+				
+			</div>
+		</div>
+<!--</div>-->
+
+
+
+<div class="modal fade" id="TasksOutboxModalPopup" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header panel-head-4">
+          <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Task Status</h4>
+        </div>
+        <div class="modal-body" >
+        <div class="form-horizontal">             
+	         <div class="row">
+	         <div class="col-sm-4 control-label" ><label class=" required" for="txtRegisterNumber">Task Completion(%)</label></div>
+	         <div class="col-sm-8" ><input type="number" min="1" max="100"  class="form-control" id="txtCompletionPercentage" placeholder="% Completed"></div>   
+	         </div>
+	         <div class="row">
+			         <div class="col-sm-4 control-label" > 
+			         	<label class=" required" for="txtRegisterName">Status</label>
+			         </div>
+					<div class="col-sm-8" > 
+						<select class="form-control" id="cmbCurrentStatusList">
+						<option>Open</option>
+						<option>Completed</option>
+						<option>Hold</option>
+						<option>Cancelled</option>
+						</select>  
+					</div>   
+	         </div>
+			<div class="row" id="taskCompletionDIV">
+				<div class="col-sm-4 control-label" > <label class="" for="txtStartDate">Completion Date</label></div>
+				<div class="col-sm-8" >    <input type="text" style="" class="form-control" id="txtTaskDetailsDate">
+				</div>   
+			</div>                                  
+         <br>
+			<div class="row">
+				<div class="col-sm-4 control-label" ><label class="" for="remarks"></label></div>
+				<div class="col-sm-8" >  
+					<input type="text" class="form-control" id="txtTastStartDate" style="display:none;">
+					<input type="text" class="form-control" id="txtTastItemID" style="display:none;">
+					<input type="button" class="btn  btn-outline-success" value="Submit" id="btnSbmitTaskStatus">
+					<input type="reset" class="btn btn-outline-secondary" value="Close" data-dismiss="modal">
+				</div>   
+			</div>
+			  </div>
+        </div>       
+      </div>
+    </div>
+  </div> 
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src="../SiteAssets/MyDashboard/GeneralTasks/MyDashboardTasksOutbox.js"></script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-74</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">824ba27d-4d1d-4f31-a1f3-9f496d24d15e</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-74, ADMIN-1645029823-74</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">7400.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

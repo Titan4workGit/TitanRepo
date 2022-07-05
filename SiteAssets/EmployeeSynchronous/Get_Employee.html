@@ -1,0 +1,245 @@
+﻿<style>
+
+#tableCompanyChange{ width:100%;margin-bottom: 5px;}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal{
+	display:block !important;
+	}
+	.table>thead>tr>th{
+		padding: 8px !Important;
+	}
+	.pdngbtm10{
+	    padding-bottom: 10px;
+	}
+	.tinytable th.head,.tinytable th.nosort{
+		padding:8px;
+	}
+	.panel-head-4 {
+		/*background-color: #ffffff !important;*/
+		height: 35px;
+	}
+	.tinytable th{
+	    border: 1px solid #ddd !important;
+	}
+	.tinytable th.asc,.tinytable th.desc{
+	    padding: 8px !important;
+	}
+	.tinytable td {
+		padding: 4px 6px 6px;
+		border-bottom: 1px solid #ddd !important;
+		border-right: 1px solid #ddd !important;
+		border-left: 1px solid #ddd !important;
+	}
+	/*#tablefooter{
+		height: 15px !important;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
+	}*/
+	input[type=text]::-ms-clear {
+    display: none;
+}
+	.employee-table-responsiv{
+		background-color:#ffffff;font-size:12px !important;
+		font-family:Microsoft JhengHei UI;
+		table-layout: fixed;
+		width: 100%;
+	}
+	@media (max-width:485px){
+		/*#tablefooter {
+	    	height: 40px !important;
+	    }*/
+	}
+	@media (max-width:1280px)
+	{
+		.employee-table-responsiv{
+			table-layout: inherit !Important;
+		}
+		.table-responsive {
+			width: 100%;
+			margin-bottom: 15px;
+			overflow-y: hidden;
+			overflow-x: scroll;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			border: 1px solid #ddd;
+		}
+	}
+	
+@media(max-width:478px){
+
+.mng-empy-search{
+	text-align:center;	
+}
+.mng-empy-search input#query{
+	width:100% !important;	
+}	
+.mng-empy-search div{
+
+	float:none !important;	
+	float:none !important;
+}
+	
+}	
+
+@media all and (max-width:893px) and (min-width:774px){
+
+#operationDiv #btnCopy{
+
+	 margin-left:0 !important;		
+	 margin-top:5px;
+}
+
+}
+	
+</style>
+<!-- <div id='mainDivArea'></div> -->
+<!-- MainDivTable -->
+<section class="content panel panel-default mrgn-tp10">
+	<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="ManageEmployees"></h4>
+		</div>
+	</div>
+<div class="container">
+<div class="row">
+<div id="div1" class="panel col-md-12">
+	<div class="mng-empy-search">
+		<div style='float:left'>		
+				<!-- <input type="text" placeholder="Search..." id="search_field" style="width:270px"> -->
+				<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." style="width:200px;;height: 38px;" />
+				<select id='ddlTempDepartmentFilter' style="display:none;"></select>
+				<select id='ddlTempManagerFilter' style="display:none;"></select>  
+				<!--<select id='ddlTempCompanyFilter'></select>-->
+				<!--<input style='background-color:#f1b80d;color: white; display:none' type='button' id='btnCompany' value='Update Company' />-->
+				
+				<!--<input style='background-color:#f1b80d;color: white;display:none;' type='button' id='btnDepartment' value='Update Department' />
+				<input style='color: black;' class="btn btn-success" type='button' id='btnManager' value='Update' />-->
+				<br />
+				<!--<select id='ddlTempManager'></select>
+				<input style='color: black;' class="btn btn-success" type='button' id='btnUpdateManager' value='Update Manager' />-->				
+		</div>
+		<div style='float:right'>
+				<a href="../Pages/InviteExternalUser.aspx?WebAppId=232SHDFGHJF2"> 
+		<img src="../SiteAssets/AdminPortal/ManageEmployee/assets/Images/add-user.png" style="width:50px" title="Invite to external users" alt="Invite to external users">
+		</a>
+
+		<a href="../Pages/importxlsx.aspx?WebAppId=232SHDFGHJF22B2526DFG"> 
+		<img src="../SiteAssets/AdminPortal/ManageEmployee/assets/Images/Excel.png" style="width:50px" title="upload excel and sync" alt="upload excel and sync">
+		</a>
+			<a  href='' data-toggle="tooltip" title="Employee Synchronization" id='idsynch'>
+				<img src='../SiteAssets/EmployeeSynchronous/emp_sync.png' alt='Sync' style="width:50px" >
+			</a>
+		</div>
+	</div>
+    <div id="tablewrapper">
+        <div id="tableheader">
+            <div class="search" style="display:none;">
+                <select id="columns" onchange="sorter.search('query')"></select>
+            </div>
+            <div style="display:none;">
+                <span class="details">
+                    <div>Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+                    <div><a href="javascript:sorter.reset()">Reset </a></div>
+                </span>
+            </div>
+        </div>
+        <div id="mainDivArea">
+        </div>
+        <div id="tablefooter">
+            <div id="tablenav">
+                <div>
+                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                </div>
+                <div>
+                    <select id="pagedropdown"></select>
+                </div>
+                <div>
+                    <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                </div>
+            </div>
+            <div id="tablelocation">
+                <div>
+                    <span data-localize="LinesPerPage"> </span>
+                    <select onchange="sorter.size(this.value)" class="ddlpaging"  >
+                        <option value="5">5</option>
+                        <option value="10" selected="selected">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+
+                </div>
+                <div><span data-localize="Page"></span><span id="currentpage"></span><span data-localize="Of"></span><span id="totalpages"></span></div>
+            </div>
+        </div>
+    </div>
+	<div class="container">
+		<div id="operationDiv" class="row" >
+		<div class="row margin10">
+			<div class="col-sm-3 ddl-company-div">
+				<select id='ddlTempCompany' class="form-control" style="width:100%"></select>
+			</div>
+			<div class="col-sm-3 ddl-department-div">
+				<select id='ddlTempDepartment' class="form-control" style="width:100%"></select>
+			</div>
+			<div class="col-sm-3 ddlofficelocation-div">
+				<select id='ddlTempOfficeLocation' class="form-control" style="width:100%"></select>
+			</div>
+			<div class="col-xs-6 col-sm-1 manager-btn-div">
+				<input  class="btn  btn-outline-success" type='button' id='btnManager' value='Transfer' />         
+			</div>
+			<div class="col-xs-6 col-sm-1 copy-btn-div">
+				<input  class="btn btn-outline-primary" type='button' id='btnCopy' value='Copy' />
+			</div>
+		</div>
+		<div class="row margin10 pdngbtm10"> 
+			<div class="col-xs-12 col-sm-3">
+				<select id='ddlTempManager' class="form-control"  style="width:100%"></select>
+			</div>
+			<div class="col-xs-6 col-sm-2">
+				<input  class="btn  btn-outline-success" type='button' id='btnUpdateManager' value='Update Manager' /><br />
+			</div>
+		</div>
+		</div>
+		</div>
+		<div id="modalTitanPreview" class="modal fade">
+		<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header panel-head-4">
+			<button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h4 class="modal-title h4-color">Associated Companies</h4>
+		</div>
+			<div class="modal-body">
+				<div id="mainDivCompanies"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EndMainTable -->
+
+
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+    <script src='../SiteAssets/EmployeeSynchronous/Get_Epmloyee.js'></script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-57</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a9e3d7a8-9526-47fc-be32-70f2e6b8b079</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-57, ADMIN-1645029823-57</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">5700.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

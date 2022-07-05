@@ -1,0 +1,639 @@
+﻿<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.runtime.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.js"></script>
+
+
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/jquery.datepicker.js"></script>
+<script src="../SiteAssets/Biography/FetchList.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script type="text/javascript" src="../SiteAssets/Biography/NewJsCss/select2.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../SiteAssets/Biography/NewJsCss/select2.min.css" >
+<script type="text/javascript" src="../SiteAssets/Biography/NewJsCss/jquery.richtext.js"></script>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/NewJsCss/richtext.min.css">
+
+
+
+<style type="text/css">
+	.LabelAsButton {
+	  	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: solid 1px #20538D;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		background: #1d6ec0;
+		color: #FFF;
+		padding: 8px 12px;
+		text-decoration: none;
+    	cursor:pointer;
+	}
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+.richText-editor{
+	    height: 200px !important;
+	    padding:10px !important;
+	   }
+	   
+ ul, li {
+    list-style: unset !important;
+}
+.richText-editor{
+	    border-left: #FFFFFF solid 0px;
+}
+
+
+.btn-cancel{
+	min-width: 6em;
+}
+div#divTag {
+    height: 170px;
+}
+.upload-file-div .upload-file {
+    display: inline-block !Important;
+    width: 229px !important;
+}
+label.col-sm-3.control-label.isvalid {
+    padding-top: 3px;
+}
+.pdngbtm15{
+	padding-bottom:15px;
+}
+.ms-core-pageTitle, .ms-core-pageTitle a{
+display : none;
+}
+input.hidden {
+	position: absolute;
+	left: -9999px;
+}
+#profile-image1 {
+	cursor: pointer;
+	width: 30%;
+	height:100%;
+	padding-bottom: 5px;
+}
+.emp_list_height_left {
+	min-height: 505px;
+}
+.emp_list_height_right {
+	min-height:290px;
+}
+.blue-color {
+	color:#1d6ec0
+}
+.panel-title > a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+.short-full {
+    float: right;
+   /* color: #000;*/
+}
+.star{ color:#FF0000 !important}
+
+/* new css added on 2/4/2020 */
+
+label.required:after {content: " *"; color: red;}
+
+.panel-group .panel {
+border-radius: 5px;
+border-color: #EEEEEE;
+padding:0;
+
+}
+.panel-group {
+margin-bottom: 10px;
+}
+
+.panel-title {
+font-size: 14px;
+}
+
+.panel-title > a {
+display: block;
+padding: 10px;
+text-decoration: none;
+}
+
+/* new css added on 9/4/2020 */
+
+.my_general_users_box {
+    margin-top: 30px;
+}
+.my_general_from_date_box .input-group {
+    width: 100%;
+}
+.my_general_to_date_box .input-group {
+    width: 100%;
+}
+.my_general_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_general_department_list .dropdown-toggle:hover, .my_general_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_general_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_general_department_list .dropdown-menu {
+    left: 15px;
+    padding: 5px 10px;
+}
+.my_general_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_general_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+
+/* responsive css -----START----- */
+
+@media (max-width:767px) {
+ 	.emp_list_height {
+		min-height: auto !important;
+	}
+}
+
+</style>
+
+<!--<div class="container">-->
+<div class="row top15">
+	<div class="col-md-6">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="panel panel-default shadow2 emp_list_height_left">
+					<div class="panel-heading  panel-head-4">
+						<div class="panel-title">
+							<h4 class="h4-color" data-localize="Experience">Experience</h4>
+						</div>
+					</div>
+					<div class="panel-body">
+						
+						<!-- <div class="row text-center" id="divTag"> 
+							<img alt="User Pic" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg" class="img-circle img-responsive center-block" id="profile-image1">							
+						</div>
+						<div class="upload-file-div">
+							<input id="profile-image-upload" class="upload-file blue-color hidden" type="file">
+							<div class="blue-color" style="font-size:11px;">
+							</div>							
+							<br>
+						</div> -->
+
+						<div class="form-horizontal top20">
+
+							<div class="form-group">
+							 	<div class="col-sm-6">
+									<div class="row text-center" id="divTag"> 
+										<img alt="User Pic" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg" class="img-circle img-responsive center-block" id="profile-image1">						
+									</div>
+									<div class="upload-file-div" id="imguploadDIV" style="display:none;">
+										<input id="profileimageupload" class="upload-file blue-color" type="file" onchange="document.getElementById('profile-image1').src = window.URL.createObjectURL(this.files[0])">
+										<div class="blue-color" style="font-size:11px;">
+										</div>							
+										<br>
+									</div>
+								</div>
+							 	<div class="col-sm-6">
+									<div class="row">
+										<div class="col-sm-12 my_general_type_box">
+											<label class="required">Type</label>
+				                            <select class="form-control ViewMode" id="CategoryType">
+					                            <option>Type 1</option>
+					                            <option>Type 2</option>
+					                            <option>Type 3</option>
+					                            <option>Type 4</option>
+					                            <option>Type 5</option>
+				                            </select>
+										</div>
+									 	<div class="col-sm-12 my_general_users_box">
+											<label class="required">Users</label>
+				                            <select class="form-control ViewMode" onchange="SetVisibility(this.value);" id="UserTypeVal">
+					                            <option value="Internal Users">Employee</option>
+					                            <option value="External Users">Other</option>
+				                            </select>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="form-group">
+							 	<div class="col-sm-6">
+									<label class="required">Type</label>
+		                            <select class="form-control" id="CategoryType">
+			                            <option>Type 1</option>
+			                            <option>Type 2</option>
+			                            <option>Type 3</option>
+			                            <option>Type 4</option>
+			                            <option>Type 5</option>
+		                            </select>
+								</div>
+							 	<div class="col-sm-6">
+									<label class="required">Users</label>
+		                            <select class="form-control" onchange="SetVisibility(this.value);" id="UserTypeVal">
+			                            <option>Internal Users</option>
+			                            <option>External Users</option>
+		                            </select>
+								</div>
+							</div> -->
+							
+							<div class="form-group" id="InternalUsersDiv" >
+		                      	<div class="col-sm-12">
+		                      	<div id="InternalUsers" class="peoplepicker"></div>
+		                      	</div>
+		                      	<!--<div class="col-sm-12">
+		                      		<label for="label" class="control-label"><span data-localize="SelectEmployee">Select Employee</span><span class="star">*</span></label>
+									<div class="" id="EmpName">
+										<select name="select4" id="ddlemployee" class="form-control ViewMode">
+											<option></option>
+										</select>
+									</div>
+		                    	</div>-->
+		                    </div>
+
+							<div class="form-group" style="display:none;" id="ExternalUsersDiv">
+		                      	<div class="col-sm-12">
+		                      		<label class="required">Name</label>
+		                       		<input type="text"  class="form-control" id="ExternalUserVal">
+		                     	</div>
+		                    </div>
+							
+							<div class="form-group">
+								<div class="col-sm-6">
+									<label for="" class="control-label" data-localize="Department">Department</label>
+									<div class="">
+										<input type="" class="form-control" id="txtDepartment" disabled>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Designation">Designation</label>
+									<div class="">
+										<input type="" class="form-control" id="txtDesignation" disabled>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-6">
+									<label for="" class="control-label " data-localize="OfficeLocation">Office Location</label>
+									<div class="">
+										<input type="" class="form-control" id="txtLocation" disabled>
+									</div>
+								</div>
+								<!--<div class="col-sm-6">
+									<label for="" class="control-label isvalid" data-localize="IsValid">Is valid</label>
+									<div class="">
+										<input type="checkbox" id="TxtCheckBox" value="">
+									</div>
+								</div>-->
+							</div>		
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label class="required">Title</label>
+									<input type="text"  class="form-control ViewMode" id="txtTitle">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label class="required">Description</label>
+									<textarea class="form-control content " rows="4" style="resize: none;" id="txtBio"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+							 	<div class="col-sm-6 my_general_from_date_box">
+									<label for="" class="control-label"><span data-localize="DisplayFrom">Display From</span><span class="star">*</span> </label>
+									<div class="input-group">
+										<input id="txtxdatefrom" type="text" class="form-control ViewMode" name="date">
+									</div>
+								</div>
+							 	<div class="col-sm-6 my_general_to_date_box">
+									<label for="" class="control-label"><span data-localize="DisplayTo">Display To</span><span class="star">*</span> </label>
+									 <div class="input-group">
+										<input id="txtdateto" type="text" class="form-control ViewMode" name="date">
+									</div> 
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-6">
+									<label class="required">Audience</label>
+									<select id="Audience" class="form-control ViewMode" onchange="ReadDepartment_Company(this.value);">
+									  <option>Corporate</option>
+									  <option>Company</option>
+									  <option>Department</option>
+									</select>
+								</div>
+							
+								<!-- New Multiple Select Dropdown  START -->
+								<div class="col-sm-6 my_general_department_main_box" id="DepartmentListBox" style="display:none;">
+									<label class="required" id="DropLable">Company</label>
+									<div class="button-group my_general_department_list">
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span id="SelectedItems">Select</span><span class="caret"></span>
+								        </button>
+										<ul class="dropdown-menu" style="width:90% !important;" id="DpdownData"></ul>
+								  	</div>
+								</div>
+								<!-- New Multiple Select Dropdown  END -->
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label>Link</label>
+									<input id="txtLink" type="text"  class="form-control ViewMode">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-sm-6" id="Attachmentbox">
+									<label class="">Photo</label>
+									<div id="drop-zone">
+										<div id="clickHere">
+											<input type="file" name="file" style="display:none;" id="FileUpload" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 15Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." class="form-control ViewMode" multiple >
+											<label for="FileUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload" title="Upload upto 5 images of total file size upto 5Mb. Only JPEG, JPG, GIF and PNG formats are allowed.">Click to upload</label>
+											</div>
+										<div id='filename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+										<div id='OldImagename' class="oldfilename1" style="padding:0px 0px 0px 0px;"></div>
+										
+									</div>
+								</div>
+						
+								<div class="col-sm-6">
+									<label class="">Documents Attachment</label>
+									<div id="drop-zone">
+										<div id="clickHere"><input type="file" style="display:none;" name="file" id="UploadDoc" class="form-control ViewMode" multiple>
+											<label for="UploadDoc" class="control-label LabelAsButton ViewMode" data-localize="Click to upload">Click to upload</label>
+										</div>
+										<div id='Docfilename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+									</div>
+								</div>
+							</div>
+						
+						
+
+							<div class="clearfix"></div>
+							<div class="row text-center pdngbtm15">
+								<!--<button type="button" id="btnsubmit" class="btn  btn-outline-success" onclick="InsertOperation()" data-localize="Submit">Submit</button>-->
+								<button type="button" class="btn btn-outline-success ViewMode" id="btnsubmit" onclick="InsertOperation()">Submit</button>
+							<!--	<input type="button" class="" id="btnsubmit" onclick="InsertOperation()" value="Save">-->
+								<!--<button type="button" class="btn btn-outline-secondary">--><a class="btn btn-outline-secondary btn-cancel" id="btnCancel" data-localize="Cancel">Cancel</a><!--</button>-->
+							</div>   
+							
+						</div>
+					</div>
+				<!--/panel content-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="col-md-12">
+			<div class="row">
+				<!-- <div class="panel panel-default shadow2 emp_list_height_right">
+					<div class="panel-heading  panel-head-4">
+						<div class="panel-title">
+							<h4 class="h4-color" data-localize="Biography">Biography</h4>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal">
+							 <div class="form-group">
+								<label for="" class="col-sm-3 control-label"><span data-localize="DisplayFrom">Display From</span><span class="star">*</span> </label>
+								<div class="col-sm-7">
+								 <div class="input-group">
+									<input id="txtxdatefrom" type="text" class="form-control" name="date">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label"><span data-localize="DisplayTo">Display To</span><span class="star">*</span> </label>
+								<div class="col-sm-7">
+								 <div class="input-group">
+									<input id="txtdateto" type="text" class="form-control" name="date">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label isvalid" data-localize="IsValid">Is valid</label>
+								<div class="col-sm-7">
+									<input type="checkbox" id="TxtCheckBox" value="">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label" data-localize="BiographyLabel">Biography Label<span class="star">*</span></label>
+								<div class="col-sm-7">
+									<textarea id="txtBio" class="form-control" rows="10" cols="50" maxlength="500" name ="text1"></textarea>
+								</div>
+							</div>							    								
+						</div>
+					</div>					
+				</div> --> 
+				<div class="panel-group" role="tablist" aria-multiselectable="true">
+					<div class="otherLanguages" id="accordion">
+					</div>
+				</div>                      
+			</div>
+		</div>
+	</div>      
+	    
+</div>
+
+
+
+<div class="modal fade" id="EmpDetails" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<ul class="ir-table-main-box">
+						<li>
+								<div class="table-responsive ir-table-box-inner-main">
+									<table class="table table-bordered">
+										<tbody id="">
+											<tr>
+												<td>
+													<img src="" id="EmpProfileImage1" class="img-responsive img-circle" style="width:50px;height:50px;">
+												</td>
+												<td>
+													<p id="EmpTitle1"></p>
+												</td>
+												<td>
+													<p id="EmailID1"></p>
+												</td>
+												<td>
+													<p id="DepartmentName1"></p>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+						
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<style type="text/css">
+
+	.menu-btn {
+	height: 38px;
+	width: 140px;
+	border: 1px solid #000;
+	background: #fff;
+	color: #000;
+	border-radius: 4px;
+	}
+
+	.list-box {
+	position: fixed;
+	background: #fff;
+	width: auto;
+	top: 0;
+	left: -520px;
+	transform: translate(48px, 70px);
+	height: auto;
+	transition: left 1.4s ease-in-out;
+	-o-transition: left 1.4s ease-in-out;
+	-ms-transition: left 1.4s ease-in-out;
+	-moz-transition: left 1.4s ease-in-out;
+	-webkit-transition: left 1.4s ease-in-out;
+	} 
+
+	.box-out {
+	top: 0;
+	left: 0px;
+	transform: translate(48px, 70px);
+	transition: all 1.2s ease-in-out;
+	}
+
+	.groups-card {
+	border: 1px solid #cccccc;
+	padding: 10px 14px;
+	border-radius: 4px;
+	margin-bottom: 0px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 6px 16px #b2b2b2;
+	}
+	.groups-card-head {
+	max-width: 60px;
+	min-width: 60px;
+	height: 60px;
+	/*border: 2px solid #bbbbbb;*/
+	border-radius: 50%;
+	box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+	overflow: hidden;
+	transition: all 0.5s;
+	}
+	.groups-card-head>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	}
+	.groups-card-body {
+	padding-left: 12px;
+	width: calc(100% - 60px);
+	display: flex;
+	align-items: flex-start;
+	}
+	.groups-card-body-info {
+	width: 100%;
+	}
+	.member-name {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	margin-top: 0px;
+	}
+	.text-ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+	.member-deg, .member-dep, .member-email {
+	font-size: 14px;
+	line-height: 1.2;
+	}
+	.member-deg, .member-dep {
+	margin-bottom: 6px;
+	}
+	.member-email {
+	margin-bottom: 4px;
+	}
+
+</style>
+	
+	<!-- <div id="box" class="list-box">
+		<div class="groups-card">
+			<div class="groups-card-head">
+				<img src="" alt="user" id="EmpProfileImage">
+			</div>
+			<div class="groups-card-body">
+				<div class="groups-card-body-info text-ellipsis">
+					<h3 class="member-name text-ellipsis" id="EmpTitle"></h3>
+					<p class="member-deg text-ellipsis"><span id="EmpDesigation">Leader</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="DepartmentName"></span></p>
+					<p class="member-email text-ellipsis" id="EmailID"></p>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+<script>
+	$(document).ready(function() {
+		$('.content').richText();
+		$('a[title="Add image"]').hide();
+  		$('a[title="Add file"]').hide();
+  		$('a[title="Add video"]').hide();
+  		$('a[title="Add URL"]').hide();
+  		$('a[title="Add table"]').hide();
+  		$('a[title="Show HTML code"]').hide();
+  		$('a[title="Remove styles"]').hide();
+  		$('.richText-help').hide();
+  		$('.richText-toolbar').hide();
+  	});
+</script>
+
+
+    
+<!--</div>-->
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-454</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">939a55f2-999f-4d39-a548-255245ad97f5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-454, ADMIN-1645029823-454</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">45400.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>SiteAssets/ApplicationsLink/ViewApplicationsLink.html</title></head>

@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Titan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/MyTask/task-import-excel/assets/css/styles.css">
+
+    <script type="text/javascript" src='../SiteAssets/MyTask/assets/moment.min.js'></script>
+    <script src="../SiteAssets/MyTask/task-import-excel/assets/PluginJS/edb0de374a.js"></script>
+    <script type="text/javascript" src='../SiteAssets/MyTask/assets/MyNewTable.js'></script>
+    <script type="text/javascript" src="../SiteAssets/MyTask/task-import-excel/assets/PluginJS/xlsx.core.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/MyTask/task-import-excel/assets/CustomJS/TaskImport.js"></script>
+
+
+<style>
+
+.template-modal-header{
+ padding: 5px;
+ border-bottom: 1px solid #cccccc85;	
+}
+
+.template-modal-header button.close-round{
+ min-width: 1em;
+ color: #666;
+ padding: 2px;
+ font-weight: 600;
+}
+
+.template-modal-header button.close-round:hover{
+ color: #fff;
+}
+
+</style>
+
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2910</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3c953875-7fe7-4e6d-9ff0-9974932615d3</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2910, ADMIN-1645029823-2910</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box">
+                        <div class="panel-head">
+                            <h3 class="m-0">
+                                Task Import from Excel
+                            </h3>
+                        </div>
+                        <div class="panel-body px-0 pt-8">
+                            <div class="row m-0">
+                                <div class="col-md-6 col-xs-12 task-import-top-panel-box-istad task-import-top-panel-box-upload">
+                                    <div class="form-group custom-form-group search-box">
+                                        <input class="form-control" id="ExcelUpload" type="file" name="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12 task-import-top-panel-box-istad">
+                                    <div class="row m-0 task-import-right-top-box">
+                                        <div class="col-xs-4 task-import-right-time-box-one">
+                                            <div class="text-center">
+                                                <p class="m-0 font-18">Selected</p>
+                                                <h3 class="m-0 font-28" id="txtSelectedRows">0</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 task-import-right-time-box-two">
+                                            <div class="text-center color-green">
+                                                <p class="m-0 font-18">Done</p>
+                                                <h3 class="m-0 font-28" id="txtAddedCount">0</h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 task-import-right-time-box-three">
+                                            <div class="text-center color-red">
+                                                <p class="m-0 font-18">Failed</p>
+                                                <h3 class="m-0 font-28" id="txtFailedTasks">0</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group custom-form-group search-box col-md-6 col-xs-12">
+                                <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search" class="form-control doc-search">
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
+                                    <div class="table-responsive">
+                                        <div id="tablewrapper">
+                                            <div id="tableheader" style="height: auto !important;">
+                                                <div class="search" style="display:none;">
+                                                    <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                                                </div>
+                                                <div>
+                                                    <span class="details">
+                                                        <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                                        <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table cellpadding='0' cellspacing='0' border='1' id='tblImportTasks' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                                    <thead class='panel-heading '>
+                                                        <tr>
+
+                                                            <th class="wpx-36">
+                                                                    <div class="checkbox task-import-thead-checkbox m-0">
+                                                                        <label><input type="checkbox" value="" id="selectAllChk"></label>
+                                                                    </div>
+                                                                </th>
+                                                                <th class="border-bottom-0">Status</th>
+                                                                <th class="border-bottom-0">Task</th>
+                                                                <th class="border-bottom-0">Type</th>
+                                                                <th class="border-bottom-0">Project</th>
+                                                                <th class="border-bottom-0">Module</th>
+                                                                <th class="border-bottom-0">Customer</th>
+                                                                <th class="border-bottom-0">Work Type</th>
+                                                                <th class="border-bottom-0">Assigned By</th>
+                                                                <th class="border-bottom-0">Assigned To</th>
+                                                                <th class="border-bottom-0">Due Date</th>
+                                                                <th class="border-bottom-0">Priority</th>
+                                                                <th class="border-bottom-0">Error</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class='panel tbdyImportTasks'>
+                                                    	<tr><td colspan="13"><div style='text-align: center;font-size:14px;'>upload excel to submit</div></td></tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <!--div id="mainDivAllAnnouncements">
+                                                </div-->
+                                            </div>
+                                            <div id="tablefooter" style="margin-bottom: 10px;">
+                                                <div id="tablenav">
+                                                    <div>
+                                                        <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                                        <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                                        <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                                        <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                                    </div>
+                                                    <div>
+                                                        <select id="pageDropDown"></select>
+                                                    </div>
+                                                    <div style="display:none;" id="btnViewAll">
+                                                        <a href="#" onclick="sorter.showall()" id="btnExpandAll" data-localize="ViewAll"></a>
+                                                    </div>
+                                                </div>
+                                                <!--div id="ShowTotalItemsInbox" style="float:left !important;"><span>Total Items: &nbsp</span><span id="TotalItemscount"></span></div-->
+                                                
+                                                <div id="tablelocation">
+                                                    <div>
+                                                        <span id="pageDropDown" data-localize="LinesPerPage"></span>
+                                                        <select onchange="sorter.size(this.value)" id="ddlPageNav">
+                                                            <option value="5">5</option>
+                                                            <option value="10" selected="selected">10</option>
+                                                            <option value="20">20</option>
+                                                            <option value="50">50</option>
+                                                            <option value="100">100</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="col-xs-12 text-center task-import-footer-btn-group" id="parentSubmit">
+                                <button type="button" class="btn custom-btn mr-8 w-87" data-toggle="modal" data-target="#template-modal">Template</button>
+                                <button type="button" class="btn custom-btn mr-8 w-87" id="btnSubmitTasks">Submit</button>
+                                <button type="button" class="btn custom-btn-two-danger w-87" id="btnCloseTasks">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Template modal -->
+    <div class="modal fade" id="template-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="template-modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <div class="template-modal-header-left">
+                        <img width="50px" src="../SiteAssets/MyTask/task-import-excel/assets/images/excel-icon.png" alt="excel icon">
+                        <h4 class="modal-title">Instructions</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-body-items">
+                        <li>Task name is mandatory,  and should be less than 250 char.</li>
+                        <li>Task type will be any one of “Project Task” or “General Task”.</li>
+                        <li>If task type not mentioned properly (blank or miss spell)  then system will consider “General Task” as default.</li>
+                        <li> In case of “Project Task”, Project name or Project ID is mandatory</li>
+                        <li>Module name or Module ID will be under specified project. For miss-spelled or wrong ID, module information will be skipped.</li>
+                        <li>In case of “General Task”, customer is mandatory.</li>
+                        <li>If Customer name or Customer ID, found blank or wrong then system will consider “Self Company” as a default customer.</li>
+                        <li>The “Assigned by” user is defined by the email. If it is blank then system consider logged-user as default “Assigned by”</li>
+                        <li>For “Assigned to” users are defined as email, separated by (;) semicolon.</li>
+                        <li>All the user must be valid employee or guest user. If found any wrong user, then task will not create.</li>
+                        <li>In case of “Project Task”, all “Assigned to” users must be in the project team.</li>
+                        <li>Due date is MM/DD/YYYY formatted.</li>
+                        <li>Due date must be today or future date. If due date is wrong or blank, then task will not create.</li>
+                        <li>Priority of task will any one of  “High” , “Medium” or “Low”. If blank or miss spell, system consider “Medium” as default.</li>
+                    </ul>
+                    <div class="download-btn-panel">
+                        <a href="../SiteAssets/MyTask/task-import-excel/assets/Sample Task Import template.xlsx">Click here</a>
+                        <span>&nbsp;to download the sample Excel file</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,1117 @@
+﻿<link rel="stylesheet" href="../SiteAssets/Biography/NewJsCss/owl.carousel.min.css">
+<link rel="stylesheet" href="../SiteAssets/Biography/NewJsCss/owl.theme.default.min.css">
+
+    	
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src="../SiteAssets/Biography/ViewAllBioGraphy.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+
+<style type="text/css">
+.row:after, .row:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.span6 {
+  float: left;
+  width: 80%;
+  
+}
+
+.emojionearea-standalone {
+  float: right;
+}
+
+.emojionearea-editor{
+	min-height: 4em !important;
+}
+
+
+#myModal .custom-scroll {
+    height: 100%;
+    max-height: 150px;
+    min-height: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+.item img {min-width: 360px; max-width: 360px; min-height: 200px; max-height: 200px;}
+/*Common CSS*/
+	/*Padding Classes*/
+		.p0{padding:0 !important;}
+        .p5{padding:5px !important;}
+        .p10{padding:10px !important;}
+        .p20{padding:20px !important;}
+        .p12{padding:12px !important;}
+		.pt0{padding-top: 0;}
+		.pt5{padding-top: 5px !important;}
+		.pt10{padding-top: 10px !important;}
+		.pt15{padding-top: 15px !important;}
+		.pt20{padding-top: 20px !important;}
+		.pt25{padding-top: 25px !important;}
+		.pt30{padding-top: 30px !important;}
+		.pt35{padding-top: 35px !important;}
+		.pt40{padding-top: 40px !important;}
+
+		.pb0{padding-bottom: 0 !important;}
+		.pb3{padding-bottom: 3px !important;}
+		.pb5{padding-bottom: 5px !important;}
+		.pb10{padding-bottom: 10px !important;}
+		.pb15{padding-bottom: 15px !important;}
+		.pb20{padding-bottom: 20px !important;}
+		.pb25{padding-bottom: 25px !important;}
+		.pb30{padding-bottom: 30px !important;}
+		.pb35{padding-bottom: 35px !important;}
+		.pb40{padding-bottom: 40px !important;}
+
+		.pl0{padding-left: 0;}
+		.pl5{padding-left: 5px !important;}
+		.pl10{padding-left: 10px !important;}
+		.pl15{padding-left: 15px !important;}
+		.pl20{padding-left: 20px !important;}
+		.pl25{padding-left: 25px !important;}
+		.pl30{padding-left: 30px !important;}
+
+		.pr0{padding-right: 0;}
+		.pr3{padding-right: 3px !important;}
+		.pr5{padding-right: 5px !important;}
+		.pr10{padding-right: 10px !important;}
+		.pr15{padding-right: 15px !important;}
+		.pr20{padding-right: 20px !important;}
+		.pr25{padding-right: 25px !important;}
+		.pr30{padding-right: 30px !important;}
+
+
+.Biographies-edit-btn-div{
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+div.ms-webpart-cell-vertical-inline-table,
+div.ms-webpart-cell-vertical-inline-table .ms-webpart-chrome-vertical{
+	display:block !Important;
+}
+.hidden-xs {
+  display:block !important;
+}
+.btm10{
+	padding-bottom:10px;
+}
+    #tabPanelId.nav > li > a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+	background-color:#eee;
+	margin-top:0px; !important;
+	
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tabPanelId.nav-tabs>li.active>a {
+  background-color:#c7c5c5;
+    
+}
+.doc_icon img{
+    padding: 4px;	
+}
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+span.addNewBioGraphy {
+    margin-top: 3px;
+}
+
+
+
+.common-view-detail-button a {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 28px;
+}
+.common-view-detail-button a:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+
+
+/* pop modal css START */
+
+
+.common-popup-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.common-popup-designation {
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+.common-popup-area-image{
+	display: inline-block;
+}    
+.common-popup-area-image img{
+	border-radius: 4px;
+}
+
+.common-comment-area {
+    width: 80%;
+    float: left;
+    resize: none !important;
+    min-height: 50px !important;
+}
+.common-comment-btn {
+    width: 18%;
+    height: 54px;
+    margin-right: 0px;
+    margin-left: 10px !important;
+}	
+.common-popup-title-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.common-popup-description-text {
+    color: #000;
+    font-size: 15px;
+	text-align: justify;
+}
+.common-popup-like-button a {
+    font-size: 23px;
+    color: #ff9e20;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.common-popup-like-button a:hover {
+    color: #e08207;
+}
+.common-popup-like-button p {
+    display: inline-block;
+    font-size: 16px;
+}
+	
+.owl-carousel-common-popup {
+    width: 100% !important;
+}
+.common-popup .owl-nav .owl-prev:after,
+.common-popup .owl-nav .owl-prev:after, .common-popup .owl-nav .owl-next:after {
+	content: '';
+    position: absolute;
+    margin: auto;
+    left: 49%;
+    bottom: -45px;
+    width: 35px;
+    height: 35px;
+}
+
+.common-popup .owl-nav .owl-prev:after {
+  background-image: url("../SiteAssets/Biography/images/c_ar.png")!important;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  -webkit-transform: rotate(180deg) translate(20px,0px);
+      -ms-transform: rotate(180deg) translate(20px,0px);
+          transform: rotate(180deg) translate(20px,0px);
+}
+
+.common-popup .owl-nav .owl-next:after{
+  background-image: url(../SiteAssets/Biography/images/c_ar.png)!important;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    right: 47%;
+    bottom: -44px;
+    width: 35px;
+    height: 35px;
+}
+.common-popup .owl-nav button{
+  font-size: 0!important
+}
+
+.common-popup .owl-nav{
+  height: 0;
+}
+
+.common-popup .item {
+	padding: 5px;
+    border: 1px solid #ddd;
+}
+.owl-carousel.owl-carousel-common-popup .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.common-popup.owl-theme .owl-dots {
+    text-align: center !important;
+	margin-top: 10px !important;
+}
+
+a.common-popup-show-button  {
+    display: block;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+	float: left;
+}
+a.common-popup-show-button:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+	
+a.common-popup-hide-button  {
+    display: block;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+	float: left;
+}
+a.common-popup-hide-button:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+.text-bold {
+    font-weight: 600;
+}
+
+/* pop modal css END */
+	
+@media (max-width: 768px) and (min-width: 320px){
+
+.owl-carousel.owl-carousel-common-popup .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+}
+
+
+
+
+</style>
+
+
+	<div class="container-fluid top15">
+		<div class="row">
+			<div class="col-md-12">		
+				<div class="col-md-12">       
+					<div class="panel panel-default top15">
+						<div class="panel-heading  panel-head-4 ">
+							<div class="panel-title">
+								<h4 class="h4-color">
+									<span data-localize="Experience">Experience</span>
+									<span class="addNewBioGraphy pull-right">
+										<a href="../Pages/BiographyWebpart.aspx?WebAppId=1" class="link-color">
+											<span class="glyphicon glyphicon-plus-sign"></span>
+										</a>
+									</span>
+								</h4>
+							</div>
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">			
+									<div id="tablewrapper">
+									<div id="tableheader" style="height: auto !important;">
+										<div class="search" style="display:none;">
+											<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+										</div>
+										<div>
+											<span class="details">
+												<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+												<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+											</span>
+										</div>
+									</div>
+									<div class="mrg-top-10m  btm10 container">
+										<div class="row">
+										<select class="my_view_announce_all_dropdown" id="BindCatogeryforView" style="width:200px;font-size: 13px;padding:8px 5px !Important;" onchange="GetAllBioGraphiesItems(this.value);">
+											<option value="All">All</option>
+										</select>
+
+										
+											<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important;" />
+											<!-- <button type="button" id="uploadDepartmentDocuments" style="display:none;font-size:13px;" class="btn btn-outline-success pull-right doc-upload-btn" ng-click="UploadDocuments()"><span class="glyphicon glyphicon-upload"></span>  <label  data-localize="UploadDocument"></label></button>	 -->			
+										</div>
+									</div>				
+									<div>
+										<div id='mainTablearea' class='table-responsive'>
+										<table cellpadding='0'  cellspacing='0' border='1' id='tableTempEmpOffice365' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+											<thead class='panel-heading '>
+												<tr>
+													<th style="width:10%"><h6 data-localize="Type">Type</h6></th>
+													<th style="width:20%"><h6 data-localize="Employee">Employee</h6></th>
+													<th style="width:15%"><h6 data-localize="Title">Title</h6></th>
+													<th style="width:10%"><h6 data-localize="Audience">Audience</h6></th>
+													<th style="width:15%"><h6 data-localize="Company/Department">Company/Department</h6></th>
+													<th style="width:8%"><h6 data-localize="Date">Date</h6></th>
+													<th style="width:8%"><h6 data-localize="Status">Status</h6></th>
+													<th style="width:14%" class='nosort'><h6 data-localize="Action">Action</h6></th>
+												</tr>
+											</thead>
+											<tbody class='panel' id="mainDivAreaOffice365">
+											</tbody>
+										</table>
+										<div style='text-align: center;font-size:14px;display:none' id="norecordFoundMydepartment">No Record Found</div>
+									</div>
+									</div>
+										<div id="tablefooter" style="margin-bottom: 10px;">
+											<div id="tablenav">
+												<div>
+													<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+													<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+													<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+													<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+												</div>
+												<div>
+													<select id="pagedropdown"></select>
+												</div>
+												<div>
+													<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+												</div>
+											</div>
+											<div id="tablelocation">
+											<div>
+											<span data-localize="LinesPerPage"></span>
+											<select onchange="sorter.size(this.value)">
+											<option value="5">5</option>
+											<option value="10" selected="selected">10</option>
+											<option value="20">20</option>
+											<option value="50">50</option>
+											<option value="100">100</option>
+											</select>
+											</div>						
+											<div class=""><span data-localize="Page"></span><span id="currentpage"></span><span data-localize="Of"></span><span id="totalpages"></span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+
+ 
+ <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" aria-hidden="false">
+	<div class="modal-dialog modal-lg common-popup-dialog-box">
+    <!-- Modal content-->
+    	<div class="modal-content">
+      		<div class="modal-body">
+				<div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+					<button type="button" class="close common-modal-close" data-dismiss="modal">×</button>
+					<div class="panel-heading panel-heading-common-popup">
+						<span class="common-head-text-popup panel-heading-bg-txt-clr" id="PopType"></span>
+					</div>
+				</div> 
+		  		<div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+					<div class="common-image-section-popup"><img src="" id="BannerImagePopUp" class="img-responsive" alt="">
+						<div class="shade-common-popup"></div>
+                	</div>
+					<div class="col-md-12 col-sm-12 common-content-popup pl20 pr20 pb15 ">
+						<div class="col-md-1 col-sm-2 col-xs-12 p0 commom-user-image-popup">
+							<img  id="profile-image" alt="">
+						</div>
+						<div class="col-md-9 col-sm-10 col-xs-12 pl10 pr0 commom-user-details-popup">
+							<p class="common-title-popup" id="RecTitle"></p>
+							<p class="common-name-popup" id="EmpName"></p>
+							<p class="common-type-popup" id="EmpDesignation"><span></span> | <span id="EmpDepartment"></span></p>
+							<span class="date-time-card" id="Itemdate"></span>
+						</div>
+					</div>
+		  		</div>
+				<div class="col-md-12 col-sm-12 col-xs-12 pt15 pl20 pr20 pb15">
+					<div class="col-md-10 col-sm-12 col-xs-12 pl0 pr0 common-popup-description-text">
+						<p id="DtlDescription"><a class="common-popup-description-more" href="#">Read More</a></p>
+					</div>
+					<div class="col-md-10 col-sm-12 col-xs-12 common-popup-link p0" id="linkdiv">
+						<strong>Link :</strong> 
+						<a href="" target="_blank" id="WebLink"><span id="WebLinkText"></span></a>						
+					</div>
+		  			<div class="clearfix"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 pt10 pl0 pr0 common-popup-attachment">
+						<div class="attachment-badge-popup mt-10" id="AttachDoc">
+                      		<!--<a href="#"><span>Document.docx</span> <span><i class="fa fa-eye"></i></span></a>  
+							<a href="#"><span>Document2.docx</span> <span><i class="fa fa-eye"></i></span></a>
+							<a href="#"><span>Document3.docx</span> <span><i class="fa fa-eye"></i></span></a>
+							<a href="#"><span>Document4.docx</span> <span><i class="fa fa-eye"></i></span></a>-->
+                       </div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="col-md-10 col-sm-12 col-xs-12 p0 ma0">
+						<!--<div id="imagesgeneral" class="col-sm-12 pt10 pl0 pr0 pb40">
+		  					<div id="myCarousel" class="carousel slide common-media-image " data-ride="carousel" data-interval="false">
+							
+							<!--	<div class="carousel-inner">
+									<div class="item active"> 
+										<img src="../SiteAssets/DevelopersCode/DefaultHome/images/experience.jpg"  alt="">
+									</div>
+									<div class="item"> 
+										<img src="../SiteAssets/DevelopersCode/DefaultHome/images/experience-2.jpg"  alt="">
+									</div>
+									<div class="item"> 
+										<img src="../SiteAssets/DevelopersCode/DefaultHome/images/experience-3.jpg"  alt="">
+									</div>
+									<div class="item"> 
+										<img src="../SiteAssets/DevelopersCode/DefaultHome/images/experience-4.jpg"  alt="">
+									</div>
+								</div>-->
+								
+								<div id="carousel-example-generic" class="carousel" data-ride="carousel">
+  								<div class="carousel-inner" role="listbox" id="1stImg"></div>
+								<div class="my_experience_controls">
+									<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+    								</a>
+    								<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+    								</a>
+								</div>
+							</div>
+
+								<!-- Left and right controls -->
+							<!--<a class="left carousel-control arrow-custom" href="#myCarousel" data-slide="prev">
+									<span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""/></span>
+									<span class="sr-only">Previous</span>
+								</a> 
+								<a class="right carousel-control arrow-custom" href="#myCarousel" data-slide="next">
+									<span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""/></span>
+									<span class="sr-only">Next</span>
+								</a>-->
+							<!--</div>
+		  				</div>-->
+						<div class="clearfix"></div>
+		  				<div class="col-md-12 col-sm-12 col-xs-12 p0">
+					   		<span class="common-popup-like-button" id="my_custom_popup_like"><a href="#"><i class="fa fa-thumbs-up" id="forspanview" onclick="AddLike();"></i></a>&nbsp;<p id="TotalLike"></p></span><span id="AuthorList" style="display:none;"></span>
+		  				</div>
+	                 	<div id="comment_area" class="col-md-12 col-sm-12 common-popup-comment-area-box">
+							<div class="col-md-12 col-sm-12 comment-box mt5">
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 p0 tpl0"><span><textarea class="form-control custom-control" rows="2" id="TextComment" style="resize:none;" maxlength='10'></textarea></span></div>
+								<button type="button" id="SaveBTN" class="btn btn-post pull-right pt10" onclick="UpdateEditComment();"><label>Save</label></button>
+								<button type="button" id="PostBTN" class="btn btn-post pull-right pt10" onclick="AddComment();"><label>Post</label></button>
+								<div class="clearfix"></div>
+							</div>
+				   		</div>
+			  			<div class="clearfix"></div>
+					 	<div id="reply_area">
+						 	<div class="reply-area-box custom-scroll" id="AllComents">
+								<div class="col-md-12 col-sm-12 reply-box">
+						  			<div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+										<span class="mr10"><img class="img-circle" width="36" height="36" alt=""/></span>
+										<span>Patrick Gould</span> - <span>24 Feb</span> at <span> 4:30 pm</span>
+									</div>
+									<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+						  			<div class="clearfix"></div>
+						  				<div class="col-md-12 col-md-12 pt0 pl0 pr0 common-popup-reply-btns-box">
+											<span class="cmt-edit-button"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+											<span class="cmt-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+						  				</div>
+									</div>
+									<div class="col-md-12 col-sm-12 reply-box mt5">
+						  				<div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+											<span class="mr10"><img class="img-circle" width="36" height="36" alt=""/></span>
+											<span>Tom Denver</span> - <span>24 Feb</span> at <span> 4:50 pm</span>
+										</div>
+										<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+						  				<div class="clearfix"></div>
+										<div class="col-md-12 col-sm-12 pt00 pl0 pr0 common-popup-reply-btns-box">
+							  				<span class="cmt-edit-button"><a href="#"><i class="fa fa-pencil"></i> </a> <p>Edit</p> </span>
+							  				<span class="cmt-delete-button mml5 ml20"><a href="#"><i class="fa fa-trash"></i> </a> <p>Delete</p> </span>
+										</div>
+									</div>
+								</div>
+					 		</div>						
+		  				</div>
+            		</div>
+				</div>
+    			<div class="clearfix"></div>
+			</div>
+  		</div>
+	</div>
+<!-- Modal -->
+
+<!--Iframe Image POpup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="doc-viewer" style="height:415px">
+                                                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Iframe Image POpup ends-->
+
+
+<style type="text/css">
+.common-popup-description-text {
+    font-size: 12px;
+	text-align: justify;
+	word-break: break-word;
+	margin: 0 auto;
+    float: none;
+}
+.common-popup-like-button a {
+    font-size: 20px;
+    color: #333333;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.common-popup-like-button a:hover {
+    color: #386cbb;
+}
+.common-popup-like-button p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+}
+a.common-popup-show-button  {
+    display: block;
+    font-size: 14px;
+/*    padding: 5px 10px;*/
+    color: #fff;
+/*    background-color: transparent;*/
+/*    border: 1px solid #999999 !important;*/
+/*    border-radius: 10px;*/
+    cursor: pointer;
+	float: left;
+	font-style: italic;
+}
+a.common-popup-show-button:hover {
+    color: #fff !important;
+/*    background-color: #24bad6 !important;*/
+/*    border: 1px solid #24bad6 !important;*/
+}
+	
+a.common-popup-hide-button  {
+    display: block;
+    font-size: 14px;
+/*    padding: 5px 10px;*/
+    color: #fff;
+/*    background-color: transparent;*/
+/*    border: 1px solid #999999 !important;*/
+/*    border-radius: 10px;*/
+    cursor: pointer;
+	float: left;
+	font-style: italic;
+}
+a.common-popup-hide-button:hover {
+    color: #fff !important;
+/*    background-color: #24bad6 !important;*/
+/*    border: 1px solid #24bad6 !important;*/
+}
+.image-toggle{
+	display:inline-block;
+	float: right;
+}
+.attachment-badge-popup {
+    display: block;
+    text-align: center;
+}
+.attachment-badge-popup a {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #999999 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+
+.attachment-badge-popup a:first-child {
+    margin-left: 0px;
+}	
+/*
+.owl-carousel-common-popup {
+    width: 100% !important;
+}
+.common-popup .owl-nav .owl-prev:after,
+.common-popup .owl-nav .owl-prev:after, .common-popup .owl-nav .owl-next:after {
+	content: '';
+    position: absolute;
+    margin: auto;
+    left: 49%;
+    bottom: -45px;
+    width: 35px;
+    height: 35px;
+}
+
+.common-popup .owl-nav .owl-prev:after {
+  background-image: url("../images/c_ar.png")!important;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  -webkit-transform: rotate(180deg) translate(20px,0px);
+      -ms-transform: rotate(180deg) translate(20px,0px);
+          transform: rotate(180deg) translate(20px,0px);
+}
+
+.common-popup .owl-nav .owl-next:after{
+  background-image: url(../images/c_ar.png)!important;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    right: 47%;
+    bottom: -44px;
+    width: 35px;
+    height: 35px;
+}
+.common-popup .owl-nav button{
+  font-size: 0!important
+}
+
+.common-popup .owl-nav{
+  height: 0;
+}
+
+.common-popup .item {
+	padding: 5px;
+    border: 1px solid #ddd;
+}
+.owl-carousel.owl-carousel-common-popup .owl-item img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.common-popup.owl-theme .owl-dots {
+    text-align: center !important;
+	margin-top: 10px !important;
+}
+*/
+
+
+/*New code added on 05-06-2020*/
+.modal-body {
+	padding:0px;
+}
+.modal-body-bg {
+	height:220px;
+	border-radius: 6px;
+}
+
+.common-modal-close {
+    float: right;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0px 0px 3px #fff;
+    filter: alpha(opacity=20);
+    opacity: .7;
+	padding: 5px 10px 0px 0px !important;
+}
+.common-modal-header {
+	position: absolute;
+	z-index: 10;
+}
+
+
+.common-title-popup {
+    font-size: 16px;
+	font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.common-name-popup {
+    font-size: 14px;
+}
+.common-type-popup {
+    font-size: 12px;
+}
+.common-head-text-popup {
+    font-size: 16px; 
+	padding: 4px 10px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: #24bad6 !important;
+    width: 100%;
+	font-weight: 600;
+}
+
+.panel-heading-common-popup {
+	padding: 14px 0px 7px 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.common-popup-link {
+	font-size: 12px;
+	float: none;
+    margin: 0 auto;
+}
+.common-popup-link a{
+	word-break: break-word;
+}
+
+.common-content-popup {
+    position: absolute;
+    bottom: 0px;
+	left: 0px;
+	color:#fff;
+	width: 100% ;
+	word-break: break-word;
+}
+
+.common-content-popup p {
+    margin-bottom: 5px;
+}
+
+.shade-common-popup {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.9), rgba(0,0,0,1));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.cmt-edit-button, .cmt-delete-button {
+	display: inline-block;
+}	
+
+.cmt-edit-button, .cmt-delete-button {
+    font-size: 14px;
+    color: #666;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.cmt-edit-button, .cmt-delete-button a:hover {
+    color: #333;
+}
+.cmt-edit-button p, .cmt-delete-button p {
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px;
+}
+.reply-area-box {
+    height: 225px;
+    overflow-y: auto;
+	margin-top: 10px;
+	word-break: break-word;
+}
+.reply-box {
+	padding: 10px;
+    background: #e6e6e6;
+    border-radius: 8px;
+	clear: both;
+}
+.reply-box h4 {
+	font-size:12px;
+	margin-top:0px;
+	word-break: break-word;
+	float: left;
+}
+.reply-author-detail {
+    font-size: 14px;
+    font-weight: 500;
+	/*display: inline-block;*/
+	display: block;
+}
+
+.reply-author-detail span {
+    font-size: 14px;
+    font-weight: 700;
+	display: inline-block;
+}
+
+.comment-box {
+	display: block;
+    float: left;
+    width: 100%;
+	padding: 10px;
+    background: #e6e6e6;
+    border-radius: 8px;
+}
+.like-count span {
+    font-size: 14px;
+	font-weight: 600;
+}
+.btn-post {
+    background-color: #386cbb;
+    color: #fff;
+	height: 53px;
+}
+
+/*
+.common-media-image .carousel-inner .item {
+	padding: 15px;
+    border: 1px solid #b3a6a6;
+	width: 99.9%;
+}
+*/
+.common-media-image .carousel-inner .item img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-inner {
+    border-radius: 5px;
+}
+.carousel-indicators-custom {
+    bottom: -30px;
+}
+
+
+.carousel-indicators-custom li {
+    background: #D6D6D6 !important;
+    border: 1px solid #D6D6D6 !important;
+    border-radius: 10px;
+}
+.carousel-indicators-custom .active {
+    width: 12px !important;
+    height: 12px !important;
+    background: #869791 !important;
+}
+
+.arrow-custom {
+    background-image: none !important;
+    width: 100% !important;
+    top: 340px !important;
+	left: 13px;
+    color: #333 !important;
+    opacity: 1 !important;
+}
+
+
+.left.arrow-custom .glyphicon {
+	left: 0px !important;
+	top: 20px !important;
+	transform: rotate(180deg) translate(20px,0px);
+}
+
+.right.arrow-custom .glyphicon {
+	left: 13px !important;
+	top: 19px !important;
+}
+
+/*
+.carousel-inner .item {
+	padding: 15px 15px 10px 15px;
+    border: 1px solid #b3a6a6;
+}
+*/
+.common-popup-description-more {
+	-webkit-transition:1s ;
+	-o-transition:1s ;
+	transition:1s ;
+	font-weight:600;
+}
+.common-popup-description-more:hover {
+	-webkit-transition:1s ;
+	-o-transition:1s ;
+	transition:1s ;
+	padding-left:5px;
+}
+.common-image-section-popup {
+    height: 100%;
+}
+.common-image-section-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+	border-radius: 4px;
+}
+
+
+.commom-user-image-popup img{
+	width: 70px;
+	height:70px; 
+	border-radius:50%;
+}	
+/*************************Experiences(General) Popup End************************/
+
+@media (max-width: 767px) and (min-width: 320px) {
+	
+.commom-user-image-popup {
+	text-align:center;
+}
+.commom-user-details-popup {
+	text-align:center;
+	padding-top: 10px;
+}
+.commom-user-image-popup img{
+	width: 60px;
+	height:60px; 
+}
+	
+.shade-common-popup {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(216, 216, 216, 1));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+	left: 0px;
+}
+}
+	
+@media (max-width: 425px) and (min-width: 320px) {
+
+.common-media-image .carousel-inner .item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.arrow-custom {
+    top: 190px !important;
+}    
+	
+}
+
+
+</style>
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+
+<script src="../SiteAssets/Biography/NewJsCss/owl.carousel.min.js"></script> 
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$("#TextComment").emojioneArea({
+  	
+		pickerPosition: "right",
+    	tonesStyle: "bullet",
+		events: {
+         	keyup: function (editor, event) {
+           		console.log(editor.html());
+           		console.log(this.getText());
+        	}
+    	}
+	});
+});
+</script>
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-343</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b1d101b2-d641-4884-b419-583f4fe6fe5f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-343, ADMIN-1645029823-343</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:Order msdt:dt="string">34300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

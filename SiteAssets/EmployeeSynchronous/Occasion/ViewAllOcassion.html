@@ -1,0 +1,233 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/Occasion/ViewAllOcassion.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+<style>
+    .wish_font {
+        color: #333333;
+        font-size: 17px;
+    }
+
+    .tile_box {
+        background-color: #efefef;
+        height: auto;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+        /*border-radius: 2px;*/
+        padding: 15px;
+        border: 1px solid #efefef;
+        min-height: 167px;
+    }
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .blue_color {
+        color: #1d6ec0;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(odd) {
+        background: #efefef;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(even) {
+        background: #fff;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-hover li:hover {
+        background: #f2f2f2;
+    }
+
+
+    .list_border {
+        border: 1px solid #EAEAEA;
+        height: 150px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .color_bg {
+        background: #46b8da;
+        color: #fff;
+        border: #46b8da;
+    }
+
+    .text_black {
+        color: #000000 !important;
+    }
+
+
+
+
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .accordion-text {
+        color: #333;
+    }
+
+    .marginTop {
+        margin-top: 65px;
+        margin-bottom: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .marginTop {
+            margin-top: 65px;
+        }
+    }
+
+
+    .user_text {
+        color: #1d6ec0;
+        text-align: center;
+    }
+
+    .user_pic {
+        position: absolute;
+        top: -43px;
+        left: 0;
+        right: 0;
+    }
+
+    .user_pic_content {
+        margin-top: 55px;
+    }
+
+    .marginTop60 {
+        margin-top: 60px;
+    }
+
+    .marginTop70 {
+        margin-top: 70px;
+    }
+    .imageheightwidth{
+        height:100px;
+        width:100px;
+    }
+</style>
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b data-localize="AllOccasions"></b></h4></li>           
+	</ol>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="row top15">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-2">
+                        <!--<select name="select4" id="ddlyear" class="form-control"></select>-->
+                    </div>
+                    <div class="col-md-2 top10_m">
+                        <!--<select name="select4" id="ddlmonth" class="form-control"></select>-->
+                    </div>
+                    <div class="clearfix"></div>                    
+                    <div id="itemCollection">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- Model popup -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header panel-head-4 hidden-md">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body" style="overflow:auto">
+                <!--<div class="col-md-4 top10">
+
+                    <div class="row">
+                        <div class="text-center ">
+                            <p class="text-center user_pic"> <img src="" class="img-circle" id="selectedimageurl" style="width: 120px; height:120px;"></p>  
+                        </div>
+                    </div>
+                    <div class="text-center margin10">
+                        <span class="text_black" id="modelName">NA</span><br />
+                        <span id="modelPost">NA</span> <br />
+                        <span id="modelDepartment">NA</span>                     
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <h3 class="text-center text_black " style="margin-top:0">Achievements</h3>
+                    
+                </div>-->
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 marginTop col-md-offset-3">
+                    <div class="tile_box">
+                        <p class="text-center user_pic"><img src="" id="selectedimageurl" style="width: 120px; height:120px;" class="img-circle"></p>
+                        <div class="text-center user_pic_content ">
+                            <!--<p class="center-block wish_font">Baby Born</p>-->    
+                            <span class="center-block" style="height:5px"></span>                       
+                            <h5 class="user_text"><span class="center-block" id="modelName">Software Engineer</span></h5>
+                            <span class="center-block" id="modelPost">Software Engineer</span>
+                            <span class="center-block" id="modelDepartment">   Department : IT  </span>
+                            <!--<span class="center-block">Extension : 614</span>
+                            <span class="center-block">v.mishra@adapt-india.com</span>
+                            <span class="center-block"> +91 8878745537 </span>-->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+				<div class="row">				
+	                <div class="col-sm-12 msg-box top30">	                    
+	                        <textarea class="form-control occation-text-area" rows="2" placeholder="best wishes !!" id="txtResponse" ></textarea>
+	                        <input type="button" value="Send" id="responseSubmit" class="input-group-addon btn  btn-outline-success occation-text-btn"/>	                  
+	                </div>
+                </div>
+				<div class="row">
+					<div class="col-sm-12 top15">
+						<div class="panel-body list_border">
+						<input type="text" id="OccasionId" style="display:none;" />
+						<ul class="list-group list-group-hover list-group-striped" id="responseCollection">                            
+						</ul>
+						</div>
+					</div>
+				</div>     
+            </div>
+        </div>
+    </div>
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-279</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">4c9352a4-c5f8-40d6-9f3c-c49bf11be604</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-279, ADMIN-1645029823-279</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">27900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

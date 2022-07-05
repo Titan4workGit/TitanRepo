@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>	
+<script src="../SiteAssets/KnowledgeBase/TopicDetail.js"></script>
+<!--TEXT EDITOR END-->
+<style type="text/css">
+b, strong {
+    margin-left: 3px !important;
+}
+	.shadow3{ 
+		box-shadow: 0px -3px 25px -1px #dfdede;
+	}
+	.head_border:after {
+		content: "";
+		display: block;
+		width: 50px;
+		margin-top: 10px;
+		border-bottom: solid;
+	}
+	.table2 td {
+		border-top:none !important;
+	}
+	select{ 
+		color:#999999 !important;
+	}
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 50px;
+		height: 20px;
+	}
+	.switch input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 13px;
+		width: 14px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	input:checked + .slider {
+		background-color: #2196F3;
+	}
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+	input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+	}
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 34px;
+	}
+	.slider.round:before {
+		border-radius: 50%;
+	}
+	.form-control2 {
+		font-size: 13px;
+		border: 0px !important;
+		color: #555;
+		background-color: transparent;
+		background-image: none;
+		border-bottom: 1px solid #ccc !important;
+		border-radius: 0;
+		padding: 3px 0px !important;
+		box-shadow: none;
+	}       
+	.search_div{ 
+		width:94%;
+	}
+	#custom-search-input {
+		margin:0;
+		margin-top: 10px;
+		padding: 0;
+	}	
+	#custom-search-input .search-query {
+		padding-right: 3px;
+		padding-right: 4px \9;
+		padding-left: 3px;
+		padding-left: 4px \9;
+		/* IE7-8 doesn't have border-radius, so don't indent the padding */ 
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	} 
+	#custom-search-input button {
+		border: 0;
+		background: none;
+		/** belows styles are working good */
+		padding: 2px 5px;
+		margin-top: 2px;
+		position: relative;
+		left: -28px;
+		/* IE7-8 doesn't have border-radius, so don't indent the padding */
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		color:#333333;
+	}
+	.search-query:focus + button {
+		z-index: 3;   
+	}
+	@media (max-width:767px){
+		.search_div{ 
+			width:100%;
+		}
+	}
+	.name-tag {
+	
+	}	
+	.name-tag a {
+		display: inline-block;
+		color: #FE2B25;
+		text-align: center;
+		padding: 15px;
+		padding-left:0px;
+		text-decoration: none;
+		font-weight:600;
+		font-style:italic;
+	}
+	.vertical-menu {
+		width: 100%;
+	}	
+	.vertical-menu a {
+		background-color: #fff;
+		color: blue;	
+		text-decoration: none;
+		padding-left:8px;
+		font-style:italic;
+		font-weight:bold;
+	}
+	.icon_size{ 
+		font-size:18px; 
+		color:#000000;
+	}	
+	html [type=button] {
+		-webkit-appearance: initial;
+	}	
+	.newform {
+		position: relative;
+		top: 40%;
+		left: 0;
+		right:0;
+		margin:0 auto;	
+	}	
+	.newform input {
+		padding: 10px 0;
+		/*margin-bottom: 10px;*/	
+		border-left:0 !important;
+		border-top:0 !important;
+		border-right:0 !important;
+		border-bottom: 1px solid #999 !important;	
+	}	
+	.newform textarea {
+		height: 80px;
+		padding: 10px;
+		margin-bottom: 40px;	
+	}
+	.newform input,
+	.newform textarea{
+		width: 100%;
+		box-sizing: border-box;
+		box-shadow: none;
+		outline: none;
+		border: none;
+		color:#999;
+		border-bottom: 1px solid #999 !important;	
+	}
+	.newform textarea {
+		margin-bottom: 30px;
+		color:#999;	
+	}
+	.newform form div {
+		position: relative;
+	}
+	.newform form div label {
+		position: absolute;
+		top: 10px;
+		color: #999;     
+		transition: .5s;
+		pointer-events: none;
+		left:0 !important;
+	}
+	.newform input:focus ~ label,
+	.newform textarea:focus ~ label,
+	.newform input:valid ~ label
+	{
+		top: -12px;
+		left: 0px;
+		/* color: #EF5350;*/
+		font-size: 14px;
+		font-weight: bold;	
+	}
+	.newform textarea label select {
+		top: -12px;
+		left: 0px;
+		color: #999;
+		font-size: 14px;
+		font-weight: bold !important;	
+	}
+	.newform input:focus,
+	.newform textarea:focus,
+	.newform input:valid,
+	.newform textarea:valid{
+		border-bottom: 1px solid #EF5350; 
+	}	
+	h3.pb-10 {
+		margin-top: 0px !important;
+	}
+	.pb-10 {
+		padding-bottom: 10px !important;
+	}
+	.mt-20 {
+		margin-top: 20px !important;
+	}
+	
+	
+	
+	/*new css 28/6/2021-----*/
+	
+#listItemCollection .panel_box{
+ 
+ box-shadow: 1px 2px 8px #a3a3a3;
+ padding:15px 10px;
+ margin:15px 0; 
+
+}
+
+.detail_box p,
+.detail_box h3{
+  margin:0;
+  padding:0;
+}
+.img_box{
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: 12px auto;
+    box-shadow: 0px 4px 6px #b8b8b8;
+    border: 3px solid #b2b2b2;
+
+}
+
+.img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+ 
+
+.detail_box h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0e1318de;
+    margin-bottom: 4px;
+}
+.detail_box .date{
+  margin-top:7px;
+  font-weight: 600;
+  font-size:12px;
+}
+
+.detail_box span{
+
+ color:#1f1f1f;
+ font-size: 12px;
+ font-weight: 600;
+
+}
+
+.detail_box .post_sec{
+  margin-top:7px;
+  font-weight: 600;
+  font-size:13px;
+}
+
+ 
+
+.description_box{
+  color:#5f5f5f;
+}
+
+ 
+
+.panel_box [class^="col-"]{
+  padding:0 15px !important;
+}
+
+.panel.shadow3{
+  box-shadow:none !important;
+  border:none !Important;	
+}
+
+.liping{
+    padding: 3px 5px;
+    border: 1px solid #246292 !important;
+    border-radius: 15px;
+}
+.fa-calendar{
+ margin-right:10px;	
+}
+.liping .fa{
+  
+  color:#246292 !important; 
+
+}
+
+.vertical-menu a{
+ color:#1d6ec0 !important;
+ font-style: normal; 	
+}
+
+#listItemCollection .media-body h4{
+	color:#2a6496 !important;
+} 
+.description_box{
+ margin-top:10px;	
+}
+
+@media(max-width: 991px){
+.img_box{
+  margin-bottom: 15px;
+}  
+.description_box{
+  margin-top:15px;
+}
+
+}
+
+ 
+
+@media(min-width: 992px){
+.panel_box .col-md-2{
+  width:7% !important;
+}
+
+.panel_box .col-md-3{
+    width: 21% !important;
+}
+
+#listItemCollection .media .col-md-2{
+ 	width:10% !important;
+}
+
+
+}
+
+@media(max-width:767px){
+
+.img_box{
+  margin-left:5px !important;
+}	
+	
+}
+	
+	
+	
+	</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-412</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">679afe36-afde-48b7-8e44-8a30a516062f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-412, ADMIN-1645029823-412</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">41200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Department</title></head>      
+<body>
+<div class="clearfix"></div>
+
+<div class="clearfix"></div>
+<!-- header -->
+<!-- Main -->
+<!--<div class="container mt-15">
+	<div class="clearfix"></div>
+	<div class="col-md-12">-->
+		<div class="row top15">
+			<div class="col-md-12">
+				<div class="panel panel-default shadow2">
+				<h4 style="margin-left:20px;">Department: <span id="deptName"></span></h4>
+					<div class="row mb-15" id="listItemCollection">   
+					
+					</div>
+				</div>
+				<button type="button" class="btn btn-outline-secondary" id="btnGoBack" style="margin-top:0px;margin-bottom:10px;margin-left: 590px;font-size: 13px;"> <label data-localize="Close">Close</label></button>
+			</div>
+		</div>
+<!--</div>
+</div>-->
+	<div class="clearfix"></div>
+	</body>
+</html>

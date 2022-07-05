@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+
+        <title>Experience</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
+		<script type="text/javascript" src="_layouts/15/clientforms.js"></script>
+		<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
+		<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+		<script type="text/javascript" src="_layouts/15/sp.runtime.js"></script>
+		<script type="text/javascript" src="_layouts/15/sp.js"></script>
+		<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Attendance/assets/jquery-ui.css">
+		<script type="text/javascript" src="../SiteAssets/Attendance/assets/moment.min.js"></script>
+		<script type="text/javascript" src="../SiteAssets/Attendance/assets/jquery-ui.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/ExperiencesNew/assets/font-awesome/css/font-awesome.min.css">
+        <link href="../SiteAssets/Biography/Experience/ExperiencesNew/assets/css/date-picker.css" rel="stylesheet">
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/ExperiencesNew/assets/css/styles.css">  
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/ExperiencesNew/assets/css/drag-drop.css"> 
+        <script type="text/javascript" src="../SiteAssets/Biography/NewJsCss/jquery.richtext.js"></script>
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/NewJsCss/richtext.min.css">
+		
+		<link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <style type="text/css">
+
+            /* new css added on 01/7/2021 */
+
+            .my_announce_department_list .dropdown-toggle {
+                margin-right: 0;
+                width: 100%;
+                border: 1px solid #c3c3c3;
+                color: #444;
+                position: relative;
+                text-align: left;
+            }
+            #SelectedItems {
+                overflow: auto;
+                display: block;
+                width: 96%;
+                font-size: 14px;
+                font-family: "Arial Narrow", Arial, sans-serif;
+                padding-bottom: 2px;
+            }
+            .my_announce_department_list .dropdown-toggle .caret {
+                position: absolute;
+                right: 10px;
+                top: 13px;
+                border-top: 6px solid;
+                border-right: 3px solid transparent;
+                border-left: 3px solid transparent;
+            }
+            .my_announce_department_list .dropdown-menu {
+                padding: 5px 10px;
+                top: 80%;
+                left: 15px;
+            }
+            .my_announce_department_list .dropdown-menu li {
+                padding-left: 10px;
+                font-size: 12px;
+            }
+            .my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+                position: relative;
+                left: -9px;
+                top: -3px;
+            }
+
+            /* new css added on 01/7/2021 */
+
+            .link-delete-btn {
+                margin-right: 0;
+                padding: 5px 12px;
+            }
+            .link-delete-btn:hover {
+                color: #d43f3a !important;
+            }
+            .drop-container {
+                font-size: 13px;
+            }
+            #Imagefilename div, #filename div {
+                padding: 7px 10px 7px 10px;
+                background: linear-gradient(to bottom,#fff,#ccc);
+                background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+                background: -moz-linear-gradient(to bottom,#fff,#ccc);
+                background: -o-linear-gradient(to bottom,#fff,#ccc);
+                border: 1px solid #ccc;
+                display: inline-block;
+                clear: both;
+                margin: 5px 5px;
+                border-radius: 30px;
+            }
+            #Docfilename div, #oldfilename tr {
+                padding: 7px 10px 7px 10px;
+                background: linear-gradient(to bottom,#fff,#ccc);
+                background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+                background: -moz-linear-gradient(to bottom,#fff,#ccc);
+                background: -o-linear-gradient(to bottom,#fff,#ccc);
+                border: 1px solid #ccc;
+                display: inline-block;
+                clear: both;
+                margin: 5px 5px;
+                border-radius: 30px;
+            }
+            #Docfilename div .DeletePic, #filename div .DeletePic {
+                color: #fff !important;
+                padding: 2px 3px;
+                background: #1d6ec0;
+                font-weight: 400;
+                display: inline;
+                border-radius: 50%;
+                font-size: 12px;
+                cursor: pointer;
+            }
+            #Docfilenamee div .DeletePic, #oldfilename tr .DeletePic {
+                color: #fff !important;
+                padding: 2px 3px;
+                background: #1d6ec0;
+                font-weight: 400;
+                display: inline;
+                border-radius: 50%;
+                font-size: 12px;
+                cursor: pointer;
+            }
+            #oldfilename tr .DeletePic .glyphicon-remove {
+                color: #fff !important;
+            }
+            #filename div span.fa-stack, #Docfilename div span.fa-stack {
+                margin: -3px 7px 0px 0px;
+            }
+            #filename div strong.fa-stack-1x, #Docfilename div strong.fa-stack-1x {
+                color: #000 !important;
+                margin-left: 18px;
+            }
+            
+            .highlightDropArea {
+  border: 5px green dashed;
+}
+
+/*--------19/11/2021-------*/
+#DpdownData::-webkit-scrollbar {
+width: 10px;
+height:10px;
+background-color: transparent;
+}
+
+#DpdownData::-webkit-scrollbar-thumb {
+border: 3px solid transparent;
+border-radius: 10px;
+background-color: grey;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+#DpdownData::-webkit-scrollbar-thumb:hover {
+background-color: #000;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+
+
+#DpdownData{
+   padding: 5px 10px;
+    top: 80%;
+    left: 15px;
+    max-height: 108px;
+    overflow-y: auto;
+    }
+
+
+
+/******july/8/21*********/
+
+.article-content{
+  margin-top:1px !important;	
+}
+
+.drop-container input {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top: 0px;
+    opacity: 0;
+    width: 320px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+
+#clickHere{
+  width: 320px;
+  border: 2px dotted #868686 !important;
+  background:transparent !important;
+  color:#444343 !important  
+}
+
+#drop-zone,
+#drop-zone1{
+ border:none !important;
+ border-bottom: 1px solid rgba(0, 0, 0, .3) !important; 
+ border-radius:0 !important;
+}
+
+#FileUpload,
+#files{
+ height:45px !important;  
+}
+
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table{
+    display: block !important;
+}
+
+@media(max-width:500px){
+
+.drop-container input,
+#clickHere{
+ width:195px !important;  
+}
+
+  
+}
+
+
+
+/***july-14-21****/
+
+#OldCoverImage div,
+#OldImagename div,
+#oldfilename div{
+
+    padding: 1px 5px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+
+}
+
+#OldCoverImage div a,
+#OldImagename div a,
+#oldfilename div a{
+
+ color:#545454 !important;
+
+}
+
+#OldCoverImage div .DeletePic,
+#OldImagename div .DeletePic,
+#oldfilename div .DeletePic{
+  display: inline-block;
+    font-size: 14px;
+    padding: 5px 4px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    margin:3px 2px;
+    border: 1px solid #ccc;
+    color: #fff !important;
+    font-size: 13px;
+    background-color:#1d6ec0 !important;
+    cursor:pointer !important;
+
+}
+
+#OldCoverImage div .fa-trash-o:before,
+#OldImagename div .fa-trash-o:before,
+#oldfilename div .fa-trash-o:before{
+
+ content: "\f00d" !important;
+ font-family: 'FontAwesome';
+
+}
+
+#OldCoverImage div .fa-paperclip{
+
+    padding: 2px 5px 0 5px;
+    line-height: 20px;
+    position: relative;
+    top: 2px; 
+}
+
+
+
+
+
+</style>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2469</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d591c74f-f701-4bca-8661-5595f5e57db0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2469, ADMIN-1645029823-2469</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">246900.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tab-content">
+                        <div class="custom-panel custom-panel-box">
+                            <div class="panel-head">
+                                <h3 class="m-0">
+                                    Experience
+                                </h3>
+                            </div>
+                            <div class="panel-body px-0 pt-8">
+                                <div class="row m-0 mb-8">
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="form-group custom-form-group">
+                                            <label for="">Type:<span class="color-red">*</span></label>
+                                            <select class="form-control ApproverView" id="CategoryType">
+                                                <option>-select-</option>
+                                                <option>Type 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <div class="form-group custom-form-group">
+                                            <label for="">Related Word:<span class="color-red">*</span></label>
+                                            <input type="text" class="form-control ApproverView" id="RelatedWord" maxlength="250">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group custom-form-group">
+                                            <label for="">Title:<span class="color-red">*</span></label>
+                                            <input type="text" class="form-control ApproverView" name="" id="ExperienceTitle" maxlength="250">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 employee-info">
+                                        <nav class="tabs">
+                                            <div class="selector"></div>
+                                            <a data-toggle="tab" href="#Contents" class="active"><i class="fa fa-pencil-square"></i><span class="is-phone-hode">Contents</span></a>
+                                            <a data-toggle="tab" href="#Publish"><i class="fa fa-user font-18"></i><span class="is-phone-hode">Publish</span></a>
+                                        </nav>
+                                        <div class="tab-content">
+                                            <div id="Contents" class="tab-pane fade in active">
+                                                <div class="form-group custom-form-group">
+                                                    <label class="rg-detail-label-2">
+                                                        <span>Details:<span class="color-red">*</span></span>
+                                                        <div class="checkbox m-0 ApproverHide">
+                                                            <label><input type="checkbox" id="DisplayfTools" onchange="Displayformattingtools()">Show Formatting Tools</label>
+                                                        </div>
+                                                    </label>
+                                                    <textarea class="form-control resize-none content" rows="15"></textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Cover Image:<span class="color-red">*</span></label>
+                                                            <input type="file" class="form-control ApproverView" accept="image/x-png,image/gif,image/jpeg,image/jpg" id="CoverImage">
+                                                        </div>
+                                                        <div id='OldCoverImage' class="" style="padding:0px 0px 0px 0px;"></div>
+                                                        <div class="optionBox form-group custom-form-group">
+                                                            <div class="block add-button-box">
+                                                                <div>
+                                                                    <label for="">Video Link:</label>
+                                                                    <a class="video-help-btn" data-toggle="modal" data-target="#videoHelpModel"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                                                                </div>
+                                                                <input type="text" class="form-control link-input-fild ApproverView" name="" id="VideoLinkInput0"> 
+                                                                <a class="btn custom-btn add link-add-btn ApproverHide"><i class="fa fa-plus"></i></a>
+                                                            </div> 
+                                                            <div class="block"> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="optionBox form-group custom-form-group">
+                                                            <div class="web-block add-button-box">
+                                                                <label for="">Web Link:</label>
+                                                                <input type="text" class="form-control link-input-fild ApproverView" name="" id="WebLink"> 
+                                                            </div>
+                                                            <div class="web-block"> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Additional Images:</label>
+                                                            <div class="drop-container" id="drop-zone">
+                                                                    <div class="btn custom-btn" id="clickHere">Click & Drop here <i class="fa fa-download pl-4"></i>
+                                                                        <input type="file" name="file" id="FileUpload" class="FileUpload ImageDragUpload" style="height:100%" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 500Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." multiple>
+
+                                                                    </div>
+                                                                    <!--<p class="drop-here-text">Drop files here...</p>-->
+                                                                <div id='filename' class="" style="padding:10px 0px 0px 0px;"></div>
+																<div id='OldImagename' class="" style="padding:0px 0px 0px 0px;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Attachments:</label>
+                                                            <div class="drop-container" id="drop-zone1">
+                                                                <div class="drop-container-box">
+                                                                    <div class="btn custom-btn" id="clickHere">Click & Drop here<i class="fa fa-download pl-4"></i>
+                                                                        <input type="file" name="file" id="files" class="UploadDoc" style="height:100%" multiple>                                                                    
+                                                                        </div>
+                                                                    <!--<p class="drop-here-text">Drop files here...</p>-->
+                                                                	</div>
+                                                                	<div class="filename-container" id='filename'></div>
+                                                                    <div id='Docfilename' class="" style="padding:10px 0px 0px 0px;"></div>
+                                                                    <div id='oldfilename' class="" style="padding:0px 0px 0px 0px;"></div>
+                                                            	</div>
+                                                            	<!-- <div id='Docfilename' class="" style="padding:10px 0px 0px 0px;"></div>
+																<div id='oldfilename' class="" style="padding:0px 0px 0px 0px;"></div> -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Publish" class="tab-pane fade">
+                                                <div class="row flex-column-reverse-is-phone">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Publish By:</label>
+                                                            <select class="form-control ApproverView" id="PublishByDDL" onchange="ResetControls(this.value)">
+                                                                <option>Employee</option>
+                                                                <option>Other</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Name:<span class="color-red">*</span></label>
+                                                            <div class="peoplepicker" id="Employeesname"></div>
+                                                            <input type="text" class="form-control ApproverView" name="" id="OtherUserName" style="display:none;">
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Designation:<span class="color-red">*</span></label>
+                                                            <input type="text" class="form-control ApproverView" name="" id="DesignationText">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="user-upload-image-box">
+                                                            <img class="user-upload-image" src="../SiteAssets/Biography/Experience/ExperiencesNew/assets/images/user_pic.jpg" alt="user image" id="userImage">
+                                                            <div class="user-upload-image-box-btn" id="ImageUploadBtn" style="display:none;">
+                                                                <input type="file" id="UploadImage" class="user-upload-image-inp" name="" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
+                                                                <span class="user-upload-image-span">Upload<br>Profile Picture</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Department:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="DepartmentsDDL">
+                                                                <option>-select-</option>
+                                                                <option>IT</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Office Location:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="OfficeLocDDL">
+                                                                <option>-select-</option>
+                                                                <option>Delhi</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Display From:<span class="color-red">*</span></label>
+                                                            <!--<input type="text" class="form-control" name="" id="StartDate">-->
+                                                            <input type="text" class="form-control ApproverView" name="" id="StartDate" readonly="readonly">
+
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Display Upto:<span class="color-red">*</span></label>
+                                                            <input type="text" class="form-control ApproverView" name="" id="ReportTo" readonly="readonly">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Audience:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="AudienceDDL" onchange="GetdepartmentCompany(this.value)">
+                                                                <option selected="selected">Corporate</option>
+                                                                <option>Company</option>
+                                                                <option>Department</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12" id="DepartmentListBox" style="display:none;">
+                                                        <div class="form-group custom-form-group">
+                                                        <label class="required" id="DropLable">Department</label>
+                                                            <div class="button-group my_announce_department_list">
+                                                            
+
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle ApproverView" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+								        </button>
+										<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData">
+										
+										  <!--<li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/><span>Sales</span></a></li>
+										  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/><span>Human Resources</span></a></li>
+										  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/><span>IT</span></a></li>
+										  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/><span>Delivery</span></a></li>
+										  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/><span>Technical</span></a></li>-->
+										</ul>
+								  	</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-center">
+                                        <a type="button" class="btn custom-btn mr-8 wpx-87" data-dismiss="modal" id="btnAddExperience" onclick="PostExperience();">Submit</a>
+                                        <a type="button" class="btn custom-btn-two-cancel mr-8 wpx-87 closebtn" data-dismiss="modal" onclick="ClosePage();">Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="videoHelpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body help-modal-body">
+                        <img class="" src="../SiteAssets/Biography/Experience/ExperiencesNew/assets/images/Help_Image.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<script src="../SiteAssets/Biography/Experience/ExperiencesNew/assets/js/bootstrap-datepicker.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+        <script type="text/javascript" src="../SiteAssets/Biography/Experience/ExperiencesNew/assets/js/NewExperience.js"></script>
+
+        <!-- for date and months picker -->
+        <script>
+                /*$("#datepicker").datepicker({
+                    format: "yyyy",
+                    viewMode: "years", 
+                    minViewMode: "years"
+                });
+                $("#monthpicker").datepicker({
+                    format: "mm",
+                    viewMode: "months", 
+                    minViewMode: "months"
+                });*/
+        </script>
+        <!-- TAB+++++++++++++++++++++++++++++++++++++++ -->
+        <script>
+            var tabs = $('.tabs');
+            var selector = $('.tabs').find('a').length;
+            //var selector = $(".tabs").find(".selector");
+            var activeItem = tabs.find('.active');
+            var activeWidth = activeItem.innerWidth();
+            $(".selector").css({
+              "left": activeItem.position.left + "px", 
+              "width": activeWidth + "px"
+            });
+
+            $(".tabs").on("click","a",function(e){
+              e.preventDefault();
+              $('.tabs a').removeClass("active");
+              $(this).addClass('active');
+              var activeWidth = $(this).innerWidth();
+              var itemPos = $(this).position();
+              $(".selector").css({
+                "left":itemPos.left + "px", 
+                "width": activeWidth + "px"
+              });
+            });
+        </script>
+
+        <!-- for drag and drop -->
+        
+
+        <!-- Link Fild add delete -->
+        <script>
+            
+
+            
+        </script>
+        <script>
+        
+            $("#drop-zone").on('dragenter', function(ev) {
+        // Entering drop area. Highlight area
+        $("#drop-zone").addClass("highlightDropArea");
+    });
+                $("#drop-zone1").on('dragenter', function(ev) {
+        // Entering drop area. Highlight area
+        $("#drop-zone1").addClass("highlightDropArea");
+    });
+
+        
+            $('.web-add').click(function () {
+                $('.web-block:last').before(' <div class="web-block position-relative"><input class="form-control link-input-fild" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            });
+
+            $('body').on('click', '.remove', function () {
+                $(this).parent('.web-block').remove();
+            });
+        </script>
+    </body>
+</html>

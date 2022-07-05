@@ -1,0 +1,1221 @@
+﻿
+<style type="text/css">
+.btn-success
+{
+	font-size:16px !important;
+}
+.ms-webpart-cell-horizontal {
+    display:block !important;
+}
+
+.panel-body select{
+    padding: 5px 10px;
+    margin: 5px 5px !important;	
+    min-width: 160px;
+}
+
+@media(max-width:520px){
+.breakonly{
+
+	display:block;	
+    clear:both;
+    margin:10px 0px;
+}
+
+}
+
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+       UserAuthorization();
+      //  socailType();
+	});
+    
+	//// User Authorization
+	function UserAuthorization()
+	{
+		var companyId =  titanForWork.getQueryStringParameter("CompanyId");
+		titanForWork.PageAuthorization("ManageCompany",companyId).done(function(currentUserRights,message)
+		{
+			if(currentUserRights.length>0)
+			{
+				if((currentUserRights[0].SiteAdmin=="SiteAdmin") || (currentUserRights[0].TechAdmin=="TechAdmin"))
+				{
+					userActivityNotificationEntry(_spPageContextInfo.userId,window.location)
+
+					SP.SOD.executeFunc('sp.js', 'SP.ClientContext', PageLoad);	
+					//setTimeout(function(){ PageLoad }, 3000);	
+				}
+				else
+				{
+					alert(message);
+					window.location.href = _spPageContextInfo.webAbsoluteUrl + "/Pages/Default.aspx?WebAppId=" + companyId;
+				}
+			}
+		});
+	}
+
+	function PageLoad()
+	{
+		var companyId=titanForWork.getQueryStringParameter('CompanyId');
+		
+		GetSocialMediaSettings(companyId);
+
+		/*BindCompanies().then(function(){
+			$("#ddlCompaniesSocialMedia").val(companyId);
+		}).then(function(){
+			GetSocialMediaSettings(companyId);
+		})*/
+		
+		/// Update Social Media Settings
+		$("#btnSubmit").click(function(){
+		debugger;
+			var socialType='';
+			var isActive;
+			var drpsocialtype='';
+			var webname='';
+			
+			var socialMedia=$("input[name='chkSocialMedia']:checked").length;
+			//var companyId=$("#ddlCompaniesSocialMedia").val();
+			var companyId=titanForWork.getQueryStringParameter('CompanyId');
+
+			if(socialMedia==0)	
+			{
+				alert("Please select at least one social media.");
+				return false;
+			}
+			
+			$("#SocialMedia textarea").each(function(i){
+				if(i==0)
+					socialType='Yammer';
+				else if(i==1)
+					socialType='Facebook';
+				else if(i==2)
+ 					socialType='Twitter';
+				else if(i==3)
+					socialType='Linkedin';
+					else if(i==4)
+					socialType='WhatsApp';
+					else if(i==5)
+					socialType='YouTube';
+					else if(i==6)
+					socialType='Instagram';
+					else if(i==7)
+					socialType='Snapchat';
+					else if(i==8)
+					socialType='Pinterest';
+					else if(i==9)
+					socialType='Reddit';
+					
+				var itemID=$(this).attr('Title');
+				var linkDetails=$(this).val();
+				isActive=$("input[name='chkSocialMedia'][value='"+socialType+"']").is(":checked"); 
+			    drpsocialtype=$("#socailType"+i).val(); 
+				webname=$("#Title"+i).val(); 
+				FileValue=$("#myFile"+i).val();
+				FileName=$("#myFile"+i);
+			var CurrentMediaName= $("#Media"+i).val();
+								
+				if(itemID!=undefined && itemID>0)			// Update Existing Social Media Item
+				{
+				
+				
+				
+				 for(j=0;j<arrayIcon.length;j++){
+                if(arrayIcon.length>=1){
+                    
+                  {
+                      if(arrayIcon[j].Key== drpsocialtype)
+                      {
+                          var iconvalue=arrayIcon[j].Value;
+                       
+                          }
+                          }
+                          } 
+					
+ 
+      
+	     	    }
+	     	    UpdateSocialMediaSettings(itemID,socialType,linkDetails,isActive,drpsocialtype,iconvalue,webname,companyId);
+	     	    }
+				
+				else if(itemID==undefined || itemID==0)	// Insert New Social Media Item
+				{
+				
+				 for(j=0;j<arrayIcon.length;j++){
+                if(arrayIcon.length>=1){
+                    
+                  {
+                      if(arrayIcon[j].Key== drpsocialtype)
+                      {
+                          var iconvalue=arrayIcon[j].Value;
+                       
+                          }
+                          }
+                          } 
+					
+ 
+      
+	     	    }
+
+				
+					InsertSocialMediaSettings(itemID,socialType,linkDetails,isActive,drpsocialtype,iconvalue,webname,companyId,CurrentMediaName);
+				} 
+			});
+			
+			alert("Social media settings updated successfully.");
+		});
+		
+		/// Cancel 
+		$("#btnCancel").click(function(){
+			location.href="../Pages/AdminPortal.aspx?WebAppId="+companyId;
+		});
+		
+		// Dropdown Changed Event Handler
+		$("#ddlCompaniesSocialMedia").change(function(){
+			var companyID=$(this).val();
+			GetSocialMediaSettings(companyID);		// Get Social Media Settings as Per Company Selected
+		})
+	}
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////// Get Social Media Settings /////////////////////////////////////////
+	function GetSocialMediaSettings(companyID)
+	{
+	debugger;
+		ResetControls();	// Reset Controls
+		
+		var requestURI= _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getByTitle('SocialMediaSettings')/items?$select=ID,MediaName,IconName,Title,SocialType,Link,AttachmentFiles,IsActive,Company/ID&$expand=Company,AttachmentFiles&$filter=Company/ID eq "+companyID+"";
+		$.ajax({
+			url:requestURI,
+			type:"GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success:function(data)
+			{
+				$.each(data.d.results,function(i,item){
+					var ID=item.ID;
+					var socialType=item.SocialType;
+					var link=item.Link;
+					//var MediaNmae=item.MediaName;
+					var isActive=item.IsActive;
+					var counter=item.length;
+					var iconname=item.IconName;
+					if(item.MediaName=="Media1")
+					{
+						$("#txtMedia0").attr("Title",ID);
+						$("#txtMedia0").val(link);
+						$("#socailType0").val(socialType);
+						$("#Title0").val(item.Title);
+						 $("#Title0").prop('disabled', true);
+						 $("#tabmedia11").addClass(iconname);
+						
+						if(socialType== "Other")
+                                    {
+                               $("#Title0").prop('disabled', false);
+                                 }
+
+						if(isActive=="Yes")
+					$("input[name='chkSocialMedia'][value='Yammer']").prop("checked","checked");
+					}
+					else if(item.MediaName=="Media2")
+					{
+						$("#txtMedia1").attr("Title",ID);
+						$("#txtMedia1").val(link);
+						$("#socailType1").val(socialType);
+						$("#Title1").val(item.Title);
+					 $("#Title1").prop('disabled', true);
+					  $("#tabmedia22").addClass(iconname);
+						
+						if(socialType== "Other")
+                                    {
+                               $("#Title1").prop('disabled', false);
+                                 }
+
+
+					//$( "#socailType2 option:selected" ).val(socialType);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Facebook']").prop("checked","checked");
+					}
+					else if(item.MediaName=="Media3")
+					{
+						$("#txtMedia2").attr("Title",ID);
+						$("#txtMedia2").val(link);
+						$("#socailType2").val(socialType);
+						$("#Title2").val(item.Title);
+                    	 $("#Title2").prop('disabled', true);
+                    	  $("#tabmedia33").addClass(iconname);
+						
+						if(socialType== "Other")
+                                    {
+                               $("#Title2").prop('disabled', false);
+                                 }
+
+
+						//$( "#socailType3 option:selected" ).val(socialType);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Twitter']").prop("checked","checked");
+					}
+					else if(item.MediaName=="Media4")
+					{
+						$("#txtMedia3").attr("Title",ID);
+						$("#txtMedia3").val(link);
+						$("#socailType3").val(socialType);
+						$("#Title3").val(item.Title);
+                    	 $("#Title3").prop('disabled', true);
+                    	  $("#tabmedia44").addClass(iconname);
+						
+						if(socialType== "Other")
+                                    {
+                               $("#Title3").prop('disabled', false);
+                                 }
+
+
+					//	$( "#socailType4 option:selected" ).val(socialType);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Linkedin']").prop("checked","checked");
+					}
+					//3/April
+					else if(item.SocialType=="WhatsApp")
+					{
+						$("#WhatsApp ").attr("Title",ID);
+						$("#WhatsApp ").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='WhatsApp']").prop("checked","checked");
+					}
+					else if(item.SocialType=="Instagram")
+					{
+						$("#Instagram").attr("Title",ID);
+						$("#Instagram").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Instagram']").prop("checked","checked");
+					}
+					else if(item.SocialType=="YouTube")
+					{debugger;
+						$("#YouTube").attr("Title",ID);
+						$("#YouTube").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='YouTube']").prop("checked","checked");
+					}
+					else if(item.SocialType=="Snapchat")
+					{
+						$("#Snapchat").attr("Title",ID);
+						$("#Snapchat").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Snapchat']").prop("checked","checked");
+					}
+					else if(item.SocialType=="Pinterest")
+					{
+						$("#Pinterest").attr("Title",ID);
+						$("#Pinterest").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Pinterest']").prop("checked","checked");
+					}
+					else if(item.SocialType=="Reddit")
+					{
+						$("#Reddit").attr("Title",ID);
+						$("#Reddit").val(link);
+						if(isActive=="Yes")
+							$("input[name='chkSocialMedia'][value='Reddit']").prop("checked","checked");
+					}
+					//end 3//April
+				})
+			},
+			error:function()
+			{
+				console.log("Error in Get Social Media Settings.");
+			}
+		})
+	}	
+	
+	function ResetControls()
+	{
+		$("#txtMedia0").val('');
+		$("#txtMedia1").val('');
+		$("#txtMedia2").val('');
+		$("#txtMedia3").val('');
+		
+		$("textarea").attr('title',0);
+		
+		$("input[name='chkSocialMedia'][value='Yammer']").prop("checked",false);
+		$("input[name='chkSocialMedia'][value='Facebook']").prop("checked",false);
+		$("input[name='chkSocialMedia'][value='Twitter']").prop("checked",false);
+		$("input[name='chkSocialMedia'][value='Linkedin']").prop("checked",false);
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	//////////////////////////////////////////////// Insert Social Media Settigns //////////////////////////////////////////
+	function InsertSocialMediaSettings(itemID,socialType,linkDetails,isActive,drpsocialtype,iconvalue,webname,companyId,CurrentMediaName)
+	{
+		var dfd=$.Deferred();
+		var ListName='SocialMediaSettings';
+		var webURL=_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+ListName+"')/items";
+
+		var itemType="SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+		
+		var Metadata;		
+		    Metadata = {
+	            __metadata: {
+	                'type': itemType
+	            },
+	     //   Title:socialType,
+	         Title:webname,
+	      //  SocialType:socialType,
+            Link: linkDetails,
+            IsActive:isActive==true?'Yes':'No',
+            CompanyId:companyId,
+            SocialType:drpsocialtype,
+             IconName:iconvalue,
+             MediaName:CurrentMediaName
+
+        };
+        
+          if(webname== null || webname== "")
+        {
+        delete Metadata["Title"];
+        }
+
+		$.ajax({
+			url:webURL,
+			type:"POST",
+			async:true,
+			headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose"
+            },
+            data:JSON.stringify(Metadata),
+            success:function(result)
+            {
+            	dfd.resolve(true);
+            },
+            error:function(result)
+            {
+				console.log(JSON.stringify(result));
+				dfd.reject(result);			            
+            }
+		})		
+	    return dfd.promise();
+	}
+
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
+	//////////////////////////////////////////////// Update Social Media Settigns //////////////////////////////////////////
+	function UpdateSocialMediaSettings(itemID,socialType,linkDetails,isActive,drpsocialtype,iconvalue,webname,companyId)
+	{
+		var dfd=$.Deferred();
+		var ListName='SocialMediaSettings';
+		var webURL=_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('"+ListName+"')/items("+itemID+")";
+
+		var itemType="SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+		
+		var Metadata;		
+		    Metadata = {
+	            __metadata: {
+	                'type': itemType
+	            },
+	       // Title:socialType,
+	         Title:webname,
+	       // SocialType:socialType,
+            Link: linkDetails,
+            IsActive:isActive==true?'Yes':'No',
+            SocialType:drpsocialtype,
+            IconName:iconvalue
+            
+        };
+        
+        if(webname== null || webname== "")
+        {
+        delete Metadata["Title"];
+        }
+        
+		$.ajax({
+			url:webURL,
+			type:"POST",
+			async:true,
+			headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose",
+                "X-Http-Method": "PATCH",
+                "If-Match": '*'
+            },
+            data:JSON.stringify(Metadata),
+            success:function(result)
+            {
+            	
+				dfd.resolve(true);
+            },
+            error:function(result)
+            {
+				console.log(JSON.stringify(result));
+				dfd.reject(result);			            
+            }
+		})		
+	    return dfd.promise();
+	}
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	///////////////////////////////////////////////////////////////////////////////
+	/////////////// Bind Companies for Social Media ///////////////////////////////
+	
+	/*function BindCompanies()
+	{
+		var deferred=$.Deferred();
+		var requestURI=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('Companies')/Items?$select=ID,Title&$OrderBy=Title";
+		$.ajax({
+			url:requestURI,
+			async:true,
+			headers:{"accept":"application/json;odata=verbose"},
+			success:function(data)
+			{
+				var results=data.d.results;
+				$.each(results,function(i,item)
+				{
+					var option = document.createElement('option');
+					option.value=item.ID;
+					option.text=item.Title;
+					$("#ddlCompaniesSocialMedia").append(option);
+				})
+				
+				deferred.resolve();			
+			},
+			error:function(error)
+			{
+				deferred.reject();			
+			}
+		})	
+		return deferred;
+	}*/
+		
+
+/*	function socailType()
+	{
+		var deferred=$.Deferred();
+		var requestURI=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('SocialMediaSettings')/fields?$filter=EntityPropertyName eq 'SocialType'";
+		$.ajax({
+			url:requestURI,
+			async:true,
+			headers:{"accept":"application/json;odata=verbose"},
+			success:function(data)
+			{
+				var results=data.d.results[0].Choices.results;
+				$.each(results,function(i,item)
+				{
+					var option = document.createElement('option');
+					option.value=item;
+					option.text=item;
+					$("#socailType1").append(option);
+					$("#socailType2").append(option);
+					$("#socailType3").append(option);
+					$("#socailType4").append(option);
+				})
+				
+				deferred.resolve();			
+			},
+			error:function(error)
+			{
+				deferred.reject();			
+			}
+		})	
+		return deferred;
+	}
+		
+
+*/
+
+
+
+
+
+	
+</script>
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b data-localize="SocialMediaSettings">Social Media Settings</b></h4></li>           
+	</ol>
+</div>
+<div id="SocialMedia">
+<div class="row" style="padding:20px 0 20px 0; display:none;">
+	<div class="col-md-12">
+		<div class="col-md-1">
+			<label class="control-label">Company : </label>		
+		</div>
+		<div class="col-md-4">
+			<select id="ddlCompaniesSocialMedia" class="form-control">
+			    <option value="0">-Select-</option>
+			</select> 
+		</div>
+	</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+
+
+<div class="col-md-6">
+    <div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color">Media 1 <span class="pull-right"><i id="tabmedia11"></i></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-4 control-label">Accounts</label>
+                                                <div class="col-sm-8">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                                            
+      	<div>
+							<label>Media </label>
+			  <select id="socailType0" name="Status">
+	             <option value="Yammer">Yammer</option>
+                 <option value="Facebook">Facebook</option>
+                 <option value="Twitter">Twitter</option>
+                 <option value="Linkedin">Linkedin</option>
+                 <option value="Instagram">Instagram</option>
+                 <option value="Snapchat">Snapchat</option>  
+                 <option value="Tumblr">Tumblr</option>
+                 <option value="Pinterest">Pinterest</option>
+                 <option value="Reddit">Reddit</option>
+                 <option value="Other">Other</option>
+                 <!-- <option value="WhatsApp">WhatsApp</option>
+                 <option value="YouTube">YouTube</option>-->
+               </select> 
+               <span class="breakonly"></span>                           
+						<label>Title</label>
+			 <input id="Title0" type="text" maxlength="15" placeholder="Enter Title" style=" width: 178px;" >
+			
+
+			 </div>
+
+		         				
+        				
+        				
+
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                 <textarea class="form-control" rows="6" style="resize: none;" id="txtMedia0"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Yammer"><span data-localize="Activate">Activate </span></label>
+                                                 <input type="text" style="display:none" id="Media0" value="Media1">
+                                                </div>
+                                            </div>
+                                            
+                                          
+         </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+</div>
+<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color">Media 2 <span class="pull-right"><i id="tabmedia22"></i></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-4 control-label">Accounts</label>
+                                                <div class="col-sm-8">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                                                						<div>
+							<label>Media </label>
+			  <select id="socailType1" name="Status">
+                 <option value="Yammer">Yammer</option>
+                 <option value="Facebook">Facebook</option>
+                 <option value="Twitter">Twitter</option>
+                 <option value="Linkedin">Linkedin</option>
+                 <option value="Instagram">Instagram</option>
+                 <option value="Snapchat">Snapchat</option>  
+                 <option value="Tumblr">Tumblr</option>
+                 <option value="Pinterest">Pinterest</option>
+                 <option value="Reddit">Reddit</option>
+                 <option value="Other">Other</option>
+                 <!-- <option value="WhatsApp">WhatsApp</option>
+                 <option value="YouTube">YouTube</option>-->
+                </select>
+                 <span class="breakonly"></span>                            
+						<label>Title</label>
+			 <input id="Title1" type="text" maxlength="15" placeholder="Enter Title"  style=" width: 178px;">
+			 
+
+			 </div>
+
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                 <textarea class="form-control" rows="6" style="resize: none;" id="txtMedia1"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                            	<label for="" class="col-sm-2 control-label"></label>
+                                               <div class="col-sm-8">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Facebook"><span data-localize="Activate">Activate</span></label>
+                                                 <input type="text" style="display:none" id="Media1" value="Media2">
+
+                                                </div>
+                                            </div>
+                                            
+                                          
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+</div>
+
+<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color">Media 3 <span class="pull-right"><i id="tabmedia33"></i></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                        <div>
+							<label>Media </label>
+			  <select id="socailType2" name="Status">
+                 <option value="Yammer">Yammer</option>
+                 <option value="Facebook">Facebook</option>
+                 <option value="Twitter">Twitter</option>
+                 <option value="Linkedin">Linkedin</option>
+                 <option value="Instagram">Instagram</option>
+                 <option value="Snapchat">Snapchat</option>  
+                 <option value="Tumblr">Tumblr</option>
+                 <option value="Pinterest">Pinterest</option>
+                 <option value="Reddit">Reddit</option>
+                 <option value="Other">Other</option>
+                 <!-- <option value="WhatsApp">WhatsApp</option>
+                 <option value="YouTube">YouTube</option>-->
+                  </select>
+                   <span class="breakonly"></span>                            
+						<label>Title</label>
+			 <input id="Title2" type="text" maxlength="15" placeholder="Enter Title"  style=" width: 178px;">
+						 </div>
+
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="txtMedia2"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Twitter"><span data-localize="Activate">Activate</span></label>
+                                                <input type="text" style="display:none" id="Media2" value="Media3">
+                                                </div>
+                                            </div>
+                                            
+                                          
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+</div>
+
+
+
+<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color">Media 4 <span class="pull-right"><i id="tabmedia44"></i></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-9">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            
+                         <div>
+							<label>Media </label>
+			                 <select id="socailType3" name="Status">
+	                            <option value="Yammer">Yammer</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="Linkedin">Linkedin</option>
+                                <option value="Instagram">Instagram</option>
+                                <option value="Snapchat">Snapchat</option>  
+                                <option value="Tumblr">Tumblr</option>
+                                <option value="Pinterest">Pinterest</option>
+                                <option value="Reddit">Reddit</option>
+                                <option value="Other">Other</option>
+                                <!-- <option value="WhatsApp">WhatsApp</option>
+                                <option value="YouTube">YouTube</option>-->
+                           </select>
+                           <span class="breakonly"></span>                             
+						<label>Title</label>
+			           <input id="Title3" type="text" maxlength="15" placeholder="Enter Title"  style=" width: 178px;">
+			 
+
+			 </div>
+
+             <div class="form-group" style="padding-top:15px;">
+                 <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                    <div class="col-sm-10">
+                       <textarea class="form-control" rows="6" style="resize: none;" id="txtMedia3"></textarea>
+                     </div>
+              </div>
+                                            
+              <div class="form-group">
+                   <label for="" class="col-sm-2 control-label"></label>
+                       <div class="col-sm-10">
+                          <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Linkedin"><span data-localize="Activate">Activate</span></label>
+                              <input type="text" style="display:none" id="Media3" value="Media4">
+                         </div>
+               </div>
+                                            
+                                          
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+</div>
+
+
+
+<!--- Create New Socail Tabs 3/April--->
+<!--
+<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">WhatsApp <span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/whatapp.jpg"  style="height: 23px;width: 20px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="WhatsApp" title="3"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="WhatsApp"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>
+				<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">Instagram<span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/insta.jpg"  style="height: 23px;width: 20px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="Instagram" title="3"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Instagram"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>
+
+				<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">YouTube <span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/youtube.jpg"  style="height: 23px;width: 20px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="YouTube" ></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="YouTube"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>
+				<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">Snapchat<span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/snapchat.png"  style="height: 23px;width: 20px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="Snapchat" title="3"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Snapchat"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>
+
+				<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">Pinterest <span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/Pinterest.png"  style="height: 23px;width: 31px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="Pinterest" title="3"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Pinterest"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>
+				<div class="col-md-6">
+<div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4" style="background-color: rgb(0, 0, 255) !important;">
+                  <div class="panel-title">
+                  <h4 class="h4-color" style="color: rgb(255, 255, 255) !important;">Reddit<span class="pull-right"><img src="../_catalogs/masterpage/Titan2/Images/Redddit.png" style="height: 23px;width: 20px;"></span></h4>
+                </div>
+              </div>
+           <div class="panel-body">
+                       <div class="form-horizontal">
+                       
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-2 control-label">Accounts</label>
+                                                <div class="col-sm-10">
+                                                 <input type="" class="form-control" id="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="padding-top:15px;">
+                                                <label for="" class="col-sm-2 control-label" data-localize="Link">Link</label>
+                                                <div class="col-sm-10">
+                                                <textarea class="form-control" rows="6" style="resize: none;" id="Reddit" title="3"></textarea>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-2 control-label"></label>
+                                                <div class="col-sm-10">
+                                                 <label class="checkbox-inline"><input type="checkbox" name="chkSocialMedia" value="Reddit"><span data-localize="Activate">Activate</span></label>
+                                                </div>
+                                            </div>                                            
+                                          
+							  </div>
+
+							</div>
+
+						</div>
+				</div></div></div>-->
+<!-- End of 3/April-->
+	<div class="text-center top20 bottom20">
+	      <input id="btnSubmit" type="button" class="btn btn-outline-success" value="Submit">
+	      <input id="btnCancel" type="button" class="btn btn-outline-secondary" value="Close">
+	</div>
+</div>
+</div>
+
+
+</div>
+
+
+<input type="hidden" name="SocialMediaCounter" value="0">
+
+
+
+
+
+<script>
+
+	$(document).ready(function () {
+       $("#socailType1").change(function(){
+  var socialtype1=$("#socailType1").val();
+  if(socialtype1== "Other")
+  {
+   $("#Title1").prop('disabled', false); 
+  $("#Title1").val("");
+ 
+  }
+  else
+  {
+    $("#Title1").val(socialtype1);
+    $("#Title1").prop('disabled', true); 
+  }
+});
+
+
+
+    $("#socailType0").change(function(){
+  var socialtype0=$("#socailType0").val();
+  if(socialtype0== "Other")
+  {
+  $("#Title0").val("");
+  $("#Title0").prop('disabled', false); 
+
+
+  }
+  else
+  {
+  $("#Title0").prop('disabled', true); 
+    $("#Title0").val(socialtype0);
+       
+  }
+});
+
+
+
+    $("#socailType1").change(function(){
+  var socialtype1=$("#socailType1").val();
+  if(socialtype1== "Other")
+  {
+  $("#Title1").prop('disabled', false);
+  $("#Title1").val("");
+  
+  }
+  else
+  {
+    $("#Title1").val(socialtype1);
+       $("#Title1").prop('disabled', true); 
+  }
+});
+
+
+    $("#socailType2").change(function(){
+  var socialtype2=$("#socailType2").val();
+  if(socialtype2== "Other")
+  {
+  $("#Title2").prop('disabled', false);
+  $("#Title2").val("");
+  
+  }
+  else
+  {
+    $("#Title2").val(socialtype2);
+    $("#Title2").prop('disabled', true); 
+  }
+});
+
+
+
+ $("#socailType3").change(function(){
+  var socialtype3=$("#socailType3").val();
+  if(socialtype3== "Other")
+  {
+  $("#Title3").prop('disabled', false);
+  $("#Title3").val("");
+  
+  }
+  else
+  {
+    $("#Title3").val(socialtype3);
+     $("#Title3").prop('disabled', true); 
+  }
+});
+
+      
+      
+      
+      
+      
+      arrayIcon=[
+        {Key:"Yammer",Value:"icon icon-yammer" },
+        {Key:"Twitter",Value:"fa fa-twitter"},
+        {Key:"Facebook",Value:"fa fa-facebook-f"},
+        {Key:"Linkedin",Value:"fa fa-linkedin"},
+        {Key:"Tumblr",Value:"fa fa-tumblr"},
+        {Key:"Pinterest",Value:"fa fa-pinterest"},
+        {Key:"Instagram",Value:"fa fa-instagram"},
+        {Key:"Snapchat",Value:"fa fa-snapchat"},
+        {Key:"Reddit",Value:"fa fa-reddit"},
+        {Key:"Other",Value:"fa fa-globe"},
+      //{Key:"WhatsApp",Value:"fa fa-whatsapp head-icon"},
+      //{Key:"YouTube",Value:"fa fa-youtube head-icon"},
+
+    ];	});
+
+
+</script>
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-355</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">ff0be5d0-8a74-4f73-bebc-66de16d3d577</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-355, ADMIN-1645029823-355</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:Order msdt:dt="string">35500.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

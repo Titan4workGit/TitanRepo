@@ -1,0 +1,368 @@
+﻿<style type="text/css">
+
+.expand{
+	background-image:URL('../SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-repeat:no-repeat;	
+    float: left;
+    min-height: 14px;
+    padding-right: 18px;
+    cursor: pointer;
+}
+
+
+.users {
+    padding-left: 10%;
+    padding-top: 15px;
+}
+
+.div_usrdetails {
+     width: 85%;
+    margin: 5px;
+    border: 1px solid;
+    padding: 10px;
+    min-height: 25px;
+    background-color: #0072c6;
+    color: whitesmoke !important;
+ }
+
+.remove{
+    font-weight:normal !important;    
+    color: #12ef4e;
+    font-weight: bolder;
+    background-color: #0072C6;      
+    text-align: right;
+    cursor:pointer;    
+   
+}
+
+.user_data {
+   width: 60%;    
+    float: left;
+}
+    
+div#siteinherit_detail {
+    padding: 5px;
+    font-weight: 600;
+}
+
+.heading {
+   
+}
+
+label#sitetitle {
+    color: #00ff39;
+    font-size: 20px;
+}
+
+.expand{
+	background-image:URL('../SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-repeat:no-repeat;	
+    float: left;
+    min-height: 14px;
+    padding-right: 18px;
+    cursor: pointer;
+
+}
+
+.lexpand{
+	background-image:URL('../SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-repeat:no-repeat;	
+    float: left;
+    min-height: 14px;
+    cursor: pointer;
+    padding:10px !important;
+    max-width:150px !important;
+            
+}
+
+.lexpand a{
+	color:white !important;
+}
+.collapse{
+	background-image:URL('../SiteAssets/MyDocuments/DMS/GautamPermission/Image/minus.jpg');
+	background-repeat:no-repeat;
+	float: left;        
+    padding-right: 18px;
+    min-height: 14px;
+        cursor: pointer;
+
+}
+
+.users {
+    padding-left: 10%;
+    padding-top: 15px;
+}
+
+
+
+
+.user_data a {
+    color: whitesmoke !important;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+   
+input#txtbox {
+    width: 350px;
+    height: 30px;
+    }
+
+
+
+ div#permission {
+    color: #36f708;
+    font-weight: bolder;
+    }
+    
+  
+    
+    #div_sitegrpdisplay>div {
+    background-color: #0072C6;
+    padding: 5px;
+    color: white;
+    width: 45%;
+    display: inline-block;
+    margin: 5px;
+    }
+
+.perm_lists {
+    max-width: 250px !important;
+    color: #fff !important;
+    font-weight: bold;
+    background-color: #0076c0 !important;
+    display: table-cell;
+}
+    
+    
+    .removeperm {    
+    font-weight: bolder;   
+    color: #f99e98;
+    font-weight: bolder;
+    background-color: #0072C6;
+    WIDTH: 100%;   
+    text-align: right;  
+    padding-right: 5px;
+    cursor: pointer;  
+        
+    }
+    .removelistperm{
+    font-weight: bolder;   
+    color: #f99e98;
+    font-weight: bolder;
+    background-color: #0072C6;
+    WIDTH: 100%;   
+    text-align: right;  
+    padding-right: 5px;
+    cursor: pointer; 
+    }
+    div>i>a {
+    color: #06fd32 !important;
+    font-weight: bold !important;
+    text-decoration: underline;
+   }
+
+.users a {
+        color: white !important;
+}
+
+.add_user {
+    width: 75px;
+    float: right;
+    display:none;
+    cursor: pointer;
+    background-color: #f1f4f7;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fda703;
+    font-weight: 800;
+}
+
+.div_perm {
+    margin-top: -10px;
+    padding-left: 50px; 
+    }
+    
+    
+    #addnewuser{
+	 display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 40%;
+    top: 30%;
+    background-color: #d1d4e6;
+    color: #1d1c1c;
+    font-weight: bold;
+    padding: 25px;
+    
+    }
+    
+input#txtbox {
+    width: 350px;
+    height: 30px;
+}
+
+input#btnadduser {
+   
+    float: right;
+    margin-top: 15px;
+    color: #1d1c1c;
+    font-weight: bold;
+    margin-right: 2px;
+}
+.ui-button:focus { outline:none !important }
+    	
+.close {
+    color: #131212;
+    font-size: 28px;
+    font-weight: bold;    
+    top: -5%;
+    position: absolute;
+    right: 1%;
+    cursor: pointer;
+}
+
+
+input.input_btn{
+    border-radius: 10px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top:20px;
+    outline:none;
+}
+
+input.input_btn:hover{
+	border-radius: 10px;
+    background-color: steelblue;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-top:20px;
+    outline:none;
+
+}
+
+div#chkpermissoin{
+min-width:750px !important;
+padding-bottom:20px;
+
+}
+
+input.input_txt {
+height:40px;
+min-width:650px;
+margin-top:20px;
+font-size: 18px;
+
+
+}
+
+div#div_sitegrpdisplay {
+    padding: 20px;
+    
+}
+
+.sitegrpmngment{
+	background-color:#e3e4e4;
+	padding:20px;
+	display:none;
+}
+
+h1#pageTitle {
+    display: none;
+}
+
+div#sideNavBox {
+    display: none;
+}
+
+#s4-bodyContainer {
+    padding-bottom: 35px;
+    max-width: 1500px;
+    margin: 0px auto;
+}
+#contentBox {
+     max-width: 1400px;
+     margin:0px auto;
+    }
+    
+.remove_group {
+    width: 125px;
+    float: right;
+    cursor: pointer;
+    background-color: #f1f4f7;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fda703;
+    font-weight: 800;
+    margin-right: 10px;
+    display:none;
+}
+
+.popup{
+	overflow:auto;
+}
+
+.permlist {
+    background-color: #0072c6;
+    padding: 5px;
+    color: white !important;
+}
+
+.a_btn {
+    
+    border: 1px solid !important;
+    padding: 5px !important;
+    background-color: #078af7 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    margin: 2px !important;
+	cursor:pointer !important;
+	min-width: 235px !important;
+	outline:none;
+}
+
+.heading {
+    
+    background-color: steelblue;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.btn_def li {
+    list-style: none;
+    margin: 10px;
+    display: inline-block;
+   }
+ul.btn_def {
+    padding: 0px;
+   }
+   
+   .note {
+    border: 1px solid #151414;
+    background-color: aliceblue !important;
+    color: red !important;
+    width: 550px !important;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#siteinherit{
+	display:none;
+}
+
+.div_cnt {
+    padding: 10px;
+    background-color: aliceblue;
+    border: 1px solid;
+}
+
+</style>

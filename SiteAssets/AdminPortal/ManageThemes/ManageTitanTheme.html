@@ -1,0 +1,4084 @@
+﻿<link rel='stylesheet' href='../_catalogs/masterpage/Titan2/Styles/spectrum.css' />
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+
+<script type="text/javascript" src="../_catalogs/masterpage/Titan2/Scripts/spectrum.js"></script>
+<script type="text/javascript" src="../_catalogs/masterpage/Titan2/Scripts/ColorTheme.js"></script>
+
+<style type="text/css">
+	td.tdlabel {
+		font-size: 14px;
+	}
+
+	.btn-success {
+		font-size: 16px !important;
+	}
+
+	.btn-info {
+		font-size: 16px !important;
+	}
+
+	.container_Theme {
+		width: 100%;
+	}
+
+	.nav-tabs {
+		border-bottom: transparent !Important;
+	}
+
+		.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+			border-width: 0;
+		}
+
+		.nav-tabs > li > a {
+			border: none;
+			color: #ccc;
+			background:;
+		}
+
+	.card > .nav-tabs > li > a > span:hover {
+		color: #1d6ec0 !important;
+	}
+
+	.nav-tabs > li.active > a {
+		border: none;
+		color: #333 !important;
+		background: #ddd !important;
+	}
+
+	.nav-tabs > li > a:hover {
+		background: #f5f5f5 !important;
+	}
+
+	 
+	.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+		transform: scale(1);
+	}
+
+	.tab-nav > li > a::after {
+		background: #1d6ec0 none repeat scroll 0% 0%;
+		color: #fff;
+	}
+
+	.tab-pane {
+		padding: 15px 0;
+	}
+
+	.tab-content {
+		padding: 20px;
+	}
+
+	.card {
+		background: #FFF none repeat scroll 0% 0%;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		margin-bottom: 30px;
+		border-radius: 4px 4px 0 0;
+	}
+
+	.tab_padd {
+		padding: 10px;
+		background: none !important;
+		margin-top: 0px !important;
+	}
+
+	.color-fill-icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border: 1px solid #000;
+		background-color: #fff;
+		margin: 2px;
+	}
+
+	.dropdown-color-fill-icon {
+		position: relative;
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.theme_head_text {
+		font-weight: 600;
+		color: #000000;
+		/*  padding-bottom: 10px;*/
+		height: 25px;
+	}
+
+	select#pageBackground_TexturedPictures,
+	select#pageBackground_StretchedPictures,
+	select#navigationBackground_TexturedPictures,
+	select#navigationBackground_StretchedPictures  {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	div#imagePreviewPageBackground {
+		text-align: center;
+	}
+
+		div#imagePreviewPageBackground img {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+		}
+
+	div#imagePreviewPageBackground_Stretched {
+		text-align: center;
+	}
+
+		div#imagePreviewPageBackground_Stretched img {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+		}
+	 
+	div#imagePreviewNavigationBackground {
+		text-align: center;
+	}
+
+		div#imagePreviewNavigationBackground img, div#imagePreviewWebPartBackground img {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+		}
+
+	div#imagePreviewNavigationBackground_Stretched {
+		text-align: center;
+	}
+
+		div#imagePreviewNavigationBackground_Stretched img {
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+		}
+
+	table.imagetype > tbody > tr > td {
+		padding-right: 2px;
+		padding-left: 2px;
+		padding-top: 8px;
+		padding-bottom: 3px;
+		font-size: 14px
+	}
+
+	td.radiobtn {
+		width: 15px;
+	}
+
+	.radiobtn input[type="radio"], .radiobtn input[type=checkbox] {
+		margin: 0px 0px 2px 0px;
+	}
+
+	.col-md-3.imagetype-div {
+		width: 12%;
+	}
+
+	.col-md-1.textcolor-div {
+		width: 12%;
+	}
+
+	@media (max-width: 767px) {
+		.nav-tabs > li {
+			width: 50%;
+		}
+
+		.card ul.nav li a {
+			padding: 10px 15px !important;
+			margin-top: 0px !important;
+		}
+
+		.card ul.nav li {
+			width: 100%;
+		}
+	}
+ 
+#ddlEditImageType{
+	        width: 215px;
+            height: 30px;
+            
+}	
+#fileupload1{
+	       width: 320px;
+           height: 30px;
+           margin-left: 14px;           
+}
+
+#labelImageURL{
+        
+	float: left;
+    width:  550px;
+    height: 300px;
+    object-fit: cover;	 
+    }
+ 
+#blah{
+     max-width: 200px;
+	}
+
+#blah1{
+
+    max-width: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
+
+}
+
+.nav-tabs > li.active > a{
+	color: #fff !important;
+    background: #1d6ec0 !important;
+}
+
+.col-md-3.mrajust{
+  padding:20px 0 0;	
+}
+
+#themeGallery::-webkit-scrollbar{
+
+  width: 10px;
+  height: 7px;
+  background-color: #aaa;
+	
+}
+
+#themeGallery::-webkit-scrollbar-thumb{
+
+    background: #1d6ec0;
+    border-radius:5px;
+}
+
+#themeGallery{
+	
+  scrollbar-color: #1d6ec0 #ccc;
+  scrollbar-width: thin;
+
+}
+
+#theme_gallery .panel-body{
+
+ padding:30px 15px 15px 15px !important;
+	
+}
+
+@media(max-width:991px){
+	
+.panel-default.shadow2.top15{
+	height:auto !important; 
+}
+
+#manage_grid table tbody tr:first-child td{
+ 	width:50%
+}
+	
+#manage_grid table tbody tr:last-child td{
+ 	width:50%
+}	
+
+}
+
+
+@media(max-width:500px){
+	
+.panel-default.shadow2 .panel-body{
+	padding:15px 3px;
+}	
+.card .tab-content{
+	padding:20px 5px !important;	
+}	
+}
+	
+@media(max-width:394px){
+
+#btnCancelThemeGallery{
+
+  margin-top:10px;	
+ 	
+}
+	
+}	
+
+@media(max-width:767px){
+	
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+  min-width:991px !important;	
+
+}	
+
+#ddlEditImageType,
+input#fileupload1{
+
+  width:100% !important;	
+}	
+
+input#fileupload1{
+
+  margin-left:0px !important;	
+}	
+	
+}
+
+	
+</style>
+
+<script type="text/javascript">
+	var customThemeTabActive = false;
+	var titanThemeName;
+	var itemIDGlobal = 0;
+	$(document).ready(function () {
+		UserAuthorization();
+		GetAllImages();
+		$('#btnPreviewImagesPopup').click(function () {
+            $('#modalUploadImage').modal('show');
+        });
+    });
+
+
+	//// User Authorization
+	function UserAuthorization() {
+		var companyId = titanForWork.getQueryStringParameter("CompanyId");
+		titanForWork.PageAuthorization("ManageTitanThemes", companyId).done(function (currentUserRights, message) {
+			if (currentUserRights.length > 0) {
+				if ((currentUserRights[0].SiteAdmin == "SiteAdmin") || (currentUserRights[0].TechAdmin == "TechAdmin")) {
+					userActivityNotificationEntry(_spPageContextInfo.userId,window.location)
+
+					SP.SOD.executeFunc('sp.js', 'SP.ClientContext', PageLoad);
+				}
+				else {
+					alert(message);
+					window.location.href = _spPageContextInfo.webAbsoluteUrl + "/Pages/Default.aspx?WebAppId=" + companyId;
+				}
+			}
+		});
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////// Page Load ////////////////////////////////////////////
+	function PageLoad() {
+	 
+		var companyId = titanForWork.getQueryStringParameter('CompanyId');
+		var picturesURL = '../ThemePictures/?WebAppId=' + companyId;
+		$(".uploadThemePictures").attr('href', picturesURL);
+
+		$("#btnCreateTheme").click(function () {
+			$("#currentTab").val("CustomTheme");
+			customThemeTabActive = true;
+
+			var themeName = $.trim($("#themeName").val());
+			if (themeName == 'Default') {
+				alert("Default is system theme. Please enter different name.");
+				return false;
+			}
+			else if (themeName == '') {
+				alert("Please enter theme name.");
+			}
+			else {
+				DeleteThemeSettings_CustomTheme();	   // Delete and Insert New Theme
+			}
+		});
+
+		$("#btnApply").click(function () {
+			$("#currentTab").val("CustomTheme");
+			customThemeTabActive = true;
+			var themeName = $.trim($("#themeName").val());
+			if (themeName == 'Default') {
+				alert("Default is system theme. Please enter different name.");
+				return false;
+			}
+			else if (themeName == '') {
+				alert("Please enter theme name.");
+			}
+			else {
+				DeleteThemeSettings_CustomTheme();	   // Delete and Insert New Theme
+				UpdateCompanyTheme(themeName);
+			}
+            
+		});
+
+		// Custom Theme Panel (Second Tab)
+		$("#btnPreview").click(function () {
+
+			ThemePrview();
+			$("#modalTitanPreview").modal('show');
+		});
+
+
+		BindTexturedPictures();
+
+		ShowThemesInThemeGallery();			// Bind All Themes which are already created.
+
+        ThemeInitilization(); 				// Theme Initilization. Bind controls if theme data exist.
+
+		// Buttons
+		$("#btnCancelThemeGallery").click(function () {
+			// Need to replace. HardCoded
+			var companyID = titanForWork.getQueryStringParameter('CompanyId');
+			var adminPortalURL = "../Pages/AdminPortal.aspx?WebAppId=" + companyID;
+			window.location.href = adminPortalURL;
+		})
+
+		$("#btnCancel").click(function () {
+			// Need to replace. HardCoded
+			var companyID = titanForWork.getQueryStringParameter('CompanyId');
+			var adminPortalURL = "../Pages/AdminPortal.aspx?WebAppId=" + companyID;
+			window.location.href = adminPortalURL;
+		})
+
+
+	}
+
+	function SpectrumColorCode(colorCode) {
+		var defaultSettings = {
+			allowEmpty: true,
+			color: colorCode,
+			showInput: true,
+			containerClassName: "full-spectrum",
+			showInitial: true,
+			showPalette: true,
+			showSelectionPalette: true,
+			showAlpha: true,
+			maxPaletteSize: 10,
+			preferredFormat: "hex",
+			localStorageKey: "spectrum.demo",
+			move: function (color) {
+				updateBorders(color);
+			},
+			show: function () {
+
+			},
+			beforeShow: function () {
+
+			},
+			hide: function (color) {
+				updateBorders(color);
+			},
+
+			palette: [
+				["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)", /*"rgb(153, 153, 153)","rgb(183, 183, 183)",*/
+					"rgb(204, 204, 204)", "rgb(217, 217, 217)", /*"rgb(239, 239, 239)", "rgb(243, 243, 243)",*/ "rgb(255, 255, 255)"],
+				["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+					"rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"],
+				["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)",
+					"rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)",
+					"rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)",
+					"rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)",
+					"rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)",
+					"rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+					"rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+					"rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+					/*"rgb(133, 32, 12)", "rgb(153, 0, 0)", "rgb(180, 95, 6)", "rgb(191, 144, 0)", "rgb(56, 118, 29)",
+					"rgb(19, 79, 92)", "rgb(17, 85, 204)", "rgb(11, 83, 148)", "rgb(53, 28, 117)", "rgb(116, 27, 71)",*/
+					"rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)",
+					"rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"]
+			]
+		}
+
+
+		return defaultSettings;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////// Theme Initilization ////////////////////////////////////////////
+	function ThemeInitilization() {
+		$("#backgroundColor").spectrum(
+			SpectrumColorCode("#FFFFFF")
+		);
+
+		$("#navigationBar").spectrum(
+			SpectrumColorCode("#FFFFFF")
+		);
+
+		$("#navigationBar_TextColor").spectrum(
+			SpectrumColorCode("#000000")
+		);
+
+		$("#webParts_HeaderBandColor").spectrum(
+			SpectrumColorCode("#E1E1DF")
+		);
+
+		$("#webParts_HeaderTextColor").spectrum(
+			SpectrumColorCode("#000000")
+		);
+
+		$("#webParts_HeaderIconBackGroundColor").spectrum(
+			SpectrumColorCode("#FFFFFF")
+		);
+
+		$("#emergencyAnnounce_LabelBandColor").spectrum(
+			SpectrumColorCode("#EC0B43")
+		);
+		$("#emergencyAnnounce_LabelTextColor").spectrum(
+			SpectrumColorCode("#FFFFFF")
+		);
+		 
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+		GetThemeNameByCompany(companyID);    // Get Theme Name by Company ID
+
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,ThemeClassName,Area,FillingType,Orientation,Value,Created,Modified&$filter=ThemeName eq '" + titanThemeName + "'&$expand=Author&$select=Author/Name&$expand=Editor&$select=Editor/Name";
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				if (data.d.results.length == 0)			// Checked Default Theme if theme doesn't exist for current company.
+				{
+					$("input:radio[name='ThemeGallery'][value='Default']").prop("checked", "checked");
+				}
+
+				$.each(data.d.results, function (i, item) {
+					////////////////////////// Page Background ///////////////////////////////////////
+					// Apply Theme on Body Background
+                      
+					var pageBackgroundOption = item.Area;
+					var value = item.Value;
+					var fillingType = item.FillingType;
+					var orientation = item.Orientation;
+
+					// Apply Theme on Page Background (Area = "PageBackground")
+
+					if (pageBackgroundOption == "IconColor") {
+						var ThemeClassName = item.ThemeClassName;
+						if (ThemeClassName == "headicon") {
+
+							$("#webParts_HeaderIconBackGroundColor").spectrum(
+								SpectrumColorCode(value)
+							);
+						}
+						else {
+							$("#webParts_HeaderIconBackGroundColor").spectrum(
+								SpectrumColorCode('#fff')
+							);
+						}
+					}
+
+
+					if (pageBackgroundOption == "PageBackground") {
+						if (fillingType == "BGColour") {
+							$("#backgroundColor").spectrum(
+								SpectrumColorCode(value)
+							);
+						}
+						else if (fillingType == "TexturedPicture") {
+							$("input:radio[name='PageBackground']").eq(1).prop("checked", "checked");
+							$("#pageBackground_TexturedPictures").val(value);
+							$("#pageBackground_TexturedPictures").trigger("change");
+						}
+						else if (fillingType == "StretchedPicture") {
+							$("input:radio[name='PageBackground']").eq(2).prop("checked", "checked");
+							$("#pageBackground_StretchedPictures").val(value);
+							$("#pageBackground_StretchedPictures").trigger("change");
+
+							$("input:radio[name='PageBackground_Image'][value='" + orientation + "']").prop("checked", "checked");
+						}
+						 
+						if (item.ThemeName != 'Default Theme') {
+						     
+							$("#themeName").val(item.ThemeName);
+							$("input:radio[name='ThemeGallery'][value='" + item.ThemeName + "']").prop("checked", "checked");
+                           
+
+							// Theme Details (showing in Right Side of First Tab)
+							$("#ThemeInfo_ThemeName").html(item.ThemeName);
+
+							// Created Details
+							var createdBy = getUserName(item.Author.Name);
+							var createdDate = new Date(item.Created);
+							createdDate = (createdDate.getMonth() + 1) + '/' + createdDate.getDate() + '/' + createdDate.getFullYear();
+
+							$("#ThemeInfo_CreatedBy").html(createdBy);
+							$("#ThemeInfo_CreatedDate").html(createdDate);
+
+							// Modified Details
+							var modifiedBy = getUserName(item.Editor.Name);
+							var modifiedDate = new Date(item.Modified);
+							modifiedDate = (modifiedDate.getMonth() + 1) + '/' + modifiedDate.getDate() + '/' + modifiedDate.getFullYear();
+
+							$("#ThemeInfo_ModifiedBy").html(modifiedBy);
+							$("#ThemeInfo_ModifiedDate").html(modifiedDate);
+						}
+						else {
+							// Theme Details (showing in Right Side of First Tab)
+							$("#ThemeInfo_ThemeName").html("Default Theme");
+							$("#ThemeInfo_CreatedBy").html("NA");
+							$("#ThemeInfo_CreatedDate").html("NA");
+
+							$("#ThemeInfo_ModifiedBy").html("NA");
+							$("#ThemeInfo_ModifiedDate").html("NA");
+
+							$("input:radio[name='ThemeGallery'][value='Default']").prop("checked", "checked");
+						}
+					}
+
+					////////////////////////// Navigation ///////////////////////////////////////
+					// Apply Theme on Navigation (Area="Navigation")
+					else if (pageBackgroundOption == "Navigation") {
+						if (fillingType == "BGColour") {
+							$("#navigationBar").spectrum(
+								SpectrumColorCode(value)
+							);
+						}
+						else if (fillingType == "TexturedPicture") {
+							$("input:radio[name='NavigationBackground']").eq(1).prop("checked", "checked");
+							$("#navigationBackground_TexturedPictures").val(value);
+							$("#navigationBackground_TexturedPictures").trigger("change");
+						}
+						else if (fillingType == "StretchedPicture") {
+							$("input:radio[name='NavigationBackground']").eq(2).prop("checked", "checked");
+							$("#navigationBackground_StretchedPictures").val(value);
+							$("#navigationBackground_StretchedPictures").trigger("change");
+
+							$("input:radio[name='NavigationBackground_Image'][value='" + orientation + "']").prop("checked", "checked");
+						}
+
+					}
+
+					// Apply Theme on Navigation Text	(Area = "NavigationFontText")
+					else if (pageBackgroundOption == "NavigationFontText") {
+						$("#navigationBar_TextColor").spectrum(
+							SpectrumColorCode(value)
+						);
+					}
+
+
+					/////////////////////////////////////////////////////////////////////////
+					////////////////////////// WebParts ///////////////////////////////////////
+					// Apply Theme on Header Band Color	(Area = "WebPartHeaderBandColor")
+					else if (pageBackgroundOption == "WebPartHeaderBandColor") {
+						$("#webParts_HeaderBandColor").spectrum(
+							SpectrumColorCode(value)
+						);
+					}
+					// Apply Theme on Header Text Color	(Area = "WebPartHeaderTextColor")
+					else if (pageBackgroundOption == "WebPartHeaderTextColor") {
+						$("#webParts_HeaderTextColor").spectrum(
+							SpectrumColorCode(value)
+						);
+					}
+ 
+				})
+			},
+			error: function () {
+				alert("Error in Show Existing Theme In Theme Gallery Tab");
+			}
+		});
+	}
+
+
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////// Theme Gallery Panel (First Tab) ////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	$(document).ready(function () {
+		// Theme Gallery Panel (First Tab)
+		$("#btnPreviewThemeGallery").click(function () {
+			ShowExistingTheme();
+			$("#modalTitanPreview").modal('show');
+		});
+
+		$("#btnApplyThemeGallery").click(function () {
+			customThemeTabActive = false;
+            var themeName = $("input:radio[name='ThemeGallery']:checked").val();
+			UpdateCompanyTheme(themeName);
+			 
+		});
+
+
+		$("#deleteTheme").click(function () {
+			var selectedTheme = $("input[name='ThemeGallery']:checked").val();
+
+			if (selectedTheme == undefined) {
+				alert("Please select theme.");
+				return false;
+			}
+			if (selectedTheme != 'Default') {
+				GetCompaniesNamesByTheme(selectedTheme).done(function (companyNames) {
+					if (companyNames == '') {
+						var confirmation = confirm('Do you want to delete this theme?');
+						if (confirmation) {
+							DeleteTheme();
+						}
+					}
+					else {
+						alert('This theme can not be deleted because it is still referenced by other companies - \n' + companyNames);
+					}
+				}).fail(function (error) {
+					console.log(error);
+				});
+			}
+			else {
+				alert("Default theme can't be deleted.");
+			}
+		});
+	});
+
+
+	function GetCompaniesNamesByTheme(themeName) {
+		var deferred = $.Deferred();
+
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+		var companyNames = '';
+		var requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('CompanyThemes')/Items?$select=ID,CompanyName/CompanyName&$expand=CompanyName&$filter=ThemeName eq '" + themeName + "' and CompanyName/ID ne " + companyID + "";
+		$.ajax({
+			url: requestURI,
+			async: false,
+			headers: { Accept: "application/json;odata=verbose" },
+			success: function (data) {
+				var results = data.d.results;
+				$.each(results, function (i, item) {
+					companyNames += item.CompanyName.CompanyName + "\n";
+				})
+
+				deferred.resolve(companyNames);
+			},
+			error: function (error) {
+				console.log(error);
+				deferred.reject(error);
+			}
+		})
+		return deferred;
+	}
+
+	function GetItemTypeForListName(ListName) {
+		return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+	}
+
+
+	// Update Company Theme (SPList = 'CompanyThemes')
+	function UpdateCompanyTheme(themeName) {
+
+       
+		var dfd = $.Deferred();
+		var ListName = 'CompanyThemes';
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+		GetItemIDByCompany(companyID);
+
+		var itemType = GetItemTypeForListName(ListName);
+
+		var requestURL = '';
+		var headersData = '';
+		 if(itemIDGlobal==0)			// For Insert Operation
+		{
+			requestURL= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+			headersData={"accept": "application/json;odata=verbose",
+					"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+					"content-Type": "application/json;odata=verbose"};
+
+			var Metadata;
+			Metadata = {
+					__metadata: {
+						'type': itemType
+					},
+				 CompanyNameId:companyID.replace('#',''),
+				 ThemeName:themeName,
+				 Title:themeName
+			};
+		}
+		else   						// For Update Operation
+		 {
+		requestURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items(" + itemIDGlobal + ")";
+		headersData = {
+			"accept": "application/json;odata=verbose",
+			"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+			"content-Type": "application/json;odata=verbose",
+			"X-Http-Method": "PATCH",
+			"If-Match": '*'
+		};
+
+		var Metadata;
+		Metadata = {
+			__metadata: {
+				'type': itemType
+			},
+			ThemeName: themeName
+		};
+		 }
+
+
+		$.ajax({
+			url: requestURL,
+			type: "POST",
+			async: false,
+			headers: headersData,
+			data: JSON.stringify(Metadata),
+			success: function (data) {
+				if (customThemeTabActive == false) {
+					alert("Theme Applied Successfully.");
+					localStorage.setItem("TitanLanguage_" + _spPageContextInfo.siteId, null);
+	                localStorage.setItem("TitanTheme_" + _spPageContextInfo.siteId+"_"+titanForWork.getQueryStringParameter("CompanyId"), null);
+	                localStorage.setItem("TitanLogo_" + _spPageContextInfo.siteId + "_" + titanForWork.getQueryStringParameter("CompanyId"), null);
+	                localStorage.setItem("TitanNavigation_" + _spPageContextInfo.siteId + "_" + titanForWork.getQueryStringParameter("CompanyId"), null);
+	                 alert("Theme and label has been updated.");
+                     window.location.href=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId=83478";
+					 
+				}
+				dfd.resolve(data);
+			},
+			error: function (error) {
+				alert(JSON.stringify(error));
+				dfd.reject(error);
+			}
+		});
+
+		return dfd.promise();
+	}
+
+	// Unused // 12 Jan 2018
+	function ApplyThemeFromExistingThemes() {
+		$("#currentTab").val("ThemeGallery");
+
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+		var themeName = $("input:radio[name='ThemeGallery']:checked").val();
+
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,Area,FillingType,Value,Orientation&$filter= ThemeName eq '" + themeName + "'";
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				// Delete Existing Company Theme
+
+				var clientContext = new SP.ClientContext.get_current();
+				var oListThemeSettings = clientContext.get_web().get_lists().getByTitle('ThemeSettings');
+
+				var itemCreateInfoThemeSettings = new SP.ListItemCreationInformation();
+				oListItemThemeGallery = oListThemeSettings.addItem(itemCreateInfoThemeSettings);
+
+				$.each(data.d.results, function (i, item) {
+					var themeName = item.ThemeName;
+					var areaValue = item.Area;
+					var fillingTypeValue = item.FillingType;
+					var fillingvalue = item.Value;
+					var orientation = item.Orientation;
+
+					CreateNewThemeFromExistingThemes(clientContext, oListItemThemeGallery, themeName, areaValue, fillingTypeValue, fillingvalue, orientation);
+				})
+
+				ApplyThemeFromThemeGallery();
+			},
+			error: function (error) {
+
+			}
+		});
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////// Show All Themes for Theme Gallery   (Theme Gallery Tab)
+	////////////////////////////////////////////////////////////////////////////////////////////
+
+  
+ 
+function getUserName(logonName) {
+  
+    var item = {
+
+        'logonName': logonName
+
+    }
+    var title='';
+
+    $.ajax({
+
+        url: _spPageContextInfo.siteAbsoluteUrl + '/_api/web/ensureuser',
+
+        type: 'POST',
+
+        async: false,
+
+        contentType: 'application/json;odata=verbose',
+
+        data: JSON.stringify(item),
+
+        headers: {
+
+            'Accept': 'application/json;odata=verbose',
+
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+
+        },
+
+        success: function (data) {
+              
+             title= data.d.Title;
+
+        },
+
+        error: function (data) {
+
+        }
+
+    });
+
+    return title;
+
+}
+
+	 
+
+	// Get Theme Name by Company ID
+	function GetThemeNameByCompany(companyID) {
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('CompanyThemes')/items?$select=ID,CompanyName/ID,ThemeName&$expand=CompanyName&$filter=CompanyName/ID eq " + companyID + "&$top=1";
+
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			async: false,
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				var results = data.d.results;
+				titanThemeName = results[0].ThemeName;
+				
+			},
+			error: function () {
+				alert("Error in Get Theme Name By Company");
+			}
+		});
+	}
+
+	// Get Item ID by Company ID
+	function GetItemIDByCompany(companyID) {
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('CompanyThemes')/items?$select=ID,CompanyName/ID&$expand=CompanyName&$filter=CompanyName/ID eq " + companyID + "&$top=1";
+
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			async: false,
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				var results = data.d.results;
+				if (results != null && results != '') {
+					itemIDGlobal = results[0].ID;
+				}
+			},
+			error: function () {
+				alert("Error in Get ItemID By CompanyID");
+			}
+		});
+	}
+
+
+	 
+function ShowThemesInThemeGallery()
+	{
+		var companyID= titanForWork.getQueryStringParameter('CompanyId');
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,Created,Modified&$filter=Area eq 'PageBackground'&$expand=Editor&$select=Editor/Name&$expand=Author&$select=Author/Name&$OrderBy=IsDefaultTheme desc,Created desc ";			
+		$.ajax({
+			url: requestUri,
+            type: "GET",
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+				var themeGalleryHTML='';
+				themeGalleryHTML+='<table class=\'table\' style=\'font-size:15px\'>';
+				
+				var itemsFound=0;
+				$.each(data.d.results, function (i, item)
+               	{	
+               		var themeName = item.ThemeName;
+               		if(themeName !='' && themeName !=null)
+               		{
+               			itemsFound=1;
+               			var createdBy = getUserName(item.Author.Name);
+	               		var createdDate = new Date(item.Created);
+	               		createdDate = (createdDate.getMonth() + 1) + '/' + createdDate.getDate() + '/' +  createdDate.getFullYear();
+	
+						var modifiedBy = getUserName(item.Editor.Name);
+						var modifiedDate = new Date(item.Modified);
+	               		modifiedDate = (modifiedDate.getMonth() + 1) + '/' + modifiedDate.getDate() + '/' +  modifiedDate.getFullYear();
+	               		var themeDetails=themeName +'#'+createdBy+'#'+createdDate+'#'+modifiedBy+'#'+modifiedDate;
+						
+		               	themeGalleryHTML+='<tr>';
+		               
+						themeGalleryHTML+="<td  class=\"theme_name_left\"><input name=\"ThemeGallery\" title='"+themeName +"' type=\"radio\" value='" +themeName +"'><label style=\"display:none;\" class=\"themeDetails\">"+themeDetails+"</label></td>";
+						themeGalleryHTML+='<td>'+themeName +'</td>';
+						
+		     	 		themeGalleryHTML+='</tr>';
+	     	 		}
+               	})
+               	themeGalleryHTML+='</table>';
+               	
+               	if(itemsFound==1)
+               	{
+               		$("#themeGallery").append(themeGalleryHTML);
+               		
+               		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					////////////////////////////// Show Theme Details in Right Side Panel ///////////////////////////////////////
+					$("input:radio[name='ThemeGallery']").change(function(){
+						var themeDetails = $(this).closest("tr").find("label").html();
+						themeDetails =themeDetails.split('#');
+						$("#ThemeInfo_ThemeName").html(themeDetails[0]);
+						$("#ThemeInfo_CreatedBy").html(themeDetails[1]);
+						$("#ThemeInfo_CreatedDate").html(themeDetails[2]);
+						$("#ThemeInfo_ModifiedBy").html(themeDetails[3]);
+						$("#ThemeInfo_ModifiedDate").html(themeDetails[4]);
+								var themename = themeDetails[0];
+						$("#backgroundColor").spectrum(
+							SpectrumColorCode("#FFFFFF")
+						);
+
+						$("#navigationBar").spectrum(
+							SpectrumColorCode("#FFFFFF")
+						);
+
+						$("#navigationBar_TextColor").spectrum(
+							SpectrumColorCode("#000000")
+						);
+
+						$("#webParts_HeaderBandColor").spectrum(
+							SpectrumColorCode("#E1E1DF")
+						);
+
+						$("#webParts_HeaderTextColor").spectrum(
+							SpectrumColorCode("#000000")
+						);
+
+					    $("#webParts_HeaderIconBackGroundColor").spectrum(
+							SpectrumColorCode("#FFFFFF")
+						);
+
+						$("#emergencyAnnounce_LabelBandColor").spectrum(
+							SpectrumColorCode("#EC0B43")
+						);
+						$("#emergencyAnnounce_LabelTextColor").spectrum(
+							SpectrumColorCode("#FFFFFF")
+						);
+                    	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,ThemeClassName,Area,FillingType,Orientation,Value,Created,Modified&$filter=ThemeName eq '" + themename + "'&$expand=Author&$select=Author/Name&$expand=Editor&$select=Editor/Name";
+
+						$.ajax({
+							url: requestUri,
+							type: "GET",
+							headers: { "ACCEPT": "application/json;odata=verbose" },
+							success: function (data) {
+
+								if (data.d.results.length == 0)			// Checked Default Theme if theme doesn't exist for current company.
+								{
+									$("input:radio[name='ThemeGallery'][value='Default']").prop("checked", "checked");
+								}
+
+								$.each(data.d.results, function (i, item) {
+									////////////////////////// Page Background ///////////////////////////////////////
+									// Apply Theme on Body Background
+
+									var pageBackgroundOption = item.Area;
+									var value = item.Value;
+									var fillingType = item.FillingType;
+									var orientation = item.Orientation;
+
+									// Apply Theme on Page Background (Area = "PageBackground")
+
+									if (pageBackgroundOption == "IconColor") {
+										var ThemeClassName = item.ThemeClassName;
+										if (ThemeClassName == "headicon") {
+
+											$("#webParts_HeaderIconBackGroundColor").spectrum(
+												SpectrumColorCode(value)
+											);
+										}
+										else {
+											$("#webParts_HeaderIconBackGroundColor").spectrum(
+												SpectrumColorCode('#fff')
+											);
+										}
+									}
+
+
+									if (pageBackgroundOption == "PageBackground") {
+										if (fillingType == "BGColour") {
+											var StretchedPicture = document.getElementById("pageBackground_StretchedPictures");
+											StretchedPicture.selectedIndex = 0;
+											var TexturedPicture = document.getElementById("pageBackground_TexturedPictures");
+											TexturedPicture.selectedIndex = 0;
+
+											$("input:radio[name='PageBackground']").eq(0).prop("checked", "unchecked");
+											$("#imagePreviewPageBackground ").empty();
+											$("#imagePreviewPageBackground_Stretched").empty();
+
+											$("#backgroundColor").spectrum(
+												SpectrumColorCode(value)
+											);
+
+
+										}
+										if (fillingType == "TexturedPicture") {
+											var StretchedPicture = document.getElementById("pageBackground_StretchedPictures");
+											StretchedPicture.selectedIndex = 0;
+											$("input:radio[name='PageBackground']").eq(1).prop("checked", "checked");
+											$("#imagePreviewPageBackground ").empty();
+											$("#imagePreviewPageBackground_Stretched").empty();
+											$("#pageBackground_TexturedPictures").val(value);
+											$("#pageBackground_TexturedPictures").trigger("change");
+										}
+										if (fillingType == "StretchedPicture") {
+											var TexturedPicture = document.getElementById("pageBackground_TexturedPictures");
+											TexturedPicture.selectedIndex = 0;
+											$("#imagePreviewPageBackground ").empty();
+											$("input:radio[name='PageBackground']").eq(2).prop("checked", "checked");
+											$("#pageBackground_StretchedPictures").val(value);
+
+											$("#pageBackground_StretchedPictures").trigger("change");
+
+
+
+
+											$("input:radio[name='PageBackground_Image'][value='" + orientation + "']").prop("checked", "checked");
+										}
+										if (item.ThemeName != 'Default Theme') {
+										   
+
+											$("#themeName").val(item.ThemeName);
+											$("input:radio[name='ThemeGallery'][value='" + item.ThemeName  + "']").prop("checked", "checked");
+                                             
+											// Theme Details (showing in Right Side of First Tab)
+											$("#ThemeInfo_ThemeName").html(item.ThemeName);
+
+											// Created Details
+											var createdBy = getUserName(item.Author.Name);
+											var createdDate = new Date(item.Created);
+											createdDate = (createdDate.getMonth() + 1) + '/' + createdDate.getDate() + '/' + createdDate.getFullYear();
+
+											$("#ThemeInfo_CreatedBy").html(createdBy);
+											$("#ThemeInfo_CreatedDate").html(createdDate);
+
+											// Modified Details
+											var modifiedBy = getUserName(item.Editor.Name);
+											var modifiedDate = new Date(item.Modified);
+											modifiedDate = (modifiedDate.getMonth() + 1) + '/' + modifiedDate.getDate() + '/' + modifiedDate.getFullYear();
+
+											$("#ThemeInfo_ModifiedBy").html(modifiedBy);
+											$("#ThemeInfo_ModifiedDate").html(modifiedDate);
+										}
+										else {
+											// Theme Details (showing in Right Side of First Tab)
+											$("#ThemeInfo_ThemeName").html("Default Theme");
+											$("#ThemeInfo_CreatedBy").html("NA");
+											$("#ThemeInfo_CreatedDate").html("NA");
+
+											$("#ThemeInfo_ModifiedBy").html("NA");
+											$("#ThemeInfo_ModifiedDate").html("NA");
+
+											$("input:radio[name='ThemeGallery'][value='Default']").prop("checked", "checked");
+										}
+									}
+
+									////////////////////////// Navigation ///////////////////////////////////////
+									// Apply Theme on Navigation (Area="Navigation")
+									else if (pageBackgroundOption == "Navigation") {
+										if (fillingType == "BGColour") {
+											var StretchedPicture = document.getElementById("navigationBackground_StretchedPictures");
+											StretchedPicture.selectedIndex = 0;
+											var TexturedPicture = document.getElementById("navigationBackground_TexturedPictures");
+											TexturedPicture.selectedIndex = 0;
+
+											$("input:radio[name='NavigationBackground']").eq(0).prop("checked", "checked");
+											$("#imagePreviewNavigationBackground").empty();
+											$("#imagePreviewNavigationBackground_Stretched").empty();
+
+											$("#navigationBar").spectrum(
+												SpectrumColorCode(value)
+											);
+										}
+										else if (fillingType == "TexturedPicture") {
+											var StretchedPicture = document.getElementById("navigationBackground_StretchedPictures");
+											StretchedPicture.selectedIndex = 0;
+											$("#imagePreviewNavigationBackground_Stretched").empty();
+											$("input:radio[name='NavigationBackground']").eq(1).prop("checked", "checked");
+											$("#navigationBackground_TexturedPictures").val(value);
+											$("#navigationBackground_TexturedPictures").trigger("change");
+										}
+										else if (fillingType == "StretchedPicture") {
+											var TexturedPicture = document.getElementById("navigationBackground_TexturedPictures");
+											TexturedPicture.selectedIndex = 0;
+											$("#imagePreviewNavigationBackground").empty();
+											$("input:radio[name='NavigationBackground']").eq(2).prop("checked", "checked");
+											$("#navigationBackground_StretchedPictures").val(value);
+											$("#navigationBackground_StretchedPictures").trigger("change");
+
+											$("input:radio[name='NavigationBackground_Image'][value='" + orientation + "']").prop("checked", "checked");
+										}
+
+									}
+
+									// Apply Theme on Navigation Text	(Area = "NavigationFontText")
+									else if (pageBackgroundOption == "NavigationFontText") {
+										$("#navigationBar_TextColor").spectrum(
+											SpectrumColorCode(value)
+										);
+									}
+
+
+									/////////////////////////////////////////////////////////////////////////
+									////////////////////////// WebParts ///////////////////////////////////////
+									// Apply Theme on Header Band Color	(Area = "WebPartHeaderBandColor")
+									else if (pageBackgroundOption == "WebPartHeaderBandColor") {
+										$("#webParts_HeaderBandColor").spectrum(
+											SpectrumColorCode(value)
+										);
+									}
+									// Apply Theme on Header Text Color	(Area = "WebPartHeaderTextColor")
+									else if (pageBackgroundOption == "WebPartHeaderTextColor") {
+										$("#webParts_HeaderTextColor").spectrum(
+											SpectrumColorCode(value)
+										);
+									}
+ 
+								})
+							},
+							error: function () {
+								alert("Error in Show Existing Theme In Theme Gallery Tab");
+							}
+						});
+
+                   });
+				}
+				else {
+					$("#themeGallery").append("No theme found.");
+				}
+
+				waitingDialog.hide();
+			},
+			error: function () {
+				alert("Error in Show Themes In Theme Gallery");
+			}
+		});
+	}
+
+
+
+    /////////////////////////////////////////////////////////////////////////////
+	/////////////// Show Existing Theme (Theme Gallery Tab)
+	////////////////////////////////////////////////////////////////////////////////////////////
+	function ShowExistingTheme() {
+
+		var themeName = $("input:radio[name='ThemeGallery']:checked").val();
+		//var requestUri=  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,Area,FillingType,Value,Orientation,Company/ID&$expand=Company&$filter=Company/ID eq null and ThemeName eq '" + themeName + "'";
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeClassName,ThemeName,Area,FillingType,Value,Orientation&$filter=ThemeName eq '" + themeName + "'";
+
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				$.each(data.d.results, function (i, item) {
+					////////////////////////// Page Background ///////////////////////////////////////
+					// Apply Theme on Body Background
+					var pageBackgroundOption = item.Area;
+					var value = item.Value;
+					var fillingType = item.FillingType;
+					var orientation = item.Orientation;
+
+					// Apply Theme on Page Background (Area = "PageBackground")
+
+					if (themeName == "Default") {
+						$('.headicon').each(function () {
+							this.style.setProperty('color', '#fff', 'important');
+						});
+					}
+					if (pageBackgroundOption == "IconColor") {
+						var ThemeClassName = item.ThemeClassName;
+						if (ThemeClassName == "headicon") {
+							$('.headicon').each(function () {
+								this.style.setProperty('color', value, 'important');
+							});
+						}
+						else {
+							$('.headicon').each(function () {
+								this.style.setProperty('color', '#fff', 'important');
+							});
+						}
+					}
+					if (pageBackgroundOption == "PageBackground") {
+
+
+
+						if (fillingType == "BGColour") {
+							$('.modal-body').each(function () {
+								this.style.setProperty("background-image", "url('')", "important");
+								this.style.setProperty('background-color', value, 'important');
+							});
+						}
+						else if (fillingType == "TexturedPicture") {
+							$('.modal-body').each(function () {
+								this.style.setProperty("background-image", "url(" + value + ")", "important");
+							});
+						}
+						else if (fillingType == 'StretchedPicture') {
+							// Apply Theme on Body Background (Stretched Picture)
+							$('.modal-body').each(function () {
+								if (orientation == "Original") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+									this.style.setProperty("background-repeat", "no-repeat", "important");
+								}
+								else if (orientation == "Stretched") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+									this.style.setProperty("background-size", "cover", "important");
+								}
+								else if (orientation == "Tiled") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+								}
+							});
+						}
+
+					}
+					////////////////////////// Navigation ///////////////////////////////////////
+					// Apply Theme on Navigation (Area="Navigation")
+					else if (pageBackgroundOption == "Navigation") {
+						if (fillingType == "BGColour") {
+							$('.navbar-default-theme').each(function () {
+								this.style.setProperty("background-image", "url('')", "important");
+								this.style.setProperty('background-color', value, 'important');
+							});
+						}
+						else if (fillingType == "TexturedPicture") {
+							$('.navbar-default-theme').each(function () {
+								this.style.setProperty("background-image", "url(" + value + ")", "important");
+							});
+						}
+						else if (fillingType == 'StretchedPicture') {
+							// Apply Theme on Navigation (Stretched Picture)
+							var orientation = item.Orientation;
+							$('.navbar-default-theme').each(function () {
+								if (orientation == "Original") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+									this.style.setProperty("background-repeat", "no-repeat", "important");
+								}
+								else if (orientation == "Stretched") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+									this.style.setProperty("background-size", "cover", "important");
+								}
+								else if (orientation == "Tiled") {
+									this.style.setProperty("background-image", "url(" + value + ")", "important");
+								}
+							});
+						}
+					}
+
+					// Apply Theme on Navigation Text	(Area = "NavigationFontText")
+					else if (pageBackgroundOption == "NavigationFontText") {
+						$('.navigation-theme .navbar-nav a').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+					}
+
+
+					/////////////////////////////////////////////////////////////////////////
+					////////////////////////// WebParts ///////////////////////////////////////
+					// Apply Theme on Header Band Color	(Area = "WebPartHeaderBandColor")
+					else if (pageBackgroundOption == "WebPartHeaderBandColor") {
+						$('.panel-heading.panel-head-4.panel-head-new').each(function () { //changed '.modal-body,.panel-head-4' class with '.panel-heading.panel-head-4.panel-head-new'
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					// Apply Theme on Header Color Text	(Area = "WebPartHeaderTextColor")
+					else if (pageBackgroundOption == "WebPartHeaderTextColor") {
+						$('.panel-heading.panel-head-4.panel-head-new .h4-color').each(function () {//added new class by khadar 'panel-heading,panel-head-new'
+							this.style.setProperty('color', value, 'important');
+						});
+
+					}
+
+					 
+					// Apply Theme on WebPart Content Text Color (Area = "WebPartContentTextColor")--
+					else if (pageBackgroundOption == "WebPartContentTextColor") {
+						$('.modal-body .row').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel.panel-default.panel-default-new h4').each(function () { //replaced these classes '.modal-body h4' with '.panel .panel-default .panel-default-new'
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel.panel-default .panel-body.panel-height-new-2  h4.event-text-head-new').each(function () { //by khadar
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel.panel-default .panel-body.panel-height-new-2  div#carousel_spot .media-body h4.media-heading').each(function () { //by khadar
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel.panel-default .panel-body.panel-height-new-2  div#carousel_spot .media-body p').each(function () { //by khadar
+							this.style.setProperty('color', value, 'important');
+						});
+
+					}
+
+
+					////////////////////////// Emergency Annoucements ///////////////////////////////////////
+					// Apply Theme on Content Background Color	(Area = "EmergencyMessageBackground")
+					else if (pageBackgroundOption == "EmergencyMessageBackground") {
+						$('.mainContent .ticker-theme').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+
+					// Apply Theme on Content Text Color 	(Area = "EmergencyMessageColor")
+					else if (pageBackgroundOption == "EmergencyMessageColor") {
+						$('.mainContent .ticker-container ul p').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+					}
+
+					// Apply Theme for Content Font Size  (Area="EmergencyAnnoucementFontSize")
+					else if (pageBackgroundOption == "EmergencyAnnoucementFontSize") {
+						$('.mainContent .ticker-container ul p').each(function () {
+							this.style.setProperty('font-size', value, 'important');
+						});
+					}
+				})
+			},
+			error: function () {
+				alert("Error in Show Existing Theme In Theme Gallery Tab");
+			}
+		});
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////// Create New Theme for Current Company /////////////////////////////////
+	function CreateNewThemeFromExistingThemes(clientContext, oListItemThemeGallery, themeName, areaValue, fillingTypeValue, fillingValue, orientationValue) {
+		oListItemThemeGallery.set_item('Company', $('#ddlCompany :selected').val());
+		oListItemThemeGallery.update();
+		clientContext.load(oListItemThemeGallery);
+
+		oListItemThemeGallery.set_item('ThemeName', themeName);
+		oListItemThemeGallery.update();
+		clientContext.load(oListItemThemeGallery);
+
+		oListItemThemeGallery.set_item('Area', areaValue);
+		oListItemThemeGallery.update();
+		clientContext.load(oListItemThemeGallery);
+
+		oListItemThemeGallery.set_item('FillingType', fillingTypeValue);
+		oListItemThemeGallery.update();
+		clientContext.load(oListItemThemeGallery);
+
+		oListItemThemeGallery.set_item('Value', fillingValue);
+		oListItemThemeGallery.update();
+		clientContext.load(oListItemThemeGallery);
+
+		if (orientationValue != '') {
+			oListItemThemeGallery.set_item('Orientation', orientationValue);
+			oListItemThemeGallery.update();
+			clientContext.load(oListItemThemeGallery);
+		}
+
+		clientContext.executeQueryAsync(Function.createDelegate(this, this.onSucceeded_CreateNewThemeFromExistingThemes), Function.createDelegate(this, this.onQueryFailed_CreateNewThemeFromExistingThemes));
+	}
+
+	function onSucceeded_CreateNewThemeFromExistingThemes() {
+		//alert('Theme Created Successfully!');
+
+
+	}
+	function onQueryFailed_CreateNewThemeFromExistingThemes(sender, args) {
+		alert('Request failed for CreateNewThemeFromExistingTheme. ' + args.get_message() + '\n' + args.get_stackTrace());
+	}
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////// Apply Theme on Titan Portal ////////////////////////////////////
+	function ApplyThemeFromThemeGallery() {
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemeSettings')/items?$select=ID,ThemeName,ThemeClassName,Area,FillingType,Value,Company/ID&$expand=Company&$filter= Company/ID eq '" + companyID + "'";
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				$.each(data.d.results, function (i, item) {
+					////////////////////////// Page Background ///////////////////////////////////////
+					var value = item.Value;
+					if (item.Area == "PageBackground" && item.FillingType == 'BGColour') {
+
+						// Apply Theme on Body Background (Solid Color)
+						$('#s4-bodyContainer').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					else if (item.Area == "PageBackground" && item.FillingType == 'TexturedPicture') {
+						// Apply Theme on Body Background (Textured Picture)
+						$('#s4-bodyContainer').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+							//this.style.setProperty('background-image', 'url("https://adaptindia.sharepoint.com/sites/TITAN2-DEV/ThemePictures/texture14.jpg")' , 'important');
+						});
+					}
+
+					////////////////////////// Navigation ///////////////////////////////////////
+					else if (item.Area == "Navigation" && item.FillingType == 'BGColour') {
+						// Apply Theme on Navigation
+						$('.navbar-default').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+
+						$('nav').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+
+						// Apply Theme on Navigations
+						$('nav .dropdown-menu').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					else if (item.Area == "Navigation" && item.FillingType == 'TexturedPicture') {
+						// Apply Theme on Navigation
+						$('.navbar-default').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+						});
+
+						$('nav').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+						});
+
+						// Apply Theme on Navigations
+						$('nav .dropdown-menu').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+						});
+
+					}
+					else if (item.Area == "NavigationFontText" && item.FillingType == 'BGColour') {
+						// Apply Theme on Navigation Text
+						$('.navbar-nav a').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+					}
+
+					////////////////////////// WebParts ///////////////////////////////////////
+					else if (item.Area == "WebPartHeaderBandColor" && item.FillingType == 'BGColour') {
+
+						$('.panel-head-4').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					else if (item.Area == "WebPartHeaderTextColor" && item.FillingType == 'BGColour') {
+
+						// Apply Theme on Font Text Color (Headers)
+						$('.panel-head-4 .h4-color').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+					}
+					else if (item.Area == "WebPartContentBackground" && item.FillingType == 'BGColour') {
+
+						// Apply Theme on WebPart Content Background
+						$('.panel-default').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+						$('#EmplyoeeAwordHTML').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					else if (item.Area == "WebPartContentBackground" && item.FillingType == 'TexturedPicture') {
+
+						// Apply Theme on WebPart Content Background
+						$('.panel-default').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+						});
+						$('#EmplyoeeAwordHTML').each(function () {
+							this.style.setProperty("background-image", "url(" + value + ")", "important");
+						});
+					}
+					else if (item.Area == "WebPartContentTextColor" && item.FillingType == 'BGColour') {
+
+						// Apply Theme on Font Text Color (WebPart Contents Fonts)--
+						$('#DeltaPlaceHolderMain .panel-body .row').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel-body .row a').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+						$('.panel-body .row .col-xs-12 div:last').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+
+						$('.panel-body h4').each(function () {
+							this.style.setProperty('color', value, 'important');
+						});
+
+
+					}
+					///////////////////////// Emergency Announcements ////////////////////////////
+					else if (item.Area == "EmergencyMessageBackground" && item.FillingType == 'BGColour') {
+						// Apply Theme on Emerg. Message Background
+						$('#tickerDiv').each(function () {
+							this.style.setProperty('background-color', value, 'important');
+						});
+					}
+					else if (item.Area == "EmergencyAnnoucementFontSize" && item.FillingType == 'FontSize') {
+						// Apply Theme for Emerg. Messages
+						$('#emergencyAnnouncment marquee').each(function () {
+							this.style.setProperty('font-size', value, 'important');
+						});
+					}
+				})
+			}
+		})
+
+		waitingDialog.hide();
+		alert("Theme Applied Successfully. Close this page to get the theme effect.");
+		//location.reload();
+	}
+
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////// Delete Theme Before Inserting new one theme ////////////////////////////
+	function DeleteThemeSettings_ThemeGallery() {
+		var companyID = titanForWork.getQueryStringParameter('CompanyId');
+
+		var clientContext = new SP.ClientContext();
+		spList = clientContext.get_web().get_lists().getByTitle('ThemeSettings');
+		var camlQuery = new SP.CamlQuery();
+
+		camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'Company\' LookupId=\'True\' /><Value Type=\'Lookup\'>' + companyID + '</Value></Eq></Where></Query></View>');
+
+
+		//The query will return a collection of items matching your conditions
+		this.collListItemDeleteThemeGallery = spList.getItems(camlQuery);
+		clientContext.load(collListItemDeleteThemeGallery);
+
+		//Execute the query
+		clientContext.executeQueryAsync(function () {
+			var itemCount = collListItemDeleteThemeGallery.get_count();
+			//For each list item in the collection, mark it to be deleted
+			for (var i = itemCount - 1; i >= 0; i--) {
+				var oListItem = collListItemDeleteThemeGallery.itemAt(i);
+				oListItem.deleteObject();
+			};
+
+			//Execute the delete operation
+			clientContext.executeQueryAsync(deleteThemeSettings_ThemeGallerySucceeded, deleteThemeSettings_ThemeGalleryFailed);
+		},
+			function () {
+				//alert('error');
+			});
+	}
+
+	function deleteThemeSettings_ThemeGallerySucceeded() {
+		ApplyThemeFromExistingThemes();
+	}
+	function deleteThemeSettings_ThemeGalleryFailed() {
+		//alert("Item deleted failed.");
+	}
+
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////// Delete Theme ///////////////////////////////////////////////////
+	function DeleteTheme() {
+		var clientContext = new SP.ClientContext();
+		spList = clientContext.get_web().get_lists().getByTitle('ThemeSettings');
+
+		var checkedThemeName = $("input[name='ThemeGallery']:checked").val();
+
+		var camlQuery = new SP.CamlQuery();
+		camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'ThemeName\' /><Value Type=\'Text\'>' + checkedThemeName + '</Value></Eq></Where></Query></View>');
+
+		//The query will return a collection of items matching your conditions
+		this.collListItemDeleteAppliedTheme = spList.getItems(camlQuery);
+		clientContext.load(collListItemDeleteAppliedTheme);
+
+		//Execute the query
+		clientContext.executeQueryAsync(function () {
+			var itemCount = collListItemDeleteAppliedTheme.get_count();
+			//For each list item in the collection, mark it to be deleted
+			for (var i = itemCount - 1; i >= 0; i--) {
+				var oListItem = collListItemDeleteAppliedTheme.itemAt(i);
+				oListItem.deleteObject();
+			};
+
+			//Execute the delete operation
+			clientContext.executeQueryAsync(deleteThemeSucceeded, deleteThemeFailed);
+		},
+			function () {
+				//alert('error');
+			});
+	}
+
+
+	function deleteThemeSucceeded() {
+		alert("Theme deleted successfully.");
+
+		window.location.reload();
+	}
+	function deleteThemeFailed() {
+		//alert("Item deleted failed.");
+	}
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////// Custom Theme Panel (Second Tab) ////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	 
+
+
+	//////////////////////////////////////////////////////////////////////////
+	///////////////////// Insert Theme Details ///////////////////////////////
+	//////////////////////////////////////////////////////////////////////////
+	function CreateTheme() {
+		var clientContext = new SP.ClientContext.get_current();
+		var oList = clientContext.get_web().get_lists().getByTitle('ThemeSettings');
+
+		var itemCreateInfo = new SP.ListItemCreationInformation();
+		this.oListItem = oList.addItem(itemCreateInfo);
+
+		var backgroundColorTheme, navigationBarTheme, navigationBar_TextColorTheme, webParts_ContentIconTextColorTheme, webParts_HeaderBandColorTheme,
+			webParts_HeaderFontTextColorTheme,emergencyAnnounce_LabelTextColorTheme,
+			emergencyAnnounce_MessageBackgroundTheme, emergencyAnnounce_MessageColorTheme;
+
+		/////////////////////// Background Color /////////////////////
+		var pageBackgroundOption = $("input:radio[name='PageBackground']:checked").val();
+		if (pageBackgroundOption == "SolidColor") {
+
+			var backgroundColor = $(".divBackgroundColor .sp-preview-inner").attr('style');
+			if (backgroundColor.indexOf(':') > 0) {
+				//backgroundColorTheme = backgroundColor.split(':')[1];
+				//backgroundColorTheme = backgroundColorTheme.replace(';', ' ');
+
+				backgroundColorTheme = backgroundColor.substring(backgroundColor.indexOf(':') + 1, backgroundColor.indexOf(';'));
+				BatchInsertOperation(clientContext, 'Area', 'PageBackground', 'FillingType', 'BGColour', 'Value', backgroundColorTheme, '', '');
+			}
+		}
+		else if (pageBackgroundOption == "TexturedPicture") {
+			var pictureURL = $("#pageBackground_TexturedPictures").val();
+			BatchInsertOperation(clientContext, 'Area', 'PageBackground', 'FillingType', 'TexturedPicture', 'Value', pictureURL, '', '');
+		}
+		else if (pageBackgroundOption == "StretchedPicture") {
+			var orientationValue = $("input:radio[name='PageBackground_Image']:checked").val();
+
+			var pictureURL = $("#pageBackground_StretchedPictures").val();
+			BatchInsertOperation(clientContext, 'Area', 'PageBackground', 'FillingType', 'StretchedPicture', 'Value', pictureURL, 'Orientation', orientationValue);
+		}
+
+
+
+		///////////////////////// Navigation /////////////////////////
+		// Navigation Background
+		var navigationBackgroundOption = $("input:radio[name='NavigationBackground']:checked").val();
+		if (navigationBackgroundOption == "SolidColor") {
+			var navigationBar = $(".divNavigationBar .sp-preview-inner").attr('style');
+			if (navigationBar.indexOf(':') > 0) {
+				//navigationBarTheme = navigationBar.split(':')[1];
+				//navigationBarTheme = navigationBarTheme.replace(';', ' ');
+				navigationBarTheme = navigationBar.substring(navigationBar.indexOf(':') + 1, navigationBar.indexOf(';'));
+
+				BatchInsertOperation(clientContext, 'Area', 'Navigation', 'FillingType', 'BGColour', 'Value', navigationBarTheme, '', '');
+			}
+		}
+		else if (navigationBackgroundOption == "TexturedPicture") {
+			var pictureURL = $("#navigationBackground_TexturedPictures").val();
+			BatchInsertOperation(clientContext, 'Area', 'Navigation', 'FillingType', 'TexturedPicture', 'Value', pictureURL, '', '');
+		}
+		else if (navigationBackgroundOption == "StretchedPicture") {
+			var orientationValue = $("input:radio[name='NavigationBackground_Image']:checked").val();
+
+			var pictureURL = $("#navigationBackground_StretchedPictures").val();
+			BatchInsertOperation(clientContext, 'Area', 'Navigation', 'FillingType', 'StretchedPicture', 'Value', pictureURL, 'Orientation', orientationValue);
+		}
+
+
+		var navigationBar_TextColor = $(".divNavigationBar_TextColor .sp-preview-inner").attr('style');
+		if (navigationBar_TextColor.indexOf(':') > 0) {
+			 
+
+			navigationBar_TextColorTheme = navigationBar_TextColor.substring(navigationBar_TextColor.indexOf(':') + 1, navigationBar_TextColor.indexOf(';'));
+			BatchInsertOperation(clientContext, 'Area', 'NavigationFontText', 'FillingType', 'BGColour', 'Value', navigationBar_TextColorTheme, '', '');
+		}
+
+
+		////////////////////////////// WebParts /////////////////////////////////////////////////
+		// Apply Theme on Header Band Color
+		var webParts_HeaderBandColor = $(".divWebParts_HeaderBandColor .sp-preview-inner").attr('style');
+		if (webParts_HeaderBandColor.indexOf(':') > 0) {
+			 
+			webParts_HeaderBandColorTheme = webParts_HeaderBandColor.substring(webParts_HeaderBandColor.indexOf(':') + 1, webParts_HeaderBandColor.indexOf(';'));
+
+			BatchInsertOperation(clientContext, 'Area', 'WebPartHeaderBandColor', 'FillingType', 'BGColour', 'Value', webParts_HeaderBandColorTheme, '', '');
+		}
+
+		// Apply Theme on Font Text Color (Headers)
+		var webParts_HeaderFontTextColor = $(".divWebParts_HeaderTextColor .sp-preview-inner").attr('style');
+		if (webParts_HeaderFontTextColor.indexOf(':') > 0) {
+		 
+			webParts_HeaderFontTextColorTheme = webParts_HeaderFontTextColor.substring(webParts_HeaderFontTextColor.indexOf(':') + 1, webParts_HeaderFontTextColor.indexOf(';'));
+
+			BatchInsertOperation(clientContext, 'Area', 'WebPartHeaderTextColor', 'FillingType', 'BGColour', 'Value', webParts_HeaderFontTextColorTheme, '', '');
+		}
+ 
+
+		// Apply Theme on Font Text Color (WebPart Contents Fonts) icon color
+		 var webParts_ContentIconTextColor = $(".divWebParts_IconBackGroundColor .sp-preview-inner").attr('style');
+		if (webParts_ContentIconTextColor.indexOf(':') > 0) {
+			 
+			webParts_ContentIconTextColorTheme = webParts_ContentIconTextColor.substring(webParts_ContentIconTextColor.indexOf(':') + 1, webParts_ContentIconTextColor.indexOf(';'));
+			BatchInsertOperation(clientContext, 'Area', 'IconColor', 'FillingType', 'BGColour', 'Value', webParts_ContentIconTextColorTheme, 'ThemeClassName', 'headicon');
+		} 
+ 
+		waitingDialog.hide();
+		$("#themeName").val('');
+ 
+		alert('Theme Created and Applied Successfully.');
+		localStorage.setItem("TitanLanguage_" + _spPageContextInfo.siteId, null);
+	    localStorage.setItem("TitanTheme_" + _spPageContextInfo.siteId+"_"+titanForWork.getQueryStringParameter("CompanyId"), null);
+	    localStorage.setItem("TitanLogo_" + _spPageContextInfo.siteId + "_" + titanForWork.getQueryStringParameter("CompanyId"), null);
+	    localStorage.setItem("TitanNavigation_" + _spPageContextInfo.siteId + "_" + titanForWork.getQueryStringParameter("CompanyId"), null);
+	    alert("Theme and label has been updated.");
+        window.location.href=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId=83478";
+					 
+
+	}
+
+
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	///////////////////// EP#2. Delete Theme Before Inserting new one theme ////////////////////////////
+	function DeleteThemeSettings_CustomTheme() {
+		var clientContext = new SP.ClientContext();
+		spList = clientContext.get_web().get_lists().getByTitle('ThemeSettings');
+
+		var camlQuery = new SP.CamlQuery();
+
+		camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'ThemeName\' /><Value Type=\'Text\'>' + $("#themeName").val() + '</Value></Eq></Where></Query></View>');
+
+		//The query will return a collection of items matching your conditions
+		this.collListItemDelete = spList.getItems(camlQuery);
+		clientContext.load(collListItemDelete);
+
+		//Execute the query
+		clientContext.executeQueryAsync(function () {
+			var itemCount = collListItemDelete.get_count();
+			//For each list item in the collection, mark it to be deleted
+			for (var i = itemCount - 1; i >= 0; i--) {
+				var oListItem = collListItemDelete.itemAt(i);
+				oListItem.deleteObject();
+			};
+
+			//Execute the delete operation
+			clientContext.executeQueryAsync(deleteThemeSettings_CustomThemeSucceeded, deleteThemeSettings_CustomThemeFailed);
+		},
+			function () {
+				//alert('error');
+			});
+	}
+
+
+	function deleteThemeSettings_CustomThemeSucceeded() {
+		CreateTheme();   	 // Create New Theme after Deleting Previous Theme.
+	}
+	function deleteThemeSettings_CustomThemeFailed() {
+		//alert("Item deleted failed.");
+	}
+
+	function BatchInsertOperation(clientContext, columnName_Area, areaValue, columnName_FillingType, fillingTypeValue, columnName_FillingValue, fillingValue, columnName_Orientation, orientationValue) {
+		oListItem.set_item('ThemeName', $("#themeName").val());
+		oListItem.update();
+		clientContext.load(oListItem);
+
+		oListItem.set_item(columnName_Area, areaValue);
+		oListItem.update();
+		clientContext.load(oListItem);
+
+		oListItem.set_item(columnName_FillingType, fillingTypeValue);
+		oListItem.update();
+		clientContext.load(oListItem);
+
+		oListItem.set_item(columnName_FillingValue, fillingValue);
+		oListItem.update();
+		clientContext.load(oListItem);
+
+		if (orientationValue != '') {
+			oListItem.set_item(columnName_Orientation, orientationValue);
+			oListItem.update();
+			clientContext.load(oListItem);
+		}
+
+		clientContext.executeQueryAsync(Function.createDelegate(this, this.onSucceeded_InsertThemeDetails), Function.createDelegate(this, this.onQueryFailed_InsertThemeDetails));
+	}
+	function onSucceeded_InsertThemeDetails() {
+		//alert('Theme Created Successfully!');
+	}
+	function onQueryFailed_InsertThemeDetails(sender, args) {
+		alert('Request failed for InsertThemeDetails. ' + args.get_message() + '\n' + args.get_stackTrace());
+	}
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////// Custom Theme Preview on Titan Portal
+	////////////////////////////////////////////////////////////////////////////////////////////
+	function ThemePrview() {
+		////////////////////////// Page Background ///////////////////////////////////////
+		// Apply Theme on Body Background
+		var pageBackgroundOption = $("input:radio[name='PageBackground']:checked").val();
+
+		if (pageBackgroundOption == "SolidColor") {
+			var backgroundColor = $(".divBackgroundColor .sp-preview-inner").attr('style');
+			if (backgroundColor.indexOf(':') > 0) {
+				var backgroundColorTheme = backgroundColor.split(':')[1];
+				backgroundColorTheme = backgroundColorTheme.replace(';', ' ');
+				$('.modal-body').each(function () {
+					this.style.setProperty("background-image", "url('')", "important");
+
+					this.style.setProperty('background-color', backgroundColorTheme, 'important');
+				});
+			}
+		}
+		else if (pageBackgroundOption == "TexturedPicture") {
+			var pictureURL = $("#pageBackground_TexturedPictures").val();
+
+			$('.modal-body').each(function () {
+				this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+			});
+		}
+		else if (pageBackgroundOption == 'StretchedPicture') {
+			// Apply Theme on Body Background (Stretched Picture)
+			var pictureURL = $("#pageBackground_StretchedPictures").val();
+			var orientation = $("input:radio[name='PageBackground_Image']:checked").val();
+
+			$('.modal-body').each(function () {
+				if (orientation == "Original") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+					this.style.setProperty("background-repeat", "no-repeat", "important");
+				}
+				else if (orientation == "Stretched") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+					this.style.setProperty("background-size", "cover", "important");
+				}
+				else if (orientation == "Tiled") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+				}
+			});
+		}
+
+
+		////////////////////////// Navigation ///////////////////////////////////////
+		// Apply Theme on Navigation
+		var navigationBackgroundOption = $("input:radio[name='NavigationBackground']:checked").val();
+		if (navigationBackgroundOption == "SolidColor") {
+			var navigationBar = $(".divNavigationBar .sp-preview-inner").attr('style');
+			if (navigationBar.indexOf(':') > 0) {
+				var navigationBarTheme = navigationBar.split(':')[1];
+				navigationBarTheme = navigationBarTheme.replace(';', ' ');
+				$('.navbar-default-theme').each(function () {
+					this.style.setProperty("background-image", "url('')", "important");
+					this.style.setProperty('background-color', navigationBarTheme, 'important');
+				});
+			}
+		}
+		else if (navigationBackgroundOption == "TexturedPicture") {
+			var pictureURL = $("#navigationBackground_TexturedPictures").val();
+
+			$('.navbar-default-theme').each(function () {
+				this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+			});
+		}
+		else if (navigationBackgroundOption == 'StretchedPicture') {
+			// Apply Theme on Navigation (Stretched Picture)
+			var pictureURL = $("#navigationBackground_StretchedPictures").val();
+			var orientation = $("input:radio[name='NavigationBackground_Image']:checked").val();
+			$('.navbar-default-theme').each(function () {
+				if (orientation == "Original") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+					this.style.setProperty("background-repeat", "no-repeat", "important");
+				}
+				else if (orientation == "Stretched") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+					this.style.setProperty("background-size", "cover", "important");
+				}
+				else if (orientation == "Tiled") {
+					this.style.setProperty("background-image", "url(" + pictureURL + ")", "important");
+				}
+			});
+		}
+
+		// Apply Theme on Navigation Text
+		var navigationBar_TextColor = $(".divNavigationBar_TextColor .sp-preview-inner").attr('style');
+		if (navigationBar_TextColor.indexOf(':') > 0) {
+			var navigationBar_TextColorTheme = navigationBar_TextColor.split(':')[1];
+			navigationBar_TextColorTheme = navigationBar_TextColorTheme.replace(';', ' ');
+			$('.navigation-theme .navbar-nav a').each(function () {
+				this.style.setProperty('color', navigationBar_TextColorTheme, 'important');
+			});
+		}
+
+
+
+		////////////////////////// WebParts ///////////////////////////////////////
+		// Apply Theme on Header Band Color
+		var webParts_HeaderBandColor = $(".divWebParts_HeaderBandColor .sp-preview-inner").attr('style');
+		if (webParts_HeaderBandColor.indexOf(':') > 0) {
+			var webParts_HeaderBandColorTheme = webParts_HeaderBandColor.split(':')[1];
+			webParts_HeaderBandColorTheme = webParts_HeaderBandColorTheme.replace(';', ' ');
+			$('.panel-heading.panel-head-4.panel-head-new').each(function () { //replacing class'.modal-body .panel-head-4' with'.panel-heading.panel-head-4.panel-head-new' by khadar
+				this.style.setProperty('background-color', webParts_HeaderBandColorTheme, 'important');
+			});
+		}
+
+		// Apply Theme on Font Text Color (Headers)
+		var webParts_HeaderFontTextColor = $(".divWebParts_HeaderTextColor .sp-preview-inner").attr('style');
+		if (webParts_HeaderFontTextColor.indexOf(':') > 0) {
+			var webParts_HeaderFontTextColorTheme = webParts_HeaderFontTextColor.split(':')[1];
+			webParts_HeaderFontTextColorTheme = webParts_HeaderFontTextColorTheme.replace(';', ' ');
+			$('.panel-head-4 .h4-color').each(function () {
+				this.style.setProperty('color', webParts_HeaderFontTextColorTheme, 'important');
+			});
+		}
+
+		// Apply Theme on Font Text Color (WebPart Contents Fonts) icon color
+
+		var webParts_ContentIconTextColor = $(".divWebParts_IconBackGroundColor .sp-preview-inner").attr('style');
+		if (webParts_ContentIconTextColor.indexOf(':') > 0) {
+			var webParts_ContentIconTextColorTheme = webParts_ContentIconTextColor.split(':')[1];
+			webParts_ContentIconTextColorTheme = webParts_ContentIconTextColorTheme.replace(';', ' ');
+			$('.headicon').each(function () {
+				this.style.setProperty('color', webParts_ContentIconTextColorTheme, 'important');
+			});
+		}
+	}
+
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////// Bind Textured Pictures //////////////////////////////////////////
+	function BindTexturedPictures() {
+		var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getByTitle('ThemePictures')/items?$select=ID,LinkFilename,ThemeType&$orderby=ID desc&$top=1000";
+
+		$.ajax({
+			url: requestUri,
+			type: "GET",
+			headers: { "ACCEPT": "application/json;odata=verbose" },
+			success: function (data) {
+				var dropdownHTML_Texture = '', dropdownHTML_Image = '', pictureLibrary = '', dropdownHTML_OccasionWebPart = '';
+				var siteURL = _spPageContextInfo.webAbsoluteUrl + "/ThemePictures/";
+				$.each(data.d.results, function (i, item) {
+
+					if (item.ThemeType == "Texture") {
+						pictureLibrary = siteURL + item.LinkFilename;
+						dropdownHTML_Texture += "<option value=" + pictureLibrary + ">" + item.LinkFilename + "</option>";
+
+						pictureLibrary = '';
+					}
+					else if (item.ThemeType == "Image") {
+						pictureLibrary = siteURL + item.LinkFilename;
+						dropdownHTML_Image += "<option value=" + pictureLibrary + ">" + item.LinkFilename + "</option>";
+
+						pictureLibrary = '';
+					}
+					else if (item.ThemeType == "Occasion WebPart") {
+						pictureLibrary = siteURL + item.LinkFilename;
+						dropdownHTML_OccasionWebPart += "<option value=" + pictureLibrary + ">" + item.LinkFilename + "</option>";
+
+						pictureLibrary = '';
+					}
+				})
+
+				$("#navigationBackground_TexturedPictures").append(dropdownHTML_Texture);		//	Navigation Background
+				$("#pageBackground_TexturedPictures").append(dropdownHTML_Texture);				//  Page Background (Textured)
+				//$("#webPartBackground_TexturedPictures").append(dropdownHTML_Texture);			//  WebPart Background
+
+				$("#pageBackground_StretchedPictures").append(dropdownHTML_Image);					//  Page Background (Stretched)
+				$("#navigationBackground_StretchedPictures").append(dropdownHTML_Image);			//  Page Background (Stretched)
+
+				/**	$("#occasionWebPartBackgroundPicture").append(dropdownHTML_OccasionWebPart);**/		// Occasion WebPart
+
+				// Page Background
+				$("#pageBackground_TexturedPictures").change(function () {
+					$("#imagePreviewPageBackground").empty();
+					if ($(this).val() != 0) {
+						var StretchedPicture = document.getElementById("pageBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						$("#imagePreviewPageBackground_Stretched").empty();
+						$("input:radio[name='PageBackground']").eq(1).prop("checked", "checked");
+
+						$("#imagePreviewPageBackground").append("<img src=" + $(this).val() + " width=\"45\" height=\"45\">");
+					}
+				});
+
+				// Navigation Background
+				$("#navigationBackground_TexturedPictures").change(function () {
+					$("#imagePreviewNavigationBackground").empty();
+					if ($(this).val() != 0) {
+						var StretchedPicture = document.getElementById("navigationBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						$("#imagePreviewNavigationBackground_Stretched").empty();
+						$("input:radio[name='NavigationBackground']").eq(1).prop("checked", "checked");
+						$("#imagePreviewNavigationBackground").append("<img src=" + $(this).val() + " width=\"45\" height=\"45\">");
+					}
+				});
+
+				 
+
+				// Page Background (Stretched)
+				$("#pageBackground_StretchedPictures").change(function () {
+					var Picture = $('#pageBackground_StretchedPictures');
+					Picture.attr('src', "");
+
+					$("#imagePreviewPageBackground_Stretched").empty();
+					if ($(this).val() != 0) {
+						var TexturedPicture = document.getElementById("pageBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+						$("#imagePreviewPageBackground").empty();
+						$("input:radio[name='PageBackground']").eq(2).prop("checked", "checked");
+
+						$("#imagePreviewPageBackground_Stretched").append("<img src=" + $(this).val() + " width=\"45\" height=\"45\">");
+					}
+				});
+				// Navigation Background (Stretched)
+				$("#navigationBackground_StretchedPictures").change(function () {
+					$("#imagePreviewNavigationBackground_Stretched").empty();
+					if ($(this).val() != 0) {
+						var TexturedPicture = document.getElementById("navigationBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+						$("#imagePreviewNavigationBackground").empty();
+						$("input:radio[name='NavigationBackground']").eq(2).prop("checked", "checked");
+
+						$("#imagePreviewNavigationBackground_Stretched").append("<img src=" + $(this).val() + " width=\"45\" height=\"45\">");
+					}
+				});
+				$("#rbutton").change(function () {
+
+					if ($("input:radio[name='PageBackground']").eq(0).prop("checked", "checked")) {
+						var StretchedPicture = document.getElementById("pageBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						var TexturedPicture = document.getElementById("pageBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+
+
+						$("#imagePreviewPageBackground ").empty();
+						$("#imagePreviewPageBackground_Stretched").empty();
+					}
+
+				});
+
+				$("#ptexturebutton").change(function () {
+					if ($("input:radio[name='PageBackground']").eq(1).prop("checked", "checked")) {
+						var StretchedPicture = document.getElementById("pageBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						$("#imagePreviewPageBackground_Stretched").empty();
+					}
+
+				});
+				$("#pStretchedbutton").change(function () {
+					if ($("input:radio[name='PageBackground']").eq(2).prop("checked", "checked")) {
+						var TexturedPicture = document.getElementById("pageBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+						$("#imagePreviewPageBackground ").empty();
+					}
+
+				});
+				$("#nbutton").change(function () {
+					if ($("input:radio[name='NavigationBackground']").eq(0).prop("checked", "checked")) {
+						var StretchedPicture = document.getElementById("navigationBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						var TexturedPicture = document.getElementById("navigationBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+						$("#imagePreviewNavigationBackground").empty();
+						$("#imagePreviewNavigationBackground_Stretched").empty();
+					}
+
+				});
+				$("#ntexturebutton").change(function () {
+					if ($("input:radio[name='NavigationBackground']").eq(1).prop("checked", "checked")) {
+						var StretchedPicture = document.getElementById("navigationBackground_StretchedPictures");
+						StretchedPicture.selectedIndex = 0;
+						$("#imagePreviewNavigationBackground_Stretched").empty();
+					}
+
+				});
+				$("#nStretchedbutton").change(function () {
+					if ($("input:radio[name='NavigationBackground']").eq(2).prop("checked", "checked")) {
+
+						var TexturedPicture = document.getElementById("navigationBackground_TexturedPictures");
+						TexturedPicture.selectedIndex = 0;
+
+						$("#imagePreviewNavigationBackground").empty();
+					}
+				});
+				 
+             },
+			error: function () {
+				alert("Error in Bind Textured Pictures for Page Background.");
+			}
+		});
+	}
+	
+//Popup for Images ADD coding  ADDED By Rahul Rana on 24/08/20 
+	
+function GetAllImages()
+{	
+	 
+	   $("#blah1").attr("src", "");
+	   $("#fileupload1").val('');
+     
+	var Ownurl="";	
+    Ownurl= _spPageContextInfo.webAbsoluteUrl + "/_api/web/Lists/GetByTitle('ThemePictures')/Items?$select=ID,FileRef,ThemeType,LinkFilename,Title,AttachmentFiles,EncodedAbsThumbnailUrl&$orderby=ID desc";
+ 
+	$.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+              
+            var items = data.d.results;          
+            
+            var tableItemsHTML = "";           
+			for (var i = 0; i < items.length; i++) 
+            {
+           	 	var itemId = items[i].ID;                		
+				var Title= items[i]["LinkFilename"];				
+				var ThemeType= items[i]["ThemeType"];
+		         
+
+				
+			 			
+                     //<a class="btn btn-outline-primary btn-xs my_announce_view_icon" style="min-width:30px !important;" href="#" data-toggle="modal" data-target="#myModal" onclick="ShowdatainModel(456)"><i class="fa fa-eye fa-lg" aria-hidden="true"></i></a> 
+                tableItemsHTML += "<tr><td>" + Title+ "</td><td>" + ThemeType+ "</td>";
+                tableItemsHTML +="<td style='text-align:center;'>";
+                tableItemsHTML +='<a class="btn btn-outline-primary btn-xs" style="min-width:30px !important;" onclick="showpopup('+itemId+')"><span class="fa fa-eye fa-lg"></span></a>';
+                tableItemsHTML +='<a class="btn btn-outline-danger btn-xs" style="min-width:30px !important;" onclick="DeleteImage('+itemId+')"><span class="fa fa-trash-o fa-lg"></span></a></td></td></tr>';
+			   }          	
+	            var completebody = tableItemsHTML;
+	            var dvTable = $(".mainDivAllCategory");;
+	            dvTable.html("");
+	          	
+          	if (items.length == 0) 
+            {
+                $(".NoRecordFound").show();
+            }
+            else
+            {
+            	 $(".NoRecordFound").hide();
+            }
+            
+            dvTable.append(completebody);
+            if (items.length > 0) 
+            {
+               TableConfiguration();					 // GenerateTableSharedWithMe();
+            }
+        }, eror: function (data) {
+
+            console.log('error');
+        }
+    });  
+}
+
+
+function TableConfiguration()
+{
+    sorter = new TINY.table.sorter('sorter', 'TempTableCategory', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columns',
+        currentid: 'currentpage',
+        totalid: 'totalpages',
+        startingrecid: 'startrecord',
+        endingrecid: 'endrecord',
+        totalrecid: 'totalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pagedropdown',
+        navid: 'tablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+$(document).ready(function () {
+var fileedit = document.getElementById('fileupload1');
+    fileedit.onchange = function (e) {
+        var ext = this.value.match(/\.([^\.]+)$/)[1];
+        switch (ext) {
+            case 'jpg':
+            case 'JPG':
+            case 'JPEG':
+            case 'jpeg':
+            case 'GIF':
+            case 'gif':
+            case 'PNG':
+            case 'png':
+           var ImageType=$('#ddlEditImageType').val();
+           
+              if(ImageType=='Image'){
+                var size = this.files[0].size / 1024;
+                if (size.toFixed(2) > 1000) {
+                    alert("Image size not more then 1 MB");
+                    this.value = '';
+                }
+                else {
+                    document.getElementById('blah1').src = window.URL.createObjectURL(this.files[0]);
+
+                }
+              
+              }
+              if(ImageType=='Texture'){
+                var size = this.files[0].size / 1024;
+                if (size.toFixed(2) > 100) {
+                    alert("Image size not more then 100 Kb");
+                    this.value = '';
+                }
+                else {
+                    document.getElementById('blah1').src = window.URL.createObjectURL(this.files[0]);
+
+                }
+              }
+
+                
+                break;
+            default:
+                alert('Please select image files of JPEG, JPG, GIF and PNG formatted only.');
+                this.value = '';
+        }
+    };
+
+
+$("#btnUpload").click(function () {
+			 addImage();
+			 
+			   
+			    
+		 
+		});
+ $('#btnClose').click(function () {
+        $('#modalShowImage').modal('hide');
+    });
+     $('#btnnClose').click(function () {
+        $('#modalShowImage').modal('hide');
+    });
+
+
+		 
+
+});
+ 
+
+ 
+ function addImage()
+ {    
+       debugger;
+      var fileInput = $("#fileupload1");
+      var files =  fileInput[0].files;
+      //var fileName = fileInput[0].files[0].name;
+       for (var i = 0; i< files.length; i++) {
+               //var fileName = fileInput[0].files[index].name;
+                 var file = files[i];
+                AddImages(file);
+        }
+         
+        
+          
+
+             
+ }
+ 
+ 
+function AddImages(fileName) 
+{   
+     debugger;
+	var deffered=$.Deferred();
+	var Handler=this;
+	var url = Handler.SiteURL + "/_api/contextinfo";
+    $.ajax({
+        url: url,
+        type: "POST",
+        async: false,
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        contentType: "application/json;odata=verbose",
+        success: function (data) {
+             debugger;
+            var digest = data.d.GetContextWebInformation.FormDigestValue;
+            var libraryName = "ThemePictures";
+           //var fileInput = $("#fileupload1");
+           // var fileName = fileInput[0].files[0].name;
+            var reader = new FileReader();
+
+            reader.onload = function (e) 
+            {
+                arrayBuffer = reader.result;
+                url = _spPageContextInfo.webAbsoluteUrl  + "/_api/web/GetFolderByServerRelativeUrl('" + libraryName + "')/Files/add(url='" + fileName.name  + "',overwrite=true)";
+				$.ajax({
+                    url: url,
+                    type: "POST",
+                    async: false,
+                    data: arrayBuffer,
+                    headers: {
+                        "Accept": "application/json; odata=verbose",
+                        "X-RequestDigest": digest
+                    },
+                    contentType: "application/json;odata=verbose",
+                    processData: false,
+                    success: function (response) {
+                          
+						 GetDocumentItemId(libraryName,response.d.ServerRelativeUrl).done(function () 		// Get Document Item ID 
+						{
+							 UpdateSliderProperties(libraryName).done(function(responseD){		// Update Slider Metadata properties
+	                        	 
+                                    
+                          
+                                GetAllImages();
+                                   
+
+	                        	deffered.resolve("Success");
+	                        });
+	                    })
+	                    
+                                      
+
+                    },
+                    error: function (error) {
+                    	
+                        alert("Please try again something went wrong.<br/>"+JSON.stringify(errorr));
+                        deffered.reject("Error occured in AddSlider() : " + error);
+                    }
+                });
+            };
+            reader.readAsArrayBuffer(fileName);
+        },
+        error: function (errorr) {
+            alert("Please try again something went wrong.<br/>"+JSON.stringify(errorr));
+            
+        }
+    });
+    
+    return deffered;
+}
+
+
+function GetDocumentItemId(documentLibraryName,targetFileUrl) 
+{   
+  debugger;
+	var Handler=this;
+	var deferred=$.Deferred();
+	var URI= _spPageContextInfo.webAbsoluteUrl  + "/_api/Web/Lists/getByTitle('" + documentLibraryName + "')/Items?$select=ID,Author/Id&$expand=Author&$filter=Author/Id eq "+_spPageContextInfo.userId+"&$orderby=ID desc&$top=1";  //Handler.SiteURL + "/_api/Web/GetFileByServerRelativeUrl('" + targetFileUrl + "')/ListItemAllFields";
+	
+    $.ajax({
+        url:URI,
+        type: 'GET',
+        async: false,
+        headers: { 'accept': 'application/json;odata=verbose' },
+        success: function (responseData) 
+        {
+            
+        	var itemID=responseData.d.results["0"].ID;
+        	Handler.ItemId = itemID;
+        	deferred.resolve(itemID);
+        	//deferred.resolve(responseData.d.Id);
+        },
+        error: function (errorMessage) {
+            console.log('error  GetDocumentItemId');
+            deferred.reject(errorMessage);
+        }
+    });
+    return deferred;
+}
+function UpdateSliderProperties(documentLibraryName) 
+{   
+   debugger;
+    var Handler=this;
+	var dfd = $.Deferred();   
+	var metadataDescription=ImageMetadata();
+	var oweburl =  _spPageContextInfo.webAbsoluteUrl+ "/_api/Web/Lists/getByTitle('" + documentLibraryName + "')/Items(" + Handler.ItemId + ")";
+
+    $.ajax({
+        url: oweburl,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(metadataDescription),
+        success: function (RESULT) {
+            dfd.resolve("Success");
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();   
+}
+function GetItemTypeForDocumentLibrary(ListName) 
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "Item";//"SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+ function ImageMetadata() {
+	 
+	var documentLibraryName='ThemePictures';
+	var ItemType =  GetItemTypeForDocumentLibrary(documentLibraryName);
+    var Metadata = {"__metadata": {'type': ItemType}};
+
+ 
+    var ImageType=$('#ddlEditImageType').val();
+    var Audience = "Company";
+    var _companyID = titanForWork.getQueryStringParameter('CompanyId');
+     
+	 Metadata["ThemeType"]= ImageType; 
+	 
+	 
+	 return Metadata;
+}
+
+
+function DeleteImage(ItemId) {
+    var Handler = this;
+    var ListName = 'ThemePictures';
+
+    var deleteConfirmation = confirm("Do you want to delete this Image?");
+    if (deleteConfirmation) {
+        var URL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items(" + ItemId + ")";
+        $.ajax({
+            url: URL,
+            type: "DELETE",
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "IF-MATCH": "*"
+            },
+            success: function (data) {
+                alert("Image deleted successfully");
+                GetAllImages();
+            },
+            error: function (data) {
+                console.log(data);
+            }
+        });
+    }
+}
+	
+function showpopup(globalEventId){
+
+ 
+	var Ownurl =_spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ThemePictures')/items?$select=ID,EncodedAbsThumbnailUrl&$filter=ID eq ('"+globalEventId+"')";  
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data) { 
+			 
+            var items = data.d.results;  
+            if (items.length > 0) 
+			{  
+			    
+			    var Attache= items[0]["EncodedAbsThumbnailUrl"];
+                var image = $('#labelImageURL');
+				image[0].src = Attache;
+				$('#modalShowImage').modal('show');
+			} 
+        },
+		error: function (data) 
+		{  
+        	console.log(data);  
+		}  
+    }); 
+}	
+  	
+var dropZoneId = "drop-zone";
+var dropZone = $("#" + dropZoneId);
+var inputFile = dropZone.find("input");
+var finalFiles = [];
+var FinalFiles4Upload=[];
+var Tcounter = 0;
+var RemoveDuplicate = [];
+
+$(function() {
+  $("#FileUpload").on('change', function(e) {
+	FinalFiles4Upload =[];
+  	var fileNum = this.files.length, initial = 0;
+ 	    $.each(this.files,function(idx,elm){
+       finalFiles[finalFiles.length]=elm;
+      });
+
+  RemoveDuplicate = [];
+  var arr = finalFiles.filter(function(el) {
+    if(RemoveDuplicate.indexOf(el.name) == -1)
+    {
+      RemoveDuplicate.push(el.name);
+      return true;
+    }
+	  return false;
+  });
+  console.log(arr);
+  FinalFiles4Upload = ReinitializeArray(arr);
+  if(FinalFiles4Upload.length<6)
+  {
+    $('#filename').empty();
+  	for (initial; initial < FinalFiles4Upload.length; initial++)
+    { 
+  		$('#filename').append('<div id="file_'+ Tcounter +'"><span class="fa-stack fa-lg" style="line-height: 1em; height: 1em;"><i class="fa fa-paperclip" style="font-size: 20px; font-weight: 500;"></i></i><strong class="fa-stack-1x" style="color:#FFF; font-size:12px; margin-top:2px;">' + Tcounter+ '</strong></span> ' + RemoveDuplicate[initial] + '&nbsp;&nbsp;<span class="fa fa-close fa-lg closeBtn" style="color:red;"  onclick="removeLine(this.id);" id="file_'+ Tcounter +'"" title="remove"></span></div>');
+   		Tcounter = Tcounter + 1;
+    }
+  }
+  getImageWeight();
+  });
+})
+
+function getImageWeight()
+{
+  var totalWeight =0;
+  var t=0;
+  for(t; t<FinalFiles4Upload.length; t++)
+  {
+    totalWeight += FinalFiles4Upload[t].size;
+  }
+  var kb=totalWeight/1024;
+  var mb=kb/1024; 
+  $("#imgweight").text(mb.toFixed(2).concat(" MB"));  
+  if(FinalFiles4Upload.length>5)
+  {
+    alert("Warning: Select only 5 Images/Photos");
+    finalFiles=[];
+    FinalFiles4Upload=[];
+    Tcounter = 0;
+	RemoveDuplicate = [];
+
+    $('#filename').empty();
+  }
+  else if (mb.toFixed(2)>5)
+  {
+  	alert("Total weight of images not more than 5 MB")
+  	finalFiles=[];
+    FinalFiles4Upload=[];
+    Tcounter = 0;
+	RemoveDuplicate = [];
+
+    $('#filename').empty();
+
+  }
+}
+
+function removeLine(id)
+{
+  	var index = id.split('_')[1];
+  	$("#"+id).remove();
+  	delete finalFiles[parseInt(index)]; 
+  	RemoveDuplicate = [];
+	var arr = finalFiles.filter(function(el) {
+  	if (RemoveDuplicate.indexOf(el.name) == -1) {
+    	RemoveDuplicate.push(el.name);
+    	return true;
+    }
+	return false;
+  	});
+ 	FinalFiles4Upload = ReinitializeArray(arr);
+   getImageWeight();
+}
+
+
+function ReinitializeArray(arr) 
+{
+	var newArr = [];
+    var count = 0;
+	for (var i in arr) 
+	{
+    	newArr[count++] = arr[i];
+    }
+	return newArr;	
+}
+
+function AttachUplod(ID)
+{
+	var successFileUp = uploadFile(ID,Doctype='Image',Element='FileUpload'); // Here I'm passing ID(I'm using this ID with FileName). If you don't have anything then just pass ("")
+    	successFileUp.done(function(){
+    		 
+    		successFileUp.done(function(){
+   		  		alert("Data has been saved successfully.");
+  		 		 
+    		});
+    	});
+}
+
+
+function uploadFile(ID,Doctype,Element) 
+{    
+    debugger;
+	if(Element !="FileUpload")
+    { 
+      	FinalFiles4Upload=null;
+      	FinalFiles4Upload=FinalFiles4Upload2;
+    }
+ 	var deferred = $.Deferred();
+ 	var serverRelativeUrlToFolder = _spPageContextInfo.webServerRelativeUrl+"/ThemePictures";    // Define the folder path.
+ 	var serverUrl = _spPageContextInfo.webAbsoluteUrl;    // Get the server URL.
+ 	
+ 	(function Tasks(i,callback)
+ 	{
+    	if(i<FinalFiles4Upload.length)
+    	{
+    	  var success = AddImages(i);
+    	  success.done(function(){Tasks((i+1),callback);});
+    	}
+    	else
+    	{
+    	  callback();
+    	}
+ 	})(0,function(){deferred.resolve();})
+ 	}
+ 
+ 
+ 
+
+</script>
+<div class="row department-header">
+	<ol class="breadcrumb">
+		<li><h4  data-localize="ManageAppearanceAndThemes"> Manage Appearance And Themes</h4></li>
+	</ol>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="row top15">
+			<div class="col-md-12">
+				<div class="card">
+					<ul class="nav nav-tabs nav-tabs-justified shadow3" role="tablist">
+						<li role="presentation" class="active"><a href="#theme_gallery" class="tab_padd" aria-controls="theme_gallery" role="tab" data-toggle="tab" aria-expanded="true"> <span data-localize="Theme Gallery">Theme Gallery</span></a></li>
+						<li role="presentation" class=""><a href="#custom_theme" class="tab_padd" aria-controls="custom_theme" role="tab" data-toggle="tab" aria-expanded="false"> <span data-localize="Custom Theme">Custom Theme</span></a></li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!-- Theme Gallery Tab Starts -->
+						<div role="tabpanel" class="tab-pane active" id="theme_gallery">
+							<div class="panel panel-default shadow2">
+								<div class="panel-body">
+									<div class="col-md-7">
+										<div id="themeGallery" style="overflow-y: auto; height:400px;"></div>
+									</div>
+									<div class="col-md-5">
+										<div class="panel panel-default shadow2" style="height: 400px">
+											<div class="panel-body" style="font-size:13px;">
+												<div class="form-group">
+													<label class="col-sm-5" data-localize="ThemeName" >ThemeName : </label>
+													<div class="col-sm-6">
+														<div id="ThemeInfo_ThemeName"></div>
+													</div>
+												</div>
+												<div style="clear:both"></div>
+												<div class="form-group">
+													<label class="col-sm-5" data-localize="CreatedBy" >CreatedBy : </label>
+													<div class="col-sm-6">
+														<div id="ThemeInfo_CreatedBy">
+														</div>
+													</div>
+												</div>
+												<div style="clear:both"></div>
+												<div class="form-group">
+													<label class="col-sm-5"  data-localize="CreatedDate" >CreatedDate : </label>
+													<div class="col-sm-6">
+														<div id="ThemeInfo_CreatedDate">
+														</div>
+													</div>
+												</div>
+												<div style="clear:both"></div>
+												<div class="form-group">
+													<label class="col-sm-5"  data-localize="ModifiedBy" >ModifiedBy : </label>
+													<div class="col-sm-6">
+														<div id="ThemeInfo_ModifiedBy"></div>
+													</div>
+												</div>
+												<div style="clear:both"></div>
+												<div class="form-group">
+													<label class="col-sm-5" data-localize="ModifiedDate" >ModifiedDate : </label>
+													<div class="col-sm-6">
+														<div id="ThemeInfo_ModifiedDate"></div>
+													</div>
+												</div>
+												<div style="clear:both"></div>
+												<div style="padding:20px;">
+													<button id="deleteTheme" class="btn btn-outline-success" style="cursor:pointer;" data-localize="DeleteThisTheme"></button >
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row text-center">
+								<input id="btnApplyThemeGallery" type="button" class="btn btn-outline-success" value="Apply">
+								<input id="btnPreviewImagesPopup" type="button" class="btn btn-outline-success" value="Theme Images">
+								<input id="btnCancelThemeGallery" type="button" class="btn btn-outline-secondary" value="Close">
+							</div>
+						</div>
+						<!-- Theme Gallery Tab Ends -->
+						<!-- Custom Theme Tab Starts -->
+						<div>
+							<button style="display:none;" type="button" id="newTheme" class="btn btn-primary">New Theme</button>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="custom_theme">
+							<div class="panel panel-default shadow2 top15" style="height:150px;font-size: 14px;">
+								<div class="panel-body padding-left-right-0">
+									<div class="col-md-8">
+										<h5 class="theme_head_text" data-localize="ThemeName">ThemeName</h5>
+										<div style="width:80%; float:left;" class="radiobtn">
+											<input name="SaveThemeForThemeGallery" style="display:none;" type="checkbox" value="Save Theme">
+											&nbsp;&nbsp;<span data-localize="ThemeName"></span>&nbsp;:&nbsp;<input id="themeName" type='text' style="height: 35px; width: 275px;">
+										</div>
+									</div>
+									 
+								</div>
+								<div class="panel-body" style="display:none;">
+									<div class="col-md-8">
+										<div style="float:left;width:20%; padding-left:100px;">
+											<input name="ApplyThemeScope" type="radio" value="2">
+										</div>
+										<div style="float:left;width:40%;">
+											Apply Theme on All Companies (Override Previous).
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default shadow2">
+								<div class="panel-body padding-left-right-0">
+									<div class="col-md-3 mrajust">
+										<h5 class="theme_head_text" data-localize="PageBackground">PageBackground</h5>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td class="radiobtn">
+														<input id="rbutton" name="PageBackground" type="radio" value="SolidColor" checked="checked">
+													</td>
+													<td class="tdlabel" data-localize="SolidColor">SolidColor</td>
+													<td>
+														<div class='divBackgroundColor'>
+															<input type='text' id='backgroundColor' />
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-md-3">
+										<h5 class="theme_head_text"></h5>
+
+										<div>
+
+											<div class="radiobtn">
+												<input id="ptexturebutton" name="PageBackground" type="radio" value="TexturedPicture">
+												<label data-localize="TexturedPicture">TexturedPicture</label>
+
+											</div>
+
+
+											<div>
+												<select id="pageBackground_TexturedPictures" style="height:35px;">
+													<option value="0">- Select Texture -</option>
+												</select>
+											</div>
+
+
+											<table width="100%">
+												<tbody>
+													<tr>
+														<td><div id="imagePreviewPageBackground"></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<h5 class="theme_head_text"></h5>
+
+										<div>
+											<div class="radiobtn">
+												<input id="pStretchedbutton" name="PageBackground" type="radio" value="StretchedPicture">
+
+												<label data-localize="StretchedPicture">StretchedPicture</label>
+
+											</div>
+
+											<div>
+												<select id="pageBackground_StretchedPictures" style="height:35px;">
+													<option value="0">- Select Image-</option>
+												</select>
+											</div>
+
+
+											<table width="100%">
+												<tbody>
+													<tr>
+														<td>
+															<div id="imagePreviewPageBackground_Stretched"></div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+
+									<div class="col-md-3 imagetype-div">
+										<h5 class="theme_head_text"></h5>
+										<table class="imagetype" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="radiobtn">
+														<input name="PageBackground_Image" type="radio" value="Original">
+													</td>
+													<td data-localize="Original">Original</td>
+												</tr>
+												<tr>
+													<td class="radiobtn"> <input name="PageBackground_Image" type="radio" value="Stretched" checked></td>
+													<td data-localize="Stretched">Stretched</td>
+												</tr>
+												<tr>
+													<td class="radiobtn"><input name="PageBackground_Image" type="radio" value="Tiled"></td>
+													<td data-localize="Tiled">Tiled</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default shadow2 top15" style="display:none !important;">
+								<div class="panel-body padding-left-right-0">
+									<div class="col-md-3 mrajust">
+										<h5 class="theme_head_text" data-localize="NavigationBackground">NavigationBackground</h5>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td class="radiobtn"><input id="nbutton" name="NavigationBackground" type="radio" value="SolidColor" checked="checked"></td>
+													<td class="tdlabel" data-localize="SolidColor"></td>
+													<td>
+														<div class='divNavigationBar'>
+															<input type='text' id='navigationBar' />
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+									<div class="col-md-3">
+										<h5 class="theme_head_text"></h5>
+
+										<div>
+
+											<div class="radiobtn">
+												<input id="ntexturebutton" name="NavigationBackground" type="radio" value="TexturedPicture">
+												<label data-localize="TexturedPicture">TexturedPicture</label>
+
+											</div>
+
+
+											<div>
+												<select id="navigationBackground_TexturedPictures" style="height:35px;">
+													<option value="0">- Select Texture -</option>
+												</select>
+											</div>
+
+
+											<table width="100%">
+												<tbody>
+													<tr>
+														<td><div id="imagePreviewNavigationBackground"></div></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<h5 class="theme_head_text"></h5>
+
+										<div>
+											<div class="radiobtn">
+												<input id="nStretchedbutton" name="NavigationBackground" type="radio" value="StretchedPicture">
+
+												<label data-localize="StretchedPicture">StretchedPicture</label>
+
+											</div>
+
+											<div>
+												<select id="navigationBackground_StretchedPictures" style="height:35px;">
+													<option value="0">- Select Image -</option>
+												</select>
+											</div>
+
+
+											<table width="100%">
+												<tbody>
+													<tr>
+														<td>
+															<div id="imagePreviewNavigationBackground_Stretched"></div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<div class="col-md-3 imagetype-div">
+										<h5 class="theme_head_text"></h5>
+										<table class="imagetype" width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tbody>
+												<tr>
+													<td class="radiobtn"><input name="NavigationBackground_Image" type="radio" value="Original"></td>
+													<td data-localize="Original">Original</td>
+												</tr>
+												<tr>
+													<td class="radiobtn"><input name="NavigationBackground_Image" type="radio" value="Stretched" checked></td>
+													<td data-localize="Stretched">Stretched</td>
+												</tr>
+												<tr>
+													<td class="radiobtn"><input name="NavigationBackground_Image" type="radio" value="Tiled"></td>
+													<td data-localize="Tiled">Tiled</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="col-md-1 textcolor-div">
+										<h6 class="theme_head_text" > </h6>
+										<div>
+                                            <label data-localize="TextColor">Text Color</label>
+                                        </div>
+                                        <table width="100%">
+											<tbody>
+												<tr>
+													<td valign="top">
+														<div class='divNavigationBar_TextColor'>
+															<input type='text' id='navigationBar_TextColor' />
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default shadow2 top15" style="height:150px;" id="manage_grid">
+								<div class="panel-body padding-left-right-0">
+									<!-- <div class="col-md-4 col-lg-3"> -->
+									<div class="col-md-12">
+										<h5 class="theme_head_text" data-localize="ContentWeb-part">Content Web-part </h5>
+										<div class="col-md-3">
+										<table width="100%" class="web-parts" cellpadding="2" cellspacing="2">
+											<tbody>
+												<tr>
+													<td class="tdlabel" data-localize="HeaderBandColor">Header Band Color</td>
+													<td>
+														<div class='divWebParts_HeaderBandColor'>
+															<input type='text' id='webParts_HeaderBandColor' />
+														</div>
+													</td>
+
+												</tr>
+
+											 
+											</tbody>
+										</table>
+									</div>
+									<div class="col-md-3">
+										<table width="100%" class="web-parts" cellpadding="2" cellspacing="2" >
+											<tbody>
+												 
+
+												<tr>
+													<td data-localize="Header Text Color">Header Text Color</td>
+													<td>
+														<div class='divWebParts_HeaderTextColor'>
+															<input type='text' id='webParts_HeaderTextColor' />
+														</div>
+													</td>
+
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									 
+									 
+									<div class="col-md-3">
+										<table width="100%" cellpadding="2" cellspacing="2"  >
+											<tbody>
+											 
+
+												<tr>
+													<td data-localize="HeaderTagColor">Header Tag Color</td>
+													<td>
+														<div class='divWebParts_IconBackGroundColor'>
+															<input type='text' id='webParts_HeaderIconBackGroundColor' />
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							</div>
+
+						 
+
+
+						 
+							<div class="row text-center">
+								<input id="btnDraftTheme" type="button" class="btn btn-success" value="Save Theme" style="display:none;">
+								<input id="btnCreateTheme" type="button" class="btn btn-outline-success" value="Save">
+								<input id="btnApply" type="button" class="btn btn-outline-success" value="Save & Apply">
+                                <input id="btnCancel" type="button" class="btn btn-outline-secondary" value="Close">
+								 
+							</div>
+						</div>
+						<!-- Custom Theme Tab end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!--Pop up  Modal for add Images-->
+
+<div id="modalUploadImage" class="modal fade">
+	<div style="padding:40px;">
+		<div class="modal-content">
+			<div class="modal-header panel-head-4" style="padding:15px 15px 0 15px!important; height:47px">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title h4-color">Images for Theme</h4>
+			</div>
+			<div class="modal-body">
+                
+              
+              
+        <div class="container">
+        <div class="col-md-12">	
+		<div class="panel panel-default shadow2">
+		<div class="panel-body">
+		<div class="col-md-7">
+			
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					 	
+					<div class="table-responsive">
+						<table cellpadding='0' cellspacing='0' border='1' id='TempTableCategory' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading'><tr>
+							     
+								<!--<th><h6 data-localize="ID">ID</h6></th>-->
+								<th><h6 data-localize="FileName">File Name</h6></th>
+								<th><h6 data-localize="Theme Type">Theme Type</h6></th>
+								<th><h6 data-localize="FileSize">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllCategory'>
+							 
+ 
+							</tbody>
+						</table>
+						
+						  
+
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No Record Found</div>
+						
+					<div id="mainDivAllCategory">
+					</div>				
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdown"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage">Lines Per Page</span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">Page</span><span id="currentpage"></span><span data-localize="Of">Of</span><span id="totalpages"></span></div>
+						</div>
+						 
+
+					</div>	
+					 
+
+               
+
+
+				    
+				</div>
+				
+					  
+                 
+             </div>       
+                  <div class="col-md-5">
+					<div class="panel panel-default shadow2" style="height: 500px">
+						<div class="panel-body" style="font-size:13px;">
+							<div class="form-group">
+
+                   				      <h3>Choose type and upload image files</h3>
+                         
+                                     <div class="form-group">
+													<label class="col-sm-3"> <h4 data-localize="Type" >Type :</h4></label>
+													<div class="col-sm-9">
+														 <select name="select2" id="ddlEditImageType">
+                                                        <option value="Image">Image</option>
+                                                         <option value="Texture">Texture</option>
+                                                         </select>
+
+													</div>
+												</div>
+
+                                    
+                                    
+                     <div class="form-group">
+                        <div   id="fileeditUpload">
+                           <input type="file" id="fileupload1" title="File type must be JPEG,JPG,GIF or PNG and less than 50kb" multiple>
+                           <img id="blah1" src="" alt="">
+                           <div id='filename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+						   <div id='OldImagename' class="oldfilename1" style="padding:0px 0px 0px 0px;"></div>
+
+                        </div>
+                        </div>
+                        
+
+                        
+                         
+                           <input id="btnUpload" type="button" class="btn btn-outline-success" value="Upload" style="margin-left: 140px;">
+                        
+                   </div>
+ 
+			</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ 
+ 
+
+
+<div id="modalShowImage" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" id="btnClose"  aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Image">Image</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                    <div class="form-group">
+                        	<img id="labelImageURL" src="">    
+                     </div>                     
+                      
+                       
+                         
+                        <div class="row text-center">
+                          <!--button type="button" class="btn  btn-outline-success "   oncl value="Submit" data-localize="Delete">Delete</button>-->
+                            <button type="button" class="btn  btn-outline-success" id="btnnClose"   aria-hidden="true"   data-localize="Close">Close</button>
+ 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ 
+<!----*************************************end html preview*************************---->
+<input type="hidden" id="currentTab" name="CurrentTab" value="ThemeGallery">
+
+<!-- Script to Activate the Carousel -->
+<script>
+	$('.carousel').carousel({
+		interval: 5000 //changes the speed
+	})
+</script>
+
+<script type="text/javascript">
+	$('#myCarousel').carousel({
+		interval: 4000
+	});
+
+
+
+</script>
+
+ 
+<!-- header -->
+<style type="text/css">
+	.dropdown-submenu {
+		position: relative;
+	}
+
+		.dropdown-submenu > .dropdown-menu {
+			top: 0;
+			left: 100%;
+			margin-top: -6px;
+			margin-left: -1px;
+			-webkit-border-radius: 0 6px 6px 6px;
+			-moz-border-radius: 0 6px 6px;
+			border-radius: 0 6px 6px 6px;
+		}
+
+		.dropdown-submenu:hover > .dropdown-menu {
+			display: block;
+		}
+
+		.dropdown-submenu > a:after {
+			display: block;
+			content: " ";
+			float: right;
+			width: 0;
+			height: 0;
+			border-color: transparent;
+			border-style: solid;
+			border-width: 5px 0 5px 5px;
+			border-left-color: #ccc;
+			margin-top: 5px;
+			margin-right: -10px;
+		}
+
+		.dropdown-submenu:hover > a:after {
+			border-left-color: #fff;
+		}
+
+		.dropdown-submenu.pull-right {
+			float: none;
+		}
+
+			.dropdown-submenu.pull-right > .dropdown-menu {
+				left: -100%;
+				margin-left: 10px;
+				-webkit-border-radius: 6px 0 6px 6px;
+				-moz-border-radius: 6px 0 6px 6px;
+				border-radius: 6px 0 6px 6px;
+			}
+
+
+	@media screen and (min-width: 768px) {
+		.card > .nav-tabs > li {
+			width: 50%;
+		}
+
+		.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+			margin-left: -16px !important;
+			margin-top: -23px;
+		}
+
+		.carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
+			margin-right: -16px !important;
+			margin-top: -23px;
+		}
+	}
+
+	.full-width-tabs > ul.nav.nav-tabs {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		border-bottom: 0px;
+	}
+
+		.full-width-tabs > ul.nav.nav-tabs > li {
+			float: none;
+			display: table-cell;
+			background-color: #e1e1df;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+		}
+
+			.full-width-tabs > ul.nav.nav-tabs > li > a {
+				text-align: center;
+				background: none;
+				padding-top: 7px;
+				padding-bottom: 7px;
+				/*border-right:1px solid #fff !important;*/
+			}
+
+	.take-all-space-you-can {
+		width: 100%;
+	}
+
+	.nav-tabs > li > a {
+		margin-right: 0px;
+		border: 0px !important;
+		text-align: center;
+	}
+
+
+
+	#lightbox .modal-content {
+		display: inline-block;
+		text-align: center;
+	}
+
+	#lightbox .close {
+		opacity: 1;
+		color: rgb(255, 255, 255);
+		background-color: rgb(25, 25, 25);
+		padding: 5px 8px;
+		border-radius: 30px;
+		border: 2px solid rgb(255, 255, 255);
+		position: absolute;
+		top: -15px;
+		right: -55px;
+		z-index: 1032;
+	}
+	/*media galliry*/
+	.cuadro_intro_hover {
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+		height: auto;
+	}
+
+		.cuadro_intro_hover .caption {
+			position: absolute;
+			top: 175px;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			width: 100%;
+		}
+
+		.cuadro_intro_hover:hover .caption {
+			opacity: 1;
+			transform: translateY(-208px);
+			-webkit-transform: translateY(-208px);
+			-moz-transform: translateY(-208px);
+			-ms-transform: translateY(-208px);
+			-o-transform: translateY(-208px);
+		}
+
+		.cuadro_intro_hover .blur {
+			background-color: rgba(0,0,0,0.7);
+			height: 330px;
+			z-index: 5;
+			position: absolute;
+			width: 100%;
+		}
+
+		.cuadro_intro_hover .caption-text {
+			z-index: 10;
+			color: #fff;
+			position: absolute;
+			text-align: center;
+			top: 5px;
+			width: 100%;
+			padding: 2px 5px;
+		}
+
+	.cuadro_intro_hover2 {
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+		height: auto;
+	}
+
+		.cuadro_intro_hover2 .caption {
+			position: absolute;
+			top: 64px;
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			width: 100%;
+		}
+
+		.cuadro_intro_hover2:hover .caption {
+			opacity: 1;
+			transform: translateY(-90px);
+			-webkit-transform: translateY(-90px);
+			-moz-transform: translateY(-90px);
+			-ms-transform: translateY(-90px);
+			-o-transform: translateY(-90px);
+		}
+
+		.cuadro_intro_hover2 .blur {
+			background-color: rgba(0,0,0,0.7);
+			height: 330px;
+			z-index: 5;
+			position: absolute;
+			width: 100%;
+		}
+
+		.cuadro_intro_hover2 .caption-text {
+			z-index: 10;
+			color: #fff;
+			position: absolute;
+			text-align: center;
+			top: 0px;
+			width: 100%;
+			padding: 5px;
+		}
+
+	.mb-15 {
+		margin-bottom: 15px !important;
+	}
+</style>
+<!-- Model Popup End -->
+
+
+
+<script type="text/javascript">
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////// Spectrum JS for Color Picker ///////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	function updateBorders(color) {
+		var hexColor = "transparent";
+		if (color) {
+			hexColor = color.toHexString();
+		}
+		$("#docs-content").css("border-color", hexColor);
+	}
+
+	$(function () {
+
+		$("#full").spectrum({
+			allowEmpty: true,
+			color: "#ECC",
+			showInput: true,
+			containerClassName: "full-spectrum",
+			showInitial: true,
+			showPalette: true,
+			showSelectionPalette: true,
+			showAlpha: true,
+			maxPaletteSize: 10,
+			preferredFormat: "hex",
+			localStorageKey: "spectrum.demo",
+			move: function (color) {
+				updateBorders(color);
+			},
+			show: function () {
+
+			},
+			beforeShow: function () {
+
+			},
+			hide: function (color) {
+				updateBorders(color);
+			},
+
+			palette: [
+				["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)", /*"rgb(153, 153, 153)","rgb(183, 183, 183)",*/
+					"rgb(204, 204, 204)", "rgb(217, 217, 217)", /*"rgb(239, 239, 239)", "rgb(243, 243, 243)",*/ "rgb(255, 255, 255)"],
+				["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+					"rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"],
+				["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)",
+					"rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)",
+					"rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)",
+					"rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)",
+					"rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)",
+					"rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+					"rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+					"rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+					/*"rgb(133, 32, 12)", "rgb(153, 0, 0)", "rgb(180, 95, 6)", "rgb(191, 144, 0)", "rgb(56, 118, 29)",
+					"rgb(19, 79, 92)", "rgb(17, 85, 204)", "rgb(11, 83, 148)", "rgb(53, 28, 117)", "rgb(116, 27, 71)",*/
+					"rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)",
+					"rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"]
+			]
+
+		});
+
+		function Palatte() {
+			var palette = [
+				["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)", /*"rgb(153, 153, 153)","rgb(183, 183, 183)",*/
+					"rgb(204, 204, 204)", "rgb(217, 217, 217)", /*"rgb(239, 239, 239)", "rgb(243, 243, 243)",*/ "rgb(255, 255, 255)"],
+				["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+					"rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"],
+				["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)",
+					"rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)",
+					"rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)",
+					"rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)",
+					"rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)",
+					"rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+					"rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+					"rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+					/*"rgb(133, 32, 12)", "rgb(153, 0, 0)", "rgb(180, 95, 6)", "rgb(191, 144, 0)", "rgb(56, 118, 29)",
+					"rgb(19, 79, 92)", "rgb(17, 85, 204)", "rgb(11, 83, 148)", "rgb(53, 28, 117)", "rgb(116, 27, 71)",*/
+					"rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)",
+					"rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"]
+			]
+			return palette;
+		}
+
+
+		$("#full2").spectrum({
+			allowEmpty: true,
+			color: "#ECC",
+			showInput: true,
+			containerClassName: "full-spectrum",
+			showInitial: true,
+			showPalette: true,
+			showSelectionPalette: true,
+			showAlpha: true,
+			maxPaletteSize: 10,
+			preferredFormat: "hex",
+			localStorageKey: "spectrum.demo",
+			move: function (color) {
+				updateBorders(color);
+			},
+			show: function () {
+
+			},
+			beforeShow: function () {
+
+			},
+			hide: function (color) {
+				updateBorders(color);
+			},
+
+			palette: Palatte()
+		});
+
+		$("#hideButtons").spectrum({
+			showButtons: false,
+			change: updateBorders
+		});
+
+
+		var isDisabled = true;
+		$("#toggle-disabled").click(function () {
+			if (isDisabled) {
+				$("#disabled").spectrum("enable");
+			}
+			else {
+				$("#disabled").spectrum("disable");
+			}
+			isDisabled = !isDisabled;
+			return false;
+		});
+
+		$("input:disabled").spectrum({
+
+		});
+		$("#disabled").spectrum({
+			disabled: true
+		});
+
+		$("#pick1").spectrum({
+			flat: true,
+			change: function (color) {
+				var hsv = color.toHsv();
+				var rgb = color.toRgbString();
+				var hex = color.toHexString();
+				//console.log("callback",color.toHslString(), color.toHsl().h, color.toHsl().s, color.toHsl().l)
+				$("#docs-content").css({
+					'background-color': color.toRgbString()
+				}).toggleClass("dark", hsv.v < .5);
+				$("#switch-current-rgb").text(rgb);
+				$("#switch-current-hex").text(hex);
+			},
+			show: function () {
+
+			},
+			hide: function () {
+
+			},
+			showInput: true,
+			showPalette: true,
+			palette: ['white', '#306', '#c5c88d', '#ac5c5c', '#344660']
+		});
+
+		$("#collapsed").spectrum({
+			color: "#dd3333",
+			change: updateBorders,
+			show: function () {
+
+			},
+			hide: function () {
+
+			}
+		});
+
+		$("#flat").spectrum({
+			flat: true,
+			showInput: true,
+			move: updateBorders
+		});
+
+		$("#flatClearable").spectrum({
+			flat: true,
+			move: updateBorders,
+			change: updateBorders,
+			allowEmpty: true,
+			showInput: true
+		});
+
+		$("#showInput").spectrum({
+			color: "#dd33dd",
+			showInput: true,
+			change: updateBorders,
+			show: function () {
+
+			},
+			hide: function () {
+
+			}
+		});
+
+		$("#showAlpha").spectrum({
+			color: "rgba(255, 128, 0, .5)",
+			showAlpha: true,
+			change: updateBorders
+		});
+
+		$("#showAlphaWithInput").spectrum({
+			color: "rgba(255, 128, 0, .5)",
+			showAlpha: true,
+			showInput: true,
+			showPalette: true,
+			palette: [
+				["rgba(255, 128, 0, .9)", "rgba(255, 128, 0, .5)"],
+				["red", "green", "blue"],
+				["hsla(25, 50, 75, .5)", "rgba(100, .5, .5, .8)"]
+			],
+			change: updateBorders
+		});
+
+		$("#showAlphaWithInputAndEmpty").spectrum({
+			color: "rgba(255, 128, 0, .5)",
+			allowEmpty: true,
+			showAlpha: true,
+			showInput: true,
+			showPalette: true,
+			palette: [
+				["rgba(255, 128, 0, .9)", "rgba(255, 128, 0, .5)"],
+				["red", "green", "blue"],
+				["hsla(25, 50, 75, .5)", "rgba(100, .5, .5, .8)"]
+			],
+			change: updateBorders
+		});
+
+		$("#showInputWithClear").spectrum({
+			allowEmpty: true,
+			color: "",
+			showInput: true,
+			change: updateBorders,
+			show: function () {
+
+			},
+			hide: function () {
+
+			}
+		});
+
+		$("#openWithLink").spectrum({
+			color: "#dd3333",
+			change: updateBorders,
+			show: function () {
+
+			},
+			hide: function () {
+
+			}
+		});
+
+		$("#className").spectrum({
+			className: 'awesome'
+		});
+
+		$("#replacerClassName").spectrum({
+			replacerClassName: 'awesome'
+		});
+
+		$("#containerClassName").spectrum({
+			containerClassName: 'awesome'
+		});
+
+		$("#showPalette").spectrum({
+			showPalette: true,
+			palette: [
+				['black', 'white', 'blanchedalmond'],
+				['rgb(255, 128, 0);', 'hsv 100 70 50', 'lightyellow']
+			],
+			change: updateBorders
+		});
+
+		var textPalette = ["rgb(255, 255, 255)", "rgb(204, 204, 204)", "rgb(192, 192, 192)", "rgb(153, 153, 153)", "rgb(102, 102, 102)", "rgb(51, 51, 51)", "rgb(0, 0, 0)", "rgb(255, 204, 204)", "rgb(255, 102, 102)", "rgb(255, 0, 0)", "rgb(204, 0, 0)", "rgb(153, 0, 0)", "rgb(102, 0, 0)", "rgb(51, 0, 0)", "rgb(255, 204, 153)", "rgb(255, 153, 102)", "rgb(255, 153, 0)", "rgb(255, 102, 0)", "rgb(204, 102, 0)", "rgb(153, 51, 0)", "rgb(102, 51, 0)", "rgb(255, 255, 153)", "rgb(255, 255, 102)", "rgb(255, 204, 102)", "rgb(255, 204, 51)", "rgb(204, 153, 51)", "rgb(153, 102, 51)", "rgb(102, 51, 51)", "rgb(255, 255, 204)", "rgb(255, 255, 51)", "rgb(255, 255, 0)", "rgb(255, 204, 0)", "rgb(153, 153, 0)", "rgb(102, 102, 0)", "rgb(51, 51, 0)", "rgb(153, 255, 153)", "rgb(102, 255, 153)", "rgb(51, 255, 51)", "rgb(51, 204, 0)", "rgb(0, 153, 0)", "rgb(0, 102, 0)", "rgb(0, 51, 0)", "rgb(153, 255, 255)", "rgb(51, 255, 255)", "rgb(102, 204, 204)", "rgb(0, 204, 204)", "rgb(51, 153, 153)", "rgb(51, 102, 102)", "rgb(0, 51, 51)", "rgb(204, 255, 255)", "rgb(102, 255, 255)", "rgb(51, 204, 255)", "rgb(51, 102, 255)", "rgb(51, 51, 255)", "rgb(0, 0, 153)", "rgb(0, 0, 102)", "rgb(204, 204, 255)", "rgb(153, 153, 255)", "rgb(102, 102, 204)", "rgb(102, 51, 255)", "rgb(102, 0, 204)", "rgb(51, 51, 153)", "rgb(51, 0, 153)", "rgb(255, 204, 255)", "rgb(255, 153, 255)", "rgb(204, 102, 204)", "rgb(204, 51, 204)", "rgb(153, 51, 153)", "rgb(102, 51, 102)", "rgb(51, 0, 51)"];
+
+		$("#showPaletteOnly").spectrum({
+			color: 'blanchedalmond',
+			showPaletteOnly: true,
+			showPalette: true,
+			palette: [
+				['black', 'white', 'blanchedalmond',
+					'rgb(255, 128, 0);', 'hsv 100 70 50'],
+				['red', 'yellow', 'green', 'blue', 'violet']
+			]
+		});
+
+		$("#hideAfterPaletteSelect").spectrum({
+			showPaletteOnly: true,
+			showPalette: true,
+			hideAfterPaletteSelect: true,
+			color: 'blanchedalmond',
+			palette: [
+				['black', 'white', 'blanchedalmond',
+					'rgb(255, 128, 0);', 'hsv 100 70 50'],
+				['red', 'yellow', 'green', 'blue', 'violet']
+			]
+		});
+
+		$("#togglePaletteOnly").spectrum({
+			color: 'blanchedalmond',
+			showPaletteOnly: true,
+			togglePaletteOnly: true,
+			showPalette: true,
+			palette: [
+				["#000", "#444", "#666", "#999", "#ccc", "#eee", "#f3f3f3", "#fff"],
+				["#f00", "#f90", "#ff0", "#0f0", "#0ff", "#00f", "#90f", "#f0f"],
+				["#f4cccc", "#fce5cd", "#fff2cc", "#d9ead3", "#d0e0e3", "#cfe2f3", "#d9d2e9", "#ead1dc"],
+				["#ea9999", "#f9cb9c", "#ffe599", "#b6d7a8", "#a2c4c9", "#9fc5e8", "#b4a7d6", "#d5a6bd"],
+				["#e06666", "#f6b26b", "#ffd966", "#93c47d", "#76a5af", "#6fa8dc", "#8e7cc3", "#c27ba0"],
+				["#c00", "#e69138", "#f1c232", "#6aa84f", "#45818e", "#3d85c6", "#674ea7", "#a64d79"],
+				["#900", "#b45f06", "#bf9000", "#38761d", "#134f5c", "#0b5394", "#351c75", "#741b47"],
+				["#600", "#783f04", "#7f6000", "#274e13", "#0c343d", "#073763", "#20124d", "#4c1130"]
+			]
+		});
+
+		$("#clickoutFiresChange").spectrum({
+			change: updateBorders
+		});
+
+		$("#clickoutDoesntFireChange").spectrum({
+			change: updateBorders,
+			clickoutFiresChange: false
+		});
+
+		$("#showInitial").spectrum({
+			showInitial: true
+		});
+
+		$("#showInputAndInitial").spectrum({
+			showInitial: true,
+			showInput: true
+		});
+
+		$("#showInputInitialClear").spectrum({
+			allowEmpty: true,
+			showInitial: true,
+			showInput: true
+		});
+
+		$("#changeOnMove").spectrum({
+			move: function (c) {
+				var label = $("#changeOnMoveLabel");
+				label.text("Move called: " + c.toHexString());
+			}
+		});
+		$("#changeOnMoveNo").spectrum({
+			showInput: true,
+			change: function (c) {
+				var label = $("#changeOnMoveNoLabel");
+				label.text("Change called: " + c.toHexString());
+			}
+		});
+
+		function prettyTime() {
+			var date = new Date();
+
+			return date.toLocaleTimeString();
+		}
+
+		$("#eventshow").spectrum({
+			show: function (c) {
+				var label = $("#eventshowLabel");
+				label.text("show called at " + prettyTime() + " (color is " + c.toHexString() + ")");
+			}
+		});
+
+		$("#eventhide").spectrum({
+			hide: function (c) {
+				var label = $("#eventhideLabel");
+				label.text("hide called at " + prettyTime() + " (color is " + c.toHexString() + ")");
+			}
+		});
+
+		$("#eventdragstart").spectrum({
+			showAlpha: true
+		}).on("dragstart.spectrum", function (e, c) {
+			var label = $("#eventdragstartLabel");
+			label.text("dragstart called at " + prettyTime() + " (color is " + c.toHexString() + ")");
+		});
+
+		$("#eventdragstop").spectrum({
+			showAlpha: true
+		}).on("dragstop.spectrum", function (e, c) {
+			var label = $("#eventdragstopLabel");
+			label.text("dragstop called at " + prettyTime() + " (color is " + c.toHexString() + ")");
+		});
+
+
+		$(".basic").spectrum({ change: updateBorders });
+		$(".override").spectrum({
+			color: "yellow",
+			change: updateBorders
+		});
+
+		$(".startEmpty").spectrum({
+			allowEmpty: true,
+			change: updateBorders
+		});
+
+		$("#beforeShow").spectrum({
+			beforeShow: function () {
+				return false;
+			}
+		});
+
+
+		$("#custom").spectrum({
+			color: "#f00"
+		});
+
+		$("#buttonText").spectrum({
+			allowEmpty: true,
+			chooseText: "Alright",
+			cancelText: "No way"
+		});
+
+
+		$("#showSelectionPalette").spectrum({
+			showPalette: true,
+			showSelectionPalette: true, // true by default
+			palette: []
+		});
+		$("#showSelectionPaletteStorage").spectrum({
+			showPalette: true,
+			localStorageKey: "spectrum.homepage", // Any picker with the same string will share selection
+			showSelectionPalette: true,
+			palette: []
+		});
+		$("#showSelectionPaletteStorage2").spectrum({
+			showPalette: true,
+			localStorageKey: "spectrum.homepage", // Any picker with the same string will share selection
+			showSelectionPalette: true,
+			palette: []
+		});
+
+		$("#selectionPalette").spectrum({
+			showPalette: true,
+			palette: [],
+			showSelectionPalette: true, // true by default
+			selectionPalette: ["red", "green", "blue"]
+		});
+
+		$("#maxSelectionSize").spectrum({
+			showPalette: true,
+			palette: [],
+			showSelectionPalette: true, // true by default
+			selectionPalette: ["red", "green", "blue"],
+			maxSelectionSize: 2
+		});
+
+		$("#preferredHex").spectrum({
+			preferredFormat: "hex",
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+		$("#preferredHex3").spectrum({
+			preferredFormat: "hex3",
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+		$("#preferredHsl").spectrum({
+			preferredFormat: "hsl",
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+		$("#preferredRgb").spectrum({
+			preferredFormat: "rgb",
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+		$("#preferredName").spectrum({
+			preferredFormat: "name",
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+		$("#preferredNone").spectrum({
+			showInput: true,
+			showPalette: true,
+			palette: [["red", "rgba(0, 255, 0, .5)", "rgb(0, 0, 255)"]]
+		});
+
+		$("#triggerSet").spectrum({
+			change: updateBorders
+		});
+
+		// Show the original input to demonstrate the value changing when calling `set`
+		$("#triggerSet").show();
+
+		$("#btnEnterAColor").click(function () {
+			$("#triggerSet").spectrum("set", $("#enterAColor").val());
+		});
+
+		$("#toggle").spectrum();
+		$("#btn-toggle").click(function () {
+			$("#toggle").spectrum("toggle");
+			return false;
+		});
+	});
+
+////////////////////////////////////////////////// End Spectrum JS //////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<!--[if gte mso 9]><xml>
+	<mso:CustomDocumentProperties>
+	<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-356</mso:_dlc_DocId>
+	<mso:_dlc_DocIdItemGuid msdt:dt="string">d01095c5-c72d-4e3f-bccb-e075a029c2ec</mso:_dlc_DocIdItemGuid>
+	<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-356, ADMIN-1645029823-356</mso:_dlc_DocIdUrl>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">35600.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+	</xml><![endif]-->
+<title></title></head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

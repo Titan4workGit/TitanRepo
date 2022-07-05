@@ -1,0 +1,403 @@
+﻿
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+button:focus {
+    outline: none !important;   
+}
+.d-none {
+    display: none !important;
+}
+.font-12 {
+    font-size: 12px;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-100 {
+    width: 100%;
+}
+.w-121 {
+    width: 121px;
+}
+.wpx-36 {
+    width: 36px !important;
+}
+
+/*custom scroll*/
+.scrollbar-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+    background-color: #ffffff;
+}
+.panel-body {
+    background-color: #ffffff;
+}
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+.custom-btn,
+.custom-btn:focus {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+.custom-btn-two-cancel,
+.custom-btn-two-cancel:focus {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.holidays-list-box-panel {
+    clear: both;
+    /*max-height: 374px;*/
+    max-height: 433px;
+    overflow-y: auto;
+    padding-top: 12px;
+    list-style-type:none;
+    padding-left:0;
+    min-height: 433px;
+}
+.custom-form-group-date {position: relative;}
+.custom-form-group-date .form-control {cursor: pointer;}
+.form-control-date {
+    position: absolute;
+    bottom: 9px;
+    right: 12px;
+    pointer-events: none;
+}
+/* .form-control-date::after {
+    content: "\f073";
+    position: absolute;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+.company-holidays-right-top-box {
+    padding: 10px 0px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+.holidays-list-box-heading {
+    /*padding-bottom: 8px;*/
+    /*padding: 0px 0px 10px 0px;*/
+    padding: 0px 0px 15px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.holidays-list-box-footer {
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 11px;
+}
+.holidays-list-box {
+    clear: both;
+    /*margin-bottom: 8px;*/
+    margin-bottom: 14px;
+}
+.holidays-list-box-one, .holidays-list-box-two {
+    /*height: 30px;
+    line-height: 30px;*/
+    font-size: 14px;
+    position: relative;
+    top: 5px;
+}
+
+.holidays-list-box-one,
+.holidays-list-box-two,
+.holidays-list-box-three {
+    padding: 0 10px;
+}
+
+.company-holidays-edit-lock-btn-box .custom-edit-btn {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+    color: #1d6ec0;
+    display: block;
+    margin-left: auto;
+}
+.company-holidays-edit-lock-btn-box .custom-edit-btn:hover {
+    background-color: #cccccc;
+}
+.company-holidays-footer-btn-group {
+    margin-top: 14px;
+}
+.company-holidays-footer-btn-group .w-87 {
+    width: 87px;
+}
+.approved-form-control {
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+}
+.approved-form-control:focus {
+    border-color: #1d6ec0;
+    box-shadow: none;
+}
+.company-holidays-modal-footer {
+    text-align: center;
+}
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.fc-daygrid-day-number {
+    position: absolute !important;
+    z-index: 9 !important;
+    bottom: 0;
+    font-size: 24px;
+    padding: 2px 4px !important;
+    color: #000;
+}
+.company-holidays-calender-box #calendar .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 20px !important;
+}
+.company-holidays-calender-box #calendar .fc-button-primary {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    min-width: 4em;
+}
+.company-holidays-calender-box #calendar .fc-toolbar-title {
+    color: #000;
+}
+#company-holidays-filter .bg-white-round-btn {
+    color: #000;
+    top: 12px;
+}
+#edit-holidays-filter .bg-white-round-btn {
+    color: #000;
+    top: 12px;
+}
+.company-holidays-calender-box #calendar .fc-col-header-cell-cushion {
+    color: #000;
+}
+.company-holidays-modal-footer button {
+    min-width: 5em;
+}
+#progressbarDiv {
+    margin-bottom: 15px;
+}
+/*.list-of-holidays {
+    visibility: hidden;
+}*/
+.list-of-holidays {
+    color: #000000 !important;
+    margin-bottom: 14px;
+    font-weight: 600;
+    /*padding: 0px 12px;*/
+    padding: 0px 12px 0px 8px;
+}
+.company-holidays-row-1 {
+    margin-bottom: 15px !important;
+}
+.holidays-list-box-heading .checkbox-inline {
+    padding-left: 0px;
+    position: relative;
+    left: 14px;
+}
+.holidays-list-box-heading .checkbox-inline input {
+    margin: 2px 5px 4px 0px !important;
+}
+.total-holidays {
+    top: 0px !important;
+    font-size: 18px;
+    font-weight: 600;
+    right: 6px !important;
+}
+.fc-daygrid-body-unbalanced {
+    width: 100% !important;
+}
+.fc-scrollgrid-sync-table {
+    width: 100% !important;
+}
+.holidays-filters {
+    padding-left: 0px;
+    padding-right: 6px;
+}
+.holidays-filters-l {
+    float: left;
+}
+.holidays-filters-l .checkbox-inline {
+    left: 10px;
+}
+.holidays-filters-r {
+    float: right;
+    padding-right: 15px;
+}
+.holidays-list-box-checkbox {
+    position: relative;
+    top: -6px;
+    left: -5px;
+}
+
+/* responsive start */
+
+@media screen and (min-width: 1400px) {
+
+    .holidays-list-box-panel {
+        max-height: 509px;
+        min-height: 509px;
+    }
+
+}
+@media screen and (min-width: 1600px) {
+
+    .holidays-list-box-panel {
+        max-height: 536px;
+        min-height: 536px;
+    }
+
+}
+@media screen and (min-width: 1920px) {
+
+    .holidays-list-box-panel {
+        max-height: 674px;
+        min-height: 674px;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .company-holidays-btn-position {
+        /*margin-top: 25px;*/
+        margin-top: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .company-holidays-right-top-box {
+        margin-top: 16px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .company-holidays-btn-position {
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .company-holidays-btn-position {
+        text-align: center;
+    }
+    .holidays-list-box-one, .holidays-list-box-two, .holidays-list-box-three {
+        /*padding: 0 6px;*/
+        padding: 0 1px;
+    }
+    .company-holidays-calender-box #calendar .fc-toolbar-title {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .company-holidays-calender-box #calendar .fc-button-primary {
+        min-width: 3em;
+    }
+    .company-holidays-calender-box #calendar .fc-col-header-cell-cushion {
+        font-size: 11px;
+    }
+    .fc-daygrid-day-number {
+        font-size: 14px;
+        padding: 0px !important;
+        font-weight: 600;
+    }
+    .holidays-list-box-heading .checkbox-inline {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .company-holidays-inbox-istab .col-xs-6 {
+        width: 100%;
+    }
+}

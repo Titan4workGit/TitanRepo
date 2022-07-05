@@ -1,0 +1,863 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <title>Recognition</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="_layouts/15/sp.runtime.js"></script>
+		<script type="text/javascript" src="_layouts/15/sp.js"></script>
+		<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/font-awesome/css/font-awesome.min.css">
+        <!--link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/css/date-picker.css"-->
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/yearpicker.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/css/styles.css">  
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/css/drag-drop.css"> 
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/richtext.min.css" >
+        <!--<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/jquery.datepicker.js"></script>-->	
+		<!--<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/jquery-3.4.1.min.js"></script>-->
+		<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/moment.min.js"></script>
+		<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/jquery.richtext.js"></script>
+		<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/yearpicker.js"></script>	
+
+        <!--script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/bootstrap-datepicker.js"></script-->
+        
+ 
+<style>
+
+.slider-panel .slider{
+ overflow:hidden !important;	
+}
+
+#DeltaPlaceHolderMain .custom-panel-box{
+	padding-top:1px !important;
+}
+.article-content{
+ margin-top:5px !important;	
+}
+
+#mysliderDiv{
+ text-align:center;	
+}
+
+#mysliderDiv .slide{
+
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;	
+}
+.link-add-btn, .link-add-btn:focus, .link-delete-btn, .link-delete-btn:focus{
+ right:-2px !important; 	
+}
+
+.control-prev-btn{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    box-shadow: 0 1px 3px #888;
+    user-select: none;
+    color: #444;
+    cursor: pointer;
+    border-radius: 50%;	
+    top:auto !important;
+    left:auto !important;
+    font-size: 20px;
+    font-weight: bold;
+    transition:0.3s;
+
+}
+
+.control-next-btn{
+    position: absolute;
+    bottom: auto !important;
+    right: 0 !important;
+    background-color: #ffffff;
+    height: 30px !important;
+    line-height: 30px !important;
+    width: 30px !important;
+    text-align: center;
+    box-shadow: 0 1px 3px #888;
+    user-select: none;
+    color: #444;
+    cursor: pointer;
+    border-radius: 50%;
+    top:0 !important;
+    font-size: 20px;
+    font-weight: bold;
+    transition:0.3s;
+
+}
+
+.control-next-btn:hover,
+.control-prev-btn:hover{
+   
+  background-color:#ccc;
+  	
+}
+
+.slide img{
+    height: 140px !important;
+    width: 123px !important;	
+}
+
+.slider-panel .control-next-btn{
+	bottom:auto !important;
+	top:0 !important;
+}
+
+
+#Employeesname_TopSpan{
+ line-height:25px !important;	
+}
+
+#Employeesname_TopSpan_EditorInput{
+ border:none !important;	
+}
+
+#filename div,
+#Docfilename div{
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    margin:3px 2px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    box-shadow:inset 0 1px 1px #e0e0e0;
+    color: #676666 !important;
+    font-size: 13px;
+
+}
+
+#filename div .DeletePic,
+#Docfilename div .DeletePic{
+
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+    
+ }
+ 
+#filename div .fa-stack,
+#Docfilename div .fa-stack{
+ width:1em !important;	
+ margin-right:20px;
+}
+
+#filename div .fa-stack-1x,
+#Docfilename div .fa-stack-1x{
+    font-weight: 400 !important;
+    color: #000 !important;
+    left: 18px;	
+}
+
+
+.slider img{
+	border: 2px solid transparent !important;
+}
+
+.slider img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 40%) !important;
+    border: 2px solid #8a8a8a !important;
+}
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table{
+ display:block !important;	
+}
+
+
+#oldfilename div,
+#OldImagename div{
+
+   display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    margin:3px 2px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    box-shadow:inset 0 1px 1px #e0e0e0;
+    color: #676666 !important;
+    font-size: 13px;
+}
+
+
+#oldfilename div .DeletePic,
+#OldImagename div .DeletePic{
+	
+   color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+
+@media(max-width:343px){
+#Option4Gallery{
+ margin-left:2px !important;	
+}	
+	
+}
+
+@media(max-width:767px){
+
+#Employeesname_TopSpan_InitialHelpText{
+ font-size:12px !important;	
+}	
+
+.article-content{
+  margin:20px 5px !important;	
+}
+
+	
+}
+
+@media(max-width:430px){
+
+#filename div, #Docfilename div{
+ display:block !important;	
+}
+
+#oldfilename div,
+#OldImagename div{
+
+ display:block !important;	
+	
+}
+
+}
+
+/**.highlightDropArea {
+  border: 5px black dashed;
+}***/
+
+
+
+/**july/8/21***/
+.drop-container input {
+    position: absolute;
+    cursor: pointer;
+    left: 50%;
+    top: 0px;
+    opacity: 0;
+    width: 320px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+
+}
+
+#clickHere1,
+#clickHere0{
+  width: 320px;
+  border: 2px dotted #868686 !important;
+  background:transparent !important;
+  color:#444343 !important  
+}
+
+#drop-zone,
+#drop-zone1{
+ border:none !important;
+ border-bottom: 1px solid rgba(0, 0, 0, .3) !important; 
+ border-radius:0 !important;
+}
+
+#FileUpload,
+#files{
+ height:45px !important;  
+}
+
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table{
+    display: block !important;
+}
+
+@media(max-width:500px){
+
+.drop-container input,
+#clickHere1,
+#clickHere0{
+ width:195px !important;  
+}
+
+  
+}
+
+
+/***july-14-21****/
+
+
+#OldCoverImage div,
+#OldImagename div,
+#oldfilename div{
+
+    padding: 1px 5px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+
+}
+
+#OldCoverImage div a,
+#OldImagename div a,
+#oldfilename div a{
+
+ color:#545454 !important;
+
+}
+
+#OldCoverImage div .DeletePic,
+#OldImagename div .DeletePic,
+#oldfilename div .DeletePic{
+  display: inline-block;
+    font-size: 14px;
+    padding: 5px 4px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    margin:3px 2px;
+    border: 1px solid #ccc;
+    color: #fff !important;
+    font-size: 13px;
+    background-color:#1d6ec0 !important;
+    cursor:pointer !important;
+
+}
+
+#OldCoverImage div .fa-trash-o:before,
+#OldImagename div .fa-trash-o:before,
+#oldfilename div .fa-trash-o:before{
+
+ content: "\f00d" !important;
+ font-family: 'FontAwesome';
+
+}
+
+#OldCoverImage div .fa-paperclip{
+
+    padding: 2px 5px 0 5px;
+    line-height: 20px;
+    position: relative;
+    top: 2px; 
+}
+
+
+
+.pd_ajust{
+ padding:0 5px !important;	
+}
+
+
+#OldCoverImage div span.fa-stack,
+#OldImagename div span.fa-stack,
+#oldfilename div span.fa-stack{
+
+width:1em !important;
+margin-right:20px !important;
+
+}
+
+#OldCoverImage div .fa-stack-1x,
+#OldImagename div .fa-stack-1x,
+#oldfilename div .fa-stack-1x{
+
+  color: #585858 !important;
+  left:17px !important;
+
+}
+
+#OldCoverImage div .fa-stack-2x,
+#OldImagename div .fa-stack-2x,
+#oldfilename div .fa-stack-2x{
+
+  color: #585858 !important;
+  left:17px !important;
+	
+}
+
+.recognition-upload-image{
+  object-fit: cover !important;	
+}
+
+.slider{
+ flex-direction: row-reverse !important;	
+}
+
+/* new css added on 24/8/2021 */
+
+#Achivements .richText-dropdown-outer ul.richText-dropdown {
+    z-index: 9;
+}
+
+@media(max-width:767px){
+	
+.pd_ajust{
+ padding:0 15px !important;	
+}
+	
+	
+}
+
+
+</style>
+
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2416</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">dd85fffc-dc1c-438e-9f1e-5d3fd9c121b6</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2416, ADMIN-1645029823-2416</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">241600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tab-content">
+                        <div class="custom-panel custom-panel-box">
+                            <div class="panel-head">
+                                <h3 class="m-0">
+                                    Recognition
+                                </h3>
+                            </div>
+                            <div class="panel-body px-0 pt-8">
+                                <div class="row m-0 mb-8">
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group custom-form-group">
+                                            <label for="">Type:<span class="color-red">*</span></label>
+                                            <select class="form-control ApproverView" id="CategoryType" onchange="GetCategoryType()">
+                                                <option>-select-</option>
+                                                <option>Type 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group custom-form-group">
+                                            <label for="">Title:<span class="color-red">*</span></label>
+                                            <input type="text" class="form-control ApproverView" id="SetTitle">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 employee-info">
+                                        <nav class="tabs">
+                                            <div class="selector"></div>
+                                            <a data-toggle="tab" class="active" href="#Recognition" ><i class="fa fa-user font-18"></i><span class="is-phone-hode">Recognition To</span></a>
+                                            <a data-toggle="tab"  href="#Achivements"><i class="fa fa-trophy"></i><span class="is-phone-hode">Achievement</span></a>
+                                        </nav>
+                                        <div class="tab-content">
+                                            
+                                            <div id="Recognition" class="tab-pane fade in active">
+                                                <div class="row flex-column-reverse-is-phone">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-xs-12">
+                                                                <div class="form-group custom-form-group">
+                                                                    <label for="">Recognition To:</label>
+                                                                    <select class="form-control ApproverView" onchange="SetControlsuser(this.value)" id="RecognitionTo">
+                                                                        <option value="Employee">Employee</option>
+                                                                        <option value="Team">Team</option>
+                                                                        <option value="Other">Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3 col-xs-6 pd_ajust">
+                                                                <div class="form-group custom-form-group">
+                                                                    <label for="">Year:<span class="color-red">*</span></label>
+                                                                    
+                                                                    
+                                                                     <select name="" id="datepicker" class="form-control ApproverView" onchange="">
+                                                                	
+                                                                     </select>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3 col-xs-6 pd_ajust">
+                                                                <div class="form-group custom-form-group">
+                                                                    <div class="form-group custom-form-group">
+                                                                    <label for="">Month:<span class="color-red">*</span></label>
+                                                                <!--    <input type="text" class="form-control" id="monthpicker" placeholder="MM">  -->
+                                                                <select name="Filter_ddl3" id="ddlmonth" class="form-control ApproverView" onchange="">
+                                                                	<option value="- Select Month -">- Select Month -</option>
+                                                                	<option value="1">January</option>
+                                                                	<option value="2">February</option>
+                                                                	<option value="3">March</option>
+                                                                	<option value="4">April</option>
+                                                                	<option value="5">May</option>
+                                                                	<option value="6">June</option>
+                                                                	<option value="7">July</option>
+                                                                	<option value="8">August</option>
+                                                                	<option value="9">September</option>
+                                                                	<option value="10">October</option>
+                                                                	<option value="11">November</option>
+                                                                	<option value="12">December</option>
+                                                                </select>
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group Team" style="display:none">
+                                                            <label for="">Team Name:<span class="color-red">*</span></label>                                                            
+                                                            <input type="text" class="form-control ApproverView" id="TeamName">
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="" class="Team" style="display:none">Team Members:<span class="color-red " >*</span></label>
+                                                            <label for="" class="Employee">Employee Name:<span class="color-red">*</span></label>                                                            
+                                                            <div class="peoplepicker Team" id="Employeesname"></div>
+                                                        </div>
+
+                                                        <div class="form-group custom-form-group otherEmp" style="display:none">
+                                                            <label for="">Name:<span class="color-red">*</span></label>                                                            
+                                                            <input type="text" class="form-control ApproverView" id="OtherUser">
+                                                        </div>
+                                                        <div class="form-group custom-form-group TeamDesignation">
+                                                            <label for="">Designation:<span class="color-red">*</span></label>
+                                                            <input type="text" class="form-control ApproverView" name="" id="DesignationText">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group custom-form-group-radio-inline m-0">
+                                                            <label class="radio-inline" style="display:none" id="Option4Upload"><input type="radio" class="ApproverView" name="UpdateEmp" id="test2" value="Upload" checked="">Upload</label>
+                                                            <label class="radio-inline" style="display:none" id="Option4Gallery"><input type="radio" class="ApproverView chkPicGallery" name="UpdateEmp" id="test" value="Gallery">Choose from gallery</label>
+                                                        </div>
+                                                        <div id="Upload-user-image" class="recognition-upload-image-box">
+                                                            <img id="userImage" class="recognition-upload-image" src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/user_pic.jpg" alt="user image">
+                                                            <div class="recognition-upload-image-box-btn">
+                                                                <input type="file" id="profileimageupload" class="recognition-upload-image-inp" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
+                                                                <span class="recognition-upload-image-span">Upload<br>Profile Picture</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="slider-panel changeme d-none" id="GalleryArea">
+                                                            <div id="slider-container" class="slider">
+                                                            <div id="mysliderDiv">
+
+															</div>
+                                                            <!--<div class="slide image-active">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther1.jpg" alt="">
+                                                                </div>
+                                                                <div class="slide">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther2.png" alt="">
+                                                                </div>
+                                                                <div class="slide">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther3.png" alt="">
+                                                                </div>
+                                                                <div class="slide">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther4.png" alt="">
+                                                                </div>
+                                                                <div class="slide">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther5.png" alt="">
+                                                                </div>
+                                                                <div class="slide">
+                                                                    <img src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/RecognitionOther7.jpg" alt="">
+                                                                </div>-->
+                                                            </div>
+                                                            <div onclick="prev()" class="control-prev-btn">
+                                                                 <i class="fa fa-angle-down"></i>
+                                                            </div>
+                                                            <div onclick="next()" class="control-next-btn">
+                                                                <i class="fa fa-angle-up"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-12 divDeptLoc">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Department:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="DepartmentsDDL">
+                                                                
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Office Location:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="OfficeLocDDL">
+                                                                
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Audience:<span class="color-red">*</span></label>
+                                                            <select class="form-control ApproverView" id="AudienceDDL">
+                                                                <option>Corporate</option>
+                                                                <option>Company</option>
+                                                                <!--<option>Department</option>-->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--<div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Display From:<span class="color-red">*</span></label>
+                                                            <input type="text" id="Datefrom" class="form-control">
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Display Upto:<span class="color-red">*</span></label>
+                                                            <input type="text" id="DateTill" class="form-control">
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            <!--<div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Audience:<span class="color-red">*</span></label>
+                                                            <select class="form-control" >
+                                                                <option>Corporate</option>
+                                                                <option>Company</option>
+                                                                
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <!--<div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Company:<span class="color-red">*</span></label>
+                                                            <select class="form-control">
+                                                                <option>-select-</option>
+                                                                <option>ABC PVT LTD</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>-->
+                                               <!-- </div>-->
+                                            </div>
+                                            <div id="Achivements" class="tab-pane fade">
+                                                <div class="form-group custom-form-group">
+                                                    <label class="rg-detail-label-2">
+                                                        <span>Details:<span class="color-red">*</span></span>
+                                                        <div class="checkbox m-0 ApproverHide">
+                                                            <label><input type="checkbox" id="DisplayfTools" value="" onchange="Displayformattingtools()">Show Formatting Tools</label>
+                                                        </div>
+                                                    </label>
+                                                    <textarea class="form-control resize-none content ApproverView" id="txtachivments" rows="15"></textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="optionBox form-group custom-form-group">
+                                                            <div class="block add-button-box">
+                                                                <div>
+                                                                    <label for="">Video Link:</label>
+                                                                    <a class="video-help-btn" data-toggle="modal" data-target="#videoHelpModel"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+                                                                </div>
+                                                                <input type="text" class="form-control link-input-fild VideoLinkInputarea ApproverView" id="VideoLinkInput0" name="" /> 
+                                                                <a class="btn custom-btn add link-add-btn ApproverHide"><i class="fa fa-plus"></i></a>
+                                                            </div>
+                                                            <div class="block"> 
+                                                            </div>
+                                                        </div>
+                                                        <div class="optionBox form-group custom-form-group">
+                                                            <div class="web-block add-button-box">
+                                                                <label for="">Web Link:</label>
+                                                                <input type="text" class="form-control link-input-fild ApproverView" name="" id="Weblink"> 
+                                                            </div>
+                                                            <div class="web-block"> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 col-xs-12">
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Additional Images:</label>
+                                                            <div class="drop-container" id="drop-zone">
+                                                                    <div class="btn custom-btn" id="clickHere1" onclick="">Click & Drop here<i class="fa fa-download pl-4"></i>
+                                                                        <input type="file" name="file" id="FileUpload" class="FileUpload ImageDragUpload" style="height:100%" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 500Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." multiple>
+                                                                    </div>
+                                                                    <!--<p class="drop-here-text">Drop files here...</p>-->
+                                                                
+                                                                <div id='filename' class="" style="padding:10px 0px 0px 0px;"></div>
+																<div id='OldImagename' class="" style="padding:0px 0px 0px 0px;"></div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group">
+                                                            <label for="">Attachments:</label>
+                                                            <div class="drop-container" id="drop-zone1">
+                                                                <div class="drop-container-box">
+                                                                    <div class="btn custom-btn" id="clickHere0">Click & Drop here <i class="fa fa-download pl-4"></i>
+                                                                        <input type="file" name="file" id="files" class="UploadDoc" style="height:100%" multiple>
+                                                                    </div>
+                                                                    <!--<p class="drop-here-text">Drop files here...</p>-->
+                                                                </div>
+                                                               
+                                                                <div id='Docfilename' class="" style="padding:10px 0px 0px 0px;"></div>
+																<div id='oldfilename' class="" style="padding:0px 0px 0px 0px;"></div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-center">
+                                        <a type="button" class="btn custom-btn mr-8 wpx-87" id="btnAddRecognition" onclick="PostRecognation();">Submit</a>
+                                        <button type="button" class="btn custom-btn-two-cancel mr-8 wpx-87 closebtn" data-dismiss="modal" onclick="ClosePage();">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="videoHelpModel" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body help-modal-body">
+                        <img class="" src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/Help_Image.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/js/NewRecognition.js"></script>
+
+        <!-- for date and months picker -->
+        <script>
+                $(document).ready(function() {
+		
+  	     });
+
+        </script>
+        <!-- for drag and drop -->
+        	
+        <script>
+            
+        </script>
+        <!-- TAB+++++++++++++++++++++++++++++++++++++++ -->
+        <script>
+            var tabs = $('.tabs');
+            var selector = $('.tabs').find('a').length;
+            //var selector = $(".tabs").find(".selector");
+            var activeItem = tabs.find('.active');
+            var activeWidth = activeItem.innerWidth();
+            $(".selector").css({
+              "left": activeItem.position.left + "px", 
+              "width": activeWidth + "px"
+            });
+
+            $(".tabs").on("click","a",function(e){
+              e.preventDefault();
+              $('.tabs a').removeClass("active");
+              $(this).addClass('active');
+              var activeWidth = $(this).innerWidth();
+              var itemPos = $(this).position();
+              $(".selector").css({
+                "left":itemPos.left + "px", 
+                "width": activeWidth + "px"
+              });
+            });
+        </script>
+
+        
+
+        <!-- Link Fild add delete -->
+        <script>
+            
+
+            $('body').on('click', '.remove', function () {
+                $(this).parent('.block').remove();
+            });
+        </script>
+        <script>
+        	 $("#drop-zone").on('dragenter', function(ev) {
+		        // Entering drop area. Highlight area
+		        $("#drop-zone").addClass("highlightDropArea");
+		    });
+		      $("#drop-zone1").on('dragenter', function(ev) {
+		        // Entering drop area. Highlight area
+		        $("#drop-zone1").addClass("highlightDropArea");
+		    });
+		    
+            $('.web-add').click(function () {
+                //$('.web-block:last').before(' <div class="web-block position-relative"><input class="form-control link-input-fild" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            });
+
+            $('body').on('click', '.remove', function () {
+                $(this).parent('.web-block').remove();
+            });
+        </script>
+
+        <!-- slider for gallery  -->
+        <script>
+            function next(){
+                    document.getElementById('slider-container').scrollTop -= 160;
+            }
+
+            function prev()
+            {
+                document.getElementById('slider-container').scrollTop += 160;
+            }
+        </script>
+
+        <!-- gallery show hide -->
+        <script type="">
+            $('#test[name=UpdateEmp]').change(function(){
+                // var inputVal = $('input[name=UpdateEmp]:checked').val(); 
+                if($('#test[name=UpdateEmp]:checked')) {
+                    // debugger;
+                    $('.changeme').addClass('d-block');
+                    $('.changeme').removeClass('d-none');
+                    $('#Upload-user-image').removeClass('d-block');
+                    $('#Upload-user-image').addClass('d-none');
+                } 
+            });
+            $('#test2[name=UpdateEmp]').change(function(){
+                
+                if($('#test2[name=UpdateEmp]:checked')) {
+                    // debugger;
+                    $('.changeme').removeClass('d-block');
+                    $('.changeme').addClass('d-none');
+
+                    $('#Upload-user-image').addClass('d-block');
+                    $('#Upload-user-image').removeClass('d-none');
+                }
+            });
+           
+ 
+                        
+        </script>
+    </body>
+</html>

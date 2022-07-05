@@ -1,0 +1,1240 @@
+﻿
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/CompanyHomePage/ShowAnnouncement.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+<style>
+.hidden-xs {
+  display:block !important;
+}
+.btm10{
+	padding-bottom:10px;
+}
+    #tabPanelId.nav > li > a {
+    position: relative;
+    display: block;
+    font-size: 15px;
+    color: #333 !important;
+    padding: 10px 15px !important;
+	background-color:#eee;
+	margin-top:0px; !important;
+	
+}
+@font-face {
+    font-family: BasierSquare-Regular;
+    src:
+        
+        url("fonts/BasierSquare-Regular.woff") format("woff");
+    
+}
+a {
+    color: #333;
+    text-decoration: none !important ;
+}
+a:hover {
+    text-decoration: none !important ;
+}
+	
+.btn.focus, .btn:focus, .btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.shadow3 {
+    box-shadow: 0px -3px 25px -1px #dfdede;
+}
+
+.main-area {
+    background: #fff !important;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1) ;
+    border-radius: 4px;
+    margin-bottom: 90px;
+	padding:20px;
+}
+.text-bold {
+    font-weight: 600;
+}
+
+	
+.custom-scroll::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+    background-color: #999;
+}	
+
+/*************************Experiences(General) Popup Start************************/
+
+
+
+.common-popup-description-text {
+    font-size: 12px;
+	text-align: justify;
+	word-break: break-word;
+}
+.common-popup-like-button a {
+    font-size: 20px;
+    color: #333333;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.common-popup-like-button a:hover {
+    color: #24bad6	;
+}
+.common-popup-like-button p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+}
+.image-toggle{
+	display:inline-block;
+	float: right;
+}
+.attachment-badge-popup {
+    display: block;
+    text-align: center;
+}
+.attachment-badge-popup a {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #999999 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+
+.attachment-badge-popup a:first-child {
+    margin-left: 0px;
+}	
+
+
+
+/*New code added on 05-06-2020*/
+.modal-body {
+	padding:0px;
+}
+.modal-body-bg {
+	height:150px;
+	border-radius: 6px;
+}
+
+.common-modal-close {
+    float: right;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0px 0px 3px #fff;
+    filter: alpha(opacity=20);
+    opacity: .7;
+	padding: 5px 10px 0px 0px !important;
+}
+.common-modal-header {
+	position: absolute;
+	z-index: 10;
+}
+
+
+.common-title-popup {
+    font-size: 16px;
+	font-weight: 600;
+    margin-bottom: 0px;
+}
+
+.common-name-popup {
+    font-size: 14px;
+}
+.common-type-popup {
+    font-size: 12px;
+}
+.common-head-text-popup {
+    font-size: 16px; 
+	padding: 4px 10px;
+    color: #000;
+    letter-spacing: 1px;
+    background-color: #ff9e20 !important;
+    width: 100%;
+	font-weight: 600;
+}
+
+.panel-heading-common-popup {
+	padding: 14px 0px 7px 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.common-popup-link {
+	font-size: 12px;
+    padding-top: 10px;
+}
+.common-popup-link a{
+    word-break: break-word;
+    color: #337ab7 !important;
+}
+
+.common-content-popup {
+    position: absolute;
+	bottom: 0px;
+	left: 0px;
+    color: #000;
+    word-break: break-word;
+    padding-bottom: 10px;
+}
+
+.common-content-popup p {
+    margin-bottom: 5px;
+}
+
+.shade-common-popup {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+	left: 0px;
+}
+
+
+
+/*
+.common-media-image .carousel-inner .item {
+	padding: 15px;
+    border: 1px solid #b3a6a6;
+	width: 99.9%;
+}
+*/
+.common-media-image .carousel-inner .item img {
+    display: block;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-inner {
+    border-radius: 5px;
+}
+.carousel-indicators-custom {
+    bottom: -30px;
+}
+
+
+.carousel-indicators-custom li {
+    background: #D6D6D6 !important;
+    border: 1px solid #D6D6D6 !important;
+    border-radius: 10px;
+}
+.carousel-indicators-custom .active {
+    width: 12px !important;
+    height: 12px !important;
+    background: #869791 !important;
+}
+
+.arrow-custom {
+    background-image: none !important;
+    width: 100% !important;
+    top: 340px !important;
+	left: 13px;
+    color: #333 !important;
+    opacity: 1 !important;
+}
+
+
+.left.arrow-custom .glyphicon {
+	left: 0px !important;
+	top: 20px !important;
+	transform: rotate(180deg) translate(20px,0px);
+}
+
+.right.arrow-custom .glyphicon {
+	left: 13px !important;
+	top: 19px !important;
+}
+
+/*
+.carousel-inner .item {
+	padding: 15px 15px 10px 15px;
+    border: 1px solid #b3a6a6;
+}
+*/
+.common-popup-description-more {
+	-webkit-transition:1s ;
+	-o-transition:1s ;
+	transition:1s ;
+	font-weight:600;
+}
+.common-popup-description-more:hover {
+	-webkit-transition:1s ;
+	-o-transition:1s ;
+	transition:1s ;
+	padding-left:5px;
+}
+.common-image-section-popup {
+    height: 100%;
+}
+.common-image-section-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+	border-radius: 4px;
+}
+
+
+.commom-user-image-popup img{
+	width: 70px;
+	height:70px; 
+	border-radius:50%;
+}	
+/*************************Experiences(General) Popup End************************/
+
+@media (max-width: 767px) and (min-width: 320px) {
+
+.commom-user-details-popup {
+	padding-top: 10px;
+}
+.commom-user-image-popup img{
+	width: 60px;
+	height:60px; 
+}
+	
+.shade-common-popup {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+	left: 0px;
+}
+}
+	
+@media (max-width: 425px) and (min-width: 320px) {
+
+.common-media-image .carousel-inner .item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+.arrow-custom {
+    top: 190px !important;
+}    
+	
+}
+.container{
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#tabPanelId.nav-tabs>li.active>a {
+  background-color:#c7c5c5;
+    
+}
+.doc_icon img{
+    padding: 4px;	
+}
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+
+.my_view_announce_text {
+float: left;
+margin-right: 14px;
+position: relative;
+top: 7px;
+font-size: 15px;
+}
+
+.my_view_announce_add_btn {
+    margin-right: 10px;
+}
+.my_view_announce_add_btn.open .dropdown-toggle {
+    color: #1d6ec0;
+    background-color: #ffffff;
+    border-color: #1d6ec0;
+}
+.my_view_announce_add_btn .dropdown-toggle {
+    height: 33px;
+    color: #fff;
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+}
+.my_view_announce_add_btn .dropdown-toggle .caret {
+    position: relative;
+    left: 10px;
+    top: -1px;
+}
+
+/*#Announcement_Alert .modal-dialog {
+    width: 770px;
+}*/
+#Announcement_Alert .modal-header .close {
+    opacity: 1;
+    position: absolute;
+    top: 11px;
+    min-width: auto !important;
+    padding: 0px 3px 1px 3px !important;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 23px;
+    font-weight: 700 !important;
+    color: #000;
+    text-shadow: 0px 0px 1px #000;
+}
+.text-bold {
+    font-weight: 600;
+}
+#Announcement_Alert .modal-header .close:active, #Announcement_Alert .modal-header .close:hover {
+    background: #000;
+    color: #fff;
+}
+#Announcement_Alert .modal-header .close:focus {
+    outline: none;
+}
+#Announcement_Alert .modal-title {
+    font-size: 20px;
+    margin-top: -4px;
+    margin-left: 6px;
+}
+#_AttachDocument {
+    text-align: left;
+    overflow: hidden;
+    margin-top: 0px !important;
+    padding: 5px 0px 0px 0px;
+}
+.attachment-badge {
+    display: block;
+    text-align: center;
+}
+.attachment-badge a {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #333 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+#Announcement_Alert #_AttachDocument a {
+    margin: -4px 7px 15px 0px;
+}
+#Announcement_Alert #_AttachDocument a:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+
+/* New css added on 16/6/2021 */
+
+/* New Announcement & Alert Popup Css Start */
+
+.new-announcement-alert-modal .common-popup-description-text {
+    font-size: 12px;
+    text-align: justify;
+    word-break: break-word;
+}
+.new-announcement-alert-modal .common-popup-like-button a {
+    font-size: 20px;
+    color: #333333;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.new-announcement-alert-modal .common-popup-like-button a:hover {
+    color: #24bad6  ;
+}
+.new-announcement-alert-modal .common-popup-like-button p {
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+}
+.new-announcement-alert-modal .image-toggle{
+    display:inline-block;
+    float: right;
+}
+.new-announcement-alert-modal .attachment-badge-popup {
+    display: block;
+    text-align: center;
+}
+.new-announcement-alert-modal .attachment-badge-popup a {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #999999 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+}
+.new-announcement-alert-modal .attachment-badge-popup a:first-child {
+    margin-left: 0px;
+}   
+
+/*New code added on 05-06-2020*/
+.new-announcement-alert-modal .modal-body {
+    padding:0px !important;
+}
+.new-announcement-alert-modal .modal-body-bg {
+    height:150px !important;
+    border-radius: 6px !important;
+}
+.new-announcement-alert-modal .common-modal-close, #AttachmentView .close {
+/*float: right;
+font-size: 26px;
+font-weight: 700;
+line-height: 1;
+color: #000;
+text-shadow: 0px 0px 3px #fff;
+filter: alpha(opacity=20);
+opacity: .7;
+padding: 5px 10px 0px 0px !important;
+top: 0;
+right: 0;
+min-width: 2em;*/
+min-width: auto !important;
+font-weight: bold !important;
+font-size: 18px;
+top: 10px;
+background: #fff;
+text-shadow: 0px 0px 4px #fff;
+width: 22px;
+height: 22px;
+border-radius: 50%;
+box-shadow: 0 0px 7px 0 rgb(0 0 0 / 23%);
+opacity: 1;
+text-align: center;
+line-height: 22px;
+padding: 0px 0px 0px 0px !important;
+color: #000;
+}
+#Announcement_Alert .common-modal-close:hover, #Announcement_Alert .common-modal-close:focus,
+#AttachmentView .close:hover, #AttachmentView .close:focus {
+    background: #000;
+    color: #fff !important;
+}
+#AttachmentView .close {
+    top: 12.5px;
+}
+.new-announcement-alert-modal .common-modal-header {
+    position: absolute;
+    z-index: 10;
+}
+.new-announcement-alert-modal .common-title-popup {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.new-announcement-alert-modal .common-name-popup {
+    font-size: 14px;
+}
+.new-announcement-alert-modal .common-type-popup {
+    font-size: 12px;
+}
+.new-announcement-alert-modal .common-head-text-popup {
+    font-size: 16px; 
+    padding: 4px 10px;
+    color: #000;
+    letter-spacing: 1px;
+    background-color: #ff9e20 !important;
+    width: 100%;
+    font-weight: 600;
+}
+.new-announcement-alert-modal .panel-heading-common-popup {
+    padding: 14px 0px 7px 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.new-announcement-alert-modal .common-popup-link {
+    font-size: 12px;
+    padding-top: 10px !important;
+}
+.new-announcement-alert-modal .common-popup-link a{
+    word-break: break-word;
+    color: #337ab7 !important;
+}
+.new-announcement-alert-modal .common-content-popup {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: #000;
+    word-break: break-word;
+    padding-bottom: 10px;
+}
+.new-announcement-alert-modal .common-content-popup p {
+    margin-bottom: 5px;
+}
+.new-announcement-alert-modal .shade-common-popup {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+.new-announcement-alert-modal .common-media-image .carousel-inner .item img {
+    display: block;
+    width: 100%;
+    /*height: 350px;*/
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+.new-announcement-alert-modal .carousel-inner {
+    border-radius: 5px;
+}
+.new-announcement-alert-modal .carousel-indicators-custom {
+    bottom: -30px;
+}
+.new-announcement-alert-modal .carousel-indicators-custom li {
+    background: #D6D6D6 !important;
+    border: 1px solid #D6D6D6 !important;
+    border-radius: 10px;
+}
+.new-announcement-alert-modal .carousel-indicators-custom .active {
+    width: 12px !important;
+    height: 12px !important;
+    background: #869791 !important;
+}
+.new-announcement-alert-modal .arrow-custom {
+    background-image: none !important;
+    width: 100% !important;
+    /*top: 340px !important;*/
+    top: 290px !important;
+    left: 13px;
+    color: #333 !important;
+    opacity: 1 !important;
+}
+.new-announcement-alert-modal .left.arrow-custom .glyphicon {
+    left: 0px !important;
+    top: 20px !important;
+    transform: rotate(180deg) translate(20px,0px);
+}
+.new-announcement-alert-modal .right.arrow-custom .glyphicon {
+    /*left: 13px !important;*/
+    /*top: 19px !important;*/
+    left: 0px !important;
+    top: 17px !important;
+}
+.new-announcement-alert-modal .common-popup-description-more {
+    -webkit-transition:1s ;
+    -o-transition:1s ;
+    transition:1s ;
+    font-weight:600;
+    padding: 3px 8px;
+    border-radius: 20px;
+    color: #fff;
+}
+.new-announcement-alert-modal .common-popup-description-more:hover {
+    -webkit-transition:1s ;
+    -o-transition:1s ;
+    transition:1s ;
+    padding-left:8px;
+    margin-left: 5px;
+    color: #fff;
+}
+.new-announcement-alert-modal .common-image-section-popup {
+    height: 100%;
+}
+.new-announcement-alert-modal .common-image-section-popup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+}
+.new-announcement-alert-modal .commom-user-image-popup img{
+    width: 70px;
+    height:70px; 
+    border-radius:50%;
+}   
+.new-announcement-alert-modal .attachment-badge-popup a>i.fa {
+    padding-left: 5px;
+}
+#AttachmentView .modal-title {
+    font-size: 19px;
+    margin-top: 0px;
+}
+#AttachmentView .modal-footer {
+    text-align: center;
+}
+#AttachmentView .modal-footer .btn-outline-secondary:hover, #AttachmentView .modal-footer .btn-outline-secondary:focus {
+    border-color: #7b7a7a;
+    color: #4c4c4c;
+    background: #fff;
+}
+
+/*****6/28/21*******/
+
+@media (min-width: 992px) {
+
+    #AttachmentView .modal-dialog {
+        width: 940px;
+    }   
+
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+
+    .new-announcement-alert-modal .commom-user-details-popup {
+        padding-top: 10px;
+    }
+    .new-announcement-alert-modal .commom-user-image-popup img{
+        width: 60px;
+        height:60px; 
+    }
+
+    .new-announcement-alert-modal .shade-common-popup {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(216, 216, 216,0.7));
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+
+}
+
+@media (max-width: 425px) and (min-width: 320px) {
+
+    .new-announcement-alert-modal .common-media-image .carousel-inner .item img {
+        display: block;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }  
+    .new-announcement-alert-modal .arrow-custom {
+        top: auto !important;
+        bottom: -25px !important;
+    }  
+
+}
+
+/* New Announcement & Alert Popup Css End */
+
+/* Responsive start */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#Announcement_Alert .modal-dialog {
+	    width: 710px;
+	}	
+    .new-announcement-alert-modal .common-popup-description-more {
+        width: 77px;
+        display: block;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+	.table-responsive>.table>tbody>tr>td{
+		white-space: normal !Important;
+	}
+	#Announcement_Alert .modal-dialog {
+	    width: auto;
+	}	
+    .new-announcement-alert-modal .common-popup-description-more {
+        width: 77px;
+        display: block;
+        margin-top: 10px;
+    }
+    .new-announcement-alert-modal .arrow-custom {
+        top: auto !important;
+        bottom: -25px !important;
+    }
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+@media all and (max-width: 692px) and (min-width: 450px){
+
+.ajusting_view{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-flex-wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;  
+  -webkit-justify-content:center;	
+  justify-content:center;	
+
+}
+
+.ajusting_view select, 
+.ajusting_view input{
+
+	width:40% !important;
+}
+.ajusting_view button{
+ 
+  margin:5px;	
+	
+}
+
+}
+
+@media(max-width: 449px){
+
+.ajusting_view{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  
+  -webkit-flex-wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;  
+  -webkit-justify-content:center;	
+  justify-content:center;	
+
+}
+
+.ajusting_view select{
+
+	width:70% !important;
+}
+.ajusting_view input{
+	
+	width:85% !important;
+	margin-left:0 !important;
+    margin-top:5px;
+}
+
+.ajusting_view button{
+ 
+  margin:8px;	
+	
+}
+
+}
+
+@media(max-width:1199px){
+
+#expiry_ajust,
+#publish_ajust{
+ width:100px !important;	
+ padding:0 3px !important;
+ white-space:nowrap !important;
+}
+
+#TempTableAnnouncements tbody tr td{
+
+ font-size:12px !important;	
+ padding:0 3px !important;
+
+}	
+
+}
+
+@media(max-width:767px){
+
+#TempTableAnnouncements tbody tr td:nth-child(6),
+#TempTableAnnouncements tbody tr td:nth-child(5){
+
+ padding:0 1px !important;
+
+}
+#TempTableAnnouncements tbody tr td{
+
+ font-size:12px !important;	
+}
+
+}
+
+</style>
+
+<div class=" row department-header" style="display:none;">
+	<ol class="breadcrumb">                
+		<li><h4><b>Manage Announcements</b></h4></li>
+	</ol>
+</div>
+<section class="content panel panel-default mrgn-tp10">
+	<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="Announcements">Announcements</h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">			
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="mrg-top-10m  btm10 container">
+					<div class="row ajusting_view"><span class="my_view_announce_text">Type </span>
+						<select class="my_view_announce_all_dropdown" style="width:130px;font-size: 13px;padding:8px 5px !Important;" onchange="GetDropDownValue(this.value);">
+						<option value="All">All</option>
+						<option value="Alert">Alert</option>
+						<option value="Announcement">Announcement</option>
+						</select>
+						<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important; margin-left:10px;" />
+						&nbsp;&nbsp;
+						<button type="button" id="closeAnnouncement" style="font-size:13px;margin-right:0px;" class="btn btn-outline-secondary  pull-right " data-localize="Close">Close</button>				
+						<!--<button type="button" id="_btnaddAnnouncementview" style="font-size:13px;" class="btn btn-outline-success pull-right " data-localize="Add">Add</button>	-->
+						<div class="my_view_announce_add_btn dropdown pull-right">
+   							<button class="btn btn-primary dropdown-toggle" id="" type="button" data-toggle="dropdown" aria-expanded="false">Add<span class="caret"></span></button>
+    								<ul class="dropdown-menu">
+      									<li><a href="#" id="_btnaddviewAlert">Alert</a></li>
+      									<li><a href="#" id="_btnaddviewAnnouncement">Announcement</a></li>      									
+    								</ul>
+  								</div>
+					</div>
+					</div>	
+					<div class="table-responsive">
+						<table cellpadding='0' cellspacing='0' border='1' id='TempTableAnnouncements' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading '><tr>
+								<th class='nosort' style="width:5%"><h6 data-localize="Type" >Type</h6></th>
+								<th style="width:20%"><h6 data-localize="Title" >Title</h6></th>
+								<th style="width:10%"><h6 data-localize="Audience" >Audience</h6></th>
+								<th style="width:25%"><h6 data-localize="Company/Departments/Locations" >Company/Departments/Locations</h6></th>
+								
+								<th style="width:10%" id="publish_ajust"><h6 data-localize="PublishDate" >Publish Date</h6></th>
+								<th class="expiryDateColumn" style="width:10%" id="expiry_ajust"><h6 data-localize="ExpiryDate" >Expiry Date</h6></th>
+								
+								<th style="width:10%"><h6 data-localize="Status" >Status</h6></th>
+								<th class='nosort' style='width:15%'><h6 data-localize="Action">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllAnnouncements'>					
+							</tbody>
+						</table>
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No Record Found</div>
+						
+					<div id="mainDivAllAnnouncements">
+					</div>				
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdown"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+						<div id="tablelocation">
+						
+							<div>
+							
+								<span data-localize="LinesPerPage">Lines per page</span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of">of</span>&nbsp;<span id="totalpages"></span></div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="modalManageAnnouncements" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="DownloadAttachments">Download Attachments</h4>
+            </div>
+			<div class="modal-body">
+			 <div class="panel-body">
+			    <div class="form-horizontal">
+				 
+			     <div class="form-group attachmentsDiv">
+			     		<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col"><span class="fa fa-file-o"></span></th>
+						      <th scope="col">File Name</th>
+						      <th scope="col">Download</th>
+						    </tr>
+						  </thead>
+						  <tbody class="announcementsAttachments">
+						    
+						  </tbody>
+						</table>
+				 </div>
+				 <div class="form-group">
+				 	 <div class="col-md-3"></div>
+				     <div class="top20 col-md-9 my_view_announce_attachment_modal_close_box">               
+				     	<div class="col-md-4">
+							<button type="button" class="btn btn-outline-secondary  pull-right " name="btnAttachmentClose" id="btnAttachmentClose" data-localize="Close">Close</button>
+						</div>
+					</div>
+				</div>
+			    </div>
+			   </div>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- New model-->
+<div id="modalAnnouncements" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Announcements">Announcements</h4>
+            </div>
+			<div class="modal-body">
+	 			<div class="panel-body">
+				    <div id="announcement" class="form-horizontal">
+							<div class="col-md-12">
+							  <div class="form-horizontal">
+								   <div class="form-group">
+									<label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="Title">Title</label>
+										<div class="col-sm-9">
+									 
+										 <span id="Title" type="text" maxlength="100"  disabled="disabled"></span>
+										</div>
+									 </div>
+									 <!--<div class="form-group">
+											<label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="ExpiryDate">Expiry Date</label>
+											<div class="col-sm-9">
+											 <div class="input-group">
+												<span id="ExpiryDate"name="date" disabled="disabled"></span>
+												</div>
+											</div>
+									</div>-->
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="Description">Description</label>
+										<div class="col-sm-9">
+										  <span id="Description" rows="8" disabled="disabled"></span>
+										</div>
+									</div>		
+									
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="Link">Link</label>
+										<div class="col-sm-9">
+										  <a href="" target="_blank" id="WebLink"><span id="WebLinkText"></span></a>
+										</div>
+									</div>		
+									
+									<div class="clearfix"></div>
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label pdng-tp-zero-pop attachmentLabel" style="display:none" data-localize="Attachments">Attachments</label>
+										<div class="col-sm-9 attachments">
+											
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="form-group">
+										<!-- <div class="col-sm-3"></div>
+										<div class="col-sm-9">
+				                  			<input id="CloseAnnouncement" type="button" data-dismiss="modal" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close">							
+			                  			</div> -->
+										<div class="col-sm-12 modalAnnouncements_btn_box">
+				                  			<input id="CloseAnnouncement" type="button" data-dismiss="modal" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close">							
+			                  			</div>
+									</div> 
+								<!--/panel content-->
+							</div>
+						</div>
+				    </div>
+			   </div>
+		   </div>
+		</div>
+	</div>
+</div>
+
+<!--new Display Announcements popup starts-->
+    <div id="Announcement_Alert" class="modal fade" role="dialog" aria-hidden="false">
+        <div class="modal-dialog modal-lg new-announcement-alert-modal">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                        <button type="button" class="close common-modal-close" data-dismiss="modal">×</button>
+                        <div class="panel-heading panel-heading-common-popup">
+                            <span class="common-head-text-popup">Announcement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+                        <div class="common-image-section-popup">
+                            <img src="../SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png" class="img-responsive" alt="" />
+                            <div class="shade-common-popup"></div>
+                        </div>
+
+                        <div class="col-md-9 col-sm-9 col-xs-12 common-content-popup pl20 pr0">
+                            <p class="common-title-popup" id="_TextTitle"></p>
+                            <p><span class="date-time-card" id="AnnouncmntAuthor"></span> | <span class="date-time-card" id="AnnouncmntCreated"> </span></p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pt15 pl20 pr20 pb15">
+                        <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-popup-description-text">
+                            <p id="_DtlDescription"><a class="common-popup-description-more" href="javascript:void(0);" id="annReadMore" style="display:none;">Read More</a></p>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 common-popup-link p0" id="divLink">
+                            <strong>Link :</strong>
+                            <a href="javascript:void(0);" id="_WebLink"></a>
+                        </div>
+                        <div class="clearfix"></div>
+
+
+                        <div class="col-md-12 col-sm-12 col-xs-12 pt10 pl0 pr0">
+                            <div class="attachment-badge-popup mt-10" id="_AttachDocument">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-10 col-sm-12 col-xs-12 p0 ma0">
+                            <div id="imagesgeneral" class="col-sm-12 pt10 pl0 pr0 pb40">
+                                <div id="myCarousel" class="carousel slide common-media-image " data-ride="carousel" data-interval="false">
+
+                                    <!-- Wrapper for slides -->
+                                    <div class="carousel-inner" id="AnnouncemntImages">
+                                    </div>
+
+                                    <!-- Left and right controls -->
+                                    <a class="left carousel-control arrow-custom" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="right carousel-control arrow-custom" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon"><img src="../SiteAssets/DevelopersCode/DefaultHome/images/c_ar.png" width="35" height="35" alt=""></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--new Display Announcements popup ends-->
+	<!--Iframe Image POpup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="doc-viewer" style="height:415px">
+                                                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Iframe Image POpup ends-->
+
+</section>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+
+<script src="../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncements.js"></script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">DOCID-1440631752-1204</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3f56f132-24ee-4a6f-9140-5d846bc313b4</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=DOCID-1440631752-1204, DOCID-1440631752-1204</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

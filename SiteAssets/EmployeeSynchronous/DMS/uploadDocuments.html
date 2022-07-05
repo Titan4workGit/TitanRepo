@@ -1,0 +1,287 @@
+﻿<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+
+<script src="../SiteAssets/EmployeeSynchronous/DMS/uploadDocuments.js"></script>
+<script>
+    $(document).ready(function () {
+
+
+        SP.SOD.executeFunc('sp.js', 'SP.ClientContext', readyFunction);
+        SP.SOD.executeFunc('clientpeoplepicker.js', 'SPClientPeoplePicker', function ()
+        {
+            //your code goes here
+            SetPeoplePicker_Multiselect("newEmployeePicker",true);
+        });
+
+
+    });
+    function readyFunction() {
+
+    }
+
+</script>
+<style>
+	.sp-peoplepicker-initialHelpText{
+		top: 0px !important; 
+		left: 0px !important;
+	}
+	.sp-peoplepicker-userSpan{
+		margin: 0px 5px 1px 0px !Important;
+	}
+    label.required:after {content: " *"; color: red;}
+    .browse {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        width: 100%;
+        background: transparent;
+    }
+
+    .panel-group .panel {
+        border-radius: 5px;
+        border-color: #EEEEEE;
+        padding: 0;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+        .panel-title > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+    .short-full {
+        float: right;
+        color: #000;
+    }
+
+    .panel-height-7 {
+        min-height: 412px;
+    }
+	.sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox 
+	{
+		border:0px !important;
+		/*width:167px !important;*/
+		padding:0px !important;
+	}
+input.sp-peoplepicker-editorInput[type=text] 
+{
+    border: 0px !important;
+}
+
+    @media (max-width: 767px) {
+        .panel-height-7 {
+            min-height: auto;
+        }
+    }
+</style>
+<!--<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b>Manage Document</b></h4></li>           
+	</ol>
+</div>-->
+<div class="container custom-container mrgn-tp10" ng-app="myApp" ng-controller="myCtrl" data-ng-init="GetSiteUrl()">
+    <div class="row">
+        <div class="row ">
+
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="panel panel-default panel-height-7 shadow2" style="overflow:hidden">
+                                    <div class="panel-heading  panel-head-4">
+                                        <div class="panel-title">
+                                            <h4 class="h4-color" data-localize="ManageDocument">Manage Document</h4>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-horizontal">
+
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label required" data-localize="File">File</label>
+                                                <div class="col-sm-8">
+                                                    <input name="" id="AttachmentUploadField" type="file" ng-show="showhideUploader=='Show'" class="browse">
+                                                    <label for="" class="control-label" ng-show="showhideUploader=='Hide'">{{fileName}}</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Title">Title</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" class="form-control" id="titlle" maxlength="50" ng-model="title">
+                                                                                                     
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="DocumentNo">Document#</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" maxlength="20" class="form-control" ng-model="documentNo" id="documentNo">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group doc-type-div">
+                                                <label for="" class="col-sm-4 control-label  required" data-localize="Type">Document Type</label>
+                                                <div class="col-sm-8">
+                                                    <select name="documentType" id="documentType" class="form-control doc-type-input" ng-model="documentType" >
+                                                        <option value="{{entity}}" ng-repeat="entity in DocumentTYpesBind">{{entity}} </option>   
+                                                    </select>
+                                                    <button type="button"  class="btn btn-outline-primary doc-type-sub" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></span> <label data-localize="Add"></label></button>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Author">Author</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" maxlength="50" class="form-control" id="author" ng-model="author">
+                                                </div>
+                                            </div>
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Regarding">Regarding</label>
+                                                <div class="col-sm-8">
+                                                    <input type="text" maxlength="50" class="form-control" ng-model="regarding" id="regarding">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Details">Details</label>
+                                                <div class="col-sm-8">
+                                                    <textarea class="form-control" rows="3" id="comment" ng-model="details"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label  required" data-localize="ShareWith">Share With</label>
+                                                <div class="col-sm-8">
+                                                    <select name="shareType" class="form-control" ng-model="accessLevel" ng-change="GetDepartmentOnlyAccessLevelUsers()" ng-show="departmenalDocuments=='Yes'">
+                                                        <option>--select--</option>
+                                                        <option>Everyone</option>
+                                                        <option>Department Only</option>
+                                                    </select>
+                                                    <select name="security" class="form-control" ng-model="secirityLevel" ng-change="GetAllAccessLevelUsers()" ng-show="departmenalDocuments=='No'">
+                                                        <option value="{{secirityLevelItem}}" ng-repeat="secirityLevelItem in secirityLevelCollection">{{secirityLevelItem}} </option>   
+                                                    </select>
+                                                    
+     
+                                              
+                                                    <div id="usersList" style="margin-top: 10px;" ng-show="secirityLevel!='Private' && secirityLevel!='Selective' && secirityLevel!='--select--'">{{usersDisplayName}}</div>
+                                                    <div ng-show="secirityLevel=='Selective'">  <div id="newEmployeePicker" style="margin-top: 10px;" class="form-control"></div> </div>
+                                                </div>
+                                            </div>
+                                            
+                                             <div class="form-group">
+                                             <div ng-show="secirityLevel!='Private' && secirityLevel!='--select--'">
+                                                <label for="" class="col-sm-4 control-label required" ng-show="departmenalDocuments=='No'" data-localize="PermissionLevel">Permission Level</label>
+                                                <div class="col-sm-8">
+                                                    <select name="permissionLevel" class="form-control" ng-model="permissionLevel" ng-change="getTargetRoleDefinitionId()" ng-show="departmenalDocuments=='No'">                                                      
+   														<option>--select--</option>
+                                                        <option value="Read">Read Only</option>
+                                                        <option value="Contribute">Contribute(Edit Document)</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                            </div>        
+											<div class="form-group">
+												<label for="" class="col-sm-4 control-label"></label>
+												<div class="col-sm-8 doc-btn-center">
+												
+												<button type="button" id="AttachAttachmentButton" class="btn  btn-outline-success" ng-show="showhideUploader=='Hide'" ng-click="updateFromDashBoard()" style="margin-left:0px !important;"><label  data-localize="Update"></label></button>	
+												<button type="button" id="AttachAttachmentButton" class="btn  btn-outline-success" style="margin-left:0px;" ng-show="showhideUploader=='Show'" ng-click="saveAttachment()"><label  data-localize="Upload"></label></button>
+												<button type="button" id="AttachAttachmentCancel" class="btn btn-outline-secondary" ng-click="redirectCancel()" ><label  data-localize="Close"></label></button>
+												<button type="button" id="DeleteAttachmentButton" class="btn btn-outline-danger" ng-show="showhideUploader=='Hide'" ng-click="deleteDocuments()"><label  data-localize="Delete"></label></button>
+												
+											<!--	
+													<input id="AttachAttachmentButton" class="btn  btn-outline-success" ng-show="showhideUploader=='Hide'" ng-click="updateFromDashBoard()" style="margin-left:0px !important;" type="button" value="Update" />
+													<input id="AttachAttachmentButton" class="btn  btn-outline-success" style="margin-left:0px;" ng-show="showhideUploader=='Show'" ng-click="saveAttachment()" type="button" value="Upload" />
+													<input id="AttachAttachmentCancel" class="btn btn-outline-secondary" ng-click="redirectCancel()" type="button" value="Close" />
+													<input id="DeleteAttachmentButton" class="btn btn-outline-danger" ng-show="showhideUploader=='Hide'" ng-click="deleteDocuments()" type="button" value="Delete" />
+													-->
+													
+													
+													<div id="message"></div>
+													<label id="lblResult" class="result"></label>
+												</div>
+											</div>
+
+                                        </div>
+
+                                    </div>
+                                    <!--/panel content-->
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="myModal" role="dialog">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header panel-head-4">
+                                                    <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                                                    <h4 class="modal-title h4-color" style="color:rgb(0, 0, 0)" data-localize="AddDocumentType">Add New Document Type</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-horizontal">
+                                                        <div class="form-group">
+                                                            <label for="" class="col-sm-3 control-label" data-localize="Type">Type</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" ng-model="DocumentTypeEntry" maxlength="50">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row text-center top15">
+                                                        
+                                                         <!-- <input ng-click="AddNewDocumentType()" type="button" value="Add" style="margin-left:0px;margin-right:0px;" class="btn  btn-outline-success">-->
+                                                          <button type="button" ng-click="AddNewDocumentType()" style="margin-left:0px;margin-right:0px;" class="btn  btn-outline-success"><label  data-localize="Add"></label></button>	
+                                                          
+                                                          
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-239</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fdf50810-dc9a-4bd8-8fac-318852b44ad7</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-239, ADMIN-1645029823-239</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">23900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

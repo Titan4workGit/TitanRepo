@@ -1,0 +1,2470 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Titan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Projects_New/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" href="../SiteAssets/Projects_New/assets/css/barchart.css">
+    <link rel="stylesheet" href="../SiteAssets/Projects_New/assets/css/Ganttstyle.css">
+    <link rel="stylesheet" href="../SiteAssets/Projects_New/assets/css/jquery-editable-select.css">
+    <script type="text/javascript" src='../SiteAssets/Projects_New/assets/JS/Gantt/jquery.fn.gantt.js'></script>
+    <script src="../SiteAssets/TitanGeustPortalTemplate1/JS/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Projects_New/assets/JS/barchart.js"></script>
+    <script src="../SiteAssets/Projects_New/assets/JS/Chart.js"></script>
+    <script src="../SiteAssets/Projects_New/assets/JS/raphael.js"></script>
+    <script src="../SiteAssets/Projects_New/assets/JS/jquery-editable-select.js"></script>
+    <script type="text/javascript" src='../SiteAssets/Projects_New/assets/JS/jQuery.circleProgressBar.min.js'></script>
+    <script type="text/javascript" src='../SiteAssets/MyTask/assets/MyNewTable.js'></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script src="../SiteAssets/MyTask/MySubordinateTasks/jq.tablesort.js"></script>
+    <script src="../SiteAssets/Projects_New/CustomJS/Dashboard.js?v=2"></script>
+    <script src="../SiteAssets/Projects_New/CustomJS/Module.js"></script>
+    <script src="../SiteAssets/Projects_New/CustomJS/TeamMember.js"></script>
+
+    <style>
+        .ajustingflex .col-md-12:nth-child(2) .panel,
+        .ajustingflex .col-md-12:nth-child(3) .panel {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: center;
+            justify-content: -webkit-center;
+            text-align: center;
+        }
+
+        .ajustingflex div.panel {
+            min-height: 283px;
+            padding: 0 15px;
+            padding-bottom: 0px;
+            text-align: center;
+            position: relative;
+        }
+    
+
+#txtProjectName{
+ 
+ overflow: hidden;
+text-overflow: ellipsis;
+-webkit-box-orient: vertical;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+max-width: 550px;	
+}    
+
+#TempTableQuestions tbody tr td a b.ellipsis-2{
+  max-width:210px !important;
+} 
+
+.ms-webpart-cell-horizontal,
+.ms-webpart-zone{
+ display:block !important;	
+}
+
+
+            .ajustingflex div.panel span.chtname {
+                position: absolute;
+                left: 50%;
+                bottom: 5px;
+                transform: translateX(-50%);
+                transform: -webkit-translateX(-50%);
+                transform: -moz-translateX(-50%);
+                transform: -o-translateX(-50%);
+                color: #000 !important;
+                font-size: 15px;
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+
+        #assigntodrp {
+            height: auto !important;
+            padding: 3px 5px !important;
+        }
+
+        #assigntodrp_TopSpan {
+            width: 100% !important;
+            border: none;
+            background: transparent;
+        }
+
+        #assigntodrp_TopSpan_EditorInput {
+            border: none !important;
+        }
+
+        .upload-chip {
+            margin: 3px 5px 5px 15px !important;
+        }
+
+        .breadcrumb {
+            margin-bottom: 3px !important;
+            padding: 5px 15px !important;
+        }
+
+        #TempTableQuestions tbody tr td:nth-child(2) {
+            text-align: left;
+        }
+
+        #EditProject {
+            margin-top: 5px;
+        }
+
+        #TempTableQuestions th,
+        #TempTableQuestions tr,
+        #TempTableQuestions td {
+            border: none !important;
+        }
+
+        #TempTableQuestions tr {
+            border-bottom: 1px solid #d2d2d2 !important;
+        }
+
+        #TempTableQuestions tbody.panel {
+            border: 1px solid #d2d2d2 !important;
+        }
+
+
+        .od-ItemsScopeList-page {
+            padding: 0 15px !important;
+        }
+
+        .modal.in .group-taks-item {
+            top: 10% !important;
+        }
+
+        #tablenav {
+            margin-right: 0 !important;
+        }
+
+        .searchingbox {
+            position: relative;
+            width: 100%;
+            height: 37px;
+        }
+
+            .searchingbox button {
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                bottom: 2px;
+                background-color: #0b73cc;
+                border-radius: 50%;
+                min-width: 20px;
+                display: block;
+                right: -1px;
+                color: #fff;
+                border: none !important;
+            }
+
+            .searchingbox input {
+                border-radius: 0 15px 15px 0;
+                width: 0%;
+                position: absolute;
+                right: 0;
+                width: 0%;
+                top: 1px;
+                padding-right: 0px !important;
+                transition: all 0.5s;
+            }
+
+                .searchingbox input.effecting {
+                    width: 100%;
+                    padding-right: 35px !important;
+                }
+
+
+        /****employee sec design 9-16-21******/
+
+
+        .employee_list {
+            display: none;
+        }
+
+.employeesection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 5px;
+    min-height: 95px;        
+                   
+ }
+
+.col-sm-6.parentremove{
+ padding:0 2px !important;	
+}
+
+
+        .empoyeeimg img {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #c1c1c1;
+            box-shadow: 0px 1px 4px #afadad;
+            border-radius: 50%;
+        }
+
+        .employeeinfo {
+            padding: 5px 10px;
+        }
+
+            .employeeinfo h3 {
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+            }
+
+        .fullcoverbox {
+            padding: 10px 0px;
+            border: 1px solid #cccccc96;
+            margin-top: 2px;
+            max-height: 194px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position:relative;
+        }
+
+
+
+
+        .crosebox {
+            position: absolute;
+            width: 18px;
+            display: block;
+            height: 18px;
+            top: 10px;
+            right: 3px;
+            background: #fff;
+            border-radius: 50%;
+            color: #000;
+            text-align: center;
+            line-height: 18px;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.3s;
+            box-shadow: 1px 0px 5px #00000073;
+        }
+
+        .employeesection:hover .crosebox {
+            opacity: 1;
+        }
+
+
+
+        .projectesmbox {
+            margin-bottom: 15px;
+        }
+
+            .projectesmbox button.dropdown-toggle {
+                display: block;
+                width: 100%;
+                position: relative;
+                text-align: left;
+                border: 1px solid #c3c1c1;
+                background: none;
+            }
+
+            .projectesmbox .dropdown-menu {
+                width: 100%;
+                padding: 5px 10px;
+                max-height: 178px;
+                overflow-y: auto;
+            }
+
+        #add-team-modal label {
+            margin-top: 10px;
+        }
+
+        #add-team-modal .checkbox-inline input[type="checkbox"] {
+            margin-top: 0px;
+            width: 18px;
+            height: 18px;
+        }
+
+
+        /***scroll design**/
+
+        .fullcoverbox::-webkit-scrollbar,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        .fullcoverbox::-webkit-scrollbar-track,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar-track{
+            box-shadow: inset 0 0 5px #ccc;
+            background:#ececec;
+        }
+        
+        
+        .fullcoverbox::-webkit-scrollbar-thumb,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            .fullcoverbox::-webkit-scrollbar-thumb:hover,
+            .projectesmbox .dropdown-menu::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+        /***scroll design**/
+
+
+
+        .projectesmbox .dropdown-menu li {
+            padding: 4px 3px;
+            border-bottom: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+            .projectesmbox .dropdown-menu li:hover {
+                background-color: #f3f3f3;
+                cursor: pointer;
+            }
+
+            .projectesmbox .dropdown-menu li:last-child {
+                border-bottom: none;
+            }
+
+            .projectesmbox .dropdown-menu li .teaminfos h3 {
+                font-size: 14px;
+                margin: 5px 0;
+                padding: 0;
+            }
+
+            .projectesmbox .dropdown-menu li .teaminfos span {
+                font-size: 13px;
+                margin: 0 2px;
+            }
+
+        .projectesmbox button.dropdown-toggle .fa {
+            position: absolute;
+            right: 6px;
+            top: 10px;
+            font-weight: 700;
+        }
+
+        /***Mygroup section design***/
+
+        .grouplist {
+            display: inline-block;
+            background-color: #f3f3f36e;
+            padding: 3px 5px;
+            border: 1px solid #cccccc96;
+            min-width: 230px;
+            position: relative;
+            left: -5px;
+        }
+
+            .grouplist li {
+                padding: 5px;
+                border-bottom: 1px solid #ccc;
+            }
+
+                .grouplist li:last-child {
+                    border-bottom: none !Important;
+                }
+
+            .grouplist h3 {
+                font-size: 14px;
+                margin: 5px 0;
+                padding: 0;
+            }
+
+            .grouplist img {
+                width: 30px;
+                height: 30px;
+                display: inline-block;
+                border: 2px solid #c1c1c1;
+                box-shadow: 0px 1px 4px #afadad;
+                border-radius: 50%;
+            }
+
+        .groupimgs img {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #c1c1c1;
+            box-shadow: 0px 1px 4px #afadad;
+            border-radius: 50%;
+            margin: 3px;
+        }
+
+
+ul.leftsection{
+  margin:0;
+  padding:0;	
+}
+ul.leftsection li{
+  display:inline-block;	
+}
+
+ul.leftsection li a{
+  text-decoration:none;
+  color:#333 !important;
+  font-size:14px !important;	
+  padding: 5px 10px;
+  vertical-align: middle;
+  display:block;
+  transition:0.5s;
+}
+
+ul.leftsection li a img{
+    width: 17px;
+    position: relative;
+    top: -1px;	
+}
+ul.leftsection li a .fa{
+    font-size: 17px;
+    position: relative;
+    top: 1px;
+}
+
+.contentposition{
+ text-align:right;	
+}
+
+.add-task-position button,
+.add-task-position a{
+ background:transparent !important;
+ color:#333 !important;
+ font-size: 14px !important;
+ padding: 5px 10px !important; 	
+}
+
+.add-task-position button:hover,
+.add-task-position a:hover{
+ background:#efefef !important;	
+}
+
+ul.leftsection li ul.dropdown-menu li{
+  display:block !important;	
+}
+
+.gantttopsec .radio-inline{
+  font-size:14px !important;	
+}
+
+.gantttopsec .radio-inline input[type="radio"]{
+  width:15px;
+  height:15px;	
+}
+
+#circle{
+  border-width: 16px;
+  margin: 5px 15px !important;
+  border-color:#d9d9d9 !important;	
+}
+
+#viewALLTealMemberes tr td{
+ padding:4px 8px !important;	
+}
+
+#viewALLTealMemberes tr td:nth-child(2) p{
+   margin-bottom:0 !important;	
+}
+
+#viewALLTealMemberes tr td:nth-child(2) span:last-child{
+   color:#1d6ec0 !important;	
+}
+
+.employee_list .searchingbox{
+  margin-bottom:1px;	
+}
+
+#Approval-Inbox .row.mb-8{
+	margin-bottom:3px !important;
+}
+
+
+#AssaginTaskTeam.form-control{
+ padding:0;
+ border-radius: 0 15px 15px 0;
+ float:right;
+ width:0%;
+ border:none;
+ transition-delay:overflow 2s;
+ transition:0.5s;
+ overflow:hidden;	
+}
+
+#AssaginTaskTeam.form-control.activateds{
+ transition:0.5s;
+ padding:0 38px 0 0;
+ width:100%;
+ border:1px solid #ccc;
+ overflow:visible;
+}
+
+.addingsec.activateds{
+
+ transition:1s ease; 
+ transform:rotate(180deg);
+ -webkit-transform:rotate(180deg);
+ -moz-transform:rotate(180deg);
+ -ms-transform:rotate(180deg)
+ 	
+}
+
+
+#add-team-modal .sp-peoplepicker-autoFillContainer {
+    z-index: 1;
+    padding: 0px;
+    display: none;
+    cursor: default;
+    max-width: 230px;
+    min-width: 230px;
+    position: absolute;
+    border-color: #c8c8c8;
+    margin: 3px 0;
+
+}
+
+
+#AssaginTaskTeam.form-control .sp-peoplepicker-initialHelpText{
+ opacity:0;
+}
+
+#AssaginTaskTeam.form-control .sp-peoplepicker-initialHelpText.activateds{
+ opacity:1;
+ transition-delay:0.5s;	 
+
+}
+
+
+
+#AssaginTaskTeam_TopSpan input{
+ max-width:100% !important;
+ min-height:31px !important;	
+}
+
+#AssaginTaskTeam .sp-peoplepicker-topLevel{
+  min-height:30px !important;
+  border:none;	
+}
+
+.leftsection li a{
+  transition:none !important;	
+}
+
+/****snak effect*******/
+
+.activating{
+
+	display: inline-block;
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+}	
+
+.activating li{
+  padding:10px 5px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  font-size:15px !important;
+}
+ .slidesec{
+	 position: absolute;
+	 left: 0;
+	 bottom: 0;
+	 height: 4px;
+	 transition: 0.4s;
+	 height: 5px;
+	 z-index: 1;
+	 border-radius: 8px 8px 0 0;
+	 background: #1d6ec0;
+	 width:96px !important;
+}
+
+ .newitem {
+	 color: #333;
+	 cursor:pointer;
+	 padding: 20px;
+	 text-decoration: none;
+	 transition: 0.3s;
+	 margin: 0 6px;
+	 z-index: 1;
+	 font-family: 'Roboto Condensed', sans-serif;
+	 font-weight: 500;
+	 position: relative;
+}
+ .newitem:before {
+	 content: "";
+	 position: absolute;
+	 bottom: -6px;
+	 left: 0;
+	 width: 100%;
+	 height: 5px;
+	 background-color: #dfe2ea;
+	 border-radius: 8px 8px 0 0;
+	 opacity: 0;
+	 transition: 0.3s;
+}
+ .newitem:not(.is-active):hover:before {
+	 opacity: 1;
+	 bottom: 0;
+}
+ .newitem:not(.is-active):hover {
+	 color: #333;
+}
+
+#viewALLTealMemberes tr td label{
+  font-weight:normal !important;	
+}
+
+#Modules .panel.panel-default,
+#Team .panel.panel-default{
+ border:none !important; 
+}
+
+#Team table.custom-table tr th{
+  position: sticky; 
+  top: 0; 
+  z-index: 2;
+  background-color:#fff !important;	
+}
+
+#chart-1{
+  border-left: 3px solid #d9d9d9 !important;
+  border-bottom: 3px solid #d9d9d9 !important;	
+}
+
+.chart-label{
+ font-size:11px !important;	
+}
+
+.chattworarea.TaskGantt{
+ margin:0 auto !important; 	
+}
+
+.progress{
+ box-shadow:none !important;
+ border:1px solid #c1c1c1;	
+}
+
+#txtStakeholder,
+#txtSponsers{
+ min-height:14px;	
+}
+
+.twopartsec{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+ -ms-flex-align: center;
+  align-items: center;
+  margin-top:4px;
+}
+
+.twopartsec img{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 3px #323131;
+    margin-right:6px;
+}
+
+.team-img-box{
+ box-shadow: 0px 0px 3px #323131 !important;
+ border:none;	
+}
+
+
+.managercontents p{
+  margin-bottom:2px !important;	
+  font-size:13px !Important;
+  line-height:1.2 !important;
+}
+
+.managercontents a{
+	
+ color:#1d6ec0 !important;
+ font-size:12px !Important;
+}
+
+#viewALLTealMemberes tr td:nth-child(2) span{
+  font-size:12px !important;	
+}
+
+#tblTeamTable thead tr th{
+ border-bottom:none !important;	
+}
+
+#tblTeamTable tbody tr{
+ border:1px solid #ddd !important;	
+}
+
+
+#tblModules{
+ width:100% !important;
+}
+
+
+
+#TempTableQuestions tr td,
+.table-responsive-2 table tr td{
+ border-top:1px solid #dcdcdc !important;	
+}
+
+
+#tblTeamTable_info,
+#tblModules_info{
+ padding-left:2px;	
+}
+
+
+/**april-25-22***/
+
+.wrapper {
+    min-height: calc(100% - 35px) !important;
+}
+
+.custom-panel.custom-panel-box{
+   min-height: calc(100vh - 145px) !important;	
+}
+
+.customer-project-panel-3 .table-responsive {
+    max-height: 415px !important;
+}
+
+#viewMyDocuments{
+ min-height: 465px !important;	
+}
+
+/**april-25-22 ed***/
+
+/* new css added for My Favorite on 18/2/2022 */
+
+#MyFavModal .my-favourites-panel.my-favourite-add-edit-box {
+    border: none !important;
+}
+#MyFavModal .my-favourites-panel {
+    overflow: visible;
+    box-shadow: none !important;
+    border: 0px !important;
+    border-bottom: 1px solid #e3e3e3 !important;
+}
+.panel-group .panel+.panel {
+    margin-top: 5px !important;
+}
+
+/* resposnive css start */
+
+@media(min-width:1499px){
+
+.chattworarea.gantt,
+.chattworarea.TaskGantt{
+  max-width:1350px !important;
+}
+	
+	
+}
+
+@media(max-width:1500px) and (min-width:1399px){
+
+.chattworarea.gantt,
+.chattworarea.TaskGantt{
+  max-width:1350px !important;
+}
+
+}
+
+
+@media all and (max-width: 1399px) and (min-width: 1364px){
+
+.chattworarea.gantt,
+.chattworarea.TaskGantt{
+  max-width:1170px !important;
+}
+
+}
+
+
+
+@media all and (max-width: 1365px) and (min-width: 1200px){
+
+.chattworarea.gantt,
+.chattworarea.TaskGantt{
+  max-width:1170px !important;
+}
+
+	
+}
+
+@media all and (max-width: 1199px) and (min-width: 992px){
+
+.chattworarea.gantt,
+.chattworarea.TaskGantt{
+  max-width:1000px !important;
+}
+	
+}
+
+
+
+
+        @media(min-width:992px) {
+
+            #ActionOutbox .table-responsive-2 .custom-table {
+                min-width: auto !important;
+            }
+        }
+
+
+        @media(max-width:500px) {
+
+            #tablelocation {
+                padding: 5px 0 !important;
+            }
+        }
+
+
+        #ActionInbox button.btn-danger {
+            border: 1px solid #8c8c8c !important;
+            color: #353535 !important;
+            margin-top: 1px !important;
+        }
+
+        @media(min-width:992px) {
+
+            #ActionInbox .table-responsive-2 .custom-table {
+                min-width: auto !important;
+            }
+        }
+
+        @media(max-width:992px) {
+
+            #Task-Outbox {
+                overflow: auto !important;
+            }
+
+            #myDocumentsIframe {
+                min-width: 992px !important;
+            }
+            
+          .justify-content-between.flexajust{
+	         display:block !important;
+	         text-align:center;
+           }  
+        
+
+    
+            
+            
+        }
+        
+        
+        
+
+        @media(max-width:1133px) {
+
+            .ms-webpart-zone,
+            .ms-webpart-cell-horizontal {
+                display: block !important;
+            }
+        }
+
+        @media(max-width:1024px) {
+
+            #TempTableQuestions {
+                min-width: 910px !important;
+            }
+        }
+        
+ 
+@media(max-width:767px){
+	
+ul.leftsection li a{
+font-size: 11px !important;
+padding: 5px 8px; 	
+}
+	
+ul.leftsection li a img{
+ width:15px;
+}
+
+ul.leftsection li a .fa{
+ font-size:15px;	
+}
+
+.contentposition{
+ text-align:left;	
+}
+
+ul.leftsection li ul.dropdown-menu li{
+  display:block !important;	
+}
+
+.employee_list .col-md-6.pull-right{
+ float:none !important;	
+}
+
+.slidesec{
+  width: 80px !important;	
+}
+
+.activating li{
+ font-size: 12px !important;	
+}
+
+.col-sm-6.parentremove{
+ padding:0 15px !important;	
+}
+
+
+.overflowcontrol{
+ overflow-x:auto !Important;
+ overflow-y:hidden !Important;	
+}
+
+.overflowcontrol::-webkit-scrollbar {
+  height: 5px !important;
+  border-radius:3px;
+}
+
+.overflowcontrol::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  height: 5px !important; 
+}
+
+.overflowcontrol::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+ 
+.overflowcontrol::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.gantt,
+.fn-gantt{
+ width:800px !important;	
+}
+
+	
+}
+       
+        
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2279</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2837b48d-c888-4f94-a091-91774ae5f4d4</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2279, ADMIN-1645029823-2279</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box">
+
+                        <div class="panel-head">
+                           
+                           <div class="row">
+                             <div class="col-md-6">
+                               <h3 class="m-0" id="txtProjectName">
+                                 Project Name
+                               </h3>
+                             </div>
+                             <div class="col-md-6 contentposition">
+                               <ul class="leftsection">
+                                 <li>
+                                   <a href="#" id="EditProject">
+                                   <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Project</a>
+                                 </li>
+                                 
+                                 <li id="btnCopyProject">
+                                   <a href="javascript:void(0);" style="cursor:pointer;"> 
+                                    <img src="../SiteAssets/Projects_New/assets/images/file-icon.png"> Copy Project
+                                   </a>
+                                 </li>
+                                 <li id="btnAddToFavorite">
+                                   <a href="javascript:void(0);" id="txtFavorite">
+                                   <img src="../SiteAssets/Projects_New/assets/images/favourite-icon.png"> Add to Favorite
+                                   </a>
+                                 </li>
+                                 
+                                 <li id="btnTimeSheet" style="cursor:pointer;">
+                                   <a href="javascript:void(0);">
+                                   <img src="../SiteAssets/Projects_New/assets/images/schedule.png"> Timesheet Report
+                                   </a>
+                                 </li>
+
+                               </ul>
+                             </div>
+                           </div>
+                            
+                        </div>
+                        <div class="panel-body border-radius-4 px-0 pt-8">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <ul id="myTabs" class="nav custom-nav nav-pills nav-justified custom-nav-main" role="tablist" data-tabs="tabs">
+                                        <li class="active">
+                                            <a href="#Task-Inbox" data-toggle="tab" class="in-out-tab" aria-expanded="true">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Dashboard</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="">
+                                            <a href="#Gantt-chart" data-toggle="tab" id="tabGanttChart" class="in-out-tab" aria-expanded="false">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Timeline</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        
+                                        
+                                        <li class="">
+                                            <a href="#Task-Outbox" data-toggle="tab" class="in-out-tab" aria-expanded="false">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Documents</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#Approval-Inbox" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="false">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Tasks</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#Modules" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="false">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Modules</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a href="#Team" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="false">
+                                                <h4 class="m-0 nav-text-isPhone">
+                                                    <span>Team</span>
+                                                </h4>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content tab-pane-main">
+                                        <div role="tabpanel" class="tab-pane fade active in" id="Task-Inbox">
+                                            <div class="chart-display-option chart-display-option1">
+                                                <div class="col-md-12 col-sm-4 col-xs-12 pl0 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default pb15 mb0">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="main-card-data1">
+                                                                        <span>Status</span>
+                                                                        <img class="green-icon StatusIcon" src="../SiteAssets/Projects_New/assets/images/youtube-live.png" width="30" height="30" alt="">
+                                                                    </div>
+                                                                    <div class="main-card-data2 color-green" id="txtStatus">Live</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-4 col-xs-12 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default pb15 mb0">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="main-card-data1">
+                                                                        <span>Planned Start Date</span>
+                                                                        <img class="blue-icon" src="../SiteAssets/Projects_New/assets/images/date-to.png" width="30" height="30" alt="">
+                                                                    </div>
+                                                                    <div class="main-card-data2 color-blue" id="PlannedStartDate"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-4 col-xs-12 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default pb15 mb0">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="main-card-data1">
+                                                                        <span>Planned End Date</span>
+                                                                        <img class="blue-icon" id="imgPlanedEndDate" src="../SiteAssets/Projects_New/assets/images/date-from.png" width="30" height="30" alt="">
+                                                                    </div>
+                                                                    <div class="main-card-data2 color-blue" id="PlanedEndDate"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-4 col-xs-12 pr0 tpl0 mb15 card4">
+                                                    <div class="panel panel-default pb15 mb0">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="main-card-data1">
+                                                                        <span>Actual Start Date</span>
+                                                                        <img class="blue-icon" src="../SiteAssets/Projects_New/assets/images/date-to.png" width="30" height="30" alt="">
+                                                                    </div>
+                                                                    <div class="main-card-data2 color-blue" id="ActualStartDate"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-4 col-xs-12 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default pb15 mb0">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="main-card-data1">
+                                                                        <span>Actual End Date</span>
+                                                                        <img class="blue-icon" id="imgActualEndDate" src="../SiteAssets/Projects_New/assets/images/date-from.png" width="30" height="30" alt="">
+                                                                    </div>
+                                                                    <div class="main-card-data2 color-blue" id="ActualEndDate"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chart-display-option ajustingflex">
+                                                <div class="col-md-12 col-sm-6 col-xs-12 pl0 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default m-0 pb15">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0" style="overflow:auto">
+                                                                <div class="col-xs-12" id="BarChart"> </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <span class="chtname"> Project Hours</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-6 col-xs-12 pr0 tpl0 mb15">
+                                                    <div class="panel panel-default m-0 pb15">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0" style="overflow:auto;padding-top:0;">
+                                                            <div class="row m-0">
+                                                                <!--div class="col-xs-12" id="chartContainer" style="width: 100%; height: 210px"></div-->
+                                                                <canvas id="PieChart" width="479" height="212"></canvas>
+                                                                <div class="Chartcircle" style="text-align: center;display:none;">No task created.</div>
+                                                                <div id="circle" class="Chartcircle" style="display:none;"></div>
+                                                            </div>
+                                                            <span class="chtname"> Tasks Status</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-12 col-xs-12 pr0 mlpl0 mb15">
+                                                    <div class="panel panel-default m-0 pb15">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div style="width:200px;height:200px;" id="CompletionPercent">
+                                                                    <p id="percent" style="display:none;">60%</p>
+
+                                                                </div>
+                                                            </div>
+                                                            <span class="chtname"> Project Completion</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="chart-display-option ">
+                                                <div class="col-md-12 col-sm-6 col-xs-12 pl0 pr0 tpl0">
+                                                    <div class="panel panel-default mb15 pb15">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Customer</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtCustomerName">ADAPT INDIA SOFTWARE PVT LTD</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Department</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtDepartment">HR</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Location</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtLocation"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Project Manager</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    
+                                                                    <div class="twopartsec">
+                                                                      <img id="txtManagerPic" src="../SiteAssets/Projects_New/assets/images/img-21.jpg">
+                                                                      <div class="managercontents">
+	                                                                    <p id="txtManagerName"></p>
+	                                                                    <a id="txtManagerEmail" href="javascript:void(0);"></a>   
+	                                                                  </div>  
+	                                                                    
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-6 col-xs-12 pr0 tpl0 paceajust">
+                                                    <div class="panel panel-default mb15 pb15">
+                                                        <div class="panel-body border-radius-4 scrollbar-panel px-0 pb0">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Stakeholder(Internal)</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtStakeholder"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Project Sponsor(Internal)</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtSponsers"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Project Type</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtProjectType"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Business Domain</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtDomain"></p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <label>Program</label>
+                                                                </div>
+                                                                <div class="col-xs-12">
+                                                                    <p id="txtProgram"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default m-0">
+                                                <div class="panel-body border-radius-4 px-0 pt-8 word-break-word">
+                                                    <div class="row ml0 mr0 tmb0">
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-xs-12">
+                                                                    <label>Details</label>
+                                                                </div>
+                                                                <div class="col-xs-12 pl55 tpl15">
+                                                                    <div class="details-box-info scrollbar-panel">
+                                                                        <p id="txtProjectDetails"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!----<button type="button" class="btn btn-outline-primary" id="EditProject" style="float:right;">Edit Project</button>---->
+
+                                        </div>
+                                        
+                                        <div role="Ganttchart" class="tab-pane" id="Gantt-chart">
+                                          
+                                          <div class="ganttchartsec">
+                                          
+                                            <div class="gantttopsec" style="padding:0 2px;">
+                                              <div class="row">
+                                              
+                                              <div class="col-md-8 col-md-push-4" style="text-align:right;">
+                                                  <ul class="leftsection">
+                                                    <li style="display:none;">
+	                                                    <a href="#">
+	                                                      <img src="../SiteAssets/Projects_New/assets/images/filter-icon.png"> Filter
+	                                                    </a>
+	                                                    </li>
+                                                    <li style="display:none;"><a href="#"><i class="fa fa-print" aria-hidden="true"></i> Print</a></li>
+                                                  </ul>
+                                                </div>
+                                                
+                                               
+											 	<div class="col-md-4 col-md-pull-8">
+                                                  
+	                                                 <ul class="activating">
+														<li class="newitem is-active" id="ModuleGanttTab" active-color="#1d6ec0">Module Wise</li>
+													    <li class="newitem" id="TaskGanttTab" active-color="#1d6ec0">Task Wise</li>
+														<span class="slidesec"></span>
+													</ul>   
+												   
+                                                </div>
+                                                
+                                              </div>
+                                            </div><!--row ed-->
+                                            
+                                            
+                                            <div class="row" style="margin:5px 0 !important;">
+                                                <div class="col-md-12 overflowcontrol" style="padding:0 2px">
+                                                  <div class="chattworarea gantt" id="gantt" style="border:1px solid #cccccca1; margin:0 auto; text-align:center;"></div>
+                                                  <div class="chattworarea TaskGantt" style="display:none;border:1px solid #cccccca1; text-align:center; padding:0px;"></div><!--col ed-->
+                                            </div>
+                                            
+                                            
+                                          </div>
+                                          
+                                        </div>
+                                        
+                                     </div><!--gannttchart ed-->   
+                                        
+                                        <div role="tabpane2" class="tab-pane fade" id="Task-Outbox">
+                                            <div id="myDocumentsIframe">
+
+                                            </div>
+
+                                        </div>
+                                        <div role="tabpane2" class="tab-pane fade" id="Approval-Inbox">
+                                            <div class="row m-0">
+                                                <div class="col-xs-12  px-0">
+                                                    <div class="scrollbar-panel chip-panel">
+                                                        <div class="chip-box" id="myTaskInboxChip">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row m-0 mb-8 inbox-istab">
+                                                <div class="col-xs-6">
+                                                    <div class="form-group custom-form-group search-box">
+                                                        <!--<input class="form-control" type="text" name="" placeholder="Search">-->
+                                                        <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search" class="doc-search">
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6">
+                                                
+                                                <ul class="text-right leftsection">
+                                                
+                                                <li>    
+	                                                <a type="button" class="btn add-task" id="NewTask">
+	                                                    <span class="glyphicon glyphicon-plus"></span><span class="ml-4" data-localize="AddTask">Add Task</span>
+	                                                </a>
+                                                </li>
+
+                                                <li>
+
+	                                                <a type="button" class="btn pr-8" id="FilterInbox" data-toggle="modal" data-target="#Inbox">
+	                                                  <img src="../SiteAssets/Projects_New/assets/images/filter-icon.png" style="width:19px"> Filter
+	                                                </a>
+
+                                                </li>
+                                                
+	                                            <li class="dropdown" style="display:inline-block;">
+													     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+												       <img src="../SiteAssets/Projects_New/assets/images/sort-icon.png" style="width:19px;"> Sort <i class="fa fa-angle-down"></i>
+												     </a>
+												     <ul class="dropdown-menu pull-right" style="text-align:left">
+	                                                    <li>
+	                                                        <a href="javascript:void(0);">
+	                                                            <span class="SortClass">Task Name</span>
+	                                                        </a>
+	                                                    </li>
+	                                                    <li>
+	                                                        <a href="javascript:void(0);">
+	                                                            <span class="SortClass">Recent Task</span>
+	                                                        </a>
+	                                                    </li>
+	                                                    <!--li>
+	                                                        <a href="javascript:void(0);">
+	                                                            <span>Old Task</span>
+	                                                        </a>
+	                                                    </li-->
+	                                                    <li>
+	                                                        <a href="javascript:void(0);">
+	                                                            <span class="SortClass">Due Date</span>
+	                                                        </a>
+	                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="SortClass">Priority</span>
+                                                        </a>
+                                                    </li>
+												     </ul>
+												  </li>
+                                                    
+                                                </ul>
+                                                
+                                                
+                                                    <!---<div class="text-right add-task-position">
+                                                    
+                                                        <a type="button" class="btn add-task" id="NewTask">
+                                                            <span class="glyphicon glyphicon-plus"></span><span class="ml-4" data-localize="AddTask">Add Task</span>
+                                                        </a>
+                                                        
+                                                        <button type="button" class="btn pr-8" id="FilterInbox" data-toggle="modal" data-target="#Inbox">
+                                                          <img src="../SiteAssets/Projects_New/assets/images/filter-icon.png" style="width:19px"> Filter
+                                                        </button>
+                                                        
+                                                        <div class="dropdown" style="display:inline-block;">
+     													     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+														       <img src="../SiteAssets/Projects_New/assets/images/sort-icon.png" style="width:19px;"> Short <i class="fa fa-angle-down"></i>
+														     </a>
+														     <ul class="dropdown-menu pull-right" style="text-align:right">
+														            
+														            <li><a href="#">add</a></li>
+															        <li><a href="#">add</a></li>
+															        <li><a href="#">add</a></li>
+															        <li><a href="#">add</a></li>
+															        <li><a href="#">add</a></li>
+														     </ul>
+														  </div>
+                                                    </div>---->
+                                                    
+                                                </div><!--col md6-->
+                                                
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="Inbox" role="dialog">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                                                                <h4 class="modal-title">Filter</h4>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Project:</label>
+                                                                            <select class="form-control" id="UserAllProject" disabled="disabled"></select>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Module:</label>
+                                                                            <select class="form-control" id="ProjectModule" disabled="disabled">
+                                                                                <option>All</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Work Type:</label>
+                                                                            <select class="form-control" id="WorkTypeOfProject">
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Priority:</label>
+                                                                            <select class="form-control" id="txtPriority">
+                                                                                <option>All</option>
+                                                                                <option>Low</option>
+                                                                                <option>Medium</option>
+                                                                                <option>Top</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Status:</label>
+                                                                            <select class="form-control" id="txtFilterStatusInbox">
+                                                                                <option>Open</option>
+                                                                                <option>Completed</option>
+                                                                                <option>Hold</option>
+                                                                                <option>Cancelled</option>
+                                                                                <option>Close</option>
+                                                                                <option>All</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Due Date(less than):</label>
+                                                                            <!-- <input class="form-control" type="date" name=""> -->
+                                                                            <input type="date" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Assign To:</label>
+                                                                            <div id="tempAssignTo">
+                                                                                <div class="form-control" id="assigntodrp"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-sm-6 col-xs-6">
+                                                                        <div class="form-group custom-form-group">
+                                                                            <label for="Project">Client:</label>
+                                                                            <select class="form-control" id="Clientid"></select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer text-center">
+                                                                <button type="button" class="btn custom-btn mr-8" id="btnApply" data-dismiss="modal">Apply</button>
+                                                                <button type="button" class="btn custom-btn-two-cancel" id="btnClear" data-dismiss="modal">Clear</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row m-0">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
+                                                    <div class="table-responsive">
+                                                        <div id="tablewrapper">
+                                                            <div id="tableheader" style="height: auto !important;">
+                                                                <div class="search" style="display:none;">
+                                                                    <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                                                                </div>
+                                                                <div>
+                                                                    <span class="details">
+                                                                        <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                                                        <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table-responsive">
+                                                                <table cellpadding='0' cellspacing='0' border='1' id='TempTableQuestions' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                                                    <thead class='panel-heading '>
+                                                                        <tr>
+                                                                            <th class="w-25 sortStyle TaskSort">Task</th>
+                                                                            <th class="text-center w-20 sortStyle TaskSort">Work Type</th>
+                                                                            <th class="text-center w-10 sortStyle TaskSort" style="text-align:center">Assigned By</th>
+                                                                            <th class="text-center w-10 sortStyle TaskSort" style="text-align:center">Assigned To</th>
+                                                                            <th class="text-center w-10 sortStyle TaskSort" style="text-align:center">Status</th>
+                                                                            <th class="text-center w-10 sortStyle TaskSort" style="text-align:center">Dependency</th>
+                                                                            <th class="text-center w-10 TimeSheetTHead sortStyle">Time Sheet</th>
+                                                                            <th class="text-center w-10 sortStyle RecentTaskSort" style="display:none;">Created Date</th>
+																			<th class="text-center w-10 sortStyle DueDateSort" style="display:none;">Due Date</th>
+																			<th class="text-center w-10 sortStyle PrioritySort" style="display:none;">Task Priority</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody class='panel mainDivAllAnnouncements'></tbody>
+                                                                </table>
+
+                                                                <div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+
+                                                                <div id="mainDivAllAnnouncements">
+                                                                </div>
+                                                            </div>
+                                                            <div id="tablefooter" style="margin-bottom: 10px;">
+                                                                <div id="tablenav">
+                                                                    <div>
+                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                                                        <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                                                    </div>
+                                                                    <div>
+                                                                        <select id="pagedropdown"></select>
+                                                                    </div>
+                                                                    <div style="display:none;">
+                                                                        <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="ShowTotalItemsInbox" style="float:left !important;"><span>Total Items: &nbsp</span><span id="TotalItemscount"></span></div>
+
+                                                                <div id="ShowItemsInbox">Showing <span id="DiplayTaskCount">0</span> out of <span id="TotalTaskCount">5000</span>&nbsp;employees</div>
+                                                                <div id="tablelocation">
+
+                                                                    <div>
+
+                                                                        <span id="pageDropDownInbox" data-localize="LinesPerPage"></span>
+                                                                        <select onchange="sorter.size(this.value)">
+                                                                            <option value="5">5</option>
+                                                                            <option value="10" selected="selected">10</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="50">50</option>
+                                                                            <option value="100">100</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                                                                </div>
+                                                            </div>
+                                                            <div><a href="javascript:void(0)" data-localize="See more..." id="SeeMoreInbox" value="">See more...</a></div>
+                                                            <div><a href="javascript:void(0)" data-localize="See more..." id="SeeMoreFilterInbox" value="">See more...</a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div role="Modules" class="tab-pane fade" id="Modules">
+                                            <div class="row ml0 mr0">
+                                                <div class="col-xs-12 pl0 pr0 tpb15">
+                                                    <div class="panel panel-default mb0">
+                                                        
+                                                        <div class="panel-head border-radius-4 d-flex justify-content-between flexajust">
+                                                        
+                                                            <input type="text" id="SearchModule" placeholder="Search." style="padding:8px 12px !important;">
+                                                            
+                                                            <ul class="leftsection">
+                                                              <li>
+                                                                 <a href="javascript:void(0);" style="display:none;" id="btnaddModule" style="color:#333">
+                                                                   <span class="glyphicon glyphicon-plus"></span> Add Module
+                                                                 </a>
+                                                              </li>
+                                                              <li style="display:none;">
+                                                                 <a href="javascript:void(0);">
+                                                                   <img src="../SiteAssets/Projects_New/assets/images/filter-icon.png"> Filter
+                                                                 </a>
+                                                              </li>
+                                                              <li class="dropdown">
+                                                                 <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                                                   <img src="../SiteAssets/Projects_New/assets/images/sort-icon.png"> Sort <i class="fa fa-angle-down"></i>
+                                                                 </a>
+                                                                 <ul class="dropdown-menu pull-right" style="text-align:left;">
+                                                                        
+                                                                        <li class="clickModuleSort"><a href="javascript:void(0);">Module name</a></li>
+                                                                        <li class="clickPhaseSort"><a href="javascript:void(0);">Phase</a></li>
+																        <li class="clickStartSort"><a href="javascript:void(0);">Start date</a></li>
+																        <li class="clickStatusSort"><a href="javascript:void(0);">Status</a></li>
+																        <li class="clickCompSort"><a href="javascript:void(0);">Completion</a></li>
+																        <li class="clickWgtSort"><a href="javascript:void(0);">Weightage</a></li>
+                                                                 </ul>
+                                                              </li>
+                                                              
+
+                                                            </ul>
+                                                            
+                                                            <!----<button class="btn custom-btn pr-8 wp-102" type="button" style="display:none;" id="btnaddModule">Add</button>---->
+                                                        </div>
+                                                        
+                                                        
+                                                        <div class="panel-body customer-project-panel-3 scrollbar-panel px-0 pb0" style="padding-top:0px;">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="table-responsive table-responsive-2 scrollbar-panel">
+                                                                        <table class="table mb-0 custom-table external-emp-table" id="tblModules">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="border-bottom-0 text-center sortModule" style="text-align:left; width:12%; font-weight:700;">Module Name</th>
+                                                                                    <th class="w-20 border-bottom-0 text-center" style="text-align:left; font-weight:700;">Description</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center sortModWgt" style="font-weight:700;">Weightage</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center sortModComp" style="font-weight:700;">Completion</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center sortModStatus" style="font-weight:700;">Status</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center" style="font-weight:700;">Action</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center sortModPhase" style="font-weight:700; display:none;">Phase</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center sortModStart" style="font-weight:700; display:none;">Start date</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id="viewALLModule"></tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="Modules" class="tab-pane fade" id="Team">
+                                            <div class="row ml0 mr0">
+                                                <div class="col-xs-12 pl0 pr0 tpb15">
+                                                    <div class="panel panel-default mb0">
+                                                        
+                                                        <div class="panel-head border-radius-4 d-flex justify-content-between flexajust">
+                                                            
+                                                            <input type="text" id="SearchTeamTable" placeholder="Search." style="padding:8px 12px !important;">
+                                                            
+                                                            <ul class="leftsection" style="text-align:right">
+                                                              
+                                                              <li>
+                                                                 <a href="javascript:void(0);" id="btnAddNewTeamMember" style="display:none; color:#333 !important">
+                                                                   <span class="glyphicon glyphicon-plus"></span> Add Member
+                                                                 </a>
+                                                               </li>
+                                                               
+                                                              <li style="display:none;">
+                                                                 <a href="javascript:void(0);">
+                                                                  <img src="../SiteAssets/Projects_New/assets/images/filter-icon.png"> Filter
+                                                                 </a>
+                                                              </li>
+                                                              <li class="dropdown">
+                                                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                                                                  <img src="../SiteAssets/Projects_New/assets/images/sort-icon.png"> Sort <i class="fa fa-angle-down"></i>
+                                                                </a>
+                                                                     <ul class="dropdown-menu pull-right" style="text-align:left;">
+
+																	   <li class="ClickUserName"><a href="javascript:void(0);"> User Name</a></li>
+																	    <li class="ClickUserRole"><a href="javascript:void(0);">Role</a></li>
+																	    <li class="ClickUserEngage"><a href="javascript:void(0);">Engage date</a></li>
+																	     <li class="ClickUserStatus"><a href="javascript:void(0);">Status</a></li>
+																	</ul>
+
+                                                              </li>
+                                                            </ul>
+                                                            
+                                                            <!--<button class="btn custom-btn pr-8 wp-102 hpx-34 ml-4" id="btnAddNewTeamMember" style="display:none;" type="button">Add</button>-->
+                                                            
+                                                        </div>
+                                                        
+                                                        
+                                                        <div class="panel-body customer-project-panel-3 scrollbar-panel px-0 pb0" style="padding-top:0px">
+                                                            <div class="row m-0">
+                                                                <div class="col-xs-12">
+                                                                    <div class="table-responsive table-responsive-2 scrollbar-panel">
+                                                                        <table class="table mb-0 custom-table external-emp-table" id="tblTeamTable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th class="w-5" width="5" style="width:50px !important;"></th>
+                                                                                    <th class="w-15 border-bottom-0 text-left SortName" width="15" style="font-weight:700;width:15% !important;">Team Member</th>
+                                                                                    <th class="w-15 border-bottom-0 text-center SortUserRole" width="20" style="font-weight:700;width:15% !important;">Role</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center SortStatus" width="10" style="font-weight:700; width:10% !important;">Status</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center SortEngagedate" width="10" style="font-weight:700; width:10% !important;">Engage Date</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center" width="10" style="font-weight:700; width:10% !important;">Expected Release Date</th>
+                                                                                    <th class="w-10 border-bottom-0 text-center" width="10" style="font-weight:700; width:10% !important;">Release Date</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center" width="5" style="font-weight:700; width:5% !important;">Manage<br>Team</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center" width="5" style="font-weight:700; width:5% !important;">Edit/Upload<br>Document</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center" width="5" style="font-weight:700; width:5% !important;">Create<br>Tasks</th>
+                                                                                    <th class="w-5 border-bottom-0 text-center" width="5" style="font-weight:700; width:5% !important;">Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody id="viewALLTealMemberes">
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- filter Modal -->
+    <div class="modal fade" id="Inbox" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Filter</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Project:</label>
+                                <select class="form-control">
+                                    <option>All</option>
+                                    <option>General Task</option>
+                                    <option>TITAN</option>
+                                    <option>ABC Bank</option>
+                                    <option>TITAN V2-4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Module:</label>
+                                <select class="form-control">
+                                    <option>All</option>
+                                    <option>All</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Work Type:</label>
+                                <select class="form-control">
+                                    <option>All</option>
+                                    <option>All</option>
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Priority:</label>
+                                <select class="form-control">
+                                    <option>Medium</option>
+                                    <option>Top</option>
+                                    <option>Medium</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Status:</label>
+                                <select class="form-control">
+                                    <option>Open</option>
+                                    <option>Open</option>
+                                    <option>Open</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Task Due Date:</label>
+                                <!-- <input class="form-control" type="date" name=""> -->
+                                <input type="date" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assign To:</label>
+                                <select class="form-control">
+                                    <option>All</option>
+                                    <option>Tom Patrick</option>
+                                    <option>Neha Kaushik</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned By:</label>
+                                <select class="form-control">
+                                    <option>Neha Kaushik</option>
+                                    <option>Tom Patrick</option>
+                                    <option>Ashish Kamotra</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
+                    <button class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Group modal -->
+    <div class="modal fade" id="taskGroup1" role="dialog">
+        <div id="taskGroupItem1" class="group-taks-item scrollbar-panel modal-dialog modal-sm">
+            <ul class="group-taks-item-panel" id="assignToUserList"></ul>
+        </div>
+    </div>
+
+    <!-- Action modal -->
+    <!-- Dependency modal -->
+    <div class="modal fade" id="ActionInbox" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-left d-flex">
+                        <label class="m-0" style="white-space: nowrap;">Task:</label>
+                        <span class="ellipsis-1 ml-4 mr-4" id="taskTitleForLnbox"></span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive table-responsive-2 scrollbar-panel">
+                        <table class="table mb-0 custom-table word-break-word">
+                            <thead>
+                                <tr>
+                                    <th class="w-50 text-center border-bottom-0" style="text-align:left;">Dependency</th>
+                                    <th class="w-20 text-center border-bottom-0">Assigned to</th>
+                                    <th class="w-20 text-center border-bottom-0">Status</th>
+                                    <th class="w-20 text-center border-bottom-0">Time Sheet</th>
+                                </tr>
+                            </thead>
+                            <tbody id="taskDependencyTaskInbox"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dependency modal -->
+    <div class="modal fade" id="ActionOutbox" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-left d-flex">
+                        <label class="m-0" style="white-space: nowrap;">Task:</label>
+                        <span class="ellipsis-1 ml-4 mr-4" id="titleForOutboxTask"></span>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive table-responsive-2 scrollbar-panel">
+                        <table class="table mb-0 custom-table word-break-word">
+                            <thead>
+                                <tr>
+                                    <th class="w-50 border-bottom-0">Dependency</th>
+                                    <th class="w-20 text-center border-bottom-0">Assigned to</th>
+                                    <th class="w-20 text-center border-bottom-0">Status</th>
+                                    <!--<th class="w-10 border-bottom-0"></th>-->
+                                </tr>
+                            </thead>
+                            <tbody id="taskDependencyOutbox"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timesheet action modal -->
+    <div class="modal fade " id="timeSheet" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-left d-flex">
+                        <label class="m-0">Task:</label>
+                        <span class="ellipsis-1 ml-4 mr-4" id="TaskTitleOfTimeSheet">Complete the assigned HTML</span>
+                    </h4>
+                </div>
+                <div class="modal-body task-inbox-chat">
+                    <div class="timesheet-entry-chat-main-panel scrollbar-panel">
+                        <div class="row m-0" id="timeSheetAllHours">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add module Modal -->
+    <div class="modal fade" id="add-module-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Add Modules</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Module Name<span class="color-red2">*</span>:</label>
+                                <input class="form-control" type="text" id="txtTitlemodule" maxlength="200" placeholder="Module Name">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Description<span class="color-red2">*</span>:</label>
+                                <textarea class="form-control resize-none" rows="4" id="txtBiomodule" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Phase:</label>
+                                <!--input type="text" class="form-control" id="txtSprint" maxlength="50"-->
+                                <div id="ParentSprint">
+                                	<select class="form-control" id="txtSprint"></select>
+                                </div>
+ 							</div>
+ 						</div>
+ 						
+                        <div class="row" style="margin:0;">
+                          
+                          <div class="col-md-6">
+                           <div class="form-group custom-form-group">
+                                <label>Planned Start Date:</label>
+                                <input type="text" class="form-control fromdate" id="PlannedFromDate" placeholder="From Date">
+ 							</div>
+                          </div>
+                          
+                           <div class="col-md-6">
+                           <div class="form-group custom-form-group">
+                                <label>Planned End Date:</label>
+                                <input type="text" class="form-control endingdate" id="PlannedToDate" placeholder="End Date">
+ 							</div>
+                          </div>
+                        
+                        </div><!--row ed--> 
+ 						 
+                        <div class="row" style="margin:0;">	
+                        
+                          <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Weightage<span class="color-red2">*</span>:</label>
+                                <select class="form-control" id="ProjectWeightage">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-6" style="display:none;">
+                            <div class="form-group custom-form-group">
+                                <label>Estimated Hours:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                          </div>  
+                          
+                     </div><!--row ed--> 
+                     
+                     <div class="row" style="margin:0;">    
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Completion (%):</label>
+                                <input class="form-control" type="number" id="txtCompletion" max="100" min="0" placeholder="0 to 100">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Status<span class="color-red2">*</span>:</label>
+                                <select class="form-control" id="ProjectSatus">
+                                    <option value="Active">Active</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Inactive">Inactive</option>
+                                    <option value="Hold">Hold</option>
+                                </select>
+                            </div>
+                        </div>
+                      </div><!--row ed-->  
+                        
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn custom-btn mr-8 wpx-80" type="button" id="btnsubmitModule">Submit</button>
+                    <button class="btn custom-btn-two-cancel wpx-80" type="button" id="btnCancelModule" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit module Modal -->
+    <div class="modal fade" id="edit-module-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Update Modules</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Module Name<span class="color-red2">*</span>:</label>
+                                <input class="form-control" type="text" maxlength="200" placeholder="Module Name" id="updateModuleName">
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Description<span class="color-red2">*</span>:</label>
+                                <textarea class="form-control resize-none" rows="8" id="updadteDescription" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Phase:</label>
+                                <div id="parentEditSprint">
+                                	<select class="form-control" id="EditTxtSprint"></select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin:0;">
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Planned Start Date:</label>
+                                <input type="text" class="form-control fromdate" id="EditFromDate" placeholder="From Date">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Planned End Date:</label>
+                                <input type="text" class="form-control endingdate" id="EditToDate" placeholder="End Date">
+                            </div>
+                        </div>
+
+                       </div><!--row ed-->
+                       
+                       <div class="row" style="margin:0;">
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Weightage<span class="color-red2">*</span>:</label>
+                                <select class="form-control" id="EditProjectWeightage">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                         <div class="col-md-6" style="display:none;">
+                            <div class="form-group custom-form-group">
+                                <label>Estimated Hours:</label>
+                                <input type="type" class="form-control">
+                            </div>
+                        </div>
+
+                        
+                      </div><!--row ed-->   
+                      
+					  <div class="row" style="margin:0;">	  
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Completion (%):</label>
+                                <input class="form-control" type="number" id="txtCompletionEdit" max="100" min="0" placeholder="0 to 100">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group custom-form-group">
+                                <label>Status<span class="color-red2">*</span>:</label>
+                                <select class="form-control" id="updateStatus">
+                                    <option value="Active">Active</option>
+                                    <option value="Completed">Completed</option>
+                                    <option value="Inactive">Inactive</option>
+                                    <option value="Hold">Hold</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                     </div><!--row ed-->   
+                        
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn custom-btn mr-8 wpx-80" type="button" id="btnupdateModule">Update</button>
+                    <button class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal" type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add team Modal -->
+    <div class="modal fade" id="add-team-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title" id="TeamMemberHeader">Add Team Member</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group" id="groupselce">
+                                <label>Select Option<span class="color-red2">*</span> :</label>
+                                <select class="form-control" id="drpuser">
+                                    <option value="0">--Select--</option>
+                                    <option value="Employee">Employee</option>
+                                    <option value="Group">My Group</option>
+                                    <option value="GuestUsers">Guest Users</option>
+                                    <option value="OtherProject">Other Project</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-12 col-xs-12" id="groupselection1" style="display:none;">
+                            <label>My group<span style="color:red">*</span> :</label>
+                            <select id="MySharedGroup" onmouseover="this.title=this.options[this.selectedIndex].title"></select>
+                            <label id="groupUserLists1"></label>
+                            <label for="select" class="control-label required"></label><i class="bar"></i>
+
+                            <div class="projectesmbox col-md-12" style="padding:0 0; display:none;">
+                                <div class="dropdown grouptwo">
+                                    <label>My my group-2</label>
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                        Select  <span class="fa fa-angle-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+
+                                        <li>
+                                            <div class="teaminfos">
+                                                <h3>Group name-1</h3>
+                                                <div class="groupimgs">
+                                                    <img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/740/images.jpg">
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            <div class="teaminfos">
+                                                <h3>Group name-2</h3>
+                                                <div class="groupimgs">
+                                                    <img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/740/images.jpg">
+                                                    <img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/740/images.jpg">
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div><!--group two-->
+
+                        </div><!--group mainbox-->
+                        
+                         <div class="projectesmbox col-md-12" id="projectteams" style="display:none;">
+
+                            <div class="dropdown" style="margin-bottom:10px">
+                                <label>Project Team</label>
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnProjectName">
+                                    Select  <span class="fa fa-angle-down"></span>
+                                </button>
+                                <ul class="dropdown-menu" id="AllProjectsList"></ul>
+                            </div>
+
+                        </div><!---projecttes-->
+                        
+
+                        <div class="employee_list col-md-12 userBox" id="userList">
+
+                            <div class="col-md-12" style="position: relative; border:1px solid #ccc;">
+
+                                <div class="row fullcoverbox" style="border:none">
+                                    <div id="userHTMLBox"></div>
+                                </div><!--row ed-->
+                                
+                               <div class="row">
+                                    <div class="col-md-6 pull-right" style="margin-top:5px;">
+                                        <div class="searchingbox">
+                                            <div id="AssaginTaskTeam" class="form-control"></div>
+                                            <button type="button" class="addingsec"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div><!--row ed child-->
+
+                            </div><!--12 ed-->
+
+                        </div><!--employee list-->
+
+
+                        <div class="form-group col-sm-12 col-xs-12" id="editmodeaccount" style="display: none;">
+                            <label id="selectedUserName"></label>
+                            <label id="selectedUserID" style="display:block"></label>
+                        </div>
+
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Role<span class="color-red2">*</span> :</label>
+                                <input class="form-control" type="text" id="MemberRole">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Status<span class="color-red2">*</span> :</label>
+                                <select class="form-control" disabled="disabled" id="MemberStatus">
+                                    <option value="Active">Active</option>
+                                    <option value="Released">Released</option>
+                                    <option value="Terminated" style="display:none">Terminated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Engage Date:</label>
+                                <input class="form-control" type="text" id="EngageDate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Expected Release Date:</label>
+                                <input class="form-control" type="text" id="ExpectedReleaseDate">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12" style="display:none;" id="divReleasedDate">
+                            <div class="form-group custom-form-group">
+                                <label>Release Date:</label>
+                                <input class="form-control" type="text" id="ReleaseDate">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" name="mTeam" id="ManageTeams" value="">Manage Teams</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" name="mDocument" id="ManageDocuments" value="">Edit Documents</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" name="mTasks" id="ManageTasks" value="">Create Tasks</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn custom-btn mr-8 wpx-80" id="btnsubmit" type="button" style="display:none;">Submit</button>
+                    <button class="btn custom-btn mr-8 wpx-80" id="btnupdate" type="button" style="display:none;">Update</button>
+                    <button class="btn custom-btn-two-cancel wpx-80" id="btnCancelTeam" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit team Modal -->
+    <div class="modal fade" id="edit-team-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Add Team Member</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>User:</label>
+                                <input class="form-control" type="text" id="updateUserName" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Role:</label>
+                                <input class="form-control" type="text" id="updateRole" placeholder="Role">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Status:</label>
+                                <select class="form-control">
+                                    <option>Active</option>
+                                    <option>Released</option>
+                                    <option>Terminated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Engage Date:</label>
+                                <input class="form-control" type="date" name="" placeholder="Role">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Expected Release Date:</label>
+                                <input class="form-control" type="date" name="" placeholder="Role">
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" value="">Manage Teams</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" value="">Manage Documents</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="checkbox-inline"><input type="checkbox" value="">Manage Tasks</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button class="btn custom-btn mr-8 wpx-80" data-dismiss="modal">Submit</button>
+                    <button class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Cancle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+$(function(){
+
+ $('.addingsec').click(function(){
+ 
+ 	$(this).siblings('#AssaginTaskTeam').toggleClass('activateds');
+ 	$(this).toggleClass('activateds');
+ 	$('#AssaginTaskTeam.form-control .sp-peoplepicker-initialHelpText').toggleClass('activateds'); 
+ 	
+ });
+
+$('.leftsection li').click(function(e){
+    $(this).addClass('activing').siblings('li').removeClass('activing');
+    $(this).children('a').css('color','#fff');
+    $(this).siblings().find('a').css('color','#000');
+})
+
+
+});
+
+</script>
+
+<!--snak effect only-->
+
+<!---date-picker-->
+
+
+
+<script>
+
+var indicator = document.querySelector('.slidesec');
+var items = document.querySelectorAll('.newitem');
+
+function handleIndicator(el) {
+  items.forEach(function (item) {
+    item.classList.remove('is-active');
+    item.removeAttribute('style');
+  });
+  indicator.style.width = "".concat(el.offsetWidth, "px");
+  indicator.style.left = "".concat(el.offsetLeft, "px");
+  indicator.style.backgroundColor = el.getAttribute('active-color');
+  el.classList.add('is-active');
+  el.style.color = el.getAttribute('active-color');
+}
+
+items.forEach(function (item, index) {
+  item.addEventListener('click', function (e) {
+    handleIndicator(e.target);
+  });
+  item.classList.contains('is-active') && handleIndicator(item);
+});
+
+</script>
+
+</body>
+</html>

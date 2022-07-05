@@ -1,0 +1,494 @@
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+////////////////////////////////////////// Admin Portal (NEW HTML) /////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<style>
+.required:after {
+  content:"*";
+  color:red;
+}
+
+</style>
+
+<style>
+.tile_box2{
+    background-color:#efefef;
+      height:auto ;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0   rgba(0,0,0,.12);
+     /*border-radius: 2px;*/
+	 padding:15px;
+	 border:1px solid #efefef;
+	 min-height:185px;
+	 transition:all 0.3s ease;
+	 color:#666;
+}
+
+.tile_box2:hover{
+    /*background-color:#999;*/
+     box-shadow: none;
+	     transition: background 0.5s;
+		color:#1d6ec0 !important;
+		 border:3px solid #1d6ec0;
+		
+     /*border-radius: 2px;*/
+	 }
+
+
+.h4-color2{ margin-top:15px; font-size:16px; text-decoration:none}
+
+@media (max-width: 768px) {
+  .marginTop {
+    margin-top: 15px;
+  }
+}
+</style>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script>
+
+
+function BindAdminPortal(rights)
+{
+	var deferred=$.Deferred();
+	
+	var companyID=titanForWork.getQueryStringParameter('CompanyId');
+	var requestURI= _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('AdminPortal')/Items?select=Title,Name,PictureUrl,Active,Order,PageURL&$filter=Active eq 1&$orderby=Order0 asc";
+	var CurrentUserIsTechAdmin = $.inArray("TechAdmin",rights);
+	var CurrentUserIsHRAdmin = $.inArray("HRAdmin",rights);
+	
+	$.ajax({
+		url:requestURI,
+		headers:{Accept:"application/json;odata=verbose"},
+		success:function(data){
+			var results=data.d.results;
+			var mainHTML='';
+			var title,displayName,pictureURL,active,pageURL;
+			$.each(results,function(i,item)
+			{
+				title=item.Title;
+				displayName=item.Name;
+				pictureURL=item.PictureURL.Url;
+				active=item.Active;
+				
+				pageURL=item.PageURL+"?WebAppId="+companyID+"&sourcelocation=../Pages/AdminPortal.aspx";
+				mainHTML='';
+				if(CurrentUserIsTechAdmin!=-1 || _spPageContextInfo.isSiteAdmin == true)
+				{
+					mainHTML+='<div class="col-md-3 marginTop">';
+					if(item.PageURL!='' && item.PageURL!=null)
+						mainHTML+='<a style="cursor:pointer;" href='+pageURL+'>';
+					else
+						mainHTML+='<a style="cursor:pointer;" href=\'javascript:OpenAdminPanelPage("'+title+'")\'>';
+						
+					mainHTML+='<div class="tile_box2">';
+					mainHTML+='<p class="text-center"><img src='+pictureURL+'></p>';
+					mainHTML+='<h4 class="text-center h4-color2">'+displayName+'</h4>';
+					mainHTML+='</div>';
+					mainHTML+='</a>';
+					mainHTML+='</div>';
+				}
+				else if(CurrentUserIsHRAdmin!=-1 && title=="ManageEmployees")
+				{
+					mainHTML='';
+					mainHTML+='<div class="col-md-3 marginTop">';
+					if(item.PageURL!='')
+						mainHTML+='<a style="cursor:pointer;" href='+pageURL+'>';
+					else
+						mainHTML+='<a style="cursor:pointer;" href=\'javascript:OpenAdminPanelPage("'+title+'")\'>';
+						
+					mainHTML+='<div class="tile_box2">';
+					mainHTML+='<p class="text-center"><img src='+pictureURL+'></p>';
+					mainHTML+='<h4 class="text-center h4-color2">'+displayName+'</h4>';
+					mainHTML+='</div>';
+					mainHTML+='</a>';
+					mainHTML+='</div>';
+				}
+			
+				if((i+1)%4==0)
+				{
+					mainHTML+='<div class="clearfix"></div>';
+					mainHTML+='<br class="hidden-xs">';
+				}
+				$(".adminportalsections").append(mainHTML);
+			})
+			if(mainHTML=='')
+			{
+				$( "#messageAdminNotAthorizedAcces" ).text("You are not authorized to access this page.");
+			}
+		},
+		error:function(error)
+		{
+			console.log("Error occured in BindAdminPortal() function");
+			deferred.reject(error);			
+		}
+	})
+}
+
+
+function CheckUserInProcessApprover()
+{
+	var deferred=$.Deferred();
+	var companyId=titanForWork.getQueryStringParameter('CompanyId');
+	var webPartCollection = new Array();
+  	webPartCollection.push("Tech Admin");
+    webPartCollection.push("HR Admin");
+    var users = UserExistInProcessApprover(companyId, "", webPartCollection);
+    var rights=[];
+    for (var collectionIndex = 0; collectionIndex < users.length; collectionIndex++)
+    {	        
+        if (users[collectionIndex].webPartName == "Tech Admin")
+        {
+            $('#adminmanagepermissionIDS').show();//Show or hide add new item link
+            rights.push("TechAdmin");
+        }
+        else if (users[collectionIndex].webPartName == "HR Admin")
+        {
+            $('#adminmanagepermissionIDS').show();//Show or hide add new item link
+            rights.push("HRAdmin");
+        }
+    }
+    deferred.resolve(rights);
+    
+    return deferred;
+}
+
+$(document).ready(function()
+{
+	CheckUserInProcessApprover().always(function(rights){
+		BindAdminPortal(rights);			// Bind Admin Portal Sections. All Admin Portal sections come from AdminPortal list (Root Level).
+	})
+	
+	
+	$(".closeRoomForm").click(function()
+	{
+		$("#modelForRooms").modal('hide');
+	});
+
+	$(".btnAddRooms").click(function()
+	{  
+		var location=$('#txtLocation').val();
+		if(location.length==0)
+		{
+			alert('Please select location');
+			return false;
+		}
+		var rooms=$('#txtRooms').val().trim();
+		if(rooms.length==0)
+		{
+			alert('Please enter room.');
+			return false;
+		}
+		if(rooms.length>250)
+		{
+			alert('Rooms maximum 250 characters allowed.');
+			return false;
+		}
+		var facility=$('#txtFacility').val().trim();
+		if(facility.length>400)
+		{
+		    alert('Facility maximum 400 characters allowed.');
+			return false;
+		}
+		var description=$('#txtDescription').val().trim();
+		if(description.length>1000)
+		{
+		    alert('Description maximum 1000 characters allowed.');
+			return false;
+		}
+		var occupancy=$('#txtOccupancy').val().trim();
+		if(occupancy.length>250)
+		{
+		    alert('Occupancy maximum 250 characters allowed.');
+			return false;
+		}
+		var validation=RoomsValidation(location,rooms);
+		if(validation==false)
+		{
+		    alert('This room is already exist for this location');
+			return false;
+
+		}
+		
+	    AddNewRoomsMetadata(rooms,location, facility, description, occupancy);   
+	});
+
+
+		GetOfficeLocation();
+		
+		if (_spPageContextInfo.isSiteAdmin == true)
+	    {
+	       $('#adminmanagepermissionIDS').show();//Show or hide add new item link
+	    }
+	    
+	    if($('#adminmanagepermissionIDS').is(':visible')==false)
+	    {
+           $( "#messageAdminNotAthorizedAcces" ).text("You are not authorized to access this page.");
+        }	    
+});
+
+function RoomsValidation(locationname,rooms)
+{
+var val_flag=true;
+     var listName = 'RoomMaster';
+     var siteURL = "";
+		
+		  siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,Rooms,Location&$filter=Location eq '"+locationname+"'";
+ $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) 
+        {
+            var items = data.d.results;         
+            for(var index=0;index<items.length;index++)
+            {
+	           if(rooms.toLowerCase()==items[index].Rooms.toLowerCase())
+	           {
+	           val_flag=false;
+	           }            
+            }
+           
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    }); 
+    return val_flag;     
+}
+
+function AddNewRoomsMetadata(rooms, location, facility, description, occupancy)
+{
+   var companySiteUrlLink=_spPageContextInfo.webAbsoluteUrl;
+       var ListName="RoomMaster";
+    var Metadata;
+    var ItemType = GetItemTypeForListNameDetails(ListName);
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title:rooms,
+        Rooms:rooms,
+        Location:location,
+        Facility:facility,
+        Description:description,
+        Occupancy:occupancy
+       };
+    
+     if (rooms== null || rooms=="")
+    {
+        delete Metadata["Rooms"];
+    }
+    if (location== null || location== "") {
+        delete Metadata["Location"];
+    }
+    if (facility== null || facility== "") {
+        delete Metadata["Facility"];
+    }
+    if (description== null || description== "") {
+        delete Metadata["Description"];
+    }
+    if (occupancy== null || occupancy== "") {
+        delete Metadata["Occupancy"];
+    }
+    $.when(AddNewRoomMatser(ListName, Metadata, companySiteUrlLink)).done(function (itemresponse) 
+	 {
+	    alert('Meeting room has been added.');
+        $("#modelForRooms").modal('hide');
+     }); 
+}
+
+function AddNewRoomMatser(ListName, Metadata, companySitesURL)
+{
+    var dfd = $.Deferred();
+    $.ajax({
+        url: companySitesURL + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) 
+        {
+            dfd.resolve(data);                    
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+function GetItemTypeForListNameDetails(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+function GetOfficeLocation()
+{
+    var companyID=titanForWork.getQueryStringParameter('CompanyId');
+     $('#txtLocation').empty();
+     var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('OfficeLocation')/items?$select=ID,OfficeName,CompanyID/ID&$expand=CompanyID&$filter=OfficeLocationId eq '0' and CompanyID/ID eq '" + companyID+ "'";
+        $.ajax({  
+            url: Ownurl,  
+            headers: { Accept: "application/json;odata=verbose" },  
+            async:false,  
+            success: function (data) 
+			{  
+                var items = data.d.results;   	              	 
+                for(var i = 0; i < items.length; i++)
+                {
+                  $("#txtLocation").append($("<option></option>").attr("value", data.d.results[i].OfficeName).text(data.d.results[i].OfficeName));
+                
+                }				
+            },eror: function (data) {  
+                console.log('error');
+            }  
+        });  	
+}
+function OpenAdminPanelPage(pageName)
+{
+	if(pageName=='MeetingRoom')
+	{
+		$('#modelForRooms').modal('show');		
+		$('#txtRooms').val('');
+		$('#txtFacility').val('');
+		$('#txtDescription').val('');
+		$('#txtOccupancy').val('');		
+		
+		return false;
+	}
+}
+
+</script>
+	
+	<div class="modal fade" id="modelForRooms" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color">Rooms</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">                                       
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-4 control-label required">Location</label>
+                                    <div class="col-sm-8">
+                                   
+                                           <select name="select2" id="txtLocation" class="form-control">
+                                                           
+											</select>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-4 control-label required">Room</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="txtRooms" class="form-control">
+                                    </div>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="" class="col-sm-4 control-label">Description</label>
+                                    <div class="col-sm-8">
+                                        <textarea type="text" id="txtDescription" cols="10" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+ 								<div class="form-group">
+                                    <label for="" class="col-sm-4 control-label">Facility</label>
+                                    <div class="col-sm-8">
+                                        <textarea type="text" id="txtFacility" cols="10" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+
+                                 
+                                <div class="form-group">
+                                    <label for="" class="col-sm-4 control-label">Occupancy</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="txtOccupancy" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/panel content-->
+                   
+                    <div class="form-group">
+                        <!--<label for="" class="col-sm-4 control-label"></label>-->
+                        <div class="col-sm-12" style="text-align:center;">
+                            <button type="button" class="btn  btn-outline-success  btnAddRooms">Submit</button>
+                            <button type="button" class="btn btn-outline-secondary closeRoomForm">Close</button>
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+    </div>
+</div>
+
+	
+	
+
+
+
+
+	<div id="modelForPermissions" class="modal fade">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Coming Soon...</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	       <img src="../_catalogs/masterpage/Titan2/Images/under_construction.jpg" class="img-responsive center-block">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	
+
+	
+        <div class=" row department-header">
+            <ol class="breadcrumb">                
+                <li><h4><b>Administration Panel</b></h4></li>
+            </ol>
+        </div>
+   
+
+    
+     <!--   <div class="col-md-12">-->
+<div id="messageAdminNotAthorizedAcces" style="font-size:20px;font-weight:bold;">
+</div>
+
+<div class="row" style="display:none;" id="adminmanagepermissionIDS">
+		<div class="col-md-12">
+			<div class="row adminportalsections">
+			</div>
+			<div style="clear:both; padding-bottom:40px;">
+			</div>
+		</div>
+</div>
+
+
+   
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-335</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">ed7203f8-1e79-461a-a289-39ed9dc578ea</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-335, ADMIN-1645029823-335</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">33500.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

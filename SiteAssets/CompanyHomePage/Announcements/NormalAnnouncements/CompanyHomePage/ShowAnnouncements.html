@@ -1,0 +1,123 @@
+﻿<script src="../_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/CompanyHomePage/ShowAnnouncement.js">	</script>
+
+<div id="announcmentDiv">
+
+</div>
+
+<div id="modalAnnouncements" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Announcements"></h4>
+            </div>
+			<div class="modal-body my_announce_webpart_modal_body">
+	 			<div class="panel-body">
+				    <div id="announcement" class="form-horizontal">
+					   <div class="form-group announce_modal_heading">
+						<!-- <label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="Title"> :</label> -->
+							<div class="col-sm-12">
+							 <span id="Title" type="text" maxlength="100"  disabled="disabled"></span>
+							</div>
+						</div>
+						<div class="form-group announce_modal_date">
+								<label for="" class="col-sm-2 control-label pdng-tp-zero-pop"> Date </label>
+								<div class="col-sm-10">
+									<span name="date"> 2nd Feb 2020 </span>
+								</div>
+						</div>
+						 <!--<div class="form-group">
+								<label for="" class="col-sm-3 control-label pdng-tp-zero-pop" data-localize="ExpiryDate"></label>
+								<div class="col-sm-9">
+								 <div class="input-group">
+									<span id="ExpiryDate"name="date" disabled="disabled"></span>
+									</div>
+								</div>
+						</div>-->
+						<div class="form-group announce_modal_details">
+							<label for="" class="col-sm-2 control-label pdng-tp-zero-pop"> Details </label>
+							<div class="col-sm-10">
+							  <span id="Description" rows="8" disabled="disabled"></span>
+							</div>
+						</div>		
+						
+						<div class="clearfix"></div>
+						<div class="form-group announce_modal_attachments">
+							<label for="" class="col-sm-2 control-label pdng-tp-zero-pop attachmentLabel" style="display:none" data-localize="Attachments"></label>
+							<div class="col-sm-10 attachments">
+								
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group announce_modal_close">
+							<!-- <div class="col-sm-3"></div> -->
+							<div class="col-sm-12">
+	                  			<input id="CloseAnnouncement" type="button" data-dismiss="modal" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close">							
+                  			</div>
+						</div> 
+						<!--/panel content-->	
+				    </div>
+			   </div>
+		   </div>
+		</div>
+	</div>
+</div>
+
+
+<div id="modalManageAnnouncements" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="DownloadAttachments">Download Attachments</h4>
+            </div>
+			<div class="modal-body">
+			 <div class="panel-body">
+			    <div class="form-horizontal">
+				 
+			     <div class="form-group attachmentsDiv">
+			     		<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col"><span class="fa fa-file-o"></span></th>
+						      <th scope="col">File Name</th>
+						      <th scope="col">Download</th>
+						    </tr>
+						  </thead>
+						  <tbody class="announcementsAttachments">
+						    
+						  </tbody>
+						</table>
+				 </div>
+				 <div class="form-group">				 	 
+				     <div class="top20 col-md-12 text-center">               				     	
+							<input id="btnAttachmentClose" type="button" data-dismiss="modal" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close">							
+					</div>
+				</div>
+			    </div>
+			   </div>
+			  </div>
+		</div>
+	</div>
+</div>
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-369</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">eeb82463-9030-48cf-9003-466aca17ba4f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-369, ADMIN-1645029823-369</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">36900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

@@ -1,0 +1,704 @@
+﻿<style>
+
+
+table tr td button.btn-outline-primary {
+    min-width: 0em;
+    height: 30px;
+    width: 30px;
+    font-size: 12px !important;
+    border-radius: 50% !important;
+    text-align: center;
+    padding: 5px 8px !important;
+    background-color: #e7e7e7;
+    border: none;
+    color: #1d6ec0;
+ 
+ }   
+
+#myInput{
+ border:1px solid #ccc !important;
+}
+
+@media all and (max-width: 640px) and (min-width: 320px){
+	
+.btn-outline-primary, input.btn.btn-outline-primary{
+	
+	margin: 5px 0 !important;
+
+}	
+
+.totalcount{
+
+	margin-right: 10px !important;
+}	
+
+.panel-heading.panel-head-4{
+
+  padding: 8px 10px;	
+	
+}
+.panel-title .h4-color{
+
+ font-size:12px !important;	
+	
+}	
+
+#home .project-documents .panel-title a#btnAddNewTeamMember>span{
+ 
+	top:0px !important;
+	
+}
+	
+}
+
+@media(max-width:991px){
+
+#Approvals .panel-heading{
+	
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;	
+  justify-content:space-between;
+
+}
+
+}
+
+@media all and (max-width: 1024px) and (min-width: 768px){
+	
+#WebPartWPQ3 .vertical_align .row .col-sm-2{
+	
+	width:31% !important;
+}
+
+#myInput{
+	width:60% !important;
+}	
+
+}
+
+@media(max-width:767px){
+
+#WebPartWPQ3 .vertical_align .row .col-sm-2{
+	
+	width:100% !important;
+}
+
+.filter-res{
+  margin-left:0 !important;	
+}
+
+#myInput{
+	width:90% !important;	
+	margin-left:15px !important;
+	display:block !important;
+	clear:both !important;
+}
+
+#WebPartWPQ3 .vertical_align .row{
+ padding:0 15px;	
+}
+
+#WebPartWPQ3 .card{
+
+ overflow-x:auto !important;	
+
+}
+
+#TempTableTasksInbox{
+	min-width:901px !important;	
+}
+
+}
+
+@media(max-width:820px){
+
+
+#WebPartWPQ3 .card{
+
+ overflow-x:auto !important;	
+
+}
+	
+#TempTableTasksInbox{
+	min-width:901px !important;	
+}
+
+}
+
+#page-inner #myTab li.active a{
+
+    color:#fff !important;
+	background:#1d6ec0 !important;
+
+}
+
+</style>
+
+<script type="text/javascript">
+var clientContext='';
+var EditId='';
+var CanAddModule = false;
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_GetProjectDetailsEvent,"sp.js"); 
+	
+	$("#btnaddModule").click(function (){  
+		if(CanAddModule == true){  
+	        $('#ProjectModule').modal('show'); 
+	        $('#txtTitlemodule').val('') ;
+	        $('#txtBiomodule').val('') ;
+	        $('#btnsubmitModule').show();
+	        $('#ProjectSatus').val('Active');
+	        $('#btnupdateModule').hide();
+        }
+        else {
+        	alert("You are not authorized to perform this action.");
+        	return false;
+        }
+    });	   
+    
+    $("#btnsubmitModule").click(function (){    
+    	var ListName = 'ProjectModules';        
+        var title = $('#txtTitlemodule').val() ;
+        var description = $('#txtBiomodule').val() ;
+        var projectid = getQueryStringParameter('ProjectID')
+        var projectName= getQueryStringParameter('ProjectName')
+        var status = $("#ProjectSatus option:selected" ).text();
+        var Metadata;
+        if(title == '' || title == null){
+        	alert('Please fill Module Name.')
+        	return false;
+        }
+         if(description == '' || description == null){
+        	alert('Please fill Module Description.')
+        	return false;
+        }
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Title: title,
+            Description: description,
+            ProjectId: projectid,
+            ProjectName: projectName,
+            Status: status          
+        };
+		debugger;
+        AddModule(Metadata, ListName);
+    });
+    
+    $("#btnupdateModule").click(function (){    
+    	var ListName = 'ProjectModules';        
+        var title = $('#txtTitlemodule').val() ;
+        var description = $('#txtBiomodule').val() ;
+        //var projectid = $('#ProjectNameDetails').val() ;
+        //var projectName= $("#ProjectNameDetails option:selected" ).text();
+        var status = $("#ProjectSatus option:selected" ).text();
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            Title: title,
+            Description: description,
+           // ProjectId: projectid,
+           // ProjectName: projectName           
+            Status: status
+        };
+		debugger;
+        UpdateModule(Metadata, ListName);
+    });
+
+}); 
+
+
+function AddModule(Metadata, ListName){
+var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            // console.log(data);
+            dfd.resolve(data);
+		alert('Project module submitted.')
+		$('#ProjectModule').modal('hide');		
+		GetAllModuleByProjectId();
+		$('#txtTitlemodule').val('');
+		$('#txtBiomodule').val('');
+        },
+        error: function (error) {
+
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function getCurrentURL_GetProjectDetailsEvent()
+{
+	//var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+   // var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+   // $.ajax({
+   //     url: siteURL,
+   //     headers: { Accept: "application/json;odata=verbose" },
+   //     async: false,
+   //     success: function (data)
+   //     {
+   //         var items = data.d.results;
+   //         if (items.length>0)
+   //         {
+                var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");//items[0].SiteURL;
+				clientContext = new SP.ClientContext(siteURL);
+				GetProjectDetails(clientContext);
+   //         }
+           
+   //     }, eror: function (data)
+   //     {
+   //         console.log($('#txtSomethingWentWrong').val());
+    //    }
+   // });
+}
+
+
+
+function GetProjectDetails(clientContext){
+	var itemId =  titanForWork.getQueryStringParameter("ProjectID");
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");	
+	var clientContext=new SP.ClientContext();
+	var oList = clientContext.get_web().get_lists().getByTitle('ProjectDetails');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><Eq><FieldRef Name='ID' /><Value Type='Number'>"+itemId+"</Value></Eq></Where></Query></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var ProjectDetailsHTML = '';
+		var listItemEnumerator = collListItem.getEnumerator();
+		var ItemCount=collListItem.get_count();
+		debugger;
+		var counter=1;
+		while (listItemEnumerator.moveNext()) 
+			{	
+				var oListItem = listItemEnumerator.get_current();
+				
+				var ProjectName=oListItem.get_item('ProjectName');
+				var ProjectDescription=oListItem.get_item('ProjectDescription');
+				if(ProjectDescription==null || ProjectDescription=='' || ProjectDescription==undefined)
+				{
+					ProjectDescription="N/A";
+				}
+				var ClientName=oListItem.get_item('ClientID');
+				if(ClientName==null || ClientName=='' || ClientName==undefined)
+				{
+					ClientName="N/A";
+				}
+				else{
+					ClientName= ClientName.get_lookupValue()
+					}
+					
+
+				var DepartmentName=oListItem.get_item('Department_ID');
+				if(DepartmentName==null || DepartmentName=='' || DepartmentName==undefined)
+				{
+					DepartmentName="N/A";
+				}
+				else{
+					DepartmentName = DepartmentName.get_lookupValue()
+					}
+	              
+	              
+	              
+	              	var OfficeLocation=oListItem.get_item('Office_Location_Id');
+				     if(OfficeLocation==null|| OfficeLocation=='' || OfficeLocation==undefined)
+				       {
+					    OfficeLocation="N/A";
+				       }
+				 else {
+					    OfficeLocation = OfficeLocation.get_lookupValue()
+					  }
+	
+					
+					
+				//var PartnerName=oListItem.get_item('PartnerName');
+				var ActualStartDate=oListItem.get_item('ActualStartDate');
+				ActualStartDate= $.datepicker.formatDate('dd-M-yy', ActualStartDate);
+				var ActualEndDate=oListItem.get_item('ActualEndDate');
+				ActualEndDate= $.datepicker.formatDate('dd-M-yy', ActualEndDate);
+				var PlanedStartDate=oListItem.get_item('PlanedStartDate');
+				PlanedStartDate= $.datepicker.formatDate('dd-M-yy', PlanedStartDate);
+				var PlanedEndDate=oListItem.get_item('PlanedEndDate');
+				PlanedEndDate= $.datepicker.formatDate('dd-M-yy', PlanedEndDate);
+				var ManagerDetail=oListItem.get_item('ManagerName');
+				var ManagerName=ManagerDetail.get_lookupValue();
+				var ManagerID=ManagerDetail.get_lookupId();
+				var ConsultantName=oListItem.get_item('ConsultantName');
+				if(ConsultantName==null || ConsultantName=='' || ConsultantName==undefined)
+				{
+					ConsultantName="N/A";
+				}
+				
+				var SponsorMul=oListItem.get_item('MultipleSponsor');
+				var Sponsor="";
+				if(SponsorMul!=null)
+				{
+				  
+				   for(var ind=0;ind<SponsorMul.length;ind++)
+				   {
+					 Sponsor+=SponsorMul[ind].get_lookupValue()+";";
+				   }
+				   
+				   if(Sponsor.length>0)
+				   {
+				     Sponsor=Sponsor.substring(0, Sponsor.length - 1);
+				   }
+				   
+				}
+				else
+				{
+					Sponsor="N/A";
+				}
+				
+				var StackeholderMul=oListItem.get_item('MultipleStackeholder');
+				var Stackeholder="";
+				if(StackeholderMul!=null)
+				{
+				    for(var ind=0;ind<StackeholderMul.length;ind++)
+				    {
+					 Stackeholder+=StackeholderMul[ind].get_lookupValue()+";";
+					}
+					
+					if(Stackeholder.length>0)
+					{
+					  Stackeholder=Stackeholder.substring(0, Stackeholder.length - 1);					
+					}
+					
+				}
+				else
+				{
+					Stackeholder="N/A";
+				}
+				var TechnologyUsed=oListItem.get_item('TechnologyUsed');
+				//var DepartmentName=oListItem.get_item('DepartmentName');
+			
+				var Status=oListItem.get_item('Status');
+				var ItemID=oListItem.get_item('ID');
+				var Location= window.location.protocol + "//" + window.location.host + _spPageContextInfo.siteServerRelativeUrl;
+				var editUrl="<a style='text-decoration: underline;' href='"+Location+"/Pages/EditProjectDetails.aspx?WebAppId="+txtCompanyId+"&ProjectID="+itemId+"' data-localize='EditProject'>Edit Project</a>";
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="Status">Status</span>:</div> <div class="col-sm-5">'+Status+'</div><div class="col-sm-2"><button type="button" class="btn btn-outline-primary" id="Module"onclick="GetAllModuleByProjectId()">Module</button></div>';
+				if(ManagerID==_spPageContextInfo.userId)
+				{
+					ProjectDetailsHTML +='<div class="col-sm-3 edit-text-align-right">'+editUrl+'</div>';
+					$('#btnaddModule').show();
+					CanAddModule = true;
+				}
+				ProjectDetailsHTML +='</div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ProjectName">Project Name</span>:</div><div class="col-sm-8">'+ProjectName+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="Customer">Customer</span>:</div><div class="col-sm-8">'+ClientName+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="PlanedStartDate">Planned Start Date</span>:</div> <div class="col-sm-8">'+PlanedStartDate+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="PlanedEndDate">Planned End Date</span>:</div> <div class="col-sm-8">'+PlanedEndDate+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ActualStartDate">Actual Start Date</span>:</div> <div class="col-sm-8">'+ActualStartDate+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ActualEndDate">Actual End Date</span>:</div> <div class="col-sm-8">'+ActualEndDate+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ProjectManager">Project Manager</span>:</div> <div class="col-sm-8">'+ManagerName+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="StakeholderInternal">Stakeholder (Internal)</span>:</div> <div class="col-sm-8">'+Stackeholder+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ProjectSponsorInternal">Project Sponsor (Internal)</span>:</div> <div class="col-sm-8">'+Sponsor+'</div></div></div>';
+				//ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-3">Consultant Name: </div> <div class="col-sm-9">'+ConsultantName+'</div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="ProjectType">Project Type</span>:</div> <div class="col-sm-8">'+TechnologyUsed+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="Department">Department</span>:</div> <div class="col-sm-8">'+DepartmentName+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="OfficeLocation">Office Location</span>:</div> <div class="col-sm-8">'+OfficeLocation+' </div></div></div>';
+				ProjectDetailsHTML +='<div class="col-sm-12 todoborder"><div class="row top10 bottom10"><div class="col-sm-4"><span data-localize="Details">Details</span>:</div> <div class="col-sm-8">'+ProjectDescription+' </div></div></div>';
+				
+				counter++;
+			}
+			
+			$("#divViewProjectDetails").append(ProjectDetailsHTML);
+			 LableLoad();
+			
+		}, 
+		
+	function(){
+		console.log('error : Project Details web part');
+	});
+}
+
+function GetAllModuleByProjectId() {
+	debugger;
+    ExisitngTeamMemberArray=[];
+    var itemId = titanForWork.getQueryStringParameter("ProjectID");
+//    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProjectModules')/items?$select=*,ProjectName/Title&$expand=ProjectName/Title&$Filter=ProjectId eq '" + itemId + "'";
+	  var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProjectModules')/items?$select=*&$Filter=ProjectId eq '" + itemId + "'";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            $("#ViewAllTeamModule").modal("show");
+            var dvTable = $("#viewALLModule");
+            dvTable.html("");
+            var items = data.d.results;
+            var tr;
+            if(items.length>0){
+            for (var i = 0; i < items.length; i++) {           
+             tr += '<tr >';                
+              //tr += '<td>' + items[i].ProjectName.Title + '</td>';                          
+                tr += '<td style="width:30%">' + items[i].Title+ '</td>';
+                tr += '<td style="width:50%">' + items[i].Description + '</td>';   
+                tr += '<td style="width:10%">' + items[i].Status + '</td>';                            
+                tr += '<td style="width:10%"><button type="button" class="btn btn-outline-primary btn-xs" style="min-width:0em;" onclick="BindProjectModule('+items[i].Id+');">';
+			    tr += '<span class="fa fa-pencil-square-o fa-lg"></span></button> </td>';                
+                tr += '</tr>';           
+		    }
+		   }else{
+		    tr += '<tr>';
+		    tr += '<td><span>No modules are found...!</span></td>';
+		    tr += '</tr>';
+		   }
+		 dvTable.append(tr);          
+		  BindProjectsForProjectsDashboard();
+	    }, eror: function (data)
+	       {
+	            console.log($('#txtSomethingWentWrong').val());
+	       }
+                                
+        });
+        
+}                        
+
+
+function BindProjectsForProjectsDashboard() {
+    var listName = 'ProjectDetails';
+    var projectID = titanForWork.getQueryStringParameter("ProjectID");
+
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,ProjectName";
+    $.ajax({
+        url: siteURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0) {
+                var ProjectNameHTML = '<select name="projectName" id="ProjectNameDetails" class="form-control">';
+                ProjectNameHTML += '<option value="0">-Select-</option>';
+
+                for (i = 0; i < items.length; i++) {
+                    var ProjectID = items[i].ID;
+                    var ProjectName = items[i].ProjectName;
+                    ProjectNameHTML += '<option value="' + ProjectID + '">' + ProjectName + '</option>';
+
+                }
+                ProjectNameHTML += '</selec74>';
+                $("#ProjectName").html('');
+                $("#ProjectName").append(ProjectNameHTML);
+               
+            }
+        },
+        error: function (data) {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+function BindProjectModule(ItemId){
+var listName ='ProjectModules';
+siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=*&$Filter=Id eq '" + ItemId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+        	$('#ProjectModule').modal('show');  
+            var items = data.d.results;
+            if (items.length > 0) {
+                $('#txtTitlemodule').val(items[0].Title)
+                var description = $(items[0].Description).text();   
+                $('#txtBiomodule').val(description)
+                $('#ProjectSatus').val(items[0].Status)  
+                EditId = ItemId              
+            }
+            
+            $('#btnsubmitModule').hide()
+            $('#btnupdateModule').show()
+        },
+        error: function (data) {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+// update module
+function UpdateModule(Metadata, ListName) {
+	var dfd = $.Deferred();                  
+        var apiPath = _spPageContextInfo.webAbsoluteUrl+"/_api/lists/getbytitle('"+ListName+"')/items('"+EditId+"')";   
+        $.ajax({  
+                url: apiPath,  
+                type: "POST", 
+                async: false, 
+                headers: {  
+                    "accept": "application/json;odata=verbose",
+                    "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                    "content-Type": "application/json;odata=verbose", 
+                    "IF-MATCH": "*",  
+                    "X-HTTP-Method": "MERGE"  
+
+                },  
+             data: JSON.stringify(Metadata),                        
+            success: function(data) { 
+            	dfd.resolve(data);             	
+                alert("Module updated successfully");  
+                $('#ProjectModule').modal('hide');		
+				GetAllModuleByProjectId();
+				$('#txtTitlemodule').val('');
+				$('#txtBiomodule').val('');
+            }, eror: function(data) {  
+            	dfd.reject(data);
+                console.log("An error occurred. Please try again.");  
+            }  
+        }); 
+        return dfd.promise(); 
+}  
+</script>
+<div id="divViewProjectDetails" class="row">
+</div>
+
+<div class="modal fade" id="ViewAllTeamModule" role="dialog" style="padding-top: 10% !important; z-index:58;" aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog modal-1200">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header modal-head-new">
+          <button type="button" class="close modal-head-close bg-white-round-btn" data-dismiss="modal" style="margin-top: 2px !important;">×</button>          
+          <a class="pull-right" id="btnaddModule" style="padding-right:59px; display:none" data-target="#ProjectModule"><span class="glyphicon glyphicon-plus-sign text-size" style="color: rgb(255, 255, 255) !important;"></span></a>
+           <h4 class="modal-title h4-color"><span class="modal-head-text">Module</span></h4>           
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12">
+          <div class="row">
+          	<div class="table-responsive table-custom-border">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <th>Module Name</th>                                
+                                <th>Description</th>                                
+                                <th>Status</th>                                
+                                <th>Action</th>                                
+                            </tr>
+                        </thead>
+                        <tbody id="viewALLModule">
+                            
+                        </tbody>
+                    </table>
+                  </div>
+          
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          
+          
+        </div>
+      </div>      
+    </div>
+  </div>
+
+
+
+<div class="modal fade" id="ProjectModule" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+  <table>      
+      <div class="modal-content">
+        <div class="modal-header panel-head-4" style="padding: 10px 15px !important;">
+          <button type="button" class="close bg-white-round-btn" data-dismiss="modal"  style="margin-top: 2px !important;">×</button>
+           <h4 class="modal-title h4-color">Module</h4>
+        </div>
+        <div class="modal-body">
+                 	       	         	
+       		<div class="form-group">
+				<div class="col-sm-12">
+					<label class="required">Module Name:</label>
+					<input type="text"  class="form-control" id="txtTitlemodule">
+				</div>
+			</div>
+	
+			<div class="form-group">
+				<div class="col-sm-12">
+					<label class="required">Description:</label>
+					<textarea class="form-control" rows="4" style="resize: none;" id="txtBiomodule"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">					
+					<label class="required">Status:</label>									
+				   <!-- <div class="col-sm-9" id="ProjectName">  </div> -->
+				   <div>
+				   <select name="select" class="" id="ProjectSatus">				   
+				   <option value="Active" selected>Active</option>
+				   <option value="Inactive">Inactive</option>
+				   <option value="Hold">Hold</option>
+				   <option value="Completed">Completed</option>
+				   </select>					   
+				   </div>
+				</div>
+			</div>			
+		<!--	<div class="form-group">
+				<div class="col-sm-12">					
+					<label class="required">Project</label>									
+				    <div class="col-sm-9" id="ProjectName">
+                    </div>
+				</div>
+			</div>  -->
+            
+    
+          <div class="button-container" id="mybuttons">
+            <button type="button" class="button" id="btnsubmitModule"><span>Submit</span></button>
+           	<button type="button" class="button"id="btnupdateModule"  style="display:none"><span>Update</span></button>
+            <input type="button" class="btn btn-danger button-danger" data-dismiss="modal" value="Cancel">
+          </div>          
+        </div>
+      </div>
+     </table> 
+    </div>    
+  </div>
+<style>
+ .required:after {
+        content: " *";
+        color: red;
+    } 
+    
+</style>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-333</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">304dabf4-b720-43f7-aeec-ed5553c657cc</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-333, ADMIN-1645029823-333</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">33300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<title></title></head>
+

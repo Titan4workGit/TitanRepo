@@ -1,0 +1,609 @@
+﻿<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+ <script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script> 
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+<script src="../SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/jquery.richtext.js"></script>
+
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link rel="stylesheet" href="../SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/richtext.min.css">
+
+<style>
+#managerLoginName, #customShareingPoplePicker {
+     height: auto !Important; 
+     padding: 6px 8px !Important; 
+}
+	.form-control
+	{
+		background-color: #fff;
+	}
+	input.hidden {
+	    position: absolute;
+	    left: -9999px;
+	}
+	#profile-image1 {
+		cursor: pointer;
+		width: 40%;
+		height:100%;
+		padding-bottom: 5px;
+	}	
+	.profile_div,.Details_div,.address_div{ height: 552px;overflow-y:auto;}
+	.blue-color{ color:#1d6ec0}
+	
+	@media (min-width:1280px) and (max-width:1366px){
+		#newEmployeePicker, #managerLoginName{
+			min-height:34px;
+		}
+		#newEmployeePicker_TopSpan, #managerLoginName_TopSpan {
+		    min-height: 30px !important;
+		    padding: 0px 0px 0px 0px !Important;
+		    width: 100% !important;
+		}
+	}
+	@media (min-width:992px) and (max-width:1279px){
+		#newEmployeePicker, #managerLoginName{
+			min-height: 45px;
+		}
+		#newEmployeePicker_TopSpan, #managerLoginName_TopSpan {
+		    min-height: 30px !important;
+		    padding: 0px 0px 0px 0px !Important;
+		    width: 100% !important;
+		}
+	}
+	
+	@media (max-width:991px){
+		.profile_div,.Details_div,.address_div{ min-height: auto !important;height:auto;}
+	}
+	
+	.sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox 
+	{
+	  border:0px !important;
+	  width:167px !important;
+	}
+	input.sp-peoplepicker-editorInput[type=text] 
+	{
+		border: 0px !important;
+	}
+	#newEmployeePicker_TopSpan_NotificationSpan ,#managerLoginName_TopSpan_NotificationSpan{
+		position: fixed !important;
+	}
+	#newEmployeePicker_TopSpan, #managerLoginName_TopSpan
+	{
+	    min-height:20px !important;
+	    padding: 0px 0px 0px 0px !Important;
+	}
+	.sp-peoplepicker-initialHelpText {
+		position: absolute !important;
+		/* margin-left: 15px;*/
+		font-size: 11px  !important;
+	}
+	.required:after {
+	  content:"*";
+	  color:red;
+	}
+</style>
+<script>
+$(document).ready(function(){
+
+
+ SP.SOD.executeFunc('sp.js', 'SP.ClientContext', readyFunction);
+ SP.SOD.executeFunc('clientpeoplepicker.js', 'SPClientPeoplePicker', function () 
+ {
+                //your code goes here
+				SetPeoplePicker_Multiselect("newEmployeePicker", false);
+ });
+
+
+});
+function readyFunction()
+{
+  
+}
+
+</script>
+<script>
+$(document).ready(function(){
+
+               $('#dateofJoining').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  maxDate: 0, 
+					  yearRange: "-70:+0"
+				 }); 
+			    $('#dateofJoining').datepicker("option", "dateFormat", "dd/mm/yy");
+                  $('#date22').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  maxDate: 0, 
+					  yearRange: "-70:+0"
+				 }); 
+			    $('#date22').datepicker("option", "dateFormat", "dd/mm/yy");
+                $('#date33').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  maxDate: 0, 
+					  yearRange: "-70:+0"
+				 }); 
+			   $('#date33').datepicker("option", "dateFormat", "dd/mm/yy");	
+			   
+
+
+       $('#EmpTndroduction').richText();
+      $('a[title="Add image"]').hide();
+  		$('a[title="Add file"]').hide();
+  		$('a[title="Add video"]').hide();
+  		$('a[title="Add URL"]').hide();
+  		$('a[title="Add table"]').hide();
+  		$('a[title="Show HTML code"]').hide();
+  		$('a[title="Remove styles"]').hide();
+  		$('.richText-help').hide(); 
+			
+});
+</script>
+<div ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLod()">
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b><label  data-localize="EmployeeDetails"></label></b></h4></li>           
+	</ol>
+</div>
+	
+
+<div class="row">
+<div class="row">
+<div class="col-md-12">
+
+<div class="col-md-4">
+    <div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color" data-localize="Profile">Profile</h4>
+                </div>
+              </div>
+           <div class="panel-body profile_div">
+           <div class="row text-center">
+    <div class="profile-image-div">
+                     <img alt="User Pic" ng-src="{{imageUrl}}" class="img-circle img-responsive center-block" id="profile-image1"></div>
+					 <div class="upload-file-div"><input id="uploadFile1" ng-show="mode=='add'" class="upload-file blue-color" type="file" accept="image/*"></div>
+                <span   ng-show="terminatestatus=='Active'">  
+                       
+			<!---	<input type="button" class="btn btn-outline-primary" style="font-size:11px;" ng-click="modePopup()"   ng-show="currentitemId!='' && (editViewDisable=='currentUser' || editViewDisable=='No')" value="Change Profile Image">--->
+				
+				<button type="button" class="btn btn-outline-primary" style="font-size:11px;margin-top:5px" ng-click="modePopup()"   ng-show="currentitemId!='' && (editViewDisable=='currentUser' || editViewDisable=='No')"><label  data-localize="ChangeProfileImage"></label></button>	
+				
+				
+				
+               </span>
+               <button type="button" class="btn btn-outline-primary" style="margin-top:5px"  ng-click="getEmployeeInfo()">Introduction</button>
+                     
+              <br>
+    
+            
+            </div>
+     <div class="form-horizontal top20 my_emp_detail_mt">
+       
+            <div class="form-group">
+              <label for="label" class="col-sm-5 control-label" data-localize="EmployeeCode" >Employee Code</label>
+              <div class="col-sm-7">
+                <input type="" class="form-control" id="input5" ng-disabled="allcontrols=='all'" maxlength="13" ng-model="employeeCode">
+				
+              </div>
+            </div>
+            <div class="form-group">
+<label for="" class="col-sm-5 control-label required" data-localize="Company">Company</label>
+<div class="col-sm-7">
+  <select name="select4" class="form-control"  ng-disabled="company!=''"   ng-model="company" ng-change="onCompanyChange()"  ng-options="s.ID as s.CompanyName for s in showCompany" >
+    <!--<option ng-repeat="c in showCompany"  value="{{c.ID}}"  ng-model="company"  >{{c.CompanyName}}</option> -->
+  </select>
+</div>
+  </div> 
+  <div class="form-group">
+<label for="" class="col-sm-5 control-label required" data-localize="Department">Department</label>
+<div class="col-sm-7">
+  <select name="select4" id="department" class="form-control" ng-disabled="allcontrols=='all'"   ng-model="department" ng-options="d.ID as d.DepartmentName for d in showDepartment" > 
+  <!-- <select name="select4" class="form-control" ng-model="department" >  -->
+      <!-- <option ng-repeat="d in showDepartment" value="{{d.ID}}" >{{d.DepartmentName}}</option>  -->
+  </select>
+</div>
+  </div>      
+  <div class="form-group">
+<label for="" class="col-sm-5 control-label required" data-localize="OfficeLocation">Office Location</label>
+<div class="col-sm-7">
+  <select name="select4" id="officeLocation" class="form-control" ng-disabled="allcontrols=='all'"   ng-model="officeLocation" ng-options="o.ID as o.OfficeName for o in showOffice" >
+    <!-- <option ng-repeat="o in showOffice" value="{{o.ID}}" ng-model="officeLocation" >{{o.OfficeName}}</option> -->
+  </select>
+</div>
+  </div>          
+    <div class="form-group">
+  <label for="" class="col-sm-5 control-label" data-localize="Status">Status</label>
+<div class="col-sm-7">
+                                                  <input type="" class="form-control"  id="input" ng-readonly="true" ng-model="status">
+                    </div>
+                  </div>
+                  
+<div class="form-group">
+ <label for="" class="col-sm-5 control-label required" data-localize="DateOfJoining">Date of Joining </label>
+<div class="col-sm-7">
+  <!-- <div class="input-group"> -->
+
+						<input type="text" class="form-control" ng-readonly="true"  ng-disabled="allcontrols=='all'" id="dateofJoining"  datepicker  ng-model="dateofJoining" >
+  						<!-- </div> -->
+</div>
+</div>
+<div class="form-group" ng-show="status!='Active'">
+ <label for="" class="col-sm-5 control-label" data-localize="DateOfTermination"> Date of Termination</label>
+<div class="col-sm-7">
+  <!-- <div class="input-group"> -->
+
+						<input type="text" class="form-control" ng-readonly="true" name="date" id="date"  datepicker  ng-model="dateofTermination">
+  						
+  
+  						<!-- </div> -->
+</div>
+</div>                  
+                    
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+
+</div>
+
+<div class="col-md-4">
+    <div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color" data-localize="Details">Details</h4>
+                </div>
+              </div>
+           <div class="panel-body Details_div">
+                       <div class="form-horizontal">
+                       
+	        <div class="form-group">
+<label for="" class="col-sm-5 control-label required"  data-localize="Name">Name</label>
+<div class="col-sm-7">
+  <input type="" class="form-control" id="input4" ng-readonly="true"  ng-disabled="allcontrols=='all'" maxlength="50" ng-show="mode!='add'" ng-model="employeeName">
+<div ng-show="mode=='add'">
+  <div id="newEmployeePicker" style="border:1px solid #EEEEEE;" ></div>  
+  </div>
+</div>
+   </div>
+            
+            <div class="form-group">
+<label for="" class="col-sm-5 control-label" data-localize="Designation">Designation</label>
+<div class="col-sm-7">
+  <input type="" class="form-control" id="designation" ng-model="designation" maxlength="50" ng-disabled="allcontrols=='all'">
+</div>
+  </div>
+                                            
+    <div class="form-group">
+                                                <label for="" class="col-sm-5 control-label"  data-localize="GroupName" >Group Name</label>
+<div class="col-sm-7">
+                                                  <input type="" class="form-control" ng-disabled="allcontrols=='all'" maxlength="50" id="input5" ng-model="groupName">
+                    </div>
+                  </div>
+                  
+                  
+                  
+                   <div class="form-group" id="ChiefExecute" style="margin-bottom: 3px !important;margin-left: 5px!important;">
+ <label for="" class="col-sm-5 control-label" data-localize="chiefexecutive">Chief Executive</label>
+<div class="col-sm-7">
+  <input type="checkbox" id="chiefexecutive" name="chiefexecutive" value="chiefexecutive">
+</div>
+</div>  
+                
+                                                                                        
+    <div class="form-group" id="managerDiv">
+ <label for="" class="col-sm-5 control-label required" data-localize="Manager" >Manager</label>
+<div class="col-sm-7">
+  <input type="" class="form-control" id="managerFullName" ng-model="manager"  ng-readonly="true"  ng-disabled="allcontrols=='all'">
+<div id="managerLoginName" style="border:1px solid #EEEEEE;"></div>
+</div>
+
+                  </div>	
+	<div id="MobNo" class="form-group">
+                                                <label for="" class="col-sm-5 control-label" data-localize="MobileNo" >Mobile No.</label>
+<div class="col-sm-7">
+  <input  class="form-control Number"  ondrop="return false;" placeholder="Enter number only" id="input" ng-model="mobileNo" maxlength="10"   ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+ 
+</div>
+                  </div>   
+<div class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="Extension">Extension</label>
+<div class="col-sm-7">
+  <input  class="form-control Number" placeholder="Enter number only" ondrop="return false;"  id="input" ng-model="extension" maxlength="5"  ng-disabled="allcontrols=='all'" >
+</div>
+</div> 
+
+      
+<div class="form-group">
+ <label for="" class="col-sm-5 control-label required" data-localize="Email">Email</label>
+<div class="col-sm-7">
+  <input type="email" class="form-control" id="txtNewUseremail" ng-model="email" ng-readonly="true"   ng-disabled="allcontrols=='all'" >
+</div>
+</div>                                                                              
+
+<div id="DOB" class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="DateOfBirth">Date of Birth</label>
+<div class="col-sm-7">
+  <!-- <div class="input-group"> -->
+
+						<input type="text" class="form-control"  id="date22"  ng-disabled="mode=='editview' && editViewDisable!='currentUser'" ng-readonly="true"  datepicker  ng-model="dateofBirth"  ng-disabled="allcontrols=='all'">
+  					
+  
+  						<!-- </div> -->
+</div>
+</div>                                            			
+
+<div id="DateOfAnniversary" class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="DateOfAnniversary">Date of Anniversary</label>
+<div class="col-sm-7">
+  <!-- <div class="input-group"> -->
+
+						<input type="text" class="form-control" name="date" id="date33"  ng-disabled="mode=='editview' && editViewDisable!='currentUser'"  ng-readonly="true"  datepicker  ng-model="dateofAnniversary">
+  					
+  
+  						<!-- </div> -->
+</div>
+</div>
+<div id="Gender" class="form-group">
+                                                <label for="" class="col-sm-5 control-label" data-localize="Gender"  >Gender</label>
+<div class="col-sm-7">
+  <select name="select4" class="form-control" ng-model="gender"  ng-disabled="allcontrols=='all'" >
+  <option>---Select---</option>
+    <option>Male</option>
+<option>Female</option>
+  </select>
+</div>
+                  </div>
+
+
+
+<div class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="LinkedlnAccount">Linkedln Account</label>
+<div class="col-sm-7">
+<a href="" id="linkedAccunt" target="_blank">
+  <input class="form-control" id="Linkedln" ng-model="LinkedlnAccount" ng-disabled="allcontrols=='all'">
+  </a>
+</div>
+</div>
+
+                                            
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+
+</div><div id="addInfo" class="col-md-4">
+    <div class="col-md-12">
+        <div class="row">
+<div class="panel panel-default shadow2">
+              <div class="panel-heading  panel-head-4">
+                  <div class="panel-title">
+                  <h4 class="h4-color" data-localize="Address" >Address</h4>
+                </div>
+              </div>
+           <div class="panel-body address_div">
+                       <div class="form-horizontal">
+    <div class="form-group">
+<label for="" class="col-sm-5 control-label" data-localize="CurrentAddress">Current Address</label>
+<div class="col-sm-7">
+  <textarea class="form-control" rows="3" id="comment" ng-model="currentAddress" ng-disabled="mode=='editview' && editViewDisable!='currentUser'"  ></textarea>
+</div>
+   </div>                   
+	        <div class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="City">City</label>
+<div class="col-sm-7">
+ <input type="" class="form-control" id="input5city" ng-model="city" maxlength="50"  ng-disabled="mode=='editview' && editViewDisable!='currentUser'" >
+  <!-- <select name="select4" class="form-control" > -->
+    <!-- <option></option> -->
+  <!-- </select> -->
+</div>
+</div>
+            <div class="form-group">
+              <label for="label" class="col-sm-5 control-label" data-localize="StateProvince">State/Province</label>
+              <div class="col-sm-7">
+			   <input type="" class="form-control" id="input5state" maxlength="50" ng-model="state" ng-disabled="mode=='editview' && editViewDisable!='currentUser'"  >
+			  
+			  
+                <!-- <select name="select4" class="form-control" > -->
+    <!-- <option></option> -->
+  <!-- </select> -->
+              </div>
+            </div>
+            
+                                            
+    <div class="form-group">
+    <label for="" class="col-sm-5 control-label" data-localize="Zip">Zip</label>
+ <div class="col-sm-7">
+ <input  class="form-control Number" maxlength="10" placeholder="Enter number only" ondrop="return false;"   id="input5" ng-model="zip" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" >
+                    </div>
+                  </div>
+                                                                                        
+    <div class="form-group">
+     <label for="" class="col-sm-5 control-label" data-localize="Country">Country</label>
+<div class="col-sm-7">
+ <input type="" class="form-control" id="input5country" maxlength="50" ng-model="country" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" >
+
+  <!-- <select name="select4" class="form-control"> -->
+    <!-- <option></option> -->
+  <!-- </select> -->
+</div>
+                  </div>	
+	<div class="form-group">
+                                                <label for="" class="col-sm-5 control-label" data-localize="HomePhone">Home Phone</label>
+<div class="col-sm-7">
+  <input  class="form-control Number" id="input" placeholder="Enter number only"  ondrop="return false;" ng-model="homePhone" maxlength="12" ng-disabled="mode=='editview' && editViewDisable!='currentUser'"  >
+</div>
+                  </div>   
+<div class="form-group">
+ <label for="" class="col-sm-5 control-label" data-localize="OtherEmail">Other Email</label>
+<div class="col-sm-7">
+  <input type="email" class="form-control" id="inputEmail" onblur="validateEmail(this.value);" ng-model="otherEmail" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+</div>
+</div> 
+
+      
+<!-- <div class="form-group"> -->
+ <!-- <label for="" class="col-sm-5 control-label">Other Mobile No.</label> -->
+<!-- <div class="col-sm-7"> -->
+  <!-- <input type="" class="form-control" id="input" ng-model="otherMobileNo"> -->
+<!-- </div> -->
+<!-- </div>                                                                               -->
+<div class="form-group">
+<label for="" class="col-sm-5 control-label" data-localize="PermanentAddress">Permanent Address</label>
+<div class="col-sm-7">
+  <textarea class="form-control" rows="3" id="comment" ng-model="parmanentAddress"  ng-disabled="mode=='editview' && editViewDisable!='currentUser'" ></textarea>
+</div>
+   </div>
+                                            			
+
+
+
+
+                                            
+              </div>
+              
+              </div>
+                        <!--/panel content-->
+                    </div>
+</div></div>
+
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<div id="modalTitanPreview" class="prifile-outer-div modal fade">
+    <div class="prifile-picture">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4" style="padding:6px 15px 0 15px!important;background:#666; color:white">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="ProfilePicture">Profile Picture</h4>
+            </div>
+            <div class="modal-body">
+                <input id="uploadFile" class="upload-file blue-color" type="file" accept="image/*"><br />
+                <div  style="text-align:center">
+				<!--	<input type="button" class="btn  btn-outline-success" style="font-size:11px;" ng-click="checkFileExists()" value="Submit">-->
+					<button type="button" class="btn  btn-outline-success" style="font-size:11px;" ng-click="checkFileExists()">
+<label  data-localize="Submit"></label>
+</button>
+					
+					
+				</div>
+                <!--Upload Image Js And Css-->                     
+          </div>
+    </div>
+</div>
+</div>
+
+<div class="row text-center">
+<!---
+<input type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-danger " value="Terminate" ng-click="clickTerminateButton()">
+ <input type="button" style="font-size:13px" ng-show="mode=='add'" class="btn  btn-outline-success" value="Submit" ng-click="AddNewEmployeeDetails()">
+<input type="button" style="font-size:13px" ng-show="mode=='editview' && editViewDisable=='currentUser'  && terminatestatus=='Active'" class="btn  btn-outline-success" ng-click="updateInformationButton()" value="Update" />
+ <input type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-success" ng-click="updateInformationButton()" value="Update" />
+<input type="button" style="font-size:13px" class="btn btn-outline-secondary " value="Close" ng-click="redirectCancel()">
+--->
+
+<button type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-danger " ng-click="clickTerminateButton()"><label  data-localize="Terminate"></label></button>	
+<button type="button" style="font-size:13px" ng-show="mode=='add'" class="btn  btn-outline-success"  ng-click="addNewEmployeeLoder()"><label  data-localize="Submit"></label></button>	
+<button type="button" style="font-size:13px" ng-show="mode=='editview' && editViewDisable=='currentUser'  && terminatestatus=='Active'" class="btn  btn-outline-success" ng-click="updateInformationButton()"><label  data-localize="Update"></label></button>	
+<button type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-success" ng-click="updateInformationButton()" ><label  data-localize="Update"></label></button>	
+<button type="button" style="font-size:13px" class="btn btn-outline-secondary " ng-click="redirectCancel()"><label  data-localize="Close"></label></button>	
+
+
+                                          
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+<!--------Dialogbox end here-------->
+
+
+
+
+
+
+<!-------Dialogbox end here--------->
+
+
+	<div class="container">
+ <!-- Modal -->
+  <div class="modal fade" id="EmployeeIntro" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Introduction</h4>
+        </div>
+        <div class="modal-body">
+			<div class="form-group">
+         <!--<textarea id="EmpTndroduction" rows="4" cols="50"></textarea>-->
+         <textarea style="max-height:100px !important; min-height:100px !important;" ng-model="EmpIntro" id="EmpTndroduction"></textarea>
+		 </div>
+		 	<div class="form-group" style="text-align: center">
+		 <button type="button"  class="btn  btn-outline-success" style="display:none" id="UpdateInfo" ng-click="UpdateEmployeeInfo()" style="margin-left:140px !important;"><label  data-localize="Update"></label></button>
+		 <button type="button"  class="btn btn-outline-secondary" data-dismiss="modal"><label  data-localize="Close"></label></button>
+		</div>
+        </div>
+       
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- /Main -->
+<br>
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/jquery.datepicker.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/employee_details.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-248</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">17384aea-d814-47fa-84ba-362ae8c32c6d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-248, ADMIN-1645029823-248</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">24800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

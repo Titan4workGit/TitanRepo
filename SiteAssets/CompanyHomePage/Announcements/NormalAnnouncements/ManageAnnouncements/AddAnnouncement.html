@@ -1,0 +1,633 @@
+﻿<link type="text/css" rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script type="text/javascript" src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script type="text/javascript" src="../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/jquery.richtext.js"></script>
+<link type="text/css" rel="stylesheet" href="../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/richtext.min.css">
+
+
+<style>
+
+.LabelAsButton {
+  	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: solid 1px #20538D;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: #1d6ec0;
+	color: #FFF;
+	padding: 8px 12px;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+label.required:after {content: " *"; color: red;}
+
+.browse{ padding:5px; border:1px solid #ddd !important; width:100%; background:transparent}
+.panel-group .panel {
+border-radius: 5px;
+border-color: #EEEEEE;
+padding:0;
+
+}
+.panel-group {
+margin-bottom: 10px;
+}
+
+.panel-title {
+font-size: 14px;
+}
+
+.panel-title > a {
+display: block;
+padding: 10px;
+text-decoration: none;
+}
+
+/* new css addded on 18/3/2020 */
+
+.attachment-badge {
+display: block;
+text-align: center;
+}
+.attachment-badge a {
+font-size: 12px;
+margin-top: 3px;
+margin-left: 3px;
+padding: 5px 10px;
+color: #666 !important;
+background-color: transparent !important;
+border: 1px solid #666 !important;
+width: auto;
+float: left;
+border-radius: 20px;
+}
+.Announce_pub_date_box .input-group {
+    width: 100%;
+}
+.Announce_exp_date_box .input-group {
+    width: 100%;
+}
+
+/* new css added on 23/3/2020 */
+
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
+.container{
+  width: 100%;
+  /*text-align: center;*/
+}
+.richText-editor{
+	    height: 200px !important;
+	    padding:10px !important;
+	   }
+	   
+ ul, li {
+    list-style: unset !important;
+}
+.richText-editor{
+	    border-left: #FFFFFF solid 0px;
+}
+
+/* new css added on 28/6/2021, 29/6/2021 */
+
+.description-box-add-announcement .input-group {
+    display: block;
+}
+#Imagefilename div, #filename div {
+    padding: 3px 10px 7px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#OldImagename div, #oldfilename tr {
+    padding: 7px 10px 7px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#Imagefilename div .DeletePic, #filename div .DeletePic {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+#OldImagename div .DeletePic, #oldfilename tr .DeletePic {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+#oldfilename tr .DeletePic .glyphicon-remove {
+    color: #fff !important;
+}
+#OldImagename div span.fa-stack {
+    margin-top: -5px;
+}
+#OldImagename div strong.fa-stack-1x {
+    color: #000 !important;
+    margin-left: 8px;
+}
+
+/* responsive css START */
+
+/**july-2-21***/
+
+#SelectivePplPicker_TopSpan{
+ width:100% !important;	
+ padding:6px 15px 5px 0px !important;
+}
+#SelectivePplPicker_TopSpan_EditorInput{
+  border:none !important;	
+}
+
+
+#formt_tool input,
+#formt_tool label{
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+
+
+@media(max-width:400px){
+
+#formt_tool{
+  font-size:10.7px !important;	
+}
+	
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.my_announce_department_main_box {
+    	margin-top: 10px;
+	}
+	.description-box-add-announcement .richText .richText-editor {
+		width: 100%;
+	}
+
+}
+
+/* responsive css END */
+
+#filename div{
+	padding: 7px 10px;
+    background:linear-gradient(to bottom,#fff,#ccc);
+    background:-webkit-linear-gradient(to bottom,#fff,#ccc);
+    background:-moz-linear-gradient(to bottom,#fff,#ccc);
+    background:-o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#filename div span:last-child{
+
+	color: #fff !important;
+	padding: 2px 3px;
+	background:#1d6ec0;
+	font-weight: 400;
+	display: inline;
+	border-radius: 50%;
+	font-size: 12px;
+	cursor: pointer;
+	
+}
+
+/***july-8-21****/
+
+
+#drop-zone{
+ position:relative !important;	
+}
+#drop-zone input{
+	display:block !important;
+	position:absolute;
+	left:0;
+	top:0;
+	opacity:0;
+    width:320px;
+    cursor:pointer;	
+    height:45px;
+    
+}
+
+#drop-zone label{
+    width: 320px;
+    border: 2px dotted #868686 !important;
+    background: transparent !important;
+    color: #444343 !important;
+    text-align:center !important;
+    text-shadow: none !important;
+    font-size: 16px;
+    height:45px;
+    box-shadow:none !important;
+
+}
+
+@media(max-width:500px){
+
+#drop-zone label,
+#drop-zone input{
+
+ width:195px !important;	
+
+}
+	
+}
+
+
+/****july-27-21***/
+
+.form-horizontal .required{
+  font-weight:700 !important;	
+}
+
+/* new css added on 24/8/2021 */
+
+.description-box-add-announcement .richText-dropdown-outer ul.richText-dropdown {
+    z-index: 9;
+}
+#DeltaPlaceHolderMain .all-align-ms-tasks-gap {
+    padding-right: 0;
+    margin-left: 3px;
+}
+
+</style>
+
+
+<div class="row department-header" style="
+    display: none;
+"> 
+	<ol class="breadcrumb">    
+		<li><h4 data-localize="Announcements"><b>Announcements</b></h4></li>           
+	</ol>
+</div>	
+
+
+<div class="container all-align-gap-container">
+	<div class="row">
+	<!-- <div class="col-md-6"> -->
+	<div class="col-md-12">
+			<div class="panel panel-default">                          
+				  <div class="panel-heading panel-head-4">
+					  <div class="panel-title">
+					  <!--<h4 class="h4-color" data-localize="Announcements">Announcements</h4>-->
+					  <h4 class="h4-color" id="HeaderTitle">Announcement</h4>
+					</div>
+				  </div>
+			   <div class="panel-body">
+			   <div class="row">
+			   <div class="col-md-12">
+				  <div class="form-horizontal">
+				  		<!-- New Form Fields Code Addeed START -->
+				  		<div class="form-group">
+                     <div class="col-sm-6">
+                         <label class="required">Type:</label>
+                         <select class="form-control ViewMode" id="AnounacementType" onchange="ValidateLoginUserEntryscreen(this.value);" disabled>
+                         <option>Announcement</option>
+                         <option>Alert</option>
+                         </select>
+                     </div>
+                     <div class="col-sm-6">
+                         <label class="required">Allow User's Comments:</label>
+                         <!--<input type="checkbox" name="" class="Allow-Comments-ChkBox" id="Allow-Comments" checked="checked">-->
+                         <select class="Allow-Comments-ChkBox form-control ViewMode" id="Allow-Comments">
+                         	<option value="Allowed">Allowed</option>
+                         	<option value="Not Allowed">Not Allowed</option>
+                         	<option value="Stop">Stop</option>
+                         </select>
+                         
+                     </div>
+
+                 </div>
+					   <div class="form-group">
+					   	<div class="col-sm-12">
+								<label for="" class="control-label required" data-localize="Title">Title</label>
+								<div class="Announce_title_box">
+									<input id="Title" type="text" maxlength="250" class="form-control ViewMode">
+								</div>
+							</div>
+						 </div>
+						 <div class="form-group">
+						 	<div class="col-sm-6">
+								<label for="" class="control-label required">Display From</label>
+								<div class="Announce_pub_date_box">
+								 <div class="input-group">
+									<input id="PublishingDate" type="text" class="form-control ViewMode" name="date">
+									</div>
+								</div>
+							</div>
+						 	<div class="col-sm-6">
+								<label for="" class="control-label required">Display To</label>
+								<div class="Announce_exp_date_box">
+								 <div class="input-group">
+									<input id="ExpiryDate" type="text" class="form-control ViewMode" name="date">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12 description-box-add-announcement">
+								<label for="" class="control-label required" data-localize="Description">Description</label>
+						
+									<span id="formt_tool" style="float:right;"><input type="checkbox" id="Ftools" onchange="ShowFormattingtools();"><label for="FormatTools">&nbsp; Show Formatting Tools</label></span>
+									<div class="input-group">
+									  	<textarea id="Description" class="form-control container ViewMode" rows="8"></textarea>
+									  	<div class="container">
+	  										<!--<a href="#" data-toggle='modal' data-target='#myModal'>Click here of open text editor</a>-->
+	  									</div>
+									</div>
+							</div>
+						</div>	
+						<div class="form-group" >
+							<div class="col-sm-6">
+								<label class="required">Audience</label>
+								<select id="Audience" class="form-control ViewMode" onchange="DisplayDepartmentBox(this.value);">
+								  <option>Corporate</option>
+								  <option>Company</option>
+								  <option>Department</option>
+								  <option>Location</option>
+								  <option>Selective</option>
+								</select>
+							</div>
+							
+							<!-- New Multiple Select Dropdown  START -->
+								<div class="col-sm-6 my_announce_department_main_box" id="DepartmentListBox" style="display:none;">
+									<label class="required" id="DropLable">Department</label>
+									<div class="button-group my_announce_department_list">
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+								        </button>
+										<ul class="dropdown-menu" style="width:90% !important;" id="DpdownData">
+										
+										  <!--<li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/><span>Sales</span></a></li>
+										  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/><span>Human Resources</span></a></li>
+										  <li><a href="#" class="small" data-value="option3" tabIndex="-1"><input type="checkbox"/><span>IT</span></a></li>
+										  <li><a href="#" class="small" data-value="option4" tabIndex="-1"><input type="checkbox"/><span>Delivery</span></a></li>
+										  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/><span>Technical</span></a></li>-->
+										</ul>
+								  	</div>
+								</div>
+							<!-- New Multiple Select Dropdown  END -->
+							<div class="col-sm-6 my_announce_department_main_box" id="PplPickerBox" style="display:none;">
+							   <label class="required">Selective Users</label>  
+								<div class="" id="SelectivePplPicker">
+								</div>
+							</div>
+							
+							
+						<!--	<div class="col-sm-6" id="DepartmentListBox" style="display:none;">
+								<label class="required" id="DropLable">Department</label>
+								<select id="DpdownData" class="form-control">
+								  <option>Sales</option>
+								  <option>Human Resources</option>
+								  <option>IT</option>
+								  <option>Delivery</option>
+								  <option>Technical</option>
+								</select>
+							</div>-->
+						</div>
+						<div class="form-group" id="">
+							<div class="col-sm-12">
+								<label class="">Web Link:</label>
+								<input id="Link" type="text" class="form-control ViewMode" name="Link">
+							</div>
+						</div>
+
+						
+						<!-- Note For Developer - This Below Multiple Attachments Section Is Static only, you need to make it dynamic for uploading multiple attachments -->
+						<div class="form-group" id="Attachmentbox">
+							<div class="col-sm-12">
+								<label class="">Images</label>
+									<div id="drop-zone" class="entry_screen_dropzone_images">
+										<div id="clickHere">
+											<input type="file" class="form-control ViewMode ImageDragUpload" name="file" style="display:block;" id="ImageUpload" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 500Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." multiple >
+											<label for="ImageUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload" title="Upload upto 5 images of total file size upto 500Mb. Only JPEG, JPG, GIF and PNG formats are allowed.">Click & Drop here <i class="fa fa-download"></i></label>
+										</div>
+									</div>
+									<div class="entry_screen_images">
+										<div id='Imagefilename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+										<div id='OldImagename' class="oldfilename1" style="padding:0px 0px 0px 0px;"></div>
+									</div>							
+							
+								<label class="">Attachments</label>
+									<div id="drop-zone" class="entry_screen_dropzone_attachments">
+  										<div id="clickHere">
+  											<input type="file" name="file" id="FileUpload" style="display:none;" class="form-control ViewMode" multiple />
+  											<label for="FileUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload">Click & Drop here <i class="fa fa-download"></i></label>
+  										</div>
+  										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
+  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+  									</div>
+  									<div class="entry_screen_attachments">
+										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
+  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+									</div>
+							</div>
+						</div>
+  						
+						<!-- New Form Fields Code Addeed END -->	
+						<div class="form-group" style="display:none;">
+							<label for="" class="col-sm-4 control-label">Publish</label>
+							<div class="col-sm-8">
+							 <select class="form-control ViewMode">
+							   <option>This Company Only</option>
+							   <option>All Companies</option>
+							 </select>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group addAnnouncementsMainDiv">
+							<!--<label for="" class="col-sm-4 control-label" style="display:none;" data-localize="Attachments">Attachments</label>-->
+							<div class="col-sm-4"></div>
+							<div class="col-sm-8">
+							<!--  <a class="addAnnouncements" style="cursor:pointer;"></a>-->
+							</div>
+						</div>		
+						
+						<div class="clearfix"></div>
+						<div class="row text-center top20">
+							 <input id="Submit" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" data-localize="Submit" value="Submit">
+                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close" value="Close">							
+						</div> 
+				  </div>
+				</div>
+			 </div>
+		   </div>
+							<!--/panel content-->
+		</div>
+	</div>
+
+	<!-- <div class="col-md-6">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" role="tablist" aria-multiselectable="true">
+					<div class="otherLanguages" id="accordion"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	</div>
+</div>
+
+<div id="modalManageAnnouncements" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="UploadAttachments">Upload Attachments</h4>
+            </div>
+			<div class="modal-body">
+			 <div class="panel-body">
+			    <div class="form-horizontal">
+				 <div class="form-group">
+			        <label for="" class="col-sm-3 control-label popup_label" data-localize="Attachment" style="padding-top: 0px !Important;">Attachment</label>
+			     	<div class="col-md-6">
+				     	 <input type="file" id="announcementsFiles" onchange="objAddAnnouncements.readURL(this);" class="ViewMode" >
+						 <img id="blah" style="width:120px;" src="" alt="">
+			     	</div>
+			     	<div class="col-md-3">
+			     		<button type="button" class="btn  btn-outline-success ViewMode" name="btnUpload" id="btnUpload" data-localize="Upload">Upload</button>
+			     	</div>
+			     </div>
+			     <div class="form-group attachmentsDiv">
+			     		<table class="table">
+						  <thead>
+						    <tr>
+					    	  <th scope="col"><span class="fa fa-file-o"></span></th>
+						      <th scope="col" data-localize="FileName">File Name</th>
+						      <th scope="col" data-localize="Download">Download</th>
+						      <th scope="col" data-localize="Action">Action</th>
+						    </tr>
+						  </thead>
+						  <tbody class="announcementsAttachments">
+						    
+						  </tbody>
+						</table>
+				 </div>
+				 <div class="form-group">				 	 
+				     <div class="top20 col-md-12 text-center">               				     	
+							<button type="button" class="btn btn-outline-secondary" name="btnAttachmentClose" id="btnAttachmentClose" data-localize="Close">Close</button>						
+							<input type="hidden" id="newAddedItemID" value="0">
+					 </div>
+				</div>
+			    </div>
+			   </div>
+			  </div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="../SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/AddAnnouncement.js">	</script>
+<script src="../SiteAssets/EmployeeSynchronous/DMS/dropzone.js"></script>
+
+<!-- custom JS trial START -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#Description').richText();
+		$('a[title="Add image"]').hide();
+  		$('a[title="Add file"]').hide();
+  		$('a[title="Add video"]').hide();
+  		$('a[title="Add URL"]').hide();
+  		$('a[title="Add table"]').hide();
+  		$('a[title="Show HTML code"]').hide();
+  		$('a[title="Remove styles"]').hide();
+  		$('.richText-help').hide();
+  		$('.richText-toolbar').hide();
+  	});	
+
+</script>
+
+<!-- custom JS trial END -->
+
+<!--  --><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-370</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2fe7233e-e07f-401e-9089-3f7a3e69324b</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-370, ADMIN-1645029823-370</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

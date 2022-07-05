@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Titan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="../SiteAssets/CompanyHomePage/Polls/ParticipatePolls_New/css/date-picker.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/CompanyHomePage/Polls/ParticipatePolls_New/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/CompanyHomePage/Polls/ParticipatePolls_New/css/styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="../SiteAssets/CompanyHomePage/Polls/ParticipatePolls_New/CustomJS/ParticipatePoll.js?v=3"></script>
+    
+    <style>
+
+.checkbox{
+ padding-left:0px !important;	
+}
+    
+#userModal.modal{
+	 	top:23% !important;	
+	}
+	.participations-survey-panel li{
+
+  padding:6px 12px !important;
+
+}
+.participations-survey-panel li{
+
+  padding:10px 5px 15px 5px !important;	
+
+}
+
+	.lefbox{
+	margin:0 10px;
+	}	
+.participations-sticky-box{
+    z-index: 1;
+}
+
+	.coverbox{
+	  
+	  display: -webkit-box;
+      display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  align-items: center;
+
+}
+
+.coverbox h3{
+
+	margin: 0;
+	padding: 0px 15px 0 3px;
+	font-weight: 600;
+	color: #2a2a2b;
+	font-size:15px;
+}	
+
+.coverbox h4{
+
+	margin: 0;
+	padding: 0px 15px 0 3px;
+	font-weight: 600;
+	color: #2a2a2b;
+	font-size:15px;
+}
+	.rightbox span{
+	float:left;
+	padding:0px 3px;
+	color: #2a2a2b;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.rightbox span.line{
+	position: relative;
+	z-index: 0;
+	padding-left:7px;
+}
+
+.rightbox span.line:before{
+	
+    content: ',';
+    position: absolute;
+    left: 0;
+    border: 0px;
+    display: block;
+    z-index: 0;
+    font-size: 16px;
+    bottom: -1px;	
+	
+}
+
+.q-a-box{
+
+ border-bottom: 0.1px solid #dfdfdf;
+
+}
+
+.Change-color {
+    background-color: #d9d9d9 !important;
+    color: #000000 !important;
+}    
+
+.ms-rtestate-field h4, h4.ms-rteElement-H4{
+	/*color:#004284 !important;*/
+    color: #1d6ec0 !important;
+    font-weight: 600;
+}
+
+.modal-header button.close {
+    min-width: 20px !important;
+    height: 20px !important;
+    background: #fff;
+    top: 11px;
+}
+
+#usersList li.participations-sticky-box{
+	background-color:#666 !important;
+}
+
+@media(max-width:375px){
+
+.number-rating .btn-scale {
+    min-width: 16px;
+    padding: 2px 1px;
+    font-size: 11px !important;
+}
+
+}		
+
+#survey-QA .modal-body{
+
+	padding:25px 15px 15px 15px !important;	
+}
+
+
+
+#survey-QA .modal-body .checkbox{
+		
+ position:relative;
+ top:32px; 
+ padding-left:5px !important;
+
+}
+
+#survey-QA .modal-header{
+
+	height:auto !important;	
+}
+
+ul.pl-26{
+ margin:0;
+ padding:0;	
+}
+
+ul.pl-26 li.radio{	
+
+ padding-left:0 !important;	
+
+}
+
+@media(max-width:566px){
+
+#survey-QA .modal-title .txtSurveyName{
+
+	font-size:13px !important;
+}	
+	
+}
+
+@media(max-width:767px){
+
+.ajstingnow{
+  text-align:left !important;	
+}	
+	
+}
+	
+</style>
+    
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1715</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">85e187c2-3a78-4287-8e63-ff7aa94dcacf</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1715, ADMIN-1645029823-1715</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">164900.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+    <div class="QuestionDetails" style="display:none;"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box">
+                        <div class="panel-head">
+                            <h3 class="m-0">
+                                Survey: <span class="txtSurveyName"></span>
+                            </h3>
+                        </div>
+                        <div class="panel-body px-0 pt-8">
+                            <div class="row m-0 survey-filter-panel">
+                                <div class="col-md-12">
+                                    <div class="row m-0 survey-right-top-box survey-right-top-box-2">
+                                        <div class="col-xs-3 survey-right-time-box-one">
+                                            <div class="text-center">
+                                                <p class="m-0">Start Date</p>
+                                                <h3 class="m-0" id="StartDate"></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 survey-right-time-box-two">
+                                            <div class="text-center">
+                                                <p class="m-0">End Date</p>
+                                                <h3 class="m-0" id="EndDate"></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 survey-right-time-box-two">
+                                            <div class="text-center">
+                                                <p class="m-0">Result Date</p>
+                                                <h3 class="m-0" id="ExpDate"></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 survey-right-time-box-three">
+                                            <div class="text-center">
+                                                <p class="m-0">Visibility</p>
+                                                <h3 class="m-0 d-none">Not Visible</h3>
+                                                <h3 class="m-0" id="txtVisibility">Visible</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 orgList">
+                                    <div class="font-12 mt-16 text-right ajstingnow" style="font-size: 15px;font-weight: 900;">
+                                        <a href="javascript:void(0)" id="Organizers">Organizers</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="font-12 mt-16 text-danger text-right ajstingnow">
+                                        *Note: All questions are mandatory to reply.
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="q-a-panel" id="QuestionsDiv">
+
+                                        <!--
+                                        <div class="q-a-boxs">
+                                            <h4 class="q-a-box-qstns">*1. How often do you consume bread?</h4>
+                                            <ul class="pl-26">
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio">Option 1</label>
+                                                </li>
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio">Option 2</label>
+                                                </li>
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio">Option 2</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="q-a-boxs">
+                                            <h4 class="q-a-box-qstns">*2. Product QUALITY verify1?</h4>
+                                            <ul class="pl-26">
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio1">GOOD</label>
+                                                </li>
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio1">Better</label>
+                                                </li>
+                                                <li class="radio">
+                                                    <label><input type="radio" name="optradio1">Best</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="q-a-boxs">
+                                            <h4 class="q-a-box-qstns">*3. Which standard bread loaves do you perfer?</h4>
+                                            <ul class="pl-26">
+                                                <li class="checkbox">
+                                                    <label><input type="checkbox" value="">Standwich Bread</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label><input type="checkbox" value="">Brown Bread</label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label><input type="checkbox" value="">Whole Wheat Bread</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                            -->
+
+
+
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 text-center timesheet-entry-footer-btn-group">
+                                    <button type="button" class="btn custom-btn mr-8 w-70" id="btnFeedbackReset">Reset</button>
+                                    <button type="button" class="btn custom-btn mr-8 w-70" id="btnFeedbackSubmit">Submit</button>
+                                    <button type="button" class="btn custom-btn mr-8 w-70" id="btnFeedbackModify" style="display:none;">Modify</button>
+                                    <button type="button" class="btn custom-btn mr-8 w-70" id="btnFeedbackUpdate" style="display:none;">Update</button>
+                                    <button type="button" class="btn custom-btn custom-btn-two-cancel w-70" id="btnFeedbackClose">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- Participations Survey moadl 1 -->
+    <div class="modal fade" id="userModal" role="dialog">
+        <div class="participations-survey-box scrollbar-panel modal-dialog modal-sm">
+            <ul class="participations-survey-panel" id="usersList">
+                <li class="text-right participations-sticky-box px-0">
+                    <span class="glyphicon glyphicon-remove close-round" data-dismiss="modal"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Survey filter Modal -->
+    <div id="survey-QA" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-md">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round btnPopup" data-dismiss="modal" style="display:none;" disabled="disabled"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title">Survey: <span class="txtSurveyName"></span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <h4 class="color-blue-1">Your reply will be visible to organizer.</h4>
+                                <!-- <p class="font-12 text-danger">*Note: All questions are mandatory to reply. </p> -->
+                            </div>
+                        	<div class="form-group custom-form-group orgList">
+                                <div class="font-12 mt-16 text-left" style="font-size: 15px;font-weight: 900;">
+                                    Organizers: <span class="lstOrganizers"></span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <li class="checkbox">
+                                    <label style="font-size: 15px;font-weight: 900;"><input type="checkbox" id="chkboxParticipation" value="" style="height: 17px;width: 17px;">I agree, let me participate</label>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer survey-modal-footer">
+                    <button class="btn custom-btn mr-8 w-70 btnPopup" data-dismiss="modal" id="btnOk" disabled="disabled">Ok</button>
+                    <button class="btn custom-btn-two-cancel w-70" data-dismiss="modal" id="btnCancel">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- For star reting js -->
+    <script>
+        var starClicked = false;
+
+        $(function () {
+
+            $('.star').click(function () {
+
+                $(this).children('.selected').addClass('is-animated');
+                $(this).children('.selected').addClass('pulse');
+
+                var target = this;
+
+                setTimeout(function () {
+                    $(target).children('.selected').removeClass('is-animated');
+                    $(target).children('.selected').removeClass('pulse');
+                }, 1000);
+
+                starClicked = true;
+            })
+
+            $('.half').click(function () {
+                if (starClicked == true) {
+                    setHalfStarState(this)
+                }
+                $(this).closest('.rating').find('.js-score').text($(this).data('value'));
+
+                $(this).closest('.rating').data('vote', $(this).data('value'));
+                //calculateAverage()
+                console.log(parseInt($(this).data('value')));
+
+            })
+
+            $('.full').click(function () {
+                if (starClicked == true) {
+                    setFullStarState(this)
+                }
+                $(this).closest('.rating').find('.js-score').text($(this).data('value'));
+
+                $(this).find('js-average').text(parseInt($(this).data('value')));
+
+                $(this).closest('.rating').data('vote', $(this).data('value'));
+                //calculateAverage()
+
+                console.log(parseInt($(this).data('value')));
+            })
+
+            $('.half').hover(function () {
+                if (starClicked == false) {
+                    setHalfStarState(this)
+                }
+
+            })
+
+            $('.full').hover(function () {
+                if (starClicked == false) {
+                    setFullStarState(this)
+                }
+            })
+
+        })
+
+        function updateStarState(target) {
+            $(target).parent().prevAll().addClass('animate');
+            $(target).parent().prevAll().children().addClass('star-colour');
+
+            $(target).parent().nextAll().removeClass('animate');
+            $(target).parent().nextAll().children().removeClass('star-colour');
+        }
+
+        function setHalfStarState(target) {
+            $(target).addClass('star-colour');
+            $(target).siblings('.full').removeClass('star-colour');
+            updateStarState(target)
+        }
+
+        function setFullStarState(target) {
+            $(target).addClass('star-colour');
+            $(target).parent().addClass('animate');
+            $(target).siblings('.half').addClass('star-colour');
+
+            updateStarState(target)
+        }
+    </script>
+    <script type="text/javascript">
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") { //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+            document.write('<link href="assets/css/date-picker.css" rel="stylesheet" type="text/css" />\n')
+            document.write('<script src="assets/js/datepicker-jquery.min.js"><\/script>\n')
+            document.write('<script src="assets/js/datepicker-jquery-ui.min.js"><\/script>\n')
+        }
+    </script>
+
+    <script>
+        if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+            jQuery(function ($) { //on document.ready From
+                $('#surveyStart').datepicker();
+                $('#surveyEnd').datepicker();
+                $('#surveyExpiry').datepicker();
+            })
+        }
+    </script>
+
+</body>
+</html>

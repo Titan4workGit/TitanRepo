@@ -1,0 +1,390 @@
+﻿/* New media gallery details view css START */
+.my_download_trigger{
+	border-top:medium;
+}
+
+.inputshow{
+	opacity:1;
+}
+
+
+.custom-panel {
+    position: relative;
+}
+.custom-drag-drop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.custom-drag-drop .album-card-drag {
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%);
+    border-radius: 10px;
+    height: inherit;
+    overflow: hidden;
+    /* display: block; */
+    z-index: 2;
+}
+.custom-drag-drop .fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: "alpha(opacity=0)";
+    font-size: 0px;
+    direction: ltr;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+.album-card-drag-text1 {
+    font-size: 26px;
+}
+.album-card-drag-text2, .album-card-drag-text3 {
+    font-size: 19px;
+}
+
+.album-head-box {
+    /* border-bottom: 1px solid #1b1b1b; */
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.media-gallery-sub-heading {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 10px;
+    word-break: break-word;
+    color: #333 !important;
+    -webkit-line-clamp: 1;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    /*margin-bottom: 0;*/
+}
+.upload-details-album-box {
+    /*margin: 0px auto 0px auto;*/
+    margin: 10px auto 0px auto;
+    text-align: right;
+}
+.upload-details-album-box .form-group {
+    margin-bottom: 0px !important;
+}
+.album-search {
+    max-width: 300px;
+    height: 36px;
+}
+.album-sorting-btn, .details-album-download-btn, .details-album-delete-btn, .details-album-back-btn {
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #1b1b1b !important;
+    text-decoration: none;
+}
+.deatils-album-upload-btn {
+	cursor: pointer;
+    color: #1b1b1b !important;
+    text-decoration: none;
+}
+.deatils-album-upload-btn label {
+    cursor: pointer;
+}
+.upload-details-album-box #btnCreateNewAlbum {
+    margin-right: 0;
+}
+.upload-details-album-box .album-sorting-btn>a {
+    color: #1b1b1b !important;
+}
+.upload-details-album-box .album-sorting-btn .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.deatils-album-upload-btn>input[type="file"] {
+    display: none;
+}
+.details-album-back-btn i {
+    transform: rotateY(
+180deg);
+    padding-left: 1px;
+}
+.album-card-info {
+    background-color: #ffffff;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 24%);
+    border-radius: 0px;
+    height: 220px;
+    overflow: hidden;
+    display: block;
+}
+
+.custom-card-menu {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: auto;
+    width: auto;
+    /*background: #ffffff;*/
+    border-radius: 0%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: default;
+    background: #ffffff;
+    padding: 3px 9px;
+    border-radius: 14px;
+    box-shadow: 0 0 2px rgb(0 0 0 / 40%);
+}
+.album-card:hover .custom-card-menu {
+	opacity: 1;
+}
+.album-download-btn, .album-delete-btn {
+    font-size: 16px;
+    color: #000 !important;
+    cursor: pointer;
+}
+.album-delete-btn {
+    margin-left: 15px;
+}
+
+/* radio/checkbox btn css START */
+.chexbox_mg{
+position: relative;
+/*width:100px;*/
+width: auto;
+display: inline-block;
+top: 2px;
+opacity: 0;
+}
+.chexbox_mg img{
+width:100%;
+
+}
+.chexbox_mg input[type="checkbox"][id^="myCheckbox"]{
+display: none;
+}
+.chexbox_mg label {
+border: 1px solid #fff;
+padding: 3px;
+display: block;
+position: relative;
+margin: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+.chexbox_mg label:before {
+background-color: white;
+color: white;
+content: " ";
+display: block;
+border-radius: 50%;
+border: 1px solid #1e9201;
+position: absolute;
+/*top: -12px;
+left: -5px;*/
+top: -3px;
+left: -3px;
+width: 25px;
+height: 25px;
+text-align: center;
+line-height: 26px;
+transition-duration: 0.4s;
+transform: scale(0);
+}
+/*.chexbox_mg label img {
+height: 100%;
+width: 100%;
+transition-duration: 0.2s;
+transform-origin: 50% 50%;
+}*/
+.chexbox_mg label i {
+transition-duration: 0.2s;
+transform-origin: 50% 50%;
+font-size: 19px;
+}
+/*.chexbox_mg :checked + label {
+border-color: #1e9201;
+}*/
+.chexbox_mg :checked + label:before {
+content: "✓";
+background-color: #1e9201;
+transform: scale(1);
+}
+.chexbox_mg :checked + label img {
+transform: scale(0.9);
+/* box-shadow: 0 0 5px #333; */
+z-index: -1;
+}
+/* radio/checkbox btn css END */
+
+.album-card:hover .chexbox_mg {
+    opacity: 1;
+}
+.custom-album-check-box {
+    position: absolute;
+    /*top: 8px;
+    left: 20px;*/
+    top: 4px;
+    left: 15px;
+}
+.custom-album-check-box .chexbox_mg label {
+    border: none;
+    margin: 0;
+    padding: 0px 1px;
+    background: #ffffff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgb(0 0 0 / 40%);
+
+}
+.album-card-footer {
+    display: block;
+    width: 100%;
+}
+.album-card-footer-flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.album-card-footer-flex-box .album-card-footer-date {
+    font-size: 13px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+.album-card-footer-flex-box .media-gallery-user-btn-item .media-gallery-user-btn-panel-gap {
+    width: 10px;
+}
+.album-card-footer-flex-box .media-gallery-user-btn-item .media-gallery-user-btn-panel-count>a {
+    margin-top: 0 !important;
+}
+.album-card-info .video-box {
+    object-fit: cover;
+    object-position: center;
+}
+.chexbox_mg.inputshow {
+    opacity: 1;
+}
+
+/* chat-box css for new media gallery */
+
+.photo-view-with-comments-file-name .media-gallery-sub-heading {
+    font-size: 15px;
+    color: #000 !important;
+    font-weight: 600;
+}
+.album-detail-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.album-user-info-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*justify-content: flex-start;*/
+}
+.album-user-image-box {
+    display: flex;
+    align-items: center;
+}
+.album-user-image-box img {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    object-fit: cover;
+}
+.album-user-image-text {
+    font-size: 13px;
+    padding-left: 10px !important;
+}
+.mb0 {
+    margin-bottom: 0 !important;
+}
+.Emailfont {
+    white-space: normal;
+    font-size: 12px !important;
+}
+.album-user-details-box p {
+    margin-bottom: 0px;
+    white-space: normal;
+}
+.album-data-box {
+    height: 100%;
+}
+.album-inner-card-btn-panel {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: flex-end;
+}
+.album-inner-card-btn-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 0px;
+    font-size: 14px;
+}
+.album-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+.album-inner-card-btn-panel-icon img {
+    max-width: 16px;
+}
+.album-inner-card-btn-panel-gap {
+    min-width: 18px;
+}
+#photo-view-with-comments .modal-header {
+    border-bottom: 1px solid #d5d5d5;
+}
+.slider-panel .carousel-inner>.item {
+    height: 430px;
+}
+#photo-view-with-comments .chat-main-panel {
+    max-height: 360px;
+    height: 360px;
+    border-top: 1px solid #c9c9c9;
+    border-top-right-radius: 4px;
+}
+#photo-view-with-comments .album-detail-footer {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.new-media-chat-area {
+    /*width: 58.33333333%;*/
+    /*width: 41.66666667%;*/
+    padding-bottom: 0px;
+}
+#photo-view-with-comments .modal-content {
+    min-height: auto;
+}
+.album-data-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+	#photo-view-with-comments .modal-dialog {
+	    width: 1190px;
+	}
+
+}
+
+/* New media gallery details view css END */

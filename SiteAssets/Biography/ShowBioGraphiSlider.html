@@ -1,0 +1,408 @@
+﻿<script type="text/javascript">
+
+window.addEventListener("load", function(){
+
+	var y = $("#carousel_bioGraphy ol").children().size();
+
+	if( y == 1 ) {
+
+	$("#carousel_bioGraphy ol").children().css("visibility","hidden");
+	
+	}
+
+}, false);
+
+
+$(document).ready(function ()
+{
+	 var welcomePageCalled=titanForWork.getQueryStringParameter('WelcomePageCalled');
+	 if(welcomePageCalled!=undefined)
+	 {
+		LoadEmployeeBioGraphy();
+	 }
+});
+
+var employeeBioGraphyListItemCollection=new Array();
+function LoadEmployeeBioGraphy()
+{debugger;
+  /* var todayDates = new Date();
+   var isoString= todayDates.toISOString();
+   
+   var todayDatesTo = new Date(); 
+    todayDatesTo.setDate(todayDatesTo.getDate()-1);
+
+    var isoStringTo= todayDatesTo.toISOString();*/
+    
+    
+    var today = new Date();
+	var CurrentDate=today.toISOString().substring(0, 10);
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+
+ 
+    var restQuery="";
+    getCurrentSiteUrl=titanForWork.getQueryStringParameter("CompanySiteUrl");
+   // restQuery="&$top=5&$filter=IsValid eq 'true' and DisplayTo ge datetime'"+isoStringTo+"' and DisplayFrom le datetime'"+isoString+"'";    
+//    restQuery="&$top=5&$filter=ApprovalStatus eq 'Approved' and WebPartName eq 'General'";    
+    restQuery="&$top=5&$filter=((WebPartName eq 'General' and ApprovalStatus eq 'Approved' and Publish_Date le '"+CurrentDate+"' and Expires ge '"+CurrentDate+"') and (Audience eq 'Corporate' or (Audience eq 'Company' and Company/ID eq '"+txtCompanyId+"') or (Audience eq 'Department' and Company/ID eq '"+txtCompanyId+"' and Departments/ID eq '"+Logged_DepartmentId+"')))";
+ //    var restQuery="&$top=5&$filter=IsValid eq 'true' and DisplayTo ge datetime'"+isoString+"' and DisplayFrom le datetime'"+isoString+"'";
+   // var Ownurl = getCurrentSiteUrl  + "/_api/web/lists/getbytitle('BioList')/items?$select=ID,DisplayFrom,DisplayTo,EmployeeID" + restQuery;
+   var Ownurl = _spPageContextInfo.webAbsoluteUrl+ "/_api/web/lists/getbytitle('Announcements')/items?$select=*" + restQuery;
+   
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+          
+            var items = data.d.results;
+            var itemEmployeeId = new Array();
+          
+            if (items.length > 0)
+            {
+                for (var i = 0; i < items.length; i++)
+                {
+                   
+                     itemEmployeeId.push(BioGraphyProperties(items[i].ID, items[i].EmployeeID, items[i].UserType));
+                   
+                }
+            }
+            var query = "";
+            for (var i = 0; i < itemEmployeeId.length; i++)
+            {
+                if (i == 0) {
+                    query = "ID eq " + itemEmployeeId[i].EmpId;
+                }
+                else {
+                    query = query + " or ID eq " + itemEmployeeId[i].EmpId;
+                }
+            }
+            if (query.length != 0)
+            {
+               GetEmployeesForBioGraphyDetails(query, itemEmployeeId);
+
+            }
+            else
+            {
+                 var langblankMessage = "Keep watching for upcoming biography";//$('#langBlankTextMessage').text();
+                if(langblankMessage=="")
+                {
+                   langblankMessage="Keep watching for upcoming biography";
+                }
+
+              var norecord='<div class="Empnorecordfound col-sm-12 col-xs-12 col-md-12"><h3 class="top5" data-localize="NoRecord_EmployeeBioGraphy">'+langblankMessage+'</h3></div>';
+              $('.bioGraphyItemCollection').append(norecord);
+
+            }
+
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+function BioGraphyProperties(id, empid)
+{
+    var emp = {};
+    emp.Id = id;
+    emp.EmpId = empid;
+    return emp;
+}
+var bioGraphyIghItemCounter = 0;
+
+function GetEmployeesForBioGraphyDetails(restQuery, itemsCollection)
+{debugger;
+    var currentCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Employees')/items?$select=ID,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/Title,LogonName/UserName,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName&$orderby=FullName&$expand=LogonName,OfficeLocation,Company,Department,AttachmentFiles&$filter=" + restQuery;
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            var CompleteBioGraphyHTML="";
+             var BioGraphyHTML = '';
+             var SpotIndicationCollection = "";
+            for (var i = 0; i < items.length; i++)
+            {
+                var empItemID = items[i].ID;
+                var fullName = items[i].LogonName.Title;
+                if (fullName == null || fullName == "") {
+                    fullName = "NA";
+                }
+                var extensionName = items[i].ExtensionName;
+                if (extensionName == null || extensionName == "") {
+                    extensionName = "NA";
+                }
+                var email = items[i].Email;
+                if (email == null || email == "") {
+                    email = "NA";
+                }
+                var department = items[i].Department.DepartmentName;
+                if (department == null || department == "") {
+                    department = "NA";
+                }
+                var designation = items[i].Designation;
+                if (designation == null || designation == "") {
+                    designation = "NA";
+                }
+                var mobileNumber = items[i].MobileNumber;
+                if (mobileNumber == null || mobileNumber == "") {
+                    mobileNumber = "NA";
+                }
+                var langCongrate = "Read more"//$('#langCongrates').text();
+                if (langCongrate == "")
+                {
+                    langCongrate = "Read more";
+                }
+
+
+                for (var index = 0; index < itemsCollection.length; index++)
+                {
+                    if (itemsCollection[index].EmpId == empItemID)
+                    {
+
+                        var id = itemsCollection[index].Id;
+                        var employeePicURL = '';
+                        if (items[i].AttachmentFiles.results.length > 0)
+                        {
+                            employeePicURL = items[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                        }
+                        else
+                        {
+                            employeePicURL = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        }
+                        employeeBioGraphyListItemCollection.push(EmployeeBioGraphyProperties(id,fullName, designation, department, extensionName, email, mobileNumber, employeePicURL))
+
+
+                        var newItemID = empItemID;
+                        var emplyeeDesignationMain = designation;
+                        var empDepartment = department;
+                        var emplyeeNameMain = fullName;
+                        var linkdetails = _spPageContextInfo.webAbsoluteUrl + "/Pages/EmployeeDetails.aspx?WebAppId=" + currentCompanyId + "&mode=editview&department=&employeedIddetails=" + newItemID + "&sourcelocation=../Pages/Default.aspx";
+                        var EmployeeDispURL = linkdetails;
+                        if (bioGraphyIghItemCounter == 0)
+                        {
+                            BioGraphyHTML += '<div class="item active">';
+
+                            SpotIndicationCollection += '<li data-target="#carousel_bioGraphy" data-slide-to="' + bioGraphyIghItemCounter + '" class="active"></li>';
+
+                        }
+                        else
+                        {
+                            BioGraphyHTML += '<div class="item">';
+                            SpotIndicationCollection += '<li data-target="#carousel_bioGraphy" data-slide-to="' + bioGraphyIghItemCounter + '"></li>';
+                        }
+                        titleDeatils = "";
+                        BioGraphyHTML += '<div class="media row">';
+                        BioGraphyHTML += '<div class="col-md-5 col-sm-3 col-xs-4 employee-pic">';
+                        BioGraphyHTML += '<a class="pull-left" href="#">';
+                        BioGraphyHTML += '<img class="media-object img-responsive" src="' + employeePicURL + '" alt="">';
+                        BioGraphyHTML += '</a>';
+                        BioGraphyHTML += '</div>';
+                        BioGraphyHTML += '<div class="col-md-6 col-sm-4 col-xs-8">';
+                        BioGraphyHTML += '<div class="media-body">';
+                        //  BioGraphyHTML += '<h4 class="media-heading media-head  mt-10">' + month + '-' + year + '</h4>';
+                        BioGraphyHTML += '<p class="text-left h4-color">' + emplyeeNameMain + '</p>';
+                        BioGraphyHTML += '<p>' + emplyeeDesignationMain + '</p>';
+                        BioGraphyHTML += '<p>' + department + '</p>';
+                        BioGraphyHTML += '<p>';
+                        BioGraphyHTML += '<button type="button" class="btn btn-default btn-sm" onclick="GetBioGraphyDetails(' + id + ')" data-localize="ReadMore"></button>';
+                        BioGraphyHTML += '</p>';
+                        BioGraphyHTML += '</div>';
+                        BioGraphyHTML += '</div>';
+                        BioGraphyHTML += '</div>';
+                        BioGraphyHTML += '</div>';
+                        bioGraphyIghItemCounter++;
+                    }
+                }
+            }
+            // Add Complete HTML
+            $(".bioGraphyItemCollection").append(BioGraphyHTML);
+            $(".bioGraphyIndicatorsCollection").append(SpotIndicationCollection);
+
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+function GetBioGraphyDetails(biographyid)
+{
+window.location.href="../Pages/DisplayBio.aspx?itemId="+biographyid+"&WebAppId=232SHD"
+}
+function EmployeeBioGraphyProperties(id, name, desgination, department, extension, email, mobileNo, imageUrl)
+{
+    var emp = {};
+    emp.Id = id;
+    emp.Name=name;
+    emp.Desgination=desgination;
+    emp.Department=department;
+    emp.Extension=extension;
+    emp.Email=email;
+    emp.MobileNo = mobileNo;
+    emp.ImageUrl = imageUrl;
+    return emp;
+}
+
+</script>
+
+<div id="carSoulBioGraphyDIV">
+
+    <div id="carousel_bioGraphy" class="carousel slide" data-ride="carousel">		
+		<!-- Wrapper for slides -->
+        <div class="carousel-inner bioGraphyItemCollection" role="listbox">
+        </div>
+        <!--End Wrapper for slides -->
+        <!-- Indicators -->
+			<ol class="carousel-indicators bioGraphyIndicatorsCollection"></ol>
+		<!--End Indicators -->
+    </div>
+
+
+
+</div>
+<style>			
+    .tile_box {
+        background-color: #efefef;
+        height: auto;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+        /*border-radius: 2px;*/
+        padding: 15px;
+        border: 1px solid #efefef;
+        min-height: 167px;
+    }
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .blue_color {
+        color: #1d6ec0;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(odd) {
+        background: #efefef;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(even) {
+        background: #fff;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-hover li:hover {
+        background: #f2f2f2;
+    }
+
+
+    .list_border {
+        border: 1px solid #EAEAEA;
+        height: 150px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .color_bg {
+        background: #46b8da;
+        color: #fff;
+        border: #46b8da;
+    }
+
+    .text_black {
+        color: #000000 !important;
+    }
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .accordion-text {
+        color: #333;
+    }
+
+    .marginTop {
+        margin-top: 65px;
+    }
+
+    @media (max-width: 768px) {
+        .marginTop {
+            margin-top: 65px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .top10_m {
+            margin-top: 10px;
+        }
+    }
+
+
+
+    .user_text {
+        color: #1d6ec0;
+        text-align: center;
+    }
+
+    .user_pic {
+        position: absolute;
+        top: -43px;
+        left: 0;
+        right: 0;
+    }
+
+    .user_pic_content {
+        margin-top: 55px;
+    }
+
+    .marginTop60 {
+        margin-top: 60px;
+    }
+
+    .marginTop70 {
+        margin-top: 70px;
+    }
+
+    .imageheightwidth {
+        height: 100px;
+        width: 100px;
+    }
+
+    .Empnorecordfound {
+        color: #999 !important;
+        font-weight: bold !important;
+        font-size: 13px !important;
+        padding-top: 35px;
+    }
+
+    .congratulate {
+        color: #00008B !important;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+</style>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-342</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fd7ffba5-3c0e-4cca-927b-9eeba13d42c5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-342, ADMIN-1645029823-342</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">34200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

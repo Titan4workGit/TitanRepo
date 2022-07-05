@@ -1,0 +1,689 @@
+﻿<script type="text/javascript">
+
+window.addEventListener("load", function(){
+
+	var y = $("#carousel_spotlight ol").children().size();
+
+	if( y == 1 ) {
+
+	$("#carousel_spotlight ol").children().css("visibility","hidden");
+	
+	}
+
+}, false);
+
+var getCurrentSiteUrl = "";
+var getCurrentCompanyIDs="";
+$(document).ready(function ()
+{
+	InitializationEmployeeOfTheMonth();
+	
+	$('#responseSubmit').click(function ()
+	{
+	    var response = $('#txtResponse').val();
+	    if(response.trim()=='')
+	    {
+	    	response ='Congratulations and Best Wishes !!';
+	    }
+		var employeeMonthId = $('#employeeMonthId').val();
+		if(response.trim().length<=100)
+		{
+			AddNewEmployeeOftheMonthResponse(response, employeeMonthId);
+		}
+		else
+		{
+			alert('Maximum 100 characters are allowed.');
+		}
+	});
+});
+
+function InitializationEmployeeOfTheMonth()
+{
+	var welcomePageCalled=titanForWork.getQueryStringParameter('WelcomePageCalled');
+	 
+	if(welcomePageCalled!=undefined)
+	{
+		GetCurrentCompanySiteUrl();
+		GetCurrentUserDetails();
+	}
+}
+
+function cycle()
+{
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+};  
+
+var employeeListItemCollection=new Array();
+function LoadEmployeeoftheMonth()
+{
+
+        var monthNames = ["January", "February", "March", "April", "May", "June",
+		"July", "August", "September", "October", "November", "December"
+    ];
+    var date = new Date();
+    var currentMonth = monthNames[date.getMonth()];
+    var lastMonth="";
+    var secondLastMonth="";
+    var currentYear=date.getFullYear();
+    var lastYear="";
+    var restQuery ="";
+    if(date.getMonth()==0)
+    {
+      lastMonth=monthNames[11];//December
+      secondLastMonth=monthNames[10];//November
+      lastYear=currentYear-1;
+      restQuery="&$filter=Year eq '" + currentYear + "' and Month eq '"+currentMonth +"' or Year eq '"+lastYear+"' and Month eq '"+lastMonth+"' or Year eq '"+lastYear+"' and Month eq '"+secondLastMonth+"'";
+
+    }
+    else if(date.getMonth()==1)
+    {
+      lastYear=currentYear-1;
+      lastMonth=monthNames[0];//January
+      secondLastMonth=monthNames[11];//December
+      restQuery="&$filter=Year eq '" + currentYear + "' and Month eq '"+currentMonth +"' or Year eq '" + currentYear + "' and Month eq '"+lastMonth+"' or Year eq '"+lastYear+"' and Month eq '"+secondLastMonth+"'";
+
+    }
+    else
+    {
+      lastMonth=monthNames[date.getMonth()-1];
+      secondLastMonth=monthNames[date.getMonth()-2];
+      restQuery="&$filter=Year eq '" + currentYear + "' and Month eq '"+currentMonth +"' or Year eq '" + currentYear + "' and Month eq '"+lastMonth+"' or Year eq '" + currentYear + "' and Month eq '"+secondLastMonth+"'";
+    }
+getCurrentSiteUrl=titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var Ownurl = getCurrentSiteUrl+ "/_api/web/lists/getbytitle('EmployeeoftheMonth')/items?$select=ID,EmployeeId,Month,Year,MessageBody&$orderby=Year desc"+restQuery;
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            var itemEmployeeId = new Array();
+            if (items.length > 0)
+            {
+                for (var i = 0; i < items.length; i++)
+                {
+                    itemEmployeeId.push(EmployeeMonthProperties(items[i].ID, items[i].EmployeeId, items[i].Month, items[i].Year));
+                }
+            }
+            var query = "";
+            for (var i = 0; i < itemEmployeeId.length; i++)
+            {
+                if (i == 0) {
+                    query = "ID eq " + itemEmployeeId[i].EmpId;
+                }
+                else {
+                    query = query + " or ID eq " + itemEmployeeId[i].EmpId;
+                }
+            }
+            if (query.length != 0)
+            {
+               GetEmployeesDetails(query, itemEmployeeId);
+
+            }
+            else
+            {
+            var langblankMessage=$('#langBlankTextMessage').text();
+            if(langblankMessage=="")
+            {
+               langblankMessage="Keep watching for upcoming employee of the month";
+            }
+
+              var norecord='<div class="Empnorecordfound col-sm-12 col-xs-12 col-md-12"><h3 class="top5" data-localize="NoRecord_EmployeeOfTheMonth">'+langblankMessage+'</h3></div>';
+               $('.spotlightItemCollection').append(norecord);
+            //  $("#quote-carousel").append(norecord);
+             // $('#quote-carousel').find('.fa').hide();
+            }
+
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+function EmployeeMonthProperties(id, empid, month, year)
+{
+    var emp = {};
+    emp.Id = id;
+    emp.EmpId = empid;
+    emp.Month = month;
+    emp.Year = year;
+    return emp;
+}
+var spotlIghItemCounter = 0;
+function GetEmployeesDetails(restQuery, itemsCollection)
+{
+    var activeFirstElement = true;
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Employees')/items?$select=ID,AttachmentFiles,FullName,Designation,Manager,MobileNumber,ExtensionName,LogonName/Title,LogonName/UserName,Department/DepartmentName,Company/CompanyName,Company/ID,OfficeLocation/ID,OfficeLocation/OfficeName&$orderby=FullName&$expand=LogonName,OfficeLocation,Company,Department,AttachmentFiles&$filter=" + restQuery;
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) 
+        {
+            var items = data.d.results;
+               var EmplyoeeAword = '';
+                        var SpotIndicationCollection = "";
+            for (var i = 0; i < items.length; i++)
+            {
+                var empItemID = items[i].ID;
+                var fullName = items[i].LogonName.Title;
+                if (fullName == null || fullName == "") {
+                    fullName = "NA";
+                }
+                var extensionName = items[i].ExtensionName;
+                if (extensionName == null || extensionName == "") {
+                    extensionName = "NA";
+                }
+                var email = items[i].Email;
+                if (email == null || email == "") {
+                    email = "NA";
+                }
+                var department = items[i].Department.DepartmentName;
+                if (department == null || department == "") {
+                    department = "NA";
+                }
+                var designation = items[i].Designation;
+                if (designation == null || designation == "") {
+                    designation = "NA";
+                }
+                var mobileNumber = items[i].MobileNumber;
+                if (mobileNumber == null || mobileNumber == "") {
+                    mobileNumber = "NA";
+                }
+                var langCongrate = $('#langCongrates').text();
+                if (langCongrate == "") {
+                    langCongrate = "Congratulate!";
+                }
+
+
+                for (var index = 0; index < itemsCollection.length; index++)
+                {
+                    if (itemsCollection[index].EmpId == empItemID)
+                    {
+                        
+                        var id = itemsCollection[index].Id;
+                        var month = itemsCollection[index].Month;
+                        var year = itemsCollection[index].Year;
+                        var employeePicURL = '';
+                        if (items[i].AttachmentFiles.results.length > 0)
+                        {
+                            employeePicURL = items[i].AttachmentFiles.results[0].ServerRelativeUrl;
+                        }
+                        else
+                        {
+                            employeePicURL = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        }
+                        employeeListItemCollection.push(EmployeeProperties(id, month, year, fullName, designation, department, extensionName, email, mobileNumber, employeePicURL))
+                     
+                        var newItemID = empItemID;
+                        var emplyeeDesignationMain = designation;
+                        var empDepartment = department;
+                        var emplyeeNameMain = fullName;
+                        var linkdetails = _spPageContextInfo.webAbsoluteUrl + "/Pages/EmployeeDetails.aspx?WebAppId=" + getCurrentCompanyIDs + "&mode=editview&department=&employeedIddetails=" + newItemID + "&sourcelocation=../Pages/Default.aspx";
+                        var EmployeeDispURL = linkdetails;
+                        if (spotlIghItemCounter == 0)
+                        {
+                            EmplyoeeAword += '<div class="item active">';
+                            
+                             SpotIndicationCollection += '<li data-target="#carousel_spotlight" data-slide-to="' + spotlIghItemCounter + '" class="active"></li>';
+                            
+                        }
+                        else
+                        {
+                            EmplyoeeAword += '<div class="item">';
+                            SpotIndicationCollection += '<li data-target="#carousel_spotlight" data-slide-to="' + spotlIghItemCounter + '"></li>';
+                        }
+                        titleDeatils = "";
+                        EmplyoeeAword += '<div class="media row">';
+                        EmplyoeeAword += '<div class="col-md-5 col-sm-3 col-xs-4 employee-pic">';
+                        EmplyoeeAword += '<a class="pull-left" href="#">';
+                        EmplyoeeAword += '<img class="media-object img-responsive" src="' + employeePicURL + '" alt="">';
+                        EmplyoeeAword += '</a>';
+                        EmplyoeeAword += '</div>';
+                        EmplyoeeAword += '<div class="col-md-6 col-sm-4 col-xs-8">';
+                        EmplyoeeAword += '<div class="media-body">';
+                        EmplyoeeAword += '<h4 class="media-heading media-head  mt-10">' + month + '-' + year + '</h4>';
+                        EmplyoeeAword += '<p class="text-left h4-color">' + emplyeeNameMain + '</p>';
+                        EmplyoeeAword += '<p>' + emplyeeDesignationMain + '</p>';
+                        EmplyoeeAword += '<p>' + department + '</p>';
+                        EmplyoeeAword += '<p>';
+                        EmplyoeeAword += '<button type="button" class="btn btn-default btn-sm" onclick="GetActivityDetails(' + id + ')" data-toggle="modal" data-target="#myModal123" data-localize="Congratulate" >Congratulate</button>';
+                        EmplyoeeAword += '</p>';
+                        EmplyoeeAword += '</div>';
+                        EmplyoeeAword += '</div>';
+                        EmplyoeeAword += '</div>';
+                        EmplyoeeAword += '</div>';
+                       
+                    
+                        spotlIghItemCounter++;
+                    }
+                }
+            }
+                $(".spotlightItemCollection").append(EmplyoeeAword);
+                        $(".spotListIndicatorsCollection").append(SpotIndicationCollection);
+          
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+function GetCurrentCompanySiteUrl()
+{
+    currentCompanyid = titanForWork.getQueryStringParameter("CompanyId");
+    if (currentCompanyid != null && currentCompanyid != "") {
+        if (currentCompanyid.indexOf("#") != -1) {
+            currentCompanyid = currentCompanyid.split('#')[0];
+        }
+        currentCompanyid = currentCompanyid;
+    }
+    getCurrentCompanyIDs = currentCompanyid;
+    var Ownurl = "";
+    var siteURL = "";
+        siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");;// items[0].SiteURL;
+        getCurrentSiteUrl =siteURL;//  items[0].SiteURL;
+        LoadEmployeeoftheMonth();
+    return siteURL;
+}
+function EmployeeProperties(id, month, year, name, desgination, department, extension, email, mobileNo, imageUrl)
+{
+    var emp = {};
+    emp.Id = id;
+    emp.Month = month;
+    emp.Year = year;
+    emp.Name=name;
+    emp.Desgination=desgination;
+    emp.Department=department;
+    emp.Extension=extension;
+    emp.Email=email;
+    emp.MobileNo = mobileNo;
+    emp.ImageUrl = imageUrl;
+    return emp;
+}
+function GetActivityDetails(methodwithparameter)
+{
+        for (var index = 0; index < employeeListItemCollection.length; index++)
+        {
+            if (employeeListItemCollection[index].Id==methodwithparameter)
+            {
+                $('#modelName').text(employeeListItemCollection[index].Name);
+                $('#modelPost').text(employeeListItemCollection[index].Desgination)
+                $('#modelDepartment').text(employeeListItemCollection[index].Department);
+                $("#selectedimageurl").attr("src", employeeListItemCollection[index].ImageUrl);
+                $('#employeeMonthId').val(methodwithparameter);
+            }
+        }
+        var restQuery = "&$filter=ID eq '" + methodwithparameter + "'";
+    var Ownurl = getCurrentSiteUrl + "/_api/web/lists/getbytitle('EmployeeoftheMonth')/items?$select=ID,EmployeeId,Month,Year,MessageBody,MessageBodyLang1,MessageBodyLang2,MessageBodyLang3,MessageBodyLang4,MessageBodyLang5,MessageBodyLang6,MessageBodyLang7,MessageBodyLang8,MessageBodyLang9,MessageBodyLang10" + restQuery;
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length > 0)
+            {
+                if(preferredLanguageGlobal=="DefaultLanguage")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBody);
+               }
+               else if(preferredLanguageGlobal=="Language2nd")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang1);
+               }
+               else if(preferredLanguageGlobal=="Language3rd")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang2);
+               }
+               else if(preferredLanguageGlobal=="Language4th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang3);
+               }
+               else if(preferredLanguageGlobal=="Language5th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang4);
+               }
+               else if(preferredLanguageGlobal=="Language6th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang5);
+               }
+               else if(preferredLanguageGlobal=="Language7th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang6);
+               }
+               else if(preferredLanguageGlobal=="Language8th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang7);
+               }
+                  else if(preferredLanguageGlobal=="Language9th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang8);
+               }
+               else if(preferredLanguageGlobal=="Language10th")
+               {
+                $('#txtAchivmentss').text(items[0].MessageBodyLang9);
+               }
+
+
+
+                GetAllResponse(items[0].ID);
+            }
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+function GetAllResponse(itemID)
+{
+    var restQuery = "&$filter=EmployeeMonthId eq '" + itemID + "'";
+    var Ownurl = getCurrentSiteUrl + "/_api/web/lists/getbytitle('EmployeeOfTheMonthResponse')/items?$select=ID,EmployeeId,EmployeeName,Response,EmployeeMonthId" + restQuery;
+        $.ajax({
+            url: Ownurl,
+            headers: { Accept: "application/json;odata=verbose" },
+            async: true,
+            success: function (data)
+            {
+                var items = data.d.results;
+                var dvTable = $("#responseCollection");
+                dvTable.html("");
+                if (items.length > 0)
+                {
+                    var liCollection="";
+                    for (var index = 0; index < items.length; index++)
+                    {
+                        var linkdetails = _spPageContextInfo.webAbsoluteUrl+ "/Pages/EmployeeDetails.aspx?WebAppId=" + getCurrentCompanyIDs + "&mode=editview&department=&employeedIddetails=" + items[index].EmployeeId + "&sourcelocation=../Pages/Default.aspx";
+                        liCollection =liCollection+ "<li><a href='" + linkdetails + "'>" + items[index].EmployeeName + "</a><br>" + items[index].Response + "</li>";
+                    }
+                   // var dvTable = $("#responseCollection");
+                    //dvTable.html("");
+                    dvTable.append(liCollection);
+                }
+            }, eror: function (data) {
+                console.log('error');
+            }
+        });
+}
+function AddNewEmployeeOftheMonthResponse(response, employeeMonthId)
+{
+    var listName = "EmployeeOfTheMonthResponse";
+    var ItemType = GetItemTypeForListNameDetails(listName);
+    var Metadata;
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        EmployeeId: getCurrentUserId.toString(),
+        EmployeeName: getCurrentUserName,
+        Response: response,
+        EmployeeMonthId: employeeMonthId
+    };
+
+    $.when(AddItemToList(getCurrentSiteUrl, listName, Metadata)).done(function (requestResponse) {
+        $('#txtResponse').val('');
+        GetAllResponse(employeeMonthId);
+
+        });
+}
+function GetItemTypeForListNameDetails(ListName)
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+function AddItemToList(siteUrl, ListName, Metadata)
+{
+    var dfd = $.Deferred();
+    $.ajax({
+        url: siteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            // console.log(data);
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+function GetCurrentUserDetails()
+{
+ GetCurrentEmployeeID(_spPageContextInfo.userId);
+}
+function GetCurrentEmployeeID(logonNameId)
+{
+       getCurrentUserId =_spPageContextInfo.userId;
+                getCurrentUserName = _spPageContextInfo.userDisplayName;
+}
+
+</script>
+<label id="langCongrates" style="display:none" data-localize="Congratulate"></label>
+<label id="langBlankTextMessage" style="display:none" data-localize="NoRecord_EmployeeOfTheMonth"></label>
+
+
+<div>
+    <div id="carousel_spotlight" class="carousel slide transition-timer-carousel" data-ride="carousel">        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner spotlightItemCollection" role="listbox">
+
+        </div>
+        <!-- End Wrapper for slides -->
+        <!-- Indicators -->
+        <ol class="carousel-indicators spotListIndicatorsCollection"></ol>
+        <!-- End Indicators -->
+    </div>
+    
+</div>
+
+
+<!-- Model popup -->
+<div class="modal fade" id="myModal123" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header panel-head-4 hidden-md">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body" style="overflow:auto">
+                <div class="row">
+                    <div class="col-md-4 top10">
+                        <div class="row">
+                            <div class="text-center ">
+                                <img src="" class="img-circle" id="selectedimageurl" style="width: 120px; height:120px;">
+                            </div>
+                        </div>
+                        <div class="text-center margin10">
+                            <span class="text_black" id="modelName">NA</span><br />
+                            <span id="modelPost">NA</span> <br />
+                            <span id="modelDepartment">NA</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="text-center text_black " style="margin-top:0" data-localize="Achievements">Achievements</h3>
+                        <p style="text-align:justify" id="txtAchivmentss">
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-sm-12 msg-box top30">
+                        <textarea class="form-control occation-text-area" rows="2" placeholder="Congratulations and Best Wishes !!" id="txtResponse"></textarea>
+
+
+
+                        <button type="button" id="responseSubmit" class="input-group-addon btn  btn-outline-success occation-text-btn"><label data-localize="Send"></label></button>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 top15">
+                        <div class="panel-body list_border">
+                            <input type="text" id="employeeMonthId" style="display:none;" />
+                            <ul class="list-group list-group-hover list-group-striped" id="responseCollection"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<style>
+    .tile_box {
+        background-color: #efefef;
+        height: auto;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+        /*border-radius: 2px;*/
+        padding: 15px;
+        border: 1px solid #efefef;
+        min-height: 167px;
+    }
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .blue_color {
+        color: #1d6ec0;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(odd) {
+        background: #efefef;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-striped li:nth-of-type(even) {
+        background: #fff;
+        padding: 7px;
+        color: #333;
+    }
+
+    ul.list-group.list-group-hover li:hover {
+        background: #f2f2f2;
+    }
+
+
+    .list_border {
+        border: 1px solid #EAEAEA;
+        height: 150px;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    .color_bg {
+        background: #46b8da;
+        color: #fff;
+        border: #46b8da;
+    }
+
+    .text_black {
+        color: #000000 !important;
+    }
+
+    .h4-color2 {
+        color: #666666;
+        margin-top: 15px;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .accordion-text {
+        color: #333;
+    }
+
+    .marginTop {
+        margin-top: 65px;
+    }
+
+    @media (max-width: 768px) {
+        .marginTop {
+            margin-top: 65px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .top10_m {
+            margin-top: 10px;
+        }
+    }
+
+
+
+    .user_text {
+        color: #1d6ec0;
+        text-align: center;
+    }
+
+    .user_pic {
+        position: absolute;
+        top: -43px;
+        left: 0;
+        right: 0;
+    }
+
+    .user_pic_content {
+        margin-top: 55px;
+    }
+
+    .marginTop60 {
+        margin-top: 60px;
+    }
+
+    .marginTop70 {
+        margin-top: 70px;
+    }
+
+    .imageheightwidth {
+        height: 100px;
+        width: 100px;
+    }
+
+    .Empnorecordfound {
+        color: #999 !important;
+        font-weight: bold !important;
+        font-size: 13px !important;
+        padding-top: 35px;
+    }
+
+    .congratulate {
+        color: #00008B !important;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 13px;
+    }		
+</style>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-381</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d55b5b5a-9866-4b4c-a533-a41d38c624b3</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-381, ADMIN-1645029823-381</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">38100.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,1227 @@
+﻿<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/jquery.datepicker.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css"> 
+
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+
+ 
+ 
+  
+<style>
+
+.required:after {
+  content:"*";
+  color:red;
+}
+/* new css added on 20/4/20 */
+
+.my_event_times {
+    text-align: right;
+}
+.my_events_slider_contain {
+    width: 100%;
+}
+#mySliderDiv {
+    margin-bottom: 5px;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px 0px 5px 5px;
+}
+#mySliderDiv img {
+    width: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+#mySliderDiv img:hover {
+    box-shadow: 0px 1px 8px 1px #656565;
+}
+#mySliderDiv .my_event_active {
+    /* box-shadow: 0px 1px 8px 1px #5f5f5f; */
+    padding: 2px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+
+</style>
+<script type="text/javascript">
+$(window).load(function () 
+{
+getEventCategory("","dropdown");
+getEventDepartment("","dropdown");
+LoadMyPicture();
+//var slider=$("#ImageDiv").lightSlider();
+$('#txtEventStartDate').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  minDate: 0, 
+					  yearRange: "0:+2"
+					
+				 }); 
+			    $('#txtEventStartDate').datepicker("option", "dateFormat", "dd/mm/yy").datepicker("setDate", "0");
+			    
+			     $('#txtEventEndDate').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  minDate: 0, 
+					  yearRange: "0:+2"
+					  
+				 }); 
+			    $('#txtEventEndDate').datepicker("option", "dateFormat", "dd/mm/yy").datepicker("setDate", "0");
+			    
+   
+$(".EventAdd").unbind().click(function(){
+	$("#myAddNewEventModal").modal('show');
+	var dropDownCategory = document.getElementById("ddlNewEventCategory");  
+        dropDownCategory.selectedIndex = 0;
+    var dropDownDepartment = document.getElementById("ddlNewEventDepartment");  
+        dropDownDepartment.selectedIndex = 0;
+    var ddlEvetStartTime= document.getElementById("ddlEvetStartTime");  
+        ddlEvetStartTime.selectedIndex = 0;
+   var ddlEvetEndTime= document.getElementById("ddlEvetEndTime");  
+        ddlEvetEndTime.selectedIndex = 0;
+   var ddlEvetStartMinutes= document.getElementById("ddlEvetStartMinutes");  
+        ddlEvetStartMinutes.selectedIndex = 0;
+   var ddlEvetEndMinutes= document.getElementById("ddlEvetEndMinutes");  
+        ddlEvetEndMinutes.selectedIndex = 0;     
+        
+
+	$('#txtEventItemTitle').val('');
+	$('#txtEventItemLocation').val('');
+	$('#txtNewEventDescription').val('');
+	$('#txtEventUrl').val('');
+	$('#txtEventStartDate').datepicker("option", "dateFormat", "dd/mm/yy").datepicker("setDate", "0");
+	$('#txtEventEndDate').datepicker("option", "dateFormat", "dd/mm/yy").datepicker("setDate", "0");		
+});
+
+$(".addnewCategoryModel").unbind().click(function(){
+		
+		$("#myEventCategoryModal").modal('show');
+		$('#txtcategory').val('');
+			
+});
+$(".addnewCategory").click(function(){
+		
+		$("#myEventCategoryModal").modal('show');
+		var txtcategory=$('#txtcategory').val().trim();	
+		if(txtcategory.length==0)
+		{
+		    alert('Please enter category name.');
+	    	return false;
+		}
+		var categoryCounts=getEventCategory(txtcategory,"");		
+		if(categoryCounts>0)
+		{
+		    alert('Category name already exist.');
+	    	return false;
+		}	
+		 AddEventCategory(txtcategory);	
+});
+
+$(".addNewCompanyEvent").click(function()
+{
+	var startHoursWithMinutes= $('#ddlEvetStartTime').val().split(' ')[0]+":"+$('#ddlEvetStartMinutes').val()+" "+$('#ddlEvetStartTime').val().split(' ')[1];
+    var endHoursWithMinutes = $('#ddlEvetEndTime').val().split(' ')[0] + ":" + $('#ddlEvetEndMinutes').val() + " " + $('#ddlEvetEndTime').val().split(' ')[1];	
+    var txtEventItemTitle = $('#txtEventItemTitle').val().trim();
+    var txtEventUrl= $('#txtEventUrl').val().trim();
+    
+    var ddlNewEventCategory = $('#ddlNewEventCategory').val();    
+    if(ddlNewEventCategory==null || ddlNewEventCategory=="")
+    {
+         alert('Please select event category.');
+	     return false;
+    }
+    if(txtEventItemTitle.length==0)
+    {
+       alert('Please enter Title');
+       return false;
+    }
+    
+
+    else if(txtEventItemTitle.length>250)
+    {
+	     alert('Event title maximum 250 characters allowed.');
+	     return false;
+    }
+    
+    var txtEventItemLocation = $('#txtEventItemLocation').val().trim();
+    if(txtEventItemLocation.length>250)
+    {
+	     alert('Event Location maximum 250 characters allowed.');
+	     return false;
+    }     
+    var txtEventStartDate = ConvertMMDDYYYY($('#txtEventStartDate').val()) + " " + startHoursWithMinutes;
+    var txtEventEndDate = ConvertMMDDYYYY($('#txtEventEndDate').val()) + " " + endHoursWithMinutes;
+    var txtNewEventDescription = $('#txtNewEventDescription').val().trim();
+    //if(txtNewEventDescription.length==0)
+    //{
+	    // alert('Please enter Description');
+	    // return false;
+   // }
+    if(txtNewEventDescription.length>1000)
+    {
+	     alert('Event Description maximum 1000 characters allowed.');
+	     return false;
+    }
+    
+    var ddlEvetStartTime= $('#ddlEvetStartTime').val();
+    var ddlEvetEndTime= $('#ddlEvetEndTime').val();
+
+    if(ddlEvetStartTime==00)
+    {
+         alert('Please select start Time.');
+	     return false;
+    }
+    if(ddlEvetEndTime==00)
+    {
+         alert('Please select End Time.');
+	     return false;
+    }
+    var ddlNewEventDepartment = $('#ddlNewEventDepartment').val();
+    //if(ddlNewEventDepartment==null || ddlNewEventDepartment=="")
+    //{
+        // alert('Please select event DepartMent.');
+	    // return false;
+    //}
+    if(txtEventUrl.length==0)
+    {
+         alert('Please select event Image.');
+	     return false;
+    }  
+
+    if(compareStartDateEndDate(txtEventStartDate,txtEventEndDate)==false)
+    {
+      return false;
+    }
+    AddNewEventsMetadata(txtEventItemTitle, txtEventItemLocation, txtEventStartDate, txtEventEndDate, txtNewEventDescription, ddlNewEventCategory,ddlNewEventDepartment,txtEventUrl);
+   
+});
+$(".closeEventForm").click(function(){
+		
+		$("#myAddNewEventModal").modal('hide');
+});
+
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_Event,"sp.js"); 
+}); 
+
+function compareStartDateEndDate(startDate, endDate)
+{
+
+     var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    var  currentdateandTime =(date.getMonth()+1) + "/" + date.getDate() + "/" + date.getFullYear() + " " + strTime;
+     var datec=new Date(currentdateandTime);
+     var kdate=new Date(startDate);
+      
+    var txtstartdate = new Date(startDate);
+    var txtenddate = new Date(endDate);
+
+    if(kdate<datec)
+    {
+	    alert("Start Time cannot be less than the current time");
+	    return false;
+    }
+    if (txtenddate <= txtstartdate)
+    {
+        alert('End Time cannot be less than Start Time');
+        return false
+    }
+     return true;
+}
+
+ function ConvertMMDDYYYY(datestringDDMMYYYY)
+{
+    var dateDays = datestringDDMMYYYY.split('/')[0];
+    var dateMonth=datestringDDMMYYYY.split('/')[1];
+    var dateYear=datestringDDMMYYYY.split('/')[2];
+    var mmddyyyFormat = dateMonth + "/" + dateDays + "/" + dateYear;
+    return mmddyyyFormat;
+}
+var curreWbeurl="";
+function getCurrentURL_Event()
+{
+
+	 var companySiteUrlLink = titanForWork.getQueryStringParameter("CompanySiteUrl");
+    //var listName = 'Companies';
+    //var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    //var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    //$.ajax({
+    //    url: siteURL,
+    //    headers: { Accept: "application/json;odata=verbose" },
+    //    async: false,
+    //    success: function (data) {
+    //        var items = data.d.results;
+    //        if (items.length > 0) {
+               var siteURL = companySiteUrlLink;// items[0].SiteURL;
+                var clientContext = new SP.ClientContext(siteURL);
+                curreWbeurl = siteURL;
+                BindCalendarEvents(clientContext);
+    //        }
+
+    //    }, eror: function (data) {
+    //        console.log($('#txtSomethingWentWrong').val());
+    //    }
+    //});   
+    
+}
+
+    ////// Get Department in dropdown//////////
+
+var currentCompanyid = titanForWork.getQueryStringParameter("CompanyId");
+function getEventDepartment(DepartmentsName,databind)
+{    
+     var listName = 'Departments';
+     var lengt=0;
+     var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,DepartmentName&$filter=DepartmentName eq '" + DepartmentsName+ "' and  CompanyID eq '" + currentCompanyid +"' ";
+	 if(databind=="dropdown")
+	 {
+	    $('#ddlNewEventDepartment').empty();
+	    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=*&$filter=CompanyID eq '" + currentCompanyid +"' ";
+	 }   
+
+ $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) 
+        {
+         
+            var items = data.d.results;
+            $("#ddlNewEventDepartment").append($("<option>Select Department</option>").attr("value",""));
+
+            for(var index=0;index<items.length;index++)
+            {
+              if(DepartmentsName.toLowerCase()==items[index].DepartmentName.toLowerCase())
+              {
+                lengt=1;
+              }
+              if(databind=="dropdown")
+			  {
+               $("#ddlNewEventDepartment").append($("<option></option>").attr("value", items[index].DepartmentName).text(items[index].DepartmentName)); 
+              }
+              
+            }
+           
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    }); 
+     return lengt;   
+}
+     ///////// Choose any image function////////
+
+
+function LoadMyPicture() {
+ 
+ //var image = $("#ImageUrl");
+ //var slider=$("#ImageDiv").lightSlider(); 
+
+
+ $.when(RetrieveImageAsync()).then(function(imageInfo) {
+  var len=imageInfo.results;
+  var DivTr;
+  var src;
+  var count=0;
+  src =$("#mySliderDiv");
+  //var div;
+  for (var i=0;i<len.length;i++) {  
+   var imagefile = imageInfo.results[i].EncodedAbsUrl;
+   var Keywords= imageInfo.results[i].Keywords;
+
+   //$('#ImageUrl').prop('src', imagefile);Keywords
+   //var img = new Image(100,50);
+   //var img = document.createElement('img');
+      //img.className="slider-img-height panel-default";
+   ///var img = new Image(100,50);
+      //img.src = imagefile; 
+      if(Keywords=="EVENT"){
+      if(i==0)
+      {     
+        src.append('<img  width="100%"  src="'+imagefile+'">');        
+      }
+      else 
+      {  
+       src.append('<img  width="100%" src="'+imagefile+'">');
+      } 
+      }   
+  }
+    $('#mySliderDiv img').click(function(){          
+        // alert($(this).attr('src'));
+         $('#txtEventUrl').val($(this).attr('src'));
+         $(this).toggleClass('my_event_active').siblings().removeClass('my_event_active');   
+     });
+ });
+}
+
+function RetrieveImageAsync()
+{
+ var dfd = new jQuery.Deferred(); //deferred object
+ 
+ var siteurl = _spPageContextInfo.webServerRelativeUrl;
+ var executor = new SP.RequestExecutor(siteurl);
+ executor.executeAsync(
+ { 
+        url: siteurl +  "//_api/Web/Lists/GetByTitle('ImageGallery')/items?$select=EncodedAbsUrl,Keywords",
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: successHandler,
+        error: errorHandler
+    });   
+    function successHandler(data) {
+    
+  var jsonObject = JSON.parse(data.body);
+  var data = jsonObject.d;
+  dfd.resolve(data);
+ }
+
+ function errorHandler(data, errorCode, errorMessage) {
+     alert(errorMessage);
+     dfd.reject( errorMessage );
+     
+ }
+
+ // Return the Promise so caller can't change the Deferred
+   return dfd.promise();
+
+}
+ 
+ 
+ 
+function getEventCategory(categorName,databind)
+{
+     var listName = 'CategoryMaster';
+     var lengt=0;
+     var Categorytype="";
+     var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,CategoryType,CatogeryName&$filter=CatogeryName eq '" + categorName+ "'";
+	 if(databind=="dropdown")
+	 {
+	    $('#ddlNewEventCategory').empty();
+	    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,CategoryType,CatogeryName"
+	 }   
+
+ $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) 
+        {
+         
+            var items = data.d.results;
+            Categorytype="Event";
+            $("#ddlNewEventCategory").append($("<option>Select Category</option>").attr("value",""));
+            for(var index=0;index<items.length;index++)
+            {
+              if(categorName.toLowerCase()==items[index].CatogeryName.toLowerCase())
+              {
+                lengt=1;
+              }
+              if(databind=="dropdown")
+			  {
+			   if(Categorytype==items[index].CategoryType)
+			   {
+               $("#ddlNewEventCategory").append($("<option></option>").attr("value", items[index].CatogeryName).text(items[index].CatogeryName)); 
+               }
+              }
+            }
+           
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    }); 
+     return lengt;   
+}
+
+
+
+
+function BindCalendarEvents(clientContext){
+	//var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	
+	var today = new Date();
+	var dd = today.getDate();
+
+	var mm = today.getMonth()+1; 
+	var yyyy = today.getFullYear();
+	if(dd<10) 
+	{
+		dd='0'+dd;
+	} 
+
+	if(mm<10) 
+	{
+		mm='0'+mm;
+	}	 
+	today = yyyy+'-'+mm+'-'+dd;
+	
+	//var clientContext = new SP.ClientContext.get_current();
+	
+	var oList = clientContext.get_web().get_lists().getByTitle('Event');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><And><Or><Geq><FieldRef Name='EventDate' /><Value IncludeTimeValue='TRUE' Type='DateTime'>"+today+"</Value></Geq><Geq><FieldRef Name='EndDate' /><Value IncludeTimeValue='TRUE' Type='DateTime'>"+today+"</Value></Geq></Or><Eq><FieldRef Name='ApprovalStatus' /><Value Type='Choice'>Approved</Value></Eq></And></Where><OrderBy><FieldRef Name='EventDate' Ascending='TRUE'/><FieldRef Name='ID' Ascending='False'/></OrderBy></Query><RowLimit>2</RowLimit></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var AnnouncmentHTML = '<div>';
+		var listItemEnumerator = collListItem.getEnumerator();
+		var ItemCount=collListItem.get_count();
+		
+		var ItemCount=collListItem.get_count();
+		if(ItemCount==0)
+		{
+			//$("#announcmentDiv").empty();
+			$("#eventDiv").html("");
+			AnnouncmentHTML ="<div class=\"norecordfound col-sm-8 col-xs-8 col-md-8\">";
+            //AnnouncmentHTML +="<h3 data-localize='NoRecord_Events' class=\"top5\"></h3>";
+			AnnouncmentHTML +="<h3 class=\"top5\" data-localize='NoRecord_Events'>Events coming up shortly</h3>";
+            AnnouncmentHTML +="</div>";
+
+			$("#eventDiv").append(AnnouncmentHTML );
+			return;
+		}
+
+		var counter=1;
+		while (listItemEnumerator.moveNext()) 
+			{	
+				var oListItem = listItemEnumerator.get_current();
+				
+				var eventTitle=oListItem.get_item('Title');
+				var ItemID=oListItem.get_item('ID');
+				
+				if(eventTitle.length > 23)
+				{					//alert(eventTitle);
+					eventTitle = eventTitle.substring(0,20);
+					eventTitle +='...';
+				}
+				//var linkurlDispEvent="javascript:OpenPopUpPageWithTitle('"+curreWbeurl+"/Lists/Event/DispForm.aspx?ID="+ItemID+"',null,null,null,'Event')";
+			    var linkurlDispEvent="javascript:showEventsonDemand('"+ItemID+"')";
+				var eventDescription=oListItem.get_item('Description');
+				if(eventDescription.length > 41)
+				{
+					//	alert(eventDescription);
+					eventDescription = eventDescription.substring(0,38);
+					eventDescription +='...';
+				}
+				var eventStartDate=oListItem.get_item('EventDate');
+				var eventDateObj=new Date(eventStartDate);
+				
+				var eventDate=eventDateObj.getDate();
+				//var eventMonth=eventDateObj.getMonth();
+				var monthNames = ["January", "February", "March", "April", "May", "June",
+				"July", "August", "September", "October", "November", "December"
+				];
+				var eventMonth = monthNames[eventDateObj.getMonth()];
+				eventMonth=eventMonth.substring(0,3);
+				
+				var eventStratedHour=eventDateObj.getHours();
+				var eventStratedMin =eventDateObj.getMinutes();
+				
+				
+				var eventEndDate=oListItem.get_item('EndDate');
+				
+				var eventEndDateObj=new Date(eventEndDate);
+				
+				var eventEndHours=eventEndDateObj.getHours();
+				var eventEndMin=eventEndDateObj.getMinutes();
+				
+				//alert(eventDescription);
+				
+				if(counter==1)
+				{
+							AnnouncmentHTML +='<div class="row mb-10">';
+								AnnouncmentHTML +='<div class="col-sm-3 col-xs-3 event-border">';
+									//AnnouncmentHTML +='<div class="date-text">';
+										AnnouncmentHTML +='<p class="date-text pull-left">'+eventDate+'</p>';
+										AnnouncmentHTML +='<p class="month-text pull-left ">'+eventMonth+'</p>';
+										AnnouncmentHTML +='<p class="time-text pull-left ">'+eventStratedHour+':'+eventStratedMin+'-'+eventEndHours+':'+eventEndMin+'</p>';							
+									//AnnouncmentHTML +='</div>';
+								AnnouncmentHTML +='</div>';
+								AnnouncmentHTML +='<div class="col-sm-9 col-xs-9">';
+									AnnouncmentHTML +='<a href='+linkurlDispEvent+'><h4 class="event-text-head-new bottom7">'+eventTitle+'</h4></a>';
+								//	AnnouncmentHTML +='<p class="event-text">'+eventDescription+'<small>'+eventStratedHour+':'+eventStratedMin+'-'+eventEndHours+':'+eventEndMin+'</small></p>';
+									AnnouncmentHTML +='<span class="event-text">'+eventDescription+'</span>';
+								AnnouncmentHTML +='</div>';
+							AnnouncmentHTML +='</div>';
+							AnnouncmentHTML +='<hr class="mb-10"></hr>';
+				}
+				else
+				{
+						AnnouncmentHTML +='<div class="row mb-10">';
+							AnnouncmentHTML +='<div class="col-sm-3 col-xs-3 event-border">';
+								//AnnouncmentHTML +='<div class="date-text">';
+									AnnouncmentHTML +='<p class="date-text pull-left">'+eventDate+'</p>';
+									AnnouncmentHTML +='<p class="pull-left month-text">'+eventMonth+'</p>';
+									AnnouncmentHTML +='<p class="pull-left time-text">'+eventStratedHour+':'+eventStratedMin+'-'+eventEndHours+':'+eventEndMin+'</p>';
+								//AnnouncmentHTML +='</div>';
+							AnnouncmentHTML +='</div>';
+							AnnouncmentHTML +='<div class="col-sm-9 col-xs-9">';
+								AnnouncmentHTML +='<a href='+linkurlDispEvent+'><h4 class="event-text-head-new bottom7">'+eventTitle+'</h4></a>';
+								//AnnouncmentHTML +='<p class="event-text"><small>'+eventStratedHour+':'+eventStratedMin+'-'+eventEndHours+':'+eventEndMin+'</small>'+eventDescription+'</p>';
+								//AnnouncmentHTML +='<p class="event-text">'+eventDescription+'</p>';
+								AnnouncmentHTML +='<span class="event-text">'+eventDescription+'</span>';
+							AnnouncmentHTML +='</div>';
+						AnnouncmentHTML +='</div>';
+				}
+				
+				counter++;
+			}
+		
+			AnnouncmentHTML +='</div>';
+			
+			//alert(AnnouncmentHTML);
+			$("#eventDiv").html('');
+			$("#eventDiv").append(AnnouncmentHTML);
+		}, 
+		
+	function(){
+		console.log('error: Event web part');
+	});
+}
+function AddNewEventsMetadata(evetTitle, txtEventItemLocation, thisEventDate, thisEventEndDate, eventDescription, eventCategory,eventDepartment,eventImageURL)
+{
+ 
+   var companySiteUrlLink= titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var ListName="Event";
+    var Metadata;
+    var ItemType = GetItemTypeForListNameDetails(ListName);
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title:evetTitle,
+        Location:txtEventItemLocation,
+        EventDate:thisEventDate,
+        EndDate:thisEventEndDate,
+        Description:eventDescription,
+        Category: eventCategory,
+        Department:eventDepartment,
+        ImageURL:eventImageURL
+    };
+    
+     if (evetTitle == null || evetTitle=="")
+    {
+        delete Metadata["Title"];
+    }
+    if (txtEventItemLocation== null || txtEventItemLocation== "") {
+        delete Metadata["Location"];
+    }
+    if (thisEventDate == null || thisEventDate == "") {
+        delete Metadata["EventDate"];
+    }
+    if (thisEventEndDate == null || thisEventEndDate == "") {
+        delete Metadata["EndDate"];
+    }
+    if (eventDescription == null || eventDescription == "") {
+        delete Metadata["Description"];
+    }
+    if (eventCategory == null || eventCategory == "") {
+        delete Metadata["Category"];
+    }
+    if (eventDepartment== null || eventDepartment== "") {
+        delete Metadata["Department"];
+    }
+    if (eventImageURL== null || eventImageURL== "") {
+        delete Metadata["ImageURL"];
+    }
+
+
+    
+	$.when(AddNewEvents(ListName, Metadata, companySiteUrlLink)).done(function (itemresponse) 
+	 {
+	 
+	    $("#myAddNewEventModal").modal('hide');
+	    var companySiteUrlLink= titanForWork.getQueryStringParameter("CompanySiteUrl");
+	    var clientContext = new SP.ClientContext(companySiteUrlLink);
+	  
+		   alert('Event created successfully');
+
+		// Add Notification into Notification List.
+		NotificationCenter(evetTitle,eventDescription,txtEventItemLocation,eventCategory,thisEventDate,thisEventEndDate,false);
+		
+		var itemID=itemresponse.d.Id;
+		var companyId= titanForWork.getQueryStringParameter('CompanyId');
+
+		titanForWork.CreateWorkflowTaskForApproval(itemID,companyId,0,"Events",evetTitle,eventDescription,"Add").done(function(response){
+			console.log("Response from titanForWork.CreateWorkflowTaskForApproval : " + response);
+			if(response=="ApprovalNotRequired")			// Approval Not Required.
+			{
+				AutoApproveAnnouncement(companySiteUrlLink,itemID);		// Automatically approved. No approval required.
+			}
+			
+			 BindCalendarEvents(clientContext);
+		});
+
+	 });
+}
+
+function AutoApproveAnnouncement(companySiteUrlLink,itemID) {
+	var Handler = this;
+	var deferred = $.Deferred();
+ 	
+ 	var ListName ='Event';
+	
+	var itemType= GetItemTypeForListName(ListName);
+
+    var Metadata = {"__metadata": {'type': itemType}};
+    Metadata["ApprovalStatus"]="Approved";
+	
+	var requestURL= companySiteUrlLink + "/_api/web/lists/getbytitle('" + ListName + "')/items("+itemID+")";
+	var headersData={ "accept": "application/json;odata=verbose",
+        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+        "content-Type": "application/json;odata=verbose",
+        "X-Http-Method": "PATCH",
+        "If-Match": '*'
+	};
+	
+	$.ajax({
+        url:requestURL ,
+        type: "POST",
+        async: false,
+        headers: headersData,
+        data: JSON.stringify(Metadata),
+        success: function (dataD) {
+	        deferred.resolve(dataD);
+	    },
+        error: function (error) {
+            deferred.reject(error);
+        }
+    });
+    return deferred.promise();
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////// Add Notification into Notification Center List  //////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+function NotificationCenter(title,description,location,category,eventStartDate,eventEndDate,itemUpdated)
+{
+	try
+    {
+    	var webPartName,description;
+    	if(itemUpdated==false)
+    	{
+    		description="New event "+title+" has been posted.<br/><br/>"
+    		webPartName="Events";
+    	}
+    	else
+    	{
+    		description="Event "+title+" has been modified.<br/><br/>"
+			webPartName="Events (Revised)";
+    	}
+    	
+    	description+="Event start date : "+eventStartDate+"<br/>";
+		description+="Event end date : "+eventEndDate+"<br/>";
+		description+="Location : "+location+"<br/>";
+		description+="Category : "+category+"<br/>";
+		description+="Posted by : "+_spPageContextInfo.userDisplayName+"";
+    	
+		var companyId= titanForWork.getQueryStringParameter('CompanyId');
+        var Metadata;
+        var ItemType = GetItemTypeForListName("NotificationCenter");
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               Title: title,
+               Details: description,
+			   WebpartName:webPartName,
+			   CompanyIdId:companyId
+			};
+            AddItemIntoNotificationCenter("NotificationCenter", Metadata);         
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function  AddItemIntoNotificationCenter(ListName, Metadata) 
+{
+	var requestURI= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+	
+	var dfd = $.Deferred();
+    $.ajax({
+        url: requestURI,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+		},
+        error: function (error) {
+			//alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+/////////////////////////////////////////////////////////////////////
+
+
+
+function AddEventCategory(eventCategory)
+{
+    var companySiteUrlLink =_spPageContextInfo.webAbsoluteUrl;
+    var ListName = "EventCategory";
+    var Metadata;
+    var ItemType = GetItemTypeForListNameDetails(ListName);
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: eventCategory
+    };
+
+    if (eventCategory == null || eventCategory == "") {
+        delete Metadata["Title"];
+    }
+
+    $.when(AddNewEvents(ListName, Metadata, companySiteUrlLink)).done(function (itemresponse) 
+    {
+        alert('Event category created.');
+      $("#myEventCategoryModal").modal('hide');  
+      getEventCategory("","dropdown");
+      getMeetingCategory("","dropdown");
+    });   
+}
+function AddNewEvents(ListName, Metadata, companySitesURL)
+{
+    var dfd = $.Deferred();
+    $.ajax({
+        url: companySitesURL + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) 
+        {
+          
+            dfd.resolve(data);
+                     
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+function GetItemTypeForListNameDetails(ListName) {
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+function showEventsonDemand(itemId)
+{
+    var companySiteUrlLink = titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var listName = 'Event';
+    var siteURL = companySiteUrlLink + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,Title,Location,EventDate,EndDate,Description,Category&$filter=ID eq '" + itemId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+         
+            $("#myViewEventModal").modal('show');
+            var items = data.d.results;
+            if (items.length > 0)
+            {
+                var title = items[0].Title;
+                if (title == null)
+                {
+                    title = "";
+                }
+                $('#labelEventTitle').text(title);
+                var txtLocation = items[0].Location;
+                if (txtLocation == null)
+                {
+                    txtLocation = "";
+                }
+                $('#labelLocation').text(txtLocation);
+             
+                var txtEventDate = items[0].EventDate;
+                if(txtEventDate!=null)
+                {
+                $('#labelStartDateTime').text(convertJSONDateAMPMWithDate(txtEventDate));
+                }
+                var txtEndDate = items[0].EndDate;
+                if(txtEndDate!=null)
+                {
+                $('#labelEndDateTime').text(convertJSONDateAMPMWithDate(txtEndDate));
+                }
+                var txtDescription = items[0].Description;
+                if (txtDescription == null)
+                {
+                    txtDescription = "";
+                }
+                $('#lblNewEventDescription').text(txtDescription);
+                var txtCategory = items[0].Category;
+                if (txtCategory == null)
+                {
+                    txtCategory = "";
+                }
+                $('#labelNewEventCategory').text(txtCategory);
+            }
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+
+}
+
+
+
+function convertJSONDateAMPMWithDate(jsonDateTime) 
+{
+  
+    var date = new Date(jsonDateTime);
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+      "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+    ];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+ return date.getDate() + "-" + monthNames[date.getMonth()] + "-" + date.getFullYear() + " " + strTime;
+ // return monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear() + " " + strTime;
+}
+
+
+</script>
+
+
+<div id="eventDiv">
+
+</div>
+<!-----------Event Model Popup---------------->
+
+
+<div class="modal fade" id="myAddNewEventModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="AddNewEvent">Add New Event</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">                                       
+                        <div class="panel-body">
+                            <div class="form-horizontal">
+                             <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Category">Category</label>
+                                    <div class="col-sm-8">
+                                        <select id="ddlNewEventCategory" class="form-control mrg-btm12-pop">
+                                          
+                                        </select>
+                                    </div>
+                                     
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Title">Title</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="txtEventItemTitle" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label" data-localize="Location">Location</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" id="txtEventItemLocation" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="StartTime">Start Time</label>
+                                    <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="date" readonly="readonly" id="txtEventStartDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 form-inline float-left-cls my_event_times">
+                                        <select name="select2" id="ddlEvetStartTime" class="form-control mrg-btm12-pop">
+                                            <option value="12 AM">12 AM</option>
+                                            <option value="1 AM">1 AM</option>
+											<option value="2 AM">2 AM</option>
+											<option value="3 AM">3 AM</option>
+											<option value="4 AM">4 AM</option>
+											<option value="5 AM">5 AM</option>
+											<option value="6 AM">6 AM</option>
+											<option value="7 AM">7 AM</option>
+											<option value="8 AM">8 AM</option>
+											<option value="9 AM">9 AM</option>
+											<option value="10 AM">10 AM</option>
+											<option value="11 AM">11 AM</option>
+											<option value="12 PM">12 PM</option>
+											<option value="1 PM">1 PM</option>
+											<option value="2 PM">2 PM</option>
+											<option value="3 PM">3 PM</option>
+											<option value="4 PM">4 PM</option>
+											<option value="5 PM">5 PM</option>
+											<option value="6 PM">6 PM</option>
+											<option value="7 PM">7 PM</option>
+											<option value="8 PM">8 PM</option>
+											<option value="9 PM">9 PM</option>
+											<option value="10 PM">10 PM</option>
+											<option value="11 PM">11 PM</option>       
+											</select>
+                                        <select name="select2" id="ddlEvetStartMinutes" class="form-control mrg-btm12-pop">
+                                            <option value="00">00</option>
+											<option value="05">05</option>
+											<option value="10">10</option>
+											<option value="15">15</option>
+											<option value="20">20</option>
+											<option value="25">25</option>
+											<option value="30">30</option>
+											<option value="35">35</option>
+											<option value="40">40</option>
+											<option value="45">45</option>
+											<option value="50">50</option>
+											<option value="55">55</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="EndTime">End Time</label>
+                                    <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="date" readonly="readonly" id="txtEventEndDate">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 form-inline float-left-cls my_event_times">
+                                        <select name="select2" id="ddlEvetEndTime" class="form-control mrg-btm12-pop">
+                                            <option value="12 AM">12 AM</option>
+                                            <option value="1 AM">1 AM</option>
+											<option value="2 AM">2 AM</option>
+											<option value="3 AM">3 AM</option>
+											<option value="4 AM">4 AM</option>
+											<option value="5 AM">5 AM</option>
+											<option value="6 AM">6 AM</option>
+											<option value="7 AM">7 AM</option>
+											<option value="8 AM">8 AM</option>
+											<option value="9 AM">9 AM</option>
+											<option value="10 AM">10 AM</option>
+											<option value="11 AM">11 AM</option>
+											<option value="12 PM">12 PM</option>
+											<option value="1 PM">1 PM</option>
+											<option value="2 PM">2 PM</option>
+											<option value="3 PM">3 PM</option>
+											<option value="4 PM">4 PM</option>
+											<option value="5 PM">5 PM</option>
+											<option value="6 PM">6 PM</option>
+											<option value="7 PM">7 PM</option>
+											<option value="8 PM">8 PM</option>
+											<option value="9 PM">9 PM</option>
+											<option value="10 PM">10 PM</option>
+											<option value="11 PM">11 PM</option>                                
+											</select>
+                                        <select name="select2" id="ddlEvetEndMinutes" class="form-control mrg-btm12-pop">
+                                            <option value="00">00</option>
+											<option value="05">05</option>
+											<option value="10">10</option>
+											<option value="15">15</option>
+											<option value="20">20</option>
+											<option value="25">25</option>
+											<option value="30">30</option>
+											<option value="35">35</option>
+											<option value="40">40</option>
+											<option value="45">45</option>
+											<option value="50">50</option>
+											<option value="55">55</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label" data-localize="Description">Description</label>
+                                    <div class="col-sm-8">
+                                        <textarea type="text" id="txtNewEventDescription" cols="10" rows="5" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label" data-localize="Department">Department</label>
+                                    <div class="col-sm-8">
+                                        <select id="ddlNewEventDepartment" class="form-control">
+                                                                                 
+                                        </select>
+                                    </div>                                    
+                                </div>
+                                <div class="form-group" style="display:none">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="ImageUrl">ImageUrl</label>
+                                    <div class="col-sm-8">
+                                       <input type="text" id="txtEventUrl" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="" class="col-sm-3 control-label required" data-localize="Choose any releted picture">Choose any releted picture</label>
+                                    
+                                    <div id="my_events_slider_box" class="col-sm-8">  
+                                      <div class="my_events_slider_contain">                                    
+                                        <div id="mySliderDiv">
+                                          
+                                        </div> 
+                                      </div>                                         
+                                         <!--<a class="left carousel-control gall-margin-left it-banner-left sliderPreviousArrow" href="#myCarousel" data-slide="prev" style="display: block;">
+		                                   <span class="glyphicon glyphicon-chevron-left "></span>
+	                                       </a>	
+	                                         
+                                         <a class="right carousel-control gall-margin-right it-banner-right sliderNextArrow" href="#myCarousel" data-slide="next" style="display: block;">
+		                                     <span class="glyphicon glyphicon-chevron-right "></span>
+	                                      </a>-->
+                                         
+                                         </div>   
+							                    
+                                       
+                                     
+                                                                          
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!--/panel content-->
+                   
+                    <!--<div class="form-group">-->
+                        <!--<label for="" class="col-sm-4 control-label"></label>-->
+                        <div class="row text-center">
+                            <button type="button" class="btn btn-outline-success addNewCompanyEvent"><label data-localize="Submit">Save</label></button>
+                            <button type="button" class="btn btn-outline-secondary closeEventForm"><label data-localize="Close">Close</label></button>
+                        </div>
+                    <!--</div>-->
+                </div>             
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------------View Event----------------->
+<div class="modal fade" id="myViewEventModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Events">Event</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Title">Title</label>
+                                <div class="col-sm-8">
+                                    <label for="" class="control-label event-label-right-md" id="labelEventTitle"></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Location">Location</label>
+                                <div class="col-sm-8">
+                                    <label for="" class="control-label event-label-right-md"  id="labelLocation"></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="StartTime">Start Time</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <label for=""class="control-label event-label-right-md" id="labelStartDateTime"></label>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="EndTime">End Time</label>
+                                <div class="col-sm-4">
+                                    <div class="input-group">
+                                        <label for="" class="control-label event-label-right-md"  id="labelEndDateTime"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group" >
+                                <label for="" class="col-sm-4 control-label" data-localize="Description">Description</label>
+                                <div class="col-sm-8">
+                                   <!--- <textarea type="text" id="lblNewEventDescription" readonly="readonly" cols="10" rows="5" class="form-control"></textarea>--->
+                                      <label class="control-label event-label-right-md" id="lblNewEventDescription"></label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label" data-localize="Category">Category</label>
+                                <div class="col-sm-6">
+                                    <label for="" class="control-label event-label-right-md"  id="labelNewEventCategory"></label>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <!--/panel content-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myEventCategoryModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Category">Event Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label required" data-localize="NewCategory">New Category</label>
+                                <div class="col-sm-8">
+                                      <input type="text" class="form-control" id="txtcategory" maxlength="100">                                                                            
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="row text-center top15">
+                        	<button type="button" class="btn btn-outline-success addnewCategory"><label data-localize="Add">Add</label></button>
+                        </div>
+                    </div>
+                    <!--/panel content-->                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-382</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">e204f124-be09-408e-b1f2-96e23be9ba3e</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-382, ADMIN-1645029823-382</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">38200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

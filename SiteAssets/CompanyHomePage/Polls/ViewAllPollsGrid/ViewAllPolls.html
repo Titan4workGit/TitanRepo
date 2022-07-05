@@ -1,0 +1,120 @@
+﻿<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+
+<style>
+
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+@media (max-width: 768px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal {
+		display:block !important;
+	}
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+</style>
+
+<div class="panel-heading panel-head-4 top15">
+	<div class="panel-title">
+		<h4 class="h4-color" data-localize='ListofSurvey'>List of Survey</h4>
+	</div>
+</div>
+<section class="content shadow2 panel">
+        <div class="container-fluid margin10">
+             <div class="row margin10">					
+					<button type="button" class="btn btn-outline-primary pull-right " style="margin-right:15px" data-toggle="modal" id="btnaddPoll" data-target=""><span data-localize="Add" id="addPoll" style="margin:8px !important; padding :8px 5px !Important;"></span></button>													
+					<input type="text" id="query" onkeyup="sorterViewAllPolls.search('query')" placeholder="Search..." class="doc-search single_row_control single_float_left" style="width:200px; font-size: 13px;padding:8px 5px !Important; float:left;margin-left:15px" />
+				</div>
+			<div id="tablewrapper"  ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="width:200px; margin-left:4px; font-size: 13px;padding:8px 5px !Important; float:left;">
+							<select style="display:none;" id="columnsViewAllPolls" onchange="sorterViewAllPolls.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecordViewAllPolls"></span>-<span id="endrecordViewAllPolls"></span> PagesOf  <span id="totalrecordsViewAllPolls"></span></div>
+								<div style="display:none;"><a href="javascript:sorterViewAllPolls.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<!--<div class="mrg-top-10m  btm10 container">
+					</div>-->
+					<div class="table-responsive">		
+					<table cellpadding='0' cellspacing='0' border='1' id='TempTableViewAllPolls' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+					<thead class='panel-heading '><tr>
+					<th><h6 data-localize='Title'>Title</h6></th>
+					<th><h6 data-localize='StartedBy'>Started By</h6></th>
+					<th><h6 data-localize='StartDate'>Start Date</h6></th>
+					<th><h6 data-localize='EndDate'>End Date</h6></th>
+					<th><h6 data-localize='ExpiryDate'>Expiry Date</h6></th>
+					<th><h6 data-localize='Status'>Status</h6></th>
+					<th><h6 data-localize='Participation'>Participation</h6></th>
+					<th class='nosort' style="width:7%"><h6 data-localize='Action'>Action</h6></th>
+					</tr></thead><tbody class='panel mainDivViewAllPolls'>					
+					</tbody></table>
+					</div>
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No Record Found</div>
+					
+					<div id="mainDivViewAllPolls">
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenavViewAllPolls">
+							<div>
+								<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterViewAllPolls.move(-1,true)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterViewAllPolls.move(-1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterViewAllPolls.move(1)" />
+								<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterViewAllPolls.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdownViewAllPolls"></select>
+							</div>
+							<div>
+								<a href="javascript:sorterViewAllPolls.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage">Lines Per Page</span>
+								<select onchange="sorterViewAllPolls.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">Page</span><span id="currentpageViewAllPolls"></span><span data-localize="Of">of</span><span id="totalpagesViewAllPolls"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+</section>
+
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src="../SiteAssets/CompanyHomePage/Polls/ViewAllPollsGrid/ViewAllPolls.js"></script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-392</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">3662c42c-a6d3-4ea3-be57-a3ae13cf231e</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-392, ADMIN-1645029823-392</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">39200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

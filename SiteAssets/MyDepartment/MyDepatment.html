@@ -1,0 +1,167 @@
+﻿             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js">
+            </script>
+    
+
+
+    <script>
+
+
+$(document).ready(function(){
+  
+  MyDepartment();
+  
+  });
+
+
+
+function MyDepartment() {
+var companyID=titanForWork.getQueryStringParameter("CompanyId");
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$top=5000&$select=FullName,LogonName/ID,Department/DepartmentName&$expand=LogonName,Department&$filter=LogonName/ID eq "  + _spPageContextInfo.userId+" and Company/ID eq "+companyID+"",
+        method: "GET",
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        success: function(data) {
+          var Data=data.d.results
+         if(Data.length>0)
+			{
+               
+      tilte= Data[0].Department.DepartmentName;
+      if(tilte==undefined)
+      {
+      var noRecordFound="<h3>You are not authorized to access.</h3>";
+				BootstrapDialog.alert(noRecordFound);
+
+      }
+      else{
+     // url=Data[i].URL;
+MyDepartmentName(tilte,companyID);
+}
+      
+        }
+        else
+			{
+				var noRecordFound="<h3>You are not authorized to access.</h3>";
+				BootstrapDialog.alert(noRecordFound);
+			}
+
+        
+                   },
+        error: function(err) {
+            console.log("Error");            
+        }
+    });
+}
+
+
+
+ function MyDepartmentName(tilte,companyID){
+    $.ajax({
+        url: _spPageContextInfo.siteAbsoluteUrl + "/_api/web/lists/getbytitle('Navigation')/items?$select=Title,URL,DepartmentID,Company/ID&$expand=Company&$filter=Company/ID eq "+companyID+" and Title eq '"+tilte+"'",
+        type: "GET",
+        cache: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        var Data=data.d.results
+        if(Data.length>0)
+        {
+
+      for(var i=0; i<Data.length; i++)
+      {
+      tilteq= Data[i].Title;
+      url=Data[i].URL;
+      companyId=Data[i].Company.ID;
+       departmentID=Data[i].DepartmentID;
+     
+
+if(tilte== tilteq)
+	          {
+	         SetDepartmentDetailsInCookies(companyId,departmentID);
+  (window.location.href = _spPageContextInfo.siteAbsoluteUrl+"/"+url)
+	               	                       
+	          } 
+	   
+      
+      }
+      }
+      else
+			{
+			  
+				var noRecordFound="<h3>You are not authorized to access.</h3>";
+				BootstrapDialog.alert(noRecordFound);
+			}
+
+      
+            
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+
+
+
+}
+
+
+
+function SetDepartmentDetailsInCookies(companyId,departmentID)
+{
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?$select=SiteURL&$filter=ID eq '" + departmentID + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var departmentSiteURL = items[0].SiteURL;
+             	   
+                var currentCompanyUrl= titanForWork.getQueryStringParameter("CompanySiteUrl");
+				var queryStringCompanyValues = '{"CompanyId":"'+companyId+'","DepartmentId":"'+departmentID+'","DepartmentSiteUrl":"'+departmentSiteURL +'","CompanySiteUrl":"'+currentCompanyUrl+'","CurrentDomainSite":"'+_spPageContextInfo.webAbsoluteUrl+'","WelcomePageCalled":'+false+'}';
+				titanForWork.createCookie(_spPageContextInfo.siteId, queryStringCompanyValues, 10);
+			}
+        }, error: function (data)
+        {
+            console.log("Error occured in CreateCookieToSetDepartmentSiteURL()");
+        }
+    });
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-585</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d2486f02-efdc-48bb-a9de-110526caeeff</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-585, ADMIN-1645029823-585</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">58500.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

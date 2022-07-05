@@ -1,0 +1,316 @@
+﻿
+body {
+	font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important;
+}
+h3 {
+    font-weight: 400;
+}
+button:focus {
+    outline: none !important;	
+}
+.font-12 {
+    font-size: 12px;
+}
+
+/*custom scroll*/
+.scrollbar-panel::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+    background-color: #ffffff;
+}
+.panel-body {
+    background-color: #ffffff;
+}
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+
+
+/* Common css end */
+
+
+
+
+
+.custom-btn,
+.custom-btn:focus {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+.custom-btn-two-cancel,
+.custom-btn-two-cancel:focus {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+
+.color-red {
+    color: #ff0000;
+}
+.m-0 {
+    margin: 0;
+}
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.mr-8 {
+    margin-right: 8px;
+}
+
+.user-upload-image-box {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 40px auto 30px auto;
+    border: 3px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.user-upload-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.user-upload-image-box-btn {
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 100%;
+    background: rgb(0 0 0 / 80%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.5s;
+    padding: 30px 10px;
+}
+.user-upload-image-inp {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    max-width: 178px;
+    top: 0;
+    left: 8px;
+    margin: auto;
+    border-radius: 0 0px 250px 250px;
+}
+.user-upload-image-inp[type='file'] {
+    cursor: pointer;
+    font-size: 0;
+}
+.user-upload-image-span {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all 0.5s;
+    line-height: 23px;
+}
+.user-upload-image-box:hover .user-upload-image-box-btn {
+    bottom: 0;
+}
+.rg-detail-label-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.wpx-87 {
+    width: 87px;
+}
+.resize-none {
+    resize: none;
+}
+.help-modal-body {
+    padding: 10px;
+}
+.help-modal-body img {
+    width: 100%;
+}
+.video-help-btn {
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+    color: #1d6ec0;
+}
+.d-block {
+    display: block !important;
+}
+.d-none {
+    display: none !important;
+}
+.pl-4 {
+    padding-left: 4px;
+}
+
+
+
+/*add delete*/
+.block,
+.web-block {
+    display: block;
+}
+.add-button-box {
+    position: relative;
+}
+.link-add-btn,
+.link-add-btn:focus,
+.link-delete-btn,
+.link-delete-btn:focus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.link-delete-btn, .link-delete-btn:focus {
+    background: #d43f3a;
+    border-color: #d43f3a;
+}
+.link-delete-btn:hover {
+    background: #ffffff;
+    color: #d43f3a;
+    border-color: #d43f3a;
+}
+.link-input-fild {
+  padding-right: 75px;
+}
+.position-relative {
+  position: relative;
+  margin-top: 12px;
+}
+
+
+/* Tab css */
+.employee-info .tabs{
+    margin-top:20px;
+    font-size:15px;
+    padding:0px;
+    list-style:none;
+    background:#fff;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.1);
+    display:inline-block;
+    position:relative;
+    width: 100%;
+    border-radius: 4px;
+}
+.employee-info .tabs a{
+    text-decoration:none;
+    color: #777;
+    text-transform:uppercase;
+    padding:10px 20px;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    transition-duration:0.6s;
+}
+.employee-info .tabs a.active{
+    color:#fff;
+}
+.employee-info .tabs a i{
+    margin-right:5px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.employee-info .tabs .selector{
+    height:100%;
+    display:inline-block;
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:1;
+    border-radius: 4px;
+    transition-duration:0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #1d6ec0;
+}
+.employee-info .tab-content {
+    padding: 14px 0 0;
+}
+
+/* new css added on 28/6/2021 */
+
+.add-button-box .link-add-btn {
+    margin-right: 0;
+    padding: 5px 12px;
+}
+#Employeesname .sp-peoplepicker-editorInput {
+    border: none !important;
+}
+
+/* responsive css start */
+
+@media (max-width: 767px) {
+    .employee-info .tabs a {
+        padding: 10px 19px;
+        font-size: 18px;
+    }
+    .employee-info .tabs a i {
+        margin: auto; 
+    }
+    .is-phone-hode {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    #Profile .col-xs-6,
+    #Details .col-xs-6 {
+        width: 100%;
+    }
+}

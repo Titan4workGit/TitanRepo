@@ -1,0 +1,402 @@
+﻿<!--  Light Bootstrap Table core CSS    -->
+<link href="../_catalogs/masterpage/Titan2/Styles/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+		<style type="text/css">
+		#element1,#element2{
+			padding: 5px;
+			color: #000000 !important;
+		}
+		.ProgressLine{
+			width: 100%;
+			border: 1px;
+			border-color: #c1c1b7;
+			border-style: double;
+			height: 30px;
+		}
+		.ProgressLine1{
+			width: 100%;
+			border: 1px;
+			border-color: #c1c1b7;
+			border-style: double;
+			height: 30px;
+			/*background-color: #1d7ce0e6; not working on edge*/
+			background-color:#3287E1;
+			margin-bottom: 5px;
+		}
+		.projectCompletion{
+			background-color: #318223d4;
+			width:0;
+			height: 28px;
+		}
+		.ProjectDays{
+			width: 0;
+			height: 28px;
+			background-color: gray;
+		}
+		
+		#element1 {display:inline-block;color:white; width:140px;} 
+		#element2 {display:inline-block; float:right;color:white;} 
+		#element3 {display:inline-block; font-size: 11pt;} 
+		#element4 {display:inline-block; float:right; font-size: 11pt;} 
+		</style>
+		
+		<script src="../_catalogs/masterpage/Titan2/Scripts/Graph Plugin/Graph.js"></script>		
+		
+<script type="text/javascript">
+ google.charts.load('current', { 'packages': ['corechart'] });
+ $(document).ready(function () {
+	
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentProjectDetails,"sp.js"); 
+	$('#chartPreferences').hide();
+});
+ 
+ var PlanedStartDateGlobal='';
+ var PlanedEndDateGlobal='';
+ function getCurrentProjectDetails(){
+	 var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('ProjectDetails')/items?$select=*&$filter=ID eq '" + txtProjectID + "'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+					var PlanedStartDate=new Date(items[0].PlanedStartDate);
+					PlanedStartDateGlobal=new Date(items[0].PlanedStartDate);
+					PlanedStartDate= $.datepicker.formatDate('dd-M-yy', PlanedStartDate);
+					var PlanedEndDate=new Date(items[0].PlanedEndDate);
+					PlanedEndDateGlobal=new Date(items[0].PlanedEndDate);
+					PlanedEndDate= $.datepicker.formatDate('dd-M-yy', PlanedEndDate);
+					
+					var ProjectDateHTML='<div id="element3"> '+PlanedStartDate+' </div>';
+					ProjectDateHTML +='<div id="element4"> '+PlanedEndDate+'</div>';
+					var projectTotalDays=daydiff(parseDate(PlanedStartDate), parseDate(PlanedEndDate));
+					var currentDate=new Date();
+					currentDate= $.datepicker.formatDate('dd-mm-yy', currentDate);
+					var daysLeft=daydiff(parseDate(currentDate), parseDate(PlanedEndDate));
+					var daysOver=daydiff(parseDate(PlanedStartDate), parseDate(currentDate));
+					var projectOverdue=daydiff(parseDate(PlanedEndDate), parseDate(currentDate));
+					
+					var ProjectDaysGraph=((daysOver*100)/projectTotalDays).toFixed(2);
+					if(ProjectDaysGraph>100)
+					{
+						ProjectDaysGraph="100%";
+					}
+					else
+					{
+						ProjectDaysGraph=ProjectDaysGraph+"%";
+					}
+					
+					var daysLeftHTML='';
+					if(daysLeft!=0 && daysLeft>0)
+					{
+						daysLeftHTML='<div id="element2">'+daysLeft+' days Left</div>';
+					}
+					else
+					{
+						//daysLeftHTML='<div id="element2">Task Overdue</div>';
+						daysLeftHTML='<div id="element2">Project Overdue by '+projectOverdue+' days</div>';
+					}
+					if(daysOver!=0 && daysOver>0)
+					{
+						daysLeftHTML +='<div class="ProjectDays"><div id="element1"> '+daysOver+' days laps </div></div>';
+					}
+					else
+					{
+						daysLeftHTML +='<div class="ProjectDays"><div id="element1"> Project is yet to start. </div></div>';
+					}
+					
+					$('.ProgressLine1').append(daysLeftHTML);
+					
+					//$('.ProjectDays').append(daysOverHTML);
+					
+					$('#ProjectDate').append(ProjectDateHTML);
+					GetAllProjectStatus();
+					$('.ProjectDays').css('width', ProjectDaysGraph);
+					
+            },
+            error: function () {
+                console.log("Error getting Notification Details.");
+            }                     
+        });
+ }
+ function parseDate(str) {
+    var mdy = str.split('-');
+    return new Date(mdy[2], mdy[1]-1, mdy[0]);
+}
+
+function daydiff(first, second) {
+    return Math.round((second-first)/(1000*60*60*24));
+}
+ 
+ function GetAllProjectStatus(){
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskDetails')/items?$select=*&$filter=ProjectName eq '" + txtProjectID + "'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+					var Open=0;
+					var Completed=0;
+					var Hold=0;
+					var Cancelled=0;
+					var OverDue=0;
+					var totalTaskNo=items.length;
+					var taskTableHTML='';
+                	for(var i=0;i<items.length;i++)
+					{
+						var CurrentPhase=items[i].CurrentPhase;
+						if(CurrentPhase=="Open")
+						{
+							var dueDate=items[i].DueDate;
+							dueDate=new Date(dueDate);
+							dueDate.setDate(dueDate.getDate()+1);
+							var todayDate=new Date();
+							if(todayDate.toISOString()<=dueDate.toISOString())
+							{
+								Open++;
+							}
+							else
+							{
+								OverDue++;
+							}
+						}
+						else if(CurrentPhase=="Completed")
+						{
+							Completed++;
+						}
+						else if(CurrentPhase=="Hold")
+						{
+							Hold++;
+						}
+						else if(CurrentPhase=="Cancelled")
+						{
+							Cancelled++;
+						}
+						
+					}
+					
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5"><i class="fa fa-circle text-info"></i> Open<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+Open+'</lable></div>';
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5"><i class="fa fa-circle text-success"></i> Completed<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+Completed+'</lable></div>';
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5"><i class="fa fa-circle text-danger"></i> Hold<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+Hold+'</lable></div>';
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5"><i class="fa fa-circle text-primary"></i> Cancelled<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+Cancelled+'</lable></div>';
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5"><i class="fa fa-circle text-primary"></i> Overdue<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+OverDue+'</lable></div>';
+					taskTableHTML +='<div class="col-sm-8 pie-chart-values-items bottom5" style="border-top: 1px solid black;">Total Count<lable class="col-sm-4 pie-chart-values-items-num" style="float:right;">'+totalTaskNo+'</lable></div>';
+					$('#TaskTableHTML').append(taskTableHTML);
+					if(Open!=0 || Completed!=0 || Hold!=0 || Cancelled!=0 || OverDue!=0)
+					{
+						var OpenValue=Math.round((Open*100)/totalTaskNo);
+						var OpenPersent=OpenValue+"%";
+						
+						var CompletedValue=Math.round((Completed*100)/totalTaskNo);
+						var CompletedPersent=CompletedValue+"%";
+						
+						var HoldValue=Math.round((Hold*100)/totalTaskNo);
+						var HoldPersent=HoldValue+"%";
+						
+						var CancelledValue=Math.round((Cancelled*100)/totalTaskNo);
+						var CancelledPersent=CancelledValue+"%";
+						//var TaskCompletion=Math.round(100-OpenValue);
+						//TaskCompletion=TaskCompletion+"%";
+						var TaskCompletion=Math.round((Completed*100)/(Open+Completed+Hold));
+						if($.isNumeric(TaskCompletion)==false)
+							TaskCompletion="0%";
+						else
+							TaskCompletion=TaskCompletion+"%";	
+						
+						var OverDueValue=Math.round((OverDue*100)/totalTaskNo);
+						var OverDuePersent=OverDueValue+"%";
+	
+						var ProjectCompletionHTML='<div id="element1"> '+TaskCompletion+' Completed </div>';
+						$('.projectCompletion').append(ProjectCompletionHTML);
+						$('.projectCompletion').css('width',TaskCompletion);
+						
+						google.charts.setOnLoadCallback(drawChartUserBased(parseInt(Open), parseInt(Completed), parseInt(Hold), parseInt(Cancelled),parseInt(OverDue)));
+						
+					//	Chartist.Pie('#chartPreferences', {
+					//		labels: [OpenPersent,CompletedPersent,HoldPersent,CancelledPersent],
+					//		series: [OpenValue, CompletedValue, HoldValue,CancelledValue]
+					//		});
+					//	$('#chartPreferences').show();
+					}
+						
+            },
+            error: function () {
+                console.log("Error getting Notification Details.");
+            }                     
+        });
+}
+
+function drawChartUserBased(Open, Completed, Hold, Cancelled,OverDue) 
+{
+     var totaltaskCount=Open+Completed+Hold+Cancelled;
+    var data = google.visualization.arrayToDataTable([
+     ['Task :', 'Status'],
+     ['Open :'+Open, Open],
+     ['Cancelled :'+Cancelled, Cancelled],
+     ['Hold :'+Hold, Hold], 
+     ['Overdue :'+OverDue, OverDue], 
+     ['Completed :'+Completed, Completed]
+    ]);
+    var options = {
+        title: "Task Count :"+totaltaskCount,
+        legend:{position: 'left'},
+        chartArea:{left:1,top:15,width:"90%",height:"100%"},
+        colors: ['#3366CC', '#DC3912', '#ff8000', '#990099', '#109618', 'red']		// Open, Cancelled, Hold, OverDue, Completed, Total Count
+    };
+    
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+
+}
+</script>		
+		
+<div id="ProjectDate"></div>		
+<div class="ProgressLine1" >
+	
+</div>
+		
+<div class="ProgressLine" >
+	<div class="projectCompletion"></div>	
+</div>
+<div class="pie-chart-div">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pie-chart-values" style="display:none">
+		<div>
+			<div id="TaskTableHTML">
+			</div>
+		</div>
+	</div>	
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 pie-chart" >
+		<div class="card">
+			<div class="content">
+			<!--	<div id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>-->
+			  <div id="piechart" class='piechart'></div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+	<style type="text/css">
+		@media (min-width:320px)and (max-width:425px){
+		.pie-chart-div .pie-chart{
+			width:100%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;
+		}
+		div#piechart div:first-child{
+			width: 100% !Important;
+		}	
+		.pie-chart-div{
+			height:230px !Important;
+		}	
+	}	
+	@media (min-width:426px)and (max-width:768px){
+		.pie-chart-div .pie-chart{
+			width:100%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;
+		}		
+	}
+	@media (min-width:769px)and (max-width:991px){
+		.pie-chart-div{ 
+			width:65%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media (min-width:992px)and (max-width:1024px){
+		.pie-chart-div{ 
+			width:95%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media (min-width:1025px)and (max-width:1280px){
+		.pie-chart-div{ 
+			width:95%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media (min-width:1281px)and (max-width:1366px){
+		.pie-chart-div{ 
+			width:100%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;
+			padding-top:5px;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media (min-width:1367px)and (max-width:1440px){
+		.pie-chart-div{ 
+			width:100%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;
+			padding-top:5px;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media (min-width:1441px)and (max-width:2560px){
+		.pie-chart-div{ 
+			width:100%;
+			margin-left:auto !Important;		
+			margin-right:auto !Important;
+			padding-top:5px;	
+		}
+		.pie-chart-div .pie-chart{
+			width:100%;
+		}
+	}
+	@media only screen and (min-width:426px){
+		.pie-chart-div,
+		.pie-chart,
+		.pie-chart .card,
+		.pie-chart .card .content,	
+		.pie-chart .card .content #piechart div,
+		.pie-chart .card .content #piechart div div,
+		.pie-chart .card .content #piechart div div svg{
+			height:225px !Important;
+		}	
+	}
+	</style>	
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			//Chartist.Pie('#chartPreferences', {
+			//labels: ['50%','20%','15%','15%'],
+			//series: [50, 20, 15,15]
+			//});
+    	});
+	</script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-321</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">4268599e-61f1-4130-a4f7-79183cdf6701</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-321, ADMIN-1645029823-321</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32100.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

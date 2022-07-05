@@ -1,0 +1,350 @@
+﻿
+<script src="../SiteAssets/AdminPortal/OfficeLocations/ManageOfficeLocations.js" type="text/javascript"></script>
+<style type="text/css">
+	div#OfficeName a.list-group-item {
+	    border-bottom: 1px solid #ddd;
+	    border-top: none;
+	}
+	div#OfficeName a.list-group-item.active {
+	    background: #ddd !important;
+	    border:1px solid #ddd !important;   
+	}
+    .ms-webpart-cell-horizontal {
+        display: block !important;
+    }
+
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    .text_left {
+        text-align: right !important;
+    }
+
+    .browse {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        width: 100%;
+        background: transparent;
+    }
+
+    .panel-group .panel {
+        border-radius: 5px;
+        border-color: #EEEEEE;
+        padding: 0;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+        .panel-title > a {
+            display: block;
+            padding: 4px 0px 0px 0px;
+            text-decoration: none;
+        }
+
+    .required:after {
+        content: "*";
+        color: red;
+    }
+    
+.list-of-office-Location,    
+.office-location-details-english{
+  min-height:585px !important;	
+}    
+.wdthmang .form-group label {
+    padding-right: 26px;
+}
+
+@media(min-width:992px){
+.mnagwidth{
+  width:27% !important;	
+}
+.wdthmang{
+  width:93.3% !important;	
+	
+}	
+
+}
+   
+@media(max-width:767px){
+
+.list-of-office-Location,    
+.office-location-details-english{
+  min-height:auto !important;	
+}
+.submitButton{
+  	padding:0 0 !Important;
+}	
+.submitButton button{
+  	font-size:12px !Important;
+}
+	
+}   
+   
+</style>
+
+<div class="row department-header">
+    <ol class="breadcrumb">
+        <li>
+        <h4>
+       <!-- <b data-localize="OfficeLocations">Office Locations</b>  -->       
+        </h4>
+        </li>
+    </ol>
+</div>
+<div class="row">
+    <div class="col-md-5">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="panel panel-default shadow3" style="overflow:auto">
+                    <div class="panel-heading  panel-head-4">
+                        <div class="panel-title">
+                            <h4 class="h4-color"><span data-localize="OfficeLocation">Office Locations</span><a class="link-color pull-right" style="cursor: pointer;" onclick="getOfficeDetails(0);"><!-- <span class="glyphicon glyphicon-plus-sign "> </span>--> </a></h4>
+                        </div>
+                    </div>
+                    <div class="list-group list-of-office-Location" id="OfficeName">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="panel panel-default shadow2" id="OfficeDetail">
+                    <div class="panel-heading  panel-head-4">
+                        <div class="panel-title">
+                            <h4 class="h4-color">Details (English)</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body office-location-details-english">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="Office" class="col-sm-4 control-label required mnagwidth" data-localize="OfficeId" >Office Id</label>
+                                <div class="col-sm-8">
+                                    <input type="text" maxlength="250" class="form-control" id="OfficeIDEng" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Office" class="col-sm-4 control-label required mnagwidth" data-localize="OfficeLocation">Office Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" maxlength="250" class="form-control" id="OfficeNameEng">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="col-sm-4 control-label required mnagwidth" data-localize="Address">Address</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" rows="3" id="officeAddress" style=" resize:none"></textarea>
+                                </div>
+                            </div>
+                           <!-- <div class="form-group">
+                                <label for="City" class="col-sm-4 control-label required">City</label>
+                                <div class="col-sm-8">
+                                    <input type="text" maxlength="250" class="form-control" id="officeCity">
+                                </div>
+                            </div>-->
+                            
+                            <div class="col-md-12 wdthmang">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                     <!-- <div class="row">
+                                            <div class="form-group">
+                                                <label for="PrayerRegion" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label state-label required" data-localize="PrayerRegion">Prayer Region</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+                                                    <input type="text" maxlength="250" class="form-control" id="prayerRegion">
+                                                     <a href="https://www.islamicfinder.org/" style="text-decoration:underline;" target="_blank"><i data-localize="CheckPrayerRegion">Check Prayer Region</i></a>
+                                                </div>
+                                            </div> 
+                                        </div>  -->
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="City" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label text_left" data-localize="City">City</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+                                                    <input type="text" maxlength="250" class="form-control" id="officeCity">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="State" class="col-lg-5 col-md-5 col-sm-4 control-label text_left " data-localize="State">State</label>
+                                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                                    <input type="text" maxlength="250" class="form-control" id="officeState">
+                                                </div>
+                                            </div>
+                                        </div>                                                                          
+                                    </div> 
+                                <!--<div class="col-md-7">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="State" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label state-label required" data-localize="State">State</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+                                                    <input type="text" maxlength="250" class="form-control" id="officeState">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  -->                                   
+                                </div>
+                            </div>                         
+                            
+							
+                            <div class="col-md-12 wdthmang">
+                                <div class="row">
+                                 <!--   <div class="col-md-7">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="State" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label state-label required" data-localize="State">State</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+                                                    <input type="text" maxlength="250" class="form-control" id="officeState">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>   -->
+                                <div class="col-md-6"> 
+                                   <div class="row">   
+                                      <div class="form-group">
+		                                 <label for="Country" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label equired" data-localize="Region">Region</label>
+		                                 <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+		                                     <input type="text" class="form-control" maxlength="250" id="officeRegion">
+		                                 </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="Zip" class="col-lg-5 col-md-5 col-sm-4 control-label text_left" data-localize="Zip">Zip</label>
+                                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                                    <input type="text" maxlength="25" class="form-control" id="officeZip">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 wdthmang">
+                                <div class="row">
+                                    <div class="col-md-6">                                    
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <label for="City" class="col-lg-7 col-md-7 col-sm-4 col-xs-12 control-label text_left" data-localize="Telephone">Telephone</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-8 col-xs-12 pdng-left-right-0">
+                                                    <input type="text" maxlength="25" class="form-control" id="officeTelephone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">                                       
+                                        <div class="row">
+                                        <div class="form-group">
+                                                <label for="Country" class="col-lg-5 col-md-5 col-sm-4 control-label text_left" data-localize="Country">Country</label>
+                                                <div class="col-lg-7 col-md-7 col-sm-8">
+                                                    <input type="text" maxlength="25" class="form-control" id="officeCountry">
+                                                </div>
+                                            </div>
+                                        </div>                                                                          
+                                    </div> 
+                                                                   
+                                </div>
+                            </div>
+                            
+                            
+                         <!-- <div class="form-group">
+                                <label for="Country" class="col-sm-4 control-label required" data-localize="Country">Country</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" maxlength="250" id="officeCountry">
+                                </div>
+                            </div>  -->
+                            <div class="form-group">
+                                <label for="Email" class="col-sm-4 control-label mnagwidth" data-localize="Email">Email</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" maxlength="250" id="officeEmail">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="Contact Person" class="col-sm-4 control-label mnagwidth" data-localize="ContactPerson">Contact Person</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" maxlength="250" id="txtcontactPerson">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Contact No" class="col-sm-4 control-label mnagwidth" data-localize="ContactNo">Contact No</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" maxlength="25" id="txtcontactNo">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Mass Mail ID" class="col-sm-4 control-label mnagwidth" data-localize="MassMailID">Mass Mail ID</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="txtMassMailID">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Google Map Link" class="col-sm-4 control-label mnagwidth" data-localize="GoogleMapEmbeddedLink">Google Map (Embedded Link)</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="txtGoogleMapLink">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label for="" class="col-sm-4 control-label"></label>-->
+            <div class="col-sm-12 submitButton" style="margin-bottom: 15px;">
+            	<button type="button" class="btn  btn-outline-success" name="NewOfficeLocation" id="NewOfficeLocation" data-localize="Add" onclick="getOfficeDetails(0)">Add</button>
+                <button type="button" class="btn  btn-outline-success" name="createNewOfficeLocation" id="createNewOfficeLocation" data-localize="Submit">Submit</button>
+                <button type="button" class="btn  btn-danger" data-localize="Delete" onclick="checkExLocation()">Delete</button>
+                <button type="button" class="btn btn-outline-secondary" id="closeNewOfficeLocation" data-localize="Close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-359</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">034d6376-06fe-4696-9629-a4b688675da5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-359, ADMIN-1645029823-359</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">35900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+<style>
+
+@media(max-width:767px){
+
+#OfficeDetail label.text_left{
+	text-align:left !important;	
+}	
+
+#OfficeDetail .form-horizontal .control-label{
+	
+  text-align:left !important;	
+
+}
+	
+}
+
+</style>
+
+<title></title></head>

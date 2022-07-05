@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>SiteAssets/AdminPortal/OneDrive/Onedrive.html</title>
+<style>
+
+.btn-toggle {
+  margin: 0 4rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  color: #6b7381;
+  background: #bdc1c8 !important;
+}
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active {
+  outline: none;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  line-height: 1.5rem;
+  width: 4rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s;
+}
+.btn-toggle:before {
+  content: 'Off';
+  left: -4rem;
+}
+.btn-toggle:after {
+  content: 'On';
+  right: -4rem;
+  opacity: 0.5;
+}
+.btn-toggle > .handle {
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 1.125rem;
+  background: #fff !important;
+  transition: left 0.25s;
+}
+.btn-toggle.active {
+  transition: background-color 0.25s;
+}
+.btn-toggle.active > .handle {
+  left: 1.6875rem;
+  transition: left 0.25s;
+}
+.btn-toggle.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.active:after {
+  opacity: 1;
+}
+.btn-toggle:before,
+.btn-toggle:after {
+  color: #6b7381;
+}
+.btn-toggle.active {
+  background-color: #29b5a8 !important;
+}
+.btn-toggle.btn-lg {
+  margin: 0 7rem;
+  padding: 0;
+  position: relative;
+  border: none;
+  height: 2.5rem !important;
+  width: 5rem !important;
+  border-radius: 2.5rem !important;
+  min-width: 5rem !important;
+}
+.btn-toggle.btn-lg:focus,
+.btn-toggle.btn-lg.focus,
+.btn-toggle.btn-lg:focus.active,
+.btn-toggle.btn-lg.focus.active {
+  outline: none !important;
+}
+.btn-toggle.btn-lg:before,
+.btn-toggle.btn-lg:after {
+  line-height: 2.5rem;
+  width: 5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  transition: opacity 0.25s !important;
+}
+.btn-toggle.btn-lg:before {
+  content: 'Inactive';
+  left: -7rem;
+}
+.btn-toggle.btn-lg:after {
+  content: 'Active';
+  right: -7rem;
+  opacity: 0.5;
+}
+.btn-toggle.btn-lg > .handle {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  background: #fff !important;
+  transition: left 0.25s;
+}
+.btn-toggle.btn-lg.active {
+  transition: background-color 0.25s !important;
+}
+.btn-toggle.btn-lg.active > .handle {
+  left: 2.8125rem;
+  transition: left 0.25s;
+}
+.btn-toggle.btn-lg.active:before {
+  opacity: 0.5;
+}
+.btn-toggle.btn-lg.active:after {
+  opacity: 1;
+}
+
+.btn-toggle.btn-secondary {
+  color: #6b7381 !important;
+  background: #bdc1c8 !important;
+}
+.btn-toggle.btn-secondary:before,
+.btn-toggle.btn-secondary:after {
+  color: #6b7381 !important;
+}
+.btn-toggle.btn-secondary.active {
+  background-color: #ff8300 !important;
+}
+
+
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-503</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f8704912-af85-4a8e-9175-2a81a95c8d5e</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-503, ADMIN-1645029823-503</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers msdt:dt="string">Contributors</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_SharedWithUsers>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">50300.0000000000</mso:Order>
+<mso:SharedWithUsers msdt:dt="string">36;#Contributors</mso:SharedWithUsers>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+<div class="row department-header">
+    <ol class="breadcrumb">
+        <li><h4><b data-localize="OneDrive">OneDrive Setting</b></h4></li>
+    </ol>
+</div>
+
+
+<div class="container mt-15">
+
+<div class="clearfix"></div>
+
+<div class="col-md-12">
+<div class="row top15">
+
+<div class="panel panel-default shadow2" style="margin-top:10px;">
+      <div class="panel-body">
+             <div class="col-sm-12">
+              <div class="form-horizontal">
+                
+                <div class="form-group">
+                  <div class="col-sm-4 col-xs-12" style="font-size:20px; color:#000000">Activate One Drive Services</div>
+                  <div class="col-sm-6 col-xs-12" id="hello">
+                    <button type="button" class="btn btn-lg btn-toggle" id="btnactive" data-toggle="button" aria-pressed="true" autocomplete="off" onclick=CheckToggle()> 
+                    <div class="handle"></div>
+                    </button>                 
+                  <select id="Scope" style="width : 22%; margin-left:100px">
+					   <option value="None">-- Socpe --</option>
+					   <option value="Selective">Selective</option>
+					   <option value="For All">For All</option>
+				  </select> 
+				 </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-4 col-xs-12">Setting Parameters</label>
+                    <div class="col-sm-6 col-xs-12">
+                      <textarea name="textarea" id="textareaParameters" rows="3" class="form-control" style="resize:none"></textarea>
+                    </div>
+                </div>       
+                                          
+              </div>
+            </div>           
+            
+            <div class="col-sm-12 text-center">
+                	<button type="button" style="font-size:13px;margin-right:0px;" class="btn btn-outline-success Submitbutton" id="btnsubmit" data-localize="Submit">Submit</button>
+	            	<button type="button" style="font-size:13px;margin-right:0px;" class="btn btn-outline-secondary Closebutton" id="btnclose" data-localize="Close">Close</button>
+            </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+
+</html>
+
+
+<script>
+
+var listname = "EnvironmentalSettings";
+var active = '';
+var ItemID = '';
+var CompanyId = getQueryStringParameter('WebAppId');
+var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+var CompanyNameEng = $("#CompanyNameEng").val();
+var massMailID = $("#massMailID").val();
+
+$(document).ready(function ()
+{
+	BindOneDrive()
+	$("#btnsubmit").click(function(){
+	
+		updateListItemOndrive();
+	})
+	
+	$("#btnclose").click(function(){
+	
+		 window.location.replace("AdminPortal.aspx?WebAppId="+CompanyId+"");
+	})
+
+})
+
+function BindOneDrive()
+{
+//	debugger;
+    var item;    
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('EnvironmentalSettings')/items?$select=*&$filter=Title eq 'OneDrive'"
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (response)
+        {
+         item = response.d.results[0]     
+         ItemID =  item.ID;
+	      if(item.Active)
+	        {
+	          $("#hello").find('button').addClass('active') 	
+	          $("#hello").find('select').show()
+              $('#Scope').val(item.scope);	          
+	        }
+	     else
+	        {
+	          $("#hello").find('button').removeClass('active')
+     	      $("#hello").find('select').attr('disabled', 'disabled'); 
+	        }         
+        $('#textareaParameters').val(item.ChangeFileName)
+        }, myError: function (response) {
+            waitingDialog.hide();
+        }
+    });
+}
+
+function updateListItemOndrive()
+{
+    active = $("#hello").find('button').hasClass('active');    
+    var scope = $( "#Scope option:selected" ).val();
+	var ItemType="SP.Data.EnvironmentalSettingsListItem";
+    var Metadata;
+    Metadata =  {
+                __metadata: {
+                    'type': ItemType
+                },                   
+    		Active: active,
+    		scope : scope,
+    		ChangeFileName: $('#textareaParameters').val()
+  };
+  $.when(updateOnedrive(listname, Metadata)).done(function (MainExamListItemTemp) {
+     alert('OneDrive setting updated successfully.');
+     $('.Submitbutton').find('button').attr("disabled",true);  
+     window.location.replace("AdminPortal.aspx?WebAppId="+CompanyId+"");
+   });
+}
+
+function updateOnedrive(ListName, Metadata)
+{
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items('"+ItemID+"')",
+        type: "POST",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        async: false,
+        success: function (RESULT) {
+            // console.log();
+            dfd.resolve(true);
+
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+
+        }
+    });
+    return dfd.promise();
+}
+
+function CheckToggle()
+	{
+//	debugger;
+	active = $("#hello").find('button').hasClass('active')		
+	  if (!active){
+		 $("#hello").find('select').attr('disabled', false); 
+	  } else
+		 {
+		 $("#hello").find('select').attr('disabled', true); 
+		 }	
+	}
+</script>

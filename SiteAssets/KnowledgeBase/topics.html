@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+ <script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script> 
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+
+<script src="../SiteAssets/KnowledgeBase/Topics.js"></script>
+	
+
+<style type="text/css">
+	div#topicsListItems .media .media-body p .fa.fa-calendar {
+	    padding-right: 4px;
+	}
+	.shadow3{ 
+		box-shadow: 0px -3px 25px -1px #dfdede;
+	}
+	.head_border:after {
+		content: "";
+		display: block;
+		width: 50px;
+		margin-top: 10px;
+		border-bottom: solid;
+	}
+	.table2 td { 
+		border-top:none !important;
+	}
+	select{ 
+		color:#232323 !important;
+	}
+	.switch {
+		position: relative;
+		display: inline-block;
+		width: 50px;
+		height: 20px;
+	}
+	.switch input { 
+		opacity: 0;
+		width: 0;
+		height: 0;
+	}
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #ccc;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	.slider:before {
+		position: absolute;
+		content: "";
+		height: 13px;
+		width: 14px;
+		left: 4px;
+		bottom: 4px;
+		background-color: white;
+		-webkit-transition: .4s;
+		transition: .4s;
+	}
+	input:checked + .slider {
+		background-color: #2196F3;
+	}
+	input:focus + .slider {
+		box-shadow: 0 0 1px #2196F3;
+	}
+	input:checked + .slider:before {
+		-webkit-transform: translateX(26px);
+		-ms-transform: translateX(26px);
+		transform: translateX(26px);
+	}
+	/* Rounded sliders */
+	.slider.round {
+		border-radius: 34px;
+	}
+	.slider.round:before {
+		border-radius: 50%;
+	}
+	.form-control2 {
+		font-size: 13px;
+		border: 0px !important;
+		color: #555;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid #6d6c6c !important;
+		border-radius: 0;
+		padding: 3px 0px !important;
+		box-shadow: none;
+		padding: 6px 5px !important;
+		height: auto;
+	}
+	.search_div{ 
+		width:94%;
+	}
+	#custom-search-input {
+		margin:0;
+		margin-top: 10px;
+		padding: 0;
+	}
+	#custom-search-input .search-query {
+		padding-right: 3px;
+		padding-right: 4px \9;
+		padding-left: 3px;
+		padding-left: 4px \9;
+		/* IE7-8 doesn't have border-radius, so don't indent the padding */
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+	}
+	#custom-search-input button {
+		border: 0;
+		background: none;
+		/** belows styles are working good */
+		padding: 2px 5px;
+		margin-top: 2px;
+		position: relative;
+		left: -28px;
+		/* IE7-8 doesn't have border-radius, so don't indent the padding */
+		margin-bottom: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		color:#333333;
+	}
+	.search-query:focus + button {
+		z-index: 3;   
+	}
+	#btnGoBack {
+	    margin-bottom: 10px;
+	    font-size: 13px;
+	    display: block;
+    	margin: 0 auto 10px auto;
+	}
+	.topic-department-name {
+	    margin: 15px auto 15px auto;
+	}
+	.topic-department-category-filter-box {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	.topic-department-category .single_row_control {
+	    display: inline-block;
+	    margin-left: 10px;
+	}
+	.topic-department-filter #myInput {
+	    width: 225px;
+	    font-size: 13px;
+	    padding: 6px 5px !important;
+	    margin-right: 8px;
+	}
+	.topic-department-filter #btnAddNewTopic {
+	    
+	}
+
+.ddlCategoryList{
+ width:300px !important;	
+}	
+/***6/18/21***/	
+
+.ajusting_lgt{
+ width:auto !important;	
+}	
+	
+.ddlCategoryList{
+ border:1px solid #adadad !important;	
+}	
+
+h3.floating:after{
+ display:none !important;	
+}
+	
+h3.floating,
+h4.floating{
+ display:inline-block;	
+ margin-bottom:35px !important;
+}
+
+h3.floating{
+margin-left: -16px;
+padding: 2px 10px 5px;
+
+}
+
+h4.floating{
+ margin-left:20%;
+}
+
+
+
+.fa-calendar{
+ margin-right:5px;	
+}
+
+.post_sec a{
+
+ color: #2a6496;
+ font-weight: bolder;
+ font-size:18px;	
+
+}
+
+
+@media(max-width:894px){
+
+.topic-department-category-filter-box{
+ flex-direction: column;
+ justify-content: center;	
+}
+	
+}
+
+
+/***6/18/21***/	
+
+	@media (max-width:767px){
+		.search_div{ width:100%;}
+		
+		h3.floating,
+		h4.floating{
+		 display:inline-block;	
+		 margin-bottom:5px !important;
+		}
+		
+	}   
+
+	.vertical-menu {
+		width: 100%;
+	}
+	.vertical-menu a {
+		/*background-color: #eee;*/
+		color: #FE2B25;
+		display: block;
+		padding: 12px;
+		text-decoration: none;
+		padding-left:5px;
+		font-style:italic;
+		font-weight:bold;
+	}
+	h3.head_border {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.mt-15 {
+		margin-top: 15px !important;
+	}
+	.mt-20 {
+		margin-top: 20px !important;
+	}
+	#newEmployeePicker, #customShareingPoplePicker{
+		padding:10px 0px !Important;
+	}
+	#newEmployeePicker_TopSpan{
+	    width:100% !Important;
+		border: 0px !important;
+		border-bottom: 1px solid #ccc !important;
+	}
+	#newEmployeePicker #newEmployeePicker_TopSpan input {
+		border: 1px solid #999 !important;
+		width: 215px !Important;
+		margin: 0px !Important;
+	}
+	b, strong {
+   		margin-left: 4px !Important;
+	}
+
+	@media (max-width: 767px) and (min-width: 576px) {
+
+		.topic-department-category .single_row_control {
+		    margin-left: 10px;
+		    width: 65%;
+		}
+		.topic-department-filter #myInput {
+		    width: 135px;
+		    border: 1px solid #6d6c6c !important;
+		}
+		.topic-department-filter #btnAddNewTopic {
+		    padding: 6.1px 12px !important;
+		}
+	.ddlCategoryList{
+	 width:100% !important;	
+	}	
+
+	}
+
+	@media (max-width: 575px) and (min-width: 320px) {
+
+		.topic-department-filter #btnAddNewTopic {
+		    padding: 6.1px 12px !important;
+		}
+		.topic-department-filter #myInput {
+		    border: 1px solid #6d6c6c !important;
+		}
+		.topic-department-category-filter-box {
+		    display: block;
+		}
+		.topic-department-category .single_row_control {
+		    display: inline-block;
+		    margin-left: 0px;
+		    width: 100%;
+		    margin-top: 5px;
+		}
+		.topic-department-filter #myInput {
+		    width: 100%;
+		    font-size: 13px;
+		    padding: 6px 5px !important;
+		    margin-right: 8px;
+		    margin-bottom: 10px;
+		}
+
+	.ddlCategoryList{
+	 width:100% !important;	
+	}	
+
+	}
+	
+@media(max-width:350px){
+  h4.floating{
+  margin-left:1px !important;
+  display:block;	
+}
+	
+}	
+
+/*------new css add on 25/06--------*/
+
+#topicsListItems .panel_box{
+ 
+ box-shadow: 1px 2px 8px #a3a3a3;
+ padding:15px 10px;
+ margin:15px 0; 
+
+}
+
+.detail_box p,
+.detail_box h3{
+  margin:0;
+  padding:0;
+}
+.img_box{
+    width: 55px;
+    height: 55px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: 12px auto;
+    box-shadow: 0px 4px 6px #b8b8b8;
+    border: 3px solid #b2b2b2;
+
+}
+
+.img_box img{
+  width: 100%;
+  object-fit: cover;
+}
+
+ 
+
+.detail_box h3{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0e1318de;
+    margin-bottom: 4px;
+}
+.detail_box .date{
+  margin-top:7px;
+  font-weight: 600;
+  font-size:12px;
+}
+
+.detail_box span{
+
+ color:#1f1f1f;
+ font-size: 12px;
+ font-weight: 600;
+
+}
+
+.detail_box .post_sec{
+  margin-top:7px;
+  font-weight: 600;
+  font-size:13px;
+}
+
+ 
+
+.description_box{
+  color:#5f5f5f;
+}
+
+ 
+
+.panel_box [class^="col-"]{
+  padding:0 15px !important;
+}
+
+ 
+
+@media(max-width: 991px){
+.img_box{
+  margin-bottom: 15px;
+}  
+.description_box{
+  margin-top:15px;
+}
+
+ 
+
+}
+
+ 
+
+@media(min-width: 992px){
+.panel_box .col-md-2{
+  width:7% !important;
+}
+
+.panel_box .col-md-3{
+    width: 21% !important;
+}
+
+
+}
+
+@media(max-width:767px){
+
+.img_box{
+  margin-left:5px !important;
+}	
+	
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-410</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">0d9dc824-f706-4eb5-a41b-17e162a10798</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-410, ADMIN-1645029823-410</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">41000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Department</title></head>       
+<body>             
+<!-- header -->
+<!-- Main -->
+<!--<div class="container mt-15">-->
+<!--<div class="col-md-12">-->
+<div class="clearfix"></div>
+
+<div class="clearfix"></div>
+
+	<div class="row top15">
+		<div class="col-md-12">
+			<div class="panel panel-default shadow2 media-box-height">
+				<div class="panel-body pt-5">
+					<div class="col-md-12">
+						<div class="row mt-10">
+							<h3 class="head_border panel-heading-bg-txt-clr floating" data-localize="Topics"><span>Topic</span></h3>   
+							<h4 class="topic-department-name floating"><span>Department:</span> <span id="deptName"></span></h4>           
+
+							<div class="col-md-12 topic-department-box">
+								<div class="row">
+									<div class="topic-department-category-filter-box">
+										<div class="topic-department-category">
+											<div class="form-group">
+												<label data-localize="Category">Category:</label>
+												<div class="single_row_control ajusting_lgt">
+													<select class="form-control form-control2 ddlCategoryList">
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="topic-department-filter">
+											<div class="form-group">
+												<input type="text" id="myInput" placeholder="Search...">
+
+												<button type="button" class="btn btn-outline-primary btn-sm" id="btnAddNewTopic" data-localize="AddTopic">Add Topic</button>
+											</div>
+										</div>
+									</div>
+									<div class="row mt-30">
+										<div class="col-md-12" id="topicsListItems">
+										</div>
+									</div>
+								</div>
+							</div>            
+						</div>
+					</div>                             
+				</div>	
+			</div>
+			<button type="button" class="btn btn-outline-secondary" id="btnGoBack"> <label data-localize="Close">Close</label> </button>
+		</div>
+	</div>
+<!--</div>-->
+<!--</div>-->
+<div class="clearfix"></div>
+<!-- /Main -->
+
+	</body>
+</html>

@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Titan</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Projects/ViewAllProjects/assets/css/styles.css">
+		
+
+       <script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+       <script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+          <script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+         <script type="text/javascript" src="_layouts/15/autofill.js"></script> 
+	
+		
+			<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+		<!--	<script type="text/javascript" src='../SiteAssets/Projects/ViewAllProjects/assets/MyNewTable.js'></script>-->
+		<script src='../SiteAssets/Projects/ViewAllProjects/ViewProjectGrid.js'></script>
+<style>
+
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+	min-width:901px !important;	
+}
+
+@media all and (max-width: 400px) and (min-width: 320px){
+
+#queryMyProject{
+	
+	width:auto !important;
+	
+}
+
+#queryMyProject {
+ 
+   float: auto !important;
+
+}   
+
+.project-top-panel-box-istad button{
+
+  padding: 4.3px 5px !important;
+  font-size: 12px !important;
+
+}
+	
+}
+
+#project-filter .modal-header button{
+ 
+ min-width:1.4em !important;	
+
+}
+
+#Managerto #Managerto_TopSpan{
+
+ 	width:100% !important;
+ 	padding:5.8px 25px 5.8px 0px !important;
+}
+
+#Managerto #Managerto_TopSpan_EditorInput{
+ border:none !important;	
+}
+
+#txtFilterStatus{
+  width:100% !important;	
+}
+
+#project-filter button.close{
+
+  z-index:999 !important;	
+  min-width: 1em !important;
+  background: #fff !important;
+  border-radius: 50%;	
+  color:#666 !important; 
+  text-align:center;
+  line-height:24px !important;
+}
+</style>		
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-329</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">e0af58ed-5aa2-4794-876a-fcf21d0023f4</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-329, ADMIN-1645029823-329</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Projects
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="scrollbar-panel chip-panel">
+											<div class="chip-box" id="projectChip">
+												
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+										<div class="form-group custom-form-group search-box">
+											<!--<input class="form-control" type="text" name="" placeholder="Search">-->
+											<input type="text" id="queryMyProject" onkeyup="sorterTableMyProjectList.search('queryMyProject')" placeholder="Search...">
+
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+										<div class="text-right project-btn-position">
+											
+											<button type="button" class="btn btn-outline-primary" id="CreateProject">New Project</button>
+											<button type="button" class="btn custom-btn w-100 ml-4" data-toggle="modal" data-target="#project-filter">Filter</button>
+										</div>
+									</div>
+								</div>
+								<!--<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="table-responsive project-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table">
+											    <thead>
+											        <tr>
+											        	<th class="text-left border-bottom-0">Project Name</th>
+												        <th class="text-center border-bottom-0">Ref Code</th>
+												        <th class="text-center border-bottom-0">Department</th>
+												        <th class="text-center border-bottom-0">Location</th>
+												        <th class="text-center border-bottom-0">Customer</th>
+												        <th class="text-center border-bottom-0">Manager</th>
+												        <th class="text-center border-bottom-0">Status</th>
+												        <th class="text-center border-bottom-0"></th>
+											        </tr>
+											    </thead>
+											    <tbody>
+											        <tr class="text-center">
+											        	<td class="white-space-nowrap text-left">Titan</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		P001
+												        	</div>
+												        </td>
+												        <td><div class="project-table-ellipsis-2">IT</div></td>
+												        <td><div class="project-table-ellipsis-2">Gurgon</div></td>
+												        <td><div class="project-table-ellipsis-2">ABC company</div></td>
+												        <td class="text-center">
+												        	<div class="project-table-ellipsis-2">Ashish</div>
+												        </td>
+												        <td>Live</td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>
+													<tr class="text-center">
+											        	<td class="white-space-nowrap text-left">Titan</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		P002
+												        	</div>
+												        </td>
+												        <td><div class="project-table-ellipsis-2">Marketing</div></td>
+												        <td><div class="project-table-ellipsis-2">Gurgon</div></td>
+												        <td><div class="project-table-ellipsis-2">ABC company</div></td>
+												        <td class="text-center">
+												        	<div class="project-table-ellipsis-2">Depenkar</div>
+												        </td>
+												        <td class="color-orange">On Hold</td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>
+													<tr class="text-center">
+											        	<td class="white-space-nowrap text-left">Titan</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		P001
+												        	</div>
+												        </td>
+												        <td><div class="project-table-ellipsis-2">IT</div></td>
+												        <td><div class="project-table-ellipsis-2">Gurgon</div></td>
+												        <td><div class="project-table-ellipsis-2">ABC company</div></td>
+												        <td class="text-center">
+												        	<div class="project-table-ellipsis-2">Kalpana</div>
+												        </td>
+												        <td class="color-red">Terminated</td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>
+													<tr class="text-center">
+											        	<td class="white-space-nowrap text-left">Titan</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		P001
+												        	</div>
+												        </td>
+												        <td><div class="project-table-ellipsis-2">IT</div></td>
+												        <td><div class="project-table-ellipsis-2">Gurgon</div></td>
+												        <td><div class="project-table-ellipsis-2">ABC company</div></td>
+												        <td class="text-center">
+												        	<div class="project-table-ellipsis-2">Kalpana</div>
+												        </td>
+												        <td class="color-green">Completed</td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>
+													<tr class="text-center">
+											        	<td class="white-space-nowrap text-left">Titan</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		P004
+												        	</div>
+												        </td>
+												        <td><div class="project-table-ellipsis-2">IT</div></td>
+												        <td><div class="project-table-ellipsis-2">Gurgon</div></td>
+												        <td><div class="project-table-ellipsis-2">ABC company</div></td>
+												        <td class="text-center">
+												        	<div class="project-table-ellipsis-2">Kalpana</div>
+												        </td>
+												        <td>Live</td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+									<div class="col-xs-12 text-center project-footer-btn-group">
+									</div>
+								</div>-->
+								
+								
+								<div class="row clearfix margin10">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="body">
+                        <div class="table-responsive">
+                            <!--<table id="myFirstTable" class="table table-bordered table-striped table-hover js-basic-example dataTable"></table>-->
+                            <div id="tablewrapper">
+                                <div id="tableheader" style="height: auto !important;">
+                                    <div class="search" style="display:none;">
+
+                                    </div>
+                                    <div>
+                                        <span class="details">
+                                            <div style="display:none;">Records  <span id="startrecordMyProject"></span>-<span id="endrecordMyProject"></span> PagesOf  <span id="totalrecordsMyProject"></span></div>
+                                            <div style="display:none;"><a href="javascript:sorterTableMyProjectList.reset()">Reset </a></div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <div class="mrg-top-10m  btm10 container">
+                                    <div class="row">
+                                        <select class="form-control" style="width:200px;font-size: 13px; float:left" id="columnsMyProject" onchange="sorterTableMyProjectList.search('query')"></select>
+                                        <input type="text" id="queryMyProject" onkeyup="sorterTableMyProjectList.search('queryMyProject')" placeholder="Search..." class="doc-search" style="width:200px;margin-left:4px; font-size: 13px;padding:8px 5px !Important; float:left;" />
+                                    </div>
+                                </div> -->
+                                <div>
+
+                                    <div id='mainTablearea' class='table-responsive'><table cellpadding='0' cellspacing='0' border='1' id='tableTempProjects' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'></div>
+                                    <thead class='panel-heading '>
+                                        <tr>
+                                        
+                                        	<th class="text-left border-bottom-0"><h6 data-localize="Project Name">Project Name</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Ref Code">Ref Code</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Department">Department</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Location">Location</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Customer">Customer</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Manager">Manager</h6></th>
+												        <th class="text-center border-bottom-0"><h6 data-localize="Status">Status</h6></th>
+												        <th class="text-center border-bottom-0" data-localize="Action">Action</th>
+
+                                        
+                                        
+                                        
+                                        
+                                          <!--  <th><h6 data-localize="ProjectCode">Project Code</h6></th>
+                                            <th><h6 data-localize="ProjectName">Project Name</h6></th>
+                                            <th><h6 data-localize="ProjectManager">Project Manager</h6></th>
+                                            <th><h6 data-localize="Department">Department</h6></th>
+                                            <th><h6 data-localize="PlannedStartDate">Planned Start Date</h6></th>
+                                            <th><h6 data-localize="PlannedEndDate">Planned End Date</h6></th>
+                                            <th><h6 data-localize="Status">Status</h6></th>
+                                            <th><h6 data-localize="Customer">Customer</h6></th>
+                                            <th><h6 data-localize="ActualStartDate">Actual Start Date</h6></th>
+                                            <th><h6 data-localize="ActualEndDate">Actual End Date</h6></th>
+                                            <th class='nosort' style='max-width:62px;width:62px'><h6 data-localize="Action">Action</h6></th>-->
+                                        </tr>
+                                    </thead><tbody class='panel' id="mainDivAreaOffice365"></tbody></table>
+                                    <div style='text-align: center;font-size:14px;display:none' id="norecordFoundMyProject" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+                                </div>
+                                <div id="tablefooterMyProject" style="margin-bottom: 10px;">
+                                    <div id="tablenavMyProject">
+                                        <div>
+                                            <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(-1,true)" />
+                                            <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(-1)" />
+                                            <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(1)" />
+                                            <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableMyProjectList.move(1,true)" />
+                                        </div>
+                                        <div>
+                                            <select id="pagedropdownMyProject"></select>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:sorterTableMyProjectList.showall()" data-localize="ViewAll">ViewAll </a>
+                                        </div>
+                                    </div>
+                                    <div id="tablelocationMyProject">
+                                        <div>
+                                            <span data-localize="LinesPerPage">Lines Per Page</span>
+                                            <select class="myListPagingValue" onchange="sorterTableMyProjectList.size(this.value)">
+                                                <option value="5">5</option>
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </div>
+                                        <div class=""><span data-localize="Page">Page</span><span id="currentpageMyProject"></span><span data-localize="Of">of</span><span id="totalpagesMyProject"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+								
+								
+								
+								
+								
+								
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		  <!-- Appeoval filter Modal -->
+		<div class="modal fade" id="project-filter" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  	<div class="modal-content ">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body project-inbox-istab">
+						<div class="row">
+							<div class="col-md-4 col-sm-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Department:</label>
+									 <select  class="form-control" id="txtFilterDepartment"></select>		
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Location:</label>
+									<select class="form-control" id="officeLocation">
+										<option>Gurgaon</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="col-md-4 col-sm-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Customer:</label>
+										<select class="form-control" id="Clientid">
+																		
+																	</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Status:</label>
+									 <select name="select6" class="form-control" id="txtFilterStatus">
+                                         <option>Live</option>
+                                         <option>All</option>
+                                         <option>OnHold</option>
+                                         <option>Terminated</option>
+                                         <option>Completed</option>
+                                    </select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Manager:</label>
+									<div id="Managerto"></div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer project-modal-footer">
+				    <button type="button" class="btn custom-btn mr-8" data-dismiss="modal" onclick="MutipleBaseFilterOnOutBox()">Apply</button>
+						<button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" onclick="ClearFilterForOutbox();">Clear</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+<input id="hdnIsProjectAdmin" type="hidden" value="false">
+
+		<script src="../SiteAssets/Projects/ViewAllProjects/assets/edb0de374a.js"></script>
+	</body>
+</html>

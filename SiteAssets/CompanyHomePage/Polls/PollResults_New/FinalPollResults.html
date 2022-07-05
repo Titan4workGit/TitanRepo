@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Titan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/CompanyHomePage/Polls/ParticipatePolls_New/css/styles.css">
+
+    <script src="../SiteAssets/CompanyHomePage/Polls/PollResults_New/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.2/xlsx.core.min.js"></script>
+    <script src="../SiteAssets/CompanyHomePage/Polls/PollResults_New/tableExport.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="../SiteAssets/CompanyHomePage/Polls/PollResults_New/FinalPollResults.js"></script>
+
+    <style>
+    
+.lefbox{
+margin:0 10px;
+}	
+.participations-sticky-box{
+    z-index: 1;
+}
+.coverbox{
+	  
+	  display: -webkit-box;
+      display: -ms-flexbox;
+	  display: -webkit-flex;
+	  display: flex;
+	  align-items: center;
+
+}
+
+.coverbox h3{
+
+	margin: 0;
+	padding: 0px 15px 0 3px;
+	font-weight: 600;
+	color: #2a2a2b;
+	font-size:15px;
+}	
+
+.coverbox h4{
+
+	margin: 0;
+	padding: 0px 15px 0 3px;
+	font-weight: 600;
+	color: #2a2a2b;
+	font-size:15px;
+}	
+
+.rightbox span{
+	float:left;
+	padding:0px 3px;
+	color: #2a2a2b;
+	font-weight:600;
+	display: inline-block;
+}
+
+.rightbox span.line{
+	position: relative;
+	z-index: 0;
+	padding-left:7px;
+}
+
+.rightbox span.line:before{
+	content: ',';
+    position: absolute;
+    left: 0;
+    border: 0px;
+    display: block;
+    /* background: #000; */
+    z-index: 0;
+    font-size: 16px;
+    bottom: -1px;
+}
+ 
+.close-round{
+ cursor:pointer !important;	
+}
+ 
+.number {
+    background-color: gray !important;
+}
+
+#userModal.modal{
+ 
+ top:23% !important;	
+	
+}
+
+.participations-survey-panel li{
+
+  padding:6px 12px !important;
+
+}
+
+#FinalPollResults-filter .modal-header button{
+	
+  min-width: 1.2em !important;
+}
+
+#Participations .modal-header button{
+	
+  min-width: 1.2em !important;
+
+}
+
+#filterPeoplePicker_TopSpan{
+
+	width:100% !important;	
+}
+
+#filterPeoplePicker_TopSpan_EditorInput{
+	
+	border:none !important;	
+}  
+
+#filterPeoplePicker_TopSpan.sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled{
+
+   padding:5px 25px 5px 0px;	
+
+}
+
+#Participations .chip-box{
+	margin-top:30px;	
+}   
+
+.participations-survey-box{
+
+	max-width:360px !important;	
+}
+
+.modal-sm{
+
+ width:360px !important;
+
+}
+
+.participations-survey-panel li{
+
+  padding:10px 5px 15px 5px !important;	
+
+}
+
+.project-table{
+
+  margin-bottom:20px !important;
+
+}
+
+.survey-btn-position{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+ 
+}
+
+.survey-btn-position button.btn{
+  
+ font-size:14px !important;
+ padding:5px 3px !important;
+
+}
+
+button.close{
+
+ background-color:#fff;	
+
+}
+.close-icon{
+ top:0 !important;	
+}
+
+.ms-rtestate-field h4, h4.ms-rteElement-H4{
+
+  color:#1d6ec0 !important;	
+}
+
+@media(max-width:767px){
+
+.survey-btn-position{
+
+ -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+  justify-content:center;	
+}
+
+}
+
+@media all and (max-width: 567px) and (min-width: 320px){
+
+.participations-survey-box{
+
+	max-width:310px !important;	
+}
+
+.modal-sm{
+
+ width:310px !important;
+
+}
+.rightbox h4{
+
+	font-size:12px !important;
+	
+}
+
+.lefbox{
+
+	margin:0px 5px !important; 
+}
+
+button.w-114 {
+    
+    width: 100px !important;
+    font-size: 12px !important;
+	margin:3px !important;
+}
+
+
+button.ml-4{
+
+	margin-left:0px !important;	
+}  
+
+.number-rating .btn-scale {
+
+    min-width: 20px !important;
+    font-size:12px !important; 
+    margin-bottom:2px; 
+}  
+
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1745</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">767f45fa-0b64-45ef-9589-b3d108a7c859</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1745, ADMIN-1645029823-1745</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">174500.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box">
+                        <div class="panel-head">
+                            <h3 class="m-0">
+                                Survey: <span class="txtSurveyName"></span><span style="display:none;" id="ParticipantDisplayName"></span><span style="display:none;" id="ParticipantEmail"></span>
+                                <span style="display:none;" id="spnAudience"></span>
+                            </h3>
+                        </div>
+                        <!--Filter search options starts-->
+                        <div class="col-xs-12" id="filterResults" style="display:none;">
+                            <div class="scrollbar-panel chip-panel">
+                                <div class="chip-box">
+                                    <div class="upload-chip" id="filterDeptName"></div>
+                                    <div class="upload-chip" id="filterLoctName"></div>
+                                    <div class="upload-chip" id="filterQuesName"></div>
+                                    <div class="upload-chip" id="filterDisplayName"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Filter search options ends-->
+                        <div class="panel-body px-0 pt-8">
+                            <div class="row m-0 survey-filter-panel">
+                                <div class="col-md-7">
+                                    <div class="row m-0 survey-right-top-box survey-right-top-box-2">
+                                        <div class="col-xs-4 survey-right-time-box-one">
+                                            <div class="text-center">
+                                                <p class="m-0">Start Date</p>
+                                                <h3 class="m-0 StartDate" id=""></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 survey-right-time-box-two">
+                                            <div class="text-center">
+                                                <p class="m-0">End Date</p>
+                                                <h3 class="m-0 EndDate" id=""></h3>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 survey-right-time-box-three">
+                                            <div class="text-center">
+                                                <p class="m-0">Result Date</p>
+                                                <h3 class="m-0 ExpDate" id=""></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                	
+                                    <div class="text-right survey-btn-position">
+                                    	<button type="button" id="Organizers" class="btn custom-btn" style="float:left;">Organizers</button>
+                                        <button type="button" id="btnFilter" class="btn custom-btn w-114 organizerButtons" data-toggle="modal" style="display:none;">Filter</button>
+                                        <button type="button" id="btnParticipant" class="btn custom-btn w-114 ml-4 organizerButtons" data-toggle="modal" style="display:none;">Participations</button>
+                                        <button type="button" id="btnReport" class="btn custom-btn w-114 ml-4 is-phone-Report organizerButtons" data-toggle="modal" style="display:none;">Report</button>
+                                    </div>
+                                </div>
+                            </div>
+								<div class="col-md-12 orgList">
+                                    <!--div class="font-12 mt-16 text-right" style="font-size: 15px;font-weight: 900;">
+                                        <a href="javascript:void(0)" id="Organizers">Organizers</a>
+                                    </div-->
+                                </div>
+                            <div class="row m-0">
+                                <div class="col-md-12">
+                                    <div class="q-a-panel mt-16" id="QuestionsHTML">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Participations Survey moadl 1 -->
+    <div class="modal fade" id="userModal" role="dialog">
+        <div class="participations-survey-box scrollbar-panel modal-dialog modal-sm">
+            <ul class="participations-survey-panel" id="usersList">
+                <li class="text-right participations-sticky-box px-0">
+                    <span class="glyphicon glyphicon-remove close-round" data-dismiss="modal"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Participations Survey moadl 2 -->
+    <div class="modal fade" id="participations2" role="dialog">
+        <div class="participations-survey-box scrollbar-panel modal-dialog modal-sm">
+            <ul class="participations-survey-panel">
+                <li class="text-right participations-sticky-box px-0">
+                    <span class="glyphicon glyphicon-remove close-round" data-dismiss="modal"></span>
+                </li>
+                <li>Tom Patrick</li>
+                <li>Neha Kaushik</li>
+                <li>Steve Davis</li>
+                <li>Angela Parakar</li>
+                <li>James Perry</li>
+                <li>Monica Geller</li>
+                <li>John Davis</li>
+                <li>Tom Patrick</li>
+                <li>Neha Kaushik</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Participations Survey moadl 3 -->
+    <div class="modal fade" id="participations3" role="dialog">
+        <div class="participations-survey-box scrollbar-panel modal-dialog modal-sm">
+            <ul class="participations-survey-panel">
+                <li class="text-right participations-sticky-box px-0">
+                    <span class="glyphicon glyphicon-remove close-round" data-dismiss="modal"></span>
+                </li>
+                <li>Tom Patrick</li>
+                <li>Neha Kaushik</li>
+                <li>Steve Davis</li>
+                <li>Angela Parakar</li>
+                <li>Monica Geller</li>
+                <li>John Davis</li>
+                <li>Tom Patrick</li>
+                <li>Neha Kaushik</li>
+                <li>Steve Davis</li>
+                <li>Angela Parakar</li>
+                <li>James Perry</li>
+                <li>Monica Geller</li>
+                <li>John Davis</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FinalPollResults filter Modal -->
+    <div id="FinalPollResults-filter" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog modal-md">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title">Survey</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+                            <div class="form-group custom-form-group">
+                                <label>Department:</label>
+                                <select class="form-control" id="ddlDepartments">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+                            <div class="form-group custom-form-group">
+                                <label>Location:</label>
+                                <select class="form-control" id="ddlOffices">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+                            <div class="form-group custom-form-group">
+                                <label>Question:</label>
+                                <select class="form-control" id="ddlQuestions">
+                                    <option value="All">All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+                            <div class="form-group custom-form-group">
+                                <label>User:</label>
+                                <div id="tempDivPPicker">
+                                    <span id="filterPeoplePicker"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer survey-modal-footer">
+                    <button type="button" class="btn custom-btn mr-8" data-dismiss="modal" id="btnApply">Apply</button>
+                    <button type="button" class="btn custom-btn-two-cancel" id="btnClear">Clear</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Report Modal -->
+    <div id="Report" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title">Survey Report</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row m-0 survey-filter-panel">
+                        <div class="col-md-9">
+                            <div class="row m-0 survey-right-top-box survey-right-top-box-2">
+                                <div class="col-xs-4 survey-right-time-box-one">
+                                    <div class="text-center">
+                                        <p class="m-0">Start Date</p>
+                                        <h3 class="m-0 StartDate"></h3>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 survey-right-time-box-two">
+                                    <div class="text-center">
+                                        <p class="m-0">End Date</p>
+                                        <h3 class="m-0 EndDate"></h3>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 survey-right-time-box-three">
+                                    <div class="text-center">
+                                        <p class="m-0">Result Date</p>
+                                        <h3 class="m-0 ExpDate"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="text-right survey-btn-position">
+                                <button type="button" class="btn custom-btn w-114 ml-4" id="btnExportToExcel">Export</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-xs-12">
+                            <div class="table-responsive project-table Report-table-panel scrollbar-panel">
+
+
+                                <table class="table mb-0 custom-table Report-table" id="tblPollAnswers">
+                                    <thead>
+                                        <tr style="display:none;">
+                                            <th>Survey: </th>
+                                            <th class="txtSurveyName"> </th>
+                                        </tr>
+
+                                        <tr style="display:none;">
+                                            <td>Start Date:</td>
+                                            <td class="StartDate"></td>
+                                        </tr>
+
+                                        <tr style="display:none;">
+                                            <th>End Date: </th>
+                                            <th class="EndDate"> </th>
+                                        </tr>
+
+                                        <tr style="display:none;">
+                                            <th>Result Date: </th>
+                                            <th class="ExpDate"> </th>
+                                        </tr>
+                                        <tr style="display:none;">
+                                            <th> </th>
+                                            <th> </th>
+                                        </tr>
+
+                                        <tr>
+                                            <th class="text-left border-bottom-0 w-30">Question</th>
+                                            <th class="text-left border-bottom-0 w-15">User</th>
+                                            <th class="text-left border-bottom-0">Department</th>
+                                            <th class="text-left border-bottom-0">Location</th>
+                                            <th class="text-left border-bottom-0">Designation</th>
+                                            <th class="text-left border-bottom-0">Answer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbdyAnswers"></tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--Not authorized popup starts-->
+		<div class="modal bootstrap-dialog type-primary fade size-normal in" role="dialog" aria-hidden="true" id="modalUnAuthorized" tabindex="-1" style="display:none; z-index: 1050; padding-left: 0px;">
+		    <div class="modal-dialog">
+		    <div class="modal-content">
+		        <div class="modal-header">
+		        <div class="bootstrap-dialog-header">
+		            <div class="bootstrap-dialog-close-button" style="display: none;">
+		            <button class="close">×</button>
+		            </div>
+		            <div class="bootstrap-dialog-title" id="2e91eaf6-4518-4c04-a694-f5bacd7da40f_title">Information</div>
+		            </div>
+		        </div>
+		        <div class="modal-body"><div class="bootstrap-dialog-body">
+		            <div class="bootstrap-dialog-message"><h3 id="popUpBody">You are not authorized to access.</h3>
+		            </div>
+		            </div>
+		        </div>
+		        <div class="modal-footer" style="display: block;">
+		        <div class="bootstrap-dialog-footer">
+		            <div class="bootstrap-dialog-footer-buttons">
+		                <button type="button" class="btn btn-default" id="btnPopupOk">OK</button>
+		            </div>
+		            </div>
+		        </div>
+		        </div>
+		    </div>
+		</div>
+<!--Not authorized popup starts-->
+    <!-- Participations Modal -->
+    <div id="Participations" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-md">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title">Participations</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row m-0 survey-filter-panel">
+                        <div class="col-md-12">
+                            <div class="row m-0 survey-right-top-box survey-right-top-box-2">
+                                <div class="col-xs-4 survey-right-time-box-one">
+                                    <div class="text-center">
+                                        <p class="m-0">Total Audience</p>
+                                        <h3 class="m-0" id="totalAudience">198</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 survey-right-time-box-two">
+                                    <div class="text-center">
+                                        <p class="m-0">Participated</p>
+                                        <h3 class="m-0" id="totalParticipated"></h3>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4 survey-right-time-box-three">
+                                    <div class="text-center">
+                                        <p class="m-0">Participation</p>
+                                        <h3 class="m-0" id="percentageParti"></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                            <div class="scrollbar-panel chip-panel">
+                                <div class="chip-box">
+                                    <div class="upload-chip" id="txtAudience"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="row m-0">
+                        <div class="col-xs-12">
+                            <div class="table-responsive project-table Participation-table-panel scrollbar-panel">
+                                <table class="table mb-0 custom-table Participation-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left border-bottom-0">User</th>
+                                            <th class="text-left border-bottom-0">Participation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbdyParticipant"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        var datefield = document.createElement("input")
+        datefield.setAttribute("type", "date")
+        if (datefield.type != "date") { //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+            document.write('<link href="assets/css/date-picker.css" rel="stylesheet" type="text/css" />\n')
+            document.write('<script src="assets/js/datepicker-jquery.min.js"><\/script>\n')
+            document.write('<script src="assets/js/datepicker-jquery-ui.min.js"><\/script>\n')
+        }
+    </script>
+
+    <script>
+        if (datefield.type != "date") { //if browser doesn't support input type="date", initialize date picker widget:
+            jQuery(function ($) { //on document.ready From
+                $('#surveyStart').datepicker();
+                $('#surveyEnd').datepicker();
+                $('#surveyExpiry').datepicker();
+            })
+        }
+    </script>
+</body>
+</html>

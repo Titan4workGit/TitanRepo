@@ -1,0 +1,209 @@
+﻿<script type="text/javascript">
+
+function showhide(that) {
+    if (that.value == "Completion") {
+        document.getElementById("compDate").style.display = "block";
+    } else {
+        document.getElementById("compDate").style.display = "none";
+    }
+}
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Projects/TasksManagement/Styles.css"/>
+<script src="../SiteAssets/Projects/TasksManagement/ManageTasks.js" type="text/javascript"></script>
+
+<div class="container mt-15">
+	<div class="clearfix"></div>
+		<div class="row top15">
+			<div class="panel panel-default shadow2">
+				  <div class="panel-heading  panel-head-new">
+					  <div class="panel-title">
+					  <h4 class="h4-color">
+						<span class="head-text">Create Task</span>
+					  </h4>
+					  </div>
+				  </div>
+				  <div class="panel-body col-md-8">
+					<div class="col-sm-12 padd-none">
+					   <div class="col-sm-6 col-xs-12">
+					   <div class="form-group">
+					      <select id="TaskType">
+					      	<option  value="0"> - Select - </option>
+					        <option  value="1">General</option>
+					        <option  value="2">Private Chanel</option>
+					        <option  value="3">Public Chanel</option>
+					        <option  value="4">Project</option>
+					      </select>
+				          <label for="select" class="control-label">Type</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    <div class="col-sm-6 col-xs-12">
+					    <div class="form-group">
+					      <select id="ProjectChanel">
+					      	<option>Select</option>
+					        <option>Project Name</option>
+					        <option>Channel Name</option>
+					      </select>
+					      <label for="select" class="control-label">Tag a Project/Channel</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-12 col-xs-12">
+					    <div class="form-group">
+					      <input required="" for="" id="TaskName" maxlength="100">					    
+						  <label for="input" id="TaskName" class="control-label">Task Name</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-12 col-xs-12">
+					    <div class="form-group">
+					      <textarea required="" rows="4"></textarea>
+					      <label id="Details" for="textarea" class="control-label">Details</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-6 col-xs-12">
+					    <div class="form-group">
+					      <input type="date" required="">
+					      <label id="DueDate" for="input" class="control-label">Due Date</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-12 col-xs-12">
+					    <div class="form-group">
+					      <select id="AssignedTo">
+					      	<option>- Select -</option>
+					      </select>
+					      <label for="select" class="control-label">Assigned to</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-6 col-xs-12">
+					    <div class="form-group">
+					      <select id="Priority">
+					      	<option>- Select -</option>
+					        <option>High</option>
+					        <option>Medium</option>
+					        <option>Low</option>
+					      </select>
+					      <label for="select" class="control-label">Priority</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-6 col-xs-12">
+					    <div class="form-group">
+					      <select id="Status" onchange="showhide(this);">
+					      	<option>- Select -</option>
+					        <option>Open</option>
+					        <option>Hold</option>
+					        <option value="Completion">Complete</option>
+					        <option>Close Task</option>
+					        <option>Cancel Task</option>
+					      </select>
+					      <label for="select" class="control-label">Status</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    <div class="col-sm-6 col-xs-12">
+					    <div class="form-group">
+					          <select id="TaskCompletion" onchange="showhide(this);">
+					            <option> - Select -</option>
+					            <option>20%</option>
+					            <option>40%</option>
+					            <option>60%</option>
+					            <option>80%</option>
+					            <option value="Completion">100%</option>
+					          </select>
+					          <label for="select" class="control-label">Completion %</label><i class="bar"></i>
+					    </div>
+					    </div>
+					    </div>
+					    <div class="col-sm-12 padd-none">
+					    <div class="col-sm-6 col-xs-12">
+					    <div id="compDate" style="display: none;">  	
+					        <div class="form-group">
+					          <input id="CompletionDate" type="date" required="">
+					          <label for="input" class="control-label">Completion Date</label><i class="bar"></i>
+					        </div>
+					    </div>
+					    </div>
+					    </div>
+    				</div>
+
+			<div class="panel-body col-md-4">
+				<div class="col-md-12 mb-20 pt-5 pb-10 shadow3 divTaskComments" style="display:none;">
+				 <div class="form-group attachments-margin">
+			      	<label for="input" class="label-attachments">Comments</label>
+				        <textarea id="Comments" required="" rows="3"></textarea>
+				        <a id="SaveComments" style="cursor:pointer;"><i class="fa fa-paper-plane" style=" position: absolute; top: 0px; right: 0;"></i></a>
+				        <i class="bar"></i>
+			   				</div>
+			    				<ul class="comment-tasks ulCommentTasks">
+			                       <!-- <li class="left clearfix">
+			                            <div class="clearfix">
+			                                <div class="header">
+			                                    <strong class="primary-font">Angela Parker</strong>
+			                                </div>
+			                                <p>
+			                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare
+			                                    dolor, quis ullamcorper ligula sodales.
+			                                </p>
+			                                <small class="pull-right text-muted">09:33</small>
+			                                    <small class="text-muted">25-04-2019</small>
+			                            </div>
+			                        </li>-->
+                    			</ul>
+						</div>
+				<div class="col-md-12 pt-5 shadow3">             
+				   <div class="form-group attachments-margin">
+						  <label for="input" class="label-attachments">Attachments</label>
+						  <input type="file" required="">
+						  <div class="table-responsive" style="border:none !important;">
+							  <table class="table table-custom">
+								<tbody>
+								  <tr>
+									<td style="border:none !important;">John.docx <i class="fa fa-close pull-right button-cross-attach"></i></td>
+								  </tr>
+								  <tr>
+									<td>Mary.png  <i class="fa fa-close pull-right button-cross-attach"></i></td>
+								  </tr>
+								  <tr>
+									<td>July.pdf  <i class="fa fa-close pull-right button-cross-attach"></i></td>
+								  </tr>
+								</tbody>
+							  </table>
+						  </div>
+				   </div>
+				</div>
+			</div>
+
+			<div class="clearfix"></div>
+				<div class="button-container">
+					<button id="Submit" type="button" class="button"><span>Submit</span></button>
+				</div>
+			</div>
+		</div>
+
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-487</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">73d87ad9-d9e1-450d-ab0c-6e783a4b14a9</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-487, ADMIN-1645029823-487</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">48700.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

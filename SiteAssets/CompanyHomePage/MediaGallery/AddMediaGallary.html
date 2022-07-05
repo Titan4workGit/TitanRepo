@@ -1,0 +1,742 @@
+﻿
+<style>
+
+  
+    .pdngbtm10 {
+        padding-bottom: 10px;
+    }
+
+ 
+
+
+
+   
+
+       
+        .ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical, .ms-webpart-cell-horizontal {
+            display: block !important;
+        }
+
+        .container {
+            padding-left: 15px !important;
+        }
+    }
+
+    .ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical, .ms-webpart-cell-horizontal {
+        display: block !important;
+    }
+
+    #page-inner {
+        margin: 0px !important;
+    }
+
+    .table-width {
+        width: 100% !important;
+        table-layout: fixed;
+    }
+
+    table.dataTable thead > tr > th, table.dataTable thead > tr > td {
+        padding-right: 10px !important;
+    }
+
+    #page-wrapper {
+        margin: 0 !important;
+        padding: 0px !important;
+    }
+
+	.ms-helperText{
+	    top: 0px !Important;
+	    left: 0px !important;
+	}
+	
+    input.sp-peoplepicker-editorInput[type=text] {
+        border: 0px !important;
+        padding:0px 0px 0px 0px !important;
+    }
+
+    .blue-color {
+        color: #1d6ec0 !important;
+    }
+
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    span.multiselect-native-select {
+        position: relative;
+    }
+
+        span.multiselect-native-select select {
+            border: 0 !important;
+            clip: rect(0 0 0 0) !important;
+            height: 1px !important;
+            margin: -1px -1px -1px -3px !important;
+            overflow: hidden !important;
+            padding: 0 !important;
+            position: absolute !important;
+            width: 1px !important;
+            left: 50%;
+            top: 30px;
+        }
+
+    .multiselect-container {
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .multiselect-container .input-group {
+            margin: 5px;
+        }
+
+        .multiselect-container > li {
+            padding: 0;
+        }
+
+            .multiselect-container > li > a.multiselect-all label {
+                font-weight: 700;
+            }
+
+            .multiselect-container > li.multiselect-group label {
+                margin: 0;
+                padding: 3px 20px 3px 20px;
+                height: 100%;
+                font-weight: 700;
+            }
+
+            .multiselect-container > li.multiselect-group-clickable label {
+                cursor: pointer;
+            }
+
+            .multiselect-container > li > a {
+                padding: 0;
+            }
+
+                .multiselect-container > li > a > label {
+                    margin: 0;
+                    height: 100%;
+                    cursor: pointer;
+                    font-weight: 400;
+                    padding: 3px 0 3px 30px;
+                }
+
+                    .multiselect-container > li > a > label.radio, .multiselect-container > li > a > label.checkbox {
+                        margin: 0;
+                    }
+
+                    .multiselect-container > li > a > label > input[type=checkbox] {
+                        margin-bottom: 5px;
+                    }
+
+    .btn-group > .btn-group:nth-child(2) > .multiselect.btn {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+        padding: 3px 20px 3px 40px;
+    }
+
+    .form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+        margin-left: -20px;
+        margin-right: 0;
+    }
+
+    .panel-heading .accordion-toggle:after {
+        /* symbol for "opening" panels */
+        font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+        /* content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+       /* float: right;   adjust as needed */
+        /*color: #ffffff;*/ /* adjust as needed */
+    }
+
+    .panel-heading .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\e080"; /* adjust as needed, taken from bootstrap.css */
+    }
+
+    #page-wrapper {
+        margin: 0 0 0 0px;
+    }
+
+    #tablefooterMyDocuments {
+        height: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tablenavMyDocuments {
+        float: left;
+    }
+
+        #tablenavMyDocuments img {
+            cursor: pointer;
+        }
+
+        #tablenavMyDocuments div {
+            float: left;
+            margin-right: 15px;
+        }
+        
+        
+        
+        #tablenavMyDepartment {
+        float: left;
+    }
+
+        #tablenavMyDepartment img {
+            cursor: pointer;
+        }
+
+        #tablenavMyDepartment div {
+            float: left;
+            margin-right: 15px;
+        }
+
+
+
+  #tablelocationMyDepartment {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationMyDepartment select {
+            margin-right: 3px;
+        }
+
+        #tablelocationMyDepartment div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    #tablelocationMyDocuments {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationMyDocuments select {
+            margin-right: 3px;
+        }
+
+        #tablelocationMyDocuments div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    .page {
+        margin-top: 2px;
+        font-style: italic;
+    }
+
+    #selectedrowMyDocuments td {
+        /* background:#c6d5e1 */
+    }
+
+    #tablefooter {
+        margin-bottom: 10px;
+    }
+
+    #tablefooterSharedWithMe {
+        height: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #tablenavSharedWithMe {
+        float: left;
+    }
+
+        #tablenavSharedWithMe img {
+            cursor: pointer;
+        }
+
+        #tablenavSharedWithMe div {
+            float: left;
+            margin-right: 15px;
+        }
+
+    #tablelocationSharedWithMe {
+        float: right;
+        font-size: 12px;
+    }
+
+        #tablelocationSharedWithMe select {
+            margin-right: 3px;
+        }
+
+        #tablelocationSharedWithMe div {
+            float: left;
+            margin-left: 15px;
+        }
+
+    .dropzone2 {
+        color: #333 !important;
+        line-height: 42px;
+        vertical-align: middle;
+    }
+
+    .divDocumetProgressStyle {
+        /*  overflow: hidden;*/
+        height: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    }
+
+    .divInsideDOcumentProgressStyle {
+        float: left;
+        width: 0;
+        height: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        background-color: #5cb85c !important;
+        /* background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);*/
+        /*-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+        box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+        -webkit-transition: width .6s ease;
+        transition: width .6s ease;
+        -webkit-background-size: 40px 40px; */
+    }
+</style>
+
+
+<style>
+    /*right click*/
+    .context-menu ul {
+        z-index: 1000;
+        position: absolute;
+        overflow: hidden;
+        border: 1px solid #CCC;
+        white-space: nowrap;
+        font-family: sans-serif;
+        background: #FFF;
+        color: #333;
+        border-radius: 5px;
+        padding: 0;
+    }
+        /* Each of the items in the list */
+        .context-menu ul li {
+            padding: 8px 12px;
+            cursor: pointer;
+            list-style-type: none;
+        }
+
+            .context-menu ul li:hover {
+                background-color: #DEF;
+            }
+</style>
+
+
+<div id="page-wrapper" class="paddtop0">
+    <div id="page-inner" style="min-height:auto;">
+        
+        <!-- /. ROW  -->
+        <div class="col-md-12">
+            <div class="row">
+              
+                <!--Tab Content-->
+                <div id="myTabContent" class="tab-content">
+                    <div class="row ">
+                        <div class="tab-pane fade active in" id="home">
+                            <div class="col-lg-12">
+                                
+
+                                <!--Modal-->
+                                <div class="row" >
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <!-- Shared me-->
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default doc-resp-cls" style="margin-bottom:10px;">
+                                                <div class="panel-heading panel-head-4 my-doc-res-title">
+                                                    <h4 class="panel-title h4-color">
+                                                        <a class="accordion-toggle doc-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                            <span class="glyphicon glyphicon-user"></span><label>Media Gallery</label>
+                                                        </a>
+
+                                                      
+                                                    </h4>
+
+                                                </div>
+                                                <!--<div id="collapseOne" class="panel-collapse collapse in"> -->
+                                                    <div class="container mydoc-res-container">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class=" ">
+                                                                    <div id="tablewrapper">
+                                                                        <button type="button" class="btn btn-outline-success" id='MediaGallery_Add' value='Reload' style=" margin-top: 10px;margin-bottom: 10px;">Add New Album</button>
+                                                                        <button type="button" class="btn btn-outline-success" id='btnMyDOcumentReload' value='Reload'style=" margin-top: 10px;margin-bottom: 10px;">Refresh</button>
+     
+                                                                        
+		                                                                <div class="row">
+	                                           		<div class="col-md-12" id="myDocumentsIframe">
+	                                           				
+	
+		                                                              </div>
+																	  
+																	  
+		                                                              </div>
+		
+                                                                   
+                                                                            
+                                                                        
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        
+                                           
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- Shared me-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Tab Content-->
+    </div>
+</div>
+
+
+<script>
+
+$(document).ready(function () {
+
+
+   ValidateUser();//Validate Use for add new album according to Media  Webpart..
+   
+   userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+
+  myOwnDocumentsUrl=titanForWork.getQueryStringParameter("CompanySiteUrl") +"/MediaGallery/Forms/AllItems.aspx"; 
+  $('#myDocumentsIframe').append('<iframe width="100%" id="viewMyDocuments" style="min-height:950px;padding-top:0px" src="' + myOwnDocumentsUrl + '"></iframe>');
+ 
+ AddOnClientClickAndPopup()
+ 
+           
+
+ 
+ 
+ InitializationMediaSlider();
+ 
+ 
+  $('#btnMyDOcumentReload').click(function () 
+    {
+        $('#myDocumentsIframe').html('');
+        $('#myDocumentsIframe').append('<iframe width="100%" id="viewMyDocuments" style="min-height:950px;padding-top:0px" src="' + myOwnDocumentsUrl + '"></iframe>');
+
+    });
+
+ 
+ 
+ 
+ 
+ 
+ 	$('.btnAddNewAlbum').click(function()
+	{
+	  debugger;
+
+   var txtNewAlbum=$('#txtNewAlbum').val();
+	     var txtNewShortNote=$('#txtShortNote').val();
+	     if(txtNewAlbum.trim().length<4)
+	     {
+	       alert('Please enter at least 4 characters for album name.')
+	       return false;
+	     }
+	     if(txtNewShortNote.trim().length==0)
+	     {
+	       alert('Please enter short description.')
+	       return false;
+	     }
+	     if(existingAlbumArrayList.indexOf(txtNewAlbum.trim().toLowerCase())==-1)
+	     {
+	       NewAlbumFolder(currentAlbumSiteUrl,txtNewAlbum.trim());
+	       
+	       $('#myDocumentsIframe').html('');
+        $('#myDocumentsIframe').append('<iframe width="100%" id="viewMyDocuments" style="min-height:950px;padding-top:0px" src="' + myOwnDocumentsUrl + '"></iframe>');
+
+	     }
+	     else
+	     {
+	       alert("Album is already exist.");
+	     }
+	
+	});
+
+ 
+ 
+ 
+  });
+  
+  
+  function AddOnClientClickAndPopup()
+{
+debugger;
+	$('#MediaGallery_Add').click(function(){
+	 $('#txtNewAlbum').val('');
+            $('#txtShortNote').val('');
+	  $('#newAlbumModelPopup').modal('show');
+	});
+}
+
+
+///////////////////Create Folder Inside DMS////////
+function NewAlbumFolder(albumSiteUrl,newSubFolder)
+{
+    var fullUrl = albumSiteUrl + "/_api/web/folders";
+    $.ajax({
+        url: fullUrl,
+        type: "POST",
+        data: JSON.stringify({
+            '__metadata': { 'type': 'SP.Folder' },
+            'ServerRelativeUrl': "MediaGallery/"+newSubFolder
+        }),
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        }, success: function (response)
+        {
+            console.log(response);
+            var txtNewAlbum=$('#txtNewAlbum').val();
+            var txtNewShortNote=$('#txtShortNote').val();
+		    var Metadata;
+		    var ListName="MediaGalleryCaption";
+		    var ItemType = GetItemTypeForListNameDetailsGroups(ListName);
+		    Metadata = {
+		        __metadata: {
+		            'type': ItemType
+		        },
+		        Title:txtNewAlbum.trim(),///Caption
+		        Description:txtNewShortNote.trim()
+		    };
+            AddItemToListWithMetadat(albumSiteUrl,ListName, Metadata);
+            BindAlbumDropDownList(albumSiteUrl);
+            alert('New album created successfully.');
+            $('#txtNewAlbum').val('');
+            $('#txtShortNote').val('');
+        },
+        error: function (response)
+        {
+            console.log('Error Folder not created'+response)
+        }
+    });
+}
+function BindAlbumDropDownList(targetSiteUrl)
+{
+    existingAlbumArrayList=[];
+	var endPointURL = targetSiteUrl+ "/_api/web/Lists/Getbytitle('MediaGallery')/rootfolder/folders?$select=Name,ServerRelativeUrl&$top=5000";
+    $.ajax({
+        url: endPointURL ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var folders = data.d.results;
+            for (var i = 0; i < folders.length; i++)
+            {
+	            if(folders[i].Name!="Forms" && folders[i].Name!="_t" && folders[i].Name!="_w")
+	            {
+	                var imageCaption=folders[i].Name;
+	                existingAlbumArrayList.push(imageCaption.toLowerCase());
+	             }
+             }
+        }, eror: function (data)
+        {
+            console.log('error');
+        }
+    });
+
+}
+
+
+
+
+function GetItemTypeForListNameDetailsGroups(ListName)
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+
+function AddItemToListWithMetadat(targetSiteUrl,ListName, Metadata)
+{
+    var dfd = $.Deferred();
+    $.ajax({
+        url: targetSiteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: true,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) 
+        {
+           $('#newAlbumModelPopup').modal('hide');
+          // InitializationMediaSlider();
+            // console.log(data);
+            dfd.resolve(data);
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+
+
+function InitializationMediaSlider()
+{
+	//var departmentID=titanForWork.getQueryStringParameter('DepartmentId');
+	//var companyID=titanForWork.getQueryStringParameter('CompanyId');
+	//if(companyID>0 && departmentID>0)
+	//{
+	//    EventMediaGallerySiteURL('Departments',departmentID);
+	//}
+	//else
+	// if(companyID>0 && departmentID!='undefined')
+	//{
+        var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+        currentAlbumSiteUrl=siteURL;
+       // GetMediaGallery(siteURL,"MediaGallery");
+       BindAlbumDropDownList(siteURL);
+	//}
+}
+
+
+var currentAlbumSiteUrl="";
+var existingAlbumArrayList=new Array();
+
+
+
+//Added by Rahul 
+// Validate users for Add new Album
+function ValidateUser() 
+{    
+    var companyId =titanForWork.getQueryStringParameter("CompanyId");
+	var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProcessApprovers')/items?$filter=WebPartName eq 'Media' and Company eq '"+companyId+"'";  
+    $.ajax({  
+		url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data)
+		{	 
+            var items = data.d.results;  
+            if (items.length > 0) 
+			{  
+             	if(items[0].Scope =="Selective" || items[0].Scope =="SELECTIVE" || items[0].Scope == null)
+             	{
+             		var userlist =items[0].ContributorsId.results;
+             		function checkuser(_userID)
+             		{
+  						return _userID== _spPageContextInfo.userId;
+					}
+					var res = userlist.filter(checkuser);
+					if(res.length>0){$("#MediaGallery_Add").show();}
+					else{$("#MediaGallery_Add").hide();}
+             	}
+             	else if (items[0].Scope =="Everyone" || items[0].Scope =="EVERYONE")
+             	{
+             		$("#MediaGallery_Add").show();
+				}
+				else
+				{
+					$("#MediaGallery_Add").hide();
+				}  			
+            }
+            else{$("#MediaGallery_Add").hide();}  
+		},
+		error: function (data) 
+		{  
+        	console.log(data);
+		}  
+    });  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+<div class="modal fade" id="newAlbumModelPopup" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="CreateNewAlbum">Create New Album</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label required" data-localize="AlbumName">Album Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="txtNewAlbum" maxlength="35">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label required" data-localize="ShortDescription">Short Description</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="txtShortNote" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center top15">
+                            <button type="button" class="btn btn-outline-success btnAddNewAlbum"><label data-localize="NewAlbum">Add Album</label></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1174</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b67f2b6f-fbf3-440c-8656-f22e95165f04</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1174, ADMIN-1645029823-1174</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">38300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

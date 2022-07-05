@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3536</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9065c45d-40d8-49d4-a4d3-85d20b930b6f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3536, ADMIN-1645029823-3536</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">353600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><body>
+
+<div action="/action_page.php">
+  <label for="fname">Request For:</label>
+  <input type="text" id="" name="fname"><br><br>
+  <label for="lname">Template:</label>
+  <select name="cars" id="TemplatedBinding">
+  </select><br><br>
+  <label for="lname">Title :</label>
+  <input type="text" id="" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</div>
+
+
+<script>
+$(document).ready(function () {
+    getSearchValuesInListFunds();
+    CreateLabesDynamically();
+})
+
+function CreateLabesDynamically() { 
+    $.ajax({
+       // async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items?$select=Title,ColumnName,ColumnType,Mandatory,DateValidation,NumberValidation,DropdownValues,Active,TemplateID/Id,TemplateID/Title&$expand=TemplateID/Id",
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+            var items = data.d.results;
+             for(var i=0; i<= items.length; i++)
+             {
+             console.log(items[i].TemplateName);
+             console.log(items[i].TemplateID.TemplateName);
+             }
+            
+        },
+        error: function (error) {
+
+        }
+    });
+
+}
+function getSearchValuesInListFunds() { 
+    $.ajax({
+        async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items?$select=Title,RequestFor,TemplateName",
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+            const items = data.d.results;
+            var uniqueOb = {}
+            var uniqueArray = items.filter(obj => !uniqueOb[obj.TemplateName] && (uniqueOb[obj.TemplateName] = true));
+            $.each(uniqueArray, function (i, value) {
+                if (value.TemplateName) {
+                    $("#TemplatedBinding").append($("<option></option>").val(value.TemplateName).html(value.TemplateName));
+                }
+            });
+            
+        },
+        error: function (error) {
+
+        }
+    });
+
+}
+
+
+</script>
+
+</body>
+</html>

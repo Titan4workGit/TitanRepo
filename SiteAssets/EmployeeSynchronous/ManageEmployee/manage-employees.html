@@ -1,0 +1,708 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Manage Employees</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/ManageEmployee/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/ManageEmployee/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/ManageEmployee/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+    <script src='../SiteAssets/EmployeeSynchronous/ManageEmployee/manage-employees.js'></script>
+
+<style>
+
+#tableTempEmp tr th,
+#tableTempEmp{
+ border:1px solid #ccc;	
+}
+
+.manage-employees-table{
+  border:none !important;	
+}
+
+#tableTempEmp tr th:last-child{
+ 	display:none;
+}
+
+.manage-employees-btn-position a.w-115{
+
+  width:auto !important;	
+}
+button.custom-btn.custom-btn-two{
+ font-size:9px !important;
+ padding:2px 5px !important;
+ border-radius:30px !important;	
+
+}
+
+button.close{
+ min-width:1em !important; 	
+ background:#fff !important;
+ line-height:26px !important;
+}
+button.close:hover{
+ color:#000 !important;
+}
+
+#tempupdatePeoplePicker span.form-control,
+#tempAddInPeoplePicker span.form-control,
+#tempChangeCompPeoplePicker span.form-control{
+ height:auto !important;
+ padding-top: 3px;
+ padding-bottom: 3px;	
+}
+
+.sp-peoplepicker-topLevel{
+ width:100% !important; 
+ border:none !important;	
+}
+
+input.sp-peoplepicker-editorInput[type=text]{
+ border: none !important;
+ width: 100%;	
+}
+
+#ChangeCompDept,
+#ChangeCompDesgn,
+#ChangeCompGpName,
+#ChangeCompny,
+#ChangeCompLoc{
+    margin-top: -5px !important;
+    margin-left: 5px;
+}
+
+@media(max-width:767px){
+	
+#UpdateEmp-box-3 .row div.col-xs-6{
+
+  width:100% !important;	
+}
+	
+#ChangeCompDept,
+#ChangeCompDesgn,
+#ChangeCompGpName,
+#ChangeCompny,
+#ChangeCompLoc{
+    margin-top: -3px !important;
+    margin-left: 5px;
+}
+	
+}
+
+@media(max-width:375px){
+
+label#lblAddCompany{
+	margin-left:0 !important;
+	margin-top:8px !important;
+}
+
+#DeltaPlaceHolderMain .col-md-12{
+	padding:0 5px;
+}
+
+#tablenav{
+
+ width:90% !important;	
+
+}	
+
+}
+
+@media(max-width:1199px){
+ .manage-employees-table{
+  border:1px solid #ccc !important;	
+}
+	
+}
+
+/**6/22/21**/
+
+
+#tablenav{
+ float:left !important;	
+ margin:5px 0 !important;
+ 
+}
+
+@media(max-width:991px){
+
+#tablenav{
+ width:100% !important; 
+}
+	
+}
+
+
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1969</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">5ca704a4-2649-4c1c-98e7-697932248814</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1969, ADMIN-1645029823-1969</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">196900.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box">
+                        <div class="panel-head">
+                            <h3 class="m-0" data-localize="Employees">
+                                Employees
+                            </h3>
+                        </div>
+                        <div class="panel-body px-0 pt-8">
+                            <div class="row m-0 mb-8">
+                                <div class="col-lg-5 col-md-4 col-sm-12">
+                                    <div class="scrollbar-panel chip-panel">
+                                        <div class="chip-box">
+                                            <div class="upload-chip hideChip" id="CompFilterResult" style="display:none;">Company</div>
+                                            <div class="upload-chip hideChip" id="DesigFilterResult" style="display:none;">Developer</div>
+                                            <div class="upload-chip hideChip" id="StatusFilterResult" style="display:none;">Active</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-8 col-sm-12">
+                                    <div class="text-right manage-employees-btn-position manage-employees-btn-position2">
+                                        <a href="javascript:void(0)" class="btn custom-btn w-115" id="btnGuestUser" data-localize="Guest User">Guest User</a>
+                                        <a href="javascript:void(0)" class="btn custom-btn w-115" id="btnAddEmployee" data-localize="Add Employee">Add Employee</a>
+                                        <span class="dropdown user-sync-btn">
+                                            <button class="btn dropdown-toggle custom-btn w-115" type="button" data-toggle="dropdown" data-localize="User Sync">User Sync</button>
+                                            <ul class="dropdown-menu dropdown-menu-right dropdown-toggle-menu">
+                                                <li><a href="javascript:void(0)" id="AddUserSync">AD Users Sync</a></li>
+                                                <li><a href="javascript:void(0)" id="idsynch">Upload Excel & Sync</a></li>
+                                                <li class="d-none"><a href="javascript:void(0);">Add an External User</a></li>
+                                            </ul>
+                                        </span>
+                                        <button type="button" class="btn custom-btn w-115" id="btnUpdatePopup" data-localize="Update">Update</button>
+                                        <button type="button" class="btn custom-btn w-115" data-toggle="modal" data-target="#manage-employees-filter" data-localize="Filter">Filter</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div class="col-xs-12">
+                                    <div class="row m-0 manage-employees-right-top-box">
+                                        <div class="col-xs-3 manage-employees-right-time-box-one">
+                                            <div class="text-center">
+                                                <h3 class="m-0" id="countActiveUsers">0</h3>
+                                                <p class="m-0" data-localize="Active User">Active User</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 manage-employees-right-time-box-two">
+                                            <div class="text-center">
+                                                <h3 class="m-0" id="CountInternal">0</h3>
+                                                <p class="m-0" data-localize="Internal User">Internal User</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 manage-employees-right-time-box-two">
+                                            <div class="text-center">
+                                                <h3 class="m-0" id="countExternal">0</h3>
+                                                <p class="m-0" data-localize="External User">External User</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 manage-employees-right-time-box-three">
+                                            <div class="text-center">
+                                                <h3 class="m-0" id="txtLicense">0</h3>
+                                                <p class="m-0" data-localize="Avilable Licenses">Avilable Licenses</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row m-0">
+                                <div style='float:left;display:none;'>
+                                    <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." style="width:200px;;height: 38px;" />
+                                    <select id='ddlTempDepartmentFilter' style="display:none;"></select>
+                                    <select id='ddlTempManagerFilter' style="display:none;"></select>
+                                    <br />
+                                </div>
+
+                                <div class="col-xs-12">
+
+
+                                    <div id="tableheader" style="display:none;">
+                                        <div class="search">
+                                            <select id="columns" onchange="sorter.search('query')"></select>
+                                        </div>
+                                        <div>
+                                            <span class="details">
+                                                <div>Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+                                                <div><a href="javascript:sorter.reset()">Reset </a></div>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="table-responsive manage-employees-table scrollbar-panel">
+                                        <table class="tinytable table mb-0 custom-table" id='tableTempEmp'>
+                                            <thead>
+                                                <tr>
+                                                    <th class="nosort">
+                                                        <h6>
+                                                            <div class="checkbox approval-thead-checkbox m-0">
+                                                                <label><input type="checkbox" value="" id="selectAll"></label>
+                                                            </div>
+                                                        </h6>
+                                                    </th>
+                                                    <th class="text-left border-bottom-0 w-15"><h6 data-localize='Employee'>Employee</h6></th>
+                                                    <th class="text-left border-bottom-0 w-15" style="display:none;"><h6 data-localize='LogonId'>LogonId</h6></th>
+                                                    <th class="text-left border-bottom-0 w-15"><h6 data-localize='Email'>Email</h6></th>
+                                                    <th class="text-center border-bottom-0 w-15"><h6 data-localize='Department'>Department</h6></th>
+                                                    <th class="text-left border-bottom-0 w-15" style="width:10%"><h6 data-localize='Location'>Location</h6></th>
+                                                    <th class="text-center border-bottom-0 w-15"><h6 data-localize='Designation'>Designation</h6></th>
+                                                    <th class="text-center border-bottom-0 w-15" style="width:14%"><h6 data-localize='Manager'>Manager</h6></th>
+                                                    <th class="text-center border-bottom-0 w-15" style="width:8%"><h6 data-localize='Status'>Status</h6></th>
+                                                    <th class="text-center border-bottom-0 no-sort"><h6>Action</h6></th>
+                                                    <th class="text-center border-bottom-0"><h6></h6></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div id="tablefooter">
+                                    	<div id="TotalDisplayEmps">Showing <span id="DiplayEmpCount"></span> of <span id="TotalEmpCount"></span>&nbsp;employees
+                                    		&nbsp;<a href="javascript:void(0)" id="txtViewAllEmp" data-localize="ViewAll">ViewAll</a>
+                                    		&nbsp;<a href="javascript:void(0)" id="FilterViewAllEmp" style="display:none;" data-localize="ViewAll">ViewAll</a>
+                                        </div>
+                                        <div id="tablenav" style="float:none;width:30%;margin:auto;">
+                                        	
+                                            <div>
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                            </div>
+                                            <div>
+                                                <select id="pagedropdown"></select>
+                                            </div>
+                                            
+                                            <div id="getAllEmp">
+                                                <a href="javascript:void(0)" data-localize="See more..." id="SeeMoreUsers">See more...</a>
+                                            </div>
+                                            <div id="FilterEmployee">
+                                                <a href="javascript:void(0)" data-localize="See more..." id="SeeMoreUsersFilter">See more...</a>
+                                            </div>
+
+                                        </div>
+                                        <div id="tablelocation">
+                                            <div>
+                                                <span data-localize="LinesPerPage"> </span>
+                                                <select onchange="sorter.size(this.value)" class="ddlpaging">
+                                                    <option value="5">5</option>
+                                                    <option value="10" selected="selected">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+
+                                            </div>
+                                            <div><span data-localize="Page"></span><span id="currentpage"></span><span data-localize="Of"></span><span id="totalpages"></span></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- manage-employees filter Modal -->
+    <div class="modal fade" id="manage-employees-filter" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title" data-localize="Filter">Filter</h4>
+                </div>
+                <div class="modal-body manage-employees-inbox-istab">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Company:">Company:</label>
+                                <select class="form-control" id="ddlFilterCompany">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Department:">Department:</label>
+                                <select class="form-control" id="ddlTempDepartment">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Location:">Location:</label>
+                                <select class="form-control" id="ddlTempOfficeLocation">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Designation:">Designation:</label>
+                                <input type="text" class="form-control" placeholder="Designation" id="txtDesignation">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Manager:">Manager:</label>
+                                <div id="tempMangerPPicker">
+                                	<span id="txtManagerName" class="form-control"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Employee:">Employee:</label>
+                                <div id="tempEmpPPicker">
+                                	<span id="txtEmpName" class="form-control"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Status:">Status:</label>
+                                <select class="form-control" id="ddlStatus">
+                                    <option value="All">All</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Terminated">Terminated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Type:">Type:</label>
+                                <select class="form-control" id="ddlType">
+                                    <option value="All">All</option>
+                                    <option value="External">External</option>
+                                    <option value="Internal">Internal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer manage-employees-modal-footer">
+                    <button type="button" class="btn custom-btn mr-8" data-dismiss="modal" id="btnApply" data-localize="Apply">Apply</button>
+                    <button type="button" class="btn custom-btn-two-cancel" id="btnClear" data-localize="Clear">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- manage-employees Date Modal -->
+    <div class="modal fade" id="manage-employeesEdit" role="dialog">
+        <div class="modal-dialog modal-md manage-employeesEdit-modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title" data-localize="Update">Update</h4>
+                </div>
+                <div class="modal-body manage-employees-inbox-istab">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group custom-form-group-radio-inline">
+                                <label class="radio-inline"><input type="radio" name="UpdateEmp" value="1" checked><label data-localize="Update">Update</label></label>
+                                <label class="radio-inline" id="lblAddCompany"><input type="radio" name="UpdateEmp" value="2" id="tabAddInComp"><label data-localize="Add in other company">Add in other company</label></label>
+                                <label class="radio-inline"><input type="radio" name="UpdateEmp" value="3" id="tabChangeComp"><label data-localize="Change company">Change company</label></label>
+                            </div>
+                        </div>
+                        <div id="UpdateEmp-box-1" class="col-xs-12 type-set-one toHide">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Company:">Company:</label>
+                                        <select class="form-control" id="updateCompany" disabled>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="" class="chkUpdate" id="chkUpdateDept"><label data-localize="Department:">Department:</label></label>
+                                        <select class="form-control" id="ddlUpdateDept">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkUpdate" id="chkUpdateLoc" value=""><label data-localize="Office Location:">Office Location:</label></label>
+                                        <select class="form-control" id="ddlUpdateLocation">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkUpdate" id="chkUpdateDesig" value=""><label data-localize="Designation:">Designation:</label></label>
+                                        <input class="form-control" type="text" id="txtUpdateDesig" placeholder="Designation">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkUpdate" value="" id="UpdateManager"><label data-localize="Manager">Manager</label></label>
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkUpdate" value="" id="updateTE"><label data-localize="Top Executive">Top Executive</label></label>
+                                        <div id="tempupdatePeoplePicker">
+                                        	<span class="form-control" id="updatePeoplePicker"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkUpdate" id="chkUpdateGroup" value=""><label data-localize="Group:">Group:</label></label>
+                                        <input type="text" class="form-control" id="txtUpdateGp" placeholder="Group">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="UpdateEmp-box-2" class="col-xs-12 d-none toHide type-set-two">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Company:">Company:<span class="color-red">*</span></label>
+                                        <select class="form-control" id="ddlAddComp">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Department:">Department:<span class="color-red">*</span></label>
+                                        <select class="form-control" id="ddlAddInDept">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Office Location:">Office Location:<span class="color-red">*</span></label>
+                                        <select class="form-control" id="ddlAddInLocation">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Designation:">Designation:</label>
+                                        <input class="form-control" type="text" name="" id="txtAddInDesig" placeholder="Designation">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="" class="chkAddin" id="AddInManager"><label data-localize="Manager">Manager</label></label><span class="color-red">*</span>
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="" class="chkAddin" id="AddInTE"><label data-localize="Top Executive">Top Executive</label></label><span class="color-red">*</span>
+                                        <div id="tempAddInPeoplePicker">
+                                        	<span class="form-control" id="pplAddInComp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Group:">Group:</label>
+                                        <input type="text" class="form-control" id="txtAddInGp" placeholder="Group">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="UpdateEmp-box-3" class="col-xs-12 d-none toHide type-set-two">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Company:">Company:</label><input type="checkbox" value="" class="chkChangeComp" id="ChangeCompny">
+                                        <select class="form-control" id="ddlChangeComp">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Department:">Department:</label><input type="checkbox" value="" class="chkChangeComp" id="ChangeCompDept">
+                                        <select class="form-control" id="ddlChangeCompDept">
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Office Location:">Office Location:</label><input type="checkbox" value="" class="chkChangeComp" id="ChangeCompLoc">
+                                        <select class="form-control" id="ddlChangeCompLoc">
+                                            <option>All</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Designation:">Designation:</label><input type="checkbox" value="" class="chkChangeComp" id="ChangeCompDesgn">
+                                        <input class="form-control" type="text" name="" id="ChangeCompDesig" placeholder="Designation">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkChangeComp" value="" id="ChangeCompManager"><label data-localize="Manager">Manager</label></label><span class="color-red">*</span>
+                                        <label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="chkChangeComp" value="" id="ChangeCompTE"><label data-localize="Top Executive">Top Executive</label></label><span class="color-red">*</span>
+                                        <div id="tempChangeCompPeoplePicker">
+                                        	<span class="form-control" id="pplChangeComp"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                        <label for="" data-localize="Group:">Group:</label><input type="checkbox" value="" class="chkChangeComp" id="ChangeCompGpName">
+                                        <input type="text" class="form-control" id="changeCompGp" placeholder="Group">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer manage-employees-modal-footer">
+                    <button type="button" class="btn custom-btn mr-8 w-87" id="btnUpdate" data-localize="Update">Update</button>
+                    <button type="button" class="btn custom-btn-two-cancel w-87" id="btnClearUpdate" data-localize="Clear">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secendary Modal -->
+    <div class="modal fade" id="UpdateCompModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title" data-localize="Companies">Companies</h4>
+                </div>
+                <div class="modal-body manage-employees-inbox-istab">
+                    <div class="table-responsive manage-employees-table manage-employees-companies-table scrollbar-panel">
+                        <table class="table mb-0 custom-table" id="tblUpdateCompany">
+                            <thead>
+                                <tr>
+                                    <th class="text-left border-bottom-0">Company</th>
+                                    <th class="text-center border-bottom-0">Department</th>
+                                    <th class="text-center border-bottom-0">Designation</th>
+                                    <th class="text-center border-bottom-0">Primary</th>
+                                    <th class="text-center border-bottom-0"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+
+                                    <td class="text-left">
+                                        <div class="manage-employees-table-ellipsis-2">
+                                            Titan
+                                        </div>
+                                    </td>
+                                    <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+                                    <td><div class="manage-employees-table-ellipsis-2">Leader</div></td>
+                                    <td>
+                                        <!-- <div class="checkbox approval-thead-checkbox m-0">
+                                            <label><input type="checkbox" value="" checked></label>
+                                        </div> -->
+                                        <div class="radio approval-thead-checkbox m-0">
+                                            <label><input type="radio" name="optradio" checked></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="manage-employees-edit-lock-btn-box text-center d-none">
+                                            <a href="javascript:void(0)" class="custom-edit-btn">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="text-center">
+
+                                    <td class="text-left">
+                                        <div class="manage-employees-table-ellipsis-2">
+                                            Titan
+                                        </div>
+                                    </td>
+                                    <td><div class="manage-employees-table-ellipsis-2">HR</div></td>
+                                    <td><div class="manage-employees-table-ellipsis-2">Leader</div></td>
+                                    <td>
+                                        <div class="radio approval-thead-checkbox m-0">
+                                            <label><input type="radio" name="optradio"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="manage-employees-edit-lock-btn-box text-center">
+                                            <a href="javascript:void(0);" class="custom-edit-btn">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Download Template modal -->
+    <div class="modal fade" id="Download-Template-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round mt-10" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <div class="header-logo">
+                        <div class="excel-logo-box">
+                            <img class="excel-image-fluid" src="../SiteAssets/EmployeeSynchronous/ManageEmployee/assets/images/excel-logo.png" alt="excel logo">
+                        </div>
+                        <h4 class="modal-title" data-localize="Instructions">Instructions</h4>
+                    </div>
+                </div>
+                <div class="modal-body manage-employees-inbox-istab">
+                    <div class="row excel-box-align">
+                        <div class="col-md-12 instructions-list">
+                            <ul class="scrollbar-panel">
+                                <li>The file must be Excel Workbook (*.xlsx) or Excel 97-2003 Workbook (*.xls)</li>
+                                <li>File must content raw data without any formatting, grouping of columns/rows or additional sheet.</li>
+                                <li> The first row is a header line. System will skip this header line to import process.</li>
+                                <li> The data must be in given sequence, not allowed to misplaced any column.</li>
+                                <li>The maximum limit of rows in one Excel file is 5000.</li>
+                                <li>The * marked columns are mandatory.</li>
+                                <li>Company, Department and Office Location, must be ID not the Name or title.</li>
+                                <li>Collect those IDs form Admin Panel corresponding section like Manage Company, Manage Department, Manage Location.</li>
+                                <li>Users, Managers are identified by email address of their O365 AD profiles.</li>
+                                <li>If Manager information is missing then that user treated as ‘Top Management’.</li>
+                                <li>The date format of DOJ (Date of Joining), DOB (Date of Birth) and Anniversary must be MM/DD/YYYY.</li>
+                                <li>Define properly users-type (Internal or external). All external user must be pre-invited in the tenant and available in O365 profile.</li>
+                                <li>Char limit for Designation, Group Name, Mobile, City, State, PIN, Email, Country are 250.</li>
+                                <li>Char limit of current and permanent address are 500.</li>
+                                <li>All data must be in English.</li>
+                            </ul>
+                            <div class="click-here">
+                                <a href="javascript:void(0);">Click here</a> to download the sample Excel file
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+			$(function() {
+				$("[name=UpdateEmp]").click(function(){
+					$('.toHide').hide();
+					$("#UpdateEmp-box-"+$(this).val()).show('slow');
+				});
+			});
+    </script>
+</body>
+</html>

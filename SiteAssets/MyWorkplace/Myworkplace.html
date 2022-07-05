@@ -1,0 +1,1335 @@
+﻿
+<link rel="stylesheet" href="../SiteAssets/MyWorkplace/css/home-style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<link rel="stylesheet" href="../SiteAssets/MyWorkplace/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../SiteAssets/MyWorkplace/css/jquery-ui.css">
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/css/jquery-ui.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="../SiteAssets/Attendance/assets/moment.min.js"></script>
+
+
+<style>
+
+body::-webkit-scrollbar {
+   width: 8px;
+   background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #999;
+}
+
+
+.ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+
+display: block !important;
+
+}
+
+
+.custom-btn {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover,
+.custom-btn:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+.custom-btn-two-cancel {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover, .custom-btn-two-cancel:focus {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+
+#MyAttendance .bg-white-round-btn {
+    color: #000;
+}
+
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+#MyAttendance .modal-dialog {
+    width: 316px;
+}
+
+/* new css added on 03/8/2021 */
+
+.contact-center-workplace-box {
+    position: relative;
+}
+.contact-center-workplace-box .workplace-custom-notify {
+    position: absolute;
+    right: -11px;
+    top: -13px;
+}
+.workplace-custom-notify {
+    display: inline-block;
+    background: #1d6ec0;
+    color: #fff !important;
+    border-radius: 50%;
+    width: auto;
+    min-width: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px 5px;
+    transition: all 0.25s ease-in;
+}
+.custom_popup_description {
+    max-height: 340px;
+    overflow-y: auto;
+}
+
+#_AttachDocument a {
+	font-size: 12px;
+    margin-top: 3px;
+    margin-left: 3px;
+    padding: 5px 10px;
+    color: #333 !important;
+    background-color: transparent !important;
+    border: 1px solid #999999 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+    word-break: break-word;
+    margin: 2px 5px 5px 0px;
+}
+#_AttachDocument a > i.fa {
+    padding-left: 5px;
+}
+#AttachmentView .modal-dialog {
+    margin: 10px auto;
+}
+button.close {
+ 	min-width: auto !important;
+    font-weight: bold !important;
+    font-size: 18px;
+    top: 10px;
+    background: #fff;
+    text-shadow: 0px 0px 4px #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgb(0 0 0 / 23%);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+    padding: 0px 0px 0px 0px !important;
+    color: #000;
+    top: 12.5px;
+    z-index: 9;
+ }
+button.close:hover, button.close:focus {
+  	background: #000;
+    color: #fff !important;
+    opacity: 1;
+}
+#AttachmentView .modal-footer {
+	text-align: center;
+}
+
+/* Responsive CSS */
+
+@media (min-width: 1200px) {
+
+	.header-container {
+	    width: 100%;
+	    margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #AttachmentView .modal-dialog {
+        width: 940px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+.ms-webpart-zone, .ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical {
+
+	display: block !important;
+
+}
+
+.ms-webpart-cell-vertical {
+
+	display: block;
+
+}
+
+}
+
+
+
+
+/*----------add new css on 03-06-2021---------*/
+
+/*.field-icon {
+  float: right;
+  margin-right: 8px;
+  margin-top: -23px;
+  position: relative;
+  z-index: 2;
+  cursor:pointer;
+}*/
+
+
+#pass{
+  position: relative;
+
+}
+#pass label{
+  
+  position:absolute;  
+  top:5px;
+  right:5px;
+  cursor: pointer;
+
+}
+#pass label input{
+	display: none;
+}
+#pass label input,
+#pass label i{
+
+	position: absolute;
+	top:5px;
+	right:5px;
+     
+}
+/*.fa-eye{
+	display: none;
+}*/
+.fa-eye.activating{
+	display: block;
+}
+.fa-eye-slash{
+	display: block;
+}
+.fa-eye-slash.activating{
+ display: none;
+}
+
+/*  Group popup css  */
+
+.groups_names .group_box {
+	display: inline-block;
+	width: 165px;
+}
+.group_box {
+	margin: 0px 0px 10px 5px;
+	padding: 0px 0px 0px 0px !important;
+	font-size: 14px;
+	text-transform: capitalize;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+.group_box img {
+	display: block;
+	width: 100%;
+	object-fit: contain;
+	margin: auto;
+	padding: 6px 5px 0px 5px !important;
+}
+.group_box p {
+	font-size: 14px;
+	color: #000000;
+	margin: 5px;
+	text-align: center;
+	font-weight: 600;
+	word-break: break-word;
+}
+
+
+</style>
+
+<!-- <div class="timeline-toggle"><a class="timeline-open" ><img src="images/timeline-logo-300.png" width="20" height="20" alt=""/></a></div>
+	
+<div class="timeline-toggle"><a class="timeline-open" ><img src="images/timeline-logo-300.png" width="20" height="20" alt=""/></a></div> -->
+
+<div class="overlay"></div>
+
+<div class="timeline-toggle">
+  <a class="timeline-open" >
+    <img src="../SiteAssets/DevelopersCode/DefaultHome/images/timeline-logo-300.png" width="20" height="20" alt=""/>
+  </a>
+</div>
+	
+<div class="container-fluid container-mobile mb15 my_workplace_container">    
+	<div class="col-lg-9 col-md-12 pl5 pr0">
+		<div class="col-md-12 p0 module-slider-area">
+			<ul class="Myworkplace-new-menu-ul">
+				<li class="Myworkplace-new-menu-ul-main-li" id="Timesheet-toggle-li" style="display:none;">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Timesheet-toggle" href="javascript:void(0)">Timesheet</a>
+					<div class="Timesheet-menu popup-menu menu-controls" id="Timesheet-menu">
+		        		<ul>
+		        			<li><a href="#" id="Timesheet-Entry"><span>Timesheet Entry</span></a></li>
+		            		<li><a href="#" id="TimesheetEntry"><span>My Timesheet</span></a></li>
+		            		<li><a href="#" id="TimesheetApproval"><span>Approval</span></a></li>
+		        		</ul>
+		        	</div>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li" id="Attendance-toggle-li" style="display:none;">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Attendance-toggle" href="javascript:void(0)">Attendance</a>
+					<!-- <a href="#" data-toggle="modal" data-target="#MyAttendance" onclick="SetAttendanceDDL();"><span>Attendance</span></a> -->
+
+					<div class="Attendance-menu popup-menu menu-controls" id="Attendance-menu">
+		        		<ul>
+		        			<!--<li><a href="#" data-toggle="modal" data-target="#MyAttendance" onclick="SetAttendanceDDL();"><span>Today Attendance</span></a></li>-->
+		        			<li><a href="#" data-toggle="modal" data-target="#MyAttendance" onclick="SetAttendanceDDL();"><span>Today's Attendance</span></a></li>
+		               		<li><a href="#" id="My-Attendance-report" target="_blank"><span>My Attendance</span></a></li>            		
+		        		</ul>
+		        	</div>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li" style="display:none;">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Leaves-toggle" href="javascript:void(0)">Leaves</a>
+
+					<div class="Leave-menu popup-menu menu-controls" id="Leaves-menu">
+		        		<ul>
+		        			<li><a href="#" id=""><span>Leave Apply</span></a></li>
+		            		<li><a href="#" id=""><span>My Leaves</span></a></li>            		
+		        		</ul>
+		        	</div>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li">
+					<a href="#" id="Holidaysbtn" style=""><span>Holidays</span></a>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li" style="display:none">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Timesheet-toggle" href="javascript:void(0)">Process Approval</a>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li" id="Reports-toggle">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" href="javascript:void(0)">Reports</a>
+					<div class="Report-menu popup-menu menu-controls" id="Reports-menu">
+		        		<ul>
+		        			<li><a href="#" id="AttendanceRegister"><span>Attendance Register</span></a></li>
+		               		<li><a href="#" id="AttendanceReport"><span>Attendance Report</span></a></li>
+		            		<li><a href="#" id="TimesheetReport"><span>Timesheet Report</span></a></li>
+		            		<li><a href="#" id="Analytics_Link"><span>Analytics</span></a></li>            		
+		        		</ul>
+		        	</div>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Clients-toggle" href="#">Clients</a>
+				</li>
+				
+				<li class="Myworkplace-new-menu-ul-main-li">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Guest-Users-toggle" href="#">Guest Users</a>
+				</li>
+				<li class="Myworkplace-new-menu-ul-main-li contact-center-workplace-box">
+					<a class="Timesheet-toggle popup-toggle Timesheet-plus" id="Contact-Center-toggle" href="#">Contact Center
+					<span class="workplace-custom-notify" id="TotalNotifications" style="display: none">0</span>	
+					</a>
+				</li>
+
+
+			</ul>
+		</div>
+		<div class="col-md-12 p0">
+			<div class="panel-mb0">
+			    <div class="panel-body panel-body-counter ">
+					<div class="col-md-4 col-sm-4 pl0 pr10 mpt10 task_inbox_box">
+						<div class="panel panel-default panel-mb0">
+							<div class="panel-heading panel-heading-task-inbox">Task Inbox</div>
+							<div class="panel-body panel-body-task-inbox">
+								<div class="col-sm-6 col-xs-6  pl10 pr5">
+									<div class="inbox-pending counter-custom-height">
+									 	<a class="Task-link TaskInbox">
+									    	<p>Pending</p>
+											<span class="counter-custom-padding" id="TaskPending"></span>
+										</a>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xs-6  pl5 pr10">
+									<div class="inbox-overdue counter-custom-height">
+										<a class="Task-link TaskInbox">
+											<p>Overdue</p>
+											<span class="counter-custom-padding" id="TaskOverdue"></span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 pl0 pr10 mpt10 task_outbox_box">
+						<div class="panel panel-default panel-mb0">
+							<div class="panel-heading panel-heading-task-outbox">Task Outbox</div>
+								<div class="panel-body panel-body-task-outbox">
+									<div class="col-sm-6 col-xs-6  pl10 pr5">
+										<div class="outbox-pending counter-custom-height">
+											<a class="Task-link TaskOutbox">
+												<p>Pending</p>
+												<span class="counter-custom-padding" id="TaskPendingOutbox"></span>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6  pl5 pr10">
+										<div class="outbox-overdue counter-custom-height">
+										 <a class="Task-link TaskOutbox">
+											<p>Overdue</p>
+											<span class="counter-custom-padding" id="TaskOverdueOutbox"></span>
+										 </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 pl0 pr0 mpr10 mpt10 task_approvals_box">
+							<div class="panel panel-default panel-mb0">
+								<div class="panel-heading panel-heading-task-approval">Approvals</div>
+								<div class="panel-body panel-body-task-approval">
+									<div class="col-sm-6 col-xs-6  pl10 pr5">
+										<div class="approval-pending counter-custom-height">
+										<a class="Approvals-link ApprovalInbox">
+											<p>In</p>
+											<span class="counter-custom-padding" id="ApprovalPendingTask"></span>
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6 pl5 pr10">
+										<div class="approval-others counter-custom-height">
+										<a class="Approvals-link ApprovalOutbox">
+											<p>Out</p>
+											<span id="ApprovalOutboxpendingCounter"></span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+	
+			<div class="col-md-12 pt10 pl0 pr0 mpr10 quick_slider_main_box">
+				<div class="panel panel-default panel-mb0">
+                <div class="panel-body panel-body-quick-slider ">
+				<div class="owl-carousel owl-carousel-quick-slider quick-slider owl-theme" id="WorkPlaceAppLink">
+                            <!--<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/Yammer-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">Yammer</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/OneDrive-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">OneDrive</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/Outlook-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">Outlook</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/SharePoint-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">SharePoint</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/Teams-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">Teams</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/PowerPoint-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">PowerPoint</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/Word-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">Word</p>
+                            </div>
+							<div class="item">
+								<img src="../SiteAssets/MyWorkplace/images/Yammer-New-Logo.png" width="50" height="50" alt=""/>
+								<p class="">Yammer</p>
+                            </div>-->
+				</div>
+				</div>
+				</div>
+			</div>
+
+            <div class="col-md-12 col-sm-12 pt10 pl0 pr0 mpr10 knowledge_document_main_box">
+				
+                <div class="col-lg-6 col-md-6 col-sm-6 column-sm p0 knowledge_base_main_box">
+					
+					<div class="col-md-12 p0">
+					<div class="panel panel-default panel-mb0">
+					  <div class="panel-heading panel-heading-knowledge "><span class="knowledge-head-text panel-heading-bg-txt-clr">Knowledge Base</span></div>
+					  <div class="panel-body panel-body-knowledge ">
+						<!-- <a id="addKnowledge" style="cursor:pointer; display:none" class="knowledge-plus"><strong>+</strong></a> -->
+                        <div class="owl-carousel knowledge-filter owl-theme">
+                        <a><span style="cursor:pointer;" id="currentKnowledgeDept"></span></a>
+                         <!-- <a href="#"><span>Corporate</span></a>-->
+                         <!-- <a href="#"><span id="currentKnowledgeDept"></span></a>-->
+                          <!--<a href="#"><span>Delivery</span></a>
+                          <a href="#"><span>Sales</span></a>
+                          <a href="#"><span>HR</span></a>
+                          <a href="#"><span>Technical</span></a>-->
+                        </div> 
+						<div class="list-group knowledge-list custom-scroll" id="DeptKnowledgeList">
+						  <!--<a href="#" class="list-group-item knowledge-list-item">Feed topic 1 <span class="badge pull-right">15</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 2 <span class="badge pull-right">12</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 3 <span class="badge pull-right">05</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 4 <span class="badge pull-right">11</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 5 <span class="badge pull-right">21</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 6 <span class="badge pull-right">15</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 7 <span class="badge pull-right">12</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 8 <span class="badge pull-right">05</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 9 <span class="badge pull-right">11</span></a>
+						  <a href="#" class="list-group-item knowledge-list-item">Feed topic 10 <span class="badge pull-right">21</span></a>-->
+						</div>
+					  </div>
+						<div class="knowledge-view pl5 pb5"><a class="my_view_arrow_w" id="viewKnowledgeDept"><i class="fa fa-chevron-circle-right"></i></a></div>
+					</div>
+					</div>
+					
+				</div>
+				
+				
+              <div class="col-lg-6 col-md-6 col-sm-6 column-md pl10 pr0 mpl0 mpt10 documents_main_box">
+				  
+				  <div class="col-md-12 p0">
+					<div class="panel panel-default panel-mb0">
+					  <div class="panel-heading panel-heading-documents"><span class="documents-head-text panel-heading-bg-txt-clr">Documents</span></div>
+					  <div class="panel-body panel-body-documents ">
+						<!--<a href="#" class="documents-plus"><strong>+</strong></a>-->
+                        <div class="owl-carousel documents-filter owl-theme">
+                        <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
+                          <!--<a href="#"><span>Delivery</span></a>
+                          <a href="#"><span>Sales</span></a>
+                          <a href="#"><span>HR</span></a>
+                          <a href="#"><span>Technical</span></a>-->
+                        </div> 
+						<div class="documents-list custom-scroll">
+							<ul class="list-group" id="DeptDocList">
+								<!--<li class="list-group-item documents-list-item">
+									<a href="">Employees <span class="badge pull-right">02</span></a>
+									<p>Last Modified : 4 Mar 2018</p>
+								</li>
+								
+								<li class="list-group-item documents-list-item">
+									<a href="">General <span class="badge pull-right">02</span></a>
+									<p>Last Modified : 14 Apr 2020</p></li>
+								
+								<li class="list-group-item documents-list-item">
+									<a href="">Holidays <span class="badge pull-right">01</span></a>
+									<p>Last Modified : 30 Jan 2020</p>
+								</li>
+								
+								<li class="list-group-item documents-list-item">
+									<a href="">Policy <span class="badge pull-right">05</span></a>
+									<p>Last Modified : 7 Jan 2019</p>
+								</li>
+								
+								<li class="list-group-item documents-list-item">
+									<a href="">Product <span class="badge pull-right">01</span></a>
+									<p>Last Modified : 5 Mar 2018</p>
+								</li>-->
+							</ul>
+						</div>
+					  </div>
+						<div class="documents-view pl5 pb5"><a class="my_view_arrow_w" id="docView" href="#"><i class="fa fa-chevron-circle-right"></i></a></div>
+					</div>
+					</div>
+                    
+              </div>
+				
+        </div>
+	
+	<div class="col-md-12 col-sm-12 pt10 pl0 pr0 mpr10 question_services_main_box" >
+		<div class="col-md-6 col-sm-6 p0" id="QuestionDiv">
+    		<div class="panel panel-default panel-mb10">
+            	<div class="panel-heading panel-heading-question"><span class="question-head-text panel-heading-bg-txt-clr">Questions & Answers </span><a href="#" class="question-plus"><strong>+</strong></a></div>
+                	<div class="panel-body panel-body-question panel-height-new-2 custom-scroll" id="QuestionList">
+                	<!--
+                    	<div class="question-section">
+                        	<h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+                        	<p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+                        <hr class="question">
+                        
+                        <div class="question-section">
+                        	<h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+                        	<p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+                        <hr class="question">
+                        
+                        <div class="question-section">
+                        <h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+                        <p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+						<hr class="question">
+                        <div class="question-section">
+                        <h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+                        <p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+						<hr class="question">
+                        <div class="question-section">
+                        <h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+                        <p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+						<hr class="question">
+                        <div class="question-section">
+                        <h4 class="question-text-head event-text-head-new"><a href="#">New office timing should be there for sales emp...</a></h4>
+						<p><span>20 Oct 2019</span> |  <span>Tom Patrick</span> |  <span>Replies - 3</span></p>
+                        </div>
+                        -->
+                      </div>
+						<div class="question-view pl5 pb5"><a class="my_view_arrow_w" href="#" id="ViewQuestion"><i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                  </div>
+		
+		
+		<div class="col-md-6 col-sm-6 tpl10 pl10 pr0 mpl0 services_main_box" id="RSSDIV">
+					<div class="panel panel-default panel-mb10">
+					  <div class="panel-heading panel-heading-rss"><span class="rss-head-text panel-heading-bg-txt-clr" id="feed_title"> </span><a  class="rss-refresh"><strong><i class="fa fa-refresh" aria-hidden="true" onclick="GetRssFeedUrl();"></i></strong></a></div>
+					  <div class="panel-body panel-body-rss panel-height-new-2 custom-scroll">
+						<div class="list-group rss-list" id="rssfeed">
+						 <!-- <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>
+						  <a href="#" class="list-group-item rss-list-item event-text-head-new">China’s Meal Delivery Service Meituan Now Valued At $100B</a>-->
+						</div>
+					  </div>
+					</div>
+				</div>
+		
+		
+	
+	</div>
+    </div>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 pl10 pr10 slide-area" >
+
+<!--<div class="timeline-back"> <a class="timeline-close" ><i class="fa fa-arrow-left"></i> Back to Home</a></div>-->
+<div class="timeline-back"> <a class="timeline-close" >Back to Home</a></div>
+	
+<div class="panel panel-default panel-mb5 panel-mob-mt5">
+              
+    <div class="panel-body panel-padding-area">
+        <div class="popup-menu" id="popup-menu">
+        <ul>
+            <li><a href="#" class="suggestion-new" id="Suggestion">Suggestion</a></li>
+            <li><a href="#" class="initiative-new" id="Initiative">Initiative</a></li>
+            <li><a href="#" class="acivities-new" id="Acivities">Activities</a></li>
+        </ul>
+        </div>
+    <div class="panel-heading p0">
+		<div>
+			<a class="popup-toggle timeline-plus" href="javascript:void(0)" id="popup-toggle"><strong>+</strong></a>
+				<div class="owl-carousel timeline-filter owl-theme">
+			
+			  <a href="#" class="CategotyValues" id="F_All" onclick="GetCategotyValues(this.id)"><span>All</span></a>
+			  <a href="#" class="CategotyValues" id="F_Suggestion" onclick="GetCategotyValues(this.id)"><span>Suggestion</span></a>
+			  <a href="#" class="CategotyValues" id="F_Initiative" onclick="GetCategotyValues(this.id)"><span>Initiative</span></a>
+			  <a href="#" class="CategotyValues" id="F_Acivities" onclick="GetCategotyValues(this.id)"><span>Activities</span></a>
+			  
+		<span >&nbsp; | &nbsp;</span>
+		
+			</div>
+		</div>
+		
+
+		
+	</div>
+    
+        
+        
+
+<div class="TimelineDesign custom-scroll">
+	<div id="ActivityTimeLine">
+    <!--<div class="col-md-12 p0">    
+      <div class="panel panel-default panel-mb10">
+        <div class="panel-heading panel-heading-suggestion "><span class="suggestion-head-text ">Suggestion</span></div>
+            <div class="panel-body panel-body-suggestion">
+          <p class="suggestion-title ">Suggestion Title to be placed here</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<div class="col-sm-12 col-xs-12 pl0 pr0 pb5">
+										<a href="#" class="suggestion-button">Read More</a>
+			</div>
+          <ul class="list-inline list-unstyled">
+            <li class="pull-right date-time-card "><span> 26 June 2018 </span> | <span> Sales </span></li>
+            <li><a href="#" class="view"><i class="fa fa-chevron-circle-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>   
+        
+         
+    <div class="col-md-12 p0">
+      <div class="panel panel-default panel-mb10">
+        <div class="panel-heading panel-heading-initiative "><span class="initiative-head-text ">Initiative</span></div>
+            <div class="panel-body panel-body-initiative">
+          <p class="initiative-title ">Initiative Title to be placed here</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<div class="col-sm-12 col-xs-12 pl0 pr0 pb5">
+										<a href="#" class="initiative-button">Read More</a>
+			</div>
+          <ul class="list-inline list-unstyled">
+            <li class="pull-right date-time-card "><span> 26 June 2018 </span> | <span> Sales </span></li>
+            <li><a href="#" class="view"><i class="fa fa-chevron-circle-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>     
+
+     
+	<div class="col-md-12 p0">
+      <div class="panel panel-default panel-mb10">
+        <div class="panel-heading panel-heading-suggestion "><span class="suggestion-head-text ">Suggestion</span></div>
+            <div class="panel-body panel-body-suggestion">
+          <p class="suggestion-title ">Suggestion Title to be placed here</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<div class="col-sm-12 col-xs-12 pl0 pr0 pb5">
+										<a href="#" class="suggestion-button">Read More</a>
+			</div>
+          <ul class="list-inline list-unstyled">
+            <li class="pull-right date-time-card "><span> 26 June 2018 </span> | <span> Sales </span></li>
+            <li><a href="#" class="view"><i class="fa fa-chevron-circle-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+                    
+       
+
+		
+	
+	<div class="col-md-12 p0">
+      <div class="panel panel-default panel-mb10">
+        <div class="panel-heading panel-heading-initiative "><span class="initiative-head-text ">Initiative</span></div>
+            <div class="panel-body panel-body-initiative">
+          <p class="initiative-title ">Initiative Title to be placed here</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<div class="col-sm-12 col-xs-12 pl0 pr0 pb5">
+										<a href="#" class="initiative-button">Read More</a>
+			</div>
+          <ul class="list-inline list-unstyled">
+            <li class="pull-right date-time-card "><span> 26 June 2018 </span> | <span> Sales </span></li>
+            <li><a href="#" class="view"><i class="fa fa-chevron-circle-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    
+		
+		</div>-->  
+
+	</div>	  		
+</div>
+
+<div class="col-sm-12 col-xs-12">
+	<div class="col-sm-6 col-xs-6 ma0 text-center pt10 pb5">
+		
+		<a id="seemorebtn" style="visibility:hidden" class="timeline-extend" onclick="ReadTimeLine();"><span>See More</span></a>
+	</div>
+</div>
+                      
+</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+	
+
+	
+<!-- Modal -->
+
+<!-- Modal -->
+
+
+<!-- Details model for Activity TimeLine-->
+	
+<div id="ActivityTimeLineModel" class="modal fade" role="dialog" aria-hidden="false">
+	<div class="modal-dialog modal-lg">
+		<!-- Modal content-->
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal">×</button>
+        		<h3 class="modal-title text-bold" style="background-color: transparent !important;"><span id="_ModelHeading"></span></h3>
+      		</div>
+      		<div class="modal-body">
+			 	<div class="col-md-12  pb20 pl0 pr0">
+					<div class="clearfix"></div>
+		  			<div class="custom_popup_my_links_attach">
+			  			<div class="col-md-12 col-sm-12 col-xs-12 p0">
+							<p style="font-size: 15px;"><strong><span id="_TextTitle"></span></strong></p>
+							<div>
+								<span id="textDepartment">101</span><span> | </span><span id="textdate">102</span>
+							</div>
+							<hr>
+						</div>
+						
+						<div class="col-md-12 col-sm-12 col-xs-12 p0 custom_popup_description custom-scroll">
+							<p style="font-size: 15px;"><span id="_DtlDescription"></span></p>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 pt10 pl0 pr0">
+					   		<div class="attachment-badge mt-10" id="_AttachDocument"></div>
+		  				</div>
+		  			</div>
+		  <div class="clearfix"></div>	
+            </div>
+    </div><div class="clearfix"></div>	
+</div>
+  </div>
+</div>
+
+
+
+<div id="MyAttendance" class="modal fade" role="dialog" aria-hidden="false">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal" onclick="SetCurrentdate();">&times;</button>
+				<h4 class="modal-title">My Attendance</h4>
+			</div>
+			<div class="modal-body approval-inbox-istab">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="form-group custom-form-group">
+							<label for="Project">Date:</label>
+							<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="timesheetdate" name="From" readonly="readonly" onchange="SetAttendanceDDL();" >
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="form-group custom-form-group">
+							<label for="Project">Attendance:</label>
+							<select class="form-control" id="AttendanceDDL">
+								<option value="0">Select</option>
+								<option value="Full Day">Full Day</option>
+								<option value="1st Half">1st Half</option>
+								<option value="2nd Half">2nd Half</option>												
+								<option value="On-Leave">On-Leave</option>
+								<option value="Holiday" id="HolidayDDLOPT">Holiday</option>
+							</select>
+						</div>
+					</div>					
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12" id="HR-Message">
+						<div class="form-group custom-form-group">
+							<label for="Project" style="color: red;">Verified by HR.</label>
+						</div>
+					</div>
+					
+					<div class="col-md-12 col-sm-12 col-xs-12" id="HolidayMessage" style="display:none;">
+						<div class="form-group custom-form-group">
+							<label for="Project" style="color: red;" id="HolidayMessagediv"></label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="modal-footer approval-modal-footer" style="text-align:center">
+				<a class="btn custom-btn mr-8" onclick="Attendance();" id="Submit-attendance">Submit</a>
+				<a class="btn custom-btn-two-cancel"  data-dismiss="modal" onclick="SetCurrentdate();">Close</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-------------password model---------------------->
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+           <h4 class="modal-title">Password</h4>
+        </div>
+        <div class="modal-body">
+         <div id="pass">
+	         <input type="password" class="form-control" id="password">
+	     <label>
+		      <input type="checkbox" id="methord">
+		        <i class="fa fa-eye"></i>
+		         <i class="fa fa-eye-slash"></i>
+	     </label>	
+        </div>       
+        </div>
+        <div class="modal-footer" style="text-align:center">
+                  
+          <button type="button" class="btn custom-btn" onclick="bindevent()" id="btnPasswordField">Submit</button>
+          <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+	
+	
+<!-- /Main -->
+
+<!--Iframe Image POpup starts-->
+    <div class="modal fade" id="AttachmentView" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">
+                        Attachment View
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                        <div id="doc-viewer" style="height:415px">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<!--Iframe Image POpup ends-->
+
+<!--Start Group Link popup 25 march 2022---->
+
+<div class="modal fade" id="MyLinkGroupsModal" role="dialog" aria-hidden="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h4 class="modal-title">Group Name</h4>
+				</div>
+				<div class="modal-body my_groups_modal_body">
+				<div class="groups_names" id="GroupAppLink">
+				<!--<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/267/images.jpg" height="50" alt="" data-themekey="#"><p class="">Workplace dd</p></a></div>
+				<!--<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/282/download.jpg" height="50" alt="" data-themekey="#"><p class="">Testing 2</p></a></div>
+				<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/282/download.jpg" height="50" alt="" data-themekey="#"><p class="">Testing 2</p></a></div>
+				<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/282/download.jpg" height="50" alt="" data-themekey="#"><p class="">Testing 2</p></a></div>
+				<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/257/costup.png" height="50" alt="" data-themekey="#"><p class="">TESTING</p></a></div>
+				<div class="group_box"><a href="#"><img src="/sites/Titan_2_2_1_DEV/Lists/ApplicationLink/Attachments/257/costup.png" height="50" alt="" data-themekey="#"><p class="">TESTING</p></a></div></div>-->
+				</div>
+				<div class="modal-footer" style="text-align:center">
+				
+				<!--<button type="button" class="btn custom-btn" onclick="bindevent()" id="">Submit</button>-->
+				<button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<!--Group link popup end--->
+
+
+<!-- jQuery library -->
+
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/DevelopersCode/DefaultHome/js/gfapi.js"></script> 
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/Rssfeed.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/QuestionAnswer.js"></script> 
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/TasksCount.js"></script> 
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/Knowledge.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/ActivityTimeline.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/MyAttendance.js"></script>
+<!--<script type="text/javascript" src="../SiteAssets/MyWorkplace/js/ContactCenter4workplace.js"></script>-->
+
+
+
+<script>
+
+
+/*var passField = $('input[type=password]');
+  $('.toggle-password').hover(function() {
+      passField.attr('type', 'text');
+  }, function() {
+    passField.attr('type', 'password');
+  })*/
+	
+
+
+
+	
+/*	
+$('.knowledge-filter').owlCarousel({
+//		loop:true,
+        speed:500,
+        margin:5,
+        autoWidth:true,
+        slideBy: 7,
+		nav:true,
+		dots:false,
+		responsive:{
+				0:{
+						items:1
+				},
+				768:{
+						items:3
+				},
+				1024:{
+						items:5
+				},
+				1366:{
+						items:7
+				}
+		}
+})*/
+
+/*
+	
+$('.documents-filter').owlCarousel({
+//		loop:true,
+        speed:500,
+        margin:5,
+        autoWidth:true,
+        slideBy: 7,
+		nav:true,
+		dots:false,
+		responsive:{
+				0:{
+						items:1
+				},
+				768:{
+						items:3
+				},
+				1024:{
+						items:5
+				},
+				1366:{
+						items:7
+				}
+		}
+})
+*/
+
+/*	
+$('.quick-slider').owlCarousel({
+		loop:true,
+        smartSpeed:600,
+		margin:10,
+        autoWidth:true,
+		nav:true,
+		dots:false,
+		responsive:{
+				0:{
+						items:1
+				},
+				600:{
+						items:4
+				},
+				1000:{
+						items:6
+				}
+		}
+})*/
+</script>
+
+<script>
+
+(function ($) {
+    //Here jQuery is $
+    var Book = $(document.body).text();
+    if(IsTimesheetInvisible == true)
+    {
+    	$("#Timesheet-toggle-li").css("display", "inline-block");
+	}
+	
+	if(IsAttendanceInvisible == true)
+	{
+		$("#Attendance-toggle-li").css("display", "inline-block");
+	}     
+
+})(jQuery);
+
+$('.module-slider').owlCarousel({
+		// loop:true,
+        speed:500,
+        margin:10,
+        autoWidth:true,
+        slideBy: 2,
+		nav:true,
+		dots:false,
+		responsive:{
+				0:{
+						items:1
+				},
+				768:{
+						items:3
+				},
+				1024:{
+						items:4
+				},
+				1366:{
+						items:5
+				}
+		}
+})
+  
+</script>
+
+<script>
+
+$(document).ready(function(){
+	//BindDepartmentinfilterMenu();
+	$("#timesheetdate").datepicker({ dateFormat: "dd/mm/yy",maxDate: 0 }).datepicker("setDate", new Date());
+	ValidateHrAdmin();
+	ValidateClient();
+	userActivityNotificationEntry(_spPageContextInfo.userId,window.location)
+
+	$(".timeline-open").click(function(){
+    	$(".slide-area").addClass("slide-open");
+    	$(".overlay").show();
+    	$("body").css("overflow-y", "hidden");
+  	});
+    
+  	$(".timeline-close").click(function(){
+  	  $(".slide-area").removeClass("slide-open");
+  	  $(".overlay").hide();
+  	  $("body").css("overflow-y", "" );
+  	});
+  
+  	var Suggestion_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/Activity.aspx?Mode=Add&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&Type=Suggestion&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#Suggestion').attr('href', Suggestion_link);
+  	
+  	var Initiative_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/Activity.aspx?Mode=Add&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&Type=Initiative&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#Initiative').attr('href', Initiative_link);
+  	
+  	var Acivities_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/Activity.aspx?Mode=Add&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&Type=Activities&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#Acivities').attr('href', Acivities_link);
+  	
+  	//TimesheetEntry	TimesheetApproval
+  	var Timesheet_Entry_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/TimeSheetEntry.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#Timesheet-Entry').attr('href', Timesheet_Entry_link);
+  	
+  	var TimesheetEntry_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/timesheet.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#TimesheetEntry').attr('href', TimesheetEntry_link);
+  	
+  	var TimesheetApproval_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/TimeSheetApproval.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#TimesheetApproval').attr('href', TimesheetApproval_link);
+  	
+  	var Holidays_link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/Holidays.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#Holidaysbtn').attr('href', Holidays_link);
+  	
+  	var Analytics_Link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/AnalyticalReport.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#Analytics_Link').attr('href', Analytics_Link);
+  	
+  	var Report_Link=  _spPageContextInfo.webServerRelativeUrl + "/Pages/Report.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+  	$('#AttendanceReport').attr('href', Report_Link);
+  	
+  	
+	
+	var strDate= new Date();
+	var start = moment(strDate,'DD/MM/YYYY').format('YYYY-MM-DD');
+	var StartDate = start.split('-').join('');
+	
+	var today = new Date();
+	var lastWeek = new Date(today.getFullYear(), today.getMonth(), today.getDate() - 7);
+	var end = moment(lastWeek,'DD/MM/YYYY').format('YYYY-MM-DD');
+	
+	var EndDate = end.split('-').join('');
+
+	//My-Attendance-report
+	var MyAttendancereport=  _spPageContextInfo.webServerRelativeUrl + "/Pages/EmployeeReport.aspx?EID="+_spPageContextInfo.userId+"&start="+EndDate+"&end="+StartDate+"&WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#My-Attendance-report').attr('href', MyAttendancereport);
+	
+	var TimesheetReport = _spPageContextInfo.webServerRelativeUrl + "/Pages/TimesheetReport.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#TimesheetReport').attr('href', TimesheetReport);
+	
+	var clientmaster = _spPageContextInfo.webServerRelativeUrl + "/Pages/clientmaster.aspx?WebAppId="+window.btoa(titanForWork.getQueryStringParameter("CompanyId"))+"&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#Clients-toggle').attr('href', clientmaster);
+
+	var ExternalUsers = _spPageContextInfo.webServerRelativeUrl + "/Pages/ExternalUsers.aspx?WebAppId="+window.btoa(titanForWork.getQueryStringParameter("CompanyId"))+"&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#Guest-Users-toggle').attr('href', ExternalUsers);
+	
+	var ContactCenter = _spPageContextInfo.webServerRelativeUrl + "/Pages/ContactCenter.aspx?WebAppId="+window.btoa(titanForWork.getQueryStringParameter("CompanyId"))+"&sourcelocation=../Pages/Myworkplace.aspx#";
+	$('#Contact-Center-toggle').attr('href', ContactCenter);
+
+
+
+});
+
+</script>
+    
+<script> 
+$("#popup-toggle").click(function(){
+	$("#Timesheet-menu").hide();
+	$("#Reports-menu").hide();
+	$("#Attendance-menu").hide();
+    $("#popup-menu").toggle();
+});
+//Timesheet
+$("#Timesheet-toggle").click(function(){
+	$("#popup-menu").hide();
+	$("#Reports-menu").hide();
+	$("#Attendance-menu").hide();
+    $("#Timesheet-menu").toggle(100);
+});
+// Attendance
+$("#Attendance-toggle").click(function(){
+	$("#popup-menu").hide();
+	$("#Timesheet-menu").hide();
+	$("#Reports-menu").hide();
+    $("#Attendance-menu").toggle(100);
+});
+//Leaves
+$("#Leaves-toggle").click(function(){
+	$("#popup-menu").hide();
+	$("#Timesheet-menu").hide();
+	$("#Reports-menu").hide();
+	$("#Attendance-menu").hide();
+    $("#Leaves-menu").toggle(100);
+});
+//Reports
+$("#Reports-toggle").click(function(){
+	$("#popup-menu").hide();
+	$("#Timesheet-menu").hide();
+	$("#Attendance-menu").hide();
+    $("#Reports-menu").toggle(100);
+});
+
+$(".suggestion-new, .initiative-new").on("click", function(){
+    $(".popup-menu").hide();
+    $("#Timesheet-menu").hide();
+});
+
+function ValidateHrAdmin()
+{
+	var listName='ProcessApprovers';
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=CompanyId eq '" +titanForWork.getQueryStringParameter('CompanyId')+ "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and (WebPartName eq 'HR Admin' or WebPartName eq 'Tech Admin' )";
+    $.ajax({
+        url: siteURL,
+        async:false,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data)
+        {
+        	//var option = "";
+            var valuesArray = data.d.results;
+            if(valuesArray.length>0)
+            {
+				$("#Reports-toggle").css("display", "inline-block");
+				//ValidateHRAdmin = "block";
+			}
+            else
+            {
+             	$("#Reports-toggle").css("display", "none");
+             	//ValidateHRAdmin = "none";
+            }
+		},
+        error: function (data) 
+        {
+			console.log(data.responseJSON.error);
+        }
+	});
+}
+
+function ValidateClient()
+{
+	var listName='ProcessApprovers';
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*,Department/DepartmentName,Department/ID&$expand=Department&$filter=CompanyId eq '" +titanForWork.getQueryStringParameter('CompanyId')+ "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and (WebPartName eq 'ClientMaster')";
+    $.ajax({
+        url: siteURL,
+        async:false,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data)
+        {
+        	//var option = "";
+            var valuesArray = data.d.results;
+            if(valuesArray.length>0)
+            {
+				$("#Clients-toggle").css("display", "inline-block");
+				//ValidateHRAdmin = "block";
+			}
+            else
+            {
+             	$("#Clients-toggle").css("display", "none");
+             	//ValidateHRAdmin = "none";
+            }
+		},
+        error: function (data) 
+        {
+			console.log(data.responseJSON.error);
+        }
+	});
+}
+
+
+
+   $('#methord').click(function(){
+
+		$('#password').attr('type',$(this).is(':checked')?'text':'password');
+		$('i').toggleClass('activating');
+	})
+
+
+
+
+</script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1183</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1d9afe9e-c1e3-497b-9798-16972b64a19d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1183, ADMIN-1645029823-1183</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">118300.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>TITAN</title></head>

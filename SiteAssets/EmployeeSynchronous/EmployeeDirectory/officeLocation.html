@@ -1,0 +1,199 @@
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<style>
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+.blue-color	{color:#404040 !important}
+
+.location{
+
+    background:#f7f7f7 none repeat scroll 0% 0%;
+    box-shadow: 5px 24px 19px -30px #000;
+    margin-bottom: 30px;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    width:31%;
+    margin:0 1% 30px 1%;
+    position:relative;    
+}
+
+.location .posing{
+	position:absolute;
+	bottom:0;
+}
+
+.borderajust .col-md-3 h4{
+
+    line-height: 1.6;
+    color: #595959 !important;
+    font-weight: 600 !important;
+    font-size: 17px !important;
+}
+
+
+.borderajust .col-md-3{
+  width:100%;
+}
+
+.flxingbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;	
+  display:flex;
+ -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+   flex-wrap: wrap; 
+}
+
+.flexajst{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;	
+  display:flex;
+  padding:3px 0px;
+}
+
+.flexajst i,
+.flexajst label{
+ width:32%;
+}
+
+.flexajst .space_mange{
+ width:65%;
+ padding:0 10px;	
+}
+
+.new_btn{
+    background: linear-gradient(to top, #b9b9b9, #9b9b9b0f);
+    background:-webkit-linear-gradient(to top, #b9b9b9, #9b9b9b0f);
+    background:-moz-linear-gradient(to top, #b9b9b9, #9b9b9b0f);
+    background:-ms-linear-gradient(to top, #b9b9b9, #9b9b9b0f);
+    background:-o-linear-gradient(to top, #b9b9b9, #9b9b9b0f);
+    border-radius: 2px !important;
+    border: 1px solid #b5b5b5;
+    box-shadow: inset 0px 1px 1px #f9f9f9; 	
+    transition:0.5s;
+}
+
+@media (max-width: 979px) {
+    .modal-open .page-container .navbar-fixed-top {
+        overflow-y: visible;
+    }
+}
+
+@media (max-width: 767px){
+
+.flxingbox{
+ display:block;
+}
+
+.location{
+ display:block;
+ width:100%;	
+ margin-bottom:30px;
+}
+
+}
+
+/***july-6-21***/
+
+ol.breadcrumb li h4{
+ font-size:24px !important;	
+} 
+
+
+
+</style>
+<a id='langClickEvent' style="display:none">click</a>
+<label style="display:none" id="ClickHereForLocationLocal" data-localize="ClickHereForLocation"></label>
+	<div class="row department-header"> 
+		<ol class="breadcrumb">    
+			<li><h4><b data-localize="OfficeLocation">Office Locations</b></h4></li>           
+		</ol>
+	</div>
+	
+
+	<div class="container" ng-app="myApp" ng-controller="myCtrl" data-ng-init="GetOfficeLocation();GetCompaniesList()">
+		<div class="row" style="margin-bottom:15px">
+			<div class="row">		
+				<div class="col-md-3 col-sm-6 col-xs-12 pull-left bottom5">
+					<select class="form-control" ng-change="GetOfficeLocation()" id="companesList" ng-model="selectedCompanyId" ng ng-options="o.ID as o.CompanyName for o in companiesListArray">	
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="row">
+				<div class="col-md-12 flxingbox">
+					<div class="location" ng-repeat="x in showOffice">
+						<div class="panel-body">
+							<div class="row borderajust">
+								<div class="col-sm-6 col-md-3">
+									<h4>{{x.OfficeName}}</h4>
+									<p> 
+									    <div class="flexajst"><label data-localize="Contact person">Contact Person</label>:<span class="space_mange">{{x.ContactPerson}}</span></div>
+										<div class="flexajst"><label data-localize="Contact">Contact Number</label>:<span class="space_mange">{{x.ContactNo}}</span></div>
+									</p>      
+								</div>
+								<div class="col-sm-6 col-md-3 top10">
+									<p>
+									<div class="flexajst"><label data-localize="Adress">Address</label>:<span class="space_mange">{{x.Address}}</span></div>
+									<div class="flexajst"><label data-localize="City">City</label>:<span class="space_mange">{{x.City}}</span></div>
+									<div class="flexajst"><label data-localize="Zip">Pin</label>:<span class="space_mange">{{x.PinCode}}</span></div>
+									<div class="flexajst"><label data-localize="State">State</label>:<span class="space_mange">{{x.State}}</span></div>
+									<div class="flexajst"><label data-localize="Region">Region</label>:<span class="space_mange">{{x.Region}}</span></div>
+									<div class="flexajst"><label data-localize="Country">Country</label>:<span class="space_mange">{{x.Country}}</span></div>
+									</p>
+								</div>
+								<div class="col-sm-6 col-md-3 top10" style="margin-bottom:38px;">                                
+									<p> 
+									<div class="flexajst"><label data-localize="Telephone">Telephone No</label>:<span class="space_mange">{{x.TelephoneNo}}</span></div>
+									<div class="flexajst"><label data-localize="Email">Email Id</label>:<span class="space_mange">{{x.EmailID}}</span></div>
+									</p>      
+								</div>
+								<div class="col-sm-6 col-md-3 top20 posing">                                
+									<p ng-show="x.OfficeMapUrl!=null && x.OfficeMapUrl!=''">
+										<button type="button" class="btn btn-default new_btn" ng-click="GetOfficeLocationUrl(x.OfficeMapUrl)" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-map-marker blue-color" ></i> <label  data-localize="ClickHereForLocation"></label></button>
+									</p>      
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>						
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		<!-- Modal content-->
+			<div class="modal-content">     
+				<div class="modal-body" id="myDIVID">
+				<!-- <iframe ng-src="{{linkurl}}" width="564" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+				<!-- {{linkurl}} -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/officeLocation.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-257</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fb065720-d13d-4557-b199-1b020d63fe67</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-257, ADMIN-1645029823-257</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">25700.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,122 @@
+﻿
+
+#right {
+    border-color:#fe5959;
+    border-width: 1px;
+    width: 20em;
+    height: 36px;
+	margin-top:180px;
+	z-index:1000;
+}
+#right1 {
+    border-color:#1687e7;
+    border-width: 1px;
+    width: 20em;
+    height: 36px;
+	margin-top:220px;
+	z-index:1000;	
+}
+#right2 {
+	border-color:#5da887;
+	border-width: 1px;
+	width: 20em;
+	height: 36px;
+	margin-top:260px;
+	z-index:1000;
+}
+#right .handle {
+    background-color:#fe5959;
+}
+#right1 .handle {
+    background-color:#1687e7;
+}
+#right2 .handle {
+    background-color:#5da887;
+}
+
+
+.ui-slideouttab-panel, .ui-slideouttab-handle {
+    background-color: white;
+    padding: 0.4em;
+    box-sizing: border-box;
+}
+.ui-slideouttab-panel {
+	display: block;
+	position: fixed;
+    border: 2px solid grey;
+}
+/* This class is added after the tabs are initialised, otherwise the user sees the 
+   tabs slide out of the way when the page is initialised. */
+.ui-slideouttab-ready {
+	
+	/*-webkit-transition:transform 0.5s ease 0s;
+	-webkit-transition-property: background;*/
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease;
+	-moz-transition:transform 0.5s ease 0s;
+	-ms-transition:transform 0.5s ease 0s;	 
+	transition: transform 0.5s ease 0s;
+		
+}
+
+/* Hide tabs and panels when printed. */
+@media print {
+    .ui-slideouttab-panel {
+        display: none;
+    }
+}
+
+/* Tab handles */
+.ui-slideouttab-handle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+}
+.ui-slideouttab-handle-image {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+}
+
+/* Right */
+.ui-slideouttab-right {
+	right: 0px;
+	transform: translateX(100%);
+	-webkit-transform:translateX(100%);
+	border-right: none;
+}
+.ui-slideouttab-right.ui-slideouttab-open {
+	transform: translateX(0%);
+	-webkit-transform:translateX(0%);
+}
+.ui-slideouttab-right .ui-slideouttab-handle {
+    transform-origin: 0% 0%;
+    -webkit-transform-origin:0% 0%;
+    transform: rotate(-90deg) translate(-100%,-100%);
+    -webkit-transform:rotate(-90deg) translate(-100%,-100%);   
+}
+.ui-slideouttab-right .ui-slideouttab-handle-reverse {
+    transform-origin: 0% 100%;
+    -webkit-transform-origin:0% 100%;
+    transform: rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+}
+
+
+/* turn font awesome icon in a tab upright */
+.ui-slideouttab-left .ui-slideouttab-handle>.fa-icon, 
+.ui-slideouttab-right .ui-slideouttab-handle>.fa-icon { 
+    transform: rotate(90deg);
+    -webkit-transform:rotate(90deg);
+}
+.ui-slideouttab-handle>.fa-icon {
+    margin-left: 0.5em;
+}
+
+
+.ui-slideouttab-right .ui-slideouttab-handle-rounded, 
+.ui-slideouttab-bottom .ui-slideouttab-handle-rounded {
+    border-radius: 25px 25px 0 0;
+	padding:6px;
+}

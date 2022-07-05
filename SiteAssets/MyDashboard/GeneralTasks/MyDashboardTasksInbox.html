@@ -1,0 +1,352 @@
+﻿<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+ <span style="font-size: 10pt;"><link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+<style type="text/css">
+
+
+/* new css for jquery table */
+table.dataTable.no-footer {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85) !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.85)!important;
+    }
+    
+    .dataTables_filter label input {
+    width: 164px !important;
+    height: 26px;!important;
+    }
+    
+    label {
+   
+    font-weight: normal !important;
+}
+    /* end  new css for jquery table */
+
+   
+	.form-horizontal .row
+	{
+		padding:5px;	
+	}
+	.stars-outer {
+	  display: inline-block;
+	  position: relative;
+	  font-family: FontAwesome;
+	}
+	 
+	.stars-outer::before {
+	  content: "\f006 \f006 \f006 \f006 \f006";
+	}
+	 
+	.stars-inner {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  width: 0;
+	}
+	 
+	.stars-inner::before {
+	  content: "\f005 \f005 \f005 \f005 \f005";
+	  color: #f8ce0b;
+	}
+	
+.required:after {
+  content:"*";
+  color:red;
+}
+
+
+.table-width{
+	width:100% !important;	
+	table-layout: fixed;
+}
+
+/* new css added on 28/4/20 */
+
+.my_dashboard_ro1 {
+	padding-top: 15px;
+}
+.my_dashboard_tasks_table {
+	margin-top:15px;
+}
+
+@media (max-width: 767px){
+	.table-width{
+		width:800px;
+		table-layout: inherit;	
+	}
+	.ms-webpart-zone,.ms-webpart-cell-horizontal,div.ms-webpart-cell-vertical-inline-table,.ms-webpart-chrome-vertical {
+		display:block !important;
+	}
+	#tablewrapper.table-responsive>.table>tbody>tr>td{
+		white-space: normal;
+	}
+}
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+ /* 30-04-2020 for click more popup*/
+#myViewAllTeamMemberModal .modal-dialog .modal-content .modal-body {
+    height: 100%;
+    max-height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.modal-head-new {
+  /*  background-color: #0e5796 !important;*/
+    border-radius: 5px 5px 0px 0px !important;
+    overflow: auto;
+    height: 100%;
+	padding: 10px 15px !important;
+}
+.table-custom-border {
+	 border:1px solid #ddd;
+	 border-radius:0px 0px 0px 0px;
+}
+.mb-0{margin-bottom:0px;}
+.modal-1200{
+	 width:95%;
+	 max-width:1200px;	
+}
+.modal-backdrop {
+    visibility: hidden !important;
+}
+
+
+</style>
+
+<script>
+$(document).ready(function () {
+	$('#TempTableTasksInbox').dataTable( {
+	/*	 'aoColumnDefs': [{
+           'bSortable': false,
+           'aTargets': -1,           
+		}], */
+		"order": []
+	});
+});
+</script>
+
+<div class=" row department-header" style="display:none;">
+	<ol class="breadcrumb">                
+		<li><h4><b>Manage Tasks</b></h4></li>
+	</ol>
+</div>
+
+<!--<div class="container">-->
+
+	<div class="row">
+			
+		<div class="vertical_align" style="padding-top:15px;">
+			<div class="row">
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" style="margin-left:10px" data-localize="Status"> Status</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4" style="margin-right:-14px">
+				   <select name="select5" class="form-control" id="txtFilterStatusInbox">
+						<option>Open</option>
+						<option>All</option>
+						<option>Completed</option>
+						<option>Hold</option>
+						<option>Cancelled</option>
+					</select>
+				</div>
+				<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" data-localize="Subordinate"> Subordinate</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4">
+				   <select name="select5" class="form-control" id="assigntodrp"></select>
+				</div>
+				<div class="col-sm-1 col-xs-2 filter-res" style="margin-left: -9px;">
+	                <button type="button" class="btn btn-outline-primary" id="Filterdata">Filter</button>
+	            </div>
+	            
+	            	<label for="inputEmail6" class="col-md-0 margin_bottom label_font_normal" data-localize="Project"> Project</label>
+				<div class="taskphase-drpdwn-div col-sm-2 padding-left-4">
+				   <select name="select5" class="form-control" id="allProject">
+					</select>
+				</div>
+				 <!--<input id="myInput" type="text" style="width: 185px; height: 30px;" placeholder="Search.."> -->
+				 
+				 <div class="col-sm-1 pull-right">
+					<a type='button' style='margin-right: 12px;' class='btn btn-outline-primary newTask'><span class='glyphicon glyphicon-plus' style='padding-right: 5px;'></span><span data-localize="AddTask">AddTask</span></a>
+				</div>
+        	</div>
+		</div>
+
+
+	</div>
+			
+			        
+
+
+
+	<div class="row my_dashboard_tasks_table">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">			
+				<div id="tablewrapper" class="table-responsive " ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columnsTasksInbox" onchange="sorterTasksInbox.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecordTasksInbox"></span>-<span id="endrecordTasksInbox"></span> PagesOf  <span id="totalrecordsTasksInbox"></span></div>
+								<div style="display:none;"><a href="javascript:sorterTasksInbox.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<!--<div class="mrg-top-10m  btm10 container">
+					</div>-->		
+
+					<table cellpadding='0' cellspacing='0' border='1' id='TempTableTasksInbox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+					<thead class='panel-heading '><tr id="firstrow">
+					<th><h6 data-localize="Title">Title</h6></th>
+					<th><h6 data-localize="ProjectName"> Project Name</h6></th>
+					<th><h6 data-localize="AssignTo">Assigned To</h6></th>
+					<th><h6 data-localize="AssignBy">Assigned By</h6></th>
+					<th><h6 data-localize="Priority">Priority </h6></th>
+					<th><h6 data-localize="DueDate"> Due Date</h6></th>
+					<th><h6 data-localize="Status">Status</h6></th>
+					<th><h6 data-localize="CompletionPecentage">Completion %</h6></th>
+					</tr></thead>
+					<tbody class='panel mainDivTasksInbox' id="inboxtbody">					
+					</tbody></table>			
+					
+							
+					<div id="mainDivTasksInbox">
+					</div>					
+				</div>
+			</div>
+		</div>
+	<!--</div>-->
+
+
+<div class="modal fade" id="modalPopupTasksInbox" role="dialog">
+    <div class="modal-dialog">    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header panel-head-4">
+          <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title h4-color" data-localize="TaskStatus">Task Status</h4>
+        </div>
+        <div class="modal-body" >
+        <div class="form-horizontal">             
+	         <div class="row">
+	         <div class="col-sm-4 control-label" ><label class="  required" for="txtRegisterNumber_Inbox" data-localize="Completion">Completion</label></div>
+	         <div class="col-sm-8" ><input type="number" min="1" max="100"  class="form-control" id="txtCompletionPercentage_Inbox" placeholder="% Completed"></div>   
+	         </div>
+	         <div class="row">
+			         <div class="col-sm-4 control-label" > 
+			         	<label class=" required" for="txtRegisterName_Inbox" data-localize="Status">Status</label>
+			         </div>
+					<div class="col-sm-8" > 
+						<select class="form-control" id="cmbCurrentStatusList_Inbox">
+						<option>Open</option>
+						<option>Completed</option>
+						<option>Hold</option>
+						<option>Cancelled</option>
+						</select>  
+					</div> 
+					   
+  
+	         </div>
+			<div class="row" id="taskCompletionDIV_Inbox">
+				<div class="col-sm-4 control-label" > <label class="required" for="txtStartDate_Inbox" data-localize="CompletionDate">Completion Date</label></div>
+				<div class="col-sm-8" >    <input type="text" style="" class="form-control" id="txtTaskDetailsDate_Inbox">
+				</div>   
+			</div>                                  
+         <br>
+			<div class="row">
+				<div class="col-sm-4 control-label" ><label class="" for="remarks"></label></div>
+				<div class="col-sm-8" >  
+					<input type="text" class="form-control" id="txtTastStartDate_Inbox" style="display:none;">
+					<input type="text" class="form-control" id="txtTastItemID_Inbox" style="display:none;">
+					<input type="button" class="btn  btn-outline-success button" data-localize="Submit" id="btnSubmitTaskInbox">
+					<input type="reset" class="btn btn-outline-secondary button" data-localize="Close" data-dismiss="modal">
+				</div>   
+			</div>
+			  </div>
+        </div>       
+      </div>
+    </div>
+  </div> 
+
+
+
+
+
+
+<!-------------------Team Members Modal--------->
+<div class="modal fade" id="myViewAllTeamMemberModal" role="dialog" style="padding-top: 10% !important; z-index:58;aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog modal-1200">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-left:297px;margin-right:659px">
+        <div class="modal-header modal-head-new">
+          <button type="button" class="close modal-head-close" data-dismiss="modal" style="margin-top: 2px !important;">×</button>
+          <a class="pull-right" id="btnAddNewTeamMembersPopup" style="padding-right:59px; display:none;"><span class="glyphicon glyphicon-plus-sign text-size"></span></a>
+           <h4 class="modal-title h4-color"><span class="modal-head-text">Assigned To</span></h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12">
+          <div class="row">
+          	<div class="table-responsive table-custom-border">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-custom-head">
+                                              </thead>
+                        <tbody id="viewALLTealMemberes">
+                            
+                        </tbody>
+                    </table>
+                  </div>
+          
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-------------------Team Members Modal--------->
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src="../SiteAssets/MyDashboard/GeneralTasks/MyDashboardTasksInbox.js"></script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-72</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">8d93ab57-9bc3-4972-9268-086c7af88441</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-72, ADMIN-1645029823-72</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">7200.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title>
+</head>

@@ -1,0 +1,234 @@
+﻿<script type="text/javascript">
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventGetPollsQuestion,"sp.js"); 
+}); 
+
+var clientContext='';
+var TitanHomePage='';
+var counter=0;
+var totalAns='';
+var PollLength=0;
+
+function getCurrentURL_EventGetPollsQuestion()
+{
+	var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var siteURL = items[0].SiteURL;
+				clientContext = new SP.ClientContext(siteURL);
+				getGetPollsQuestion(siteURL);
+				
+				
+            }
+           
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+$(document).ready(function(){
+	$('#Back').click(function() { 
+		var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");		
+		TitanHomePage=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId="+txtCompanyId;
+		window.open(TitanHomePage,"_self");	  
+	});
+	
+	if($.cookie.length>0 && $.cookie("Language")!=undefined)
+	{           
+		var preferredLanguageValue=$.cookie("Language");
+		var preferredLanguage=$.cookie("Language").split('#');  // Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+		preferredLanguageGlobal=preferredLanguage[0];
+
+	}
+	else
+	{
+		preferredLanguageGlobal='DefaultLanguage';
+	}
+
+});
+
+
+function getGetPollsQuestion(siteURL){
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	var PollQuestion='';
+	var requestUri =siteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items?$select=*&$Filter=MainPollID eq '"+txtPollId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) {
+						totalAns=0;
+						if(preferredLanguageGlobal=="DefaultLanguage")
+						{
+							PollQuestion=items[i]["Title"];
+						}
+						else
+						{
+							PollQuestion=items[i][preferredLanguageGlobal];
+						}
+						var PollQuestionId=items[i]["ID"];
+						getPollAnswer(siteURL,PollQuestionId,txtPollId,preferredLanguageGlobal,PollQuestion);
+						counter++;
+					}
+					
+					
+            },
+            error: function () {
+                console.log("Error getting the Poll Question.");
+            }                     
+        });
+	
+}
+
+function getPollAnswer(siteURL,PollQuestionId, txtPollId,preferredLanguageGlobal,PollQuestion)
+{
+	    var IsParticipate =  titanForWork.getQueryStringParameter("IsParticipate");
+	
+		var PollOption='';
+		var requestUri =siteURL + "/_api/lists/getbytitle('PollAnswerDeatils')/items?$select=*&$Filter=QuestionID eq '"+PollQuestionId+"'";
+		$.ajax({
+				url: requestUri,
+				type: "GET",
+				async:false,
+				headers: { "ACCEPT": "application/json;odata=verbose" },
+				success: function (data) {
+						var items=data.d.results;
+						var PollsParticipateHTML='';
+						PollsParticipateHTML +='<div class="col-sm-12 todoborder">';
+						PollsParticipateHTML +='<div class="row pdng-top-10 bottom10">';
+						PollsParticipateHTML +='<div class="col-md-12 Questiontxt">';
+						//PollsParticipateHTML +='<span class="pull-left" id="txtQuestion">Q'+counter+'. &nbsp;  '+PollQuestion+' ? </span>';
+						PollsParticipateHTML +='<span class="pull-left" id="txtQuestion">Q'+(counter+1)+'. &nbsp;  '+PollQuestion+' ? </span>';
+						PollsParticipateHTML +='<span id="questionId" style="display:none;">'+PollQuestionId+'</span>';
+						PollsParticipateHTML +='<div class="col-md-12 ">';
+						
+						for(j = 0; j < items.length;j++) {
+							if(preferredLanguageGlobal=="DefaultLanguage")
+							{
+								PollOption=items[j]["Title"];
+							}
+							else
+							{
+								PollOption=items[j][preferredLanguageGlobal];
+							}
+							var PollOptionId=items[j]["ID"];
+							PollsParticipateHTML +='<div class="radio'+(counter+1)+' col-xs-12 col-sm-12 col-md-12 radio">';
+							PollsParticipateHTML +='<label class="col-xs-12 col-sm-4 col-md-4 col-lg-3" style="padding-left:0px;">'+PollOption+'</label>';
+							PollsParticipateHTML +='</div>';
+							getParticipantCountCurrentPoll(siteURL,PollQuestionId,PollOptionId);
+							PollsParticipateHTML +='<span class="currentPollAns" style="display:none;">'+PollLength+'</span>';
+						}
+						PollsParticipateHTML +='<div class="col-md-2 poll-result-label"></div><span class="poll-result-span col-md-10 col-sm-8 col-xs-12 pull-right"><span data-localize="TotalUserParticipationColon">Total Users Participated :</span> <b>'+totalAns+'</b></span>';
+						PollsParticipateHTML +='<span class="totalAnsPoll" style="display:none;">'+totalAns+'</span>';
+						PollsParticipateHTML +='</div></div></div></div>';
+						$("#pollsParticipate").append(PollsParticipateHTML);
+						
+						$('.radio'+(counter+1)+'').each(function(){
+							var PollCount= $(this).next("span:eq(0)").text();
+							totalAns
+							var PollPersent= Math.round((PollCount*100)/totalAns);
+							$(this).append('<div class="progres-div col-xs-12 col-sm-8 col-md-8 col-lg-9 pull-right"><div class="progres-div-sec col-xs-12 col-sm-8 col-md-8 col-lg-4"><div class="progress"><div class="progress-bar" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100" style="width: '+PollPersent+'%;">'+PollPersent+'%</div></div></div></div>');
+						});
+				},
+				error: function () {
+					console.log("Error getting the poll Option.");
+				}                     
+			});
+}
+
+function getParticipantCountCurrentPoll(siteURL,PollQuestionId,PollOptionId){
+	var requestUri =siteURL + "/_api/lists/getbytitle('PollsResults')/items?$select=*&$Filter=QuestionId eq '"+PollQuestionId+"' and PollOptionId eq '"+PollOptionId+"'";
+		$.ajax({
+				url: requestUri,
+				type: "GET",
+				async:false,
+				headers: { "ACCEPT": "application/json;odata=verbose" },
+				success: function (data) {
+						var items=data.d.results;
+						totalAns= totalAns+items.length;
+						PollLength=items.length;
+				},
+				error: function () {
+					console.log("Error getting the poll Option.");
+				}                     
+			});
+	
+}
+
+	
+
+</script>
+
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b data-localize="PollsResult">Survey Result</b></h4></li>           
+	</ol>
+</div>
+<section class="content shadow2 panel">
+<div class="container-fluid top15">	
+	<div class="back-div">
+	<button type="button" class="btn btn-outline-secondary" id="Back" data-localize="Close">Close</button>
+	</div>
+	<div id="pollsParticipate">
+	</div>
+</div>
+</section>
+
+<style>
+div#pollsParticipate, .col-sm-12.todoborder {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.back-div button#Back {
+    margin-right: 0px !important;
+}
+.col-xs-12.col-sm-12.col-md-12.radio label{
+cursor: default;
+}
+div#pollsParticipate .todoborder:last-child {
+    border-bottom: none;
+}
+</style>
+
+
+ 
+  
+   
+    
+     
+		
+	 
+	 
+	
+   
+   <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-391</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">82b660ea-4c96-4b93-aa75-c4ac79329408</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-391, ADMIN-1645029823-391</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">39100.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

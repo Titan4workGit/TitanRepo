@@ -1,0 +1,1157 @@
+﻿<style type="text/css">
+    .form-horizontal .control-label {
+        text-align: left;
+    }
+
+    .text_left {
+        text-align: right !important;
+    }
+
+    .browse {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        width: 100%;
+        background: transparent;
+    }
+
+    .panel-group .panel {
+        border-radius: 5px;
+        border-color: #EEEEEE;
+        padding: 0;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+        .panel-title > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+    .required:after {
+        content: "*";
+        color: red;
+    }
+    .companylogo-fitbox {
+        overflow: hidden;
+        width: 80px;
+        /*height: 80px;*/
+    }
+    .companyLogo {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+</style>
+
+<script type="text/javascript">
+
+var listname = "Companies";
+var siteURL='';
+var siteClientContext='';
+var CompanySiteURL='';
+var CompanyId='';
+var G_AttachmentFiles='';
+$(document).ready(function ()
+{
+
+	UserAuthorization();
+	getAttachment();
+	$("#createNewCompanySiteees").on("click", function() {
+	 alert('This feature are not available !');
+	 $("#createNewCompanySiteees").hide();
+	});
+});
+
+//// User Authorization
+function UserAuthorization()
+{
+debugger;
+	var companyId =Logged_CompanyId; // titanForWork.getQueryStringParameter("CompanyId");
+	titanForWork.PageAuthorization("ManageCompany",companyId).done(function(currentUserRights,message)
+	{
+		if(currentUserRights.length>0)
+		{
+			if((currentUserRights[0].SiteAdmin=="SiteAdmin") || (currentUserRights[0].TechAdmin=="TechAdmin"))
+			{
+				GetDMSSubSite();
+				userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+			    SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventManageCompany,"sp.js");
+
+				//// Company Creation Option
+				var couter=0;
+				$(".companyCreation").click(function(){
+					couter++;
+					if(couter==3)
+					{
+						$("#CompanyCreationAuthorization").modal('show');
+						couter=0;
+					}
+				});
+
+				$("#createCompany").click(function(){
+					var todayDate=new Date();
+					var todayDay=todayDate.getDay();
+					var dayName = new Array ("sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday");
+					var password=$("#txtPassword").val();
+
+					if(password==dayName[todayDay])
+					{
+						var CompanyIdiis= Logged_CompanyId; //titanForWork.getQueryStringParameter("CompanyId");
+				        window.location.href = _spPageContextInfo.webAbsoluteUrl+"/Pages/CreateNewCompany.aspx?WebAppId=" + CompanyIdiis + "&sourcelocation=../Pages/AdminPortal.aspx";
+					}
+					else
+					{
+						alert("Wrong credentials...");
+						$("#txtPassword").val('')
+					}
+				})
+			}
+			else
+			{
+				alert(message);
+				window.location.href=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId="+companyId;
+			}
+		}
+   });
+}
+
+function isValidURL() {
+   var str= $('#logoLink').val();
+  regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
+        if (regexp.test(str))
+        {
+          
+          return true;
+          
+        }
+        else
+        {
+          alert('Please enter valid link !');          
+          $('#logoLink').val('');
+          //document.getElementById("logoLink").focus();
+          
+          return false;
+        }
+}
+
+
+function getCurrentURL_EventManageCompany()
+{
+    var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listname+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                CompanySiteURL = items[0].SiteURL;
+                siteClientContext = new SP.ClientContext(CompanySiteURL);
+                getActiveLanguage();
+                getCompanyDetails();
+                getCorporateCompanyEmail();
+                $("#createNewCompanySiteees").hide();
+                $("#createDMSSite").hide();
+			}
+
+        }, eror: function (data)
+        {
+            alert($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function getActiveLanguage(){
+    var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('LanguageSetting')/items?$select=*&$Filter=Status eq 'Active'";
+    //var siteURL= _spPageContextInfo.webAbsoluteUrl;
+    $.ajax({
+        url: requestUri,
+        type: "GET",
+        async:false,
+        headers: { "ACCEPT": "application/json;odata=verbose" },
+        success: function (data) {
+            var items=data.d.results;
+
+            var LanguageToggel='';
+            LanguageToggel +='<div class="panel panel-default">';
+            LanguageToggel +='<div class="panel-heading panel-head-4 Company-Other-languag" role="tab" id="headingOne">';
+            LanguageToggel +='<h4 class="panel-title h4-color">';
+            LanguageToggel +='<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">';
+            LanguageToggel +='<i class="short-full glyphicon-chevron-down glyphicon"></i><span data-localize="CompanyDetailsInOtherLanguage">Company Details In Other Languages</span></a></h4></div>';
+            LanguageToggel +='<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">';
+            LanguageToggel +='<div class="panel-body"><div class="form-horizontal">';
+
+            for(i = 0; i < items.length;i++) {
+                var Language=items[i]["Language"];
+                var LanguageTitle=items[i]["Title"];
+                var LanguageID=items[i]["ID"];
+                var logoID=i+1;
+                if(LanguageTitle!="DefaultLanguage")
+                {
+                    $("#accordion").show();
+                    LanguageToggel +='<div class="form-group"><label for="" class="col-sm-4 control-label">('+Language+') Company Name</label><div class="col-sm-8"><input type="text" class="form-control CompanyNametxt" id='+LanguageTitle+'></div></div>';
+                    LanguageToggel +='<div class="form-group"><label for="" class="col-sm-4 control-label">('+Language+') Logo</label><div class="col-sm-8"><input type="file" class="form-control CompanyLogo" id=Logo'+logoID+'></div></div>';
+                }
+            }
+            LanguageToggel +='</div></div></div></div>';
+            $("#accordion").append(LanguageToggel);
+
+        },
+        error: function () {
+            alert("Error getting the Company Name.");
+        }
+    });
+}
+
+function DeleteItemAttachment(ItemId, FileTitle) {
+    var Dfd = $.Deferred();
+    var Url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('Companies')/GetItemById(" + ItemId + ")/AttachmentFiles/getByFileName('" + FileTitle + "')  ";
+    $.ajax({
+        url: Url,
+        type: 'DELETE',
+        async: false,
+        contentType: 'application/json;odata=verbose',
+        headers: {
+            'X-RequestDigest': $('#__REQUESTDIGEST').val(),
+            'X-HTTP-Method': 'DELETE',
+            'Accept': 'application/json;odata=verbose'
+        },
+        success: function (data) {
+            Dfd.resolve(data);
+        },
+        error: function (error) {
+            Dfd.reject(JSON.stringify(error));
+        }
+    });
+    return Dfd.promise();
+}
+
+function getCompanyDetails(){
+    var txtCompanyId =Logged_CompanyId;//titanForWork.getQueryStringParameter("CompanyId");
+    var clientContext=new SP.ClientContext();
+    var oList = clientContext.get_web().get_lists().getByTitle('Companies');
+    var camlQuery = new SP.CamlQuery();
+    var camlXML = "<View><Query><Where><Eq><FieldRef Name='ID' /><Value Type='Number'>"+txtCompanyId+"</Value></Eq></Where></Query></View>";
+    camlQuery.set_viewXml(camlXML);
+    var collListItem = oList.getItems(camlQuery);
+    clientContext.load(collListItem);
+    clientContext.executeQueryAsync(function(){
+        var listItemEnumerator = collListItem.getEnumerator();
+        var ItemCount=collListItem.get_count();
+        var counter=1;
+        while (listItemEnumerator.moveNext())
+        {debugger;
+            var oListItem = listItemEnumerator.get_current();
+           
+            var CompanyName=oListItem.get_item('CompanyName');
+            $('#CompanyNameEng').val(CompanyName);
+            
+            var myCompanyId= oListItem.get_item('ID');
+              $('#MyCompanyId').val(myCompanyId);
+            var BusinessDomain= oListItem.get_item('BusinessDomain');
+              $('#logoLink').val(BusinessDomain);              
+  
+
+            var MassMailID=oListItem.get_item('EmailID');
+            $('#massMailID').val(MassMailID);
+
+            $('.CompanyNametxt').each(function(){
+                var TextBoxID=$(this).attr('id');
+                if(TextBoxID=="Language2nd")
+                {
+                    var Language2nd=oListItem.get_item('Language2nd');
+                    $('#Language2nd').val(Language2nd);
+                }
+                else if(TextBoxID=="Language3rd"){
+                    var Language3rd=oListItem.get_item('Language3rd');
+                    $('#Language3rd').val(Language3rd);
+                }
+                else if(TextBoxID=="Language4th"){
+                    var Language4th=oListItem.get_item('Language4th');
+                    $('#Language4th').val(Language4th);
+                }
+                else if(TextBoxID=="Language5th"){
+                    var Language5th=oListItem.get_item('Language5th');
+                    $('#Language5th').val(Language5th);
+                }
+                else if(TextBoxID=="Language6th"){
+                    var Language6th=oListItem.get_item('Language6th');
+                    $('#Language6th').val(Language6th);
+                }
+                else if(TextBoxID=="Language7th"){
+                    var Language7th=oListItem.get_item('Language7th');
+                    $('#Language7th').val(Language7th);
+                }
+                else if(TextBoxID=="Language8th"){
+                    var Language8th=oListItem.get_item('Language8th');
+                    $('#Language8th').val(Language8th);
+                }
+                else if(TextBoxID=="Language9th"){
+                    var Language9th=oListItem.get_item('Language9th');
+                    $('#Language9th').val(Language9th);
+                }
+                else if(TextBoxID=="Language10th"){
+                    var Language10th=oListItem.get_item('Language10th');
+                    $('#Language10th').val(Language10th);
+                }
+
+            });
+        }
+    },
+
+	function(error){
+	    alert('error :'+error.responseText);
+	});
+
+}
+
+function getAttachment(){
+debugger;
+    var txtCompanyId =  Logged_CompanyId;//titanForWork.getQueryStringParameter("CompanyId");
+    var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('Companies')/items?$select=*,AttachmentFiles&$expand=AttachmentFiles&$Filter=ID eq '"+txtCompanyId+"'";
+    //var siteURL= _spPageContextInfo.webAbsoluteUrl;
+    $.ajax({
+        url: requestUri,
+        type: "GET",
+        async:false,
+        headers: { "ACCEPT": "application/json;odata=verbose" },
+        success: function (data) {
+            var items=data.d.results;
+             console.log(items)
+            var CompanyDetails='';
+            for(i = 0; i < items.length;i++) {
+                var CompanyName=items[i]["CompanyName"];
+                var CompanyID=items[i]["ID"];
+                G_AttachmentFiles=items[i].AttachmentFiles.results[0].FileName;
+                var attachmentFile=items[i].AttachmentFiles.results[0].ServerRelativeUrl;                  
+	              var Img=$('#companylogo');                      	        	 
+	          	  Img.attr('src',attachmentFile);
+
+                CompanyDetails +='<a class="list-group-item" onclick="getCompanyDetails('+CompanyID+');" >'+CompanyName+'</a>';
+            }
+            $("#CompanyName").append(CompanyDetails);
+
+        },
+        error: function () {
+            alert("Error getting the Company Name.");
+        }
+    });
+}
+
+$(function() {
+    bindButtonClick();
+    closeNewCompanySite();
+    caertenewCompany();
+
+});
+
+function bindButtonClick() {
+    $("#createNewCompanySite").on("click", function() {
+     getAttachment();
+        var companyNameEng =$("#CompanyNameEng");
+        var massMailID =$("#massMailID");
+        var corporateMassMailID = $("#corporatemassMailID");
+        if (companyNameEng .val().length>100) {
+            alert("Company Name allow only Max 100 char.");
+            companyNameEng.focus();
+            return false
+        }
+        var logoLink= $('#logoLink').val();
+        if(logoLink!=''){
+	        if(isValidURL()==false){
+	           return false;
+	        }
+        }
+        if ($.trim(companyNameEng.val()) == '') {
+            alert("Please enter Company Name.");
+            companyNameEng.focus();
+        }
+        
+        else if ($.trim(massMailID.val())=='') {
+            alert("Please fill Mass Email ID.");
+            massMailID.focus();
+        }
+        else if ($.trim(corporateMassMailID.val())=='') {
+            alert("Please fill Corporate Mass Email ID.");
+            corporateMassMailID.focus();
+        }
+
+        else{
+            $('.submitButton').find('button').attr("disabled",true);
+            updateListItemCompany();
+        }
+    });
+}
+
+function closeNewCompanySite() {
+    $("#closeNewCompanySite").on("click", function() {
+        CancelForm();
+    });
+}
+
+function caertenewCompany()
+{
+
+   /* $("#createNewCompanySiteees").on("click", function() {
+        var CompanyIdiis= titanForWork.getQueryStringParameter("CompanyId");
+        window.location.href = _spPageContextInfo.webAbsoluteUrl+"/Pages/CreateNewCompany.aspx?WebAppId=" + CompanyIdiis + "&sourcelocation=../Pages/AdminPortal.aspx";
+    });*/
+
+
+
+}
+
+function updateListItemCompany()
+{
+debugger;
+	var ItemType="SP.Data.CompaniesListItem";
+    var Metadata;
+    Metadata =  {
+                __metadata: {
+                    'type': ItemType
+                }};
+    var txtCompanyId = Logged_CompanyId;//titanForWork.getQueryStringParameter("CompanyId");
+    var file = $("#logoENg")[0].files[0];
+    var CompanyNameEng = $("#CompanyNameEng").val();
+    var massMailID = $("#massMailID").val();
+    var CompanyLogos= _spPageContextInfo.webAbsoluteUrl+'/Lists/Companies/Attachments/'+txtCompanyId +'/';
+      
+    Metadata.CompanyName = CompanyNameEng;
+    Metadata.Title = CompanyNameEng;
+    Metadata.BusinessDomain=$('#logoLink').val();
+    Metadata.EmailID = massMailID;
+    if(file !=null){
+        CompanyLogos+=file.name;  
+	    Metadata.CompanyLogo={ '__metadata': { 'type': 'SP.FieldUrlValue' }, 'Description': CompanyLogos, 'Url': CompanyLogos};
+	    Metadata.SmallLogo={ '__metadata': { 'type': 'SP.FieldUrlValue' }, 'Description': CompanyLogos, 'Url': CompanyLogos};
+    }
+    
+    if (file != null) {
+        DeleteItemAttachment(txtCompanyId,G_AttachmentFiles);
+        uploadFile(file);
+        var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+        Metadata.CompanyLogo = URLFieldMetadat(logoURL);
+    }
+
+    $('.CompanyNametxt').each(function () {
+        var TextBoxID = $(this).attr('id');
+        if (TextBoxID == "Language2nd") {
+            var CompanyName = $(this).val();
+            Metadata.Language2nd = CompanyName;
+        }
+        else if (TextBoxID == "Language3rd") {
+            var CompanyName = $(this).val();
+            Metadata.Language3rd = CompanyName;
+        }
+        else if (TextBoxID == "Language4th") {
+            var CompanyName = $(this).val();
+            Metadata.Language4th = CompanyName;
+        }
+        else if (TextBoxID == "Language5th") {
+            var CompanyName = $(this).val();
+            Metadata.Language5th = CompanyName;
+        }
+        else if (TextBoxID == "Language6th") {
+            var CompanyName = $(this).val();
+            Metadata.Language6th = CompanyName;
+        }
+        else if (TextBoxID == "Language7th") {
+            var CompanyName = $(this).val();
+            Metadata.Language7th = CompanyName;
+        }
+        else if (TextBoxID == "Language8th") {
+            var CompanyName = $(this).val();
+            Metadata.Language8th = CompanyName;
+        }
+        else if (TextBoxID == "Language9th") {
+            var CompanyName = $(this).val();
+            Metadata.Language9th = CompanyName;
+        }
+        else if (TextBoxID == "Language10th") {
+            var CompanyName = $(this).val();
+            Metadata.Language10th = CompanyName;
+        }
+
+    });
+
+    $('.CompanyLogo').each(function () {
+        var TextBoxID = $(this).attr('id');
+        if (TextBoxID == "Logo2") {
+            var file = $("#Logo2")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language2nd_Logo = URLFieldMetadat( logoURL);
+            }
+
+        }
+        else if (TextBoxID == "Logo3") {
+            var file = $("#Logo3")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language3rd_Logo =URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo4") {
+            var file = $("#Logo4")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language4th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo5") {
+            var file = $("#Logo5")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language5th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo6") {
+            var file = $("#Logo6")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language6th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo7") {
+            var file = $("#Logo7")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language7th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo8") {
+            var file = $("#Logo8")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language8th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo9") {
+            var file = $("#Logo9")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language9th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+        else if (TextBoxID == "Logo10") {
+            var file = $("#Logo10")[0].files[0];
+            if (file != null) {
+                DeleteItemAttachment(txtCompanyId, file.name);
+                AddAttachments(file);
+                var logoURL = _spPageContextInfo.webAbsoluteUrl + "/Lists/" + listname + "/Attachments/" + txtCompanyId + "/" + file.name;
+                Metadata.Language10th_Logo = URLFieldMetadat( logoURL);
+            }
+        }
+
+    });
+    $.when(updateCompanyItemWithID("Companies", Metadata, txtCompanyId)).done(function (MainExamListItemTemp) {
+       
+     
+        ManageCompanySettings();		// Manage Company Settings to Update MassEmailID and TITAN Site URL. We are using same for email-notifications
+        
+  
+
+
+      var corporatemail = $("#corporatemassMailID").val();
+      var corporateID = $("#itemIdCorporte").val();
+      var corporateitemType = "SP.Data.CompanySettingsListItem";      
+      var CorporateMetadata;		
+		    CorporateMetadata = {
+	            __metadata: {
+	                'type': corporateitemType
+	            },
+            MassEmailId:corporatemail,
+
+            
+        };
+        
+        
+        updateCompanyItemWithID("CompanySettings", CorporateMetadata, corporateID);     // update Company Settings for corporate MassEmailID on roootsite
+        
+        
+         alert('Updated Successfully.');
+          $('.submitButton').find('button').attr("disabled",false);
+         
+        var txtCompanyId = Logged_CompanyId//titanForWork.getQueryStringParameter("CompanyId");
+        var url = _spPageContextInfo.webServerRelativeUrl;
+        var projectGridPage = url + "/Pages/AdminPortal.aspx?WebAppId=" + txtCompanyId;
+      //  location.href = projectGridPage;
+
+    });
+}
+
+function URLFieldMetadat(urlalue)
+{
+    var spURLField= {
+            __metadata: { "type": "SP.FieldUrlValue" },
+        Url: urlalue,
+        Description: urlalue
+    }
+    return spURLField;
+}
+
+// Manage Company Settings to Update MassEmailID and TITAN Site URL. We are using same for email-notifications
+function ManageCompanySettings()
+{
+	debugger;
+
+ 	var dfd = $.Deferred();
+ 	var ListName ='CompanySettings';
+
+ 	var companyID=Logged_CompanyId;//titanForWork.getQueryStringParameter('CompanyId');
+    //var currentDomainSite=titanForWork.getQueryStringParameter('CurrentDomainSite');
+    var companySiteUrl=titanForWork.getQueryStringParameter('CompanySiteUrl');
+    var lastIndexOf=companySiteUrl.lastIndexOf('/');
+    var rootTITANSiteURL=companySiteUrl.substring(0,lastIndexOf);
+
+    var metadataCompanySettings=CompanySettingsMetadata(companyID,rootTITANSiteURL);
+
+	var requestURL= companySiteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items(1)";
+	var headersData={ "accept": "application/json;odata=verbose",
+        "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+        "content-Type": "application/json;odata=verbose",
+        "X-Http-Method": "PATCH",
+        "If-Match": '*'
+	};
+
+	$.ajax({
+        url:requestURL ,
+        type: "POST",
+        async: false,
+        headers: headersData,
+        data: JSON.stringify(metadataCompanySettings),
+        success: function (data) {
+        	dfd.resolve(data);
+        },
+        error: function (error) {
+		    console.log(error);
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function CompanySettingsMetadata(companyID,currentDomainSite)
+{
+	var ListName ='CompanySettings';
+	var itemType= GetItemTypeForListName(ListName);
+	var Metadata;
+    Metadata = {"__metadata": {'type': itemType}};
+
+    Metadata["MassEmailId"]=$("#massMailID").val();
+    Metadata["CompanySiteURL"]=currentDomainSite+"/Pages/Default.aspx?WebAppId="+companyID;
+
+    return Metadata;
+}
+
+function GetItemTypeForListName(ListName)
+{
+	return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+
+function CancelForm()
+{
+	var companyID=titanForWork.getQueryStringParameter('CompanyId');
+    var sorceLocation=titanForWork.getQueryStringParameter('sourcelocation');
+    $(location).attr("href",sorceLocation+"?WebAppId="+companyID+"&Undifined=Undifined")
+}
+
+
+
+function AddAttachments(file)
+{
+ debugger;
+var digest = "";
+    $.ajax(
+    {
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/contextinfo",
+        method: "POST",
+        async:false,
+        headers: {
+            "ACCEPT": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            digest = data.d.GetContextWebInformation.FormDigestValue;
+        },
+        error: function (data) {
+
+        }
+    }).done(function ()
+    {
+        var txtCompanyId = Logged_CompanyId; //titanForWork.getQueryStringParameter("CompanyId");
+        var fileInput = file;
+        var fileName = fileInput.name;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var fileData = e.target.result;
+            var res11 = $.ajax(
+            {    
+                url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listname + "')/items('" + txtCompanyId + "')/AttachmentFiles/ add(FileName='" + fileName + "')",
+                method: "POST",
+                binaryStringRequestBody: true,
+                data: fileData,
+                async:false,
+                processData: false,
+                headers: {
+                    "ACCEPT": "application/json;odata=verbose",
+                    "X-RequestDigest": digest,
+                    "content-length": fileData.byteLength
+                },
+                success: function (data)
+                {
+                  //  alert('file uploaded.');
+                   //sucess method after uploading
+                },
+                error: function (data) {
+                    alert("Error occured." + data.responseText);
+                }
+            });
+        };
+        reader.readAsArrayBuffer(fileInput);
+
+    });
+
+    
+}
+
+
+function uploadFile(file) 
+{
+   /* var getFileBuffer = function(file) 
+    {
+        var deferred = $.Deferred();
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            deferred.resolve(e.target.result);
+            // alert("Hi");
+        }
+
+        reader.onerror = function(e) {
+            deferred.reject(e.target.error);
+        }
+
+        reader.readAsArrayBuffer(file);
+        return deferred.promise();
+    };
+
+    getFileBuffer(file).then(function(buffer) 
+    {
+        var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listname + "')/items(" + txtCompanyId + ")/AttachmentFiles/add(FileName='" + file.name + "')",
+            method: 'POST',
+            data: buffer,
+            async:false,
+            processData: false,
+            headers: {
+                "Accept": "application/json; odata=verbose",
+                "content-type": "application/json; odata=verbose",
+                "X-RequestDigest": document.getElementById("__REQUESTDIGEST").value,
+                "content-length": buffer.byteLength
+            }
+        });
+    });*/
+    
+    var digest = "";
+    $.ajax(
+    {
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/contextinfo",
+        method: "POST",
+        async:false,
+        headers: {
+            "ACCEPT": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose"
+        },
+        success: function (data) {
+            digest = data.d.GetContextWebInformation.FormDigestValue;
+        },
+        error: function (data) {
+
+        }
+    }).done(function ()
+    {
+        var txtCompanyId =Logged_CompanyId; //titanForWork.getQueryStringParameter("CompanyId");
+        var fileInput = file;
+        var fileName = fileInput.name;
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var fileData = e.target.result;
+            var res11 = $.ajax(
+            {    
+                url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listname + "')/items('" + txtCompanyId + "')/AttachmentFiles/ add(FileName='" + fileName + "')",
+                method: "POST",
+                binaryStringRequestBody: true,
+                data: fileData,
+                async:false,
+                processData: false,
+                headers: {
+                    "ACCEPT": "application/json;odata=verbose",
+                    "X-RequestDigest": digest,
+                    "content-length": fileData.byteLength
+                },
+                success: function (data)
+                {
+                 //alert('file uploaded.');
+                   //sucess method after uploading
+                },
+                error: function (data) {
+                    alert("Error occured." + data.responseText);
+                }
+            });
+        };
+        reader.readAsArrayBuffer(fileInput);
+
+    });
+
+}
+function createDMSSubSite()
+{
+
+    waitingDialog.show();
+    var CompanySiteUrl =titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var companysubsiteurl="DMS"
+    var restAPIURL =CompanySiteUrl+"/_api/web/webinfos/add";
+    var newSiteData = JSON.stringify(
+    {
+        'parameters': {
+            '__metadata': {
+                'type': 'SP.WebInfoCreationInformation'
+            },
+            'Url': companysubsiteurl,
+            'Description': 'Subsite created from REST API for DMS',
+            'Title': 'DMS',
+            'Language': 1033,
+            'WebTemplate': 'STS#0',
+            'UseUniquePermissions': false
+        }
+    });
+    $.ajax
+    ({
+        url: restAPIURL,
+        type: "POST",
+        async: true,
+        data: newSiteData,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $('#__REQUESTDIGEST').val()
+        },
+        success: function (data)
+        {
+            console.log('DMS created successfully. under Company Site.');
+            $('#createDMSSite').hide();
+            alert('DMS created successfully.');
+            waitingDialog.hide();
+        },
+        error: function (data)
+        {
+            alert('<br />'+data.responseText);
+            console.log('Error creating DMS site');
+            waitingDialog.hide();
+        }
+    });
+}
+
+function GetDMSSubSite()
+{
+
+    var CompanySiteUrl =titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var restAPIURL = CompanySiteUrl+"/DMS/_api/web"
+    $.ajax
+    ({
+        url: restAPIURL,
+        type: "GET",
+        headers: { "accept": "application/json;odata=verbose" },
+        success: function(data)
+        {
+          //  console.log("Title : " + data.d.Title);
+            //  console.log("Description : " + data.d.Description);
+         //   alert('Site Exist');
+        },
+        error: function(data)
+        {
+            //  console.log('Error getting info');
+            $('#createDMSSite').show();
+        }
+    });
+}
+
+
+
+ function updateCompanyItemWithID(ListName, Metadata, ID)
+{
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById("+parseInt(ID)+")",
+        type: "POST",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        async: false,
+        success: function (RESULT) {
+            // console.log();
+            dfd.resolve(true);
+
+        },
+        error: function (error) {
+            alert(JSON.stringify(error));
+            dfd.reject(error);
+
+        }
+    });
+    return dfd.promise();
+}
+
+
+
+
+function getCorporateCompanyEmail()
+{
+	var requestURL=_spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('CompanySettings')/Items?$select=ID,Title,MassEmailId,CompanySiteURL&$top=1";
+	
+	$.ajax({
+		url:requestURL,
+		type:'GET',
+		headers:{"accept": "application/json;odata=verbose"},
+		success:function(data)
+		{
+			var results=data.d.results;
+			if(results.length>0)
+			{
+			var corporateMailEmailID = results[0].MassEmailId;
+			var itemid = results[0].ID;
+			$("#corporatemassMailID").val(corporateMailEmailID);
+			$("#itemIdCorporte").val(itemid);
+			}
+			
+			
+		},
+		error:function(error)
+		{
+			console.log("Error occured in GetEnvironmentalSettings()");
+		}
+	})
+}
+
+
+function readURL(input) 
+{debugger;
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e)
+         {
+          var ext = input.value.match(/\.([^\.]+)$/)[1];
+		  switch (ext) {
+		    case 'jpg':
+		    case 'JPG':
+		    case 'JPEG':
+		    case 'jpeg':
+		    case 'GIF':
+		    case 'gif':
+		    case 'PNG':
+		    case 'png':
+		    case 'BMP':
+		    case 'bmp':
+
+
+		$('#companylogo').attr('src', e.target.result);
+		  	/*var size = input.files[0].size/1024;		  	
+		  	if(size.toFixed(2)<500)
+				{
+					$('#img1').attr('src', e.target.result);
+					
+				}
+				else
+				{
+			        alert("Image size not more then 500 KB");
+					input.value='';	
+					return false;
+				}*/
+				
+			
+			break;
+		    default:
+		    alert('Please select image files of JPEG, JPG, GIF,BMP and PNG formatted only.');      
+		    input.value = '';
+		  }        
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
+
+
+</script>
+
+<div class="row department-header">
+    <ol class="breadcrumb">
+        <li><h4><b data-localize="ManageCompany">Manage Company</b></h4></li>
+    </ol>
+</div>
+
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="panel panel-default  shadow2" id="CompanyDetail" style="overflow:auto">
+                    <div class="panel-heading  panel-head-4">
+                        <div class="panel-title companyCreation">
+                            <h4 class="h4-color">Details</h4>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+                        
+                        <div class="form-group">
+                                <label for="MyCompanyId" class="col-sm-4 control-label" data-localize="CompanyID">Company ID</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="MyCompanyId" disabled>
+                                </div>
+                            </div>                       
+                                        
+                            <div class="form-group">
+                                <label for="Company" class="col-sm-4 control-label required companyCreation" data-localize="CompanyName">Company Name</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="CompanyNameEng">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-4 control-label required" data-localize="CompanyMassMailID">Company Mass Mail ID</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="massMailID">
+                                </div>
+                            </div>                           
+                            
+                            <div class="form-group">
+                                <label for="email" class="col-sm-4 control-label required" data-localize="CorporateMassMailID">Corporate Mass Mail ID</label>
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" id="corporatemassMailID">
+                                    <input type="text" class="form-control" id="itemIdCorporte" style="display:none">
+                                </div>
+                            </div>
+                            
+                           <div class="form-group">
+                                <label for="Logo" class="col-sm-4 control-label" data-localize="Company Logo">Company Logo</label>
+                                <div class="col-sm-8">
+                                    <input type="file" onchange="readURL(this);" title="File type must be JPEG,JPG,GIF or PNG" class="form-control" id="logoENg">
+                                </div>
+                                <!-- <img id="companylogo" class="companyLogo" src="" /> -->
+                            </div>
+                            <div class="form-group companylogo-group">
+                                <label for="Logo" class="col-sm-4 control-label"></label>
+                                <div class="col-sm-8">
+                                    <div class="companylogo-fitbox">
+                                        <img id="companylogo" class="companyLogo" src="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Logo" class="col-sm-4 control-label"  data-localize="link on Logo">Link on Logo</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"  autocomplete="off" id="logoLink">
+                                </div>
+                            </div>
+ 
+                            
+                        </div>
+                    </div>
+                    <!--/panel content-->
+                    <!-- Other language panel -->
+                    <!-- End of Other Language Panel-->
+                </div>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="display:none">
+                </div>
+                <div class="form-group">
+                    <!--<label for="" class="col-sm-4 control-label"></label>-->
+                    <div class="col-sm-12 submitButton" style="margin-bottom: 15px;">
+                     <button type="button" class="btn  btn-outline-success" name="createNewCompanySite" style="display:none;" id="createNewCompanySiteees" data-localize="NewCompany">New Company</button>
+                        <button type="button" class="btn  btn-outline-success" name="createNewCompanySite" id="createNewCompanySite" data-localize="Update">Update</button>
+                        <button type="button" class="btn btn-outline-success" style="display:none" onclick="createDMSSubSite()" id="createDMSSite" data-localize="ProjectRootSite">Project Root Site</button>
+                        <button type="button" class="btn btn-outline-secondary" id="closeNewCompanySite" data-localize="Close">Close</button>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="CompanyCreationAuthorization" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color">Enter Password</h4>
+            </div>
+            <div class="modal-body">
+                <div class="panel-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label popup_label required">Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="txtPassword">
+                            </div>
+                        </div>
+                        <div class="row text-center">
+                            <button type="button" class="btn  btn-outline-success" id="createCompany">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-348</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">0ac50770-f3a4-495d-bf2b-df88058c5a53</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-348, ADMIN-1645029823-348</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">34800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,956 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/ViewEmpoftheMonth.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+
+
+<style>
+
+.tile_box{
+ position:relative;	
+ box-shadow:none !important;	
+ border:1px solid #d5d5d5 !important;
+}
+
+.user_text{
+font-size: 16px;
+font-weight: 600;
+margin: 5px 0;
+}
+
+.tile_box:before{
+    content: '';
+    width: 100%;
+    height: 36%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/achievement_background.png);
+    background-size: 66%;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    background-position:right;
+}
+
+#itemCollection .tile_box {
+    min-height: 320px !important;
+}
+
+.row:after, .row:before {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.span6 {
+  float: left;
+  width: 80%;
+  
+}
+
+.emojionearea-standalone {
+  float: right;
+}
+
+.emojionearea-editor{
+	min-height: 4em !important;
+}
+
+
+
+.pl-0{padding-left:0px !important;}
+.pr-0{padding-right:0px !important;}
+.pt-5{padding-top:5px;}
+.pt-10{padding-top:10px;}
+.pb-5{padding-bottom:5px;}
+.pb-10{padding-bottom:10px;}
+	.mt-5 {margin-top:5px;}
+.mt-10{margin-top:10px;}
+.mt-20{margin-top:20px;}
+.mb-5{margin-bottom:5px;}
+.p-10{padding:10px;}
+.p-0{padding:0px !important;}
+.pt-0{padding-top:0px;}
+.pb20 {
+    padding-bottom: 20px !important;
+}
+
+.shadow3 {
+    box-shadow: 0px -3px 25px -1px #dfdede;
+}
+
+.main-area {
+    background: #fff !important;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1) ;
+    border-radius: 4px;
+    margin-bottom: 90px;
+	padding:20px;
+}
+
+.mb-0 {margin-bottom:0px;}
+
+	
+	
+.tile_box {
+    background-color: #fff;
+    height: 180px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #efefef00;
+    min-height: 167px;
+}
+
+.recognition-view-detail-button a {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+    line-height: 28px;
+}
+.recognition-view-detail-button a:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+	
+.recognition-popup-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+.recognition-popup-designation {
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+.recognition-popup-area-image{
+	display: inline-block;
+}    
+.recognition-popup-area-image img{
+	border-radius: 4px;
+}
+
+.recognition-comment-area {
+    width: 80%;
+    float: left;
+    resize: none !important;
+    min-height: 50px !important;
+}
+.recognition-comment-btn {
+    width: 18%;
+    height: 54px;
+    margin-right: 0px;
+    margin-left: 10px !important;
+}	
+.recognition-popup-title-text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.recognition-popup-description-text {
+    color: #000;
+    font-size: 15px;
+	text-align: justify;
+}
+.recognition-popup-like-button a {
+    font-size: 23px;
+    color: #ff9e20;
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.recognition-popup-like-button a:hover {
+    color: #e08207;
+}
+.recognition-popup-like-button p {
+    display: inline-block;
+    font-size: 16px;
+}
+	
+.owl-carousel-recognition-popup {
+    width: 100% !important;
+}
+.recognition-popup .owl-nav .owl-prev:after,
+.recognition-popup .owl-nav .owl-prev:after, .recognition-popup .owl-nav .owl-next:after {
+	content: '';
+    position: absolute;
+    margin: auto;
+    left: 49%;
+    bottom: -45px;
+    width: 35px;
+    height: 35px;
+}
+
+.recognition-popup .owl-nav .owl-prev:after {
+  background-image: url("images/c_ar.png")!important;
+  background-repeat: no-repeat;
+  background-size: 35px 35px;
+  -webkit-transform: rotate(180deg) translate(20px,0px);
+      -ms-transform: rotate(180deg) translate(20px,0px);
+          transform: rotate(180deg) translate(20px,0px);
+}
+
+.recognition-popup .owl-nav .owl-next:after{
+  background-image: url(images/c_ar.png)!important;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    right: 47%;
+    bottom: -44px;
+    width: 35px;
+    height: 35px;
+}
+.recognition-popup .owl-nav button{
+  font-size: 0!important
+}
+
+.recognition-popup .owl-nav{
+  height: 0;
+}
+
+.recognition-popup .item {
+	padding: 5px;
+    border: 1px solid #ddd;
+}
+.owl-carousel.owl-carousel-recognition-popup .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recognition-popup.owl-theme .owl-dots {
+    text-align: center !important;
+	margin-top: 10px !important;
+}
+
+a.recognition-popup-show-button  {
+    display: block;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+	float: left;
+}
+a.recognition-popup-show-button:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+	
+a.recognition-popup-hide-button  {
+    display: block;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #666;
+    background-color: transparent;
+    border: 1px solid #666 !important;
+    border-radius: 10px;
+    cursor: pointer;
+	float: left;
+}
+a.recognition-popup-hide-button:hover {
+    color: #fff !important;
+    background-color: #333 !important;
+    border: 1px solid #333 !important;
+}
+.text-bold {
+    font-weight: 600;
+}
+.marginTop {
+        margin-top: 65px;
+        margin-bottom: 8px;
+    }
+.user_text {
+        color: #1d6ec0;
+        text-align: center;
+    }
+   .user_pic_content {
+        margin-top: 55px;
+    }
+
+    .marginTop60 {
+        margin-top: 60px;
+    }
+
+    .marginTop70 {
+        margin-top: 70px;
+    }
+    
+    .tile_box .center-block {
+    overflow: visible;
+}
+.chip-panel {
+    overflow-x: auto;
+}
+.chip-box {
+    display: flex;
+    padding: 0 0 3px 15px;
+}
+.chip-box .upload-chip:hover {
+    cursor: pointer;
+}
+.upload-chip:hover{
+	background-color: #f2f2f2;
+}
+.upload-chip{
+	border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 4px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+   
+#itemCollection .user_pic{
+	text-align:left !important;
+	height:80px !important;
+    width:80px !important;
+    border-radius: 50% !important;
+}
+
+#itemCollection .tile_box .user_pic img{
+
+ border-radius: 50% !important;
+ border: 1px solid #828282;
+ box-shadow: 0px 8px 13px -7px #4aa0f7;	
+ height:80px !important;
+ width:80px !important;
+
+}
+#itemCollection .my_rec_content{
+ text-align:left !important;	
+}
+
+#itemCollection .my_rec_content .user_text{
+ text-align:left !important;	
+}
+
+#itemCollection .tile_box{
+
+background: linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+background: -webkit-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+background: -moz-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+background: -o-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+	
+}
+
+.modal-header .close-round{
+ 
+ min-width: 1em !important;
+ background: #fff;
+ color: #000;	
+
+} 
+
+.modal-header .close-round:hover{
+ 
+ min-width: 1em !important;
+ background: #000;
+ color: #fff;	
+
+}
+
+
+#month_year{
+    padding: 3px 13px;
+    font-size: 15px;
+    display: inline-block;
+    margin:10px 0 18px 0;
+    position: relative;
+    left: -11px;	
+}
+
+#itemCollection .tile_box{
+ position:relative;	
+}
+
+#itemCollection .my_recognation .tile_box h4{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100% !important;	
+}
+
+#OfficeLocation{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    max-width: 20.5ch;	
+}
+
+#itemCollection .my_rec_content span.manag_depart,
+#itemCollection .my_rec_content #OfficeLocation{
+ float:left !important;
+ display:inline-block;
+ 	
+}	
+#itemCollection .my_rec_content span.manag_depart{
+width:auto !important;
+padding: 0 10px 0 0;
+border-right: 1px solid #4c4c4c;	
+
+}
+
+#itemCollection .my_rec_content #OfficeLocation{
+ width:auto !important;	
+ padding:0 5px;
+}
+
+.my_rec_dtl_btn{
+ position:absolute !important;
+ top: 25%;
+ right: 5% !important; 
+}
+
+.Rec_Status{
+   left: 13px;
+   bottom: 30px;	
+}
+
+.my_rec_edt_del_box{
+    top:150px !important;
+}
+
+.tile_box .my_rec_edt_del_box a{
+ position:relative;
+ top:18px; 
+ border-radius: 50% !important;
+    text-align: center;
+    font-size: 15px !important;
+    background: linear-gradient(to bottom,#eeeded ,#b3b2b2);
+    background: -webkit-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+    background: -moz-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+    background: -ms-linear-gradient(to bottom,#eeeded ,#b3b2b2);
+    border: 1px solid #7d7d7dc9 !important;
+    box-shadow: inset 0px 1px 0px #fff;
+    color: #333233;
+    padding: 8px 10px !important;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity:0;    
+}
+
+.tile_box .my_rec_edt_del_box a:nth-child(2){
+ transition-delay:0.1s;	
+}
+
+.tile_box:hover .my_rec_edt_del_box a{
+ top:0px; 
+ opacity:1;	
+ 	
+}
+
+
+
+.department-header ol li{
+	display:block !important;
+}
+
+
+
+
+
+ol.breadcrumb li h4{
+  font-size:24px !important;	
+}
+
+.Rec-inner-card-btn-item{
+
+ margin-top:10px;
+ display: -webkit-box;
+ display: -moz-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ 
+ justify-content:center;	
+ -o-justify-content:center;	
+ -moz-justify-content:center;	
+ -webkit-justify-content:center;	
+ -ms-justify-content:center;	
+ 
+ position: absolute;
+ bottom: 8px;
+ left: 10px;
+ 
+}
+
+.Rec-inner-card-btn-item li{
+
+ padding:5px;
+ display: -webkit-box;
+ display: -moz-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+
+ align-items: center;
+ -ms-align-items: center;
+ -webkit-align-items: center;
+ -moz-align-items: center;
+ -o-align-items: center;
+
+}
+
+.Rec-inner-card-btn-item li a{
+  	padding:0 !important;
+  	margin:0 !important;
+  	font-size:15px !important;
+  	cursor:default;
+}
+
+.Rec-inner-card-btn-item li a:focus,
+.Rec-inner-card-btn-item li a:hover{
+	background-color:transparent !important;
+}
+
+.Rec-inner-card-btn-item li img{
+	width:18px;
+}
+
+.input-group-addon img{
+	width:18px;
+}
+.recognition-form-group {
+    display: flex;
+    max-width: 330px;
+}
+
+@media (max-width: 768px) and (min-width: 320px){
+
+.owl-carousel.owl-carousel-recognition-popup .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+}
+
+.recognition-form-group .input-group-addon {
+    border-radius: 0;
+    padding: 6px;
+    width: 34px;
+    background: #1d6ec0;
+    border-color: #1d6ec0;
+}
+@media (max-width: 768px) {
+        .marginTop {
+            margin-top: 65px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .top10_m {
+            margin-top: 10px;
+        }
+
+.my_recognition_add_new_btn button{
+	padding:5px 12px !important;
+	font-size:13px !important;
+
+}
+.recognition-form-group{
+  margin-bottom: 15px;	
+}
+
+ 
+}
+
+</style>
+
+<label style="display:none" id="lblLangdepartment" data-localize="Department">Department</label>
+<label style="display:none" id="lblLangExtension" data-localize="Extension">Extension</label>
+<label style="display:none" id="lbllangEdit" data-localize="Edit">Edit</label>
+<label style="display:none" id="lblLangDelete" data-localize="Delete">Delete</label>
+
+
+
+
+	<div class="row">
+		<div class=" col-md-12 department-header">
+			<ol class="breadcrumb">
+				<li>
+					<h4>
+						<b data-localize="Recognition">Recognition</b>
+					</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-group custom-form-group recognition-form-group">
+								<input type="text" class="form-control" name="" placeholder="Search" id="myInput" onkeyup="myFunction()">
+							<!--	<a class="input-group-addon"><img src="../SiteAssets/Biography/Experience/assets/images/search-icon.png"class="search-icon" alt="search-icon"></a>  -->
+							</div>						
+						</div>					
+					
+					<div class="col-md-6">
+	                    <div class="my_recognition_add_new_btn">                   							
+	                    	<button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#filter">Filter</button>                    
+	                        <a type="button" id="Rec_addbtn" style="margin-right: 12px;" class="btn btn-outline-primary newTask" href="#">
+	                            <span data-localize="AddNew">Add New</span>
+	                        </a>                        
+                    	</div>
+                   </div>
+                 </div>   	
+				</li>
+			</ol>
+		</div>
+	</div>
+
+	<div class="row top15">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="scrollbar-panel chip-panel">
+                    <div class="chip-box" id="RecognationChip"><div class="upload-chip">2021</div></div>
+                </div>			
+		<!--	<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+					<select name="Filter_ddl2" id="ddlyear" class="form-control" onchange="GetRecognition(this.value);"></select>
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 top10_m">
+					<select name="Filter_ddl3" id="ddlmonth" class="form-control" onchange="DyamicQuery();"></select>
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+					<select name="Filter_ddl0" id="ddlcategory" class="form-control" onchange="DyamicQuery();"></select>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+					<select name="Filter_ddl1" id="ddldepartment" class="form-control" onchange="DyamicQuery();"></select>
+				</div>
+								                    -->
+				<div class="clearfix"></div>
+				<div id="itemCollection">
+				</div>
+			</div>  
+		</div>
+	</div>
+
+
+<!--
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+            <div class="modal-header panel-head-4 hidden-md">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body" style="overflow:auto">
+				<div class="row">
+					<div class="col-md-4 top10">
+						<div class="row">
+							<div class="text-center ">
+								<img src="" class="img-circle" id="selectedimageurl" style="width: 120px; height:120px;">
+							</div>
+						</div>
+						<div class="text-center margin10">
+							<span class="text_black" id="modelName">NA</span><br />
+							<span id="modelPost">NA</span> <br />
+							<span id="modelDepartment">NA</span>                     
+						</div>
+					</div>
+					<div class="col-md-8">
+						<h3 class="text-center text_black " style="margin-top:0" data-localize="Achievements">Achievements</h3>
+						<p style="text-align:justify" id="txtAchivmentss">
+						</p>
+					</div>
+				</div>
+               <div class="clearfix"></div>
+				<div class="row">				
+	                <div class="col-sm-12 msg-box top30">
+						<div class="input-group">
+	                        <textarea class="form-control occation-text-area" rows="2" placeholder="to wish, write your message here !!" id="txtResponse"></textarea>
+	                     <<input type="button" value="Send" id="responseSubmit" class="input-group-addon btn btn-outline-success occation-text-btn"/>
+	                        
+	                        <button type="button" id="responseSubmit" class="input-group-addon btn btn-outline-success occation-text-btn"><label  data-localize="Send">Send</label></button>	
+	                        
+	                        
+	                    </div>
+	                </div>
+                </div>
+				<div class="row">
+					<div class="col-sm-12 top15">
+						<div class="panel-body list_border">
+							<input type="text" id="employeeMonthId" style="display:none;" />
+							<ul class="list-group list-group-hover list-group-striped" id="responseCollection">				
+							</ul>
+						</div>
+					</div>
+				</div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div> -->
+
+<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog" aria-hidden="false">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3 class="modal-title text-bold" style="background-color: transparent !important;"><span id="ModelHeading">Employee of the Month</span></h3>
+      </div>
+      <div class="modal-body">
+			 <div class="col-md-12  pb20 pl0 pr0">
+					<div class="col-md-7 col-sm-6 pl0 pr0">
+						
+						<div class="col-md-3 col-xs-6 pl0 recognition-popup-area-image">
+									<img src="" id="profile-image" style="width: 92px; height:103px;" >
+						</div>
+						<div class="col-md-9 col-xs-6">
+								<p class="recognition-popup-name" id="EmpName"></p>
+								<p class="recognition-popup-designation" id="EmpDesignation"></p>
+								<p><span id="EmpDepartment"></span> <span id="spSymbol">|</span> <span id="EmpLocation"></span></p>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 pt10 p0">
+							
+						</div>
+						<div class="col-md-12 pt10 pl0 ">
+							<p class="recognition-popup-description-text" id="DtlDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+						</div>
+
+					</div>
+					
+				 
+		  			<div class="col-md-5 pl0 pr0">
+		  			<div class="col-md-12 pl0 pr0 pb40">
+		  				<!--<div class="owl-carousel owl-carousel-recognition-popup recognition-popup owl-theme" id="alluploadImages">
+							<div class="item"> 
+                                <img src="../SiteAssets/Biography/images/i2.jpg"  alt="">
+                            </div>
+							<div class="item"> 
+                               <img src="../SiteAssets/Biography/images/info1.png"  alt="">
+                            </div>
+							<div class="item"> 
+                                <img src="../SiteAssets/Biography/images/i4.jpg"  alt="">
+                            </div>
+					  </div>-->
+					  <div id="carousel-example-generic" class="carousel" data-ride="carousel">
+  						<div class="carousel-inner" role="listbox" id="1stImg">
+    												       
+  						</div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+						</div>
+		  			</div>
+
+
+
+		  		<div class="clearfix"></div>
+
+		  			<div class="custom_popup_my_links_attach">
+			  									
+						<div class="col-md-12 col-sm-12 col-xs-12 pt10 pl0 pr0">
+					   		<div class="attachment-badge mt-10" id="AttachDoc"></div>
+		  				</div>
+		  			</div>
+
+					<div class="col-md-12 pt10 pl0 pr0">
+					
+					
+					   <span class="recognition-popup-like-button" id="my_custom_popup_like"><a href="#"><i class="fa fa-thumbs-up" id="forspanview" onclick="AddLike();"></i> </a> <p id="TotalLike"></p> </span><span id="AuthorList" style="display:none;">Hello</span>
+		  			</div>
+	                <div class="col-sm-12 pt5 pl0 pr0">
+	                        <!--<textarea class="form-control recognition-comment-area custom-scroll" rows="2" placeholder="enter comment here !!" id="TextComment1"></textarea>-->
+	                        
+  <div class="span6">
+    <textarea rows="2" id="TextComment"></textarea>
+  </div>
+
+	                        <button type="button" id="" class="btn btn-outline-success recognition-comment-btn" onclick="AddComment();"><label>Send</label></button>	
+	                       
+	                </div>
+		            <div class="col-sm-12 pt10 pl0 pr0">
+		            <div class="form-control custom-scroll" id="">
+		            	<table id="AllComents" style="width:100%;" class="table table-hover">
+		            	<tbody ></tbody>
+		            	
+		            	
+		            	</table>
+		            	
+		            			            
+		            </div>
+						<!--<textarea class="form-control custom-scroll" rows="4" style="resize: none;" id="AllComents">
+						
+						</textarea> -->
+	                </div>
+		  <div class="clearfix"></div>	
+            </div>
+    </div><div class="clearfix"></div>	
+</div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	$("#TextComment").emojioneArea({
+  	
+		pickerPosition: "right",
+    	tonesStyle: "bullet",
+		events: {
+         	keyup: function (editor, event) {
+           		console.log(editor.html());
+           		console.log(this.getText());
+        	}
+    	}
+	});
+});
+</script>
+
+<!-- Modal -->
+<!--Iframe Image POpup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="doc-viewer" style="height:415px">
+                                                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!--Iframe Image POpup ends-->
+
+<!---modal filter--->
+
+
+  <div class="modal fade" id="filter" role="dialog">
+  
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                	Filter
+                </h4>
+            </div>
+            
+            <div class="modal-body">
+
+                <div class="row">
+
+                  <div class="col-md-6">                   
+                    <div class="form-group row">
+                      <label for="" class="col-sm-3">Year</label>
+                      <div class="col-sm-9">
+                        <select name="Filter_ddl2" id="ddlyear" class="form-control" onchange=""></select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="" class="col-sm-3">Title</label>
+                      <div class="col-sm-9">
+                        <select name="Filter_ddl0" id="ddlcategory" class="form-control" onchange=""></select>
+                      </div>
+                    </div>
+
+                  </div><!--col-6 ed-->
+
+                   <div class="col-md-6">                   
+                    <div class="form-group row">
+                      <label for="" class="col-sm-3">Month</label>
+                      <div class="col-sm-9">
+                        <select name="Filter_ddl3" id="ddlmonth" class="form-control" onchange=""></select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="" class="col-sm-3">Department</label>
+                      <div class="col-sm-9">
+                        <select name="Filter_ddl1" id="ddldepartment" class="form-control" onchange=""></select>
+                      </div>
+                    </div>
+
+                  </div><!--col-6 ed-->
+                  
+                </div><!--row dividor--->  
+
+ 
+            </div>
+
+            <div class="modal-footer" style="text-align:center;">
+                <button type="button" class="btn btn-outline-primary" onclick="FilterResult();">Apply</button>
+                <button type="button" class="btn custom-btn-two-cancel w-87" id="btnClear">Clear</button>
+            </div>
+        
+        </div>
+
+    </div>
+
+</div>
+
+<!---filter section--->
+
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-263</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">95fb3f40-32a3-49a4-adc2-1b2efa37d0d8</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-263, ADMIN-1645029823-263</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">26300.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

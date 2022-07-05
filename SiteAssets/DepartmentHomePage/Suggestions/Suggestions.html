@@ -1,0 +1,451 @@
+﻿<script>
+var siteURLSuggestion="";
+$(document).ready(function(){
+	InitializationSuggestions();
+});
+
+function InitializationSuggestions()
+{
+	var departmentID= titanForWork.getQueryStringParameter('DepartmentId');
+	var companyID= titanForWork.getQueryStringParameter('CompanyId');
+
+	siteURLSuggestion=titanForWork.getQueryStringParameter('DepartmentSiteUrl');
+	DisplaySuggestions();
+}
+
+function DisplaySuggestions() {
+	var webURI =  siteURLSuggestion + "/_api/web/lists/getbytitle('Suggestions')/items?$select=ID,Title,Suggestion,Author/Title,ApprovedDate&$expand=Author&$filter=Active eq 1&$OrderBy=Created desc&$top=3";
+	$.ajax({
+        url: webURI,
+        headers: { "accept": "application/json;odata=verbose"},
+        async: true,
+        success: function (data)
+        {
+           	var results=data.d.results;
+           	var suggestionHTML=''; 
+           	
+           	// Check If No Record Found Then Show "No Suggestion Found" message
+           	if(results.length==0)
+           	{
+				suggestionHTML="<div class=\"norecordfound col-sm-8 col-xs-8 col-md-8\">";
+				suggestionHTML+="<h3 data-localize='NoRecord_Suggestions' class=\"top5\"></h3>";
+				suggestionHTML+="</div>";
+				
+				$("#departmentalSuggestions").append(suggestionHTML);
+				return;
+ 			}
+			for (var i = 0; i < results.length; i++) {
+				var ItemID=results[i].ID;
+				var itemTitle=results[i].Title;
+				var itemSuggestion=results[i].Suggestion;
+				var itemCreatedBy=results[i].Author.Title;
+				var approvedDate=new Date(results[i].ApprovedDate);
+				
+				var viewSingleItem= siteURLSuggestion+"/Lists/Suggestions/DispForm.aspx?ID="+ItemID ;
+				
+				if(itemTitle!=null && itemTitle.length>36)
+				{
+					itemTitle=itemTitle.substring(0,33)+'...';
+				}
+				if(itemSuggestion.length>78)
+				{
+					itemSuggestion=itemSuggestion.substring(0,75)+'...';
+				}
+
+				approvedDate=ShowCommonDateFormat(approvedDate); 
+				var linkurlISuggestion="javascript:OpenPopUpPageWithTitle('"+viewSingleItem+"',null,null,null,'Suggestion')";
+				suggestionHTML+="<div class=\"row\">";
+				suggestionHTML+="<div class=\"col-md-12\"><h4 class=\"event-text-head\">"+itemTitle+"</h4></div>";
+				suggestionHTML+="<div class=\"col-sm-12\">"+itemSuggestion+"<a class=\"read-more\" style=\"padding-left:5px\" href='javascript:ShowSuggestions("+ItemID+");'>Read more</a>";
+				suggestionHTML+="<p style=\"font-size:11px;color:#000000;\" >"+approvedDate+" | "+itemCreatedBy+"</p>";
+				suggestionHTML+=i==2?'':"<hr style='padding:0 0 5px 0'>";
+				suggestionHTML+="</div></div>";
+			}  
+			
+			$("#departmentalSuggestions").append(suggestionHTML);
+		}, 
+        error: function (data)
+        {
+			console.log(data);
+        }
+    });
+}
+
+function ShowSuggestions(ItemId) {
+	$('#createNewSuggestion').hide();
+	$('#showSuggestion').show();
+	$('#spanTitle').show();
+	$('#txtTitle').hide();
+	$('#spanSuggestion').show();
+	$('#txtSuggestion').hide();
+	var ListName ='Suggestions'; 
+    var restQuery = "";
+    restQuery = "ID,Title,Suggestion&$filter=ID eq '"+ItemId+"'";
+
+	var URL =  siteURLSuggestion + "/_api/web/lists/getbytitle('"+ListName +"')/items?$select=" + restQuery;
+	$.ajax({
+        url: URL,
+        headers: { "accept": "application/json;odata=verbose"},
+        async: true,
+        success: function (data)
+        {
+           	var results=data.d.results;
+			for (var i = 0; i < results.length; i++) {
+			  //or do it through css
+				var title = results[i].Title;
+				var suggestion = results[i].Suggestion;
+				
+				$("#spanTitle").text(title);
+                $("#spanSuggestion").text(suggestion);
+                
+                			
+				$("#modalApprovalSuggestion").modal();
+				
+				$("#showSuggestion").click(function(){
+				
+        			$("#modalApprovalSuggestion").modal('hide');
+				});
+			}  
+		}, 
+        error: function (data)
+        {
+			alert("Something went wrong.");
+			console.log(data);
+        }
+    });
+}
+
+
+
+
+$(document).ready(function(){
+$(".Suggestions_Add").click(function(){
+		$('#createNewSuggestion').show();
+		$('#showSuggestion').hide();
+		$('#spanTitle').hide();
+		$('#txtTitle').show();
+		$('#spanSuggestion').hide();
+		$('#txtSuggestion').show();
+		$("#modalApprovalSuggestion").modal('show');
+		$("#txtTitle").val("");
+		$("#txtSuggestion").val("");
+
+		var submitEventFired=false;
+		$("#createNewSuggestion").unbind().click(function(){
+				if(submitEventFired)
+				{
+					return false;
+				}
+				var title=$("#txtTitle").val();
+				var Suggestion=$("#txtSuggestion").val();
+				if(FormValidation_Suggestion())
+				{
+					//$("#createNewSuggestion").attr("disabled",true);
+					if(title.trim().length>100)
+					{
+					   alert('Maximum 100 characters allowed in title.');			
+					   return false;
+					}
+					if(Suggestion.trim().length>500)
+					{
+  					   alert('Maximum 500 characters allowed in suggestion.');
+					   return false;
+					}
+					submitEventFired=true;
+					AddNewTak("Suggestions", title,Suggestion);
+				}
+			});
+		});
+});
+
+function FormValidation_Suggestion()
+{
+	var title=$("#txtTitle");
+	var suggestion=$("#txtSuggestion");
+	var Department = siteURLSuggestion.split('/')[6];
+	if($.trim(title.val())=='')
+	{
+		alert("Please enter title.");
+		title.focus();
+		return false;
+	}
+	else if($.trim(suggestion.val())=='')
+	{
+		alert("Please enter suggestion.");
+		suggestion.focus();
+		return false;
+	}
+	return true;
+}
+
+
+function AddNewTak(ListName,title,Suggestion,Department)
+{
+	try
+    {
+    
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               Title: title,
+               Suggestion: Suggestion,
+               Department : Department
+            };
+            AddItemToList(ListName, Metadata);         
+        
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function  AddItemToList (ListName, Metadata) 
+ {
+    var dfd = $.Deferred();
+    $.ajax({
+        url: siteURLSuggestion  + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+			var itemId= data.d.ID;
+			getApprovers(itemId);
+			//alert("New Task Create Successfully");
+        },
+        error: function (error) {
+			
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function getApprovers(itemId)
+{
+	var departmentID= titanForWork.getQueryStringParameter('DepartmentId');
+	var companyID= titanForWork.getQueryStringParameter('CompanyId');
+	
+	var listName='ProcessApprovers';
+	siteURLRoot = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=CompanyId eq '" + companyID + "' and DepartmentId eq '"+departmentID+"' and WebPartName eq 'Suggesion'";
+    $.ajax({
+        url: siteURLRoot,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+			var allUsersID=new Array();
+			for (var groupIndex = 0; groupIndex < items.length; groupIndex++)
+            {
+                for (var subGroupIndex = 0; subGroupIndex < items[groupIndex].ApproverId.results.length; subGroupIndex++)
+                {
+                    
+                    if(allUsersID.indexOf(items[groupIndex].ApproverId.results[subGroupIndex])==-1)
+                    {	
+                        allUsersID.push(items[groupIndex].ApproverId.results[subGroupIndex]);
+                    }
+                }
+            }
+			createApprovalTask(allUsersID,itemId);
+
+			
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function createApprovalTask(allUsersID,itemId)
+{
+	try
+    {
+		var departmentID= titanForWork.getQueryStringParameter('DepartmentId');
+		var companyID= titanForWork.getQueryStringParameter('CompanyId');
+		var title=$("#txtTitle").val();
+		var Suggestion=$("#txtSuggestion").val();
+        var Metadata;
+        var ItemType = GetItemTypeForListName("ApprovalTaskList");
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               Title: title,
+               Details: Suggestion,
+			   CompanyId:companyID,
+			   DepartmentIdId:departmentID,
+			   ApproversId:{'results':allUsersID},
+			   //WebpartName:"Suggesion",
+			   WebpartName:"Suggestion",
+			   Status:"Initiated",
+			   ItemId:itemId
+            };
+            AddTaskToList("ApprovalTaskList", Metadata);         
+        
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function  AddTaskToList(ListName, Metadata) 
+ {
+ 	var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+			alert("New Suggestion has been added and sent for approval.");
+			$("#modalApprovalSuggestion").modal('hide');
+			
+			NotificationCenter();		/// Add Notification into Notification Center List.
+        },
+        error: function (error) {
+			console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function GetItemTypeForListName(ListName) 
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////// Add Notification into Notification Center List  //////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+function NotificationCenter2()
+{
+	try
+    {
+		var title=$("#txtTitle").val();
+		var suggestion=$("#txtSuggestion").val();
+        var Metadata;
+        var ItemType = GetItemTypeForListName("NotificationCenter");
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               Title: title,
+               Details: suggestion,
+			   WebpartName:"Suggestion"
+			};
+            AddItemIntoNotificationCenter2("NotificationCenter", Metadata);         
+        
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function  AddItemIntoNotificationCenter2(ListName, Metadata) 
+{
+	var siteURLLastIndexOf=siteURLSuggestion.lastIndexOf('/');
+	var siteURLNotificationCenter=siteURLSuggestion.substring(0,siteURLLastIndexOf);
+	
+	var dfd = $.Deferred();
+    $.ajax({
+        url: siteURLNotificationCenter + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+		},
+        error: function (error) {
+			//alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+/////////////////////////////////////////////////////////////////////
+
+</script>
+<div id="departmentalSuggestions">
+  
+</div>
+
+<div id="modalApprovalSuggestion" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Suggestion">Suggestion</h4>
+            </div>
+			<div class="modal-body">
+				 <div class="panel-body">
+				    <div class="form-horizontal">
+					<div class="form-group">
+				        <label for="" class="col-sm-3 control-label popup_label required" data-localize="Title" style="padding-top: 0px !Important;"></label>
+				        <div class="col-sm-9">
+				          <input type="" class="form-control" id="txtTitle">
+				          <span id="spanTitle" disabled="disabled" style="display:none;"></span>
+				         </div>
+				       </div>
+				     <div class="form-group">
+				        <label for="" class="col-sm-3 control-label popup_label required" data-localize="Suggestions" style="padding-top: 0px !Important;"></label>
+				         <div class="col-sm-9">
+				          <textarea class="form-control" rows="4" id="txtSuggestion" style=" resize:none"></textarea>
+				          <span id="spanSuggestion" disabled="disabled" style="display:none;"></span>
+				         </div>
+				     </div>
+					 <div class="row text-center">               
+						<button type="button" class="btn  btn-outline-success" name="createNewSuggestion" id="createNewSuggestion" data-localize="Submit"></button>
+						<button type="button" class="btn btn-outline-secondary" name="createNewSuggestion" id="showSuggestion" data-localize="Close" style="display:none;"></button>
+					 </div>
+				    </div>
+				   </div>
+				   </div>	
+		</div>
+	</div>
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-158</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">70c59919-fe48-41a7-a4cb-7f96b5978cd0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-158, ADMIN-1645029823-158</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">15800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

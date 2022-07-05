@@ -1,0 +1,387 @@
+﻿<script type="text/javascript">
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventGetPollsQuestion,"sp.js"); 
+}); 
+
+var clientContext='';
+var TitanHomePage='';
+var counter=0;
+var preferredLanguageGlobal='';
+function getCurrentURL_EventGetPollsQuestion()
+{
+	var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var siteURL = items[0].SiteURL;
+				clientContext = new SP.ClientContext(siteURL);
+				getEditViewTitle(siteURL);
+				getPollQuestion(siteURL);
+				
+				
+            }
+           
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+$(document).ready(function(){
+	$('#Back').click(function() { 
+		var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");		
+		TitanHomePage=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId="+txtCompanyId;
+		window.open(TitanHomePage,"_self");	  
+	});
+	
+	if($.cookie.length>0 && $.cookie("Language")!=undefined)
+	{           
+		var preferredLanguageValue=$.cookie("Language");
+		var preferredLanguage=$.cookie("Language").split('#');  // Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+		preferredLanguageGlobal=preferredLanguage[0];
+
+	}
+	else
+	{
+		preferredLanguageGlobal='DefaultLanguage';
+	}
+
+	
+});
+
+
+function getPollQuestion(siteURL)
+{	debugger;
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	var PollQuestion='';
+	var requestUri =siteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items?$select=*&$Filter=MainPollID eq '"+txtPollId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) {
+						if(preferredLanguageGlobal=="DefaultLanguage")
+						{
+							PollQuestion=items[i]["Title"];
+						}
+						else
+						{
+							PollQuestion=items[i][preferredLanguageGlobal];
+						}
+						var PollQuestionId=items[i]["ID"];
+						getPollAnswer(siteURL,PollQuestionId,txtPollId,preferredLanguageGlobal,PollQuestion);
+						counter++;
+					}
+					
+					
+            },
+            error: function () {
+                console.log("Error getting the Poll Question.");
+            }                     
+        });
+	
+}
+
+function getPollAnswer(siteURL,PollQuestionId, txtPollId,preferredLanguageGlobal,PollQuestion)
+{
+	var IsParticipate =  titanForWork.getQueryStringParameter("IsParticipate");
+	
+		var PollOption='';
+		var PollOptionID='';
+		var requestUri =siteURL + "/_api/lists/getbytitle('PollAnswerDeatils')/items?$select=*&$Filter=QuestionID eq '"+PollQuestionId+"'";
+		$.ajax({
+				url: requestUri,
+				type: "GET",
+				async:false,
+				headers: { "ACCEPT": "application/json;odata=verbose" },
+				success: function (data) {
+						var items=data.d.results;
+						var PollsParticipateHTML='';
+						PollsParticipateHTML +='<div class="col-sm-12 todoborder">';
+						PollsParticipateHTML +='<div class="row pdng-top-10 bottom10">';
+						PollsParticipateHTML +='<div class="col-md-12 Questiontxt">';
+						//PollsParticipateHTML +='<span class="pull-left" id="txtQuestion">Q'+counter+'. &nbsp;  '+PollQuestion+' ? </span>';
+						PollsParticipateHTML +='<span class="pull-left" id="txtQuestion">Q'+(counter+1)+'. &nbsp;  '+PollQuestion+' ? </span>';
+						PollsParticipateHTML +='<span id="questionId" style="display:none;">'+PollQuestionId+'</span>';
+						PollsParticipateHTML +='<div class="col-md-12 ">';
+						
+						for(j = 0; j < items.length;j++) {
+							
+							if(preferredLanguageGlobal=="DefaultLanguage")
+							{
+								PollOption=items[j]["Title"];
+							}
+							else
+							{
+								PollOption=items[j][preferredLanguageGlobal];
+							}
+							PollOptionId=items[j]["ID"];
+							PollsParticipateHTML +='<div class="radio radio-div col-xs-12 col-sm-12 col-md-12 col-lg-12">';
+							PollsParticipateHTML +='<input type="radio" name="optradio'+(counter+1)+'" value="'+PollOptionId+'"></input><label>'+PollOption+'</label>';
+							PollsParticipateHTML +='</div>';
+						}
+						PollsParticipateHTML +='</div></div></div></div>';
+						$("#pollsParticipate").append(PollsParticipateHTML);
+				},
+				error: function () {
+					console.log("Error getting the poll Option.");
+				}                     
+			});
+		
+		if(IsParticipate=="True")
+		{
+			getResultPollsQuestion(clientContext);
+			$('.new_div').show()
+			$('.back-div').hide()
+		}
+}
+
+function getResultPollsQuestion(clientContext){
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	var oList = clientContext.get_web().get_lists().getByTitle('PollsResults');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><And><Eq><FieldRef Name='PollsId' /><Value Type='Text'>"+txtPollId+"</Value></Eq><Eq><FieldRef Name='Author' LookupId='True' /><Value Type='Lookup'>"+_spPageContextInfo.userId+"</Value></Eq></And></Where></Query></View>";
+	debugger;
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var listItemEnumerator = collListItem.getEnumerator();
+		var ItemCount=collListItem.get_count();
+		
+		var counter=1;
+		while (listItemEnumerator.moveNext()) 
+		{
+			var oListItem = listItemEnumerator.get_current();
+			var Answare=oListItem.get_item('PollOptionId');
+			$("input[type=radio][value='"+Answare+"']").attr('checked', 'checked');
+			counter++;
+		}
+		$('#submitAnsware').hide();
+		$('#btnreset').hide();
+		$('#Back').show();
+		$("#pollsParticipate").css("pointer-events", "none");
+		
+	},
+	function(){
+		console.log('error : Polls Get Result');
+	});
+}
+
+		$(function() {  
+            bindButtonClick();  
+        });
+		
+		
+		function bindButtonClick() {  
+		var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+            $("#submitAnsware").on("click", function() {
+            if(Radiovalidation()==true)  
+            {
+				//$('.submitButton').find('button').attr("disabled",true);
+				saveAnswarePollsResult();
+				}
+			}); 
+        }
+		
+	function saveAnswarePollsResult()
+	{
+		var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+		var tempcounter=1;
+		var isSelectedAnyOption=false;
+		$(".Questiontxt input[type='radio']:checked").each(function(){
+			isSelectedAnyOption=true;
+			return false;
+		});
+		if(isSelectedAnyOption==false)
+		{
+			alert("Please select at least one option of any question.");
+			$('.submitButton').find('button').attr("disabled",false);
+			return false;
+		}
+		else
+		{
+			alert("You have successfully participated.");
+			$('.submitButton').find('button').attr("disabled",true);
+			var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");		
+			TitanHomePage=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId="+txtCompanyId;
+			window.open(TitanHomePage,"_self");	
+		}
+		
+		$('.Questiontxt').each(function(){
+			
+			var pollsQuestionId=$(this).find("#questionId").text();
+			var answareTitle = $(this).find('input[Type="radio"]:checked').next('label:eq(0)').text(); //$(this).find('input[Type="radio"]:checked').val();
+			var answareID = $(this).find('input[Type="radio"]:checked').val();//$("#txtOption").val();
+			var oList = clientContext.get_web().get_lists().getByTitle('PollsResults');
+				
+			var itemCreateInfo = new SP.ListItemCreationInformation();
+			oListItem = oList.addItem(itemCreateInfo);
+			oListItem.set_item('PollsId', txtPollId);
+			oListItem.set_item('QuestionId', pollsQuestionId);
+			oListItem.set_item('Answare', answareTitle);
+			oListItem.set_item('PollOptionId', answareID);
+			
+			oListItem.update();
+
+			clientContext.load(oListItem);
+			clientContext.executeQueryAsync(function(){
+				tempcounter++;
+				if(counter==tempcounter)
+				{
+					//alert('You have Participated!!!'); 					
+					var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");		
+					TitanHomePage=_spPageContextInfo.webAbsoluteUrl+"/Pages/Default.aspx?WebAppId="+txtCompanyId;
+					window.open(TitanHomePage,"_self");
+				}					
+			}, onQueryFailed_ItemSavePollsDetails);
+			
+			});
+		}
+		function onQueryFailed_ItemSavePollsDetails(sender, args) {
+
+			console.log('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());
+		}
+
+		
+	
+function Radiovalidation()
+{		
+		  
+        var check = true;
+        $("input:radio").each(function(){
+            var name = $(this).attr("name");
+            if($("input:radio[name="+name+"]:checked").length == 0){
+                check = false;
+            }
+        });
+        
+        if(check){
+        return true;
+          //  alert('One radio in each group is checked.');
+        }else{
+            alert('Please select one option in each question.');
+        }
+
+}
+
+function getEditViewTitle(siteURL){
+	var pollID=0;
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	if(txtPollId!=undefined)
+	{
+		pollID=txtPollId;
+	}
+	else if(MainPollID!='')
+	{
+		pollID=MainPollID;
+	}
+	debugger;
+	var requestUri =siteURL + "/_api/lists/getbytitle('MainPollsList')/items?$select=*&$Filter=ID eq '"+pollID+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) 
+                	{
+						//$(".addQuestionAnswer").show();
+						
+						var PollTitle=items[i]["Title"];
+						$('#pollTitle').text(PollTitle);
+					}	
+				},
+                error: function () {
+                console.log("Error getting the Polls.");
+            }                     
+        });		
+ }
+
+
+</script>
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b data-localize="Survey">Survey:<span id="pollTitle"></span></b></h4></li>           
+	</ol>
+</div>
+<section class="content shadow2 panel">
+	<div class="container-fluid top15">
+		<div class="col-md-12 back-div">
+		<label style="float:left;color:blue">Note: All Question are Mandatory to reply!</label>
+	<!--	<button type="button" class="btn btn-outline-primary" id="Back" data-localize="Close">Close</button>  -->
+		</div>	
+		<div id="pollsParticipate" class="col-md-12">
+		</div>	
+		<div class="col-md-12 new_div" style="display:none">
+		<label style="float:left;color:red">Note: You already participated in this Survey</label>	
+		</div>		
+	</div>
+</section>
+<div class="top15 bottom15 submitButton pol-sub-reset">
+	<button type="button" class="btn btn-outline-success" id="submitAnsware" data-localize="Submit">Submit</button>
+	<button type="reset" class="btn btn-outline-recet" id="btnreset"data-localize="Reset">Reset</button>	
+	<button type="button" class="btn btn-outline-secondary" id="Back" data-localize="Close">Close</button>
+</div>
+
+<style>
+.col-md-12.top15.bottom15.submitButton.pol-sub-reset{
+	text-align: center;
+	margin-top:0px !important;
+}
+div#pollsParticipate,.col-sm-12.todoborder{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.todoborder{
+    margin-bottom: 10px;
+}
+.radio.col-xs-12.col-sm-12.col-md-12 label {
+    cursor: default;
+}
+div#pollsParticipate .todoborder:last-child {
+    border-bottom: none;
+}
+
+</style>
+
+
+ 
+  
+   
+    
+     
+		
+	 
+	 
+	
+   <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-390</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">bf8b7db1-2ed1-43a3-abc0-ebdb9913d767</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-390, ADMIN-1645029823-390</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">39000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

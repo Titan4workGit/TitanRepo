@@ -1,0 +1,141 @@
+﻿<script src="../SiteAssets/PrayerWebPart/PrayerTiming.js"></script>
+<style>
+.mosque-box {
+    width: 100%;
+    border: 1px solid #efefef;
+    min-height: 60px;
+    padding: 5px 15px 5px 15px;
+    box-shadow: 0 4px 14px #e5e5e5;
+    position: relative;
+    background: #fff;
+}
+.line_bg {
+    background-image: url(../SiteAssets/PrayerWebPart/line.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.top10 {
+    padding-top: 10px;
+}
+.swipe {
+   /* margin-bottom: 20px;*/
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+#paryerTimeTable li {
+    width:198px;
+}
+.swipe li {
+    margin: 5px;
+    margin-top: 6px;
+}
+.swipe li div, .swipe div div div {
+    padding: 10px 10px;
+    text-align: center;
+}
+.ddlPrayerRegion
+{
+    border: 0px solid #ccc; 
+    background-clip: padding-box;
+   /*margin-left:62px;
+   min-width:143px;
+    max-width:125px;*/
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+    height:30px !Important;
+}
+.mosque-pic-span{
+	position: relative;
+    top: 0px;
+ }
+.mosque-pic-dropdown{
+	    margin:8px 0px 8px 0px!Important;
+}
+.mosque-box-inner-div{
+	    height: 48px;
+	    padding-left:0px;
+}
+.swipe ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+.mosque-pic-div{
+	padding-left:0px;
+    padding-right: 0px;
+}
+.mosque-pic-dropdown{
+	padding:0px;
+}
+ul#paryerTimeTable li.line_bg:last-child {
+    background-image: none;
+}
+@media (max-width:767px){
+	.ddlPrayerRegion{
+		width:100% !Important;
+		max-width: 100%;
+		padding:0px;
+	}
+}
+</style>
+<div class="prayerWebPartHTML">
+	<div class="mosque-box">						
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-7 mosque-box-inner-div line_bg line_bgnone ">
+				<div class="col-lg-4 col-md-3 col-sm-3 mosque-pic-div hidden-xs">
+					<span class="pull-left mosque-pic-span">
+						<img src="../SiteAssets/PrayerWebPart/mosque.png" class="mosque-pic">
+					</span>
+				</div>
+				<div class="col-lg-8 col-md-9 col-sm-9 col-center-block mosque-pic-dropdown">		            	
+					<div class="dropdown">
+						<!--<select class="ddlPrayerRegion form-control">
+							<option class="dropdown-item">Riyadh</option>
+							<option class="dropdown-item">Tabuk</option>
+							<option class="dropdown-item">Jeddah</option>
+							<option class="dropdown-item">Mecca</option>
+							<option class="dropdown-item">Medina</option>
+							<option class="dropdown-item">Dammam</option>
+							<option class="dropdown-item">Ta'if</option>
+							<option class="dropdown-item">Buraydah</option>
+							<option class="dropdown-item">Abha</option>
+							<option class="dropdown-item">Khamis Mushait</option>
+						</select>-->
+
+						<select class="ddlPrayerRegion form-control">
+							
+						</select>
+					</div>
+				</div>
+			</div>
+	        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-5 mosque-box-inner-item-div">
+	            <div class="row">
+		            <div class="swipe">
+			            <ul id="paryerTimeTable">
+			            </ul>
+		            </div>
+	            </div>
+	        </div>
+			<div id="pagenavi">
+			</div>
+	    </div>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">DOCID-1440631752-1421</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2b8453b8-f116-4934-948b-bd813d9c8b38</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/TITAN_RAII_DEV/_layouts/15/DocIdRedir.aspx?ID=DOCID-1440631752-1421, DOCID-1440631752-1421</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">4700.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

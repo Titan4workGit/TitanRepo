@@ -1,0 +1,2074 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<style type="text/css">
+
+/**feb-22-22**/
+.ui-dialog .ui-dialog-titlebar-close{
+ min-width:20px;	
+}
+
+#myIframeTeam{
+    width: 992px !important;
+    height: 1600px !important;
+}
+
+
+@media(min-width:1046px){
+
+.ui-dialog{
+ width:1044px !important;	
+}
+
+}
+
+@media(max-width:767px){
+	
+.ui-widget-content{
+ margin:0 auto !important; 	
+}	
+	
+}
+
+
+/**feb-22-22**/
+
+  div#company121 .panel:last-child,
+  div#department .panel:last-child {
+      margin-bottom: 0px;
+  }
+
+  .manage-permission {
+      margin-bottom: 0px !important;
+  }
+
+  div#company121,
+  div#department {
+      padding: 0px;
+  }
+
+  .mrg-top-60 {
+      margin-top: 60px !Important;
+  }
+
+  .mrg-top-30 {
+      margin-top: 30px !Important;
+  }
+
+  .mrg-top-20 {
+      margin-top: 20px !Important;
+  }
+
+  .pdng-btm-10 {
+      padding-bottom: 10px;
+  }
+
+  .div-height-30 {
+      height: 30px;
+  }
+
+  .ms-webpart-cell-horizontal {
+      display: block !important;
+  }
+
+  .nav-tabs {
+      border-bottom: 2px solid #DDD;
+  }
+
+      .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+          border-width: 0;
+      }
+
+      .nav-tabs > li > a {
+          border: none;
+          color: #ccc;
+          border: 1px solid #e2e2e2 !important;
+          /*background:;*/
+      }
+
+  .card > .nav > li > a > span:hover {
+      color: #000 !important;
+  }
+
+  .nav-tabs > li.active > a {
+      border: none;
+      /* color: #333 !important;
+      background:#ddd !important; */
+      /*color: #fff !important;
+      background: #428bca !important;
+      box-shadow: 0px 6px 11px -6px #000;
+      border: 1px solid #b5b5b5 !important; */
+      color: #000 !important;
+      background: #f3f3f3 !important;
+      box-shadow: -4px 6px 8px -9px #000;
+      /* background: #efefef !important; */
+      border: 1px solid #b5b5b5 !important;
+  }
+
+  .nav-tabs > li > a:hover {
+      /* background:#efefef  !important; */
+  }
+
+  .nav-tabs > li > a::after {
+      /* content: "";
+      background: #999;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      bottom: -1px;
+      transition: all 250ms ease 0s;
+      transform: scale(0);*/
+  }
+
+  .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+      transform: scale(1);
+  }
+
+  .tab-nav > li > a::after {
+      background: #1d6ec0 none repeat scroll 0% 0%;
+      color: #fff;
+  }
+
+  .tab-pane {
+      padding: 15px 0;
+  }
+
+  .tab-content {
+      padding: 20px;
+  }
+
+  .nav-tabs > li {
+      width: 20%;
+      text-align: center;
+  }
+
+  .card {
+      background: #FFF none repeat scroll 0% 0%;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+      border-radius: 4px 4px 0 0;
+  }
+
+  .tab_padd {
+      padding: 10px !important;
+      background: none !important;
+      margin-top: 0px !important;
+  }
+
+  .color-fill-icon {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border: 1px solid #000;
+      background-color: #fff;
+      margin: 2px;
+  }
+
+  .dropdown-color-fill-icon {
+      position: relative;
+      float: left;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .blue-color {
+      color: #428bca;
+  }
+
+  .theme_head_text {
+      color: #1d6ec0;
+      padding-bottom: 10px;
+  }
+
+small{
+ margin-top: 8px;
+ display: block;	
+}
+
+#department .panel-body{
+ display:none;	
+}
+
+  @media (max-width:1280px) {
+      .card ul.nav li a {
+          padding: 10px 15px !important;
+          margin-top: 0px !important;
+      }
+  }
+
+  @media (max-width:1024px) {
+      .card ul.nav li a {
+          padding: 10px 15px !important;
+          margin-top: 0px !important;
+      }
+  }
+
+  @media (max-width: 767px) {
+      .pdng-btm-10 {
+          padding-bottom: 0px !Important;
+      }
+
+      .mrg-top-60 {
+          margin-top: 0px !Important;
+      }
+
+      .mrg-top-30 {
+          margin-top: 0px !Important;
+      }
+
+      .mrg-top-20 {
+          margin-top: 0px !Important;
+      }
+
+      .div-height-30 {
+          height: 0px;
+      }
+
+      /*.nav-tabs.nav-justified > li {
+      float: left;
+      }
+      .nav-tabs > li {
+      width: 50%;
+      }*/
+      .card ul.nav li a {
+          padding: 10px 15px !important;
+          margin-top: 0px !important;
+      }
+
+      .card ul.nav li {
+          width: 100%;
+      }
+  }
+
+  .sp-peoplepicker-topLevel {
+      width: 100%;
+      min-height: 34px;
+      /*width: 216px;*/
+  }
+
+  .sp-peoplepicker-editorInput {
+      /*width: 183px;*/
+      width: 100%;
+      min-height: 30px;
+  }
+
+  .top-pdng {
+      padding-top: 5px;
+  }
+
+  /* new css added on 22/5/19 */
+
+  .btn-outline-success, input.btn.btn-outline-success {
+      color: #ffffff;
+      background-color: #428bca;
+      background-image: none;
+      border-color: #428bca !Important;
+      padding: 4.5px 12px !important;
+      margin-top: 5px;
+  }
+
+      .btn-outline-success:hover, input.btn.btn-outline-success:hover {
+          color: #428bca;
+          background-color: #ffffff;
+      }
+
+  .form-horizontal .control-label {
+      text-align: left !important;
+  }
+
+  .my_manage_permission_admin .form-group {
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+  }
+
+  .manage-permission + .tab-content {
+      border-top: 1px solid #bbbbbb;
+      border-radius: 4px;
+  }
+
+  .my_manage_permission_admin_box .sp-peoplepicker-topLevel {
+      min-height: 95px;
+      /* width: 216px; */
+  }
+
+  .my_manage_permission_media_box .sp-peoplepicker-topLevel {
+      min-height: 76px;
+      /* width: 216px; */
+  }
+
+  .pdng-btm-17 {
+      padding-bottom: 17px;
+  }
+
+  .my_manage_permission_announce_box #GeneralAnnouncementApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+
+  .my_manage_permission_webpart_box #EventsApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 55px;
+      left: -11px;
+      font-size: 24px;
+  }
+
+  .my_manage_permission_webpart_box .sp-peoplepicker-topLevel {
+      min-height: 76px;
+      /* width: 216px; */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .btn-toggle {
+      margin: 0 4rem;
+      padding: 0;
+      position: relative;
+      border: none;
+      height: 1.5rem;
+      width: 3rem;
+      border-radius: 1.5rem;
+      color: #6b7381;
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      .btn-toggle:focus, .btn-toggle.focus, .btn-toggle:focus.active, .btn-toggle.focus.active {
+          outline: none;
+      }
+
+      .btn-toggle:before, .btn-toggle:after {
+          line-height: 1.5rem;
+          width: 4rem;
+          text-align: center;
+          font-weight: 600;
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          position: absolute;
+          bottom: 0;
+          transition: opacity 0.25s;
+      }
+
+      .btn-toggle:before {
+          content: 'Off';
+          left: -4rem;
+      }
+
+      .btn-toggle:after {
+          content: 'On';
+          right: -4rem;
+          opacity: 0.5;
+      }
+
+      .btn-toggle > .handle {
+          position: absolute;
+          top: 0.1875rem;
+          left: 0.1875rem;
+          width: 1.125rem;
+          height: 1.125rem;
+          border-radius: 1.125rem;
+          background: #fff;
+          transition: left 0.25s;
+      }
+
+      .btn-toggle.active {
+          transition: background-color 0.25s;
+      }
+
+          .btn-toggle.active > .handle {
+              left: 1.6875rem;
+              transition: left 0.25s;
+          }
+
+          .btn-toggle.active:before {
+              opacity: 0.5;
+          }
+
+          .btn-toggle.active:after {
+              opacity: 1;
+          }
+
+      .btn-toggle:before, .btn-toggle:after {
+          color: #6b7381;
+      }
+
+      .btn-toggle.active {
+          background-color: #29b5a8;
+      }
+
+      .btn-toggle.btn-lg {
+          margin: 0 8rem;
+          padding: 0;
+          position: relative;
+          border: none;
+          height: 2.5rem;
+          width: 5rem;
+          min-width: 5rem !important;
+          border-radius: 2.5rem !important;
+          float: right;
+      }
+
+          .btn-toggle.btn-lg:focus, .btn-toggle.btn-lg.focus, .btn-toggle.btn-lg:focus.active, .btn-toggle.btn-lg.focus.active {
+              outline: none;
+          }
+
+          .btn-toggle.btn-lg:before, .btn-toggle.btn-lg:after {
+              line-height: 2.5rem;
+              width: 5rem;
+              text-align: center;
+              font-weight: 600;
+              font-size: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              position: absolute;
+              bottom: 0;
+              transition: opacity 0.25s;
+          }
+
+          .btn-toggle.btn-lg:before {
+              content: 'Selective';
+              left: -8rem;
+          }
+
+          .btn-toggle.btn-lg:after {
+              content: 'Everyone';
+              right: -6.4rem;
+              opacity: 0.5;
+          }
+
+          .btn-toggle.btn-lg > .handle {
+              position: absolute;
+              top: 0.3125rem;
+              left: 0.3125rem;
+              width: 1.875rem;
+              height: 1.875rem;
+              border-radius: 1.875rem;
+              background: #2196f3;
+              transition: left 0.25s;
+          }
+
+          .btn-toggle.btn-lg.active {
+              transition: background-color 0.25s;
+          }
+
+              .btn-toggle.btn-lg.active > .handle {
+                  left: 2.8125rem;
+                  transition: left 0.25s;
+              }
+
+              .btn-toggle.btn-lg.active:before {
+                  opacity: 0.5;
+              }
+
+              .btn-toggle.btn-lg.active:after {
+                  opacity: 1;
+              }
+
+      .btn-toggle.btn-secondary {
+          color: #6b7381;
+          background: #bdc1c8;
+      }
+
+          .btn-toggle.btn-secondary:before, .btn-toggle.btn-secondary:after {
+              color: #6b7381;
+          }
+
+          .btn-toggle.btn-secondary.active {
+              background-color: #ff8300;
+          }
+
+  #toggleNews.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleNews.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleMediaGallery.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleMediaGallery.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleMagazine.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleMagazine.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleGeneralAnnouncement.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleGeneralAnnouncement.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleEmergencyAnnouncement.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleEmergencyAnnouncement.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #togglePolls.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #togglePolls.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleEvents.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleEvents.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleExperience.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleExperience.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleRecognition.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleRecognition.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleQuestionAnswer.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleQuestionAnswer.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleInitiative.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleInitiative.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleSuggestion.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleSuggestion.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleActivity.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+      #toggleActivity.active .handle {
+          background: #00ff43 !important;
+      }
+
+  #toggleClientMaster.active {
+      background: #fff !important;
+      box-shadow: 0px 1px 10px -4.5px #000;
+  }
+
+  #toggleClientMaster.active .handle {
+          background: #00ff43 !important;
+  }
+
+  .myClass {
+      background-color: gray;
+      opacity: .8;
+      cursor: no-drop !important;
+  }
+
+
+.nav-tabs > li.active > a {
+    color: #fff !important;
+    background: #1d6ec0 !important;
+}
+
+input.sp-peoplepicker-editorInput{
+  border:none !important; 	
+}
+
+.form-horizontal .form-group{
+  margin-bottom:20px !important;	
+}
+
+.form-horizontal .control-label {
+    text-align: left !important;
+    /*font-size: 17px;*/
+    font-size: 17px;
+    color: #0b0b0b;
+    font-weight: 700;
+}
+  
+.btn-outline-success, input.btn.btn-outline-success {
+    color: #ffffff;
+    background-color: #1d6ec0 !important;
+}    
+.nav-tabs > li > a:hover{
+
+ color:#000 !important;	
+
+}
+
+@media (min-width:992px) { 
+
+  .my_manage_permission_media_box #NewsApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+  .my_manage_permission_webpart_box #PollsApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 55px;
+      left: -11px;
+      font-size: 24px;
+  }
+  .my_manage_permission_webpart_box #RecognitionApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 55px;
+      left: -11px;
+      font-size: 24px;   
+  }
+  .my_manage_permission_webpart_box #ExperienceApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 55px;
+      left: -11px;
+      font-size: 24px;   
+  }
+  .my_manage_permission_webpart_box #QuestionAnswerApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 55px;
+      left: -11px;
+      font-size: 24px;   
+  }
+  .announce-box-approvers-announce {
+      display: none;
+  }
+  .document-box-approver-inner-1 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-1 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-2 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-3 {
+      display: none;
+  }
+  .my-manage-permission-document-box #DocumentsApprovers_Department::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+  .my-department-permission-webpart-box #NewInitiativeApprovers_Department::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+  .my-department-permission-webpart-box #SuggestionApprovers_Department::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+  .my-department-permission-webpart-box #ActivityApprovers_Department::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 45px;
+      left: -11px;
+      font-size: 24px;
+  }
+
+}
+    
+@media(max-width:991px){
+
+  .my_manage_permission_admin_box div.col-sm-8,
+  .my_manage_permission_media_box div.col-sm-6,
+  .my_manage_permission_announce_box div.col-sm-6{
+    width:100% !important; 
+  }
+  .my_manage_permission_announce_box #GeneralAnnouncementApprovers_Company::before {
+    display: none;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .my_manage_permission_webpart_box .form-horizontal .control-label {
+      display: block;
+      font-size: 15px;
+  }
+  .my_manage_permission_webpart_box .btn-toggle.btn-lg {
+      float: left;
+  }
+  .my_manage_permission_webpart_box .sp-peoplepicker-topLevel {
+      margin-top: 40px;
+  }
+  .my_manage_permission_webpart_box #EventsApprovers_Company::before {
+      content: ' \27A0';
+      position: absolute;
+      top: 100px;
+      left: -11px;
+      font-size: 24px;
+  }
+  /*.my_manage_permission_announce_box .announce-box-approvers {
+      display: none;
+  }*/
+  .media-box-approvers {
+      display: none;
+  }
+  .media-box-inner-approvers {
+      display: block !important;
+      margin-top: 10px;
+  }
+  .my_manage_permission_webpart_box #PollsApprovers_Company::before {
+      content: ' \27A0';
+    position: absolute;
+    top: 100px;
+    left: -11px;
+    font-size: 24px;
+  }
+  .my_manage_permission_webpart_box #RecognitionApprovers_Company::before {
+      content: ' \27A0';
+    position: absolute;
+    top: 100px;
+    left: -11px;
+    font-size: 24px;   
+  }
+  .my_manage_permission_webpart_box #ExperienceApprovers_Company::before {
+      content: ' \27A0';
+    position: absolute;
+    top: 100px;
+    left: -11px;
+    font-size: 24px;   
+  }
+  .my_manage_permission_webpart_box #QuestionAnswerApprovers_Company::before {
+      content: ' \27A0';
+    position: absolute;
+    top: 100px;
+    left: -11px;
+    font-size: 24px;   
+  }
+  .webpart-approvers-survey {
+      display: none;
+  }
+  .webpart-approvers-recognition {
+      display: none;
+  }
+  .webpart-approvers-exp {
+      display: none;
+  }
+  .webpart-approvers-QA {
+      display: none;
+  }
+  .announce-box-approvers-announce {
+      padding-left: 0;
+      margin-top: 10px;
+  }
+  .announce-box-approvers {
+      display: none;
+  }
+  .document-box-approver-inner-1 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-1 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-2 {
+      display: none;
+  }
+  .dept-webpart-inner-approver-3 {
+      display: none;
+  }
+  .my-manage-permission-document-box #DocumentsApprovers_Department::before {
+        content: ' \27A0';
+    position: absolute;
+    top: 40px;
+    left: -11px;
+    font-size: 24px;
+  }
+  .my-department-permission-webpart-box #NewInitiativeApprovers_Department::before {
+        content: ' \27A0';
+    position: absolute;
+    top: 70px;
+    left: -11px;
+    font-size: 24px;
+  }
+  .my-department-permission-webpart-box #SuggestionApprovers_Department::before {
+        content: ' \27A0';
+    position: absolute;
+    top: 40px;
+    left: -11px;
+    font-size: 24px;
+  }
+  .my-department-permission-webpart-box #ActivityApprovers_Department::before {
+        content: ' \27A0';
+    position: absolute;
+    top: 65px;
+    left: -11px;
+    font-size: 24px;
+  }
+  .my-manage-permission-document-box #DocumentsApprovers_Department_TopSpan {
+      margin-top: 2px;
+  }
+  .my-department-permission-webpart-box #NewInitiativeApprovers_Department_TopSpan {
+      margin-top: 30px;
+  }
+  /*.my-department-permission-webpart-box #toggleInitiative {
+      margin-top: 7px;
+  }*/
+  .my-department-permission-webpart-box #ActivityApprovers_Department_TopSpan {
+      margin-top: 27px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .my_manage_permission_webpart_box #EventsApprovers_Company::before {
+      display: none;
+  }
+  .my_manage_permission_webpart_box .form-horizontal .control-label, .my_manage_permission_media_box .form-horizontal .control-label, .my_manage_permission_announce_box .form-horizontal .control-label {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+  .my_manage_permission_announce_box .announce-box-approvers {
+      display: none;
+  }
+  .my_manage_permission_webpart_box .btn-toggle.btn-lg, .my_manage_permission_media_box .btn-toggle.btn-lg, .my_manage_permission_announce_box .btn-toggle.btn-lg {
+      float: left;
+  }
+  .my_manage_permission_webpart_box .sp-peoplepicker-topLevel {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  .my_manage_permission_announce_box .sp-peoplepicker-topLevel {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  .my_manage_permission_announce_box #GeneralAnnouncementApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .my_manage_permission_media_box .sp-peoplepicker-topLevel {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  .my_manage_permission_media_box #NewsApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_announce_box .ContributorsAddEditDelete {
+    margin-top: 40px;
+  }
+  .my_manage_permission_announce_box #EmergencyAnnouncementContributors_Company .sp-peoplepicker-topLevel {
+      margin-top: 15px;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_media_box #MediaGalleryContributors_Company .sp-peoplepicker-topLevel {
+      margin-bottom: 0px;
+  }
+  .my_manage_permission_media_box #MediaContributors_Company .sp-peoplepicker-topLevel {
+      margin-bottom: 0px;
+  }
+  .my_manage_permission_webpart_box .webpart-approvers {
+      display: none;
+  }
+  .my_manage_permission_webpart_box #EventsApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+  .my_manage_permission_webpart_box #PollsApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_webpart_box #RecognitionApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_webpart_box #ExperienceApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_webpart_box #QuestionAnswerApprovers_Company .sp-peoplepicker-topLevel {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  .my_manage_permission_webpart_box #ClientMasterContributors_Company .sp-peoplepicker-topLevel {
+      margin-bottom: 0px;
+  }
+  
+  .media-box-approvers {
+      display: none;
+  }
+  .media-box-inner-approvers {
+      display: block !important;
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .announce-box-approvers-announce {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+      padding-left: 0;
+  }
+  .webpart-inner-approvers-1 {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .webpart-approvers-survey {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .webpart-approvers-recognition {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .webpart-approvers-exp {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .webpart-approvers-QA {
+      margin-top: 10px;
+      padding-bottom: 10px !important;
+  }
+  .document-box-approver {
+      display: none;
+  }
+  .my-manage-permission-document-box div[data-localize="ContributorsParenthesesAddEditDelete"] {
+      margin-bottom: 10px;
+      margin-top: 5px;
+  }
+  .document-box-approver-inner-1 {
+      margin-top: 10px;
+      padding-left: 0;
+      margin-bottom: 10px;
+  }
+  .my-manage-permission-document-box .form-horizontal .control-label {
+      font-size: 15px;
+      margin: 6px auto 8px auto;
+  }
+  .dept-webpart-box-approver {
+      display: none;
+  }
+  .my-department-permission-webpart-box .form-horizontal .control-label {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 5px;
+  }
+  .my-department-permission-webpart-box #toggleInitiative {
+      float: left;
+  }
+  .dept-webpart-box-initiative-contributors {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  .dept-webpart-inner-approver-1 {
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .dept-webpart-inner-approver-2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-left: 0;
+  }
+  .dept-webpart-box-activity-contributors {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  .my-department-permission-webpart-box #toggleActivity {
+      float: left;
+  }
+  .dept-webpart-inner-approver-3 {
+      padding-left: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .dept-webpart-box-knowledge-contributors {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .dept-webpart-box-knowledge-approvers {
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+  .dept-webpart-box-knowledge-height {
+      display: none;
+  }
+  .dept-webpart-box-project-approvers {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .tab-content.shadow2{
+  	padding:20px 5px !important; 
+  }	
+  .sp-peoplepicker-topLevel{
+
+  	font-size:12px !important;	
+  }
+
+}
+ 
+#btnSubmit_DepartmentDocument{
+
+   display:block !important;
+   margin:5px auto !important;	
+   
+}
+
+ 
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="../_catalogs/masterpage/Titan2/Scripts/clientpeoplepicker.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/clientforms.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/clienttemplates.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/autofill.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/Permission/ManagePermission.js"></script>
+ 
+
+<script src="../SiteAssets/EmployeeSynchronous/CommonJS.js"></script>
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+
+<!--<div class="container row">
+  <div class=" col-md-12 department-header">
+      <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li>Manage Permission</li>
+
+      </ol>
+  </div>
+</div>-->
+
+<div class="row department-header">
+  <ol class="breadcrumb">
+      <li><h4><b data-localize=""></b></h4></li>
+  </ol>
+  <input type="hidden" id="deptsiteurl"><!--Dont remove this input -->
+</div>
+<div class="row">
+  <div class="col-md-12">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <ul class="nav nav-tabs nav-justified shadow3 manage-permission" role="tablist">
+                      <li role="presentation" class="active"><a href="#company121" class="tab_padd" aria-controls="theme_gallery" role="tab" data-toggle="tab" aria-expanded="true"> <span data-localize="Corporate Permissions"> Corporate Permissions </span></a></li>
+                      <li role="presentation" class=""><a href="#department" class="tab_padd" aria-controls="custom_theme" role="tab" data-toggle="tab" aria-expanded="false"> <span data-localize="Departmental Permission">Departmental Permission</span></a></li>
+
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content shadow2">
+                      <div role="tabpanel" class="tab-pane active" id="company121">
+
+                          <div class="clearfix"></div>
+
+                          <div class="panel panel-default my_manage_permission_admin_box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="Admin">Admin</h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body ">
+                                  <div class="form-horizontal">
+                                      <div class="row my_manage_permission_admin">
+
+                                        <div class="row" style="margin:0;">
+                                        
+                                          <div class="form-group col-md-6 ">
+                                              <label for="" class="col-xs-12 col-sm-5 col-md-6 col-lg-5 control-label txt-lft" data-localize="TechAdmin">TechAdmin</label>
+                                              <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
+                                                  <span class="titan_peoplepicker" id="TechAdmin_Company"></span>
+                                                  <small><span class="blue-color"><span data-localize="TipColon"></span><em><span data-localize="Permissions for all admin related jobs.">Permissions for all admin related jobs.</span></em></span></small>
+                                              </div>
+                                          </div>
+                                          <div class="form-group col-md-6 ">
+                                              <label for="" class="col-xs-12 col-sm-5 col-md-6 col-lg-5 control-label txt-lft" data-localize="HRAdmin">HRAdmin</label>
+                                              <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
+                                                  <span class="titan_peoplepicker" id="HRAdmin_Company"></span>
+                                                  <small><span class="blue-color"><span data-localize="TipColon"></span><em><span data-localize="Permissions for all HR related jobs.">Permissions for all HR related jobs.</span></em></span></small>
+                                              </div>
+                                          </div>
+                                        
+                                        
+                                        </div>  
+                                          
+                                     <div class="row" style="margin:0;">     
+                                          
+                                         <div class="form-group col-md-6">
+                                              <label for="" class="col-xs-12 col-sm-5 col-md-6 col-lg-5 control-label txt-lft" data-localize="ProjectAdmin">ProjectAdmin</label>
+                                              <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
+                                                  <span class="titan_peoplepicker" id="ProjectAdmin_Company"></span>
+                                                  <small><span class="blue-color"><span data-localize="TipColon"></span><em><span data-localize="Permissions for create projects.">Permissions for create projects.</span></em></span></small>
+                                              </div>
+                                          </div>
+                                      
+                                      <div class="form-group col-md-6">
+                                              <label for="" class="col-xs-12 col-sm-5 col-md-6 col-lg-5 control-label txt-lft" data-localize="ProcessAdmin">Process Admin</label>
+                                              <div class="col-xs-12 col-sm-8 col-md-12 col-lg-12">
+                                                  <span class="titan_peoplepicker" id="ProcessAdmin_Company"></span>
+                                                  <small><span class="blue-color"><span data-localize="TipColon"></span><em><span data-localize="Permissions for create process.">Permissions for create Process.</span></em></span></small>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      
+									 </div>
+									 
+									<div class="row" style="text-align:right; margin:0px;">
+									  <a href="#" id="Openmngsiteadmin" type="button" class="blue-color" style="font-size:11px; font-style:italic; cursor:pointer" onclick="Openmngsiteadmins()">Site Admins</a>
+									</div> 
+                                          
+                                      <div class="row text-center">
+                                          <input id="btnSubmit_Admin" type="button" class="btn  btn-outline-success" value="Submit">
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <!--/panel content-->
+
+                          </div>
+                          <div class="panel panel-default my_manage_permission_media_box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="MediaContent">MediaContent</h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+
+
+                                          <div class="col-sm-6 pdng-btm-10" data-localize="ContributorsParenthesesAddEditDelete">Contributors(Add,Edit,Delete)</div>
+                                          <div class="col-sm-6 pdng-btm-10 media-box-approvers" data-localize="Approvers">Approvers</div>
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Information">Information</label>
+
+                                                      <button id="toggleNews" onclick="ChrckToggleNews()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10" data-localize="LimitedAccessParenthesesAddPermission"></div>
+
+                                                          <span id="BannersLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="BannersContributors_Company"></span>
+                                                  </div>
+
+                                                  <div class="col-sm-6 ">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md hidden-sm media-box-inner-approvers" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyNewsApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="NewsApprovers_Company"></span>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Magazine">Magazine</label>
+                                                      <button id="toggleMagazine" onclick="ChrcktoggleMagazine()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="MediaGalleryLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="MediaGalleryContributors_Company"></span>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="MediaGallery">MediaGallery</label>
+                                                      <button id="toggleMediaGallery" onclick="ChrcktoggleMediaGallery()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="MediaLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="MediaContributors_Company"></span>
+
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+
+
+
+
+                                      </div>
+
+                                      <div class="row text-center">
+                                          <input id="btnSubmit_MediaContent" type="button" class="btn  btn-outline-success" value="Submit">
+
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <!--/panel content-->
+
+                          </div>
+
+                          <!--Announcement-->
+                          <div class="panel panel-default my_manage_permission_announce_box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="Announcements">Announcements</h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+
+                                          <!-- hhh -->
+
+                                          <div class="col-sm-6 pdng-btm-10" data-localize="ContributorsParenthesesAddEditDelete">Contributors(Add,Edit,Delete)</div>
+
+                                          <div class="col-sm-6 pdng-btm-10 announce-box-approvers" data-localize="Approvers">Approvers</div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-md-6">
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Announcements">Announcements</label>
+                                                      <button id="toggleGeneralAnnouncement" onclick="ChrckGeneralAnnouncement()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                          <div class="pdng-btm-10" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="GeneralAnnouncementLimitedAccess_Company"></span>
+                                                      </div>
+                                                      <!-- <div class="pdng-btm-10 div-height-30"></div> -->
+                                                      <span id="GeneralAnnouncementContributors_Company"></span>
+                                                  </div>
+
+                                                  <div class="col-md-6">
+                                                      <div class="col-sm-6 pdng-btm-10 announce-box-approvers-announce" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="generalAnnouncementsApproverRequired">
+                                                          <span data-localize="ApproverRequiredforbothAnnouncementandAlert">Approver Required for both Announcement and Alert</span>
+                                                      </div>
+                                                      <span id="GeneralAnnouncementApprovers_Company"></span>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="EmergencyAnnouncement">Alert</label>
+                                                      <button id="toggleEmergencyAnnouncement" onclick="ChrckEmergencyAnnouncement()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="EmergencyAnnouncementLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md ContributorsAddEditDelete" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="EmergencyAnnouncementContributors_Company"></span>
+
+                                                      <div class="col-xs-12 col-sm-4" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md hidden-sm announce-box-inner-approvers" data-localize="Approvers">Approvers</div>
+                                                          <input type="" class="form-control" id="" disabled="">
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                      <div class="row text-center">
+                                          <input id="btnSubmit_Announcement" type="button" class="btn  btn-outline-success" value="Submit">
+
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <!--/panel content-->
+
+                          </div>
+                          <!--Announcement End-->
+                          <!--webparts-->
+                          <div class="panel panel-default my_manage_permission_webpart_box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="Webparts">Webparts</h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+
+                                          <div class="col-sm-6 pdng-btm-10" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+
+                                          <div class="col-sm-6 pdng-btm-10 webpart-approvers" data-localize="Approvers">Approvers</div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label control-label pdng-btm-10" data-localize="Events">Events</label>
+                                                      <button id="toggleEvents" onclick="ChrckEvents()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+
+                                                          <span id="EventsLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="EventsContributors_Company"></span>
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md hidden-sm webpart-inner-approvers-1" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyEventsApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="EventsApprovers_Company"></span>
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                            <div class="form-group" style="display:none;">
+                                                <label for="" class="col-sm-4 control-label" data-localize="MeetingRoomBooking"></label>
+
+                                                <div class="col-xs-12 col-sm-5 col-md-4" style="display:none;">
+
+
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+
+                                                    <span id="MeetingRoomBookingLimitedAccess_Company"></span>
+                                                </div>
+
+
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="ContributorsParenthesesAddEditDelete"></div>
+                                                    <span id="MeetingRoomBookingContributors_Company"></span>
+                                                </div><div class="col-sm-3" style="display:none">
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md webpart-approvers-event" data-localize="Approvers">Approvers</div>
+                                                    <input type="" class="form-control" id="input4" disabled="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-12" style="display:none">
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Occasion"></label>
+                                                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+                                                    <span id="OccasionLimitedAccess_Company"></span>
+                                                </div>
+
+
+                                                <div class="col-xs-12 col-sm-4">
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="ContributorsParenthesesAddEditDelete"></div>
+                                                    <span id="OccasionContributors_Company"></span>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none">
+                                                    <div class="pdng-btm-10 hidden-lg hidden-md hidden-sm webpart-inner-approvers-2" data-localize="Approvers"></div>
+                                                    <input type="" class="form-control" id="input6" disabled="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                            <div class="row">
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Polls">Survey</label>
+                                                      <button id="togglePolls" onclick="ChrckPolls()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="PollsLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="PollsContributors_Company"></span>
+
+                                                  </div>
+                                                     <div class="col-sm-6">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md webpart-approvers-survey" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyPollsApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="PollsApprovers_Company"></span>
+                                                  </div>
+                                                  <!--
+                                                  <div class="col-xs-12 col-sm-4">
+                                                      <div class="pdng-btm-10" data-localize="Approvers" style="display: none;"></div>
+                                                      <input type="" class="form-control" id="input2" disabled="" style="display:none">
+                                                  </div>-->
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+
+                                      <div class="row">
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Recognition">Recognition</label>
+                                                      <button id="toggleRecognition" onclick="ChrckRecognition()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none;">
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="RecognitionLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="RecognitionContributors_Company"></span>
+
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md webpart-approvers-recognition" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyRecognitionApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="RecognitionApprovers_Company"></span>
+                                                  </div>
+
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label control-label pdng-btm-10" data-localize="Experience">Experience</label>
+                                                      <button id="toggleExperience" onclick="ChrckExperience()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+
+                                                          <span id="ExperienceLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="ExperienceContributors_Company"></span>
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md webpart-approvers-exp" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyExperienceApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="ExperienceApprovers_Company"></span>
+                                                  </div>
+
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label control-label pdng-btm-10" data-localize="Questions&Answers">Questions&Answers</label>
+                                                      <button id="toggleQuestionAnswer" onclick="ChrckQuestionAnswer()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+
+                                                          <span id="QuestionAnswerLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="QuestionAnswerContributors_Company"></span>
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md webpart-approvers-QA" data-localize="Approvers">Approvers</div>
+                                                      <div class="pdng-btm-17">
+                                                          <input type="checkbox" id="companyQuestionAnswerApproverRequired">
+                                                          <span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="QuestionAnswerApprovers_Company"></span>
+                                                  </div>
+
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+                                      
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label control-label pdng-btm-10" data-localize="Client/Customer">Client/Customer</label>
+                                                      <button id="toggleClientMaster" onclick="ChrckClientMaster()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-4" style="display:none;">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md">Limited Access(Add Permissions)</div>
+
+                                                          <span id="ClientMasterLimitedAccess_Company"></span>
+                                                      </div>
+
+                                                      <span id="ClientMasterContributors_Company"></span>
+                                                  </div>
+
+                                                   
+
+
+                                              </div>
+                                          </div>
+
+                                      </div>
+
+ 
+
+                                      <div class="row text-center">
+                                          <input id="btnSubmit_Company" type="button" class="btn  btn-outline-success" value="Submit">
+
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/panel content-->
+                          </div>
+                          <!--webparts End-->
+                      </div>
+
+                      <!--Tab 2-->
+
+                      <div role="tabpanel" class="tab-pane" id="department">
+                          <div class="row">
+
+                              <div class="col-md-6">
+                                  <div class="form-horizontal">
+
+                                      <div class="form-group">
+                                          <label for="" class="col-sm-3 control-label" data-localize="Department">Department</label>
+                                          <div class="col-xs-12 col-sm-8 col-md-8">
+                                              <select name="select2" class="form-control" id="ddlDepartments">
+                                                  <option value="0">-Select-</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <div class="form-horizontal" style="display:none;">
+
+                                      <div class="form-group">
+                                          <label for="" class="col-sm-4 control-label" data-localize="HeadOfDepartment">Head Of Department</label>
+                                          <div class="col-xs-12 col-sm-8 col-md-8">
+                                              <span id="HeadOfDepartment"></span>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="row text-center">
+                              <!--<input id="btnSubmit_DepartmentHead" type="button" class="btn btn-success" value="Submit">-->
+
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="panel panel-default" style="display:none;">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="MediaContent">MediaContent </h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+                                                  <label for="" class="col-sm-2 control-label" data-localize="MediaGallery">MediaGallery</label>
+                                                  <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3" style="display:none">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add,Permission)</div>
+                                                      <span id="MediaGalleryLimitedAccess_Department"></span>
+                                                  </div>
+                                                  <div class="col-xs-12 col-sm-5 col-md-4 col-lg-3">
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="MediaGalleryContributors_Department"></span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="row text-center">
+                                          <input id="btnSubmit_DepartmentMediaContent" type="button" class="btn  btn-outline-success" value="Submit">
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--/panel content-->
+                          </div>
+
+                          <!--Collaboration-->
+                          <div class="panel panel-default my-manage-permission-document-box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="Documents">Documents</h4>
+                                  </div>
+                              </div>
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+
+                                          <div class="col-sm-6 pdng-btm-10" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+
+                                          <div class="col-sm-6 pdng-btm-10 document-box-approver" data-localize="ApproverForCorporateView">Approvers</div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Documents">Documents</label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="DocumentsLimitedAccess_Department"></span>
+                                                      </div>
+
+                                                      <span id="DocumentsContributors_Department"></span>
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+
+                                                      <!-- pdng-btm-10 -->
+                                                      <div class="pdng-btm-17">
+                                                          <div class="col-sm-6 pdng-btm-10 document-box-approver-inner-1" data-localize="ApproverForCorporateView">Approvers</div>
+                                                          <input type="checkbox" id="documentApproverRequired"><span data-localize="ApproverRequiredQuestionMark">Approver Required?</span>
+                                                      </div>
+                                                      <span id="DocumentsApprovers_Department"></span>
+
+                                                  </div>
+
+                                              </div>
+                                          </div>
+
+                                          <!-- Owner -->
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <div class="control-label pdng-btm-10" data-localize="ContributorAccesstoOthers">Contributor Access  to Others</div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="DocumentsOwner_Department"></span>
+
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+
+
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="ReadOnlyAccesstoOthers">Read Only Access to Others </label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="DocumentAccess_Department"></span>
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="DocumentAccessContributors_Department"></span>
+
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                          <div class="row text-center">
+
+                                              <input id="btnSubmit_DepartmentDocument" type="button" class="btn  btn-outline-success " value="Submit">
+                                          </div>
+
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+
+
+<div id="genericPopup" style="display:none">
+
+</div>
+
+
+
+
+
+
+                          <div class="panel panel-default my-department-permission-webpart-box">
+                              <div class="panel-heading panel-head-4">
+                                  <div class="panel-title">
+                                      <h4 class="h4-color" data-localize="Webparts">Webparts </h4>
+                                  </div>
+                              </div>
+
+                              <div class="panel-body">
+                                  <div class="form-horizontal">
+                                      <div class="row">
+
+                                          <div class="col-sm-6 pdng-btm-10" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+
+                                          <div class="col-sm-6 pdng-btm-10 dept-webpart-box-approver" data-localize="Approvers">Approvers</div>
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="NewInitiative"> Initiative</label>
+                                                      <button id="toggleInitiative" onclick="ChrckInitiative()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="NewInitiativeLimitedAccess_Department"></span>
+                                                      </div>
+
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-initiative-contributors" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="NewInitiativeContributors_Department"></span>
+
+                                                  </div>
+
+                                    
+                                                   <div class="col-sm-6">
+
+                                                      <!-- pdng-btm-10 -->
+                                                      <div class="pdng-btm-17">
+                                                          <div class="col-sm-6 pdng-btm-10 dept-webpart-inner-approver-1" data-localize="Approvers">Approvers</div>
+                                                          <input type="checkbox" id="NewInitiativeApproverRequired"><span data-localize="ApproverRequiredQuestionMark" style="margin-left:7px;">Approver Required?</span>
+                                                      </div>
+                                                      <span id="NewInitiativeApprovers_Department"></span>
+
+                                                  </div>
+
+
+
+                                              </div>
+                                          </div>
+
+
+
+
+
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Suggestion">Suggestion</label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+
+                                                          <div class="pdng-btm-10">Limited Access(Add Permissions)</div>
+                                                          <span id="SuggestionLimitedAccess_Department"></span>
+                                                          <input type="" class="form-control" id="" disabled="" value="Everyone">
+
+                                                      </div>
+
+                                                      <span id="SuggestionContributors_Department"></span>
+                                                      <input type="" class="form-control" id="" disabled="" placeholder="Everyone">
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+
+                                                      <!-- pdng-btm-10 -->
+                                                      <div class="pdng-btm-17">
+                                                          <div class="col-sm-6 pdng-btm-10 dept-webpart-inner-approver-2" data-localize="Approvers">Approvers</div>
+                                                          <input type="checkbox" id="SuggestionApproverRequired"><span data-localize="ApproverRequiredQuestionMark" style="margin-left:7px;">Approver Required?</span>
+                                                      </div>
+                                                      <span id="SuggestionApprovers_Department"></span>
+
+                                                  </div>
+
+                                              </div>
+                                          </div>
+
+
+
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Activity">Activity</label>
+                                                      <button id="toggleActivity" onclick="ChrckActivity()" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                                                          <div class="handle"></div>
+                                                      </button>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-2 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="ActivityLimitedAccess_Department"></span>
+
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-activity-contributors" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="ActivityContributors_Department"></span>
+
+
+                                                  </div>
+
+
+                                                  <div class="col-sm-6">
+
+                                                      <!-- pdng-btm-10 -->
+                                                      <div class="pdng-btm-17">
+                                                          <div class="col-sm-6 pdng-btm-10 dept-webpart-inner-approver-3" data-localize="Approvers">Approvers</div>
+                                                          <input type="checkbox" id="ActivityApproverRequired"><span data-localize="ApproverRequiredQuestionMark" style="margin-left:7px;">Approver Required? </span>
+                                                      </div>
+                                                      <span id="ActivityApprovers_Department"></span>
+
+                                                  </div>
+
+
+                                              </div>
+                                          </div>
+                                          <!-- Knowledge -->
+                                          <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Knowledge">Knowledge</label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="KnowledgeLimitedAccess_Department"></span>
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-knowledge-contributors" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="KnowledgeContributors_Department"></span>
+
+                                                  </div>
+
+                                                  <div class="col-sm-6">
+
+                                                      <div class="dept-webpart-box-knowledge-height" style="height: 35px;">&nbsp;</div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-knowledge-approvers" data-localize="Approvers">Approvers</div>
+                                                      <span id="KnowledgeApprovers_Department"></span>
+                                                      <input type="" class="form-control" id="" disabled="" placeholder="Everyone">
+
+                                                  </div>
+
+                                              </div>
+                                          </div>
+                                          
+                                           <div class="col-md-12">
+                                              <div class="form-group">
+
+                                                  <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Project">Project</label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="ProjectLimitedAccess_Department"></span>
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-project-approvers" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="ProjectContributors_Department"></span>
+                                                  </div>
+                                                 <div class="col-sm-6">
+
+                                                      <label for="" class="control-label pdng-btm-10" data-localize="Head of the department">Head of the Department</label>
+
+                                                      <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3" style="display:none">
+                                                          <div class="pdng-btm-10 hidden-lg hidden-md" data-localize="LimitedAccessParenthesesAddPermission">LimitedAccess (Add Permission)</div>
+                                                          <span id="HeadOfDepartmentContributorsLimitedAccess_Department"></span>
+                                                      </div>
+
+                                                      <div class="pdng-btm-10 hidden-lg hidden-md dept-webpart-box-project-approvers" data-localize="ContributorsParenthesesAddEditDelete">Contributors (Add,Edit,Delete)</div>
+                                                      <span id="HeadOfDepartmentContributors_Department"></span>
+                                                  </div>                                             
+                                              </div>                                              
+                                              </div>
+                                          </div>                                 
+                                      
+
+
+                                      <div class="row text-center">
+
+                                          <input id="btnSubmit_DepartmentWebParts" type="button" class="btn  btn-outline-success " value="Submit">
+                                      </div>
+                                  </div>
+
+                              </div>
+                              <!--/panel content-->
+
+                          </div>
+                          <!--Collaboration End-->
+
+                      </div>
+
+                      <!--Tab 2 End-->
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+
+  </div>
+
+</div>
+
+<script>
+  
+    $(function(){
+
+        $('#ddlDepartments').change(function(){
+
+            var storenow = $(this).val();
+
+            if(storenow==0){
+
+                 $('#department .panel-body').slideUp();  
+
+            }
+            else{
+                $('#department .panel-body').slideDown();              
+            }
+
+        })
+
+
+    })
+
+
+</script>
+ 
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <!--[if gte mso 9]><xml>
+  <mso:CustomDocumentProperties>
+  <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+  <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+  <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-290</mso:_dlc_DocId>
+  <mso:_dlc_DocIdItemGuid msdt:dt="string">b23288ae-c19e-400e-8fb9-baf6bf4fb992</mso:_dlc_DocIdItemGuid>
+  <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-290, ADMIN-1645029823-290</mso:_dlc_DocIdUrl>
+  <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+  </xml><![endif]-->
+  <title></title>
+</head>
+<!--  -->

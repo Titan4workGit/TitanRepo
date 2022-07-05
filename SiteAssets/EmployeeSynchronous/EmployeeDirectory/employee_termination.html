@@ -1,0 +1,493 @@
+﻿<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<style>
+input.hidden {
+	position: absolute;
+	left: -9999px;
+}
+#profile-image1 {
+	cursor: pointer;
+	width: 110px !important;
+	height:110px !important;
+	margin:30px auto !important;
+	border: 3px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+
+}
+
+.emp_list_height {
+	min-height: 664px;
+}
+.blue-color {
+	color:#1d6ec0
+}
+
+.strip {
+    padding: 8px 15px;
+    padding-top: 0;
+    background-color: #f5f5f5;
+	overflow:auto;
+	
+}
+.profile-image-div {
+	width:170px;
+}
+
+/****Aug-5-21****/
+
+.main_heading{
+
+ color:#1b1b1b;
+ padding:5px 15px;	
+ font-size:24px;
+
+}
+
+.emply_name{
+	font-size: 28px;
+    color:#767676;
+    padding-bottom: 10px;
+}
+
+.manage_width .form-group{
+ margin-bottom:1px !important;
+}
+
+
+.manage_width .form-group label,
+.manage_width .form-group .col-sm-7{
+ color: #2a6496 !important;
+ font-weight:600 !important;
+}
+
+
+.emply_name{
+	font-size: 28px;
+    color:#767676 !important;
+    padding-bottom: 10px;
+    font-weight:400 !important;
+}
+
+
+.manage_width .form-group .col-sm-5{
+ width:15% !important;	
+ text-align:left !important;
+ 
+}
+
+.manage_width .form-group .col-sm-7{
+ width:76% !important;	
+
+}
+
+.bottom_sec{
+ width:91%;
+ margin:0 auto;	
+}
+
+
+.listing_detail{
+ list-style: disc !important;
+ padding:0 15px !important;
+}
+
+.listing_detail li{
+ list-style: disc !important;
+ color: #1d1d1d !important;
+ margin: 10px 0;
+ font-weight: 600;
+ line-height:25px;
+
+}
+
+.click_Box{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items:center;	
+  -webkit-align-items:center;	
+  -moz-align-items:center;	
+  -ms-align-items:center;	
+  -o-align-items:center;	
+  
+   justify-content:center;
+  -webkit-justify-content:center;	
+  -moz-justify-content:center;	
+  -ms-justify-content:center;	
+  -o-justify-content:center;
+  margin:10px 0;	
+  
+}
+
+.click_Box{
+ margin:15px 0;	
+}
+
+.click_Box label{
+ padding:0 10px;	
+}
+
+.click_Box input[type="checkbox"],
+.click_Box label{
+	margin:0 5px;
+	padding:0;
+}
+
+#terminate_btn{
+ display:none;	
+}
+
+
+#terminate_btn.activating{
+ display:inline-block;	
+}
+
+.accesdms h3,
+.accesdms .inputarea{
+  display:inline-block; 
+}
+.accesdms h3{
+  font-size:13px;
+  font-weight:600;
+  margin:0 !important;	
+}
+
+.accesdms .inputarea{
+ width:300px;
+ margin-left:10px;	
+}
+
+/****oct-6-21****/
+
+#managerPicker .sp-peoplepicker-topLevel{
+
+ padding:3px 5px 3px 3px !important;	
+ min-height: 58.7px !important;
+}
+
+#managerPicker .sp-peoplepicker-editorInput{
+ border:none !Important;
+ max-width:100% !important; 	
+}
+
+#managerPicker .sp-peoplepicker-autoFillContainer{
+  z-index:5 !important;	
+}
+
+
+.flexingsection{
+
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+align-items: center;
+ -webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;	
+
+}
+
+
+@media all and (max-width: 1199px) and (min-width: 768px){
+
+.manage_width .form-group .col-sm-5{
+ width:24% !important;	
+ text-align:left !important;
+ 
+}
+
+.manage_width .form-group .col-sm-7{
+ width:71% !important;	
+}
+	
+}
+
+
+
+
+ @media (max-width:767px) {
+	.emp_list_height {
+		min-height: auto !important;
+	}
+	.profile-image-div{
+	width:100% !important;
+	}
+	#profile-image1{
+		margin-left:auto;
+		margin-right:auto;
+	    padding-bottom: 5px;
+	}
+.bottom_sec{
+ width:81%;
+ margin:0 auto;	
+}
+
+.manage_width .form-group{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+	
+}	
+
+.manage_width .form-group .col-sm-5{
+ width:30% !important;	
+ text-align:left !important;
+ 
+}
+
+.manage_width .form-group .col-sm-7{
+ width:70% !important;	
+}
+
+#managerPicker #managerPicker_TopSpan_InitialHelpText{
+ font-size:11px !important;	
+}
+
+.flexingsection{
+  display:block;	
+}
+
+	
+}
+
+@media(max-width:500px){
+
+.manage_width .form-group{
+  display: block;
+}
+
+.manage_width .form-group .col-sm-5{
+ width:100% !important;	
+ text-align:left !important;
+ 
+}
+
+.manage_width .form-group .col-sm-7{
+ width:100% !important;	
+}
+
+.accesdms .inputarea{
+ width:100%;	
+}
+
+#managerPicker .sp-peoplepicker-autoFillContainer{
+ max-width:100% !important;
+ min-width:100% !important;	
+}	
+
+}
+
+
+</style>
+
+<script>
+$(document).ready(function(){
+
+           /*    $('#date').datepicker({ 
+					  changeMonth: true,
+					  changeYear: true,
+					  maxDate: 0, 
+					  yearRange: "-10:+0"
+				 }); 
+			    $('#date').datepicker("option", "dateFormat", "dd/mm/yy"); */
+            //    $("#date").datepicker().datepicker("setDate", new Date()); 
+});
+</script>
+<div ng-app="myApp" ng-controller="myCtrl" data-ng-init="GetEmployees()">
+<!--<div class="container">-->
+<!--<div class="row department-header"> 
+		<ol class="breadcrumb">    
+			<li><h4><b>Employee Details</b></h4></li>           
+		</ol>
+	</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--  <div class="col-md-12">-->
+    <div class="row top15">
+      <div class="col-md-12">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="panel panel-default shadow2">
+            
+              <h4 class="main_heading" style="color:#ff0000">Employee Termination</h4>              
+                           
+             <div class="panel-body" style="padding:5px 0 15px 0">
+                
+               <div class="col-md-12" style="background-color:#f5f5f5; padding-top:15px; padding-bottom:15px; margin-bottom:30px;">
+               
+                  <div class="row">
+                 
+                    <div class="col-sm-3 col-md-2">
+                    
+                       <div class="profile-image-div" style="height:auto !important;"> <img alt="User Pic" ng-src="{{imageUrl}}" class="img-circle img-responsive" style="width:100%" id="profile-image1">
+                         <!--<input id="profile-image-upload" class="hidden" type="file">
+                         <div class="blue-color" style="font-size:11px;">Click to change profile image</div> -->
+                       </div>
+                    
+                    </div><!--col-4 ed-->
+                
+               <div class="form-horizontal col-md-10 col-sm-9 manage_width">
+                  <div class="form-group">
+                    <div class="emply_name" style="width:100%; padding:0 15px">{{employeeName}}</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-5 control-label" data-localize="Designation:">Designation:</label>
+                   <div class="col-sm-7 top10"> {{designation}}</div>
+                  </div>
+                  <div class="form-group ">
+                    <label for="" class="col-sm-5 control-label" data-localize="Department:">Department:</label>
+                    <div class="col-sm-7 top10">{{department}}</div>
+                  </div>
+                  
+                  <div class="form-group ">
+                    <label for="" class="col-sm-5 control-label" data-localize="Office Location:">Office Location:</label>
+                    <div class="col-sm-7 top10">{{officeLocation}}</div>
+                  </div>
+                  
+                  <div class="form-group ">
+                    <label for="" class="col-sm-5 control-label" data-localize="Email:">Email:</label>
+                    <div class="col-sm-7 top10">{{eMail}}</div>
+                  </div>
+
+				  </div>
+                </div>
+               
+            </div><!---row ed-->
+            
+            <div class="row">
+            
+               <div class="bottom_sec">
+            
+                   <ul class="listing_detail" style="margin-bottom:50px;">
+            	     <li>The terminated user will not be able to access the portal</li>
+            	     <li>The terminated user will be inactivate from all Project Team.</li>
+            	     <li>
+            	         <div class="accesdms flexingsection">
+            	         <h3>Define new Project Manager, for those projects, where terminated user was in that role: </h3>
+            	          <div class="inputarea">
+            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+            	         	<span id="ProjectManagerPicker"></span>	
+            	         </div>
+            	       </div>
+            	     </li>
+            	     
+            	     <li>
+            	       <div class="accesdms flexingsection">
+            	         <h3>Define new Manager for those subordinates of the terminated user: </h3>
+            	          <div class="inputarea">
+            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+            	         	<span id="subordinatesManagerPicker"></span>	
+            	         </div>
+            	       </div>
+            	     </li>
+            	     <!--<li>Define new Project Manager, for those projects, where terminated user was in that role <span id="ProjectManagerPicker"></span></li>
+            	     <li>Define new Manager for those subordinates of the terminated user <span id="subordinatesManagerPicker"></span></li>
+
+            	     -->
+            	     <li>Those open tasks owned by the terminated user will be “On-Hold”</li>
+            	     <li>The terminated user will be removed from members of Guest-Clients.</li>
+            	     <li>The terminated user will be removed from all “My Groups”</li>
+            	     <li>Access will be revoked from all kind of document library. i.e. My DMS, all Project DMS, Departmental DMS, Guest Portal DMS, Group DMS etc.</li>
+            	     <li>
+            	       <div class="accesdms flexingsection">
+            	         <h3>The access of personal documents reassigned to: </h3>
+            	          <div class="inputarea">
+            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+            	         	<span id="managerPicker"></span>	
+            	         </div>
+            	       </div>
+            	     </li>
+            	   </ul>
+            	   
+                    <div class="click_Box">
+                        <div class="input-group">
+                          <input type="checkbox" class="form-control" style="width:16px; height:16px;" id="checking_box">
+						</div>
+						<label for="" class="control-label">I understand the all above points</label>
+                    </div>
+                    
+                    <div class="click_Box">
+                    <label for="" class="control-label" data-localize="DateOfTermination">Date of Termination</label>
+                        <div class="input-group">
+                          <input type="text" class="form-control" readonly="readonly" id="date" ng-model="dateofTermination" >
+						</div>
+                    </div>
+
+                    
+                 </div><!--bottom_sec-->
+           
+           </div>      
+    
+      <div class="clearfix"></div>
+    <div class="text-center top20">
+    
+    
+    
+    <!--<button type="button" class="btn  btn-outline-success" ng-show="mystatus=='Active'"  class="btn btn-success" style="font-size:11px;" ng-click="confirmation()"><label  data-localize="Submit"></label></button>-->	
+    <button type="button" style="font-size:13px;" ng-show="mystatus=='Active'" ng-click="confirmation()" class="btn btn-outline-danger btnHR" id="terminate_btn" data-localize="Terminate">Terminate</button>
+    <button type="button" class="btn btn-outline-secondary" class="btn btn-warning" style="font-size:11px;" ng-click="redirectCancel()"><label  data-localize="Close"></label></button>	
+    
+    
+	<!---	<input type="button" class="btn  btn-outline-success" ng-show="mystatus=='Active'"  class="btn btn-success" style="font-size:11px;" ng-click="confirmation()" value="Submit">
+		<input type="button" class="btn btn-outline-secondary" class="btn btn-warning" style="font-size:11px;" ng-click="redirectCancel()" value="Close">
+		--->
+      </div>
+              </div>
+              <!--/panel content-->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+      
+    </div>
+ 
+<!--</div>-->
+<!--</div>-->
+
+
+<script>
+
+$(function () {
+        $("#checking_box").click(function () {
+        
+            if ($(this).is(":checked")) {
+                $("#terminate_btn").addClass('activating');
+            } 
+            else {
+                $("#terminate_btn").removeClass('activating');
+              ;
+            }
+        });
+    });
+    
+</script>
+
+
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/employee_termination.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-250</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">c96f3b0b-fb7a-4eee-9ffa-1245c926cf97</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-250, ADMIN-1645029823-250</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">25000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

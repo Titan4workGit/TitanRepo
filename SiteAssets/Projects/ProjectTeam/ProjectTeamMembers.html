@@ -1,0 +1,1687 @@
+﻿
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/clientpeoplepicker.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/clientforms.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/clienttemplates.js"></script>
+<script src="../_catalogs/masterpage/Titan2/Scripts/autofill.js"></script>
+
+<link href="../SiteAssets/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="../SiteAssets/dist/js/tabulator.min.js"></script>
+
+<script src="../SiteAssets/Projects/ProjectTeam/TeamMeamberAdd.js"></script>
+
+<script type="text/javascript">
+/*
+	var validation=false;
+	var dateValidation=false;
+$(document).ready(function() 
+{
+	PageLoad();
+	
+	$("#btnEmpUpdate").unbind().click(function()
+	{ 	
+		
+		var flag= AddEmployeeData();
+		var chked=$("[type='checkbox']:checked").length;
+		if(flag!=false)
+		{
+			if(dateValidation==false)
+			{
+				if(flag==true && chked!=0)
+				{
+					WaitMessage();
+				    GetTempEmployeeList(); 						   
+				}
+				else
+				{
+					alert("Please select the checkbox which need to be updated.");
+				}
+			}
+		}
+		
+		  
+    });
+
+	$("#addmore").click(function()
+	{
+		Addmore();
+		EmpDropDown();
+		releseDate();
+    });
+	
+	 
+});
+
+
+
+
+function EmpDropDown(){
+	$(".ddlGeneralInfo_TypeOfProgram").unbind().change(function(){
+		var counter=0;
+		var selectedUser=$(this).val();
+		$('#tableTempEmp tbody tr').each(function (index) 
+		{
+			var fullName=$(this).find('.ddlGeneralInfo_TypeOfProgram').val();
+			if(fullName==selectedUser)
+			{
+				counter++;
+				
+			}
+		});
+		if(counter>1)
+		{
+			alert("Team Member already exists");
+			$('#btnEmpUpdate').attr("disabled",true);
+			$('#addmore').attr("disabled",true);
+		}
+		else
+		{
+			$('#btnEmpUpdate').attr("disabled",false);
+			$('#addmore').attr("disabled",false);
+		}
+	});
+}
+
+
+function releseDate(){
+	$(".ddlStatusOption").unbind().change(function(){
+		var Status=$(this).val();
+		if(Status=="Released")
+		{
+			$(this).parent('td').parent('tr').find('.doj').prop("disabled",false);
+		}
+		else
+		{
+			$(this).parent('td').parent('tr').find('.doj').prop("disabled",true);
+		}
+	});
+}
+
+
+
+function EnableEditModeRow()
+{
+		$('#tableTempEmp tbody tr').each(function () 
+		{
+			$(this).find('.ddlGeneralInfo_TypeOfProgram').prop("disabled",true);		
+			$(this).find('.role').prop("disabled",true);
+			$(this).find('.ddlStatusOption').prop("disabled",true);
+			$(this).find('.dob').prop("disabled",true);
+			$(this).find('.doa').prop("disabled",true);
+			$(this).find('.doj').prop("disabled",true);
+			$(this).find('.teamPermission').prop("disabled",true);	
+			$(this).find('.documentPermission').prop("disabled",true);
+			$(this).find('.taskPermission').prop("disabled",true);
+		});
+	$('.empidchk').change(function(){
+	
+		var chk=$(this).prop("checked");
+		if(chk==true)
+		{
+			$(this).parent('td').parent('tr').find('.ddlGeneralInfo_TypeOfProgram').prop("disabled",false);		
+			$(this).parent('td').parent('tr').find('.role').prop("disabled",false);
+			$(this).parent('td').parent('tr').find('.ddlStatusOption').prop("disabled",false);
+			$(this).parent('td').parent('tr').find('.dob').prop("disabled",false);
+			$(this).parent('td').parent('tr').find('.doa').prop("disabled",false);
+			$(this).parent('td').parent('tr').find('.doj').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.teamPermission').prop("disabled",false);	
+			$(this).parent('td').parent('tr').find('.documentPermission').prop("disabled",false);
+			$(this).parent('td').parent('tr').find('.taskPermission').prop("disabled",false);
+		}
+		else
+		{
+			$(this).parent('td').parent('tr').find('.ddlGeneralInfo_TypeOfProgram').prop("disabled",true);		
+			$(this).parent('td').parent('tr').find('.role').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.ddlStatusOption').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.dob').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.doa').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.doj').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.teamPermission').prop("disabled",true);	
+			$(this).parent('td').parent('tr').find('.documentPermission').prop("disabled",true);
+			$(this).parent('td').parent('tr').find('.taskPermission').prop("disabled",true);
+		}
+	});	
+	
+}
+
+function ValidateControls()
+{
+	// Validate all Grid Controls
+	var teamMember= $(".ddlGeneralInfo_TypeOfProgram :selected").last().val();
+	var role=$(".role").last().val();
+	var statusOption = $(".ddlStatusOption").last().val();
+	var dateOfBirth = $(".dob").last().val();
+	var doa=$(".doa").last().val();
+	
+	if(teamMember==0 || role=='' || statusOption=='' || dateOfBirth == '' || doa=='')
+	{
+		return false;
+	}
+	return true;
+}
+
+function Addmore()
+{	
+	if(ValidateControls()==false)
+	{
+		alert("Please fill all required fields.")
+		return false;
+	}
+
+	var tempCount="ddlGeneralInfo_TypeOfProgram"+($('#tableTempEmp tbody tr').length)+1;
+	$('#'+tempCount+'').val(0);
+	//$('#ddlGeneralInfo_TypeOfProgram1 .ddlGeneralInfo_TypeOfProgram').val(0);
+	var tr="<tr style='height:30px; font-size:8pt;'><td style='width:39px'><input type='checkbox' style='margin:4px 12px 0px !important' class='empidchk' name='empid' value='' checked></td><td><select id='"+tempCount+"' class='ddlGeneralInfo_TypeOfProgram' style='width:98%;'></select></td><td><input type='text' style='width: 100%' class='role' value='' maxlength='50'/></td><td><select id='ddlStatus' class='ddlStatusOption'><option value='Active'>Active</option><option value='Released'>Released</option><option value='Terminated'>Terminated</option></select></td><td><input style='width: 100%' type='text' class='dob' value=''/></td><td><input style='width: 100%' type='text' class='doa' value=''/></td><td><input type='text' style='width: 100%' class='doj' value=''/></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='teamPermission' name='teamPermission'></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='documentPermission' name='documentPermission'></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='taskPermission' name='taskPermission'></td></tr>";
+	var dvTable = $("#tableTempEmpBody");
+	//	dvTable.html("");
+	dvTable.append(tr);		
+	
+	GetEmployee(tempCount,0,"Active")
+				$('.dob').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50",
+					 minDate:PlanedStartDateGlobal,
+					 maxDate:PlanedEndDateGlobal
+				});
+				$('.dob').datepicker("option", "dateFormat", "dd/mm/yy");
+				 $('.doa').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50",
+					 minDate:PlanedStartDateGlobal,
+					 maxDate:PlanedEndDateGlobal
+				});
+				$('.doa').datepicker("option", "dateFormat", "dd/mm/yy");
+                $('.doj').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50",
+					 
+				});
+				$('.doj').datepicker("option", "dateFormat", "dd/mm/yy");
+				
+ 				 $(".dob").each(function () {
+                     $(this).prop("readonly", true);
+                   });
+				   	 $(".doa").each(function () {
+                     $(this).prop("readonly", true);
+                   });
+				   	 $(".doj").each(function () {
+                     $(this).prop("readonly", true);
+					 $(this).prop("disabled", true);
+                   });				
+}
+var	EmployeeListArry=new Array();
+function GetEmployee(tableID,TeamMemberId,Status)  
+{ 
+	$('#'+tableID+'').empty().append('<option value="0">-Select-</option>');
+		for(var index=0;index<EmployeeListArry.length;index++)
+        {
+			var loginID=EmployeeListArry[index].loginID;
+			var displayName=EmployeeListArry[index].loginDisplayName;
+					$("#"+tableID).append($("<option></option>").attr("value", loginID).text(displayName));
+		}
+	$('#'+tableID+' option[value='+TeamMemberId+']').attr('selected','selected');
+        
+}
+
+
+function getCompanyEmp(){
+	
+	var listName='Employees';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=LogonName/ID,LogonName/UserName,LogonName/Title&$EXPAND=LogonName&$filter=Status eq 'Active' and CompanyId eq '" + txtCompanyId + "'&$orderby=FullName";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+            for(i=0; i<items.length; i++)
+			{
+				var emplyeeIDMain=items[i].LogonName.ID;
+				var emplyeeNameMain=items[i].LogonName.Title;//getUserName(emplyeeIDMain);
+				var ss =EmployeeClass(emplyeeIDMain,emplyeeNameMain);
+		       
+				EmployeeListArry.push(ss);
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+function EmployeeClass(loginID,LogibAme)
+{
+	var emp={};
+	emp.loginID=loginID;
+	emp.loginDisplayName=LogibAme;	
+	return emp;
+}
+
+
+function getUserName(createdBy)
+{	var items='';
+	siteURL = _spPageContextInfo.webAbsoluteUrl + "/_vti_bin/ListData.svc/UserInformationList("+createdBy+")";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            items = data.d.Name;
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+	return items;
+}*/
+
+/*
+function AddEmployeeData()
+{		
+		var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+		var ProjectName =  titanForWork.getQueryStringParameter("ProjectName");
+		var validation=true;
+		//ProjectName=ProjectName.replace(/%20/g, " ");
+		var projectID =  titanForWork.getQueryStringParameter("ProjectID");	
+        $('#tableTempEmp tbody tr').each(function (index) 
+		{		
+			var chk=$(this).find('.empidchk').prop("checked");
+			if(chk==true)
+			{
+				var fullName=$(this).find('.ddlGeneralInfo_TypeOfProgram').val();//.find('td')[1].innerText;
+				
+				var role=$(this).find('.role').val();
+				
+				//var memberststus=$(this).find('.status').val();
+				var memberststus=$(this).find('.ddlStatusOption').val();
+				
+				var dob=$(this).find('.dob').val();
+				
+				var doa=$(this).find('.doa').val();
+				
+				var doj=$(this).find('.doj').val();	
+				var TeamPermission=$(this).find('.teamPermission').prop("checked");
+				var DocumentPermission=$(this).find('.documentPermission').prop("checked");
+				var TaskPermission=$(this).find('.taskPermission').prop("checked");
+				
+				var engageDate="";
+				if(dob!=null && dob!="")
+				{
+					engageDate=GetDateStandardFormat(dob);
+				}
+				var expectedReleseDate="";
+				if(doa!=null && doa!="")
+				{
+					expectedReleseDate=GetDateStandardFormat(doa);
+				}
+				if(engageDate> expectedReleseDate)
+				{
+					dateValidation=true;
+				}
+				else
+				{
+					dateValidation=false;
+				}
+			
+				
+				var releseDate="";
+				if(doj!=null && doj!="")
+				{
+					releseDate=GetDateStandardFormat(doj);
+				}
+				
+				
+				if(doa!='' && dob!='' && role!='' && fullName!=0)
+				{
+					if(dateValidation==false)
+					{
+						if($(this).find('.empidchk').val()=="")
+						{
+					
+							AddNewEmployee("ProjectTeamDetails", fullName,role,memberststus,engageDate,expectedReleseDate,releseDate,projectID,TeamPermission,DocumentPermission,TaskPermission,ProjectName,txtCompanyId);			
+						}
+						else
+						{	
+							var ItemId=$(this).find('.empidchk').val();
+							updateTeamMemberDetails("ProjectTeamDetails", fullName,role,memberststus,engageDate,expectedReleseDate,releseDate,projectID,ItemId,TeamPermission,DocumentPermission,TaskPermission,ProjectName,txtCompanyId);	
+						}
+					}
+					else
+					{
+						alert("Expected Release Date can not less or equal to Engage Date");
+						validation=false;
+					}
+				}
+				else
+				{
+				  alert("Please fill all required fields.");
+				  validation=false;
+				  //return false;
+				}
+			}
+			
+			
+										
+        });
+	return validation;		
+}
+
+function updateTeamMemberDetails(ListName, fullName,role,memberststus,engageDate,expectedReleseDate,releseDate,projectID,ItemId,TeamPermission,DocumentPermission,TaskPermission,ProjectName,txtCompanyId){
+	try
+    {
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               TeamMemberId: fullName,
+               Status: memberststus,              			
+			   Role:role,
+			   EngageDate:engageDate,		  
+			   ExpectedReleseDate:expectedReleseDate,
+			   ReleseDate:releseDate,
+			   ProjectId:projectID,
+			   TaskPermission:TaskPermission,
+			   DocumentPermission:DocumentPermission,
+			   CompanyId:txtCompanyId,
+			   ProjectName:ProjectName,
+			   TeamPermission:TeamPermission
+			   
+			   
+            };
+             
+			 if(engageDate==null || engageDate=="")
+			   {
+				    delete Metadata["EngageDate"] ;				 
+			   }
+			    if(expectedReleseDate==null || expectedReleseDate=="")
+			   {
+				    delete Metadata["ExpectedReleseDate"] ;
+			   }
+			    if(releseDate==null || releseDate=="")
+			   {
+				    delete Metadata["ReleseDate"] ;
+			   }
+             updateItemToList(ListName, Metadata,ItemId);         
+        
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function updateItemToList(ListName, Metadata, ID) {
+    var dfd = $.Deferred();
+
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/GetItemById('" + ID + "')",
+        type: "POST",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        async: false,
+        success: function (RESULT) {
+           // console.log();
+            dfd.resolve(true);
+
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+
+        }
+    });
+    return dfd.promise();
+}
+
+function AddNewEmployee(ListName, fullName,role,memberststus,dateOfBirth,dateOfAnniversary,joiningDate,projectID,TeamPermission,DocumentPermission,TaskPermission,ProjectName,txtCompanyId)
+{
+    try
+    {
+        var Metadata;
+        var ItemType = GetItemTypeForListName(ListName);
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               TeamMemberId: fullName,
+               Status: memberststus,              			
+			   Role:role,
+			   EngageDate:dateOfBirth,		  
+			   ExpectedReleseDate:dateOfAnniversary,
+			   ReleseDate:joiningDate,
+			   ProjectId:projectID,
+			   TaskPermission:TaskPermission,
+			   DocumentPermission:DocumentPermission,
+			   CompanyId:txtCompanyId,
+			   ProjectName:ProjectName,
+			   TeamPermission:TeamPermission
+			   
+			   
+            };
+             
+			 if(dateOfBirth==null || dateOfBirth=="")
+			   {
+				    delete Metadata["EngageDate"] ;				 
+			   }
+			    if(dateOfAnniversary==null || dateOfAnniversary=="")
+			   {
+				    delete Metadata["ExpectedReleseDate"] ;
+			   }
+			    if(joiningDate==null || joiningDate=="")
+			   {
+				    delete Metadata["ReleseDate"] ;
+			   }
+             AddItemToList(ListName, Metadata);         
+        
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+
+}
+
+function  AddItemToList (ListName, Metadata) 
+ {
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+           // console.log(data);
+            dfd.resolve(data);
+			
+        },
+        error: function (error) {
+			
+            console.log(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+
+function GetDateStandardFormat(date)
+{	
+	        var dateS=ConvertDateFormatToddMMyyyy(date);
+            var startDate = new Date(dateS);
+			// seconds * minutes * hours * milliseconds = 1 day
+			var day = 60 * 60 * 24 * 1000;
+			//var endDate = new Date(startDate.getTime() + day);
+            var endDate = new Date(startDate.getTime());
+            var newDate =endDate.toISOString();
+			return newDate; 
+}
+ function GetTempEmployeeList()  
+    {   
+		var itemId =  titanForWork.getQueryStringParameter("ProjectID");
+        var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProjectTeamDetails')/items?$select=*&$Filter= ProjectId eq '"+itemId+"'";
+        $.ajax({  
+            url: Ownurl,  
+            headers: { Accept: "application/json;odata=verbose" },  
+            async:false,  
+            success: function (data) 
+			{  
+			var dvTable = $("#mainDivArea");
+				dvTable.html("");
+                var items = data.d.results;   
+                var tableHeader="<table cellpadding='0' cellspacing='0' border='1' id='tableTempEmp' class='tinytable project_member'><thead><tr><td style='width:5%'></td><td style='width:25%'><h6>Team Member</h6></td><td style='width:15%'><h6>Role</h6></td><td style='width:10%'><h6>Status</h6></td><td style='width:15%'><h6>Engage Date</h6></td><td style='width:15%'><h6>Exp. Release Date</h6></td><td style='width:15%'><h6>Release Date</h6></td><td style='width:10%'><h6>Team Rights</h6></td><td style='width:10%'><h6>Doc Rights</h6></td><td style='width:10%'><h6>Task Rights</h6></td></tr></thead><tbody class='tbletbody' id='tableTempEmpBody'></tbody></table>";				
+				dvTable.append(tableHeader);
+                var tr="";				
+                for(var i = 0; i < items.length; i++)
+                {
+					var TeamMemberId=items[i].TeamMemberId;
+					if(TeamMemberId==null || TeamMemberId=="")
+					{
+						TeamMemberId="";
+					}
+					
+					var Role=items[i].Role;
+					if(Role==null || Role=="")
+					{
+						Role="";
+					}
+					
+					var Status=items[i].Status;
+					if(Status==null || Status=="")
+					{
+						Status="";
+					}
+					
+					var EngageDate=new Date(items[i].EngageDate);
+					EngageDate= $.datepicker.formatDate('mm/dd/yy', EngageDate);
+					if(EngageDate==null || EngageDate=="")
+					{
+						EngageDate="";
+					}
+					
+					var ExpectedReleseDate=new Date(items[i].ExpectedReleseDate);
+					ExpectedReleseDate=$.datepicker.formatDate('mm/dd/yy', ExpectedReleseDate);
+					if(ExpectedReleseDate==null || ExpectedReleseDate=="")
+					{
+						ExpectedReleseDate="";
+					}
+					
+					var ReleseDate=items[i].ReleseDate;
+					if(ReleseDate==null || ReleseDate=="")
+					{
+						ReleseDate="N/A";
+					}
+					else
+					{
+						ReleseDate=new Date(ReleseDate);
+						ReleseDate=$.datepicker.formatDate('mm/dd/yy', ReleseDate);
+					}
+					
+					var TeamPermission=items[i].TeamPermission;
+					if(TeamPermission==true)
+					{
+						TeamPermission="checked";
+					}
+					
+					var DocumentPermission=items[i].DocumentPermission;
+					
+					if(DocumentPermission==true)
+					{
+						DocumentPermission="checked";
+					}
+					
+					var TaskPermission=items[i].TaskPermission;
+					
+					if(TaskPermission==true)
+					{
+						TaskPermission="checked";
+						//$('.taskPermission').prop('checked', true);
+					}
+					
+					var statusOption='';
+					if(Status=="Active")
+					{
+						statusOption +='<option value="Active" selected="selected">Active</option><option value="Released">Released</option><option value="Terminated">Terminated</option>';
+					}
+					else if(Status=="Released")
+					{
+						statusOption +='<option value="Active">Active</option><option value="Released" selected="selected">Released</option><option value="Terminated">Terminated</option>';
+					}
+					else if(Status=="Terminated")
+					{
+						statusOption +='<option value="Active">Active</option><option value="Released" >Released</option><option value="Terminated" selected="selected">Terminated</option>';
+					}
+					
+					
+				    var tempCount="ddlGeneralInfo_TypeOfProgram"+i+1;
+				    tr="<tr style='height:30px; font-size:8pt;'><td style='width:39px'><input type='checkbox' style='margin:4px 12px 0px !important' class='empidchk' name='empid' value="+items[i].ID+"></td><td><select id='"+tempCount+"' class='ddlGeneralInfo_TypeOfProgram' style='width:98%;'></select></td><td><input type='text' style='width: 100%' class='role' value='"+Role+"' maxlength='50'/></td><td><select id='ddlStatus' class='ddlStatusOption'>"+statusOption+"</select></td><td><input style='width: 100%' type='text' class='dob' value='"+EngageDate+"'/></td><td><input style='width: 100%' type='text' class='doa' value='"+ExpectedReleseDate+"'/></td><td><input type='text' style='width: 100%' class='doj' value='"+ReleseDate+"'/></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='teamPermission' name='teamPermission' "+TeamPermission+"></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='documentPermission' name='documentPermission' "+DocumentPermission+"></td><td><input type='checkbox' style='margin:4px 12px 0px !important' class='taskPermission' name='taskPermission' "+TaskPermission+"></td></tr>";
+				 $('#tableTempEmpBody').append(tr);
+				 GetEmployee(tempCount,TeamMemberId,Status);
+				 EmpDropDown();
+				 releseDate();
+				 EnableEditModeRow();
+                }
+				
+				
+					
+			    $('.dob').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50",
+					  minDate:PlanedStartDateGlobal,
+					 maxDate:PlanedEndDateGlobal
+				});
+				$('.dob').datepicker("option", "dateFormat", "dd/mm/yy");
+				
+				$('.doa').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50",
+					  minDate:PlanedStartDateGlobal,
+					 maxDate:PlanedEndDateGlobal
+				});
+				$('.doa').datepicker("option", "dateFormat", "dd/mm/yy");
+				
+                $('.doj').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "-50:+50"
+				});
+				$('.doj').datepicker("option", "dateFormat", "dd/mm/yy");
+				
+ 				 $(".dob").each(function () {
+                     $(this).prop("readonly", true);
+                   });
+				   	 $(".doa").each(function () {
+                     $(this).prop("readonly", true);
+                   });
+				   	 $(".doj").each(function () {
+                     $(this).prop("readonly", true);
+                   });
+			
+            },eror: function (data) {  
+                console.log('error');
+            }  
+        });  
+		CloseWaitDialog();
+    }
+*/
+ 
+
+/*function GetItemTypeForListName (ListName) 
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+ 
+function GetUserId(userName) 
+{         
+            var userID="";
+            var prefix="i:0#.f|membership|";
+            var siteUrl = _spPageContextInfo.siteAbsoluteUrl;          
+            var accountName = prefix+userName;       
+            $.ajax({
+                url: siteUrl + "/_api/web/siteusers(@v)?@v='" + 
+                    encodeURIComponent(accountName) + "'",
+                method: "GET",
+                headers: { "Accept": "application/json; odata=verbose" },
+				async: false,
+                success: function (data) 
+				{
+                   userID=data.d.Id;
+                   // alert("Received UserId" + data.d.Id);
+                   // alert(JSON.stringify(data));
+                },
+                error: function (data) 
+				{
+                    console.log(JSON.stringify(data));
+                }
+            });
+			return userID;
+}
+function ConvertDateFormatToddMMyyyy(date) {
+        var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+        // var year = formatedDate.getFullYear();
+        // var month = (1 + formatedDate.getMonth()).toString();
+        // month = month.length > 1 ? month : '0' + month;
+        // var day = formatedDate.getDate().toString();
+        // day = day.length > 1 ? day : '0' + day;
+        return formatedDate;
+    }
+    function stringToDate(_date, _format, _delimiter) 
+	{
+        var formatLowerCase = _format.toLowerCase();
+        var formatItems = formatLowerCase.split(_delimiter);
+        var dateItems = _date.split(_delimiter);
+        var monthIndex = formatItems.indexOf("mm");
+        var dayIndex = formatItems.indexOf("dd");
+        var yearIndex = formatItems.indexOf("yyyy");
+        var month = parseInt(dateItems[monthIndex]);
+        month -= 1;
+        var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+        return formatedDate;
+    }
+ var employeeList=new Array();
+ var tempemployeeList=new Array();
+
+*/
+
+/////////////////////////////////////new code for get user list///////////
+//////////////////////////////////////////////////////////////////////////
+/*
+ function WaitMessage() {
+        window.parent.eval("window.waitDialog = SP.UI.ModalDialog.showWaitScreenWithNoClose('Wait a moment,Processing..', '', 90, 450);");
+    }
+	 function CloseWaitDialog() {
+        if (window.frameElement != null) {
+            if (window.parent.waitDialog != null) {
+                window.parent.waitDialog.close();
+            }
+        }
+        else
+        {
+            if (window.parent.waitDialog != null)
+            {
+                window.parent.waitDialog.close();
+            }
+        }
+
+    }
+ 
+      
+        var scriptbase = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/';         
+        function PageLoad()
+        {
+               
+		  $.getScript(scriptbase + 'SP.js', function (){ $.getScript(scriptbase + 'SP.UserProfiles.js', ReadyFucnction);});
+        }
+		function ReadyFucnction()
+		{
+			getCompanyEmp();
+			checkTeamPermission();
+			//GetTempEmployeeList();
+			var ProjectStartEndHTML="<label style='font-size: 10pt; font-weight: 100; margin-left: 5px;'>[Planned Start Date: "+$.datepicker.formatDate('dd-mm-yy', PlanedStartDateGlobal)+" to End Date: "+$.datepicker.formatDate('dd-mm-yy', PlanedEndDateGlobal)+"]</label>";
+			$("#lblProjectTeamMember").append(ProjectStartEndHTML);
+			
+		}	
+        
+		function GetUserFullName(userName) 
+		{         
+            var userID="";
+            var prefix="i:0#.f|membership|";
+            var siteUrl = _spPageContextInfo.siteAbsoluteUrl;          
+            var accountName = prefix+userName;       
+            $.ajax({
+                url: siteUrl + "/_api/web/siteusers(@v)?@v='" + 
+                    encodeURIComponent(accountName) + "'",
+                method: "GET",
+                headers: { "Accept": "application/json; odata=verbose" },
+				async: false,
+                success: function (data) 
+				{
+                   userID=data.d.Title;
+                   // alert("Received UserId" + data.d.Id);
+                   // alert(JSON.stringify(data));
+                },
+                error: function (data) 
+				{
+                    console.log(JSON.stringify(data));
+                }
+            });
+			return userID;
+		}
+
+function checkTeamPermission()
+{
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+	
+	var listName='ProjectDetails';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=ID eq '" + txtProjectID + "' and ManagerNameId eq '"+_spPageContextInfo.userId+"'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+			if(items.length>0)
+			{
+				$("#btnEmpUpdate").show();
+				$("#addmore").show();
+			}
+			else
+			{
+				getMemberHaveTeamPermission();
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+
+function getMemberHaveTeamPermission()
+{
+	var listName='ProjectTeamDetails';
+	var txtProjectID =  titanForWork.getQueryStringParameter("ProjectID");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=ProjectId eq '" + txtProjectID + "' and TeamMemberId eq '"+_spPageContextInfo.userId+"' and Status eq 'Active' and TeamPermission eq '1'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var items = data.d.results;
+            if(items.length>0)
+			{
+				$("#btnEmpUpdate").show();
+				$("#addmore").show();
+			}
+			else
+			{
+				$("#btnEmpUpdate").hide();
+				$("#addmore").hide();
+				
+				CheckProjectAdminRights_ProjectTeam();			// Added on 29 May 2018. Project Admin has full rights to add/update employees.
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+		
+
+function CheckProjectAdminRights_ProjectTeam()
+{
+	var deffered= $.Deferred();
+	
+	var listName='ProcessApprovers';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'Project Admin'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                $("#btnEmpUpdate").show();
+				$("#addmore").show();
+            }
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+    deffered.promise();
+}
+	*/	
+		
+</script>
+
+
+
+
+
+
+<!--<a class="link-color pull-right" id="btnAddNewTeamMember"><span class="glyphicon glyphicon-plus-sign text-size"></span></a>-->
+
+
+<!--<a class="link-color pull-right" onclick="GetAllTeamMemberDetailsByProjectId()"><span class="glyphicon glyphicon-plus-sign text-size"></span></a>-->
+
+
+<div style='display:none;' id="ddlGeneralInfo_TypeOfProgram1">
+</div>
+
+<div id='mainDivArea' class='table-responsive'></div>
+
+
+<div style="clear:both"></div>
+<div class="row text-center" style="margin-top:10px;">
+<div style="display:none;">
+<button type="button" class="btn btn-outline-success" id='btnEmpUpdate' value='Update'>Update</button>
+<button type="button" class="btn btn-outline-primary"  id='addmore' value='Add More'>Add More</button>
+</div>
+<div class="modal fade" id="AddUpdateModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+  <table>      
+      <div class="modal-content">
+        <div class="modal-header panel-head-4" style="padding: 10px 15px !important;">
+          <button type="button" class="close bg-white-round-btn" data-dismiss="modal"  style="margin-top: 2px !important;">×</button>
+           <h4 class="modal-title h4-color">Team Member</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+          	
+          	
+          	<div class="form-group col-sm-12 col-xs-12" id="groupselce">
+            
+          <!--   <label class="Radio">
+			    <input class="Radio-Input" type="radio" style="height:18px"  name="Usergroup" value="User" />
+			    User
+			  </label>
+			
+			  <label class="Radio">
+			    <input class="Radio-Input" type="radio" style="height:18px"  name="Usergroup" value="Group" />
+			    Group
+			  </label>-->
+           
+  <select id="drpuser">
+	  <option value="0">--Select--</option>                    
+	<!--  <option value="User">Single User</option> -->
+	 <option value="Employee">Employee</option>	 
+	 <option value="Group">My Group</option>
+	 <option value="GuestUsers">Guest Users</option>
+  </select>
+    <label for="select" class="control-label required">Select option</label><i class="bar"></i>
+    </div>
+   <div class="form-group col-sm-12 col-xs-12" id="userselection">
+         <select id="ProjectTeamMemmers" onmouseover="this.title=this.options[this.selectedIndex].title"> 
+         </select>
+        <label for="select" class="control-label required">Team Member</label><i class="bar"></i>
+   </div>       
+       
+	<div class="form-group col-sm-12 col-xs-12" id="groupselection1">       
+	     <select id="MySharedGroup" onmouseover="this.title=this.options[this.selectedIndex].title"> 
+	     </select>
+	      <label id="groupUserLists1" ></label>
+	      <label for="select" class="control-label required">My Sharing Group</label><i class="bar"></i>
+    </div>       
+       
+   <div class="form-group col-sm-12 col-xs-12" id="AssaginTaskTeam">                              
+              <label id="groupUserLists11" ></label>
+              <label for="select" class="control-label required">Team Members</label><i class="bar"></i>
+   </div>
+	        
+
+       
+       
+       
+       
+       
+       
+       
+       
+	        <div class="form-group col-sm-12 col-xs-12" id="editmodeaccount">       
+		          <label id="selectedUserName"></label>
+		          <label id="selectedUserID" style="display:block"></label>
+
+		              <label for="select" class="control-label required">User</label><i class="bar"></i>
+		     </div>
+
+       
+       
+       
+            <div class="form-group col-sm-6 col-xs-12" id="abc">
+            <p id="head"></p>
+              <input type="text" id="MemberRole">
+              <label for="input"  class="control-label">Role</label><i class="bar"></i>
+            </div>
+            <div class="form-group col-sm-6 col-xs-12">
+            <p id="head2"></p> 
+              <select id="MemberStatus">
+                <option value="Active">Active</option>
+                <option value="Released">Released</option>
+                <option value="Terminated" style="display:none">Terminated</option>
+              </select>
+              <label for="select" class="control-label">Status</label><i class="bar"></i>
+            </div>
+    
+    <div class="col-sm-12 padd-none">
+    <div class="form-group col-sm-6 col-xs-12">
+    <p id="head3"></p> 
+    <input type="text" id="EngageDate">
+      <label for="input" class="control-label" >Engage Date</label><i class="bar"></i>
+    </div>
+    <div class="form-group col-sm-6 col-xs-12">
+    <span id="head4"></span>
+      <input type="text" id="ExpectedReleaseDate" required>
+      <label for="input" class="control-label">Expected Release Date</label><i class="bar"></i>
+    </div>
+    </div>
+    <div class="form-group col-sm-6 col-xs-12" id="divReleasedDate" style="display:none;">
+    <span id="head5" style="color: red !important;"></span>
+      <input type="text" id="ReleaseDate"  required>
+      <label for="input" class="control-label required">Release Date</label><i class="bar"></i>
+    </div>
+    <div class="col-sm-12 padd-none">
+        <div class="checkbox col-sm-4 col-xs-12">
+        <label>
+        <input type="checkbox"  name="mTeam" id="ManageTeams" style="margin: 3px 3px 3px 4px !important;"><i class="helper"></i>Manage Teams
+        </label>
+        </div>
+        
+        <div class="checkbox col-sm-4 col-xs-12">
+        <label>
+        <input type="checkbox"  name="mDocument" id="ManageDocuments" style="margin: 3px 3px 3px 4px !important;"><i class="helper"></i>Manage Documents
+        </label>
+        </div>
+        
+        <div class="checkbox col-sm-4 col-xs-12">
+        <label>
+        <input type="checkbox"  name="mTasks" id="ManageTasks" style="margin: 3px 3px 3px 4px !important;"><i class="helper"></i>Manage Tasks
+        </label>
+        </div>
+    </div>
+  
+          
+          </div>
+          
+          <div class="button-container" id="my_team_member_buttons">
+            <button type="button" class="button" id="btnsubmit"><span>Submit</span></button>
+           	<button type="button" class="button"id="btnupdate"><span>Update</span></button>
+            <input type="button" class="btn btn-danger button-danger" data-dismiss="modal" value="cancel">
+          </div>
+          
+        </div>
+      </div>
+     </table> 
+    </div>
+    
+  </div>
+
+
+
+</div>
+
+
+
+
+<!-------------------Team Members Modal--------->
+<div class="modal fade" id="myViewAllTeamMemberModal" role="dialog" style="padding-top: 10% !important; z-index:58;" aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog modal-1200">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header modal-head-new">
+          <button type="button" class="close modal-head-close bg-white-round-btn" data-dismiss="modal" style="margin-top: 2px !important;">×</button>
+          <a class="pull-right" id="btnAddNewTeamMembersPopup" style="padding-right:59px; display:none;"><span class="glyphicon glyphicon-plus-sign text-size"></span></a>
+           <h4 class="modal-title h4-color"><span class="modal-head-text">Project Team Member</span></h4>
+           
+        </div>
+        <div class="modal-body">
+          <div class="col-md-12">
+          <div class="row">
+          	<div class="table-responsive table-custom-border">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-custom-head">
+                            <tr>
+                                <th>Team Member</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Engage Date</th>
+                                <th>Exp. Release Date</th>
+                                <th>Release Date</th>
+                                <th>Manage Team</th>
+                                <th>Manage Document</th>
+                                <th>Manage Tasks</th>
+                            </tr>
+                        </thead>
+                        <tbody id="viewALLTealMemberes">
+                            
+                        </tbody>
+                    </table>
+                  </div>
+          
+          </div>
+          </div>
+          <div class="clearfix"></div>
+          
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!-------------------Team Members Modal--------->
+
+
+
+
+
+
+<!--
+<style type="text/css">
+	#lblProjectTeamMember label {
+		margin-bottom: 0px;
+	}
+	#lblProjectTaskDetails label {
+		margin-bottom: 0px;
+	}
+	.project_member{
+		font-size:12px !important;
+		font-family:Microsoft JhengHei UI;
+		table-layout: fixed;
+		width: 100%;
+	}
+@media (max-width: 767px){
+	.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical,.ms-webpart-cell-horizontal {
+	    display: block !important;
+	}
+	.project_member{
+		font-size:12px !important;
+		font-family:Microsoft JhengHei UI;
+		table-layout:initial;
+		width: 100%;
+	}
+	.Project-Team,.project-task-detail{
+	    height: auto !important;
+	}
+}
+@media (max-width:1024px){
+	.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical,.ms-webpart-cell-horizontal {
+		display: block !important;
+	}
+	.table-responsive{
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	}	
+}
+
+</style>-->
+
+
+<style>
+
+
+.Radio-Input {
+  margin: 0 0.5rem 0;
+}
+
+
+.table-custom-border {
+	 border:1px solid #ddd;
+	 border-radius:0px 0px 0px 0px;
+}
+.table-custom-head {
+	/* background-color: #0e5796 !important;*/
+	/* color:#fff !important;*/
+}
+tbody>tr>td a {/*color:#333;*/}
+tbody>tr>td a:hover {/*color:#1d6ec0 !important;*/ cursor:pointer;}
+.mb-0{margin-bottom:0px;}
+.modal-1200{
+	 width:95%;
+	 max-width:1200px;	
+}
+.modal-backdrop {
+    visibility: hidden !important;
+}
+.modal.in {
+   /* background-color: rgba(0,0,0,0.5);*/
+}
+.modal-link-color {
+  /*  color: #333;*/
+    text-decoration: none !important;
+    padding-top: 4px;
+    padding-right: 15px;
+    font-size: 16px;
+    opacity: 1;
+}
+.modal-link-color:hover {
+    /*opacity: 1;*/
+	cursor:pointer;
+}
+.view-all {
+    bottom: 23px !important;
+    position: absolute;
+    right: 25px;
+}
+a:hover{
+	cursor:pointer;
+	}
+.modal-head-new {
+  /*  background-color: #0e5796 !important;*/
+    border-radius: 5px 5px 0px 0px !important;
+    overflow: auto;
+    height: 100%;
+	padding: 10px 15px !important;
+}
+</**************New Css****************/
+
+
+
+
+
+
+
+
+	.project_member{
+	font-size:12px !important;
+	font-family:Microsoft JhengHei UI;
+	table-layout: fixed;
+	 width: 100%;
+}
+@media (max-width: 767px){
+	.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical,.ms-webpart-cell-horizontal {
+	    display: block !important;
+	}
+	.project_member{
+		font-size:12px !important;
+		font-family:Microsoft JhengHei UI;
+		table-layout:initial;
+		width: 100%;
+	}
+	.Project-Team,.project-task-detail{
+	    height: auto !important;
+	}
+}
+@media (max-width:1024px){
+	.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical,.ms-webpart-cell-horizontal {
+		display: block !important;
+	}
+	.table-responsive{
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	}	
+}
+
+
+.padd-none {padding:0px !important;}
+.button-container {
+  text-align: center;
+}
+fieldset {
+  margin: 0 0 3rem;
+  padding: 0;
+  border: none;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-inline > .form-group,
+.form-inline > .btn {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+input{
+		border: 0px solid !important;
+		 box-shadow: none !important;
+	}
+.sp-peoplepicker-topLevel
+{
+	border-bottom: 1px solid !important;
+	border-top:0px solid;
+	border-left:0px solid;
+	border-right:0px solid;
+
+
+		 box-shadow: none !important;
+
+	
+}	
+.form-help {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  color: #b3b3b3;
+  font-size: 0.8rem;
+}
+.checkbox .form-help, .form-radio .form-help, .form-group .form-help {
+  position: absolute;
+  width: 100%;
+}
+.checkbox .form-help {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-radio .form-help {
+  padding-top: 0.25rem;
+  margin-top: -1rem;
+}
+
+.form-group input {
+  height: 2.5rem;
+    background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.form-group select {
+  width: 100%;
+  font-size: 13px;
+  height: 25px;
+  background: none;
+  border: none;
+  line-height: 1.6;
+  box-shadow: none;
+}
+
+
+
+.form-group .control-label {
+  position: absolute;
+  top: 0%;
+  pointer-events: none;
+  padding-left: 0.125rem;
+  z-index: 1;
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+}
+.form-group .bar {
+  position: relative;
+  border-bottom: 1px solid #666;
+  display: block;
+}
+.form-group .bar::before {
+  content: '';
+  height: 1px;
+  width: 0;
+  left: 50%;
+  bottom: -0.0625rem;
+  position: absolute;
+  background: #666;
+  -webkit-transition: left 0.28s ease, width 0.28s ease;
+  transition: left 0.28s ease, width 0.28s ease;
+  z-index: 2;
+}
+.form-group input,
+.form-group textarea {
+  display: block;
+  background: none;
+  padding-top: 0px;
+  padding-left:2px;
+  padding-bottom: 1px;
+  font-size: 14px;
+  border-width:0;
+  line-height: 1.9;
+  width: 100%;
+  color: transparent;
+  -webkit-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  box-shadow: none;
+}
+.form-group select,
+.form-group input:focus,
+.form-group input:valid,
+.form-group input.form-file,
+.form-group input.has-value,
+.form-group textarea:focus,
+.form-group textarea:valid,
+.form-group textarea.form-file,
+.form-group textarea.has-value {
+  color: #333;
+}
+.form-group select ~ .control-label,
+.form-group input[type="file"] ~ .control-label, 
+.form-group input:focus ~ .control-label,
+.form-group input:valid ~ .control-label,
+.form-group input.form-file ~ .control-label,
+.form-group input.has-value ~ .control-label,
+.form-group textarea:focus ~ .control-label,
+.form-group textarea:valid ~ .control-label,
+.form-group textarea.form-file ~ .control-label,
+.form-group textarea.has-value ~ .control-label {
+  font-size:12px;
+  color: #666;
+  top: -1.9rem;
+  left: 10px;
+}
+.form-group select:focus,
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+}
+.form-group select:focus ~ .control-label,
+.form-group input:focus ~ .control-label,
+.form-group textarea:focus ~ .control-label {
+  color: #000;
+}
+.form-group select:focus ~ .bar::before,
+.form-group input:focus ~ .bar::before,
+.form-group textarea:focus ~ .bar::before {
+  width: 100%;
+  left: 0;
+}
+
+.checkbox label{
+  position: relative;
+  cursor: pointer;
+  padding-left: 2rem;
+  text-align: left;
+  color: #333;
+  display: block;
+}
+.checkbox input {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+  left: 0;
+}
+
+.radio {
+  margin-bottom: 1rem;
+}
+.radio .helper {
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #999;
+}
+.radio .helper::before, .radio .helper::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0.25rem;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transition: -webkit-transform 0.28s ease;
+  transition: -webkit-transform 0.28s ease;
+  transition: transform 0.28s ease;
+  transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+  border-radius: 50%;
+  border: 0.125rem solid currentColor;
+}
+.helper::after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.radio label:hover .helper {
+  color: #337ab7;
+}
+.radio input:checked ~ .helper::after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+.radio input:checked ~ .helper::before {
+  color: #337ab7;
+}
+
+.checkbox {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.checkbox .helper {
+  color: #999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  z-index: 0;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.0625rem;
+  -webkit-transition: border-color 0.28s ease;
+  transition: border-color 0.28s ease;
+}
+.checkbox .helper::before, .checkbox .helper::after {
+  position: absolute;
+  height: 0;
+  width: 0.2rem;
+  background-color: #337ab7;
+  display: block;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-radius: 0.25rem;
+  content: '';
+  -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;
+  opacity: 0;
+}
+.checkbox .helper::before {
+  top: 0.90rem;
+  left: 0.38rem;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  box-shadow: 0 0 0 0.0625rem #fff;
+}
+.checkbox .helper::after {
+  top: 0.5rem;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.checkbox label:hover .helper {
+  color: #337ab7;
+}
+.checkbox input:checked ~ .helper {
+  color: #337ab7;
+}
+.checkbox input:checked ~ .helper::after, .checkbox input:checked ~ .helper::before {
+  opacity: 1;
+  -webkit-transition: height 0.28s ease;
+  transition: height 0.28s ease;
+}
+.checkbox input:checked ~ .helper::after {
+  height: 0.5rem;
+}
+.checkbox input:checked ~ .helper::before {
+  height: 1.7rem;
+  -webkit-transition-delay: 0.28s;
+          transition-delay: 0.28s;
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 1rem;
+}
+
+.has-error .legend.legend, .has-error.form-group .control-label.control-label {
+  color: #d9534f;
+}
+.has-error.form-group .form-help,
+.has-error.form-group .helper, .has-error.checkbox .form-help,
+.has-error.checkbox .helper, .has-error.radio .form-help,
+.has-error.radio .helper, .has-error.form-radio .form-help,
+.has-error.form-radio .helper {
+  color: #d9534f;
+}
+.has-error .bar::before {
+  background: #d9534f;
+  left: 0;
+  width: 100%;
+}
+
+.button {
+    position: relative;
+    background: #8CA161 !important;
+    border: 1px solid #8CA161 !important;
+    font-size: 14px;
+    margin: 3rem 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.button:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.button:focus {
+  outline: none;
+}
+.button-cross-attach{
+	font-size:15px !important;
+	}
+	
+.button-danger {
+    position: relative;
+    background: #d9534f !important;
+    border: 1px solid #d9534f !important;
+    font-size: 14px;
+    margin: 3rem 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.button-danger span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.button-danger:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+
+.button-danger:focus {
+  outline: none;
+}
+.error {
+  color: red;
+  margin-left: 5px;
+}
+ 
+label.error {
+  display: inline;
+}
+
+
+#myViewAllTeamMemberModal .modal-dialog .modal-content .modal-body {
+    height: 100%;
+    max-height: 330px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* -- */
+
+#AssaginTaskTeam .sp-peoplepicker-autoFillContainer {
+    z-index: 11;
+}
+
+</style>
+
+
+
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-328</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">52147c80-c547-4a96-8397-d763d29ab8f4</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-328, ADMIN-1645029823-328</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,166 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+<style>
+
+     label.required:after {content: " *"; color: red;}
+
+	.browse{ padding:5px; border:1px solid #ddd !important; width:100%; background:transparent}
+	.panel-group .panel {
+		border-radius: 5px;
+		border-color: #EEEEEE;
+		padding:0;
+		
+	}
+	.panel-group {
+	margin-bottom: 10px;
+	}
+
+		.panel-title {
+		font-size: 14px;
+	}
+
+	.panel-title > a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+</style>
+	
+
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4 data-localize=""><b></b></h4></li>           
+	</ol>
+</div>	
+<div class="row">
+	<div class="col-md-6">
+			<div class="panel panel-default">                          
+				  <div class="panel-heading panel-head-4">
+					  <div class="panel-title">
+					  <!--<h4 class="h4-color" data-localize="Thoughts"></h4>-->
+					  <h4 class="h4-color">Thought of The Day(In English)</h4>
+					</div>
+				  </div>
+			   <div class="panel-body">
+			   <div class="row">
+			   <div class="col-md-12">
+				  <div class="form-horizontal">
+				  		 <div class="form-group">
+							<label for="" class="col-sm-4 control-label" data-localize="IsDefault">Is Default</label>
+							<div class="col-sm-8">
+							 	<div class="input-group">
+									<input type="checkbox" id="chkIsDefault" name="IsDefault">
+								</div>
+							</div>
+						</div>
+
+				  		
+				 		 <div class="form-group">
+								<label for="" class="col-sm-4 control-label required" data-localize="DisplayDate">Display Date</label>
+								<div class="col-sm-8">
+								 <div class="input-group">
+									<input id="txtDisplayDate" type="text" class="form-control" name="date">
+									</div>
+								</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-4 control-label required" data-localize="ThoughtOfTheDay">Thought Of The Day</label>
+							<div class="col-sm-8">
+							  <textarea id="txtThought" class="form-control" rows="8"></textarea>
+							</div>
+						</div>	
+					   <div class="form-group">
+								<label for="" class="col-sm-4 control-label required" data-localize="SaidBy">Said By</label>
+								<div class="col-sm-8">
+							 
+								 <input id="txtSaidBy" type="text" maxlength="50" class="form-control">
+								</div>
+						 </div>
+						 
+							
+						<div class="form-group" style="display:none;">
+							<label for="" class="col-sm-4 control-label">Publish</label>
+							<div class="col-sm-8">
+							 <select class="form-control">
+							   <option>This Company Only</option>
+							   <option>All Companies</option>
+							 </select>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="row text-center top20">
+							 <input id="Submit" type="button" style="font-size:13px;" class="btn btn-outline-success button"  value="Submit">
+                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button"  value="Close">							
+						</div> 
+				  </div>
+				</div>
+			 </div>
+		   </div>
+							<!--/panel content-->
+		</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				
+					<div class="otherLanguages"></div>
+					
+					<!--<div class="panel panel-default">
+						<div class="panel-heading panel-head-4" role="tab" id="headingOne">
+							<h4 class="panel-title">
+								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed">
+									<i class="short-full glyphicon glyphicon-chevron-down"></i>
+									ARABIC
+								</a>
+							</h4>
+						</div>
+						<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+							<div class="panel-body">
+								  <div class="form-horizontal">
+									   <div class="form-group">
+											<label for="" class="col-sm-4 control-label">Title</label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control" name="" id="">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="col-sm-4 control-label">Announcement</label>
+											<div class="col-sm-8">
+											  <textarea class="form-control" rows="10" id=""></textarea>
+											</div>
+										</div>
+								  </div>
+							</div>
+						</div>
+					</div>-->
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script type="text/javascript" src="../SiteAssets/AdminPortal/ThoughtOfTheDay/AddThought.js">	</script>
+
+<!--  --><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rahul  Rana</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-360</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">71c82962-658d-4014-811f-0487751f7b6f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-360, ADMIN-1645029823-360</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">36000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

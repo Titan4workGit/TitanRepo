@@ -1,0 +1,188 @@
+﻿
+<!--<link href="../SiteAssets/Biography/DisplayBioCss/css/bootstrap.min.css" rel="stylesheet">
+<link href="../SiteAssets/Biography/DisplayBioCss/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<script src="../SiteAssets/Biography/DisplayBioCss/js/jquery-1.11.1.min.js"></script>
+<script src="../SiteAssets/Biography/DisplayBioCss/js/bootstrap.min.js"></script>
+<link href="../SiteAssets/Biography/DisplayBioCss/css/jquery.datepicker.css" rel="stylesheet">
+<link href="../SiteAssets/Biography/DisplayBioCss/css/styles.css" rel="stylesheet">
+<link href="../SiteAssets/Biography/DisplayBioCss/css/ticker.css" rel="stylesheet">
+<script src="../SiteAssets/Biography/DisplayBioCss/js/jquery.datepicker.js"></script>
+<script src="../SiteAssets/Biography/DisplayBioCss/js/jquery-1.10.2.js"></script>
+<script src="../SiteAssets/Biography/DisplayBioCss/js/jquery.cookie.js"></script>-->
+<script src="../SiteAssets/Biography/BiographyDisplay.js"></script>
+
+
+<style type="text/css">
+@media (max-width: 767px){
+	.profile-image-div {
+		width: 100% !Important;
+		float: left;
+	}
+	#profile-image1 {
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 5px;
+	}
+}
+.profile-image-div #profile-image1{
+	margin-left: auto;
+    margin-right: auto;
+}
+.profile-image-div {
+   /* width: 197px;*/
+    float: left;
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+#profile-image1 {
+    cursor: pointer;
+    height:auto;
+}
+.pdngbtm15{
+	padding-bottom: 15px;
+}
+.btnclose{
+	min-width: 6em;
+}
+.profile_height {
+	min-height: 520px;
+}
+.star{ color:#FF0000}
+ @media (max-width:767px) {
+ .profile_height {
+min-height: auto !important;
+}
+}
+.ms-core-pageTitle, .ms-core-pageTitle a{
+	display:none;
+}
+</style>
+
+	<div class="row top15">
+		<div class="col-md-6">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="panel panel-default shadow2">
+					<div class="panel-heading  panel-head-4">
+						<div class="panel-title">
+							<h4 class="h4-color" data-localize="Profile"></h4>
+						</div>
+					</div>
+					<div class="panel-body profile_height">
+						<div class="col-sm-5 col-md-5 col-lg-5 profile-image-div"> 
+							<img alt="User Pic"  class="img-circle img-responsive my_bio_read_left_marg" style="width:100%" id="profile-image1">
+						</div>
+						<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 top30">
+							<div class="row">
+								<div class="col-sm-7 top5">
+								<h4 id="EmpName"></h4></div>                    
+								<div id="txtDesignation" class="col-sm-7 top5"></div>
+							</div>
+						</div>            
+					<div class="clearfix"></div>
+					<div class="col-md-12">
+						<div class="form-horizontal top20 my_bio_left">
+							<div class="form-group">
+									<label for="label" class="col-sm-5 control-label" data-localize="EmployeeCode"></label>
+								<div class="col-sm-7">
+									<input type="" class="form-control" id="input"  readonly>						
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-5 control-label" data-localize="Company"><span class="star"></span> </label>
+								<div class="col-sm-7">
+									<select id="ddCompany" name="select4" class="form-control" disabled ="disabled">
+									<option></option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+									<label for="" class="col-sm-5 control-label" data-localize="Department"><span class="star"></span></label>
+								<div class="col-sm-7">
+									<select id="ddDepartment" name="select4" class="form-control" disabled ="disabled">
+										<option>Sales </option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-sm-5 control-label" data-localize="OfficeLocation"><span class="star"></span></label>
+								<div class="col-sm-7">
+									<select id="ddLocation" name="select4" class="form-control" disabled ="disabled">
+										<option>Gurgaon </option>
+									</select>
+								</div>
+							</div>   
+						
+							<!-- <div class="form-group">
+								<label for="" class="col-sm-5 control-label" data-localize="Status"></label>
+								<div class="col-sm-7">
+									<input type="" class="form-control" id="txtStatus"  readonly>
+								</div>
+							</div> -->
+						
+							<div class="form-group">
+								<label for="" class="col-sm-5 control-label" data-localize="DateOfJoining"><span class="star"></span></label>
+								<div class="col-sm-7">
+									<input type="" class="form-control" id="txtFromDate" readonly>
+								</div>
+							</div>               
+						</div>
+					</div>					
+					</div>
+					<!--/panel content-->
+					</div>
+				</div>
+			</div>
+		</div>     
+		<div class="col-md-6">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="panel panel-default shadow2">
+						<div class="panel-heading  panel-head-4">
+							<div class="panel-title">
+								<h4 class="h4-color" data-localize="Biography"></h4>
+							</div>
+						</div>
+						<div class="panel-body profile_height">
+							<p id="txtBio">
+							</p>
+						</div>
+					<!--/panel content-->
+					</div>
+				</div>
+			</div>
+		</div>     
+		<div class="clearfix"></div>
+		<div class="row text-center pdngbtm15">    
+		<!--<button type="submit" class="btn btn-warning ">-->
+		<a href="../Pages/Default.aspx?WebAppId=1" class="btn btn-outline-secondary btnclose" data-localize="Close"></a>
+		<!--</button>-->
+		</div>
+	</div>
+
+
+ 
+<script>
+	$(function() {
+	$('#profile-image1').on('click', function() {
+	$('#profile-image-upload').click();
+	});
+	});   
+</script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-340</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1cd789c3-7745-45b1-bf35-cddd3b338c09</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-340, ADMIN-1645029823-340</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">34000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,174 @@
+﻿ #overlay {
+                display: none;
+                cursor: pointer;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                position: fixed;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                width: auto;
+                height: auto;
+                z-index: 5000;
+            }
+
+            #overlay-content {
+                width: 100%;
+                height: 100%;
+                padding: 20px;
+                position: fixed;
+                /*background:rgb(37, 37, 37);*/
+               /* background:#896C14;*/
+				background:#000000;
+                opacity: 0.85;
+                color: #fff;
+                z-index: 5000;
+            }
+            
+
+            .curtain_text {
+                font-weight: lighter;
+                font-family: 'Oswald';
+                text-align: right;
+            }
+
+            .curtain_text1 {
+	                     
+                font-size: 24px;
+               /* font-family:'Segoe UI Light';*/
+              	font-family:'Microsoft JhengHei';
+                text-align: center;
+                /*color property changed*/
+                /*color: #efefef;*/
+                color:#ffffff;
+                /*new property added */
+				padding-left:20%;
+			    padding-right:0%;
+			    text-transform: capitalize !important;
+            }
+
+            .no_decorate {
+                text-decoration: none;
+                color: #fff;
+            }
+
+                .no_decorate:hover {
+                    text-decoration: none;
+                    color: #999;
+                }
+
+            .bottom_quote {
+                position: absolute;
+                bottom: 5%;
+                right: 20px;
+            }
+
+            /*.tip-text {
+                font-family: 'Raleway';
+                font-weight: bolder;
+                color: #525252;
+                font-size: 45px;
+            }*/
+		   .tip-text {
+			    font-family: 'Microsoft JhengHei';
+			    font-weight: bolder;
+			    /*color: #525252;*/
+			    color:#ffffff;
+			    /*font size changed*/
+			    font-size: 66px;
+			}
+			.thought-text{
+				font-family: 'Microsoft JhengHei';
+			    font-weight: bolder;
+			    /*color: #525252;*/
+			    color:#ffffff;
+			    /*font size changed*/
+			    font-size:48px;
+			}
+            .tip-text2 {
+                color: #ffffff !important;
+                /*font size changed*/
+                font-size: 40px;
+                margin-top: 0px;
+            }
+
+            @media (max-width:767px) {
+				.thought_width {
+					width:90% !important;
+				}
+				.tip-desc {
+					padding-left: 0% !important;
+					font-size: 20px !important;
+					font-weight: lighter !important;				
+					}
+                .curtain_text1 {
+                    font-weight: lighter;
+                    font-family: 'Microsoft JhengHei';
+                    text-align: center;
+                    /*color property changed*/
+ 					/*color: #efefef;*/
+ 					color:#ffffff;
+                    font-size: 20px;
+                    padding-left:0%;
+                }
+
+                .tip-text {
+                    font-family: 'Microsoft JhengHei';
+                    font-weight: bolder;
+                    color: #ffffff;
+                    font-size:25px !important;
+                }
+
+                .tip-text2 {
+                    color: #ffffff !important;
+                    font-size:25px !important;
+                }
+            }
+			@media (max-width:1023px) {
+				.tip-text {
+				    font-size: 63px;
+				}
+			}
+            
+	div#overlay-content .col-md-4 h1.tip-text {
+		padding-top:0px;
+		margin-bottom: 0px;
+	}
+	#overlay-content .col-md-4.col-xs-11.bottom_quote {
+		padding-bottom: 10px;
+	}
+	.thought{
+		 margin-left:auto;
+		 margin-right:auto;	
+		 width:95%;
+	}
+	.tip {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	}
+	.tip-desc{
+		text-transform: capitalize;
+		font-weight: lighter;
+		font-size: 24px;
+		font-family:'Microsoft JhengHei';
+		text-align: center;
+		/* color: #efefef; */
+		color: #ffffff;
+		padding-right: 0%;
+		padding-left:61%;
+		text-align: left;
+		margin-top:0px;
+		padding-bottom:5%;
+		font-weight: 500;
+	}
+	.bottom_quote{
+		position: absolute;
+		bottom:0%;
+		right:0px;
+	}
+	.thought_width{
+		width:44.5%;
+	}

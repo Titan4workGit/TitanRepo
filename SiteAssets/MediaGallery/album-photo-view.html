@@ -1,0 +1,1385 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+
+<title>Media Gallery Detail</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MediaGallery/assets/font-awesome/css/font-awesome.min.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/MediaGallery/assets/css/drag-drop.css">-->
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MediaGallery/assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MediaGallery/MediaGalleryDetail.css">
+<link rel="stylesheet"  type="text/css" href="../SiteAssets/MediaGallery/album-photo-view.css">
+<script  type="text/javascript" src="../SiteAssets/MediaGallery/MediaGalleryDetail.js?11lak"></script>
+<script  type="text/javascript" src="../SiteAssets/MediaGallery/downloadFile.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.1/dropzone.min.js" integrity="sha256-fegGeSK7Ez4lvniVEiz1nKMx9pYtlLwPNRPf6uc8d+8=" crossorigin="anonymous"></script>
+-->
+
+<style>
+.chck{
+ 
+}
+.reply-text-line-cross {
+text-align: right;
+cursor: pointer;
+position: absolute;
+right: -4px;
+top: -5px;
+}
+
+.reply-text-line-cross a {
+height: 20px;
+width: 20px;
+text-align: center;
+line-height: 20px;
+/* background: rgb(0 0 0 / 30%); */
+background: #ccc;
+color: #000;
+border-radius: 50%;
+display: inline-block;
+transition: all 0.4s;
+}
+.media-gallery-sub-heading-details {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.media-gallery-event-details {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 1;
+}
+.media-gallery-event-details {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: auto;
+    white-space: normal;
+    background-color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 5px;
+}
+.media-gallery-detail-check-all {
+    margin-bottom: 10px;
+}
+.media-gallery-detail-check-all>input {
+    margin: -1px 3px 0px 0px;
+}
+.media-gallery-detail-check-all .chexbox_mg {
+    opacity: 1;
+}
+.media-gallery-detail-check-all .chexbox_mg label {
+    margin: 0px;
+    padding: 1px 6px 1px 0px;
+}
+.media-gallery-detail-check-all .chexbox_mg label i {
+    font-size: 20px;
+}
+
+.upload-details-album-box .album-sorting-btn .dropdown-menu li {
+    text-align: left;
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2575</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f25f6f56-ec2a-4ea4-8136-d9bf47104875</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2575, ADMIN-1645029823-2575</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">257500.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container all-align-gap-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="custom-panel">
+					<!--<div class="custom-drag-drop" id="my-custom-drag-drop-panel">
+				        <div class="fileinput-button album-card-drag">
+				        	<div class="album-card-drag-text-box">
+				        		<div class="album-card-drag-text1">Drag Items to Upload</div>
+				        		<!-- <div class="album-card-drag-text2">Or</div>
+				        		<div class="album-card-drag-text3">Click to Upload</div> -->
+				        	<!--</div>
+				            <input type="file" name="filef[]" id="files" accept="image/jpeg, image/png, image/gif,"><br />
+				        </div>
+				        <output id="Filelist"></output>
+					</div>-->
+					
+					<div class="col-sm-12 col-xs-12 album-head-box">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12 album-head-title">
+								<h2 class="media-gallery-sub-heading" id="">
+									<span id="folderName"></span>
+								</h2>
+								<h5 class="media-gallery-sub-heading-details" id="">
+									<div class="media-gallery-event-details">Event: <span id="EventName"></span></div>
+									<div class="media-gallery-event-details">Place: <span id="PlaceName"></span></div>
+									<div class="media-gallery-event-details">Date: <span id="EventDate"></span></div>
+								</h5>
+							</div>
+							<div class="col-sm-6 col-xs-12 upload-details-album-box">
+								<div class="form-group">
+									
+		  							<!-- Create New Album -->
+									<a class="deatils-album-upload-btn" id="btnUploadAlbum"> 
+										<input type="file" name="files[]"  multiple id="files2" accept="image/jpeg, image/png, image/gif,video/*">
+										<label for="files2">
+											<i class="fa fa-plus" aria-hidden="true"></i> 
+											<span> Upload </span> 
+										</label>
+									</a>
+									<div class="dropdown album-sorting-btn">
+	                                    <a class="dropdown-toggle" data-toggle="dropdown" id="" aria-expanded="false">
+	                                        <span class="fa fa-sort-alpha-asc font-12"></span>
+	                                        <span>Sort</span>
+	                                        <span class="fa fa-chevron-down font-12"></span>
+	                                    </a>
+	                                    <ul class="dropdown-menu dropdown-color-menu-icon">
+	                                        <li>
+	                                            <a href="#" id="btnRecent">
+	                                                <span>Recent Updated</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#" id="btnViewFiles">
+	                                                <span>Most Viewed</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#" id="btnLikeFiles">
+	                                                <span>Most Liked</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#" id="btnCommentFiles">
+	                                                <span>Most Commented</span>
+	                                            </a>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                                <a class="details-album-download-btn" id="btnDownloadAlbum"> 
+										<i class="fa fa-download" aria-hidden="true"></i>
+										<span> Download </span> 
+									</a>
+									<a class="details-album-delete-btn" id="btnDeleteAlbum"> 
+										<i class="fa fa-trash" aria-hidden="true"></i>
+										<span> Delete </span> 
+									</a>
+									<a href="../Pages/MediaGallery.aspx" class="details-album-back-btn" id="btnBackAlbum"> 
+										<i class="fa fa-share" aria-hidden="true"></i>
+										<span> Albums </span> 
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body media-gallery-detail-panel-body">
+						<div class="media-gallery-detail-check-all">
+							<!-- <input type="checkbox" id="gallery-check-all">
+							<span> Check All </span> -->
+
+								<div class="chexbox_mg">
+									<input class="messageCheckbox" value="" type="checkbox" id="myCheckbox10000">
+									<label for="myCheckbox10000">
+										<i class="fa fa-circle-thin" aria-hidden="true"></i>
+									</label>
+								</div>
+								<span> Select All </span> 
+
+						</div>
+						<!-- id="galleryFirstImgThumb" -->
+						<div class="row album-row-info custom-scroll" id="galleryFirstImgThumb">
+							<!-- <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card">
+							        <div class="fileinput-button album-card-info album-card-drag">
+							        	<div class="album-card-drag-text-box">
+							        		<div class="album-card-drag-text1">Drag Item to Upload</div>
+								        	<div class="album-card-drag-text2">Or</div>
+								            <button class="btn custom-btn album-card-drag-text3">Click to Upload</button>
+							        	</div>
+							            <input type="file" name="files[]" id="files" multiple accept="image/jpeg, image/png, image/gif,"><br />
+							        </div>
+							        <output id="Filelist"></output>
+									<div class="album-card-footer">
+										<p class="album-card-footer-title">Add Photos</p>
+									</div>
+								</div>
+							</div> -->
+							<!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox1">
+												<label for="myCheckbox1">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>-->
+							<!--<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<video class="video-box" width="100%" height="100%">
+										  	<source src="../SiteAssets/MediaGallery/assets/images/demo-video.mp4" type="video/mp4">
+										  	Your browser does not support the video tag.
+										</video>
+										<div class="play-icon">
+											<i class="fa fa-play"></i>
+										</div>
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox2">
+												<label for="myCheckbox2">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox3">
+												<label for="myCheckbox3">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox4">
+												<label for="myCheckbox4">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox5">
+												<label for="myCheckbox5">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox6">
+												<label for="myCheckbox6">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox7">
+												<label for="myCheckbox7">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 album-col-info">
+								<div class="album-card album-photo-view-card">
+									<a href="#" class="album-card-info album-card-show" data-toggle="modal" data-target="#photo-view-with-comments">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album bg">
+									</a>
+
+									<div class="album-card-footer">
+										<div class="album-card-footer-flex-box">
+											<p class="mb-0 album-card-footer-date">24-02-2021</p>
+											<ul class="nav media-gallery-user-btn-item">
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="views-img" src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>10</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img class="like-img" src="../SiteAssets/MediaGallery/assets/images/like-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count"><span>26</span></li>
+												<li class="media-gallery-user-btn-panel-gap"><span></span></li>
+												<li class="media-gallery-user-btn-panel-icon">
+													<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png">
+												</li>
+												<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments">14</a></li>
+											</ul>
+										</div>
+										<!-- panel-heading-bg-txt-clr -->
+										<!--<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+										<div class="custom-album-check-box">
+											<div class="chexbox_mg">
+												<input type="checkbox" id="myCheckbox8">
+												<label for="myCheckbox8">
+													<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+													<!--<i class="fa fa-circle-thin" aria-hidden="true"></i>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>-->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- photo view with comments Modal -->
+	<div id="photo-view-with-comments" class="modal fade full-page-modal new-media" role="dialog">
+	  <div class="modal-dialog modal-lg">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	      	<div class="photo-view-with-comments-file-name">
+				<!--<h2 class="media-gallery-sub-heading">File: <span> Diwali_party_2019.png </span> </h2>-->
+			</div>
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	      </div>
+
+	    <div class="modal-body">
+			<div class="row">
+				<div class="col-lg-7 col-md-7 col-xs-12">
+					<div id="myCarousel" class="carousel slide slider-panel" data-ride="carousel" data-interval="false">
+						<div class="carousel-inner">
+							<div class="item active" id="PushModelDesign">
+					        	<!--<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="" style="width:100%;" id="SelectedImage">-->
+					      	</div>
+							<!--<div class="item">
+					        	<video class="video-box" width="100%" height="100%" id="player" controls>
+					          		<source src="../SiteAssets/MediaGallery/assets/images/demo-video.mp4" type="video/mp4">
+					      		</video>
+					      	</div>
+							<div class="item">
+					        	<img src="../SiteAssets/MediaGallery/assets/images/i2.jpg" alt="Chicago" style="width:100%;">
+					      	</div>
+					    	<div class="item">
+					        	<img src="../SiteAssets/MediaGallery/assets/images/i1.jpeg" alt="New York" style="width:100%;">
+					      	</div>
+							<div class="item">
+					        	<img src="../SiteAssets/MediaGallery/assets/images/img-test.png" alt="New York" style="width:100%;">
+					      	</div>-->
+					    </div>
+
+					    <!-- <div class="slider-controls-panel">
+						    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						      <span class="fa fa-chevron-left"></span>
+						      <span class="sr-only">Previous</span>
+						    </a>
+						    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+						      <span class="fa fa-chevron-right"></span>
+						      <span class="sr-only">Next</span>
+						    </a>
+					    </div> -->
+					</div>
+					<div class="row album-detail-footer">
+						<div class="col-sm-10 col-xs-12 album-detail-left">
+							<div class="album-user-info-grid">
+								<div class="album-user-image-box">
+									<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#" id="AuthPhoto">
+									<div class="album-user-image-text">
+										<p class="mb0" id="AothName"></p>
+										<!--<p class="mb0" id="AothDesignation"></p>
+										<p class="mb0" id="AothDept"></p>-->
+										<p class="mb0 Emailfont" id="AothEmail"></p>
+									</div>
+								</div>
+								<div class="album-user-details-box">
+									<p class="media-date">
+										Date: <span id="DocDate"> 12 Jan 2021 </span>
+									</p>
+									<p class="media-size" id="Weight4Doc">
+										Size: <span id="RecWeight"> 50kb </span>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!--<div class="col-sm-2 col-xs-12 album-detail-right">
+							<div class="album-data-box">
+								<a class="album-download-btn"> 
+									 <i class="fa fa-download" aria-hidden="true"></i>
+								</a>
+								<a class="album-delete-btn"> 
+									<i class="fa fa-trash-o" aria-hidden="true"></i>
+								</a>	
+							</div>
+						</div>-->
+					</div>
+				</div>
+
+				<div class="col-lg-5 col-md-5 col-xs-12 media-gallery-right-chat-area new-media-chat-area">
+					<div class="comment-container">
+                        <div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+                            <ul class="nav experiences-inner-card-btn-item">
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img src="../SiteAssets/Biography/Experience/assets/images/visibility-icon.png">
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#viewsAnncmnt" id="TotalHitsMedia">0</a></li>
+                                <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img onclick="TriggerLikes();" id="like-Img-color-Anncmnt" class="like-img-Ann" src="../SiteAssets/Biography/Experience/assets/images/like-icon.png">
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likesAnncmnt" id="TotalLikesMedia">0</a></li>
+                                <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img src="../SiteAssets/Biography/Experience/assets/images/chat-icon.png">
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#commentsAnncmnt" id="TotalCommentsAnncmnt">0</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="viewsAnncmnt" class="tab-pane fade Data-view-tab">
+                                <ul class="show-comment-panel likes-panel" id="ViewHitListMedia">
+                                	<!-- this code will be added dynamically in js -->
+                                	<li class="likes-box"><div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" id="ViewHitsProfileImages" src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/719/12.png" data-themekey="#"></div><div class="like-user-name"><h4>John Davis</h4></div></li><li class="likes-box"><div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" id="ViewHitsProfileImages" src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/3580/emp4.jpg" data-themekey="#"></div><div class="like-user-name"><h4>debendra das</h4></div></li><li class="likes-box"><div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" id="ViewHitsProfileImages" src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/413/swap.jpg" data-themekey="#"></div><div class="like-user-name"><h4>swapnil kataria</h4></div></li>
+                                	<!-- this code will be added dynamically in js -->
+                                </ul>
+                            </div>
+                            <div id="likesAnncmnt" class="tab-pane fade Data-view-tab">
+                                <ul class="show-comment-panel likes-panel" id="LikeshitlistMedia">
+                                	<!-- this code will be added dynamically in js -->
+                                	<li class="likes-box"><div class="comment-reply-user-name"><span class="comment-reply-user-name-lt">TD</span><img class="comment-reply-user-name-img" id="ViewHitsProfileImages" src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/744/BOD.png" data-themekey="#"></div><div class="like-user-name"><h4>Vidushi Chaudhary</h4></div></li>
+                                	<!-- this code will be added dynamically in js -->
+                                </ul>
+                            </div>
+                            <div id="commentsAnncmnt" class="tab-pane fade in active Data-view-tab">
+                                <div class="chat-main-panel scrollbar-panel" id="hideCommentScrollAnncmnt">
+                                    <div class="row ml0 mr0" id="reply_areaAnncmnt">
+                                        <div class="col-xs-12 text-center pt-15">
+                                            <a style="display:none;cursor:pointer;" class="view-more-replies" id="seemorebtnGeneralAnncmnt">View Previous</a><!-- onclick="ReadTimeLine('')"-->
+                                        </div>
+                                        <div id="CommentsAreaAnncmnt">
+                                        	<!-- this code will be added dynamically in js -->
+                                        	<div class="col-md-12 col-sm-12 reply-box-ext" id="CommentDivRecNoAnn1963">
+                                        		<div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0"> 
+                                        			<span class="mr10">
+                                        				<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/719/12.png" class="img-circle chat-user-image" width="30" height="30" data-themekey="#">
+                                        			</span>
+                                        			<span class="b-500" id="UsernameAnn1963">John Davis</span>
+                                        			<span class="pl5 pr5">-</span>
+                                        			<span>27 Aug</span> at <span> 4:11 PM</span>
+                                        			<span id="LikeSpanAnn1963" style="display:none">
+                                        				<span>
+                                        					<img class="msg-like-img" src="../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png" data-themekey="#">
+                                        				</span>
+                                        			<span class="countInnerLikes" id="LikesCountAnn1963" onclick="GetAllAnnLikesComment(1963)">0</span>
+                                        			</span> 
+                                        		</div>
+                                        		<h4 class="col-md-12 col-sm-12 my-chat-edit-delete-panel">
+                                        			<div class="mt-4 my-chat-edit-delete-panel-inside" id="CommentTextAnn1963">Test<div></div><img alt="😍" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60d.png" data-themekey="#"><img alt="🏳" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f3.png" data-themekey="#"><img alt="🏴" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f4.png" data-themekey="#"><img alt="😀" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f600.png" data-themekey="#"><img alt="😍" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60d.png" data-themekey="#"><img alt="🏳" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f3.png" data-themekey="#"><img alt="🏴" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f4.png" data-themekey="#"><img alt="😀" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f600.png" data-themekey="#"><img alt="😍" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60d.png" data-themekey="#"><img alt="🏳" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f3.png" data-themekey="#"><img alt="🏴" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f3f4.png" data-themekey="#"><img alt="😀" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f600.png" data-themekey="#"><img alt="😍" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60d.png" data-themekey="#"><div></div></div><div class="chat-edit-delete-panel dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="../SiteAssets/Biography/Experience/assets/images/more-horiz.png" alt="more horiz" data-themekey="#"></div><ul class="dropdown-menu dropdown-menu-right chat-edit-delete-dropdown"><li><button id="messageEdit" type="button" class="btn LikeCmntAnn1963" data-toggle="collapse" data-target="#messageReplyBox" aria-expanded="false" onclick="PushlikeforAnnComment(1963)">Like</button></li><li><a class="logout" onclick="ActiveAnnReplyCtrl(1963)">Reply</a></li></ul></h4><div class="col-md-12 col-sm-12 p0"><div class="attachment-badge chip-box" id="AttachmentlistAnn1963"></div></div><div class="clearfix"></div></div>
+
+                                        			<div class="col-md-12 col-sm-12 reply-box-ext" id="CommentDivRecNoAnn1965"><div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0"> <span class="mr10"><img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/3580/emp4.jpg" class="img-circle chat-user-image" width="30" height="30" data-themekey="#"></span><span class="b-500" id="UsernameAnn1965">debendra das</span><span class="pl5 pr5">-</span><span>27 Aug</span> at <span> 4:14 PM</span><span id="LikeSpanAnn1965" style="display:none"><span><img class="msg-like-img" src="../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png" data-themekey="#"></span><span class="countInnerLikes" id="LikesCountAnn1965" onclick="GetAllAnnLikesComment(1965)">0</span></span> </div><h4 class="col-md-12 col-sm-12 my-chat-edit-delete-panel"><div class="mt-4 my-chat-edit-delete-panel-inside" id="CommentTextAnn1965">Test <img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"><img alt="😇" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f607.png" data-themekey="#"></div><div class="chat-edit-delete-panel dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="../SiteAssets/Biography/Experience/assets/images/more-horiz.png" alt="more horiz" data-themekey="#"></div><ul class="dropdown-menu dropdown-menu-right chat-edit-delete-dropdown"><li><button id="messageEdit" type="button" class="btn LikeCmntAnn1965" data-toggle="collapse" data-target="#messageReplyBox" aria-expanded="false" onclick="PushlikeforAnnComment(1965)">Like</button></li><li><a class="logout" onclick="ActiveAnnReplyCtrl(1965)">Reply</a></li></ul></h4><div class="col-md-12 col-sm-12 p0"><div class="attachment-badge chip-box" id="AttachmentlistAnn1965"></div></div><div class="clearfix"></div></div>
+
+                                        			<div class="col-md-12 col-sm-12 reply-box-ext" id="CommentDivRecNoAnn1966"><div class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0"> <span class="mr10"><img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/3580/emp4.jpg" class="img-circle chat-user-image" width="30" height="30" data-themekey="#"></span><span class="b-500" id="UsernameAnn1966">debendra das</span><span class="pl5 pr5">-</span><span>27 Aug</span> at <span> 4:15 PM</span><span id="LikeSpanAnn1966" style="display:none"><span><img class="msg-like-img" src="../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png" data-themekey="#"></span><span class="countInnerLikes" id="LikesCountAnn1966" onclick="GetAllAnnLikesComment(1966)">0</span></span> </div><h4 class="col-md-12 col-sm-12 my-chat-edit-delete-panel"><div class="mt-4 my-chat-edit-delete-panel-inside" id="CommentTextAnn1966">Test</div><div class="chat-edit-delete-panel dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="../SiteAssets/Biography/Experience/assets/images/more-horiz.png" alt="more horiz" data-themekey="#"></div><ul class="dropdown-menu dropdown-menu-right chat-edit-delete-dropdown"><li><button id="messageEdit" type="button" class="btn LikeCmntAnn1966" data-toggle="collapse" data-target="#messageReplyBox" aria-expanded="false" onclick="PushlikeforAnnComment(1966)">Like</button></li><li><a class="logout" onclick="ActiveAnnReplyCtrl(1966)">Reply</a></li></ul></h4><div class="col-md-12 col-sm-12 p0"><div class="attachment-badge chip-box" id="AttachmentlistAnn1966"></div></div><div class="clearfix"></div></div>
+
+                                        			<div class="col-md-12 col-sm-12 reply-box-my" id="CommentDivRecNoAnn1979"><div class="col-md-12 col-sm-12 pl0 pr0 pb10"><span>02 Sept</span> at <span> 5:31 PM</span><span id="LikeSpanAnn1979" style="display:none"><span><img class="msg-like-img" src="../SiteAssets/Biography/Experience/assets/images/like-icon-fill.png" data-themekey="#"></span><span class="countInnerLikes" id="LikesCountAnn1979" onclick="GetAllAnnLikesComment(1979)">0</span></span></div><h4 class="col-md-12 col-sm-12 my-chat-edit-delete-panel"><div><div id="editMenuOpen2" class="chat-edit-delete-panel dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><img src="../SiteAssets/Biography/Experience/assets/images/more-horiz.png" alt="more horiz" data-themekey="#"></div><ul class="dropdown-menu dropdown-menu-right chat-edit-delete-dropdown"><li><a type="button" onclick="EditAnnComment(1979)">Edit</a></li><li><a type="button" class="logout" onclick="DeleteAnnComments(1979)">Delete</a></li></ul></div><div class="my-chat-edit-delete-panel-inside" id="CommentTextAnn1979">test demo try<div></div><img alt="😊" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60a.png" data-themekey="#"><img alt="🌈" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f308.png" data-themekey="#"><img alt="🥂" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f942.png" data-themekey="#"><img alt="🎂" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f382.png" data-themekey="#"><img alt="😊" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60a.png" data-themekey="#"><img alt="🌈" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f308.png" data-themekey="#"><img alt="🥂" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f942.png" data-themekey="#"><img alt="🎂" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f382.png" data-themekey="#"><img alt="😊" class="emojioneemoji" src="https://cdn.jsdelivr.net/emojione/assets/3.1/png/32/1f60a.png" data-themekey="#"><div></div></div></h4><div class="col-md-12 col-sm-12 p0"><div class="attachment-badge chip-box" id="AttachmentlistAnn1979"><div class="m-0  upload-chip chatAttach_Image"> <span class="pr-8 chip-text-box"><img src="/sites/Titan_2_2_1_DEV/Lists/AnnouncementsChild/Attachments/1979/adapt.png" title="adapt.png" onclick="previewImage(this);" data-themekey="#"></span></div></div></div><div class="clearfix"></div></div>
+                                        		<!-- this code will be added dynamically in js -->
+                                        </div>
+                                        <div id="showInnerLikesAnncmnt" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                                            <div class="likes-close-box">
+                                                <i id="likeCloseBoxAnncmnt" class="fa fa-times cursor-pointer"></i>
+                                            </div>
+                                            <ul class="likes-panel scrollbar-panel" id="CommentLikeListAnncmnt"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="main-chat-text-area main-chat-text-area-border">
+                                    <div id="replyTextareaAnncmnt" class="upload-outer-chip-box-2 upload-outer-chip-box-3" style="display:none;">
+                                        <div class="reply-text-line">
+                                            <div class="reply-text-line-cross">
+                                                <a id="replyHideAnncmnt" type="button"><i class="fa fa-times"></i></a><!--onclick="DeActiveReplyControl()"-->
+                                            </div>
+                                            <a href="#" class="comment-reply-user-name-info">@<span id="replyforuserAnncmnt"></span> :</a>
+                                            <span id="ReplyforMsgAnncmnt"></span>
+                                        </div>
+                                        <div class="attachment-badge chip-box">
+
+                                        </div>
+                                    </div>
+                                    <div class="main-comment-panel">
+                                        <div class="comment-area">
+                                            <div class="custom-form-group" id="">
+                                                <textarea class="form-control" rows="3" id="commentTextMedia"></textarea>
+                                            </div>
+                                            <div id='NewAttachmentFilesAnncmnt' class="oldfilename1Anncmnt"></div>
+                                            <div id='oldfilenameAnncmnt' class="oldfilenameAnncmnt"></div>
+                                        </div>
+                                        <div class="comment-btn-pannel">
+                                            <div class="btn mr-8">
+                                                <div id="drop-zone-Anncmnt">
+                                                    <div id="clickHereAnncmnt">
+                                                        <input class="btn-file-upload" id="AnnoncmntUpload" type="file" multiple>
+                                                        <img src="../SiteAssets/Biography/Experience/assets/images/attach-file.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn" id="saveAnncmntChat">
+                                                <img src="../SiteAssets/Biography/Experience/assets/images/send.png">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				
+			
+			</div>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Album Edit Modal -->
+	<div id="album-edit" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	        <h4 class="modal-title">Edit</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Title:</label>
+	                  <input type="text" class="form-control" id="txtFolder" name="" value="Official trip to Jaipur Farms">
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created by:</label>
+	                  <input type="text" id="txtUserName" disabled="" class="form-control" name="" value="John Smith" disabled>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created on:</label>
+	                  <input type="text" id="createDate"  disabled="" class="form-control" name="" disabled>
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project" id="txt">Description:</label>
+	                  <textarea class="form-control resize-none"  id="txtDescription" rows="7">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</textarea>
+	                </div>
+	            </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn custom-btn mr-8 wpx-80" id="btnSaveFolder" data-dismiss="modal">Save</button>
+	        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	<!-- Album Information Modal -->
+	<div id="album-Information" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	        <h4 class="modal-title">Album Information</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Title:</label>
+	                  <p class="m-0" id="dFolderDetails">Official trip to Jaipur farms</p>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created by:</label>
+	                  <p class="m-0" id="DUserName">John Smith</p>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created on:</label>
+	                  <p class="m-0">
+	                  	<span id="FDate">22-Feb-2021</span>
+	                  	<!--<span class="mx-4">at</span>
+	                  	<span>12:02 PM</span>-->
+	                  </p>
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group mb-0">
+	                  <label for="Project">Description:</label>
+	                  <p class="m-0" id="FDescription">
+	                  	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+	                  </p>
+	                </div>
+	            </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+	
+	
+<!--Iframe Image POpup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog">
+	<div class="modal-dialog modal-lg"> <!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Attachment View</h4>
+			</div>
+			<div class="modal-body form-horizontal"> 
+				<div class="embed-responsive embed-responsive-16by9">
+					<div id="doc-viewer" style="height:415px"></div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button> 
+			</div>
+		</div> 
+	</div>
+</div>
+<!--Iframe Image POpup ends-->
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+	<!-- hodeCommentScroll -->
+	<script>
+		$(document).ready(function(){
+		  $("#countInnerLikes,#countInnerLikes2,#countInnerLikes3,#countInnerLikes4").click(function(){
+		    $("#showInnerLikes").toggleClass("show-inner-likes-box-hide");
+		    $("#hideCommentScroll").toggleClass("hide-comment-box-scroll");
+		  });
+		  $("#likeCloseBox").click(function(){
+		    $("#showInnerLikes").toggleClass("show-inner-likes-box-hide");
+		    $("#hideCommentScroll").toggleClass("hide-comment-box-scroll");
+		  });
+		});					
+	</script>
+	<script>
+		$(document).ready(function () {
+			$(".like-img").click(function () {
+				var src = $(this).attr('src');
+				var newsrc = (src == '../SiteAssets/MediaGallery/assets/images/like-icon.png') ? '../SiteAssets/MediaGallery/assets/images/like-icon-fill.png' : '../SiteAssets/MediaGallery/assets/images/like-icon.png';
+				$(this).attr('src', newsrc);
+			});
+		});
+	</script>
+	<script>
+		//I added event handler for the file upload control to access the files properties.
+		document.addEventListener("DOMContentLoaded", init, false);
+
+		//To save an array of attachments
+		var AttachmentArray = [];
+
+		//counter for attachment array
+		var arrCounter = 0;
+
+		//to make sure the error message for number of files will be shown only one time.
+		var filesCounterAlertStatus = false;
+
+		//un ordered list to keep attachments thumbnails
+		var ul = document.createElement("ul");
+		ul.className = "thumb-Images";
+		ul.id = "imgList";
+
+		function init() {
+		  //add javascript handlers for the file upload event
+		  document
+		    .querySelector("#files")
+		    .addEventListener("change", handleFileSelect, false);
+		}
+
+		//the handler for file upload event
+		function handleFileSelect(e) {
+		  //to make sure the user select file/files
+		  if (!e.target.files) return;
+
+		  //To obtaine a File reference
+		  var files = e.target.files;
+		  console.log(files);
+
+		  // Loop through the FileList and then to render image files as thumbnails.
+		  for (var i = 0, f; (f = files[i]); i++) {
+		    //instantiate a FileReader object to read its contents into memory
+		    var fileReader = new FileReader();
+
+		    // Closure to capture the file information and apply validation.
+		    fileReader.onload = (function(readerEvt) {
+		      return function(e) {
+		        //Apply the validation rules for attachments upload
+		        ApplyFileValidationRules(readerEvt);
+
+		        //Render attachments thumbnails.
+		        RenderThumbnail(e, readerEvt);
+
+		        //Fill the array of attachment
+		        FillAttachmentArray(e, readerEvt);
+		      };
+		    })(f);
+
+		    // Read in the image file as a data URL.
+		    // readAsDataURL: The result property will contain the file/blob's data encoded as a data URL.
+		    // More info about Data URI scheme https://en.wikipedia.org/wiki/Data_URI_scheme
+		    fileReader.readAsDataURL(f);
+		  }
+		  document
+		    .getElementById("files")
+		    .addEventListener("change", handleFileSelect, false);
+		}
+
+		//To remove attachment once user click on x button
+		jQuery(function($) {
+		  $("div").on("click", ".img-wrap .close", function() {
+		    var id = $(this)
+		      .closest(".img-wrap")
+		      .find("img")
+		      .data("id");
+
+		    //to remove the deleted item from array
+		    var elementPos = AttachmentArray.map(function(x) {
+		      return x.FileName;
+		    }).indexOf(id);
+		    if (elementPos !== -1) {
+		      AttachmentArray.splice(elementPos, 1);
+		    }
+
+		    //to remove image tag
+		    $(this)
+		      .parent()
+		      .find("img")
+		      .not()
+		      .remove();
+
+		    //to remove div tag that contain the image
+		    $(this)
+		      .parent()
+		      .find("div")
+		      .not()
+		      .remove();
+
+		    //to remove div tag that contain caption name
+		    $(this)
+		      .parent()
+		      .parent()
+		      .find("div")
+		      .not()
+		      .remove();
+
+		    //to remove li tag
+		    var lis = document.querySelectorAll("#imgList li");
+		    for (var i = 0; (li = lis[i]); i++) {
+		      if (li.innerHTML == "") {
+		        li.parentNode.removeChild(li);
+		      }
+		    }
+		  });
+		});
+
+		//Apply the validation rules for attachments upload
+		function ApplyFileValidationRules(readerEvt) {
+		  //To check file type according to upload conditions
+		  if (CheckFileType(readerEvt.type) == false) {
+		    alert(
+		      "The file (" +
+		        readerEvt.name +
+		        ") does not match the upload conditions, You can only upload jpg/png/gif files"
+		    );
+		    e.preventDefault();
+		    return;
+		  }
+
+		  //To check file Size according to upload conditions
+		  if (CheckFileSize(readerEvt.size) == false) {
+		    alert(
+		      "The file (" +
+		        readerEvt.name +
+		        ") does not match the upload conditions, The maximum file size for uploads should not exceed 300 KB"
+		    );
+		    e.preventDefault();
+		    return;
+		  }
+
+		  //To check files count according to upload conditions
+		  if (CheckFilesCount(AttachmentArray) == false) {
+		    if (!filesCounterAlertStatus) {
+		      filesCounterAlertStatus = true;
+		      alert(
+		        "You have added more than 10 files. According to upload conditions you can upload 10 files maximum"
+		      );
+		    }
+		    e.preventDefault();
+		    return;
+		  }
+		}
+
+		//To check file type according to upload conditions
+		function CheckFileType(fileType) {
+		  if (fileType == "image/jpeg") {
+		    return true;
+		  } else if (fileType == "image/png") {
+		    return true;
+		  } else if (fileType == "image/gif") {
+		    return true;
+		  } else {
+		    return false;
+		  }
+		  return true;
+		}
+
+		//To check file Size according to upload conditions
+		function CheckFileSize(fileSize) {
+		  if (fileSize < 300000) {
+		    return true;
+		  } else {
+		    return false;
+		  }
+		  return true;
+		}
+
+		//To check files count according to upload conditions
+		function CheckFilesCount(AttachmentArray) {
+		  //Since AttachmentArray.length return the next available index in the array,
+		  //I have used the loop to get the real length
+		  var len = 0;
+		  for (var i = 0; i < AttachmentArray.length; i++) {
+		    if (AttachmentArray[i] !== undefined) {
+		      len++;
+		    }
+		  }
+		  //To check the length does not exceed 10 files maximum
+		  if (len > 9) {
+		    return false;
+		  } else {
+		    return true;
+		  }
+		}
+
+		//Render attachments thumbnails.
+		// function RenderThumbnail(e, readerEvt) {
+		//   var li = document.createElement("li");
+		//   ul.appendChild(li);
+		//   li.innerHTML = [
+		//     '<div class="img-wrap"> <span class="close">&times;</span>' +
+		//       '<img class="thumb" src="',
+		//     e.target.result,
+		//     '" title="',
+		//     escape(readerEvt.name),
+		//     '" data-id="',
+		//     readerEvt.name,
+		//     '"/>' + "</div>"
+		//   ].join("");
+
+		//   var div = document.createElement("div");
+		//   div.className = "FileNameCaptionStyle";
+		//   li.appendChild(div);
+		//   div.innerHTML = [readerEvt.name].join("");
+		//   document.getElementById("Filelist").insertBefore(ul, null);
+		// }
+
+		//Fill the array of attachment
+		function FillAttachmentArray(e, readerEvt) {
+		  AttachmentArray[arrCounter] = {
+		    AttachmentType: 1,
+		    ObjectType: 1,
+		    FileName: readerEvt.name,
+		    FileDescription: "Attachment",
+		    NoteText: "",
+		    MimeType: readerEvt.type,
+		    Content: e.target.result.split("base64,")[1],
+		    FileSizeInBytes: readerEvt.size
+		  };
+		  arrCounter = arrCounter + 1;
+		}
+
+	</script>
+
+	<!-- Video play stop Slider -->
+	<script>
+		// invoke the carousel
+		$('#myCarousel').on('slide.bs.carousel', function () {
+		  document.getElementById('player').pause();
+		});
+
+		/* SLIDE ON CLICK */ 
+
+		$('.carousel-linked-nav > li > a').click(function() {
+
+		    // grab href, remove pound sign, convert to number
+		    var item = Number($(this).attr('href').substring(1));
+
+		    // slide to number -1 (account for zero indexing)
+		    $('#myCarousel').carousel(item - 1);
+
+		    // remove current active class
+		    $('.carousel-linked-nav .active').removeClass('active');
+
+		    // add active class to just clicked on item
+		    $(this).parent().addClass('active');
+
+		    // don't follow the link
+		    return false;
+		});
+
+		/* AUTOPLAY NAV HIGHLIGHT */
+
+		// bind 'slid' function
+		$('#myCarousel').bind('slid', function() {
+
+		    // remove active class
+		    $('.carousel-linked-nav .active').removeClass('active');
+
+		    // get index of currently active item
+		    var idx = $('#myCarousel .item.active').index();
+
+		    // select currently active item and add active class
+		    $('.carousel-linked-nav li:eq(' + idx + ')').addClass('active');
+
+		});
+	</script>
+
+	<!-- Mobile touch -->
+	<script>  
+		$('#myCarousel').on('touchstart', function(event){
+		    const xClick = event.originalEvent.touches[0].pageX;
+		    $(this).one('touchmove', function(event){
+		        const xMove = event.originalEvent.touches[0].pageX;
+		        const sensitivityInPx = 5;
+
+		        if( Math.floor(xClick - xMove) > sensitivityInPx ){
+		            $(this).carousel('next');
+		        }
+		        else if( Math.floor(xClick - xMove) < -sensitivityInPx ){
+		            $(this).carousel('prev');
+		        }
+		    });
+		    $(this).on('touchend', function(){
+		        $(this).off('touchmove');
+		    });
+		});
+	</script> 
+
+	<!-- For drag and drop hide and show -->
+	<script type="text/javascript">
+
+		/*var dropZone = document.getElementById('my-custom-drag-drop-panel');
+
+		function showDropZone() {
+			dropZone.style.display = "block";
+		}
+		function hideDropZone() {
+		    dropZone.style.display = "none";
+		}
+
+		function allowDrag(e) {
+		    if (true) {  // Test that the item being dragged is a valid one
+		        e.dataTransfer.dropEffect = 'copy';
+		        e.preventDefault();
+		    }
+		}
+		
+		/*dropZone.addEventlisener('drop', e =>{
+		e.preventDefault();
+		console.log(e.dataTransfer.files)
+		})*/
+
+		/*function handleDrop(e) {
+		debugger;
+		    e.preventDefault();
+		    debugger
+		    console.log(e.dataTransfer.files)
+		    var dragFile=e.dataTransfer.files
+		    //$('#files').val(dragFile[0].name)
+		    uploadDocument(dragFile[0].name,2)
+		    hideDropZone();
+
+		    
+		}
+
+		// 1
+		window.addEventListener('dragenter', function(e) {
+		    showDropZone();
+		});
+
+		// 2
+		dropZone.addEventListener('dragenter', allowDrag);
+		dropZone.addEventListener('dragover', allowDrag);
+
+		// 3
+		dropZone.addEventListener('dragleave', function(e) {
+			console.log('dragleave');
+		    hideDropZone();
+		});
+
+		// 4
+		dropZone.addEventListener('drop', handleDrop);*/
+		$( document ).ready(function() {
+    console.log( "ready!" );
+
+		$("#commentTextMedia").emojioneArea({    
+			pickerPosition: "right",
+			tonesStyle: "bullet",
+			events:{
+				keyup: function (editor, event) {
+
+				}
+			}
+		});
+
+});
+	</script>
+
+	<!-- For Check All input checkbox button -->
+	<script>
+		$(document).ready(function(){
+		  // $("#gallery-check-all").click(function(){
+		  //   $(".chexbox_mg").toggleClass("inputshow");
+		  //   $(".messageCheckbox").prop('checked', true);
+		  // });
+		  /*$('#myCheckbox10000').on('click',function(){
+	        if(this.checked){
+	        	$(".chexbox_mg").addClass("inputshow");
+	            $('.messageCheckbox').each(function(){
+	                this.checked = true;
+	            });
+	        }
+	        else{
+	        	$(".chexbox_mg").removeClass("inputshow");
+	             $('.messageCheckbox').each(function(){
+	                this.checked = false;
+	            });
+		        }
+		    });
+		    
+		    $('.messageCheckbox').on('click',function(){
+		        if($('.messageCheckbox:checked').length == $('.messageCheckbox').length){
+		        	$(".chexbox_mg").addClass("inputshow");
+		            $('#gallery-check-all').prop('checked',true);
+		        }
+		        else{
+		        	$(".chexbox_mg").removeClass("inputshow");
+		            $('#gallery-check-all').prop('checked',false);
+		        }
+		    });*/
+		});					
+	</script>
+		
+</body>
+
+</html>

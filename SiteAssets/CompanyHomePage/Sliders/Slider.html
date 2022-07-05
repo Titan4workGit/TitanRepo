@@ -1,0 +1,263 @@
+﻿<script>
+$(document).ready(function(){
+	var welcomePageCalled=titanForWork.getQueryStringParameter('WelcomePageCalled');
+	
+	if(welcomePageCalled!=undefined)
+	{
+		DisplayBanners();
+	}
+});
+
+function DisplayBanners() {
+	var CompanySiteUrl=titanForWork.getQueryStringParameter('CompanySiteUrl');
+	var todayDate = new Date();
+	var Ownurl =  CompanySiteUrl + "/_api/web/Lists/GetByTitle('BannerImages')/Items?$select=*,File/Name,File/ServerRelativeUrl&$filter=DisplayFrom le datetime'"+todayDate.toISOString() +"' and DisplayTill ge datetime'"+todayDate.toISOString() +"' and IsActive eq 1&$expand=File&$orderby=Modified desc";
+	//var Ownurl =  CompanySiteUrl + "/_api/web/Lists/GetByTitle('BannerImages')/Items?$select=*,File/Name,File/ServerRelativeUrl&$filter=IsActive eq 1&$expand=File&$orderby=Modified desc";
+    
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) {
+            var items = data.d.results;
+            
+           	var currentLanguage = GetCurrentLanguageSlider();
+			var companyID=titanForWork.getQueryStringParameter('CompanyId');
+			
+			var listItemOl = $('#sliderOL').html('');
+			var listItemDiv = $('#sliderDiv').html('');
+			
+			var counter=0;
+			for (var i = 0; i < items.length; i++) 
+            {
+            	var sliderType= items[i].SliderType;
+            	if(sliderType=="News")
+            	{
+            		var itemId = items[i].ID;
+	            	// News Title
+	            	var titleSlider;
+					if(currentLanguage=='DefaultLanguage')
+		            {
+		                titleSlider='Title';
+		            }
+		            else
+		            {
+		                titleSlider=currentLanguage+"_Title";
+		            } 
+     	           //  titleSlider='Title';
+		            titleSlider= items[i][titleSlider];
+		            if(titleSlider == null){
+		            
+		            	titleSlider='Title';
+		            	titleSlider= items[i][titleSlider];
+		            }
+
+					// News Day and Month
+					var newsDate =items[i]["NewsDate"];
+					newsDate = new Date(newsDate);
+					var newsDay=newsDate.getDate();
+					if(newsDay<10)
+					{
+						newsDay="0"+newsDay;
+					}
+					var newsMonth = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];;
+			   		newsMonth = newsMonth[newsDate.getMonth()];
+			   		
+					var strTarget  = items[i].File.ServerRelativeUrl;
+					var viewPageURL = "../Pages/ViewSlider.aspx?WebAppId="+companyID+"&ItemId="+itemId+"&Source=HomePage";	
+	
+					if(counter==0)
+			        {
+			        	listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'" class="active"></li>'); 
+			        	listItemDiv.append('<div class="item active"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /><div class="carousel-caption  hidden-xs slider-caption"><div class="col-sm-2 col-xs-2 slider-border"><span class="slider-text">'+newsDay+'</span><span class="slider-month-text" style="color:#FFF;">'+newsMonth+'</span></div><div class="col-sm-10 col-xs-10 "><p class="carousel-caption-text mb-0"><a href='+ viewPageURL +' style="cursor:pointer;color:#FFF;">'+titleSlider +'</a></p></div><span class="pull-right mb-10"></div>');  
+			        	$(".sliderPreviousArrow").hide();
+			        	$(".sliderNextArrow").hide();
+			        }         
+			        else
+			        {
+		        		listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'" ></li>'); 
+		       			listItemDiv.append('<div class="item"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /><div class="carousel-caption  hidden-xs slider-caption"><div class="col-sm-2 col-xs-2 slider-border"><span class="slider-text">'+newsDay+'</span><span class="slider-month-text" style="color:#FFF;">'+newsMonth+'</span></div><div class="col-sm-10 col-xs-10 "><p class="carousel-caption-text mb-0"><a href='+ viewPageURL +' style="cursor:pointer;color:#FFF;">'+titleSlider +'</a></p></div><span class="pull-right mb-10"></div>');               		  			       		       		
+		       			$(".sliderPreviousArrow").show();
+			        	$(".sliderNextArrow").show();
+					}
+					counter++;
+	            }
+            	else
+            	{
+        			var itemId = items[i].ID;
+	            	// News Title
+	            	var titleSlider;
+					if(currentLanguage=='DefaultLanguage')
+		            {
+		                titleSlider='Title';
+		            }
+		            else
+		            {
+		                titleSlider=currentLanguage+"_Title";
+		            }
+		            titleSlider= items[i][titleSlider];
+		            
+					// News Day and Month
+					var newsDate =items[i]["NewsDate"];
+					newsDate = new Date(newsDate);
+					var newsDay=newsDate.getDate();
+					if(newsDay<10)
+					{
+						newsDay="0"+newsDay;
+					}
+					var newsMonth = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];;
+			   		newsMonth = newsMonth[newsDate.getMonth()];
+			   		
+					var strTarget  = items[i].File.ServerRelativeUrl;
+					var viewPageURL = "../Pages/ViewSlider.aspx?WebAppId="+companyID+"&ItemId="+itemId+"&Source=HomePage";	
+	
+					if(counter==0)
+			        {
+			        	listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'" class="active"></li>'); 
+			        	listItemDiv.append('<div class="item active"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /></a></div>');
+			        	//listItemDiv.append('<div class="carousel-caption  hidden-xs slider-caption"><div class="col-sm-2 col-xs-2 slider-border"><span class="slider-text">'+newsDay+'</span><span class="slider-month-text" style="color:#FFF;">'+newsMonth+'</span></div><div class="col-sm-10 col-xs-10 "><p class="carousel-caption-text mb-0"><a href='+ viewPageURL +' style="cursor:pointer;color:#FFF;">'+titleSlider +'</a></p></div><span class="pull-right mb-10"></div>');  
+			        	$(".sliderPreviousArrow").hide();
+			        	$(".sliderNextArrow").hide();
+			        }         
+			        else
+			        {
+		        		listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'"></li>'); 
+			        	listItemDiv.append('<div class="item"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /></a></div>');
+		       			$(".sliderPreviousArrow").show();
+			        	$(".sliderNextArrow").show();
+					}
+					counter++;
+            	 }
+            }	
+            if(counter==0)
+            {
+            	$(".sliderPreviousArrow").hide();
+            	$(".sliderNextArrow").hide();
+            }
+        }, 
+        error: function (data) {
+			console.log('News Slider : error' + data);
+        }
+    });
+}
+
+/*function DisplayBanners() {
+	var CompanySiteUrl=titanForWork.getQueryStringParameter('CompanySiteUrl');
+	var todayDate = new Date($.datepicker.formatDate('mm-dd-yy', new Date()));
+	var Ownurl =  CompanySiteUrl + "/_api/web/Lists/GetByTitle('BannerImages')/Items?$select=*,File/Name,File/ServerRelativeUrl&$filter=DisplayFrom le datetime'"+todayDate.toISOString() +"' and DisplayTill ge datetime'"+todayDate.toISOString() +"' and IsActive eq 1&$expand=File&$orderby=Modified desc";
+    
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            var title="Title";
+           	var currentLanguage = GetCurrentLanguageSlider();
+			var companyID=titanForWork.getQueryStringParameter('CompanyId');
+			
+			var listItemOl = $('#sliderOL').html('');
+			var listItemDiv = $('#sliderDiv').html('');
+			for (var i = 0; i < items.length; i++) 
+            {
+            	var itemId = items[i].ID;
+            	
+            	// News Title
+            	var titleSlider;
+				if(currentLanguage=='DefaultLanguage')
+	            {
+	                titleSlider='Title';
+	            }
+	            else
+	            {
+	                titleSlider=currentLanguage+"_Title";
+	            }
+	            titleSlider= items[i][titleSlider];
+	            
+				// News Day and Month
+				var newsDate =items[i]["NewsDate"];
+				newsDate = new Date(newsDate);
+				var newsDay=newsDate.getDate();
+				if(newsDay<10)
+				{
+					newsDay="0"+newsDay;
+				}
+				var newsMonth = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];;
+		   		newsMonth = newsMonth[newsDate.getMonth()];
+		   		
+				var strTarget  = items[i].File.ServerRelativeUrl;
+				var viewPageURL = "../Pages/ViewSlider.aspx?WebAppId="+companyID+"&ItemId="+itemId+"&Source=HomePage";	
+
+				if(i==0)
+		        {
+		        	listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'" class="active"></li>'); 
+		        	listItemDiv.append('<div class="item active"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /><div class="carousel-caption  hidden-xs slider-caption"><div class="col-sm-2 col-xs-2 slider-border"><span class="slider-text">'+newsDay+'</span><span class="slider-month-text" style="color:#FFF;">'+newsMonth+'</span></div><div class="col-sm-10 col-xs-10 "><p class="carousel-caption-text mb-0"><a href='+ viewPageURL +' style="cursor:pointer;color:#FFF;">'+titleSlider +'</a></p></div><span class="pull-right mb-10"></div>');  
+		        	$(".sliderPreviousArrow").hide();
+		        	$(".sliderNextArrow").hide();
+		        }         
+		        else
+		        {
+	        		listItemOl.append('<li data-target="#carousel-example" data-slide-to="'+i+'" ></li>'); 
+	       			listItemDiv.append('<div class="item"><a><img class="slider-img-height panel-default" src="'+strTarget+'" /><div class="carousel-caption  hidden-xs slider-caption"><div class="col-sm-2 col-xs-2 slider-border"><span class="slider-text">'+newsDay+'</span><span class="slider-month-text" style="color:#FFF;">'+newsMonth+'</span></div><div class="col-sm-10 col-xs-10 "><p class="carousel-caption-text mb-0"><a href='+ viewPageURL +' style="cursor:pointer;color:#FFF;">'+titleSlider +'</a></p></div><span class="pull-right mb-10"></div>');               		  			       		       		
+	       			$(".sliderPreviousArrow").show();
+		        	$(".sliderNextArrow").show();
+				}
+		     }	
+        }, 
+        error: function (data) {
+			console.log('News Slider : error' + data);
+        }
+    });
+}*/
+
+function GetCurrentLanguageSlider()
+{
+	var preferredLanguage;
+	if($.cookie.length>0 && $.cookie("Language")!=undefined && $.cookie("Language")!=undefined)
+	{	
+	 	var preferredLanguageValue=$.cookie("Language");
+	 	preferredLanguage=$.cookie("Language").split('#')[0];	// Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+	}
+	else
+	{
+		preferredLanguage='DefaultLanguage';
+	}
+	
+	return preferredLanguage;
+}
+
+
+
+
+</script>
+
+<div id="carousel-example" class="carousel slide gall-margin shadow2 shadow2-new home_banner " data-ride="carousel">
+	<!--<ol class="carousel-indicators home-slider-indicators" id="sliderOL">
+	</ol> by khadar-->
+	<div class="carousel-inner" id="sliderDiv">
+		<!--<div class="viewall"><a href="#">View All</a></div>-->
+	</div>
+	<a class="left carousel-control gall-margin-left it-banner-left sliderPreviousArrow" href="#carousel-example" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left "></span>
+	</a>
+	<a class="right carousel-control gall-margin-right it-banner-right sliderNextArrow" href="#carousel-example" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right "></span>
+	</a>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-396</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fffff2d5-85af-4409-8972-6cbce10b267b</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-396, ADMIN-1645029823-396</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">39600.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Titan</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/Projects/EditProjectDetails/assets/css/styles.css">	
+
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+	
+<script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+
+<script type="text/javascript" src="../SiteAssets/Projects/SearchableDDL/select2.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../SiteAssets/Projects/SearchableDDL/select2.min.css">
+<script type="text/javascript" src="../SiteAssets/Projects/EditProjectDetails/EditProjectDetail.js"></script>
+
+<style>
+
+input.sp-peoplepicker-editorInput{
+
+  border:none !important;	
+	
+}
+#ProjectManagerEmployeePicker_TopSpan.sp-peoplepicker-topLevel,
+#SponsorTeamEmployeePicker_TopSpan.sp-peoplepicker-topLevel,
+#StackeholderTeamEmployeePicker_TopSpan.sp-peoplepicker-topLevel{
+ 
+ padding:6px 25px 6px 0px !important;	
+
+}
+
+.ajustinhere{
+	font-size: 12px !important;
+    position: relative;
+    top: 20px;
+    margin-bottom:30px;
+    display:block;
+}
+
+@media(max-width:575px){
+
+.ajustinhere{
+	font-size: 12px !important;
+    top: 0px;
+    line-height:26px;
+    width:100%;
+}
+
+}
+
+@media(max-width:991px){
+
+.breakpointing{
+    margin-top: 30px;	
+}
+	
+}
+
+</style>
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-316</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a2a39bc4-6de8-492f-9bcc-93769fb2a123</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-316, ADMIN-1645029823-316</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Project
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Project:<sup class="start-box">*</sup></label>
+											<input type="text" class="form-control" id="txtProjectName">
+										</div>
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Department:<sup class="start-box">*</sup></label>
+											<div id="departmentDiv">
+											</div>
+										</div>
+										
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Office Location:</label>
+											
+											<div id="officeLocation">
+											</div>
+
+										</div>
+										
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Client:<sup class="start-box">*</sup></label>
+										<!--	<div id="clientNameDiv"></div>-->
+										<input type="text" class="form-control" id="clientTitle">
+										
+										</div>
+										<div class="row">
+											<div class="col-xs-6 istab-date">
+												<div class="form-group custom-form-group">
+													<label class="font-12">Planned Start Date:<sup class="start-box">*</sup></label>
+													<input type="text" placeholder="dd/mm/yyyy" class="form-control txtPlannedStartDate" Readonly="true"  name="date" >												</div>
+											</div>
+											
+											<div class="col-xs-6 istab-date">
+												<div class="form-group custom-form-group">
+													<label class="font-12">Planned End Date:<sup class="start-box">*</sup></label>
+													<input type="text" placeholder="dd/mm/yyyy" class="form-control txtPlannedEndDate" Readonly="true" name="date" >												</div>
+											</div>
+											
+											<div class="col-xs-6 istab-date">
+												<div class="form-group custom-form-group">
+													<label class="font-12">Actual Start Date:<sup class="start-box MandActDate" style="display:none;">*</sup></label>
+													<input type="text" placeholder="dd/mm/yyyy"  class="form-control txtActualStartDate" disabled="disabled" name="date">
+												</div>
+											</div>
+											
+											<div class="col-xs-6 istab-date ActualEndDate">
+												<div class="form-group custom-form-group">
+													<label class="font-12">Actual End Date:<sup class="start-box MandActDate" style="display:none;">*</sup></label>
+													<input type="text" placeholder="dd/mm/yyyy" class="form-control txtActualEndDate" Readonly="true" name="date" >
+												</div>
+												
+											</div>
+											<div class="col-xs-6 istab-date">
+												<div class="form-group custom-form-group">
+													<label for="" class="font-12">Reference Code:</label>
+													<input type="text" class="form-control" id="txtProjectCode" disabled="disabled" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g, '')">
+												</div>
+											</div>
+											<div class="col-xs-6 istab-date">
+												<div class="form-group custom-form-group">
+													<label for="" class="font-12">Project Type:</label>
+													<!--<input type="" class="form-control" id="txtTechnology" maxlength="50">-->
+													<select class="form-control" id="txtTechnology" disabled="disabled"></select>
+													</div>
+											</div>
+											
+											<div class="col-xs-6 ajustinhere"> This Project Created By <span id="createdByName"></span> on <span id="CreatedOn"></span> </div>
+											<div class="col-xs-6 istab-date" style="margin-right:1px;">
+												<div class="form-group custom-form-group">
+													<label for="" class="font-12">Estimated hours:</label>
+													<!--<input type="" class="form-control" id="txtTechnology" maxlength="50">-->
+													<input type="number" class="form-control" id="EstimatedTime" min="0">
+													</div>
+											</div>
+											<div class="col-xs-6 ajustinhere"> Working days <span id="txtWorkingDays"></span> </div>
+										</div>
+									</div>
+									<div class="col-md-6 breakpointing">
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Business Domain:</label>
+											<input type="text" class="form-control" id="txtDomain">
+										</div>
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Project Manager:<sup class="start-box">*</sup></label>
+											<div id="ProjectManagerEmployeePicker" class=""></div>
+										</div>
+										
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Stakeholder:</label>
+											<div id="StackeholderTeamEmployeePicker" class=""></div>											
+										</div>
+										
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Project Sponsor:</label>
+											<div id="SponsorTeamEmployeePicker" class=""></div>
+										</div>
+										
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Status:</label>
+											<select class="form-control" id="ProjectStatus">
+											<option value="Live">Live</option>
+											<option value="Terminated">Terminated</option>
+											<option value="OnHold">OnHold</option>
+											<option value="Completed">Completed</option>
+											</select>
+										</div>
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Program:</label>
+											<select class="form-control" id="ddlProgramList">
+											</select>
+										</div>
+										<div class="form-group custom-form-group">
+											<label for="" class="font-12">Details:</label>
+											<textarea class="form-control details-box-h" id="txtDescription" rows="5" id="" style="resize:none;" placeholder="Enter Details"></textarea>
+										</div>
+									</div>
+									<div class="col-xs-12 text-center timesheet-entry-footer-btn-group">
+										<button type="button" class="btn custom-btn mr-8 w-68" id="createNewProjectSite">Submit</button>
+										<button type="button" class="btn custom-btn custom-btn-two-cancel w-68" id="cancelProjectEdit">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script src="https://use.fontawesome.com/edb0de374a.js"></script>
+	</body>
+</html>

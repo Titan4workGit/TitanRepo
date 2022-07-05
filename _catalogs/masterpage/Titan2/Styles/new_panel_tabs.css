@@ -1,0 +1,109 @@
+﻿.my_custm_head_panel_animatn {
+    overflow: hidden;
+  }
+
+  .my_hori_acord, .my_hori_acord_media {
+    width: 100%;
+    overflow: hidden;
+    height: 35px;
+    padding-left: 0px;
+    list-style: none;
+  }
+  .my_content_heading {
+      font-size: 17px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 100%;
+  }
+
+  .my_hori_acord label, .my_hori_acord_media label {
+    display: block;
+    float: left;
+    height: auto;
+    width: 40px;
+    overflow: hidden;
+    /*background: #30354a;*/
+    background: #e8e7e7;
+    text-align: center;
+    font-size: 17px;
+    line-height: 35px;
+    -webkit-transition: background 300ms ease;
+    -o-transition: background 300ms ease;
+    transition: background 300ms ease;
+  }
+
+  .my_hori_acord li:nth-child(even) > label, .my_hori_acord_media li:nth-child(even) > label {
+    /*background: #3a4059;*/
+    background: #e8e7e7;
+  }
+
+  .my_hori_acord label:hover,
+  .my_hori_acord li:nth-child(even) > label:hover, .my_hori_acord_media label:hover,
+  .my_hori_acord_media li:nth-child(even) > label:hover {
+    /* background: #2196f3; */
+    color: #fff;
+    cursor: pointer;
+    border-right: transparent !important;
+  }
+
+  .my_active_tab_all {
+  background: #2196f3 !important;
+  color: #fff !important;
+  cursor: pointer !important;
+  border-right: transparent !important;
+  }
+
+  /* SLIDES */
+  .accslide {
+    display: block;
+    height: 100%;
+    width: 0px;
+    padding: 4px 0;
+    float: left;
+    overflow-x: hidden;
+    line-height: 1.5;
+    -webkit-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+  }
+  .accslide * {
+    padding-left: 10px;
+  }
+  .accslide img {
+    margin-top: 10px;
+  }
+
+  .my_hori_acord ~ label:not(.my_active_tab_all) > *, .my_hori_acord_media ~ label:not(.my_active_tab_all) > * {
+    padding-left: 0px;
+    font-size: 1.2em;
+    white-space: nowrap;
+    color: #fff;
+  }
+  
+  .my_hori_acord li i, .my_hori_acord_media li i {
+    color: #000;
+  }
+  .my_hori_acord li .my_active_tab_all i, .my_hori_acord_media li .my_active_tab_all i {
+    color: #fff;
+  }
+  /*.my_hori_acord li:nth-child(even) label {
+    border-right: 1px solid #d4d4d4;
+  }
+  .my_hori_acord li:nth-child(even) label.my_active_tab_all {
+  	border-right: none;
+  }*/
+  #tabdata li:not(.active) {
+    border: none;
+    border-radius: 10px 0px 0px 0px;
+    -webkit-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+    transition: all linear 0.2s
+  }
+  #tabdata li:not(.active):hover {
+    /* background: #2196f3; */
+    cursor: pointer;
+  }
+  #tabdata li:not(.active):hover a>span>i {
+    /* color: #fff !important; */
+    cursor: pointer;
+  }

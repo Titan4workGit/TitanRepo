@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Titan</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/css/date-picker.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/css/styles.css">	
+		<script src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/js/ViewAllSurvey.js"></script>
+
+<style>
+
+
+@media(max-width:767px){
+
+.project-btn-position a.w-124,
+.project-btn-position button.w-124{
+
+	width:90px !Important;
+	margin-top:2px;
+	font-size:12px !important;	
+}
+
+}
+
+a:visited{
+	color:#fff !important;
+}
+
+#survey-filter .modal-header button{
+ min-width: 1em !important;
+ background: #fff !important;
+ line-height: 26px !important;			
+}
+
+.project-table .table > tbody > tr > td a{
+
+	color:#23527c !important;	
+}
+#DeltaPlaceHolderMain .ms-webpart-zone.ms-fullWidth {
+    display: block !important;
+}
+#DeltaPlaceHolderMain .ms-webpart-cell-horizontal {
+    display: block !important;
+}
+#DeltaPlaceHolderMain .all-align-gap {
+    padding-right: 0px;
+    padding-left: 18px;
+}
+#MyFavModal .my-favourites-panel {
+    overflow: visible;
+    box-shadow: none;
+    border: 0px;
+    border-bottom: 1px solid #e3e3e3;
+}
+#MyFavModal .my-favourites-panel.my-favourite-add-edit-box {
+    border: none;
+}
+#MyFavModal .modal-header .close {
+    top: 5px;
+    opacity: 1;
+}
+.MyFavorite-new-menu-ul .MyFavorite-new-menu-ul-main-li a {
+    text-decoration: none;
+}
+
+
+</style>
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1650</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">ed017c02-9a1b-4153-ab09-6cc4f700eea0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1650, ADMIN-1645029823-1650</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">165000.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div class="container-fluid all-align-gap-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Survey
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0">
+									<div class="col-xs-12 mb-4">
+										<div class="scrollbar-panel chip-panel">
+											<div class="chip-box" id="FilterValue">
+										<!--		<div class="upload-chip">Published</div>
+												<div class="upload-chip">Corporate</div>  -->
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+										<div class="form-group custom-form-group search-box">
+											<input class="form-control" type="text" name="" placeholder="Search" id="txtSearch">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-6 project-top-panel-box-istad">
+										<div class="text-right project-btn-position">
+											<button type="button" class="btn custom-btn w-124" id="AddNewSurvey">Add Survey</button>
+											<button type="button" class="btn custom-btn w-124 ml-4" data-toggle="modal" data-target="#survey-filter">Filter</button>
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="table-responsive project-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table">
+											    <thead>											        <tr>
+											        	<th class="text-left border-bottom-0">Title</th>
+												        <th class="text-left border-bottom-0">Initiated by</th>
+												        <th class="text-left border-bottom-0">Audience</th>
+												        <th class="text-left border-bottom-0">Start Date</th>
+												        <th class="text-left border-bottom-0">End Date</th>
+												        <th class="text-left border-bottom-0">Result Date</th>
+												        <th class="text-left border-bottom-0">Expiry Date</th>
+												        <th class="text-left border-bottom-0">Status</th>
+												        <th class="text-left border-bottom-0">Participation</th>
+												        <th class="text-center border-bottom-0">Action</th>
+											        </tr>
+											    </thead>
+											    <tbody class="mainDivViewAllPolls">
+											    	<div style="text-align: center; font-size: 14px; display: none;" id="NoRecordFound" data-localize="NoRecordFound">No Record Found</div>
+											 	</tbody>										      
+											 	
+										    </table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		  <!-- filter Modal -->
+		<div class="modal fade" id="survey-filter" role="dialog">
+			<div class="modal-dialog modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body project-inbox-istab">
+						<div class="row">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Status:</label>
+									<select class="form-control" id="ddlStatus">
+										<option value="ALL">ALL</option>
+										<option>Published</option>
+										<option>Unpublished</option>
+										<option>Expired</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Audience:</label>
+									<select class="form-control" id="ddlAudience">
+										<option value="ALL">ALL</option>
+										<option>Corporate</option>
+										<option>Company</option>
+										<option>Department</option>
+										<option>Selective</option>
+									</select>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer project-modal-footer">
+				    	<button type="button" class="btn custom-btn mr-8"  data-dismiss="modal"id="ApplyFilter">Apply</button>
+						<button type="button" class="btn custom-btn-two-cancel" id="btnClearFilter">Clear</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/edb0de374a.js"></script>  -->
+	</body>
+</html>

@@ -1,0 +1,92 @@
+/*************************common classes Start************************/
+body {
+    font-family: SegoeUI;
+}
+
+
+@font-face {
+    font-family: SegoeUI;
+    src:
+        local("Segoe UI"),
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2") format("woff2"),
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"),
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
+    font-weight: 400;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+a {
+    color: #333;
+    text-decoration: none !important ;
+}
+a:hover {
+    text-decoration: none !important ;
+}
+.z3 {z-index: 3;}
+.custom-scroll::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+    background-color: #999;
+}
+.panel-mb0 {margin-bottom:0px;}
+.panel-mb5 {margin-bottom:5px;}
+.text-bold {
+    font-weight: 600;
+}
+/*
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0px !important;
+}
+*/
+.owl-theme .owl-nav.disabled {
+    margin-top: 0px !important;
+}
+.owl-theme .owl-nav {
+    margin-top: 0px !important; 
+}
+.owl-theme .owl-dots .owl-dot span {
+    margin: 0px 5px !important;
+}
+.owl-theme .owl-dots {
+    text-align: right !important;
+}
+button.owl-dot {
+    outline: none;
+}
+
+.view{
+    background: url("../images/view.png");
+    width: 31px;
+    height: 11px;
+    display: block;
+}
+.view:hover{
+    background: url("../images/view.png");
+    width: 31px;
+    height: 11px;
+    display: block;
+    
+}
+
+.panel-default {
+    border-color: #b3a6a6;
+}
+
+/*************************common classes end************************/
+

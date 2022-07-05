@@ -1,0 +1,388 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled 1</title>
+
+<style>
+
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius:15px; 
+}
+body::-webkit-scrollbar-thumb {
+  background: #666; 
+  border-radius:15px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+
+
+
+.bannersec {
+    height: 260px;
+    background-repeat:no-repeat;
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.labelImage {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+    -ms-object-fit: cover;
+    -moz-object-fit: cover;
+    -webkit-object-fit: cover;
+    object-fit: cover;
+
+}
+
+.eventtag {
+    background: #ff9e20 !important;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.detailbox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding:40px 30px 10px 30px;
+    background:linear-gradient(to top, black, transparent);
+    background:-webkit-linear-gradient(to top, black, transparent);
+    background:-ms-linear-gradient(to top, black, transparent);
+    background:-moz-linear-gradient(to top, black, transparent);
+    background:-o-linear-gradient(to top, black, transparent);
+    width:100%;
+}
+
+.detailbox h4{
+    font-weight: 600;
+    font-size: 16px;
+    color:#fff !important;
+}    
+
+.fulldetailbox{
+	padding:15px 30px;
+}
+.ms-webpart-chrome-title,
+.ms-webpart-titleText{
+ display:none;	
+}
+
+.navbar-custom{
+ margin-bottom:0 !important;	
+}
+.header-container.content-margin{
+ width:100% !important;
+ padding:0 0px;	
+}
+
+.col-sm-12.all-align-gap-home-layout{
+ padding:0 0 !important;	
+}
+
+.fulldetailbox .row div.col-sm-2{
+ position:relative;	
+}
+
+.fulldetailbox .row div.col-sm-2:before{
+ position:absolute;
+ right:0;
+ top:0;
+ content:':';
+ 	
+}
+
+label.control-label.event-label-right-md{
+ padding-top:0 !important;	
+}
+
+.fulldetailbox>.row{
+ margin-bottom:20px;	
+}
+
+@media(max-width:767px){
+
+.fulldetailbox .row div.col-sm-2:before{
+ display:none;  	
+}
+	
+}
+
+</style>
+
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3626</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1925307c-61ea-41a3-8e0d-6af80b9bdb2b</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3626, ADMIN-1645029823-3626</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">362600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+
+<div class="bannersec">
+	<span class="eventtag common-head-text-popup panel-heading-bg-txt-clr" style="z-index:5">Event</span>
+	<div class="detailbox" style="z-index:3">
+	  <h4 id="labelEventTitle"></h4>
+	</div>
+	<img id="labelImageURL" src="" class="labelImage"/>
+	
+</div>
+
+<div class="fulldetailbox">
+
+ <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">Status</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="labelStatus"></label>
+  </div>
+ </div>
+ 
+ 
+ <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">Start Time</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="labelStartDateTime"></label>
+  </div>
+ </div>
+ <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">End Time</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="labelEndDateTime"></label>
+  </div>
+ </div>
+
+ 
+  <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">Location</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="labelLocation"></label>
+  </div>
+ </div>
+ 
+ 
+  <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">Department</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="labelDepartment"></label>
+  </div>
+ </div>
+ 
+ <div class="row">
+  <div class="col-xs-12 col-sm-2">
+    <label for="" class="control-label">Description</label>
+  </div>
+  <div class="col-xs-12 col-sm-10">
+    <label for="" class="control-label event-label-right-md" id="lblNewEventDescription"></label>
+  </div>
+ </div>
+
+
+</div><!--detaibox-->
+
+<script type="text/javascript">
+
+$(document).ready(function (){   
+   var url = new URL(window.location.href);
+   var curenntMeetingId= url.searchParams.get("ItemsId");
+   debugger
+   //curenntMeetingId=window.atob(curenntMeetingId);
+   LoadCurrentEventFunction(curenntMeetingId)
+
+})
+
+function LoadCurrentEventFunction(curenntMeetingId) {
+
+    $('.addClickEditCompanyEvent').hide();
+    $('.deleteClickEditCompanyEvent').hide();
+    globalEventId = curenntMeetingId;
+
+    var companySiteUrlLink = titanForWork.getQueryStringParameter("CompanySiteUrl");
+    var listName = 'Event';
+    var siteURL = companySiteUrlLink + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,Title,Location,EventDate,EndDate,Description,Category,Department,ChooseImage ,ImageURL,Author/ID,ApprovalStatus&$expand=Author&$filter=ID eq '" + curenntMeetingId + "'&$expand=AttachmentFiles";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+           
+
+            $("#myViewEventModal").modal('show');
+            var items = data.d.results;
+            if (items.length > 0) {
+                var title = items[0].Title;
+                if (title == null) {
+                    title = "";
+                }
+                $('#labelEventTitle').text(title);
+                var txtLocation = items[0].Location;
+                if (txtLocation == null) {
+                    txtLocation = "";
+                }
+                $('#labelLocation').text(txtLocation);
+
+                var txtEventDate = items[0].EventDate;
+                if (txtEventDate != null) {
+                    $('#labelStartDateTime').text(convertJSONDateAMPMWithDate(txtEventDate));
+                }
+                var txtEndDate = items[0].EndDate;
+                if (txtEndDate != null) {
+                    $('#labelEndDateTime').text(convertJSONDateAMPMWithDate(txtEndDate));
+                }
+                var txtDescription = items[0].Description;
+                if (txtDescription == null) {
+                    txtDescription = "";
+                }
+                $('#lblNewEventDescription').text(txtDescription)
+                /*if (txtDescription.match("https"))
+                {
+                   var strsplit = txtDescription.split("https");
+                   var removespl = strsplit [1].slice(5);
+                   var txtDescription=strsplit[0] +"https:"+removespl;
+                   $('#lblNewEventDescription').text(txtDescription);
+                }
+                else{
+                      $('#lblNewEventDescription').text(txtDescription);
+                }*/
+                var txtCategory = items[0].Category;
+                if (txtCategory == null) {
+                    txtCategory = "";
+                }
+                $('#labelNewEventCategory').text(txtCategory);
+                var txtDepartment = items[0].Department;
+                if (txtDepartment == null) {
+                    txtDepartment = "";
+                }
+                $('#labelDepartment').text(txtDepartment);
+                var ChooseImage = items[0].ChooseImage;
+                $('#slctimage').text(txtDepartment);
+
+                if (ChooseImage == "Upload") {
+                    var Picture = items[0].AttachmentFiles.results[0].ServerRelativeUrl;
+                    var image = $('#labelImageURL');
+                    if (txtImageURL == null) {
+                        txtImageURL = "";
+                    }
+                    // $('#labelImageURL').text(txtImageURL);
+                    image[0].src = Picture;
+                }
+                else {
+                    var txtImageURL = items[0].ImageURL;
+                    var image = $('#labelImageURL');
+
+                    if (txtImageURL == null) {
+                        txtImageURL = "";
+                    }
+                    // $('#labelImageURL').text(txtImageURL);
+                    image[0].src = txtImageURL;
+                }
+                ApprovalStatus = items[0].ApprovalStatus;
+               var author = items[0].Author.ID;
+                $('#labelStatus').text(ApprovalStatus);
+                
+                
+              /*if (ApprovalStatus == "Approved" && userid == author) {
+                        $(".addToCalender").show();
+                       // $(".revokeFromCalender").show();
+                        $('.addClickEditCompanyEvent').show();
+                       $('.deleteClickEditCompanyEvent').show();
+
+               }
+                if (ApprovalStatus == "Approved")
+                {
+                    $(".addToCalender").show();
+                    $(".revokeFromCalender").hide();
+                 }   
+             
+                if (ApprovalStatus == "Cancelled"){
+                   $(".revokeFromCalender").show();
+                }*/
+
+           
+                // if(compareStartDateEndDateCurrentTimeCompare(txtEventDate)==true)
+                /*{
+                    if ((ApprovalStatus == "Pending"||ApprovalStatus =="Initiated") && userid == author) {
+                        $(".addToCalender").hide();
+                        $(".revokeFromCalender").hide();
+                        $('.addClickEditCompanyEvent').show();
+                        $('.deleteClickEditCompanyEvent').show();
+                    }
+                    if (ApprovalStatus == "Rejected" && userid == author) {
+                        $(".addToCalender").hide();
+                        $(".revokeFromCalender").hide();
+                        $('.deleteClickEditCompanyEvent').show();
+                    }
+                }*/
+            }
+        }, eror: function (data) {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+
+}
+
+
+function convertJSONDateAMPMWithDate(jsonDateTime) {
+
+    var date = new Date(jsonDateTime);
+    var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+    ];
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = date.getHours() >= 12 ? 'PM' : 'AM';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return date.getDate() + "-" + monthNames[date.getMonth()] + "-" + date.getFullYear() + " " + strTime;
+    // return monthNames[date.getMonth()] + " " + date.getDate() + " " + date.getFullYear() + " " + strTime;
+}
+
+
+</script>
+</body>
+
+
+
+
+</html>

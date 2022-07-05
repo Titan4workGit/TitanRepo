@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<title>Experiences</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Biography/Experience/assets/css/styles.css">
+<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.runtime.js"></script>
+<script type="text/javascript" src="../_layouts/15/sp.js"></script>
+<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/jquery.datepicker.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ <link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <script src="../SiteAssets/Attendance/assets/moment.min.js"></script>
+ 
+ <style>
+.card-no-rec-found {
+    text-align: center;
+    padding: 16px;
+}
+.custom-card-menu .dropdown-menu div 
+{
+		padding-left: 10px;
+}
+
+.custom-card-menu .dropdown-menu div a 
+{
+    padding: 3px 10px 3px 4px;
+	border-bottom: 1px solid ;
+	display: block;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: ;
+	white-space: nowrap;
+}
+
+.custom-card-menu .dropdown-menu div:last-child a 
+{
+		border-bottom: 0;
+}
+
+.experiences-inner-card-btn-panel {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+/* new css added on 15/7/2021, 15/12/2021 */
+
+.experiences-head-btn .custom-btn:focus {
+	/*color: #1d6ec0 !important;*/
+}
+.experiences-head-btn .custom-btn:hover {
+    color: #1d6ec0 !important;
+}
+.experiences-head-btn .custom-btn:focus:hover {
+    color: #1d6ec0 !important;
+}
+#seemorebtn {
+    width: 92px;
+}
+
+#MyFavModal .my-favourites-panel {
+    overflow: visible;
+    box-shadow: none;
+    border: 0px;
+    border-bottom: 1px solid #e3e3e3;
+}
+#MyFavModal .my-favourites-panel.my-favourite-add-edit-box {
+    border: none;
+}
+#MyFavModal .modal-header .close {
+    top: 5px;
+    opacity: 1;
+}
+.MyFavorite-new-menu-ul .MyFavorite-new-menu-ul-main-li a {
+    text-decoration: none;
+}
+ 
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2067</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2c1344ed-8b1c-43bd-8641-fa57e54e8973</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2067, ADMIN-1645029823-2067</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+
+<body>
+	
+	<div class="container-fluid container-content exp-view-all-container all-align-gap-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="custom-panel">
+					<div class="panel-head">
+						<h1 class="experiences-head-text">Experience</h1>
+					</div>
+					<div class="panel-body experiences-panel-body">
+						<div class="row experiences-head-panel">
+							<div class="col-sm-6">
+								<div class="input-group custom-form-group experiences-form-group">
+									<input type="text" class="form-control" name="" placeholder="Search" id="myInput" onkeyup="myFunction()">
+									<a class="input-group-addon"><img src="../SiteAssets/Biography/Experience/assets/images/search-icon.png"
+											class="search-icon" alt="search-icon"></a>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="experiences-head-btn">
+									<a type="button" class="btn custom-btn mr-8 w-87" href="" id="NewRecordAdd">New</a>
+									<button type="button" class="btn custom-btn mr-8 w-87 Not4Banners" data-toggle="modal"
+										data-target="#experiences-filter">Filter</button>
+
+									<div class="dropdown custom-dropdown Not4Banners">
+										<button type="button" class="btn custom-btn dropdown-toggle w-87"
+											data-toggle="dropdown">Sorting</button>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a onclick="ArrangeData('Most_Recent')">Most Recent</a></li>
+											<li><a onclick="ArrangeData('Most_Viewed')">Most Viewed</a></li>
+											<li><a onclick="ArrangeData('Most_Liked')">Most Liked</a></li>
+											<li><a onclick="ArrangeData('Most_Commented')">Most Commented</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--<div id="FilterDate"> </div>-->
+						<ul id="FilterDate"> </ul>
+
+						<div class="experiences-pagination-panel" id="seemorebtndiv">
+							<a type="button" class="btn custom-btn w-87" style="display:none; margin:0 auto;" id="seemorebtn" onclick="ReadTimeLine();">See More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal fade" id="experiences-filter" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content ">
+				<div class="modal-header"> 
+					<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span
+							class="close-icon">×</span></button>
+					<h4 class="modal-title">Filter</h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project">From:</label>
+								<input type="text" class="form-control" placeholder="" id="Datefrom">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project">To:</label>
+								<input type="text" class="form-control" placeholder="" id="DateTo">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project">Category:</label>
+								<select class="form-control" id="FilterCategory">
+									<option>ALL</option>
+									<option>Customer</option>
+									<option>Vendor</option>
+									<option>Prospects</option>
+								</select>
+							</div>
+						</div>
+						<!-- <div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project">Audience:</label>
+								<select class="form-control" id="AudienceDDL">
+									<option selected="selected">ALL</option>
+									<option>Corporate</option>
+									<option>Company</option>
+									<option>Department</option>
+								</select>
+							</div>
+						</div> -->
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project">Posted By:</label>
+								<div id="PostbyUser" class="peoplepicker"></div>
+								<!--<input type="text" class="form-control" placeholder="">-->
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="modal-footer experiences-modal-footer">
+					<a type="button" class="btn custom-btn mr-8 w-87"  onclick="ActivefilterData();">Apply</a>
+					<a type="button" class="btn custom-btn-two-cancel w-87" id="btnClear">Clear</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
+	<script type="text/javascript" src="../SiteAssets/Biography/Experience/Experiences.js"></script>
+
+</html>

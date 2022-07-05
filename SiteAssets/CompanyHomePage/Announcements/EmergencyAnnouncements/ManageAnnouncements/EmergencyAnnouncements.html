@@ -1,0 +1,703 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<style type="text/css">
+
+div.emergencyAnnouncements{
+	font-size:0px;
+}
+div.emergencyAnnouncements a.list-group-item {
+    border-top:none;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+   
+}
+div.emergencyAnnouncements a.list-group-item.active {
+    background: #ddd !important;
+    border:1px solid #ddd !important;   
+}
+.red
+{
+	color:red;
+}
+/*.list-group.emergencyAnnouncements .list-group-item{
+	border-bottom:1px solid #efefef !important;
+	border-top:none !important;
+}*/
+.list-group.emergencyAnnouncements .list-group-item:last-child{
+	border-bottom:none !important;
+	border-top:none !important;
+}
+
+</style>
+
+<script type="text/javascript">
+	var isUpdateOperation=false;
+	var itemId='';
+    $(document).ready(function () {
+        SP.SOD.executeOrDelayUntilScriptLoaded(PageLoad,"sp.js");
+    })
+
+    function PageLoad()
+    {
+     
+      var txtCompanyId =titanForWork.getQueryStringParameter('CompanyId');
+      var webPartCollection = new Array();
+	    webPartCollection.push("Emergency Annoucements");
+       var users = UserExistInProcessApprover(txtCompanyId , "", webPartCollection);
+	   for (var collectionIndex = 0; collectionIndex < users.length; collectionIndex++)
+	    {
+	        
+	        if (users[collectionIndex].webPartName == "Emergency Annoucements")
+	        {
+	            $('#emergencyAnnouncementid').show();//Show or hide add new item link
+	        }
+	    }
+        if($('#emergencyAnnouncementid').is(':visible')==false)
+	    {
+           $( "#messageEmergencyNotAthorizedAcces" ).text("You are not authorized to access this page.");        
+        }
+       if($.cookie.length>0 && $.cookie("Language")!=undefined)
+    	 {	
+	   		var preferredLanguageValue=$.cookie("Language");
+	   		var preferredLanguage=$.cookie("Language").split('#');	// Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+			currentLanguage=preferredLanguage[0];
+		 }
+		 else
+		 {
+    		 currentLanguage='DefaultLanguage';
+		 }
+    
+    	GetLabels();
+        GetEmergencyAnnouncement();        
+        GetActiveLanguageForEmergencyAnnounce();
+        
+        // Date Pickers
+        $('.fromDate').datepicker("option", "dateFormat", "dd/mm/yy");
+        $('.fromDate').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "0:+50"
+				});
+		$('.toDate').datepicker("option", "dateFormat", "dd/mm/yy");
+        $('.toDate').datepicker({
+					changeMonth: true,
+					changeYear: true,
+					 yearRange: "0:+50"
+				});
+		
+		
+		// Submit Button Logic (insert/update)
+		$("#btnSubmitAnnouncement").click(function(){
+			if(FormValidations())		// Input Controls Validation
+			{
+				ManageEmergencyAnnouncements();
+				isUpdateOperation=false;
+  		   		itemId='';
+			}
+		});
+		
+		//Close button
+		$("#btnCancelAnnouncement").click(function(){
+			CancelForm();
+		});
+
+		
+		
+		// Add button (only reset controls)
+		$(".addAnnouncement").click(function(){
+		   isUpdateOperation=false;
+  		   itemId='';
+			
+			ResetControls();
+			$('.emergencyAnnouncements a').each(function(){
+				$(this).removeClass('active');
+			});
+		});
+	}
+    
+
+    //////////////////////////////////// Get Emergency Annoucement //////////////////////////////////////////////
+    function GetEmergencyAnnouncement()
+    {
+        var today = new Date();
+        var companyID=titanForWork.getQueryStringParameter('CompanyId');
+        companyID=companyID.replace('#',' ');
+        // var requestURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('EmergencyAnnouncement')/items?$select=ID,*&$filter=AnnouncmentValidFrom le '" + today.toISOString() + "' and AnnoucmentValidTo ge '" + today.toISOString() + "' &$ OrderBy AnnoucmentValidTo desc";
+        var requestURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('EmergencyAnnouncement')/items?$select=ID,*,CompanyName/ID&$expand=CompanyName&$filter=CompanyName/ID eq "+companyID+" &$orderby=ID desc &$top=20";
+
+        $.ajax({
+            url: requestURL,
+            type: 'GET',
+            headers: { Accept: 'application/json;odata=verbose' },
+            success: function (data) {
+            	$(".emergencyAnnouncements").empty();
+            	var items =data.d.results
+                $.each(data.d.results, function (i, data) {
+                	var ItemID= data['ID'];
+                	var AnnouncmentDetail;
+                	for(j=i;j<=items.length;j++)
+                	{
+	                	if(currentLanguage == 'DefaultLanguage')
+	                	{
+	                	   AnnouncmentDetail= data['AnnouncmentDetail'];
+                	    }
+                	    else{
+                	    
+                	       AnnouncmentDetail= data[currentLanguage];
+                	    }
+                	}                   
+                    if(AnnouncmentDetail == null || AnnouncmentDetail == '')
+                    {
+                      AnnouncmentDetail= data['AnnouncmentDetail'];
+                    }
+                    //alert(AnnouncmentDetail);
+					var AnnoucmentValidTo=titanForWork.ShowCommonStandardDateFormat(new Date(data['AnnoucmentValidTo']));// FormatedDateTime(data['AnnoucmentValidTo']);
+					var isActive=data['Active'];
+					var announcementsHTML='';
+					if(isActive)
+					{
+                    	announcementsHTML="<a ID='"+ItemID+"' style='cursor:pointer;' onclick='ShowEmergencyAnnouncement("+ItemID+",this.id)' class=\"list-group-item\"> <span style='padding:0px;' class=\"col-xs-12 col-sm-10 col-md-9 col-lg-9\">"+ AnnouncmentDetail+"</span> <span style='padding:0px;' class=\"col-xs-12 col-sm-2 col-md-3 col-lg-3\">"+ AnnoucmentValidTo +"</span></a>";
+                    }
+                    else
+                    {
+                    	announcementsHTML="<a ID='"+ItemID+"' style='cursor:pointer; color:red !important;' onclick='ShowEmergencyAnnouncement("+ItemID+",this.id)' class=\"list-group-item\"><span style='padding:0px;text-decoration:line-through;' class=\"col-xs-12 col-sm-10 col-md-9 col-lg-9\">"+ AnnouncmentDetail+"</span><span style='padding:0px;text-decoration:line-through;' class=\"col-xs-12 col-sm-2 col-md-3 col-lg-3\">"+ AnnoucmentValidTo +"</span></a>";
+                    }
+                    $(".emergencyAnnouncements").append(announcementsHTML);
+                })
+            },
+            error: function (error) {
+                console.log("Error occured to announcements.");
+            }
+        })
+    }
+    
+    function FormatedDateTime(dateTime)
+    {
+    	var date=new Date(dateTime);
+    	var formatedDate=(date.getMonth()+1) +"/"+ date.getDate() +"/"+  date.getFullYear();
+    	return formatedDate;
+    }
+    
+    ///////////////////////////// Get Active Languages for Emergency Annoucement //////////////////////////////////////////
+    var LanguageResults;
+    function GetActiveLanguageForEmergencyAnnounce()
+    {
+		var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('LanguageSetting')/items?$select=*&$Filter=Status eq 'Active'";
+	    $.ajax({
+	            url: requestUri,
+	            type: "GET",
+				async:false,
+	            headers: { "ACCEPT": "application/json;odata=verbose" },
+	            success: function (data) {
+	            		 //var counter=0;
+	            		 LanguageResults = data.d.results
+	            		 $.each(LanguageResults,function(i,data)
+	            		 {
+	            		 	var language=data['Language'];
+	            		 	var languageTitle=data['Title'];
+	            		 	var languageID=data['ID'];
+	            		 	if(languageTitle!='DefaultLanguage')
+	            		 	{
+	            		 		var otherLanguageHTML="<div class='form-group "+ languageTitle +"'>";
+                                    otherLanguageHTML+="<label class='col-sm-4 control-label' id='Title_" + languageID + "' ></label>";
+                                    otherLanguageHTML+="<div class=\"col-sm-8\">";
+                                    otherLanguageHTML+="<input type=\"text\" class='form-control txt_"+ languageTitle +"' maxlength='250'>";
+                                    otherLanguageHTML+="</div></div>";
+                                    
+	            		 		$(".otherLanguages").append(otherLanguageHTML);
+	            		 	}
+	            		 })
+	            },
+	            error: function () {
+	                console.log("Error getting the office accodion Langugae.");
+	            }                     
+	        });
+		}
+function GetLabels() {
+    var Handler = this;
+    var deferred = $.Deferred();
+    //var companyID=titanForWork.getQueryStringParameter('CompanyId');
+    var TableName = "Table1";
+  //  var URL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('LabelsSettings')/items?$select=*&$filter=((Key eq 'Title') or (Key eq 'Description'))";
+    var URL = _spPageContextInfo.webAbsoluteUrl + "/_vti_bin/ExcelRest.aspx/Documents/languagedata.xlsx/OData/" + TableName + "?$inlinecount=allpages&$select=DefaultLanguage,Key,LabelType,Language2nd,Language3rd,Language4th,Language5th,Language6th,Language7th,Language8th,Language9th,Language10th&$filter=((Key eq 'Title'))";
+    $.ajax({
+        url: URL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0) {
+                $.each(LanguageResults, function (i, data) {
+                    language = data['Language'];
+                    languageTitle = data['Title'];
+                    languageID = data['ID'];
+                    // alert(items.length);
+                    if (languageID == 3) {
+                        $('#Title_' + languageID + '').text(items[0].Language2nd)
+                      //  $('#Description_' + languageID + '').text(items[1].Language2nd)
+                    }
+                    if (languageID == 4) {
+                        $('#Title_' + languageID + '').text(items[0].Language3rd)
+                       // $('#Description_' + languageID + '').text(items[1].Language3rd)
+                    }
+                    if (languageID == 5) {
+
+                        $('#Title_' + languageID + '').text(items[0].Language4th)
+                        //$('#Description_' + languageID + '').text(items[1].Language4th)
+                    }
+                    if (languageID == 6) {
+
+                       $('#Title_' + languageID + '').text(items[0].Language5th)
+                    //   $('#Description_' + languageID + '').text(items[1].Language5th)
+                    }
+                    if (languageID == 7) {
+
+                       $('#Title_' + languageID + '').text(items[0].Language6th)
+                      // $('#Description_' + languageID + '').text(items[1].Language6th)
+                    }
+                    if (languageID == 8) {
+
+                        $('#Title_' + languageID + '').text(items[0].Language7th)
+                       // $('#Description_' + languageID + '').text(items[1].Language7th)
+                    }
+                    if (languageID == 9) {
+
+                        $('#Title_' + languageID + '').text(items[0].Language8th)
+                      //  $('#Description_' + languageID + '').text(items[1].Language8th)
+                    }
+                    if (languageID == 10) {
+
+                        $('#Title_' + languageID + '').text(items[0].Language9th)
+                      //  $('#Description_' + languageID + '').text(items[1].Language9th)
+                    }
+                    if (languageID == 11) {
+
+                        $('#Title_' + languageID + '').text(items[0].Language10th)
+                      //  $('#Description_' + languageID + '').text(items[1].Language10th)
+                    }
+
+                })
+            }
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+    return deferred;
+}
+
+		
+		function GetItemTypeForListName(ListName) 
+		{
+		    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+		}
+		
+		////////////////////////////////////////////////////////////////////////////////////////////////////
+		///////////////////////////// Insert and Update Emergency Announcements ///////////////////////////////////////
+		function ManageEmergencyAnnouncements()
+		{
+			var dfd = $.Deferred();
+			
+			var companyID=titanForWork.getQueryStringParameter('CompanyId');
+			var ListName="EmergencyAnnouncement";
+			var defaultTitle=$("#dL_EmergencyAnnounce").val();
+			var fromDate=$("#fromDate").val();
+			var toDate=$("#toDate").val();
+			var active=$("#chkActive").is(":checked");
+			var companyId=titanForWork.getQueryStringParameter('CompanyId');
+			var itemType= GetItemTypeForListName(ListName);
+			
+			var requestURL='';
+			var headersData='';
+			if(isUpdateOperation==false)		// For Insert Operation
+			{
+				requestURL= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+				
+				headersData={"accept": "application/json;odata=verbose",
+		            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+		            "content-Type": "application/json;odata=verbose"};
+			}
+			else		// For Update Operation
+			{
+				requestURL= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items("+itemId+")";
+				headersData={ "accept": "application/json;odata=verbose",
+	                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	                "content-Type": "application/json;odata=verbose",
+	                "X-Http-Method": "PATCH",
+	                "If-Match": '*'
+					};
+			}
+				
+			var Metadata;		
+		    Metadata = {
+		            __metadata: {
+		                'type': itemType
+		            },
+		         CompanyNameId:companyID.replace('#',''),
+		         Title:defaultTitle,
+		         AnnouncmentDetail:defaultTitle,
+		         AnnouncmentValidFrom:fromDate ,
+		         AnnoucmentValidTo:toDate,
+		         Active:active,
+		         Language2nd: $('.txt_Language2nd').val(),        //  $(".Language2nd").find("input").val(),
+		         Language3rd: $('.txt_Language3rd').val(),        //  $(".Language3rd").find("input").val(),
+		         Language4th: $('.txt_Language4th').val(),        //  $(".Language4th").find("input").val(),
+		         Language5th: $('.txt_Language5th').val(),        //  $(".Language5th").find("input").val(),
+		         Language6th: $('.txt_Language6th').val(),        //  $(".Language6th").find("input").val(),
+		         Language7th: $('.txt_Language7th').val(),        //  $(".Language7th").find("input").val(),
+		         Language8th: $('.txt_Language8th').val(),        //  $(".Language8th").find("input").val(),
+		         Language9th: $('.txt_Language9th').val(),        //  $(".Language9th").find("input").val(),
+		         Language10th: $('.txt_Language10th').val()       //  $(".Language10th").find("input").val()
+	        };
+	        
+		    $.ajax({
+		        url:requestURL ,
+		        type: "POST",
+		        async: false,
+		        headers: headersData,
+		        data: JSON.stringify(Metadata),
+		        success: function (data) {
+		        	if(isUpdateOperation==false)	
+		        	{
+		          		alert("Item added successfully.");
+		          		
+		          		NotificationCenter(defaultTitle,fromDate,toDate,false);		// Notification Added into Notification Center
+		          	}
+		          	else
+		          	{
+		          		alert("Item updated successfully.");
+		          		
+		          		NotificationCenter(defaultTitle,fromDate,toDate,true);		// Notification Added into Notification Center
+		          	}
+		            dfd.resolve(data);
+		            ResetControls();
+		            GetEmergencyAnnouncement();
+				},
+		        error: function (error) {
+				    console.log(JSON.stringify(error));
+		            dfd.reject(error);
+		        }
+		    });
+		    return dfd.promise();
+		}
+		
+		//////////////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////////// Add Notification into Notification Center List  //////////////////////////
+		//////////////////////////////////////////////////////////////////////////////////////////////////
+		function NotificationCenter(title,fromDate,toDate,itemUpdated)
+		{
+			try
+			{
+				var webPartName;
+				if(itemUpdated==false)
+					webPartName="Emergency Announcements";
+				else
+					webPartName="Emergency Announcements (Revised)";
+					
+				fromDate=new Date(fromDate);
+				toDate=new Date(toDate);
+				
+				var description='Start Date : '+fromDate.toLocaleDateString()+' &nbsp;&nbsp;End Date : '+toDate.toLocaleDateString()+' <br/><br/> ';
+				description+='Please note that employees are required to take appropriate action incase of Emergency Announcements.';
+				description+=' You may consult your reporting manager for further clarity.';
+				
+				var companyId= titanForWork.getQueryStringParameter('CompanyId');
+				var Metadata;
+				var ItemType = GetItemTypeForListName("NotificationCenter");
+				    Metadata = {
+				        __metadata: {
+				            'type': ItemType
+				        },
+					   
+				       Title: title,
+				       Details: description,
+					   WebpartName:webPartName,
+					   CompanyIdId:companyId
+					};
+				    AddItemIntoNotificationCenter("NotificationCenter", Metadata);         
+			}
+			catch (error)
+			{
+			console.log(error.message);
+			}
+		}
+		
+		function  AddItemIntoNotificationCenter(ListName, Metadata) 
+		{
+			var requestURI= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+			
+			var dfd = $.Deferred();
+			$.ajax({
+			url: requestURI,
+			type: "POST",
+			async: false,
+			headers: {
+			    "accept": "application/json;odata=verbose",
+			    "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+			    "content-Type": "application/json;odata=verbose"
+			},
+			data: JSON.stringify(Metadata),
+			success: function (data) {
+			    dfd.resolve(data);
+			},
+			error: function (error) {
+				//alert(JSON.stringify(error));
+			    dfd.reject(error);
+			}
+			});
+			return dfd.promise();
+		}
+		/////////////////////////////////////////////////////////////////////
+
+		
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////////////////////////// Show Emergency Announcement by Item ID //////////////////////////////
+		function ShowEmergencyAnnouncement(itemID,ClickedAnchorId)
+		{
+			$('.emergencyAnnouncements a').each(function(){
+				if($(this).hasClass('active')){	
+					$(this).removeClass('active');
+					if(this.id == ClickedAnchorId){
+						$('#'+ClickedAnchorId).addClass('active');
+					}		
+				}else{
+					if(this.id == ClickedAnchorId){
+						$('#'+ClickedAnchorId).addClass('active');
+					}
+				}
+			});
+			var dfd=$.Deferred();
+			var requestURL= _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/GetByTitle('EmergencyAnnouncement')/items("+itemID+")";
+			$.ajax({
+				url:requestURL,
+				type:"GET",
+				headers:{"accept": "application/json;odata=verbose"},
+				success:function(results)
+				{
+					isUpdateOperation=true;
+					itemId=itemID;
+					var items=results.d;
+					var defaultTitle=items.AnnouncmentDetail;
+					var fromDate=items.AnnouncmentValidFrom;
+					var toDate = items.AnnoucmentValidTo;
+					var active=items.Active;
+					fromDate=FormatedDateTime(fromDate);
+					toDate =FormatedDateTime(toDate);
+
+					$("#dL_EmergencyAnnounce").val(defaultTitle);
+					$("#fromDate").val(fromDate);
+					$("#toDate").val(toDate);
+					$("#chkActive").prop("checked",active);
+					
+					$(".otherLanguages > div").each(function(){
+						var className=$(this).attr('class').split(' ')[1];
+						var otherTitle=items[className]; 
+						
+						$(this).find("input").val(otherTitle);
+					});
+					
+					dfd.resolve(results);
+				},
+				error:function(error)
+				{
+					dfd.reject(error);
+				}
+			})
+			return dfd.promise();
+		}
+		///////////////////Cancel button
+		
+		function CancelForm()
+		{
+		
+	    	var companyID=titanForWork.getQueryStringParameter('CompanyId');
+	    	var sorceLocation=titanForWork.getQueryStringParameter('sourcelocation');
+	    	$(location).attr("href",sorceLocation+"?WebAppId="+companyID+"&Undifined=Undifined")
+		
+		}
+		
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//////////////////////////////////////////// Reset All Controls ///////////////////////////////////////////////////
+		function ResetControls()
+		{
+			//alert("dsf sdf");
+			$("#dL_EmergencyAnnounce").val("");
+			//$("#dL_EmergencyAnnounce").html(' ');
+
+			$(".col-md-7 input").each(function(){
+				$(this).val(' ');
+			});
+		}
+		
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		///////////////////////////////////// Form Validations //////////////////////////////////////////////////////
+		function FormValidations()
+		{
+			var defaultTitle=$("#dL_EmergencyAnnounce").val();
+			var fromDate=$("#fromDate").val();
+			var toDate=$("#toDate").val();
+			var message='';
+			if($.trim(defaultTitle)=='')
+			{
+				message+='Please enter Title.';
+				$("#dL_EmergencyAnnounce").focus();
+			}
+			else if($.trim(fromDate)=='')
+			{
+				message+='Please enter From Date.';
+				$("#fromDate").focus();
+			}
+			else if($.trim(toDate)=='')
+			{
+				message+='Please enter To Date.';
+				$("#toDate").focus();
+			}
+			else if($.trim(Date.parse(fromDate))>$.trim(Date.parse(toDate)))
+			{
+				message+="From Date cannot be greater than To Date";
+			}
+			
+			if(message!='')
+			{
+				alert(message);
+				return false;
+			}
+			return true;
+		}
+
+
+</script>
+
+<!--<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b><label data-localize="EmergencyAnnouncement"></label></b></h4></li>           
+	</ol>
+</div>-->
+
+<div id="messageEmergencyNotAthorizedAcces" style="font-size:20px;font-weight:bold;"></div>
+<div class="container" style="display:none; padding-top:5px;" id="emergencyAnnouncementid">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-5">
+
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="panel panel-default shadow3">
+                            <div class="panel-heading  panel-head-4">
+                                <div class="panel-title">
+                                    <h4 class="h4-color"><label data-localize="EmergencyAnnouncement"></label><a style="cursor:pointer;" class="link-color pull-right addAnnouncement"> <span class="glyphicon glyphicon-plus-sign "> </span>  </a></h4>
+                                </div>
+                            </div>
+                            <div class="list-group emergencyAnnouncements">
+                            	
+                            </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="panel panel-default shadow2" style="overflow:auto">
+                                    <div class="panel-heading  panel-head-4">
+                                        <div class="panel-title">
+                                            <h4 class="h4-color" data-localize="DetailsEnglish">Details (English)</h4>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-horizontal">
+
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="Title">Title <span class="red">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <textarea id="dL_EmergencyAnnounce" maxlength="250" class="form-control" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="FromDate">From Date <span class="red">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+														<input type="text" class="form-control fromDate" name="date" id="fromDate">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="" class="col-sm-4 control-label" data-localize="ToDate">To Date <span class="red">*</span></label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+														<input type="text" class="form-control toDate" name="date" id="toDate">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-sm-4 control-label valid-ann" data-localize="Valid">Valid</label>
+                                                <div class="col-sm-8">
+													<input id="chkActive" type="checkbox" checked/>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--/panel content-->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="col-md-12">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="panel panel-default shadow2" style="overflow:auto">
+                                    <div class="panel-heading  panel-head-4">
+                                        <div class="panel-title">
+                                            <h4 class="h4-color" data-localize="OtherLanguages">(Other Languages) </h4>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="form-horizontal otherLanguages">
+											
+										</div>
+                                    </div>
+                                    <!--/panel content-->
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                  <!-- <label for="" class="col-sm-3 control-label"></label>-->
+                                <div class="col-sm-12"  style="padding:0 0 15px 0;text-align: center;">
+                                   	 <button type="button" class="btn  btn-outline-success" name="SubmitAnnouncement" id="btnSubmitAnnouncement" data-localize="Submit">Submit</button>
+     								 <button type="button" class="btn btn-outline-secondary" name="CancelAnnouncement" id="btnCancelAnnouncement" data-localize="Close">Close</button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-368</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">cc936335-f422-4cb7-bbce-1d709f1094b6</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-368, ADMIN-1645029823-368</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">36800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

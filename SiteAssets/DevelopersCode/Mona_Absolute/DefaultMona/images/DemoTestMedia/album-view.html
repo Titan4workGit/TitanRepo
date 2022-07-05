@@ -1,0 +1,1261 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<title>Media Gallery</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/DevelopersCode/Mona/DefaultMona/images/DemoTestMedia/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/DevelopersCode/Mona/DefaultMona/images/DemoTestMedia/assets/css/styles.css">
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+
+<style type="text/css">
+	
+/*.create-new-album-box {
+    text-align: right;
+    padding-left: 15px;
+    padding-right: 15px;
+}*/
+.create-new-album-box #btnCreateNewAlbum {
+    margin-right: 0;
+}
+.create-new-album-btn {
+    text-align: right;
+}
+.album-search {
+    max-width: 300px;
+    height: 36px;
+}
+.album-search-box .form-group {
+    margin-bottom: 0px !important;
+}
+.create-new-album-box {
+    margin: 15px auto 20px auto;
+}
+.album-card {
+    -webkit-box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    transition: all ease-out 0.3s;
+    border-radius: 4px;
+    position: relative;
+}
+/*.album-card:hover {
+	-webkit-box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);
+	-webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}*/
+.album-card-info {
+    height: 212px;
+    border-radius: 4px 4px 0px 0px;
+}
+/*.album-col-info {
+    position: relative;
+}*/
+.custom-card-menu {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.album-card:hover .custom-card-menu {
+	opacity: 1;
+}
+.album-count-box {
+    right: auto;
+    left: 0px;
+    top: 10px;
+    border-radius: 0px 8px 8px 0px;
+}
+.album-card-footer {
+    padding: 0px 5px 10px 5px;
+}
+.album-card-footer-title {
+    text-align: center;
+    width: 100%;
+    min-height: 20px;
+}
+.custom-card-menu .button-ed-menu img {
+    filter: none;
+}
+
+/* css for new media gallery START */
+
+.album-row-info {
+    padding: 0px 15px;
+}
+.album-col-info:first-child {
+    margin: 15px 0px 0px 0px;
+    border-top: none;
+}
+.album-col-info {
+    /*margin: 15px 0px;*/
+    /*margin: 20px 0px 0px 0px;*/
+    margin: 0px 0px 0px 0px;
+    padding: 12px 14px;
+}
+.album-head-box {
+    /*border-bottom: 1px solid #1b1b1b;*/
+    border-bottom: 1px solid #d5d5d5;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+.create-new-album-box .album-search, .create-new-album-box .album-sorting-btn, .create-new-album-box .new-album-btn {
+    display: inline-block;
+    margin-left: 15px;
+}
+.create-new-album-box .album-sorting-btn, .create-new-album-box .new-album-btn {
+    cursor: pointer;
+    color: #1b1b1b;
+}
+.create-new-album-box .album-search {
+    /* border-color: #1b1b1b !important; */
+}
+.create-new-album-box .album-sorting-btn>a {
+    color: #1b1b1b;
+}
+.create-new-album-box .album-sorting-btn .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+.create-new-album-box {
+    margin: 0px auto 0px auto;
+    text-align: right;
+}
+.create-new-album-box .form-group {
+    margin-bottom: 0px !important;
+}
+.album-heading {
+    font-size: 20px;
+    margin-bottom: 15px;
+    -webkit-line-clamp: 1;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    padding-right: 80px;
+}
+.album-info {
+    font-size: 13px;
+    margin-bottom: 25px;
+    -webkit-line-clamp: 2;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.album-detail-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.album-user-info-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.album-user-image-box {
+    display: flex;
+    align-items: center;
+}
+.album-user-image-box img {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    object-fit: cover;
+}
+.album-user-image-text {
+    font-size: 13px;
+    padding-left: 10px !important;
+}
+.mb0 {
+    margin-bottom: 0 !important;
+}
+.Emailfont {
+    white-space: normal;
+    font-size: 12px !important;
+}
+.album-user-details-box p {
+    margin-bottom: 0px;
+    white-space: normal;
+}
+.album-data-box {
+    height: 100%;
+}
+.album-inner-card-btn-panel {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: flex-end;
+}
+.album-inner-card-btn-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    line-height: 0px;
+    font-size: 14px;
+}
+.album-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+.album-inner-card-btn-panel-icon img {
+    max-width: 16px;
+}
+.album-inner-card-btn-panel-gap {
+    min-width: 18px;
+}
+.album-card {
+    /*-webkit-box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    box-shadow: 0 1px 9px -2px rgb(0 0 0 / 12%), 0 1px 5px rgb(0 0 0 / 24%);*/
+    box-shadow: none;
+    border-radius: 0;
+    border-top: 1px solid #d5d5d5;
+}
+.album-card:hover {
+	/*-webkit-box-shadow: 0 14px 28px rgb(0 0 0 / 20%), 0 10px 10px rgb(0 0 0 / 10%);
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 10%);*/
+	/*-webkit-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);*/
+}
+.album-card-left {
+    padding-left: 0px;
+}
+.album-card-right {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.custom-card-menu {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: auto;
+    width: auto;
+    background: #ffffff;
+    border-radius: 0%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: default;
+}
+.album-download-btn, .album-delete-btn {
+    font-size: 16px;
+    color: #000 !important;
+    cursor: pointer;
+}
+.album-delete-btn {
+    margin-left: 20px;
+}
+.event-search {
+    min-width: 2em;
+    color: #000 !important;
+    padding: 5px 5px;
+    margin-right: 0;
+}
+.event-search:hover {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+}
+.ma0 {
+    margin: 0 auto;
+    float: none;
+}
+.pb5 {
+    padding-bottom: 5px !important;
+}
+.pt5 {
+    padding-top: 5px !important;
+}
+.album-extend {
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #333;
+    background-color: transparent;
+    border: 1px solid #333 !important;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 90px;
+    display: block;
+}
+.album-extend:hover {
+    color: #fff;
+    background-color: #494948 !important;
+    border: 1px solid #494948 !important;
+}
+.album-see-more {
+    border-top: 1px solid #d5d5d5;
+    padding-top: 15px;
+}
+#album-event .modal-dialog {
+    width: 760px;
+}
+#album-event .bg-white-round-btn {
+    color: #000;
+    top: 12px;
+    padding: 2px 0px;
+}
+#album-event .modal-footer {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* radio/checkbox btn css START */
+.chexbox_mg{
+position: relative;
+/*width:100px;*/
+width: auto;
+display: inline-block;
+top: 2px;
+}
+.chexbox_mg img{
+width:100%;
+
+}
+.chexbox_mg input[type="checkbox"][id^="myCheckbox"]{
+display: none;
+}
+.chexbox_mg label {
+border: 1px solid #fff;
+padding: 3px;
+display: block;
+position: relative;
+margin: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+.chexbox_mg label:before {
+background-color: white;
+color: white;
+content: " ";
+display: block;
+border-radius: 50%;
+border: 1px solid #1e9201;
+position: absolute;
+/*top: -12px;
+left: -5px;*/
+top: -1px;
+left: -3px;
+width: 25px;
+height: 25px;
+text-align: center;
+line-height: 26px;
+transition-duration: 0.4s;
+transform: scale(0);
+}
+/*.chexbox_mg label img {
+height: 100%;
+width: 100%;
+transition-duration: 0.2s;
+transform-origin: 50% 50%;
+}*/
+.chexbox_mg label i {
+transition-duration: 0.2s;
+transform-origin: 50% 50%;
+font-size: 19px;
+}
+/*.chexbox_mg :checked + label {
+border-color: #1e9201;
+}*/
+.chexbox_mg :checked + label:before {
+content: "✓";
+background-color: #1e9201;
+transform: scale(1);
+}
+.chexbox_mg :checked + label img {
+transform: scale(0.9);
+/* box-shadow: 0 0 5px #333; */
+z-index: -1;
+}
+/* radio/checkbox btn css END */
+
+
+.album-img-grid-default {
+    height: 100%;
+    max-height: 174px;
+    overflow: hidden;
+}
+.album-img-grid-default img {
+    width: 100%;
+    max-height: inherit;
+    object-fit: contain;
+    /* object-position: left; */
+}
+.album-img-grid-case-1 {
+    height: 100%;
+    max-height: 174px;
+    overflow: hidden;
+}
+.album-img-grid-case-1 img {
+    width: 100%;
+    max-height: inherit;
+    object-fit: cover;
+}
+.album-img-grid-case-2 {
+    height: 100%;
+    max-height: 174px;
+    min-height: 174px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.album-img-grid-case-3 {
+    height: 100%;
+    max-height: 174px;
+    min-height: 174px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.album-img-grid-case-4 {
+    height: 100%;
+    max-height: 174px;
+    min-height: 174px;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.album-case-half-left, .album-case-half-right {
+    max-height: inherit;
+    min-height: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.album-case-half-left img, .album-case-half-right img {
+    width: 100%;
+    object-fit: cover;
+    max-height: inherit;
+    min-height: inherit;
+}
+.album-case-half-right-row-1, .album-case-half-right-row-2 {
+    height: 100%;
+    max-height: 87px;
+    min-height: 87px;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.album-case-half-left-row-1, .album-case-half-left-row-2 {
+    height: 100%;
+    max-height: 87px;
+    min-height: 87px;
+    overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* css for new media gallery END */
+
+</style>
+
+<script  type="text/javascript" src="../SiteAssets/DevelopersCode/Mona/DefaultMona/images/DemoTestMedia/MediaGellary.js"></script>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3065</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1e54a447-ca21-48f5-86b8-8a1d75b2c4dc</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3065, ADMIN-1645029823-3065</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">260900.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="custom-panel">
+					<div class="panel-head">
+						<h1 class="media-gallery-heading">Media Gallery</h1>
+					</div>
+					<div class="col-sm-12 col-xs-12 album-head-box">
+						<div class="row">
+							<div class="col-sm-3 col-xs-12 album-head-title">
+								<h2 class="media-gallery-sub-heading">Albums</h2>
+							</div>
+							<div class="col-sm-9 col-xs-12 create-new-album-box">
+								<div class="form-group">
+									<!-- id="searchMgs" onkeyup="SearchMessage()" -->
+		  							<input type="text" class="form-control form-control-info album-search" placeholder="Album Search">
+		  							<!-- Create New Album -->
+									<a class="new-album-btn" id="btnCreateNewAlbum" data-toggle="modal" data-target="#createNew"> 
+										<i class="fa fa-plus" aria-hidden="true"></i> <span> New Album</span> 
+									</a>
+									<div class="dropdown album-sorting-btn">
+	                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	                                        <span class="fa fa-sort-alpha-asc font-12"></span>
+	                                        <span>Sort</span>
+	                                        <span class="fa fa-chevron-down font-12"></span>
+	                                    </a>
+	                                    <ul class="dropdown-menu dropdown-color-menu-icon">
+	                                        <li>
+	                                            <a href="#">
+	                                                <span>Recent Updated</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#">
+	                                                <span>Most Viewed</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#">
+	                                                <span>Most Liked</span>
+	                                            </a>
+	                                        </li>
+	                                        <li>
+	                                            <a href="#">
+	                                                <span>Most Commented</span>
+	                                            </a>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="panel-body">
+			
+						<!-- id="galleryFirstImgThumb" -->
+						<div class="row album-row-info">
+
+							<!-- Default case no images -->
+							<div class="col-xs-12 col-sm-12 album-col-info album-card">
+								<div class="col-xs-12 col-sm-3 album-card-left">
+									<div class="album-img-grid-default" id="album-default-case">
+										<img src="../SiteAssets/MediaGallery/assets/images/default album.png" alt="album img grid default">	
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-9 album-card-right">
+									<div class="album-detail-box">
+										<div class="album-heading">
+											<a href="../Pages/MediaGalleryDetail.aspx" target="_blank">Diwali party 0f 2019 album, Diwali party 0f 2019 album, Diwali party 0f 2019 album, Diwali party 0f 2019 album</a> 
+										</div>
+										<div class="album-info">
+											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
+										</div>
+										<div class="row album-detail-footer">
+											<div class="col-sm-6 col-xs-12 album-detail-left">
+												<div class="album-user-info-grid">
+													<div class="album-user-image-box">
+														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
+														<div class="album-user-image-text">
+															<p class="mb0">Dipankar Goswami</p>
+															<p class="mb0">Test | IT </p>
+															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
+														</div>
+													</div>
+													<div class="album-user-details-box">
+														<p class="media-event">
+															Event: <span id=""> Diwali Party </span>
+														</p>
+														<p class="media-place">
+															Place: <span id=""> Gurgaon city club </span>
+														</p>
+														<p class="media-date">
+															Date: <span id=""> 12 Jan 2021 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-12 album-detail-right">
+												<div class="album-data-box">
+													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
+														<div class="album-inner-card-btn-item">
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">234</div>
+															<div class="album-inner-card-btn-panel-gap">
+																<span> </span></div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">3</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">1</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">5</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Case with 1 image -->
+							<div class="col-xs-12 col-sm-12 album-col-info album-card">
+								<div class="col-xs-12 col-sm-3 album-card-left">
+									<div class="album-img-grid-case-1" id="album-case-1">
+										<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid case 1">	
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-9 album-card-right">
+									<div class="album-detail-box">
+										<div class="album-heading">
+											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 1</a> 
+										</div>
+										<div class="album-info">
+											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
+										</div>
+										<div class="row album-detail-footer">
+											<div class="col-sm-6 col-xs-12 album-detail-left">
+												<div class="album-user-info-grid">
+													<div class="album-user-image-box">
+														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
+														<div class="album-user-image-text">
+															<p class="mb0">Dipankar Goswami</p>
+															<p class="mb0">Test | IT </p>
+															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
+														</div>
+													</div>
+													<div class="album-user-details-box">
+														<p class="media-event">
+															Event: <span id=""> Diwali Party </span>
+														</p>
+														<p class="media-place">
+															Place: <span id=""> Gurgaon city club </span>
+														</p>
+														<p class="media-date">
+															Date: <span id=""> 12 Jan 2021 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-12 album-detail-right">
+												<div class="album-data-box">
+													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
+														<div class="album-inner-card-btn-item">
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">234</div>
+															<div class="album-inner-card-btn-panel-gap">
+																<span> </span></div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">3</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">1</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">5</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Case with 2 images -->
+							<div class="col-xs-12 col-sm-12 album-col-info album-card">
+								<div class="col-xs-12 col-sm-3 album-card-left">
+									<div class="row album-img-grid-case-2" id="album-case-2">
+										<div class="col-xs-6 album-case-half-left">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
+										</div>
+										<div class="col-xs-6 album-case-half-right">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-9 album-card-right">
+									<div class="album-detail-box">
+										<div class="album-heading">
+											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 2</a> 
+										</div>
+										<div class="album-info">
+											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
+										</div>
+										<div class="row album-detail-footer">
+											<div class="col-sm-6 col-xs-12 album-detail-left">
+												<div class="album-user-info-grid">
+													<div class="album-user-image-box">
+														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
+														<div class="album-user-image-text">
+															<p class="mb0">Dipankar Goswami</p>
+															<p class="mb0">Test | IT </p>
+															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
+														</div>
+													</div>
+													<div class="album-user-details-box">
+														<p class="media-event">
+															Event: <span id=""> Diwali Party </span>
+														</p>
+														<p class="media-place">
+															Place: <span id=""> Gurgaon city club </span>
+														</p>
+														<p class="media-date">
+															Date: <span id=""> 12 Jan 2021 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-12 album-detail-right">
+												<div class="album-data-box">
+													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
+														<div class="album-inner-card-btn-item">
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">234</div>
+															<div class="album-inner-card-btn-panel-gap">
+																<span> </span></div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">3</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">1</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">5</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Case with 3 images -->
+							<div class="col-xs-12 col-sm-12 album-col-info album-card">
+								<div class="col-xs-12 col-sm-3 album-card-left">
+									<div class="row album-img-grid-case-3" id="album-case-3">
+										<div class="col-xs-6 album-case-half-left">
+											<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
+										</div>
+										<div class="col-xs-6 album-case-half-right">
+											<div class="col-xs-12 album-case-half-right-row-1">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
+											</div>
+											<div class="col-xs-12 album-case-half-right-row-2">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-9 album-card-right">
+									<div class="album-detail-box">
+										<div class="album-heading">
+											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 3</a> 
+										</div>
+										<div class="album-info">
+											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
+										</div>
+										<div class="row album-detail-footer">
+											<div class="col-sm-6 col-xs-12 album-detail-left">
+												<div class="album-user-info-grid">
+													<div class="album-user-image-box">
+														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
+														<div class="album-user-image-text">
+															<p class="mb0">Dipankar Goswami</p>
+															<p class="mb0">Test | IT </p>
+															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
+														</div>
+													</div>
+													<div class="album-user-details-box">
+														<p class="media-event">
+															Event: <span id=""> Diwali Party </span>
+														</p>
+														<p class="media-place">
+															Place: <span id=""> Gurgaon city club </span>
+														</p>
+														<p class="media-date">
+															Date: <span id=""> 12 Jan 2021 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-12 album-detail-right">
+												<div class="album-data-box">
+													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
+														<div class="album-inner-card-btn-item">
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">234</div>
+															<div class="album-inner-card-btn-panel-gap">
+																<span> </span></div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">3</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">1</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">5</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Case with 4 images -->
+							<div class="col-xs-12 col-sm-12 album-col-info album-card">
+								<div class="col-xs-12 col-sm-3 album-card-left">
+									<div class="row album-img-grid-case-4" id="album-case-4">
+										<div class="col-xs-6 album-case-half-left">
+											<div class="col-xs-12 album-case-half-left-row-1">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
+											</div>
+											<div class="col-xs-12 album-case-half-left-row-2">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
+											</div>
+										</div>
+										<div class="col-xs-6 album-case-half-right">
+											<div class="col-xs-12 album-case-half-right-row-1">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">
+											</div>
+											<div class="col-xs-12 album-case-half-right-row-2">
+												<img src="../SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album img grid default">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-9 album-card-right">
+									<div class="album-detail-box">
+										<div class="album-heading">
+											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 4</a> 
+										</div>
+										<div class="album-info">
+											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
+										</div>
+										<div class="row album-detail-footer">
+											<div class="col-sm-6 col-xs-12 album-detail-left">
+												<div class="album-user-info-grid">
+													<div class="album-user-image-box">
+														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
+														<div class="album-user-image-text">
+															<p class="mb0">Dipankar Goswami</p>
+															<p class="mb0">Test | IT </p>
+															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
+														</div>
+													</div>
+													<div class="album-user-details-box">
+														<p class="media-event">
+															Event: <span id=""> Diwali Party </span>
+														</p>
+														<p class="media-place">
+															Place: <span id=""> Gurgaon city club </span>
+														</p>
+														<p class="media-date">
+															Date: <span id=""> 12 Jan 2021 </span>
+														</p>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6 col-xs-12 album-detail-right">
+												<div class="album-data-box">
+													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
+														<div class="album-inner-card-btn-item">
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">234</div>
+															<div class="album-inner-card-btn-panel-gap">
+																<span> </span></div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">3</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">1</div>
+															<div class="album-inner-card-btn-panel-gap"><span> </span>
+															</div>
+															<div class="album-inner-card-btn-panel-icon">
+																<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
+															</div>
+															<div class="album-inner-card-btn-panel-count">5</div>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<div class="dropdown custom-card-menu">
+											<a class="album-download-btn"> 
+												 <i class="fa fa-download" aria-hidden="true"></i>
+											</a>
+											<a class="album-delete-btn"> 
+												<i class="fa fa-trash-o" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- see more -->
+
+							<div class="col-sm-12 col-xs-12 album-see-more">
+		                        <div class="text-center pt5 pb5">
+		                            <a id="albumseemorebtn" style="display: block;" class="album-extend ma0"
+		                            ><span>See More</span>
+		                        	</a>
+		                        </div>
+		                    </div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Create New Album Modal -->
+	<div id="createNew" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	        <h4 class="modal-title">Create New Album</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+
+	        	<div class="form-horizontal">
+	        		<div class="form-group">
+				        <label class="col-sm-3 control-label">Title:</label>
+				        <div class="col-sm-8">
+				            <input type="text" id="txtTitle" class="form-control" name="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label class="col-sm-3 control-label">Event:</label>
+				        <div class="col-sm-8">
+				            <div class="input-group">
+						      <input type="text" class="form-control" placeholder="Search your event" name="search your event">
+						      <div class="input-group-btn">
+						        <a class="btn event-search"  data-toggle="modal" data-target="#album-event">
+						        	<i class="glyphicon glyphicon-search"></i>
+						        </a>
+						      </div>
+					      </div>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label class="col-sm-3 control-label">Place:</label>
+				        <div class="col-sm-8">
+				            <input type="text" id="" class="form-control" name="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label class="col-sm-3 control-label">Date:</label>
+				        <div class="col-sm-8">
+				            <input type="text" id="txtDate"  disabled="" class="form-control" name="">
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label class="col-sm-3 control-label">Description:</label>
+				        <div class="col-sm-8">
+				            <textarea class="form-control resize-none"id="txtDescription" rows="7"></textarea>
+				        </div>
+				    </div>
+	        	</div>
+
+	        	<!-- <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Title:</label>
+	                  <input type="text" id="txtTitle" class="form-control" name="">
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Event:</label>
+	                  <div class="input-group">
+					      <input type="text" class="form-control" placeholder="Search" name="search your event">
+					      <div class="input-group-btn">
+					        <button class="btn btn-default">
+					        	<i class="glyphicon glyphicon-search"></i>
+					        </button>
+					      </div>
+				      </div>
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Place:</label>
+	                  <input type="text" id="" class="form-control" name="">
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Date:</label>
+	                  <input type="text" id="txtDate"  disabled="" class="form-control" name="">
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Description:</label>
+	                  <textarea class="form-control resize-none"id="txtDescription" rows="7"></textarea>
+	                </div>
+	            </div> -->
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" id="btnSubmit" class="btn custom-btn mr-8 wpx-80" data-dismiss="modal">Create</button>
+	        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<!-- Album Edit Modal 
+	<div id="album-edit" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	        <h4 class="modal-title">Edit</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Title:</label>
+	                  <input type="text"  id="updateTitle" class="form-control" name="">
+	                </div>
+	            </div>
+	            <div class="col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Description:</label>
+	                  <textarea class="form-control resize-none" id="updateDescription" rows="7"></textarea>
+	                 </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created by:</label>
+	                  <input type="text" id="updateCreatedBy" class="form-control" name=""  disabled>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Created on:</label>
+	                  <input type="text" id="updateDate" class="form-control" name="" disabled>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Modified by:</label>
+	                  <input type="text" id="updateModifiedBy" class="form-control" name=""  disabled>
+	                </div>
+	            </div>
+	            <div class="col-sm-6 col-xs-12">
+	                <div class="form-group custom-form-group">
+	                  <label for="Project">Modified on:</label>
+	                  <input type="text" id="updateModifiedDate" class="form-control" name="" disabled>
+	                </div>
+	            </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn custom-btn mr-8 wpx-80" id="btnUpdatefolder" data-dismiss="modal">Save</button>
+	        <button type="button" class="btn custom-btn-two-cancel wpx-80"  id="btnClose" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div> -->
+
+	<!-- Create Album Events Modal -->
+	<div id="album-event" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+	        <h4 class="modal-title">Events</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="row">
+	        	<div class="table-responsive">          
+				  <table class="table">
+				    <thead>
+				      <tr>
+				        <th style="padding-left: 20px;">Date</th>
+				        <th>Event</th>
+				        <th>Location</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr>
+				        <td>
+				        	<div class="chexbox_mg">
+								<input type="checkbox" id="myCheckbox1" />
+								<label for="myCheckbox1">
+									<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+									<i class="fa fa-circle-thin" aria-hidden="true"></i>
+								</label>
+							</div>
+				        	<span>12 Jan - 23 Jan</span>
+				        </td>
+				        <td>Diwali Party</td>
+				        <td>Office Terrace</td>
+				      </tr>
+				      <tr>
+				        <td>
+				        	<div class="chexbox_mg">
+								<input type="checkbox" id="myCheckbox2" />
+								<label for="myCheckbox2">
+									<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+									<i class="fa fa-circle-thin" aria-hidden="true"></i>
+								</label>
+							</div>
+				        	<span>12 Jan</span>
+				        </td>
+				        <td>Office Launch</td>
+				        <td>Grand Hotel</td>
+				      </tr>
+				      <tr>
+				        <td>
+				        	<div class="chexbox_mg">
+								<input type="checkbox" id="myCheckbox3" />
+								<label for="myCheckbox3">
+									<!-- <img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /> -->
+									<i class="fa fa-circle-thin" aria-hidden="true"></i>
+								</label>
+							</div>
+				        	<span>17 Mar - 19 Mar</span>
+				        </td>
+				        <td>Website Launch</td>
+				        <td>Online</td>
+				      </tr>
+				    </tbody>
+				  </table>
+				  </div>
+	        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+</body>
+
+</html>

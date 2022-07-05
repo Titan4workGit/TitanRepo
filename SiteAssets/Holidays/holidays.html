@@ -1,0 +1,690 @@
+﻿<title>Titan</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">-->
+<!--<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">//SiteAssets/Holidays/css/jquery-ui.js-->
+<!--<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>-->
+
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Holidays/css/styles.css">		
+<link rel="stylesheet" type="text/css" href="../SiteAssets/Holidays/css/jquery-ui.css">
+<link rel='stylesheet' type="text/css" href='../SiteAssets/Holidays/Js/main.css'>
+<script type="text/javascript" src="../SiteAssets/Holidays/css/jquery-ui.js"></script>
+<script type="text/javascript" src="../SiteAssets/Holidays/Js/moment.min.js"></script>	
+<script type="text/javascript" src='../SiteAssets/Holidays/Js/main.js'></script>
+
+	
+	
+<style>
+
+.total-holidays{
+
+	margin:0px 5px 10px 15px !important;	
+}
+
+.holidays-filters-l{
+
+	margin-left:4px !important;	
+}
+
+.navbar-custom{
+	margin-bottom:18px !important;	
+}
+
+.article-content{
+	margin-top:0px !important;
+}
+
+.custom-panel{
+
+	margin-top:0px !important;	
+}
+
+
+.required{
+	color:red;
+}
+		
+		/* new css added on 23/3/2020 */
+.total-holidays {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}		
+		
+.HRADMINDIV{
+	display:none;
+}
+
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+.div-4-saturday{
+	display:none;
+}
+.progress-bar.active {
+    background-color: #428bca !important;
+}
+.holiday-box-revoke {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.holiday-box-revoke-one {
+    padding-left: 0px;
+}
+.holiday-box-revoke-two {
+    padding-right: 0px;
+    padding-left: 0px;
+    position: relative;
+    top: 3px;
+}
+.holiday-box-send2announce {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.company-holidays-btn-position .btn-custom-danger.custom-btn {
+    background: #dc3545;
+    border-color: #dc3545;
+}
+.company-holidays-btn-position .btn-custom-danger.custom-btn:hover {
+    background: #fff;
+    color: #dc3545;
+}
+
+/* responsive css START */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.my_announce_department_main_box {
+    	margin-top: 10px;
+	}
+
+#calendar .fc-event-title{
+
+  display:none !important;
+	
+}
+	
+.article-content{
+
+ margin:15px 3px !important;	
+
+}
+
+.fc-daygrid-day-number{
+ font-size: 12px !important;
+ padding: 5px !important;	
+
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+	.total-holidays {
+	    position: relative;
+	}
+	.custom-panel-box-heading {
+	    font-size: 22px;
+	}
+
+}
+
+/* responsive css END */
+		
+		
+		</style>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1537</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">917e3820-bee8-4235-9f1e-91e93d1d5e32</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1537, ADMIN-1645029823-1537</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">153700.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head><body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="tab-content">
+					<div class="custom-panel custom-panel-box">
+						<div class="panel-head">
+							<h3 class="m-0 custom-panel-box-heading">
+								Company Holidays
+                            </h3>
+						</div>
+						<div class="panel-body px-0 pt-8">
+							<div class="row m-0 mb-10 company-holidays-row-1">
+								<div class="col-md-6">
+									<div class="row company-holidays-inbox-istab">
+										<div class="col-sm-6 col-xs-6">
+											<div class="form-group custom-form-group">
+												<label class="font-12">Location:</label>
+												<select class="form-control" id="HomePageLocationDDL" onchange="GetHolidays()">
+													<option>Gurgan</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-6">
+											<div class="form-group custom-form-group custom-form-group-date">
+												<label class="font-12">Year:</label>
+												<select class="form-control" id="YearDDLs" onchange="GetHolidays();">
+													<option></option>
+												</select>						
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 HRADMINDIV">
+									<div class="text-right company-holidays-btn-position">
+										<a class="btn custom-btn" data-toggle="modal" data-target="#company-holidays-filter"> Add </a>
+										<a class="btn btn-custom-danger custom-btn" onclick="DeleteHolidays();">Delete </a>
+										<!-- <a class="btn custom-btn" data-toggle="modal" data-target="#company-holidays-filter">Define Holidays</a>
+										<a class="btn custom-btn" onclick="DeleteHolidays();">Delete Holidays</a> -->
+									</div>
+								</div>
+							</div>
+							<div class="row m-0">
+								
+							</div>
+							<div class="row m-0">
+								<div class="col-md-7 col-xs-12 company-holidays-calender-box">
+									<div id="calendar">
+										<!--<img src="assets/images/calendar.JPG" class="w-100" alt="calendar">-->
+									</div>
+								</div>
+								<div class="col-md-5 col-xs-12">
+									<div class="company-holidays-right-top-box">
+										<div class="col-xs-12 holidays-list-box-heading">
+											<!-- class="col-xs-12 col-sm-12" -->
+											<div class="col-xs-12 col-sm-12">
+												<div class="row">
+													<h4 class="mt-0 list-of-holidays">List of Holidays</h4>  <p class="total-holidays">
+														<span>Holidays: </span>
+														<span id="TotalHolidays">0</span>
+													  </p>
+												</div>
+    										</div>
+											<!--<h4 class="mt-0">List of Holidays</h4> <span>Total Holiday: </span><span id="TotalHolidays">0</span>-->
+											<div class="holidays-filters col-sm-12">
+												<div class="holidays-filters-l">
+													<label class="checkbox-inline"><input type="checkbox" id="holidays-filters-select-all" value=""></label>
+												</div>
+												<div class="holidays-filters-r">
+													<label class="checkbox-inline"><input type="checkbox" id="Public" value="Public" checked="checked" onclick="ShortHolidaylist(this.value)">Public</label>
+													<label class="checkbox-inline"><input type="checkbox" id="Restricted" value="Restricted" checked="checked" onclick="ShortHolidaylist(this.value)">Optional</label>
+													<label class="checkbox-inline"><input type="checkbox" id="Weekend" value="Weekend" checked="checked" onclick="ShortHolidaylist(this.value)">Weekend</label>
+												</div>
+											</div>
+										</div>
+										<ul class="holidays-list-box-panel scrollbar-panel" id="HolidaysList">
+											<!--<div class="row m-0 holidays-list-box">
+												<div class="col-xs-5 holidays-list-box-one">
+													1 Jan 2020
+												</div>
+												<div class="col-xs-5 holidays-list-box-two">
+													New Year
+												</div>
+												<div class="col-xs-2 holidays-list-box-three">
+													<div class="company-holidays-edit-lock-btn-box">
+														<a href="#" class="custom-edit-btn" data-toggle="modal" data-target="#edit-holidays-filter">
+															<i class="fa fa-pencil"></i>
+														</a>
+													</div>
+												</div>
+											</div>-->
+											
+										</ul>
+											<div class="row m-0 holidays-list-box-footer">
+												<div class="col-xs-12">
+													<div class="row">
+														<span>Total: </span>
+														<span id="DisplayHolidays">0</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		  <!-- Define Holidays filter Modal -->
+		<div class="modal fade" id="company-holidays-filter" role="dialog">
+			<div class="modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <!--<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>-->
+				      <h4 class="modal-title">Define Holidays</h4>
+				    </div>
+				    <div class="modal-body company-holidays-inbox-istab">
+						<div class="form-group">
+							<label class="radio-inline">
+								<input type="radio" class="HolydayEntry" name="HolydayEntryRadio" onclick="onlyOne(this.value);" value="1" checked >Day
+							</label>
+							<label class="radio-inline">
+								<input type="radio" class="HolydayEntry" name="HolydayEntryRadio" onclick="onlyOne(this.value);" value="2" >Period
+							</label>
+							<label class="radio-inline">
+								<input type="radio" class="HolydayEntry" name="HolydayEntryRadio" onclick="onlyOne(this.value);" value="3" >Weekly
+							</label>
+						</div>
+						<div class="row" style="display: none;">
+							<div class="col-xs-12 px-0">
+								<div class="col-sm-6 col-xs-6">
+									<div class="form-group custom-form-group">
+										<label>Date:</label>
+										<input type="date" placeholder="mm/dd/yyyy" class="form-control" id="approvalFrom" name="approvalFrom">
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Title:</label>
+									<input type="text" class="form-control" placeholder="Holiday name">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Type:</label>
+									<select class="form-control">
+										<option value="Public Holiday">Public Holiday</option>
+										<option value="Restricted Holiday">Optional Holiday</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Audience:</label>
+									<select class="form-control">
+										<option>Corporate</option>
+										<option>Company</option>
+										<option>Local</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Office Location:</label>
+									<select class="form-control">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group">
+									<label>Description:</label>
+									<textarea class="form-control" name="" id="" cols="30" rows="2" style="resize: vertical;"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="display: none;">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>From Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="approvalFrom" name="approvalFrom">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6 ">
+								<div class="form-group custom-form-group">
+									<label>To Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="approvalTo" name="approvalFrom">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Title:</label>
+									<input type="text" id="" class="form-control" placeholder="Holiday name">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Type:</label>
+									<select class="form-control" id="">
+										<option value="Public Holiday">Public Holiday</option>
+										<option value="Restricted Holiday">Optional Holiday</option>									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Audience:</label>
+									<select class="form-control" id="">
+										<option>Corporate</option>
+										<option>Company</option>
+										<option>Local</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Office Location:</label>
+									<select class="form-control" id="">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group">
+									<label>Description:</label>
+									<textarea class="form-control" name="" id="" cols="30" rows="2" style="resize: vertical;"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12" id="Weekday" style="display:none;">
+								<div class="form-group custom-form-group">
+									<label>Weekday:</label>
+									<div>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="1" checked="checked">Mon</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="2">Tue</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="3">Wed</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="4">Thu</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="5">Fri</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="6">Sat</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkboxSaturday(this.value);" id="Saturday" name="Daylistchkbox" value="Saturday">2<sup>nd</sup>, 4<sup>th</sup> Sat</label>
+										<label class="checkbox-inline"><input type="checkbox" onclick="ValidateChkbox(this.value);" name="Daylistchkbox" value="0">Sun</label>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-sm-6 col-xs-6 div-4-saturday">
+								<div class="form-group custom-form-group">
+									<label>Months:</label>
+									<select class="form-control" id="MonthsDDL">
+										<option value="1">Janaury</option>
+										<option value="2">February</option>
+										<option value="3">March</option>
+										<option value="4">April</option>
+										<option value="5">May</option>
+										<option value="6">June</option>
+										<option value="7">July</option>
+										<option value="8">August</option>
+										<option value="9">September</option>
+										<option value="10">October</option>
+										<option value="11">November</option>
+										<option value="12">December</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-sm-6 col-xs-6 div-4-saturday">
+								<div class="form-group custom-form-group">
+									<label>Year:</label>
+									<select class="form-control" id="YearDDL">
+										<option value="2020">2020</option>
+										<!--<option value="2021">2021</option>-->
+									</select>
+								</div>
+							</div>
+							
+							
+							
+							<div class="col-sm-6 col-xs-6 div-4-dates">
+								<div class="form-group custom-form-group">
+									<label>From Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="FromDate" name="approvalFrom">
+								</div>
+							</div>
+							
+							
+
+							<div class="col-sm-6 col-xs-6 " id="ToDatediv" style="display:none;">
+								<div class="form-group custom-form-group">
+									<label>To Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="ToDate" name="approvalFrom">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Title:</label><label class="required"> *</label>
+									<input type="text" id="HolydayTitle" class="form-control" placeholder="Holiday name">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Type:</label>
+									<select class="form-control" id="HolydayType">
+										<option value="Public Holiday">Public Holiday</option>
+										<option value="Restricted Holiday">Optional Holiday</option>									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Audience:</label>
+									<select class="form-control" id="AudienceDDL" onchange="DisplayLoction(this.value)">
+										<option value="Corporate">Corporate</option>
+										<option value="Company">Company</option>
+										<option value="Location">Offices</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 my_announce_department_main_box" id="LocationDDLBox" style="display:none;">
+									<label id="DropLable">Office Location:</label><label class="required">*</label>
+									<div class="button-group my_announce_department_list">
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span class="scrollbar-panel" id="SelectedItems">Select</span><span class="caret"></span></button>
+										<ul class="dropdown-menu" style="width:90% !important;" id="LocationDDL"></ul>
+								  	</div>
+								</div>
+
+<!--							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Office Location:</label>
+									<select class="form-control" id="LocationDDL">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>-->
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group">
+									<label>Description:</label>
+									<textarea class="form-control" name="" id="DescriptionText" cols="30" rows="2" style="resize: vertical;"></textarea>
+								</div>
+							</div>
+							<div class="col-xs-12 SendAnnouncementDiv">
+								<div class="form-group custom-form-group">
+									<div class="checkbox">
+									<label><input type="checkbox" value="Send2announcement" id="SendAnnouncement">Post an announcement regarding this</label>
+								  </div>
+								</div>
+							</div>
+
+							
+						</div>
+				    </div>
+				    <div class="modal-footer company-holidays-modal-footer">
+				    	<!--<button class="btn custom-btn mr-8"  data-dismiss="modal" id="SubmitHolyday">Apply</button>-->
+				    	<a class="btn custom-btn mr-8" id="SubmitHolyday">Apply</a>
+						<a class="btn custom-btn-two-cancel" id="Close"  data-dismiss="modal">Close</a>
+				    </div>
+				    
+				    							
+						<div class="container" id="progressbarDiv" style="display:none">  
+ 							<div class="progress">
+    							<div class="progress-bar progress-bar-striped active" id="progressbar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="">	</div>
+  							</div>
+						</div>
+					
+				    
+				    
+				    
+				    
+			  	</div>
+			</div>
+		</div>
+
+		<!-- Edit Holidays filter Modal -->
+		<div class="modal fade" id="edit-holidays-filter" role="dialog">
+			<div class="modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <!--<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>-->
+				      <h4 class="modal-title">Edit Holidays</h4>
+				    </div>
+				    <div class="modal-body company-holidays-inbox-istab">
+						<div class="row">
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Title:</label>
+									<input type="text" id="HolidayName" class="form-control" placeholder="Holiday name">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="HolidayDate" name="approvalFrom">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Office Location:</label>
+									<select class="form-control" id="HolidayLocation" disabled="true">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>Type:</label>
+									<select class="form-control" id="HolidayType">
+										<option value="Public Holiday">Public Holiday</option>
+										<option value="Restricted Holiday">Optional Holiday</option>										
+										<option value="Weekend">Weekend</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="form-group custom-form-group">
+									<label>Description:</label>
+									<textarea class="form-control" name="" id="HolidayDescription" cols="30" rows="5"></textarea>
+								</div>
+							</div>
+							<div class="col-xs-12">
+								<div class="col-xs-12 col-sm-12 holiday-box-revoke">
+									<div class="col-xs-12 col-sm-6 holiday-box-revoke-one">
+										<div class="checkbox">
+											<label><input type="checkbox" value="Delete" id="DeleteHoliday" onchange="SetDisplayblock()">Revoke this Holiday</label>
+									  	</div>
+								    </div>
+								    <div class="col-xs-12 col-sm-6 holiday-box-revoke-two">
+										<select class="form-control" id="DeleteHolidaysDDL" style="display:none;">
+											<option value="Company">Company</option>
+											<option value="Corporate">Corporate</option>
+											<option value="Office" selected="selected">Office</option>
+										</select>
+								    </div>
+								</div>
+								<div class="col-xs-12 col-sm-12 holiday-box-send2announce" id="AnnouncementpostDIV" style="display:none;">
+									<div class="checkbox">
+										<label><input type="checkbox" value="Send2announcement" id="Send2announcement">Post an announcement regarding this</label>
+									</div>
+									<div class="container" id="progressbarDiv4Delete" style="display:none">  
+ 										<div class="progress">
+    										<div class="progress-bar progress-bar-striped active" id="progressbarDelete" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="">	</div>
+  										</div>
+  									</div> 
+								</div>
+							  
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer company-holidays-modal-footer">
+				    	<a class="btn custom-btn mr-8"   id="UpdateAction">Apply</a>
+						<a class="btn custom-btn-two-cancel"  data-dismiss="modal">Close</a>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/edb0de374a.js"></script>-->
+
+		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>-->
+		<script type="text/javascript">
+		    var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+		    }
+		</script>
+		 
+		<script type="text/javascript">
+		
+		$("#datepicker").datepicker({
+			format: "yyyy",
+			viewMode: "years", 
+			minViewMode: "years"
+		});
+		</script>
+		
+		
+		
+		<script type="" src="../SiteAssets/Holidays/Js/Holiday.js"></script>
+	</body>

@@ -1,0 +1,2566 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+
+<style type="text/css">
+	.control-label
+	{
+		text-align: left !important;
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+		padding-top: 7px !important;
+	}
+	span.input-group.btn.btn-outline-danger.btnRemoveOption {
+	    height: 34px;
+	    margin-left: 5px;
+	}
+	.ms-webpart-zone, div.ms-webpart-cell-vertical-inline-table, .ms-webpart-chrome-vertical, .ms-webpart-cell-horizontal {
+		display: block !important;
+	}
+	@media (max-width: 767px){
+		button.btn.btn-outline-primary.btn-xs.btnEditQueAns {
+			margin-bottom:0px;
+		}	
+		.table-responsive>.table>tbody>tr>td{
+			white-space:normal !Important;
+		}
+		button.btn.btn-outline-primary.btn-xs.btnEditQueAns {
+			margin-bottom: 5px;
+		}
+	}
+		
+</style>
+
+<script type="text/javascript">
+var clientContext='';
+var globalSiteURL='';
+var globalQuestionId='';
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_AddPollsEvent,"sp.js"); 
+}); 
+function getCurrentURL_AddPollsEvent()
+{
+	var siteURL=titanForWork.getQueryStringParameter("CompanySiteUrl");
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	
+	getActiveLanguage();
+	if(txtPollId!=undefined)
+	{
+		setTimeout(function() {
+			getPollDetails(siteURL,txtPollId)
+		}, 1000);
+	}
+	else
+	{
+		$('.getEditView').click();
+	}
+	globalSiteURL = siteURL;
+	clientContext = new SP.ClientContext(siteURL);
+
+
+	/*var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                var siteURL = items[0].SiteURL;
+				globalSiteURL = items[0].SiteURL;
+				clientContext = new SP.ClientContext(siteURL);
+				getActiveLanguage();
+				var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+				if(txtPollId!=undefined)
+				{
+					setTimeout(function() {
+						getPollDetails(siteURL,txtPollId)
+					}, 1000);
+				}
+				else
+				{
+					$('.getEditView').click();
+				}
+            }
+           
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });*/
+}
+
+
+var optionCounter=3;
+var optionCounterEdit;
+var MainPollID='';
+var MainQuestionID='';
+var UserAuth = false;
+$(document).ready(function () {
+	
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	var txtCompanyId = titanForWork.getQueryStringParameter("CompanyId");
+	SurveyAuth(txtCompanyId);
+	debugger;
+	if(!UserAuth ){
+	        alert('You are unauthorized user');	        
+	        var  redirectedPage = _spPageContextInfo.webServerRelativeUrl+ "/Pages/Default.aspx?WebAppId=" + txtCompanyId;        
+            location.href = redirectedPage;
+	}else{	
+	  if(txtPollId == null || txtPollId == '' || txtPollId == 'undefined')
+		{
+		 $(".addQuestionAnswer").hide();	
+	//	 $('#myModal').modal('show');
+		}else{
+		 $(".addQuestionAnswer").show();
+	   }
+	$('.pollStartDate').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		yearRange: "-50:+50",
+		minDate:0
+	});
+	$('.pollStartDate').datepicker("option", "dateFormat", "dd/mm/yy");
+	
+	$('.pollEndDate').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		yearRange: "-50:+50",
+		minDate:0
+	});
+	$('.pollEndDate').datepicker("option", "dateFormat", "dd/mm/yy");
+	
+	$('.pollExpireDate').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		yearRange: "-50:+50",
+		minDate:0
+	});
+	$('.pollExpireDate').datepicker("option", "dateFormat", "dd/mm/yy");
+	
+	$("#savePollTitle").click(function(){
+		$("#savePollTitle").attr('disabled',true);
+		createPollsTitle();
+		
+		var pollStatus=$("#PollStatus option:selected").val();		
+		if(pollStatus=='Active' || pollStatus=='Terminate')
+		{
+			$(".addQuestionAnswer").hide();			
+		}
+		else
+		{
+			$(".addQuestionAnswer").show();			
+		}
+	});
+
+	optionCounter=3;
+	optionCounterEdit=0;
+	$(".addOption").click(function(){
+		$(".btnRemoveOption").hide();
+		//$(".OtherLanguage").append('<div class="form-group Option'+optionCounter+'"><label for="" class="col-sm-3 control-label">Option '+optionCounter+'</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control Option'+optionCounter+'"></div></div></div>');
+		//$(".addOptionDefult").append('<div class="form-group Option'+optionCounter+'"><label for="" class="col-sm-3 control-label">Option '+optionCounter+'</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control Option'+optionCounter+'" maxlength="250"><span class="input-group btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNode("Option'+optionCounter+'");\'><i class="fa fa-remove"></i></span></div></div></div>');
+		
+		$(".OtherLanguage").append('<div class="form-group Option'+optionCounter+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control Option'+optionCounter+'" maxlength="250"></div></div></div>');
+		$(".addOptionDefult").append('<div class="form-group Option'+optionCounter+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control Option'+optionCounter+'" maxlength="250"><span class="input-group btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNode("Option'+optionCounter+'");\'><i class="fa fa-remove"></i></span></div></div></div>');
+		optionCounter++;
+	});
+
+	$(".addOptionEdit").click(function(){
+		optionCounterEdit++;
+		$(".btnRemoveOption").hide();
+		//$(".OtherLanguageEdit").append('<div class="form-group ExtraDiv OptionEdit'+optionCounterEdit+'"><label for="" class="col-sm-3 control-label">Option '+optionCounterEdit+'</label><div class="col-sm-9"><div class="input-group" style="width:100%;"><input  type="text" style="width:70%" class="form-control OptionEdit'+optionCounterEdit+'"></div></div></div>');
+		//$(".addOptionDefultEdit").append('<div class="form-group ExtraDiv OptionEdit'+optionCounterEdit+'"><label for="" class="col-sm-3 control-label">Option '+optionCounterEdit+'</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control OptionEdit'+optionCounterEdit+'"><span class="input-group  btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNodeEdit("OptionEdit'+optionCounterEdit+'");\'><i class="fa fa-remove"></i></span></div></div></div>');
+		
+		$(".OtherLanguageEdit").append('<div class="form-group ExtraDiv OptionEdit'+optionCounterEdit+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%;"><input  type="text" style="width:70%" class="form-control OptionEdit'+optionCounterEdit+'" maxlength="250"></div></div></div>');
+		$(".addOptionDefultEdit").append('<div class="form-group ExtraDiv OptionEdit'+optionCounterEdit+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control OptionEdit'+optionCounterEdit+'" maxlength="250"><span class="input-group  btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNodeEdit("OptionEdit'+optionCounterEdit+'");\'><i class="fa fa-remove"></i></span></div></div></div>');
+		
+	});
+	
+	$("#saveQuestionAnswer").click(function(){
+		var isValidate=true;
+		var Question=$("#txtQuestion").val();
+		if(Question=='')
+		{
+			alert("Please enter question.");
+			$("#saveQuestionAnswer").attr('disabled',false);
+			return false;
+		}
+	
+		$(".addOptionDefult .form-group .form-control").each(function()
+		{
+			if($.trim($(this).val())=='')
+			{
+				isValidate=false;
+				alert("Options can't be blank.");
+				$("#saveQuestionAnswer").attr("disabled",false);
+				return false;
+			}
+		});
+		if(isValidate)
+		{
+			$("#saveQuestionAnswer").attr('disabled',true);
+			saveQuestionInQuestionDetails();
+		}
+	});
+	
+	$(".getEditView").click(function(){
+		
+		if(txtPollId!=undefined || MainPollID!='')
+		{
+			getEditViewTitle();
+		}
+		else
+		{
+		
+		}
+		
+	});
+	
+	if(txtPollId!=undefined || MainPollID!='')
+	{
+		$('.PollTitle').find(".otherLanguagePollTitle").prop('disabled',true);
+		$('.pollStartDate').prop('disabled',true);
+		$('#txtPollTitleMain').prop('disabled',true);
+		//$('#PollStatus').prop('disabled',true);
+		//$(".pollsStatus").prop('disabled',true);
+	}
+	else
+	{
+		// Added by Rakesh on 15 Feb 2018
+		$("#PollStatus").attr("disabled",true);
+	}
+	
+	$("#updateQuestionAnswer").click(function(){
+		var isValidate=true;
+		var Question=$.trim($("#txtQuestionEdit").val());
+		if(Question=='')
+		{
+			alert("Please enter question.");
+			return false;
+		}
+		
+		$(".addOptionDefultEdit .form-group .form-control").each(function()
+		{
+			if($.trim($(this).val())=='')
+			{
+				isValidate=false;
+				alert("Options can't be blank.");
+				$("#updateQuestionAnswer").attr("disabled",false);
+				return false;
+			}
+		});
+		if(isValidate)
+		{
+			$("#updateQuestionAnswer").attr("disabled",true);
+			deleteQuestion(globalQuestionId);			// Deleting Question and their options before adding new details.
+		}
+	});
+ }
+});
+
+
+
+function deleteQuestion(globalQuestionId) {
+	var requestUri =globalSiteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items("+globalQuestionId+")";
+	$.ajax({
+        url: requestUri,
+        type: "DELETE",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "If-Match": "*"
+        },
+        success: function (data) {
+        
+           deleteAnswer(globalQuestionId);
+		   updateQuestionInQuestionDetails();
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+function removePollQueAns(PollQuestionID){
+
+	if (window.confirm('Do you want to delete this question?'))
+	{
+		var requestUri =globalSiteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items("+PollQuestionID+")";
+		$.ajax({
+			url: requestUri,
+			type: "DELETE",
+			headers: {
+				"accept": "application/json;odata=verbose",
+				"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+				"If-Match": "*"
+			},
+			success: function (data) {
+			   deleteAnswer(PollQuestionID);
+			   alert("Question deleted successfully");
+			   var PollIDMain='';
+			   var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+			   if(MainPollID!='')
+			   {
+					PollIDMain=MainPollID;
+			   }
+			   else
+			   {
+					PollIDMain=txtPollId;
+			   }
+			   getPollDetails(globalSiteURL,PollIDMain);
+			},
+			error: function (error) {
+				console.log(JSON.stringify(error));
+			}
+		});
+	}
+	else
+	{
+		//Not to do any thing;
+	}
+
+	
+}
+
+
+function deleteAnswer(globalQuestionId) {
+	 getItems("/_api/lists/getbytitle('PollAnswerDeatils')/items?$Filter=QuestionID eq "+globalQuestionId).done(function(data){
+		var noChildItems = data.d.results.length; //number of child items to be deleted
+        data.d.results.forEach(function(item){
+            var childId = item.ID;
+            deleteItem("/_api/Web/Lists/GetByTitle('PollAnswerDeatils')/getItemById("+childId+")",item).done(function(d_data){
+                //deleted child item.
+            });
+        });
+	 });
+   
+}
+
+function getItems(url){
+    return $.ajax({
+        url: globalSiteURL + url,
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        }
+    });
+}
+
+
+function deleteItem(url, oldItem) {
+    return $.ajax({
+        url: globalSiteURL + url,
+        type: "DELETE",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "If-Match": oldItem.__metadata.etag
+        }
+    });
+}
+
+//////////////////Update Poll////////////////////////////////
+function updateQuestionInQuestionDetails()
+{
+	var Question=$("#txtQuestionEdit").val();
+	//MainPollID
+	//{
+		var oList = clientContext.get_web().get_lists().getByTitle('PollQuestionDetails');
+		var txtPollId =  titanForWork.getQueryStringParameter("PollId");	
+		var itemCreateInfo = new SP.ListItemCreationInformation();
+		this.oListItem = oList.addItem(itemCreateInfo);
+		oListItem.set_item('Title', Question);
+		//Change to save items in all column
+		oListItem.set_item('Language2nd', Question);
+		oListItem.set_item('Language3rd', Question);
+		oListItem.set_item('Language4th', Question);
+		oListItem.set_item('Language5th', Question);
+		oListItem.set_item('Language6th', Question);
+		oListItem.set_item('Language7th', Question);
+		oListItem.set_item('Language8th', Question);
+		oListItem.set_item('Language9th', Question);
+		oListItem.set_item('Language10th', Question);
+		
+		if(MainPollID!='')
+		{
+			oListItem.set_item('MainPollID', MainPollID);
+		}
+		else
+		{
+			oListItem.set_item('MainPollID', txtPollId);
+		}
+		$('.OtherLanguageQuestionEdit').each(function(){
+		  var TextBoxID=$(this).attr('id');
+		  if(TextBoxID=="Language2nd")
+		  {
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language2nd', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language2nd', PollQuestion);
+			  }
+			  
+		  }
+		  else if(TextBoxID=="Language3rd"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language3rd', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language3rd', PollQuestion);
+			  }
+			  //oListItem.set_item('Language3rd', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language4th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language4th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language4th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language4th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language5th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language5th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language5th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language5th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language6th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language6th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language6th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language6th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language7th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language7th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language7th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language7th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language8th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language8th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language8th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language8th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language9th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language9th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language9th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language9th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language10th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language10th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language10th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language10th', PollQuestion);
+		  }
+		  
+		});
+		oListItem.update();
+		clientContext.load(oListItem);
+		clientContext.executeQueryAsync(function(){
+			MainQuestionID=oListItem.get_id();
+			updateOptionInOptionDetails(MainQuestionID,MainPollID);
+		},
+		function(){
+			console.log('error : add item in Question list');
+		});
+		
+	//}
+}
+
+
+function updateOptionInOptionDetails(MainQuestionID,MainPollID)
+{
+
+	var PollIDMain='';
+	var oList = clientContext.get_web().get_lists().getByTitle('PollAnswerDeatils');
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");			
+		
+		for(var i=1; i<=optionCounterEdit;i++)
+		{
+		  var itemCreateInfo = new SP.ListItemCreationInformation();
+		  var oListItem = oList.addItem(itemCreateInfo);
+		  var defaultOption='';
+		  	
+			/*$("div .ExtraDiv").each(function(index){
+				 var extraDiv=$(this).find('');
+			});*/
+			
+			$("div .OptionEdit"+i).each(function(){
+				
+				var TextBoxID=$(this).closest(".LanguageEdit").attr("class").split(' ')[3];
+			    if(TextBoxID=="DefaultLanguage")
+				{
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  defaultOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  oListItem.set_item('Title', PollOption);
+				  //Change to save items in all column
+					oListItem.set_item('Language2nd', PollOption);
+					oListItem.set_item('Language3rd', PollOption);
+					oListItem.set_item('Language4th', PollOption);
+					oListItem.set_item('Language5th', PollOption);
+					oListItem.set_item('Language6th', PollOption);
+					oListItem.set_item('Language7th', PollOption);
+					oListItem.set_item('Language8th', PollOption);
+					oListItem.set_item('Language9th', PollOption);
+					oListItem.set_item('Language10th', PollOption);
+				}
+				else if(TextBoxID=="Language2nd")
+				{
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language2nd', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language2nd', PollOption);
+				  }
+				}
+				else if(TextBoxID=="Language3rd"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language3rd', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language3rd', PollOption);
+				  }
+				  //oListItem.set_item('Language3rd', PollOption);
+				}
+				else if(TextBoxID=="Language4th"){
+				 var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				 if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language4th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language4th', PollOption);
+				  }
+				  //oListItem.set_item('Language4th', PollOption);
+				}
+				else if(TextBoxID=="Language5th"){
+				 var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				 if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language5th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language5th', PollOption);
+				  }
+				  //oListItem.set_item('Language5th', PollOption);
+				}
+				else if(TextBoxID=="Language6th"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language6th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language6th', PollOption);
+				  }
+				  //oListItem.set_item('Language6th', PollOption);
+				}
+				else if(TextBoxID=="Language7th"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language7th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language7th', PollOption);
+				  }
+				  //oListItem.set_item('Language7th', PollOption);
+				}
+				else if(TextBoxID=="Language8th"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language8th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language8th', PollOption);
+				  }
+				  //oListItem.set_item('Language8th', PollOption);
+				}
+				else if(TextBoxID=="Language9th"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language9th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language9th', PollOption);
+				  }
+				  //oListItem.set_item('Language9th', PollOption);
+				}
+				else if(TextBoxID=="Language10th"){
+				  var PollOption= $(this).closest(".LanguageEdit").find('.OptionEdit'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language10th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language10th', PollOption);
+				  }
+				  //oListItem.set_item('Language10th', PollOption);
+				}
+				oListItem.set_item('QuestionID', MainQuestionID);
+				if(MainPollID!='')
+				{
+					oListItem.set_item('MainPollID', MainPollID);
+					PollIDMain=MainPollID;
+				}
+				else
+				{
+					oListItem.set_item('MainPollID', txtPollId);
+					PollIDMain=txtPollId;
+				}
+		  });
+		  oListItem.update();
+		  clientContext.load(oListItem);
+		}
+	
+	clientContext.executeQueryAsync(function(){
+		alert("Question updated successfully");
+		$('#myModal_3').modal('hide');
+		getPollDetails(globalSiteURL,PollIDMain);
+		//getPollDetails(siteURL);
+	},
+	function(){
+		console.log('error : add item in Question list');
+	});
+	
+}
+
+
+
+
+///////////////////////////////////////////////////////////////
+
+
+
+
+
+
+function RemoveNode(thisControl)
+{
+	$("."+thisControl).prev(".form-group").find(".btnRemoveOption").show();
+	$("."+thisControl).remove();
+	optionCounter--;
+}
+
+function RemoveNodeEdit(thisControl)
+{
+	$("."+thisControl).prev(".form-group").find(".btnRemoveOption").show();
+	$("."+thisControl).remove();
+	optionCounterEdit--;
+}
+
+
+function getEditViewTitle(){
+	var pollID=0;
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	if(txtPollId!=undefined)
+	{
+		pollID=txtPollId;
+	}
+	else if(MainPollID!='')
+	{
+		pollID=MainPollID;
+	}
+	debugger;
+	var requestUri =globalSiteURL + "/_api/lists/getbytitle('MainPollsList')/items?$select=*&$Filter=ID eq '"+pollID+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) 
+                	{
+						//$(".addQuestionAnswer").show();
+						
+						var PollTitle=items[i]["Title"];					
+						
+						var PollsStartDate=new Date(items[i]["PollsStartDate"]);
+						PollsStartDate = $.datepicker.formatDate('dd/mm/yy', PollsStartDate);
+						$(".pollStartDate").val(PollsStartDate);
+						
+						var PollsEndDate=new Date(items[i]["PollsEndDate"]);
+						PollsEndDate = $.datepicker.formatDate('dd/mm/yy', PollsEndDate);
+						$(".pollEndDate").val(PollsEndDate);
+						
+						var PollsExpireDate=new Date(items[i]["PollsExpireDate"]);
+						PollsExpireDate = $.datepicker.formatDate('dd/mm/yy', PollsExpireDate);
+						$(".pollExpireDate").val(PollsExpireDate);
+						
+						var PollId=items[i]["ID"];
+						$("#txtPollTitleMain").val(PollTitle);
+						
+						var PollStatus=items[i]["Status"];
+						
+						$('#PollStatus').val(PollStatus);
+						//$('#PollStatus option[value='+PollStatus+']').attr('selected',true);
+						
+						$(".otherLanguagePollTitle").each(function(){
+							var TextBoxID=$(this).attr('id');
+							var OtherLanguagePollTitle=items[i][TextBoxID];
+							$('#'+TextBoxID+'').val(OtherLanguagePollTitle);
+						});
+						
+						
+						
+						//////////////
+					var PollShared=items[i].PollShared;
+					var PollSharedId = items[i].PollSharedId;
+					 if (PollShared == "Company") {
+			              $("#PollPublishedWith").val(PollShared);
+			              
+			               $("#departmentcollection").hide();
+			              $("#UserGroupName").hide();
+
+			            }
+			            else if (PollShared == "Department") {
+			            $("#PollPublishedWith").val(PollShared);
+			             $("#departmentcollection").val(PollSharedId);
+			             
+    			          $("#departmentcollection").show();
+			              $("#UserGroupName").hide();
+			             
+			            }
+			            else if (PollShared == "Group") {
+			            $("#PollPublishedWith").val(PollShared);
+			              $("#UserGroupName").val(PollSharedId);
+			              
+			               $("#departmentcollection").hide();
+			              $("#UserGroupName").show();
+
+			              
+			            }
+						
+						
+						
+						
+					}
+					
+					
+						
+							
+					
+					
+					// Enable Save Button
+					$("#savePollTitle").attr('disabled',false);
+						
+					// Logic to show Poll Status in Edit Mode
+					var questions=$(".trQuestionOption").find('tr').length;
+					if(questions>0)
+					{
+						$("#PollStatus").attr('disabled',false);
+						$("#PollStatus option").show();
+					}
+					else
+					{
+						$("#PollStatus").attr('disabled',false);
+						if($("#PollStatus option").length>2)
+						{
+							$("#PollStatus option:eq(1)").hide();
+						}
+					}
+					
+					// Admin can't change Poll Status once polls has been published.
+					if(questions>0 && $("#PollStatus option:selected").val()=='Active')
+					{
+						$("#PollStatus option:eq(0)").remove();
+						$("#PollPublishedWith").attr('disabled',true);
+						$('.warning th:last').text('');
+
+					}
+					else if(questions>0 && $("#PollStatus option:selected").val()=='Terminate')
+					{
+						$("#PollStatus").attr('disabled',true);
+						
+						$("#PollPublishedWith").attr('disabled',true);
+						$("#departmentcollection").attr('disabled',true);
+						$("#UserGroupName").attr('disabled',true);
+					}
+
+			},
+            error: function () {
+                console.log("Error getting the Poll Question.");
+            }                     
+        });
+}
+
+//$(".addQuestionAnswer").show();
+
+function getPollDetails(siteURL,txtPollId)
+{
+	var PollTitle='';
+	//var currentlyActiveLanguage= $("#ddlLanguages").val().split("#")[0];
+	//var txtPollId =  titanForWork.getQueryStringParameter("PollId");
+	var requestUri =siteURL + "/_api/lists/getbytitle('MainPollsList')/items?$select=*&$Filter=ID eq '"+txtPollId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+            		var preferredLanguage;
+            		if($.cookie.length>0 && $.cookie("Language")!=undefined)
+					{	
+					 	preferredLanguage=$.cookie("Language").split('#')[0];	// Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+					 	if(preferredLanguage=='DefaultLanguage')
+						 	preferredLanguage='Title';
+					}
+					else
+					{
+						preferredLanguage='Title';
+					}
+
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) {
+						//$(".addQuestionAnswer").show();
+						PollTitle=items[i][preferredLanguage];
+						
+						var PollsStartDate=new Date(items[i]["PollsStartDate"]);
+						PollsStartDate = $.datepicker.formatDate('dd-mm-yy', PollsStartDate);
+						$("#txtPollStartDisplay").val(PollsStartDate);
+						
+						var PollsEndDate=new Date(items[i]["PollsEndDate"]);
+						PollsEndDate = $.datepicker.formatDate('dd-mm-yy', PollsEndDate);
+						$("#txtPollEndDisplay").val(PollsEndDate);
+						
+						var PollsExpireDate=new Date(items[i]["PollsExpireDate"]);
+						PollsExpireDate = $.datepicker.formatDate('dd-mm-yy', PollsExpireDate);
+						$("#txtPollExpireDisplay").val(PollsExpireDate);
+						
+						var PollStatus=items[i]["Status"];
+						
+						if(PollStatus=="Active")
+						{
+							$("#PollStatus").children("option[value='New']").hide();
+						}
+						
+						var txtPollStatus='';
+						if(new Date(items[i]["PollsExpireDate"])<new Date())
+						{
+							txtPollStatus="Poll Expire";
+						}
+						else if(PollStatus=="New")
+						{
+							txtPollStatus="Unpublished";
+							$('#thAction').html('Action')
+						}
+						else if(PollStatus=="Active")
+						{
+							txtPollStatus="Published";
+							$('#thAction').html('')
+						}
+						else
+						{
+							txtPollStatus="Terminated";
+							$('#thAction').html('Action')
+						}
+						
+						$("#txtPollStatus").val(txtPollStatus);
+						
+						if(new Date(items[i]["PollsExpireDate"])<new Date())
+						{
+							$('.pollStatusDetails').text("This poll is expired.");
+						}
+						else if(PollStatus=="New")
+						{
+						//	$('.pollStatusDetails').text("Note: This poll is not published yet. User can participate after publishing the poll."); //commented by harsh
+							$(".addQuestionAnswer").show();
+						}
+						else if (PollStatus=="Active")
+						{
+							$('.pollStatusDetails').text("This poll is published and user can start participating.");
+						}
+						else
+						{
+							$('.pollStatusDetails').text("This poll is terminated.");
+						}
+						
+						var PollId=items[i]["ID"];
+						$("#txtPollTitleMainDisplay").val(PollTitle);
+						getPollQuestion(siteURL,txtPollId,preferredLanguage,PollStatus);
+					}
+			},
+            error: function () {
+                console.log("Error getting the Poll Question.");
+            }                     
+        });
+}
+
+function getPollQuestion(siteURL,txtPollId,preferredLanguage,PollStatus)
+{
+	var counter=1;
+	$(".trQuestionOption").html("");
+	var PollQuestion='';
+	var requestUri =siteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items?$select=*&$Filter=MainPollID eq '"+txtPollId+"'";
+    //var siteURL= _spPageContextInfo.webAbsoluteUrl;
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	for(i = 0; i < items.length;i++) {
+                		PollQuestion=items[i][preferredLanguage];
+
+						var PollQuestionId=items[i]["ID"];
+						getPollAnswer(siteURL,PollQuestionId,txtPollId,preferredLanguage,PollQuestion,PollStatus,counter);
+						counter++;
+					}
+			},
+            error: function () {
+                console.log("Error getting the Poll Question.");
+            }                     
+        });
+	
+}
+
+function getPollAnswer(siteURL,PollQuestionId, txtPollId,preferredLanguage,PollQuestion,PollStatus,counter)
+{
+	var PollOption='';
+	var requestUri =siteURL + "/_api/lists/getbytitle('PollAnswerDeatils')/items?$select=*&$Filter=QuestionID eq '"+PollQuestionId+"'";
+	
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+            		var items=data.d.results;
+					var PollQuestionAnswerGrid='<tr><td>'+counter+'</td><td>'+PollQuestion+'</td><td>';
+                	for(j = 0; j < items.length;j++) {
+                		PollOption=items[j][preferredLanguage];
+
+						var PollOptionId=items[j]["ID"];
+						PollQuestionAnswerGrid +='<li>'+PollOption+'</li>';
+					}
+					PollQuestionAnswerGrid +='</td><td><button type="button" class="btn btn-outline-primary btn-xs btnEditQueAns" style="padding-top: 1px;" onclick="javascrip:editPollQueAns('+PollQuestionId+');" data-toggle="modal" data-target="#myModal_3"><span class="fa fa-pencil-square-o fa-lg"></span></button><button type="button" class="btn btn-outline-danger btn-xs btnRemoveQueAns" onclick="javascrip:removePollQueAns('+PollQuestionId+');"><span class="fa fa-trash-o fa-lg"></span></button></td></tr>';
+					$(".trQuestionOption").append(PollQuestionAnswerGrid);
+					if(PollStatus!="New")
+					{
+						$('.btnEditQueAns').hide();
+						$('.btnRemoveQueAns').hide();
+						$('.addQuestionAnswer').hide();
+					}
+					
+            },
+            error: function () {
+                console.log("Error getting the poll Option.");
+            }                     
+        });
+		
+}
+
+function editPollQueAns(PollQuestionId)
+{
+	$("#updateQuestionAnswer").attr('disabled',false);
+	
+	globalQuestionId=PollQuestionId;
+	var requestUri =globalSiteURL + "/_api/lists/getbytitle('PollQuestionDetails')/items?$select=*&$Filter=ID eq '"+PollQuestionId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+					
+					for(j = 0; j < items.length;j++) {
+						
+						var PollOptionDefault=items[j]["Title"];
+						$("#txtQuestionEdit").val(PollOptionDefault);
+						$(".OtherLanguageQuestionEdit").each(function(){
+							var TextBoxID=$(this).attr('id');
+							var PollOptionOther=items[j][TextBoxID];
+							$(this).select('#'+TextBoxID+'').val(PollOptionOther);
+							//$('#'+TextBoxID+'').val(PollOptionOther);
+						});
+						getEditPollAns(PollQuestionId);
+					}
+					
+					var totalExtraDiv=$(".addOptionDefultEdit .btnRemoveOption").length-1;
+					
+					$(".addOptionDefultEdit .btnRemoveOption").not(':eq('+totalExtraDiv+')').hide();
+            },
+            error: function () {
+                console.log("Error getting the poll Option.");
+            }                     
+        });
+	
+}
+
+
+function getEditPollAns(PollQuestionId){
+	$(".ExtraDiv").remove();
+
+	var requestUri =globalSiteURL + "/_api/lists/getbytitle('PollAnswerDeatils')/items?$select=*&$Filter=QuestionID eq '"+PollQuestionId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+					optionCounterEdit=items.length;
+					for(j = 0; j < items.length;j++) {
+						$(".LanguageEdit").each(function(){
+							var LanguageID= $(this).attr("class").split(' ')[3];
+							if(LanguageID=="DefaultLanguage")
+							{
+								var Option=items[j]["Title"];
+								if(j+1<=2)
+								{
+								  //$(this).find('.OptionEdit'+j+1+'').val(Option);
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									//var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">Option '+(j+1)+'</label><div class="col-sm-9"><div class="input-group" style="width:100%;"><input type="text" style="width:70%" class="form-control OptionEdit'+(j+1)+'"><span class="input-group btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNodeEdit("OptionEdit'+(j+1)+'");\'><i class="fa fa-remove"></i></span></div></div></div>';
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%;"><input type="text" style="width:70%" class="form-control OptionEdit'+(j+1)+'"><span class="input-group btn btn-outline-danger btnRemoveOption" onclick=\'javascript:RemoveNodeEdit("OptionEdit'+(j+1)+'");\'><i class="fa fa-remove"></i></span></div></div></div>';
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language2nd")
+							{
+								var Option=items[j]["Language2nd"];
+								if(j+1<=2)
+								{
+								  //$(this).find('.OptionEdit'+j+'').val(Option);
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									//var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">Option '+(j+1)+'</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group" style="width:100%"><input type="text" style="width:70%" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language3rd")
+							{
+								var Option=items[j]["Language3rd"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									//var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">Option '+(j+1)+'</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language4th")
+							{
+								var Option=items[j]["Language4th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language5th")
+							{
+								var Option=items[j]["Language5th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language6th")
+							{
+								var Option=items[j]["Language6th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language7th")
+							{
+								var Option=items[j]["Language7th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language8th")
+							{
+								var Option=items[j]["Language8th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language9th")
+							{
+								var Option=items[j]["Language9th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+							else if(LanguageID=="Language10th")
+							{
+								var Option=items[j]["Language10th"];
+								if(j+1<=2)
+								{
+								  $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+								else
+								{
+									var OptionHTML='<div class="form-group ExtraDiv OptionEdit'+(j+1)+'"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><div class="input-group"><input type="text" class="form-control OptionEdit'+(j+1)+'"><span class="btnRemoveOption"></span></div></div></div>';
+									
+									$(this).append(OptionHTML);
+									 $(this).find('.OptionEdit'+(j+1)).val(Option);
+								}
+							}
+						
+						});
+						
+					}
+            },
+            error: function () {
+                console.log("Error getting the poll Option.");
+            }                     
+        });
+}
+
+function saveQuestionInQuestionDetails()
+{
+	//MainPollID
+	
+	//{
+		var Question=$("#txtQuestion").val();
+		
+		var oList = clientContext.get_web().get_lists().getByTitle('PollQuestionDetails');
+		var txtPollId =  titanForWork.getQueryStringParameter("PollId");	
+		var itemCreateInfo = new SP.ListItemCreationInformation();
+		this.oListItem = oList.addItem(itemCreateInfo);
+		oListItem.set_item('Title', Question);
+		//Change to save items in all column
+		oListItem.set_item('Language2nd', Question);
+		oListItem.set_item('Language3rd', Question);
+		oListItem.set_item('Language4th', Question);
+		oListItem.set_item('Language5th', Question);
+		oListItem.set_item('Language6th', Question);
+		oListItem.set_item('Language7th', Question);
+		oListItem.set_item('Language8th', Question);
+		oListItem.set_item('Language9th', Question);
+		oListItem.set_item('Language10th', Question);
+		
+		
+		if(MainPollID!='')
+		{
+			oListItem.set_item('MainPollID', MainPollID);
+		}
+		else
+		{
+			oListItem.set_item('MainPollID', txtPollId);
+		}
+		
+		$('.OtherLanguageQuestion').each(function(){
+		  var TextBoxID=$(this).attr('id');
+		  if(TextBoxID=="Language2nd")
+		  {
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language2nd', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language2nd', PollQuestion);
+			  }
+			  
+		  }
+		  else if(TextBoxID=="Language3rd"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language3rd', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language3rd', PollQuestion);
+			  }
+			  //oListItem.set_item('Language3rd', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language4th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language4th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language4th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language4th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language5th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language5th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language5th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language5th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language6th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language6th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language6th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language6th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language7th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language7th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language7th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language7th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language8th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language8th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language8th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language8th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language9th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language9th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language9th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language9th', PollQuestion);
+		  }
+		  else if(TextBoxID=="Language10th"){
+			  var PollQuestion= $(this).val();
+			  if(PollQuestion=='')
+			  {
+			  	oListItem.set_item('Language10th', Question);
+			  }
+			  else
+			  {
+				oListItem.set_item('Language10th', PollQuestion);
+			  }
+			  //oListItem.set_item('Language10th', PollQuestion);
+		  }
+		  
+		});
+		oListItem.update();
+		clientContext.load(oListItem);
+		clientContext.executeQueryAsync(function(){
+			MainQuestionID=oListItem.get_id();
+			saveOptionInOptionDetails(MainQuestionID,MainPollID);
+		},
+		function(){
+			console.log('error : add item in Question list');
+		});
+		
+	//}
+}
+
+
+function saveOptionInOptionDetails(MainQuestionID,MainPollID)
+{
+	var PollIDMain='';
+	
+	var oList = clientContext.get_web().get_lists().getByTitle('PollAnswerDeatils');
+	var txtPollId =  titanForWork.getQueryStringParameter("PollId");			
+		
+		for(var i=1; i<=optionCounter-1;i++)
+		{
+		  var itemCreateInfo = new SP.ListItemCreationInformation();
+		  var oListItem = oList.addItem(itemCreateInfo);
+		  var defaultOption='';
+			$(".Option"+i).each(function(){
+				var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				if(PollOption=='')
+				{
+					return true;
+				}
+				
+				var TextBoxID=$(this).closest(".Language").attr("class").split(' ')[3];
+  			    if(TextBoxID=="DefaultLanguage")
+				{
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  defaultOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  oListItem.set_item('Title', PollOption);
+				  //Change to save items in all column
+					oListItem.set_item('Language2nd', PollOption);
+					oListItem.set_item('Language3rd', PollOption);
+					oListItem.set_item('Language4th', PollOption);
+					oListItem.set_item('Language5th', PollOption);
+					oListItem.set_item('Language6th', PollOption);
+					oListItem.set_item('Language7th', PollOption);
+					oListItem.set_item('Language8th', PollOption);
+					oListItem.set_item('Language9th', PollOption);
+					oListItem.set_item('Language10th', PollOption);
+				}
+				else if(TextBoxID=="Language2nd")
+				{
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language2nd', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language2nd', PollOption);
+				  }
+				}
+				else if(TextBoxID=="Language3rd"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language3rd', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language3rd', PollOption);
+				  }
+				  //oListItem.set_item('Language3rd', PollOption);
+				}
+				else if(TextBoxID=="Language4th"){
+				 var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				 if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language4th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language4th', PollOption);
+				  }
+				  //oListItem.set_item('Language4th', PollOption);
+				}
+				else if(TextBoxID=="Language5th"){
+				 var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				 if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language5th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language5th', PollOption);
+				  }
+				  //oListItem.set_item('Language5th', PollOption);
+				}
+				else if(TextBoxID=="Language6th"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language6th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language6th', PollOption);
+				  }
+				  //oListItem.set_item('Language6th', PollOption);
+				}
+				else if(TextBoxID=="Language7th"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language7th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language7th', PollOption);
+				  }
+				  //oListItem.set_item('Language7th', PollOption);
+				}
+				else if(TextBoxID=="Language8th"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language8th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language8th', PollOption);
+				  }
+				  //oListItem.set_item('Language8th', PollOption);
+				}
+				else if(TextBoxID=="Language9th"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language9th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language9th', PollOption);
+				  }
+				  //oListItem.set_item('Language9th', PollOption);
+				}
+				else if(TextBoxID=="Language10th"){
+				  var PollOption= $(this).closest(".Language").find('.Option'+i+' Input').val();
+				  if(PollOption=='' || PollOption=='undefined')
+				  {
+					oListItem.set_item('Language10th', defaultOption);
+				  }
+				  else
+				  {
+					oListItem.set_item('Language10th', PollOption);
+				  }
+				  //oListItem.set_item('Language10th', PollOption);
+				}
+				oListItem.set_item('QuestionID', MainQuestionID);
+				if(MainPollID!='')
+				{
+					oListItem.set_item('MainPollID', MainPollID);
+					PollIDMain=MainPollID;
+				}
+				else
+				{
+					oListItem.set_item('MainPollID', txtPollId);
+					PollIDMain=txtPollId;
+				}
+		  });
+		  oListItem.update();
+		  clientContext.load(oListItem);
+		}
+	
+	clientContext.executeQueryAsync(function(){
+		alert("Question added successfully");
+		
+		$('.modal-body').closest('form').find("input[type=text], textarea").val("");
+		$('#myModal_2').modal('hide');
+		getPollDetails(globalSiteURL,PollIDMain);
+	
+	},
+	function(){
+		console.log('error : add item in Question list');
+	});
+	
+}
+
+function createPollsTitle() {
+    var clientContextPolls = new SP.ClientContext(globalSiteURL);
+
+
+    var pollCreatedDate = $(".pollStartDate").val();
+    pollCreatedDate = GetDateStandardFormat(pollCreatedDate);
+
+    var pollEndDate = $(".pollEndDate").val();
+    pollEndDate = GetDateStandardFormat(pollEndDate);
+
+    var pollExpireDate = $(".pollExpireDate").val();
+    pollExpireDate = GetDateStandardFormat(pollExpireDate);
+
+    var txtPollTitleMain = $.trim($("#txtPollTitleMain").val());
+    var PollStatus = $("#PollStatus").val();
+    if (pollCreatedDate == '' || pollEndDate == '' || pollExpireDate == '' || txtPollTitleMain == '') {
+        alert("Please fill all required fields.");
+        $("#savePollTitle").attr('disabled', false);
+    }
+    else if (pollCreatedDate > pollEndDate || pollEndDate >= pollExpireDate) {
+        alert("Expirey date must be gretaer than End date.");
+        $("#savePollTitle").attr('disabled', false);
+    }
+    else if (($('.trQuestionOption').find('tr').length > 0 && PollStatus == "Active") || PollStatus == "New" || PollStatus == "Terminate") {
+        var PollItemID = '';
+        var oList = clientContextPolls.get_web().get_lists().getByTitle('MainPollsList');
+        var txtPollId = titanForWork.getQueryStringParameter("PollId");
+        if (txtPollId != undefined || MainPollID != '') 
+        {
+
+            var PollShared = $("#PollPublishedWith").val();
+            var PollSharedId = "";
+            if (PollShared == "Company") {
+                PollSharedId = "Company";
+            }
+            else if (PollShared == "Department") {
+                PollSharedId = $("#departmentcollection").val();
+            }
+            else if (PollShared == "Group") {
+                PollSharedId = $("#UserGroupName").val();
+            }
+
+
+            if (txtPollId != undefined) {
+                this.oListItem = oList.getItemById(txtPollId);
+                PollItemID = txtPollId;
+            }
+            else if (MainPollID != '') {
+                this.oListItem = oList.getItemById(MainPollID);
+                PollItemID = MainPollID;
+            }
+            oListItem.set_item('Title', txtPollTitleMain);
+            oListItem.set_item('PollsStartDate', pollCreatedDate);
+            oListItem.set_item('PollsEndDate', pollEndDate);
+            oListItem.set_item('PollsExpireDate', pollExpireDate);
+            oListItem.set_item('Status', PollStatus);
+
+            oListItem.set_item('PollShared', PollShared);
+            oListItem.set_item('PollSharedId', PollSharedId);
+            //Change to save items in all column
+            oListItem.set_item('Language2nd', txtPollTitleMain);
+            oListItem.set_item('Language3rd', txtPollTitleMain);
+            oListItem.set_item('Language4th', txtPollTitleMain);
+            oListItem.set_item('Language5th', txtPollTitleMain);
+            oListItem.set_item('Language6th', txtPollTitleMain);
+            oListItem.set_item('Language7th', txtPollTitleMain);
+            oListItem.set_item('Language8th', txtPollTitleMain);
+            oListItem.set_item('Language9th', txtPollTitleMain);
+            oListItem.set_item('Language10th', txtPollTitleMain);
+
+            $('.otherLanguagePollTitle').each(function () {
+                var TextBoxID = $(this).attr('id');
+                var PollTitle = $(this).val();
+                if (TextBoxID == "Language2nd") {
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language2nd', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language2nd', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language3rd") {
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language3rd', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language3rd', PollTitle);
+                    }
+                    //oListItem.set_item('Language3rd', PollTitle);
+                }
+                else if (TextBoxID == "Language4th") {
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language4th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language4th', PollTitle);
+                    }
+                    //oListItem.set_item('Language4th', PollTitle);
+                }
+                else if (TextBoxID == "Language5th") {
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language5th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language5th', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language6th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language6th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language6th', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language7th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language7th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language7th', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language8th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language8th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language8th', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language9th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language9th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language9th', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language10th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '' || PollTitle == undefined) {
+                        oListItem.set_item('Language10th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language10th', PollTitle);
+                    }
+                }
+            });
+            oListItem.update();
+            clientContextPolls.load(oListItem);
+            clientContextPolls.executeQueryAsync(function () {
+                MainPollID = oListItem.get_id();
+                alert("Poll Status updated successfully");
+                //$(".addQuestionAnswer").show();
+                $('#myModal').modal('hide');
+                getPollDetails(globalSiteURL, PollItemID);
+
+                // Add Notification into Notification Center once Poll is published
+                if (PollStatus == "Active") {
+                    NotificationCenter(txtPollTitleMain, pollCreatedDate, pollEndDate, pollExpireDate);
+                }
+            },
+			function (sender, args) {
+			    console.log('error : add item in Poll list' + args.get_message() + '\n' + args.get_stackTrace());
+			});
+
+        }
+
+        else {
+            var itemCreateInfo = new SP.ListItemCreationInformation();
+            this.oListItem = oList.addItem(itemCreateInfo);
+            oListItem.set_item('Title', txtPollTitleMain);
+            oListItem.set_item('PollsStartDate', pollCreatedDate);
+            oListItem.set_item('PollsEndDate', pollEndDate);
+            oListItem.set_item('PollsExpireDate', pollExpireDate);
+            oListItem.set_item('Status', PollStatus);
+            //Change to save items in all column
+            oListItem.set_item('Language2nd', txtPollTitleMain);
+            oListItem.set_item('Language3rd', txtPollTitleMain);
+            oListItem.set_item('Language4th', txtPollTitleMain);
+            oListItem.set_item('Language5th', txtPollTitleMain);
+            oListItem.set_item('Language6th', txtPollTitleMain);
+            oListItem.set_item('Language7th', txtPollTitleMain);
+            oListItem.set_item('Language8th', txtPollTitleMain);
+            oListItem.set_item('Language9th', txtPollTitleMain);
+            oListItem.set_item('Language10th', txtPollTitleMain);
+
+
+            $('.otherLanguagePollTitle').each(function () {
+                var TextBoxID = $(this).attr('id');
+                if (TextBoxID == "Language2nd") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language2nd', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language2nd', PollTitle);
+                    }
+                }
+                else if (TextBoxID == "Language3rd") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language3rd', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language3rd', PollTitle);
+                    }
+                    //oListItem.set_item('Language3rd', PollTitle);
+                }
+                else if (TextBoxID == "Language4th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language4th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language4th', PollTitle);
+                    }
+                    //oListItem.set_item('Language4th', PollTitle);
+                }
+                else if (TextBoxID == "Language5th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language5th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language5th', PollTitle);
+                    }
+                    //oListItem.set_item('Language5th', PollTitle);
+                }
+                else if (TextBoxID == "Language6th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language6th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language6th', PollTitle);
+                    }
+                    //oListItem.set_item('Language6th', PollTitle);
+                }
+                else if (TextBoxID == "Language7th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language7th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language7th', PollTitle);
+                    }
+                    //oListItem.set_item('Language7th', PollTitle);
+                }
+                else if (TextBoxID == "Language8th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language8th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language8th', PollTitle);
+                    }
+                    //oListItem.set_item('Language8th', PollTitle);
+                }
+                else if (TextBoxID == "Language9th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language9th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language9th', PollTitle);
+                    }
+                    //oListItem.set_item('Language9th', PollTitle);
+                }
+                else if (TextBoxID == "Language10th") {
+                    var PollTitle = $(this).val();
+                    if (PollTitle == '') {
+                        oListItem.set_item('Language10th', txtPollTitleMain)
+                    }
+                    else {
+                        oListItem.set_item('Language10th', PollTitle);
+                    }
+                    //oListItem.set_item('Language10th', PollTitle);
+                }
+
+            });
+            oListItem.update();
+            clientContextPolls.load(oListItem);
+            clientContextPolls.executeQueryAsync(function () {
+                MainPollID = oListItem.get_id();
+                alert("Poll created successfully. Please add questions for this poll.");
+                $('#myModal').modal('hide');
+                $(".addQuestionAnswer").show();
+                getPollDetails(globalSiteURL, MainPollID);
+
+
+            },
+			function () {
+			    console.log('error : add item in Poll list');
+			});
+        }
+    }
+    else {
+        alert("Poll with current situation can not submit.");
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////// Add Notification into Notification Center List  //////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////
+function NotificationCenter(pollTitle,pollStartDate,pollEndDate,pollExpiryDate)
+{
+	try
+    {
+		var title= pollTitle;
+		var pollStartDateFormated=new Date(pollStartDate);
+		var pollEndDateFormated=new Date(pollEndDate);
+		var pollExpiryDateFormated=new Date(pollExpiryDate);
+		
+		//var description="Poll Start Date - " + pollStartDateFormated.toLocaleDateString() +"<br/>"+"Poll End Date - " + pollEndDateFormated.toLocaleDateString() +"<br/>" + "Poll Expiry Date - "+pollExpiryDateFormated.toLocaleDateString() ;
+		var description='Please go ahead and participate in new poll. Your opinion and feedback is very important to us.<br/><br/>';
+		description+="Topic : "+pollTitle+"<br/>";
+		description+="Initiated by : "+_spPageContextInfo.userDisplayName+"<br/>";
+		description+="Last date of Polling is "+pollEndDateFormated.toLocaleDateString()+"<br/><br/>";
+		description+='Poll results will be available online immediately after last date of polling.';
+
+		var companyId= titanForWork.getQueryStringParameter('CompanyId');
+
+        var Metadata;
+        var ItemType = GetItemTypeForListName("NotificationCenter");
+            Metadata = {
+                __metadata: {
+                    'type': ItemType
+                },
+			   
+               Title: title,
+               Details: description,
+			   WebpartName:"Polls",
+			   CompanyIdId:companyId
+			};
+            AddItemIntoNotificationCenter("NotificationCenter", Metadata);         
+    }
+    catch (error)
+    {
+        console.log(error.message);
+    }
+}
+
+function  AddItemIntoNotificationCenter(ListName, Metadata) 
+{
+	var requestURI= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+	
+	var dfd = $.Deferred();
+    $.ajax({
+        url: requestURI,
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            dfd.resolve(data);
+		},
+        error: function (error) {
+			//alert(JSON.stringify(error));
+            dfd.reject(error);
+        }
+    });
+    return dfd.promise();
+}
+/////////////////////////////////////////////////////////////////////
+
+	
+function GetItemTypeForListName (ListName) 
+{
+    return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+}
+
+	
+function getActiveLanguage(){
+var requestUri =_spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('LanguageSetting')/items?$select=*&$Filter=Status eq 'Active'";
+$.ajax({
+		url: requestUri,
+		type: "GET",
+		async:false,
+		headers: { "ACCEPT": "application/json;odata=verbose" },
+		success: function (data) {
+				var items=data.d.results;
+				
+				var LanguageToggelPoll='';
+				var LanguageToggelPollQuestionAnswer='';
+				var LanguageToggelPollQuestionAnswerEdit='';
+				
+				for(i = 0; i < items.length;i++) {
+				  var Language=items[i]["Language"];
+				  var LanguageTitle=items[i]["Title"];
+				  var LanguageID=items[i]["ID"];
+				  if(LanguageTitle!="DefaultLanguage")
+				  {  
+					  LanguageToggelPoll +='<div class="form-group"> <label for="" class="col-sm-3 control-label"> Title (in '+Language+')</label>';
+					  LanguageToggelPoll +='<div class="col-sm-9"><input type="text" class="form-control otherLanguagePollTitle" id='+LanguageTitle+'></div></div>';
+					  
+					  LanguageToggelPollQuestionAnswer +='<div class="panel panel-default"><div class="panel-heading panel-head-4" role="tab" id="headingOne"><h4 class="panel-title h4-color">';
+					  LanguageToggelPollQuestionAnswer +='<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse'+LanguageID+'" aria-expanded="false" aria-controls="collapseOne" class="collapsed ">';
+					  LanguageToggelPollQuestionAnswer +='<i class="short-full glyphicon-chevron-down glyphicon"></i>'+Language+'</a></h4></div>';
+					  LanguageToggelPollQuestionAnswer +='<div id="collapse'+LanguageID+'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">';
+					  LanguageToggelPollQuestionAnswer +='<div class="panel-body OtherLanguage Language '+LanguageTitle+'" id="'+LanguageID+'"><div class="form-horizontal"><span class="OtherLanguageID" style="display:none;"></span>';
+					  LanguageToggelPollQuestionAnswer +='<div class="form-group"><label for="" class="col-sm-3 control-label" data-localize="Question">Question</label><div class="col-sm-9"><textarea class="form-control OtherLanguageQuestion" maxlength="250" rows="3" style=" resize:none" id="'+LanguageTitle+'"></textarea></div></div>';
+					  LanguageToggelPollQuestionAnswer +='<div class="form-group Option1"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><input type="text" class="form-control Option1" maxlength="250"></div></div>';
+					  LanguageToggelPollQuestionAnswer +='<div class="form-group Option2"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><input type="text" class="form-control Option2"maxlength="250"></div></div>';
+					  LanguageToggelPollQuestionAnswer +='</div></div></div></div>';
+					
+					  LanguageToggelPollQuestionAnswerEdit +='<div class="panel panel-default"><div class="panel-heading panel-head-4" role="tab" id="headingOneEdit"><h4 class="panel-title h4-color">';
+					  LanguageToggelPollQuestionAnswerEdit +='<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEdit'+LanguageID+'" aria-expanded="false" aria-controls="collapseOne" class="collapsed">';
+					  LanguageToggelPollQuestionAnswerEdit +='<i class="short-full glyphicon-chevron-down glyphicon"></i>'+Language+'</a></h4></div>';
+					  LanguageToggelPollQuestionAnswerEdit +='<div id="collapseEdit'+LanguageID+'" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneEdit" aria-expanded="false" style="height: 0px;">';
+					  LanguageToggelPollQuestionAnswerEdit +='<div class="panel-body OtherLanguageEdit LanguageEdit '+LanguageTitle+'" id="'+LanguageID+'"><div class="form-horizontal"><span class="OtherLanguageID" style="display:none;"></span>';
+					  LanguageToggelPollQuestionAnswerEdit +='<div class="form-group"><label for="" class="col-sm-3 control-label" data-localize="Question">Question</label><div class="col-sm-9"><textarea class="form-control OtherLanguageQuestionEdit" rows="3" maxlength="250" style=" resize:none" id="'+LanguageTitle+'"></textarea></div></div>';
+					  LanguageToggelPollQuestionAnswerEdit +='<div class="form-group OptionEdit1"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><input type="text" class="form-control OptionEdit1" maxlength="250"></div></div>';
+					  LanguageToggelPollQuestionAnswerEdit +='<div class="form-group OptionEdit2"><label for="" class="col-sm-3 control-label">&#9632;</label><div class="col-sm-9"><input type="text" class="form-control OptionEdit2" maxlength="250"></div></div>';
+					  LanguageToggelPollQuestionAnswerEdit +='</div></div></div></div>';
+				  
+				  }
+				 }								
+				$(".PollTitle").append(LanguageToggelPoll);
+				$(".pollQuestionAnswer").append(LanguageToggelPollQuestionAnswer);
+				$(".pollQuestionAnswerEditMode").append(LanguageToggelPollQuestionAnswerEdit);
+		},
+		error: function () {
+			console.log("Error getting the Language Poll.");
+		}                     
+	});
+}
+
+function GetDateStandardFormat(date)
+{	
+	if($.trim(date)!='')
+	{
+        var dateS=ConvertDateFormatToddMMyyyy(date);
+        var startDate = new Date(dateS);
+		var day = 60 * 60 * 24 * 1000;
+		var endDate = new Date(startDate.getTime());
+        var newDate =endDate.toISOString();
+		return newDate; 
+	}
+}
+function ConvertDateFormatToddMMyyyy(date) {
+        var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+        return formatedDate;
+    }
+function stringToDate(_date, _format, _delimiter) 
+{
+	var formatLowerCase = _format.toLowerCase();
+	var formatItems = formatLowerCase.split(_delimiter);
+	var dateItems = _date.split(_delimiter);
+	var monthIndex = formatItems.indexOf("mm");
+	var dayIndex = formatItems.indexOf("dd");
+	var yearIndex = formatItems.indexOf("yyyy");
+	var month = parseInt(dateItems[monthIndex]);
+	month -= 1;
+	var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+	return formatedDate;
+}
+
+function PublishOption(userControl)
+{
+
+	if(userControl=="Company")
+	{
+		$("#UserGroupName").hide();
+		$("#departmentcollection").hide();
+		$("#lblgroup").hide()
+	}
+	else if(userControl=="Department")
+	{
+	   $("#UserGroupName").hide();
+	   $("#departmentcollection").show();
+	   $("#lblgroup").show()
+	}
+	else if(userControl=="Group")
+	{
+	    $("#UserGroupName").show();
+		$("#departmentcollection").hide();
+		$("#lblgroup").show()
+	}
+}
+
+
+function GetDepartment()  
+{   
+     var companyID=titanForWork.getQueryStringParameter("CompanyId");
+	 $('#departmentcollection').empty();			
+        var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?$select=ID,CompanyIDId/ID,DepartmentName&$filter=CompanyIDId  eq '" + companyID+"'";
+        $.ajax({  
+            url: Ownurl,  
+            headers: { Accept: "application/json;odata=verbose" },  
+            async:false,  
+            success: function (data) 
+			{  
+                var items = data.d.results;   	              	 
+                for(var i = 0; i < items.length; i++)
+                {
+                  $("#departmentcollection").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].DepartmentName));			  
+                }				
+            },eror: function (data) {  
+                console.log('error');
+            }  
+        });  
+}
+
+function GetDepartmentConfidentialGroupUsersGroups() 
+{
+    $("#UserGroupName").empty();
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentSharedGroups')/items?$select=ID,SharedUsers/ID,SharedUsers/Title,SharedUsers/UserName,LogonUser/ID,LogonUser/Title,LogonUser/UserName,SharingLevel&$expand=SharedUsers,LogonUser&$orderby=ID asc&$filter=LogonUser/ID eq '" + _spPageContextInfo.userId + "'";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data) {
+            var response = data;
+                $('<option value="0">--Select--</option>').appendTo("#MySharedGroup");
+                var option = "";
+            for (var groupIndex = 0; groupIndex < response.d.results.length; groupIndex++)
+            {
+                  var groupName = response.d.results[groupIndex].SharingLevel;
+                     var currentItemID = response.d.results[groupIndex].ID;
+		              option += "<option value='" + currentItemID + "'title='Group'>" + groupName + "</option>";
+		                 
+		         
+            }
+            $("#UserGroupName").append(option);
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+
+
+$(document).ready(function(){
+	$(".addQuestionsLink").click(function(){
+		$('#saveQuestionAnswer').attr('disabled',false);
+		
+		$(".addOptionDefult .form-group").each(function(index){
+			if(index>2)
+			{
+				$(this).remove();
+			}
+		});
+	});
+	
+	$(".closePolls").click(function(){
+  		 var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+		 location.href='../Pages/ViewPolls.aspx?WebAppId='+txtCompanyId ;
+	});
+	$("#UserGroupName").hide();
+	$("#departmentcollection").hide();
+	$("#PollPublishedWith").change(function(){	
+    		 PublishOption($(this).val());
+	});
+
+	GetDepartment();
+	GetDepartmentConfidentialGroupUsersGroups();
+	
+});
+
+
+function SurveyAuth(txtCompanyId){
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ProcessApprovers')/items?$filter= WebPartName eq 'Polls' and CompanyId eq '"+txtCompanyId+"'&$select=*";  
+    $.ajax({  
+        url: Ownurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data)
+        { 
+        
+        var results = data.d.results;
+        if(data.d.results[0].Scope == 'SELECTIVE') 
+        {    
+           var Usersresults = results[0].ContributorsId.results;
+	        for(i=0; i<Usersresults.length; i++){
+	          if(_spPageContextInfo.userId ==  Usersresults[i])
+	           {
+	             UserAuth = true;	
+	             return;             
+	           }else{
+	           	UserAuth = false;
+	           }
+	         } 
+	      }	 
+	      else{
+	       UserAuth = true;	
+	      }       
+   		},
+		error: function (data) 
+		{  
+        	alert("An error occurred. Please try again.");  
+		}  
+    }); 
+}
+
+</script>
+	<div class="panel-heading panel-head-4 mrgn-tp10">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="Survey">Survey</h4>
+		</div>
+	</div>
+<div class="container panel panel-default Polls">
+	<div class="row mrgn-tp10">
+	<!-- Filter-->
+		
+			<div class="row ">
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="" class="col-sm-3 col-md-4 control-label" data-localize="StartDate">Start Date</label>
+						<div class="col-sm-9 col-md-8">
+						<input type="text" class="form-control mrg-btm-5" id="txtPollStartDisplay"  name="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="" class="col-sm-3 col-md-4 control-label" data-localize="EndDate">End Date</label>
+						<div class="col-sm-9 col-md-8">
+							<input type="text" class="form-control mrg-btm-5" id="txtPollEndDisplay" name="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="form-group">
+						<label for="" class="col-sm-3 col-md-4  control-label" data-localize="ExpiryDate">Expiry Date</label>
+						<div class="col-sm-9 col-md-8">
+							<input type="text" class="form-control mrg-btm-5" id="txtPollExpireDisplay" name="" readonly>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12 mrgn-tp10"> 
+					<label for="" class="col-sm-3 col-md-2 title-label-pol control-label" data-localize="Title">Title</label>
+					<div class="col-sm-9 col-md-10 title-label-input">
+						<input type="text" class="form-control  mrg-btm-5" id="txtPollTitleMainDisplay" readonly>
+					</div>
+				</div>  
+				<div class="col-md-12 mrgn-tp10"> 
+					<label for="" class="col-sm-3 col-md-2 poll-status-label control-label" data-localize="Status">Status</label>
+					<div class="col-sm-9 col-md-10 poll-status-input-div">
+						<input type="text" class="form-control  mrg-btm-5" id="txtPollStatus" readonly>
+					</div>
+					<label class="col-xs-12 col-sm-12  col-md-8 control-label pollStatusDetails" style="color:#444;font-size: 13px;"></label>
+				</div>  	
+				<div class="row col-md-12 mrgn-tp10">
+					<button type="button" class="btn btn-outline-primary pull-right getEditView" data-toggle="modal" data-target="#myModal"><span data-localize="Edit">Edit</span></button>									
+				</div>			  
+			</div>
+		
+	<!-- Filter End-->
+	<div class="clearfix"></div>
+		<div class="col-md-12 top20">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-12">
+						<div class="row">
+							<div class="panel panel-default shadow2">							   							
+								<div class="table-responsive">
+									<table class="table table-striped">
+									<thead>
+							     <!--<tr style="display:	none">
+									<th width="8%" bgcolor="efefef">&nbsp;</th>
+									<th width="47%" bgcolor="efefef">&nbsp;</th>
+									<th width="33%" bgcolor="efefef">&nbsp;</th>
+									<th width="12%" class="add-edit" bgcolor="efefef"><a href="#" class="pull-right getEditView" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false" data-localize="AddEdit">Add or Edit</a></th>
+									</tr>  -->
+									<tr class="warning">
+									<th data-localize="S.No">S No.</th>
+									<th data-localize="Question">Question</th>
+									<th data-localize="Options">Options</th>
+									<th id="thAction" data-localize="Action">Action</th>
+									</tr>     
+									</thead>
+									<tbody class="trQuestionOption">
+									</tbody>
+									</table>        
+								</div>
+							<!--/panel content-->
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 pull-right top10 mrg-btm-20">
+						<div class="row addQuestionAnswer">
+							<button type="button" class="btn btn-outline-primary addQuestionsLink" data-toggle="modal" data-target="#myModal_2"><span class="glyphicon glyphicon-plus-sign"></span> <span data-localize="AddQuestion">Add Question</span></button>
+							<button type="button" class="btn btn-outline-secondary closePolls"><span data-localize="Close">Close</span></button>
+						</div>
+					</div>
+				</div>
+			<br>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- /Main -->
+<br>
+<br>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+<div class="modal-dialog modal-lg">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header panel-head-4">
+<button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+<!--<h4 class="modal-title">Poll Details</h4> -->
+</div>
+<div class="modal-body">
+<div class="form-horizontal">
+<div class="panel panel-default">                          
+<div class="panel-heading panel-head-4">
+<div class="panel-title">
+<h4 class="h4-color" data-localize="Survey">Survey</h4>
+</div>
+</div>
+<div class="panel-body">
+<div class="row ">
+<div class="col-md-4">
+<div class="form-group">
+<label for="" class="col-sm-3 col-md-4 control-label" data-localize="StartDate">Start Date</label>
+<div class="col-sm-9 col-md-8">
+<div class="input-group">
+<input type="text" class="form-control pollStartDate" name="date" style="z-index:999999"> 
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label for="" class="col-sm-3 col-md-4 control-label" data-localize="EndDate">End Date</label>
+<div class="col-sm-9 col-md-8">
+<div class="input-group">
+<input type="text" class="form-control pollEndDate" name="date" style="z-index:999999">
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="form-group">
+<label for="" class="col-sm-3 col-md-5 expiry-date-label control-label" data-localize="ExpiryDate">Expiry Date</label>
+<div class="col-sm-9 col-md-7">
+<div class="input-group">
+<input type="text" class="form-control pollExpireDate" name="date" style="z-index:999999">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="form-group"> 
+<label for="" class="col-sm-3 control-label" data-localize="Title">Title</label>
+<div class="col-sm-9">
+<input type="text" class="form-control" id="txtPollTitleMain" maxlength="250">
+</div>
+</div>
+<div class="form-group"> 
+<label for="" class="col-sm-3 control-label" data-localize="Status">Status</label>
+<div class="col-sm-9">
+<select name="select" id="PollStatus" class="form-control pollsStatus" onmouseover="this.title=this.options[this.selectedIndex].title">
+<option value="New" title="This poll is not published.">Unpublished </option>
+<option value="Active" title="Select if you want to publish this poll.">Published </option>
+<option value="Terminate" title="Select if you want to terminate this poll.">Terminate </option>
+</select>
+</div>
+</div>
+
+<div class="form-group" style="display:none"> 
+<label for="" class="col-sm-3 control-label" data-localize="Audience">Audience</label>
+<div class="col-sm-9">
+<select name="select" id="PollPublishedWith" class="form-control">
+<option value="Company">All</option>
+<option value="Department">Department</option>
+<option value="Group">My Group</option>
+</select>
+</div>
+</div>
+
+
+<div class="form-group" style="display:none"> 
+<label for="" class="col-sm-3 control-label" style="display:none" id="lblgroup">Department/Group</label>
+<div class="col-sm-9">
+
+<select  id="departmentcollection" class="form-control">
+</select>
+
+<select  id="UserGroupName" class="form-control">
+</select>
+
+
+</div>
+</div> 
+
+<!--<div class="form-group hide"> 
+<label for="" class="col-sm-3 control-label">Department</label>
+<div class="col-sm-9">
+<select  id="departmentcollection" class="form-control">
+</select>
+</div>
+</div>
+
+<div class="form-group hide"> 
+<label for="" class="col-sm-3 control-label">Group</label>
+<div class="col-sm-9">
+<select  id="UserGroupName" class="form-control">
+</select>
+</div> 
+</div>  -->
+
+
+
+
+</div>
+</div>
+<br>
+<div class="panel panel-default">
+<div class="panel-heading panel-head-4" role="tab" id="headingOne" style="display:none">
+	<h4 class="panel-title h4-color">
+		<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOneAni" aria-expanded="false" aria-controls="collapseOneAni" class="collapsed">
+		<i class="short-full glyphicon-chevron-down glyphicon"></i>
+		<span data-localize="OtherLanguages">Other Languages</span>
+		</a>
+	</h4>
+</div>
+<div id="collapseOneAni" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+<div class="panel-body PollTitle">
+</div>
+</div>
+</div>
+<div class="row text-center">
+<button type="button" class="btn  btn-outline-success" onclick="javascript:$('#savePollTitle').attr('disabled',true);" id="savePollTitle" data-localize="Add">Add</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="myModal_2" role="dialog">
+<div class="modal-dialog modal-lg">
+<!-- Modal content-->
+<div class="modal-content">
+<div class="modal-header panel-head-4">
+<button type="button" class="close h4-color" data-dismiss="modal">&times;</button>		
+</div>
+<div class="modal-body">
+<h4 class="modal-title"></h4>
+<div class="form-horizontal">
+			
+		<div class="col-md-12">
+			<div class="panel-heading panel-head-4">
+				<div class="panel-title">
+					<h4 class="h4-color" data-localize="NewQuestion">NewQuestion</h4>
+				</div>
+			</div>
+			<div class="panel panel-default">
+			<div class="panel-body addOptionDefult Language DefaultLanguage" style="padding-bottom:0px;">	
+				<div class="form-group"> 
+					<label for="" class="col-sm-3 control-label" data-localize="Question">Question</label>
+					<div class="col-sm-9">
+						<textarea class="form-control" rows="3" id="txtQuestion" style=" resize:none" maxlength="250"></textarea>
+					</div>
+				</div>
+				<div class="form-group Option1"> 
+					<label for="" class="col-sm-3 control-label">&#9632;</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control Option1" maxlength="250">
+					</div>
+				</div>
+				<div class="form-group Option2">                   
+					<label for="" class="col-sm-3 control-label">&#9632;</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control Option2" maxlength="250">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="form-group">                   
+					<div class="col-md-12 pull-right">
+						<!--<button type="button" class="btn btn-outline-primary pull-right  addOption" style="margin-right:0px;" id=""><span class="glyphicon glyphicon-plus-sign"></span>  Add More</button>-->
+						<button type="button" class="btn btn-outline-primary pull-right  addOption" style="margin-right:0px;" id=""><span class="glyphicon glyphicon-plus-sign"></span> <span data-localize="AddOption">Add Option</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="col-md-12 pollQuestionAnswer">
+		</div>	
+	
+	<div class="clearfix"></div>
+	<div class="row text-center">
+		<button type="button" class="btn  btn-outline-success" id="saveQuestionAnswer" data-localize="Add">Add</button>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--MODEL POPUP3-->
+<div class="modal fade" id="myModal_3" role="dialog">
+<div class="modal-dialog modal-lg">
+<!-- Modal content-->
+<div class="modal-content">
+	<div class="modal-header panel-head-4">
+		<button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+		<!--<h4 class="modal-title">New Question</h4>-->
+	</div>
+<div class="modal-body">
+<div class="form-horizontal">
+	<div class="col-md-12">
+		<div class="panel-heading panel-head-4">
+			<div class="panel-title">
+				<h4 class="h4-color"" data-localize="NewQuestion">New Question</h4>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body addOptionDefultEdit LanguageEdit DefaultLanguage" style="padding-bottom:0px !Important;">
+				<div class="form-group"> 
+					<label for="" class="col-sm-3 control-label" data-localize="Question">Question</label>
+					<div class="col-sm-9">
+						<textarea class="form-control" rows="3" id="txtQuestionEdit" style=" resize:none" maxlength="250"></textarea>
+					</div>
+				</div>
+				<div class="form-group OptionEdit1"> 
+					<label for="" class="col-sm-3 control-label">&#9632;</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control OptionEdit1" maxlength="250">
+					</div>
+				</div>
+				<div class="form-group OptionEdit2">                   
+					<label for="" class="col-sm-3 control-label">&#9632;</label>
+					<div class="col-sm-9">
+						<input type="text" class="form-control OptionEdit2" maxlength="250">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="form-group">                   
+					<div class="col-md-12 pull-right">
+						<!--<button type="button" style="margin-right:0px;" class="btn btn-outline-primary pull-right addOptionEdit" id=""><span class="glyphicon glyphicon-plus-sign"></span>  Add More</button>-->
+						<button type="button" style="margin-right:0px;" class="btn btn-outline-primary pull-right addOptionEdit" id=""><span class="glyphicon glyphicon-plus-sign"></span> <span data-localize="AddOption">Add Option</span></button>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>
+<div class="col-md-12 pollQuestionAnswerEditMode">
+</div>
+	<div class="clearfix"></div>
+	<div class="row text-center">
+		<button type="button" class="btn  btn-outline-success" id="updateQuestionAnswer" data-localize="Update">Update</button>
+	</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	 
+  <script>
+
+	function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".short-full")
+            .toggleClass('glyphicon glyphicon-chevron-down glyphicon glyphicon-chevron-up');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-388</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">8899f251-2a33-4ddd-9f6b-a7de19d602cc</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-388, ADMIN-1645029823-388</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">38800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

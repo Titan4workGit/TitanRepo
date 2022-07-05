@@ -1,0 +1,208 @@
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+button:focus {
+    outline: none !important;	
+}
+a {
+    color: #333;
+    text-decoration: none !important;
+}
+.w-15 {
+    width: 15%;
+}
+.w-10 {
+    width: 10%;
+}
+.font-12 {
+    font-size: 12px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.m-0 {
+    margin: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.ml-8 {
+    margin-left: 8px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-20 {
+    width: 20%;
+}
+.w-30 {
+    width: 30%;
+}
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+    background-color: #ffffff;
+}
+.panel-body {
+    background-color: #ffffff;
+}
+
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+
+.scrollbar-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+
+
+.custom-btn {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover, .custom-btn:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+.custom-time-picker {
+    position: relative;
+}
+.custom-time-picker .timepicker {
+    cursor: default;
+}
+.custom-time-picker .timepicker[disabled] {
+    cursor: no-drop;
+}
+.clock-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.TimesheetApprovalEditModal {
+    padding: 0;
+}
+.TimesheetApprovalEditModal .custom-panel {
+    border: 0;
+    margin: 0;
+}
+.TimesheetApprovalEditModal .timesheet-entry-add-footer-btn-group {
+    border-top: 1px solid #ddd;
+    padding-top: 14px;
+}
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+.mt-6 {
+    margin-top: 6px !important;
+}
+
+.timesheet-entry-add-panel-heading .panel-title .panel-title-link {
+    display: flex;
+    align-items: center;
+    width: 88%;
+    padding: 10px 0;
+}
+.timesheet-entry-add-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.timesheet-entry-add-right-time-box-one {
+    border-right: 1px solid #d2d2d2;
+}
+.timesheet-entry-add-right-time-box-two,
+.timesheet-entry-add-right-time-box-one {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 575px) {
+    .timesheet-entry-add-t-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .timesheet-entry-add-t-pr {
+        font-size: 12px;
+    }
+}
+.w-87 {
+    width: 87px;
+}
+@media (max-width: 425px) {
+    .timesheet-entry-add-date-box-isPhone {
+        width: 100%;
+    }
+}
+.timesheet-entry-add-footer-btn-group .custom-btn-two-danger {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.timesheet-entry-add-footer-btn-group .custom-btn-two-danger:hover {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.timesheet-entry-add-footer-btn-group button {
+    margin-right: 8px;
+}
+.timesheet-entry-add-footer-btn-group button:last-child {
+    margin-right: 0px;
+}

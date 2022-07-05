@@ -1,0 +1,3421 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title>Approval Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/SignatureLinks/flashcanvas.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.3/flashcanvas.js" integrity="sha512-La2Eh5E5rjqSFrTIgJXLOr3EvkJZ7N+rMOsCr7yVGGE4FUTBKPDmkycf9NsdXTTFBs7PUKOTxTQyNf1Pp1Xb7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js" integrity="sha512-lOtDAY9KMT1WH9Fx6JSuZLHxjC8wmIBxsNFL6gJPaG7sLIVoSO9yCraWOwqLLX+txsOw0h2cHvcUJlJPvMlotw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jSignature/2.1.3/jSignature.min.noconflict.js" integrity="sha512-AS0nVfJE1xI9fDwP4viscBQ//7EOmEy7X7Zl1D6pFjw90mDw2IxFGFtThqp+dPoHWxFrrPowFdCQgRP3EAsQQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Approvals/assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Approvals/assets/css/drag-drop.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Approvals/assets/css/padding.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Approvals/assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+    <script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+    <script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+    <script type="text/javascript" src="_layouts/15/autofill.js"></script>    
+    <script type="text/javascript" src="../SiteAssets/WebAnalytics/assets/js/table2excel.js"></script>
+    <script type="text/javascript" src="../SiteAssets/WebAnalytics/assets/js/sort-table.js"></script>
+    <script type="text/javascript" src="../SiteAssets/WebAnalytics/assets/js/sort-table.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/bstable.js"></script>
+    
+    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.4.0/math.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/complex-js@5.0.0/dst/complex.min.js"></script>-->
+    
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/SignatureLinks/math.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/SignatureLinks/complex.min.js"></script>
+        
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/d3.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/d3pie.js"></script>
+    <script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/table/Mytable.js"></script>
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js" integrity="sha512-OqcrADJLG261FZjar4Z6c4CfLqd861A3yPNMb+vRQ2JwzFT49WT4lozrh3bcKxHxtDTgNiqgYbEUStzvZQRfgQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.2.8/es6-promise.auto.min.js" integrity="sha512-S/NdLunV4IO1xPIfb9IT9IXhzObeMg6WRxAx+8vOV2DM+iM6r0Q6iioIwrYoVI5qHEkPVMv19m/09NnLIjYuXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.es.min.js" integrity="sha512-ADI0Y5mOlKdWvNoFMqemyhsXH3ij2AB8GY1Y9wPAu6p3TH3FXzGOyVuOguHBtm/rPdS5eBxVUlbrfGwmZq066g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+<style>
+
+.Total-row{
+	font-weight:600;
+}
+
+.for-calculated-value{
+	text-align:right;
+}
+.section-heading-panel {
+    font-size: 26px;
+    font-weight: 500;
+    color: #1d6ec0;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 2px solid #1d6ec0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.DueDate{ color:red;
+	
+}
+.colorlist {
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    right: 11%;
+    top: 15px;
+    z-index: 5;
+}
+.colorlist span {
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+}
+
+.colorlist li span.Approved {
+    background-color: #299439;
+}
+.colorlist li span.Rejected{
+    background-color: #db4035;
+}
+.colorlist li span.Forwarded{
+    background-color: #ff9933;
+}
+.colorlist li span.Initiated{
+    background-color: #14aaf5;
+}
+
+.inbox-pending, .inbox-overdue {
+    padding: 28px 0 !important;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+.custom-nav>li>a h4 {
+    color: #1b1b1b;
+    font-size: 17px !important;
+   
+}
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table{
+ display:block !important;  
+}
+
+.colorlist li{
+    text-align: left;
+    margin: 5px 0;
+}
+.dashboard-table-btn .btn {
+    font-size: 13px !important;
+    border: 1px solid transparent !important;
+    outline: none !important;
+    padding: 5px 2px !important;
+    min-width: auto !important;
+    border-radius: 2px;
+    font-weight: 600;
+    opacity: 0.8 !important;
+}
+
+.dashboard-deta-btn-panel .dashboard-icon-info {
+    filter: none !important;
+    opacity: 1;
+}
+
+.custom-btn-two {
+    border-radius: 16px !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, 
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    font-size: 10px !important;
+    padding: 1px 3px;
+    width: 47px !important;
+    
+}
+
+.tab-pane-main{
+ margin:0 !important;   
+}
+.header-container,
+.custom-nav-main{
+ padding-left:0 !important;
+ padding-right:0 !important;    
+}
+
+#mainDivAreaApprovalInbox tr td,
+#tableTempApprovalOutBox tr td{
+ text-align:left !important;
+    
+}
+
+.members-card-body .remove-group-btn{
+ opacity:0 !important;  
+}
+
+.members-card-body:hover .remove-group-btn{
+ opacity:1 !important;
+ color:#333 !important; 
+}
+
+.modal-header .close {
+    margin-top: -4px;
+    min-width: 1.1em !important;
+    background: #fff;
+    color: #333;
+    line-height:1.2;
+    font-size:19px !important;
+}
+
+.modal-header .close:hover{
+ background: #333;
+ color:#fff;    
+}
+
+.member-name{
+ font-size:13px !important; 
+}
+.member-email {
+    color: #1d6ec0 !important;
+    font-size:12px !important;
+}
+
+#NotificationMail .sp-peoplepicker-topLevel,
+#ApprovalForward .sp-peoplepicker-topLevel{
+ width:100% !important;
+ padding:6px 0; 
+}
+
+#NotificationMail .sp-peoplepicker-editorInput,
+#ApprovalForward .sp-peoplepicker-editorInput{
+ border:none !important;    
+}
+
+.remove-group-btn, .remove-group-btn:focus {
+    background: none !important;
+    border-color: none !important;
+    border-radius: 50% !important;
+}
+
+/**jan/7/22**/
+
+.panel-head h1.panel-head-text{
+    color:#333 !important;
+}
+.panel-head{
+  padding-top:0;
+  padding-bottom:0; 
+}
+
+
+#Inbox .modal-header, 
+#Outbox .modal-header, 
+#approvalInbox .modal-header, 
+#approvalOutbox .modal-header{
+    background:#666 !important;
+}
+
+
+#Inbox .modal-header .modal-title, 
+#Outbox .modal-header .modal-title, 
+#approvalInbox .modal-header 
+.modal-title, #approvalOutbox 
+.modal-header .modal-title{
+ 
+ color:#fff !important; 
+
+}
+
+.inbox-pending span, 
+.inbox-overdue span {
+    font-size: 32px !important;
+}
+
+#myTabs>li>a {
+    padding: 8px 100px !important;
+}
+
+#query1,
+#query{
+  float:none !important;
+  width:100% !important;
+  height:37px;  
+}
+
+#Requestby,
+#Requestby .sp-peoplepicker-editorInput,
+#Requestby .sp-peoplepicker-topLevel{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+#Requestby .sp-peoplepicker-editorInput{
+    border:none !important;
+}
+
+#Requestby .sp-peoplepicker-topLevel{
+    
+ padding:7px 7px 7px 2px !important;
+
+}
+
+.table-responsive table tr th,
+.table-responsive table tr td{
+ border:none !important;    
+}
+
+.table-responsive table tr{
+ border:1px solid #ddd !important;  
+}
+
+.dashboard-deta-btn-panel .dropdown-menu>li>a{
+ font-size:13px;    
+}
+
+/* new css added on 04/1/2022 */
+
+#signature {
+    padding: 0;
+}
+#signatureparent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.draw-signature-box-container {
+    border: 1px solid #d2d2d2;
+    padding: 10px;
+    /*height: 202px;*/
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#signature .jSignature {
+    height: 100% !important;
+    width: 400px !important;  
+}
+.signature-box {
+    position: relative;
+}
+.drag-drop-box {
+    position: relative;
+}
+
+
+.draw-signature-box-draw-clear-btn, .draw-signature-box-type-clear-btn, .draw-signature-box-image-clear-btn {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+    transform: translate(0px, -25px);
+    border-radius: 16px !important;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    font-size: 11px !important;
+    padding: 1px 3px;
+    width: 47px !important;
+}
+.signature-box #SingTextType {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #a6a6a6 !important;
+}
+
+/**jan-5-22***/
+
+#tablenavoutbox,
+#tablenavInbox{
+ float:left;    
+}
+
+#tablenavoutbox div,
+#tablenavInbox div{
+ float:left;
+ margin-right:13px;  
+}
+.approval-dashboard-user-card-img {
+    max-width: 25px !important;
+    max-height: 25px !important;
+    min-width: 25px !important;
+    border:none !important;
+}
+
+.approval-dashboard-user-card-name, 
+.approval-dashboard-user-card-email, 
+.approval-dashboard-user-card-date{
+ font-size:12px !important; 
+}
+
+/* new css added on 06/1/2022 */
+
+.drag-drop-box .drop-container {
+    height: 100px;
+    padding: 0px 0px;
+}
+.drag-drop-box .drop-container #clickHere {
+    margin-top: 25px;
+}
+.drag-drop-box .drop-container input#file {
+    height: 100%;
+}
+.approval_image_preview {
+    /*float: left;*/
+    width: auto;
+    height: 96px;
+    display: none;
+}
+.approval_image_preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+    padding: 2px;
+}
+#SignatureBox label.radio-inline input[type=radio] {
+    margin-top: 2px;
+}
+
+/* new css added on 12/1/2022 */
+
+.drag-drop-box .drop-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.drop-container .custom-image-label {
+    font-size: 12px;
+    margin-top: 0px !important;
+}
+
+.process-print-top-company-logo img{
+ height:60px !important;
+ width:60px !important;
+ float:right !important;
+}
+
+.process-print-top-company-name{
+    font-size: 15px !important;
+}
+
+.process-print-top-right {
+    font-size: 20px !important;
+}
+
+/***approvalhistory****/
+
+ .scrollingeffect::-webkit-scrollbar-thumb {
+        border: 2px solid transparent;
+        border-radius: 10px;
+        background-color: #666;
+        background-clip: content-box;
+        -webkit-background-clip: content-box;
+    }
+
+
+    .scrollingeffect::-webkit-scrollbar-thumb:hover {
+        background-color: #666;
+        background-clip: border-box;
+        -webkit-background-clip: border-box;
+    }
+
+.scrollingeffect::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+
+#approvalhistory .dropdown-menu>li>a{
+ font-size:13px !important;	
+}
+
+
+
+    #approvalhistory .timlineheight {
+        max-height: 546px;
+        overflow-y: auto;
+    }
+
+    .userbox {
+        text-align: left;
+        margin: 8px 0 2px 0;
+    }
+
+        .userbox label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+            .userbox label:last-child {
+                margin-right: 0px;
+            }
+
+        .userbox input[type="radio"] {
+            margin: 0;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            top: -1.5px;
+        }
+
+    .timebox {
+        padding: 0;
+        margin-left: 15px;
+    }
+
+        .timebox ul.mainlst {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            .timebox ul.mainlst > li {
+                position: relative;
+                border: 1px solid #cdcdcd;
+                margin: 10px 10px 10px 20px;
+                border-radius: 5px;
+                padding: 5px 8px 8px 8px;
+                box-shadow: 2px 2px 4px #cccccc47;
+            }
+
+        .timebox ul li .dropdown {
+            position: relative;
+            text-align: right;
+            display: inline-block;
+            float: right;
+        }
+
+            .timebox ul li .dropdown button.dropdown-toggle {
+                margin: 0;
+                padding: 0 2px !important;
+            }
+
+            .timebox ul li .dropdown .dropdown-menu {
+                border: 1px solid #ccc;
+            }
+
+                .timebox ul li .dropdown .dropdown-menu li {
+                    padding: 5px 0 !important;
+                }
+
+        .timebox ul li button.dropdown-toggle {
+            background: none;
+            border: none;
+            text-align: right;
+        }
+
+            .timebox ul li button.dropdown-toggle img {
+                width: 15px;
+            }
+
+        .timebox ul.mainlst li h3 {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+            padding: 0;
+            font-weight: 600;
+            color: #333;
+        }
+
+    .iconbox {
+        position: absolute;
+        left: -36px;
+        top: calc(50% - 15px);
+        width: 30px;
+        height: 30px;
+        display: block;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+
+
+        .iconbox img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+    .imgsetion img {
+        width: 35px;
+        border-radius: 50%;
+        height: 35px;
+    }
+
+    .imagecontent {
+        padding-left: 5px;
+    }
+
+.imagecontent p.Purposetext{
+ 
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis; 
+    
+}
+    
+    
+
+        .imagecontent h4 {
+            font-size: 13px;
+            margin: 0 0 3px 0;
+            padding: 0;
+            line-height: 16px;
+        }
+
+        .imagecontent p {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+        }
+
+    .waitsec {
+        font-size: 13px;
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    .flexitem {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .imagecontent a {
+        font-size: 12px;
+        color: #1d6ec0;
+        text-decoration: none;
+        word-wrap: break-word;
+        word-break: break-word;
+        word-break: break-all;
+    }
+
+    .approvelheadeing h3 {
+        display: inline-block;
+    }
+
+    .approvelheadeing span.date-sec {
+        float: right;
+        font-size: 11px;
+        padding: 5px 5px 0 5px;
+        font-weight: 600;
+        color: #424242;
+    }
+
+    .signbox {
+        width: 100%;
+        text-align: right;
+    }
+
+        .signbox img {
+            max-width: 185px;
+        }
+
+
+    .completed {
+        color: #4e9a06;
+    }
+
+    .waitprocess {
+        color: #e79406;
+    }
+
+    .rejected {
+        color: #ff0404;
+    }
+
+    .initialize {
+        color: #5b9bd5;
+    }
+
+.timebox ul li .upload-chip {
+    border: 1px solid #ccc;
+    padding:5px;
+    border-radius: 10px;
+    margin:10px 0;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.timebox ul li .upload-chip span.chip-text-box {
+    color: #333 !important;
+    margin-right: 4px !important;
+}
+
+.dashboard-table-btn .btn:hover {
+    border: 1px solid #1d6ec0 !important;
+    color: #1d6ec0 !important;
+    background-color: transparent !important;
+}    
+    
+/***jan-24-22*****/    
+
+#TempTableOutbox tbody tr td:first-child p.ellipsis-2,
+#TempTableInbox tbody tr td:first-child p.ellipsis-2{
+ color:#1d6ec0 !important;	
+}
+
+.process-approve-signature-img{
+ border-bottom:1px solid #c1c1c1 !important;	
+}
+
+#SignatureText{
+ border-bottom:1px solid #c1c1c1 !important;	
+ display:block !important;	
+}
+
+.process-approve-signature-name{
+  font-size:13px !important;	
+} 
+  
+.process-approve-signature-name, 
+.process-approve-signature-department, 
+.process-approve-signature-designation, 
+.process-approve-signature-date{
+ 
+ margin-bottom:0 !important;
+	
+}
+.process-approve-signature-img{
+ height:70px !important;
+ object-fit: contain;	
+} 
+
+.signature-front {
+    padding-top: 15px;
+    height: 70px;
+}
+
+.DesignationSpan{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:76px;
+  display:inline-block;
+  font-size:12px;
+}
+
+.DepartmentSpan{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width:75px;
+  display:inline-block;
+  font-size:12px;
+}
+.process-approve-signature-date{
+ font-size:12px;	
+}
+
+
+/**jan-25-22***/
+
+#TempTableOutbox tr td .approval-dashboard-user-card-info{
+ text-align:left;
+ width:100% !important;	
+}
+
+.DisplayAction-Anchor {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/**march-11-22**/
+
+.ui-tooltip{
+  font-size:15px !important;
+  font-weight: 600;
+  min-width:50px;
+  padding:3px 10px;
+  text-align: center;
+}
+
+.ui-tooltip::before{
+  content:'';
+  position:absolute;
+  left:-13px;
+  top:8px; 
+  border:6px solid #333;
+  border-top-color:transparent;
+  border-left-color:transparent;
+  border-bottom-color:transparent;
+}
+
+
+@media(max-width:500px){
+
+        .approvelheadeing span.date-sec {
+            float: none !important;
+            display: block;
+            text-align: right;
+        }
+
+        .signbox {
+            text-align: left;
+            margin: 5px 0;
+        }
+
+        .flexitem {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .imgsetion {
+            margin-bottom: 5px;
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .modal-dialog.widthajust {
+            width: 750px;
+            margin: 30px auto;
+        }
+    }
+
+    /**Approvers***/
+
+
+/******jan-18-22*********/
+
+.requtbox,
+.dividsec{
+
+ display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center; margin:5px 0 0 0;
+ 
+}
+
+.reqtleft{
+  font-weight: 600;
+}
+
+.reqtleft,
+.reqtright{
+	font-size:12px;
+}
+
+.privorityicon{
+	width:20px;
+	margin-left: auto;
+}
+.privorityicon img{
+	width:20px;
+
+}
+.datebox,
+.duedatesection{
+	font-size:12px;
+}
+
+.GroupImage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+}
+
+.empoyeeimg{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin:0 3px;
+}
+.empoyeeimg img {
+    width: 25px;
+    height: 25px;
+   border-radius: 50%;   
+ }
+
+
+.empoyeeimg.buttonmore button{
+    background: #939393 !important;
+    border: none;
+    width: 25px;
+    height: 25px;
+    min-width: 0;
+    padding: 0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 17px !important;
+    border-radius: 50% !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border:none;
+    outline:none;
+    transition: 0.2s;
+    
+}
+
+.empoyeeimg.buttonmore button:hover{
+  background:#727272 !important
+}
+
+ .pendingprocess.green{
+ 	color:#5cb85c;
+ }  
+
+ .employeesection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.employeeinfo h3 {
+    font-size: 12px !important;
+} 
+
+
+ul.group-taks-item{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.Assignedcontents {
+    padding: 0 8px;
+} 
+
+.employeesection ul li .Assignedcontents p {
+    margin-bottom: 2px;   
+}
+
+.Assignedcontents a {
+    color: #1d6ec0 !important;
+    text-decoration: none;
+    font-size:12px !important;
+    text-decoration: none;
+}
+
+.Assignedcontents p{
+ font-size:12px !important;
+ margin-bottom:2px;
+}
+
+.group-taks-item {
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 0.17);
+    z-index: 10;
+    overflow: auto;
+    max-height: 280px;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+.group-taks-item-panel li:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+.group-taks-item-panel li:hover{
+ background-color: #f3f3f3;
+}
+
+img[src$="initiated-img.png"]{
+ width:20px !important;	
+}
+.reqtright{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+  display:inline-block;
+  margin-left:3px;	
+}
+
+#TempTableInbox tr td:nth-child(2),
+#TempTableInbox tr th:nth-child(2),
+#TempTableInbox tr td:nth-child(5),
+#TempTableInbox tr th:nth-child(5),
+#TempTableInbox tr td:nth-child(6),
+#TempTableInbox tr th:nth-child(6),
+#TempTableInbox tr td:nth-child(7),
+#TempTableInbox tr th:nth-child(7){
+ text-align:center !important;	
+}
+
+#TempTableOutbox tr td:nth-last-child(7),
+#TempTableOutbox tr th:nth-last-child(7),
+#TempTableOutbox tr td:nth-last-child(6),
+#TempTableOutbox tr th:nth-last-child(6),
+#TempTableOutbox tr td:nth-last-child(5),
+#TempTableOutbox tr th:nth-last-child(5),
+#TempTableOutbox tr td:nth-last-child(3),
+#TempTableOutbox tr th:nth-last-child(3),
+#TempTableOutbox tr td:nth-last-child(2),
+#TempTableOutbox tr th:nth-last-child(2),
+#TempTableOutbox tr td:nth-last-child(1),
+#TempTableOutbox tr th:nth-last-child(1){
+ text-align:center !important;	
+}
+
+#TempTableOutbox tr td p,
+#TempTableInbox tr td p{
+  margin-bottom:4px !important;
+  font-size:12px;	
+}
+
+#TempTableOutbox tr td:first-child p.wraptext,
+#TempTableInbox tr td:first-child p.wraptext{
+  max-width:235px !important;	
+}
+
+.full-expand-panel .detail-label{
+font-weight:600 !important;
+}
+
+.full-expand-panel .detail-title {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+}
+
+.full-expand-panel .detail-vide-panel li {
+    margin-bottom: 15px !important;
+}
+
+#groupview .group-taks-item{
+  max-width:100% !important;	
+}
+
+/******jan-18-22*********/
+
+/***jan-21-22***/
+
+.checkbox.alignmentmang{
+ text-align:center;	
+}
+
+.checkbox.alignmentmang #ForwardApprovalChkBTN,
+.checkbox.alignmentmang #RejectApproveChkBox,
+.checkbox.alignmentmang #ApprovedChkbox{
+ float:none !important;
+ margin-right:5px;
+ position:relative;
+ top:-2px;	
+}
+
+#pie svg .p0_arc{
+  cursor:pointer !important;	
+}
+
+#pieout svg .p1_arc{
+  cursor:pointer !important;	
+}
+
+#OpenWebpage{
+  min-height: calc(100vh - 133px);
+  max-height: calc(100vh - 133px);
+}
+
+/**march-3-22**/
+
+img[id^="StatusImageApprovalTaskList"]{
+  width:16px;	
+}
+
+.wrapcheck {
+    margin: 5px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    clear: both;
+}
+
+.wrapcheck img {
+    margin-left: 10px !important;
+}
+
+
+/* responsive css start */
+
+@media(min-width: 992px){
+
+#Approval-Inbox .search-box, 
+#Approval-Outbox .search-box {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.dashboard-deta-btn-panel{
+ margin:17px 0 17px 0 !important;   
+}
+
+#query{
+ margin-bottom:0 !important;    
+}
+
+}
+
+@media(max-width: 1199px){
+
+#query1,
+#query{
+ margin-bottom:10px !important; 
+}
+
+.pl0.task_inbox_box{
+ padding-left:15px !important;  
+}
+    
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 768px){
+
+#TempTableInbox,
+#TempTableOutbox{
+
+min-width:1120px !important;
+    
+}   
+    
+}
+
+
+
+
+@media(min-width:768px){
+
+.colorlist li{
+    text-align: left;
+    margin: 7px 0;
+    color:#4e4e4e;
+}
+
+#approvalForwardModal .modal-dialog{
+
+ width: 650px !important;
+    
+}
+    
+}
+
+@media(max-width:767px){
+
+.colorlist li {
+    text-align: left;
+    margin: 1px 0;
+    font-size: 10.5px;
+}
+.all-align-gap .article-content{
+ margin:0 !important;   
+}
+.nav>li>a {
+    padding: 5px 8px;
+}
+.custom-nav>li>a h4 {
+    font-size: 13px !important;
+}
+
+.colorlist {
+    right: 5%;
+}
+
+#TempTableInbox,
+#TempTableOutbox{
+
+  min-width:1120px !important;
+    
+}
+
+#tablefooter>div{
+ padding:5px 0; 
+}
+
+.table-responsive{
+ border:1px solid #ddd !important;  
+}
+
+#myTabs>li>a {
+    padding: 8px 15px !important;
+}
+
+
+}
+
+@media(max-width:1199px){
+
+.mgajst,
+.task_inbox_box{
+ margin-bottom:30px;    
+}
+    
+}
+
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3430</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">7a3f037d-62f1-49d8-b04f-dd65e23e50ce</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3430, ADMIN-1645029823-3430</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">343000.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+    <div class="container-fluid" style="padding:0">
+        <div class="custom-panel" style="border:none; margin:0;">
+            <div class="panel-head">
+                <h1 class="panel-head-text">Approval Dashboard</h1>
+            </div>
+            <div class="panel-body pb0">
+
+                <ul id="myTabs" class="nav custom-nav nav-pills custom-nav-main" role="tablist"
+                    data-tabs="tabs">
+                    <li id="ApprovalInbox" class="active">
+                        <a href="#Approval-Inbox" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="true" onclick="ActiveInboxOutbox('InBox');">
+                            <h4 class="m0 nav-text-isPhone">
+                                <span class="glyphicon glyphicon-save"></span>
+                                <span>Inbox</span>
+                            </h4>
+                        </a>
+                    </li>
+                    <li id="ApprovalOutbox" class="">
+                        <a href="#Approval-Outbox" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="false" onclick="ActiveInboxOutbox('OutBox');">
+                            <h4 class="m0 nav-text-isPhone">
+                                <span class="glyphicon glyphicon-open"></span>
+                                <span>Outbox</span>
+                            </h4>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content tab-pane-main">
+                    <!-- Approval Inbox tab -->
+                    <div role="tabpane5" class="tab-pane fade active in" id="Approval-Inbox">
+                        <div class="custom-panel custom-panel-box approval-inbox-custom-panel">
+                            <div class="panel-body">
+                                <div class="row inbox-istab" style="margin-bottom:0;">
+                                    <div class="col-lg-7">
+                                        <div class="scrollbar-panel chip-panel">
+                                            <div class="chip-box" id="ApprovalinboxChip">
+                                                <div class="upload-chip">Initiated</div>
+                                                <div class="upload-chip">All</div>
+                                                <div class="upload-chip">Article</div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-deta-btn-panel d-flex">
+
+                                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+                                                <a class="btn" type="button" href="../Pages/ApprovalRequestEntry.aspx?" target="_blank">
+                                                    <img class="dashboard-icon-info mr2" src="../SiteAssets/Approvals/assets/images/add.png"
+                                                        alt="add" data-themekey="#">
+                                                    <span>New Request</span>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+                                                <a class="btn" type="button" href="../Pages/ApprovalFormSetup.aspx?" target="_blank">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/processes-list.png" alt="processes-list"
+                                                        data-themekey="#">
+                                                    <span>New Template</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+                                                <button class="btn" type="button" data-toggle="modal"
+                                                    data-target="#approvalInbox">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/filter-icon.png" alt="filter"
+                                                        data-themekey="#">
+                                                    <span>Filter</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+                                                <a class="btn dropdown-toggle" type="button" id="" onclick="ExcelDataReport('TempTableInbox');">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
+                                                        data-themekey="#">
+                                                    <span>Export</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/sort-icon.png" alt="sort" data-themekey="#">
+                                                    <span>Sort</span>
+                                                    <img class="dashboard-icon-info ml2"
+                                                        src="../SiteAssets/Approvals/assets/images/expand-arrow-icon.png" alt="expand arrow"
+                                                        data-themekey="#">
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-color-menu-icon">
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeData('Title');">
+                                                            <span class="">Title</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeData('Type');">
+                                                            <span class="">Type</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeData('Recent Request');">
+                                                            <span class="">Recent Request</span>
+                                                        </a>
+                                                    </li>
+                                                    <!--<li>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="">Old Request</span>
+                                                        </a>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+
+                                            <!--<div class="dropdown dashboard-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/settings.png" alt="settings"
+                                                        data-themekey="#">
+                                                    <span>Action</span>
+                                                    <img class="dashboard-icon-info ml2"
+                                                        src="../SiteAssets/Approvals/assets/images/expand-arrow-icon.png" alt="expand arrow"
+                                                        data-themekey="#">
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-color-menu-icon">
+                                                    <li>
+                                                        <a href="#approvalActionModal" data-toggle="modal"
+                                                            class="dropdown-toggle" id="">
+                                                            <img class="dashboard-icon-info"
+                                                                src="../SiteAssets/Approvals/assets/images/completed-icon.png" alt="completed"
+                                                                data-themekey="#">
+                                                            <span>Approve</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#approvalRejectionModal" data-toggle="modal"
+                                                            class="dropdown-toggle">
+                                                            <img class="dashboard-icon-info"
+                                                                src="../SiteAssets/Approvals/assets/images/reject-icon.png" alt="reject"
+                                                                style="max-width:20px !important" data-themekey="#">
+                                                            <span>Reject</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#approvalForwardModal" data-toggle="modal"
+                                                            class="dropdown-toggle" id="">
+                                                            <img class="dashboard-icon-info"
+                                                                src="../SiteAssets/Approvals/assets/images/forwarded-icon.png" alt="forwarded"
+                                                                data-themekey="#">
+                                                            <span>Forward</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="#approvalNotificationModal" data-toggle="modal"
+                                                            class="dropdown-toggle">
+                                                            <img class="dashboard-icon-info"
+                                                                src="../SiteAssets/Approvals/assets/images/notify.png" alt="notify"
+                                                                data-themekey="#">
+                                                            <span>Notify Email</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>-->
+
+
+
+                                        </div>
+                                        <!---flex button ed-->
+
+
+                                        <div class="form-group custom-form-group search-box">
+                                            <!--<input class="form-control" type="text" name="" placeholder="Search">-->
+                                            <input type="text" id="query1" onkeyup="sorterInbox.search('query1')" placeholder="Type here for search..." class="doc-search">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+
+                                        <div class="row mgajst">
+
+                                            <div class="col-md-12 col-lg-5 pl0 task_inbox_box">
+                                                <div class="panel panel-default panel-mb0">
+                                                    <div class="panel-body panel-body-task-inbox">
+                                                        <div class="col-sm-6 col-xs-6  pl10 pr5">
+                                                            <div class="inbox-pending counter-custom-height">
+                                                                <a class="Task-link" href="javascript:void(0);" onclick="GetPendingRecInbox();">
+                                                                    <p>Pending</p>
+                                                                    <span class="counter-custom-padding"
+                                                                        id="TaskPending"></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-xs-6 pl5 pr10">
+                                                            <div class="inbox-overdue counter-custom-height">
+                                                                <a class="Task-link" href="javascript:void(0);" onclick="GetOverDueInbox()">
+                                                                    <p>Overdue</p>
+                                                                    <span class="counter-custom-padding"
+                                                                        id="TaskOverdue">0</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-7 pl0 pr0 task_graph">
+                                            <div class="pl0 pr0 chart-container" style="text-align:center; position:relative">
+                                                <ul class="colorlist">
+                                                    <li><span class="Approved"></span> Approved</li>
+                                                    <li><span class="Rejected"></span> Rejected</li>
+                                                    <li><span class="Forwarded"></span> Forwarded</li>
+                                                    <li><span class="Initiated"></span> Initiated</li>
+                                                    <!--<li><span class="close_color"></span> Close</li>-->
+
+                                                </ul>
+                                                <div id="pie"></div>
+                                            </div>
+
+                                            <!--<div class="chart-container" style="height: 150px; max-width: 150px; margin: 0px auto;" id="pie">
+                                 
+                                            </div>-->
+
+                                                <!--<img class="image-fluid" src="../SiteAssets/Approvals/assets/images/chart1.png" alt="chart1">-->
+                                            </div>
+
+                                        </div>
+                                        <!--row ed-->
+
+                                    </div>
+                                </div>
+
+            <div class="row">
+                <div class="col-md-12">         
+                    <div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+                        <div id="tableheader" style="height: auto !important;">
+                            <div class="search" style="display:none;">
+                                <select style="display:none;" id="columnsInbox" onchange="sorter.search('query')"></select>
+                            </div>
+                            <div>
+                                <span class="details">
+                                    <div style="display:none;">Records  <span id="startrecordInbox"></span>-<span id="endrecordInbox"></span> &nbsp; PagesOf &nbsp; <span id="totalrecordsInbox"></span></div>
+                                    <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row ajusting_view">                     
+                            <!--<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important; margin-left:10px;" />-->
+                            </div>
+                        </div>  
+                        <div class="table-responsive scrollbar-panel">
+                            <table cellpadding='0' cellspacing='0' border='1' id='TempTableInbox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                <thead class='panel-heading '>
+                                    <tr>
+                                        <th class="w-30 nosort" style="width:22%"><h6 data-localize="Title">Title</h6></th>
+                                        <th class="w-10 nosort" style="width:10%"><h6 data-localize="Type">Type</h6></th>
+                                        <th class="text-center nosort" style="width:20%"><h6 data-localize="RequestBy" >Request By</h6></th>
+                                        <th class="w-10 nosort" style="width:10%"><h6 data-localize="DueDate" >Due Date</h6></th>                             
+                                        <th class="text-center nosort"id="" style="width:10%"><h6 data-localize="Status" >Status</h6></th>
+                                        <th class="text-center nosort"id="" style="width:9%"><h6 data-localize="CurrentStep" >Current Step</h6></th>
+                                        <th class="w-20 nosort" style="width:10%"><h6 data-localize="Action By" >Action By</h6></th>                               
+                                        <!---<th class='nosort w-10' style="width:10%"><h6 data-localize=""></h6></th>--->
+                                    </tr>
+                                </thead>
+                                <tbody class='panel mainDivAllInbox'>                   
+                                </tbody>
+                            </table>                    
+                        </div>
+                        <div id="tablefooter" style="margin-bottom: 10px;">
+                            <div id="tablenavInbox">
+                                <div>
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterInbox.move(-1,true)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterInbox.move(-1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterInbox.move(1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterInbox.move(1,true)" />
+                                </div>
+                                <div>
+                                    <select id="pagedropdownInbox"></select>
+                                </div>
+                                <div>
+                                    <a href="javascript:sorterInbox.showall()" data-localize="ViewAll">View All</a>
+                                </div>
+                            </div>
+                            <div style="float:left !important;"><span>Showing Items &nbsp</span><span id="totalrecordsInbox"></span></div>
+                            <div id="tablelocation">
+                                <div>
+                                    <span data-localize="LinesPerPage">Lines per page</span>
+                                    <select onchange="sorter.size(this.value)">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>                      
+                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpageinbox"></span>&nbsp;<span data-localize="Of"> of </span>&nbsp;<span id="totalpagesInbox"></span></div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+
+
+<!--div class="row m-0">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
+        <div class="table-responsive">
+            <div id="tablewrapper">
+                <div class="search" style="display:none;">
+                   <select class="form-control" style="height:37px;float:left;width:200px;" id="columnsApprovalInbox" onchange="sorterApprovalInbox.search('query')"></select>
+                </div>
+                <div style="display:none;">
+                    <span class="details">
+                        <div style="display:none;">Records <span id="startrecordApprovalInbox"></span>-<span id="endrecordApprovalInbox"></span> PagesOf <span id="totalrecordsApprovalInbox"></span></div>
+                        <div style="display:none;"><a href="javascript:sorterApprovalInbox.reset()">Reset </a> </div>
+                    </span>
+                </div>
+            <div>
+                <div id="mainTablearea" class="table-responsive table-responsive2 scrollbar-panel">
+                    <table id="tableTempApprovalInbox" class="table custom-table"> 
+                        <thead>
+                            <tr>
+                                <th class="w-20">Title</th>
+                                <th class="w-10">Type</th>
+                                <th class="text-center w-10">Category</th>
+                                <th class="w-20">Request By</th>
+                                <th class="text-center w-10">Status</th>
+                                <th class="w-20">Action By</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="mainDivAreaApprovalInbox">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Approval Inbox tab -->
+
+
+                    <!-- Approval Outbox tab-->
+
+                    <div role="tabpane6" class="tab-pane fade" id="Approval-Outbox">
+                        <div class="custom-panel custom-panel-box approval-outbox-custom-panel">
+                            <div class="panel-body">
+
+                                <div class="row inbox-istab" style="margin-bottom:0;">
+
+                                    <div class="col-lg-7">
+
+                                        <div class="scrollbar-panel chip-panel">
+                                            <div class="chip-box" id="ApprovaloutboxChip">
+                                                <div class="upload-chip">Initiated</div>
+                                                <div class="upload-chip">All</div>
+                                                <div class="upload-chip">Article</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="dashboard-deta-btn-panel d-flex">
+
+                                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+                                                <a class="btn" type="button" href="../Pages/ApprovalRequestEntry.aspx?" target="_blank">
+                                                    <img class="dashboard-icon-info mr2" src="../SiteAssets/Approvals/assets/images/add.png"
+                                                        alt="add" data-themekey="#">
+                                                    <span>New Request</span>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+                                                <a class="btn" type="button" href="../Pages/ApprovalFormSetup.aspx?" target="_blank">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/processes-list.png" alt="processes-list"
+                                                        data-themekey="#">
+                                                    <span>New Template</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="modal"
+                                                    data-target="#approvalOutbox">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/filter-icon.png" data-themekey="#">
+                                                    <span>Filter</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+                                                <a class="btn dropdown-toggle" type="button" id="" onclick="ExcelDataReport('TempTableOutbox');">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
+                                                        data-themekey="#">
+                                                    <span>Export</span>
+                                                </a>
+                                            </div>
+
+                                            <div class="dropdown dashboard-table-btn">
+
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/sort-icon.png" alt="sort" data-themekey="#">
+                                                    <span>Sort</span>
+                                                    <img class="dashboard-icon-info ml2"
+                                                        src="../SiteAssets/Approvals/assets/images/expand-arrow-icon.png" alt="expand arrow"
+                                                        data-themekey="#">
+                                                </button>
+
+                                                <ul class="dropdown-menu dropdown-color-menu-icon">
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeDataOutBox('Title');">
+                                                            <span class="">Title</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeDataOutBox('Type');">
+                                                            <span class="">Type</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0);" onclick="ArrengeDataOutBox('Recent Request');">
+                                                            <span class="SortOutClass">Recent Request</span>
+                                                        </a>
+                                                    </li>
+                                                    <!--<li>
+                                                        <a href="javascript:void(0);">
+                                                            <span class="">Old Request</span>
+                                                        </a>
+                                                    </li>-->
+                                                </ul>
+                                            </div>
+
+                                            <!--<div class="dropdown dashboard-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" id="" href="#approvalNotificationModal" data-toggle="modal">
+                                                    <img class="dashboard-icon-info mr2"
+                                                        src="../SiteAssets/Approvals/assets/images/notify.png" alt="Notification"
+                                                        data-themekey="#">
+                                                    <span>Notification</span>
+                                                </button>
+                                            </div>-->
+
+
+                                        </div>
+                                        
+
+
+                                        <div class="form-group custom-form-group search-box">
+                                            <!--<input class="form-control" type="text" name="" placeholder="Search">-->
+                                            <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-5">
+
+                                        <div class="row mgajst">
+
+                                            <div class="col-md-12 col-lg-5 pl0 task_inbox_box">
+                                                <div class="panel panel-default panel-mb0">
+                                                    <div class="panel-body panel-body-task-inbox">
+                                                        <div class="col-sm-6 col-xs-6  pl10 pr5">
+                                                            <div class="inbox-pending counter-custom-height">
+                                                                <a class="Task-link" href="javascript:void(0);" onclick="GetPendingRecOutbox();">
+                                                                    <p>Pending</p>
+                                                                    <span class="counter-custom-padding"
+                                                                        id="TaskPendingOutbox">0</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-6 col-xs-6 pl5 pr10">
+                                                            <div class="inbox-overdue counter-custom-height">
+                                                                <a class="Task-link" href="javascript:void(0);" onclick="GetOverDueOutbox();">
+                                                                    <p>Overdue</p>
+                                                                    <span class="counter-custom-padding"
+                                                                        id="TaskOverdueOutBox">0</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-lg-7 pl0 pr0 task_graph">
+                                            <div class="pl0 pr0 chart-container" style="text-align:center; position:relative">
+                                                <ul class="colorlist">
+                                                    <li onclick="ArrengeDataOutBox('Approved');"><span class="Approved"></span> Approved</li>
+                                                    <li onclick="ArrengeDataOutBox('Rejected');"><span class="Rejected"></span> Rejected</li>
+                                                    <li onclick="ArrengeDataOutBox('Forwarded');"><span class="Forwarded"></span> Forwarded</li>
+                                                    <li onclick="ArrengeDataOutBox('Initiated');"><span class="Initiated"></span> Initiated</li>
+                                                    <!--<li><span class="close_color"></span> Close</li>-->
+
+                                                </ul>
+                                                <div id="pieout"></div>
+                                            </div>
+
+                                            
+
+                                                <!--<img class="image-fluid" src="../SiteAssets/Approvals/assets/images/chart1.png" alt="chart1">-->
+                                            </div>
+
+                                        </div>
+                                        <!--row ed-->
+
+                                    </div>
+                                </div>
+        <!--<div class="container">-->
+            <div class="row">
+                <div class="col-md-12">         
+                    <div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+                        <div id="tableheader" style="height: auto !important;">
+                            <div class="search" style="display:none;">
+                                <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                            </div>
+                            <div>
+                                <span class="details">
+                                    <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                    <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row ajusting_view">                     
+                            <!--<input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Type here for search..." class="doc-search"style="width:200px;font-size: 13px;padding:8px 5px !Important; margin-left:10px;" />-->
+                            </div>
+                        </div>  
+                        <div class="table-responsive scrollbar-panel">
+                            <table cellpadding='0' cellspacing='0' border='1' id='TempTableOutbox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                <thead class='panel-heading '>
+                                    <tr>
+                                        <th class="nosort" style="width:22%"><h6 data-localize="Title" >Title</h6></th>
+                                        <th class="nosort" style="width:10%"><h6 data-localize="Type" >Type</h6></th>
+                                        <th class="nosort text-center" style="width:10%"><h6 data-localize="Request Date" >Request Date</h6></th>
+                                        <th class="nosort" style="width:10%"><h6 data-localize="Due Date" >Due Date</h6></th>                                
+                                        <th class="nosort text-center"id="" style="width:18%"><h6 data-localize="Approvers" >Approvers</h6></th>
+                                        <th class="nosort head" id="" style="width:10%"><h6 data-localize="Status">Status</h6></th>
+                                        <th class="nosort" style="width:9%"><h6 data-localize="Current Step" >Current Step</h6></th>
+                                        <th class="nosort" style="width:9%"><h6 data-localize="Action By" >Action By</h6></th>                              
+                                        <!--<th class='nosort w-10' style="width:10%;"><h6 data-localize=""></h6></th>-->
+                                    </tr>
+                                </thead>
+                                <tbody class='panel mainDivAllAnnouncements'>                   
+                                </tbody>
+                            </table>                    
+                        </div>
+                        <div id="tablefooter" style="margin-bottom: 10px;">
+                            <div id="tablenavoutbox">
+                                <div>
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                </div>
+                                <div>
+                                    <select id="pagedropdownOutbox"></select>
+                                </div>
+                                <div>
+                                    <a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+                                </div>
+                            </div>
+                            <div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+                            <div id="tablelocation">
+                                <div>
+                                    <span data-localize="LinesPerPage">Lines per page</span>
+                                    <select onchange="sorter.size(this.value)">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>                      
+                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of">of</span>&nbsp;<span id="totalpages"></span></div>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        <!--</div>-->
+        
+        <!--<div class="row m-0">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
+                <div class="table-responsive">
+                    <div id="tablewrapper">
+                        <div class="search" style="display:none;">
+                            <select class="form-control" style="height:37px;float:left;width:200px;" id="columnsApprovalOutBox" onchange="sorterApprovalOutBox.search('columnsApprovalOutBox')"></select>
+                        </div>
+                        <div style="display:none;">
+                            <span class="details">
+                                <div style="display:none;">Records <span id="startrecordApprovalOutBox"></span>-<span id="endrecordApprovalOutBox"></span> PagesOf <span id="totalrecordsApprovalOutBox"></span></div>
+                                <div style="display:none;"><a href="javascript:sorterApprovalOutBox.reset()">Reset </a></div>
+                            </span>
+                        </div>
+                        <div>
+                            <div id="mainTablearea" class="table-responsive table-responsive2 scrollbar-panel">
+                                <table id="tableTempApprovalOutBox" class="table custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="w-30">Title</th>
+                                            <th class="w-10">Type</th>
+                                            <th class="text-center w-10">Category</th>
+                                            <th class="w-10">Request Date</th>
+                                            <th class="text-center w-10">Status</th>
+                                            <th class="w-20">Action By</th>
+                                            <th class="w-10"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="mainDivAreaApprovalOutBox">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div style="text-align: center;font-size:14px;display: none;" id="NoRecordFoundApprovalOutBox" data-localize="NoRecordFound">No Record Found</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Approval Inbox Modal -->
+    <div class="modal fade" id="approvalInbox" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Filter</h4>
+                </div>
+                <div class="modal-body pb0">
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Type:</label>
+                                <select class="form-control" id="WebpartApprovalInbox" onchange="GetGetogery(this.value);">
+                                    <option value="All">All</option>                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Category:</label>
+                                <select class="form-control" id="categoryApprovalInbox">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Request By:</label>
+                                <div id="Requestby"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Status:</label>
+                                <select class="form-control" id="txtFilterApprovalStatusInbox">
+                                    <option>ALL</option>                                    
+                                    <option>Approved</option>
+                                    <option>Rejected</option>
+                                    <option>Forwarded</option>
+                                    <option selected="selected">Initiated</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80" onclick="FilterApprovalInbox()" data-dismiss="modal">Apply</a>
+                    <button type="button" class="btn custom-btn-two-cancel wpx-80" onclick="ClearApprovalInboxFilter()"
+                        data-dismiss="modal">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approval Action Modal -->
+    <div class="modal fade approval-action-modal" id="approvalActionModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Approval</h4>
+                </div>
+                <div class="modal-body pb0">
+                    
+                    <div id="SignatureBox">
+                    <div class="form-group custom-form-group custom-form-group-radio-inline mb10">
+                        <label class="radio-inline"><input type="radio" name="SignTypeRadio" id="SignTextRadio"  value="SignText" checked="checked">Type</label>
+                        <label class="radio-inline"><input type="radio" name="SignTypeRadio" id="SignImageRadio" value="SignImage">Image</label>
+                        <label class="radio-inline"><input type="radio" name="SignTypeRadio" id="SignDrawRadio" value="SignDraw">Draw</label>
+                    </div>
+                    <div class="signature-box mb15">
+                        <a type="button" class="btn custom-btn-two-cancel wpx-80 draw-signature-box-type-clear-btn"  name="TextSignaturebtn" id="CLR-TextSignature" onclick="">Clear</a>
+                        <div class="signature-box-container">
+                            <input class="form-control text-center signature-front" type="text" placeholder="Type your sign here" id="SingTextType">
+                        </div>
+                    </div>
+                    <div class="drag-drop-box mb15 d-none">
+                        <a type="button" class="btn custom-btn-two-cancel wpx-80 draw-signature-box-image-clear-btn"  name="ImageUploadSignaturebtn" id="CLR-ImageSignature" onclick="">Clear</a>
+                        <div class="drop-container" id="drop-zone">
+                            <div class="custom-image-label" id="clickHere">Drop your Signature image here or click to upload <i class="fa fa-upload pl-4"></i>
+                                <input type="file" name="file" id="file" onchange="document.getElementById('SignImgPreview').src = window.URL.createObjectURL(this.files[0])">
+                            </div>
+                            <!-- <p class="drop-here-text">Drop your sign image</p> -->
+                            <!-- <div class="filename-container" id="filename"></div> -->
+                            <div class="approval_image_preview">
+                                <img src="" alt="Sign-image" id="SignImgPreview">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="draw-signature-box mb15 d-none">
+                        <!--<div class="draw-signature-box-container" id="Signature">-->
+                        <!--<div id="content">-->
+                                <div id="signatureparent">
+                                    <a type="button" class="btn custom-btn-two-cancel wpx-80 draw-signature-box-draw-clear-btn"  name="Drawsignaturebtn" id="CLR-DrawSignature" onclick="">Clear</a>
+                                    <div class="draw-signature-box-container" id="signature"></div>
+                                </div>
+                                
+                                
+                        <!--</div>
+
+                            
+                        </div>-->
+                    </div>
+                    </div>
+
+                    <div class="form-group custom-form-group">
+                        <label for="">Remarks:</label>
+                        <textarea class="form-control resize-none" name="" id="RemarksApprovalContent" rows="4"></textarea>
+                    </div>
+
+                    <div class="checkbox mt0 mb10 SignatureBoxApproved alignmentmang">
+                        <label><input type="checkbox" value="" id="ApprovedChkbox">Approved</label>
+                    </div>
+
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80"  name="" hreflang="" id="ApprovalSubmitBTN" onclick="ApprovedAction(this)">Submit</a>
+                    <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approval Rejection Modal -->
+    <div class="modal fade approval-rejection-modal" id="approvalRejectionModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Reject</h4>
+                </div>
+                <div class="modal-body pb0">
+                    
+                    <div class="form-group custom-form-group">
+                        <label for="">Remarks: <span class="color-red">*</span></label>
+                        <textarea class="form-control resize-none" name="" id="RejectApproveRemark" rows="5"></textarea>
+                    </div>
+                    <div class="checkbox mt0 mb10 alignmentmang">
+                        <label><input type="checkbox" value="" id="RejectApproveChkBox">Rejected</label>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80"  id="RejectApproveModel" onclick="RejectApproval(this)">Submit</a>
+                    <a type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approval forward Modal -->
+    <div class="modal fade approval-forward-modal" id="approvalForwardModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Forward</h4>
+                </div>
+                <div class="modal-body pb0">
+                    
+                    <div class="form-group custom-form-group mb10">
+                        <label>Forward To:</label>
+                        <div id="ApprovalForward"></div>
+                    </div>
+                    <div class="row user-detail-container scrollbar-panel mb10" id="ForwardUsersList">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group custom-form-group">
+                        <label for="">Remarks:</label>
+                        <textarea class="form-control resize-none" name="" id="ForwardRemark" rows="4"></textarea>
+                    </div>
+                    
+                     <div class="checkbox mt0 mb10 alignmentmang">
+                        <label><input type="checkbox" value="" id="ForwardApprovalChkBTN">Forwarded</label>
+                    </div>
+                                        
+                    
+                    <div class="checkbox mt0 mb15" style="display:none">
+                        <label><input type="checkbox" value="">Return back to me</label>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80" id="ForwardRecordsBtn" onclick="ForwardApproval(this)">Submit</a>
+                    <a type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approval Notification Modal -->
+    <div class="modal fade approval-notification-modal" id="approvalNotificationModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Notification</h4>
+                </div>
+                <div class="modal-body pb0">
+                    <div class="form-group custom-form-group mb10">
+                        <label>Send Mail To:</label>
+                        <!--<input type="text" class="form-control field-label" placeholder="" name="">-->
+                        <div id="NotificationMail"></div>
+                    </div>
+                    <div class="row user-detail-container user-detail-container2 scrollbar-panel mb15" id="NotificationUsersList">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="members-card border-0">
+                                <div class="members-card-head">
+                                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                </div>
+                                <div class="members-card-body">
+                                    <div class="members-card-body-info text-ellipsis">
+                                        <h3 class="member-name text-ellipsis">Dipankar Goswami</h3>
+                                        <p class="member-email text-ellipsis mb0">d.goswami@adapt-india.com</p>
+                                    </div>
+                                    <button class="btn remove-group-btn remove-btn close close-round"><i
+                                            class="fa fa-times"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group custom-form-group">
+                        <label for="">Your Message:</label>
+                        <textarea class="form-control resize-none" name="" id="MailText" rows="5"></textarea>
+                    </div>
+
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80" data-dismiss="modal" id="ProcessSendEmailsbtn" onclick="processSendEmails(this)">Submit</a>
+                    <a type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Approval Outbox Modal -->
+    <div class="modal fade" id="approvalOutbox" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Filter</h4>
+                </div>
+                <div class="modal-body pb0">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Status:</label>
+                                <select class="form-control" id="txtFilterApprovalStatusOutbox">
+                                    <option>ALL</option>                                    
+                                    <option>Approved</option>
+                                    <option>Rejected</option>
+                                    <option>Forwarded</option>
+                                    <option selected="selected">Initiated</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Type:</label>
+                                <select class="form-control" id="WebpartApprovalOutbox" onchange="GetGetogeryOutBox(this.value)">
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="form-group custom-form-group">
+                                <label for="Project">Category:</label>
+                                <select class="form-control" id="categoryApprovalOutbox">
+                                    <option>All</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <a type="button" class="btn custom-btn mr-8 wpx-80" onclick="FilterApprovalOutbox()"
+                        data-dismiss="modal">Apply</a>
+                    <a type="button" class="btn custom-btn-two-cancel wpx-80" onclick="ClearApprovalOutboxFilter()"
+                        data-dismiss="modal">Clear</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document approvals modal -->
+    <div id="documentApprovalAction" class="modal fade pr0" role="dialog">
+        <div class="modal-dialog full-expand-panel">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Document Approvals</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-view-deta-btn-panel d-flex">
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/full-view.png"
+                                    alt="Full View">
+                                <span>Full View</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/download.png" alt="Download">
+                                <span>Download</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button" data-target="#approvalActionModal" data-toggle="modal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/completed-icon.png"
+                                    alt="completed">
+                                <span>Approve</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal"
+                                data-target="#approvalRejectionModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/reject-icon.png"
+                                    alt="reject-icon">
+                                <span>Reject</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal"
+                                data-target="#approvalForwardModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/forwarded-icon.png"
+                                    alt="forwarded-icon">
+                                <span>Forward</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/print-icon.png" alt="print">
+                                <span>PDF</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/adobe-icon.png" alt="adobe">
+                                <span>Adobe Sign</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal"
+                            data-target="#approvalNotificationModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/notify.png" alt="notify">
+                                <span>Notification</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-xs-12">
+                            <div class="preview-box scrollbar-panel">
+                                <div style="height: 150vh;padding: 10px;">
+                                    <img src="../SiteAssets/Approvals/assets/images/file-img.png" style="width:100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <ul class="detail-vide-panel scrollbar-panel">
+                                <li>
+                                    <label class="detail-label">Request By:</label>
+                                    <div class="approval-dashboard-user-card-panel">
+                                        <div class="approval-dashboard-user-card-img">
+                                            <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                        </div>
+                                        <div class="approval-dashboard-user-card-info">
+                                            <div class="approval-dashboard-user-card-name ellipsis-1">
+                                                Dipankar Goswami</div>
+                                            <div class="approval-dashboard-user-card-email ellipsis-1">
+                                                d.goi@adapt-india.com</div>
+                                            <div class="approval-dashboard-user-card-date ellipsis-1">12 Jan 2021</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Purpose:</label>
+                                    <div class="detail-title ellipsis-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eum quam unde velit non molestias dignissimos accusamus earum voluptates at.</div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Priority:</label>
+                                    <div class="detail-title ellipsis-2">
+                                        <div class="d-flex">
+                                            <span>Top</span> 
+                                            <img class="ml5 priority-icon" width="20px" src="../SiteAssets/Approvals/assets/images/priority-icon.png" alt="priority icon" >
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Due Date:</label>
+                                    <div class="detail-title ellipsis-2">23 July 2021 / Not defined</div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Document Type:</label>
+                                    <div class="detail-title ellipsis-2">Technical diagram</div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Reference Number:</label>
+                                    <div class="detail-title ellipsis-2">R002233</div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Last Action:</label>
+                                    <div class="last-action-panel">
+                                        <div class="approval-dashboard-user-card-panel">
+                                            <div class="approval-dashboard-user-card-img">
+                                                <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user">
+                                            </div>
+                                            <div class="approval-dashboard-user-card-info">
+                                                <div class="approval-dashboard-user-card-name ellipsis-1">
+                                                    Approved / Forwarded by</div>
+                                                <div class="approval-dashboard-user-card-name ellipsis-1">
+                                                    Dipankar Goswami</div>
+                                                <div class="approval-dashboard-user-card-email ellipsis-1">
+                                                    d.goi@adapt-india.com</div>
+                                                <div class="approval-dashboard-user-card-date ellipsis-1">12 Jan 2021</div>
+                                            </div>
+                                        </div>
+                                        <a class="history-link" href="#" data-toggle="modal" data-target="#approvalhistory" >History</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents approval modal -->
+    <div id="contentsApprovalAction" class="modal fade pr0" role="dialog">
+        <div class="modal-dialog full-expand-panel">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Contents Approval</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-view-deta-btn-panel d-flex">
+                        <div class="dropdown detail-view-table-btn" id="ContentApprovalBtn">
+                            <a class="btn dropdown-toggle" type="button" hreflang="" name="" data-target="#approvalActionModal" data-toggle="modal" id="ApproveDataBtn" onclick="">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/completed-icon.png"
+                                    alt="completed">
+                                <span>Approve</span>
+                            </a>
+                        </div>
+                        <div class="dropdown detail-view-table-btn" id="ContentRejectBtn">
+                            <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalRejectionModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/reject-icon.png"
+                                    alt="reject-icon">
+                                <span>Reject</span>
+                            </a>
+                        </div>
+                        <div class="dropdown detail-view-table-btn" id="ContentForwardBtn">
+                            <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalForwardModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/forwarded-icon.png"
+                                    alt="forwarded-icon">
+                                <span>Forward</span>
+                            </a>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalNotificationModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/notify.png" alt="notify">
+                                <span>Notification</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-xs-12">
+                            <div class="preview-box scrollbar-panel">
+                                <div class="iframe_oveflap">
+                                    <!--<img src="../SiteAssets/Approvals/assets/images/file-img.png" style="width:100%;">-->
+                                    <iframe src="" id="OpenWebpage" style="width:100% !important;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <ul class="detail-vide-panel scrollbar-panel">
+                                <li>
+                                    <label class="detail-label">Request By:</label>
+                                    <div class="approval-dashboard-user-card-panel">
+                                        <div class="approval-dashboard-user-card-img">
+                                            <img src="" alt="user" id="AuthorImage">
+                                        </div>
+                                        <div class="approval-dashboard-user-card-info">
+                                            <div class="approval-dashboard-user-card-name ellipsis-1" id="AuthorName">
+                                                </div>
+                                            <div class="approval-dashboard-user-card-email ellipsis-1" id="AuthorEmail">
+                                                </div>
+                                            <div class="approval-dashboard-user-card-date ellipsis-1" id="ReqDate"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Title:</label>
+                                    <div class="detail-title ellipsis-2" id="Title"></div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Type:</label>
+                                    <div class="detail-title ellipsis-2" id="Type"></div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Category:</label>
+                                    <div class="detail-title ellipsis-2" id="Category"></div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Status:</label>
+                                    <div class="wrapcheck"><div class="detail-title ellipsis-2" id="StatusModel"></div><img id="StatusModelimg" src="" width="16px"></div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Remark:</label>
+                                    <div class="detail-title ellipsis-2" id="RemarkModel"></div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- Process approval modal -->
+    <div id="processApprovalAction" class="modal fade pr0" role="dialog">
+        <div class="modal-dialog full-expand-panel">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Process Approval</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-view-deta-btn-panel d-flex">
+                        <div class="dropdown detail-view-table-btn" id="ProcessApproveDiv">
+                            <button class="btn dropdown-toggle" type="button" data-target="#approvalActionModal" data-toggle="modal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/completed-icon.png"
+                                    alt="completed">
+                                <span>Approve</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn" id="ProcessRejectDiv">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalRejectionModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/reject-icon.png"
+                                    alt="reject-icon">
+                                <span>Reject</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn" id="ProcessForwardDiv">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalForwardModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/forwarded-icon.png"
+                                    alt="forwarded-icon">
+                                <span>Forward</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn detail-view-table-btn-dropdown" id="ProcessPdfDiv">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#printModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/print-icon.png" alt="sort">
+                                <span>PDF</span>
+                            </button>
+                        </div>
+                        <div class="dropdown detail-view-table-btn">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalNotificationModal">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/Approvals/assets/images/notify.png" alt="notify">
+                                <span>Notification</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-xs-12">
+                            
+                            <div>
+                                <div class="preview-process-approval-panel scrollbar-panel" id="">
+                                <div id="PDFAREA">
+                                <div class="process-print-top-panel">
+                                        <div class="process-print-top-left-container">
+                                            <div class="process-print-top-left">
+                                                <div class="process-print-top-left-img">
+                                                   <img src="../SiteAssets/Approvals/assets/images/process1.png" alt="process" id="LogoProcessApproval">
+                                                </div>
+                                            </div>
+                                            <div class="ellipsis-2 process-print-top-right" id="TitleProcessApproval">Purchase Order</div>
+                                        </div>
+                                        <div class="process-print-top-right-container">
+                                            <div class="process-print-top-company-logo" id="LogonCompLogoDiv">
+                                                <img src="../SiteAssets/Approvals/assets/images/titan-logo.png" alt="logo" id="LogonCompLogo">
+                                            </div>
+                                            <div class="process-print-top-company-name-add-box">
+                                                <div class="process-print-top-company-name" id="LogonCompName">TFW Labs Inc.</div>
+                                                <div class="process-print-top-office-address" id="SelectedOfficeAddress"></div>
+                                                <div class="process-print-top-office-address" id="CustomText"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ml0 mr0 pt15" id="ProcessApprovalFormSetup">
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label1:</label>
+                                                <input type="text" class="form-control" name="" readonly="readonly">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label2:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label3:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label4:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label5:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label6:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label7:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label8:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label9:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label10:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label11:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label12:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label13:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label14:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label15:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label16:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label17:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label18:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label19:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label20:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label21:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label22:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 col-xs-12">
+                                            <div class="form-group custom-form-group">
+                                                <label>Label23:</label>
+                                                <input type="text" class="form-control" name="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ml0 mr0" id="ApprovalSignatureArea" style="margin-top:30px;">
+                                        <div class="col-md-4 col-sm-4 col-xs-12 mb10">
+                                            <div class="process-approve-signature-box">
+                                                <img style="display:none";  class="process-approve-signature-img" src="../SiteAssets/Approvals/assets/images/sig1.png" alt="signature">
+                                                <div id="SignatureText" class="signature-front">Amit Kumar</div>
+                                                <p class="process-approve-signature-name">User Name</p>
+                                                <p class="process-approve-signature-department">Department</p>
+                                                <p class="process-approve-signature-designation">Designation</p>
+                                                <p class="process-approve-signature-date">Date: 12 Jul 2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 mb10">
+                                            <div class="process-approve-signature-box">
+                                                <img class="process-approve-signature-img" src="../SiteAssets/Approvals/assets/images/sig2.png" alt="signature">
+                                                <p class="process-approve-signature-name">User Name</p>
+                                                <p class="process-approve-signature-department">Department</p>
+                                                <p class="process-approve-signature-designation">Designation</p>
+                                                <p class="process-approve-signature-date">Date: 12 Jul 2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4 col-xs-12 mb10">
+                                            <div class="process-approve-signature-box">
+                                                <img class="process-approve-signature-img" src="../SiteAssets/Approvals/assets/images/sig3.png" alt="signature">
+                                                <p class="process-approve-signature-name">User Name</p>
+                                                <p class="process-approve-signature-department">Department</p>
+                                                <p class="process-approve-signature-designation">Designation</p>
+                                                <p class="process-approve-signature-date">Date: 12 Jul 2021</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="scrollbar-panel chip-panel process-approval-chip-panel mb15">
+                                <div class="chip-box" id="AttachmentProcessApproval">
+                                    <div class="upload-chip">
+                                        <i class="fa fa-paperclip"></i>
+                                        <span>Attachment 1</span>
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                    <div class="upload-chip">
+                                        <i class="fa fa-paperclip"></i>
+                                        <span>Attachment 2</span>
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                    <div class="upload-chip">
+                                        <i class="fa fa-paperclip"></i>
+                                        <span>Attachment 3</span>
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xs-12">
+                            <ul class="detail-vide-panel scrollbar-panel">
+                                <li>
+                                    <label class="detail-label">Request By:</label>
+                                    <div class="approval-dashboard-user-card-panel">
+                                        <div class="approval-dashboard-user-card-img">
+                                            <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="user" id="AuthorImgProcessApproval">
+                                        </div>
+                                        <div class="approval-dashboard-user-card-info">
+                                            <div class="approval-dashboard-user-card-name ellipsis-1" id="AuthorNameProcessApproval">
+                                                Dipankar Goswami</div>
+                                            <div class="approval-dashboard-user-card-email ellipsis-1" id="EmailprocessApproval">
+                                                d.goi@adapt-india.com</div>
+                                            <div class="approval-dashboard-user-card-date ellipsis-1" id="CreatedProcessApproval">12 Jan 2021</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Request For:</label>
+                                    <div class="detail-title ellipsis-2" id="TitleRequest">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam eum quam unde velit non molestias dignissimos accusamus earum voluptates at.</div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Template:</label>
+                                    <div class="detail-title ellipsis-2" id="Template">Template 1</div>
+                                </li>
+                                <!-- Important code do not delete -->
+                                <li style="display: none";>
+                                    <label class="detail-label">Priority:</label>
+                                    <div class="detail-title ellipsis-2">
+                                        <div class="d-flex">
+                                            <span id="PriorityText">Top</span> 
+                                            <img class="ml5 priority-icon" width="20px" src="../SiteAssets/Approvals/assets/images/priority-icon.png" alt="priority icon" id="DisplayPriorityIcon" style="display:none"  >
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Important code do not delete -->
+                                <li style="display: none";>
+                                    <label class="detail-label">Due Date:</label>
+                                    <div class="detail-title ellipsis-2" id="DuedateText"></div>
+                                </li>
+                                <li>
+                                    <label class="detail-label">Status:</label>
+                                    <div class="detail-title ellipsis-2"><span id="StatusTextProcessApproval"></span><img class="ml5" width="20px" src="" alt="" id="StatusImgProcessApproval"></div>                 
+                                    
+                                </li>
+                                <li>
+                                    <label class="detail-label">Current Step:</label>
+                                    <div class="detail-title ellipsis-2">
+                                        <span id="CurrentStep"></span>
+                                        <img class="ml5" width="20px" src="" alt="" id="CurrentStepStatusImgProcessApproval">
+                                    </div>
+                                </li>   
+
+                                <li>
+                                    <div class="text-right">
+                                        <a class="history-link" href="#" data-toggle="modal" data-target="#approvalhistory" onclick="GetHistory()">History</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- print Modal -->
+    <div class="modal fade approval-process-prient-modal" id="printModal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Options</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="" id="CompanyLogoChk" onchange="SetupApprovalProcess(this,'Logo')" checked="checked">Company Logo</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="" id="CompanyNameChk" onchange="SetupApprovalProcess(this,'CompName')" checked="checked">Company Name</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="">Office</label>
+                                <select class="form-control office-dropdown" name="" id="OfficeLoc" onchange="GetOfficeAddress(this)">
+                                    <option value="0">--select--</option>
+                                    <option value="Gurgaon">Gurgaon</option>
+                                    <option value="Pune">Pune</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="TFW-Labs-Dallas">TFW Labs, Dallas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="selectedOfficeAddress" class="col-xs-12 pl30 pr30 d-none mb10">
+                            <!--<div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">Address: 544E, Sector 37, Pace City 2</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">City: Gurgaon</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">Zip: 122001</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">State: Haryana</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">Country: India</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">Telephone: +91 8527006888</label>
+                            </div>
+                            <div class="checkbox mt0 mb10">
+                                <label><input type="checkbox" value="">Email: vinita.diwan@adapt-india.com</label>
+                            </div>-->
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="custom-text-panel">
+                                <div class="checkbox mt0 mb0">
+                                    <label><input type="checkbox" value="" id="customText" onchange="SetCustomText()">Custom Text</label>
+                                </div>
+                                <div class="form-group custom-form-group mb0 mt10">
+                                    <input class="form-control custom-text" type="text" id="CustomTextInput" onkeyup="SetCustomText()" placeholder="100 char max" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-btn mr-8 wpx-80" onclick="generatePDF()">Submit</button>
+                    <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!----approvel history popup---->
+
+<!-- approvalhistory -->
+<div id="approvalhistory" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+  <div class="modal-dialog widthajust">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Approval History</h4>
+      </div>
+      <div class="modal-body scrollingeffect timlineheight">
+       
+        <div class="timebox">
+
+          <ul class="mainlst" id="HistoryList">
+            <li>
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-1.png" alt="">
+            </span> 
+
+            <div class="approvelheadeing">  
+              <h3 class="mainheading">Approvel Initiation</h3>
+              <span  class="date-sec">12 Jan 2021 4:10 PM</span>
+            </div>
+            <p class="waitsec initialize">initialized</p>
+
+              <div class="row">
+               
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Lakhan kumar</h4>
+                    <a href="#">LakhankumarAdaptIndia.com</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 flexitem">
+                  <div class="imagecontent">
+                    <h4>Purpose:</h4>
+                    <p class="Purposetext">Lorem ipsum, dolor sit amet consectetur, adipisicing elit Lorem ipsum, dolor sit amet consectetur, adipisicing elitamet consectetur, adipisicing elit Lorem ipsum, dolor sit amet consectetur, adipisicing elit.</p>
+                  </div>
+                </div>
+              </div><!--row ed-->  
+
+            </li>
+
+            <li>
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-3.png" alt="">
+            </span> 
+
+            <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                <img src="../SiteAssets/Approvals/assets/images/dotting.png" alt="">
+             </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#notificationbtn">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification</a>
+                </li>
+                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#addsuccessor">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a>
+                  </li>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#changeapprovel">
+                    <i class="fa fa-users" aria-hidden="true"></i> Change Approvers</a>
+                </li>
+              </ul>
+            </div>
+
+
+             <div class="approvelheadeing">  
+              <h3 class="mainheading">Approvel Step 1</h3>
+            </div>  
+
+              <p class="waitsec waitprocess" style="color:#e79406">Started, waiting for e-sign</p>
+              <div class="row">
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Priyanshu Pandey</h4>
+                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+                  </div>
+                </div>
+
+                 <div class="col-sm-6 flexitem">
+                  
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Lakhan kumar</h4>
+                    <a href="#">info@gmail.com</a>
+                  </div>
+                
+                </div>
+
+
+              </div><!--row ed-->  
+
+            </li>
+
+
+
+            <li>
+
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-2.png" alt="">
+            </span> 
+             <div class="dropdown">
+              <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                <img src="../SiteAssets/Approvals/assets/images/dotting.png" alt="">
+             </button>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#notificationbtn">
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification</a>
+                </li>
+                <li><a href="#"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#addsuccessor">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a>
+                  </li>
+                <li>
+                  <a href="#" data-toggle="modal" data-target="#changeapprovel">
+                    <i class="fa fa-users" aria-hidden="true"></i> Change Approvers</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="approvelheadeing">  
+              <h3 class="mainheading">NOC from HR</h3>
+            </div>  
+            <p class="waitsec nostart">Not Start</p>
+              <div class="row">
+                <div class="col-sm-6 flexitem">
+                  
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Lakhan kumar</h4>
+                    <a href="#">info@gmail.com</a>
+                  </div>
+
+                </div>
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Lakhan kumar</h4>
+                    <a href="#">info@gmail.com</a>
+                  </div>
+                </div>
+              </div><!--row ed-->  
+
+              <div class="dividorsec"></div>
+           
+            </li>
+
+
+          <li>
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-4.png" alt="">
+            </span>
+
+            <div class="approvelheadeing">  
+              <h3 class="mainheading">Accounts clearance</h3>
+              <span  class="date-sec">12 Jan 2021 4:10 PM</span>
+            </div>  
+              <p class="waitsec completed" style="color:#4e9a06">Approved by e-Signed</p>
+              <div class="row">
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Miss Julie Agarwal</h4>
+                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+                  </div>
+                </div>
+                <div class="col-sm-6 flexitem">
+                  <div class="signbox">
+                    
+                    <div class="m-0  upload-chip">
+                      <span class="pr-8 chip-text-box" style="color:#333; cursor:pointer;" title="">Example chart1.pdf</span><span class="chip-icon-box">
+                        <a href="" download="" style="color:#333;"><i class="fa fa-download cursor-pointer px-4" aria-hidden="true"></i>
+                        </a>
+                      </span>
+                      </div>
+
+                    <img src="../SiteAssets/Approvals/assets/images/sign.png" alt="">
+                  </div>
+                </div>
+              </div><!--row ed-->  
+
+            </li>
+
+            <li>
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-6.png" alt="">
+            </span>
+
+            <div class="approvelheadeing">  
+              <h3 class="mainheading">Sharing</h3>
+              <span  class="date-sec">12 Jan 2021 4:10 PM</span>
+            </div>  
+              <p class="waitsec" style="color:#000">Sharing</p>
+              <div class="row">
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Miss Julie Agarwal</h4>
+                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+                  </div>
+                </div>
+                <div class="col-sm-6 flexitem">
+                  <div class="signbox">
+                    <img src="../SiteAssets/Approvals/assets/images/sign.png" alt="">
+                  </div>
+                </div>
+              </div><!--row ed-->  
+
+            </li>
+
+             <li>
+            <span class="iconbox">
+              <img src="../SiteAssets/Approvals/assets/images/time-icon-5.png" alt="">
+            </span> 
+
+            <div class="approvelheadeing">  
+              <h3 class="mainheading">Approvel Sept3</h3>
+              <span  class="date-sec">12 Jan 2021 4:10 PM</span>
+            </div>
+            <p class="waitsec rejected" style="color:#ff0404">Rejected</p>
+
+              <div class="row">
+               
+                <div class="col-sm-6 flexitem">
+                  <div class="imgsetion">
+                    <img src="../SiteAssets/Approvals/assets/images/img-21.jpg" alt="">
+                  </div>
+                  <div class="imagecontent">
+                    <h4>Lakhan kumar</h4>
+                    <a href="#">LakhankumarAdaptIndia.com</a>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 flexitem">
+                  <div class="imagecontent">
+                    <h4>Purpose:</h4>
+                    <p class="Purposetext">Lorem ipsum, dolor sit amet consectetur, adipisicing elit.</p>
+                  </div>
+                </div>
+              </div><!--row ed-->  
+
+            </li>
+
+    
+
+          </ul>
+        </div>
+
+      </div>
+     
+    </div>
+
+  </div>
+</div>
+<!-- approvalhistory -->
+
+<!----- groupview------->
+<div id="groupview" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-sm">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Approvers</h4>
+      </div>
+      <div class="modal-body" style="padding:0 !important;">
+        <ul class="group-taks-item scrollbar-panel group-taks-item-panel" id="ApproversList">
+        	<li>
+        		<div class="employeesection">
+        			<img class="empoyeeimg" src="img/user-circle.png" alt="">
+	        			<div class="Assignedcontents">
+	        			<p class="txtAssignedName">Lakhan</p>
+	        			<a href="#" class="txtAssignedEmail">
+	        				lakhangupta7374@gmail.com
+	        			</a>
+        			</div>
+        		</div>
+        		
+        	</li>
+
+        	 	<li>
+        		<div class="employeesection">
+        			<img class="empoyeeimg" src="img/user-circle.png" alt="">
+	        			<div class="Assignedcontents">
+	        			<p class="txtAssignedName">Lakhan</p>
+	        			<a href="#" class="txtAssignedEmail">
+	        				lakhangupta7374@gmail.com
+	        			</a>
+        			</div>
+        		</div>
+        		
+        	</li>
+        	 	<li>
+        		<div class="employeesection">
+        			<img class="empoyeeimg" src="img/user-circle.png" alt="">
+	        			<div class="Assignedcontents">
+	        			<p class="txtAssignedName">Lakhan</p>
+	        			<a href="#" class="txtAssignedEmail">
+	        				lakhangupta7374@gmail.com
+	        			</a>
+        			</div>
+        		</div>
+        		
+        	</li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!----- groupview------->
+
+
+    <!--<script type="text/javascript" src="../SiteAssets/Approvals/assets/SignatureLinks/flashcanvas.js"></script>-->
+
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/DigitalSignature.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/Approval.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Approvals/assets/JS/ApprovalOutBox.js"></script>
+        
+
+
+    <script>
+        $(".office-dropdown").on("change",function(){
+            var val = $(this).find('option:selected').val();
+
+            if (val == '0') {
+                $("#selectedOfficeAddress").addClass('d-none');
+                $("#selectedOfficeAddress").removeClass('d-block');
+            }
+            else {
+                $("#selectedOfficeAddress").addClass('d-block');
+                $("#selectedOfficeAddress").removeClass('d-none');      
+            }
+        });
+    </script>
+
+    <script>
+        $(function() {
+            enable_cb();
+            $("#customText").click(enable_cb);
+        });
+
+        function enable_cb() {
+            if (this.checked) {
+                $("input.custom-text").removeAttr("disabled");
+            } else {
+                $("input.custom-text").attr("disabled", true);
+            }
+        }
+    </script>
+
+
+    <script>
+        $('#SignTextRadio[name=SignTypeRadio]').change(function () {
+            if ($('#SignTextRadio[name=SignTypeRadio]:checked')) {
+                $('.signature-box').addClass('d-block');
+                $('.signature-box').removeClass('d-none');
+
+                $('.drag-drop-box, .draw-signature-box').removeClass('d-block');
+                $('.drag-drop-box, .draw-signature-box').addClass('d-none');
+            }
+        });
+        $('#SignImageRadio[name=SignTypeRadio]').change(function () {
+
+            if ($('#SignImageRadio[name=SignTypeRadio]:checked')) {
+                $('.drag-drop-box').addClass('d-block');
+                $('.drag-drop-box').removeClass('d-none');
+
+                $('.signature-box, .draw-signature-box').removeClass('d-block');
+                $('.signature-box, .draw-signature-box').addClass('d-none');
+            }
+        });
+        $('#SignDrawRadio[name=SignTypeRadio]').change(function () {
+
+            if ($('#SignDrawRadio[name=SignTypeRadio]:checked')) {
+                $('.draw-signature-box').addClass('d-block');
+                $('.draw-signature-box').removeClass('d-none');
+
+                $('.signature-box, .drag-drop-box').removeClass('d-block');
+                $('.signature-box, .drag-drop-box').addClass('d-none');
+            }
+        });
+        
+    $(document).ready(function() {
+        //$("#signature").jSignature({ height: 400 });
+        //$("#signature").find(".jSignature").css("width", "100%")
+        //var $sigdiv = $("#Signature").jSignature({'UndoButton':true});
+        
+        $(function(){
+$('.newtooltip').tooltip({
+track:true,
+position: { my: "left+15 center", at: "right center" },
+});
+});
+    });
+        
+    </script>
+
+
+    <!-- for drag and drop -->
+    
+<!---iframe inside body manage--->
+    
+    
+</html>

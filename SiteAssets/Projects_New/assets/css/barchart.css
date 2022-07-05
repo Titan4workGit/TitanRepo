@@ -1,0 +1,94 @@
+/************************************************************
+ *                                                         *
+ *                      BARCHARTJS                         *
+ *                                                         *
+************************************************************/
+
+/* Reset if not done already */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Entire Container */
+.chart-container {
+  position: relative;
+  background: #fff;
+}
+
+/* Title Below Chart */
+.chart-container .chart-title {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  line-height: 100%;
+}
+
+/* Area Ticks Along the Left of Chart Take Up */
+.chart-container .chart-ticks {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Individual Ticks */
+.chart-container .chart-ticks .chart-tick {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  text-align: right;
+}
+
+/* Span used to offset position of tick value */
+.chart-container .chart-ticks span {
+  position: relative;
+  top: 0.35em;
+}
+
+/* Labels Section Along Bottom of Chart */
+.chart-container .chart-labels {
+  position: absolute;
+  right: 0;
+}
+
+/* Individual Labels */
+.chart-container .chart-labels .chart-label {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  white-space: nowrap;
+}
+
+/* Chart */
+.chart {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Individual Bars */
+.chart .chart-bar {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Hover Effect On Bars */
+.chart .chart-bar:hover {
+  box-shadow: 0 0 5px rgb(89, 94, 95);
+}
+
+
+
+
+

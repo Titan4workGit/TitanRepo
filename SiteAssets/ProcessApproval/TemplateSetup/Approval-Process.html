@@ -1,0 +1,4128 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+	<head>
+		<title>Process Template</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/ProcessApproval/assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/ProcessApproval/assets/css/padding.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/ProcessApproval/assets/css/styles.css">
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+		<script src="../SiteAssets/ProcessApproval/TemplateSetup/ProcessSteps_approvers.js?@v1"></script>
+
+ 
+<style>
+
+/***11-23-21****/
+
+.topsec h3,
+.topsec button{
+	display: inline-block;
+}
+
+.topsec h3{
+ margin:0;
+ padding:0;
+ font-size:14px;
+ font-weight: 600;
+ color:#333;
+}
+
+.stepingbox {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    max-height: 234px;
+    overflow: auto;
+    margin-top:10px;
+}
+
+.stepingbox::-webkit-scrollbar-thumb{
+  background: #666;
+  border:2px solid transparent;
+  background-clip:content-box;
+  -webkit-background-clip:content-box;
+  border-radius: 5px;
+}
+
+.stepingbox::-webkit-scrollbar-thumb:hover{
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+.stepingbox::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+ 
+}
+
+.stepbox> li{
+    padding: 10px;
+    border: 1px solid #cccccc9e;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.stepbox> li:last-child{
+  
+  margin-bottom: 0;
+ 
+}
+
+.topsec button{
+ float:right;
+ background: transparent;
+ border:none;
+ outline:none;
+ min-width:auto !important;
+ padding:3px;
+}
+
+.modal-header .close-round{
+ min-width:1.1em !important;	
+}
+
+.imagecontent{
+	padding:0 10px;
+}
+
+.topsec{
+	margin-bottom: 5px;
+}
+
+.topsec button.dropdown-toggle::after{
+
+ display: none;
+
+}
+
+.stepbox{
+	margin:0;
+	padding:0;
+	list-style: none;
+    padding:15px;
+}
+
+
+.flexitem {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+     -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.imagecontent h4 {
+    font-size: 13px;
+    margin:0;
+    padding: 0;
+    color:#333 !important;
+}
+.imagecontent a {
+    font-size: 12px;
+    color: #1d6ec0 !important;
+    text-decoration: none;
+    word-wrap: break-word;
+    word-break: break-word;
+    word-break: break-all;
+}
+
+.imgsetion img {
+    width: 32px;
+    border-radius: 50%;
+    height: 32px;
+}
+
+#stepsapprover .modal-footer{
+    text-align: center;
+    margin-top: 0;
+    padding: 8px 0;
+    border: none;
+}
+
+#stepsapprover .dropdown .dropdown-menu{
+  border:1px solid #ccc;	
+}
+
+.checkboxgroup{
+  margin-bottom:10px;	
+}
+
+.checkboxgroup .radio-inline{
+  margin-left:15px;	
+}
+.checkboxgroup .radio-inline input[type="radio"]{
+ top:-2px;	
+}
+
+#edit-process-modal .approval-process-table3,
+#new-process-modal .approval-process-table3{
+ max-height:296px !important;	
+}
+
+.add-column-btn{
+  font-size:13px;
+  margin:10px 0;	
+}
+
+#edit-process-modal .modal-dialog.modal-md,
+#new-process-modal .modal-dialog.modal-md{
+ max-width: 980px !important;
+}
+
+
+#edit-process-modal .slide img,
+#new-process-modal .slide img{
+ margin:0 9px;	
+}
+
+.covertophere {
+    width: 90px;
+    position: relative;
+    cursor: pointer;
+}
+
+.covertophere:before {
+    content: 'Browse';
+    width: 90px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e4e4e4;
+    display: block;
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px #fff;
+    transition: 0.5s;
+}
+
+.covertophere input[type="file"]{
+    visibility: hidden;
+    opacity: 0;
+    width: 90px;
+    height: 34px;
+}
+
+#edit-process-modal .form-group,
+#new-process-modal .form-group{
+ margin-bottom:20px !important;	
+}
+
+.dropdown-menu>li>a{
+ font-size:13px !important;
+ padding:5px 20px !important;	
+}
+
+.manageheightbox{
+ overflow:auto;
+ max-height:666px;	
+}
+
+.manageheightbox::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.manageheightbox::-webkit-scrollbar-thumb:hover {
+background-color: #666;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.manageheightbox::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+
+
+@media(min-width:991px){
+
+#stepsapprover .modal-dialog{
+  max-width:680px;
+}
+
+}
+
+/***11-23-21 end****/
+
+
+/****jan-20-22 st***/
+
+#Stepuser{
+ padding:2px !important;
+ height:auto !important;	
+}
+
+#Stepuser .sp-peoplepicker-topLevel,
+#Stepuser .sp-peoplepicker-editorInput{
+ width:100% !important;
+ border:none !important;	
+}
+
+.stepingbox{
+ max-height:206px !important;	
+}
+
+/****jan-20-22 ed***/
+
+
+/* new css added on 18/1/2022 */
+
+#s4-bodyContainer {
+    min-height: -webkit-calc( 100vh - 3em );
+    min-height: calc( 100vh - 3em );
+}
+
+
+/**jan-24-22**/
+
+#new-process-modal-onestep .modal-dialog{
+ margin-top:0 !important;	
+}
+#new-process-modal-onestep .modal-footer{
+ margin-top:0px !important;
+ padding:5px 15px !important;	
+}
+
+#s4-workspace{
+	
+ height:100vh !important;	
+	
+}
+
+.managheigt{
+overflow: auto;
+max-height: 89px;
+margin-bottom: 0 !important;
+padding-right:3px !important;	
+}
+.link-add-btn, 
+.link-add-btn:focus, 
+.link-delete-btn, 
+.link-delete-btn:focus{
+ margin:0 !important;	
+}
+
+.managheigt::-webkit-scrollbar-thumb{
+  background: #666;
+  border:2px solid transparent;
+  background-clip:content-box;
+  -webkit-background-clip:content-box;
+  border-radius: 5px;
+}
+
+.managheigt::-webkit-scrollbar-thumb:hover{
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+.managheigt::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+ 
+}
+
+
+/* responsive css start */
+
+@media only screen and (max-width: 767px) {
+
+    #DeltaPlaceHolderMain .ms-webpart-cell-vertical-inline-table {
+        display: block !important;
+    }
+    #DeltaPlaceHolderMain .ms-webpart-chrome-vertical {
+        display: block !important;
+    }
+
+}
+
+</style>
+
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-3573</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2af859eb-f041-4f59-b653-fe2d3e3ae59d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-3573, ADMIN-1645029823-3573</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Nagnath S Chavan</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">357300.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+	<body>
+		<div class="container all-align-gap-container">
+            <div class="row">
+    			<div class="col-sm-12">
+    				<div class="custom-panel">
+    					<div class="panel-head">
+    						<h1 class="panel-head-text">Process Templates</h1>
+    					</div>
+    					<div class="panel-body pl0 pb0 pr0">
+    						<div class="row ml0 mr0 approval-process-head-panel">
+    							<div class="col-sm-5">
+    								<div class="input-group custom-form-group approval-process-form-group">
+    									<input type="text" class="form-control" name="" placeholder="Search" id="txtSearch">
+    								</div>
+    							</div>
+    							<div class="col-sm-7">
+    								<div class="approval-process-view-deta-btn-panel d-flex">
+    									<div class="dropdown approval-process-view-table-btn">
+    						              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+    						                  <span>New Template</span>
+    						                  <img class="approval-process-view-icon-info ml2" src="../SiteAssets/ProcessApproval/assets/images/expand-arrow-icon.png" alt="expand arrow">
+    						              </button>
+    						              <ul class="dropdown-menu dropdown-color-menu-icon dropdown-menu-right">
+    						                <li><a href="#" data-toggle="modal" data-target="#new-process-modal">Template for Process Approval</a></li>
+    						                <li><a href="#" data-toggle="modal" data-target="#documentapproval" onclick="newDoctemp()">Template for Document Approval</a></li>
+    						              </ul>
+    						              
+    						            </div>
+    						            <div class="dropdown approval-process-view-table-btn">
+    	                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+    	                                      <img class="approval-process-view-icon-info mr2" src="../SiteAssets/ProcessApproval/assets/images/sort-icon.png" alt="sort">
+    	                                      <span>Sort</span>
+    	                                      <img class="approval-process-view-icon-info ml2" src="../SiteAssets/ProcessApproval/assets/images/expand-arrow-icon.png" alt="expand arrow">
+    	                                    </button>
+    	                                    <ul class="dropdown-menu dropdown-color-menu-icon dropdown-menu-right">
+    	                                    	<li><a href="#" onclick="sortTable('ellipsis-2')">Process name</a></li>
+    	                                    	<li><a href="#" onclick="sortTable('ellipsis-1')">Template Name</a></li>
+    											<li><a href="#" onclick="sortTableByNewTemp()">Newly Added</a></li>
+    											
+    	                                    </ul>
+    	                              	</div>
+    						      	</div>
+    							</div>
+    						</div>
+
+    						<div class="row ml0 mr0">
+    							<div class="col-xs-12">
+    								<div class="table-responsive approval-process-table approval-process-table2 mb15 manageheightbox">
+    									<table class="table custom-table" id="allTemplateData">
+    										<tbody>	
+    											
+    										</tbody>
+    									</table>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+                </div>
+			</div>
+		</div>
+
+		<!-- new process modal -->
+		<div class="modal fade new-process-container" id="new-process-modal" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" ><span class="close-icon" data-dismiss="modal">&times;</span></button>
+						<h4 class="modal-title">New Template</h4>
+					</div>
+					<div class="modal-body pb0 pl0 pr0">
+						<div class="row ml0 mr0">
+							<div class="col-sm-6 col-xs-12">
+							
+								<div class="form-group custom-form-group">
+									<label class="required">Title:</label>
+									<input type="text" class="form-control" placeholder="Title" name="" id="txtTitle" maxlength="100">
+								</div>
+								
+								
+								
+								<div class="form-group custom-form-group">
+									<div class="process-request-check-panal">
+										<label class="required">Request For:</label>
+										<label class="checkbox-inline"><input class="custom-check-f-p-r" type="checkbox" value="" id="chkReqFor">Custom</label>
+									</div>
+									<select class="form-control process-request-dropdown" id="ddlReqFor" maxlength="100">
+										<option>Leave Approval</option>
+										<option>Travel Expense</option>
+										<option>General Expense</option>
+										<option>Invoice Payment</option>
+										<option>Purchase Order</option>
+										<option>Recruitment</option>
+										<option>Budget Approval</option>
+										<option>Tender Approval</option>
+										<option>Plan Approval</option>
+										<option>Design & Architecture</option>
+									</select>
+									<input type="text" class="form-control process-request-input" placeholder="Process name" name="" id="txtReqFor">							
+									
+								</div>
+								
+								<div class="form-group custom-form-group">
+									<label class="required">Template:</label>
+									<input type="text" class="form-control" placeholder="Template name" name="" id="txtTemplate" maxlength="100">
+								</div>
+								
+							</div>	
+														
+							<div class="col-sm-6 col-xs-12">
+							 
+						      	<div class="approval-process-page">
+						      	
+						      		<div class="form-group custom-form-group">
+										<label>Page Column:</label>
+										<select class="form-control" id="ddlPageColumn">
+											<option>1</option>
+											<option>2</option>
+											<option selected>3</option>
+										</select>
+									</div>
+						      		<!--<button type="button" class="btn btn-sm btn-secondary btn-toggle mr0 active ml0 mt10" data-toggle="button" aria-pressed="true" autocomplete="off" id="btnActive">
+							        	<div class="handle"></div>
+							      	</button>-->
+						      	</div>
+						      	
+						        
+						      	
+								<label>Process Icon:</label>
+                                <div class="form-group custom-form-group custom-form-group-radio-inline mb5 mt5">
+                                    <label class="radio-inline"><input type="radio" name="UpdateEmpN" id="test1" value="Choose from gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
+                                    <label class="radio-inline"><input type="radio" name="UpdateEmpN" id="test2" value="Upload" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
+                                </div>
+                               
+                                                              
+                                <div class="slider-panel changemeN ">
+                                    <div id="slider-container" class="slider">
+                                        <div class="slide slideN image-active">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process1.png" alt="process1">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process2.png" alt="process2">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process3.png" alt="process3">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process4.png" alt="process4">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process5.png" alt="process5">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process6.png" alt="process6">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process7.png" alt="process7">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process8.png" alt="process8">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process9.png" alt="process9">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process10.png" alt="process10">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process11.png" alt="process11">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process12.png" alt="process12">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process13.png" alt="process13">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process14.png" alt="process14">
+                                        </div>
+                                        <div class="slide slideN">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process15.png" alt="process15">
+                                        </div>
+                                    </div>
+                                    <div onclick="prev()" class="control-prev-btn">
+                                         <i class="fa fa-arrow-left"></i>
+                                    </div>
+                                    <div onclick="next()" class="control-next-btn">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none">
+                                    <div class="approve-process-upload-image-box-btn">
+                                    
+                                    	<div class="form-group custom-form-group">
+                                    	
+                                    	<label class="covertophere">
+                                    	
+                                        	<input type="file" class="form-control approve-process-upload-image-inp" name=""  onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">                                        	
+                                        
+                                        </label>
+                                        
+                                        </div>
+                                        
+                                        <div class="approve-process-upload-data">
+                                        	<img src="../SiteAssets/ProcessApproval/assets/images/process1.png" id="blah" alt="process">
+                                   <!--     	<img id="blah" alt="your image" width="100" height="100" />  -->
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div class="row ml0 mr0">
+							<div class="col-xs-12">
+								
+                            </div>
+							<div class="col-xs-12">
+								<div class="table-responsive approval-process-table approval-process-table3 scrollbar-panel">
+									<table class="table custom-table" id="tblApTemp">
+										<thead>
+											<tr>
+												<th class="" style="width:5%;">Sequence </th>												
+												<th style="width:15%;">Label</th>
+												<th class="" style="width:8%;">Type</th>
+												<th class="" style="width:8%;">Mandatory</th>
+												<th class="" style="width:15%;">Default Value</th>											
+												<th>Validation</th>
+												<th class="" style="width:8%;">Dropdown</th>
+												<th class="" style="width:9%;"></th>
+											</tr>
+										</thead>
+										<tbody>	
+											
+										</tbody>
+										
+									</table>
+								</div>
+								<div class="pad-panel mb10">
+									<div>
+								<!--	<a class="btn process-approvers-btn" href="#" data-toggle="modal" data-target="#">
+											<span>Process Steps and Approvers</span>
+										</a> -->
+									</div>  
+									<div>
+										<a class="add-column-btn" data-toggle="modal" data-target="#new-process-modal-onestep" href="#">
+											<i class="fa fa-plus" ></i>
+											<span>Add Column</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn" onclick="checkPicCheckBox()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- new process modal -->
+		<div class="modal fade new-process-container-onestep" id="new-process-modal-onestep" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">New Column</h4>
+					</div>
+					<div class="modal-body pb0">
+						<div class="form-group custom-form-group">
+							<label class="required">Sequence:</label>
+							<input type="number" class="form-control" name="" id="txtSqno" pattern="^[0-9]*$" value="1">
+						</div>
+						<div class="form-group custom-form-group">
+							<label class="required">Label:</label>
+							<input type="text" class="form-control" placeholder="Label name" name="" id="txtLabel">
+						</div>
+						<div class="form-group custom-form-group">
+							<label>Type:</label>
+							<select class="form-control column-select" id="ddlColumn">
+								<option value="Text">Text</option>
+								<option value="Number">Number</option>
+								<option value="Date">Date</option>
+								<option value="DueDate">DueDate</option>
+								<option value="Currency">Currency</option>
+								<option value="Priority">Priority</option>
+								<option value="Yes/No">Yes/No</option>
+								
+							</select>
+						</div>
+						
+						<div class="form-group custom-form-group">
+							<label>Mandatory:</label>
+							<select class="form-control" id="ddlMand">
+								<option>No</option>
+								<option>Yes</option>
+							</select>
+						</div>
+						<div id="fieldType" class="form-group custom-form-group">
+							<label>Default Value: </label><span id="lbdays" for="numDefVal" class="d-none">(1 to 999 days)</span>
+							<input type="text" class="form-control field-type" value="" name=""  id="txtDefVal" maxlength="250">
+							<input type="number" class="form-control field-type" value="" name="" min="1" max="999" id="numDefVal" style="display:none" oninput="this.value = Math.abs(this.value)">
+							<select class="form-control" id="ddlDefVal"></select> 	
+						</div>
+						
+						<div id="numberValidation" class="form-group custom-form-group d-none">
+							<label>Number Validation:</label>
+							<select class="form-control" id="ddlNumVal">
+								<option>Any Number</option>
+								<option>Positive Number</option>
+								<option>Positive Integer</option>
+								<option>1 to 5</option>
+								<option>1 to 10</option>
+								<option>1 to 20</option>
+								<option>1 to 30</option>
+								<option>1 to 40</option>
+								<option>1 to 50</option>
+								<option>1 to 100</option>
+							</select>
+						</div>
+						<div id="dateValidation" class="form-group custom-form-group d-none">
+							<label>Date Validation:</label>
+							<select class="form-control" id="ddlDateVal">
+								<option>Any Date</option>
+								<option>Today Only</option>
+								<option>Past Date</option>
+								<option>Past Date included Today</option>
+								<option>Future Date</option>
+								<option>Future Date included Today</option>
+							</select>
+						</div>
+						<div id="dueDateType" class="form-group custom-form-group d-none">
+							<label>Due Date Validation:</label>
+							<input type="text" class="form-control due-date-validation" name="" disabled="" id="txtDDateVal">
+						</div>
+						<div id="textFDropdown">
+							<div class="form-group custom-form-group">
+								<label>Dropdown:</label>
+								<select class="form-control dropdown-yes-no" id="ddlDRWN">
+									<option value="No">No</option> 	 	
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+							<div class="optionBox form-group custom-form-group d-none managheigt">
+	                            <div class="block add-button-box mb10">
+	                                <input type="text" class="form-control link-input-fild" name="" /> 
+	                                <button class="btn custom-btn add link-add-btn" type="button" style="top:0 !important; min-width:auto !important"><i class="fa fa-plus"></i></button>
+	                            </div>
+	                            <div class="block1"></div>
+	                        </div>
+	                    </div>	
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn" onclick="addrowdyanamic()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Add new column when template edit-->
+		<div class="modal fade new-process-container-onestep" id="new-process-modal-onestepNRTE" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">New Column</h4>
+					</div>
+					<div class="modal-body pb0">
+					<div class="form-group custom-form-group"> <label class="required">Sequence :</label> <input type="number" class="form-control" name="" id="numSqnoWhenTempEdit" pattern="^[0-9]*$" value="1"> </div>
+						<div class="form-group custom-form-group">
+							<label>Label:</label>
+							<input type="text" class="form-control" placeholder="Label name" name="" id="txtNRTELabel">
+						</div>
+						<div class="form-group custom-form-group">
+							<label>Type:</label>
+							<select class="form-control column-selectNRTE" id="ddlNRTEColumn">
+								<option value="Text">Text</option>
+								<option value="Number">Number</option>
+								<option value="Date">Date</option>
+								<option value="DueDate">DueDate</option>
+								<option value="Currency">Currency</option>
+								<option value="Priority">Priority</option>
+								<option value="Yes/No">Yes/No</option>								
+							</select>
+						</div>
+						
+						<div class="form-group custom-form-group">
+							<label>Mandatory:</label>
+							<select class="form-control" id="ddlNRTEMand">
+								<option>No</option>
+								<option>Yes</option>
+							</select>
+						</div>
+						<div id="fieldNRTEType" class="form-group custom-form-group">
+							<label>Default Value:</label><span id="lbNRTEdays" for="numNRTEDefVal" class="d-none">(1 to 999 days)</span>
+							<input type="text" class="form-control field-type" value="" name=""  id="txtNRTEDefVal" maxlength="250">
+							<select class="form-control" id="ddlNRTEDefVal"></select>
+							<input type="number" class="form-control field-type" value="" name="" min="1" max="999" id="numNRTEDefVal" style="display:none" oninput="this.value = Math.abs(this.value)">
+						</div>
+						
+						<div id="numberNRTEValidation" class="form-group custom-form-group d-none">
+							<label>Number Validation:</label>
+							<select class="form-control" id="ddlNRTENumVal">
+								<option>Any Number</option>
+								<option>Positive Number</option>
+								<option>Positive Integer</option>
+								<option>1 to 5</option>
+								<option>1 to 10</option>
+								<option>1 to 20</option>
+								<option>1 to 30</option>
+								<option>1 to 40</option>
+								<option>1 to 50</option>
+
+								<option>1 to 100</option>
+							</select>
+						</div>
+						<div id="dateNRTEValidation" class="form-group custom-form-group d-none">
+							<label>Date Validation:</label>
+							<select class="form-control" id="ddlNRTEDateVal">
+								<option>Any Date</option>
+								<option>Today Only</option>
+								<option>Past Date</option>
+								<option>Past Date included Today</option>
+								<option>Future Date</option>
+								<option>Future Date included Today</option>
+							</select>
+						</div>
+						<div id="dueDateTypeNRTE" class="form-group custom-form-group d-none">
+							<label>Due Date Validation:</label>
+							<input type="text" class="form-control due-date-validation" name="" disabled="" id="txtNRTEDDateVal">
+						</div>
+						<div id="textNRTEFDropdown">
+							<div class="form-group custom-form-group">
+								<label>Dropdown:</label>
+								<select class="form-control dropdown-yes-noNRTE" id="ddlNRTEDRWN">
+									<option value="No">No</option> 	 	
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+							<div class="optionBoxNRTE form-group custom-form-group d-none">
+	                            <div class="block add-button-box mb10">
+	                                <input type="text" class="form-control link-input-fildNRTE" name="" /> 
+	                                <button class="btn custom-btn addNRTE link-add-btn" type="button" ><i class="fa fa-plus"></i></button>
+	                            </div>
+	                            <div class="block1NRTE"></div>
+	                        </div>
+	                    </div>	
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn" onclick="addrowdyanamicWhenTempEdit()">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Edit Column --->
+		<div class="modal fade new-process-container-onestep" id="edit-process" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">Edit Column</h4>
+					</div>
+					<div class="modal-body pb0">
+						<div class="form-group custom-form-group">
+							<label class="required">Sequence :</label>
+							<input type="number" class="form-control" name="" id="txtESqno" pattern="^[0-9]*$" value="">
+						</div>
+						<div class="form-group custom-form-group">
+							<label class="required">Label:</label>
+							<input type="text" class="form-control" placeholder="Label name" name="" id="txtELabel">
+						</div>
+						<div class="form-group custom-form-group">
+							<label>Type:</label>
+							<select class="form-control column-select" id="ddlEColumn">
+								<option value="Text">Text</option>
+								<option value="Number">Number</option>
+								<option value="Date">Date</option>
+								<option value="DueDate">DueDate</option>
+								<option value="Currency">Currency</option>
+								<option value="Priority">Priority</option>
+								<option value="Yes/No">Yes/No</option>
+								
+							</select>
+						</div>
+						
+						<div class="form-group custom-form-group">
+							<label>Mandatory:</label>
+							<select class="form-control" id="ddlEMand">
+								<option>No</option>
+								<option>Yes</option>
+							</select>
+						</div>
+						<div id="fieldEType" class="form-group custom-form-group">
+							<label>Default Value:</label>
+							<span id="lbEdays" for="numDefVal" class="">(1 to 999 days)</span>
+							<input type="text" class="form-control field-type" value="" name=""  id="txtEDefVal" maxlength="250">
+							<select class="form-control" id="ddlEDefVal"></select>
+							<input type="number" class="form-control field-type" value="" name="" min="1" max="999" id="numEDefVal" style="" oninput="this.value = Math.abs(this.value)">
+						</div>
+						
+						<div id="numberEValidation" class="form-group custom-form-group d-none">
+							<label>Number Validation:</label>
+							<select class="form-control" id="ddlENumVal">
+								<option>Any Number</option>
+								<option>Positive Number</option>
+								<option>Positive Integer</option>
+								<option>1 to 5</option>
+								<option>1 to 10</option>
+								<option>1 to 20</option>
+								<option>1 to 30</option>
+								<option>1 to 40</option>
+								<option>1 to 50</option>
+
+								<option>1 to 100</option>
+							</select>
+						</div>
+						<div id="dateEValidation" class="form-group custom-form-group d-none">
+							<label>Date Validation:</label>
+							<select class="form-control" id="ddlEDateVal">
+								<option>Any Date</option>
+								<option>Today Only</option>
+								<option>Past Date</option>
+								<option>Past Date included Today</option>
+								<option>Future Date</option>
+								<option>Future Date included Today</option>
+							</select>
+						</div>
+						<div id="dueDateEType" class="form-group custom-form-group d-none">
+							<label>Due Date Validation:</label>
+							<input type="text" class="form-control due-date-validation" name="" disabled="" id="txtEDDateVal">
+						</div>
+						<div id="textEFDropdown">
+							<div class="form-group custom-form-group">
+								<label>Dropdown:</label>
+								<select class="form-control dropdown-yes-noE" id="ddlEDRWN">
+									<option value="No">No</option> 	 	
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+							<div class="optionBoxE form-group custom-form-group d-none">
+	                            <div class="block add-button-box mb10">
+	                                <input type="text" class="form-control link-input-fildE" name="" /> 
+	                                <button class="btn custom-btn addE link-add-btn" type="button" ><i class="fa fa-plus"></i></button>
+	                            </div>
+	                            <div class="block1E"></div>
+	                        </div>
+	                    </div>	
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn"  onclick="editSubmit(this)" id="editRowSubmit">Submit</button>
+						<input type="hidden" id="tblEditRow">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Edit template column--->
+		<div class="modal fade new-process-container-onestep" id="edit-t-process" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">Edit Column</h4>
+					</div>
+					<div class="modal-body pb0">
+						<div class="form-group custom-form-group">
+							<label class="required">Sequence :</label>
+							<input type="number" class="form-control" name="" id="numSqno" pattern="^[0-9]*$" value="1">						
+						</div>
+						<div class="form-group custom-form-group">
+							<label class="required">Label:</label>
+							<input type="text" class="form-control" placeholder="Label name" name="" id="txtTELabel">
+						</div>
+						<div class="form-group custom-form-group">
+							<label>Type:</label>
+							<select class="form-control column-select" id="ddlTEColumn">
+								<option value="Text">Text</option>
+								<option value="Number">Number</option>
+								<option value="Date">Date</option>
+								<option value="DueDate">DueDate</option>
+								<option value="Currency">Currency</option>
+								<option value="Priority">Priority</option>
+								<option value="Yes/No">Yes/No</option>
+								
+							</select>
+						</div>
+						
+						<div class="form-group custom-form-group">
+							<label>Mandatory:</label>
+							<select class="form-control" id="ddlTEMand">
+								<option>No</option>
+								<option>Yes</option>
+							</select>
+						</div>
+						<div id="fieldTEType" class="form-group custom-form-group">
+							<label>Default Value:</label>
+							<span id="lbTEdays" for="numDefVal" class="">(1 to 999 days)</span>
+							<input type="text" class="form-control field-type" value="" name=""  id="txtTEDefVal" maxlength="250">
+							<select class="form-control" id="ddlTEDefVal"></select>
+							<input type="number" class="form-control field-type" value="" name="" min="1" max="999" id="numTEDefVal" style="" oninput="this.value = Math.abs(this.value)">
+						</div>
+						
+						<div id="numberTEValidation" class="form-group custom-form-group d-none">
+							<label>Number Validation:</label>
+							<select class="form-control" id="ddlTENumVal">
+								<option>Any Number</option>
+								<option>Positive Number</option>
+								<option>Positive Integer</option>
+								<option>1 to 5</option>
+								<option>1 to 10</option>
+								<option>1 to 20</option>
+								<option>1 to 30</option>
+								<option>1 to 40</option>
+								<option>1 to 50</option>
+								<option>1 to 100</option>
+							</select>
+						</div>
+						<div id="dateTEValidation" class="form-group custom-form-group d-none">
+							<label>Date Validation:</label>
+							<select class="form-control" id="ddlTEDateVal">
+								<option>Any Date</option>
+								<option>Today Only</option>
+								<option>Past Date</option>
+								<option>Past Date included Today</option>
+								<option>Future Date</option>
+								<option>Future Date included Today</option>
+							</select>
+						</div>
+						<div id="dueTDateEType" class="form-group custom-form-group d-none">
+							<label>Due Date Validation:</label>
+							<input type="text" class="form-control due-date-validation" name="" disabled="" id="txtTEDDateVal">
+						</div>
+						<div id="textTEFDropdown">
+							<div class="form-group custom-form-group">
+								<label>Dropdown:</label>
+								<select class="form-control dropdown-yes-noTE" id="ddlTEDRWN">
+									<option value="No">No</option> 	 	
+									<option value="Yes">Yes</option>
+								</select>
+							</div>
+							<div class="optionBoxTE form-group custom-form-group d-none">
+	                            <div class="block add-button-box mb10">
+	                                <input type="text" class="form-control link-input-fildTE" name="" /> 
+	                                <button class="btn custom-btn addTE link-add-btn" type="button" ><i class="fa fa-plus"></i></button>
+	                            </div>
+	                            <div class="block1TE"></div>
+	                        </div>
+	                    </div>	
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn" onclick="editTempSubmit(this)" id="editTRowSubmit">Submit</button>
+						<input type="hidden" id="tblTEditRow">
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<!--Edit Template -->
+<div class="modal fade new-process-container" id="edit-process-modal" role="dialog" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content ">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">Edit Template</h4>
+					</div>
+					<div class="modal-body pb0 pl0 pr0">
+						<div class="row ml0 mr0">
+							<div class="col-sm-6 col-xs-12">
+								<div class="form-group custom-form-group">
+									<label class="required">Title:</label>
+									<input type="text" class="form-control" placeholder="Title" name="" id="txtETitle">
+								</div>
+								<div class="form-group custom-form-group">
+									<div class="process-request-check-panal">
+										<label class="required">Request For:</label>
+										<label class="checkbox-inline"><input class="custom-check-f-p-r" type="checkbox" value="" id="chkEReqFor">Custom</label>
+									</div>
+									<select class="form-control process-request-dropdown" id="ddlEReqFor">
+										<option>Leave Approval</option>
+										<option>Travel Expense</option>
+										<option>General Expense</option>
+										<option>Invoice Payment</option>
+										<option>Purchase Order</option>
+										<option>Recruitment</option>
+										<option>Budget Approval</option>
+										<option>Tender Approval</option>
+										<option>Plan Approval</option>
+										<option>Design & Architecture</option>
+									</select>
+									<input type="text" class="form-control process-request-input" placeholder="Process name" name="" id="txtEReqFor">							</div>
+								<div class="form-group custom-form-group">
+									<label class="required">Template:</label>
+									<input type="text" class="form-control" placeholder="Template name" name="" id="txtETemplate">
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+						      	<div class="mb10 approval-process-page">
+						      		<div class="form-group custom-form-group">
+										<label>Page Column:</label>
+										<select class="form-control" id="ddlEPageColumn">
+											<option>1</option>
+											<option>2</option>
+											<option >3</option>
+										</select>
+									</div>
+						      		<!--<button type="button" class="btn btn-sm btn-secondary btn-toggle mr0 active ml0 mt10" data-toggle="button" aria-pressed="true" autocomplete="off" id="btnEActive">
+							        	<div class="handle"></div>
+							      	</button>-->
+						      	</div>
+								<label>Process Icon:</label>
+                                <div class="form-group custom-form-group custom-form-group-radio-inline mb5">
+                                    <label class="radio-inline"><input type="radio" name="UpdateEmpE" id="test3" value="Choose from gallery"  checked>Choose from gallery</label>
+                                    <label class="radio-inline"><input type="radio" name="UpdateEmpE" id="test4" value="Upload">Upload</label>
+                                </div>
+                                <div class="slider-panel changemeE ">
+                                    <div id="slider-containerE" class="slider">
+                                        <div class="slide slideE image-activeE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process1.png" alt="process1">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process2.png" alt="process2">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process3.png" alt="process3">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process4.png" alt="process4">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process5.png" alt="process5">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process6.png" alt="process6">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process7.png" alt="process7">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process8.png" alt="process8">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process9.png" alt="process9">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process10.png" alt="process10">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process11.png" alt="process11">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process12.png" alt="process12">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process13.png" alt="process13">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process14.png" alt="process14">
+                                        </div>
+                                        <div class="slide slideE">
+                                            <img src="../SiteAssets/ProcessApproval/assets/images/process15.png" alt="process15">
+                                        </div>
+                                    </div>
+                                    <div onclick="prevE()" class="control-prev-btn">
+                                         <i class="fa fa-arrow-left"></i>
+                                    </div>
+                                    <div onclick="nextE()" class="control-next-btn">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </div>
+                                <div id="Upload-user-imageE" class="approve-process-upload-image-box d-none">
+                                    <div class="approve-process-upload-image-box-btn">
+                                    	<div class="form-group custom-form-group">
+
+                                    	 <label class="covertophere">
+                                        	<input type="file" class="form-control approve-process-upload-image-input" name="">
+                                         </label>	
+                                        	
+                                        </div>
+                                        <div class="approve-process-upload-data" id="divSelImgE" style="display:none">
+                                        	<img src="#" alt="process"  id="selectdImgE">
+                                        </div>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div class="row ml0 mr0">
+							<div class="col-xs-12">
+								
+                            </div>
+							<div class="col-xs-12">
+								<div class="table-responsive approval-process-table approval-process-table3 scrollbar-panel">
+									<table class="table custom-table" id="tblEApTemp">
+										<thead>
+											<tr>
+												<th class="d-none">Column</th>
+												<th class="">Sequence </th>												
+												<th>Label</th>
+												<th class="">Type</th>
+												<th class="">Mandatory</th>
+												<th class="">Default Value</th>											
+												<th>Validation</th>
+												<th class="">Dropdown</th>
+												<th class=""></th>
+											</tr>
+										</thead>
+										<tbody>	
+											
+										</tbody>
+										
+									</table>
+								</div>
+								<div class="pad-panel mb10">
+									<div>
+										<a class="btn process-approvers-btn" href="#" data-toggle="modal" data-target="#stepsapprover" style="display:none">
+											<span>Process Steps and Approvers</span>
+										</a>
+									</div> 
+									<div>
+										<a class="add-column-btn" data-toggle="modal" data-target="#new-process-modal-onestepNRTE" href="#">
+											<i class="fa fa-plus" ></i>
+											<span>Add Column</span>
+										</a>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer text-center">
+						<button type="button" class="btn custom-btn" onclick="updateAP()" id="btnUpdateAPM">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- stepsapprover popup start -->
+<div id="stepsapprover" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)" data-keyboard="false" data-backdrop="static">
+  <div class="modal-dialog modal-lg">
+   <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Steps and Approvers</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group custom-form-group">
+			<label>Step Name:<span style="color:#ff0000">*</span></label>
+			<input type="text" class="form-control" placeholder="" name="" id="txtStepName">
+		</div>
+
+		<div class="checkboxgroup">
+			<label for="">Approver:</label>
+			<label class="radio-inline">
+		      <input type="radio" name="optradio" data-target="rolbox" value="Role" checked> Role
+		    </label>
+
+		    <label class="radio-inline">
+		      <input type="radio" name="optradio" data-target="usrbox" value="User"> User
+		    </label>
+		</div>
+
+			<div class="form-group custom-form-group rolbox boxse">
+				<label>Role:</label>
+				<select class="form-control" id="ddlroles">
+					<option value="Manager">Manager</option>
+					<option value="Head of the Department">Head of the Department</option>
+					<option value="HR Admin">HR Admin</option>
+					<option value="Project Admin">Project Admin</option>
+					<option value="Departmental Project Admin">Departmental Project Admin</option>
+					<option value="Process Admin">Process Admin</option>
+					<option value="Tech Admin">Tech Admin</option>
+
+				</select>
+			</div>
+		
+			<div class="form-group custom-form-group usrbox boxse" style="display: none;">
+				<label>User</label>
+			<!--	<input type="text" placeholder="Enter names or email addresses.." class="form-control" id="Stepuser">  -->
+				<div class=" form-control" id="Stepuser"></div>
+
+			</div>
+
+			<div style="text-align: right;">
+				<button type="button" class="btn custom-btn" id="btnAddStep">Add Step</button>
+				<button type="button" class="btn custom-btn" id="btnEditStep" style="display:none">Edit Step</button>
+			</div>	
+
+
+			<div class="stepingbox">
+				<ul class="stepbox">					
+				<!--	<li>
+						<div class="topsec">
+							<h3>Step1</h3>
+							<div class="dropdown pull-right">
+								  <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+								  	<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								  </button>
+								  <ul class="dropdown-menu">
+								    <li><a href="#"><i class="fa fa-pencil"></i> Edit</a></li>
+								    <li><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
+								  </ul>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+					</li>
+					<li>
+						<div class="topsec">
+							<h3>Step2</h3>
+							<div class="dropdown pull-right">
+								  <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+								  	<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								  </button>
+								  <ul class="dropdown-menu">
+								    <li><a href="#"><i class="fa fa-pencil"></i> Edit</a></li>
+								    <li><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
+								  </ul>
+							</div>
+						</div>
+						<div style="clear:both"></div>
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+					</li>
+					<li>
+						<div class="topsec">
+							<h3>Step3</h3>
+							<div class="dropdown pull-right">
+								  <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+								  	<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+								  </button>
+								  <ul class="dropdown-menu">
+								    <li><a href="#"><i class="fa fa-pencil"></i> Edit</a></li>
+								    <li><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
+								  </ul>
+							</div>
+						</div>
+
+						<div style="clear:both"></div>
+						<div class="flexitem">
+		                  <div class="imgsetion">
+		                    <img src="../SiteAssets/Process Approval/assets/images/user-circle.png" alt="">
+		                  </div>
+		                  <div class="imagecontent">
+		                    <h4>Priyanshu Pandey</h4>
+		                    <a href="#">PriyanshupandyAdaptIndia.com</a>
+		                  </div>
+		                </div>	
+					</li>  -->
+				</ul>
+			</div>		
+		
+		<!---rowlbox--->
+	</div>
+      <div class="modal-footer" style="text-align:center;">
+        <button type="button" class="btn custom-btn" id="btnSubmitStep" data-dismiss="modal">Submit</button>
+        <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- stepsapprover start -->
+
+
+<!-- stepsapprover popup end -->
+
+ <!----documentapproval ---->
+  <div class="modal fade" id="documentapproval" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Document Approval</h4>
+        </div>
+        <div class="modal-body">
+          
+          <div class="form-group custom-form-group">
+			<label class="required">Title:</label>
+			<input type="text" class="form-control" placeholder="Title" id="DocTitle" name="">
+		  </div>
+
+		  <div class="form-group custom-form-group">
+			<label class="required">Tamplate:</label>
+			<input type="text" class="form-control" placeholder="Tamplate name" id="DocTempName" name="">
+		  </div>
+
+		  <div class="form-group custom-form-group">
+			<label class="">Sign App:</label>
+			<select class="form-control" name="" id="DocSign">
+			  <option value="Adobe Sign">Adobe Sign</option>
+			  <option value="Titan E-Sign">Titan E-Sign</option>
+			</select>
+		  </div>
+
+        </div>
+        <div class="modal-footer" style="text-align:center">
+          <button type="button" class="btn custom-btn" id="btnSaveDoctemp" onclick="insertDocumnetApprovalMaster()">Submit</button>
+          <button type="button" class="btn custom-btn" style="display:none" id="btnSaveEditDoc" onclick="UpdateDocumnetApprovalMaster()">Update</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!----documentapproval ---->
+
+		  <script>
+			$("#test").attr('checked', 'checked');
+		  	$(".dropdown-yes-no").on("change",function(){
+		        var val = $(this).find('option:selected').val();
+		        if (val == 'Yes') {
+		          $(".optionBox").addClass('d-block');
+		          $(".optionBox").removeClass('d-none');
+		        }
+		        else {
+		        	$(".optionBox").removeClass('d-block');
+		          	$(".optionBox").addClass('d-none');
+		        }
+	        });
+
+		  	$(".dropdown-yes-noTE").on("change",function(){
+		        var val = $(this).find('option:selected').val();
+		        if (val == 'Yes') {
+		          $(".optionBoxTE").addClass('d-block');
+		          $(".optionBoxTE").removeClass('d-none');
+		        }
+		        else {
+		        	$(".optionBoxTE").removeClass('d-block');
+		          	$(".optionBoxTE").addClass('d-none');
+		        }
+	        });
+		  	$(".dropdown-yes-noNRTE").on("change",function(){
+		        var val = $(this).find('option:selected').val();
+		        if (val == 'Yes') {
+		          $(".optionBoxNRTE").addClass('d-block');
+		          $(".optionBoxNRTE").removeClass('d-none');
+		        }
+		        else {
+		        	$(".optionBoxNRTE").removeClass('d-block');
+		          	$(".optionBoxNRTE").addClass('d-none');
+		        }
+	        });
+
+		    $(".column-select").on("change",function(){
+		        var val = $(this).find('option:selected').val();
+
+		        if (val == 'Text') {
+		          $("#textFDropdown, #fieldType").addClass('d-block');
+		          $("#textFDropdown, #fieldType").removeClass('d-none');
+
+		          $("#numberValidation, #dateValidation ,#dueDateType").removeClass('d-block');
+		          $("#numberValidation, #dateValidation ,#dueDateType").addClass('d-none');
+		        //  $('#ddlDRWN option:selected').removeAttr('selected');
+		         // $('#ddlDRWN option[value="no"]').attr("selected", "selected");
+		          
+		        //  var div =  document.querySelector('div') // Get element from DOM
+				//  $('.yesNO').remove();
+
+		        }
+		        else if (val == 'Number') {
+		          $("#numberValidation, #fieldType").addClass('d-block');
+		          $("#numberValidation, #fieldType").removeClass('d-none');
+
+		          $("#dateValidation, #textFDropdown ,#dueDateType").addClass('d-none');
+		          $("#dateValidation, #textFDropdown ,#dueDateType").removeClass('d-block');    
+		        }
+		        else if (val == 'Date') {
+		          $("#dateValidation, #fieldType").addClass('d-block');
+		          $("#dateValidation, #fieldType").removeClass('d-none');
+
+		          $("#textFDropdown, #numberValidation ,#dueDateType").addClass('d-none');
+		          $("#textFDropdown, #numberValidation ,#dueDateType").removeClass('d-block');   
+		        }
+		        else if (val == 'DueDate') {
+	        	  $("#dueDateType").addClass('d-block');
+		          $("#dueDateType").removeClass('d-none');
+
+	        	  $(".field-label").val("Due Date");
+	        	  $(".due-date-validation").val("Future Date");
+
+	        	  $("#dateValidation, #textFDropdown, #numberValidation, #priority").addClass('d-none');
+		          $("#dateValidation, #textFDropdown, #numberValidation, #priority").removeClass('d-block'); 
+		        }
+		        else if (val == 'Currency') {
+		          $("#dateValidation,#textFDropdown, #numberValidation").addClass('d-none');
+		          $("#dateValidation,#textFDropdown, #numberValidation").removeClass('d-block');  
+		          
+		          $("#textFDropdown, #numberValidation,#dueDateType").addClass('d-none');
+ 		          $("#textFDropdown, #numberValidation,#dueDateType").removeClass('d-block');   
+
+		        }
+		        else if (val == 'Priority') {
+	        	  $("#priority").addClass('d-block');
+		          $("#priority").removeClass('d-none');
+
+	        	  $(".field-label").val("Priority");
+
+	        	  $("#dateValidation, #textFDropdown, #numberValidation, #dueDateType").addClass('d-none');
+		          $("#dateValidation, #textFDropdown, #numberValidation, #dueDateType").removeClass('d-block'); 
+		        }
+		 		else if (val == 'Yes/No') {
+		          $("#fieldType").addClass('d-block');
+		          $("#fieldType").removeClass('d-none');
+
+		          $("#textFDropdown,#numberValidation, #dateValidation,#dueDateType").removeClass('d-block');
+		          $("#textFDropdown,#numberValidation, #dateValidation,#dueDateType").addClass('d-none');
+		          
+		        //  $('#ddlDRWN option:selected').removeAttr('selected');
+				//  $('#ddlDRWN	option[value="yes"]').attr("selected", "selected");
+                 // $('#textFDropdown').append(' <div class="block position-relative mb10 yesNO"><input class="form-control link-input-fild txtyesNO" type="text" value="Yes" /></div>');	
+                //  $('#textFDropdown').append(' <div class="block position-relative mb10 yesNO"><input class="form-control link-input-fild txtyesNO" type="text" value="No" /></div>');
+		          
+		          $(".optionBox").removeClass('d-block');
+				  $(".optionBox").addClass('d-none');
+
+		        }
+		        
+		        else {
+		          $("#textFDropdown, #fieldType").addClass('d-block');
+		          $("#textFDropdown, #fieldType").removeClass('d-none');
+
+		          $("#numberValidation, #dateValidation,#dueDateType").removeClass('d-block');
+		          $("#numberValidation, #dateValidation,#dueDateType").addClass('d-none');
+		          
+		          var div =  document.querySelector('div') // Get element from DOM
+				 // $('.yesNO').remove();
+				 // $('#ddlDRWN option:selected').removeAttr('selected');
+		        //  $('#ddlDRWN option[value="no"]').attr("selected", "selected");
+
+
+		        }
+
+		    });
+		     $(".column-selectNRTE").on("change",function(){
+		        var val = $(this).find('option:selected').val();
+
+		        if (val == 'Text') {
+		          $("#textNRTEFDropdown, #fieldNRTEType,#txtNRTEDefVal").addClass('d-block');
+		          $("#textNRTEFDropdown, #fieldNRTEType,#txtNRTEDefVal").removeClass('d-none');
+
+		          $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE,#numNRTEDefVal,#ddlNRTEDefVal").removeClass('d-block');
+		          $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE,#numNRTEDefVal,#ddlNRTEDefVal,#lbNRTEdays").addClass('d-none');
+		        //  $('#ddlDRWN option:selected').removeAttr('selected');
+		         // $('#ddlDRWN option[value="no"]').attr("selected", "selected");
+		          
+		        //  var div =  document.querySelector('div') // Get element from DOM
+				//  $('.yesNO').remove();
+
+		        }
+		        else if (val == 'Number') {
+		          $("#numberNRTEValidation, #fieldNRTEType,#numNRTEDefVal").addClass('d-block');
+		          $("#numberNRTEValidation, #fieldNRTEType,#numNRTEDefVal").removeClass('d-none');
+
+		          $("#dateNRTEValidation, #textNRTEFDropdown ,#dueDateTypeNRTE,#txtNRTEDefVal,#ddlNRTEDefVal,#lbNRTEdays").addClass('d-none');
+		          $("#dateNRTEValidation, #textNRTEFDropdown ,#dueDateTypeNRTE,#txtNRTEDefVal,#ddlNRTEDefVal").removeClass('d-block');    
+		        }
+		        else if (val == 'Date') {
+		          $("#dateNRTEValidation").addClass('d-block');
+		          $("#dateNRTEValidation").removeClass('d-none');
+
+		          $("#textNRTEFDropdown, #numberNRTEValidation ,#dueDateTypeNRTE, #fieldNRTEType,#lbNRTEdays").addClass('d-none');
+		          $("#textNRTEFDropdown, #numberNRTEValidation ,#dueDateTypeNRTE, #fieldNRTEType").removeClass('d-block');   
+		        }
+		        else if (val == 'DueDate') {
+	        	  $("#dueDateTypeNRTE,#numNRTEDefVal, #fieldNRTEType").addClass('d-block');
+		          $("#dueDateTypeNRTE,#numNRTEDefVal, #fieldNRTEType,#lbNRTEdays").removeClass('d-none');
+
+	        	  $(".field-label").val("Due Date");
+	        	  $(".due-date-validation").val("Future Date");
+
+	        	  $("#dateNRTEValidation, #textNRTEFDropdown, #numberNRTEValidation, #priority,#ddlNRTEDefVal,#txtNRTEDefVal").addClass('d-none');
+		          $("#dateNRTEValidation, #textNRTEFDropdown, #numberNRTEValidation, #priority,#ddlNRTEDefVal,#txtNRTEDefVal").removeClass('d-block'); 
+		        }
+		        else if (val == 'Currency') {
+		          $("#fieldNRTEType,#ddlNRTEDefVal").removeClass('d-none');
+		          $("#fieldNRTEType,#ddlNRTEDefVal").addClass('d-block');  
+		          
+		          $("#textNRTEFDropdown, #numberNRTEValidation,#dueDateTypeNRTE,#numNRTEDefVal,#txtNRTEDefVal,#dateNRTEValidation,#lbNRTEdays").addClass('d-none');
+ 		          $("#textNRTEFDropdown, #numberNRTEValidation,#dueDateTypeNRTE,#numNRTEDefVal,#txtNRTEDefVal,#dateNRTEValidation").removeClass('d-block');   
+
+		        }
+		        else if (val == 'Priority') {
+	        	  $("#fieldNRTEType,#ddlNRTEDefVal").addClass('d-block');
+		          $("#fieldNRTEType,#ddlNRTEDefVal").removeClass('d-none');
+
+	        	  $(".field-label").val("Priority");
+
+	        	  $("#dateNRTEValidation, #textNRTEFDropdown, #numberNRTEValidation, #dueDateTypeNRTE,#numNRTEDefVal,#lbNRTEdays").addClass('d-none');
+		          $("#dateNRTEValidation, #textNRTEFDropdown, #numberNRTEValidation, #dueDateTypeNRTE,#numNRTEDefVal").removeClass('d-block'); 
+		        }
+		 		else if (val == 'Yes/No') {
+		          $("#fieldNRTEType,#ddlNRTEDefVal").addClass('d-block');
+		          $("#fieldNRTEType,#ddlNRTEDefVal").removeClass('d-none');
+
+		          $("#textNRTEFDropdown,#numberNRTEValidation, #dateNRTEValidation,#dueDateTypeNRTE,#numNRTEDefVal").removeClass('d-block');
+		          $("#textNRTEFDropdown,#numberNRTEValidation, #dateNRTEValidation,#dueDateTypeNRTE,#numNRTEDefVal,#lbNRTEdays").addClass('d-none');
+		          
+		        //  $('#ddlDRWN option:selected').removeAttr('selected');
+				//  $('#ddlDRWN	option[value="yes"]').attr("selected", "selected");
+                 // $('#textFDropdown').append(' <div class="block position-relative mb10 yesNO"><input class="form-control link-input-fild txtyesNO" type="text" value="Yes" /></div>');	
+                //  $('#textFDropdown').append(' <div class="block position-relative mb10 yesNO"><input class="form-control link-input-fild txtyesNO" type="text" value="No" /></div>');
+		          
+		          $(".optionBox").removeClass('d-block');
+				  $(".optionBox").addClass('d-none');
+
+		        }
+		        
+		        else {
+		          $("#textNRTEFDropdown, #fieldNRTEType").addClass('d-block');
+		          $("#textNRTEFDropdown, #fieldNRTEType").removeClass('d-none');
+
+		          $("#numberNRTEValidation, #dateNRTEValidation,#dueDateTypeNRTE").removeClass('d-block');
+		          $("#numberNRTEValidation, #dateNRTEValidation,#dueDateTypeNRTE,#lbNRTEdays").addClass('d-none');
+		          
+		          var div =  document.querySelector('div') // Get element from DOM
+				 // $('.yesNO').remove();
+				 // $('#ddlDRWN option:selected').removeAttr('selected');
+		        //  $('#ddlDRWN option[value="no"]').attr("selected", "selected");
+
+
+		        }
+
+		    });
+
+		</script>
+
+ <script>
+        	$(".process-request-input").hide();
+			$(".custom-check-f-p-r").click(function() {
+			    if($(this).is(":checked")) {
+			        $(".process-request-input").show();
+			        $(".process-request-dropdown").hide();
+			    } else {
+			        $(".process-request-input").hide();
+			        $(".process-request-dropdown").show();
+			    }
+			});
+			$("#ddlDefVal").hide();
+			$("#ddlNRTEDefVal").hide();
+			//$("#ddlColumn").change(function() {
+			$("#ddlColumn").on("change",function(){
+				var val = $(this).find('option:selected').val();
+
+			    if(val =="Currency") {
+			        $("#ddlDefVal").show();
+			        $("#txtDefVal").hide();	
+			        $('#numDefVal').hide();
+			        $('#lbdays').addClass('d-none');
+			        GetCurrncyValues(val);			        
+			    }
+			    else if(val =="Number") {
+			        $("#ddlDefVal").hide();
+			        $("#txtDefVal").hide();	
+			        $('#numDefVal').show();
+			        $('#lbdays').addClass('d-none');
+			    }
+			    else if(val =="Priority") {
+			        $("#ddlDefVal").show();
+			        $("#txtDefVal").hide();
+			        $('#numDefVal').hide();
+			        $('#lbdays').addClass('d-none');
+			        $("#ddlDefVal").html("<option value='High' >High</option> <option value='Medium' selected='selected'>Medium</option> <option value='Low' >Low</option>");
+			        
+			    }
+			    else if(val =="Yes/No") {
+			        $("#ddlDefVal").show();
+			        $("#txtDefVal").hide();
+			        $('#numDefVal').hide();
+			        $('#lbdays').addClass('d-none');
+			        $("#ddlDefVal").html("<option value='Yes' >Yes</option> <option value='No' selected='selected'>No</option>");
+			    }
+			    else if(val =="Date") {
+			    	$('#fieldType').removeClass('d-block');
+			    	$('#fieldType').addClass('d-none');			    	
+			     //   $("#ddlDefVal").hide();
+			     //   $("#txtDefVal").hide();	       
+			    }
+			    else if(val =="DueDate") {
+			    	$("#ddlDefVal").hide();
+			    	$('#fieldType').addClass('d-block');
+			    	$('#fieldType').removeClass('d-none');
+			    	$('#lbdays').removeClass('d-none');
+			    	$('#txtDefVal').hide();
+			    	$('#numDefVal').show();			    			            			    	
+			    }
+			     else {
+			        $("#ddlDefVal").hide();
+			        $('#numDefVal').hide();
+			        $("#txtDefVal").show();
+			        $('#lbdays').addClass('d-none');
+			    }
+			});
+			$("#ddlNRTEColumn").on("change",function(){
+				var val = $(this).find('option:selected').val();
+
+			    if(val =="Currency") {
+			        $("#ddlNRTEDefVal").show();
+			        $("#txtNRTEDefVal").hide();
+			        GetCurrncyValues(val);			        
+
+			       // $("#ddlNRTEDefVal").html("<option value='INR' selected='selected'>INR</option> <option value='USD' >USD</option> <option value='EUR' >EUR</option> <option value='JPY' >JPY</option> <option value='GBP' >GBP</option> <option value='AED' >AED</option> <option value='AFN' >AFN</option> <option value='ALL' >ALL</option> <option value='AMD' >AMD</option> <option value='ANG' >ANG</option> <option value='AOA' >AOA</option> <option value='ARS' >ARS</option> <option value='AUD' >AUD</option> <option value='AWG' >AWG</option> <option value='AZN' >AZN</option> <option value='BAM' >BAM</option>");
+			    }
+			    else if(val =="Priority") {
+			        $("#ddlNRTEDefVal").show();
+			        $("#txtNRTEDefVal").hide();
+			        $("#ddlNRTEDefVal").html("<option value='High' >High</option> <option value='Medium' selected='selected'>Medium</option> <option value='Low' >Low</option>");
+			        
+			    }
+			    else if(val =="Yes/No") {
+			        $("#ddlNRTEDefVal").show();
+			        $("#txtNRTEDefVal").hide();
+			        $("#ddlNRTEDefVal").html("<option value='Yes' >Yes</option> <option value='No' selected='selected'>No</option>");
+
+			    }
+			     else {
+			        $("#ddlNRTEDefVal").hide();
+			        $("#txtNRTEDefVal").show();
+			    }
+			});
+
+			$("#btnActive").click(function() {
+			   // let el = document.getElementById('btnActive');
+				//console.log(el.ariaPressed); 
+			});
+
+        </script>
+		<!-- slider for gallery  -->
+        <script>
+            function prev(){
+                    document.getElementById('slider-container').scrollLeft -= 100;
+            }
+
+            function next()
+            {
+                document.getElementById('slider-container').scrollLeft += 100;
+            }
+            function prevE(){
+                    document.getElementById('slider-containerE').scrollLeft -= 100;
+            }
+
+            function nextE()
+            {
+                document.getElementById('slider-containerE').scrollLeft += 100;
+            }
+
+        </script>
+
+        <!-- gallery show hide -->
+        <script >
+            $('#test1[name=UpdateEmpN]').change(function(){
+                // var inputVal = $('input[name=UpdateEmp]:checked').val(); 
+                if($('#test1[name=UpdateEmpN]:checked')) {
+                    // debugger;
+                    $('.changemeN').addClass('d-block');
+                    $('.changemeN').removeClass('d-none');
+
+                    $('#Upload-user-imageN').removeClass('d-block');
+                    $('#Upload-user-imageN').addClass('d-none');
+                } 
+            });
+            $('#test2[name=UpdateEmpN]').change(function(){
+                
+                if($('#test2[name=UpdateEmpN]:checked')) {
+                    // debugger;
+                    $('.changemeN').removeClass('d-block');
+                    $('.changemeN').addClass('d-none');
+
+                    $('#Upload-user-imageN').addClass('d-block');
+                    $('#Upload-user-imageN').removeClass('d-none');
+                }
+            });
+            $('#test3[name=UpdateEmpE]').change(function(){
+                // var inputVal = $('input[name=UpdateEmp]:checked').val(); 
+                if($('#test1[name=UpdateEmpE]:checked')) {
+                    // debugger;
+                    $('.changemeE').addClass('d-block');
+                    $('.changemeE').removeClass('d-none');
+
+                    $('#Upload-user-imageE').removeClass('d-block');
+                    $('#Upload-user-imageE').addClass('d-none');
+                } 
+            });
+            $('#test4[name=UpdateEmpE]').change(function(){
+                
+                if($('#test2[name=UpdateEmpE]:checked')) {
+                    // debugger;
+                    $('.changemeE').removeClass('d-block');
+                    $('.changemeE').addClass('d-none');
+
+                    $('#Upload-user-imageE').addClass('d-block');
+                    $('#Upload-user-imageE').removeClass('d-none');
+                }
+            });
+
+        </script>
+
+        <!-- Link Fild add delete -->
+        <script>
+	        $(document).ready(function() {    
+				$('.add').click(function () {
+                	$('.block1').append(' <div class="block position-relative mb10"><input class="form-control link-input-fild" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            	});	
+            	$('.addE').click(function () {
+                	$('.block1E').append(' <div class="block position-relative mb10"><input class="form-control link-input-fildE" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            	});
+            	$('.addTE').click(function () {
+                	$('.block1TE').append(' <div class="block position-relative mb10"><input type="hidden" value=""><input class="form-control link-input-fildTE" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            	});	           	
+				$('.addNRTE').click(function () {
+                	$('.block1NRTE').append(' <div class="block position-relative mb10"><input type="hidden" value=""><input class="form-control link-input-fildNRTE" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            	});
+		
+	        });  
+            
+
+            $('body').on('click', '.remove', function () {
+                $(this).parent('.block').remove();
+            });
+        </script>
+        <script>
+        	
+            $('.web-add').click(function () {
+                $('.web-block:last').before(' <div class="web-block position-relative mb10"><input class="form-control link-input-fild" type="text" /><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>');
+            });
+
+            $('body').on('click', '.remove', function () {
+                $(this).parent('.web-block').remove();
+            });
+        </script>
+		<em>
+		<script>
+		var countTxt=1;
+		var countNum=1;
+		var countDate=1;
+		var countCurrency=1;
+		var countDueDate=1;
+		var countPriority=1;
+		var countYesNo=1;
+		$('#new-process-modal-onestep').on('hidden', function() {
+		    $(this).removeData('modal');
+		});
+		$('#new-process-modal-onestep').on('hidden.bs.modal', function() {		    if(false)
+		     e.preventDefault();
+
+			  var modal = $(this);
+			  modal.find('.modal-body #txtLabel,#txtDefVal,#numDefVal,.link-input-fild').val("")
+			  modal.find('.block1').html("");
+			  modal.find('.modal-body select').prop('selectedIndex', 0);
+			  $("#textFDropdown, #fieldType").addClass('d-block');
+		      $("#textFDropdown, #fieldType").removeClass('d-none');
+
+		      $("#numberValidation, #dateValidation ,#dueDateType").removeClass('d-block');
+		      $("#numberValidation, #dateValidation ,#dueDateType").addClass('d-none');
+		      $("#txtDefVal").show();
+			  $("#ddlDefVal").hide();
+			  $("#numDefVal").hide();
+			  $(".optionBox").addClass('d-none');
+			  $('#lbdays').addClass('d-none');
+
+
+
+
+		});
+		$('#new-process-modal-onestepNRTE').on('hidden.bs.modal', function() {		    if(false)
+		     e.preventDefault();
+
+			  var modal = $(this);
+			  modal.find('.modal-body input').val("")
+			  modal.find('.block1').html("");
+			  modal.find('.modal-body select').prop('selectedIndex', 0);
+			 // $("#textNRTEFDropdown, #fieldNRTEType").addClass('d-block');
+	         // $("#textNRTEFDropdown, #fieldNRTEType").removeClass('d-none');
+	         // $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE").removeClass('d-block');
+	         // $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE").addClass('d-none');
+	          
+	          $("#textNRTEFDropdown, #fieldNRTEType,#txtNRTEDefVal").addClass('d-block');
+			  $("#textNRTEFDropdown, #fieldNRTEType,#txtNRTEDefVal").removeClass('d-none');
+
+	          $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE,#numNRTEDefVal,#ddlNRTEDefVal").removeClass('d-block');
+		      $("#numberNRTEValidation, #dateNRTEValidation ,#dueDateTypeNRTE,#numNRTEDefVal,#ddlNRTEDefVal").addClass('d-none');
+			  $(".optionBoxNRTE").addClass('d-none');
+			  $(".block1NRTE").html('');
+ 				//$("#tblEApTemp tbody").html(html);
+				var seq = 0;
+				$('#tblEApTemp .tdSqno').each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#numSqnoWhenTempEdit").val(seq+1);
+
+
+
+		});
+		//$('#new-process-modal').on('hidden', function(){
+		$('#new-process-modal').on('hidden.bs.modal', function() {
+			//e.preventDefault();
+			var modal = $(this);	
+			//$(this).data('modal', null);  // destroys modal
+	    	modal.find('.modal-body select').prop('selectedIndex', 0);
+			$("#txtReqFor").val(''); $("#txtTemplate").val(''); $("#txtTitle").val('');// $("#tblApTemp tbody tr").empty(); //$("#new-process-modal").data('modal', null);
+		});
+
+		
+		function addrowdyanamicWhenTempEdit(){
+      	 var flag=true;
+          var table=document.getElementById("tblEApTemp");
+ 		  var table_len=(table.rows.length)-1;
+ 		  var valueArray=''; 
+ 		  if($('#ddlNRTEColumn :selected').text()=="Yes/No"){
+ 		  	  valueArray = $('.txtyesNO').map(function() {
+			     if(this.value!=""){
+			      return this.value;
+			      }
+			  }).get();//.join(",");
+ 		  }
+ 		  else{
+ 		  	  valueArray = $('.link-input-fildNRTE').map(function() {
+ 		  	  if(this.value!=""){
+			      return this.value;
+			      }
+			  }).get();//.join(",");
+
+ 		  }
+ 		  if($("#txtNRTELabel").val()==""){		            
+			flag=false;
+ 		  	alert("Please enter label");return false;
+ 		  }
+ 		  if($("#numSqnoWhenTempEdit").val()==""){		            
+			flag=false;
+ 		  	alert("Please enter Sequence");return false;
+ 		  }
+		  var validation='';
+		  var valNum,valDate='';
+		  if($('#ddlNRTEColumn :selected').text() =="Number"){
+			validation = "<label for='Number'>"+ $("#ddlNRTENumVal option:selected").text()+"</label>";
+			valNum=$("#ddlNRTENumVal option:selected").text();
+		  }
+		  else if($('#ddlNRTEColumn :selected').text()=="Date"){
+		  	validation = "<label for='Date'>"+ $("#ddlNRTEDateVal option:selected").text()+"</label>";
+		  	valDate	=$("#ddlNRTEDateVal option:selected").text();	  	
+		  }
+		  
+		  else if($("#dueDateType").is(":visible")){
+		  	validation = "<label for='Date'>"+ $('#txtNRTEDDateVal').val()+"</label>";
+		  	valDate	=$("#txtNRTEDDateVal").val();
+
+		  }
+		  else{validation ="<label for='Text'>No</label>";}
+		  
+		  var DefVal='';
+		  if($('#ddlNRTEColumn :selected').text() =="Text" || $('#ddlNRTEColumn :selected').text() =="Date"){
+		  
+		  	DefVal= $("#txtNRTEDefVal").val();//return false;
+		  }
+		  else if($('#ddlNRTEColumn :selected').text() =="DueDate"){
+		  	if($("#numNRTEDefVal").val() > 0 && $("#numNRTEDefVal").val() < 999 ){		  		
+		  		DefVal= "<label for=''>"+ $("#numNRTEDefVal").val()  +"</label>";
+		  	}else{ flag=false;alert("Default value must be between 1 to 999");return false;}
+
+		  }
+		  else if($('#ddlNRTEColumn :selected').text() =="Number"){
+		  	DefVal= $("#numNRTEDefVal").val();
+		  }		  
+		  else if($('#ddlNRTEColumn :selected').text() =="Currency" || $('#ddlNRTEColumn :selected').text() =="Priority" || $('#ddlNRTEColumn :selected').text() =="Yes/No"){
+		  	DefVal= $("#ddlNRTEDefVal :selected").text();
+		  }
+		  var txtArr='';
+		  if($('#ddlNRTEColumn :selected').text()=="Text"){
+		  	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Text";
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=20){flag=false;alert("You exeed maximum limit of Text type Column.");return false;}
+		  	txtArr="ColumnText"+(typeLen+1);
+		  	//countTxt++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="Number"){
+		 	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Number";
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=20){flag=false;alert("You exeed maximum limit of Number type Column.");return false;}
+		  	txtArr="ColumnNumber"+(typeLen+1);
+		  //	countNum++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="Date"){
+		  	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Date";
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=10){flag=false;alert("You exeed maximum limit of Date type Column.");return false;}
+		  	txtArr="ColumnDate"+(typeLen+1);
+		  	//countDate++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="Currency"){
+		  	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Currency";
+			});console.log($aTag);
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of Currency type Column.");return false;}
+		  	//if(countCurrency>1){flag=false;alert("You exeed maximum limit.");return false;}
+		  	txtArr="Currency";
+		  	//countCurrency++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="DueDate"){
+		  	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "DueDate";
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of DueDate type Column.");return false;}
+		  	txtArr="DueDate";
+		  	//countDueDate++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="Priority"){
+			var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Priority";
+			});
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of Priority type Column.");return false;}
+		  	txtArr="Priority";
+		  	//countPriority++;
+		  }
+		  if($('#ddlNRTEColumn :selected').text()=="Yes/No"){
+		  	var $aTag = $('#tblEApTemp').find('tbody td.tdType').filter(function() {
+			    return $(this).text() == "Yes/No";
+			});console.log($aTag.length);
+			var typeLen=$aTag.length;
+		  	if(typeLen>=1){flag=false;alert("You exeed maximum limit of YesNo type Column.");return false;}
+
+		  	txtArr="Yes/No";
+		  //	countYesNo++;
+		  }
+		  
+		  var dropDown='';
+		  var seqNo=$("#numSqnoWhenTempEdit").val();
+		  if($('#ddlNRTEDRWN').is(":visible")){dropDown=$('#ddlNRTEDRWN :selected').text();}
+		  else{dropDown="No";}
+		  var Dropdown,Mandatory='';
+		  if($('#ddlNRTEMand :selected').text()=="Yes"){Mandatory=true;}
+			else{Mandatory=false;}
+			if(dropDown=="Yes"){Dropdown=true;}
+			else{Dropdown	=false;}
+			 	var tId=$("#btnUpdateAPM").val();
+				var columnId='';var cId;
+		  var allItem = { __metadata:{ type: "SP.Data.ApprovalTemplateSetupListItem" },
+        		ColumnName:txtArr.replace('/',''),
+                ColumnType:$('#ddlNRTEColumn :selected').text(),
+                Title:$("#txtNRTELabel").val(),                        
+                Mandatory:Mandatory,
+                NumberValidation:valNum,
+                DateValidation:valDate,
+                DropdownValues:Dropdown,
+                TemplateIDId:tId,
+                DefaultValue:DefVal,
+                SequenceNo:seqNo
+     			};
+            var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items";		
+                $.ajax({
+                    url:URL,
+                    type: "POST",
+                    async: false,
+                    data:JSON.stringify(allItem),
+                    headers: {
+                        "accept": "application/json;odata=verbose", 
+                        "Content-Type": "application/json;odata=verbose",  
+                        "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                        "X-HTTP-Method": "POST" 
+                    },
+                    success: function (data) {
+                    	cId=data.d.ID;
+                    	columnId=data.d.ID;
+
+                    	if(Dropdown==true){       
+                        	insertDropDNOptions(valueArray,tId,cId);
+                        }
+                        $("#txtReqFor").val('');
+      		    		$("#txtTemplate").val('');
+      		    		$("#txtTitle").val('');
+                        $("#tblApTemp tbody tr").empty();
+                        $("#new-process-modal").data('modal', null);
+                     //   countTxt=1;
+					//	countNum=1;
+					//	countDate=1;
+				
+                    }, 			
+                    error: function (error) {
+                        console.log(error); 			
+                    }
+                });  
+
+            var html="<tr> <td class='tdColumn d-none' >"+txtArr+"<input type='hidden' value='"+columnId+"'></td> <td class='tdSqno'>"+seqNo+"</td><td class='tdLabel'>"+$("#txtNRTELabel").val()+"</td><td class='tdType'>"+$('#ddlNRTEColumn :selected').text()+"</td> <td class='tdMand'>"+$('#ddlNRTEMand :selected').text()+"</td> <td class='tdDefVal'>"+DefVal+"</td> <td class='tdVal'>"+validation +"</td> <td class='tdDRWN'>"+dropDown+"</td> <td style='display:none'>"+valueArray+" </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editTemplateRow(this,tblEApTemp)' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-t-process'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRowWhenEditTemplate(this,"+cId+")'> <i class='fa fa-trash-o' ></i> </a></td> </tr>";
+            $("#tblEApTemp tbody").append(html);
+            if(flag){
+ 		  	$( '#new-process-modal-onestepNRTE' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#new-process-modal-onestepNRTE').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }          
+        }
+        SeqCount = 1;
+        function addrowdyanamic() {  
+      	  var flag=true;
+          var table=document.getElementById("tblApTemp");
+ 		  var table_len=(table.rows.length)-1;
+ 		  var valueArray=''; 
+ 		  if($('#ddlColumn :selected').text()=="Yes/No"){
+ 		  	  valueArray = $('.txtyesNO').map(function() {
+			     if(this.value!=""){
+			      return this.value;
+			      }
+			  }).get();//.join(",");
+ 		  }
+ 		  else{
+ 		  	  valueArray = $('.link-input-fild').map(function() {
+ 		  	  if(this.value!=""){
+			      return this.value;
+			      }
+			  }).get();//.join(",");
+
+ 		  }
+ 		  
+ 		  if($("#txtSqno").val()==""){	
+ 		  	flag=false;            
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtLabel").val()==""){
+ 		    flag=false;	            
+ 		  	alert("Please enter label");return false;
+ 		  }
+ 		 // else{$("#new-process-modal-onestep").modal('hide');}
+		  var validation='';
+		  if($('#ddlColumn :selected').text() =="Number"){
+			validation = "<label for='Number'>"+ $("#ddlNumVal option:selected").text()+"</label>";
+		  }
+		  else if($('#ddlColumn :selected').text()=="Date"){
+		  	validation = "<label for='Date'>"+ $("#ddlDateVal option:selected").text()+"</label>";
+		  }		  
+		  else if($("#dueDateType").is(":visible")){
+		  	validation = "<label for='Date'>"+ $('#txtDDateVal').val()+"</label>";
+		  }
+		  else{validation ="<label for='Text'>No</label>";}
+		  
+		  var DefVal='';
+	/*	  if($('#ddlColumn :selected').text() =="Text" || $('#ddlColumn :selected').text() =="Number" || $('#ddlColumn :selected').text() =="Date" || $('#ddlColumn :selected').text() =="DueDate"){
+		  	DefVal= "<label for='Date'>"+ $("#txtDefVal").val()  +"</label>";
+		  }	*/	
+		  if($('#ddlColumn :selected').text() =="Text"){
+		  	if($('#txtDefVal').val() == null || $('#txtDefVal').val() == ''){
+			  //	alert("Default value must be text!");
+			  //	return false;
+		  	}else{
+		  		DefVal= "<label for=''>"+ $("#txtDefVal").val()  +"</label>";
+		  	}
+		  } else if($('#ddlColumn :selected').text() =="Number"){
+		  	if(!$.isNumeric($('#numDefVal').val())) {
+		  		//flag=false;
+		       // alert("Default value must be numeric!");
+		       // return false;
+		    }else{
+ 			    DefVal= "<label for=''>"+ $("#numDefVal").val()  +"</label>";
+		    }
+		  } else if($('#ddlColumn :selected').text() =="Date"){
+		  	DefVal= "<label for=''>"+ $("#txtDefVal").val()  +"</label>";
+		  }
+		  else if($('#ddlColumn :selected').text() =="DueDate"){
+		  	if($("#numDefVal").val() > 0 && $("#numDefVal").val() < 999 ){		  		
+		  		DefVal= "<label for=''>"+ $("#numDefVal").val()  +"</label>";
+		  	}else{ flag=false;alert("Default value must be between 1 to 999");return false;}
+		  }	  		    
+		  else if($('#ddlColumn :selected').text() =="Currency" || $('#ddlColumn :selected').text() =="Priority" || $('#ddlColumn :selected').text() =="Yes/No"){
+		  	DefVal= "<label for='Date'>"+$("#ddlDefVal :selected").text()+"</label>";
+		  }
+		  
+		  var txtArr='';
+		  if($('#ddlColumn :selected').text()=="Text"){
+		  	if(countTxt>20){flag=false;alert("You exeed maximum limit of Text type Column.");return false;}
+		  	txtArr="ColumnText"+countTxt;
+		  	countTxt++;
+		  }
+		  if($('#ddlColumn :selected').text()=="Number"){
+		  	if(countNum>20){flag=false;alert("You exeed maximum limit of Number type Column.");return false;}
+		  	txtArr="ColumnNumber"+countNum;
+		  	countNum++;
+		  }
+		  if($('#ddlColumn :selected').text()=="Date"){
+		  	if(countDate>10){flag=false;alert("You exeed maximum limit of Date type Column.");return false;}
+		  	txtArr="ColumnDate"+countDate;
+		  	countDate++;
+		  }
+		  if($('#ddlColumn :selected').text()=="Currency"){
+		  	if(countCurrency>1){flag=false;alert("You exeed maximum limit of Currency type Column.");return false;}
+		  	txtArr="Currency";
+		  	countCurrency++;
+		  }
+		  if($('#ddlColumn :selected').text()=="DueDate"){
+		  	if(countDueDate>1){flag=false;alert("You exeed maximum limit of Due Date type Column.");return false;}
+		  	txtArr="DueDate";
+		  	countDueDate++;
+		  }
+		  if($('#ddlColumn :selected').text()=="Priority"){
+		  	if(countPriority>1){flag=false;alert("You exeed maximum limit of Priority type Column.");return false;}
+		  	txtArr="Priority";
+		  	countPriority++;
+		  }
+		  if($('#ddlColumn :selected').text()=="Yes/No"){
+		  	if(countYesNo>1){flag=false;alert("You exeed maximum limit of Yes/No type Column.");return false;}
+		  	txtArr="YesNo";
+		  	countYesNo++;
+		  }
+		  if(flag){
+		  	 $( '#new-process-modal-onestep' ).modal( 'hide' ).data( 'bs.modal', null );
+			 // event after hidden
+			 $('#new-process-modal-onestep').on('hidden', function(){
+			      //$(this).data('modal', null);  // destroys modal
+			 });		  
+		  }
+		  var dropDown='';
+		  if($('#ddlDRWN').is(":visible")){dropDown=$('#ddlDRWN :selected').text();}
+		  else{dropDown="No";}		  
+          var html="<tr> <td class='tdColumn d-none'>"+txtArr+"</td> <td class='tdSqno'>"+$('#txtSqno').val()+"</td> <td class='tdLabel'>"+$("#txtLabel").val()+"</td> <td class='tdType'>"+$('#ddlColumn :selected').text()+"</td> <td class='tdMand'>"+$('#ddlMand :selected').text()+"</td> <td class='tdDefVal'>"+DefVal+"</td> <td class='tdVal'>"+validation +"</td> <td class='tdDRWN'>"+dropDown+"</td> <td style='display:none'>"+valueArray+" </td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editRow(this,tblApTemp)' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-process'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)'> <i class='fa fa-trash-o' ></i> </a></td> </tr>";
+          $("#tblApTemp tbody").append(html);   
+          SeqCount = SeqCount+1;
+		  $('#txtSqno').val(SeqCount); 
+		  $("#txtSqno").attr("value", SeqCount);       
+           
+        }
+	
+
+        function deleteRowWhenEditTemplate(row,Id)
+		{debugger;
+		    var i=row.parentNode.parentNode.rowIndex;
+		    var table = document.getElementById("tblEApTemp");
+         	var rowcountAfterDelete = document.getElementById("tblEApTemp").rows.length;  
+         	var dropdown=document.getElementById("tblEApTemp").rows[i].cells[7].innerHTML;            
+         		document.getElementById('tblEApTemp').deleteRow(i);
+    	var seq = 0;
+				$('#tblEApTemp .tdSqno').each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#numSqnoWhenTempEdit").val(seq+1);
+
+         	for(var i=1;i<rowcountAfterDelete;i++){                  
+              var txtArr='';
+			  /*if(document.getElementById("tblEApTemp").rows[i].cells[1].innerHTML=="Text"){
+			  //	if(countTxt>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnText"+countTxt1;
+			  	countTxt1++;
+			  }
+			  if(document.getElementById("tblEApTemp").rows[i].cells[1].innerHTML=="Number"){
+			  //	if(countNum>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnNumber"+countNum1;
+			  	countNum1++;
+			  }
+			  if(document.getElementById("tblEApTemp").rows[i].cells[1].innerHTML=="Date"){
+			  	//if(countDate>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnDate"+countDate1;
+			  	countDate1++;
+			  }*/
+			//table.rows[i].cells[0].innerHTML=txtArr;
+
+          }	
+          if(dropdown=='Yes'){$.when(deleteOptionsFromLstWhileTempEdit(Id)).then(setTimeout(function(){deleteRowFromLstWhileTempEdit(Id)}, 3000));}
+          else{          deleteRowFromLstWhileTempEdit(Id,dropdown);}
+
+		}
+		function deleteRowFromLstWhileTempEdit(Id,dropdown){	debugger;	
+
+		 	var ctx = new SP.ClientContext();
+		    var oListItem = ctx.get_web().get_lists().getByTitle('ApprovalTemplateSetup');
+		
+		    this.oList= oListItem.getItemById(Id);
+		
+		    oList.deleteObject();
+			//ctx.executeQueryAsync(onsuccess(Id,dropdown), onfailed);
+		    ctx.executeQueryAsync();
+		}
+		function onsuccess(Id,dropdown) {
+ 			//if(dropdown=='Yes'){deleteOptionsFromLstWhileTempEdit(Id)}
+		}
+		function onfailed(sender, args) {
+		    console.log('Failed' + args.get_message() + '\n' + args.get_stackTrace());
+		}
+		function deleteOptionsFromLstWhileTempEdit(Id){debugger;
+			var clientContext = new SP.ClientContext();
+			spList = clientContext.get_web().get_lists().getByTitle("ApprovalColumnsDropdown");
+			
+			var camlQuery = new SP.CamlQuery();
+			camlQuery.set_viewXml('<View><Query><Where><Eq><FieldRef Name=\'ColumnSequence\'/><Value Type=\'Lookup\'>'+Id+'</Value></Eq></And></Where></Query></View>');
+			this.collListItem = spList.getItems(camlQuery);
+			
+			clientContext.load(collListItem);
+			
+			clientContext.executeQueryAsync(function () {
+			console.log(collListItem.getEnumerator());
+			    var itemCount = collListItem.get_count();
+			    for (var i = itemCount - 1; i >= 0; i--) {
+			        var oListItem = collListItem.itemAt(i);
+			        oListItem.deleteObject();
+			    };
+			    clientContext.executeQueryAsync();
+			});						
+		//deleteRowFromLstWhileTempEdit(Id);
+		}
+		function deleteRow(row,tableRow)
+		{
+		    var i=row.parentNode.parentNode.rowIndex;
+		    console.log(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML);
+		      if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Text"){
+			  	countTxt--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Number"){
+			  	countNum--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Date"){
+			  	countDate--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Currency"){
+			  	countCurrency--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="DueDate"){
+			  	countDueDate--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Priority"){
+			  	countPriority--;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Yes/No"){
+			  	countYesNo--;
+			  }
+		    document.getElementById('tblApTemp').deleteRow(i);
+		    var table = document.getElementById("tblApTemp");
+         	var rowcountAfterDelete = document.getElementById("tblApTemp").rows.length;  
+         	var countTxt1=1;
+			var countNum1=1;
+			var countDate1=1;
+			
+         	for(var i=1;i<rowcountAfterDelete;i++){                 
+              var txtArr='';
+			  if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Text"){
+			  //	if(countTxt>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnText"+countTxt1;
+			  	countTxt1++;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Number"){
+			  //	if(countNum>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnNumber"+countNum1;
+			  	countNum1++;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Date"){
+			  	//if(countDate>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="ColumnDate"+countDate1;
+			  	countDate1++;
+			  }
+			   else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Currency"){
+			  	txtArr="Currency";
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="DueDate"){
+			  	txtArr="DueDate";
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Priority"){
+			  	//if(countDate>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="Priority";
+			  	countDate1++;
+			  }
+			  else if(document.getElementById("tblApTemp").rows[i].cells[3].innerHTML=="Yes/No"){
+			  	//if(countDate>=3){alert("You exeed maximum limit.");return false;}
+			  	txtArr="YesNo";
+			  }
+
+			table.rows[i].cells[0].innerHTML=txtArr;
+
+          }
+
+		}
+   
+
+		function editRow(row,tName) {
+		    var i=row.parentNode.parentNode.rowIndex;
+		    $("#editRowSubmit").val(i);
+			
+			$("#tblEditRow").val(tName.id);
+			var $SeqNo = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+			var val= document.getElementById(tName.id).rows[i].cells[3].innerHTML;
+
+	        var $Type= document.getElementById(tName.id).rows[i].cells[3].innerHTML;
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	        var $Mand= document.getElementById(tName.id).rows[i].cells[4].innerHTML;
+	        var $Def = document.getElementById(tName.id).rows[i].cells[5].innerText;
+	        var $Vali = document.getElementById(tName.id).rows[i].cells[6].innerText;
+	        var $DRWN = document.getElementById(tName.id).rows[i].cells[7].innerHTML;
+	        var $DRWNOpt = document.getElementById(tName.id).rows[i].cells[8].innerHTML;
+	        
+			str = $DRWNOpt.toString().replace(/,\s*$/, "");
+			var separatedArray =[];
+            separatedArray = str.split(',');
+ 			var html='';
+            for(i=0;i<separatedArray.length;i++){
+	            if(i==0){
+	            	$('.link-input-fildE').val(separatedArray[i]);
+	            }
+	            else{
+	                html+=' <div class="block position-relative mb10"><input class="form-control link-input-fildE" type="text" value="'+separatedArray[i]+'"/><span class="remove btn custom-btn link-delete-btn"><i class="fa fa-minus"></i></span></div>';
+
+	            }
+
+			}
+			$('.block1E').html(html);  
+			$("#txtESqno").val($SeqNo);  
+			$("#txtELabel").val($Label);	        
+			$('#ddlEColumn option:selected').removeAttr('selected');
+		    //$('#ddlEColumn option[value="'+$Type+'"]').attr("selected", "selected");
+		   	$('#ddlEColumn').val($Type);
+			$('#ddlEColumn').attr("disabled", "disabled");
+            $("#ddlEMand").val($Mand);
+			$("#ddlEDRWN").val($DRWN);	
+			if($DRWN=='Yes'){
+				$(".optionBoxE").addClass('d-block');
+				$(".optionBoxE").removeClass('d-none');
+			}			
+			else{
+				$(".optionBoxE").removeClass('d-block');
+				$(".optionBoxE").addClass('d-none');
+			}
+
+		        if (val == 'Text') {
+		          $("#textEFDropdown, #fieldEType").addClass('d-block');
+		          $("#textEFDropdown, #fieldEType").removeClass('d-none');
+
+		          $("#numberEValidation, #dateEValidation ,#dueDateEType").removeClass('d-block');
+		          $("#numberEValidation, #dateEValidation ,#dueDateEType").addClass('d-none');
+		          $("#txtEDefVal").val($Def);	
+		          $("#ddlEDefVal").hide();
+		          $("#numEDefVal").hide();
+			      $("#txtEDefVal").show();
+		          $('#lbEdays').addClass('d-none');
+      
+
+		        }
+		        else if (val == 'Number') {
+		          $("#numberEValidation, #fieldEType").addClass('d-block');
+		          $("#numberEValidation, #fieldEType").removeClass('d-none');
+
+		          $("#dateEValidation, #textEFDropdown,#dueDateEType").addClass('d-none');
+		          $("#dateEValidation, #textEFDropdown,#dueDateEType").removeClass('d-block');
+		          $("#numEDefVal").val($Def); 
+		          $("#ddlENumVal").val($Vali);   
+		          $("#ddlEDefVal").hide();
+			      $("#txtEDefVal").hide();
+		          $("#numEDefVal").show();
+		          $('#lbEdays').addClass('d-none');
+
+		        }
+		        else if (val == 'Date') {
+		          $("#dateEValidation").addClass('d-block');
+		          $("#dateEValidation").removeClass('d-none');
+
+		          $("#textEFDropdown, #numberEValidation ,#dueDateEType, #fieldEType").addClass('d-none');
+		          $("#textEFDropdown, #numberEValidation ,#dueDateEType, #fieldEType").removeClass('d-block');   
+		          $("#txtEDefVal").val($Def);
+		          $("#ddlEDateVal").val($Vali);
+		          $("#ddlEDefVal").hide();
+			      $("#txtEDefVal").show();
+			      $("#numEDefVal").hide();
+		          $('#lbEdays').addClass('d-none');
+
+		          
+		        }
+		        else if (val == 'DueDate') {
+	        	  $("#dueDateEType").addClass('d-block');
+		          $("#dueDateEType").removeClass('d-none');
+
+	        	  $(".field-label").val("Due Date");
+	        	  $(".due-date-validation").val("Future Date");
+					
+	        	  $("#dateEValidation, #textEFDropdown, #numberEValidation, #priority").addClass('d-none');
+		          $("#dateEValidation, #textEFDropdown, #numberEValidation, #priority").removeClass('d-block');
+		          $("#ddlEDefVal").hide();
+			      $("#txtEDefVal").hide();
+			      $("#numEDefVal").show(); 
+		          $("#numEDefVal").val($Def);
+		          $('#lbEdays').removeClass('d-none');
+
+		        }
+		        else if (val == 'Currency') {
+		          $("#dateEValidation,#textEFDropdown, #numberEValidation").addClass('d-none');
+		          $("#dateEValidation,#textEFDropdown, #numberEValidation").removeClass('d-block');  
+		          
+		          $("#textEFDropdown, #numberEValidation,#dueDateEType").addClass('d-none');
+ 		          $("#textEFDropdown, #numberEValidation,#dueDateEType").removeClass('d-block');   
+				  $("#ddlEDefVal").show();
+			      $("#txtEDefVal").hide();
+			      $("#numEDefVal").hide();
+			      $('#lbEdays').addClass('d-none');
+
+			      GetCurrncyValues(val);
+			     // $("#ddlEDefVal").html("<option value='INR' selected='selected'>INR</option> <option value='USD' >USD</option> <option value='EUR' >EUR</option> <option value='JPY' >JPY</option> <option value='GBP' >GBP</option> <option value='AED' >AED</option> <option value='AFN' >AFN</option> <option value='ALL' >ALL</option> <option value='AMD' >AMD</option> <option value='ANG' >ANG</option> <option value='AOA' >AOA</option> <option value='ARS' >ARS</option> <option value='AUD' >AUD</option> <option value='AWG' >AWG</option> <option value='AZN' >AZN</option> <option value='BAM' >BAM</option>");
+				  $('#ddlEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+
+		        }
+		        else if (val == 'Priority') {
+	        	  $("#priority").addClass('d-block');
+		          $("#priority").removeClass('d-none');
+
+	        	  $(".field-label").val("Priority");
+
+	        	  $("#dateEValidation, #textEFDropdown, #numberEValidation, #dueDateEType").addClass('d-none');
+		          $("#dateEValidation, #textEFDropdown, #numberEValidation, #dueDateEType").removeClass('d-block'); 
+		          $("#ddlEDefVal").show();
+			        $("#txtEDefVal").hide();
+			        $("#numEDefVal").hide();
+			        $("#ddlEDefVal").html("<option value='High' >High</option> <option value='Medium' selected='selected'>Medium</option> <option value='Low' >Low</option>");
+			       	$('#ddlEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+		          $('#lbEdays').addClass('d-none');
+
+		        }
+		 		else if (val == 'Yes/No') {
+		          $("#fieldEType").addClass('d-block');
+		          $("#fieldEType").removeClass('d-none');
+
+		          $("#textEFDropdown,#numberEValidation, #dateEValidation,#dueDateEType").removeClass('d-block');
+		          $("#textEFDropdown,#numberEValidation, #dateEValidation,#dueDateEType").addClass('d-none');		          
+		          
+		          $(".optionBox").removeClass('d-block');
+				  $(".optionBox").addClass('d-none');
+				  $("#ddlEDefVal").show();
+				  $("#numEDefVal").hide();
+			        $("#txtEDefVal").hide();
+			        $("#ddlEDefVal").html("<option value='Yes' >Yes</option> <option value='No' selected='selected'>No</option>");
+			       	$('#ddlEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+		          $('#lbEdays').addClass('d-none');
+
+		        }
+		        
+		        else {
+		          $("#textEFDropdown, #fieldEType").addClass('d-block');
+		          $("#textEFDropdown, #fieldEType").removeClass('d-none');
+
+		          $("#numberEValidation, #dateEValidation,#dueDateEType").removeClass('d-block');
+		          $("#numberValidation, #dateEValidation,#dueDateEType").addClass('d-none');	
+		          $("#ddlDefVal").hide();
+		          //$("#numDefVal").hide();
+		          $("#numEDefVal").hide();		           
+			      $("#txtDefVal").show();         
+		          $('#lbEdays').addClass('d-none');
+		         
+		        }
+
+		    
+		}
+		function editTemplateRow(row,tName) {
+		             $('.link-input-fildTE').val("");$('.optionId').val("");$('.block1TE').html(""); 
+
+		    var i=row.parentNode.parentNode.rowIndex;
+		    $("#editTRowSubmit").val(i);
+
+			$("#tblEditRow").val(tName.id);
+			//var val = document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+			var Id= document.getElementById(tName.id).rows[i].cells[0].children[0].value;
+			var $SeqNo= document.getElementById(tName.id).rows[i].cells[1].innerHTML;
+
+	        var $Type;
+	        var yesNO= document.getElementById(tName.id).rows[i].cells[3].innerHTML;
+	        if(yesNO=='YesNo'){
+	        	$Type='Yes/No'
+	        }else
+	        {
+	        	$Type=yesNO;
+	        }
+	        var $Label =document.getElementById(tName.id).rows[i].cells[2].innerHTML;
+	        var $Mand= document.getElementById(tName.id).rows[i].cells[4].innerHTML;
+	        var $Def = document.getElementById(tName.id).rows[i].cells[5].innerText;
+	        var $Vali = document.getElementById(tName.id).rows[i].cells[6].innerText;
+	        var $DRWN = document.getElementById(tName.id).rows[i].cells[7].innerHTML;
+	        var $DRWNOpt = document.getElementById(tName.id).rows[i].cells[8].innerHTML;
+	        if ($DRWN== 'Yes') {
+		          $(".optionBoxTE").addClass('d-block');
+		          $(".optionBoxTE").removeClass('d-none');getDRDNDataToEdit(Id);//return false;
+		        }
+		        else {
+		        	$(".optionBoxTE").removeClass('d-block');
+		          	$(".optionBoxTE").addClass('d-none');
+		          	$( "<input type='hidden' value='' class='optionId'>" ).insertBefore( $( ".link-input-fildTE" ) );
+		        }
+
+			//$('.block1E').html(html);  
+			$("#numSqno").val($SeqNo);			
+	        $("#txtTELabel").val($Label);	        
+			$('#ddlTEColumn option:selected').removeAttr('selected');
+			$('#ddlTEColumn').val($Type);
+		 //   $('#ddlTEColumn option[value="'+$Type+'"]').attr("selected", "selected");
+			$('#ddlTEColumn').attr("disabled", "disabled");
+            $("#ddlTEMand").val($Mand);
+			$("#ddlTEDRWN").val($DRWN);				
+
+		        if ($Type == 'Text') {
+		          $("#textTEFDropdown, #fieldTEType").addClass('d-block');
+		          $("#textTEFDropdown, #fieldTEType").removeClass('d-none');
+		          $("#numberTEValidation, #dateTEValidation ,#dueTDateEType").removeClass('d-block');
+		          $("#numberTEValidation, #dateTEValidation ,#dueTDateEType").addClass('d-none');
+		          $("#txtTEDefVal").val($Def);	
+		          $("#ddlTEDefVal").hide();
+		          $("#numTEDefVal").hide();
+			      $("#txtTEDefVal").show();
+			      $('#lbTEdays').addClass('d-none');		                
+		        }
+		        else if ($Type == 'Number') {
+		          $("#numberTEValidation, #fieldTEType").addClass('d-block');
+		          $("#numberTEValidation, #fieldTEType").removeClass('d-none');
+		          $("#dateTEValidation, #textTEFDropdown,#dueTDateEType").addClass('d-none');
+		          $("#dateTEValidation, #textTEFDropdown,#dueTDateEType").removeClass('d-block');
+		          //$("#txtTEDefVal").val($Def); 
+		          $("#ddlTENumVal").val($Vali); 
+		          $("#numTEDefVal").val($Def);  
+		          $("#ddlTEDefVal").hide();
+			      $("#txtTEDefVal").hide();	
+			      $("#numTEDefVal").show();	
+			      $('#lbTEdays').addClass('d-none');          
+		        }
+		        else if ($Type == 'Date') {
+		          $("#dateTEValidation").addClass('d-block');
+		          $("#dateTEValidation").removeClass('d-none');
+		          $("#textTEFDropdown, #numberTEValidation ,#dueTDateEType, #fieldTEType").addClass('d-none');
+		          $("#textTEFDropdown, #numberTEValidation ,#dueTDateEType, #fieldTEType").removeClass('d-block');   
+		          $("#txtTEDefVal").val($Def);
+		          $("#ddlTEDateVal").val($Vali);
+		          $("#ddlTEDefVal").hide();
+		          $("#numTEDefVal").hide();
+			      $("#txtTEDefVal").show();
+			      $('#lbTEdays').addClass('d-none');
+		          
+		        }
+		        else if ($Type == 'DueDate') {
+	        	  $("#dueTDateEType").addClass('d-block');
+		          $("#dueTDateEType").removeClass('d-none');
+	        	  $(".field-label").val("Due Date");
+	        	  $(".due-date-validation").val("Future Date");					
+	        	  $("#dateTEValidation, #textTEFDropdown, #numberTEValidation, #priority").addClass('d-none');
+		          $("#dateTEValidation, #textTEFDropdown, #numberTEValidation, #priority").removeClass('d-block');
+		          $("#ddlTEDefVal").hide();
+		          $("#numTEDefVal").hide();
+			      $("#txtTEDefVal").hide();
+			      $("#numTEDefVal").show();
+
+		          $("#numTEDefVal").val($Def);
+		          $('#lbTEdays').removeClass('d-none');
+		        }
+		        else if ($Type == 'Currency') {
+		          $("#dateTEValidation,#textTEFDropdown, #numberTEValidation").addClass('d-none');
+		          $("#dateTEValidation,#textTEFDropdown, #numberTEValidation").removeClass('d-block');  
+		          
+		          $("#textTEFDropdown, #numberTEValidation,#dueTDateEType").addClass('d-none');
+ 		          $("#textTEFDropdown, #numberTEValidation,#dueTDateEType").removeClass('d-block');   
+				  $("#ddlTEDefVal").show();
+			      $("#txtTEDefVal").hide();
+			      $("#numTEDefVal").hide();
+			      $('#lbTEdays').addClass('d-none');
+			      GetCurrncyValues('Currency');
+			     // $("#ddlTEDefVal").html("<option value='INR' selected='selected'>INR</option> <option value='USD' >USD</option> <option value='EUR' >EUR</option> <option value='JPY' >JPY</option> <option value='GBP' >GBP</option> <option value='AED' >AED</option> <option value='AFN' >AFN</option> <option value='ALL' >ALL</option> <option value='AMD' >AMD</option> <option value='ANG' >ANG</option> <option value='AOA' >AOA</option> <option value='ARS' >ARS</option> <option value='AUD' >AUD</option> <option value='AWG' >AWG</option> <option value='AZN' >AZN</option> <option value='BAM' >BAM</option>");
+				  $('#ddlTEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+
+		        }
+		        else if ($Type == 'Priority') {
+	        	  $("#priority").addClass('d-block');
+		          $("#priority").removeClass('d-none');
+
+	        	  $(".field-label").val("Priority");
+
+	        	  $("#dateTEValidation, #textTEFDropdown, #numberTEValidation, #dueTDateEType").addClass('d-none');
+		          $("#dateTEValidation, #textTEFDropdown, #numberTEValidation, #dueTDateEType").removeClass('d-block'); 
+		          $("#ddlTEDefVal").show();
+			        $("#txtTEDefVal").hide();
+			        $("#numTEDefVal").hide();
+			        $("#ddlTEDefVal").html("<option value='High' >High</option> <option value='Medium' selected='selected'>Medium</option> <option value='Low' >Low</option>");
+			       	$('#ddlTEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+					$('#lbTEdays').addClass('d-none');
+		        }
+		 		else if ($Type == 'Yes/No') {
+		          $("#fieldTEType").addClass('d-block');
+		          $("#fieldTEType").removeClass('d-none');
+
+		          $("#textTEFDropdown,#numberTEValidation, #dateTEValidation,#dueTDateEType").removeClass('d-block');
+		          $("#textTEFDropdown,#numberTEValidation, #dateTEValidation,#dueTDateEType").addClass('d-none');		          
+		          
+		          $(".optionBoxTE").removeClass('d-block');
+				  $(".optionBoxTE").addClass('d-none');
+				  $("#ddlTEDefVal").show();
+			        $("#txtTEDefVal").hide();
+			        $("#numTEDefVal").hide();
+			        $("#ddlTEDefVal").html("<option value='Yes' >Yes</option> <option value='No' selected='selected'>No</option>");
+			       	$('#ddlTEDefVal option[value="'+$Def+'"]').attr("selected", "selected");
+					$('#lbTEdays').addClass('d-none');
+		        }
+		        
+		        else {
+		          $("#textTEFDropdown, #fieldTEType").addClass('d-block');
+		          $("#textTEFDropdown, #fieldTEType").removeClass('d-none');
+
+		          $("#numberTEValidation, #dateEValidation,#dueTDateEType").removeClass('d-block');
+		          $("#numberTValidation, #dateEValidation,#dueTDateEType").addClass('d-none');	
+		           $("#ddlTEDefVal").hide();
+		           $("#numTEDefVal").hide();
+			        $("#txtTEDefVal").show();
+	         		$('#lbTEdays').addClass('d-none');
+		         
+		        }
+
+		    
+		}
+ 			
+		function editSubmit(val){
+		//console.log($(".link-input-fildE").prev().val());
+	//	$(".link-input-fildE");
+	//	let list = document.querySelectorAll('.link-input-fildE');
+	//	for (let i=1; i<list.length; i++){
+	//	console.log(list[i].previousElementSibling.value);	
+	//	console.log(list[i].value);	
+			
+	//	}
+		
+		
+		var tblId=$("#tblEditRow").val();
+		var table = document.getElementById(tblId);
+		var i=val.value;
+ 		  console.log($("#ddlNumVal option:selected").text());
+ 		  
+ 		  if($("#txtESqno").val()==""){	
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtELabel").val()==""){		            
+
+ 		  	alert("Please enter label");return false;
+ 		  }
+
+ 		  else{
+ 		  	$( '#edit-process' ).modal( 'hide' ).data( 'bs.modal', null );
+		  	$('#edit-process').on('hidden', function(){
+				$(this).data('modal', null);  // destroys modal
+			});
+ 		  }
+ 		  
+ 		  
+		  var validation='';
+		  if($("#ddlENumVal").is(":visible")){
+			validation = "<label for='Number'>"+ $("#ddlENumVal option:selected").text()+"</label>";
+		  }
+		  else if($("#ddlEDateVal").is(":visible")){
+		  	validation = "<label for='Date'>"+ $("#ddlEDateVal option:selected").text()+"</label>";
+		  }
+		  
+		  else if($("#dueDateEType").is(":visible")){
+		  	validation = "<label for='Date'>"+ $('#txtEDDateVal').val()+"</label>";
+		  }
+		  else{validation ="<label for='Text'>No</label>";}
+		  
+
+		  var DefVal='';
+		  if($('#ddlEColumn :selected').text() =="Text" ||  $('#ddlEColumn :selected').text() =="Date"){
+		  	DefVal= "<label for=''>"+ $("#txtEDefVal").val()  +"</label>";
+		  }	
+		  else if($('#ddlEColumn :selected').text() =="DueDate"){
+		  	DefVal= "<label for=''>"+$("#numEDefVal").val()+"</label>";
+		  }	  
+		  else if($('#ddlEColumn :selected').text() =="Currency" || $('#ddlEColumn :selected').text() =="Priority" || $('#ddlEColumn :selected').text() =="Yes/No"){
+		  	DefVal= "<label for=''>"+$("#ddlEDefVal :selected").text()+"</label>";
+		  }else if($('#ddlEColumn :selected').text() =="Number"){
+		  	DefVal= "<label for=''>"+$("#numEDefVal").val()+"</label>";
+		  }
+		  
+		  
+		  var dropDown='';
+		  if($('#ddlEDRWN').is(":visible")){dropDown=$('#ddlEDRWN :selected').text();}
+		  else{dropDown="No";}
+		  var mandtory=$("#ddlEMand :selected").text();
+		  var Label=$('#txtELabel').val();
+		  var seqNo=$('#txtESqno').val();
+
+		  var valueArray ='';
+			 if($('#ddlEDRWN :selected').text()=="Yes"){
+	 		  	  valueArray = $('.link-input-fildE').map(function() {
+				     if(this.value!=""){
+				      return this.value;
+				      }
+				  }).get();//.join(",");
+	 		  }
+	 	  table.rows[i].cells[1].innerHTML=seqNo;
+		  table.rows[i].cells[2].innerHTML=Label;
+		  table.rows[i].cells[4].innerHTML=mandtory;
+		  table.rows[i].cells[5].innerHTML=DefVal;		  
+		  table.rows[i].cells[6].innerHTML=validation;
+		  table.rows[i].cells[7].innerHTML=dropDown;
+		  table.rows[i].cells[8].innerHTML=valueArray;
+		}
+		$("#tblApTemp1").on('mousedown.edit', "i.fa.fa-pencil", function(e) {
+        var $row = $(this).closest("tr").off("mousedown");
+        var $col= $row.find(".tdColumn").text();
+        var $Type = $row.find(".tdType").text();
+        var $Label= $row.find(".tdLabel").text();
+        var $Mand = $row.find(".tdMand").text();
+        var $Val = $row.find(".tdVal").text();
+        var $DRWN = $row.find(".tdDRWN").text();
+        
+        $("#txtELabel").val($Label);
+		$("#txtEMandl").val($Mand);
+		$("#txtLabel").val($Label);
+		$("#txtLabel").val($Label);
+		$("#txtLabel").val($Label);	
+			
+		//$('#ddlEColumn').text($col).attr("selected","selected");
+		$("#ddlEColumn option[text='"+ $col+"']").attr("selected", "selected");
+		//$("#ddlEColumn option:selected").text($col);
+        //.not(':first').not(':last');
+		var html='';
+        
+      });
+      var dtOptions=[];
+      function editTempSubmit(val){
+       	var flag=true;
+
+   		var i=val.value;
+      	var tblId=$("#tblEditRow").val();
+      	var templateId=$("#btnUpdateAPM").val();
+      	var seqNo=$("#numSqno").val();
+		var table = document.getElementById(tblId);
+		var ColumnId= document.getElementById(tblId).rows[i].cells[0].children[0].value;
+		
+ 		  if($("#numSqno").val()==""){	
+ 		  	flag=false;            
+ 		  	alert("Please enter sequence");return false;
+ 		  }
+ 		  else if($("#txtTELabel").val()==""){
+ 		    flag=false;	            
+ 		  	alert("Please enter label");return false;
+ 		  }
+ 
+ 		  
+		if($('#ddlTEDRWN :selected').text()=="Yes"){	
+			let list = document.querySelectorAll('.link-input-fildTE');
+			for (let i=0; i<list.length; i++){
+				if(list[i].previousElementSibling!=null){
+					
+					var Id=	list[i].previousElementSibling.value;
+					var title=list[i].value;
+					dtOptions.push({
+						Id:Id,
+						title:title
+					});
+					var clientContext = new SP.ClientContext();
+						var listTE = clientContext.get_web().get_lists().getByTitle('ApprovalColumnsDropdown');
+						if(Id==null||Id==""||Id==undefined && Title!=""){
+							var itemInfo = new SP.ListItemCreationInformation();
+							var listItem = listTE.addItem(itemInfo);
+							listItem.set_item('ColumnSequence', ColumnId);
+							listItem.set_item('TemplateID', templateId);
+							listItem.set_item('Title', title);
+						}
+						else{
+							var listItem = listTE.getItemById(Id);
+							listItem.set_item('Title', title);
+						}			
+		
+						listItem.update();
+						clientContext.executeQueryAsync(onQuerySucceeded,onQueryFailed);			
+				  }
+			 }  
+		  }
+
+ 		  
+		  var validation='';
+		  if($("#ddlTENumVal").is(":visible")){
+			validation = "<label for='Number'>"+ $("#ddlTENumVal option:selected").text()+"</label>";
+		  }
+		  else if($("#ddlTEDateVal").is(":visible")){
+		  	validation = "<label for='Date'>"+ $("#ddlTEDateVal option:selected").text()+"</label>";
+		  }
+		  
+		  else if($("#txtTEDDateVal").is(":visible")){
+		  	validation = "<label for='Date'>"+ $('#txtTEDDateVal').val()+"</label>";
+		  }
+		  else{validation ="<label for='Text'>No</label>";}
+		  
+
+		  var DefVal='';
+		  if($('#ddlTEColumn :selected').text() =="Text"){
+		  	if($('#txtTEDefVal').val() == null || $('#txtTEDefVal').val() == ''){
+			  //	alert("Default value must be text!");
+			  //	return false;
+		  	}else{
+		  		DefVal= "<label for=''>"+ $("#txtTEDefVal").val()  +"</label>";
+		  	}
+		  } 
+		  else if($('#ddlTEColumn :selected').text() =="Number"){
+		  	if(!$.isNumeric($('#numTEDefVal').val())) {
+		    //    alert("Default value must be numeric!");
+		      //  return false;
+		    }else{
+ 			    DefVal= "<label for=''>"+ $("#numTEDefVal").val()  +"</label>";
+		    }
+		  } 
+		  else if($('#ddlTEColumn :selected').text() =="Date" ){
+		  	DefVal= "<label for=''>"+ $("#txtTEDefVal").val()  +"</label>";
+		  }
+		  else if($('#ddlTEColumn :selected').text() =="DueDate"){
+		  	if($("#numTEDefVal").val() > 0 && $("#numTEDefVal").val() < 999 ){		  		
+		  		DefVal= "<label for=''>"+ $("#numTEDefVal").val()  +"</label>";
+		  	}else{ flag=false;alert("Default value must be between 1 to 999");return false;}
+		  }		  
+		  else if($('#ddlTEColumn :selected').text() =="Currency" || $('#ddlTEColumn :selected').text() =="Priority" || $('#ddlTEColumn :selected').text() =="Yes/No"){
+		  	DefVal= "<label for=''>"+$("#ddlTEDefVal :selected").text()+"</label>";
+		  }		  
+		  if(flag){
+ 		  	$( '#edit-t-process' ).modal( 'hide' ).data( 'bs.modal', null );
+			 // event after hidden
+			  $('#edit-t-process').on('hidden', function(){
+			      $(this).data('modal', null);  // destroys modal
+			 });
+ 		  }
+		  var dropDown='';
+		  if($('#ddlTEDRWN').is(":visible")){dropDown=$('#ddlTEDRWN :selected').text();}
+		  else{dropDown="No";}
+		  var mandtory=$("#ddlTEMand :selected").text();
+		  var Label=$('#txtTELabel').val();
+		  
+		  table.rows[i].cells[1].innerHTML=seqNo;
+		  table.rows[i].cells[2].innerHTML=Label;
+		  table.rows[i].cells[4].innerHTML=mandtory;
+		  table.rows[i].cells[5].innerHTML=DefVal;		  
+		  table.rows[i].cells[6].innerHTML=validation;
+		  table.rows[i].cells[7].innerHTML=dropDown;
+		  //table.rows[i].cells[7].innerHTML=valueArray;
+		}
+		function onQuerySucceeded() {
+           // alert("Form data updated successfully.");
+        }
+
+        function onQueryFailed(sender, args) {
+            alert('Request failed. ' + args.get_message());
+        }		
+     		let list = document.querySelectorAll('.slideN');
+			for (let i=0; i<list.length; i++){
+			list[i].onclick = function(){
+				let j = 0;
+				while(j < list.length){
+					list[j++].className = 'slide slideN';
+				}
+				list[i].className = 'slide slideN image-active';
+				}
+			}
+			let listE = document.querySelectorAll('.slideE');
+			for (let i=0; i<listE.length; i++){
+			listE[i].onclick = function(){
+				let j = 0;
+				while(j < listE.length){
+					listE[j++].className = 'slide slideE';
+				}
+				listE[i].className = 'slide slideE image-activeE';
+				}
+			}
+				function checkPicCheckBox(){
+		      	var Title=$("#txtTitle").val();
+		      	var ReqFor='';
+      		    if($("#chkReqFor").prop('checked') == true){
+				    ReqFor=$("#txtReqFor").val();
+				}
+				else{
+					ReqFor=$("#ddlReqFor option:selected").text();					
+				}
+      		    var Template=$("#txtTemplate").val();
+      		    var tblRowCount=$('#tblApTemp tbody tr').length;
+				let result = arr.filter(obj => {
+				  return obj.TemplateName.toLowerCase()=== Template.toLowerCase();
+				})
+
+      		    if(Title=="" || Template=="" || ReqFor==""){alert("Please fill details.");return false;}
+      		    else if(tblRowCount==0 ){alert("Please insert atleast one column.");return false;}//return false; 
+      		    else if(result.length>0){alert("Duplicate template name!");return false;}
+      		    else{
+	      		     $( '#new-process-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+					 // event after hidden
+					  $('#new-process-modal').on('hidden', function(){
+					      $(this).data('modal', null);  // destroys modal
+					 });
+				}
+
+      	    var radioValue = $("input[name='UpdateEmpN']:checked").val();
+      	   	parent = document.getElementsByClassName('image-active');
+			if(radioValue =="Choose from gallery"){
+				insertApprovalProcessMaster(parent[0].children[0].currentSrc)
+			}
+			else if(radioValue =="Upload"){
+              	uploadFile("Add");
+            }
+      }
+
+		function insertApprovalProcessMaster(imgurl){
+			//	var SqNo = $('#txtSqno').val();
+      		    var Title=$("#txtTitle").val();
+      		    var ReqFor='';//$("#txtReqFor").val();
+      		    var pageColumn=$("#ddlPageColumn option:selected").text();
+				//let el = document.getElementById('btnActive');
+				//var active	=	el.ariaPressed;
+      		    if($("#chkReqFor").prop('checked') == true){
+				    ReqFor=$("#txtReqFor").val();
+				}
+				else{
+					ReqFor=$("#ddlReqFor option:selected").text();					
+				}
+
+      		    var Template=$("#txtTemplate").val();
+      		    if(Title=="" || Template=="" || ReqFor==""){alert("Please fill details.");return false;}
+      		    var tblRowCount=$('#tblApTemp tbody tr').length;
+      		    if(tblRowCount==0 ){alert("Please insert atleast one column.");return false;}//return false;
+      		    var stringURL = imgurl.split("?")[0]
+      		    var avoid = "_vti_bin/afdcache.ashx/authitem/";
+				var avoided = stringURL.replace(avoid,'');      		    
+      		    debugger;
+      		    				var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },
+				        		RequestFor:ReqFor,
+				                TemplateName:Template,				               
+				                Title:Title,  
+				                FileIcon:avoided,
+				              //  Active:active,
+				                PageColumn:pageColumn,
+								'FileIcon': 
+				                {
+				                    '__metadata': { 'type': 'SP.FieldUrlValue' },
+				                    //escription': 'Google',
+				                    'Url': avoided//imgurl
+				                },             
+				     			};
+				            var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalProcessMaster')/items"		
+				                $.ajax({
+				                    url:URL,
+				                    type: "POST",
+				                    data:JSON.stringify(listItem),
+				                    headers: {
+				                        "accept": "application/json;odata=verbose", 
+				                        "Content-Type": "application/json;odata=verbose",  
+				                        "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+				                        "X-HTTP-Method": "POST" 
+				                    },
+				                    success: function (data) {
+				                    var tId=data.d.ID;
+				                    var tName=data.d.TemplateName;
+				                    insertColumn(tId,tName);
+				                    alert("Template saved successfully");
+				                    window.location.reload();				                    
+				                    }, 			
+				                    error: function (error) {
+				                         			
+				                    }
+				                });          
+
+     	 }
+     	 
+     	 
+     	 function insertColumn(tId,tName){
+            $("#tblApTemp tbody tr").each(function () {
+            var ColumnName= $(this).find("td:eq(0)").text();
+          //  var ColumnName1= ColumnName.replace('/','');
+            var Sqno= $(this).find("td:eq(1)").text();//console.log(Sqno);
+            var Type= $(this).find("td:eq(3)").text();
+            //var Type1=Type.replace('/','');//console.log(Type1);
+            var Label= $(this).find("td:eq(2)").text();
+            var Mandatory= $(this).find("td:eq(4)").text();
+            var defVal= $(this).find("td:eq(5)").text();
+            var Validation= $(this).find("td:eq(6)").text();
+            var Dropdown= $(this).find("td:eq(7)").text();
+            var DropdownOptios= $(this).find("td:eq(8)").text();
+           	var Validation1=$(this).find("td").eq(5).find("label").prop('for');
+           	var valNum='';
+           	var valDate='';
+	       	  if(Type=='Number'){
+	           	valNum=Validation;
+	           }
+	           else if(Type=='Date' || Type=='DueDate'){
+	           valDate=Validation;
+	           }
+           
+			if(Mandatory=="Yes"){Mandatory=true;}
+			else{Mandatory=false;}
+			if(Dropdown=="Yes"){Dropdown=true;}
+			else{Dropdown	=false;}
+
+                var allItem = { __metadata:{ type: "SP.Data.ApprovalTemplateSetupListItem" },
+        		ColumnName:ColumnName,
+        		SequenceNo:Sqno,
+                ColumnType:Type,
+                Title:Label,                        
+                Mandatory:Mandatory,
+                NumberValidation:valNum,
+                DateValidation:valDate,
+                DropdownValues:Dropdown,
+                TemplateIDId:tId,
+                DefaultValue:defVal
+     			};
+            var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalTemplateSetup')/items";		
+                $.ajax({
+                    url:URL,
+                    type: "POST",
+                    data:JSON.stringify(allItem),
+                    headers: {
+                        "accept": "application/json;odata=verbose", 
+                        "Content-Type": "application/json;odata=verbose",  
+                        "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+                        "X-HTTP-Method": "POST" 
+                    },
+                    success: function (data) {
+                    	var cId=data.d.ID;
+                    	if(Dropdown==true){       
+                        	insertDropDNOptions(DropdownOptios,tId,cId);
+                        }
+                        $("#txtReqFor").val('');
+      		    		$("#txtTemplate").val('');
+      		    		$("#txtTitle").val('');
+                        $("#tblApTemp tbody tr").empty();
+                        $("#new-process-modal").data('modal', null);
+                        countTxt=1;
+						countNum=1;
+						countDate=1;
+				
+                    }, 			
+                    error: function (error) {
+                        console.log(error); 			
+                    }
+                });  
+
+
+            })
+            
+      }
+function insertDropDNOptions(options,tId,cId){
+            str = options.toString().replace(/,\s*$/, "");
+			var separatedArray =[];
+            separatedArray = str.split(',');
+ 
+for(i=0;i<separatedArray.length;i++){  if(separatedArray[i]==''){return false;}  
+	var listItem = { __metadata:{ type: "SP.Data.ApprovalColumnsDropdownListItem" },
+	        		TemplateIDId:tId,
+	                ColumnSequenceId:cId,
+	                Title:separatedArray[i],                        
+	     			};
+	            var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalColumnsDropdown')/items"		
+	                $.ajax({
+	                    url:URL,
+	                    type: "POST",
+	                    data:JSON.stringify(listItem),
+	                    headers: {
+	                        "accept": "application/json;odata=verbose", 
+	                        "Content-Type": "application/json;odata=verbose",  
+	                        "X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+	                        "X-HTTP-Method": "POST" 
+	                    },
+	                    success: function (data) {
+	                    //var tId=data.d.ID;
+	                    //var tName=data.d.TemplateName;
+	                    //insertNavaBharatItems(tId,tName)
+	                    	$("#tblApTemp tbody").html();
+
+	                    }, 			
+	                    error: function (error) {
+	                         			
+	                    }
+	                });   
+			}       
+
+     	 }
+     	 
+function insertDocumnetApprovalMaster(){
+	    var Title=	$("#DocTitle").val();      		         		          		    
+	    var Template=	$("#DocTempName").val();
+	    var Sign =	$('#DocSign').val();
+	    
+		var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },				        		
+		RequestFor:'Document',
+		TemplateName:Template,
+		Title:Title,
+		ProcessType: "Document",
+		SignApp:Sign
+		};
+		var URL = _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalProcessMaster')/items"		
+		$.ajax({
+			url:URL,
+			type: "POST",
+			data:JSON.stringify(listItem),
+			headers: {
+				"accept": "application/json;odata=verbose", 
+				"Content-Type": "application/json;odata=verbose",  
+				"X-RequestDigest": $("#__REQUESTDIGEST").val(),  
+				"X-HTTP-Method": "POST" 
+			},
+			success: function (data) {					
+			alert("Document template has been saved successfully");
+			location.reload();
+			}, 			
+			error: function (error) {
+				console.log(error);
+			}
+		});        
+	 }     	     	 
+ function UpdateListItem(ths,id) { 				
+		 var active	=	ths.ariaPressed;
+		 var setActive=false;
+		 if(active=="true"){
+			 setActive=false;
+		 }
+		 else{
+		 	 setActive=true;
+		 }
+        siteURL = _spPageContextInfo.webAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalProcessMaster')/getItemById("+id+")";  
+		$.ajax({
+	        url: siteURL + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/getItemById(" +id+ ")",
+	        type: "PATCH",
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify({'__metadata': { type: "SP.Data.ApprovalProcessMasterListItem" },  'Active':setActive}),
+	        success: function (data) {
+	         if(active=="true"){
+				 alert("Template deactivated");
+			 }
+			 else{
+			 	 alert("Template activated");
+			 }
+
+	        },
+	        error: function (error) {
+	        }
+	    });
+	 } 
+var arr=[];     	 
+function getAllTemplate() {     
+    var siteURL;   
+    var templatedata ='';  
+    debugger;  
+        siteURL = _spPageContextInfo.siteAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalProcessMaster')/items?$orderby=Modified desc";  
+        $.ajax({  
+            url: apiPath,  
+            headers: {  
+                Accept: "application/json;odata=verbose"  
+            },  
+            async: false,  
+            success: function(data) {  
+                var items; // Data will have user object  
+                var results;  
+                items = data.d;  
+                    if (items != null) {  
+                        results = items.results ; var html='';
+                        arr=results;//console.log(arr);
+
+					    $.each(results, function (index, result) {
+					    var Active='';
+					    var steps;
+					    if(result.Active==true){Active="active";}
+					    else{Active="";}
+					    if(result.NumberOfSteps==null||result.NumberOfSteps==null){steps=0;}
+					    else{steps=result.NumberOfSteps;}
+					    var TotalRequst = result.NumberOfRequest == null ? 0 : result.NumberOfRequest
+					    var ActiveRequst = result.NumberOfRequest_Active == null ? 0 : result.NumberOfRequest_Active
+					    if(result.ProcessType == 'Document' && ActiveRequst >0){
+					    	html+="<tr> <td class='w-7'> <img src='../SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>Document Approval</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.Title+".</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'>"+steps+" Steps</a></td> <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' class='btn btn-sm btn-secondary btn-toggle "+Active+"' data-toggle='button' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem(this,"+result.ID+")'> <div class='handle'></div> </button> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Document'&& ActiveRequst ==0){
+					    	html+="<tr> <td class='w-7'> <img src='../SiteAssets/ProcessApproval/assets/images/default.png' alt='document' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>Document Approval</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.Title+".</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'>"+steps+" Steps</a></td> <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'> "+ActiveRequst+" Active Requests</div> </td><td class='w-10'> <button type='button' class='btn btn-sm btn-secondary btn-toggle "+Active+"' data-toggle='button' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem(this,"+result.ID+")'> <div class='handle'></div> </button> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#documentapproval' onclick='getDocToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";					    
+					    }
+					    else if(result.ProcessType == 'Process' && ActiveRequst >0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.RequestFor+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.Title+".</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'>"+steps+" Steps</a></td>  <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +"  Total Requests</div> <div class='ellipsis-2'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' class='btn btn-sm btn-secondary btn-toggle "+Active+"' data-toggle='button' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem(this,"+result.ID+")'> <div class='handle'></div> </button> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <input type='hidden' value='"+result.ID+"' />  <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a></div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+  						 else if(result.ProcessType == 'Process' && ActiveRequst ==0){
+  							html+="<tr> <td class='w-7'> <img src='"+result.FileIcon.Url+"' alt='process' class='table-icon-box'> </td> <td class='w-20'> <div class='table-title mb10 ellipsis-2'>"+result.RequestFor+"</div> <div class='table-title-pera ellipsis-1'>"+result.TemplateName+"</div> </td> <td class='w-20'> <div class='ellipsis-3'>"+result.Title+".</div> </td> <td class='w-10'><a class='add-column-btn' data-toggle='modal' href='#' data-target='#stepsapprover' onclick='getTempID("+result.ID+")'>"+steps+" Steps</a></td>  <td class='w-10'> <div class='ellipsis-2'> "+TotalRequst +" Total Requests</div> <div class='ellipsis-2'>"+ActiveRequst +"  Active Requests </div> </td> <td class='w-10'> <button type='button' class='btn btn-sm btn-secondary btn-toggle "+Active+"' data-toggle='button' aria-pressed='"+result.Active+"' autocomplete='off' onclick='UpdateListItem(this,"+result.ID+")'> <div class='handle'></div> </button> </td> <td class='w-10'> <div class='approval-process-edit-lock-btn-box'> <a type='button' href='#' class='custom-edit-btn' data-toggle='modal' data-target='#edit-process-modal' onclick='getDataToEdit("+result.ID+")'> <i class='fa fa-pencil'></i> </a><input type='hidden' value='"+result.ID+"' /> <a type='button' href='#' class='custom-edit-btn' onclick='deletetemp("+result.ID+",this)'> <i class='fa fa-trash-o' ></i> </a> </div> </td><td style='display:none'>"+result.Created+"</td> </tr>";
+  						}
+
+					    });
+                      //  itemsArray=itemsArray.concat(results);
+                        $("#allTemplateData tbody").html(html);
+
+                    }  
+            },   
+            eror: function(data) {  
+                console.log("An error occurred. Please try again.");  
+            }  
+        });  
+    }    
+		
+function getLatestImage(url,op) {     
+    var siteURL;   
+    var templatedata ='';    
+        siteURL = _spPageContextInfo.siteAbsoluteUrl;  
+      //  var apiPath = siteURL + "/_api/Web/Lists(guid'"+GUID+"')/Items("+id+")";
+        $.ajax({  
+            url: url,  
+            headers: {  
+                Accept: "application/json;odata=verbose"  
+            },  
+            async: false,  
+            success: function(data) {  
+                var items; // Data will have user object  
+                var results;  
+                items = data.d;  
+                var siteCollectionPath= _spPageContextInfo.portalUrl;
+				if(op=='Add'){
+                	insertApprovalProcessMaster(siteCollectionPath+(data.d.ServerRelativeUrl).substring(1));
+                }
+                else{
+                	updateApprovalProcessMaster(siteCollectionPath+(data.d.ServerRelativeUrl).substring(1));
+
+                }
+          		
+            },  
+            eror: function(data) {  
+                console.log("An error occurred. Please try again.");  
+            }  
+        });  
+    }
+    function updateAP(){
+    		var radioValue = $("input[name='UpdateEmpE']:checked").val();
+      	   	parent = document.getElementsByClassName('image-activeE');
+			if(radioValue =="Choose from gallery"){
+				updateApprovalProcessMaster(parent[0].children[0].currentSrc)
+			}
+			else if(radioValue =="Upload" && $('.approve-process-upload-image-input')[0].files.length != 0){
+              	uploadFile("Edit");
+            }
+            else{
+            	updateApprovalProcessMaster($('#selectdImgE').attr('src'))
+            }
+
+    }
+
+    		function updateApprovalProcessMaster(imgurl){
+    			var id=$("#btnUpdateAPM").val();
+      		    var Title=$("#txtETitle").val();
+      		    var ReqFor='';//$("#txtReqFor").val();
+      		    var pageColumn=$("#ddlEPageColumn option:selected").text();
+      		    var Template=$("#txtETemplate").val();
+
+				let result = arr.filter(obj => {
+				  return obj.TemplateName.toLowerCase()=== Template.toLowerCase() && obj.Id!=id;
+				})
+				//let el = document.getElementById('btnEActive');
+				//var active	=	el.ariaPressed;
+      		    if($("#chkEReqFor").prop('checked') == true){
+				    ReqFor=$("#txtEReqFor").val();
+				}
+				else{
+					ReqFor=$("#ddlEReqFor option:selected").text();					
+				}
+      		    var tblRowCount=$('#tblEApTemp tbody tr').length;
+ 				if(Title=="" || Template=="" || ReqFor==""){alert("Please fill details.");return false;}
+      		    else if(tblRowCount==0 ){alert("Please insert atleast one column.");return false;}//return false;
+      		    else if(result.length>0){alert("Duplicate template name!");return false;}
+      		    else{
+      		    	 $( '#edit-process-modal' ).modal( 'hide' ).data( 'bs.modal', null );
+					 $('#edit-process-modal').on('hidden', function(){
+					      //$(this).data('modal', null);  // destroys modal
+					 });      		    
+      		    }
+      		    				
+				            var URL= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/getItemById(" +id+ ")"
+	
+				               $.ajax({
+							        url: _spPageContextInfo.webAbsoluteUrl+ "/_api/web/lists/getbytitle('ApprovalProcessMaster')/getItemById(" +id+ ")",
+							        type: "PATCH",
+							        headers: {
+							            "accept": "application/json;odata=verbose",
+							            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+							            "content-Type": "application/json;odata=verbose",
+							            "X-Http-Method": "PATCH",
+							            "If-Match": "*"
+							        },
+							        data: JSON.stringify({'__metadata': { type: "SP.Data.ApprovalProcessMasterListItem" },
+							            //'Active':active,
+							            'RequestFor':ReqFor,
+						                'TemplateName':Template,
+						                'Title':Title, 
+						                'PageColumn':pageColumn, 
+										'FileIcon': 
+						                {
+						                    '__metadata': { 'type': 'SP.FieldUrlValue' },
+						                    //escription': 'Google',
+						                    'Url': imgurl.split("?")[0]//imgurl
+						                },				
+						          }),
+							        success: function (data) {
+										updateCOlumn(id);
+							        },
+							        error: function (error) {
+							        }
+							    });          
+
+     	 }
+	  function updateCOlumn(tId){
+        $("#tblEApTemp tbody tr").each(function () {
+			var Id= $(this).find("td").eq(0).find(":hidden").val();
+            var ColumnName= $(this).find("td:eq(0)").text();
+            var seqNo= $(this).find("td:eq(1)").text();
+            var Label= $(this).find("td:eq(2)").text();
+            var Type= $(this).find("td:eq(3)").text();
+            var Mandatory= $(this).find("td:eq(4)").text();
+            var defVal= $(this).find("td:eq(5)").text();
+
+            var Validation= $(this).find("td:eq(6)").text();
+            var Dropdown= $(this).find("td:eq(7)").text();
+            var DropdownOptios= $(this).find("td:eq(8)").text();
+           	var Validation1=$(this).find("td").eq(6).find("label").prop('for');
+           	var valNum='';
+           	var valDate='';
+	       	  if(Type=='Number'){
+	           	valNum=Validation;
+	           }
+	           else if(Type=='Date' || Type=='DueDate'){
+	           valDate=Validation;
+	           }           
+			if(Mandatory=="Yes"){Mandatory=true;}
+			else{Mandatory=false;}
+			if(Dropdown=="Yes"){Dropdown=true;}
+			else{Dropdown	=false;}
+
+               var clientContextPR1 = new SP.ClientContext();
+
+				var listPR1 = clientContextPR1.get_web().get_lists().getByTitle('ApprovalTemplateSetup');
+				if(Id==null||Id==""||Id==undefined){
+					var itemInfo = new SP.ListItemCreationInformation();
+					var listItem1 = listPR1.addItem(itemInfo);
+					listItem1.set_item('ColumnName', ColumnName);
+					listItem1.set_item('ColumnType', Type);
+					listItem1.set_item('Title', Label);
+					listItem1.set_item('NumberValidation', valNum);
+					listItem1.set_item('DateValidation', valDate);
+					listItem1.set_item('DropdownValues', Dropdown);
+					listItem1.set_item('DefaultValue', defVal);
+					listItem1.set_item('TemplateID', tId);
+					listItem1.set_item('SequenceNo', seqNo);
+					listItem1.set_item('Mandatory', Mandatory);
+				}
+				else{
+					var listItem1 = listPR1.getItemById(Id);
+					listItem1.set_item('ColumnName', ColumnName);
+					listItem1.set_item('ColumnType', Type);
+					listItem1.set_item('Title', Label);
+					listItem1.set_item('NumberValidation', valNum);
+					listItem1.set_item('DateValidation', valDate);
+					listItem1.set_item('DropdownValues', Dropdown);
+					listItem1.set_item('DefaultValue', defVal);
+					listItem1.set_item('SequenceNo', seqNo);
+					listItem1.set_item('Mandatory', Mandatory);
+				}				
+
+				listItem1.update();clientContextPR1.executeQueryAsync(onQuerySucceeded,onQueryFailed);
+			});
+            
+      }
+      function onQuerySucceeded() {
+           // alert("Form data updated successfully.");
+        }
+
+        function onQueryFailed(sender, args) {
+            alert('Request failed. ' + args.get_message());
+        }
+jQuery(document).ready(function () {
+getAllTemplate();console.log(arr);
+
+    // Check for FileReader API (HTML5) support.
+    if (!window.FileReader) {
+        alert('This browser does not support the FileReader API.');
+    }
+});
+
+function getDataToEdit(id){
+	var slectedrow=arr.find(x => x.Id === id);					
+			let list = document.querySelectorAll('.slideE img');
+			for (let i=0; i<list.length; i++){
+				let j = 0;
+					if((slectedrow.FileIcon.Url).includes(list[i].getAttribute('src').slice(3).split("?")[0])){
+						$('#selectdImgE').attr("src",'');
+						$('.changemeE').addClass('d-block');
+	                    $('.changemeE').removeClass('d-none');
+	
+	                    $('#Upload-user-imageE').removeClass('d-block');
+	                    $('#Upload-user-imageE').addClass('d-none');
+						$('#divSelImgE').hide();
+						let list = document.querySelectorAll('.slideE img');
+						for (let j=0; j<list.length; j++){
+							list[j].parentElement.className = 'slide slideE';
+						}
+						$("input[name=UpdateEmpE][value='Choose from gallery']").prop('checked', true);
+						list[i].src=list[0].getAttribute('src');
+
+						list[0].src=slectedrow.FileIcon.Url;
+						list[0].parentElement.className = 'slide slideE image-activeE';
+						break; 
+
+					}
+					else{ 			
+						$("input[name=UpdateEmpE][value='Upload']").prop('checked', true);
+
+						list[i].parentElement.className = 'slide slideE';      
+						$('#selectdImgE').attr("src",slectedrow.FileIcon.Url);
+			 			$('#divSelImgE').show();
+			 			$('.changemeE').removeClass('d-block');
+                    	$('.changemeE').addClass('d-none');
+
+                    	$('#Upload-user-imageE').addClass('d-block');
+                    	$('#Upload-user-imageE').removeClass('d-none');
+			 		}
+				
+			}
+
+	
+	$("#ddlEPageColumn").val(slectedrow.PageColumn);
+
+	$("#btnUpdateAPM").val(slectedrow.Id);
+	$("#txtETitle").val(slectedrow.Title);
+	$("#txtETemplate").val(slectedrow.TemplateName);
+	if(slectedrow.Active==true){
+		$("#btnEActive").addClass('active');
+		$("#btnEActive").attr('aria-pressed', 'true');	}
+	else{
+		$("#btnEActive").removeClass('active');
+		$("#btnEActive").attr('aria-pressed', 'false');	
+	}
+
+
+	$("#ddlEReqFor option").each(function()
+	{
+		if($(this).val()==slectedrow.RequestFor){
+			$("#chkEReqFor").prop('checked', false);
+			$("#ddlEReqFor").val(slectedrow.RequestFor);
+			$("#ddlEReqFor").show();
+			$("#txtEReqFor").hide();
+			return false;
+		}
+		else{
+			$("#chkEReqFor").prop('checked', true);
+			$("#txtEReqFor").val(slectedrow.RequestFor);
+			$("#ddlEReqFor").hide();
+			$("#txtEReqFor").show();
+		}
+	});
+	getColumnDataToEdit(slectedrow.Id);
+	
+}
+function getColumnDataToEdit(id) {     
+    var siteURL;   
+    var templatedata ='';
+    
+        siteURL = _spPageContextInfo.siteAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalTemplateSetup')/items?$filter=TemplateIDId eq '"+id+"'";  
+        $.ajax({  
+            url: apiPath,  
+            headers: {  
+                Accept: "application/json;odata=verbose"  
+            },  
+            async: false,  
+            success: function(data) {  
+                var items; // Data will have user object  
+                var results;  
+                items = data.d;  
+                    if (items != null) {  
+                        results = items.results.sort((a, b) => {
+						    return a.SequenceNo- b.SequenceNo;
+						}); // var html='';
+                        var html='';
+					    $.each(results, function (index, result) {
+					    var Active='';	var steps;	var validation =''; var defVal='';var mand='';var drdn='';
+					    if(result.Active==true){Active="active";}
+					    else{Active="";}
+					    if(result.NumberOfSteps==null||result.NumberOfSteps==null){steps=0;}
+					    else{steps=result.NumberOfSteps;}
+					    if(result.DateValidation!=null){
+					    	validation =result.DateValidation;
+					    }
+					    else if(result.NumberValidation!=null){
+					    	validation = result.NumberValidation;
+					    }
+					    else {
+					    	validation = "No";
+					    }
+						
+						if(result.DefaultValue==null||result.DefaultValue==""){
+					    	defVal="";
+					    }
+					    else{
+					    	defVal=result.DefaultValue;
+					    }
+					    
+					    if(result.Mandatory==true){
+					    	mand="Yes";
+					    }
+					    else{
+					    	mand="No";
+					    }
+					    
+						if(result.DropdownValues==true){
+					    	drdn="Yes";
+							//getDRDNDataToEdit(result.Id);
+
+					    }
+					    else{
+					    	drdn="No";
+					    }
+
+
+						
+            			html+="<tr> <td class='tdColumn d-none'>"+result.ColumnName +"<input type='hidden' value='"+result.Id +"'/></td><td class='tdSqno'>"+result.SequenceNo+"</td> <td class='tdLabel'>"+result.Title+"</td> <td class='tdType'>"+result.ColumnType+"</td> <td class='tdMand'>"+mand+"</td> <td class='tdDefVal'>"+defVal+"</td> <td class='tdVal'>"+validation +"</td> <td class='tdDRWN'>"+drdn+"</td> <td style='display:none'></td><td class='approval-process-edit-lock-btn-box'><a type='button' href='#' class='custom-edit-btn tt' onclick='editTemplateRow(this,tblEApTemp)' > <i class='fa fa-pencil' data-toggle='modal' data-target='#edit-t-process'></i></a><a type='button' href='#' class='custom-edit-btn  tt' onclick='deleteRow(this)' style='display:none;'> <i class='fa fa-trash-o' ></i> </a></td> </tr>";
+					    });
+                        $("#tblEApTemp tbody").html(html);
+				var seq = 0;
+				$('#tblEApTemp .tdSqno').each(function()
+				{
+				   $this = parseInt( $(this).text() );
+				   if ($this > seq ) seq = $this;
+				});
+			  	$("#numSqnoWhenTempEdit").val(seq+1);
+                    
+              }  
+            },  
+            eror: function(data) {  
+                console.log("An error occurred. Please try again.");  
+            }  
+        });  
+    }
+    function getDRDNDataToEdit(id) {     
+    var siteURL;   
+    var templatedata ='';
+    
+        siteURL = _spPageContextInfo.siteAbsoluteUrl;  
+        var apiPath = siteURL + "/_api/lists/getbytitle('ApprovalColumnsDropdown')/items?$filter=ColumnSequenceId eq '"+id+"'";  
+        $.ajax({  
+            url: apiPath,  
+            headers: {  
+                Accept: "application/json;odata=verbose"  
+            },  
+            async: false,  
+            success: function(data) {  
+                var items;  
+                var results;  
+                items = data.d;  
+                console.log();
+                    if (data.d.results.length!= 0) {  
+                        results = items.results ;const book = {};var html='';
+					    $.each(results, function (index, result) { 					    	
+							if(index==0){
+								//$('.link-input-fildTE').prepend('<input type="hidden" value="'+result.ID+'">');
+								$( "<input type='hidden' value='"+result.ID+"' class='optionId'>" ).insertBefore( $( ".link-input-fildTE" ) );
+
+				            	$('.link-input-fildTE').val(result.Title);
+				            }
+				            else{
+				                html+=' <div class="block position-relative mb10"><input type="hidden" value="'+result.ID+'" class="optionId"> <input class="form-control link-input-fildTE" type="text" value="'+result.Title+'"><span class="removeDROP btn custom-btn link-delete-btn" onclick="deleteDRDNOption('+result.Id+',this)"><i class="fa fa-minus"></i></span></div>';
+			
+				            }
+
+					    });							               
+						$('.block1TE').html(html);  
+
+                    }  
+                    else{$('.link-input-fildTE').val("");$('.optionId').val("");$('.block1TE').html("");$( "<input type='hidden' value='' class='optionId'>" ).insertBefore( $( ".link-input-fildTE" ) );}
+            },  
+            eror: function(data) {  
+                console.log("An error occurred. Please try again.");  
+            }  
+        });  
+    }
+    
+function newDoctemp(){
+	$('#DocTitle').val('');
+	$('#DocTempName').val('');
+	$('#DocSign').val('Adobe Sign');
+//	$('#DocSign').val(slectedrow.Sign);
+	$('#btnSaveDoctemp').show();
+	$('#btnSaveEditDoc').hide();
+}    
+var EditDocTemId = '';    
+function getDocToEdit(id){
+	EditDocTemId = id;
+	var slectedrow=arr.find(x => x.Id === id);	
+	$('#DocTitle').val(slectedrow.Title);
+	$('#DocTempName').val(slectedrow.TemplateName);
+//	$('#DocSign option[value="'+slectedrow.SignApp+'"]').attr("selected", "selected");
+	$('#DocSign').val(slectedrow.SignApp);
+	$('#btnSaveDoctemp').hide();
+	$('#btnSaveEditDoc').show();
+}
+
+function UpdateDocumnetApprovalMaster(){
+	var title = $('#DocTitle').val();
+	var tName = $('#DocTempName').val();
+	var tSign = $('#DocSign').val();
+	var listItem = { __metadata:{ type: "SP.Data.ApprovalProcessMasterListItem" },		
+      	TemplateName: tName,
+		Title:	title,		
+		SignApp:	tSign           		                       
+		};
+    $.ajax({
+	        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessMaster')/items(" +EditDocTemId+ ")",
+	        type: "PATCH",
+	        async: false,
+	        headers: {
+	            "accept": "application/json;odata=verbose",
+	            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+	            "content-Type": "application/json;odata=verbose",
+	            "X-Http-Method": "PATCH",
+	            "If-Match": "*"
+	        },
+	        data: JSON.stringify(listItem),	
+	        success: function (data) { 
+	        alert('The Template has been updated successfully.')       
+		       console.log('Temp updated.');
+		       $('#DocTitle').val('');
+			   $('#DocTempName').val('');
+		       $('#btnSaveDoctemp').show();
+			   $('#btnSaveEditDoc').hide();
+
+	        }, 			
+	        error: function (error) { 
+		        console.log(error); 
+		        alert(error);
+	        }
+     });     
+
+}
+    
+function deleteDRDNOption(Id,del){
+	console.log(del.parentNode);
+	var r = confirm("Are you sure to delete this option");
+	if (r == false) {
+	  return false;
+	}
+		del.parentNode.remove();
+
+ 	var clientContext = new SP.ClientContext();
+    var oList = clientContext.get_web().get_lists().getByTitle('ApprovalColumnsDropdown');
+
+    this.oListItem = oList.getItemById(Id);
+
+    oListItem.deleteObject();
+
+    clientContext.executeQueryAsync();
+}
+// You can upload files up to 2 GB with the REST API.
+function uploadFile(op) {
+
+    // Define the folder path for this example.
+    var serverRelativeUrlToFolder = 'SiteAssets/ProcessApproval/assets/images';
+    var fileInput;
+	if(op=='Add'){
+    	fileInput = jQuery('.approve-process-upload-image-inp');
+    }
+    else{
+        fileInput = jQuery('.approve-process-upload-image-input');
+
+    }
+
+    // Get test values from the file input and text input page controls.
+    //var fileInput = jQuery('.approve-process-upload-image-inp');
+    var newName = jQuery('#displayName').val();
+
+    // Get the server URL.
+    var serverUrl = _spPageContextInfo.webAbsoluteUrl;
+
+    // Initiate method calls using jQuery promises.
+    // Get the local file as an array buffer.
+    var getFile = getFileBuffer();
+    getFile.done(function (arrayBuffer) {
+
+        // Add the file to the SharePoint folder.
+        var addFile = addFileToFolder(arrayBuffer);
+        addFile.done(function (file, status, xhr) {
+
+            // Get the list item that corresponds to the uploaded file.
+            var getItem = getListItem(file.d.ListItemAllFields.__deferred.uri);
+            getItem.done(function (listItem, status, xhr) {
+
+                // Change the display name and title of the list item.
+                var changeItem = updateListItem(listItem.d.__metadata);
+                changeItem.done(function (data, status, xhr) {
+                    //alert('file uploaded and updated');
+                    getLatestImage(listItem.d.File.__deferred.uri,op)
+                    console.log(listItem.d.File.__deferred.uri);
+                });
+                changeItem.fail(onError);
+            });
+            getItem.fail(onError);
+        });
+        addFile.fail(onError);
+    });
+    getFile.fail(onError);
+
+    // Get the local file as an array buffer.
+    function getFileBuffer() {
+        var deferred = jQuery.Deferred();
+        var reader = new FileReader();
+        reader.onloadend = function (e) {
+            deferred.resolve(e.target.result);
+        }
+        reader.onerror = function (e) {
+            deferred.reject(e.target.error);
+        }
+        reader.readAsArrayBuffer(fileInput[0].files[0]);
+        return deferred.promise();
+    }
+
+    // Add the file to the file collection in the Shared Documents folder.
+    function addFileToFolder(arrayBuffer) {
+
+        // Get the file name from the file input control on the page.
+        var parts = fileInput[0].value.split('\\');
+        var fileName = parts[parts.length - 1];
+
+        // Construct the endpoint.
+        var fileCollectionEndpoint = String.format(
+                "{0}/_api/web/getfolderbyserverrelativeurl('{1}')/files" +
+                "/add(overwrite=true, url='{2}')",
+                serverUrl, serverRelativeUrlToFolder, fileName);
+
+        // Send the request and return the response.
+        // This call returns the SharePoint file.
+        return jQuery.ajax({
+            url: fileCollectionEndpoint,
+            type: "POST",
+            data: arrayBuffer,
+            processData: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": jQuery("#__REQUESTDIGEST").val(),
+                "content-length": arrayBuffer.byteLength
+            }
+        });
+    }
+
+    // Get the list item that corresponds to the file by calling the file's ListItemAllFields property.
+    function getListItem(fileListItemUri) {
+
+        // Send the request and return the response.
+        return jQuery.ajax({
+            url: fileListItemUri,
+            type: "GET",
+            headers: { "accept": "application/json;odata=verbose" }
+        });
+    }
+
+    // Change the display name and title of the list item.
+    function updateListItem(itemMetadata) {
+
+        // Define the list item changes. Use the FileLeafRef property to change the display name. 
+        // For simplicity, also use the name as the title. 
+        // The example gets the list item type from the item's metadata, but you can also get it from the
+        // ListItemEntityTypeFullName property of the list.
+        var body = String.format("{{'__metadata':{{'type':'{0}'}},'FileLeafRef':'{1}','Title':'{2}'}}",
+            itemMetadata.type, newName, newName);
+
+        // Send the request and return the promise.
+        // This call does not return response content from the server.
+        return jQuery.ajax({
+            url: itemMetadata.uri,
+            type: "POST",
+            data: body,
+            headers: {
+                "X-RequestDigest": jQuery("#__REQUESTDIGEST").val(),
+                "content-type": "application/json;odata=verbose",
+                "content-length": body.length,
+                "IF-MATCH": itemMetadata.etag,
+                "X-HTTP-Method": "MERGE"
+            }
+        });
+    }
+}
+
+// Display error messages. 
+function onError(error) {
+    alert(error.responseText);
+}		
+		
+		</script>
+	</em>
+
+
+
+	
+<!-- stepsapprover script -->
+
+<script>
+$(function(){
+
+	$('.checkboxgroup input[type="radio"]').click(function(){
+		var storeattr = $('.checkboxgroup input[type="radio"]:checked').attr('data-target');
+		debugger;
+		if(storeattr){
+			$('.boxse').not('.'+storeattr).hide();
+			$('.'+storeattr).show();
+			if(storeattr == 'rolbox'){
+				$("input[name=optradio][value=Role]").prop('checked','checked');
+			}else{
+				$("input[name=optradio][value=User]").prop('checked','checked');
+			}
+		}
+	})  
+})
+
+function GetCurrncyValues(val){
+$.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl+"/_api/web/lists/getbytitle('ApprovalProcessList')/fields?$filter=EntityPropertyName eq '"+val+"'", //?$select="+val,
+        type: "GET",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+        },
+        success: function (data) {
+        	var choiceArray = data.d.results[0].Choices.results;
+        	var option = "<option value='"+choiceArray[0]+"' selected='selected'>"+choiceArray[0]+"</option>" 
+        	for(i=1;i<choiceArray.length;i++){        		
+        		option += "<option value='"+choiceArray[i]+"'>"+choiceArray[i]+"</option>";         		
+        	}
+        	$("#ddlDefVal").html(option);
+        	$("#ddlEDefVal").html(option);		
+			$("#ddlTEDefVal").html(option);	
+			$("#ddlNRTEDefVal").html(option);		
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+
+function numericFilter(txb) {
+   txb.value = txb.value.replace(/[^\0-9]/ig, "");
+}
+$(".approve-process-upload-image-input").change(function(e) {
+
+    for (var i = 0; i < e.originalEvent.srcElement.files.length; i++) {
+        
+        var file = e.originalEvent.srcElement.files[i];
+        
+        //var img = document.createElement("img");
+        var reader = new FileReader();
+        reader.onloadend = function() {
+            // img.src = reader.result;
+        	 $('#selectdImgE').attr("src",reader.result);
+			 $('#divSelImgE').show();        }
+        reader.readAsDataURL(file);
+    }
+});
+
+</script>
+<script>
+$(document).ready(function(){
+  $("#txtSearch").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#allTemplateData tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+function sortTable(chldElm) {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("allTemplateData");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 0; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[1].getElementsByClassName(chldElm)[0].innerText;
+      y = rows[i+ 1].getElementsByTagName("TD")[1].getElementsByClassName(chldElm)[0].innerText;
+      //check if the two rows should switch place:
+      if (x.toLowerCase() > y.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+function sortTableByNewTemp() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("allTemplateData");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 0; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[7].innerText;
+      y = rows[i+ 1].getElementsByTagName("TD")[7].innerText;
+      //check if the two rows should switch place:
+      if (x.toLowerCase() < y.toLowerCase()) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+//Get items
+function deletetemp(id,row){
+		var result = confirm("Are you sure to delete this Template?");
+		if (!result) {
+			return false;		    //Logic to delete the item
+		}
+		var i=row.parentNode.parentNode.rowIndex;
+		document.getElementById('allTemplateData').deleteRow(i);
+
+    $.ajax({
+        async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ApprovalTemplateSetup')/items?$filter=TemplateID/ID eq "+id,
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+         var noChildItems = data.d.results.length; //number of child items to be deleted
+        data.d.results.forEach(function(item){
+            var childId = item.ID;
+            deleteItem("/_api/Web/Lists/GetByTitle('ApprovalTemplateSetup')/getItemById("+childId+")",item).done(function(d_data){
+                //deleted child item.
+            });
+        });
+        getDrwnOpt(id);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+
+    });
+}
+
+//Delete Item
+function deleteItem(url, oldItem) {
+    return $.ajax({
+        async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + url,
+        type: "DELETE",
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "If-Match": oldItem.__metadata.etag
+        }
+    });
+}
+function getDrwnOpt(id){debugger;
+    $.ajax({
+        async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ApprovalColumnsDropdown')/items?$filter=TemplateID/ID eq "+id,
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+         var noChildItems = data.d.results.length; //number of child items to be deleted
+        data.d.results.forEach(function(item){
+            var childId = item.ID;
+            deleteItem("/_api/Web/Lists/GetByTitle('ApprovalColumnsDropdown')/getItemById("+childId+")",item).done(function(d_data){
+                //deleted child item.
+            });
+        });
+        deleteTempItem(id)
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+
+    });
+}
+function deleteTempItem(id){debugger;
+    $.ajax({
+        async: false,
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ApprovalProcessMaster')/items?$filter= ID eq "+id,
+        type: "GET",
+        headers: {
+            "accept": "application/json;odata=verbose",
+        },
+        success: function (data) {
+         var noChildItems = data.d.results.length; //number of child items to be deleted
+        data.d.results.forEach(function(item){
+            var childId = item.ID;
+            deleteItem("/_api/Web/Lists/GetByTitle('ApprovalProcessMaster')/getItemById("+childId+")",item).done(function(d_data){
+            	alert("Template Deleted successfully");  
+            });
+        });
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+
+    });
+}
+
+
+</script>	
+	
+	
+</body>
+
+</html>

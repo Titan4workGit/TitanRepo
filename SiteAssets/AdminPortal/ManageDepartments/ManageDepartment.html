@@ -1,0 +1,356 @@
+﻿<script type="text/javascript" src="../SiteAssets/AdminPortal/ManageDepartments/ManageDepartment.js"></script>
+
+<style type="text/css">
+	div#DepartmentName a.list-group-item {
+	    border-bottom: 1px solid #ddd;
+	    border-top: none;
+	}
+	div#DepartmentName a.list-group-item.active {
+	    background: #ddd !important;
+	    border:1px solid #ddd !important;   
+	}
+	.ms-webpart-cell-horizontal {
+	    display:block !important;
+	}
+	.form-horizontal .control-label{
+		text-align: left;
+	}
+	.text_left{
+	text-align:right !important;
+	}
+	.browse{ padding:5px; border:1px solid #ddd !important; width:100%; background:transparent}
+	.panel-group .panel {
+		border-radius: 5px;
+		border-color: #EEEEEE;
+        padding:0;
+	}
+
+		.panel-title {
+		font-size: 14px;
+	}
+
+	.panel-title > a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+
+	
+	<!-- body { -->
+	  <!-- font: normal 14px/100% "Andale Mono", AndaleMono, monospace; -->
+	  <!-- color: #fff; -->
+	  <!-- padding: 50px; -->
+	  <!-- width: 300px; -->
+	  <!-- margin: 0 auto; -->
+	  <!-- background-color: #374954; -->
+	<!-- } -->
+
+	<!-- .dropdown { -->
+	  <!-- position: absolute; -->
+	  <!-- top:50%; -->
+	  <!-- transform: translateY(-50%); -->
+	<!-- } -->
+
+	<!--a {-->
+	  <!--color: #fff;-->
+	<!--}-->
+
+	<!-- .dropdown dd, -->
+	<!-- .dropdown dt { -->
+	  <!-- margin: 0px; -->
+	  <!-- padding: 0px; -->
+	<!-- } -->
+
+	<!-- .dropdown ul { -->
+	  <!-- margin: -1px 0 0 0; -->
+	<!-- } -->
+	dl.dropdown{
+		margin-bottom:0px !important;
+	}
+	.dropdown dd { 
+	 position: relative; 
+	 } 
+
+	.col-sm-8.dropdown a,
+	.col-sm-8.dropdown a:visited {
+	  color: #0c0c0c;
+	  text-decoration: none;
+	  outline: none;
+	  font-size: 12px;
+	}
+
+	.dropdown dt a { 
+	 	display: block;
+		padding: 5px 20px 5px 10px;
+		min-height: 15px;
+		line-height: 10px;
+		overflow: hidden;
+		border: 0;
+		
+	 } 
+	.dropdown dt a p.multiSel{
+	    margin: 0px 0px 0px 0px !Important;
+		color: #333;
+		background-color: #fff;
+		border-color: #ccc;
+	}
+	.dropdown dt a span{ 
+		cursor: pointer; 
+		display: inline-block; 
+		padding: 7px 3px 2px 0; 
+		color: #333;
+		background-color: #fff;
+		border-color: #ccc;
+	 }  
+	 .dropdown dt a p.multiSel span { 
+		cursor: pointer; 
+		display: inline-block; 
+		padding: 0px 3px 0px 0; 
+		color: #333;
+		background-color: #fff;
+		border-color: #ccc;
+	 }
+
+	.dropdown dd ul { 
+	/* background-color: #dde8ef; 
+	 color: #0e0e0e;  
+	 border: 0; 
+	 display: none; 
+	 left: 0px; 
+	 padding: 2px 15px 2px 5px; 
+	 position: absolute; 
+	 top: 2px; 
+	 width: 280px; 
+	 list-style: none;
+	 height: 100px; 
+	 overflow: auto; */
+		max-height: 222px;
+		overflow-y: auto;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 1000;
+		display: none;
+		float: left;
+		min-width: 160px;
+		padding: 5px 0;
+		margin: 2px 0 0;
+		list-style: none;
+		font-size: 14px;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0, 0, 0, .15);
+		border-radius: 4px;
+		-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+		box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+		background-clip: padding-box;
+	 } 
+	 .dropdown dd ul li{
+		display: block;
+		padding: 3px 20px;
+		clear: both;
+		font-weight: 400;
+		line-height: 1.42857143;
+		color: #333;
+		white-space: nowrap;	 
+	 }
+	.dropdown dd ul li:hover {
+		background-color:#f5f5f5;
+	}
+	 .dropdown dd ul li input[type=checkbox]{
+	     margin: 1px 6px 3px 0px !Important;
+	 }
+	.dropdown span.value {
+	  display: none;
+	}
+
+	.dropdown dd ul li a {
+	  padding: 5px;
+	  display: block;
+	}
+
+	.dropdown dd ul li a:hover {
+	  background-color: #fff;
+	}
+
+.required:after {
+  content:"*";
+  color:red;
+}
+
+	<!-- button { -->
+	  <!-- background-color: #6BBE92; -->
+	  <!-- width: 302px; -->
+	  <!-- border: 0; -->
+	  <!-- padding: 10px 0; -->
+	  <!-- margin: 5px 0; -->
+	  <!-- text-align: center; -->
+	  <!-- color: #fff; -->
+	  <!-- font-weight: bold; -->
+	<!-- } -->
+	.sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled{
+		width:100%;
+	}
+
+@media(max-width:991px){
+	
+#s4-workspace{
+	
+	height:auto !important;	
+	min-height:auto !important;	
+
+}	
+	
+}	
+	
+</style>
+
+
+
+<div class="row department-header"> 
+	<ol class="breadcrumb">    
+		<li><h4><b data-localize="ManageDepartments">Manage Departments</b></h4></li>           
+	</ol>
+</div>
+
+
+
+<div class="row">
+<div class="col-md-5">
+ <div class="col-md-12">
+  <div class="row">
+   <div class="panel panel-default shadow3">
+    <div class="panel-heading  panel-head-4">
+     <div class="panel-title">
+      <h4 class="h4-color"><span data-localize="ListOfDepartment">List of Department</span>
+      <!--<a class="link-color pull-right" style="cursor:pointer;" onclick="getDepartmentDetails(0);"> <span class="glyphicon glyphicon-plus-sign "> </span></a>-->
+      </h4>
+     </div>
+    </div>
+    <div class="list-group list-of-department " id="DepartmentName">
+     
+	</div>
+	<div class="list-group list-of-department " id="DepartmentID">
+     
+	</div>
+ </div></div></div>
+</div>  
+                                        
+    
+<div class="col-md-7">
+ <div class="col-md-12">
+  <div class="row">
+	<div class="panel panel-default  shadow2" id="DepartmentDetail">
+     <div class="panel-heading  panel-head-4">
+      <div class="panel-title">
+       <h4 class="h4-color">Details (English)</h4>
+      </div>
+     </div>
+     <div class="panel-body depart-details-english">
+      <div class="form-horizontal">
+      <div class="form-group">
+        <label for="Department" class="col-sm-4 control-label required" data-localize="DepartmentId">Department Id</label>
+         <div class="col-sm-8">
+          <input type="text" class="form-control disabled" id="DepartmentIdEng" maxlength="50" disabled>
+         </div>
+        </div>
+        
+       <div class="form-group">
+        <label for="Department" class="col-sm-4 control-label required" data-localize="DepartmentName">Department Name</label>
+         <div class="col-sm-8">
+          <input type="text" class="form-control" id="DepartmentNameEng" maxlength="50">
+         </div>
+        </div>
+        
+       <div class="form-group">
+        <label for="MassMailId" class="col-sm-4 control-label" data-localize="MassMailId">Mass Mail Id</label>
+         <div class="col-sm-8">
+		<input type="text" class="form-control" id="DeptEmailId">         
+         </div>
+       </div>
+        
+        <!--<div class="form-group">
+         <label for="ContactPerson" class="col-sm-4 control-label">Head of Department</label>
+          <div class="col-sm-8">
+		  <span id="DepartmentHead"></span>
+          </div>
+        </div>-->
+        <div class="form-group" style="display:none">
+         <label for="Office" class="col-sm-4 control-label required" data-localize="OfficeLocations">Office Locations</label>
+          <div class="col-sm-8">
+           <dl class="dropdown"> 
+			<dt>
+			<a>
+			  <span class="hida">Select Locations</span>    
+			  <p class="multiSel"></p>  
+			</a>
+			</dt>
+			<dd>
+				<div class="mutliSelect">
+					
+				</div>
+			</dd>
+			</dl>
+          </div>
+         </div>
+         
+     <div class="form-group">
+        <div class="col-sm-7">
+         <input type="text" class="form-control" id="deptsiteurl" style="display:none">
+         </div>
+          <a href="#"><span onclick="BreakInheritePermission()" style="float:right; margin-right:17px; cursor:pointer; display:none;" id="resetUserPermission">Reset Permissions on Document Library</span>        
+         </a>
+         </div>
+       </div>
+       		
+     </div>
+    </div>
+                        <!--/panel content-->
+						
+	 <!-- Other language panel -->
+		
+	<!-- End of Other Language Panel-->
+    </div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="display:none">
+        
+        </div>
+		<div class="form-group">
+         <!--<label for="" class="col-sm-4 control-label"></label>-->
+	         <div class="col-sm-12 submitButton" style="margin-bottom: 15px;text-align:center">
+	          <button type="button" class="btn  btn-outline-success" onclick="getDepartmentDetails(0);" data-localize="Add">Add</button>
+		         <button type="button" class="btn  btn-outline-success" name="createNewDepartmentSite" id="createNewDepartmentSite" data-localize="Submit">Submit</button>
+		         <button type="button" class="btn btn-outline-secondary" id="closeNewDepartmentSite" data-localize="Close">Close</button>
+	         </div>
+        </div>
+	
+	
+	
+	
+</div></div>
+</div>
+	</div>	<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-347</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b900fb3a-a4f6-4e81-9e65-7889400eab34</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-347, ADMIN-1645029823-347</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:Order msdt:dt="string">34700.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head><html><head><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"><meta name="Robots" content="NOINDEX " /></head><body></body>
+                <script type="text/javascript">
+                 var gearPage = document.getElementById('GearPage');
+                 if(null != gearPage)
+                 {
+                     gearPage.parentNode.removeChild(gearPage);
+                     document.title = "Error";
+                 }
+                 </script>
+                 </html>

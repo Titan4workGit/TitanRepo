@@ -1,0 +1,1311 @@
+﻿<!DOCTYPE html>
+
+<style>
+
+@media(max-width:1199px){
+
+.visible-box-poll{
+
+	display:block !important;	
+}	
+.ms-rtestate-field h4, h4.ms-rteElement-H4{
+	font-size:13px !important;	
+}	
+.visible-box-poll > p{
+
+	margin-bottom:2px;	
+}	
+
+}
+
+@media(max-width:347px){
+	
+.survey-btn-position button.w-121{
+	
+	width:100px !important;
+	font-size:12px !important;		
+}	
+	
+}
+
+.red-star {
+    color: red;
+}
+
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
+.my_group_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_group_list .dropdown-toggle:hover, .my_group_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_group_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_group_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_group_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_group_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_group_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_group_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+
+#Selectedgroups {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
+</style>
+
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+	<head>
+		<title>Titan</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/css/date-picker.css">
+		<link rel="stylesheet" type="text/css" href="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/css/styles.css">	
+		<script type="text/javascript" src='../SiteAssets/MyTask/assets/moment.min.js'></script>
+		<script src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/js/AddSurvey.js"></script>
+
+<style>
+
+#survey-Edit .modal-content .modal-header{
+	height:auto !important;	
+	padding:18px 15px !important;
+	background:transparent !important;
+}
+
+#survey-Edit .modal-header > h4.modal-title{
+
+	color:#000 !important;
+	
+}
+
+#survey-Edit .modal-header button{
+
+	min-width:1.3em !important;	
+}
+
+#survey-Edit .modal-header button span.close-icon{
+	top:0px !important;
+}
+
+
+
+
+#survey-new-question .modal-content .modal-header{
+
+	height:auto !important;	
+	padding:18px 15px !important;
+	background:transparent !important;
+}
+#survey-new-question .modal-header > h4.modal-title{
+
+	color:#000 !important;
+	
+}
+
+#survey-new-question .modal-header button span.close-icon{
+	
+	top:0px !important;
+
+}
+
+#survey-new-question .modal-header button{
+
+	min-width:1.3em !important;	
+
+}
+
+
+
+
+
+#survey-edit-question .modal-content .modal-header{
+
+	height:auto !important;	
+	padding:18px 15px !important;
+	background:transparent !important;
+}
+#survey-edit-question .modal-header > h4.modal-title{
+
+	color:#000 !important;
+	
+}
+
+#survey-edit-question .modal-header button span.close-icon{
+	
+	top:0px !important;
+
+}
+
+#survey-edit-question .modal-header button{
+
+	min-width:1.3em !important;	
+
+}
+
+
+.survey-right-time-box-one p.m-0{
+	margin:0 !important;
+}
+
+
+.survey-right-time-box-two p.m-0{
+	margin:0 !important;
+}
+
+.survey-right-time-box-one h3{
+	
+	font-size: 22px !important;
+    color:#333 !important;
+
+}
+
+.survey-right-time-box-two h3{
+	
+	font-size: 22px !important;
+    color:#333 !important;
+
+}
+
+.ms-rtestate-field h4, h4.ms-rteElement-H4{
+
+	font-size: 17px !important;
+    color:#333 !important;
+	
+}
+
+.visible-box-poll p{
+
+  margin:0 5px !important;
+
+}
+
+#survey-new-question button.addOption{
+ 
+  min-width:1.2em !important;	
+  margin:0 px !important;
+}
+
+#survey-edit-question button.addOptionEdit{
+ 
+  min-width:1.2em !important;	
+  margin:0px !important;
+  position:relative;
+  left:-8px;
+}
+
+
+#txtOrganizer_TopSpan.sp-peoplepicker-topLevel{
+
+	width:100% !important;	
+	border:none !important;
+}
+
+#txtOrganizer.form-control{
+
+	padding:2px 12px !important;	
+}
+
+#txtOrganizer_TopSpan_EditorInput{
+
+	max-width:auto !important;
+	border:none !important;	
+
+}
+
+#txtOrganizer_TopSpan span{
+
+	float:left !important; 	
+	display:block;
+}
+
+#txtOrganizer_TopSpan{
+	background:transparent !important;	
+}
+
+#txtOrganizer.form-control{
+
+	height: auto !important;	
+}
+
+.project-btn-position a:visited{
+	
+	color:#fff !important;	
+}
+
+#DpdownData.dropdown-menu{
+		top:80% !important;
+}
+
+#DpdownData1.dropdown-menu{
+
+		top:80% !important;
+}
+
+#AssaginTaskTeam_TopSpan_EditorInput.sp-peoplepicker-editorInput[type="text"]{
+
+	padding:0 10px !important;	
+    border:none !important;
+
+}
+
+label.star{
+
+    display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    justify-content: center;
+}
+
+label.number{
+
+    display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    justify-content: center;
+}
+
+label.starEdit,
+label.numberEdit{
+
+	display:inline;	
+}
+
+label.starEdit span img{
+
+	width:250px !important;
+	margin: 0 auto;
+    display: block;
+}
+
+label.numberEdit span img{
+
+	width:360px !important;
+	margin: 0 auto;
+    display: block;
+	
+}
+
+.survey-right-time-box-one p,
+.survey-right-time-box-two p,
+.survey-right-time-box-three p{
+
+    color: #1d6ec0 !important;
+    font-weight: 800;
+
+}
+
+#survey-Edit .modal-content .modal-header,
+#survey-new-question .modal-content .modal-header,
+#survey-edit-question .modal-content .modal-header{
+
+	background: #666 !important;	
+
+}
+
+#survey-Edit .modal-header button,
+#survey-new-question .modal-header button,
+#survey-edit-question .modal-header button{
+
+	color:#000 !important; 	
+	background:#fff !important;
+}
+
+#survey-Edit .modal-header > h4.modal-title,
+#survey-new-question .modal-header > h4.modal-title,
+#survey-edit-question .modal-header > h4.modal-title{
+
+	color:#fff !important;	
+}
+
+#AssaginTaskTeam_TopSpan_AutoFillDiv.sp-peoplepicker-autoFillContainer{
+
+ width:100% !important;
+ min-width:auto !important;
+ max-width:auto !important;
+	
+}
+
+.radio-inline{
+    
+    margin: 15px 5px !important;
+    color: #1d6ec0 !important;
+    font-weight:700 !important;	
+
+}
+
+.project-table-ellipsis-2{
+	
+	line-height: 24px;
+	text-align: justify;
+	font-family:Arial;
+}
+
+input[type="radio"]{
+
+  margin-top:2px !important;	
+}
+
+#DeltaPlaceHolderMain .ms-webpart-zone {
+    display: block !important;
+}
+#DeltaPlaceHolderMain .ms-webpart-zone .ms-webpart-cell-horizontal {
+    display: block !important;
+}
+.all-align-gap-survey {
+    margin: 0px -15px 0px 3px !important;
+}
+
+/* responsive css start */
+
+@media all and (max-width: 676px) and (min-width: 601px){
+
+
+.survey-right-time-box-one h3,
+.survey-right-time-box-two h3,
+.survey-right-time-box-three h3{
+	
+	font-size:18px !important;
+
+}
+
+.radio-inline{
+    
+    margin: 8px 5px !important;
+}
+	
+}
+
+@media(max-width:400px){
+	
+
+label.numberEdit span img{
+
+	width:260px !important;
+	
+}
+
+.radio-inline{
+    
+    margin: 8px 5px !important;
+}
+	
+	
+}
+
+#txtOrganizer_TopSpan_AutoFillDiv_MenuList img,
+#AssaginTaskTeam_TopSpan_AutoFillDiv_MenuList img{
+
+	width:16px !important;
+	height:16px !important;	
+
+}
+
+#txtOrganizer_TopSpan_AutoFillDiv{
+
+	min-width:100% !important;
+	
+}
+
+@media(max-width:767px){
+
+.col-xs-12.managesec{
+ padding:0 1px !important;	
+
+}
+	
+}
+
+</style>
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1647</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a7d6d8b1-9877-4bca-94ff-67768ad6cf6a</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1647, ADMIN-1645029823-1647</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">164700.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+	<body>
+		<div class="container-fluid all-align-gap-container all-align-gap-survey">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Survey: <span id="txtPollTitleMainDisplay"></span>
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0 survey-filter-panel">
+									<div class="col-xs-12">
+										<div class="row m-0 survey-right-top-box survey-right-top-box-2">
+											<div class="col-xs-3 survey-right-time-box-one">
+												<div class="text-center">
+													<p class="m-0">Start Date</p>
+													<h3 class="m-0" id="txtPollStartDisplay"></h3>
+												</div>
+											</div>
+											<div class="col-xs-3 survey-right-time-box-two">
+												<div class="text-center">
+													<p class="m-0">End Date</p>
+													<h3 class="m-0" id="txtPollEndDisplay"></h3>
+												</div>
+											</div>
+											<div class="col-xs-3 survey-right-time-box-two">
+											<!-- <div class="text-center">
+													<p class="m-0">Expiry Date</p>
+													<h3 class="m-0" id="txtPollExpireDisplay"></h3>
+												 </div>  -->
+												 <div class="text-center">
+													<p class="m-0">Result Date</p>
+													<h3 class="m-0" id="txtPollResultDisplay"></h3>
+												 </div>
+											</div>
+											<div class="col-xs-3 survey-right-time-box-three">
+												<div class="text-center">
+													<div class="visible-box-poll">
+														<p class="m-0">Visibility:</p>
+														<h4 class="m-0" id="txtvisibility"></h4>
+													</div>
+													<div class="visible-box-poll">
+														<p class="m-0">Status:</p>
+														<h4 class="m-0" id="txtPollStatus"></h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="text-right survey-btn-position">
+											<button type="button" class="btn custom-btn w-121 getEditView" data-toggle="modal" data-target="#survey-Edit">Edit</button>
+											<button type="button" class="btn custom-btn w-121 ml-4 addQuestionAnswer" data-toggle="modal" data-target="#survey-new-question">Add Question</button>
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<div class="col-xs-12">
+										<div class="table-responsive project-table survey-table scrollbar-panel">     
+										    <table class="table mb-0 custom-table">
+											    <thead>
+											        <tr>
+											        	<th class="text-left border-bottom-0 w-10" id="thNo">Sl No.</th>
+												        <th class="text-left border-bottom-0 w-50" id="thQuestion">Question</th>
+												        <th class="text-left border-bottom-0 w-30" id="thOption">Options</th>
+												        <th class="text-center border-bottom-0 w-10" id="thAction">Action</th>
+											        </tr>
+											    </thead>
+											    <tbody class="trQuestionOption">
+												<!--	<tr>
+											        	<td class="white-space-nowrap text-left">01.</td>
+												        <td>
+												        	<div class="project-table-ellipsis-2">
+												        		
+												        	</div>
+												        </td>
+												        <td>
+												        	<div class="project-table-ellipsis-2 text-left"></div>												        	
+												        </td>
+												        <td>
+												        	<div class="project-edit-lock-btn-box">
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-pencil"></i>
+															    </a>
+															    <a type="button" href="#" class="custom-edit-btn">
+															    	<i class="fa fa-trash"></i>
+															    </a>
+															</div>
+												        </td>
+													</tr>		-->											
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<!-- Survey filter Modal -->
+		<div id="survey-Edit" class="modal fade" role="dialog" style="display:none;">
+		  <div class="modal-dialog modal-lg">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+		        <h4 class="modal-title">Survey</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row">
+		        	<div class="col-xs-12">
+						<div class="form-group custom-form-group">
+							<label data-localize="Title">Title ABC<span class="red-star">*</span></label>
+							<input type="text" class="form-control"id="txtPollTitleMain" maxlength="250">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="StartDate" for="">Start Date<span class="red-star">*</span></label>
+							<input class="form-control pollStartDate" type="text" id="surveyStart" name="surveyStart" placeholder="dd/mm/yy" >
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="EndDate" for="">End Date<span class="red-star">*</span></label>
+							<input class="form-control pollEndDate" type="text" id="surveyEnd" name="surveyEnd" placeholder="dd/mm/yy">
+						</div>
+					</div>
+					<!--	<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label for="">Expiry Date:</label>
+							<input class="form-control pollExpireDate" type="text" id="surveyExpiry" name="surveyExpiry" placeholder="dd/mm/yy">
+						</div>
+					</div>  -->
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="ResultDate" for="">Result Date<span class="red-star">*</span></label>
+							<input class="form-control pollResultDate" type="text" id="surveyResult" name="surveyResult" placeholder="">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="Audience">Audience<span class="red-star">*</span></label>
+							<select class="form-control" id="audience" onchange="DisplayDepartmentBox(this.value);">
+								<option>Corporate</option>
+								<option>Company</option>
+								<option>Department</option>
+								<option>My Group</option>
+								<option>Selective</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group" id="DepartmentListBox" style="display:none">
+							<label data-localize="Department" id="DropLable">Department</label><span class="red-star">*</span>
+							<div class="button-group my_announce_department_list">
+							  <button type="button" class="btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+								        </button>
+										<ul class="dropdown-menu" style="width:89% !important;" id="DpdownData">
+										  <!--<li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/><span>Sales</span></a></li>
+										  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/><span>Human Resources</span></a></li>
+										  <li><a href="#" class="small" data-value="option5" tabIndex="-1"><input type="checkbox"/><span>Technical</span></a></li>-->
+										</ul>
+							</div>									     
+    					  <div class="" id="AssaginTaskTeam"></div>    						
+						</div>
+						<div class="form-group custom-form-group" style="display:none" id="selectUser">
+							<label data-localize="Users" id="DropLable1">Users</label><span class="red-star">*</span>
+						  <input type="text" class="form-control" placeholder=""id="txtUsers">
+						</div>
+						<div class="form-group custom-form-group" style="display:none" id="selectGroup">
+							<label data-localize="Groups" id="DropLable2">Groups</label><span class="red-star">*</span>
+							<div class="button-group my_group_list">
+							<button type="button" class="btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="Selectedgroups">Select</span><span class="caret"></span>
+							   </button>							   
+							  <ul class="dropdown-menu" style="width:89% !important;" id="DpdownData1"></ul> 
+							 </div>  						
+						</div>						
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="Visibility">Visibility</label>
+							<select class="form-control" id="ddVisible">
+								<option>Secret, Not Visible</option>
+								<option>Visible to Organizer</option>
+							</select>
+						</div>
+					</div>
+					</div>
+					<div class="row">
+				    <div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+				    	
+						<div class="form-group custom-form-group">
+							<label data-localize="Organizer" for="">Organizer<span class="red-star">*</span></label>
+							<div class="form-control" id="txtOrganizer"></div>
+							<input type="text" class="form-control txtOrganizer" placeholder=""id="" style="display:none">
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="Status">Status<span class="red-star">*</span></label>
+							<select class="form-control pollsStatus" id="PollStatus">
+								<option value="New">Unpublished</option>
+								<option value="Active" id="PublishStatus">Request to publish</option>
+								<option value="Terminate">Terminated</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-6 project-top-panel-box-istad">
+						<div class="form-group custom-form-group">
+							<label data-localize="ExpiryDate" for="">Expiry Date<span class="red-star">*</span></label>
+							<input class="form-control pollExpireDate" type="text" id="surveyExpiry" name="surveyExpiry" placeholder="dd/mm/yy">
+						</div>
+					</div>  
+					
+					<div class="col-xs-12">
+						<div class="panel-group collapse-Languages-panel m-0" id="accordion">
+						    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+						        		<span>Other Languages</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapse1" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0 ">
+						        		<div class="row PollTitle">
+						        	<!--		<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Hindi):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Arabic):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Kannada):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Spanish):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Urdu):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in French):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Hungarian):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Punjabi):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>
+											<div class="col-xs-12">
+												<div class="form-group custom-form-group">
+													<label>Title (in Irish):</label>
+													<input type="text" class="form-control" placeholder="">
+												</div>
+											</div>  -->
+						        		</div> 
+						        	</div>
+						      	</div>
+						    </div>
+						</div> 
+					</div>
+				</div>
+		    </div>
+		    <div class="modal-footer survey-modal-footer">
+		    	<!--<button class="btn custom-btn mr-8" data-dismiss="modal" onclick="javascript:$('#savePollTitle').attr('disabled',true);" id="savePollTitle">Apply</button>-->
+		    	<a class="btn custom-btn mr-8" onclick="javascript:$('#savePollTitle').attr('disabled',true);" id="savePollTitle" data-localize="Apply">Apply</a>
+				<a class="btn custom-btn-two-cancel" data-dismiss="modal" data-localize="Close">Close</a>
+		   	</div>
+		    </div>
+
+		  </div>
+		</div>
+
+		<!-- New Question Modal -->
+		<div id="survey-new-question" class="modal myModal_3 fade" role="dialog">
+		  	<div class="modal-dialog">
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      	<div class="modal-header">
+			        	<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+			        	<h4 class="modal-title">Question</h4>
+			      	</div>
+			      	<div class="modal-body">
+			      		<div class="row">
+		        			<div class="col-xs-12 managesec">
+								<div class="form-group custom-form-group m-0">
+									<textarea class="form-control" rows="3" style="resize: none;" maxlength="250" id="txtQuestion"></textarea>
+								</div>
+								<div class="form-group custom-form-group text-right">
+							<!--  <label class="radio-inline">
+							      	<input type="radio" name="optradio1" value="Stars" class="Rradio">Star Rating
+							      </label>
+							      <label class="radio-inline">
+							      	<input type="radio" name="optradio1" value="Number" class="Rradio">Number Rating
+								  </label>  -->
+								</div>								
+								<div class="scrollbar-pane nq-table-panel scrollbar-panel">
+									<table class="table m-0">
+										<thead class="nq-table-panel-head-row">
+											<tr>
+												<th class="border-0 pr-0 pb-0 text-center" colspan="4">
+													<label class="radio-inline" style="margin:15px 0px">
+													      	<input type="radio" name="optradio" id="radioAnyOneSelect" value="Any One Select" class="iradio">Any One Select
+													  </label>
+													  <label class="radio-inline" style="margin:15px 0px">
+													      	<input type="radio" name="optradio" value="Multiple Select" class="iradio">Multiple Select
+													  </label>
+													 <label class="radio-inline" style="margin:15px 0px">
+												        	<input type="radio" name="optradio" value="Stars" class="Rradio">Star Rating
+												      </label>
+												      <label class="radio-inline" style="margin:15px 0px">
+												         	<input type="radio" name="optradio" value="Number" class="Rradio">Number Rating
+													  </label>
+													  
+												</th>
+											</tr>
+										</thead>
+										<tbody class="nq-table-panel-body-row addOptionDefult Language DefaultLanguage">
+											<tr class="Option1">
+												<td class="vertical-align-middle border-0 "><label class="m-0">1.</label></td>
+												<td class="border-0 custom-form-group">
+													<input type="text" class="form-control Option1 QuesOption" maxlength="250" placeholder="">
+												</td>
+												<td class="border-0 w-8">
+												</td>
+											</tr>
+											<tr class="Option2">
+												<td class="vertical-align-middle border-0 "><label class="m-0">2.</label></td>
+												<td class="border-0 custom-form-group">
+													<input type="text" class="form-control Option2 QuesOption" maxlength="250" placeholder="">
+												</td>
+												<td class="border-0 w-8">
+												
+												</td>
+											</tr>										
+										</tbody>
+									</table>
+								</div>
+								<div>
+								  <label class="number" style="display:none">
+							      	  <span><img src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/images/number_rating.png"></span>
+							      </label>
+							      <label class="star" style="display:none">
+							          <span><img src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/images/star_rating.png"></span>
+								  </label>								
+								</div>
+								
+							</div>
+		        		</div>
+						<div class="form-group custom-form-group text-right">
+							<button type="button" class="btn custom-btn qstn-add-btn ml-4 addOption">
+						      <i class="fa fa-plus"></i>
+                 			</button>
+						</div>
+						
+						<div class="panel-group collapse-Languages-panel mb-0 pollQuestionAnswer" id="accordion1">
+					<!--	    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol2" aria-expanded="flase">
+						        		<span>Arabic</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol2" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>														
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol3" aria-expanded="flase">
+						        		<span>Hindi</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol3" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">3.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol4" aria-expanded="flase">
+						        		<span>Kannada</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol4" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">3.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div> -->
+						</div> 
+			    	</div>
+				    <div class="modal-footer survey-modal-footer">
+				    	<button type="button" class="btn custom-btn mr-8 w-70" id="saveQuestionAnswer">Submit</button>
+						<button class="btn custom-btn-two-cancel w-70" data-dismiss="modal" id="closeQuestionAnswer">Close</button>
+				   	</div>
+			    </div>
+
+		  	</div>
+		</div>
+		<div id="survey-edit-question" class="modal myModal_2 fade" role="dialog">
+		  	<div class="modal-dialog">
+			    <!-- Modal content-->
+			    <div class="modal-content">
+			      	<div class="modal-header">
+			        	<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+			        	<h4 class="modal-title">Question</h4>
+			      	</div>
+			      	<div class="modal-body LanguageEdit DefaultLanguage">
+			      		<div class="row">
+		        			<div class="col-xs-12 ">
+								<div class="form-group custom-form-group m-0">
+									<textarea class="form-control" rows="3" style="resize: none;" id="txtQuestionEdit"></textarea>
+								</div>
+								<div class="form-group custom-form-group text-right">
+							<!--  <label class="radio-inline">
+							      	<input type="radio" name="optradio2" value="StarsEdit" class="Rradio1">Star Rating
+							      </label>
+							      <label class="radio-inline">
+							      	<input type="radio" name="optradio2" value="NumberEdit" class="Rradio1">Number Rating
+								  </label>  -->
+								</div>
+								<div class="scrollbar-pane nq-table-panel scrollbar-panel">
+									<table class="table m-0">
+										<thead class="nq-table-panel-head-row">
+											<tr>
+												<th class="border-0 pr-0 pb-0 text-center" colspan="4">
+													<label class="radio-inline">
+												      	<input type="radio" name="optradioEdit" value="Any One Select" class="iradio1">Any One Select
+												    </label>
+												    <label class="radio-inline">
+												      	<input type="radio" name="optradioEdit" value="Multiple Select" class="iradio1">Multiple Select
+												    </label>
+													<label class="radio-inline">
+												      	<input type="radio" name="optradioEdit" value="StarsEdit" class="Rradio1">Star Rating
+												    </label>
+												    <label class="radio-inline">
+												      	<input type="radio" name="optradioEdit" value="NumberEdit" class="Rradio1">Number Rating
+													</label>
+													
+												</th>
+											</tr>
+										</thead>
+										<tbody class="nq-table-panel-body-row addOptionDefultEdit LanguageEdit DefaultLanguage">
+											<tr class="OptionEdit1">
+												<td class="vertical-align-middle border-0 "><label class="m-0">1.</label></td>
+												<td class="border-0 custom-form-group ">
+													<input type="text" class="form-control OptionEdit1" maxlength="250" placeholder="">
+												</td>
+												<td class="border-0 w-8">
+												</td>
+											</tr>
+											<tr class="OptionEdit2">
+												<td class="vertical-align-middle border-0 "><label class="m-0">2.</label></td>
+												<td class="border-0 custom-form-group">
+													<input type="text" class="form-control OptionEdit2" maxlength="250" placeholder="">
+												</td>
+												<td class="border-0 w-8">
+												</td>
+											</tr>
+										<!--	<tr>
+												<td class="vertical-align-middle border-0"><label class="m-0">3.</label></td>
+												<td class="border-0 custom-form-group">
+													<input type="text" class="form-control" placeholder="">
+												</td>
+												<td class="border-0 pr-0 w-8">
+													<div class="q-delete">
+														<i class="fa fa-times"></i>
+													</div>
+												</td>
+											</tr>  -->
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div>
+								  <label class="numberEdit" style="display:none">
+							      	  <span><img src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/images/number_rating.png"></span>
+							      </label>
+							      <label class="starEdit" style="display:none">
+							          <span><img src="../SiteAssets/CompanyHomePage/Polls/New_Polls_Folder/assets/images/star_rating.png"></span>
+								  </label>								
+								</div>
+
+		        		</div>
+						<div class="form-group custom-form-group text-right">
+							<button type="button" class="btn custom-btn qstn-add-btn ml-4 addOptionEdit">
+								<i class="fa fa-plus"></i>
+							</button>
+						</div>
+						<div class="panel-group collapse-Languages-panel mb-0 pollQuestionAnswerEditMode" id="accordion1">
+					<!--	    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol2" aria-expanded="flase">
+						        		<span>Arabic</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol2" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol3" aria-expanded="flase">
+						        		<span>Hindi</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol3" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div>
+						    <div class="panel panel-default">
+						      	<div class="panel-heading">
+						        	<a class="panel-heading-box" data-toggle="collapse" data-parent="#accordion1" href="#collapseol4" aria-expanded="flase">
+						        		<span>Kannada</span>
+						        		<i class="fa fa-chevron-down"></i>
+						        	</a>
+						      	</div>
+						      	<div id="collapseol4" class="panel-collapse collapse">
+						        	<div class="panel-body pb-0">
+						        		<div class="row">
+						        			<div class="col-xs-12">
+												<div class="form-group custom-form-group m-0">
+													<label>Question:</label>
+													<textarea class="form-control" rows="3" style="resize: none;"></textarea>
+												</div>
+												<div class="nq-table-panel">
+													<table class="table m-0">
+														<tbody>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">1.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">2.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+															<tr>
+																<td class="vertical-align-middle border-0"><label class="m-0">3.</label></td>
+																<td class="border-0 custom-form-group pr-0">
+																	<input type="text" class="form-control" placeholder="">
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+						        		</div>
+						        	</div>
+						      	</div>
+						    </div>  -->
+						</div> 
+			    	</div>
+				    <div class="modal-footer survey-modal-footer">
+				    	<button type="button" class="btn custom-btn mr-8 w-70" id="updateQuestionAnswer">Submit</button>
+						<button class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+				   	</div>
+			    </div>
+
+		  	</div>
+		</div>
+
+		<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+        <script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+
+
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/edb0de374a.js"></script>  -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+	           //$("#survey-Edit").modal('show');
+		    }); 
+		</script>
+	<!--	<script type="text/javascript">
+		    var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="assets/css/date-picker.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="assets/js/datepicker-jquery.min.js"><\/script>\n')
+		        document.write('<script src="assets/js/datepicker-jquery-ui.min.js"><\/script>\n') 
+		    }
+		</script>  
+		 
+		<script>
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+		    $(function($){ //on document.ready From
+		        $('#surveyStart').datepicker();
+		        $('#surveyEnd').datepicker();
+		        $('#surveyExpiry').datepicker();
+		    })
+		}
+		</script>  -->
+	</body>
+	
+</html>

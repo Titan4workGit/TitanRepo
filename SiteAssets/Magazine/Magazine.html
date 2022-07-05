@@ -1,0 +1,200 @@
+﻿
+<script src="../SiteAssets/Magazine/AddEditMagazine.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script type="text/javascript">
+
+var _validFileExtensions = [".jpg", ".jpeg", ".bmp", ".gif", ".png",".tif"];    
+function ValidateSingleInput(oInput) {
+    if (oInput.type == "file") {
+        var sFileName = oInput.value;
+         if (sFileName.length > 0) {
+            var blnValid = false;
+            for (var j = 0; j < _validFileExtensions.length; j++) {
+                var sCurExtension = _validFileExtensions[j];
+                if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                    blnValid = true;
+                    break;
+                }
+            }             
+            if (!blnValid) {
+                alert("Sorry, " + sFileName + " is invalid, Upload Image only.");
+                oInput.value = "";
+                return false;
+            }                      
+        }
+    }
+    return true;
+}
+function Checkfiles()
+{
+var fup = document.getElementById('file2');
+var fileName = fup.value;
+var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+if(ext == "pdf" )
+{
+return true;
+} 
+else
+{
+alert("Sorry, " + fileName + " is invalid, Upload magazine in pdf format.");
+fup.focus();
+fup.value = "";
+return false;
+}
+}
+
+
+
+$(document).ready(function() 
+{
+    $("#input1").datepicker();
+    /*$("#input2").click(function() 
+    {
+        if (!$.trim($("#input2").val())== null)
+         {
+        	alert("Title Field Cannot be Empty");        
+         }
+    });*/
+    $("#Reset").click(function ()
+	{
+	  ClearFields();
+	});
+
+    
+}); 
+
+/*$(function() 
+	{
+      $('#profile-image1').on('click', function() {
+        $('#profile-image-upload').click();
+      });
+    }); 
+*/
+function ClearFields()
+{	
+    // document.getElementById("input2").value = "";
+   //  document.getElementById("input1").value = "";
+   ///  document.getElementById("input").value = "";
+   //   document.getElementById("file1").value = "";
+   //    document.getElementById("file2").value = "";
+       window.location.href="../Pages/MagazineViewAll.aspx?WebAppId=23";
+            
+}	      
+</script>
+
+
+<style>
+input.hidden {
+	position: absolute;
+	left: -9999px;
+}
+#profile-image1 {
+	cursor: pointer;
+	width: 30%;
+	height: auto;
+}
+.emp_list_height {
+	min-height: 550px;
+}
+.blue-color {
+	color:#1d6ec0
+}
+.panel-title > a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+.short-full {
+    float: right;
+    color: #000;
+}
+
+.star{ color:#FF0000 !important}
+ @media (max-width:767px) {
+ .emp_list_height {
+  min-height: auto !important;
+}
+}
+</style>
+
+<!-- Main -->
+<div class="container">
+  <div class="col-md-12">
+    <div class="row top15">
+      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="panel panel-default shadow2 ">
+			<div class="panel-heading  panel-head-4">
+			    <div class="panel-title">
+			        <h4 class="h4-color" data-localize="AddMagazine">Add Magazine</h4>
+			    </div>
+			</div>
+              <div class="panel-body">
+                <div class="form-horizontal">
+                  <div class="form-group">
+                    <label for="label" class="col-sm-5 control-label" data-localize="Title">Title<span class="star">*</span> </label>
+                    <div class="col-sm-7">
+                      <input type="" class="form-control" id="input2"  placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-5 control-label" data-localize="PublishDate">Publish Date<span class="star">*</span></label>
+                    <div class="col-sm-7">
+                      <input type="" class="form-control" id="input1"  placeholder="" >
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="" class="col-sm-5 control-label" data-localize="Volume">Volume</label>
+                    <div class="col-sm-7">
+                      <input type="" class="form-control" id="input"  placeholder="" maxlenght = "50">
+                    </div>
+                  </div>
+                  <div class="form-group hideOnUpdate1">
+                    <label for="" class="col-sm-5 control-label" data-localize="CoverImage">Cover Image<span class="star">*</span></label>
+                    <div class="col-sm-7">
+                      <input name="filename" type="file" class="form-control" id="file1" accept="image/*" onchange="ValidateSingleInput(this)">
+                      <span style="color:red" data-localize="JpgJpegBmpGifPngTifOnly">Jpg,Jpeg, Bmp, Gif, Png, Tif Only</span><br>
+                      <span style="color:red" data-localize="RecommendedImageSizeColon184*210">Recommended Image Size:184 X 210 px</span>
+                    </div>
+                  </div>
+                  <div class="form-group  hideOnUpdate2">
+                    <label for="" class="col-sm-5 control-label" data-localize="Magazine">Magazine<span class="star">*</span></label>
+                    <div class="col-sm-7">
+                        <input name="filename" type="file" class="form-control" accept="application/pdf" id="file2" onchange="Checkfiles(this)" >
+                        <span style="color:red" data-localize="PdfOnly">PDF Only</span>
+                    </div>                    
+                  </div>   
+                  <div class="form-group" style="text-align: center;">
+                     <!--<label for="" class="col-sm-4 control-label"></label>-->                                                
+                        <a id="Submit" class="btn  btn-outline-success" data-localize="Submit">Submit</a>
+  						<a id="Reset" class="btn btn-outline-secondary" onClick="ClearFields()" data-localize="Cancel">Cancel</a>                                               
+                  </div>               
+                </div>
+              </div>
+              <!--/panel content-->
+            </div>
+          </div>
+        </div>
+      </div>           
+    </div>
+  </div>
+</div>
+<!-- /Main -->
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-50</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">2be7c207-b918-4671-b87c-040c56d20cba</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-50, ADMIN-1645029823-50</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">5000.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Adapt Intranet</title></head>

@@ -1,0 +1,945 @@
+﻿<link rel="stylesheet" href="../SiteAssets/dist/css/semantic-ui/tabulator_semantic-ui.min.css" rel="stylesheet">
+<script type="text/javascript" src="../SiteAssets/dist/js/tabulator.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/AdminPortal/ManageEmployee/assets/css/styles.css">	
+
+
+
+<style>
+
+/*
+#overlayq{
+  background: #ffffff;
+  color: #666666;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  padding-top: 25%;
+  opacity: .80;
+}
+button {
+  margin: 40px;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.spinner {
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    animation: rotate 0.8s infinite linear;
+    border: 5px solid firebrick;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+*/
+
+/*****june/16/21*************/
+
+.tabulator-tableHolder::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+ }
+ 
+.tabulator-tableHolder::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+    border-radius: 10px;
+}
+.tabulator-tableHolder::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #b5b5b5;
+    border-radius: 0px;
+}
+       
+.tabulator{
+ font-size:13px !important;	
+}
+
+.tabulator .tabulator-tableHolder .tabulator-placeholder span {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 0 15px !important;
+    color: #3e3e3e !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+}
+
+.searching{
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 2px;	
+}
+
+/*****june/16/21 end*************/
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.tabulator .tabulator-footer .tabulator-page {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 5px 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: hsla(0,0%,100%,.2);
+    min-width: auto !important;
+    font-size: 12px;
+    background: linear-gradient(to bottom,#fff,#ccc) !important;
+    background:-webkit-linear-gradient(to bottom,#fff,#ccc)!important;
+    background:-moz-linear-gradient(to bottom,#fff,#ccc)!important;
+    background:-o-linear-gradient(to bottom,#fff,#ccc)!important;
+    border: 1px solid #b7b7b7;
+    color: #313030;
+    box-shadow: inset 0px -1px 0px #999;
+}
+
+.tabulator .tabulator-footer .tabulator-page:disabled {
+    opacity: 1 !important;
+ 
+ }   
+ 
+.tabulator .tabulator-footer .tabulator-page:disabled:hover{
+	color:#000 !important;
+	border:1px solid #8a8a8a;
+}
+
+
+.flexing{
+ display:flex;
+ width:100%;
+display: -webkit-box;
+display: -moz-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+
+-webkit-flex-wrap;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-direction:row;
+
+-webkit-flex-wrap;
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap; 
+
+}
+
+.flexing .col-xs-1,
+.flexing .col-xs-2{
+
+ width:14.28%;	
+
+}
+.article-content{
+
+ margin:0 5px !important;	
+
+}
+
+.tabulator-paginator label{
+ font-size:11px;	 
+}
+
+@media(max-width:991px){
+
+.flexing .col-xs-1,
+.flexing .col-xs-2{
+
+ width:33%;
+ border:1px solid #e8e8e8;
+}
+	
+}
+
+
+@media(max-width:767px){
+
+.flexing .col-xs-1,
+.flexing .col-xs-2{
+
+ width:50%;
+ border:1px solid #e8e8e8;
+}
+.article-content{
+ margin:0 5px !important;	
+}	
+
+}
+
+@media(max-width:500px){
+
+.flexing .col-xs-1,
+.flexing .col-xs-2{
+
+ width:100%;
+
+}
+	
+}
+
+
+/*custom scroll*/
+.scrollbar-panel::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+#AssaginTomanager {
+    height: auto;
+    padding: 2.2px 12px;
+}
+#AssaginTomanager .sp-peoplepicker-topLevel {
+    position: relative;
+    left: -7px;
+}
+#AssaginTomanager .sp-peoplepicker-topLevel .sp-peoplepicker-editorInput {
+    margin-left: 5px !important;
+}
+#AssaginTomanager .sp-peoplepicker-topLevel, #AssaginTomanager .sp-peoplepicker-topLevel .sp-peoplepicker-editorInput  {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.start-synk-btn{
+ margin-top:0;	
+}
+div.ms-webpart-cell-vertical-inline-table{
+	display:block !important;	
+}
+.ms-webpart-chrome-vertical{	
+ 	display:block !important;	
+}
+.manage-employees-table{ 
+  overflow-x:auto;
+}
+
+.panel-head{
+   
+ padding:8px 0px;	
+	
+}
+
+button{
+
+  	margin:0 2.5px;
+	
+}
+
+.manage-employees-footer-btn-group{
+	
+ margin-top:0;	
+
+}
+
+.instructions-list ul,
+.instructions-list ul li{
+ 
+	list-style:disc !important;	
+	
+}
+.modal-header{
+ 
+ height:auto;	
+ background:#fff; 		    
+ border-bottom: 1px solid #e5e5e5;
+ padding:15px !important;
+
+ }
+
+button.close{
+
+ font-size: 20px;
+ font-weight: 900;	
+ color:#000;	
+
+}
+
+.modal-header button {
+    min-width: 1.1em !important;
+    min-height: 1.1rem !important;
+    padding: 2px
+    
+}
+.pr-15 {
+	padding-right: 15px; 
+}    
+.instructions-list ul li {
+    margin-bottom: 7px;
+    color: #333;
+}
+.modal-title{
+	color:#767676;	
+	font-size:15px;	
+}
+.manage-employees-inbox-istab {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#fileUpload {
+    height: 36px;
+}
+.tab-content .panel-head>h3 {
+    padding: 10px 15px 0px 15px;
+}
+.manage-employeesEdit-modal-md .modal-header .modal-title {
+    color: #000 !important;
+    padding-left: 4px;
+}
+.manage-employeesEdit-modal-md .modal-header button.close {
+    top: 15px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.start-synk-btn {
+	    font-size: 12.5px !important;
+	}
+	#fileUpload {
+	    height: 32px;
+	}
+}
+
+@media (min-width: 426px) and (max-width: 767px) {
+
+	#AssaginTomanager_TopSpan_InitialHelpText {
+	    white-space: nowrap;
+	    width: 100px;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	}
+	.manage-employee-mob-box .checkbox-inline:nth-child(15n+2) {
+	    margin-left: 0 !important;
+	}
+
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.manage-employees-inbox-istab {
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	}
+	.tab-content .panel-head>h3 {
+	    font-size: 20px;
+	    padding: 10px 15px 0px 15px;
+	}
+	.manage-employees-footer-btn-group button {
+	    font-size: 14px !important;
+	    margin: 0px 1px 0px 0px;
+	}
+	.user-sync-main-box-filters {
+	    overflow-x: auto;
+	}
+	.start-synk-btn {
+	    font-size: 14px !important;
+	}
+	.manage-employees-inbox-istab .form-group button {
+	    margin-left: -3px;
+	}
+
+}
+
+
+@media(max-width:495px){
+ .breakpoint{
+  display:block;
+  margin-bottom:5px;
+  clear:both; 
+} 
+.searching{
+ margin-left:10px;	
+}  
+
+}
+
+/***7/12/21****/
+
+#AssaginTomanager_TopSpan,
+#AssaginTomanager_TopSpan_EditorInput{
+ border:none !important;	
+}
+
+#AssaginTomanager_TopSpan{
+ padding:3px 10px 3px 0px !important;	
+}
+
+#AssaginTomanager_TopSpan_AutoFillDiv{
+	min-width:260px !important;
+}
+
+#AssaginTomanager{
+ padding:3.5px 12px !important;	
+}
+
+@media(max-width:991px){
+	
+#UploadExcel .modal-body.manage-employees-inbox-istab{
+	
+ display:block !important;	
+	
+}
+
+}
+
+</style>
+	
+	<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1592</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">036908bb-f533-4cbc-ad30-47c81875b73f</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1592, ADMIN-1645029823-1592</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head><body>
+		<div class="container">
+			<div class="row">			
+			
+				<div class="col-md-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									User Syncing by Import Excel
+	                            </h3>
+							</div>
+							
+							<div class="panel-body px-0 pt-8">
+							<div class="panel-head">
+							<div class="row m-0">
+								<div class="col-xs-12 col-sm-4"> 
+									<div class="form-group custom-form-group">
+										<input type="file" id="fileUpload" placeholder="Search" class="form-control sync-search">
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-8">
+									<div class="user-sync-main-box-filters scrollbar-panel">
+										<div class="manage-employees-inbox-istab">
+											<!-- <div class="col-sm-4 col-xs-4">	
+											</div> -->
+											<div class="pr-4">
+												<div class="form-group custom-form-group">
+													<button type="button" id="btnFilter" value="Filter" class="btn custom-btn start-synk-btn" style="display:none" data-toggle="modal" data-target="#filterModal">Filter</button>
+												</div>
+											</div>
+											<div class="pl-4 pr-4">
+												<div class="form-group custom-form-group">
+													<button type="button" class="btn custom-btn start-synk-btn" id="btnUploadExcel" data-toggle="modal" >Update</button>
+												</div>
+											</div>
+											<div class="pl-4 pr-4">
+												<div class="form-group custom-form-group">
+													<button type="button" class="btn custom-btn start-synk-btn" id="btnTemplate" data-toggle="modal" data-target="#Download-Template-modal">Template</button>
+												</div>
+											</div>
+											<div class="pl-4">
+												<div class="form-group custom-form-group">
+													<button type="button" class="btn custom-btn start-synk-btn" id="btnDownLoadReport">DownLoad Report</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+							</div>
+							
+							
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0">
+								<div id="overlayq" style="display:none;">
+								<div class="spinner"></div> <br/>
+								Loading...</div>
+									<div class="col-md-12">
+										<div class="row m-0 manage-employees-right-top-box flexing">
+											<div class="col-xs-1 manage-employees-right-time-box-one">
+												<div class="text-center" id="UploadedItems">
+													<h3 class="m-0" >0</h3>
+													<p class="m-0">Imported</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 color-green" id="Ready">0</h3>
+													<p class="m-0">Ready</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 color-green" id="added">0</h3>
+													<p class="m-0">Added</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 text-primary" id="Exits">0</h3>
+													<p class="m-0">Exists</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 color-green" id="lblUpdate">0</h3>
+													<p class="m-0">Update</p>
+												</div>
+											</div>
+											<div class="col-xs-1 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 color-red" id="Error">0</h3>
+													<p class="m-0">Error</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-three">
+												<div class="text-center">
+													<h3 class="m-0" id="AvilableLicenses" ></h3>
+													<p class="m-0">Avilable Licenses</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="row m-0">
+								
+									<div class="col-xs-12">
+									
+										<div class="table-responsive content">   
+										<input type="search" placeholder="Search here.." class="searching">
+										<div id="example-table"  ></div> 
+										    <table class="table mb-0 custom-table" id="test" style="display:none">
+											    <thead>
+											        <tr>
+														<th class="wpx-36">
+															<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</th>
+											        	<th class="text-center border-bottom-0 w-5">Update</th>
+											        	<th class="text-center border-bottom-0 w-5">Status</th>
+											        	<th class="text-left border-bottom-0">Type</th>
+											        	<th class="text-left border-bottom-0">Name</th>
+											        	<th class="text-left border-bottom-0">Email</th>
+												        <th class="text-left border-bottom-0">Company</th>
+												        <th class="text-center border-bottom-0 w-5">Department</th>
+												        <th class="text-left border-bottom-0">Location</th>
+												        <th class="text-center border-bottom-0">Designation</th>
+												        <th class="text-left border-bottom-0">Manager</th>
+												        <th class="text-center border-bottom-0">DOJ</th>
+												        <th class="text-left border-bottom-0">Group Name</th>
+											        </tr>
+											    </thead>
+											    <tbody id="exceltble">
+											        <tr class="text-center">
+														<td>
+											        		<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</td>
+														<td>-</td>
+														<td>Ready</td>
+												        <td>
+												        	<div class="manage-employees-table-ellipsis-2 text-left">
+												        		Dipankar Goswami
+												        	</div>
+												        </td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">ggg@adapt.com</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">Titan</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+												        <td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Gurgaon</div>
+														</td>
+														<td>
+															PM
+														</td>
+														<td>
+															aman@gmail.com
+														</td>
+														<td>
+															1/1/2020
+														</td>
+														<td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Night</div>
+														</td>
+													</tr>
+													<tr class="text-center">
+														<td>
+											        		<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</td>
+														<td>-</td>
+														<td class="color-red">Error</td>
+												        <td>
+												        	<div class="manage-employees-table-ellipsis-2 text-left color-red">
+												        		Invalid Profile
+												        	</div>
+												        </td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">ggg@adapt.com</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">Titan</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+												        <td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Gurgaon</div>
+														</td>
+														<td>
+															PM
+														</td>
+														<td>
+															aman@gmail.com
+														</td>
+														<td>
+															1/1/2020
+														</td>
+														<td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Night</div>
+														</td>
+													</tr>
+													<tr class="text-center">
+														<td>
+											        		<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</td>
+														<td>-</td>
+														<td>Ready</td>
+												        <td>
+												        	<div class="manage-employees-table-ellipsis-2 text-left">
+												        		Atul Dev
+												        	</div>
+												        </td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">ggg@adapt.com</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">Titan</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+												        <td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Gurgaon</div>
+														</td>
+														<td>
+															PM
+														</td>
+														<td>
+															aman@gmail.com
+														</td>
+														<td>
+															1/1/2020
+														</td>
+														<td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Night</div>
+														</td>
+													</tr>
+													<tr class="text-center">
+														<td>
+											        		<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</td>
+														<td>-</td>
+														<td class="color-red">Error</td>
+												        <td>
+												        	<div class="manage-employees-table-ellipsis-2 text-left color-red">
+												        		Required Value Missing
+												        	</div>
+												        </td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">ggg@adapt.com</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">Titan</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+												        <td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Gurgaon</div>
+														</td>
+														<td>
+															PM
+														</td>
+														<td>
+															aman@gmail.com
+														</td>
+														<td>
+															1/1/2020
+														</td>
+														<td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Night</div>
+														</td>
+													</tr>
+													<tr class="text-center">
+														<td>
+											        		<div class="checkbox m-0">
+															    <label><input type="checkbox" value=""></label>
+															</div>
+														</td>
+														<td>-</td>
+														<td class="color-red">Error</td>
+												        <td>
+												        	<div class="manage-employees-table-ellipsis-2 text-left color-red">
+												        		Already Exist
+												        	</div>
+												        </td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">ggg@adapt.com</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2 text-left">Titan</div></td>
+												        <td><div class="manage-employees-table-ellipsis-2">IT</div></td>
+												        <td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Gurgaon</div>
+														</td>
+														<td>
+															PM
+														</td>
+														<td>
+															aman@gmail.com
+														</td>
+														<td>
+															1/1/2020
+														</td>
+														<td>
+															<div class="manage-employees-table-ellipsis-2 text-left">Night</div>
+														</td>
+													</tr>
+											    </tbody>
+										    </table>
+										</div>
+									</div>
+									<div class="col-xs-12 text-center manage-employees-footer-btn-group">
+										<button type="button" id="btnsubmitready" class="btn custom-btn mr-8 w-87">Submit</button>
+										<button type="button" class="btn custom-btn-two-cancel w-87">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+ 
+		<!-- manage-employees Date Modal -->
+		<div class="modal fade" id="UploadExcel" role="dialog">
+			<div class="modal-dialog modal-md manage-employeesEdit-modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      <h4 class="modal-title">Update</h4>
+				    </div>
+				    <div class="modal-body manage-employees-inbox-istab">
+						<div class="row">
+							<div class="col-xs-12 type-set-one toHide">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label for="">Company:</label>
+											<select id="ddlAllCompanies" class="form-control">
+												<option>Current company and freezed</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="form-check-input" id="chkDepartment" value="">Department:</label>
+											<select class="form-control" id="ddlDepartment">
+												<option>All</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="form-check-input" id="chkOfficeLocation" value="">Office Location:</label>
+											<select class="form-control" id="ddlOfficeLocation">
+												<option>All</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="form-check-input"  id="chkDesignation" value="">Designation:</label>
+											<input class="form-control" type="text" name="" id="txtDesignation" placeholder="Designation">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee manage-employee-mob-box">
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="form-check-input" id="chkManager" onchange="chkManagerevent(this)" value="" >Manager</label>
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" class="form-check-input" value="" onchange="chkTopExecutiveevent(this)" id="chkTopExecutive">Top Executive</label>
+											<!--<input type="text" class="form-control" id="txtmanager" placeholder="Enter names or email address..."> -->
+											<div class="form-control" id="AssaginTomanager"></div>
+
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5"><input type="checkbox" value="" class="form-check-input" id="chkGroup">Group:</label>
+											<input type="text" class="form-control" id="txtGroup" placeholder="Group">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer manage-employees-modal-footer">
+				    	<button type="button" class="btn custom-btn mr-8 w-87" id="btnmissingrequedvalue" >Update</button>
+						<button type="button" class="btn custom-btn-two-cancel w-87"  data-dismiss="modal">Close</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="modal fade" id="filterModal" role="dialog">
+			<div class="modal-dialog modal-md manage-employeesEdit-modal-md">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body manage-employees-inbox-istab">
+						<div class="row">
+							<div class="col-xs-12 type-set-one toHide">
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label for="">Company:</label>
+											<select id="ddlfilterAllCompanies" class="form-control">
+												
+											</select>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5">Department:</label>
+											<select class="form-control" id="ddlfilterDepartments">
+												
+											</select>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5">Office Location:</label>
+											<select class="form-control" id="ddlfilterOfficeLocation">
+												
+											</select>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5">Designation:</label>
+											<input class="form-control" type="text" name="" id="txtfilterDesignation" placeholder="Designation">
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee manage-employee-mob-box">
+											<label class="checkbox-inline b-700 mb-5">Manager</label>
+											
+											<!--<input type="text" class="form-control" id="txtmanager" placeholder="Enter names or email address..."> -->
+											<div class="form-control" id="AssaginfilterTomanager"></div>
+
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group custom-form-group-manage-employee">
+											<label class="checkbox-inline b-700 mb-5">Group:</label>
+											<input type="text" class="form-control" id="txtfilterGroup" placeholder="Group">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer manage-employees-modal-footer">
+				    	<button type="button" class="btn custom-btn mr-8 w-87" id="btnfiltervalue" >Apply</button>
+						<button type="button" class="btn custom-btn-two-cancel w-87"  data-dismiss="modal">Close</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		<div class="modal fade" id="Download-Template-modal" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round mt-10" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      	<div class="header-logo">
+					      	<div class="excel-logo-box">
+								<img class="excel-image-fluid" src="../SiteAssets/AdminPortal/ManageEmployee/assets/images/excel-logo.png" alt="excel logo">
+							</div>
+					      	<h4 class="modal-title">Instructions</h4>
+				      	</div>
+				    </div>
+				    <div class="modal-body manage-employees-inbox-istab">
+						<div class="row excel-box-align">
+							<div class="col-md-12 instructions-list">
+								<ul class="scrollbar-panel">
+									<li>The file must be Excel Workbook (*.xlsx) or Excel 97-2003 Workbook (*.xls)</li>
+									<li>File must content raw data without any formatting, grouping of columns/rows or additional sheet.</li>
+									<li> The first row is a header line. System will skip this header line to import process.</li>
+									<li> The data must be in given sequence, not allowed to misplaced any column.</li>
+									<li>The maximum limit of rows in one Excel file is 5000.</li>
+									<li>The * marked columns are mandatory.</li>
+									<li>Company, Department and Office Location, must be ID not the Name or title.</li>
+									<li>Collect those IDs form Admin Panel corresponding section like Manage Company, Manage Department, Manage Location.</li>
+									<li>Users, Managers are identified by email address of their O365 AD profiles.</li>
+									<li>If Manager information is missing then that user treated as ‘Top Management’.</li>
+									<li>The date format of DOJ (Date of Joining), DOB (Date of Birth) and Anniversary must be MM/DD/YYYY.</li>
+									<li>Define properly users-type (Internal or external). All external user must be pre-invited in the tenant and available in O365 profile.</li>
+									<li>Char limit for Designation, Group Name, Mobile, City, State, PIN, Email, Country are 250.</li>
+									<li>Char limit of current and permanent address are 500.</li>
+									<li>All data must be in English.</li>
+								</ul>
+								<div class="click-here">
+									<a href="../SiteAssets/AdminPortal/ManageEmployee/assets/excel/EmployeeSyncTemplate.xlsx" download >Click here</a> to download the sample Excel file
+								</div>
+							</div>
+						</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+   
+
+    <script type="text/javascript" src="../SiteAssets/AdminPortal/ManageEmployee/xlsx/xlsx.full.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/AdminPortal/ManageEmployee/xlsx/jszip.js"></script>
+    <script type="text/javascript" src="../SiteAssets/AdminPortal/ManageEmployee/upload-excel-and-sync.js"></script>
+
+
+    <div id="dvExcel" style="width:100%">
+    </div>
+
+
+
+	</body>

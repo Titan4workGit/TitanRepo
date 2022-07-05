@@ -1,0 +1,361 @@
+﻿<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script type="text/javascript">
+
+var clientContext='';
+$(document).ready(function () {
+	var welcomePageCalled=titanForWork.getQueryStringParameter('WelcomePageCalled');
+	
+	if(welcomePageCalled!=undefined)
+	{
+		GetPolls();	
+	}
+}); 
+
+//function GetPolls(siteURL)
+function GetPolls()
+{
+	var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+	
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var viewXml = {
+    		//ViewXml: "<View><Query><Where><And><Geq><FieldRef Name='PollsExpireDate' /><Value Type='DateTime'><Today/></Value></Geq><Eq><FieldRef Name='Status' /><Value Type='Option'>Active</Value></Eq></And></Where><OrderBy><FieldRef Name='ID' Ascending='False'/></OrderBy></Query><RowLimit>2</RowLimit></View>"
+    		
+    		ViewXml: "<View><Query><Where><And><And><Geq><FieldRef Name='PollsExpireDate' /><Value Type='DateTime'><Today/></Value></Geq><Eq><FieldRef Name='Status' /><Value Type='Option'>Active</Value></Eq></And><Leq><FieldRef Name='PollsStartDate' /><Value Type='DateTime'><Today/></Value></Leq></And></Where><OrderBy><FieldRef Name='ID' Ascending='False'/></OrderBy></Query><RowLimit>2</RowLimit></View>"
+	}
+	var requestUri =siteURL + "/_api/lists/getbytitle('MainPollsList')/GetItems(query=@v1)?" +
+        "@v1=" + JSON.stringify(viewXml); 
+    $.ajax({
+            url: requestUri,
+            type: "POST",
+			async: false,
+            headers: { "ACCEPT": "application/json;odata=verbose",
+						"X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+					 },
+					 
+            success: function (data) {
+					var items=data.d.results;
+				//alert("hi")
+					var ItemCount=items.length;
+					if(ItemCount==0)
+					{
+						var viewPolls='';
+						viewPolls="<div class=\"norecordfound col-sm-8 col-xs-8 col-md-8\">";
+				        //viewPolls+="<h3 data-localize='NoRecord_Polls' class=\"top5\"></h3>";
+				        viewPolls+="<h3 class=\"top5\" data-localize='NoRecord_Polls'></h3>";
+				        viewPolls+="</div>";
+				
+						$("#divViewPolls").append(viewPolls);
+						return;
+					}
+
+					var preferredLanguage;
+					if($.cookie.length>0 && $.cookie("Language")!=undefined)
+					{	
+					 	preferredLanguage=$.cookie("Language").split('#')[0];	// Index : [0]  => e.g. Language3rd     [1] e.g. Hindi;
+					 	if(preferredLanguage=='DefaultLanguage')
+						 	preferredLanguage='Title';
+					}
+					else
+					{
+						preferredLanguage='Title';
+					}
+					
+                	for(i = 0; i < items.length;i++) {
+                	
+                	
+                	
+                	var PollShared =items[i]["PollShared"];
+                    var PollSharedId=items[i]["PollSharedId"];
+                    console.log(PollShared+"     "+PollSharedId);
+                    var isValidFlag=false;
+                	if(PollShared=="Company" || PollShared==null)
+                	{
+                	    isValidFlag=true;  
+                	}
+                	else if(PollShared=="Department")
+                	{
+                	   isValidFlag=GetMyDepartment(PollSharedId);
+                	}
+                    else if(PollShared=="Group")
+                	{
+                	 isValidFlag=GetMyGroups(PollSharedId);
+                	}
+                	
+                	
+
+					if(isValidFlag==true)
+					                	{
+						                	var pollsTitle= items[i][preferredLanguage];//oListItem.get_item('Title');
+											if(pollsTitle!=null && pollsTitle.length > 48)
+											{					
+												pollsTitle = pollsTitle.substring(0,45);
+												pollsTitle +='...';
+											}
+											
+											var ItemID=items[i]["ID"]//oListItem.get_item('ID');
+											var pollsStartDate=new Date(items[i]["PollsStartDate"]);
+											
+											var StartDate= $.datepicker.formatDate('dd-M-yy', pollsStartDate);
+											var pollsEndDate=new Date(items[i]["PollsEndDate"]);
+											var EndDate= $.datepicker.formatDate('dd-M-yy', pollsEndDate);
+											
+											var PollsExpireDate=new Date(items[i]["PollsExpireDate"]);
+											
+											var createdBy=items[i].AuthorId;
+											var pollscreatedBy=  getUserName(createdBy);
+											var url = _spPageContextInfo.webServerRelativeUrl;
+											var participatePage= "'"+url+"/Pages/PraticipatePolls.aspx?WebAppId="+txtCompanyId+"&PollId="+ItemID+"&IsParticipate=False'";
+											
+											var PollStatus=items[i]["Status"]
+												if(PollStatus=="Active")
+												{
+													getPollsResults(siteURL,ItemID,pollsTitle,pollscreatedBy,StartDate,EndDate,participatePage,i,pollsEndDate);
+												}
+										  }
+
+				
+                	
+                	
+						
+					} 
+            },
+            error: function () {
+                console.log("Error getting the View Polls.");
+            }                     
+        });
+}
+
+function GetMyGroups(groupid) {
+    var groupmember = false;
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('DocumentSharedGroups')/items?$select=ID,SharedUsers/ID,SharedUsers/Title,SharedUsers/UserName,LogonUser/ID,LogonUser/Title,LogonUser/UserName,SharingLevel&$expand=SharedUsers,LogonUser&$orderby=ID asc&$filter=SharedUsers/ID eq '" + _spPageContextInfo.userId + "' and ID eq '" + groupid + "'";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var response = data;
+            if (response.d.results.length > 0)
+            {
+                groupmember = true;
+              
+            }
+           
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+    
+    return groupmember;
+}
+
+
+function GetMyDepartment(PollSharedId) {
+    var companyID = titanForWork.getQueryStringParameter("CompanyId");
+    var departmentId = false;
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items?$top=1&$select=DepartmentId,FullName,LogonName/ID,Department/DepartmentName&$expand=LogonName,Department&$filter=LogonName/ID eq " + _spPageContextInfo.userId + " and Company/ID eq " + companyID + "",
+        method: "GET",
+        async: false,
+        headers: {
+            "Accept": "application/json; odata=verbose"
+        },
+        success: function (data) {
+            var Data = data.d.results
+            if (Data.length > 0)
+            {
+
+                var DepartmentId = Data[0].DepartmentId;
+                if(DepartmentId != null)
+                {
+                  if(PollSharedId==DepartmentId)
+                  {
+                    departmentId = true;
+                  }
+                }
+
+            }
+        },
+        error: function (err) {
+            console.log("Error");
+        }
+    });
+    return departmentId
+}
+
+
+
+function getUserName(createdBy)
+{	var items='';
+	siteURL = _spPageContextInfo.webAbsoluteUrl +"/_api/web/getuserbyid("+createdBy+")";// "/_vti_bin/ListData.svc/UserInformationList("+createdBy+")";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            items = data.d.Title;
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+	return items;
+}
+
+
+function getPollsResults(siteURL,ItemID,pollsTitle,pollscreatedBy,StartDate,EndDate,participatePage,i,pollsEndDate){
+	var url = _spPageContextInfo.webServerRelativeUrl;
+
+	var today=new Date();
+	today= $.datepicker.formatDate('mm-dd-yy', today);
+	pollsEndDate= $.datepicker.formatDate('mm-dd-yy', pollsEndDate);
+
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = siteURL + "/_api/web/lists/getbytitle('PollsResults')/items?$select=*&$filter=PollsId eq '" + ItemID + "' and AuthorId eq '"+_spPageContextInfo.userId+"'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+			var PollsHTML='';
+            var items = data.d.results;
+            if (items.length>0)
+            {
+				
+				if(today<=pollsEndDate)
+				{
+					var viewReaultPage= "'"+url+"/Pages/PraticipatePolls.aspx?WebAppId="+txtCompanyId+"&PollId="+ItemID+"&IsParticipate=True'";
+				}
+				else
+				{
+					var viewReaultPage= "'"+url+"/Pages/ViewPollsResults.aspx?WebAppId="+txtCompanyId+"&PollId="+ItemID+"&IsParticipate=True'";
+				}
+				if(i==0)
+				{
+					PollsHTML +='<div class="row mb-25">';
+					PollsHTML +='<div class="col-md-12">';
+					PollsHTML +='<h4 class="event-text-head-new bottom7"><span>'+pollsTitle+'</span></h4>';
+					PollsHTML +='</div>';
+					PollsHTML +='<div class="col-sm-12 ">'+pollscreatedBy+' </div>';
+					PollsHTML +='<div class="col-sm-8 col-xs-6 text-3"><span data-localize="StartDate">Start Date</span>'+StartDate+'</div>';
+					PollsHTML +='<div class="col-sm-4 col-xs-6 text-3"><span data-localize="EndDate">End Date</span>'+EndDate+'</div>';
+					if(today<=pollsEndDate)
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div mrgn-tp4"><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="Participated">Participated</span></button></div>';
+					}
+					else
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div mrgn-tp4 "><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="ViewResults">View Results</span></button></div>';						
+					}
+					PollsHTML +='</div>';
+				}
+				else
+				{
+					PollsHTML +='<div class="row mrgn-tp10">';
+					PollsHTML +='<div class="col-md-12">';
+					PollsHTML +='<h4 class="event-text-head-new bottom7"><span>'+pollsTitle+'</span></h4>';
+					PollsHTML +='</div>';
+					PollsHTML +='<div class="col-sm-12 ">'+pollscreatedBy+' </div>';
+					PollsHTML +='<div class="col-sm-8 col-xs-6 text-3"><span data-localize="StartDate">Start Date</span>'+StartDate+'</div>';
+					PollsHTML +='<div class="col-sm-4 col-xs-6 text-3"><span data-localize="EndDate">End Date</span>'+EndDate+'</div>';
+					if(today<=pollsEndDate)
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div margin10"><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="Participated">Participated</span></button></div>';						
+					}
+					else
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div mrgn-tp4 "><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="ViewResults">View Results</span></button></div>';
+					}
+					//PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div margin10"><button type="button" class="btn btn-default btn-sm" style="border: 1px solid #7B7A7A;" onclick="location.href='+viewReaultPage+'">View Results</button></div>';
+					PollsHTML +='</div>';
+				}
+            }
+			else
+			{
+				if(today<=pollsEndDate)
+				{
+					var viewReaultPage= "'"+url+"/Pages/PraticipatePolls.aspx?WebAppId="+txtCompanyId+"&PollId="+ItemID+"&IsParticipate=True'";
+				}
+				else
+				{
+					var viewReaultPage= "'"+url+"/Pages/ViewPollsResults.aspx?WebAppId="+txtCompanyId+"&PollId="+ItemID+"&IsParticipate=True'";
+				}
+				
+				if(i==0)
+				{
+					PollsHTML +='<div class="row mb-25">';
+					PollsHTML +='<div class="col-md-12">';
+					PollsHTML +='<h4 class="event-text-head-new bottom7"><span>'+pollsTitle+'</span></h4>';
+					PollsHTML +='</div>';
+					PollsHTML +='<div class="col-sm-12 ">'+pollscreatedBy+' </div>';
+					PollsHTML +='<div class="col-sm-8 col-xs-6 text-3"><span data-localize="StartDate">Start Date</span>'+StartDate+'</div>';
+					PollsHTML +='<div class="col-sm-4 col-xs-6 text-3"><span data-localize="EndDate">End Date</span>'+EndDate+'</div>';
+					if(today<=pollsEndDate)
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div margin10"><button type="button" class="fnt-bld-600 btn btn-default btn-sm"  onclick="location.href='+participatePage+'"><span data-localize="Participate">Participate</span></button></div>';
+					}
+					else
+					{
+						//PollsHTML +='<div class="col-sm-6 col-xs-6 margin10 ">Participation Date Expired</div>';						
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div mrgn-tp4 "><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="ViewResults">View Results</span></button></div>';
+					}
+					PollsHTML +='</div>';
+				}
+				else
+				{
+					PollsHTML +='<div class="row mrgn-tp10">';
+					PollsHTML +='<div class="col-md-12">';
+					PollsHTML +='<h4 class="event-text-head-new bottom7"><span>'+pollsTitle+'</span></h4>';
+					PollsHTML +='</div>';
+					PollsHTML +='<div class="col-sm-12 ">'+pollscreatedBy+' </div>';
+					PollsHTML +='<div class="col-sm-8 col-xs-6 text-3"><span data-localize="StartDate">Start Date</span>'+StartDate+'</div>';
+					PollsHTML +='<div class="col-sm-4 col-xs-6 text-3"><span data-localize="EndDate">End Date</span>'+EndDate+'</div>';
+					if(today<=pollsEndDate)
+					{
+						PollsHTML +='<div class="col-sm-6 col-xs-6 poll-button-div margin10 "><button type="button" class="fnt-bld-600 btn btn-default btn-sm"  onclick="location.href='+participatePage+'"><span data-localize="Participate">Participate</span></button></div>';
+					}
+					else
+					{
+						//PollsHTML +='<div class="col-sm-6 col-xs-6 margin10 ">Participation Date Expired</div>';
+						PollsHTML +='<div class="col-sm-6 col-xs-6 mrgn-tp4 poll-button-div"><button type="button" class="btn btn-default btn-sm"  onclick="location.href='+viewReaultPage+'"><span data-localize="ViewResults">View Results</span></button></div>';
+					}
+					PollsHTML +='</div>';
+				}
+			}
+			$("#divViewPolls").append(PollsHTML);
+           
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+
+
+
+
+</script>
+
+<div id="divViewPolls">
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-389</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b770fb15-85df-4701-9e78-8217bb8c2ef2</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-389, ADMIN-1645029823-389</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Dipankar Goswami</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">38900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

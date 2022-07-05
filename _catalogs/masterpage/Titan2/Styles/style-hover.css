@@ -1,0 +1,33 @@
+﻿.panel{border-radius:0px; background-color:none; }
+.panel-bg{ background:none !important; border:none !important;}
+
+.bg-none{background:none !important; border:none !important;}
+.text-2{ font-size:15px; font-weight:normal; color:#FFF; text-align:center !important; padding-top:0px; }
+
+.img-hover img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all 1s ease;
+}
+.img-hover img:hover {
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.10); /* Opera */
+    transform:translatZ(1.1) scale(1.1);
+	
+	/*border-color: #1e7fb8;
+  box-shadow: 0 0 25px #1e7fb8;*/
+  border-color: #000;
+  box-shadow: 0 0 25px #000;
+}
+
+.pad-top-bot {padding: 10px 0 10px 0;}
+
+.marginTop3{ margin-top:19px !important;}
+.minHeightmain {min-height:160px;

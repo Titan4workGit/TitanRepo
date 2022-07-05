@@ -1,0 +1,1472 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script type="text/JavaScript" src="../SiteAssets/MicrosoftAjax.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>	
+<script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+<script type="text/javascript" src="../SiteAssets/Projects/SearchableDDL/select2.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../SiteAssets/Projects/SearchableDDL/select2.min.css">
+
+
+	
+	<style type="text/css">
+		  
+	.redMark{
+		color:red;
+	}
+	a {
+	  color: #fff;
+	}
+
+	.dropdown dd { 
+	 position: relative; 
+	 } 
+
+	.dropdown a,
+	.dropdown a:visited {
+	  color: #0c0c0c;
+	  text-decoration: none;
+	  outline: none;
+	//  font-size: 12px;
+	}
+
+	.dropdown dt a { 
+		display: block;
+		padding: 8px 20px 5px 10px;
+		min-height: 15px;
+		line-height: 10px;
+		overflow: hidden;
+		border: 0;
+	 } 
+
+	.dropdown dt a span, 
+	 .multiSel span { 
+	 cursor: pointer; 
+	 display: inline-block; 
+	  padding: 0 3px 2px 0; 
+	 } 
+
+	.dropdown dd ul { 
+	 background-color: #dde8ef; 
+	 color: #0e0e0e; 
+	 border: 0; 
+	 display: none; 
+	 left: 0px; 
+	 padding: 2px 15px 2px 5px; 
+	 position: absolute; 
+	 top: 2px; 
+	 width: 280px; 
+	 list-style: none;
+	 height: 100px; 
+	 overflow: auto; 
+	 } 
+
+	.dropdown span.value {
+	  display: none;
+	}
+
+	.dropdown dd ul li a {
+	  padding: 5px;
+	  display: block;
+	}
+
+	.dropdown dd ul li a:hover {
+	  background-color: #fff;
+	}
+	.control-label{
+		text-align:left !important;
+	}
+	</style>
+	
+	<script type="text/javascript">  
+	
+	var clientContext='';
+	var oNewWebsite='';
+	var departmentID='';
+	var companyID='';
+	var siteURLProjects='';
+	var siteUrl='';
+	var siteclientContext='';
+	var projectInternalName="";
+		stackToUsers="";
+	sponsorToUsers="";
+	alluser="";
+    projecttouser="";
+    var IsProjectAdmin = false;
+	$(document).ready(function () {
+	
+	$.when(getProjectRights()).done(function(isProjectAdmin){
+	if(isProjectAdmin)
+		{
+		SP.SOD.executeOrDelayUntilScriptLoaded(Initialization_ProjectSite,"sp.js"); 
+		}
+		else
+		{
+		   alert("Unauthorized access!");
+            			window.location.href = "../Pages/Default.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"";
+		
+		}
+		});
+		
+	});
+	
+	
+	/////////////////////////////////////////////////////////////////////////////////////////
+	$(document).ready(function () {
+
+	companyID=titanForWork.getQueryStringParameter('CompanyId');
+	
+			$(".dropdown dt a").on('click', function() {
+			  $(".dropdown dd ul").slideToggle('fast');
+			});
+
+			$(".dropdown dd ul li a").on('click', function() {
+			  $(".dropdown dd ul").hide();
+			});
+
+			function getSelectedValue(id) {
+			  return $("#" + id).find("dt a span.value").html();
+			}
+
+			$(document).bind('click', function(e) {
+			  var $clicked = $(e.target);
+			  if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+			});
+			
+			//$(".txtPlannedStartDate").prop("readonly",true);
+			//$(".txtPlannedEndDate").prop("readonly",true);
+			//$(".txtActualStartDate").prop("readonly",true);
+			$('#ProjectStatus').attr('disabled',true);
+			$('.ActualEndDate').hide();
+			
+			
+			$('.txtPlannedStartDate').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				yearRange: "-50:+50"
+			});
+			$('.txtPlannedStartDate').datepicker("option", "dateFormat", "dd/mm/yy");
+			
+			$('.txtPlannedEndDate').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				yearRange: "-50:+50"
+			});
+			$('.txtPlannedEndDate').datepicker("option", "dateFormat", "dd/mm/yy");
+			
+			$('.txtActualStartDate').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				yearRange: "-50:+50"
+			});
+			$('.txtActualStartDate').datepicker("option", "dateFormat", "dd/mm/yy");
+			
+			$('.txtActualEndDate').datepicker({
+				changeMonth: true,
+				changeYear: true,
+				yearRange: "-50:+50"
+			});
+			$('.txtActualEndDate').datepicker("option", "dateFormat", "dd/mm/yy");
+			
+			
+			
+			//////// Validate Duplicate Project Code and Project Name
+			$('#txtProjectName').blur(function () 
+			{
+				var ProjectName =$('#txtProjectName').val();
+				if ($.trim($('#txtProjectName').val()) != "") 
+				{
+				    CheckProjectCodeExistOrNot("True",ProjectName);
+				}
+			});
+			
+			$('#txtProjectCode').blur(function () 
+			{
+				var ProjectCode = $('#txtProjectCode').val();
+				if ($.trim($('#txtProjectCode').val()) != "") 
+				{
+				    CheckProjectCodeExistOrNot("False",ProjectCode);
+				}
+			});
+			
+			var specialKeys = new Array();
+			specialKeys.push(8); //Backspace
+			specialKeys.push(9); //Tab
+			specialKeys.push(46); //Delete
+			specialKeys.push(36); //Home
+			specialKeys.push(35); //End
+			specialKeys.push(37); //Left
+			specialKeys.push(39); //Right
+			specialKeys.push(32); //Space
+			 $( "#txtProjectName" ).keypress(function(e) {
+			 		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+					var ret = ((keyCode==45 || keyCode==38 || keyCode==95) || (keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode) || e.keyCode==32);
+					return ret;
+			});
+	});
+	
+	function getmultiselctValue(){
+		$('.mutliSelect input[type="checkbox"]').on('click', function() {
+
+		  var title = $(this).closest('.mutliSelect').find('input[type="checkbox"]').val(),
+			title = $(this).val() + ",";
+
+		  if ($(this).is(':checked')) {
+			var html = '<span title="' + title + '">' + title + '</span>';
+			$('.multiSel').append(html);
+			$(".hida").hide();
+			
+		  } else {
+			$('span[title="' + title + '"]').remove();
+			var ret = $(".hida");
+			$('.dropdown dt a').append(ret);
+
+		  }
+		});
+        
+        
+
+	}
+	
+	
+	/////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	function Initialization_ProjectSite()
+	{
+	InitializePeoplePicker("SponsorTeamEmployeePicker", true);
+	InitializePeoplePicker("StackeholderTeamEmployeePicker", true);
+		//clientContext = new SP.ClientContext.get_current();
+		departmentID=titanForWork.getQueryStringParameter('DepartmentId');
+		companyID=titanForWork.getQueryStringParameter('CompanyId');
+
+		/*if(companyID>0 && departmentID>0)
+		{   
+			getCurrentURL_EventCreateProjectSite('Departments',departmentID);
+		}
+		else if(companyID>0 && departmentID!='undefined')*/
+		if(companyID>0)
+		{
+			getCurrentURL_EventCreateProjectSite('Companies',companyID);
+		}
+		
+		$("#cancelNewProject").click(function(){
+			RedirectToListViewPage();
+		});
+	}
+
+	function getCurrentURL_EventCreateProjectSite(listName, ItemId)
+	{
+	// var listName='Companies';
+	// var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURLProjects = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + ItemId + "'";
+    $.ajax({
+        url: siteURLProjects,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+				siteURL=items[0].SiteURL;
+				siteclientContext=new SP.ClientContext(siteURL);
+				
+                siteURLProjects = items[0].SiteURL;
+				siteURLProjects=siteURLProjects+"/DMS";
+				clientContext = new SP.ClientContext(siteURLProjects);
+				getConsultantDetails(siteclientContext);
+				GetEmployee();
+				officeLocation();
+				getClientMaster();
+				getDepartment();				
+    	    }
+           
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+	}
+	
+
+function getDepartment()  
+{   
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var clientContext= new SP.ClientContext();
+	var oList = clientContext.get_web().get_lists().getByTitle('Departments');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><Eq><FieldRef Name='CompanyID' /><Value Type='Lookup'>"+txtCompanyId+"</Value></Eq></Where><OrderBy><FieldRef Name='Title'/></OrderBy></Query></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var listItemEnumerator = collListItem.getEnumerator();
+		var counter=1;
+		var departmentHTML='<select name="officeLocation" id="departmentDetails" class="form-control">';
+		departmentHTML +='<option value="0">-Select-</option>';
+		while (listItemEnumerator.moveNext()) 
+			{
+				var oListItem = listItemEnumerator.get_current();
+				var departmentID=oListItem.get_item('ID');
+				var departmentTitle=oListItem.get_item('Title');
+				departmentHTML +='<option value="'+departmentID+'">'+departmentTitle+'</option>';
+				counter++;
+			}
+			departmentHTML +='</select>';
+			$("#departmentDiv").append(departmentHTML);
+	}, 
+		
+	function(){
+		console.log('error : Project Details web part');
+	}); 
+}
+
+function officeLocation()  
+{   
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var clientContext= new SP.ClientContext();
+	var oList = clientContext.get_web().get_lists().getByTitle('OfficeLocation');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><And><Eq><FieldRef Name='CompanyID' /><Value Type='Lookup'>"+txtCompanyId+"</Value></Eq><Eq><FieldRef Name='OfficeLocationId' /><Value Type='Text'>0</Value></Eq></And></Where><OrderBy><FieldRef Name='OfficeName'/></OrderBy></Query></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var listItemEnumerator = collListItem.getEnumerator();
+		var counter=1;
+		var officeLocationHTML='<select name="officeLocation" id="officeLocationDetails" class="form-control">';
+		officeLocationHTML +='<option value="0">-Select-</option>';
+		while (listItemEnumerator.moveNext()) 
+			{
+				var oListItem = listItemEnumerator.get_current();
+				var officeLocationID=oListItem.get_item('ID');
+				var officeLocationTitle=oListItem.get_item('OfficeName');
+				officeLocationHTML +='<option value="'+officeLocationID+'">'+officeLocationTitle+'</option>';
+				counter++;
+			}
+			officeLocationHTML +='</select>';
+			$("#officeLocation").append(officeLocationHTML);
+	}, 
+		
+	function(){
+		console.log('error : Project Details web part');
+	}); 
+}
+
+function GetEmployee()  
+{   
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var clientContext= new SP.ClientContext();
+	var oList = clientContext.get_web().get_lists().getByTitle('Employees');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><Eq><FieldRef Name='Company_x003a_ID' /><Value Type='Lookup'>"+txtCompanyId+"</Value></Eq></Where><OrderBy><FieldRef Name='FullName'/></OrderBy></Query></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		var listItemEnumerator = collListItem.getEnumerator();
+		var counter=1;
+		var TaskTeamHTML='<select name="projectName" id="TaskTeamDetails" class="form-control">';
+		TaskTeamHTML +='<option value="0">Select Project Manager</option>';
+		while (listItemEnumerator.moveNext()) 
+			{
+				var oListItem = listItemEnumerator.get_current();
+				var emplyeeName=oListItem.get_item('LogonName');
+				var emplyeeNameMain=emplyeeName.get_lookupValue();
+				var emplyeeIDMain=emplyeeName.get_lookupId();
+				TaskTeamHTML +='<option value="'+emplyeeIDMain+'">'+emplyeeNameMain+'</option>';
+				counter++;
+			}
+			TaskTeamHTML +='</select>';
+			$("#ManagerTeam").append(TaskTeamHTML);
+           $("#SponsorTeam").append(TaskTeamHTML);
+		   $("#StackeholderTeam").append(TaskTeamHTML);
+		   
+		   	 $("#TaskTeamDetails").select2( {
+	placeholder: "Select Project Manager",
+	allowClear: false
+	} );
+
+		   
+	}, 
+		
+	function(){
+		console.log('error : Project Details web part');
+	}); 
+}
+
+function getClientMaster()  
+{   
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var clientContext= new SP.ClientContext();
+	var oList = clientContext.get_web().get_lists().getByTitle('ClientMaster');
+    var camlQuery = new SP.CamlQuery();
+	var camlXML = "<View><Query><Where><Eq><FieldRef Name='CompanyID' /><Value Type='Lookup'>"+txtCompanyId+"</Value></Eq></Where><OrderBy><FieldRef Name='Title'/></OrderBy></Query></View>";
+	camlQuery.set_viewXml(camlXML);
+	var collListItem = oList.getItems(camlQuery);        
+	clientContext.load(collListItem);        
+	clientContext.executeQueryAsync(function(){
+		debugger;
+		var listItemEnumerator = collListItem.getEnumerator();
+		var counter=1;
+		var ClientHTML='<select name="ClientName" id="clientName" class="form-control">';
+		ClientHTML +='<option value="0">Select Customer</option>';
+		while (listItemEnumerator.moveNext()) 
+			{
+				var oListItem = listItemEnumerator.get_current();
+				var ClientID=oListItem.get_item('ID');
+				var ClientTitle=oListItem.get_item('Title');
+				ClientHTML +='<option value="'+ClientID+'">'+ClientTitle+'</option>';
+				counter++;
+			}
+			ClientHTML +='</select>';
+			$("#clientNameDiv").append(ClientHTML);
+			
+			 $("#clientName").select2( {
+	placeholder: "Select Customer",
+	allowClear: false
+	} );
+
+	}, 
+		
+	function(){
+		console.log('error : Project Details web part');
+	}); 
+}
+
+
+function getConsultantDetails(siteclientContext){
+
+	var oListoccasion = siteclientContext.get_web().get_lists().getByTitle('Consultant_List');
+        
+    var camlQuery = new SP.CamlQuery();
+    camlQuery.set_viewXml("<View><OrderBy><FieldRef Name='ID' Ascending='False'/></OrderBy></View>");
+	
+	var collListItem = oListoccasion.getItems(camlQuery);
+    siteclientContext.load(collListItem);
+    siteclientContext.executeQueryAsync(function(){
+	var html="<ul>";
+    var listItemEnumerator = collListItem.getEnumerator();
+        var countItem = collListItem.get_count();
+		var eventCounter=1;
+        //var i=0;
+        if(countItem>0){
+		while (listItemEnumerator.moveNext()) {
+        var t = listItemEnumerator.get_current();
+		var cansultantName=t.get_item('Consultant_Comp');
+	
+		html +='<li><input type="checkbox" value='+cansultantName+' />'+cansultantName+'</li>';
+        eventCounter++;
+		}
+		html +="</ul>"
+	$(".mutliSelect").append(html);
+	
+	getmultiselctValue();
+    }
+	
+}, function(){
+
+}); 
+
+}
+
+function getConsultantValue(){
+	var csValue='';
+	$('.multiSel span').each(function(){
+		csValue +=$(this).html();
+	});
+	return csValue;
+}
+
+        $(function() {  
+        	bindButtonClick();  
+        });  
+  
+        function bindButtonClick() {  
+        	$("#createNewProjectSite").on("click", function() {  debugger;
+	        	var txtProjectName = $("#txtProjectName").val(); 
+				var txtProjectCode=$("#txtProjectCode").val();
+                var Department=$('#departmentDiv').find('#departmentDetails').val();
+				var officeLocation=$('#officeLocation').find('#officeLocationDetails').val();
+				var PlannedStartDate=$('.txtPlannedStartDate').val();
+				var PlannedEndDate=$('.txtPlannedEndDate').val();
+				//var ActualStartDate=$('.txtActualStartDate').val();
+				//var txtManagerTeam=$('#ManagerTeam').find('#TaskTeamDetails').val();
+				var txtManagerTeam=$("#select2-TaskTeamDetails-container").text();
+				var ProjectScope=$("#txtDescription").val();
+				//var clientName= $('#clientNameDiv').find('#clientName').val();  //$("#txtClientName").val();
+				var clientName=$("#select2-clientName-container").text();
+				var txtPlannedStartDate="";
+				projectInternalName=GenerateGUID();
+				if(PlannedStartDate!=null && PlannedStartDate!="")
+				{
+					txtPlannedStartDate=GetDateStandardFormat(PlannedStartDate);
+				}
+				
+				var txtPlannedEndDate="";
+				if(PlannedEndDate!=null && PlannedEndDate!="")
+				{
+					txtPlannedEndDate=GetDateStandardFormat(PlannedEndDate);
+				}
+				if (txtProjectName.trim() == '' || txtProjectCode.trim()=='' ||  PlannedStartDate=='' || PlannedEndDate=='' || txtManagerTeam=="Select Project Manager"  ||  clientName=='Select Customer') {  
+					 alert("Please fill all required fields.");  
+					 //BootstrapDialog.alert('Please fill all required fields.');
+				} 
+				else if(txtPlannedEndDate>txtPlannedStartDate)
+				{ 
+					waitingDialog.show();
+
+					createSite(); 
+				}
+				else
+				{
+					alert("Planned End Date can not less than Planned Start Date."); 
+				}
+					
+            });  
+        }  
+		
+		
+		function createSite() {
+			var siteTitle = $("#txtProjectName").val();  
+            var siteDesc = $("#txtDescription").val(); 
+            siteUrl=projectInternalName;// siteTitle.replace(/\s/g, ""); 
+
+            //var clientContext = new SP.ClientContext(_spPageContextInfo.webAbsoluteUrl);
+			//this.oWebsite = clientContext.get_web();
+			
+			var collWeb = clientContext.get_web().get_webs();
+			
+			var webCreationInfo = new SP.WebCreationInformation();
+			webCreationInfo.set_title(siteTitle );
+			webCreationInfo.set_description(siteDesc);
+			webCreationInfo.set_language(1033);
+			webCreationInfo.set_url(siteUrl);
+			webCreationInfo.set_useSamePermissionsAsParentSite(true);
+			webCreationInfo.set_webTemplate('STS#0');
+			
+			//oWebsite.get_webs().add(webCreationInfo);
+			//oWebsite.update();
+			collWeb.add(webCreationInfo);  
+			//collWeb.update();
+			
+			clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded_CreateProjectSite), Function.createDelegate(this, this.onQueryFailed_CreateProjectSite));
+		}
+		
+		
+        function createSite2() {  
+		
+			 var siteTitle = $("#txtProjectName").val();  
+             var siteDesc = $("#txtDescription").val();  
+             siteUrl = siteTitle.replace(/\s/g, ""); 
+			 var collWeb = clientContext.get_web().get_webs();  
+             var webCreationInfo = new SP.WebCreationInformation();  
+             webCreationInfo.set_title(siteTitle);  
+             webCreationInfo.set_description(siteDesc);  
+             webCreationInfo.set_language(1033);  
+             webCreationInfo.set_url(siteUrl);  
+             webCreationInfo.set_useSamePermissionsAsParentSite(true);  
+             webCreationInfo.set_webTemplate('STS#0');  
+             oNewWebsite = collWeb.add(webCreationInfo);  
+             //clientContext.executeQueryAsync(Function.createDelegate(this, this.onQuerySucceeded_CreateProjectSite), Function.createDelegate(this, this.onQueryFailed_CreateProjectSite));  
+			 clientContext.executeQueryAsync(Function.createDelegate(this, onQuerySucceeded_CreateProjectSite), Function.createDelegate(this, this.onQueryFailed_CreateProjectSite)); 
+		}  
+  
+         function onQuerySucceeded_CreateProjectSite() { 
+		    // alert('Site successfully Created!');  
+			createListItem();
+         }  
+  
+         function onQueryFailed_CreateProjectSite(sender, args) {  
+			//createListItem();
+            alert('Request failed. ' + args.get_message() + '\n' + args.get_stackTrace());  
+         }  
+
+
+function GenerateGUID()
+{
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+        var r = parseFloat('0.' + Math.random().toString().replace('0.', '') + new Date().getTime()) * 16 | 0,
+            v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+    });
+}
+
+
+function CheckProjectCodeExistOrNot(Value, ProjectDetails) {
+		var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	    var type = "GET";
+	    var data = {};
+	    var message = false;
+	    var resturi='';
+		if(Value=="True")
+		{
+			resturi = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ProjectDetails')/Items?$select=Title&$filter=CompanyId eq '" + txtCompanyId + "' and ProjectName eq '" + ProjectDetails + "'";
+    
+		}
+		else if(Value=="False")
+		{
+			resturi = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('ProjectDetails')/Items?$select=Title&$filter=ProjectCode eq '" + ProjectDetails + "' and CompanyId eq '" + txtCompanyId + "'";
+		}
+	   
+	    $.ajax({
+        url: resturi,
+        type: type,
+        data: data,
+        async: false,
+        headers:
+        {
+            "Accept": "application/json;odata=verbose",
+            "Content-Type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "IF-MATCH": "*",
+            "X-HTTP-Method": null
+        },
+        cache: false,
+        success: function (data) {
+            var transmittalno;
+            var items = data.d.results;
+            var RowCount = data.d.results.length;
+            if (RowCount > 0) {
+                alert("Project code or Project name already exist.");
+				$('#txtProjectCode').val("");
+				$('#txtProjectCode').focus();
+			   
+			    $('#txtProjectName').val("");
+				$('#txtProjectName').focus();
+
+               // message = true; 
+            }
+
+        },
+        error: function (data) {
+            Helper.CloseWaitDialog();
+            //$("#excetiondiv").empty().text(data.statusText);
+        }
+
+
+    });
+    return message;
+}
+
+function getPeopleUserInfoGroups(pickerPickerControlId) {
+    var sharedUserArrayList = new Array();
+    var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+    var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+    var users = peoplePicker.GetAllUserInfo();
+    if (users.length > 0) {
+      //  var allUsersID = new Array();
+      //  var usersEmailIDs = new Array();
+        for (var i = 0; i < users.length; i++) {
+            sharedUserArrayList.push(GetUserIdGroups(users[i].Key));
+        }
+    }
+    return sharedUserArrayList;
+}
+function GetUserIdGroups(userName) {
+    var userID = "";
+    var prefix = "i:0#.f|membership|";
+    var siteUrl = _spPageContextInfo.siteAbsoluteUrl;
+    var accountName = userName;// prefix+userName;       
+    $.ajax({
+        url: siteUrl + "/_api/web/siteusers(@v)?@v='" +
+            encodeURIComponent(accountName) + "'",
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data) {
+            userID = data.d.Id;
+            //$scope.UserInfoFullName = data.d.Title;
+            // alert("Received UserId" + data.d.Id);
+            // alert(JSON.stringify(data));
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+    return userID;
+}
+
+function createListItem() {
+
+	var StackeholderTeamArrayList = new Array();
+	StackeholderTeamArrayList=getPeopleUserInfoGroups("StackeholderTeamEmployeePicker");
+	
+	if (StackeholderTeamArrayList.length == 0) {
+             //  StackeholderTeamArrayList=null
+           }
+	
+	var SponsorTeamArrayList = new Array();
+	SponsorTeamArrayList=getPeopleUserInfoGroups("SponsorTeamEmployeePicker");
+	
+	if (SponsorTeamArrayList.length == 0) {
+             //  SponsorTeamArrayList=null
+           }
+
+	
+
+	var txtProjectCode = $("#txtProjectCode").val(); 
+	var txtProjectName = $("#txtProjectName").val();  
+    var txtClientName =  $('#clientName').val()
+	
+	var PlannedStartDate=$('.txtPlannedStartDate').val();
+	var txtPlannedStartDate="";
+	if(PlannedStartDate!=null && PlannedStartDate!="")
+	{
+		txtPlannedStartDate=GetDateStandardFormat(PlannedStartDate);
+	}
+	
+	var PlannedEndDate=$('.txtPlannedEndDate').val();
+	var txtPlannedEndDate="";
+	if(PlannedEndDate!=null && PlannedEndDate!="")
+	{
+		txtPlannedEndDate=GetDateStandardFormat(PlannedEndDate);
+	}
+	
+	var ActualStartDate=$('.txtActualStartDate').val();
+	var txtActualStartDate="";
+	if(ActualStartDate!=null && ActualStartDate!="")
+	{
+		txtActualStartDate=GetDateStandardFormat(ActualStartDate);
+	}
+	
+	
+	
+	txtDepartmentID=$('#departmentDiv').find('#departmentDetails').val();
+	DepartmentFullName=$('#departmentDiv').find("select#departmentDetails option:selected").text();
+	
+	txtofficeLocationID=$('#officeLocation').find('#officeLocationDetails').val();
+	OfficeFullName=$('#officeLocation').find("select#officeLocationDetails option:selected").text();
+	
+	txtManagerTeam=$('#ManagerTeam').find('#TaskTeamDetails').val();
+	txtStackeholderTeam=$('#StackeholderTeam').find('#TaskTeamDetails').val();
+	txtSponsorTeam=$('#SponsorTeam').find('#TaskTeamDetails').val();
+	txtProjectStatus=$('#ProjectStatus').val();
+	txtDomain=$('#txtDomain').val();
+	var txtTechnology= $('#txtTechnology').val();
+	var txtDescription= $('#txtDescription').val();
+	var ProjectSiteURL=siteURLProjects+'/'+siteUrl;
+	
+	var consultantName=getConsultantValue();
+	
+	AddNewTak("ProjectDetails", txtProjectCode,txtProjectName,txtClientName,txtPlannedStartDate,txtPlannedEndDate,txtActualStartDate,txtDepartmentID,	
+				DepartmentFullName,txtofficeLocationID,OfficeFullName,txtManagerTeam,txtStackeholderTeam,txtSponsorTeam,txtProjectStatus,txtTechnology,txtDescription,txtDomain,consultantName,ProjectSiteURL,StackeholderTeamArrayList,SponsorTeamArrayList);
+
+}
+	
+	
+	function AddNewTak(ListName, txtProjectCode,txtProjectName,txtClientName,txtPlannedStartDate,txtPlannedEndDate,txtActualStartDate,txtDepartmentID,	
+						DepartmentFullName,txtofficeLocationID,OfficeFullName,txtManagerTeam,txtStackeholderTeam,txtSponsorTeam,txtProjectStatus,txtTechnology,txtDescription,txtDomain,consultantName,ProjectSiteURL,stackeholderTeamEmployeePicker,sponsorTeamEmployeePicker)
+	{
+		try
+		{
+		
+		
+		
+			var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+			var Metadata;
+			var ItemType = GetItemTypeForListName(ListName);
+				Metadata = {
+					__metadata: {
+						'type': ItemType
+					},
+				   
+				    Title: txtProjectName,
+				    ProjectCode:txtProjectCode,
+					ProjectName:txtProjectName,
+					ProjectDescription:txtDescription,
+					ProjectSiteURL:ProjectSiteURL,
+					DepartmentId:txtDepartmentID,
+					//ClientName:txtClientName,
+					ActualStartDate:txtActualStartDate,
+					PlanedStartDate:txtPlannedStartDate,
+					PlanedEndDate:txtPlannedEndDate,
+					TechnologyUsed:txtTechnology,
+					Status:txtProjectStatus,
+					DepartmentName:DepartmentFullName,
+					ConsultantName:consultantName,
+					ManagerNameId:txtManagerTeam,
+					//StackeholderId:txtStackeholderTeam,
+					//SponsorId:txtSponsorTeam,
+					OfficeLocation:OfficeFullName,
+					Domain:txtDomain,
+					OfficeLocationID:txtofficeLocationID,
+				    CompanyId:txtCompanyId,
+				    MultipleStackeholderId:{ 'results': stackeholderTeamEmployeePicker},
+				    MultipleSponsorId:{ 'results': sponsorTeamEmployeePicker},
+				    ProjectInternalName:projectInternalName,
+				    ClientIDId : txtClientName
+				};
+				 
+					if(txtActualStartDate==null || txtActualStartDate=="")
+				   {
+						delete Metadata["ActualStartDate"] ;				 
+				   }
+					
+					if(txtPlannedEndDate==null || txtPlannedEndDate=="")
+				   {
+						delete Metadata["PlanedEndDate"] ;
+				   }
+				   if(txtPlannedStartDate==null || txtPlannedStartDate=="")
+				   {
+						delete Metadata["PlanedStartDate"] ;
+				   }
+				   AddItemToList(ListName, Metadata,txtManagerTeam,ProjectSiteURL,txtPlannedStartDate,txtPlannedEndDate);         
+				   
+			}
+		catch (error)
+		{
+			console.log(error.message);
+		}
+
+	}
+
+	function  AddItemToList(ListName, Metadata,txtManagerTeam,ProjectSiteURL,txtPlannedStartDate,txtPlannedEndDate) 
+	 {
+		var dfd = $.Deferred();
+		$.ajax({
+			url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items",
+			type: "POST",
+			async: false,
+			headers: {
+				"accept": "application/json;odata=verbose",
+				"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+				"content-Type": "application/json;odata=verbose"
+			},
+			data: JSON.stringify(Metadata),
+			success: function (data) {
+				var projectID=data.d.ID;
+				
+
+				// console.log(data);
+				dfd.resolve(data);
+				
+				console.log("User has been assigned permission.");
+				alert("Project site created successfully");				
+				waitingDialog.hide();
+				
+				//var projectID=data.d.ID;
+				// Add Project Manager As A Default Team Member while Creating Project.
+				AddProjectManagerAsADefaultMemeber(txtManagerTeam,txtPlannedStartDate,txtPlannedEndDate,parseInt(projectID));
+				GetTaskEmailTemplate(6)
+				GetProjectDetails(projectID);
+				SendTaskEmail();
+				
+				
+				RedirectToListViewPage();
+				
+				//alert("Project site created Successfully");
+				//addManagerToSiteAdmin(txtManagerTeam,ProjectSiteURL,"1073741829");
+				//alert("Project site created Successfully");
+				//waitingDialog.hide();
+			},
+			error: function (error) {
+				
+				console.log(JSON.stringify(error));
+				dfd.reject(error);
+			}
+		});
+		return dfd.promise();
+	}
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	/////// Submit Button Operations for Adding Manager as Default Team Member (Add/Update)
+	function AddProjectManagerAsADefaultMemeber(txtManagerTeam,txtPlannedStartDate,txtPlannedEndDate,projectID)
+	{	
+	   	var dfd = $.Deferred();
+	 	var ListName ='ProjectTeamDetails';
+		var metadataDescription=CreateMetadataForAddingProjectManager(ListName,txtManagerTeam,txtPlannedStartDate,txtPlannedEndDate,projectID);		
+		var requestURL= _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items";
+		var headersData={"accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"};
+			
+		$.ajax({
+	        url:requestURL ,
+	        type: "POST",
+	        async: false,
+	        headers: headersData,
+	        data: JSON.stringify(metadataDescription),
+	        success: function (data) {
+	        	//dfd.resolve(data);
+	        	console.log("Project Manager Added As A Default Team Member.");
+	        },
+	        error: function (error) {
+			    console.log(data);
+	            dfd.reject(error);
+	        }
+	    });
+	    return dfd.promise();
+	}
+	
+	function CreateMetadataForAddingProjectManager(ListName,txtManagerTeam,txtPlannedStartDate,txtPlannedEndDate,projectID,projectName) 
+	{
+	
+		var itemType= GetItemTypeForListName(ListName);
+		var Metadata;		
+		Metadata = {"__metadata": {'type': itemType}};
+		
+		Metadata["ProjectId"]=projectID;
+		Metadata["TeamMemberId"]=txtManagerTeam;
+		Metadata["Role"]="Project Manager";
+		Metadata["EngageDate"]=txtPlannedStartDate;
+		//Metadata["ReleseDate"]=txtPlannedEndDate;
+		Metadata["ExpectedReleseDate"]=txtPlannedEndDate;
+		Metadata["TeamPermission"]=true;
+		Metadata["DocumentPermission"]=true;
+		Metadata["TaskPermission"]=true;
+		Metadata["CompanyId"]= titanForWork.getQueryStringParameter('CompanyId');
+		
+		return Metadata;
+	}
+
+	///////////////////////////////////////////////////////////////////////////
+	
+
+	function addManagerToSiteAdmin(txtManagerTeam,ProjectSiteURL,permissionLevel){
+		var headers = {
+			"Accept": "application/json;odata=verbose",
+			"content-Type": "application/json;odata=verbose",
+			"X-RequestDigest": jQuery("#__REQUESTDIGEST").val()
+		}
+		var webUrl = ProjectSiteURL + "/_api/web/roleassignments/addroleassignment(principalid=" + txtManagerTeam + ",roleDefId=" + permissionLevel + ")";
+		$.ajax(
+		{
+			url: webUrl,
+			type: "POST",
+			headers: headers,
+			dataType: 'json',
+			async: false,
+			success: function (data) {
+				console.log("User has been assigned permission .");
+				alert("Project site created Successfully");				
+				waitingDialog.hide();
+				
+				
+				RedirectToListViewPage();
+			},
+			error: function (error) {
+				console.log(JSON.stringify(error));
+			}
+		});
+	}
+	
+	function GetItemTypeForListName (ListName) 
+	{
+		return "SP.Data." + ListName.charAt(0).toUpperCase() + ListName.split(" ").join("").slice(1) + "ListItem";
+	}
+	 
+		
+	function GetDateStandardFormat(date)
+	{	
+	        var dateS=ConvertDateFormatToddMMyyyy(date);
+            var startDate = new Date(dateS);
+			// seconds * minutes * hours * milliseconds = 1 day
+			var day = 60 * 60 * 24 * 1000;
+			//var endDate = new Date(startDate.getTime() + day);
+            var endDate = new Date(startDate.getTime());
+            var newDate =endDate.toISOString();
+			return newDate; 
+	}
+
+	function ConvertDateFormatToddMMyyyy(date) {
+        var formatedDate = stringToDate(date, 'dd/MM/yyyy', "/")
+        return formatedDate;
+    }
+    function stringToDate(_date, _format, _delimiter) 
+	{
+        var formatLowerCase = _format.toLowerCase();
+        var formatItems = formatLowerCase.split(_delimiter);
+        var dateItems = _date.split(_delimiter);
+        var monthIndex = formatItems.indexOf("mm");
+        var dayIndex = formatItems.indexOf("dd");
+        var yearIndex = formatItems.indexOf("yyyy");
+        var month = parseInt(dateItems[monthIndex]);
+        month -= 1;
+        var formatedDate = new Date(dateItems[yearIndex], month, dateItems[dayIndex]);
+        return formatedDate;
+    }
+	
+	function RedirectToListViewPage()
+	{
+		companyID=titanForWork.getQueryStringParameter('CompanyId');
+		location.href= _spPageContextInfo.webAbsoluteUrl+"/Pages/ViewProjectGrid.aspx?WebAppId="+companyID
+	}
+	function InitializePeoplePicker(peoplePickerElementId, allowMultiple) {
+    if (allowMultiple == null) {
+        allowMultiple = false;
+    }
+    var schema = {};
+    //schema['PrincipalAccountType'] = 'User,DL,SecGroup,SPGroup';
+    schema['PrincipalAccountType'] = 'User';
+    schema['SearchPrincipalSource'] = 15;
+    schema['ResolvePrincipalSource'] = 15;
+    schema['AllowMultipleValues'] = allowMultiple;
+    schema['MaximumEntitySuggestions'] = 50;
+    schema['Width'] = '100%';
+    SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+}
+
+
+
+
+function GetProjectDetails(itemid)
+{
+
+     projectManage = [];
+     StakeHolders = [];
+     ProjectSponsors = [];
+     
+     projectItemDetails = [];
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('ProjectDetails')/items?$select=*,ManagerName/Title,ManagerName/UserName,MultipleStackeholder/Title,MultipleStackeholder/UserName,MultipleSponsor/Title,MultipleSponsor/UserName&$Expand=ManagerName,MultipleStackeholder,MultipleSponsor&$Filter=ID eq '" + itemid + "'";
+    $.ajax({
+        url: Ownurl,
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var response = data;
+            var assignedToUsers="";
+            for (var groupIndex = 0; groupIndex < response.d.results.length; groupIndex++)
+            {
+             if (response.d.results[groupIndex].ManagerName != null)
+                {
+                        projectManage.push(response.d.results[groupIndex].ManagerName.UserName);
+                        projecttouser+=response.d.results[groupIndex].ManagerName.Title+",";
+                    
+                    projecttouser = projecttouser.replace(/,(\s+)?$/, '');
+                }
+                if (response.d.results[groupIndex].MultipleStackeholder.results != null)
+                {
+                    for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[groupIndex].MultipleStackeholder.results.length; subGrroupIndex++)
+                    {
+                        StakeHolders.push(response.d.results[groupIndex].MultipleStackeholder.results[subGrroupIndex].UserName);
+                        stackToUsers+=response.d.results[groupIndex].MultipleStackeholder.results[subGrroupIndex].Title+",";
+                    }
+                    stackToUsers = stackToUsers.replace(/,(\s+)?$/, '');
+                }
+                
+                 if (response.d.results[groupIndex].MultipleSponsor.results != null)
+                {
+                    for (var subGrroupIndex = 0; subGrroupIndex < response.d.results[groupIndex].MultipleSponsor.results.length; subGrroupIndex++)
+                    {
+                        ProjectSponsors.push(response.d.results[groupIndex].MultipleSponsor.results[subGrroupIndex].UserName);
+                        sponsorToUsers +=response.d.results[groupIndex].MultipleSponsor.results[subGrroupIndex].Title+",";
+                    }
+                    sponsorToUsers = sponsorToUsers.replace(/,(\s+)?$/, '');
+                }
+                
+      alluser = StakeHolders.concat(ProjectSponsors,projectManage);
+     // $.merge( $.merge( [], first ), second );
+
+     
+                projectItemDetails.push(TaskMetadata(response.d.results[groupIndex],projecttouser,stackToUsers,sponsorToUsers));
+            }
+        },
+        error: function (data) {
+            console.log(JSON.stringify(data));
+        }
+    });
+}
+
+
+function GetTaskEmailTemplate(filterItemId)
+{
+
+    var resturl = _spPageContextInfo.siteAbsoluteUrl + "/_api/web/Lists/GetByTitle('EmailTemplate')/Items?$select=ID,Body,Subject,EmailType,Title&$filter=Title eq '"+filterItemId+"'";
+    $.ajax({
+        url: resturl,
+        headers: {
+            'accept': 'application/json;odata=verbose',
+            'content-type': 'application/json;odata=verbose',
+            'X-RequestDigest': $('#__REQUESTDIGEST').val()
+        },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            for (var itemIndex = 0; itemIndex < items.length; itemIndex++)
+            { 
+	            if (items[itemIndex].Body != null)
+	            {
+	                    emailBodyContent = items[itemIndex].Body;
+	            }
+	            if (items[itemIndex].Subject != null)
+	            {
+	                    taskEmailSubject = items[itemIndex].Subject;
+	            }
+                
+            }
+        }, eror: function (data) {
+            console.log('error');
+        }
+    });
+}
+
+
+
+
+
+function SendTaskEmail()
+{
+
+
+    var commonBodyContentsNotification = emailBodyContent;
+    var emailSubject = taskEmailSubject;
+    projectItemDetails.forEach(function (item)
+    {  
+    
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{ProjectManager}}", item.projecttouser);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{ProjectCode}}", item.ProjectCode);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{ProjectName}}", item.ProjectName);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{ProjectClientName}}", item.ClientName);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{Department}}", item.DepartmentName);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{Location}}", item.OfficeLocation);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{PlannedStartDate}}", item.PlanedStartDate);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{PlannedEndDate}}", item.PlanedEndDate);
+        commonBodyContentsNotification = commonBodyContentsNotification.replace("{{Projectlink}}",_spPageContextInfo.webAbsoluteUrl+"/Pages/ViewProjectDetails.aspx?WebAppId="+companyID+"&ProjectID="+item.ID+"&ProjectName="+item.ProjectName+"");
+                         
+    });
+
+    
+    var from = _spPageContextInfo.userEmail;
+    var Metadata;
+    Metadata = {
+        'properties': {
+            '__metadata': { 'type': 'SP.Utilities.EmailProperties' },
+            'From': from,
+         //   'To': { 'results': stackToUsers, sponsorToUsers},
+         'To': { 'results': alluser},
+         
+           // 'CC': { 'results': taskCCUsersUsers },
+            'Body': commonBodyContentsNotification,
+            'Subject': emailSubject
+        }
+    };
+    var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+    $.ajax({
+        contentType: 'application/json',
+        url: sitetemplateurl,
+        type: "POST",
+        data: JSON.stringify(Metadata),
+        async: false,
+        headers: {
+            "Accept": "application/json;odata=verbose",
+            "content-type": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            console.log("Message has been sent.");
+        },
+        error: function (err) {
+            waitingDialog.hide();
+            console.log("SendEmailSharedNotification  " + JSON.stringify(err));
+        }
+    });
+}
+
+
+
+function TaskMetadata(item,projecttouser,stackToUsers,sponsorToUsers)
+{
+
+    var itm = {};
+    itm.ProjectName = item.ProjectName== null ? '' : item.ProjectName;
+    itm.ClientName= item.ClientName== null ? '' : item.ClientName;
+    itm.DepartmentName= item.DepartmentName== null ? '' : item.DepartmentName;
+    itm.ProjectCode= item.ProjectCode== null ? '' : item.ProjectCode;
+    itm.OfficeLocation= item.OfficeLocation== null ? '' : item.OfficeLocation;
+    itm.ID= item.OfficeLocation== null ? '' : item.ID;
+    
+    itm.ProjectSiteURL=item.ProjectSiteURL;
+    
+    itm.projecttouser=projecttouser;
+    itm.stackToUsers=stackToUsers;
+    itm.sponsorToUsers=sponsorToUsers;
+   
+    itm.PlanedStartDate= item.PlanedStartDate;
+    itm.PlanedStartDate= new Date(itm.PlanedStartDate);
+    itm.PlanedStartDate= $.datepicker.formatDate('dd-M-yy', itm.PlanedStartDate);
+   
+    itm.PlanedEndDate= item.PlanedEndDate;
+    itm.PlanedEndDate= new Date(itm.PlanedEndDate);
+    itm.PlanedEndDate= $.datepicker.formatDate('dd-M-yy', itm.PlanedEndDate);
+    
+   // itm.createdBy = item.Author.Title== null ? '' : item.Author.Title;
+        
+    return itm;
+}
+
+
+function getProjectRights()
+{
+
+	var deffered= $.Deferred();
+
+	var result;
+	var listName='ProcessApprovers';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=*&$filter=CompanyId eq '" + txtCompanyId + "' and ContributorsId eq '"+_spPageContextInfo.userId+"' and WebPartName eq 'Project Admin'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: true,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+              
+                deffered.resolve(true);
+               
+                IsProjectAdmin=true;
+            }
+			else
+			{
+				deffered.resolve(false);
+				IsProjectAdmin=false;
+			}
+
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+    return deffered.promise();
+}
+
+
+
+
+
+	
+	</script>  
+	<div class="container">
+		<div class=" row department-header">
+			<ol class="breadcrumb">                
+				<li><h4><b data-localize="CreateProject">Create Project</b></h4></li>
+			</ol>
+		</div>
+	</div>
+<!--part left-->
+	<div class="col-md-6">
+		<!--part left one-->
+			<div class="col-md-12">
+				<div class="row">
+					<!--panel-->
+						<div class="panel panel-default shadow2  definition" style="overflow:auto">
+							<!--panel-heading-->
+							<div class="panel-heading  panel-head-4">
+								<div class="panel-title">
+									<h4 class="h4-color" data-localize="Definition">Definition</h4>
+								</div>
+							</div>
+							<!--/panel-heading-->
+							<!--panel-body-->
+								<div class="panel-body">
+									<div class="form-horizontal">
+										<div class="form-group">
+											<label for="inputEmail3" class="col-sm-5 control-label" data-localize="Projectcode">Project Code<span class="redMark">*</span></label>
+											
+											<div class="col-sm-7">
+												<input type="text" class="form-control" id="txtProjectCode" maxlength="20" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g, '')">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="col-sm-5 control-label" data-localize="Projectname">Project Name <span class="redMark">*</span></label>
+											
+											<div class="col-sm-7">
+												<input type="" class="form-control" id="txtProjectName" maxlength="100">
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="col-sm-5 control-label" data-localize="Department">Department</label>
+											
+											<div class="col-sm-7" id="departmentDiv">
+											</div>
+										</div>
+										<div class="form-group mrgn-btm-0">
+											<label for="" class="col-sm-5 control-label" data-localize="OfficeLocation">Office Location</label>
+											<div class="col-sm-7" id="officeLocation">
+											</div>
+										</div>				
+									</div> 
+								</div>
+							<!--/panel-body-->
+						</div>
+					<!--/panel-->
+				</div>
+			</div>
+		<!--part left one-->
+		<!--part left two-->
+			<div class="col-md-12">
+				<div class="row">
+					<div class="panel panel-default shadow2  planning" style="overflow:auto">
+						<div class="panel-heading  panel-head-4">
+							<div class="panel-title">
+								<h4 class="h4-color" data-localize="Planning">Planning</h4>
+							</div>
+						</div>
+						<div class="panel-body planning-div">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label for="" class="col-sm-5 control-label" data-localize="PlannedstartDate">Planned Start Date<span class="redMark">*</span></label>
+									<div class="col-sm-7">
+										<div class="input-group">
+											<input type="text" class="form-control txtPlannedStartDate" Readonly="true"  name="date" >
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-5 control-label" data-localize="PlannedendDate">Planned End Date<span class="redMark">*</span></label>
+									<div class="col-sm-7">
+										<div class="input-group">
+											<input type="text" class="form-control txtPlannedEndDate" Readonly="true" name="date" >
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-5 control-label" data-localize="Status">Status<span class="redMark">*</span></label>
+									<div class="col-sm-7">
+										<select name="select2" class="form-control" id="ProjectStatus">
+											<option value="Live">Live</option>
+											<option value="Terminated">Terminated</option>
+											<option value="OnHold">OnHold</option>
+											<option value="Completed">Completed</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="" class="col-sm-5 control-label" data-localize="ActualStartDate">Actual Start Date</label>
+									<div class="col-sm-7">
+										<div class="input-group">
+											<input type="text" class="form-control txtActualStartDate" Readonly="true" name="date">
+										</div>
+									</div>
+								</div>
+								<div class="form-group ActualEndDate mrgn-btm-0">
+									<label for="" class="col-sm-5 control-label" data-localize="ActualEndDate">Actual End Date</label>
+									<div class="col-sm-7">
+										<div class="input-group">
+											<input type="text" class="form-control txtActualEndDate" Readonly="true" name="date" >
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+	</div>
+<!--/part left-->
+
+<!--part right-->
+<div class="col-md-6">
+	<div class="col-md-12">
+		<div class="row">
+		<!--panel-->
+			<div class="panel panel-default new_project_height shadow2">
+				<div class="panel-heading  panel-head-4">
+					<div class="panel-title">
+						<h4 class="h4-color" data-localize="Details">Details</h4>
+					</div>
+				</div>
+				<!--panel body-->
+				<div class="panel-body">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="Details">Details<span class="redMark">*</span></label>
+							<div class="col-sm-7">
+								<textarea class="form-control" rows="4" id="txtDescription" style=" resize:none" maxlength="500"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="ProjectType">Project Type</label>
+							<div class="col-sm-7">
+								<input type="" class="form-control" id="txtTechnology" maxlength="50">
+							</div>
+						</div>   
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="BusinessDomain">Business Domain</label>
+							<div class="col-sm-7">
+								<input type="" class="form-control" id="txtDomain" maxlength="50">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="Projectmanager">Project Manager<span class="redMark">*</span></label>
+							
+							<div class="col-sm-7" id="ManagerTeam">
+							</div>
+						</div>        
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="StakeholderInternal">Stakeholder (Internal)</label>
+							<div class="col-sm-7" id="StackeholderTeam123">
+							<div id="StackeholderTeamEmployeePicker" class=""></div>
+							</div>
+						</div>     
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="ProjectSponsorInternal">Project Sponsor (Internal)</label>
+							<div class="col-sm-7" id="SponsorTeam123">
+							<div id="SponsorTeamEmployeePicker" class=""></div>
+							</div>
+						</div>      
+						<div class="form-group">
+							<label for="" class="col-sm-5 control-label" data-localize="Customer">Customer<span class="redMark">*</span></label>
+							<div class="col-sm-7" id="clientNameDiv">
+							<!--	<input type="" class="form-control" id="txtClientName" maxlength="100">  -->
+							</div>
+						</div>        
+							<!--<div class="form-group">
+								<label for="" class="col-sm-5 control-label">Consultant</label>
+								<div class="col-sm-7">
+									<dl class="dropdown"> 
+										<dt>
+											<a>
+												<span class="hida">Select</span>    
+												<p class="multiSel"></p>  
+											</a>
+										</dt>
+										<dd>
+											<div class="mutliSelect">
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div> -->             					
+					</div>
+				</div>
+				<!--panel body-->
+			</div>
+			<!--/panel-->
+		</div>
+	</div>
+</div>
+<!--/part right-->
+
+<div class="clearfix"></div>
+<div class="row text-center mrg-btm-20">
+	<button type="button" class="btn  btn-outline-success" name="createNewProjectSite" id="createNewProjectSite" value="Submit" data-localize="Submit">Submit</button>
+	<button type="button" class="btn btn-outline-secondary" id="cancelNewProject" data-localize="Close">Close</button>
+</div>
+
+  
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1569</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1759f27b-029f-40fc-80c8-005bf81dcf35</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1569, ADMIN-1645029823-1569</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mona Gupta</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">31800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

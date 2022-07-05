@@ -1,0 +1,561 @@
+﻿body {
+    background: #fff;
+    font-family:'Microsoft JhengHei UI'; 
+    color:#5c5c5c !important; 
+    font-weight:normal; 
+    font-size:13px;
+     
+}
+.card > .nav > li > a>span:hover {
+		color:#1d6ec0 !important;
+	}
+	.nav-tabs > li.active > a{
+		border: none;
+		/* color: #333 !important;
+		background:#ddd !important; */
+		/*color: #fff !important;
+    	background: #428bca !important; 
+    	box-shadow: 0px 6px 11px -6px #000;   
+    	border: 1px solid #b5b5b5 !important; */
+    	color: #000 !important;
+    	background: #f3f3f3 !important;
+    	box-shadow: -4px 6px 8px -9px #000;
+    	/* background: #efefef !important; */
+    	border: 1px solid #b5b5b5 !important;        
+	}
+	.nav-tabs > li > a:hover {
+		/* background:#efefef  !important; */
+	}
+	.nav-tabs > li > a::after {
+		/* content: "";
+		background: #999;
+		height: 2px;
+		position: absolute;
+		width: 100%;
+		left: 0px;
+		bottom: -1px;
+		transition: all 250ms ease 0s;
+		transform: scale(0);*/
+	}
+	.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+		transform: scale(1);
+	}
+	.tab-nav > li > a::after {
+		background: #1d6ec0 none repeat scroll 0% 0%;
+		color: #fff;
+	}	
+	.tab-pane {
+		padding: 15px 0;
+	}	
+	.tab-content {
+		padding: 20px;
+	}
+	.nav-tabs > li {
+		width: 20%;
+		text-align: center;
+	}
+	.card {
+		background: #FFF none repeat scroll 0% 0%;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+		margin-bottom: 30px;
+		border-radius: 4px 4px 0 0;
+	}
+	.tab_padd {
+		padding: 10px !important;
+		background: none !important;
+		margin-top: 0px !important;
+	}
+	.color-fill-icon {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		border: 1px solid #000;
+		background-color: #fff;
+		margin: 2px;
+	}
+	.dropdown-color-fill-icon {
+		position: relative;
+		float: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.blue-color {
+		color: #428bca;
+	}
+	.theme_head_text {
+		color: #1d6ec0;
+		padding-bottom: 10px;
+	}
+	@media (max-width:1280px) {
+		.card ul.nav li a {
+		padding: 10px 15px !important;
+		margin-top: 0px !important;
+		}
+	}
+	@media (max-width:1024px) {
+		.card ul.nav li a {
+		padding: 10px 15px !important;
+		margin-top: 0px !important;
+		}
+	}
+	@media (max-width: 767px) {
+		.pdng-btm-10{
+		 padding-bottom:0px !Important;
+		}
+		.mrg-top-60{
+		 	margin-top:0px !Important;
+		}
+		.mrg-top-30{
+			margin-top:0px !Important;
+		}
+		.mrg-top-20{
+			margin-top:0px !Important;
+		}
+		.div-height-30{
+			height:0px;
+		}
+
+		/*.nav-tabs.nav-justified > li {
+		float: left;
+		}
+		.nav-tabs > li {
+		width: 50%;
+		}*/
+		.card ul.nav li a {
+		padding: 10px 15px !important;
+		margin-top: 0px !important;
+		
+		}
+		.card ul.nav li{
+		width:100%;
+		}
+	}
+
+.ms-webpart-titleText{display: none;}
+
+input.sp-peoplepicker-editorInput[type=text] {
+    padding: 0px !important;
+    width: 100px;
+}
+.sp-peoplepicker-topLevel{
+         width: 500px;
+    height: 45px;
+      padding: 6px 8px;
+	}
+	 
+ 
+element.style{
+	width: 500px;
+}
+.pl-0 {
+    padding-left: 0px;
+}
+.pr-0 {
+    padding-right: 0px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.p-10 {
+    padding: 10px;
+}
+.p-0 {
+    padding: 0px;
+}
+.pt-0 {
+    padding-top: 0px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 .container {
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+}
+.shadow3 {
+    box-shadow: 0px -3px 25px -1px #dfdede;
+}
+.panel {
+    border: none;
+}
+.panel-heading {
+    padding: 0px;
+    padding: 3px 15px;
+    border: none;
+}
+.panel-head-4 {
+    background-color: #e1e1df;
+    height: 35px;
+}
+.h4-color {
+    color: #000;
+    font-weight: normal;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.panel-title {
+    font-size: 14px !important;
+    padding-left: 4px !important;
+}
+.panel-group .panel {
+    margin-bottom: 0;
+    border-radius: 5px !important;
+    border: 1px solid #cacaca !important;
+}
+.panel-heading-custom {
+    background-color: #ffffff !important;
+  border-radius: 10px !important;
+}
+.btn-toggle {
+    margin: 0 4rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+    color: #6b7381 !important;
+    /*background: #bdc1c8 !important;*/
+    background: #2196f3 !important;
+}
+.btn-toggle:focus, .btn-toggle.focus, .btn-toggle:focus.active, .btn-toggle.focus.active {
+    outline: none;
+}
+.btn-toggle:before, .btn-toggle:after {
+    line-height: 1.5rem;
+    width: 4rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle:before {
+    content: 'Off';
+    left: -4rem;
+}
+.btn-toggle:after {
+    content: 'On';
+    right: -4rem;
+    opacity: 0.5;
+}
+.btn-toggle > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 1.125rem;
+    background: #fff !important;
+    transition: left 0.25s !important;
+}
+.btn-toggle.active {
+    transition: background-color 0.25s !important;
+}
+.btn-toggle.active > .handle {
+    left: 1.6875rem;
+    transition: left 0.25s;
+}
+.btn-toggle.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.active:after {
+    opacity: 1;
+}
+.btn-toggle:before {
+    /*color: #bdc1c8 !important;*/
+    color: #000 !important;
+}
+.btn-toggle:after {
+    /*color: #2196F3 !important;*/
+    color: #797979 !important;
+}
+.btn-toggle.active {
+    background-color: #2196F3 !important;
+}
+.btn-toggle.btn-lg {
+    margin: 0 7rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+}
+.btn-toggle.btn-lg:focus, .btn-toggle.btn-lg.focus, .btn-toggle.btn-lg:focus.active, .btn-toggle.btn-lg.focus.active {
+    outline: none;
+}
+.btn-toggle.btn-lg:before, .btn-toggle.btn-lg:after {
+    line-height: 2.5rem;
+    width: 5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 0;
+    transition: opacity 0.25s;
+}
+.btn-toggle.btn-lg:before {
+    content: 'Hide';
+    left: -7rem;
+    pointer-events: none;
+}
+#siteviewbtn::before {
+    content: 'Default';
+}
+#siteviewbtn::after {
+    content: 'New';
+}
+#newsbtn::before {
+    content: 'Single';
+}
+#newsbtn::after {
+    content: 'Five';
+}
+
+.btn-toggle.btn-lg:after {
+    content: 'Show';
+    right: -7rem;
+    opacity: 0.5;
+  pointer-events: none;
+}
+.btn-toggle.btn-lg-2:before {
+    content: 'My' !important;
+    left: -7rem;
+  pointer-events: none;
+}
+.btn-toggle.btn-lg-2:after {
+    /*content: 'Select' !important;*/
+    content: 'All' !important;
+    right: -7rem;
+    opacity: 0.5;
+  pointer-events: none;
+}
+.btn-toggle.btn-lg-3:before {
+    /*content: 'Allow' !important;*/
+    content: 'Restrict' !important;
+    left: -7rem;
+  pointer-events: none;
+}
+.btn-toggle.btn-lg-3:after {
+    content: 'Show' !important;
+    right: -7rem;
+    opacity: 0.5;
+  pointer-events: none;
+}
+.btn-toggle.btn-lg > .handle {
+    position: absolute;
+    top: 0.3125rem;
+    left: 0.3125rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 1.875rem;
+    background: #fff !important;
+    transition: left 0.25s !important;
+}
+.btn-toggle.btn-lg.active {
+    transition: background-color 0.25s !important;
+}
+.btn-toggle.btn-lg.active > .handle {
+    left: 2.8125rem;
+    transition: left 0.25s !important;
+}
+.btn-toggle.btn-lg.active:before {
+    opacity: 0.5;
+}
+.btn-toggle.btn-lg.active:after {
+    opacity: 1;
+    color: #000 !important;
+}
+.btn-toggle.btn-secondary {
+    color: #6b7381 !important;
+    background: #bdc1c8 !important;
+}
+.btn-toggle.btn-secondary:before, .btn-toggle.btn-secondary:after {
+    color: #6b7381 !important;
+}
+.btn-toggle.btn-secondary.active {
+    background-color: #ff8300 !important;
+}
+/*New 16-09*/
+.main-area {
+    background: #fff !important;
+    -webkit-box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 90px;
+    padding: 20px;
+}
+.form-control {
+    height: 30px !important;
+    border-radius: 4px !important;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
+.shadow2 {
+    /*box-shadow: 0px 5px 23px 0px rgba(0, 0, 0, 0.1) !important;*/
+    border-radius: 4px !important;
+    box-shadow: rgb(178, 178, 178) 0px 6px 16px;
+}
+.shadow3 {
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
+}
+.panel-group .panel+.panel {
+    margin-top: 10px !important;
+}
+
+/* The container */
+.container_radio {
+  display: block;
+  position: relative;
+  padding-left: 35px !important;
+  /*margin-bottom: 12px;*/
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500 !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #000;
+}
+
+/* Hide the browser's default radio button */
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 1.1px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container_radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container_radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container_radio .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.my_site_view_option2 {
+    left: 10px;
+}
+
+/*
+.bg-onedrive{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/one-drive.png) no-repeat top left;
+    background-size: contain;
+}
+.bg-azure{
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(images/azure.png) no-repeat top left;
+    background-size: contain;
+}
+.bg-prayer{
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(images/prayer.png) no-repeat top left;
+  background-size: contain;
+}
+*/
+
+.my_prayer_web_services {
+  padding-left: 19px !important;
+  padding-right: 18px !important;
+}
+.my_prayer_offices, .my_prayer_offices_zones {
+  margin-bottom: 6px;
+}
+#my_environmental_main_box .form-control {
+    height: 33px !important;
+    border: 1px solid #cacaca !important;
+    color: #404040 !important;
+}
+.my_env_btns_box {
+    text-align: center;
+}
+.my_env_btns_box #Submit {
+    margin-right: 13px;
+    color: #ffffff;
+    background-color: #1d6ec0;
+    background-image: none;
+    border-color: #1d6ec0 !Important;
+    padding: 4.5px 12px !important;
+}
+.my_env_btns_box #Close {
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A !important;
+    padding: 4.5px 12px !important;
+    min-width: 6em;
+}
+
+/* new css added on 26/2/2020 */
+
+#my_environmental_main_box .btn-toggle.btn-lg {
+    border-radius: 2.5rem !important;
+    min-width: 5.1rem !important;
+}
+#my_environmental_main_box .panel-body .form-group {
+    overflow: hidden;
+}

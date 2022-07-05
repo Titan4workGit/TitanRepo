@@ -1,0 +1,147 @@
+﻿/*	* {
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight:lighter !important
+	}
+*/
+.ticker-container {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	/*background-color: #fff;*/
+	color: #333;
+	/*background-color: white;
+	color: black;*/
+	font-size: 1.1em;
+	margin-bottom: 15px;
+}
+.ticker-container .ticker-caption {
+	height: 35%;
+	width: 100%;
+	background-color: #EC0B43;
+	display: table;
+	position: absolute;
+	color: white;
+/*	font-size: 0.8em;*/
+	z-index: 1;
+}
+.ticker-container .ticker-caption p {
+	height: inherit;
+	width: inherit;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: bold;
+}
+.ticker-container ul {
+	list-style: none;
+	padding: 7px 0px 7px 0px;
+	height: auto;
+	margin-bottom: 0px;
+}
+.ticker-container ul div {
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+	display: inline;
+	min-width: 100%;
+	left: 0;
+	height: 35%;
+	transition: 0.25s ease-in-out;
+}
+.ticker-container ul div.ticker-active {
+	top: 35px;
+}
+.ticker-container ul div.not-active {
+	top: 60px;
+}
+.ticker-container ul div.remove {
+	top: 0;
+}
+.ticker-container ul div li {
+	padding: 8px 0;
+}
+.ticker-container ul div li a {
+	color: #fb9f00;
+	font-weight:bold;
+	font-size:13px;
+}
+@media (max-width: 320px) {
+
+
+.ticker-container .ticker-caption {	
+		height: 100%;
+		width: 120px;
+		background: url('../Images/ticker-caption-bg.png');
+	}
+	
+		.ticker-container ul {
+		margin-left: 0px !important;
+/*		margin-left: 170px;*/
+		height: 100%;
+	}
+}
+@media (max-width:425px) {
+	.panel-height-2 {
+    	height: auto;
+    	/*margin-bottom: 10px;*/}
+    	
+    	.news-box {
+    	/*margin-bottom: 0px !important;*/
+    	}    	
+}
+@media (min-width: 320px) {
+	.ticker-container {
+		height: 35px;
+		text-align: left;
+		margin-bottom:0px; 
+	}
+	.ticker-container .ticker-caption {
+
+		height: 100%;
+		width: 160px;
+		background: url(../Images/ticker-caption-bg.png);
+	}
+	.ticker-container .ticker-caption p {
+		text-align: left;
+    	padding-left: 15px;
+    	padding-top: 9px;
+    }
+	.ticker-container ul {
+
+	margin-left: 160px;
+		height: 100%;
+	}
+	.ticker-container ul div {
+		height: 100%;
+		left: 170px;
+	}
+	.ticker-container ul div.ticker-active {
+		top: 0;
+	}
+	.ticker-container ul div.not-active {
+		top: 35px;
+	}
+	.ticker-container ul div.remove {
+		top: -35px;
+	}
+}
+
+@media (min-width: 768px) {
+  .ticker-container {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ticker-container {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width:1023px){
+	.top10 {
+		padding-top: 0px !important;
+	}
+}

@@ -1,0 +1,138 @@
+﻿/*************************Header Start************************/
+
+li.dropdown-custom ul li a {
+    padding: 10px 20px !important;
+}
+.navbar-nav li a {
+    color: #000 !important;
+    padding: 16px 30px !important;
+    margin-top: 0px !important;
+}
+.navbar-nav li a:hover {
+    color: #2a6496 !important;
+}
+.navbar-custom {
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    border: none !important;
+    border-radius: 0px !important;
+    font-size: 16px !important;
+    background: #fff;
+    min-height: 50px !important;
+    margin-bottom: 10px;
+}
+.navbar-brand {
+    padding: 5px 15px !important;
+}     
+a.navbar-brand {
+    width: auto;
+}
+img.logo {
+    height: 100%;
+}
+.header-search {
+    background-color: #d7d7d7 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.header-search-btn {
+    background-color: #d7d7d7 !important;
+    border-color: #d7d7d7 !important;
+    outline: none !important;
+}
+.icon-bar{
+	background: #000;
+}
+
+#navbar_profile_right li a {
+    padding: 8px 30px 7px 30px !important;
+    position: relative;
+}
+#navbar_profile_right li a:hover {
+    background: transparent;
+}
+#navbar_profile_right #profilePic {
+    width: 100%;
+}
+
+/* new css added on 06/7/2021 */
+
+.open>#company {
+    display: flex;
+}
+
+/*************************Header End************************/
+
+
+
+/* responsive css media-query-classes -----START----- */
+
+@media only screen and (min-width: 1200px) {
+
+    #company {
+        /*width: 1020px;*/
+        width: auto;
+        height: auto;
+        padding: 5px 5px;
+        left: 0;
+        transform: translate(-575px, 0px);
+        min-width: auto !important;
+    }
+    #company li {
+        padding: 0px 0px !important;
+        display: inline-block;
+        width: auto;
+    }                   
+    #company li a {
+        padding: 10px 15px !important;
+        font-size: 13.3px;
+    }
+    /*li.dropdown-custom ul li {
+        display: inline-flex;
+    }
+    .open>.dropdown-menu#company {
+        display: flex;
+        flex: 1 auto;
+        left: -575px;
+        padding: 0px;
+        transform: translate(0px, 0px);
+    }
+    #company li {
+        padding: 0px 0px !important;
+    }*/
+    /*#company li a {
+        padding: 15px 15px !important;
+        font-size: 13.5px;
+    }*/
+    /*#company {
+        width: 550px;
+        height: auto;
+        padding: 5px 5px;
+    }
+    #company li {
+        padding: 0px 0px !important;
+        display: inline-block;
+        width: auto;
+    }*/
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+    #company {
+        transform: translate(-530px, 0px);
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+
+    #company {
+        /*transform: translate(-500px, 0px);*/
+        transform: translate(-360px, 0px);
+    }
+
+}
+
+
+
+/* responsive css media-query-classes -----END----- */

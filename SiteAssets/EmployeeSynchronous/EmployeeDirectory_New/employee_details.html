@@ -1,0 +1,712 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Employee Details</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/css/styles.css">
+
+    <script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/js/angular.min.js"></script>
+    <script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+    <script src="/_layouts/15/clienttemplates.js"></script>
+    <script src="/_layouts/15/clientforms.js"></script>
+    <script src="/_layouts/15/clientpeoplepicker.js"></script>
+    <script src="/_layouts/15/autofill.js"></script>
+    <script src="../SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/jquery.richtext.js"></script>
+    <link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" href="../SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/richtext.min.css">
+
+    <style>
+        #managerLoginName, #customShareingPoplePicker {
+            height: auto !Important;
+            padding: 6px 8px !Important;
+        }
+
+        .form-control {
+            background-color: #fff;
+        }
+
+        input.hidden {
+            position: absolute;
+            left: -9999px;
+        }
+
+        #profile-image1 {
+            cursor: pointer;
+            width: 40%;
+            height: 100%;
+            padding-bottom: 5px;
+        }
+
+        .profile_div, .Details_div, .address_div {
+            height: 552px;
+            overflow-y: auto;
+        }
+
+        .blue-color {
+            color: #1d6ec0;
+        }
+
+        @media (min-width:1280px) and (max-width:1366px) {
+            #newEmployeePicker, #managerLoginName {
+                min-height: 34px;
+            }
+
+            #newEmployeePicker_TopSpan, #managerLoginName_TopSpan {
+                min-height: 30px !important;
+                padding: 0px 0px 0px 0px !Important;
+                width: 100% !important;
+            }
+        }
+
+        @media (min-width:992px) and (max-width:1279px) {
+            #newEmployeePicker, #managerLoginName {
+                min-height: 45px;
+            }
+
+            #newEmployeePicker_TopSpan, #managerLoginName_TopSpan {
+                min-height: 30px !important;
+                padding: 0px 0px 0px 0px !Important;
+                width: 100% !important;
+            }
+        }
+
+        @media (max-width:991px) {
+            .profile_div, .Details_div, .address_div {
+                min-height: auto !important;
+                height: auto;
+            }
+        }
+
+        .sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled, .sp-peoplepicker-autoFillContainer, .ms-inputBox {
+            border: 0px !important;
+            width: 167px !important;
+        }
+
+        input.sp-peoplepicker-editorInput[type=text] {
+            border: 0px !important;
+        }
+
+        #newEmployeePicker_TopSpan_NotificationSpan, #managerLoginName_TopSpan_NotificationSpan {
+            position: fixed !important;
+        }
+
+        #newEmployeePicker_TopSpan, #managerLoginName_TopSpan {
+            min-height: 20px !important;
+            padding: 0px 0px 0px 0px !Important;
+        }
+
+        .sp-peoplepicker-initialHelpText {
+            position: absolute !important;
+            /* margin-left: 15px;*/
+            font-size: 11px !important;
+        }
+        
+.emp-upload-image-box{
+  width:110px !Important;
+  height:110px !Important;	
+  position:relative;
+  z-index:1;
+}
+
+#profile-image1{
+ display:block;
+ margin:0 auto !important;
+ width:100% !important;	
+ height:113px !important;
+}       
+
+.row.employee-details-box1> .col-md-3{
+	width:14% !important;
+}
+
+.emp-upload-image-box-btn{
+  z-index: 2;
+}
+
+#newEmployeePicker,
+#managerLoginName{
+
+  border:1px solid #BDBDBD !important;	
+}
+
+#newEmployeePicker:hover,
+#newEmployeePicker:focus{
+	border:1px solid #92c0e0 !important;
+}
+
+#managerLoginName:hover,
+#managerLoginName:focus{
+	border:1px solid #92c0e0 !important;
+} 
+
+.emp-lb, .emp-data{
+
+ color:#2a6496 !important;	
+ font-weight:600;
+}
+.emp-upload-image-box-btn{
+
+ font-size:12px !important; 	
+
+}
+.emp-upload-image-span{
+
+ line-height:19px !important;	
+
+}
+.emp-upload-image{
+  object-fit:cover !important;	
+}
+
+@media all and (max-width: 1090px) and (min-width: 992px){
+ 
+.row.employee-details-box1> .col-md-3{
+	width:16% !important;
+}
+
+}
+
+@media all and (max-width: 991px){
+ 
+.row.employee-details-box1> .col-md-3{
+	width:100% !important;
+}
+
+}
+
+@media(max-width:767px){
+.employee-info .tabs a{
+ color:#b7b7b7;	
+}
+
+.selector.ajst{
+ width:50px !important;
+ border-radius:0 !important;	
+}
+		
+}
+
+@media(max-width:445px){
+	
+.manage-employees-footer-btn-group button{
+
+	margin:3px !important;
+
+}	
+	
+}
+
+/**Aug-6-21**/
+
+#txtEmpDesignation{
+
+    color: #2a6496 !important;
+    font-weight: 600;
+    padding-bottom:0 !important;
+}
+
+/****9-23-21******/
+
+.flextwosec{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;	
+}
+
+.flextwosec button.custom-btn{
+  margin-top:10px;	
+}
+
+.succescontentbox .rado input[type="radio"]{
+
+ width:15px;
+ height:15px;	
+
+}
+
+.succescontentbox h3{
+ font-size: 16px;
+ font-weight: 600;	
+}
+
+.succescontentbox p{
+ line-height: 1.6 !important;
+ margin-bottom: 10px;
+}
+
+.circlepic{
+ margin:10px;	
+}
+
+.circlepic img{
+ width:66px;	
+}
+
+.rightsection{
+ padding:0 5px;	
+}
+
+@media (min-width: 768px){
+
+#addsuccessful .modal-dialog {
+    width: 450px !important;
+}
+
+}
+
+@media(max-width:767px){
+	
+.flextwosec{
+ 
+ display:block;	
+	
+}
+
+.leftsection{
+ text-align:left !important;	
+}
+
+}
+  
+</style>
+    <script>
+        $(document).ready(function () {
+            SP.SOD.executeFunc('sp.js', 'SP.ClientContext', readyFunction);
+            SP.SOD.executeFunc('clientpeoplepicker.js', 'SPClientPeoplePicker', function () {
+                //your code goes here
+                SetPeoplePicker_Multiselect("newEmployeePicker", false);
+            });
+
+            $('#dateofJoining').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                maxDate: 0,
+                yearRange: "-70:+0"
+            });
+            $('#dateofJoining').datepicker("option", "dateFormat", "dd/mm/yy");
+            $('#date22').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                maxDate: 0,
+                yearRange: "-70:+0"
+            });
+            $('#date22').datepicker("option", "dateFormat", "dd/mm/yy");
+            $('#date33').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                maxDate: 0,
+                yearRange: "-70:+0"
+            });
+            $('#date33').datepicker("option", "dateFormat", "dd/mm/yy");
+
+
+
+            $('#EmpTndroduction').richText();
+            $('a[title="Add image"]').hide();
+            $('a[title="Add file"]').hide();
+            $('a[title="Add video"]').hide();
+            $('a[title="Add URL"]').hide();
+            $('a[title="Add table"]').hide();
+            $('a[title="Show HTML code"]').hide();
+            $('a[title="Remove styles"]').hide();
+            $('.richText-help').hide();
+
+
+        });
+        function readyFunction() {
+
+        }
+
+    </script>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1890</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9302c94b-c62d-482c-9265-a188eb77015d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1890, ADMIN-1645029823-1890</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">189000.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLod()">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tab-content">
+                        <div class="custom-panel custom-panel-box">
+                            <div class="panel-head">
+                                <h3 class="m-0">
+                                    Employee Details
+                                </h3>
+                            </div>
+                            <div class="panel-body px-0 pt-8">
+                                <div class="row m-0">
+                                    <div class="col-xs-12 employee-details">
+                                        <div class="row employee-details-box1">
+                                            <div class="col-md-3">
+                                                <div class="emp-upload-image-box emp-details-img">
+                                                    <img class="emp-upload-image" ng-src="{{imageUrl}}" id="profile-image1" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg" alt="user image">
+                                                    <div class="emp-upload-image-box-btn picTab" ng-show="currentitemId!='' && (editViewDisable=='currentUser' || editViewDisable=='No')">
+                                                        <input type="file" id="uploadFile1" class="emp-upload-image-inp" accept="image/*">
+                                                        <span class="emp-upload-image-span">Upload<br>Picture</span>
+                                                    </div>
+                                                    <span ng-show="terminatestatus=='Active'">
+                                                        <button type="button" class="btn btn-outline-primary" style="font-size:11px;margin-top:5px" ng-click="modePopup()" ng-show="currentitemId!='' && (editViewDisable=='currentUser' || editViewDisable=='No')"><label data-localize="ChangeProfileImage"></label></button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <h4 class="emp-name m-0" id="txtEmpName"></h4>
+                                                    </div>
+                                                </div>
+                                                                                                
+                                                <div class="row emp-row">
+                                                    <div class="col-md-3 col-xs-5 emp-lb">Designation:</div>
+                                                    <div class="col-md-9 col-xs-7">
+                                                       <p class="emp-deg m-0" id="txtEmpDesignation"></p>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                <div class="row emp-row">
+                                                    <div class="col-md-3 col-xs-5 emp-lb">Department:</div>
+                                                    <div class="col-md-9 col-xs-7 emp-data" id="txtEmpDept"></div>
+                                                </div>
+                                                
+                                                <div class="row emp-row">
+                                                    <div class="col-md-3 col-xs-5 emp-lb">Office Location:</div>
+                                                    <div class="col-md-9 col-xs-7 emp-data"><span id="txtEmpLoc"></span><span id="txtEmpReg"></span></div>
+                                                </div>
+                                                <div class="row emp-row">
+                                                    <div class="col-md-3 col-xs-5 emp-lb pb-0">Email:</div>
+                                                    <div class="col-md-9 col-xs-7 emp-data pb-0" id="txtEmpEmail"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 employee-info">
+                                        <nav class="tabs">
+                                            <div class="selector ajst"></div>
+                                            <a data-toggle="tab" href="#Profile" class="active"><i class="fa fa-user"></i><span class="is-phone-hode">Profile</span></a>
+                                            <a data-toggle="tab" id="addInfo" href="#Address"><i class="fa fa-map-marker font-18"></i><span class="is-phone-hode">Address</span></a>
+                                            <a data-toggle="tab" class="introduction-tab" href="#Introduction"><i class="fa fa fa-info-circle"></i><span class="is-phone-hode">Introduction</span></a>
+                                        </nav>
+                                        <div class="tab-content">
+                                            <div id="Profile" class="tab-pane fade in active">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Name:<span class="required">*</span></label>
+                                                            <input type="text" class="form-control" id="input4" ng-readonly="true" ng-disabled="allcontrols=='all'" maxlength="50" ng-show="mode!='add'" ng-model="employeeName">
+                                                            <div ng-show="mode=='add'">
+                                                                <div id="newEmployeePicker" style="border:1px solid #EEEEEE;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Designation:<span class="required">*</span></label>
+                                                            <input type="text" class="form-control" onkeyup='$("#txtEmpDesignation").text($("#designation").val());' placeholder="Designation" id="designation" ng-model="designation" maxlength="50" ng-disabled="allcontrols=='all'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Employee Code:</label>
+                                                            <input type="" class="form-control" id="input5" ng-disabled="allcontrols=='all'" maxlength="13" ng-model="employeeCode">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee required">
+                                                            <label for="" style="color:black;">Email:<span class="required">*</span></label>
+                                                            <input type="email" class="form-control" id="txtNewUseremail" ng-model="email" ng-readonly="true" ng-disabled="allcontrols=='all'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Group Name:</label>
+                                                            <input type="text" class="form-control" placeholder="Group Name" ng-disabled="allcontrols=='all'" maxlength="50" id="input5" ng-model="groupName">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Date of Joining:<span class="required">*</span></label>
+                                                            <input type="text" class="form-control" ng-readonly="true" ng-disabled="allcontrols=='all'" id="dateofJoining" datepicker ng-model="dateofJoining">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Company:<span class="required">*</span></label>
+                                                            <select name="select4" id="ddlUserCompany" class="form-control" ng-disabled="company!=''" ng-model="company" ng-change="onCompanyChange()" ng-options="s.ID as s.CompanyName for s in showCompany"></select>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Department:<span class="required">*</span></label>
+                                                            <select name="select4" id="department" onchange='$("#txtEmpDept").text($("#department option:selected").text());' class="form-control" ng-disabled="allcontrols=='all'" ng-model="department" ng-options="d.ID as d.DepartmentName for d in showDepartment"></select>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Office Location:<span class="required">*</span></label>
+                                                            <select name="select4" id="officeLocation" onchange='$("#txtEmpLoc").text($("#officeLocation option:selected").text());' class="form-control" ng-disabled="allcontrols=='all'" ng-model="officeLocation" ng-options="o.ID as o.OfficeName for o in showOffice"></select>
+                                                        </div>
+                                                        <div id="ChiefExecute">
+                                                            <label class="checkbox-inline b-700 mb-5"><input type="checkbox" id="chiefexecutive" name="chiefexecutive" value="chiefexecutive">Top Executive</label>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <div class="form-group" id="managerDiv">
+                                                                <label class="b-700 mb-5">Manager<span class="required">*</span>
+                                                                </label>
+                                                                <input type="text" id="managerFullName" ng-model="manager" ng-readonly="true" ng-disabled="allcontrols=='all'" class="form-control">
+                                                                <div id="managerLoginName" style="border:1px solid #EEEEEE;"></div>
+                                                            </div>
+                                                            <!-- <input type="text" class="form-control">-->
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Extension:</label>
+                                                            <input class="form-control Number" placeholder="Enter number only" ondrop="return false;" id="input" ng-model="extension" maxlength="5" ng-disabled="allcontrols=='all'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="">Status:</label>
+                                                            <input type="text" class="form-control" placeholder="Active" id="input" ng-readonly="true" ng-model="status">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee" ng-show="status!='Active'">
+                                                            <label for="">Date of Termination:<span class="required">*</span></label>
+                                                            <input type="text" class="form-control" ng-readonly="true" name="date" id="date" datepicker ng-model="dateofTermination">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Address" class="tab-pane fade">
+                                                <div class="row">
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <div class="form-group">
+                                                                <label data-localize="CurrentAddress">Current Address:</label>
+                                                                <textarea class="form-control txtCurrAddress" rows="3" id="comment" ng-model="currentAddress" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" style="resize:none;"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="City">City:</label>
+                                                            <input type="" class="form-control" id="input5city" ng-model="city" maxlength="50" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" class="control-label" data-localize="StateProvince">State/Province:</label>
+															   <input type="" class="form-control" id="input5state" maxlength="50" ng-model="state" ng-disabled="mode=='editview' && editViewDisable!='currentUser'"  >
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="Zip">Zip:</label>
+                                                            <input class="form-control Number" maxlength="10" placeholder="Enter number only" ondrop="return false;" id="input5" ng-model="zip" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="Country">Country:</label>
+                                                            <input type="text" class="form-control" id="input5country" maxlength="50" ng-model="country" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee" id="MobNo">
+                                                            <label for="" data-localize="MobileNo">Mobile No:</label>
+                                                            <input class="form-control Number" ondrop="return false;" placeholder="Enter number only" id="input" ng-model="mobileNo" maxlength="10" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-6">
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <div class="form-group">
+                                                                <label class="mr-8" data-localize="PermanentAddress">Permanent Address:</label>
+                                                                <label class="checkbox-inline b-700 mb-5" id="sameCheck"><input type="checkbox" value="" id="chkSameAddress">Same as Current Address</label>
+                                                                <textarea class="form-control txtPermAddress" rows="3" id="comment" ng-model="parmanentAddress" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" style="resize:none;"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="HomePhone">Home Phone:</label>
+                                                            <input class="form-control Number" id="input" placeholder="Enter number only" ondrop="return false;" ng-model="homePhone" maxlength="12" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="OtherEmail">Other Email:</label>
+                                                            <input type="email" class="form-control" id="inputEmail" onblur="validateEmail(this.value);" ng-model="otherEmail" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                        </div>
+                                                        <div id="Gender" class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="Gender">Gender:</label>
+                                                            <select name="select4" class="form-control" ng-model="gender" ng-disabled="mode=='editview' && editViewDisable!='currentUser'">
+                                                                <option>---Select---</option>
+                                                                <option>Male</option>
+                                                                <option>Female</option>
+                                                            </select>
+                                                        </div>
+                                                        <div id="DOB" class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="DateOfBirth">Date of Birth:</label>
+                                                            <input type="text" class="form-control" id="date22" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" ng-readonly="true" datepicker ng-model="dateofBirth" ng-disabled="allcontrols=='all'">
+                                                        </div>
+                                                        <div id="DateOfAnniversary" class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="DateOfAnniversary">Date Of Anniversary:</label>
+                                                            <input type="text" class="form-control" name="date" id="date33" ng-disabled="mode=='editview' && editViewDisable!='currentUser'" ng-readonly="true" datepicker ng-model="dateofAnniversary">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="Introduction" class="tab-pane fade">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <label for="" data-localize="LinkedlnAccount">Linkedln Account:</label>
+                                                            <a href="" id="linkedAccunt" target="_blank">
+                                                                <input class="form-control" id="Linkedln" ng-model="LinkedlnAccount" ng-disabled="allcontrols=='all'">
+                                                            </a>
+                                                        </div>
+                                                        <div class="form-group custom-form-group custom-form-group-manage-employee">
+                                                            <div class="form-group">
+                                                                <label for="">Introduction:</label>
+                                                                <textarea class="form-control"  style="resize: none;" ng-model="EmpIntro" id="EmpTndroduction"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div id="modalTitanPreview" class="prifile-outer-div modal fade">
+                                        <div class="prifile-picture">
+                                            <div class="modal-content">
+                                                <div class="modal-header panel-head-4" style="padding:6px 15px 0 15px!important;background:#666; color:white">
+                                                    <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                    <h4 class="modal-title h4-color" data-localize="ProfilePicture">Profile Picture</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <input id="uploadFile" class="upload-file blue-color" type="file" accept="image/*"><br />
+                                                    <div style="text-align:center">
+                                                        <!--	<input type="button" class="btn  btn-outline-success" style="font-size:11px;" ng-click="checkFileExists()" value="Submit">-->
+                                                        <button type="button" class="btn  btn-outline-success" style="font-size:11px;" ng-click="checkFileExists()" data-localize="Submit">
+                                                            Submit
+                                                        </button>
+
+
+                                                    </div>
+                                                    <!--Upload Image Js And Css-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-center manage-employees-footer-btn-group">
+                                        <!--<button type="button" class="btn custom-btn mr-8 w-87">Submit</button>
+                                        <button type="button" class="btn custom-btn-two-cancel w-87">Close</button> -->
+                                        <button type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-danger btnHR" id="btnTerminate" ng-click="clickTerminateButton()" data-localize="Terminate">Terminate</button>
+                                        <button type="button" style="font-size:13px" ng-show="mode=='add'" class="btn custom-btn mr-8 w-87 btnHR" ng-click="addNewEmployeeLoder()" data-localize="Submit">Submit</button>
+                                        <button type="button" style="font-size:13px" ng-show="mode=='editview' && editViewDisable=='currentUser'  && terminatestatus=='Active'" class="btn  btn-outline-success btnHR" ng-click="updateInformationButton()" data-localize="Update">Update</button>
+                                        <button type="button" style="font-size:13px" ng-show="mode=='edit' && terminatestatus=='Active'" class="btn btn-outline-success btnHR" ng-click="updateInformationButton()" data-localize="Update">Update</button>
+                                        <button type="button" style="font-size:13px" class="btn custom-btn-two-cancel w-87" ng-click="redirectCancel()" data-localize="Close">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tabs = $('.tabs');
+            var selector = $('.tabs').find('a').length;
+            //var selector = $(".tabs").find(".selector");
+            var activeItem = tabs.find('.active');
+            var activeWidth = activeItem.innerWidth();
+            $(".selector").css({
+                "left": activeItem.position.left + "px",
+                "width": activeWidth + "px"
+            });
+
+            $(".tabs").on("click", "a", function (e) {
+                e.preventDefault();
+                $('.tabs a').removeClass("active");
+                $(this).addClass('active');
+                var activeWidth = $(this).innerWidth();
+                var itemPos = $(this).position();
+                $(".selector").css({
+                    "left": itemPos.left + "px",
+                    "width": activeWidth + "px"
+                });
+            });
+        </script>
+        <script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/js/jquery.datepicker.js"></script>
+        <script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/CustomJs/employee_details.js"></script>
+        
+   
+
+
+<!-- Modal -->
+<div id="addsuccessful" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+            
+      <div class="modal-body">
+      	
+      	<div class="flextwosec">
+         
+          <div class="leftsection" style="text-align:center;">
+           <div class="circlepic"><img src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/check_img.png"></div> 
+          </div>
+          
+          <div class="rightsection">
+	          <div class="succescontentbox">
+	           
+	           <h3 id="SuccessPopupText">Employee has been added successfully.</h3>
+	           <p>Send the welcome notification to audience</p>
+	           
+	            <div class="radio">
+		    		<input type="radio" id="Corporatesec" value="Corporate" name="datasend">
+		    		<label for="Corporatesec">Corporate</label>
+		    	</div>
+		    	<div class="radio">
+		    		<input type="radio" id="Companysec" value="Company" name="datasend">
+		    		<label for="Companysec">Company</label>
+		    	</div>
+		    	<div class="radio" value="3">
+		    		<input type="radio" id="Departmentsec" value="Department" name="datasend">
+		    		<label for="Departmentsec">Department</label>
+		    	</div>
+		    	<div class="radio">
+		    		<input type="radio" id="locationsec" value="Location" name="datasend">
+		    		<label for="locationsec">Office Location</label>
+		    	</div>
+		    	<div class="radio">
+		    		<input type="radio" id="nosenddata" value="5">
+		    		<label for="nosenddata">Don't send any notification</label name="datasend">
+		    	</div>
+		    		           
+	          </div>
+	          
+	         <button type="button" class="btn custom-btn mr-8 w-87" id="NotifyAnnoucement">Submit</button> 
+	          	
+      	  </div>
+      	  
+      	</div>
+      
+      </div><!--modalbox-->
+        
+    </div>
+
+  </div>
+</div>
+     
+        
+       
+        
+        
+        
+        
+</body>
+</html>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:_dlc_DocId msdt:dt="string">DOCID-1440631752-1247</mso:_dlc_DocId>
+    <mso:_dlc_DocIdItemGuid msdt:dt="string">a1e5c0a7-8728-47e4-8dc1-c90b83dc9f05</mso:_dlc_DocIdItemGuid>
+    <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/TITAN_RAII_DEV/_layouts/15/DocIdRedir.aspx?ID=DOCID-1440631752-1247, DOCID-1440631752-1247</mso:_dlc_DocIdUrl>
+    </mso:CustomDocumentProperties>
+    </xml><![endif]-->
+</head>

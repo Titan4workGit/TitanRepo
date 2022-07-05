@@ -1,0 +1,1476 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>../SiteAssets/ExternalUsers/ExternalUsers.html</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+	<link type="text/css" rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/ExternalUsers/assets/css/styles.css">
+
+	<script src="../SiteAssets/ExternalUsers/ExternalUsers.js"></script>
+	<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+
+
+
+		<style>
+
+			#addStakeholdersPicker_TopSpan.sp-peoplepicker-topLevel,
+			#SupervisorEmployeePicker_TopSpan.sp-peoplepicker-topLevel,
+			#filterSupervisorEmployeePicker_TopSpan.sp-peoplepicker-topLevel,
+			#filterExtSupervisor_TopSpan.sp-peoplepicker-topLevel{
+
+				padding:6.7px 25px 6.7px 0px !important;	
+
+			}
+
+			#addStakeholdersPicker_TopSpan_EditorInput.sp-peoplepicker-editorInput,
+			#SupervisorEmployeePicker_TopSpan_EditorInput.sp-peoplepicker-editorInput,
+			#filterSupervisorEmployeePicker_TopSpan_EditorInput.sp-peoplepicker-editorInput{
+
+				border:none !important;	
+
+			}
+		#filterExtSupervisor .sp-peoplepicker-editorInput{
+	      border:none !important;
+       }		
+			button.close{
+
+				min-width:1em !important; 	
+				background:#fff;
+				color:#000;
+				line-height:26px !important;
+				transition:0.5s;
+				cursor:pointer !important;
+			}
+			
+			button.close:hover{
+	     background-color:#000;
+	     color:#fff;
+      	}
+
+			#tablefooterMyGuestUser{
+				/*width:98%;*/
+				width: 100%;	
+			}
+			.sp-peoplepicker-initialHelpText{
+
+				top:5px !important;	
+
+			}
+			.external-guest-user-org-name-search {
+			    display: flex;
+			    align-items: center;
+			}
+			.external-guest-user-org-name-search>input {
+			    margin-right: 10px;
+			}
+			.external-guest-user-org-name-search>button {
+			    padding: 5px 12px;
+			}
+			.custom-table tbody tr:nth-child(odd) {
+			    background-color: #f5f5f5;
+			}
+			.custom-table tbody tr {
+			    border-top: 1px solid #d2d2d2;
+			}
+			.custom-table-border {
+			    border: 1px solid #d2d2d2;
+			}
+			#add-filter .project-modal-footer {
+			    text-align: center;
+			}
+			#otherOrganizationSearch .clients-footer-btn-group {
+			    text-align: center;
+			}
+			.client-name-search {
+			    margin-top: 23px;
+			}
+			#edit-filter .sp-peoplepicker-editorInput[type=text] {
+			    border: none !important;
+			}
+			#edit-filter .sp-peoplepicker-topLevel {
+			    padding: 6.7px 25px 6.7px 0px !important;
+			}
+			#edit-filter .emp-upload-image-box {
+			    height: 138px;
+			    width: 138px;
+			    margin: 18px auto 18px auto;
+			}
+			#peoplePickerSale .sp-peoplepicker-topLevel {
+			    padding: 6.7px 25px 6.7px 0px !important;
+			}
+			#peoplePickerSale .sp-peoplepicker-editorInput {
+			    border: none !important;
+			}
+
+
+#NoRecordFoundGuestUser{
+ border-left:1px solid #d6d6d6 !important;
+ border-right:1px solid #d6d6d6 !important; 
+ border-bottom:1px solid #d6d6d6 !important;  	
+}			
+			
+.control-fileupload {
+  display: block;
+  border: 1px solid #ccc;
+  background: #FFF;
+  border-radius: 0px;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  padding: 0px 10px 2px 10px;
+  overflow: hidden;
+  position: relative;
+ 
+  }
+
+ .control-fileupload input[type=file] {
+  display: block !important;
+  right: 1px;
+  top: 1px;
+  height: 34px;
+  opacity: 0;
+  width: 100%;
+  background: none;
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+.control-fileupload  label {
+    line-height: 24px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;/*
+    text-overflow: ellipsis;*/
+    position: relative;
+    z-index: 1;
+    margin-right: 90px;
+    margin-bottom: 0px;
+    cursor: text;
+    width: 9em !important;
+  } 
+
+.control-fileupload:before {
+ 	padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #e3f2fd;
+    border-color: #1e88e5;
+    background: linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+    background:-webkit-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+    background:-moz-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+    background:-o-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+    box-shadow:inset 0 1px #6093bd, 0 1px 2px rgba(20, 82, 136, 0.28);
+    transition: color 0.2s ease;   
+    /* add more custom styles*/
+    content: 'Upload';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    right: 2px;
+    line-height: 20px;
+    text-align: center;
+ 
+ }	
+.control-fileupload:before:focus{
+	
+    border-color: #42a5f5;
+    background: linear-gradient(to bottom, #90caf9 0%, #64b5f6 100%);
+    box-shadow: inset 0 1px #e3f2fd, 0 2px 3px rgb(0 0 0 / 20%);
+}  
+
+#modalAddNewClient .sp-peoplepicker-topLevel{
+
+ padding:7px 0 !important;	
+
+}
+
+#modalAddNewClient .sp-peoplepicker-editorInput{
+ border:none !important;	
+}
+ 
+
+ 
+			/* responsive css start */
+
+			@media(max-width:767px){
+				div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+					min-width: 991px !important;	
+
+				}
+          
+				.table-responsive{
+
+					overflow-x:auto !important;	
+
+				}
+			.project-top-panel-box-istad .search-box{
+	          max-width:80% !important;       
+	          margin:0 auto;
+			}		
+			.project-top-panel-box-istad .search-box #queryGuestUser{
+	         width:100% !important;
+           }
+           .project-top-panel-box-istad .text-right{
+ 	       text-align:center !important;
+          }
+          #mainTablearea{
+		     position:relative;
+		     z-index:1;
+	       }
+	       .pding-top{
+              padding-top:0px;	
+           }
+
+		}
+
+			@media(max-width:360px){
+
+				.project-top-panel-box-istad .search-box{
+
+					max-width:100% !important; 	 
+				}	
+
+				input#queryGuestUser{
+
+					width:100%	!important;
+				}
+
+				.project-top-panel-box-istad .text-right{
+
+					text-align:center !important;	
+				}
+		#tablelocationMyGuestUser div{
+	  margin-left:10px !important;
+    }		
+
+	}
+	
+.statusRed{
+	color:red;
+}
+.statusBlue{
+	color:blue;
+}
+
+.radiosection{
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height:15px;
+  margin-bottom:10px;
+}
+.radiosection input{
+ margin:0 15px 0 0;
+
+}
+.radiosection input:last-child{
+ margin:0 15px;
+
+}
+.pding-top{
+   padding-top:32px;	
+}
+
+
+.statusDiv {
+	float: right;
+    clear: both;
+    font-size: 12px;
+    cursor: pointer;
+    color:blue;
+    text-decoration:underline;
+}
+
+
+/*****6/25/21******/
+
+
+.preview_click{
+	
+    float: right;
+    font-weight: 600;
+    color: #1d6ec0;
+
+}
+
+.flexing{
+   display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flexing p{
+ margin-bottom:0px !important;
+ padding:0 5px; 
+}
+
+.description_sec{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  }
+
+#pDescription{
+  padding: 2px 5px !important;
+  width: 85%;
+}
+
+.title_add{
+    font-size: 15px;
+    line-height: 1;
+}
+
+.img_gall{
+  width:100%;
+  margin:15px 0 16px 0;
+}
+
+.img_gall img{
+    border: 2px solid #a1a1a1;
+    width: 100%;
+    box-shadow: 2px 1px 4px 0px #ccc;
+  }
+
+h4.modal-title{
+   font-size:15px !important;
+   font-weight:600 !important;
+   color:#292929 !important;
+}
+
+p.title_add{
+   font-size:15px !important;
+   font-weight:400; 
+}
+
+.ms-webpart-cell-horizontal,
+.ms-webpart-zone{
+ display:block !important; 	
+}
+
+
+@media(max-width:767px){
+
+.description_sec{
+  display:block;
+}
+
+.title_add{
+    font-size: 14px !important;
+    
+}
+
+#pDescription{
+  width: 100%;
+}
+
+}
+
+@media(min-width:991px){
+
+.Preview .modal-dialog{
+	
+  transform:translate(-6px,0)!important;
+ -webkit-transform:translate(-6px,0) !important;
+ -moz-transform:translate(-6px,0) !important;
+ -o-transform:translate(-6px,0) !important;
+	
+}
+
+}
+
+</style>	
+
+	
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1784</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">b039361e-5c0f-45c2-9768-ddd39a07b171</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1784, ADMIN-1645029823-1784</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">178400.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Guest Users
+								</h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0">
+									<div class="col-sm-6 col-xs-12 project-top-panel-box-istad">
+										<div class="form-group custom-form-group search-box">
+											<input type="text" id="queryGuestUser" onkeyup="sorterTableGuestUserList.search('queryGuestUser')" placeholder="Search...">
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12 project-top-panel-box-istad">
+										<div class="text-right project-btn-position">
+											<button type="button" id="btnAddnew" class="btn custom-btn w-70" data-toggle="modal"
+											data-target="#add-filter">Add</button>
+											<button type="button" id="btnGuestFilter" class="btn custom-btn w-70 ml-4" data-toggle="modal"
+											data-target="#External-filter">Filter</button>
+											<button type="button" id="btnCopyGuestPortal" class="btn custom-btn ml-4">Copy Guest Portal Url</button>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix margin10">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="card">
+											<div class="body">
+												<div class="table-responsive">
+													<!--<table id="myFirstTable" class="table table-bordered table-striped table-hover js-basic-example dataTable"></table>-->
+													<div id="tablewrapper">
+														<div id="tableheader" style="height: auto !important;">
+															<div class="search" style="display:none;">
+
+															</div>
+															<div>
+																<span class="details">
+																	<div style="display:none;">Records  <span id="startrecordMyGuestUser"></span>-<span id="endrecordMyGuestUser"></span> PagesOf  <span id="totalrecordsMyGuestUser"></span></div>
+																	<div style="display:none;"><a href="javascript:sorterTableGuestUserList.reset()">Reset </a></div>
+																</span>
+															</div>
+														</div>                                
+														<div>
+
+															<div id='mainTablearea' class='table-responsive'><table cellpadding='0' cellspacing='0' border='1' id='TempTableGuestUser' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+																<thead>
+																	<tr>
+																		<th ><h6 data-localize="Name">Name</h6></th>
+																		<th ><h6 data-localize="Designation">Designation</h6></th>
+																		<th style="width:18%"><h6 data-localize="Organization">Organization</h6></th>
+																		<th ><h6 data-localize="Email">Email</h6></th>
+																		<th ><h6 data-localize="Type">Type</h6></th>
+																		<th ><h6 data-localize="Supervisor">Supervisor</h6></th>
+																		<th ><h6 data-localize="Reference">Reference</h6></th>
+																		<th style="width:10%"><h6 data-localize="Valid Upto">Valid Upto</h6></th>
+																		<th style="width:8%"><h6 data-localize="Status">Status</h6></th>
+																		
+																		<th style="width:6%">Action</th>
+																	</tr>
+																</thead>                                    
+
+																<tbody class='panel mainDivClientName' id="mainDivAreaGuestUser"></tbody></table>
+																<div style='text-align: center;font-size:14px' id="NoRecordFoundGuestUser" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+															</div>
+															<div id="tablefooterMyGuestUser" style="margin-bottom: 10px;">
+																<div id="tablenavMyGuestUser">
+																	<div>
+																		<img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableGuestUserList.move(-1,true)" />
+																		<img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableGuestUserList.move(-1)" />
+																		<img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableGuestUserList.move(1)" />
+																		<img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableGuestUserList.move(1,true)" />
+																	</div>
+																	<div>
+																		<select id="pagedropdownMyGuestUser"></select>
+																	</div>
+																	<div>
+																		<a href="javascript:sorterTableGuestUserList.showall()" data-localize="ViewAll">ViewAll </a>
+																	</div>
+																</div>
+																<div id="tablelocationMyGuestUser">
+																	<div>
+																		<span data-localize="LinesPerPage">Lines Per Page</span>
+																		<select class="myListPagingValue" onchange="sorterTableGuestUserList.size(this.value)">
+																			<option value="5">5</option>
+																			<option value="10" selected="selected">10</option>
+																			<option value="20">20</option>
+																			<option value="50">50</option>
+																			<option value="100">100</option>
+																		</select>
+																	</div>
+																	<div class=""><span data-localize="Page">Page</span><span id="currentpageMyGuestUser"></span><span data-localize="Of">of</span><span id="totalpagesMyGuestUser"></span></div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>							
+
+
+
+
+
+
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- filter Modal -->
+			<div class="modal fade" id="External-filter" role="dialog">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content ">
+							<div class="modal-header">
+								<button type="button" class="close close-round" data-dismiss="modal"><span
+								class="close-icon">&times;</span></button>
+								<h4 class="modal-title">Filter</h4>
+							</div>
+							<div class="modal-body project-inbox-istab">
+
+								<div class="row">
+
+									<div class="col-md-4 col-sm-6 project-inbox-istab-filters">
+										<div class="form-group custom-form-group">
+											<label for="Project">Organization:</label>
+											<select class="form-control" id="ddlOrganizor">									
+												
+											</select>
+										</div>
+									</div>
+						
+									<div class="col-md-4 col-sm-6 project-inbox-istab-filters">
+										<div class="form-group custom-form-group">
+											<label for="Project">Type:</label>
+											<select class="form-control" id="ddlTypefilter">
+										    </select>
+										</div>
+									</div>
+			
+			                        <div class="col-md-4 col-sm-6 project-inbox-istab-filters project-inbox-istab-filters-supervisor">
+										<div class="form-group custom-form-group">
+											<label for="Project">Supervisor:</label>
+											<!--<input type="text" class="form-control" placeholder="">-->
+											<div id="filterSupervisorEmployeePicker" class=""></div>
+										</div>
+									</div>
+
+								<!-- </div>
+
+								<div class="row"> -->
+							
+				                    <div class="col-md-4 col-sm-6 project-inbox-istab-filters">
+									  <div class="form-group custom-form-group">
+										<label for="Project">External Supervisor:</label>
+										<!--<select class="form-control" id="ddlAssociation">
+										 <option>Single</option>
+										 <option>Group</option>										
+										</select>-->
+										<div id="filterExtSupervisor" class=""></div>
+									  </div>
+								    </div>			
+														
+									<div class="col-md-4 col-sm-6 project-inbox-istab-filters">
+									  <div class="form-group custom-form-group">
+										<label for="Project">Status:</label>
+										<select class="form-control" id="ddlStatus">
+										 <option>ALL</option>
+										 <option>Initiated</option>
+										 <option>Invited</option>
+										 <option>Accepted</option>
+										 <option>Active</option>
+										 <option>Inactive</option>
+										 </select>
+									  </div>
+								   </div>
+
+									<div class="col-md-4 col-sm-6 project-inbox-istab-filters">
+										<div class="form-group custom-form-group">
+											<label for="Project">Designation:</label>
+											<input type="text" id="filterDesination" class="form-control" placeholder="">
+											<!--<div id="filterSupervisorEmployeePicker" class=""></div>-->
+										</div>
+									</div>
+
+								</div>
+								
+							</div>
+							<div class="modal-footer project-modal-footer">
+								<button type="button" id="btnfiter" class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
+								<button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
+							</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- filter Modal -->
+	<div class="modal fade" id="mg-filter" role="dialog">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close close-round" data-dismiss="modal"><span
+						class="close-icon">&times;</span></button>
+						<h4 class="modal-title">Dre Werner</h4>
+					</div>
+					<div class="modal-body project-inbox-istab">
+						<div class="row">
+							<div class="col-sm-12 col-xs-12 pr0 pl10 tpl0">
+								<div class="row">
+									<div class="col-md-12">
+										<div id="comment_area">
+											<div class="comment-box">
+												<div class="px-0 comment-box-area custom-form-group">
+													<textarea class="form-control custom-control custom-scroll"
+													rows="3" id="comment" style="resize:none;"></textarea>
+												</div>
+												<div class="btn-post-box">
+													<button type="button" id=""
+													class="btn custom-btn mb5">Post</button>
+													<button type="button" id="AddAttachEditTask"
+													class="btn custom-btn pull-right">
+													<label for="AttachmentUploadField"> <i
+														class="fa fa-upload" aria-hidden="true"></i>
+													</label>
+													<input id="AttachmentUploadField" type="file"
+													multiple="" style="display:none">
+												</button>
+											</div>
+											<div class="clearfix"></div>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="chat-main-panel scrollbar-panel">
+										<div id="reply_area">
+
+											<div class="col-md-12 col-sm-12 reply-box-ext mt5">
+												<div class="row m-0">
+													<div
+													class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+													<span class="mr10"><img src="../SiteAssets/ExternalUsers/assets/images/user_pic.jpg"
+														class="img-circle" width="36" height="36"
+														alt=""></span> <span>Patrick Gould</span> -
+														<span>24 Feb</span> at
+														<span> 4:30 pm</span>
+													</div>
+													<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+														sed do eiusmod tempor
+													incididunt ut labore et dolore magna aliqua.</h4>
+													<div class="col-md-12 col-sm-12 p0">
+														<div class="attachment-badge chip-box">
+															<div href="#" class="m-0  upload-chip"> <span
+																class="pr-8 chip-text-box">Img3.png</span>
+																<span class="chip-icon-box"> <i
+																	class="fa fa-eye cursor-pointer"></i> <i
+																	class="fa fa-download cursor-pointer px-4"></i>
+																	<i class="fa fa-times cursor-pointer"></i>
+																</span> </div>
+																<div href="#" class="m-0  upload-chip"> <span
+																	class="pr-8 chip-text-box">Img3.png</span>
+																	<span class="chip-icon-box"> <i
+																		class="fa fa-eye cursor-pointer"></i> <i
+																		class="fa fa-download cursor-pointer px-4"></i>
+																		<i class="fa fa-times cursor-pointer"></i>
+																	</span> </div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-12 col-sm-12 reply-box-my mt5">
+														<div class="row m-0">
+															<div class="col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+																<span>24 Feb</span> at
+																<span> 6:31 pm</span>
+															</div>
+															<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																sed do eiusmod tempor
+																incididunt ut labore et dolore magna aliqua. Lorem ipsum
+																dolor sit amet,
+																consectetur adipiscing elit, sed do eiusmod tempor
+																incididunt ut labore et dolore
+															magna aliqua.</h4>
+															<div class="col-md-12 col-sm-12 p0">
+																<div class="attachment-badge chip-box pull-right">
+																	<div href="#" class="m-0  upload-chip"> <span
+																		class="pr-8 chip-text-box">Img2.png</span>
+																		<span class="chip-icon-box"> <i
+																			class="fa fa-eye cursor-pointer"></i> <i
+																			class="fa fa-download cursor-pointer px-4"></i>
+																			<i class="fa fa-times cursor-pointer"></i>
+																		</span> </div>
+																		<div href="#" class="m-0  upload-chip"> <span
+																			class="pr-8 chip-text-box">Img3.png</span>
+																			<span class="chip-icon-box"> <i
+																				class="fa fa-eye cursor-pointer"></i> <i
+																				class="fa fa-download cursor-pointer px-4"></i>
+																				<i class="fa fa-times cursor-pointer"></i>
+																			</span> </div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-md-12 col-sm-12 reply-box-ext mt5">
+																<div class="row m-0">
+																	<div
+																	class="col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+																	<span class="mr10"><img src="../SiteAssets/ExternalUsers/assets/images/user-1.jpg"
+																		class="img-circle" width="36" height="36"
+																		alt=""></span> <span>Patrick Gould</span> -
+																		<span>24 Feb</span> at
+																		<span> 4:30 pm</span>
+																	</div>
+																	<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																		sed do eiusmod tempor
+																	incididunt ut labore et dolore magna aliqua.</h4>
+																	<div class="col-md-12 col-sm-12 p0">
+																		<div class="attachment-badge chip-box">
+																			<div href="#" class="m-0  upload-chip"> <span
+																				class="pr-8 chip-text-box">Img3.png</span>
+																				<span class="chip-icon-box"> <i
+																					class="fa fa-eye cursor-pointer"></i> <i
+																					class="fa fa-download cursor-pointer px-4"></i>
+																					<i class="fa fa-times cursor-pointer"></i>
+																				</span> </div>
+																				<div href="#" class="m-0  upload-chip"> <span
+																					class="pr-8 chip-text-box">Img3.png</span>
+																					<span class="chip-icon-box"> <i
+																						class="fa fa-eye cursor-pointer"></i> <i
+																						class="fa fa-download cursor-pointer px-4"></i>
+																						<i class="fa fa-times cursor-pointer"></i>
+																					</span> </div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="col-md-12 col-sm-12 reply-box-my mt5">
+																		<div class="row m-0">
+																			<div class="col-sm-12 reply-author-detail pl0 pr0 pb10 pt0">
+																				<span>24 Feb</span> at
+																				<span> 6:31 pm</span>
+																			</div>
+																			<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+																				sed do eiusmod tempor
+																				incididunt ut labore et dolore magna aliqua. Lorem ipsum
+																				dolor sit amet,
+																				consectetur adipiscing elit, sed do eiusmod tempor
+																				incididunt ut labore et dolore
+																			magna aliqua.</h4>
+																			<div class="col-md-12 col-sm-12">
+																				<div class="attachment-badge chip-box pull-right">
+																					<div href="#" class="m-0  upload-chip"> <span
+																						class="pr-8 chip-text-box">Img2.png</span>
+																						<span class="chip-icon-box"> <i
+																							class="fa fa-eye cursor-pointer"></i> <i
+																							class="fa fa-download cursor-pointer px-4"></i>
+																							<i class="fa fa-times cursor-pointer"></i>
+																						</span> </div>
+																						<div href="#" class="m-0  upload-chip"> <span
+																							class="pr-8 chip-text-box">Img3.png</span>
+																							<span class="chip-icon-box"> <i
+																								class="fa fa-eye cursor-pointer"></i> <i
+																								class="fa fa-download cursor-pointer px-4"></i>
+																								<i class="fa fa-times cursor-pointer"></i>
+																							</span> </div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer project-modal-footer">
+													<button type="button" class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
+													<button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
+												</div>
+											</div>
+										</div>
+									</div>
+
+		<!-- Add filter Modal -->
+		<div class="modal fade" id="add-filter" role="dialog">
+		  <div class="modal-dialog modal-lg">
+		    <div class="modal-content">
+			   <div class="modal-header">
+				 <button type="button" class="close close-round" id="closeModel"   data-dismiss="modal"><span	class="close-icon">&times;</span></button>
+				 <h4 class="modal-title">New Guest User</h4>
+			   </div>
+				<div class="modal-body project-inbox-istab">
+				 <div class="row">
+				 <div class="col-sm-6">
+				   <div class="row">
+				   
+						<div class="col-xs-12">
+									<div class="form-group custom-form-group">									
+												<label for="Project">Name:<span class="color-red">*</span></label>
+												<input type="text" id="txtAddGuestName" class="form-control" placeholder="Enter Name">
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="Project">Email:<span class="color-red">*</span></label>
+												<input type="email" id="txtAddEmail" onblur="validateEmail()" class="form-control" placeholder="Email Address">
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="Project">Designation:</label>
+												<input type="email" id="txtAddDesignation" class="form-control" placeholder="Designation">
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="Project">Reference Code:</label>
+												<input type="text" id="txtAddReferenceCode" class="form-control" placeholder="Reference Code">
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="Project">Members:<span class="color-red"></span></label>
+												<input type="text" id="addStakeholders" disabled="" class="form-control">
+												<!--<div id="addStakeholdersPicker" class=""></div>-->
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="" class="font-12">Internal Supervisor:<span class="color-red">*</span><sup class="start-box"></sup></label>
+												<input type="text" id="txtIntSupervisor" disabled=""  class="form-control">
+												<!--<div id="SupervisorEmployeePicker" class=""></div>-->																	
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="row">
+
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group" style="display:none">
+												<label>Association:</label>
+												<select class="form-control" id="ddlAssociation">
+							                		<option>Single</option>
+												  	<option>Group</option>
+								                </select>
+							            	</div>
+										</div>
+
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group external-guest-user-org-name-box">
+												<label for="Project">Organization Name:<span class="color-red">*</span><sup class="start-box"></sup></label>
+												<div class="external-guest-user-org-name-search">
+													<input type="text" id="txtAddOrganization" class="form-control" disabled="disabled" placeholder="Organization Name">
+													<button  type="button" class="btn custom-btn ml-8 w-87" id="searchOrg"  data-toggle="modal" data-target="#otherOrganizationSearch">Search</button>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="" class="font-12">External Supervisor:<span class="color-red">*</span><sup class="start-box"></sup></label>
+	                                            <input type="text" id="txtAddExtSupervisor"  disabled="" class="form-control" placeholder="Enter Email Address">
+											</div>
+										</div>
+                                        <div class="col-xs-12">
+										  <div class="form-group custom-form-group">
+											<label for="Project">Collaboration Type:</label>
+											<select class="form-control" id="ddlCollaborationType"></select>
+										  </div>
+										</div>
+										
+
+										
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<!-- <label for="Project">Portal view:</label> -->
+												<label for="Project">Template Type:</label>
+												<!--<input type="text" id="txtAddTemplate" class="form-control">-->
+												<select class="form-control" id="ddlAddTemplate">
+																		
+												</select>
+
+											</div>
+										<a href="#" class="preview_click" onclick="getTemplate('2')" data-toggle="modal" data-target=".Preview">Preview</a>	
+										</div>
+
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<!-- <label for="Project">Access Validity:<span class="color-red">*</span></label> -->
+												<label for="Project">Validity Upto:<span class="color-red">*</span></label>
+												<!--<input type="date" id="addDate" class="form-control">-->
+												<input id="addDate" type="text" class="form-control ViewMode" name="date">
+											</div>
+										</div>
+										
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">												
+												<label for="Project">Profile Picture:</label>
+												<span class="control-fileupload">
+													  <label for="file">Choose a file :</label>
+													  <input type="file" id="addFileUpload">
+												</span>
+
+											</div>
+										</div>
+
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="modal-footer project-modal-footer">
+						<button type="button" class="btn custom-btn mr-8 w-70" id="btnSubmit">Submit</button>
+						<button type="button" class="btn custom-btn-two-cancel w-70" id="addClose" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Edit filter Modal -->
+		<div class="modal fade" id="edit-filter" role="dialog">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span
+							class="close-icon">&times;</span></button>
+							<h4 class="modal-title">Edit Guest User</h4>
+						</div>
+						<div class="modal-body project-inbox-istab">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="row">
+
+												<div class="col-md-6">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="Project">Collaboration Type:</label>
+																<!-- id="ddlCollaborationType" -->
+																<select class="form-control" id="ddlCollaboration">			
+																</select>
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div
+															class="form-group custom-form-group custom-form-group-manage-employee">
+															<label for="">Name:<span class="color-red">*</span></label>
+															<input type="text" id="txtUpdateLogonName" class="form-control" placeholder="Logon Name" disabled="">
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="Project">Email:<span class="color-red">*</span></label>
+																<!-- id="txtAddEmail" -->
+																<input type="email" id="txtupdateEmail" disabled="" onblur="validateEmail()" class="form-control" placeholder="Email Address">
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div
+															class="form-group custom-form-group custom-form-group-manage-employee">
+															<label for="">Designation:</label>
+															<input class="form-control" type="text" name="" id="txtDesignation" placeholder="Designation">
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="Project">Members:<span class="color-red">*</span></label>
+																<input type="email" id="upStakeholders" disabled="" class="form-control">
+																<!--<div id="upStakeholdersEmployeePicker" class=""></div>-->
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="Project">Internal Supervisor:<span class="color-red">*</span></label>
+																<!--<div id="UpdateSupervisorEmployeePicker" class=""></div>-->
+																<input type="text" id="txtUpdateSupervisor" disabled="" class="form-control">
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="Project">Status:</label>
+																<select class="form-control" id="DDLStatus" disabled="">
+																    <option value="Initiated">Initiated</option>
+																	<option value="Invited">Invited</option>
+																	<option value="Accepted">Accepted</option>																	
+																	<option  value="Active">Active</option>
+																	<option value="Inactive">Inactive</option>
+																</select>
+															</div>
+															<span class="statusDiv" id="statusAction"></span>
+															<!--<a href="#" class="statusDiv" id="statusAction"></a>-->
+														</div>
+													</div>
+												</div>
+
+												<div class="col-md-6">
+													<div class="row">
+														<div class="col-xs-12">
+															<div class="emp-upload-image-box">
+																<img class="emp-upload-image" id="upGuestuserpick" src=""
+																alt="">
+																<div class="emp-upload-image-box-btn">
+																	<input type="file" id="guestUserPick" onchange="readURL(this);" class="emp-upload-image-inp" name="">
+																	<span class="emp-upload-image-span">Upload<br>Profile
+																	Picture</span>
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group" style="display:none">
+																<label>Association:</label>
+																<select class="form-control" id="ddlAssociationUpdate" onchange="Association()">
+											                		<option>Single</option>
+																  	<option>Group</option>
+												                </select>
+											            	</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group external-guest-user-org-name-box">
+																<label for="Project">Organization Name:</label>
+																<div class="external-guest-user-org-name-search">
+																	<input type="text" id="txtUpdateOrg" class="form-control" disabled="" placeholder="Organization Name">
+																	<!-- id="searchOrg" -->
+																	<!--<button  type="button" class="btn custom-btn ml-8 w-87" id="SearchOrg"  data-toggle="modal" data-target="#otherOrganizationSearch">Search</button>-->
+																</div>
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div class="form-group custom-form-group">
+																<label for="" class="font-12">External Supervisor:<span class="color-red">*</span><sup class="start-box"></sup></label>
+																<input type="text" id="updateExtSupervisor" class="form-control" disabled="" placeholder="External Supervisor">					
+															</div>
+														</div>
+														<div class="col-xs-12">
+															<div
+															class="form-group custom-form-group custom-form-group-manage-employee">
+															<label for="">Reference Code:</label>
+															<input class="form-control" type="text" name="" id="txtUpdateReference" placeholder="Reference Code">
+														</div>
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group custom-form-group">
+															<label for="Project">Template Type:</label>
+															<!--<input type="text" id="txtTemplate" class="form-control">-->
+															<select class="form-control" id="ddlUpdateTemplate">
+													        </select>
+
+														</div>
+														<a href="#" class="preview_click" onclick="getTemplate('3')" data-toggle="modal" data-target=".Preview">Preview</a>
+														    
+													</div>
+													<div class="col-xs-12">
+														<div class="form-group custom-form-group">
+															<label for="Project">Validity Upto:<span class="color-red">*</span></label id="lblupdatedate">
+																<input id="ValidDate" type="text" class="form-control ViewMode" name="date">
+															<!--</div>-->
+
+														</div>
+													</div>
+													
+													
+														</div>
+													</div>
+													
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer project-modal-footer">
+					<button type="button" class="btn custom-btn mr-8 w-70" id="btnUpdate" data-dismiss="modal">Update</button>
+					<button type="button" class="btn custom-btn-two-cancel w-70" id="btnUpdateClose" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Other Organization Name Search Modal-->
+	<div class="modal fade organization-entry-search-modal" id="otherOrganizationSearch" role="dialog">
+	    <div class="modal-dialog modal-lg">
+	      <div class="modal-content">
+	        <div class="modal-header">
+	          <!-- <button type="button" class="close close-round" data-dismiss="modal">&times;</button> -->
+	          <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+	          <h4 class="modal-title">Customers</h4>
+	        </div>
+	        <div class="modal-body">
+	        	<div class="row mb-8">
+
+	        		<div class="col-xs-12 col-sm-12 client-status-search-add-box">
+		        		<div class="client-status-search-add-group-main">
+							<div class="form-group custom-form-group" style="display:none">
+								<label>Status:</label>
+								<select class="form-control">
+									<option>Active</option>
+								</select>
+							</div>
+						</div>
+						<div class="client-status-search-add-group-main" style="position:relative; right:15px;">
+							<div class="form-group custom-form-group client-name-search">
+							<input type="text" id="queryCustomer" onkeyup="sorterTableCustomerList.search('queryCustomer')" placeholder="Search...">
+							</div>
+						</div>
+						<div class="client-status-search-add-group-main">
+							<div class="form-group custom-form-group client-name-add-client-btn">
+								<button type="button" id="btnAddnewClient" class="btn custom-btn w-87" data-toggle="modal" data-target="#modalAddNewClient">Add New Customer</button>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-xs-12 col-sm-12 table-responsive client-name-table-box">
+                        <div id="tablewrapper">
+                            <div id="tableheader" style="height: auto !important;">
+                                <div class="search" style="display:none;">
+
+                                </div>
+                                <div>
+                                    <span class="details">
+                                        <div style="display:none;">Records  <span id="startrecordMyCustomer"></span>-<span id="endrecordMyCustomer"></span> PagesOf  <span id="totalrecordsMyCustomer"></span></div>
+                                        <div style="display:none;"><a href="javascript:sorterTableCustomerList.reset()">Reset </a></div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div id='mainTablearea' class='table-responsive'><table cellpadding='0' cellspacing='0' border='1' id='TempTableClientMaster' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+                                <thead class='panel-heading '>
+                                   <tr>
+                                     <th width="30px"></th>
+                                     <th><h6 data-localize="Organization Name">Organization Name</h6></th>								
+				                     <th><h6 data-localize="Ref Code">Ref Code</h6></th>
+							         <th><h6 data-localize="Attn Name">Attn Name</h6></th>
+					                 <th><h6 data-localize="Type">Type</h6></th>
+                                                                                         
+                                    </tr>
+                                                                                
+
+                                </thead><tbody class='panel mainDivClientName' id="mainDivAreaClientmaster"></tbody></table>
+                                <div style='text-align: center;font-size:14px' id="NoRecordFoundclientmaster" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+                            </div>
+                            <div id="tablefooterMyCustomer" style="margin-bottom: 10px;">
+                                <div id="tablenavMyCustomer">
+                                    <div>
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1,true)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(1)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableCustomerList.move(1,true)" />
+                                    </div>
+                                    <div>
+                                        <select id="pagedropdownMyCustomer"></select>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:sorterTableCustomerList.showall()" data-localize="ViewAll">ViewAll </a>
+                                    </div>
+                                </div>
+                                <div id="tablelocationMyCustomer">
+                                    <div>
+                                        <span data-localize="LinesPerPage">Lines Per Page</span>
+                                        <select class="myListPagingValue" onchange="sorterTableCustomerList.size(this.value)">
+                                            <option value="5">5</option>
+                                            <option value="10" selected="selected">10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                    <div class=""><span data-localize="Page">Page</span><span id="currentpageMyCustomer"></span><span data-localize="Of">of</span><span id="totalpagesMyCustomer"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+				</div>
+	        </div>
+	        <div class="modal-footer clients-footer-btn-group footer-btn-group">
+	          	<button type="button" id="btnSelect" class="btn custom-btn w-87" data-dismiss="modal">Select</button>
+	          	<button type="button" class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+	        </div>
+	      </div>
+	    </div>
+	</div>
+</div>
+<!-- new add button for client add -->
+
+<!--<div class="modal fade" id="modalAddNewClient" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!-- <button type="button" id="btnCross" class="close close-round bg-white-round-btn" data-dismiss="modal">×</button> -->
+				<!--<button type="button" id="btnCross" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+				<h4 class="modal-title text-left"> Add New Client </h4>
+			</div> 
+			<div class="modal-body">
+				<iframe width="100%" id="siteViewmodal" scrolling="auto" style=" height:500px; overflow: hidden;" title="" src=""></iframe>          
+			</div>
+			<div class="modal-footer footer-btn-group">
+				<button type="button"  id="btnCloseClient"class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>		
+</div>-->
+
+
+<div class="modal fade" id="modalAddNewClient" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" id="btnCross" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+				      <h4 class="modal-title">Customers Details</h4>
+				    </div>
+				    <div class="modal-body Customer-inbox-istab">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="row">
+								
+								<div class="col-md-12 radiosection">
+							              <input type="radio" id="btnOrgAssociation" name="Association" value="Organization">
+										  
+										  <label for="male">Organization</label>
+										  <input type="radio" style="margin-left: 50px;" id="btnIndividual" name="Association" value="Individual">
+										  <label for="female">Individual</label>		
+							
+							
+								</div>
+									<div class="col-xs-12">
+									<div class="form-group custom-form-group">
+											<label for="Customer" id="lblOrganization"></label>
+											<input type="text" id="txtClientName" onblur="checkExistForClientName()"  class="form-control" placeholder="Enter Name">
+										</div>
+									</div>
+									<div class="col-xs-12">
+									<div class="form-group custom-form-group">
+											<label for="Customer">Attn Name:</label>
+											<input type="text" id="txtAttnName" class="form-control"  placeholder="Enter Attn Name" >
+										</div>
+									</div>
+									<div class="col-xs-12">
+   									       <div class="form-group custom-form-group">
+												<label for="Customer">Contact Number:</label>
+												<input type="text"   id="txtnumber" class="form-control" placeholder="Enter Contact Number">
+											</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="form-group custom-form-group">
+											<label for="Customer">Email:</label>
+											<input type="email" id="txtEmail" onblur="validateEmail()"  class="form-control" placeholder="Enter Email">
+										</div>
+									</div>
+									<div class="col-xs-12">
+										<div class="form-group custom-form-group">
+											<label for="Customer">Address:</label>
+											<textarea class="form-control" rows="5"  id="txtAddress" placeholder="Enter Address" style="resize:none;"></textarea>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group">
+											<label for="Customer">City:</label>
+											<input type="text" id="txtCity" class="form-control"  placeholder="Enter City Name">
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group">
+											<label for="Customer">State:</label>
+											<input type="text" id="txtState" class="form-control"  placeholder="Enter State Name">
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group">
+											<label for="Customer">ZIP/PIN:</label>
+											<input type="text" id="txtZip" class="form-control"   placeholder="Enter Zip/Pin">
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="form-group custom-form-group">
+											<label for="Customer">Country:</label>
+											<input type="text" id="txtContry" class="form-control" placeholder="Enter Country Name">
+										</div>
+									</div>
+  								    <!-- <div class="col-xs-12">
+										     <div class="form-group custom-form-group">
+												<label for="Customer">Business Domain:</label>
+												<input type="text" id="txtBusinessDomain" class="form-control" placeholder="Enter Business Domain">
+											</div>
+										</div>	-->
+								</div>
+							</div>
+							<div class="col-sm-6 pding-top">
+								<div class="row">
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+											<label for="Customer">Type<span class="color-red">*</span></label>
+											<select id="ddlCustTypt" class="form-control">
+												<!--<option value="Customer">Customer</option>
+												<option value="Vendor">Vendor</option>
+												<option value="Prospects">Prospects</option>-->
+											</select>
+										   </div>
+										</div>
+										<div class="col-xs-12">
+  										     <div class="form-group custom-form-group">
+												<label for="Customer">Reference Code:</label>
+												<input type="text" id="txtCode"  class="form-control" placeholder="Enter Reference Code">
+											</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+												<label for="Customer">Sales Person:<span class="color-red">*</span></label>
+											<span id="peoplePickerSale"></span>
+											<!--<div id="peoplePickerSale"></div>-->
+											</div>
+										</div>
+										<div class="col-xs-12" id="">
+											<div class="form-group custom-form-group">
+											<label for="Customer">Internal Supervisor:<span class="color-red">*</span></label>
+											<span id="peoplePickerIntSupervisor"></span>
+											</div>
+										</div>
+										
+										<div class="col-xs-12" id="">
+											<div class="form-group custom-form-group">
+											<label for="Customer">Members :<span class="color-red">*</span></label>
+											<span id="peoplePickerStakeholder"></span>
+											</div>
+										</div>
+
+										<div class="col-xs-12" id="divExtSupervisor" style="display:none">
+											<div class="form-group custom-form-group">
+											<label for="Customer">Supervisor on Guest Users:</label>
+											<span id="peoplePickerExtSupervisor"></span>
+											</div>
+										</div>
+										
+										
+										<div class="col-xs-12" id="">
+											<div class="form-group custom-form-group">
+											<label for="Customer">Template of Guest Portal<span class="color-red">*</span></label>
+											 <select id="ddlTemplate" class="form-control">
+													
+											 </select>
+
+											</div>
+										<a href="#" class="preview_click" onclick="getTemplate('1')" data-toggle="modal" data-target=".Preview">Preview</a>	
+										</div>
+										
+										<div class="col-xs-12">
+											<div class="form-group custom-form-group">
+											<label for="status" style="display:block;">Status:</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="checkbox" value="">Active
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="checkSelfCompany" value="">Self Company
+												</label>
+											</div>
+										</div>
+										
+										<!--<div class="col-xs-12">
+											<div class="form-group custom-form-group" style="position:relative; top:-5px">
+												<label for="Customer">logo Image:</label>
+												<span class="control-fileupload">
+													  <label for="file">Choose a file :</label>
+													  <input type="file" id="file_upload">
+												</span>
+											</div>
+										</div>-->
+									</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer Customer-modal-footer">
+				    	<button type="button" id="CreateClientEntry" class="btn custom-btn mr-8 w-70">Submit</button>
+						<button type="button" class="btn custom-btn-two-cancel w-70" id="btnCloseClient" data-dismiss="modal">Close</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+<!---- modal section--->
+
+  <div class="modal fade Preview" role="dialog">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close close-round" data-dismiss="modal">
+                <span class="close-icon">&times;</span></button>
+              <h4 class="modal-title">Preview</h4>
+              </div>
+            <div class="modal-body Customer-inbox-istab">
+             <div class="flexing">
+                <h4 class="modal-title">Template :</h4><p class="title_add" id="CustomName">Dummy Content</p>
+			</div>
+              <div class="description_sec">
+               <h4 class="modal-title">Description :</h4> <p id="pDescription">don't use this content. it is dummy content.</p>
+               </div>
+               <div class="img_gall">
+                <img src="../SiteAssets/ExternalUsers/dumy_img.jpg" id="templateImg">
+               </div>
+            </div>
+          </div>
+      </div>
+  </div>	
+
+
+
+<!---modal ed-->
+
+
+<script>
+  
+  $(function() {
+  $('#file_upload').change(function(){
+    var t = $(this).val();
+    var labelText = 'File : ' + t.substr(12, t.length);
+    $(this).prev('label').text(labelText);
+  });
+  
+  
+  
+  $('#addFileUpload').change(function(){
+    var t = $(this).val();
+    var labelText = 'File : ' + t.substr(12, t.length);
+    $(this).prev('label').text(labelText);
+  })
+  
+  
+
+});
+
+</script>
+
+
+	
+</body>
+
+	</html>

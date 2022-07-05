@@ -1,0 +1,512 @@
+﻿<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/AddEmployee.js"></script>
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/select2.min.css" >
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/select2.min.js"></script>
+
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/richtext.min.css" >
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/DropDownJsCss/jquery.richtext.js"></script>
+
+
+
+<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+
+
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+
+<style type="text/css">
+	.LabelAsButton {
+	  	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		border: solid 1px #20538D;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+		background: #1d6ec0;
+		color: #FFF;
+		padding: 8px 12px;
+		text-decoration: none;
+    	cursor:pointer;
+	}
+#mySliderDiv {
+    margin-bottom: 5px;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px 0px 5px 5px;
+}
+#mySliderDiv img {
+    width: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+#mySliderDiv img:hover {
+    box-shadow: 0px 1px 8px 1px #656565;
+}
+#mySliderDiv .my_event_active {
+    /* box-shadow: 0px 1px 8px 1px #5f5f5f; */
+    padding: 2px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+
+
+.container{
+  width: 100%;
+  text-align: center;
+ 
+}
+.richText-editor{
+	    height: 170px !important;
+	    padding:10px !important;
+	   }
+	   
+ ul, li {
+    list-style: unset !important;
+}
+.richText-editor{
+	 border-left: #FFFFFF solid 0px !important;
+  overflow-y: auto !important;
+}
+
+
+.btn-cancel{
+	min-width: 6em;
+}
+div#divTag {
+    height: 170px;
+}
+.upload-file-div .upload-file {
+    display: inline-block !Important;
+    width: 229px !important;
+}
+label.col-sm-3.control-label.isvalid {
+    padding-top: 3px;
+}
+.pdngbtm15{
+	padding-bottom:15px;
+}
+.ms-core-pageTitle, .ms-core-pageTitle a{
+display : none;
+}
+input.hidden {
+	position: absolute;
+	left: -9999px;
+}
+#profile-image1 {
+	cursor: pointer;
+	width: 30%;
+	height:100%;
+	padding-bottom: 5px;
+}
+.emp_list_height_left {
+	min-height: 505px;
+}
+.emp_list_height_right {
+	min-height:290px;
+}
+.blue-color {
+	color:#1d6ec0
+}
+.panel-title > a {
+		display: block;
+		padding: 10px;
+		text-decoration: none;
+	}
+.short-full {
+    float: right;
+   /* color: #000;*/
+}
+.star{ color:#FF0000 !important}
+
+/* new css added on 2/4/2020 */
+
+label.required:after {content: " *"; color: red;}
+
+.panel-group .panel {
+border-radius: 5px;
+border-color: #EEEEEE;
+padding:0;
+
+}
+.panel-group {
+margin-bottom: 10px;
+}
+
+.panel-title {
+font-size: 14px;
+}
+
+.panel-title > a {
+display: block;
+padding: 10px;
+text-decoration: none;
+}
+
+/* new css added on 9/4/2020 */
+
+.my_general_users_box {
+    margin-top: 30px;
+}
+.my_general_from_date_box .input-group {
+    width: 100%;
+}
+.my_general_to_date_box .input-group {
+    width: 100%;
+}
+.my_general_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_general_department_list .dropdown-toggle:hover, .my_general_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_general_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_general_department_list .dropdown-menu {
+    left: 15px;
+    padding: 5px 10px;
+}
+.my_general_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_general_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+
+/* new css added on 30/10/2020 */
+
+.employee-of-the-month-slider-contain {
+    width: 100%;
+}
+.employee-of-the-month-slider-contain #mysliderDiv {
+    margin-bottom: 5px;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 5px 0px 5px 5px;
+}
+.employee-of-the-month-slider-contain #mysliderDiv img {
+    width: 80px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+}
+.employee-of-the-month-slider-contain #mysliderDiv img:hover {
+    box-shadow: 0px 1px 8px 1px #656565;
+}
+.employee-of-the-month-slider-contain #mysliderDiv .my_event_active {
+    /* box-shadow: 0px 1px 8px 1px #5f5f5f; */
+    padding: 2px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transform: scale(1.1);
+}
+
+/* responsive css -----START----- */
+
+@media (max-width:767px) {
+ 	.emp_list_height {
+		min-height: auto !important;
+	}
+}
+
+</style>
+
+<!--<div class="container">-->
+<div class="row top15">
+	<div class="col-md-6">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="panel panel-default shadow2 emp_list_height_left">
+					<div class="panel-heading  panel-head-4">
+						<div class="panel-title">
+							<h4 class="h4-color" data-localize="Recognition">Recognition</h4>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="form-horizontal top20">
+							<div class="form-group">
+	<div class="col-sm-6">
+		<div class="row text-center" id="divTag"> 
+			<img alt="User Pic" src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg" class="img-circle img-responsive center-block" id="profile-image1" data-themekey="#">						
+									</div>
+
+							<div class="col-sm-12" id="fileUpload1" style="display:none;margin-top : 35px;">
+								
+								<input id="profileimageupload" class="upload-file blue-color" type="file" onchange="document.getElementById('profile-image1').src = window.URL.createObjectURL(this.files[0])">
+									<img id="blah" src="" alt="" data-themekey="#">
+							</div>
+									
+								</div>
+							 	<div class="col-sm-6">
+									<div class="row">
+										<div class="col-sm-12 my_general_type_box">
+											<label class="required">Type</label>
+				                            <select class="form-control" id="CategoryType" onchange="GetCategoryTitle();"><option value="5">Employee of the Month</option><option value="6">Social Contributor Award</option><option value="20">Most Promising Trainee</option><option value="22">Best Team of the Year</option><option value="23">Innovation</option><option value="46">Sales Person of the Month</option></select>
+										</div>
+									 	<div class="col-sm-12 my_general_users_box">
+											<label class="required">Users</label>
+				                            <select class="form-control" onchange="SetControls(this.value);" id="UserTypeVal">
+					                             <option value="-- Select One --">-- Select One --</option>
+					                             <option value="Employee">Employee</option>
+					                             <option value="Others">Others</option>
+   					                             <option value="Team">Team</option>
+   					                           <!--  <option value="Department">Department</option>-->
+				                            </select>
+										</div>
+
+							<div class="col-sm-12" id="check" style="display:none; margin-top:30px;">
+								<label for="" class="control-label popup_label required" data-localize="Image">Image</label>
+								<select id="slctimage" class="form-control" onchange="Setcontrol4Team(this.value)">
+										<option value="Option">--Choose Option--</option>
+										<option value="Upload">Upload</option>
+										<option value="Gallery">Choose from Gallery</option>
+									</select>
+							</div>
+
+
+							
+							
+							
+									</div>
+								</div>
+
+							<div class="col-sm-12" id="imageSliderDiv" style=" display:none ">
+								<label for="" class="control-label popup_label required" data-localize="SelectImage">Select Image</label>
+
+								<div id="employee-of-the-month-slider-box" class="">
+									<div class="employee-of-the-month-slider-contain">
+										<div id="mysliderDiv">
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+							</div>
+							<div class="form-group" id="InternalUsersDiv" >
+		                    	<div class="col-sm-12">
+		                      		<label for="label" class="control-label"><span data-localize="SelectEmployee">Select Employee</span><span class="star">*</span></label>
+									<div class="" id="EmpName">
+										<select name="select4" id="ddlemployee" class="form-control" onchange="GetEmployeeDetails(this.value);" disabled>
+											<option></option>
+										</select>
+									</div>
+		                    	</div>
+		                    </div>
+							<div class="form-group" style="display:none;" id="ExternalUsersDiv">
+		                      	<div class="col-sm-12">
+		                      		<label class="required" id="lbl4team_other">Name</label>
+		                       		<input type="text"  class="form-control" id="ExternalUserVal">
+		                       		
+		                     	</div>
+		                    </div>
+		                    <div class="form-group" style="display:none;" id="DepartmentDiv" >
+		                      	<div class="col-sm-12">
+		                      		<label for="label" class="control-label"><span data-localize="SelectDepartment">Select Department</span><span class="star">*</span></label>
+									<div class="" id="">
+										<select name="select4" id="DepartmentList" class="form-control" >
+											<option></option>
+										</select>
+									</div>
+		                    	</div>
+		                    </div>
+		                    <div class="form-group" style="display:none;" id="TeamUsersDiv">
+		                      	<div class="col-sm-12">
+		                      		<label class="required">Name</label>
+		                       		<div id="_UserName"class="peoplepicker" onkeyup=""></div>		                       		
+		                     	</div>
+		                    </div>
+
+							<div class="form-group Department_Desination" id="Department_Desination">
+								<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Department">Department</label>
+									<div class="">
+										<input type="" class="form-control" id="spandepartment" disabled>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Designation">Designation</label>
+									<div class="">
+										<input type="" class="form-control" id="spandesination" disabled>
+									</div>
+								</div>
+							</div>
+							<div class="form-group Department_Desination">
+								<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="OfficeLocation">Office Location</label>
+									<div class="">
+										<input type="" class="form-control" id="spanarea" disabled>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label class="required">Title</label>
+									<input type="text"  class="form-control" id="txtTitle">
+								</div>
+							</div>
+		
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label class="required">Achievements</label>
+									<textarea class="form-control content" rows="4" style="resize: none;" id="txtachivments"></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+							 	<div class="col-sm-6">
+									<label class="required">Audience</label>
+									<select id="Audience" class="form-control" onchange="">
+									  <option>Corporate</option>
+									  <option>Company</option>
+									</select>
+								</div>
+							 	<div class="">
+                      				<div class="col-sm-3">
+                      					<label class="required">Year</label>
+					  					<input type="number" class="form-control" name="points"  step="1" id="DropYear">
+                     				</div>
+					  				<div class="col-sm-3">
+                      					<label class="required">Month</label>
+                       					<select class="form-control" id="DropMonths" >
+											<option>January</option>
+											<option>February</option>
+											<option>March</option>
+											<option>April</option>
+											<option>May</option>
+											<option>June</option>
+											<option>July</option>
+											<option>August</option>
+											<option>September</option>
+											<option>October</option>
+											<option>November</option>
+											<option>December</option>
+					  					</select>
+                     				</div>
+                    			</div>
+                    		</div>
+							<div class="form-group">
+								<div class="col-sm-6" id="Attachmentbox">
+									<label class="">Award Image</label>
+									<div id="drop-zone">
+										<div id="clickHere">
+										<input type="file" name="file" style="display:none;" id="FileUpload" title="Maximum file upload size is 15Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." class="form-control" multiple accept="image/x-png,image/gif,image/jpeg,image/jpg" >
+											<label for="FileUpload" class="control-label LabelAsButton" title="Upload upto 5 images of total file size upto 15Mb. Only JPEG, JPG, GIF and PNG formats are allowed." data-localize="Click to upload">Click to upload</label>
+										</div>
+										<div id='filename' class="" style="padding:10px 0px 0px 0px;"></div>
+										<div id='OldImagename' class="" style="padding:0px 0px 0px 0px;"></div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label class="">Documents Attachment</label>
+									<div id="drop-zone">
+										<div id="clickHere"><input type="file" name="file" id="UploadDoc" class="form-control" style="display:none;" multiple >
+											<label for="UploadDoc" class="control-label LabelAsButton" data-localize="Click to upload">Click to upload</label>
+										</div>
+										<div id='Docfilename' class="" style="padding:10px 0px 0px 0px;"></div>
+										<div id='oldfilename' class="" style="padding:0px 0px 0px 0px;"></div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="clearfix"></div>
+							<div class="row text-center pdngbtm15">
+								<button type="button" class="btn btn-outline-success" id="btnsubmit">Submit</button>
+								<button type="button" id="btncancel" class="btn btn-outline-secondary "><label  data-localize="Close">Close</label></button>
+								<!--<a href="../Pages/BioView.aspx?WebAppId=232" class="btn btn-outline-secondary btn-cancel" data-localize="Cancel">Cancel</a>-->
+							</div>   
+						</div>
+					</div>
+				<!--/panel content-->
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="panel-group" role="tablist" aria-multiselectable="true">
+					<div class="otherLanguages" id="accordion"></div>
+				</div>                      
+			</div>
+		</div>
+	</div>      
+</div>      <!-- /Main -->
+
+<script>
+
+$(document).ready(function() {
+	 $("#ddlemployee").select2( {
+	placeholder: "Select Employee",
+	allowClear: true
+	} );
+	
+	 $("#DepartmentList").select2( {
+	placeholder: "Select Department",
+	allowClear: true
+	} );
+
+
+});
+
+
+</script>
+
+<script>
+	$(document).ready(function() {
+		$('.content').richText();
+		$('a[title="Add image"]').hide();
+  		$('a[title="Add file"]').hide();
+  		$('a[title="Add video"]').hide();
+  		$('a[title="Add URL"]').hide();
+  		$('a[title="Add table"]').hide();
+  		$('a[title="Show HTML code"]').hide();
+  		$('a[title="Remove styles"]').hide();
+  		$('.richText-help').hide();
+  		$('.richText-toolbar').hide();
+  	});
+</script>
+
+
+    <br>
+    <br>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-264</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">bce62170-e529-4dc6-a668-f01aa5d20af7</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-264, ADMIN-1645029823-264</mso:_dlc_DocIdUrl>
+<mso:Order msdt:dt="string">26400.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

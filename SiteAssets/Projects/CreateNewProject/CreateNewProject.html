@@ -1,0 +1,1374 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Titan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/Projects/CreateNewProject/assets/css/styles.css">
+    <script type="text/JavaScript" src="../SiteAssets/MicrosoftAjax.js"></script>
+    <script src="../SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+    <script type="text/javascript" src="/_layouts/15/clientforms.js"></script>
+    <script type="text/javascript" src="/_layouts/15/clienttemplates.js"></script>
+    <script type="text/javascript" src="/_layouts/15/clientpeoplepicker.js"></script>
+    <script type="text/javascript" src="/_layouts/15/autofill.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Projects/SearchableDDL/select2.min.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Projects/CreateNewProject/AddProject.js"></script>
+    <script type="text/javascript" src="../SiteAssets/Projects/CreateNewProject/CopyProjectData.js"></script>
+    <link type="text/css" rel="stylesheet" href="../SiteAssets/Projects/SearchableDDL/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <link type="text/css" rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="../SiteAssets/ExternalUsers/assets/css/styles.css">
+    <script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+    <style>
+            .sp-peoplepicker-topLevel {
+                padding: 4px 25px 4px 2px !important;
+            }
+
+            input.sp-peoplepicker-editorInput[type="text"] {
+                border: none !important;
+            }
+
+            .create-new-project-client-box {
+                display: flex;
+                align-items: center;
+            }
+
+                .create-new-project-client-box #CreateNewProjectClientInput {
+                    margin-right: 10px;
+                }
+
+                .create-new-project-client-box #searchClient {
+                    padding: 5px 12px;
+                    margin-right: 0px;
+                }
+
+            #CreateNewProjectClientSearch .clients-footer-btn-group {
+                text-align: center;
+            }
+
+            #CreateNewProjectClientSearch .client-status-search-add-box {
+                padding-left: 15px;
+                padding-right: 15px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            #CreateNewProjectClientSearch .client-status-search-add-group-main {
+                margin-right: 15px;
+            }
+
+            #CreateNewProjectClientSearch .custom-form-group select.form-control {
+                width: 160px;
+            }
+
+            #CreateNewProjectClientSearch .client-name-search {
+                margin-top: 23px;
+            }
+
+            #CreateNewProjectClientSearch .client-status-search-add-group-main .client-name-search input#queryCustomer {
+                height: 34px;
+            }
+
+            #CreateNewProjectClientSearch button.close.close-round {
+                min-width: 1em !important;
+                background: #fff !important;
+                color: #000 !important;
+                line-height: 26px !important;
+            }
+
+
+
+            /* add new css for client */
+
+
+            .control-fileupload {
+                display: block;
+                border: 1px solid #ccc;
+                background: #FFF;
+                border-radius: 0px;
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                padding: 0px 10px 2px 10px;
+                overflow: hidden;
+                position: relative;
+            }
+
+                .control-fileupload input[type=file] {
+                    display: block !important;
+                    right: 1px;
+                    top: 1px;
+                    height: 34px;
+                    opacity: 0;
+                    width: 100%;
+                    background: none;
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: 2;
+                }
+
+                .control-fileupload label {
+                    line-height: 24px;
+                    color: #999999;
+                    font-size: 14px;
+                    font-weight: normal;
+                    overflow: hidden;
+                    white-space: nowrap; /*
+        text-overflow: ellipsis;*/
+                    position: relative;
+                    z-index: 1;
+                    margin-right: 90px;
+                    margin-bottom: 0px;
+                    cursor: text;
+                    width: 9em !important;
+                }
+
+                .control-fileupload:before {
+                    padding: 4px 12px;
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #333333;
+                    text-align: center;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    color: #e3f2fd;
+                    border-color: #1e88e5;
+                    background: linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+                    background: -webkit-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+                    background: -moz-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+                    background: -o-linear-gradient(to bottom, #1d6ec0 0%, #55b0fb 100%);
+                    box-shadow: inset 0 1px #6093bd, 0 1px 2px rgba(20, 82, 136, 0.28);
+                    transition: color 0.2s ease;
+                    /* add more custom styles*/
+                    content: 'Upload';
+                    display: block;
+                    position: absolute;
+                    z-index: 1;
+                    top: 2px;
+                    right: 2px;
+                    line-height: 20px;
+                    text-align: center;
+                }
+
+                    .control-fileupload:before:focus {
+                        border-color: #42a5f5;
+                        background: linear-gradient(to bottom, #90caf9 0%, #64b5f6 100%);
+                        box-shadow: inset 0 1px #e3f2fd, 0 2px 3px rgb(0 0 0 / 20%);
+                    }
+
+            .sp-peoplepicker-topLevel {
+                padding: 7px 25px 7px 2px !important;
+            }
+
+            .sp-peoplepicker-initialHelpText {
+                top: 5px !important;
+            }
+
+            #modalAddNewClient button.close {
+                background-color: #fff !important;
+                color: #000 !important;
+                min-width: 1em !important;
+                line-height: 25px;
+            }
+
+                #modalAddNewClient button.close:hover {
+                    background-color: #000 !important;
+                    color: #fff !important;
+                }
+
+            /**project popup css start***/
+
+
+            .twosec {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+            }
+
+            .imgbox {
+                padding: 7px;
+            }
+
+                .imgbox img {
+                    width: 66px;
+                }
+
+            .imgcont {
+                padding: 0 10px;
+                width: 85%;
+            }
+
+            #Successfullypopup p {
+                line-height: 1.6 !important;
+                margin-bottom:16px;
+            }
+
+            #Successfullypopup p,
+            #Successfullypopup label {
+                font-size: 14px !Important;
+            }
+
+            #Successfullypopup .checkbox input[type="checkbox"] {
+                margin-left: 2px;
+                margin-right: 8px;
+            }
+
+            .selecting {
+                position: relative;
+                margin: 13px 0 20px 0 !important;
+            }
+
+                .selecting select {
+                    border: 1px solid #b3b3b3;
+                }
+
+                .selecting button {
+                    position: absolute;
+                    top: auto;
+                    bottom: 4px;
+                    right: 3px;
+                    border-radius: 50% !important;
+                    min-width: 0.5em !important;
+                    height: 26px;
+                    width: 26px;
+                    text-align: center;
+                    padding: 0;
+                    z-index: 8;
+                    cursor: pointer;
+                }
+
+            .imgcont h3 {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .imgcont p {
+                line-height: 1.5;
+            }
+
+            .selectsec .checkbox {
+                position: relative;
+                padding-left: 0 !important;
+            }
+
+                .selectsec .checkbox span.confirmbox {
+                    position: absolute;
+                    left: auto;
+                    font-weight: 600;
+                    font-size: 12px;
+                    top: 0px;
+                    right: 0;
+                }
+
+            label.font-12 {
+                font-size: 14px !important;
+            }
+
+            /**table sec design***/
+
+            .modal-header .close {
+                min-width: 1em !important;
+                background: #fff;
+                color: #000;
+            }
+
+                .modal-header .close:hover {
+                    min-width: 1em !important;
+                    background: #000;
+                    color: #fff;
+                }
+
+
+
+            .twopartsec {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+
+                .twopartsec .userinfo h4 {
+                    font-size: 14px;
+                    margin: 0;
+                    letter-spacing: 0.2px;
+                    color: #0c0c0c;
+                }
+
+            .projetname {
+                font-size: 14px !important;
+                color: #1d6ec0;
+                font-weight: 600;
+            }
+
+            .customername {
+                font-size: 14px !important;
+            }
+
+            .twopartsec .userinfo a {
+                font-size: 13px;
+            }
+
+            .twopartsec img {
+                margin: 0 5px;
+            }
+
+            .statustime {
+                font-size: 13px;
+                /* text-align: center; */
+                color: #1d6ec0;
+                font-weight: 700;
+                letter-spacing: 1px;
+            }
+
+            .Departmentse,
+            .officeLocation {
+                font-size: 12px;
+                font-weight: 600;
+            }
+
+            .ajustbtn button {
+                padding: 5px 6px;
+                font-size: 14px !important;
+                min-width: auto !important;
+                background: transparent !important;
+                color: #000 !Important;
+                border: none !Important;
+            }
+
+                .ajustbtn button:hover {
+                    color: #000 !Important;
+                }
+
+                .ajustbtn button img {
+                    width: 16px;
+                }
+
+                .ajustbtn button span.caret {
+                    display: none;
+                }
+
+            .ajustbtn {
+                padding: 0 2px;
+                margin-top: 23px;
+            }
+
+            #TableInProjects tr td input[type="radio"] {
+                width: 19px;
+                height: 19px;
+            }
+
+
+/******9-20-21*****/
+
+.searchiconajust{
+ position:relative;	
+	
+}
+
+.searchiconajust button{
+   position: absolute;
+    top: 1.9px;
+    right: 2px;
+    min-width: auto;
+    border-radius: 50% !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 15px;
+    padding: 0 !important;	
+	
+}
+
+.centerajust{
+	text-align:center;
+}
+
+/***newgridtable start***/
+
+.newgridtable.table-striped>tbody>tr:nth-child(odd)>td{
+ background-color: #f5f5f594 !important;	
+}
+
+.newgridtable h3,
+.newgridtable p,
+.newgridtable h4,
+.newgridtable a{
+
+  margin:0;
+  padding:0;
+
+}
+
+.newgridtable p.pjecname{
+  color:#1d6ec0;
+}
+.newgridtable p{
+  font-size:13px;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.newgridtable span.spanmg{
+    font-weight: 600;
+    font-size: 11px;
+    padding: 6px 2px 0;
+    display: inline-block;
+}
+
+.managersec{
+  display: flex;
+  align-items: center;
+}
+
+.mangimg img{
+  width:28px;
+  height:28px;
+  border-radius: 50%;
+  margin:0px 8px;
+}
+
+.managerdetails h4{
+ font-size: 13px;
+ color: #000;
+ font-weight: 600;
+ 
+}
+
+.managerdetails a{
+  font-size: 13px;
+  margin: 2px 0;
+  display: block;
+  color:#1d6ec0;
+}
+
+.livcolor{
+  color:#00b8ff;
+}
+.holdcolor{
+  color:#ff0740;
+}
+.Completecolor{
+  color:#06d216;
+}
+.Terminatedcolor {
+	color:darkred;
+}
+#tableInfooter div{
+  display:inline-block;
+}
+
+#tableInnav{
+ display:inline-block;	
+ float:left;
+}
+
+#tableInnav div{
+  display:inline-block;	
+}
+
+#tableInLocation{
+ display:inline-block;
+ float:right;	
+}
+
+#tableInfooter{
+ padding:15px 2px;	
+
+}
+
+.radiotick{
+ width:15px;
+ height:15px;	
+}
+
+table.newgridtable tr td{
+ border-bottom:1px solid #cccccc63 !important;	
+}
+
+.table.newgridtable>thead>tr>th{
+ border-bottom:1px solid #ddd !important;	
+}
+
+#query{
+ height:35px !important;	
+}
+
+#FilterInProject{
+ margin-top:22px;	
+}
+
+
+            @media (min-width: 768px) {
+
+                #Successfullypopup .modal-dialog {
+                    width: 450px !important;
+                }
+            }
+
+            @media(max-width:500px) {
+
+                .twosec {
+                    display: block;
+                }
+
+                .imgcont {
+                    width: 100%;
+                }
+
+                .ajustbtn {
+                    padding: 10px 15px;
+                    text-align: center;
+                }
+            }
+
+            @media(max-width:767px) {
+
+                .ajustbtn {
+                    padding: 10px 15px;
+                    text-align: center;
+                }
+            }
+
+            @media(max-width:991px) {
+
+                .ajustbtn {
+                    padding: 10px 15px;
+                    text-align: center;
+                }
+
+                #TableInProjects {
+                    min-width: 901px !Important;
+                }
+
+                .padjusting {
+                    margin-top: 15px;
+                }
+            }
+
+            @media(min-width:992px) {
+
+                .padjusting {
+                    padding: 0 5px !important;
+                }
+            }
+
+
+            /**project popup css ed***/
+
+            @media(max-width: 575px) {
+
+                #CreateNewProjectClientSearch .custom-form-group.client-name-add-client-btn {
+                    margin: 0 !important;
+                }
+            }
+            /* responsive css start */
+
+
+
+            @media(max-width:767px) {
+                div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table {
+                    min-width: 991px !important;
+                }
+
+                .table-responsive {
+                    overflow-x: auto !important;
+                }
+
+                .project-top-panel-box-istad .search-box {
+                    max-width: 80% !important;
+                    margin: 0 auto;
+                }
+
+                    .project-top-panel-box-istad .search-box #queryGuestUser {
+                        width: 100% !important;
+                    }
+
+                .project-top-panel-box-istad .text-right {
+                    text-align: center !important;
+                }
+
+                #mainTablearea {
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+
+            @media(max-width:360px) {
+
+                .project-top-panel-box-istad .search-box {
+                    max-width: 100% !important;
+                }
+
+                input#queryGuestUser {
+                    width: 100% !important;
+                }
+
+                .project-top-panel-box-istad .text-right {
+                    text-align: center !important;
+                }
+            }
+    </style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">31800.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x01010091F35795DAA76548A4B6845BE47E5120</mso:ContentTypeId>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-318</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f665062d-3f0a-42df-91d4-4dc365471340</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-318, ADMIN-1645029823-318</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div class="custom-panel custom-panel-box" style="padding:0 15px;">
+                        <div class="panel-head">
+                            <h3 class="m-0">
+                                Project
+                            </h3>
+                        </div>
+                        <div class="panel-body px-0 pt-8">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Project:<sup class="start-box">*</sup></label>
+                                        <input type="text" class="form-control" id="txtProjectName" maxlength="100">
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Department:<sup class="start-box">*</sup></label>
+                                        <div id="departmentDiv">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Office Location:</label>
+                                        <div id="officeLocation">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Client:<sup class="start-box">*</sup></label>
+                                        <!-- <div id="clientNameDiv"></div> -->
+                                        <div class="create-new-project-client-box searchiconajust" style="display:block; position:relative;">
+                                            <input type="text" id="CreateNewProjectClientInput" class="form-control" disabled="disabled" placeholder="Client Name">
+                                            <button type="button" class="btn custom-btn ml-8 w-87" id="searchClient" data-toggle="modal" data-target="#CreateNewProjectClientSearch">
+                                              <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label class="font-12">Planned Start Date:<sup class="start-box">*</sup></label>
+                                                <input type="text" placeholder="" class="form-control txtPlannedStartDate" readonly="true" name="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label class="font-12">Planned End Date:<sup class="start-box">*</sup></label>
+                                                <input type="text" placeholder="" class="form-control txtPlannedEndDate" readonly="true" name="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label class="font-12">Actual Start Date: </label>
+                                                <input type="text" placeholder="" class="form-control txtActualStartDate" readonly="true" name="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xs-6 istab-date ActualEndDate">
+                                            <div class="form-group custom-form-group">
+                                                <label class="font-12">Actual End Date:</label>
+                                                <input type="text" placeholder="" class="form-control txtActualEndDate" readonly="true" name="date">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label for="" class="font-12">Reference Code:</label>
+                                                <input type="text" class="form-control" id="txtProjectCode" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g, '')">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label for="" class="font-12">Estimated hours:</label>
+                                                <!--<input type="" class="form-control" id="txtTechnology" maxlength="50">-->
+                                                <input type="number" class="form-control" id="numEstimatedHours" min="0">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-6 istab-date">
+                                            <div class="form-group custom-form-group">
+                                                <label for="" class="font-12">Project Type:</label>
+                                                <!--<input type="" class="form-control" id="txtTechnology" maxlength="50">	-->
+                                                <select class="form-control" id="txtTechnology"></select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-xs-6 istab-date WorkingDaysArea" style="display:none;"> Working days <span id="txtWorkingDays"></span> </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Business Domain:</label>
+                                        <input type="text" class="form-control" id="txtDomain">
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Project Manager:<sup class="start-box">*</sup></label>
+                                        <div id="ProjectManagerEmployeePicker" class=""></div>
+                                    </div>
+
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Stakeholder:</label>
+                                        <div id="StackeholderTeamEmployeePicker" class=""></div>
+                                    </div>
+
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Project Sponsor:</label>
+                                        <div id="SponsorTeamEmployeePicker" class=""></div>
+                                    </div>
+
+                                    <div class="form-group custom-form-group" style="display:none;">
+                                        <label for="" class="font-12">Status:</label>
+                                        <select class="form-control" id="ProjectStatus">
+                                            <option value="Live">Live</option>
+                                            <option value="Terminated">Terminated</option>
+                                            <option value="OnHold">OnHold</option>
+                                            <option value="Completed">Completed</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Program:</label>
+                                        <select class="form-control" id="ddlProgramList">
+                                        </select>
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="" class="font-12">Details:</label>
+                                        <textarea class="form-control details-box-h" id="txtDescription" rows="5" id="" style="resize:none;" placeholder="Enter Details"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 text-center timesheet-entry-footer-btn-group">
+                                    <button type="button" class="btn custom-btn mr-8 w-68" style="display:none">Reset</button>
+                                    <button type="button" class="btn custom-btn mr-8 w-68" id="createNewProjectSite">Submit</button>
+                                    <button type="button" class="btn custom-btn custom-btn-two-cancel w-68" id="cancelNewProject">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Organization Name Search Modal-->
+    <div class="modal fade organization-entry-search-modal" id="CreateNewProjectClientSearch" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close close-round" data-dismiss="modal">&times;</button> -->
+                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Clients</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-8">
+
+                        <div class="col-xs-12 col-sm-12 client-status-search-add-box">
+                            <div class="client-status-search-add-group-main" style="display:none">
+                                <div class="form-group custom-form-group">
+                                    <label>Status:</label>
+                                    <select class="form-control">
+                                        <option>Active</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="client-status-search-add-group-main">
+                                <div class="form-group custom-form-group client-name-search">
+                                    <input type="text" id="queryCustomer" onkeyup="sorterTableCustomerList.search('queryCustomer')" placeholder="Search...">
+                                </div>
+                            </div>
+                            <div class="client-status-search-add-group-main">
+                                <div class="form-group custom-form-group client-name-add-client-btn">
+                                    <button type="button" id="btnAddnewClient" class="btn custom-btn w-87" data-toggle="modal" data-target="#modalAddNewClient">Add New Client</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 table-responsive client-name-table-box">
+                            <div id="tablewrapper">
+                                <div id="tableheader" style="height: auto !important;">
+                                    <div class="search" style="display:none;">
+
+                                    </div>
+                                    <div>
+                                        <span class="details">
+                                            <div style="display:none;">Records  <span id="startrecordMyCustomer"></span>-<span id="endrecordMyCustomer"></span> PagesOf  <span id="totalrecordsMyCustomer"></span></div>
+                                            <div style="display:none;"><a href="javascript:sorterTableCustomerList.reset()">Reset </a></div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div>
+
+                                    <div id='mainTablearea' class='table-responsive scrollbar-panel'>
+                                        <table cellpadding='0' cellspacing='0' border='1' id='TempTableClientMaster' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+                                            <thead class='panel-heading '>
+                                                <tr>
+                                                    <th width="30px"></th>
+                                                    <th><h6 data-localize="Ref Code">Ref Code</h6></th>
+                                                    <th><h6 data-localize="Client Name">Client Name</h6></th>
+                                                    <th><h6 data-localize="Attn Name">Attn Name</h6></th>
+                                                    <th><h6 data-localize="Status">Status</h6></th>
+
+                                                </tr>
+
+
+                                            </thead>
+                                            <tbody class='panel mainDivClientName' id="mainDivAreaClientmaster"></tbody>
+                                        </table>
+                                        <div style='text-align: center;font-size:14px' id="NoRecordFoundclientmaster" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+                                    </div>
+                                    <div id="tablefooterMyCustomer" style="margin-bottom: 10px;">
+                                        <div id="tablenavMyCustomer">
+                                            <div>
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1,true)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(1)" />
+                                                <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableCustomerList.move(1,true)" />
+                                            </div>
+                                            <div>
+                                                <select id="pagedropdownMyCustomer"></select>
+                                            </div>
+                                            <div>
+                                                <a href="javascript:sorterTableCustomerList.showall()" data-localize="ViewAll">ViewAll </a>
+                                            </div>
+                                        </div>
+                                        <div id="tablelocationMyCustomer">
+                                            <div>
+                                                <span data-localize="LinesPerPage">Lines Per Page</span>
+                                                <select class="myListPagingValue" onchange="sorterTableCustomerList.size(this.value)">
+                                                    <option value="5">5</option>
+                                                    <option value="10" selected="selected">10</option>
+                                                    <option value="20">20</option>
+                                                    <option value="50">50</option>
+                                                    <option value="100">100</option>
+                                                </select>
+                                            </div>
+                                            <div class=""><span data-localize="Page">Page</span><span id="currentpageMyCustomer"></span><span data-localize="Of">of</span><span id="totalpagesMyCustomer"></span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer clients-footer-btn-group footer-btn-group">
+                        <button type="button" id="btnSelect" class="btn custom-btn w-87" data-dismiss="modal">Select</button>
+                        <button type="button" class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------- add new client -------------->
+
+    <div class="modal fade" id="modalAddNewClient" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" id="btnCross" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                    <h4 class="modal-title">Customers Details</h4>
+                </div>
+                <div class="modal-body Customer-inbox-istab">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Client Name:<span class="color-red">*</span></label>
+                                        <input type="text" id="txtClientName" onblur="checkExistForClientName()" class="form-control" placeholder="Enter Client Name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Attn Name:</label>
+                                        <input type="text" id="txtAttnName" class="form-control" placeholder="Enter Attn Name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Contact Number:</label>
+                                        <input type="number" id="txtnumber" class="form-control" placeholder="Enter Contact Number">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Email:</label>
+                                        <input type="email" id="txtEmail" onblur="clientEmail()" class="form-control" placeholder="Enter Email">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Address:</label>
+                                        <textarea class="form-control" rows="3" id="txtAddress" placeholder="Enter Address" style="resize:none;"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">City:</label>
+                                        <input type="text" id="txtCity" class="form-control" placeholder="Enter City Name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">State:</label>
+                                        <input type="text" id="txtState" class="form-control" placeholder="Enter State Name">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">ZIP/PIN:</label>
+                                        <input type="text" id="txtZip" class="form-control" placeholder="Enter Zip/Pin">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Country:</label>
+                                        <input type="text" id="txtContry" class="form-control" placeholder="Enter Country Name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Type:</label>
+                                        <select id="ddlCustTypt" class="form-control">
+                                            <option value="Customer">Customer</option>
+                                            <option value="Vendor">Vendor</option>
+                                            <option value="Prospects">Prospects</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Ref Code:<span class="color-red">*</span></label>
+                                        <input type="text" id="txtCode" onblur="checkExistForAdd()" class="form-control" placeholder="Enter Reference Code">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Business Domain:</label>
+                                        <input type="text" id="txtBusinessDomain" class="form-control" placeholder="Enter Business Domain">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">TAX ID:</label>
+                                        <input type="text" id="txtTAXID" class="form-control" placeholder="Enter Tax Id">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Sales Person:<span class="color-red">*</span></label>
+                                        <span id="peoplePickerSale"></span>
+                                        <!--<div id="peoplePickerSale"></div>-->
+                                    </div>
+                                </div>
+                                <div class="col-xs-12" style="display:none">
+                                    <div class="form-group custom-form-group">
+                                        <label for="Customer">Supervisor on Guest Users:<span class="color-red">*</span></label>
+                                        <span id="peoplePickerExtSupervisor"></span>
+                                        <!--<input type="text"id="txtPea" class="form-control" placeholder="Supervisor on Guest Users">-->
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group">
+                                        <label for="status" style="display:block;">Status:</label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="checkbox" value="">Active
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="checkSelfCompany" value="">Self Company
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-group custom-form-group" style="position:relative; top:-5px">
+                                        <label for="Customer">logo Image:</label>
+                                        <span class="control-fileupload">
+                                            <label for="file">Choose a file :</label>
+                                            <input type="file" id="file_upload">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer Customer-modal-footer">
+                    <button type="button" id="CreateClientEntry" class="btn custom-btn mr-8 w-70">Submit</button>
+                    <button type="button" class="btn custom-btn-two-cancel w-70" id="btnCloseClient" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----new popup sec-->
+    <!-- Successfullypopup -->
+    <div id="Successfullypopup" class="modal fade" role="dialog" data-backdrop="static">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-body">
+
+                    <div class="twosec">
+
+                        <div class="imgbox">
+                            <img src="../SiteAssets/Projects/CreateNewProject/assets/img/check_img.png" alt="" class="checkimg">
+                        </div>
+                        <div class="imgcont">
+                            <h3 class="heading_se">Project has been created Successfully.</h3>
+
+                            <div class="frompoject" style="display: none;">
+                                <span>From Poject:</span> <span style="font-weight: 600" id="CopiedProject">ABC Project</span>
+                            </div>
+
+                            <p class="paragph_sec">Do you want to copy other settings from an existing project?</p>
+                           
+	                           <div class="centerajust">
+	                            
+		                            <div class="radio-inline">
+		                                <input type="radio" name="select" value="yes" id="yesbox">
+		                                <label for="yesbox">Yes</label>
+		                            </div>
+		
+		                            <div class="radio-inline">
+		                                <input type="radio" name="select" value="no" id="nobox" checked>
+		                                <label for="nobox">No</label>
+		                            </div>
+	                           
+                             </div> 
+
+                            <div class="form-group selecting" style="display:none;">
+                                <label for="">From Project</label>
+                                <select class="form-control" id="txtProjectList" disabled="disabled">
+                                    <option value="ProjectName">Select a project</option>
+                                </select>
+                                <label id="curentProjectURL" style="display:none;"></label>
+                                <button type="button" class="btn custom-btn" id="searchInProject">
+                                    <i class="fa fa fa-search"></i>
+                                </button>
+                            </div>
+
+                            <div class="selectsec" style="display: none;">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="modulessection">
+                                    <label for="modulessection">Modules</label>
+                                    <span class="confirmbox" id="txtModuleProcess"></span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="teamMembers">
+                                    <label for="teamMembers">Team Members</label>
+                                    <span class="confirmbox" id="txtTeamProcess"></span>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="documentstructure">
+                                    <label for="documentstructure">Document Structure</label>
+                                    <span class="confirmbox" id="txtDocProcess"></span>
+                                </div>
+
+
+                            </div><!--selectsec--->
+
+
+                        </div><!--imgcont-->
+
+
+                    </div><!--two sec--->
+
+                </div>
+                <div class="modal-footer" style="text-align: center; padding:10px 0 !important;">
+                    <button type="button" class="btn custom-btn" id="btnCopyData" style="display: none">Submit</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closebutton">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---project popup list---->
+    <!-- Modal -->
+    <div id="porjectpopup" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Projects</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <label for="Status" style="opacity:0;">search</label>
+                            <input type="text" id="query" class="form-control" onkeyup="sorter.search('query')" placeholder="Search..." style="width:100% !important">
+                        </div>
+
+                        <div class="col-md-9">
+
+                            <div class="row">
+
+                                <div class="col-md-4 padjusting">
+                                    <div class="form-group">
+                                        <label for="Status">Status:</label>
+                                        <select class="form-control" id="StatusProj">
+                                            <option value="All">All</option>
+                                            <option value="live">Live</option>
+                                            <option value="Completed">Completed</option>
+                                            <option value="Terminated">Terminated</option>
+                                            <option value="OnHold">OnHold</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 padjusting">
+
+                                    <div class="form-group">
+                                        <label for="Department">Department:</label>
+                                        <select class="form-control" id="DeptsProject"></select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2">
+                                    <button type="button" id="FilterInProject" class="btn custom-btn">Apply</button>
+                                    
+                                 </div>
+                                 
+								 <div class="col-md-2 ajustbtn" style="text-align:right">   
+
+                                    <div class="dropdown" style="display:inline-block;">
+                                        <button class="btn custom-btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                            <img src="../SiteAssets/Projects/CreateNewProject/assets/img/sort-icon.png"> Sort <i class="fa fa-angle-down"></i>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" style="text-align:left">
+                                            <li id="ProjOrder"><a href="javascript:voi(0);">Project Name</a></li>
+                                            <li style="display:none;" id="DeptOrder"><a href="javascript:voi(0);">Department</a></li>
+                                            <li style="display:none;" id="LocOrder"><a href="javascript:voi(0);">Office Location</a></li>
+                                            <li id="CustomerOrder"><a href="javascript:voi(0);">Customer</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div><!--row ed-->
+
+                        </div><!--9 ed-->
+
+                    </div><!--row ed-->
+                    <div class="table-responsive scrollbar-panel">
+
+                        <!--Project table starts-->
+                        <div id="tableInwrapper">
+
+                            <div style="display:none;">
+                                <span class="details">
+                                    <div class="search">
+                                        <select id="columnsProj" onchange="sorter.search('query')"><option value="-1">All Columns</option></select>
+                                    </div>
+                                    <div>Records  <span id="startInrecord"></span>-<span id="endInrecord"></span> PagesOf  <span id="totalInrecords"></span></div>
+                                    <div><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                            
+                                <div id='mainTablearea' class='table-responsive scrollbar-panel'>                                    
+                                    <table id='TableInProjects' cellpadding='0' cellspacing='0' border='1'  class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+                                        <thead class='panel-heading'>
+                                            <tr>
+                                                <th class='nosort' style='width:5%'><h6></h6></th>
+                                                <th id="projectNameSort"><h6>Project Name</h6></th>
+                                                
+                                                <th id="CustomerSort"><h6 data-localize="Customer">Customer</h6></th>
+                                                
+                                                <!--th id="OfficeSort" style="display:none;"><h6 data-localize="Office">Office</h6></th>
+                                                <th id="DeptSort" style="display:none;"><h6 data-localize="Department">Department</h6></th-->
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody class='panel ProjectInTables'></tbody>
+                                    </table>         
+									<!----dummy table--->    
+                                   
+                                    
+                                </div><!---maintablearea--->
+                                
+                            </div>
+                            <div id="tableInfooter">
+                                <div id="tableInnav">
+                                    <div>
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1, true)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                        <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1, true)" />
+                                    </div>
+                                    <div>
+                                        <select id="pageddlInProject"></select>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:sorter.showall()">ViewAll </a>
+                                    </div>
+                                </div>
+                                <div style="float:left !important; padding:0 5px"><span>Showing Items :&nbsp</span><span id="TotalCountProject"></span></div>
+                                <div id="tableInLocation">
+                                    <div>
+                                        <span data-localize="LinesPerPage">Lines Per Page </span>
+                                        <select onchange="sorter.size(this.value)">
+                                            <option value="5">5</option>
+                                            <option value="10" selected="selected">10</option>
+                                            <option value="20">20</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                    </div>
+                                    <div><span data-localize="Page"></span><span id="currentInProj"></span><span data-localize="Of" style="padding:0 5px"></span><span id="totalInProj"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Project table ends-->
+                        <!--table class="table table-striped table-bordered" id="porjectlisting">
+                           <thead>
+                             <tr>
+                               <th></th>
+                               <th>Project</th>
+                               <th>Customer</th>
+                               <th>Manager</th>
+                               <th style="text-align: center">Status</th>
+                             </tr>
+                           </thead>
+                           <tbody>
+
+                             <tr>
+                               <td><input type="radio"></td>
+                               <td>
+                                   <div class="projetname">My project content show here.</div>
+                                   <span class="Departmentse">Department</span> | <span class="officeLocation">Office Location</span>
+
+                               </td>
+                               <td style="vertical-align: middle;"><div class="customername">Priyanshu Pandey</div></td>
+                               <td>
+                                   <div class="twopartsec">
+                                       <img src="../SiteAssets/Projects/CreateNewProject/assets/img/user_icon.png" class="userimg" alt="" style="width:24px; height: 24px;">
+                                       <div class="userinfo">
+                                           <h4>Dipanker Goswami</h4>
+                                           <a href="#">d.goswami@adapt-india.com</a>
+                                       </div>
+                                   </div>
+                               </td>
+                               <td style="text-align: center;">
+                                   <span class="statustime">LIVE</span>
+                               </td>
+
+                             </tr>
+
+                           </tbody>
+                         </table-->
+
+                    </div><!--table responsive-->
+                    
+                    <div style="clear:both"></div>
+                    <div class="modal-footer" style="text-align:center">
+                        <button type="button" class="btn custom-btn w-87" id="btnInProject">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div><!---modal popup ed-->
+            </div>
+
+        </div>
+    <!---porjectpopup ed-->
+    <!------project start ed---->
+
+    <script>
+        $(function () {
+            $('#file_upload').change(function () {
+                var t = $(this).val();
+                var labelText = 'File : ' + t.substr(12, t.length);
+                $(this).prev('label').text(labelText);
+            });
+        });
+    </script>
+    <script src="../SiteAssets/Projects/CreateNewProject/assets/js/edb0de374a.js"></script>
+    
+ 
+<!---substr leng control--->
+
+<script type="text/javascript">
+
+$(function(){	
+
+ $(".pjecname, .customernamshow").each(function(i){
+
+    len=$(this).text().length;
+    if(len>120)
+    {
+      $(this).text($(this).text().substr(0,120)+'...');
+    }
+
+  });
+  
+
+$(".projectlg").each(function(i){
+
+    len=$(this).text().length;
+    if(len>30)
+    {
+      $(this).text($(this).text().substr(0,30)+'...');
+    }
+
+  });
+  
+
+});
+
+</script>
+
+ 
+
+</body>
+</html>

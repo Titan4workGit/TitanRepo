@@ -1,0 +1,720 @@
+﻿<link href="../_catalogs/masterpage/Titan2/Styles/getorgchart.css" rel="stylesheet" />
+<script src="../_catalogs/masterpage/Titan2/Scripts/getorgchart.js"></script>
+<style type="text/css">
+    #people {
+        width: 100% !important;
+        height: 600px !important;
+    }
+    
+#people a[title~="Titan"]{
+	transform:rotateY(90deg) !important;
+	-moz-transform:rotateY(90deg) !important;
+    -webkit-transform:rotateY(90deg) !important;
+	-ms-transform:rotateY(90deg) !important;
+	-o-transform:rotateY(90deg) !important;
+} 
+    
+
+    #OfficeLocation {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        height: 30px;
+        border: none;
+    }
+
+    #Department {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        height: 30px;
+        border: none;
+    }
+
+    .get-org-chart .get-oc-tb {
+        border-bottom: none !important;
+    }
+
+        .get-org-chart .get-oc-tb input {
+            width: 200px;
+            height: 30px;
+        }
+
+
+    .get-org-chart .get-box {
+        fill: #f5f5f5 !important;
+        stroke-width: 3px !important;
+        stroke: #7c7c7c !important;
+    }
+
+    .get-org-chart .get-text {
+        fill: #7c7c7c !important;
+    }
+
+        .get-org-chart .get-text.get-text-3 {
+            fill: #516fc7 !important;
+            stroke-width: 5px !important;
+            cursor: pointer;
+        }
+
+    #people .get-org-chart .get-oc-tb {
+        background-color: transparent !important;
+    }
+
+    #Department,
+    #OfficeLocation {
+        border: 1px solid #b5b5b5;
+        padding: 5px;
+    }
+
+    ol.breadcrumb li h4 {
+        color: #353535 !important;
+        font-size: 20px !important;
+    }
+
+    .get-org-chart .get-up {
+        width: 50px !important;
+        -webkit-border-radius: 30px 30px 0 0;
+        background-color: #3c3b3be0 !important;
+    }
+
+    .get-org-chart .get-down {
+        width: 50px !important;
+        border-radius: 0 0 30px 30px;
+        -webkit-border-radius: 0 0 30px 30px;
+        height: 30px !important;
+        background-color: #3c3b3be0 !important;
+    }
+
+    .get-org-chart .get-left {
+        width: 30px !important;
+        border-radius: 30px 0 0 30px;
+        -webkit-border-radius: 30px 0 0 30px;
+        height: 50px !important;
+        background-color: #3c3b3be0 !important;
+    }
+
+    .get-org-chart .get-right {
+        width: 30px !important;
+        border-radius: 0 30px 30px 0;
+        -webkit-border-radius: 0 30px 30px 0;
+        height: 50px !important;
+        background-color: #3c3b3be0 !important;
+    }
+
+    button.close {
+        min-width: 1em !important;
+        background: #fff !important;
+        color: #353232 !important;
+        line-height: 24px;
+    }
+
+    button.new_manage {
+        background: #1D6EBF;
+        border-radius: 4px;
+        display: inline;
+        box-shadow: 4px 4px 4px -4px #1551ab;
+        border-color: #0a549d;
+        color: #fff;
+        border-color: #0a549d;
+        padding: 3px 4px;
+        box-shadow: inset 0 1px 1px #72b9ff;
+        transition: .1s;
+    }
+
+        button.new_manage:hover {
+            background: #4a9aec;
+        }
+
+    #ParentPplManager {
+        margin: 8px 0;
+    }
+
+    #spnPplManager .sp-peoplepicker-topLevel {
+        width: 100% !important;
+        padding: 5px 5px !important;
+    }
+
+        #spnPplManager .sp-peoplepicker-topLevel .sp-peoplepicker-editorInput {
+            max-width: 100% !important;
+            border: none !important;
+        }
+
+    #OfficeLocation {
+        width: 100% !important;
+        margin: 8px auto !important;
+    }
+    
+.get-org-chart .get-text {
+    fill: #4f4f4f !important;
+}    
+
+.get-text.get-text-0{
+
+	fill: #1d6ebf !important;
+	stroke-width: 2 !important;
+	font-weight: 600;
+	cursor: pointer;
+
+}
+
+#people image{
+ cursor:pointer;		
+}
+
+.hiajust{
+  height:30px;	
+  margin:8px 0;
+}
+ 
+svg.hoverfect{
+
+ -webkit-filter: drop-shadow( 3px 6px 2px rgb(30, 144, 255,0.1));
+  filter: drop-shadow( 3px 6px 2px rgb(30, 144, 255,0.1));	
+}
+
+svg.hoverfect:hover{
+
+ -webkit-filter: drop-shadow( 3px 6px 4px rgb(30, 144, 255,0.2));
+  filter: drop-shadow( 3px 6px 4px rgb(30, 144, 255,0.2));	
+
+}
+
+@media(max-width:767px){
+ 
+.get-org-chart .get-oc-tb{
+ overflow:visible !important;	
+}
+.get-org-chart .get-oc-tb>div>div{
+ overflow:visible !important;	
+}
+
+.get-org-chart .get-oc-c > svg{
+ 	top:45px !important;
+}
+
+	
+}
+
+@media(max-width:500px){
+ 
+.get-org-chart .get-oc-c > svg{
+ 	top:60px !important;
+}
+	
+}
+
+
+/**Aug-5-21**/
+
+body::-webkit-scrollbar {
+   width: 8px;
+   background-color: #F5F5F5;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+}
+ 
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #999;
+}
+
+
+
+
+   
+</style>
+
+<div class="row department-header">
+    <ol class="breadcrumb">
+        <li><h4><b>Organization Chart</b></h4></li>
+    </ol>
+</div>
+
+<!--<div class="row department-header">
+    <ol class="breadcrumb">
+        <li><h4><b>Organization Chart</b></h4></li>
+    </ol>
+</div>
+<div id="orgChartBreadCrumb"><h4><a style="cursor:pointer;">Home</a> / Organization Chart</h4></div> -->
+<!--<button type="button" class="new_manage" data-toggle="modal" data-target="#orgniation-filter">Filter</button>-->
+<!--<div>Showing <span id="DiplayEmpCount">100</span> out of <span id="TotalEmpCount">0</span>&nbsp;employees</div>-->
+
+<div id="SearchByLocation">
+</div>
+
+<div id="people" class=""></div>
+
+<input id="locationID" type="hidden">
+
+
+<script type="text/javascript">
+
+
+    $(document).ready(function () {
+        try {
+            SP.SOD.executeFunc('sp.js', 'SP.ClientContext', PageLoad);
+            userActivityNotificationEntry(_spPageContextInfo.userId,window.location);
+        }
+        catch (exception) {
+            console.log(exception);
+        }
+        setInterval(function () {
+            $('.get-oc-tb').attr('style', 'background-color: transparent !important');
+            $('.get-oc-c').attr('style', 'background-color: transparent !important');
+        }, 1000);
+        $("#btnApply").click(function () {
+            GetOrgChartEmployeesAjaxCall();
+            $("#txtComp").text(txtCompanyName);
+            $("#txtDept").text($("#Department :selected").text());
+            $("#txtLoc").text($("#OfficeLocation :selected").text());
+            $("#txtComp").text($("#ddlFilterCompany :selected").text());
+            $('clipPath rect').attr('rx', '100');
+			//$('.get-oc-c').attr('style', 'background-color: '' !important');
+        });
+
+        $("#btnClear").click(function () {
+            clearSelection();
+        });
+        $("#ddlFilterCompany").change(function () {
+            BindOfficeLocations($(this).val());
+            BindOfficeDepartment($(this).val());
+    	});
+    });
+
+    //to change the org chart according to Logged_In user details
+    $(window).on("load", function () {
+        //Change Dept
+        $('#Department option').filter(function () {
+            return ($(this).text() == Logged_DepartmentName);
+        }).prop('selected', true);
+        $("#OfficeLocation").val(Logged_Location);
+        $("#btnApply").trigger("click");
+    });
+    function PageLoad() {
+        setTimeout(function () {
+            //GetOrgChartEmployeesAjaxCall();
+            GetCompanies();
+            initializePeoplePicker("spnPplManager");//For Manager
+            getAllEmplCount();
+        }, 500);
+    }
+
+    //Clear all selection in filter popup
+    function clearSelection() {
+    	$("#ddlFilterCompany").val(Logged_CompanyId);
+    	$("#ddlFilterCompany").trigger("change");
+        $("#Department").val('0');
+        $("#Department").trigger("change");
+        $("#OfficeLocation").val('0');
+        $("#OfficeLocation").trigger("change");
+        $("#ParentPplManager").html('');
+        $("#ParentPplManager").append('<span id="spnPplManager"></span>');
+        initializePeoplePicker("spnPplManager");//For Manager
+    }
+
+    //get user Ids from People picker
+    function getPeopleUserInfoGroups(pickerPickerControlId) {
+        SharedUserName = [];
+        var UserArrayList = new Array();
+        var pickerDiv = $("[id^='" + pickerPickerControlId + "']");
+        var peoplePicker = SPClientPeoplePicker.SPClientPeoplePickerDict[pickerDiv[1].id];
+        var users = peoplePicker.GetAllUserInfo();
+        if (users.length > 0) {
+            var allUsersID = new Array();
+
+            var usersEmailIDs = new Array();
+            for (var i = 0; i < users.length; i++) {
+                var grpid = users[i].Key;
+                var autokey = users[i].EntityType;
+                if (autokey == "User") {
+                    //UserArrayList.push(GetUserIdGroups(users[i].Key));
+                    UserArrayList.push(users[i].Key.split('|')[2]);
+                    SharedUserName.push(users[i].DisplayText);
+
+                } else {
+                    var grpid = users[i].EntityData.SPGroupID;
+                    var myArrays = new Array();
+                    myArrays.push(siteusers(grpid));
+                    //  var c = UserArrayList.concat(myArrays);
+                    var c = UserArrayList.concat.apply([], myArrays);
+                    UserArrayList = UserArrayList.concat(c);
+
+                }
+                //UserArrayList.push(GetUserIdGroups(users[i].Key));
+            }
+        }
+        return UserArrayList;
+    }
+
+    // Render and initialize the client-side People Picker.
+    function initializePeoplePicker(peoplePickerElementId) {
+        // Create a schema to store picker properties, and set the properties.
+        var schema = {};
+        schema['PrincipalAccountType'] = 'User,DL';
+        schema['SearchPrincipalSource'] = 15;
+        schema['ResolvePrincipalSource'] = 15;
+        schema['AllowMultipleValues'] = false;
+        schema['MaximumEntitySuggestions'] = 50;
+        schema['Width'] = '245px';
+        this.SPClientPeoplePicker_InitStandaloneControlWrapper(peoplePickerElementId, null, schema);
+    }
+    
+    function GetOrgChartEmployeesAjaxCall() {
+        $("#orgniation-filter").modal('hide');
+        var companyID = Logged_CompanyId;
+        var siteHostURL = window.location.protocol + "//" + window.location.host;
+        var requestURI = '';
+        var ManagerId = [];
+        //var departmentName = $("#Department :selected").text();
+        if ($("#spnPplManager_TopSpan_ResolvedList").text() != '') {
+            ManagerId = getPeopleUserInfoGroups("spnPplManager");
+        }
+        var filter = '';
+        if ($("#Department").val() != "0" && $("#Department").val() != null) {
+            filter += " and Department/ID eq " + $("#Department").val() + " ";
+        }
+        if ($("#OfficeLocation").val() != "0" && $("#OfficeLocation").val() != null) {
+            filter += " and OfficeLocation/ID eq " + $("#OfficeLocation").val() + " ";
+        }
+        if (ManagerId.length > 0) {
+            filter += " and (ManagerLoginName/EMail eq '" + ManagerId[0] + "' or Email eq '" + ManagerId[0] + "')";
+            //filter += " and ManagerLoginName/EMail eq '" + ManagerId[0] + "' ";
+        }
+        filter += " and CompanyId eq '" + $("#ddlFilterCompany").val() + "' ";
+
+        requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('employees')/items?$select=Title,ID,Visible_in_directory,ParentId,FullName,Designation,MobileNumber,Email," +
+                    "Department/DepartmentName,Department/ID,OfficeLocation/ID,OfficeLocation/OfficeName,ManagerLoginName/EMail&$expand=AttachmentFiles,Department," +
+                    "OfficeLocation,ManagerLoginName&$Filter=Visible_in_directory ne 'No' and Status eq 'Active' " + filter + "&$top=5000 &$orderBy=Title desc";
+
+        $.ajax({
+            url: requestURI,
+            type: "GET",
+            async: false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+                var employeess = [];
+                var employee = {};
+
+                // Default Top Node
+                employee.id = -1
+                employee.parentId = 0;
+                employee.name = txtCompanyName; //$("#ddlCompany :selected").text();
+                employee.title = "";
+                employee.phone = "";
+                employee.mail = "";
+                employee.image = $("#LogoImage").attr("src");
+                employeess.push(employee);
+                // End
+                var employeeList = [];
+                var results= data.d.results;
+                results.sort(function(a, b){
+			  let x = a.Title;
+			  let y = b.Title;
+			  if (x < y) {return -1;}
+			  if (x > y) {return 1;}
+			  return 0;
+		    });
+                $.each(results, function (i, item) {
+                    employee = {};
+                    
+                    var employeePicURL = '';
+                    if (item.AttachmentFiles.results.length > 0) {
+                        employeePicURL = siteHostURL + "/" + item.AttachmentFiles.results[0].ServerRelativeUrl;
+                    }
+                    else {
+                        employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(item.Email);
+                    }
+
+                    employee.id = item.ID;
+                    if (item.ParentId) {
+                        employee.parentId = item.ParentId;
+                    }
+                    else {
+                        employee.parentId = null;
+                    }
+                    employee.name = item.FullName;
+
+                    if (item.Designation) {
+                    	if(item.Designation.length > 27){
+                    		item.Designation = item.Designation.substring(0, 27) + "...";
+                    	}
+                        employee.title = item.Designation;
+                    } else {
+                        employee.title = "";
+                    }
+                    if (item.Department.DepartmentName) {
+                    	if(item.Department.DepartmentName.length > 21){
+                    		item.Department.DepartmentName = item.Department.DepartmentName.substring(0, 21) + "...";
+                    	}
+                        employee.phone = ("Dept: " + item.Department.DepartmentName);
+                    } else {
+                        employee.phone = "";
+                    }
+                    if (item.Email) {
+                        employee.mail = item.Email;
+                    } else {
+                        employee.mail = "";
+                    }
+
+                    employee.image = employeePicURL;
+
+                    employeess.push(employee);
+
+                    employeeList.push(item.Id);
+
+                });
+
+
+                //if parentId does not exist
+                for (var index = 0; index < employeess.length; index++) {
+                    if (employeeList.indexOf(employeess[index].parentId) == -1) {
+                        if (employeess[index].parentId != 0) {
+                            employeess[index].parentId = -1;
+                        }
+                    }
+                }
+                if (employeess.length == 1) {
+                    employeess[0].parentId = -1;
+                }
+
+                /// Show Employee Org. Chart
+                try {
+                    ShowOrgChart(employeess);
+                }
+                catch (e) {
+                    alert(e.message);
+                }
+            },
+            error: function () {
+                alert("Error getting employee details.");
+            }
+        });
+    }
+
+    function ShowOrgChart(employeess) {
+        var peopleElement = document.getElementById("people");
+
+        document.getElementById("people").innerHTML = "";
+
+
+        var orgChart = new getOrgChart(peopleElement, {
+            primaryFields: ["name", "title", "phone", "mail"],
+            photoFields: ["image"],
+            expandToLevel: 100,
+            enableZoom: true,
+            enableEdit: false,
+            enableDetailsView: false,
+            layout: getOrgChart.MIXED_HIERARCHY_RIGHT_LINKS,
+            dataSource: employeess
+
+        });
+
+    }
+
+	//Bind company filter dropdown
+	function GetCompanies() {
+	    //$('#ddlFilterCompany').empty().append('<option value="0">-Select Company-</option>');
+	    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Companies')/items?$select=ID,CompanyName";
+	    $.ajax({
+	        url: Ownurl,
+	        headers: { Accept: "application/json;odata=verbose" },
+	        async: false,
+	        success: function (data) {
+	            var items = data.d.results;
+	            for (var i = 0; i < items.length; i++) {
+	                $("#ddlFilterCompany").append($("<option></option>").attr("value", data.d.results[i].ID).text(data.d.results[i].CompanyName));
+	            }
+	            $("#ddlFilterCompany").val(Logged_CompanyId);
+	            $("#ddlFilterCompany").trigger("change");
+	        }, eror: function (data) {
+	            console.log('error');
+	        }
+	    });
+	}
+	    //////////////////////////////////// Bind Office Locations ///////////////////////////////
+    function BindOfficeLocations(companyID) {
+        //var companyID = Logged_CompanyId;
+        var requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('OfficeLocation')/items?$select=ID,OfficeName&$Filter=LanguageId eq 0 and CompanyID eq " + companyID + "";
+
+        $.ajax({
+            url: requestURI,
+            type: "GET",
+            async: false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+                var locations;
+                locations += "<option value=\"0\">All</option>";
+                $.each(data.d.results, function (i, item) {
+                    var ID = item.ID;
+                    var officeName = item.OfficeName;
+                    locations += "<option value=\"" + ID + "\">" + officeName + "</option>";
+                });
+                $("#OfficeLocation").html('');
+                $("#OfficeLocation").append(locations);
+
+            },
+            error: function (error) {
+                alert("Error in getting records -- " + error);
+                return false;
+            }
+        });
+    }
+
+    /////////////////// Bind Department ///////////////
+    var check = false;
+    var check1 = false;
+    function BindOfficeDepartment(companyID) {
+        //var companyID = titanForWork.getQueryStringParameter('CompanyId');
+        var requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('Departments')/items?$select=ID,DepartmentName&$Filter=CompanyID eq " + companyID + "";
+
+        $.ajax({
+            url: requestURI,
+            type: "GET",
+            async: false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+                var Deptlocations;
+                Deptlocations += "<option value=\"0\">All</option>";
+                $.each(data.d.results, function (i, item) {
+                    var ID = item.ID;
+                    var Department = item.DepartmentName;
+
+                    Deptlocations += "<option value=\"" + ID + "\">" + Department + "</option>";
+                });
+                $("#Department").html('');
+                $("#Department").append(Deptlocations);
+            },
+            error: function (error) {
+                alert("Error in getting records -- " + error);
+                return false;
+            }
+        });
+    }
+
+
+    //get all users count 
+    function getAllEmplCount() {
+        var Query = "?$top=5000&$select=ID,Company/ID,Status,Visible_in_directory&$expand=Company&$orderBy=Title desc&$filter=Visible_in_directory ne 'No' and Status eq 'Active' and Company/ID eq " + Logged_CompanyId,
+         dfds = $.Deferred(),
+         url = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Employees')/items/" + Query;
+        $.when(getItems(url, dfds)).done(function (Results) {
+            response = [];
+            $("#TotalEmpCount").text(Results.length);
+        });
+    }
+    var response = response || [];
+    //Get details from SP list above 5000
+    function getItems(url, dfds) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            async: false,
+            headers: {
+                'accept': 'application/json;odata=verbose'
+            },
+            success: function (data) {
+
+                response = response.concat(data.d.results);
+                if (data.d.__next) {
+                    url = data.d.__next;
+                    getItems(url, dfds);
+                }
+                else {
+                    dfds.resolve(response);
+                }
+            },
+            error: function (error) {
+                dfds.reject(error);
+                console.log(error);
+            }
+        })
+        return dfds.promise();
+    }
+</script>
+
+
+<div style="clear:both"></div>
+
+<!---modal section--->
+<div class="modal fade" id="orgniation-filter" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Filter</h4>
+            </div>
+            <div class="modal-body project-inbox-istab">
+                <div class="row">
+                
+                     <div class="col-sm-6">
+                        <div class="form-group custom-form-group">
+                            <label for="Project">Company:</label>
+                            <select class="form-control hiajust" id="ddlFilterCompany">
+                            </select>
+                        </div>
+                    </div>
+                
+                    <div class="col-sm-6">
+                        <div class="form-group custom-form-group">
+                            <label for="Project">Department:</label>
+                            <select class="form-control" id="Department"></select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group custom-form-group">
+                            <label for="Project">Location:</label>
+                            <select class="form-control" id="OfficeLocation"></select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group custom-form-group">
+                            <label for="Project">Manager:</label>
+                            <div id="ParentPplManager">
+                                <span id="spnPplManager"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+            </div>
+            <div class="modal-footer project-modal-footer" style="text-align:center;">
+                <button type="button" class="btn custom-btn mr-8" id="btnApply">Apply</button>
+                <button type="button" class="btn custom-btn-two-cancel" id="btnClear">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div style="margin:15px 70px; float:right; font-weight:600; font-size:14px;">Showing <span id="DiplayEmpCount">100</span> out of <span id="TotalEmpCount">0</span>&nbsp;employees</div> -->
+
+<!-- <script type="text/javascript">
+    $(window).load(function() {
+        $("#people .get-org-chart a[title='Adapt Titan']").attr('style', 'background-color: #e00 !important');
+    });
+</script> -->
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-64</mso:_dlc_DocId>
+    <mso:_dlc_DocIdItemGuid msdt:dt="string">3214b516-a77a-474f-82af-cfe17dc16435</mso:_dlc_DocIdItemGuid>
+    <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-64, ADMIN-1645029823-64</mso:_dlc_DocIdUrl>
+    <mso:Approval_x0020_Level msdt:dt="string"></mso:Approval_x0020_Level>
+    <mso:Categories msdt:dt="string"></mso:Categories>
+    <mso:Assigned_x0020_To msdt:dt="string"></mso:Assigned_x0020_To>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+    <mso:Order msdt:dt="string">6400.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+    </xml><![endif]-->
+    <title></title>
+</head>

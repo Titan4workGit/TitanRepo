@@ -1,0 +1,199 @@
+﻿<style>
+.table .left-label
+{
+	text-align:right;
+	width:30%;
+}
+
+</style>
+
+<script type="text/javascript">
+var CompanySiteURL='';
+$(document).ready(function () {
+	SP.SOD.executeOrDelayUntilScriptLoaded(GetAllNotification,"sp.js"); 
+	
+	//SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventManageOfficeLocation,"sp.js"); 
+}); 
+
+function getCurrentURL_EventManageOfficeLocation()
+{
+	var listName='Companies';
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+    siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('"+listName+"')/items?$select=ID,SiteURL&$filter=ID eq '" + txtCompanyId + "'";
+    $.ajax({
+        url: siteURL,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data)
+        {
+            var items = data.d.results;
+            if (items.length>0)
+            {
+                CompanySiteURL = items[0].SiteURL;
+				var siteClientContext = new SP.ClientContext(CompanySiteURL);
+				//getAllNotification(CompanySiteURL);
+				GetAllNotification();
+			}
+        }, eror: function (data)
+        {
+            console.log($('#txtSomethingWentWrong').val());
+        }
+    });
+}
+
+function GetNotificationDetails(NotificationId){
+	$("#NotificationDetailsHTML").empty();
+	//var requestUri = CompanySiteURL + "/_api/lists/getbytitle('NotificationCenter')/items?$select=*&$filter=ID eq '" + NotificationId + "'";
+	
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('NotificationCenter')/items?$select=WebpartName,Title,Details,Created,Author/Title&$expand=Author&$filter=ID eq '" + NotificationId + "'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+					var NoficationDetails='';
+					var WebpartName=items[0]["WebpartName"];
+					var NotificationTitle=items[0]["Title"];
+					var NotificationDetails=items[0]["Details"];
+					var CreatedDate=items[0]["Created"];
+					CreatedDate= new Date(CreatedDate);
+					var CreatedBy= items[0].Author.Title;	
+					
+					NoficationDetails +='<table class="table"><tbody><tr><td class="left-label" data-localize="TaskInbox">Notification Type : </td><td>'+WebpartName+'</td></tr>';
+					NoficationDetails +='<tr><td class="left-label">Created Date : </td><td>'+titanForWork.ShowCommonStandardDateFormat(CreatedDate)+'</td></tr>';
+					NoficationDetails +='<tr><td class="left-label">Created By : </td><td>'+CreatedBy+'</td></tr>';
+					NoficationDetails +='<tr><td class="left-label">Title : </td><td>'+NotificationTitle+'</td></tr>';
+					NoficationDetails +='<tr><td class="left-label">Description : </td><td>'+NotificationDetails+'</td></tr></tbody></table>';
+					$("#NotificationDetailsHTML").append(NoficationDetails);
+            },
+            error: function () {
+                console.log("Error getting Notification Details.");
+            }                     
+        });
+
+	$("#modalTitanPreview").modal('show');
+}
+
+function GetAllNotification(){
+	var txtCompanyId =  titanForWork.getQueryStringParameter("CompanyId");
+	var currentUserDepartmentID=GetCurrentUserDepartment();
+	
+	$("#NoficationCenter").empty();
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('NotificationCenter')/items?$select=* &$filter=CompanyId eq "+ txtCompanyId +" and ((DepartmentId eq "+currentUserDepartmentID+") or (DepartmentId eq null)) &$OrderBy=ID desc";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	
+					var NoficationTable='';
+					for(i = 0; i < items.length;i++) {
+					  var WebpartName=items[i]["WebpartName"];
+					  var NotificationTitle=items[i]["Title"];
+					  var NotificationId=items[i]["ID"];
+					  NoficationTable +='<table class="table"><tbody><tr><td>'+WebpartName+'<br><a onclick="GetNotificationDetails('+NotificationId+');">'+NotificationTitle+'</a></td></tr></tbody></table>';
+					}
+					$("#NoficationCenter").append(NoficationTable);
+					getAllEmployeeTaskNotification();
+            },
+            error: function () {
+                console.log("Error getting All Notification HTML.");
+            }                     
+        });
+}
+
+function GetCurrentUserDepartment()
+{
+	var DepartmentId =0;
+	var CompanyId = titanForWork.getQueryStringParameter("CompanyId");
+    var requestURI = _spPageContextInfo.webAbsoluteUrl + "/_api/Web/Lists/GetByTitle('Employees')/Items?$select=ID,Department/Id,LogonName/Name&$expand=Department,LogonName&$Filter=LogonName/Id eq '" + _spPageContextInfo.userId + "' and CompanyId eq '" + CompanyId + "'";
+
+    $.ajax({
+        url: requestURI ,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0)
+            {
+                DepartmentId = items[0].Department.Id;
+            }
+        },
+        error: function (data) { }
+
+    });
+    return DepartmentId;
+}
+
+
+function getAllEmployeeTaskNotification(){
+	//$("#NoficationCenter").empty();
+	var requestUri = _spPageContextInfo.webAbsoluteUrl + "/_api/lists/getbytitle('EmployeeTaskNotificationCenter')/items?$select=*&$Filter= TaskAssignToId eq '"+_spPageContextInfo.userId+"'";
+    $.ajax({
+            url: requestUri,
+            type: "GET",
+			async:false,
+            headers: { "ACCEPT": "application/json;odata=verbose" },
+            success: function (data) {
+					var items=data.d.results;
+                	
+					var NoficationTable='';
+					for(i = 0; i < items.length;i++) {
+					  var TaskDetail=items[i]["Title"];
+					  var TaskId=items[i]["ID"];
+					  NoficationTable +='<table class="table"><tbody><tr><td>New Task Assign<br>'+TaskDetail+'</td></tr></tbody></table>';
+					}
+					$("#NoficationCenter").append(NoficationTable);
+					
+            },
+            error: function () {
+                console.log("Error getting All Notification HTML.");
+            }                     
+        });
+}
+
+</script>
+
+
+<div id="modalTitanPreview" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content" class="modal-dialog">
+            <div class="modal-header panel-head-4" >
+                <button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="NotificationDetails">Notification Details</h4>
+            </div>
+            <div class="modal-body">
+	            <div class="panel-body" id="NotificationDetailsHTML">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="table" id="NoficationCenter">
+ 
+</div><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-79</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">5ddde082-5479-4814-9aab-9dd6d3a8204d</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-79, ADMIN-1645029823-79</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">7900.00000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

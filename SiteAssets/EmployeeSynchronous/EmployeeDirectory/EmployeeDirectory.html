@@ -1,0 +1,324 @@
+﻿	<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/angular.min.js"></script>
+	
+	<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->       
+<style type="text/css">
+	div#custom-search-input div.input-group .input-group-btn .btn.btn-primary {
+		margin-right: 0px;
+	}
+	.ms-webpart-zone.ms-fullWidth,.ms-webpart-cell-horizontal{
+		display:block !Important;
+	}
+	.tile_box{    
+		background-color:#efefef;
+		height:auto ;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0   rgba(0,0,0,.12);
+	/*border-radius: 2px;*/
+		padding: 15px;
+		border:1px solid #efefef;
+		min-height:267px;
+		max-height: 280px;
+	}
+	.tile_box .user_pic {
+        /*position: relative;
+	    top: 0px;
+	    left: 50%;
+	    right: auto;
+	    transform: translate(-50px, 0px);*/
+        position: relative;
+	    top: 0px;
+	    left: auto;
+	    right: auto;
+	    text-align: center;
+	}
+	.tile_box .user_pic img {
+	    height: 110px !important;
+	    width: 100px !important;
+	    border-radius: 4px !important;
+	    object-fit: cover;
+	}
+	.my_rec_content {
+	    text-align: center;
+	    position: relative;
+	    /*margin-top: 100px;*/
+	}
+	.my_rec_content .user_text {
+	    text-align: center !important;
+	}
+
+	.h4-color2{ 
+		color:#666666; 
+		margin-top:15px; 
+		font-size:14px; 
+		text-decoration:none;
+	}
+	.pagination>li>a, .pagination>li>span { 
+		color:#666;  
+		padding: 8px 13px;
+	}
+	.tile_box{
+		background-color:#efefef;
+		height:auto ;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0   rgba(0,0,0,.12);
+		/*border-radius: 2px;*/
+		padding:15px;
+		border:1px solid #efefef;
+	}
+	.h4-color2{ 
+		color:#666666; 
+		margin-top:15px; 
+		font-size:14px; 
+		text-decoration:none;
+	}
+	.accordion-text{ 
+		color:#333;
+	}
+	.marginTop {
+		/*margin-top: 65px;*/
+		margin-top: 25px;
+	}
+	@media (max-width: 768px) {
+	  .marginTop {
+	    margin-top: 65px;
+	  }
+	}
+	.user_text{ 
+		color:#1d6ec0; 
+		text-align:center;
+	}
+	.user_pic{
+		position: absolute; 
+		top: -43px; 
+		left: 0; 	
+		right: 0;
+	}
+	.user_pic_content{	
+		margin-top:55px;
+	}
+	.marginTop60{ 
+		margin-top:60px;
+	}
+	.marginTop70{ 
+		margin-top:70px;
+	}
+	input[type=text]::-ms-clear {
+	    display: none;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('.sortClassA').click(function()
+		{
+			$('.sortClassA').each(function(){
+				$(this).removeClass("active");
+			});
+			$(this).each(function(){
+				$(this).addClass("active");
+			});
+		});
+		$('#searchBoxControl').keyup(function()
+		{	
+		var getTextBoxValue= $(this).val();	
+		$('.sortClassA').each(function(){	
+			$(this).removeClass("active");
+				if(getTextBoxValue=="" || getTextBoxValue==null)
+				{
+					$('.hideItemAA').addClass("active");
+				}
+				else
+				{
+					$('.hideItemAA').removeClass("active");
+					var wkeyords=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];	 
+					var x=getTextBoxValue.toUpperCase();	
+					debugger;			
+					for(var j=0;j<wkeyords.length;j++)
+					{
+						if(wkeyords.indexOf(x.charAt(0))!=-1)
+						{
+							$(".hideItem"+x.charAt(0)).addClass("active");
+						}			 
+					}	
+				}
+			});
+		});
+	});
+</script>
+<a id='langClickEvent' style="display:none">click</a>
+<label id="landDepartment"   data-localize="Department" style="display:none">Department</label>
+<label id="langExtension"  data-localize="Extension" style="display:none">Extension</label>
+<label id="langManager"  data-localize="Manager" style="display:none">Manager</label>
+<label id="lanlmoreInformation"  data-localize="MoreInformation" style="display:none">More Information</label>
+<div ng-app="myApp" ng-controller="myCtrl" data-ng-init="GetOfficeLocation();GetCompaniesList();IsCurrentUserInEinv();">
+
+		<div class="row department-header"> 
+			<ol class="breadcrumb">    
+				<li><h4 data-localize="EmployeeDirectory"><b>Employee Directory</b></h4></li>
+				      
+			</ol>
+			
+		 
+		    
+		</div>
+		<!--company-->
+			
+		<!--company-->
+
+
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-12">
+    <div class="row">
+	  	<!--<div class="marginTop10">-->
+      <div class="col-md-12">         
+      <ul class="pagination mrgbtm40" style="margin-top:0"> 	
+        <li class="sortClassA hideItemAA active" ><a ng-click="search.FullName=''" >All</a></li> 	  
+		<li class="sortClassA hideItemA" ><a ng-click="search.FullName='A'" >A</a></li> 
+		<li class="sortClassA hideItemB"><a ng-click="search.FullName='B'">B</a></li> 
+		<li class="sortClassA hideItemC"><a ng-click="search.FullName='C'" >C</a></li> 
+		<li class="sortClassA hideItemD"><a ng-click="search.FullName='D'">D</a></li> 
+		<li class="sortClassA hideItemE"><a ng-click="search.FullName='E'">E</a></li>
+		<li class="sortClassA hideItemF"><a ng-click="search.FullName='F'">F</a></li>
+		<li class="sortClassA hideItemG"><a ng-click="search.FullName='G'">G</a></li>
+		<li class="sortClassA hideItemH"><a ng-click="search.FullName='H'">H</a></li>
+		<li class="sortClassA hideItemI"><a ng-click="search.FullName='I'">I</a></li>
+		<li class="sortClassA hideItemJ"><a ng-click="search.FullName='J'">J</a></li>
+		<li class="sortClassA hideItemK"><a ng-click="search.FullName='K'">K</a></li>
+		<li class="sortClassA hideItemL"><a ng-click="search.FullName='L'">L</a></li>
+		<li class="sortClassA hideItemM"><a ng-click="search.FullName='M'">M</a></li>
+		<li class="sortClassA hideItemN"><a ng-click="search.FullName='N'">N</a></li>
+		<li class="sortClassA hideItemO"><a ng-click="search.FullName='O'">O</a></li>
+		<li class="sortClassA hideItemP"><a ng-click="search.FullName='P'">P</a></li>
+		<li class="sortClassA hideItemQ"><a ng-click="search.FullName='Q'">Q</a></li>
+		<li class="sortClassA hideItemR"><a ng-click="search.FullName='R'">R</a></li>
+		<li class="sortClassA hideItemS"><a ng-click="search.FullName='S'">S</a></li>
+		<li class="sortClassA hideItemT"><a ng-click="search.FullName='T'">T</a></li>
+		<li class="sortClassA hideItemU"><a ng-click="search.FullName='U'">U</a></li>
+		<li class="sortClassA hideItemV"><a ng-click="search.FullName='V'">V</a></li>
+		<li class="sortClassA hideItemW"><a ng-click="search.FullName='W'">W</a></li>
+		<li class="sortClassA hideItemX"><a ng-click="search.FullName='X'">X</a></li>
+		<li class="sortClassA hideItemY"><a ng-click="search.FullName='Y'">Y</a></li>
+		<li class="sortClassA hideItemZ"><a ng-click="search.FullName='Z'" >Z</a></li>	
+	</ul>     
+      </div> 
+     
+		<div class="col-md-3 col-sm-3 col-xs-12">
+			<select class="form-control" ng-change="GetOfficeLocation()" id="companesList" ng-model="selectedCompanyId" ng ng-options="o.ID as o.CompanyName for o in companiesListArray">	
+			</select>
+		</div>    
+     <!-- <div class="col-md-3 col-sm-6 pull-right bottom5"><div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control" id='searchBoxControl' placeholder="Search" style="border:none;display:none" ng-model="search.FullName">
+                    <span class="input-group-btn" style="display:none;">
+                        <button class="btn btn-primary" style="height:34px" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+	  </div>-->
+	  
+<div class="col-md-3 col-sm-3 col-xs-12">
+	<select class="form-control"  id="sel1"  ng-model="search.OfficeLocation.ID"  ng-options="o.ID as o.OfficeName for o in showOffice">
+	</select>
+</div>
+
+<div class="col-md-3 col-sm-3 col-xs-12">
+	<select class="form-control"  id="selDept">
+	</select>
+</div>
+
+ <div  class="col-md-3 col-sm-3 col-xs-12">
+	  <input  class="form-control" ng-model="searchText" id="myInput" type="text" placeholder="Search..">
+	  </div>
+
+
+<div class="clearfix"></div>
+
+
+<div ng-repeat="x in showData | filter:search:startsWith | filter:search:officeName | filter:searchText">
+	<div ng-init="img_url=GetAttachment(x.AttachmentFiles, x.Email)" style="display;none;" > </div>
+<div class='col-lg-3 col-md-6 col-sm-6 marginTop my_recognation'>
+    <div class='tile_box'>
+        <p class='user_pic'><img ng-src={{img_url}} style='width: 92px; height:103px; border-radius: 10px;'></p>
+		<div class='text-right pb-60 my_rec_content'>
+			<h5 class='user_text'>{{x.FullName}}</h5>
+			<span class='center-block spnDesignation' id='spnDesignation' style=''>{{x.Designation}}</span>
+			<span class='center-block'><span class='my_rec_dept' id='Department'><label  data-localize="Department">{{landDepartment}}</label> : {{x.Department.DepartmentName}}</span></span>
+			<span class='my_rec_loc' id='Extension'><label  data-localize="Extension">{{langExtension}}</label> :{{x.ExtensionName}}</span><br>
+			<span class='my_rec_loc' id='Manager'><label  data-localize="Manager">{{langManager}}</label> : {{x.Manager}} </span><br>
+		<!--<span class='my_rec_loc' id='Email'><span class="glyphicon glyphicon-envelope user_text"></span>&nbsp; <span>{{x.LogonName.UserName}}</span></span>-->
+    		<span class='my_rec_loc' id='Email'><span class="glyphicon glyphicon-envelope user_text"></span>&nbsp; <span>{{x.Email}}</span></span>
+		</div>
+		<div class='my_rec_dtl_btn' style='position: absolute; right: 20px; bottom: 3px;'>
+			<div class='text-right pb-10'><span class='common-view-detail-button'><a ng-click="MoreInformationDetails(x.ID)">Details</a></span></div>
+            <div class='text-right my_rec_edt_del_box' style='font-size: 17px;'></div>
+        </div>
+        <div class='clearfix'></div>
+    </div>
+</div>
+</div>	 
+<!--<div ng-repeat="x in showData | filter:search:startsWith | filter:search:officeName">
+	<div ng-init="img_url=GetAttachment(x.AttachmentFiles)" style="display;none;" > </div>
+		<div class="col-lg-3 col-md-6 col-sm-4 marginTop" >
+	    	<div class="tile_box">
+				<p class="text-center user_pic">		    
+					<img ng-src={{img_url}} class="img-circle" height="100px" width="100px">			 
+				</p>
+            	<div class="text-center user_pic_content ">
+             		<div ng-if="x.FullName!=''">
+			 			<h5 class="user_text">{{x.FullName}}</h5>
+			 		</div> 
+			 		<div ng-if="x.FullName==null">
+			 			<h5 class="user_text">NA</h5>
+			 		</div>
+			 		<div ng-if="x.Designation!=''">
+             			<p class="center-block">{{x.Designation}}</p>
+			 		</div>
+			  		<div ng-if="x.Designation==null">
+              			<p class="center-block">NA</p>
+			 		</div>
+              		<span class="center-block"><label  data-localize="Department">{{landDepartment}}</label> : {{x.Department.DepartmentName}}</span>
+              		<span class="center-block"><label  data-localize="Extension">{{langExtension}}</label> : {{x.ExtensionName}}</span>
+              		<span class="center-block"><label  data-localize="Manager">{{langManager}}</label> : {{x.Manager}} </span>
+              		<span class="center-block"><span class="glyphicon glyphicon-envelope user_text"></span>&nbsp; <span>{{x.LogonName.UserName}}</span> </span>   
+               		<div class="check"id="emailcheck" ng-model="emailcheck" ng-show ="emailcheck == true" ><span class="center-block"><span class="glyphicon glyphicon-earphone user_text" ng-hide='x.MobileNumber == null '></span>&nbsp; {{x.MobileNumber}} </span></div> 
+					<div class="text-center marginTop15">
+						<button type="button" class="btn btn-default" ng-click="MoreInformationDetails(x.ID)">
+							<label  data-localize="MoreInformation">{{lanlmoreInformation}}</label>
+						</button>
+			  		</div>            
+            	</div>
+			</div>            
+	    </div>
+	</div> 				
+</div>      -->
+        </div>       
+    </div>
+</div>
+</div>
+<br>
+<br>
+</div>
+<div id="divemployee">
+</div>
+
+<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory/EmployeeDirectory.js"></script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-252</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">a4bb104f-948d-41f4-8f2a-956f66f26321</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-252, ADMIN-1645029823-252</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">25200.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>

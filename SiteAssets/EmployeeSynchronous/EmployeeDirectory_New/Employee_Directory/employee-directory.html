@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>Employee Directory</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/Employee_Directory/assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/Employee_Directory/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/Employee_Directory/assets/css/styles.css">
+	<script src="../SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/Employee_Directory/employee-directory.js"></script>
+	
+<style>
+#pplManager_TopSpan{
+ 	width:100% !important;	
+}
+#pplManager_TopSpan.sp-peoplepicker-topLevel{
+ 	padding:6px 10px 6px 0px !important;	
+}
+#pplManager_TopSpan .sp-peoplepicker-initialHelpText{
+	top:5px !important;
+}
+#pplManager_TopSpan_EditorInput{
+	 border:none !important;	
+}
+#employee-directory-filter .modal-header button.close{
+	 min-width:1em !important;
+	 background-color:#fff !important;
+	 color:#000 !important;
+	 line-height: 25px;
+}
+#employee-directory-filter .modal-header button.close:hover{
+	 background-color:#000;
+	 color:#fff;
+}
+.employee-directory-card p{
+	margin:0 !important;
+	color:#333 !important;
+	font-size:13px !important;
+}
+.employee-directory-card .employee-directory-card-head > img{
+ 	object-fit:cover !important;	
+}
+.employee-directory-card-head{
+ 	box-shadow:0px 9px 12px -7px #4c8ac0 !important;	
+}
+.employee-directory-card .member-name{
+	 color:#337ab7 !important;
+	 font-size:15px !important;	
+	 margin-bottom:5px !important;
+}
+.employee-directory-card p a{
+	text-decoration:none !important;
+}
+.employee-directory-card {
+    min-height: 130px !important;
+}
+
+@media(max-width:767px){
+
+#DeltaPlaceHolderMain .col-md-12{
+	padding:0 3px !important;
+}
+.employee-directory-pagination{
+ position:relative;
+ z-index:1;	
+}	
+}
+</style>	
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2121</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">66d102ee-95f6-4d2d-b8a7-c9382b7fc5c0</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2121, ADMIN-1645029823-2121</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">212100.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="tab-content">
+					<div class="custom-panel custom-panel-box">
+						<div class="panel-head">
+							<h3 class="m-0" data-localize="Employee Directory">
+								Employee Directory
+                            </h3>
+						</div>
+						<div class="panel-body px-0 pt-8">
+							<div class="row m-0">
+								<div class="col-md-7 col-sm-6">
+									<div class="scrollbar-panel chip-panel">
+										<div class="chip-box hideChip" style="display:none;">
+											<div class="upload-chip" id="CompFilterResult"></div>
+											<div class="upload-chip" style="display:none;" id="DeptFilterResult"></div>
+											<div class="upload-chip" style="display:none;" id="LocResult"></div>
+											<div class="upload-chip" style="display:none;" id="regionResult"></div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 col-sm-6 employee-directory-search-finter-box">
+									<div class="form-group custom-form-group employee-directory-search-box">
+										<input class="form-control" type="text" id="SearchInput" placeholder="Search">
+									</div>
+									<div class="employee-directory-btn-position">
+										<button type="button" class="btn custom-btn wpx-87 ml-4" id="btnFilter" data-toggle="modal" data-target="#employee-directory-filter">Filter</button>
+									</div>
+								</div>
+							</div>
+							<div class="row m-0">
+								<div class="col-xs-12">
+									<nav>
+									  	<ul class="pagination employee-directory-pagination scrollbar-panel">
+										    <li class="page-item active"><a class="page-link btnAll" style="cursor:pointer;" href="javascript:void(0);">All</a></li>
+										    <li class="page-item hideItemA"><a class="page-link" href="javascript:void(0);">A</a></li>
+										    <li class="page-item hideItemB"><a class="page-link" href="javascript:void(0);">B</a></li>
+										    <li class="page-item hideItemC"><a class="page-link" href="javascript:void(0);">C</a></li>
+										    <li class="page-item hideItemD"><a class="page-link" href="javascript:void(0);">D</a></li>
+										    <li class="page-item hideItemE"><a class="page-link" href="javascript:void(0);">E</a></li>
+										    <li class="page-item hideItemF"><a class="page-link" href="javascript:void(0);">F</a></li>
+										    <li class="page-item hideItemG"><a class="page-link" href="javascript:void(0);">G</a></li>
+										    <li class="page-item hideItemH"><a class="page-link" href="javascript:void(0);">H</a></li>
+										    <li class="page-item hideItemI"><a class="page-link" href="javascript:void(0);">I</a></li>
+										    <li class="page-item hideItemJ"><a class="page-link" href="javascript:void(0);">J</a></li>
+										    <li class="page-item hideItemK"><a class="page-link" href="javascript:void(0);">K</a></li>
+										    <li class="page-item hideItemL"><a class="page-link" href="javascript:void(0);">L</a></li>
+										    <li class="page-item hideItemM"><a class="page-link" href="javascript:void(0);">M</a></li>
+										    <li class="page-item hideItemN"><a class="page-link" href="javascript:void(0);">N</a></li>
+										    <li class="page-item hideItemO"><a class="page-link" href="javascript:void(0);">O</a></li>
+										    <li class="page-item hideItemP"><a class="page-link" href="javascript:void(0);">P</a></li>
+										    <li class="page-item hideItemQ"><a class="page-link" href="javascript:void(0);">Q</a></li>
+										    <li class="page-item hideItemR"><a class="page-link" href="javascript:void(0);">R</a></li>
+										    <li class="page-item hideItemS"><a class="page-link" href="javascript:void(0);">S</a></li>
+										    <li class="page-item hideItemT"><a class="page-link" href="javascript:void(0);">T</a></li>
+										    <li class="page-item hideItemU"><a class="page-link" href="javascript:void(0);">U</a></li>
+										    <li class="page-item hideItemV"><a class="page-link" href="javascript:void(0);">V</a></li>
+										    <li class="page-item hideItemW"><a class="page-link" href="javascript:void(0);">W</a></li>
+										    <li class="page-item hideItemX"><a class="page-link" href="javascript:void(0);">X</a></li>
+										    <li class="page-item hideItemY"><a class="page-link" href="javascript:void(0);">Y</a></li>
+										    <li class="page-item hideItemZ"><a class="page-link" href="javascript:void(0);">Z</a></li>
+									  	</ul>
+									</nav>
+									<div class="row m-0">
+										<div class="col-xs-12 show-total-card-no-details ShowDetails">
+											Showing&nbsp;<span class="displayEmpCount">0</span>&nbsp;of&nbsp;<span class="TotalEmpCount">0</span>&nbsp;employees
+										</div> 
+										<!--div class="col-xs-12 show-total-card-no-details AllDetails" style="display:none;">
+											Total&nbsp;Employees:&nbsp;<span class="TotalCount">0</span>
+										</div-->
+									</div>
+								</div>
+							</div>
+							<div class="row m-0 employee-directory-card-panel" id="divEmployeeDetails">
+							
+							</div>
+							<div class="row m-0">
+								<div class="col-xs-12 show-total-card-no-details ShowDetails">
+									Showing&nbsp;<span class="displayEmpCount">0</span>&nbsp;of&nbsp;<span class="TotalEmpCount">0</span>&nbsp;employees<a class="view-all-card-link" id="btnViewAll" href="javascript:void(0);">View all</a>
+								</div> 
+								<div class="col-xs-12 show-total-card-no-details AllDetails" style="display:none;">
+									Total&nbsp;Employees:&nbsp;<span class="TotalCount">0</span>
+								</div>
+							</div>
+							<div class="row m-0">
+								<div class="col-xs-12 text-center project-footer-btn-group">
+									<button type="button" id="btnSeeMore" class="btn custom-btn wpx-87">See More</button>
+									<button type="button" id="btnSeeMoreFilter" class="btn custom-btn wpx-87">See More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- filter Modal -->
+	<div class="modal fade " id="employee-directory-filter" role="dialog" >
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close close-round" data-dismiss="modal"><span
+							class="close-icon">&times;</span></button>
+					<h4 class="modal-title">Filter</h4>
+				</div>
+				<div class="modal-body my-group-modal-body">
+					<div class="row">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+		                      	<label data-localize="Company">Company:</label>
+		                      	<select class="form-control" id="ddlFilterCompany">
+		                      	</select>
+		                    </div>
+	                  	</div>
+	                  	<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+		                      	<label data-localize="Department">Department:</label>
+		                      	<select class="form-control" id="ddlFilterDept">
+		                      	</select>
+		                    </div>
+	                  	</div>
+	                  	<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+		                      	<label  data-localize="Location">Location:</label>
+		                      	<select class="form-control" id="ddlFilterLoc">
+		                      	</select>
+		                    </div>
+	                  	</div>
+	                  	<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+		                      	<label data-localize="Manager">Manager:</label>
+		                      	<div id="tempPPL">
+		                      		<span id="pplManager"></span>
+		                      	</div>
+		                    </div>
+	                  	</div>
+	                  	<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+		                      	<label data-localize="Designation">Designation:</label>
+		                      	<input class="form-control" type="text" id="FilterDesignation" placeholder="Designation">
+		                    </div>
+	                  	</div>
+	                  	<div class="col-md-4 col-sm-6 col-xs-12">
+		                    <div class="form-group custom-form-group">
+													<label data-localize="Region">Region:</label>
+													
+		                      <select class="form-control" id="ddlFilterRegion"></select>
+		                      	<!--<label data-localize="Group Name">Group Name:</label>
+		                      	<input class="form-control" type="text" id="FilterGpName" placeholder="Group Name">-->
+		                    </div>
+	                  	</div>
+					</div>
+				</div>
+				<div class="modal-footer employee-directory-filter-footer">
+			    	<button class="btn custom-btn mr-8" data-dismiss="modal" id="btnApply">Apply</button>
+					<button class="btn custom-btn-two-cancel" type="button" id="btnClear">Clear</button>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

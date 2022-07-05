@@ -1,0 +1,1411 @@
+<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script><!--Added -->
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link href="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
+<script src='../SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script type="text/javascript" src="../_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
+<script type="text/javascript" src="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/EventCalendar.js?18"></script>
+<!--<script src="../SiteAssets/EmployeeSynchronous/MeetingEventCalender/adal.min.js"></script>-->
+<script type="text/javascript" src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script>
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+<!--<script type="text/javascript" src="../SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>-->
+<script>
+let userAgent = navigator.userAgent;
+//alert(userAgent.toLower());
+var teamsapp=0;
+if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexOf("electron")>=0)
+{
+	teamsapp=1;
+	//alert("Teams App");
+}
+</script>
+
+<style>
+
+    .fc-time {
+        text-transform: uppercase;
+        float: left;
+        font-weight: bold;
+    }
+
+    .fc-title {
+        padding: 5px !important;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        white-space: pre-line;
+    }
+    .fc-center h6{ 
+             font-size:24px;
+             padding-bottom:5px;
+             font-family: 'Arial', sans-serif;
+ }
+
+
+
+    .required:after {
+        content: "*";
+        color: red;
+    }
+
+    /* css added on 21/4/2020 */
+
+
+    #calendar {
+        width: 80%;
+    }
+    .event-calender-category, .event-calender-department, .event-calender-location, .event-calender-search {
+        text-align: center;
+    }
+    .event-calender-category label, .event-calender-department label, .event-calender-location label, .event-calender-search label {
+        padding-right: 10px;
+    }
+
+    .doc_icon img {
+        padding: 4px;
+    }
+
+    input[type=file] {
+        padding: 10px;
+    }
+    #blah{
+     max-width: 200px;
+    }
+    #blah1{
+     max-width: 200px;
+    }
+
+ 
+    /* Modal Css Event Calender 13/10/20, 16/10/20 -----START----- */
+
+    .common-modal-header {
+        position: absolute;
+        z-index: 10;
+    }
+    button.close{
+        background:white;
+    }
+    .close{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .common-modal-header .bg-white-round-btn {
+        min-width: auto !important;
+        font-weight: bold !important;
+        font-size: 18px;
+        top: 10px;
+        background: #fff;
+        text-shadow: 0px 0px 4px #fff;
+        padding: 4px 6px !important;
+    }
+    .common-modal-header .bg-white-round-btn:hover {
+        background: #000;
+        color: #fff !important;
+        opacity: 1;
+    }
+    .panel-heading-common-popup {
+        padding: 14px 0px 7px 0px !important;
+        border: none !important;
+        background-color: transparent !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .common-head-text-popup {
+        font-size: 16px;
+        padding: 4px 10px;
+        color: white;
+        letter-spacing: 1px;
+        background-color: #24bad6 !important;
+        width: 100%;
+        font-weight: 600;
+    }
+    .modal-body-bg {
+        height: 300px;
+        -webkit-border-radius: 6px;
+                border-radius: 6px;
+    }
+     .my_events_calendar_img_box {
+        /*text-align: center;*/
+        float: left;
+        width: 100%;
+    }
+    #labelImageURL{
+        float: left;
+        width:  100px;
+        height: 300px;
+        -o-object-fit: cover;
+           object-fit: cover;   
+    }
+    .my_events_calendar_img_box #labelImageURL {
+        width: 100%;
+    }
+    .shade-common-popup {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), color-stop(rgba(0,0,0,0.1)), color-stop(rgba(0,0,0,0.2)), color-stop(rgba(0,0,0,0.5)), color-stop(rgba(0,0,0,0.9)), to(rgba(0,0,0,1)));
+        background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.9), rgba(0,0,0,1));
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2), rgba(0,0,0,0.5), rgba(0,0,0,0.9), rgba(0,0,0,1));
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    .common-content-popup {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        color: #fff;
+        width: 100%;
+        word-break: break-word;
+    }
+    .common-content-popup p {
+        margin-bottom: 5px;
+    }
+     #labelEventTitle {
+        width: auto;
+        padding-left: 5px;
+    }
+    #myViewEventModal .panel-body {
+        padding: 10px 10px 5px 10px;
+        background: #fff;
+    }
+    #myViewEventModal .panel-body .form-group {
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 5px !important;
+    }
+    #myViewEventModal .panel-body .form-group label {
+        padding-top: 0 !important;
+    }
+    #myViewEventModal .panel-body .form-group label {
+        margin-bottom: 10px;
+    }
+    .my_events_calendar_btns {
+        text-align: center;
+    }
+
+    /* Modal Css Event Calender 13/10/20, 16/10/20 -----END----- */
+
+
+    #myViewEventModal .modal-body {
+        padding-bottom: 15px !important;
+    }  
+    .my_events_calendar_heading #labelEventTitle {
+        font-weight: 600 !important;
+        font-size: 20px;
+        padding-top: 0 !important;
+    }
+    .my_events_calendar_description #lblNewEventDescription {
+        padding-top: 6px !important;
+    }
+
+    
+
+    a.morelink {
+        text-decoration: none;
+        outline: none;
+    }
+
+    .morecontent span {
+        display: none;
+    }
+
+    .comment {
+        width: 400px;
+        background-color: #f0f0f0;
+        margin: 10px;
+    }
+
+
+    .my_event_times {
+        text-align: right;
+    }
+
+    .my_events_slider_contain {
+        width: 100%;
+    }
+
+    
+
+    #mySliderDiv {
+        margin-bottom: 5px;
+        overflow: hidden;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 5px 0px 5px 5px;
+    }
+
+    #mySliderDivs {
+        margin-bottom: 5px;
+        overflow: hidden;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        padding: 5px 0px 5px 5px;
+    }
+
+    #mySliderDiv img {
+        width: 80px;
+        margin-right: 15px;
+        cursor: pointer;
+        -webkit-transition: all ease-out 0.2s;
+        -o-transition: all ease-out 0.2s;
+        transition: all ease-out 0.2s;
+    }
+
+    #mySliderDivs img {
+        width: 80px;
+        margin-right: 15px;
+        cursor: pointer;
+        -webkit-transition: all ease-out 0.2s;
+        -o-transition: all ease-out 0.2s;
+        transition: all ease-out 0.2s;
+    }
+
+    #mySliderDiv img:hover {
+        -webkit-box-shadow: 0px 1px 8px 1px #656565;
+                box-shadow: 0px 1px 8px 1px #656565;
+    }
+
+    #mySliderDivs img:hover {
+        -webkit-box-shadow: 0px 1px 8px 1px #656565;
+                box-shadow: 0px 1px 8px 1px #656565;
+    }
+
+
+
+    #mySliderDiv .my_event_active {
+        /* box-shadow: 0px 1px 8px 1px #5f5f5f; */
+        padding: 2px;
+        border: 1px solid #000;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+
+    #mySliderDivs .my_event_active {
+        /* box-shadow: 0px 1px 8px 1px #5f5f5f; */
+        padding: 2px;
+        border: 1px solid #000;
+        -webkit-border-radius: 4px;
+                border-radius: 4px;
+        -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+                transform: scale(1.1);
+    }
+    button.close.h4-color {
+        min-width: 1em !important;
+        top: 10px;
+        background: #636363;
+        transition:0.5s;
+        cursor:pointer;
+    }
+
+button.close.h4-color:hover{
+         background: #000;
+         color:#fff;
+    
+    }
+    
+    
+
+/*For New Event*/
+    
+.common-modal-close {
+    /* text-shadow: 1px 1px #fff; */
+    opacity: 1;
+    position: absolute;
+    top: 11px;
+    min-width: auto;
+    padding: 0px 7px !important;
+    background: #fff;
+    color:black;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    font-size: 24px;
+}
+.common-popup-dialog-box .modal-body {
+    padding: 0px !important;
+}
+.pr20 {
+    padding-right: 20px !important;
+}
+ 
+.pl20 {
+    padding-left: 20px !important;
+}
+ 
+.pb15 {
+    padding-bottom: 15px !important;
+} 
+.ms-rtestate-field p, p.ms-rteElement-P {
+    margin: 0px 0px 10px 0px;
+    line-height: 1.6;
+}
+.common-title-popup {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+p {
+    margin: 0 0 8px;
+}
+.btn{
+ text-align: center;
+ display: inline-block;
+ cursor: pointer;    
+}
+#myAddNewEventModal .modal-header>button:hover {
+    background: #000;
+    color: #fff !important;
+}
+#myAddNewEventModal .modal-header>button {
+    /*opacity: 1;
+    position: absolute;
+    top: 6px;
+    min-width: auto;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 22px;
+    color: #000 !important;
+    padding: 0px 2px 1px 2px !important;
+    text-shadow: 0px 0px 4px #fff;*/
+    opacity: 1;
+    position: absolute;
+    top: 9px;
+    min-width: auto;
+    background: #fff;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    font-size: 22px;
+    color: #000 !important;
+    padding: 0px 2.5px 1px 2px !important;
+    text-shadow: 0px 0px 4px #fff;
+    min-width: 1em !important;
+}
+#myAddNewEventModal .modal-header>button:focus {
+    outline: none;
+}
+.event-calender-category #FilterEditEventCateory, .event-calender-department #FilterEditEventDepartment, .event-calender-location #searchLocation, .event-calender-search #searchTerm
+{
+    width: 170px;
+    font-size: 13px;
+    padding: 8px 5px !Important;
+}
+.event_top_band .my_event_heading {
+    color: #fff;
+}
+#myViewEventModal .modal-dialog {
+    overflow: hidden;
+}
+.my_events_calendar_btns .deleteClickEditCompanyEvent {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.my_events_calendar_btns .deleteClickEditCompanyEvent:hover, .my_events_calendar_btns .deleteClickEditCompanyEvent:active {
+    color: #dc3545;
+    background-color: transparent;
+    border-color: #dc3545 !important;
+}
+.new-event-pop-org-depart-box label {
+    padding-top: 0px !important;
+}
+
+/* new css added on 02/7/2021 */
+
+.event_top_band {
+    height: auto !important; 
+    background: #fff !important;
+}
+.event_top_band .my_event_heading {
+    color: #1b1b1b;
+    font-size: 24px !important;
+    font-weight: 500;
+}
+.content.panel.panel-default {
+    border-color: #d4d4d4;
+    box-shadow: none;
+}
+.newEvent {
+    padding: 6px 12px !important;
+    top: 0px !important;
+    margin-right: 5px !important;
+}
+.event-calender-category, .event-calender-department, .event-calender-location, .event-calender-search {
+    text-align: left;
+}
+.event-calender-category #FilterEditEventCateory, .event-calender-department #FilterEditEventDepartment, .event-calender-location #searchLocation {
+    width: 100%;
+    font-size: 13px;
+    padding: 8px 5px !important;
+}
+.event-modal-footer {
+    text-align: center;
+}
+#event-filter .modal-header .close {
+    color: #000;
+    padding: 2px 0px 0px 0px;
+    top: 12px;
+}
+#myAddNewEventModal .modal-header {
+    height: 38px;
+}
+#myAddNewEventModal .modal-header>button {
+    top: 11px;
+}
+
+/* responsive css started */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+
+    .event-calender-category #FilterEditEventCateory, .event-calender-department #FilterEditEventDepartment, .event-calender-location #searchLocation, .event-calender-search #searchTerm {
+        width: 200px;
+    }
+    .event-calender-category label, .event-calender-department label, .event-calender-location label, .event-calender-search label {
+        padding-right: 20px;
+    }
+    .event-calender-category, .event-calender-department, .event-calender-location, .event-calender-search {
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .event-calender-category, .event-calender-department, .event-calender-location, .event-calender-search {
+        /*text-align: left;*/
+        margin-bottom: 10px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .event-calender-category #FilterEditEventCateory, .event-calender-department #FilterEditEventDepartment, .event-calender-location #searchLocation, .event-calender-search #searchTerm {
+        width: 220px;
+    }
+    .event-calender-category label, .event-calender-department label, .event-calender-location label, .event-calender-search label {
+        padding-right: 22px;
+    }    
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .event-calender-category, .event-calender-department, .event-calender-location, .event-calender-search {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 10px;
+    }  
+    .event-calender-category #FilterEditEventCateory, .event-calender-department #FilterEditEventDepartment, .event-calender-location #searchLocation, .event-calender-search #searchTerm {
+        /*width: 70%;*/   
+        width: 62%;     
+        font-size: 12px;
+        padding: 8px 5px !Important;
+    }
+    /*.event_top_band .my_event_heading {
+        color: #fff;
+        font-size: 16px !important;
+    }*/
+    .event_top_band .newEvent {
+        font-size: 12.5px !important;
+    }
+    #myAddNewEventModal .modal-body .form-horizontal .form-group .control-label {
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    .event-calender-top-panel-box-istad-left .event-calender-search #searchTerm {
+        width: 220px;
+        margin-top: 1px;
+    }
+
+}
+
+/* Special css for calender fix */
+@media only screen and (min-width: 642px) and (max-width: 767px) {
+
+    #calendar .fc-right .fc-button-group .fc-button {
+        font-size: 12px;
+    }
+    #calendar {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+
+    .my_events_calendar_btns button {
+        margin-bottom: 6px;
+    }
+    .event-calender-top-panel-box-istad-left {
+        width: 100%;
+    }
+    .event-calender-top-panel-box-istad-left .event-calender-btn-position {
+        text-align: center;
+    }
+    .event-calender-top-panel-box-istad-left .event-calender-btn-position .event-calender-search {
+        display: block;
+    }
+    .event-calender-top-panel-box-istad-left .event-calender-btn-position .event-calender-search #searchTerm {
+        width: 100%;
+    }
+    .event-calender-top-panel-box-istad-right .event-calender-btn-position {
+        text-align: center;
+    }
+    .event-calender-top-panel-box-istad-right {
+        width: 100%;
+    }
+
+}
+
+
+/**july-13-21***/
+
+
+button.close-round{
+
+ min-width:1em !important;	
+ color:#000;	
+}
+
+
+
+</style>
+
+<section class="content panel panel-default mrgn-tp10">
+
+
+    <div class="panel-heading event_top_band">
+        <!-- <div class="panel-heading  panel-head-4 event_top_band"> -->
+        <div class="panel-title">
+            <!-- class="h4-color" -->
+            <h4>
+                <span class="h4-color my_event_heading" data-localize="EventCalendar">Event Calendar</span>
+            </h4>
+        </div>
+    </div>
+
+    <div class="mrg-top-10m  btm10 container">
+
+       <div class="row">
+            <div class="col-sm-6 col-xs-6 event-calender-top-panel-box-istad-left">
+                <div class="text-left event-calender-btn-position">
+                    <div class="event-calender-search">
+                        <div class="form-group custom-form-group">
+                            <!-- <label for="" data-localize="search">Search</label> -->
+                            <input type="text" id="searchTerm" name="searchTerm" placeholder="Search">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-6 event-calender-top-panel-box-istad-right">
+                <div class="text-right event-calender-btn-position">
+                    <button type="button" class="btn btn-outline-primary newEvent EventAdd" id="ctl00_PlaceHolderMain_SPSecurityTrimmedControl3" style="display: inline-block;">
+                        <span>New Event</span>
+                    </button>
+                    <button type="button" class="btn custom-btn w-100 ml-4" data-toggle="modal" data-target="#event-filter"><span>Filter</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height:20px;"></div>
+    <!---<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>--->
+    <div id='calendar' class="calendar-div search-results"> </div>
+</section>
+
+<!--------------------------View Event----------------->
+<div class="modal fade" id="myViewEventModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content"> 
+               <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                   <button type="button" class="close common-modal-close bg-white-round-btn" data-dismiss="modal">&times;</button>
+                     <div class="panel-heading panel-heading-common-popup">
+                         <span class="common-head-text-popup panel-heading-bg-txt-clr" data-localize="Event">Event</span>
+                     </div>
+                </div>
+                      
+                      
+                 <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+                       <div class="my_events_calendar_img_box">
+                            <img id="labelImageURL" src="">
+                              <div class="shade-common-popup"></div>  
+                            <div class="col-md-12 col-sm-12 common-content-popup pl20 pr20 pb15 "> 
+                               <!-- <div class="col-md-3  col-sm-6 col-xs-12 pl10 pr0 commom-user-details-popup">  -->
+                                  <label for="" id="labelEventTitle"></label>
+                                <!-- </div> -->
+                             </div>  
+                     </div>
+                 </div>
+                
+                 <div class="col-md-12 col-sm-12 col-xs-12 panel-body">  
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_status">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label">Status</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label for="" class="control-label event-label-right-md" id="labelStatus"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_times">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="StartTime">Start Time</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label for="" class="control-label event-label-right-md" id="labelStartDateTime"></label>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="EndTime">End Time</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label for="" class="control-label event-label-right-md" id="labelEndDateTime"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_locations">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="Location">Location</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label for="" class="control-label event-label-right-md" id="labelLocation"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_category">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="Category">Category</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label for="" class="control-label event-label-right-md" id="labelNewEventCategory"></label>
+                        </div>
+                    </div>  
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_department">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="Department">Department</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <label class="control-label event-label-right-md" id="labelDepartment"></label>
+                        </div>
+                    </div>  
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_description">
+                        <div class="col-xs-12 col-sm-3">
+                            <label for="" class="control-label" data-localize="Description">Description</label>
+                        </div>
+                        <div class="col-xs-12 col-sm-8">
+                            <div class="more">
+                                <label class="control-label event-label-right-md" id="lblNewEventDescription"></label>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 form-group my_events_calendar_btns">
+                        <button type="button" class="btn btn-outline-primary addClickEditCompanyEvent"><label data-localize="Edit">Edit</label></button>
+                        <button type="button" class="btn btn-outline-danger deleteClickEditCompanyEvent"><label data-localize="Delete">Delete</label></button>
+                        <button type="button" class="btn btn-outline-success addToCalender" style="display:none"><label data-localize="AddtoMyOutlook">Add to Outlook </label></button>
+                        <button type="button" class="btn btn-outline-success  revokeFromCalender" style="display:none"><label data-localize="RemoveFromOutlook">Remove from Outlook </label></button>
+
+                        <button type="button" class="btn btn-outline-secondary closeEventForm"><label data-localize="Close">Close</label></button>
+                    </div>   
+
+                </div>
+
+                    <!--/panel content-->
+                
+                </div>
+            
+   </div>
+</div>
+<!----------Edit Event model popup-------------------------->
+
+<div class="modal fade" id="myEditEventModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Event">Event</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Category">Category</label>
+                                <div class="col-sm-8">
+                                    <select id="ddlEditEventCategory" class="form-control mrg-btm12-pop">
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Title">Title</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEditEventItemTitle" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Location">Location</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEditEventItemLocation" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="StartTime">Start Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEditEventStartDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls my_event_times">
+                                    <select name="select2" id="ddlEditEvetStartTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEditEvetStartMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="EndTime">End Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEditEventEndDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls my_event_times">
+                                    <select name="select2" id="ddlEditEvetEndTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEditEvetEndMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Description">Description</label>
+                                <div class="col-sm-8">
+                                    <textarea type="text" id="txtEditEventDescription" cols="10" rows="5" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Department">Department</label>
+                                <div class="col-sm-8">
+                                    <select id="ddlNewEditEventDepartment" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group" id="check1">
+                                <label for="" class="col-sm-3 control-label popup_label required" data-localize="Image">Image</label>
+                                <div class="col-sm-8">
+                                    <select id="selctimage1" class="form-control">
+                                        <option>--Choose Option--</option>
+                                        <option value="Upload">Upload</option>
+                                        <option value="Choose from Gallery">Choose from Gallery</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="fileeditUpload" style="display:none">
+                                <label for="" class="col-sm-3 control-label popup_label required" data-localize="UploadImage">UploadImage</label>
+                                <div class="col-sm-8">
+                                    <input type="file" id="fileupload1" title="File type must be JPEG,JPG,GIF or PNG and less than 50kb">
+                                    <img id="blah1" src="" alt="">
+                                </div>
+                            </div>
+                            <div class="form-group" style="display:none">
+                                <label for="" class="col-sm-3 control-label required" data-localize="ImageUrl">ImageUrl</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEditEventUrl" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="imageeditSliderDiv" style="display:none">
+                                <label for="" class="col-sm-3 control-label required" data-localize="SelectImage">Select Image</label>
+
+                                <div id="my_events_slider_box" class="col-sm-8">
+                                    <div class="my_events_slider_contain">
+                                        <div id="mySliderDiv">
+
+                                        </div>
+                                    </div>
+                                    <!--<a class="left carousel-control gall-margin-left it-banner-left sliderPreviousArrow" href="#myCarousel" data-slide="prev" style="display: block;">
+                                      <span class="glyphicon glyphicon-chevron-left "></span>
+                                      </a>
+
+                                    <a class="right carousel-control gall-margin-right it-banner-right sliderNextArrow" href="#myCarousel" data-slide="next" style="display: block;">
+                                        <span class="glyphicon glyphicon-chevron-right "></span>
+                                     </a>-->
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--/panel content-->
+                    <!--<div class="form-group">-->
+                    <!--<label for="" class="col-sm-4 control-label"></label>-->
+                    <div class="row text-center">
+                        <button type="button" class="btn btn-outline-success addEditCompanyEvent"><label data-localize="Update">Update</label></button>
+                        <button type="button" class="btn btn-outline-secondary closeEditEventForm"><label data-localize="Close">Close</label></button>
+                    </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-----------------End Event Edit model popup------------------>
+<!--Add new Event-->
+<!-----------Event Model Popup---------------->
+
+
+<div class="modal fade" id="myAddNewEventModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <!-- <div class="modal-header panel-head-4"> -->
+            <div class="modal-header">
+                <!-- class="close h4-color" -->
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="AddNewEvent">New Event</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Category">Category</label>
+                                <div class="col-sm-8">
+                                    <select id="ddlNewEventCategory" class="form-control mrg-btm12-pop">
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Title">Title</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEventItemTitle" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Location">Location</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEventItemLocation" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls myAddNewEventModal-start-time" data-localize="StartTime">Start Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls myAddNewEventModal-start-date-picker">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEventStartDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls my_event_times myAddNewEventModal-start-time">
+                                    <select name="select2" id="ddlEvetStartTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEvetStartMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required float-left-cls" data-localize="EndTime">End Time</label>
+                                <div class="col-sm-4 mrg-btm12-pop float-left-cls">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="date" readonly="readonly" id="txtEventEndDate">
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 form-inline float-left-cls my_event_times">
+                                    <select name="select2" id="ddlEvetEndTime" class="form-control mrg-btm12-pop">
+                                        <option value="12 AM">12 AM</option>
+                                        <option value="1 AM">1 AM</option>
+                                        <option value="2 AM">2 AM</option>
+                                        <option value="3 AM">3 AM</option>
+                                        <option value="4 AM">4 AM</option>
+                                        <option value="5 AM">5 AM</option>
+                                        <option value="6 AM">6 AM</option>
+                                        <option value="7 AM">7 AM</option>
+                                        <option value="8 AM">8 AM</option>
+                                        <option value="9 AM">9 AM</option>
+                                        <option value="10 AM">10 AM</option>
+                                        <option value="11 AM">11 AM</option>
+                                        <option value="12 PM">12 PM</option>
+                                        <option value="1 PM">1 PM</option>
+                                        <option value="2 PM">2 PM</option>
+                                        <option value="3 PM">3 PM</option>
+                                        <option value="4 PM">4 PM</option>
+                                        <option value="5 PM">5 PM</option>
+                                        <option value="6 PM">6 PM</option>
+                                        <option value="7 PM">7 PM</option>
+                                        <option value="8 PM">8 PM</option>
+                                        <option value="9 PM">9 PM</option>
+                                        <option value="10 PM">10 PM</option>
+                                        <option value="11 PM">11 PM</option>
+                                    </select>
+                                    <select name="select2" id="ddlEvetEndMinutes" class="form-control mrg-btm12-pop">
+                                        <option value="00">00</option>
+                                        <option value="05">05</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="20">20</option>
+                                        <option value="25">25</option>
+                                        <option value="30">30</option>
+                                        <option value="35">35</option>
+                                        <option value="40">40</option>
+                                        <option value="45">45</option>
+                                        <option value="50">50</option>
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="" class="col-sm-3 control-label required" data-localize="Description">Description</label>
+                                <div class="col-sm-8">
+                                    <textarea type="text" id="txtNewEventDescription" cols="10" rows="5" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group new-event-pop-org-depart-box">
+                                <label for="" class="col-sm-3 control-label required" data-localize="OrganizingDepartment">Organizing Department</label>
+                                <div class="col-sm-8">
+                                    <select id="ddlNewEventDepartment" class="form-control">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group" id="check">
+                                <label for="" class="col-sm-3 control-label popup_label required" data-localize="Image">Image</label>
+                                <div class="col-sm-8">
+                                    <select id="selctimage" class="form-control">
+                                        <option>--Choose Option--</option>
+                                        <option value="Upload">Upload</option>
+                                        <option value="Choose from Gallery">Choose from Gallery</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="fileUpload1" style="display:none">
+                                <label for="" class="col-sm-3 control-label popup_label required" data-localize="UploadImage">UploadImage</label>
+                                <div class="col-sm-8">
+                                    <input type="file" id="fileupload" title="File type must be JPEG,JPG,GIF or PNG and less than 50kb">
+                                    <img id="blah" src="" alt="">
+                                </div>
+                            </div>
+                            <div class="form-group" style="display:none">
+                                <label for="" class="col-sm-3 control-label required" data-localize="ImageUrl">ImageUrl</label>
+                                <div class="col-sm-8">
+                                    <input type="text" id="txtEventUrl" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group" id="imageSliderDiv" style="display:none">
+                                <label for="" class="col-sm-3 control-label required" data-localize="SelectImage">Select Image</label>
+
+                                <div id="my_events_slider_box" class="col-sm-8">
+                                    <div class="my_events_slider_contain">
+                                        <div id="mySliderDivs">
+
+                                        </div>
+                                    </div>
+                                    <!--<a class="left carousel-control gall-margin-left it-banner-left sliderPreviousArrow" href="#myCarousel" data-slide="prev" style="display: block;">
+                                      <span class="glyphicon glyphicon-chevron-left "></span>
+                                      </a>
+
+                                    <a class="right carousel-control gall-margin-right it-banner-right sliderNextArrow" href="#myCarousel" data-slide="next" style="display: block;">
+                                        <span class="glyphicon glyphicon-chevron-right "></span>
+                                     </a>-->
+
+                                </div>
+
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!--/panel content-->
+                    <!--<div class="form-group">-->
+                    <!--<label for="" class="col-sm-4 control-label"></label>-->
+                    <div class="row text-center">
+                        <button type="button" class="btn btn-outline-success addNewCompanyEvent"><label data-localize="Submit">Save</label></button>
+                        <button type="button" class="btn btn-outline-secondary closeEventForm"><label data-localize="Close">Close</label></button>
+                    </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="myEventCategoryModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4">
+                <button type="button" class="close h4-color" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Category">Event Category</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="panel-body">
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label required" data-localize="NewCategory">New Category</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="txtcategory" maxlength="100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center top15">
+                            <button type="button" class="btn btn-outline-success addnewCategory"><label data-localize="Add">Add</label></button>
+                        </div>
+                    </div>
+                    <!--/panel content-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- New modal/pop-up for event filter -->
+
+<div class="modal fade" id="event-filter" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header">
+              <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">×</span></button>
+              <h4 class="modal-title">Filter</h4>
+            </div>
+            <div class="modal-body event-inbox-istab">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 event-calender-category"> 
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Category">Category</label>
+                            <select id="FilterEditEventCateory"> </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 event-calender-department">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Department">Department</label>
+                            <select id="FilterEditEventDepartment"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 event-calender-location">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Location">Location</label>
+                            <input type="text" id="searchLocation" name="searchLocation" placeholder="Search Location">
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6 col-sm-6 col-xs-12 event-calender-search">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="search">Search</label>
+                            <input type="text" id="searchTerm" name="searchTerm" placeholder="Search">
+                        </div>
+                    </div>  -->
+                </div>
+            </div>
+            <div class="modal-footer event-modal-footer">
+                <button type="button" class="btn custom-btn mr-8" data-dismiss="modal" onclick="MutipleBaseFilterOnOutBox()">Apply</button>
+                <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" onclick="ClearFilterForOutbox();">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Added by Subhankar -->
+<!-- Commented by Amit on 18-5-21 Now using authentication_graphapi.js
+THIS HAS TO BE HERE---UNCOMMENTED BY SUBHANKAR
+ -->
+ 
+    <script type="text/javascript">
+	if(teamsapp==2)
+	{
+
+		var token1="";
+            // #1: Set up ADAL
+            var authContext = new AuthenticationContext({
+                clientId: 'df730280-d42a-4cb0-bc18-0adff38dfbf3', //Need to change in client environment
+				tenant: '3c55c7bf-896d-4f85-aceb-124dca48c080',  //Need to change in client environment
+                postLogoutRedirectUri: window.location,
+                redirectUri: 'https://adaptindia.sharepoint.com/sites/TITAN_2_8_MASTER/Pages/AllEvents.aspx',  //Need to change in client environment
+				endpoints: {
+					graphApiUri: "https://graph.microsoft.com"
+				  },
+				  cacheLocation: "localStorage"
+			});
+
+            // #3: Handle redirect after token requests
+            if (authContext.isCallback(window.location.hash)) {
+
+                authContext.handleWindowCallback();
+                var err = authContext.getLoginError();
+                if (err) {
+                    // TODO: Handle errors signing in and getting tokens
+                }
+
+            } else {
+
+                // If logged in, get access token and make an API request
+                var user = authContext.getCachedUser();
+                if (user) {
+
+                    console.log('Signed in as: ' + user.userName);
+                    
+                    authContext._saveItem(authContext.CONSTANTS.STORAGE.USERNAME,user.userName)
+
+                    // #4: Get an access token to the Microsoft Graph API
+                    authContext.acquireToken("https://graph.microsoft.com",
+                        function (error, token) {
+                        
+                        console.log(token);
+                        console.log(error);
+
+                        
+                            if (error || !token) { 
+                                                        		
+                            		return;
+                            
+							}
+                            
+                            localStorage.setItem('logintoken',token);
+							
+                        }
+                    );
+                } else {
+
+                    console.log('Not signed in.');
+                    authContext.login();
+
+                }
+            }
+            
+            
+    
+    $(document).ready(function(){
+    
+    	setInterval(function(){
+    	//debugger;
+   		 token1=localStorage.getItem('logintoken');
+     token=localStorage.getItem('logintoken');
+
+     
+   		 if(token1==null || token1=="")
+   		 {
+    		
+    			authContext.acquireToken("https://graph.microsoft.com",
+                        function (error, token) {
+                        
+                        console.log(token);
+                        console.log(error);
+                        
+
+                            if (error || !token) { 
+                                                        	
+                            		return;
+                            
+							}
+							
+							localStorage.setItem('logintoken',token);
+							token=localStorage.getItem('logintoken');
+							token1=localStorage.getItem('logintoken');
+
+                            
+                        }
+                    );
+       	  }
+    	},5000);
+    	
+    });
+    
+    }
+        </script>
+        <script>
+        /*
+          $.ajax({
+         "crossDomain": true,
+        "url":  "https://howling-crypt-47129.herokuapp.com/https://login.microsoftonline.com/adaptindia.onmicrosoft.com/oauth2/v2.0/token",
+        "method": "POST",
+        "headers": {
+            "Authorization": "Bearer",
+				"Content-Type": "application/x-www-form-urlencoded"
+	        },
+        "data": {
+            "grant_type": "client_credentials",
+            "client_id": "895e6de8-6dbb-47e1-a171-af9b8ad5f5c2",  
+            "client_secret": "X3_7Q~g01B4pxW6dKqURBuGM_~5NfHH1Ew0Ll",  
+            "scope": "https://graph.microsoft.com/.default"
+            
+        },
+        success: function (response) {
+            alert(response);
+            token = response.access_token;
+            alert(token);
+            //     console.log(token);
+            //     RetrieveCalendarEvents();
+        },
+        error: function (error) {
+            //console.log(JSON.stringify(error));
+            alert(JSON.stringify(error));
+        }
+    })
+
+        
+        */
+        
+        </script>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-267</mso:_dlc_DocId>
+    <mso:_dlc_DocIdItemGuid msdt:dt="string">442cc410-ddf8-4b0c-b34a-7bb2baa8c33b</mso:_dlc_DocIdItemGuid>
+    <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-267, ADMIN-1645029823-267</mso:_dlc_DocIdUrl>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+    <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+    </xml><![endif]-->
+    <title></title>
+</head>

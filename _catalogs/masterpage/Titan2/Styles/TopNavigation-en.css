@@ -1,0 +1,268 @@
+﻿/*top nav */
+.ms-core-listMenu-horizontalBox {
+    height: auto;
+}
+.ms-core-listMenu-horizontalBox.navbar {
+	z-index: 50;
+	margin-bottom:0px !important;
+	border-radius:0px !important;
+    min-height: 45px !important;
+}
+.ms-core-listMenu-horizontalBox .navbar-collapse {
+	max-height: none;
+	clear: both;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navbar-header{
+    width: 100%;
+    float: right;
+}
+/*on mobile devices top nav bar will be a drop down, so we want to show across*/
+.ms-core-listMenu-horizontalBox {
+	display: block;
+}
+.ms-core-listMenu-horizontalBox .nav ul, .ms-core-listMenu-horizontalBox .nav ul > li {
+	float: none;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+.ms-core-listMenu-horizontalBox .nav ul.static {
+	display: block;
+	position: relative;
+	text-align: left;
+}
+.ms-core-listMenu-horizontalBox li.static {
+	    width: 15%;
+    position: relative;
+    border-right: 1px solid gray;
+    float: left;
+    margin: auto;
+    }
+.ms-core-listMenu-horizontalBox li.static > .menu-item {
+	display: block;
+	height: 44px;
+	line-height: 1em;
+	padding: 15px 0;
+	margin: 0px;
+	position: relative;
+	color: gray;
+    font-size:14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left:10px;
+	
+}
+.ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
+    border: none;
+}
+/*images within nav should not use respponsive properties*/
+.ms-core-listMenu-horizontalBox .nav img {max-width: none;}
+/*hide the edit nav button on mobile devices*/
+.ms-core-listMenu-horizontalBox .nav ul.root > li.ms-navedit-editArea {
+	display: none;
+}
+/*hide or provide padding for downdown arrow*/
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+/*	width: 100%;*/
+/*	display: block;*/
+}
+
+/*dynamic menus should not appear*/
+.ms-core-listMenu-horizontalBox ul.dynamic {
+	display: none !important;
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: auto !important;
+	box-shadow: none;
+	border: none;
+    background: none;
+    }
+.ms-core-listMenu-horizontalBox li.shown > ul.dynamic {
+	display: block !important;
+}
+.ms-core-listMenu-horizontalBox ul.dynamic > li {
+	border-right: medium none;
+	display: block;
+	float: none;
+	height: auto;
+    background: #fff;
+    opacity: 0.9;
+    margin-bottom:1px;
+}
+.ms-core-listMenu-horizontalBox li.dynamic .menu-item {
+	padding:5px;
+}
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+    background-image: url(../../images/bg-caret.png); 
+    padding-right: 15px !important;
+    background-position: right 0px center !important;
+    }
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic .dynamic-children.additional-background {
+    background-image: url(../../images/bg-caret.png);
+}
+/*end top nav */
+	.navbar-toggle{
+		background: #758ead !important;
+		border:none !important;
+	}
+	.navbar-toggle .icon-bar{
+		background: #58708e !important;
+	}
+	
+	.ms-core-listMenu-horizontalBox li.dynamic > .menu-item{
+	height: 30px;
+	line-height: 1em;
+	margin: 0;
+	padding: 9px 25px;
+	color:#0069aa !important;
+    background-image: url(../../images/bg-main-nav-drop.png);
+    background-repeat:no-repeat;
+    font-size:12px;	
+    background-position:12px center;
+	}
+	.ms-core-listMenu-horizontalBox li.dynamic > .menu-item:hover{
+	 background-image:none !important;
+	}
+
+/*responsive*/
+@media (min-width: 768px) {
+    	
+
+
+/*fix ribbon back to normal*/
+	#suiteBar {
+		display: table-row;
+		height: 30px;
+	}
+	#suiteBarLeft, #suiteBarRight {
+		display: table-cell;
+		width: 100%;
+	}
+	#suiteBarRight {
+		width: auto;
+	}
+	#suiteBarRight .ms-core-deltaSuiteBarRight {
+		float: none;
+	}
+	/*end ribbon*/
+	
+	/*search box*/
+	.header .searchbox {
+		display: block;
+		float: right;
+		clear: none;
+	}
+	/*end search box*/
+
+	/*top nav*/
+	/*because of the nested nature of OOTB top nav, we must treat the first element differently*/
+	.ms-core-listMenu-horizontalBox {
+		height: auto;
+	}
+	.ms-core-listMenu-horizontalBox .nav-collapse {
+		margin-top: 0px;
+	}
+	/*reset back to inline for normal view*/
+	.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox {
+		display: block;
+	}
+	.ms-core-listMenu-horizontalBox .nav ul.static {
+		display: inline-block;
+	}
+	.ms-core-listMenu-horizontalBox .nav li.static {
+		display: inline-block;
+		width: auto;
+	}
+	.ms-core-listMenu-horizontalBox .nav li.static > .menu-item {
+		display: inline-block;
+		height:45px;
+		padding:15px 11px 15px 11px;
+			}
+	/*hide or provide padding for downdown arrow*/
+	.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+		padding-right:15px;
+		width: auto;
+		display: inline;
+	}
+	/*show the edit nav link again for larger devices*/
+	.ms-core-listMenu-horizontalBox .nav ul.root > li.ms-navedit-editArea {
+		display: inline-block;
+	}
+	.ms-core-listMenu-horizontalBox .nav .ms-navedit-editLinksText {
+	    height: 47px;
+	    line-height: 1em;
+	    padding: 15px 0 15px 10px;
+	    display: block;
+	}
+	/*we need to override where SP is placing dynamic nav items*/
+	.ms-core-listMenu-horizontalBox .nav ul.static > li.dynamic-children > ul.dynamic {
+		position: absolute !important;
+		top:45px !important;
+		left: 0 !important;
+	}
+	.ms-core-listMenu-horizontalBox ul.dynamic > li {
+		min-width: 150px;
+		position: relative;
+		white-space: nowrap;
+	}
+	.ms-core-listMenu-horizontalBox ul.dynamic > li:first-child {
+		border-top: 0px transparent none;
+		   
+	}
+	.ms-core-listMenu-horizontalBox .nav li.dynamic-children.hover > ul.dynamic {
+		display: block !important;
+	}
+	.ms-core-listMenu-horizontalBox li.dynamic > .menu-item {
+		height: 34px;
+		line-height: 1em;
+		margin: 0;
+		padding: 9px 25px;
+		color:#0069aa !important;
+		background-image: url(../../images/bg-main-nav-drop.png) !important;
+		background-repeat:no-repeat;
+		background-position:left 12px center;
+	    
+	}
+	.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic-children.additional-background {
+	    background-image:url(../../images/bg-caret.png) !important;
+	 }
+	.ms-core-listMenu-horizontalBox .ms-core-listMenu-horizontalBox .dynamic .dynamic-children.additional-background {
+		    background: url(../../images/bg-main-nav-drop.png) 9px 14px no-repeat !important;
+     }
+	/*3rd level +*/
+	.ms-core-listMenu-horizontalBox .nav ul.dynamic > li.dynamic-children > ul {
+		position: absolute !important;
+		top: 0px !important;
+		left: 100% !important;
+	}
+	/*end top nav*/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

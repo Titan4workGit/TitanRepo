@@ -1,0 +1,4283 @@
+﻿<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/styles.css">
+<link rel="stylesheet" href="../SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/file-explore.css">
+<link rel="stylesheet" type="text/css" href="../SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/JS/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src='../SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script type="text/javascript" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/SearchableLibaries.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/advance-document-search.js"></script>
+<script type="text/javascript" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/DMSTreeView.js"></script>
+<link rel="stylesheet" type="text/css" href="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/ModalStyles.css">
+
+
+
+<style type="text/css">
+    table.padding_ajusting tr th {
+        font-weight: 600 !important;
+    }
+	#profileImage {
+	    width: 40px;
+	    height: 40px;
+	    border-radius: 50%;
+	    background: #512DA8;
+	    font-size: 24px;
+	    color: #fff;
+	    text-align: center;
+	    line-height: 43px;
+	    margin: 20px 0;
+	}
+
+    table.padding_ajusting tr td,
+    table.padding_ajusting tr th {
+        padding: 8px 8px !important;
+    }
+
+    .advance-panel-body .form-group label {
+        margin-bottom: 5px !important;
+    }
+
+    .article-content {
+        margin: 1px 5px !important;
+    }
+
+    #SearchResultsGrid_wrapper {
+        padding: 15px 0 !important;
+    }
+
+    #SearchResultsGrid_filter {
+        padding: 5px 15px;
+    }
+
+    .table.dataTable.no-footer {
+        border-bottom: 1px solid #d2d2d2 !important;
+        margin-bottom: 8px !important;
+    }
+
+
+    .dataTables_filter label input {
+        width: 180px !important;
+    }
+
+    .dataTables_wrapper .dataTables_filter input {
+        padding: 8px 5px !important;
+    }
+
+    #SearchResultsGrid_info {
+        padding-left: 13px;
+    }
+
+    .document-table .table > tbody > tr > td {
+        border-top: 1px solid #cccccca6;
+    }
+
+    /***checkbox with img***/
+
+    .chexbox_mg {
+        position: relative;
+        width: 48px;
+    }
+
+        .chexbox_mg img {
+            width: 100%;
+        }
+
+        .chexbox_mg input[type="checkbox"][id^="myCheckbox"] {
+            display: none;
+        }
+
+        .chexbox_mg label {
+            border: 1px solid #fff;
+            padding: 3px;
+            display: block;
+            position: relative;
+            margin: 3px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+            .chexbox_mg label:before {
+                background-color: white;
+                color: white;
+                content: " ";
+                display: block;
+                border-radius: 50%;
+                border: 1px solid #1e9201;
+                position: absolute;
+                top: -10px;
+                left: -6px;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                line-height: 16px;
+                transition-duration: 0.4s;
+                -webkit-transform: scale(0);
+                -moz-transform: scale(0);
+                transform: scale(0);
+            }
+
+            .chexbox_mg label img {
+                height: 100%;
+                width: 100%;
+                transition-duration: 0.2s;
+                transform-origin: 50% 50%;
+            }
+
+        .chexbox_mg :checked + label {
+            border-color: #1e9201;
+        }
+
+            .chexbox_mg :checked + label:before {
+                content: "✓";
+                background-color: #1e9201;
+                -webkit-transform: scale(1);
+                -moz-transform: scale(1);
+                transform: scale(1);
+            }
+
+            .chexbox_mg :checked + label img {
+                transform: scale(0.9);
+                -webkit-transform: scale(0.9);
+                -moz-transform: scale(0.9);
+                /* box-shadow: 0 0 5px #333; */
+                z-index: -1;
+            }
+
+    .custom-panel {
+        box-shadow: -1px 3px 8px #ccc;
+    }
+
+    .advance-panel-body {
+        border: 1px solid #25252533;
+        box-shadow: none !important;
+    }
+
+    /***checkbox with img end**/
+
+    .advance-panel-body {
+        height: auto !important;
+        min-height: 297px !important;
+    }
+
+    .padding_decrease {
+        padding: 0 !important;
+        border: none !important;
+    }
+
+    .table-title {
+        font-size: 15px !important;
+        min-height: 23px !important;
+        font-weight: 600;
+        text-decoration: none !important;
+    }
+
+    .ellipsis-1 {
+        margin: 3px 0;
+    }
+
+        .ellipsis-1 span:first-child {
+            color: #000000;
+            font-weight: bolder;
+            margin-right: 2px;
+        }
+
+    #SearchResultsGrid tbody tr td div span:first-child {
+        color: #000000;
+        font-weight: bolder;
+    }
+
+    #SearchResultsGrid_wrapper {
+        padding: 5px 0 !important;
+    }
+
+    .search-result-table {
+        max-height: 870px !important;
+    }
+
+    #accordion .panel-title span,
+    #accordion .panel-title fa {
+        color: #767676 !important;
+    }
+
+    .custom-panel .detail-panel-link .panel-title a {
+        font-size: 17px;
+        padding: 10px 8px !important;
+    }
+
+    button.close-round {
+        min-width: 1em !important;
+        background: #fff;
+        line-height: 26px;
+    }
+
+        button.close-round:hover {
+            background: #000 !important;
+            color: #fff !important;
+        }
+
+    #accordion .fa-angle-down {
+        color: #767676 !important;
+    }
+
+        #accordion .fa-angle-down:before {
+            content: "\f107" !important;
+            font-family: 'FontAwesome' !important;
+        }
+
+    #ModalDisplayProperty .detail-label {
+        font-weight: 600 !important;
+        font-size: 13px !important;
+        margin: 3px 0px !important;
+        display:block !important;
+    }
+    
+#FileApproval{
+ float:left;	
+}
+
+.ApproveSignImage{
+ width:170px !important;	
+}
+
+.fa-close.RejectSign, .fa-check.ApproveSign {
+    font-size: 18px !important;
+    margin: 1px 5px;
+}
+
+
+    #doc-viewer iframe {
+        height: 100% !important;
+    }
+
+    #accordion .custom-panel {
+        margin-bottom: 12px !important;
+    }
+
+    #accordion .detail-title {
+        margin-bottom: 0px !important;
+        font-size: 13px !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    #accordion .change-properties-pannel {
+        margin-top: 24px;
+    }
+
+    .pad_adust_right {
+        padding-right: 8px;
+    }
+
+    .pad_adust_left {
+        padding-left: 8px;
+    }
+
+    .text_breaking {
+        -ms-word-break: break-all;
+        word-break: break-all;
+        word-break: break-word;
+    }
+
+    .detail-view-table-btn button .fa-share-square-o {
+        font-size: 16px;
+        margin-right: 2px;
+        color: #000;
+    }
+
+    .search-table-btn .fa {
+        font-size: 16px !important;
+    }
+
+    .detail-view-table-btn .btn {
+        font-size: 13.6px !important;
+    }
+
+    #accordion .panel-body {
+        padding: 15px 4px 15px 19px !important;
+    }
+
+    #accordion .detail-vide-panel {
+        padding-right: 7px !important;
+    }
+
+    .FlexingBox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        min-height: 490px;
+    }
+
+    .advance-panel-body .form-group label {
+        font-weight: 600 !important;
+    }
+
+    @media(min-width:768px) {
+
+        #ModalDisplayProperty .modal-dialog {
+            -webkit-transform: translate(8px,5px) !important;
+            -ms-transform: translate(8px,5px) !important;
+            -o-transform: translate(8px,5px) !important;
+            transform: translate(8px,5px) !important;
+        }
+    }
+
+
+    @media(max-width:795px) {
+
+        div.ms-webpart-cell-vertical-inline-table,
+        .ms-webpart-chrome-vertical {
+            display: block !important;
+        }
+
+        .pad_adust_right {
+            padding-right: 15px;
+        }
+
+        .pad_adust_left {
+            padding-left: 15px;
+        }
+    }
+
+
+
+
+
+    /**Aug-30-21**/
+
+.SignType{
+   margin-left: 5px !important;	
+}
+
+
+/***March-29-22**/
+
+#ApprovalHistoryArea .SignType{
+ margin-left: 25px !important;  
+}
+
+@media(max-width:447px){
+
+#ApprovalHistoryArea .SignType{
+ margin-left:8px !important;  
+}
+  
+}
+
+/***March-29-22 ed**/
+    
+    
+
+    /*my_permisison*/
+
+    .img_box {
+        text-align: center;
+    }
+
+        .img_box img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50px;
+            border: 2px solid #bbbbbb;
+            box-shadow: 0px 9px 12px -7px #4c8ac0 !important;
+        }
+
+    .permissons_detail {
+        padding: 0 5px;
+    }
+
+        .permissons_detail h4, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        .permissons_detail a {
+            font-size: 13px;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            color: #040404;
+            margin-bottom: 7px;
+            text-decoration: none !important;
+            display: block;
+            cursor: pointer;
+        }
+
+    .emilbox {
+        margin-top: 6px;
+    }
+
+        .emilbox h4 {
+            font-size: 13px;
+            color: #337ab7;
+            letter-spacing: 0.2px;
+         }
+
+    .desinationbox span {
+        color: #1b1b1b;
+        letter-spacing: 0.5px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+        .desinationbox span:first-child {
+            padding-right: 5px;
+        }
+
+        .desinationbox span:last-child {
+            padding-left: 5px;
+        }
+
+
+    .control_img {
+        text-align: center;
+    }
+
+        .control_img h3 {
+            font-size: 13px;
+            font-weight: 600;
+            margin: 8px 0;
+        }
+
+    .img_box {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .control_img img {
+        width: 165px;
+    }
+
+    #mypermission .modal-body {
+        padding: 5px 0px !important;
+    }
+
+        #mypermission .modal-body > .row {
+            border-bottom: 1px solid #c5c5c5;
+            margin: 2px 0px;
+            background: #fbfbfb;
+            padding: 5px 0;
+        }
+
+
+    .input_box input,
+    .input_box select {
+        margin: 25px 0;
+        font-size: 16px !important;
+    }
+
+    #rename .input_box input {
+        margin: 5px 0;
+    }
+
+    #rename .input_box {
+        margin: 15px 0;
+    }
+
+
+    #notify .input_box input,
+    #notify .input_box select,
+    #notify .input_box textarea {
+        margin: 3px 0 10px 0 !important;
+    }
+
+
+    .imgbx {
+        text-align: center;
+    }
+
+        .imgbx img {
+            width: 190px;
+            margin-top: 5px;
+        }
+
+
+    /*copy_link**/
+
+    .flexingstyle {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .flexingstyle input {
+            width: 88% !important;
+        }
+
+    .heightmanage {
+        overflow-y: auto;
+        max-height: 400px;
+    }
+
+
+    .inpt_but {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 10px 0;
+    }
+
+        .inpt_but button {
+            color: #333;
+            background: #efefef;
+            border-color: #ccc;
+            box-shadow: inset 0px -1px #fff;
+            border-radius: 0px 5px 5px 0px !important;
+            min-width: auto !important;
+            font-size: 14px !important;
+        }
+
+        .inpt_but input {
+            border-radius: 5px 0px 0px 5px !important;
+        }
+
+    .coverbox_list {
+        border: 1px solid #ccc !important;
+        border-radius: 5px;
+        margin: 5px 0 15px 0;
+        max-height: 280px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+        .coverbox_list::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .coverbox_list::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .coverbox_list::-webkit-scrollbar-thumb {
+            background-color: #717171;
+        }
+
+
+        .coverbox_list .listofemployee:nth-child(odd) {
+            background-color: #f5f5f5fa;
+        }
+
+    .listofemployee {
+        position: relative;
+        display: block;
+        padding: 5px 5px;
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px solid #cccccc8c;
+    }
+
+        .listofemployee:last-child {
+            border-bottom: none !important;
+        }
+
+    .labelbox input[type="checkbox"] {
+        width: 19px;
+        height: 19px;
+        cursor: pointer;
+        padding: 0;
+        margin: 0 0 0 5px !important;
+    }
+
+
+    .listofemployee input[type="checkbox"] {
+        position: absolute;
+        right: 5px;
+        top: 3px;
+        width: 19px;
+        height: 19px;
+        z-index: 20;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .listimg img {
+        width: 45px;
+        height: 45px;
+        box-shadow: 0px 9px 12px -7px #4c8ac0 !important;
+        border-radius: 50px;
+        border: 2px solid #bbbbbb;
+        text-align: center;
+    }
+
+    .user_detail_box a {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        color: #040404;
+        margin-bottom: 5px;
+        text-decoration: none !important;
+        display: block;
+        cursor: pointer;
+    }
+
+    .user_detail_box .emilbox h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .labelbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .labelbox .checkbox-inline {
+            padding-right: 30px;
+        }
+
+    .hidesection table tr td {
+        border: none !important;
+    }
+
+    .hidesection caption h4 {
+        color: #0c0c0c !important;
+        font-weight: 600;
+    }
+
+
+
+    /**toggle effect start*/
+
+    .lock.activate,
+    .unfillstar.activate {
+        display: none;
+    }
+
+    .unlock,
+    .fillstar {
+        display: none;
+    }
+
+        .unlock.activate,
+        .fillstar.activate {
+            display: inline-block;
+        }
+
+    .detail-view-icon-info {
+        filter: none !important;
+    }
+
+    .detail-view-table-btn a {
+        color: #000 !important;
+        text-decoration: none;
+    }
+
+
+    .treesec {
+        overflow: auto;
+        max-height: 275px;
+        min-height: 275px;
+        border: 1px solid #cccccc69;
+        padding: 15px 1px;
+        background: #f9f9f9a1;
+    }
+
+    .flexingtwo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .flexingtwo img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50px;
+            box-shadow: 0px 9px 8px -9px #4c8ac0 !important;
+        }
+
+        .flexingtwo h3 {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            color: #040404;
+            padding: 0;
+            margin: 0 0 2px 0 !Important;
+        }
+
+        .flexingtwo p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flexingtwo .empoyeeimg .clienttext {
+            height: 35px !Important;
+            width: 35px !Important;
+            line-height: 35px !Important;
+        }
+
+    .designationtype {
+        padding: 0 15px;
+    }
+
+    a.downloadsec {
+        color: #337ab7 !Important;
+        text-decoration: none;
+    }
+
+    .wrapinghistory {
+        max-height: 308px;
+        overflow: auto;
+    }
+
+        .wrapinghistory tr th {
+            position: sticky;
+            top: -1px;
+            background-color: #fff;
+            z-index: 5;
+        }
+
+    .filedetailing {
+        font-size: 14px;
+        color: #3e3e3e;
+        margin: 3px 0;
+    }
+
+        .filedetailing label {
+            font-weight: 600;
+        }
+
+
+        .filedetailing:nth-child(2) {
+            margin-bottom: 5px;
+        }
+    /***toggle effect ed**/
+
+    /*****change properties*****/
+
+    /**property sec*/
+
+    .flextype {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+        .flextype.noalign {
+            -webkit-align-items: start;
+            -ms-flex-align: start;
+            align-items: start;
+        }
+
+        .flextype label {
+            width: 18%;
+            text-align: right;
+            padding: 5px 8px;
+        }
+
+        .flextype input[type="text"],
+        .flextype textarea,
+        .flextype select {
+            width: 75%;
+        }
+
+        .flextype .radiobox {
+            width: 50px;
+            display: block;
+            text-align: center;
+        }
+
+            .flextype .radiobox input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
+            }
+
+    .filedetailing.shareflex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+        .filedetailing.shareflex label {
+            font-weight: 600;
+        }
+
+    #sharehtory table tr td:nth-child(1),
+    #sharehtory table tr th:nth-child(1) {
+        text-align: center;
+    }
+
+        #sharehtory table tr td:nth-child(1) input[type="checkbox"],
+        #sharehtory table tr th:nth-child(1) input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+        }
+
+    #sharehtory table {
+        margin-top: 5px;
+    }
+
+
+    .filedetailing.shareflex select {
+        margin-left: 5px;
+    }
+
+
+    /******timeline*******/
+
+
+    #approvalhistory .timlineheight{
+        max-height: 480px;
+        overflow-y: auto;
+    }
+    
+    
+
+    .userbox {
+        text-align: left;
+        margin: 8px 0 2px 0;
+    }
+
+        .userbox label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+
+            .userbox label:last-child {
+                margin-right: 0px;
+            }
+
+        .userbox input[type="radio"] {
+            margin: 0;
+            height: 15px;
+            width: 15px;
+            position: relative;
+            top: -1.5px;
+        }
+
+    .timebox {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+        .timebox ul.mainlst {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+            .timebox ul.mainlst > li {
+                position: relative;
+                border: 1px solid #cdcdcd;
+                margin: 10px 10px 10px 20px;
+                border-radius: 5px;
+                padding: 5px 5px 8px 5px;
+                box-shadow: 2px 2px 4px #cccccc47;
+                position:relative;
+            }
+            
+
+        .timebox ul li .dropdown {
+            position: relative;
+            text-align: right;
+            display: inline-block;
+            float: right;
+        }
+
+            .timebox ul li .dropdown button.dropdown-toggle {
+                margin: 0;
+                padding: 0 2px !important;
+            }
+
+            .timebox ul li .dropdown .dropdown-menu {
+                border: 1px solid #ccc;
+            }
+
+                .timebox ul li .dropdown .dropdown-menu li {
+                    padding: 5px 0 !important;
+                }
+
+        .timebox ul li button.dropdown-toggle {
+            background: none;
+            border: none;
+            text-align: right;
+        }
+
+            .timebox ul li button.dropdown-toggle img {
+                width: 15px;
+            }
+
+        .timebox ul.mainlst li h3 {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+            padding: 0;
+            font-weight: 600;
+            color: #333;
+        }
+
+    .iconbox {
+        position: absolute;
+        left: -40px;
+        top:50%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform:translateY(-50%);
+		-o-transform:translateY(-50%);
+		transform:translateY(-50%);        
+        width: 30px;
+        height: 30px;
+        display: block;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+        .iconbox img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+    .imgsetion img {
+        width: 32px;
+        border-radius: 50%;
+        height: 32px;
+    }
+
+    .imagecontent {
+        padding-left: 5px;
+    }
+
+        .imagecontent h4 {
+            font-size: 13px;
+            margin: 0 0 3px 0;
+            padding: 0;
+            line-height: 16px;
+        }
+
+        .imagecontent p {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+        }
+
+    .waitsec {
+        font-size: 13px;
+        margin: 0 0 10px 0;
+        padding: 0;
+    }
+
+    .flexitem {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        min-height:56px;
+    }
+
+    .imagecontent a {
+        font-size: 12px;
+        color: #1d6ec0;
+        text-decoration: none;
+        word-wrap: break-word;
+        word-break: break-word;
+        word-break: break-all;
+    }
+
+   .approvelheadeing{
+	padding:0 2px; 
+   }
+    .approvelheadeing h3 {
+        display: inline-block;
+    }
+
+    .approvelheadeing span.date-sec {
+        float: right;
+        font-size: 11px;
+        padding: 5px 5px 0 5px;
+        font-weight: 600;
+        color: #424242;
+    }
+
+    .signbox {
+        width: 100%;
+        text-align: center;
+    }
+
+        .signbox img {
+            max-width: 185px;
+        }
+
+
+    .completed {
+        color: #4e9a06;
+    }
+
+    .waitprocess {
+        color: #e79406;
+    }
+
+    .rejected {
+        color: #ff0404;
+    }
+
+    .initialize {
+        color: #5b9bd5;
+    }
+    
+ /**10-29-21****/   
+    
+#addsuccessor .modal-footer.floatingdiv div,
+#addsuccessor .modal-footer.floatingdiv button{
+ display:inline-block;	
+}    
+
+#addsuccessor .modal-body{
+ padding:30px !Important;	
+}   
+
+#userbox-1 #ApproverName{
+  padding:0px 3px !Important;	
+} 
+
+#userbox-1 #ApproverName .sp-peoplepicker-topLevel,
+#userbox-1 #ApproverName #ApproverName_TopSpan_EditorInput{
+  border:none !Important;	
+}
+
+
+.scrollingeffect::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.scrollingeffect::-webkit-scrollbar-thumb:hover {
+background-color: #666;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.scrollingeffect::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+#txtNote{
+ min-height:60px !important;
+ max-height:60px !important;	
+}
+
+.coveringapprovers{
+ max-height:250px;
+ overflow-y:auto;
+ padding:10px 10px;
+ border: 1px solid #ccccccf5 !important;
+ margin-top: 10px;
+}
+
+
+#approval-modal .timebox ul.mainlst > li{
+ margin:7px 0 !Important;
+ border:1px solid #cdcdcd94 !important;	
+}
+
+#approval-modal .modal-footer{
+ margin-top:2px;
+ padding:5px 15px !important;	
+}
+
+#approval-modal .modal-body{
+ padding:5px 15px !important;	
+}
+
+#approval-modal .form-group{
+  margin-bottom:7px !important;	
+}
+
+.input_box input, .input_box select{
+ font-size:14px !important;	
+}
+
+.sharingvalidity{
+ margin-top:15px;	
+}
+
+#userDiv{
+ position:relative;
+ padding-bottom:40px;
+}
+
+#SharingPplPicker_TopSpan_AutoFillDiv{
+ max-width:245px !important;
+ min-width:245px !important;	
+}
+
+
+#userDiv .searchingboxarea::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+#userDiv .searchingboxarea::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+#userDiv .searchingboxarea::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+
+    @media(max-width:500px) {
+
+        .approvelheadeing span.date-sec {
+            float: none !important;
+            display: block;
+            text-align: right;
+        }
+
+        .signbox {
+            text-align: left;
+            margin: 5px 0;
+        }
+
+        .flexitem {
+            display: block;
+            margin: 10px 0;
+        }
+
+        .imgsetion {
+            margin-bottom: 5px;
+        }
+ 
+#addsuccessor .modal-body{
+ padding:15px 10px !Important;	
+}
+        
+#addsuccessor .modal-footer.floatingdiv div,
+#addsuccessor .modal-footer.floatingdiv button{
+ 
+ margin:5px; 
+
+}
+        
+}
+
+    @media (min-width: 768px) {
+
+        .modal-dialog.widthajust {
+            width: 750px;
+            margin: 30px auto;
+        }
+    }
+
+
+
+@media (max-width: 360px){
+ 
+#ApprovalHistoryArea .signbox img.ApproveSignImage{
+ float:none !important;	
+}
+
+#ApprovalHistoryArea .signbox{
+ text-align:center;	
+}
+	
+}    
+
+/**Approvers***/
+
+    .sharingbox {
+        position: relative;
+    }
+
+        .sharingbox input {
+            width: calc(100% - 52px) !important;
+        }
+
+        .sharingbox button {
+            position: absolute;
+            top: 0;
+            right: -3px;
+            width: 43px;
+            height: 100%;
+        }
+        
+        
+        
+        
+
+    /***timeline done***/
+
+
+
+
+
+
+
+
+    @media(max-width:500px) {
+
+        .flextype {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+        }
+
+            .flextype input[type="text"],
+            .flextype textarea {
+                width: 76%;
+            }
+
+            .flextype label {
+                width: 100%;
+                text-align: left;
+            }
+
+        .filedetailing.shareflex {
+            display: block;
+        }
+
+            .filedetailing.shareflex select {
+                margin-left: 0px;
+                width: 100% !important;
+            }
+    }
+
+    /**change properties***/
+    
+@media(min-width:992px){
+	
+.listimg {
+        text-align: right;
+    }
+    
+.padinghere{
+ padding:0 8px;    
+}	
+	
+}   
+ 
+
+    @media (min-width: 768px) {
+
+        #mypermission .modal-dialog {
+            width: 55% !important;
+            margin: 30px auto;
+        }
+
+        #rename .modal-dialog .modal-body,
+        #adduser .modal-dialog .modal-body,
+        #notify .modal-dialog .modal-body {
+            padding: 15px 30px !important;
+        }
+
+        .rightdrag {
+            margin-left: auto !important;
+        }
+    }
+
+    @media(max-width:767px) {
+
+        .listimg img {
+            text-align: left;
+        }
+
+        .img_box {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .permissons_detail {
+            padding: 0 15px;
+        }
+
+        .control_img {
+            text-align: left;
+        }
+
+        .desinationbox span {
+            display: inline-block;
+            padding: 5px 0;
+        }
+
+        .listimg {
+            margin-bottom: 15px;
+        }
+
+        .coverbox_list {
+            max-height: 418px;
+        }
+
+        .flexitem {
+            margin: 7px 0;
+        }
+    }
+
+    @media(max-width:991px) {
+
+        .control_img {
+            text-align: left;
+        }
+
+        .listimg img {
+            text-align: left;
+        }
+
+        .wrapinghistory table {
+            min-width: 901px !Important;
+        }
+    }
+
+
+
+    /****oct-11-21 add team***/
+
+    .teambox {
+        border: 1px solid #ccc;
+    }
+
+    .fullcoverbox {
+        padding: 10px 0px;
+        margin-top: 2px;
+        max-height: 220px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        margin: 0;
+    }
+
+    .employeesection {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 4px;
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 5px;
+        min-height: 95px;
+    }
+
+    .crosebox {
+        position: absolute;
+        width: 18px;
+        display: block;
+        height: 18px;
+        top: 10px;
+        right: 3px;
+        background: #fff;
+        border-radius: 50%;
+        color: #000;
+        text-align: center;
+        line-height: 18px;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.3s;
+        box-shadow: 1px 0px 5px #00000073;
+    }
+
+    .employeesection:hover .crosebox {
+        opacity: 1;
+    }
+
+    .empoyeeimg img {
+        width: 40px;
+        height: 40px;
+        border: none !Important;
+        box-shadow: none !important;
+        border-radius: 50%;
+    }
+
+    .employeeinfo {
+        padding: 5px 10px;
+    }
+
+        .employeeinfo h3 {
+            font-size: 13px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .employeeinfo span {
+            font-size: 12px;
+        }
+
+            .employeeinfo span.employeeemail {
+                color: #1d6ec0;
+            }
+            .employeeemail {
+                color: #1d6ec0 !important;
+            }
+
+    #addsuccessor .employeesection {
+        min-height: 75px;
+    }
+
+.searchingbox{
+ width:50%;
+ padding:5px 0;
+}
+
+    .searchingbox button {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        background-color: #0b73cc;
+        border-radius: 50%;
+        min-width: 20px;
+        display: block;
+        right: 0px;
+        color: #fff;
+        border: none !important;
+    }
+
+    .addingsec.activateds {
+        transition: 1s ease;
+        transform: rotate( 180deg);
+        -webkit-transform: rotate( 180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+    }
+
+
+    .effecinput {
+        padding: 0;
+        border-radius: 0 15px 15px 0;
+        float: right;
+        width: 0%;
+        border: none;
+        overflow: hidden;
+        opacity:0;
+        transition-property: opacity;
+        transition-delay: 0.2s;
+    }
+
+    .effecinput.activateds {
+        width: 100%;
+        border: 1px solid #ccc;
+        overflow: visible;
+        color:#666;
+        opacity:1;
+   
+ }
+    
+
+    .projectesmbox button.dropdown-toggle {
+        display: block;
+        width: 100%;
+        position: relative;
+        text-align: left;
+        border: 1px solid #c3c1c1;
+        background: none;
+    }
+
+
+    .projectesmbox .dropdown-menu {
+        width: 100%;
+        padding: 5px 0px;
+        max-height: 178px;
+        overflow-y: auto;
+    }
+
+        .projectesmbox .dropdown-menu li {
+            padding: 4px 5px;
+            border-bottom: 1px solid #ccc;
+            transition: 0.3s;
+        }
+
+            .projectesmbox .dropdown-menu li:last-child {
+                border: none;
+            }
+
+            .projectesmbox .dropdown-menu li:hover {
+                background-color: #f3f3f3;
+                cursor: pointer;
+            }
+
+        /***scroll design**/
+
+        .fullcoverbox::-webkit-scrollbar,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .fullcoverbox::-webkit-scrollbar-track,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #ccc;
+            background: #ececec;
+            width: 5px;
+        }
+
+
+        .fullcoverbox::-webkit-scrollbar-thumb,
+        .projectesmbox .dropdown-menu::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            .fullcoverbox::-webkit-scrollbar-thumb:hover,
+            .projectesmbox .dropdown-menu::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+    .sharingvalidity .radio {
+        padding-left: 0 !important;
+        margin: 2px 0 !Important;
+    }
+
+    .angleajust {
+        float: right;
+        font-weight: 600;
+        font-size: 16px;
+        position: relative;
+        top: 2px;
+        left: 3px;
+    }
+ 
+#SharingPplPicker_TopSpan .sp-peoplepicker-editorInput, 
+#SharingPplPicker_TopSpan{
+ border:none !important;
+ font-size:13px !Important;	
+}   
+
+
+.flxajustmt{
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+ align-items: center;	
+
+}
+
+   
+
+    /***scroll design**/
+
+    /*new changes 10/13/21***/
+
+    .empoyeeimg img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #c1c1c1;
+        box-shadow: 0px 1px 4px #afadad;
+        border-radius: 50%;
+    }
+
+    .empoyeeimg.clientnameshow .clienttext {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #1d6ec0;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 500;
+        display: block;
+    }
+
+.flxdirec{
+
+ -webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;	
+}
+
+
+
+    .user-add-box-area-box {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: flex-end;
+    }
+
+        .user-add-box-area-box button {
+            min-width: auto !important;
+        }
+
+        .user-add-box-area-box .custom-form-group {
+            width: calc(100% - 48px);
+        }
+
+    .teamproject .dropdown-menu li,
+    .guestclient .dropdown-menu li {
+        display: flex;
+        align-items: center;
+    }
+
+        .teamproject .dropdown-menu li input[type="checkbox"],
+        .guestclient .dropdown-menu li input[type="checkbox"] {
+            width: 19px;
+            height: 19px;
+            margin-right: 15px;
+        }
+
+    .dropdown-searchsec {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px 15px 10px 15px;
+    }
+
+        .dropdown-searchsec input {
+            border-radius: 15px;
+            position: relative;
+            padding-right: 25px;
+            background-image: url(option_icon/search_new.png);
+            background-repeat: no-repeat;
+            background-position: top 7px right 6px;
+            background-size: 18px;
+        }
+
+        .dropdown-searchsec button {
+            margin-left: 10px !important;
+            min-width: auto !Important;
+        }
+
+    .projectesmbox .dropdown-menu {
+        width: 100%;
+        padding: 5px 0px;
+        max-height: 288px !important;
+        overflow-y: auto;
+    }
+
+        .projectesmbox .dropdown-menu > li {
+            padding: 10px 12px !important;
+            border-bottom: 1px solid #ccc;
+            transition: 0.3s;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+
+            .projectesmbox .dropdown-menu > li > input[type="checkbox"] {
+                margin-right: 10px;
+                width: 18px;
+                height: 18px;
+            }
+
+    .group-user-list-name-lt {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: #1d6ec0;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .insidemygroup {
+        display: block;
+        width: 90%;
+    }
+
+    ul.listingroups {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+        ul.listingroups > li {
+            padding: 5px 0 !important;
+            display: inline-block;
+            margin: 0 2px;
+            border: none !Important;
+        }
+
+    .insidemygroup h3 {
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul.listingroups > li img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+    .teamprojectcontent p {
+        margin-bottom: 2px;
+    }
+
+    .wrapinexpire {
+        display: flex;
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+        .wrapinexpire .radio {
+            width: 130px;
+        }
+
+        .wrapinexpire #expiredats {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+            .wrapinexpire #expiredats.activating {
+                opacity: 1;
+                visibility: visible;
+            }
+
+    .sharing-type-icon-box {
+        margin-top: 20px;
+    }
+
+        .sharing-type-icon-box img {
+            width: 180px;
+        }
+
+    .projectesmbox.box,
+    .user-add-box-area-box.box {
+        width: 100% !Important;
+        height: auto !important;
+    }
+
+    .lockflex {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+
+    #versionhistory table tr td:last-child .fa-download {
+        margin-right: 3px;
+    }
+
+    #copymove .modal-body {
+        height: 362px;
+        overflow-y: hidden;
+    }
+
+    /*new changes 10/13/21 end***/
+
+    .coverradio input[type="radio"] {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: -2px;
+    }
+
+    .timebox.aprovdocument {
+        border: none;
+        margin-left: 0;
+    }
+
+        .timebox.aprovdocument ul.mainlst > li {
+            margin: 10px 0px;
+        }
+
+        .timebox.aprovdocument ul li .dropdown .dropdown-menu {
+            min-width: 98px;
+        }
+        
+        
+/*****Dce/3/21 st*******/        
+
+.file-custombox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    height: 38px;
+    padding: .5rem 1rem;
+    line-height: 2;
+    color: #555;
+    background-color: #fff;
+    border: .075rem solid #ddd;
+    border-radius: .25rem;
+    box-shadow: inset 0 .2rem .4rem rgba(0,0,0,.05);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.file-custombox:before {
+    position: absolute;
+    top: -.075rem;
+    right: -.075rem;
+    bottom: -.075rem;
+    z-index: 6;
+    display: block;
+    content: "Browse";
+    height: 38px;
+    padding: .5rem 1rem;
+    line-height: 2;
+    color: #555;
+    background-color: #eee;
+    border: .075rem solid #ddd;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+.file-custombox:after {
+    content: "Choose file...";
+}
+
+.filebox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    height: 38px;
+}
+
+.multisectionopt{
+
+ margin:0;
+ padding:0;
+ list-style-type: none;
+}
+
+
+.multisectionopt li:nth-child(1),
+.multisectionopt li:nth-child(2){
+
+  margin:15px 0;
+
+}
+
+.flxgeneratebox{
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+   -webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+ align-items: center;
+}
+
+.filebox{
+	margin-left:10px;
+}
+
+.multisectionopt li div.radio{
+ padding-left:0;	
+}
+
+#sharingfile .modal-footer{
+ padding:10px 0 !important;
+ padding:5px !important;	
+}
+
+
+#selectClientName,
+#selectProjectNames{
+ width: 92%;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ display: block;
+ float: left;	
+}
+
+#sharedHistoryList .RevokedDetails span{
+ clear:both;
+ font-size:12px !important;
+ display:block;
+ clear:both;	
+ text-align:center;
+ margin:3px 0;
+}
+
+#sharedHistoryTable tr th{
+ font-size:12px !important;
+	
+}
+
+#sharedHistoryList tr td:last-child{
+ text-align:center !important;	
+}
+
+.heightmajage {
+    max-height: 320px !important;
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.heightmajage::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.heightmajage::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.heightmajage::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+.lablefont label {
+    font-size: 13px !important;
+}
+
+
+#sharedHistoryTable thead th {
+    border-bottom: 1px solid #1111114d !important;
+    border-top: 1px solid #6161614d !important;
+    padding: 2px 10px !important;
+    border-left: none;
+}
+
+#sharedHistoryTable thead th {
+    border-bottom: 1px solid #1111114d !important;
+    padding: 5px 6px !important;
+    border-top: none !important;
+    border-left: none;
+    border: none;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 5;
+    border-top: 0.01rem solid #ccc !important;
+}
+
+
+
+.upload-chip .chip-icon-box .fa-download{
+ margin-left:4px;	
+}
+
+
+#approvalhistory .timebox ul li .upload-chip {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 3px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+#approvalhistory .timebox ul li .upload-chip .chip-text-box,
+#approvalhistory .timebox ul li .upload-chip a{
+ color:#333 !important;	
+} 
+
+/*****Dce/3/21 ed*******/
+
+
+/***dec-22-21***/
+
+#sharedHistoryTable thead th {
+    border-bottom: 1px solid #1111114d !important;
+    padding: 5px 6px !important;
+    border-top: none !important;
+    border-left: none;
+    border:none;
+}
+
+#sharedHistoryTable tbody tr td{
+ font-size:12px !important;
+ border: none;
+border-bottom: 1px solid #b3b3b3;	
+}
+
+#sharedHistoryTable tbody tr td:first-child{
+ text-align:center;	
+}
+
+#sharedHistoryList tr td {
+    padding: 3px 5px !important;
+}
+
+.designationtype .namesection {
+    font-size: 12px !important;
+    color: #333 !important;
+}
+
+.designationtype .emailsec {
+    font-size: 12px !important;
+}
+
+#sharedHistoryTable_filter label input[type="search"] {
+    border-radius: 2px !important;
+    padding: 8px 6px !important;
+}
+
+#myModalShareHistory .flexingtwo #profileImage{
+ margin:3px 0 !important;
+ line-height:auto !important;	
+}
+
+/****dec-23-21****/
+
+.upload-chip{
+ float:none !important;	
+ margin:5px 0;
+}
+
+.upload-chip .chip-text-box{
+  color:#337ab7 !important;	
+}
+
+.upload-chip .chip-text-box .fa-download{
+ margin-left:5px;	
+}
+
+.upload-chip .chip-text-box .fa-download{
+	margin-left:3px;
+}
+
+#AttachmentView .modal-footer{
+ padding:5px !important;
+ margin-top:5px !important;	
+}
+
+#AttachmentView .modal-dialog{
+ margin:10px auto !important;	
+}
+
+.flexingtwo .designationtype .designationtype{
+ padding:0 0 !important;	
+}
+
+#sharedHistoryTable .flexingtwo #profileImage{
+ min-width:35px !important;
+ min-height:35px !important;
+ width:35px !important;
+ height:35px !important;
+ font-size:16px !important;
+ line-height:35px !important 	
+
+}
+
+
+#sharedHistoryTable .flexingtwo img{
+ width: 35px !important;
+ height: 35px !important;
+}
+
+/*******feb/8/22*******/
+
+.detail-vide-panel li{
+  margin-bottom:19px !important;	
+}
+
+img.priority-icon{
+	width:20px;
+}
+
+.two_option_checkbox{ 
+ 
+  padding-left: 15px;	
+
+}
+
+.StanderedTimeZone{
+ text-align: right;
+ font-size: 11px;
+ font-weight: 600;
+ padding:0 5px;
+ color:#333;	
+}
+
+.approvelheadeing span.date-sec{
+ text-align:right !important;	
+}
+
+.priority-icon {
+    filter: invert(23%) sepia(95%) saturate(7263%) hue-rotate(4deg) brightness(127%) contrast(132%);
+}
+
+
+.detail-vide-panel-align.flxcolumn{
+    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: column !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+
+    -webkit-box-align: flex-start !important;
+    -webkit-align-items: flex-start !important;
+    -ms-flex-align: flex-start !important;
+    align-items: flex-start !important;
+}
+
+.wrapcheck img {
+    margin-left: 15px !important;
+}
+
+.upload-chip .chip-text-box {
+    color: #333 !important;
+}
+.pad_adust_left .detail-title {
+    font-size: 13px !important;
+}
+
+.FileApprovalPDF .upload-chip, 
+#activities ul.detail-vide-panel li:nth-child(2) .detail-vide-panel-align .FileApprovalPDF .upload-chip {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 3px 10px 2px 10px;
+    border-radius: 10px;
+}
+
+.detail-vide-panel .FileApprovalPDF .upload-chip .chip-icon-box {
+    margin-left: 5px;
+}
+
+#activities ul.detail-vide-panel li:nth-child(2) .detail-vide-panel-align a.detail-panel-inner-link {
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.wrapcheck {
+    margin: 5px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    clear: both;
+}
+
+.wrapcheck img {
+    margin-left: 15px !important;
+}
+.ApproveSign, .RejectSign {
+    margin: 0 3px;
+}
+
+#FileApprovalPDF .upload-chip {
+    float: right;
+    border: 1px solid #ccc;
+    padding: 3px 10px 2px 10px;
+    border-radius: 10px;
+}
+.chip-icon-box a{
+ color:#333 !important;	
+}
+
+.flexitem.ApproveAttach{
+ -webkit-box-orient: vertical;
+-webkit-box-direction: column !important;
+-webkit-flex-direction: column !important;
+-ms-flex-direction: column !important;
+flex-direction: column !important;	
+}
+
+.signbox div.upload-chip {
+    float: none !important;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.signbox{
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: column !important;
+    -webkit-flex-direction: column !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+
+    -webkit-box-align: flex-end !important;
+    -webkit-align-items: flex-end !important;
+    -ms-flex-align: flex-end !important;
+    align-items: flex-end !important;
+
+}
+
+.widthmanagebox .modal-body {
+    height: calc(100vh - 112px);
+}
+
+.widthmanagebox {
+    width: 88%;
+    margin: 30px auto;
+}  
+
+
+/***april/8/22/****/
+
+
+.upload-chip .chip-text-box {
+    color: #333 !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 180px !important;
+}
+
+@media(max-width: 1024px){
+
+table#sharedHistoryTable {
+    min-width: 991px !important;
+}
+
+}
+        
+
+@media all and (max-width: 620px) and (min-width: 500px){
+
+.searchingbox{
+ width:70%;
+}
+        
+}
+
+@media(max-width:499px){
+
+.searchingbox{
+ width:100%;
+
+}
+	
+}
+
+@media(max-width:767px){
+	
+
+#generatepdf .modal-body{
+ padding:5px !important;	
+}
+
+.flxgeneratebox{
+ display:block !important;	
+}	
+
+.flxgeneratebox input[type=file]{
+ width:98%;	
+}	
+
+.mjsting{
+ margin-top:15px;	
+}
+
+.sharing_history_modal_btns button{
+ font-size:12px !important;
+ padding:5px !important;	
+}
+	
+}
+
+@media(min-width: 768px){
+
+#sharingfile .modal-dialog {
+    margin: 5px auto !important;
+}
+
+	
+}
+
+@media(min-width: 992px){
+	
+
+#myModalShareHistory .modal-lg {
+    width: 86%;
+}
+        
+}
+        
+</style>
+
+<!--<div id="overlaysearch" >
+    <div class="spinner"><img style="width:50px;height:50px" src="../SiteAssets/Titan-Loader/images/Comp1_1.gif" alt="loader"></div>
+
+</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="tab-content">
+                <div class="custom-panel custom-panel-box">
+                    <div class="panel-head">
+                        <h3 class="m-0">
+                            Advance Document Search
+                        </h3>
+                    </div>
+                    <div class="panel-body px-0">
+                        <div class="row m-0">
+                            <div class="col-sm-6">
+                                <div class="advance-panel-body">
+                                    <div class="form-group custom-form-group">
+                                        <label for="document">Title or File Name:</label>
+                                        <input type="text" id="txtTitlesearchBox" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="document">Text Content:</label>
+                                        <input type="text" id="txtContentsearchBox" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group custom-form-group" style="display:none">
+                                        <label for="document">File Name:</label>
+                                        <input type="text" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group custom-form-group">
+                                        <label for="document">Reference#:</label>
+                                        <input type="text" id="txtReference" class="form-control" placeholder="">
+                                    </div>
+                                    <div class="form-group custom-form-group mb-0">
+                                        <label for="document">Document Type:</label>
+                                        <select class="form-control" id="ddlDocumentType">
+                                            <option>ALL</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="advance-panel-body advance-panel-body2 padding_decrease">
+                                    <div class="table-responsive document-table document-table2 scrollbar-panel mt-0">
+                                        <table id="tblDocLibraries" class="table mb-0 custom-table custom-table padding_ajusting">
+                                            <thead>
+                                                <tr>
+                                                    <th class="border-bottom-0 w-2">
+                                                        <div class="checkbox m-0">
+                                                            <label><input type="checkbox" value="" id="selectAll"></label>
+                                                        </div>
+                                                    </th>
+                                                    <th class="border-bottom-0 w-25">All Document Library</th>
+                                                    <th class="border-bottom-0 w-73"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbodyDocLibraries"></tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="text-center mt-20">
+
+                                    <button type="button" class="btn custom-btn w-70" id="btnSearch" value=""> Search </button>
+                                    <button type="button" class="btn custom-btn-two-cancel w-87" id="btnClear">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-xs-12">
+
+                                <div class="search-table-btn-box-main">
+                                    <h4 class="search-sub-headeing">Search Results</h4>
+                                    <div class="search-table-btn-box">
+                                        <div class="search-deta-btn-panel d-flex">
+                                            <div class="dropdown search-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" id="downloadfile" onclick="downloadfiles()">
+                                                    <span class="fa fa-download font-12"></span>
+                                                    <span>Download</span>
+                                                </button>
+                                            </div>
+
+                                            <!--<div class="dropdown search-table-btn">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                    <span class="fa fa-trash-o"></span>
+                                                    <span>Delete</span>
+                                                </button>
+                                            </div>--->
+                                            <!--<div class="dropdown search-table-btn" type="button">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                    <span class="fa fa-share-square-o"></span>
+                                                    <span>Share</span>
+                                                </button>
+                                            </div>---->
+
+                                            <div class="dropdown search-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                                    <span class="fa fa-sort-alpha-asc font-12"></span>
+                                                    <span>Sort</span>
+                                                    <span class="fa fa-chevron-down font-12"></span>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-color-menu-icon">
+                                                    <li>
+                                                        <a href="javascript:void(0)" name="=asc" id="iTitle" onclick="Tablesorting(this,1)">
+                                                            <span>Title</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)" name="=asc" id="iFileType" onclick="Tablesorting(this,2)">
+                                                            <span>File Type</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)" name="=asc" id="iDate" onclick="Tablesorting(this,3)">
+                                                            <span>Date</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group custom-form-group search-box" style="display:none">
+                                            <input class="form-control" type="text" name="" placeholder="Type to find...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive document-table search-result-table scrollbar-panel">
+                                    <table class="table mb-0 custom-table" id="SearchResultsGrid"></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- File property display popup starts-->
+<div id="ModalDisplayProperty" class="modal fade pl0" role="dialog">
+    <div class="modal-dialog full-expand-modal">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" onclick="Closepopup()" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="detail-view-deta-btn-panel d-flex">
+                    <div class="dropdown detail-view-table-btn">
+                        <a href="#" id="btnFullView" target="_blank">
+                            <button class="btn dropdown-toggle" type="button" id="">
+                                <img class="detail-view-icon-info mr2"
+                                     src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View">
+                                <span>Full View</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="dropdown detail-view-table-btn">
+                        <a href="#" id="DownloadFile" download>
+                            <button class="btn dropdown-toggle" type="button">
+                                <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/download.png" id="DownloadFileSRC" alt="Download">
+                                <span>Download</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="dropdown detail-view-table-btn">
+                        <button class="btn dropdown-toggle LockDisable" type="button" id="btnDeleteFile">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/delete.png" alt="delete">
+                            <span>Delete</span>
+                        </button>
+                    </div>
+                    <div class="detail-view-table-btn" id="btnCopyFile">
+                        <button class="btn LockDisable" type="button" data-toggle="modal" data-target="#copymove">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/copy.png" alt="copy">
+                            <span>Copy</span>
+                        </button>
+                    </div>
+
+                    <div class="detail-view-table-btn" id="btnMoveFile">
+                        <button class="btn LockDisable" type="button" id="LoackMove" data-toggle="modal" data-target="#copymove">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/move.png" alt="move">
+                            <span>Move</span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown detail-view-table-btn">
+                        <button class="btn dropdown-toggle LockDisable" type="button" id="btnRenameFile" data-toggle="modal" data-target="#rename">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/rename.png" alt="rename">
+                            <span>Rename</span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown detail-view-table-btn">
+                        <button class="btn dropdown-toggle LockDisable" type="button" data-toggle="modal" data-target="#sharingfile" id="btnShareFile">
+                            <i class="fa fa-share-square-o"></i>
+                            <span>Share</span>
+                        </button>
+                    </div>
+
+
+                    <div class="dropdown detail-view-table-btn">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#notify">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/notify.png" alt="notify">
+                            <span>Notify</span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown detail-view-table-btn">
+                        <button class="btn dropdown-toggle" data-toggle="modal" data-target="#mypermission" type="button">
+                            <img class="detail-view-icon-info mr2" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/permissions.png" alt="permissions">
+                            <span>Permissions</span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown detail-view-table-btn lockflex">
+                        <button class="btn dropdown-toggle" id="lockeffect">
+                            <img class="detail-view-icon-info mr2 lock" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/lock-icon2.png" alt="">
+                            <img class="detail-view-icon-info mr2 unlock" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/unlock-icon.png" alt="">
+                            <span class="texthere">Lock</span>
+                        </button>
+                        <h5 id="LockStatus" style="display:none;"></h5>
+                        <button class="btn dropdown-toggle" id="btnUndoLock" style="display:none;">
+                            <img class="detail-view-icon-info mr2 unlock" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/unlock-icon.png" alt="">
+                            <span>Unlock</span>
+                        </button>
+                    </div>
+
+                    <div class="dropdown detail-view-table-btn rightdrag flxajustmt">
+                    
+                     <button type="button" class="btn dropdown-toggle" data-toggle="modal" data-target="#generatepdf" style="display:none;">
+						<i class="fa fa-file-pdf-o" aria-hidden="true" style="margin-right:5px; font-size:16px;"></i> PDF
+                     </button>
+                    
+                        <button class="btn dropdown-toggle" id="starffect">
+                            <img class="detail-view-icon-info mr2 unfillstar" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-icon.png" alt="">
+                            <img class="detail-view-icon-info mr2 fillstar" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-fill.png" alt="">
+                            <span class="favorite" id="txtFavorite">Add to Favorite</span>
+                        </button>
+                    </div>
+
+
+
+                </div><!--ed of section-->
+
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 pad_adust_right">
+                        <div class="preview-box scrollbar-panel">
+                            <div style="height: 130vh; padding: 10px;" id="doc-viewer">
+                                <!--img src="assets/images/file-img.png" style="width:100%;"-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 pad_adust_left">
+                        <div class="panel-group mb0" id="accordion">
+                            <div class="panel custom-panel panel-default">
+                                <div class="panel-heading detail-panel-link">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#properties" aria-expanded="true">
+                                            <span>Properties</span>
+                                            <i class="fa fa-angle-down icon-rotate"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="properties" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <ul class="detail-vide-panel scrollbar-panel">
+                                            <li>
+                                                <label class="detail-label">Title:</label>
+                                                <div class="detail-title ellipsis-2" id="FileTitle"></div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Document Type:</label>
+                                                <div class="detail-title ellipsis-2" id="FileDocType"></div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Reference:</label>
+                                                <div class="detail-title ellipsis-2" id="FileReference">1234567890</div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Author:</label>
+                                                <div class="detail-title ellipsis-2" id="FileAuthor">Dipankar Goswami</div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Details:</label>
+                                                <div class="detail-title ellipsis-2" id="FileDetalis"></div>
+                                            </li>
+                                        </ul>
+                                        <div class="change-properties-pannel">
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#propertypopup" id="btnChangeProp">Change Properties</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel custom-panel panel-default">
+                                <div class="panel-heading detail-panel-link">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#activities" aria-expanded="false">
+                                            <span>Activities</span>
+                                            <i class="fa fa-angle-down icon-rotate"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="activities" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="detail-vide-panel scrollbar-panel">
+                                            <li>
+                                                <div class="detail-vide-panel-align">
+                                                    <div>
+                                                        <label class="detail-label">Sharing:</label>
+                                                        <div class="detail-title ellipsis-2" id="FileSharing"></div>
+                                                    </div>
+                                                    <a class="detail-panel-inner-link" id="txtSharingHistoy" href="javascript:void(0);">Sharing History</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="detail-vide-panel-align flxcolumn">
+                                                    <div>
+                                                        <label class="detail-label">Approvals:</label>
+                                                        <a id="btnApproval" class="detail-panel-inner-link" href="javascript:void(0);" style="position:relative; top:1.2px;">Send for Approval</a>
+                                                       
+                                                        <div class="wrapcheck">
+                                                        
+														<div class="detail-title ellipsis-2" id="FileApproval"></div>                                                    	
+                                                    	<img class="ApproveSign" style="height:17px;" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt="" data-themekey="#">
+                                						<img style="height:17px;" class="RejectSign" src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt="" data-themekey="#">
+                                						
+                                						</div>
+                                						
+                                                        <div class="detail-title ellipsis-2" id="FileApprovalPDF"></div>
+                                                    </div>
+                                                    <a class="detail-panel-inner-link" id="btnApprovalHistry" style="display:none;" href="javascript:void(0);" data-toggle="modal" data-target="#approvalhistory">Approvals History</a>
+
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="change-properties-pannel" style="display:none;">
+                                            <a href="javascript:void(0);">Audit Trail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel custom-panel panel-default">
+                                <div class="panel-heading detail-panel-link">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#file-properties" aria-expanded="false">
+                                            <span>File Details</span>
+                                            <i class="fa fa-angle-down icon-rotate"></i>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="file-properties" class="panel-collapse collapse">
+                                    <div class="panel-body text_breaking">
+                                        <ul class="detail-vide-panel scrollbar-panel">
+                                            <li>
+                                                <label class="detail-label">File Name:</label>
+                                                <div class="detail-title ellipsis-2" id="FileName"></div>
+                                            </li>
+                                            <li>
+                                                <div class="detail-vide-panel-align">
+                                                    <div>
+                                                        <label class="detail-label">Path:</label>
+                                                        <div class="detail-title" id="FilePath"></div>
+                                                    </div>
+                                                    <a class="detail-panel-inner-link" href="javascript:void(0);" data-toggle="modal" data-target="#copylink">Copy Links</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Library:</label>
+                                                <div class="detail-title ellipsis-2" id="LibProject"></div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Last Update on:</label>
+                                                <div class="detail-title ellipsis-2" id="FileLastModified"></div>
+                                            </li>
+                                            <li>
+                                                <label class="detail-label">Last Update by:</label>
+                                                <div class="detail-title ellipsis-2" id="FileLastModifiedBy">Dipankar Goswami</div>
+                                            </li>
+                                            <li>
+                                                <div class="detail-vide-panel-align">
+                                                    <div>
+                                                        <label class="detail-label">File Version:</label>
+                                                        <div class="detail-title ellipsis-2" id="FileVersion">Last file version</div>
+                                                    </div>
+                                                   
+	                                                    <div id="VerHisParent">
+	                                                    	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>
+	                                                    </div>
+	                                                    
+                                                </div>
+                                            </li>
+                                            <li>
+                                            
+                                            <div class="detail-vide-panel-align">
+                                            	
+                                            	<div>
+                                                	<label class="detail-label">File Size:</label>
+	                                                <div class="detail-title ellipsis-2" id="FileSize"></div>
+	                                            </div>
+	                                            
+	                                            <div id="AuditHisParent">
+                                                	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnAuditHist">Audit History</a>
+                                                </div>
+                                            
+                                            </div>    
+                                                
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- File property display popup starts-->
+<!-- Modal permisson link model-->
+<div id="mypermission" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.5);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Permissions</h4>
+            </div>
+            <div class="modal-body scrollbar-panel heightmanage" id="divPermissions">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-2 img_box">
+                                <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-10 permissons_detail">
+                                <a href="#" class="emplyeename" data-toggle="modal" data-target="#adduser">Anna Bertha Cecilia Diana Emily Fanny Gertrude Hypatia Inez Jane Kate Louise Maud Nora Ophelia Prudence</a>
+
+                                <!---<div class="desinationbox">
+                                   <span class="desinationsec">Desination</span> | <span class="departments">Department</span>
+                                </div>---->
+
+                                <div class="emilbox">
+                                    <h4>email@emailadress.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---col-8 box-ed-->
+                    <div class="col-md-4">
+
+                        <div class="control_img">
+                            <h3>Full Control</h3>
+                            <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Full_control.png" alt="">
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-2 img_box">
+                                <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-10 permissons_detail">
+                                <a href="#" class="emplyeename" data-toggle="modal" data-target="#adduser">Hubert Blaine Wolfeschlegelsteinhausenbergerdorff Sr.</a>
+                                <!---<div class="desinationbox">
+                                   <span class="desinationsec">Department of Family and Community Services</span> | <span class="departments">American Institute of CPAs and Chartered Institute of Management Accountants</span>
+                                </div>-->
+                                <div class="emilbox">
+                                    <h4>email@emailadress.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---col-8 box-ed-->
+                    <div class="col-md-4">
+
+                        <div class="control_img">
+                            <h3>Contributor</h3>
+                            <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Contributor.png" alt="">
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-2 img_box">
+                                <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-10 permissons_detail">
+                                <a href="#" class="emplyeename" data-toggle="modal" data-target="#adduser">Tarquin Fin-tim-lin-bin-whin-bim-lim-bus-stop-F’tang-F’tang-Olé-Biscuitbarrel</a>
+                                <!---<div class="desinationbox">
+                                 <span class="desinationsec">Department of Youth, Ethnic and Community</span> | <span class="departments">Certified Accounts Payable Associate</span>
+                                </div>--->
+                                <div class="emilbox">
+                                    <h4>email@emailadress.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---col-8 box-ed-->
+                    <div class="col-md-4">
+
+                        <div class="control_img">
+                            <h3>Reader</h3>
+                            <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Reader.png" alt="">
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-2 img_box">
+                                <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-10 permissons_detail">
+                                <a href="#" class="emplyeename" data-toggle="modal" data-target="#adduser">Pablo Diego José Francisco de Paula Juan Nepomuceno María</a>
+                                <!---<div class="desinationbox">
+                                    <span class="desinationsec">Chartered Alternative Investment Analyst</span> | <span class="departments">Department of Industry, Skills and Regional Development</span>
+                                </div>-->
+                                <div class="emilbox">
+                                    <h4>email@emailadress.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---col-8 box-ed-->
+                    <div class="col-md-4">
+
+                        <div class="control_img">
+                            <h3>Restricted View</h3>
+                            <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Restricted.png" alt="">
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-sm-2 img_box">
+                                <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-10 permissons_detail">
+                                <a href="#" class="emplyeename" data-toggle="modal" data-target="#adduser">Anna Bertha</a>
+                                <!---<div class="desinationbox">
+                                  <span class="desinationsec">Senior Business Development Manager adjustment sale</span> | <span class="departments">Department of Services, Technology and Administration</span>
+                                </div>-->
+                                <div class="emilbox">
+                                    <h4>email@emailadress.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!---col-8 box-ed-->
+                    <div class="col-md-4">
+
+                        <div class="control_img">
+                            <h3>Full Control</h3>
+                            <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Full_control.png" alt="">
+                        </div>
+                    </div>
+
+                </div><!--row ed-->
+
+            </div><!--modal_body-->
+
+            <div class="modal-footer" style="text-align:center; padding:5px 5px 15px 5px !important; border:none !important;">
+                <button type="button" class="btn custom-btn-two-cancel w-87" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal permisson link ed model-->
+<!-- Modal add user -->
+<div id="adduser" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Permissions</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                    <input type="text" class="form-control input-lg" placeholder="Enter name, people Picker">
+                    <select class="form-control input-lg">
+                        <option value="Full Control">Full Control</option>
+                        <option value="Contributor">Contributor</option>
+                        <option value="Reader">Reader</option>
+                        <option value="Restricted View">Restricted View</option>
+                        <option value="Revoke Access">Revoke Access</option>
+                    </select>
+                </div>
+                <div class="imgbx">
+                    <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Full_control.png" alt="">
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn w-70" id="" value="">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Modal add user ed-->
+<!----notify popup--->
+<!-- Modal -->
+<div id="notify" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Notify</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+
+                    <div class="labelbox">
+
+                        <label>Send mail to:</label>
+
+                        <label for="checkall" class="checkbox-inline" style="color:#338dcc;font-size:13px;">
+                            Select All
+                            <input type="checkbox" id="checkall" class="checkse" style="margin:0 0 0 4px !important">
+
+                        </label>
+
+                    </div>
+
+                    <div class="coverbox_list" id="divlistofemployee">
+                        <div class="listofemployee">
+                            <input type="checkbox" name="" class="checkse">
+                            <div class="row">
+
+                                <div class="listimg col-md-2">
+                                    <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                                </div>
+
+                                <div class="col-sm-10 user_detail_box">
+                                    <a href="#" class="emplyeename_new">Dipankar sir Senior Business Development Senior Business</a>
+                                    <!--<div class="desinationbox">
+                                      <span class="desinationsec">Senior Business Development.</span> | <span class="departments">Department of Service</span>
+                                    </div>-->
+                                    <div class="emilbox">
+                                        <h4>email@emailadress.com</h4>
+                                    </div>
+                                </div>
+
+                            </div><!--row ed--->
+
+                        </div><!--listofemployee-->
+
+                        <div class="listofemployee">
+                            <input type="checkbox" name="" class="checkse">
+                            <div class="row">
+
+                                <div class="listimg col-md-2">
+                                    <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                                </div>
+
+                                <div class="col-sm-10 user_detail_box">
+                                    <a href="#" class="emplyeename_new">Dipankar sir</a>
+                                    <!--<div class="desinationbox">
+                                      <span class="desinationsec">Senior Business Development.</span> | <span class="departments">Department of Service</span>
+                                    </div>-->
+                                    <div class="emilbox">
+                                        <h4>email@emailadress.com</h4>
+                                    </div>
+                                </div>
+
+                            </div><!--row ed--->
+                        </div><!--listofemployee-->
+
+                        <div class="listofemployee">
+                            <input type="checkbox" name="" class="checkse">
+                            <div class="row">
+
+                                <div class="listimg col-md-2">
+                                    <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                                </div>
+
+                                <div class="col-sm-10 user_detail_box">
+                                    <a href="#" class="emplyeename_new">Dipankar sir</a>
+                                    <!--<div class="desinationbox">
+                                      <span class="desinationsec">Senior Business Development.</span> | <span class="departments">Department of Service</span>
+                                    </div>-->
+                                    <div class="emilbox">
+                                        <h4>email@emailadress.com</h4>
+                                    </div>
+                                </div>
+
+                            </div><!--row ed--->
+                        </div><!--listofemployee-->
+
+
+                        <div class="listofemployee">
+                            <input type="checkbox" name="" class="checkse">
+                            <div class="row">
+
+                                <div class="listimg col-md-2">
+                                    <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dipankar1.jpg" alt="">
+                                </div>
+
+                                <div class="col-sm-10 user_detail_box">
+                                    <a href="#" class="emplyeename_new">Dipankar sir</a>
+                                    <!---<div class="desinationbox">
+                                      <span class="desinationsec">Senior Business Development.</span> | <span class="departments">Department of Service</span>
+                                    </div>--->
+                                    <div class="emilbox">
+                                        <h4>email@emailadress.com</h4>
+                                    </div>
+                                </div>
+
+                            </div><!--row ed--->
+
+                        </div><!--listofemployee-->
+
+                    </div><!--coverbox ed-->
+
+                    <div class="form-group">
+                        <label for="linkdoc">Document Link:</label>
+                        <input type="email" class="form-control input-lg txtCopyLink" id="linkdoc">
+                    </div><!--form group-->
+
+                    <div class="form-group">
+                        <label for="linkdoc">Message:</label>
+                        <textarea class="form-control" id="txtMessage"></textarea>
+                    </div><!--form group-->
+
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center; padding:6px 15px !important; margin-top:0 !important;">
+                <button type="button" class="btn custom-btn w-70" id="" onclick="SendNotifyEmail()" value="">Send</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!---copy link popup--->
+<!-- Modal copy link model-->
+<div id="copylink" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Document Link</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="inpt_but">
+
+                    <input class="form-control linkToCopy txtCopyLink" value="" style="border-right:none !important">
+                    <button class="btn btn-default copyButton">
+                        <i class="fa fa-clone"></i>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal rename rename -->
+<div id="rename" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Rename</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                    <label class="control-lablee">New Name</label>
+
+                    <div class="flexingstyle">
+                        <input type="text" class="form-control input-lg" style="width:460px" id="txtRenamefile" placeholder="">
+                        <h5 id="txtFileExt"></h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn w-70" id="" onclick="RenameFile()" value="">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal rename end -->
+<!-- copymove button -->
+<div id="copymove" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title" id="CpyMoveModalTitle">Copy / Move Files</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <h4 style="margin:10px 0;" class="destinationlibrary hidesection">Select the Destination Library</h4>
+
+                <div class="table-responsive document-table document-table2 scrollbar-panel mt-0 hidesection" style="border:none !important">
+
+                    <table id="copyfilesnow" class="table-bordered table mb-0 custom-table padding_ajusting document-table2">
+                        <!--thead>
+                            <tr>
+                                <td style="width:5%"><input type="checkbox" id="selectallcheck"></td>
+                                <td colspan="2" style="font-weight:600;">All Document Library</td>
+                            </tr>
+                        </thead-->
+                        <tbody id="tbdyCopyFileLib"></tbody>
+
+                    </table>
+
+
+                </div><!--responsive class end-->
+                <!--tree section start-->
+
+                <caption style="padding:5px 10px; background:#1d6ec014; border:1px solid #ccc; border-bottom:none !important;">
+                    <h4 class="FolderCaption" style="display:none; margin-bottom:10px;">Select Folder</h4>
+                    <h4 class="FolderCaption" id="FolderNameCopy" style="display:none; margin:0;"></h4>
+                </caption>
+                <div class="treesec scrollbar-panel" style="display: none">
+
+                </div>
+
+            </div><!--body ed-->
+
+            <div class="modal-footer" style="text-align:center">
+                <button class="btn custom-btn" id="nextbtn">Next</button><h4 id="txtPleaseWait" style="display:none;float:right;"> Please wait...</h4>
+                <button class="btn btn-secondary" id="Backbtn" style="display:none;">Back</button>
+                <button class="btn custom-btn" id="btnCopyHere" style="display: none;">Copy Here</button>
+                <button class="btn custom-btn" id="btnMoveHere" style="display: none;">Move Here</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- copymove html -->
+<!---copy & move start code-->
+<!--Approval popup starts-->
+<div class="modal fade modal-top-onestep in" id="approval-modal" role="dialog" style="display: none; background:rgba(0,0,0,0.3); padding-left: 17px;" data-backdrop="static">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close close-round btnCloseApproval" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">Approval on Document</h4>
+            </div>
+            <div class="modal-body dms-inbox-istab pb15">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="form-group custom-form-group">
+                            <label>Purpose:</label>
+                            <input type="text" id="txtPurpose" class="form-control" maxlength="200">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group custom-form-group">
+                            <label>Note:</label>
+                            <textarea class="form-control resize-none" id="txtNote" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="form-group custom-form-group">
+                            <label>Priority:</label>
+                            <select class="form-control" id="ddlPriority">
+                            	<option value="Medium">Medium</option>
+                                <option value="Top">Top</option>
+                                <option value="Low">Low</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group custom-form-group">
+
+                            <div class="coverradio" style="margin-bottom:4px;">
+                                <input class="radio-btn-position-top--2" id="dueDate" type="radio" name="optradio" style="display:none">
+                                <label class="radio-inline due-date-container" style="padding-left:0px">
+                                    Due Date
+                                </label>
+                                <label class="checkbox-inline" style="float:right;">
+                                    <input class="radio-btn-position-top-0" id="noDueDate" type="checkbox" name="optradio" style="position:relative; top:-1px" checked>No Due Date
+                                </label>
+                            </div>
+
+                            <input id="dueDateField" type="text" class="form-control" disabled="disabled">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="form-group custom-form-group">
+                            <label>Signing App:</label>
+                            <select class="form-control" id="ddlSign">
+                                <option value="Adobe Sign">Adobe Sign</option>
+                                <option value="E-Sign">Titan E-Sign</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="form-group custom-form-group">
+                            <label>Process Steps:</label>
+                            <select class="form-control process-step-dropdown" id="ddlAppStep">
+                                <option value="Customize">Customize</option>
+                                <option value="PreDefined" style="display:none;">Pre Defined</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div><!---row ed-->
+
+
+                <div class="full-expand-panel customizedSteps">
+
+
+                    <div class="panel-group mb0" style="display:none;">
+
+                        <div class="panel custom-panel panel-default mt-0 StepClass">
+                            <div class="panel-heading detail-panel-link">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="" href="#step1" onclick="onChangeTask('ApproverName1_TopSpan', 'ApproverName1', 'userHTMLBox1', 1);" aria-expanded="false" class="collapsed">
+                                        <span>Step 1</span>
+                                        <input class="StepTitle" type="text" id="txtStep1Name" maxlength="50">
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="step1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body pt10 pb10">
+                                    <input type="radio" class="radioEmp" id="rdoADUser1" name="Employee" value="User" checked>User
+                                    <input type="radio" class="radioEmp" id="rdoOutsider1" name="Employee" value="Outsider">Outsider
+
+                                    <div class="form-group custom-form-group" style="display:none;" id="OutsiderUser1">
+                                        <label>Name:</label>
+                                        <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'NameAction')" id="OutsiderName1" maxlength="50">
+                                        <label>Email:</label>
+                                        <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'EmailAction')" id="OutsiderEmail1" maxlength="50">
+                                    </div>
+
+                                    <div class="form-group custom-form-group" id="ADUser1">
+                                        <label>Approvers Name:</label>
+                                        <div class="web-block add-button-box">
+                                            <div class="form-control link-input-fild"></div>
+
+                                        </div>
+                                    </div>
+                                    <!--div class="">
+                                        <button type="button" class="btn custom-btn link-add-btn" id="btnDeleteStep1">Delete Step</button>
+                                    </div-->
+                                    <div class="selected-user-detail-box">
+                                        <div class="row selected-user-detail-card selected-user-detail-card-h100 scrollbar-panel2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+  
+
+                    <div class="text-right add-step-panel" style="margin-top:5px;">
+                        <button type="button" class="btn custom-btn" id="btnAddStep">Add Step</button>
+                    </div>
+
+
+                    <div class="text-right add-step-panel" style="display:none; margin-top:5px;">
+                        <button type="button" class="btn custom-btn" id="">Add Step</button>
+                    </div>
+                    
+                      <div class="timebox aprovdocument coveringapprovers scrollingeffect" id="ApprovalStepBox" style="display:none;">
+                        <ul class="mainlst" id="accordionapprovers"></ul>
+                    </div><!--timeline-->
+                  
+
+                </div>
+
+            </div>
+            <div class="modal-footer dms-modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn mr-8 wpx-87" id="btnSubmitApproval">Submit</button>
+                <button type="button" class="btn custom-btn-two-cancel wpx-87 btnCloseApproval">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Approval popup ends-->
+<!----versionhistory popup--->
+<!-- Modal -->
+<div id="versionhistory" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Version History</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="filedetailing">
+                    <label>File:</label> <span class="filenameshow" id="VerHisFile"></span>
+                </div>
+
+                <div class="filedetailing">
+                    <label>Title:</label> <span class="filenameshow" id="VerHisTitle"></span>
+                </div>
+
+
+
+                <div class="wrapinghistory scrollbar-panel">
+                    <table class="table table-striped table-bordered table-condensed table-hover">
+                        <thead>
+                            <tr>
+                                <th>Version</th>
+                                <th>Modified By</th>
+                                <th>Modify Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbdyVerHis"></tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-footer" style="text-align:center;">
+                <button type="button" class="btn custom-btn-two-cancel w-87" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!----versionhistory ed popup--->
+<!----change properties popup------->
+
+<div class="modal fade" id="propertypopup" role="dialog" style="background:rgba(0,0,0,0.4)">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close close-round btnCloseProp" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">Properties</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="flextype">
+                    <label for="">Title</label>
+                    <input type="text" id="txtUpdateTitle" class="form-control clearPropBox" maxlength="50">
+                    <div class="radiobox">
+                        <input type="checkbox" class="chkProperty" id="chkUpdateTitle" name="property" checked="checked">
+                    </div>
+                </div>
+
+                <div class="flextype">
+                    <label for="">Reference#</label>
+                    <input type="text" id="txtUpdateRef" class="form-control clearPropBox" maxlength="20">
+                    <div class="radiobox">
+                        <input type="checkbox" class="chkProperty" id="chkUpdateRef" name="property" checked="checked">
+                    </div>
+                </div>
+
+                <div class="flextype">
+                    <label for="">Document Type</label>
+                    <select id="txtUpdateType" class="form-control"></select>
+                    <div class="radiobox">
+                        <input type="checkbox" class="chkProperty" id="chkUpdateType" name="property" checked="checked">
+                    </div>
+                </div>
+
+                <div class="flextype">
+                    <label for="">Author</label>
+                    <input type="text" id="txtUpdateAuthor" class="form-control clearPropBox" maxlength="50">
+                    <div class="radiobox">
+                        <input type="checkbox" class="chkProperty" id="chkUpdateAuthor" name="property" checked="checked">
+                    </div>
+                </div>
+                <div class="flextype noalign">
+                    <label for="">Details</label>
+                    <textarea id="txtUpdateDetails" cols="30" rows="4" class="form-control clearPropBox"></textarea>
+                    <div class="radiobox">
+                        <input type="checkbox" class="chkProperty" id="chkUpdateDetails" name="property" checked="checked">
+                    </div>
+                </div>
+            </div><!---modal body ed-->
+
+            <div class="modal-footer" style="text-align: center;">
+                <button class="btn custom-btn" id="btnUpdateProp">Update</button>
+                <button class="btn custom-btn-two-cancel w-87 btnCloseProp" data-dismiss="modal">Close</button>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!---change properties---->
+<!----sharing history---->
+<div class="modal fade" id="myModalShareHistory" role="dialog" style="background:rgba(0,0,0,0.6);">
+    <div class="modal-dialog modal-lg">
+
+        <div class=" row department-header" style="display:none;">
+            <ol class="breadcrumb">
+                <li><h4><b></b></h4></li>
+            </ol>
+        </div>
+            <div class="modal-header">
+                <div class="panel-title">
+                    <h4 class="h4-color" data-localize="SharingHistory">Sharing History</h4>
+                    <button type="button" class="close close-round h4-color" data-dismiss="modal" style="line-height:1.1">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body" style="background:#fff;">
+                <div class="row">
+                    <div class="col-md-12" style="padding: 0px 20px;">
+
+                        <div id="tableheader" style="height: auto !important;">
+                            <div class="search" style="display:none;">
+
+
+                                <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                            </div>
+                            <div>
+                                <span class="details">
+                                    <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                    <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="mrg-top-10m  lablefont" style="padding:0 15px">
+
+                            <label style="margin-bottom:3px;margin-left: -15px;">File:</label><span id="filenamee" style="margin-left:3px"></span>
+                            <p style="margin-bottom:-3px;margin-left: -15px;"><label>Title:</label><span id="filetitle" style="margin-left:3px"> </span></p>
+                            <p style="margin-left: -15px;"><label>Reference:</label><span id="referNo" style="margin-left:3px"></span></p>
+
+                            <div class="row sharing_history_shared_to_box">
+                              
+							   <div class="col-md-8" style="padding:0 0">
+
+                                <label data-localize="SharedTo">Shared To</label>
+
+                                <select class="form-control" id="shreduser" onchange="sorter.search('shreduser');$('#TotalItemscount').text($('#totalrecords').text());" style="width:28%; border-radius:0; margin-left: 76px; margin-top: -28px; font-size:13px;"></select>
+                               
+								</div> 
+								
+							   <div class="col-md-4 mjsting" style="padding:0 0">
+                               
+                                <input type="text" id="query1" onkeyup="sorter.search('query1')" placeholder="Type here for search..." class="doc-search" style="width: 220px;font-size: 13px;padding:8px 5px !Important;float: right;margin-bottom: 12px;margin-top: -5px;" />
+								
+							   </div>	
+							  
+
+                            </div>
+                        </div>
+                        <div class="table-responsive heightmajage" style="padding:3px;">
+                            <table cellpadding='0' cellspacing='0' border='1' id='sharedHistoryTable' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+                                <thead class='panel-heading '>
+                                    <tr>
+                                        <th class='nosort' style="width:3%; text-align:center"><h6><input class="select_all" id="selectAllHist" type='checkbox'></h6></th>
+                                        <th style="width:28%"><h6 data-localize="SharedWith">Shared With</h6></th>
+                                        <th style="width:20%"><h6 data-localize="Permission">Permission</h6></th>
+                                        <th style="width:18%"><h6 data-localize="Shared On">Shared On</h6></th>
+                                        <th width="120"><h6 data-localize="Shared By">Shared By</h6></th>
+                                        <th width="120"><h6 data-localize="Valid Upto">Valid Upto</h6></th>
+                                        <th width="128"><h6 data-localize="Acknowledgements">Acknowledgements</h6></th>
+                                        <th class='nosort' style='width:12%; text-align:center'><h6 data-localize="Action">Action</h6></th>
+                                    </tr>
+                                </thead>
+                                <tbody class='panel mainDivAllAnnouncements' id="sharedHistoryList"></tbody>
+                            </table>
+
+                            <div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+
+                            <div id="mainDivAllAnnouncements">
+                            </div>
+                        </div>
+                        <div id="tablefooter">
+                            <div id="tablenav">
+                                <div>
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                    <img src="../SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                                </div>
+                                <div>
+                                    <select id="pagedropdown"></select>
+                                </div>
+                                <div>
+                                    <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                                </div>
+                            </div>
+                            <div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+                            <div id="tablelocation">
+
+                                <div>
+
+                                    <span data-localize="LinesPerPage"></span>
+                                    <select onchange="sorter.size(this.value)">
+                                        <option value="5">5</option>
+                                        <option value="10" selected="selected">10</option>
+                                        <option value="20">20</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                            </div>
+                        </div>
+                        <div class="sharing_history_modal_btns">
+                            <button type="button" id="revokebtn" onclick="RevokeOnCheckBox()" class="btn  btn-outline-success" style="margin-left:0px;height: 36px !important"><label data-localize="Revoke">Revoke</label></button>
+                            <button type="button" id="" class="btn btn-outline-secondary" data-dismiss="modal"><label data-localize="Close">Close</label></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</div>
+
+<!-- Audit Trail File-->
+<div id="AuditHistory" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.4)">
+    <div class="modal-dialog widthmanagebox">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">File Audit History</h4>
+            </div>
+            <div class="modal-body scrollnew" id="bdyAuditHist">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Audit Trail History -->
+
+<!----sharing history---->
+<!-- sharebox design -->
+
+<div id="sharingfile" class="modal fade" role="dialog" data-backdrop="static" style="background:rgba(0,0,0,0.5);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round btnClosePopup" data-dismiss="modal">
+                    <span class="close-icon">×</span>
+                </button>
+                <h4 class="modal-title">Sharing Files</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="">Share With:</label>
+                    <select class="form-control" id="sharewith">
+                        <option value="--Select--">--Select--</option>
+                        <option value="My-Groups">My Groups</option>
+                        <option value="Organization">Guest Clients</option>
+                        <option value="Project-Team">Project Teams</option>
+                        <option value="Selective">Users</option>
+
+                    </select>
+
+                </div>
+
+                <div class="projectesmbox form-group My-Groups box" style="display:none;">
+
+                    <div class="dropdown" style="margin-bottom:10px">
+                        <label for="">My Groups</label>
+
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnmygroupsec" aria-expanded="false">
+                            <span class="slectbox txtselect" id="selectedGroupNames">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
+                        </button>
+
+                        <div class="dropdown-menu" id="GroupNameList"></div>
+                    </div>
+
+                </div>
+
+                <div class="projectesmbox form-group Organization box" style="display:none;">
+
+                    <div class="dropdown" style="margin-bottom:10px">
+                        <label for="">Guest Client</label>
+
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnguestclient" aria-expanded="false">
+                            <span class="slectbox txtselect" id="selectClientName">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
+                        </button>
+
+                        <div class="dropdown-menu" id="ClientList"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="projectesmbox form-group Project-Team box" style="display:none;">
+
+                    <div class="dropdown" style="margin-bottom:10px">
+                        <label for="">Project Team</label>
+
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnProjectName" aria-expanded="false">
+                            <span class="slectbox txtselect" id="selectProjectNames">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
+                        </button>
+
+                        <div class="dropdown-menu" id="projectList"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="user-add-box-area-box Selective box" style="display:none;">
+                    <div class="form-group custom-form-group mb10">
+                        <label>Users:</label>
+                    </div>
+                </div>
+
+
+                <div class="teambox" id="userDiv" style="display:none;">
+                    <!---groupse--->
+                    <div class="row searchingboxarea" style="margin:2px 0 5px 0; overflow-y:auto; max-height:220px;">
+                        <div class="col-md-12" id="AddUserPplPicker" style="clear:both; position:absolute; left:0; right:0; bottom:0; width:100%;">
+                            <div class="searchingbox" style="float:right; position:relative">
+                                <div id="SharingPplPicker" class="effecinput form-control"></div>
+                                <button type="button" class="addingsec">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+					
+                </div>
+
+            </div><!---share box--->
+            <div class="row" style="margin:0 0">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="share Type">Share Type:</label>
+                        <select class="form-control shareing-permission-view" id="sharedWithPermission">
+                            <option value="Contribute">Contribute</option>
+                            <option value="Read">Read</option>
+                            <option value="Restricted View">Restricted view</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="share Type">Message:</label>
+                        <textarea class="form-control" id="txtShareMessage" style="max-height:60px !important; min-height:60px !important;"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sharing-type-icon-box">
+                        <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Contributor_share.png" alt="Contribute" class="redonlysec">
+                        <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Reader_share.png" style="display: none;" alt="Read" class="redonlysec">
+                        <img src="../SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Restricted_share.png" style="display: none;" alt="Restricted View" class="redonlysec">
+                    </div>
+                    <div class="testimg">
+                    </div>
+                    <div class="sharingvalidity">
+                       
+                     <div class="row">
+                     
+                         <label for="" class="col-md-5" style="padding-right:0;">Sharing Validity:</label>
+                         
+                         <div class="col-md-7 padinghere">
+		                        <div class="radio">
+		                            <label><input type="radio" name="validity" id="forever" checked="checked">For ever</label>
+		                        </div>
+		                        <div class="wrapinexpire flxdirec">
+		                            <div class="radio">
+		                                <label><input type="radio" name="validity" id="expiredon">Valid Till</label>
+		                            </div>
+		                            <input type="date" class="form-control" id="expiredats">
+		                        </div>
+	                     </div>   
+	                        
+                     </div>   
+                        
+                        
+                        <div class="notifywrap">
+                            <label for="notifymail">
+                                Notify this by  email
+                                <input type="checkbox" id="notifymail" style="margin:0 5px; position: relative; top:-2px;">
+                            </label>
+                        </div>
+                        <div class="Acknowledgment">
+                            <label for="Acknowledgment">Need Acknowledgment</label>
+                            <input type="checkbox" id="Acknowledgment" style="margin:0 5px; position: relative; top:-2px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn" id="btnShare">Share</button>
+                <button type="button" class="btn custom-btn-two-cancel btnClosePopup" id="" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- sharebox design -->
+<!-- approvalhistory -->
+<div id="approvalhistory" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog widthajust">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">
+                    <span class="close-icon">×</span>
+                </button>
+                <h4 class="modal-title">Approval History</h4>
+            </div>
+            <div class="modal-body scrollingeffect timlineheight">
+
+                <div class="timebox">
+                    <ul class="mainlst" id="ApprovalHistoryArea"></ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- approvalhistory -->
+<!---notification--->
+<div id="notificationbtn" class="modal fade" role="dialog" style="background-color:rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-md">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">Notification to Approvers</h4>
+            </div>
+            <div class="modal-body">
+                <label for="">Your Message<span style="color:red">*</span></label>
+                <textarea class="form-control" id="txtNotifyMsg"></textarea>
+                <div id="NotifyMailPicker"></div>
+            </div>
+            <div class="modal-footer" style="text-align: center;" id="SendMailFooter">
+                <button type="button" class="btn custom-btn" id="btnSendNotify">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!---notification--->
+<!-- addsuccessor design -->
+<div id="addsuccessor" class="modal fade" role="dialog" style="background-color:rgba(0,0,0,0.5);" data-backdrop="static">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round closeAddEditModal" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title" id="SuccessorStepHeader">Add Step</h4>
+            </div>
+
+
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="">Step Name<span style="color:red;">*</span></label>
+                    <input type="text" id="AddEditStepName" class="form-control" maxlength="50">
+                </div>
+
+                <div class="projectesmbox form-group">
+
+                    <label for="">Approvers</label>
+
+                    <div class="userbox">
+
+                        <label for="userselection" id="UserSection">
+                            <input type="radio" class="radioEmp" id="userselection" name="user" value="User" checked>
+                            User
+                        </label>
+
+                        <label for="outsidesetion" id="OutsideSection">
+                            <input type="radio" class="radioEmp" id="outsidesetion" name="user" value="Outsider">
+                            Outsider
+                        </label>
+
+                    </div><!---userbox ed-->
+
+
+                    <div class="usercover">
+
+                        <div id="userbox-1">
+
+                            <div class="form-group">
+                                <div class="sharingbox">
+                                    <div class="form-control link-input-fild" id="ApproverName"></div>
+                                    <button type="button" class="btn custom-btn" style="min-width:auto !Important;display:none;">
+                                        <i class="fa fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="teambox userBox" style="display:none;">
+
+                                <div class="row fullcoverbox" id="userHTMLBox"></div><!--row ed-->
+
+                            </div>
+                            <span style="display:none;" id="LiCount"></span>
+
+                        </div><!----userbox1--->
+
+                        <div id="userbox-2" style="display: none;">
+
+                            <div class="form-group">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" id="OutsiderName" maxlength="50">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="">Email Address</label>
+                                <input type="text" class="form-control" id="OutsiderEmail" maxlength="50">
+                            </div>
+
+                        </div><!--userbox2--->
+
+                    </div>
+
+                </div><!---share box--->
+
+                <div class="modal-footer floatingdiv" style="text-align:center">
+                    <button type="button" class="btn custom-btn" id="AddEditStep">Submit</button>
+                    <div id="parentAddSuccStep">
+                        <button type="button" class="btn custom-btn" id="AddSuccStep">Submit</button>
+                    </div>
+                    <div id="parentChangeApp">
+                        <button type="button" class="btn custom-btn" id="btnChangeApprovers">Submit</button>
+                    </div>
+                    <button type="button" class="btn custom-btn-two-cancel closeAddEditModal" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<!----addsuccessor design---->
+<!--Attachment IFrame popup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog" style="background:rgba(0,0,0,0.6)">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">
+                    Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="sign-viewer">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Attachment IFrame popup ends-->
+
+
+ <!-- generatepdf -->
+  <div class="modal fade" id="generatepdf" role="dialog" style="background:rgba(0,0,0,0.6);">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close close-round" data-dismiss="modal" style="line-height:1">&times;</button>
+          <h4 class="modal-title">PDF File</h4>
+        </div>
+        <div class="modal-body">
+        
+         <h4>After generate PDF file, it will be:</h4>
+        
+          <ul class="multisectionopt">
+          	 <li>
+          	 	<div class="radio">
+				  	<label><input type="radio" name="optradio">Download</label>
+				</div>
+          	 </li>
+          	 <li>
+          	 	<div class="radio">
+				  	<label><input type="radio" name="optradio">Save in same folder</label>
+				</div>
+          	 </li>
+          	 <li class="flxgeneratebox">
+
+          	 	<div class="radio">
+				  	<label><input type="radio" name="optradio">Save in</label>
+				</div>
+
+          	 	<label class="filebox" style="margin-bottom:0;">
+				  <input type="file" id="file" aria-label="File browser example">
+				  <span class="file-custombox"></span>
+				</label>
+				 	
+          	 </li>
+          </ul>
+        </div>
+        <div class="modal-footer" style="text-align: center;">
+          <button type="button" class="btn custom-btn">Generate PDF</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-----generatepdf----->
+
+
+
+
+
+
+
+
+
+
+<!---sharing modal code--->
+<script>
+$(document).ready(function(){
+$('#expiredon').click(function(){
+  $('#expiredats').addClass('activating');
+});
+
+$('#forever').click(function(){
+  	$('#expiredats').removeClass('activating');
+	$("#expiredats").val('');
+})
+
+$('#sharedWithPermission').on('change', function(){
+
+var optionValue = $('#sharedWithPermission option:selected').attr("value");
+
+ $('.redonlysec').each(function(){
+
+  var stalt = $(this).attr('alt');
+
+  if(optionValue==stalt){
+
+    $(this).show().siblings().hide();
+
+  }
+
+ });
+
+})
+
+
+});
+
+</script>
+<!---sharing modal code--->
+
+<script type="text/javascript">
+
+    $('#selectallcheck').click(function () {
+
+        if ($(this).is(':checked')) {
+
+            $('.DocLibnew').prop('checked', true);
+
+        }
+        else {
+
+            $('.DocLibnew').prop('checked', false);
+
+        }
+
+    });
+
+</script>
+
+
+<!--copy & move end code-->
+<!--copymove popup ed-->
+
+
+<script type="text/javascript">
+
+    $('button.copyButton').click(function (e) {
+        e.preventDefault();
+        $(this).siblings('input.linkToCopy').select();
+        document.execCommand("copy");
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $(".emplyeename").each(function (i) {
+
+            len = $(this).text().length;
+            if (len > 60) {
+                $(this).text($(this).text().substr(0, 60) + '..');
+            }
+
+        });
+
+        $(".desinationsec").each(function (i) {
+
+            len = $(this).text().length;
+            if (len > 30) {
+                $(this).text($(this).text().substr(0, 30) + '..');
+            }
+
+        });
+
+        $(".departments").each(function (i) {
+
+            len = $(this).text().length;
+            if (len > 30) {
+                $(this).text($(this).text().substr(0, 30) + '..');
+            }
+
+        });
+
+        $(".emplyeename_new").each(function (i) {
+
+            len = $(this).text().length;
+            if (len > 40) {
+                $(this).text($(this).text().substr(0, 40) + '..');
+            }
+
+        });
+
+
+    });
+
+</script>
+
+
+<!---lock/unlock effect--->
+
+
+<!---lock/unlock effect ed--->
+<!---checkbox select all--->
+
+<script type="text/javascript">
+
+    $("#checkall").click(function () {
+        $(".checkse").prop("checked", $(this).prop("checked"));
+    });
+
+    $("#selectAll").click(function () {
+        if (!$(this).prop("checked")) {
+            $("#selectAll").prop("checked", false);
+        }
+    });
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $('.addingsec').click(function () {
+
+            $(this).siblings('.effecinput').toggleClass('activateds');
+
+
+        })
+
+
+    })
+
+</script>
+
+<!-----approval history---->
+<script>
+
+$(function(){
+
+$(".mainheading").each(function(i){
+
+    len=$(this).text().length;
+    if(len>70)
+    {
+      $(this).text($(this).text().substr(0,70)+'...');
+    }
+
+  });
+
+$(".Purposetext").each(function(i){
+
+    len=$(this).text().length;
+    if(len>150)
+    {
+      $(this).text($(this).text().substr(0,150)+'...');
+    }
+
+  });
+});
+
+</script>
+
+<!-----noduedate script----->
+
+<script type="text/javascript">
+
+$(function(){
+
+  $('#noDueDate').click(function(){
+
+    if($(this).is(':checked')){
+
+      $('#dueDateField').prop('disabled',true);
+
+    }
+    else{
+        $('#dueDateField').prop('disabled',false);
+    }
+
+  });
+
+
+});
+
+</script>
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">269100.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2691</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">629de4a9-f5c1-40a9-bf09-a3229000fd88</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2691, ADMIN-1645029823-2691</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Titan</title></head>
