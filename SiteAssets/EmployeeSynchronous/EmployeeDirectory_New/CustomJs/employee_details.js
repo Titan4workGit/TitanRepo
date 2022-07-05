@@ -201,7 +201,7 @@ app.controller('myCtrl', function ($scope, $http, $window) {
     $scope.currentitemId = employeedIddetails;
     $scope.mode = modeofrequest;
     $scope.teamporaryImageUrl = "";
-    $scope.imageUrl = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
+    $scope.imageUrl = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
     $scope.company = currentCompanyid;
     $scope.gender = "---Select---";
     if (departmentID != "" && departmentID != null) {
@@ -1318,7 +1318,7 @@ app.controller('myCtrl', function ($scope, $http, $window) {
         }
     }
     $scope.GetAttachment = function (attachmentcollection, EMail) {
-        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EMail) //"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
+        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(EMail) //"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg";
         if (attachmentcollection.results.length > 0) {
             attachmentUrl = attachmentcollection.results[0].ServerRelativeUrl;
             $scope.teamporaryImageUrl = attachmentcollection.results[0].ServerRelativeUrl
@@ -1425,7 +1425,7 @@ $(document).ready(function () {
             else {
                 alert("The file you are trying to upload is too large (max 100KB).");
                 $("#uploadFile1").val(null);
-                $('#profile-image1').attr("src", "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg");
+                $('#profile-image1').attr("src", "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg");
                 return false;
             }
         }

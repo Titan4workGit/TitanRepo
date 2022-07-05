@@ -193,7 +193,7 @@ app.controller('myCtrl', function ($scope, $http) {
 
 
     $scope.GetAttachment = function (attachmentcollection, Email) {
-        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
         if (attachmentcollection.results.length > 0) {
             attachmentUrl = attachmentcollection.results[0].ServerRelativeUrl
         }

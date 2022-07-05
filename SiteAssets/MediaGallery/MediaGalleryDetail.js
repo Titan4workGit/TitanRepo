@@ -37,7 +37,7 @@ var FilesArr=new Array();
 	});
 	$(".like-img").click(function () {
 		var src = $(this).attr('src');
-		var newsrc = (src == 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png') ? 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' : 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png';
+		var newsrc = (src == 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png') ? 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' : 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png';
 	});
 
 
@@ -246,7 +246,7 @@ function GetMediaGalleryFiles(targetfolderUrl)
 	            
 	            if(thumbNailUrl=="")
 	            {
-                  thumbNailUrl="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-icon.png";
+                  thumbNailUrl="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-icon.png";
                   extofImage=thumbNailUrl.split('.');
                   extofImage=extofImage[extofImage.length-1]
                 }
@@ -276,22 +276,22 @@ function GetMediaGalleryFiles(targetfolderUrl)
                  
 
 				//menuFolderHTML+='<video class="video-box" width="100%" height="100%">'
-				//menuFolderHTML+='<source src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/demo-video.mp4" type="video/mp4">Your browser does not support the video tag.</video>'
+				//menuFolderHTML+='<source src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/demo-video.mp4" type="video/mp4">Your browser does not support the video tag.</video>'
 				//menuFolderHTML+='<div class="play-icon"><i class="fa fa-play"></i></div></a>'
 				menuFolderHTML+='<div class="album-card-footer">'
 				menuFolderHTML+='<div class="album-card-footer-flex-box">'
 				menuFolderHTML+='<p class="mb-0 album-card-footer-date">'+Publishing+'</p>'
 				menuFolderHTML+='<ul class="nav media-gallery-user-btn-item">'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-icon">'
-				menuFolderHTML+='<img class="views-img" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png"></li>'
+				menuFolderHTML+='<img class="views-img" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png"></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-count"><span id='+viewId+'>'+View+'</span></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-gap"><span></span></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-icon">'
-				menuFolderHTML+='<img class="like-img" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png"></li>'
+				menuFolderHTML+='<img class="like-img" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png"></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-count"><span id='+LikeId+'>'+Like+'</span></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-gap"><span></span></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-icon">'
-				menuFolderHTML+='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png"></li>'
+				menuFolderHTML+='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png"></li>'
 				menuFolderHTML+='<li class="media-gallery-user-btn-panel-count active"><a href="#" data-toggle="modal" data-target="#photo-view-with-comments" id='+CommentId+'>'+Comment+'</a></li></ul></div>'
 				menuFolderHTML+='<div class="dropdown custom-card-menu">'
 				menuFolderHTML+='<a class="album-download-btn" href="'+thumbNailUrl+'" download>'
@@ -614,7 +614,7 @@ $("#uploadFile1").on('change', function () {
             else {
                 alert("The file you are trying to upload is too large (max 50KB).");
                 $("#uploadFile1").val(null);
-                $('#profile-image1').attr("src", "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg");
+                $('#profile-image1').attr("src", "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory_New/images/user_pic.jpg");
                 return false;
             }
         }
@@ -795,7 +795,7 @@ function GetDataforModel(RecId)
 			//$('#RecWeight').text(data.d.results[0].ImageWidth+" KB");
 			$("#AothName").text(data.d.results[0].Author.Title);
 			$("#AothEmail").text(data.d.results[0].Author.EMail);
-			var AuthImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + data.d.results[0].Author.EMail//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+			var AuthImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + data.d.results[0].Author.EMail//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                 //AuthPhoto	
             $('#AuthPhoto').attr('src', AuthImage);
 
@@ -829,7 +829,7 @@ function GetEmpInfo(LogonEmail)
 				$("#AothDesignation").text(items[0].Designation);
 				$("#AothDept").text(items[0].Department.Title);
 				$("#AothEmail").text(items[0].LogonName.EMail);
-				var AuthImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + items[0].LogonName.EMail//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+				var AuthImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + items[0].LogonName.EMail//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                 //AuthPhoto	
                 $('#AuthPhoto').attr('src', AuthImage);
 			
@@ -1022,12 +1022,12 @@ function TriggerLikes()
         var item={'__metadata': { type: 'SP.Data.'+listName+'ListItem'}, 'Item_ID':ItemId.toString(),'CompanyIdId':Logged_CompanyId,'WebPartName':Type,'Like':'No','LikeById':parseInt(_spPageContextInfo.userId),'UserImage':Employeeprofilepic};
         var Res = UniversalUpdate(listName,item,QueryResult[0].ID);
     }
-    if($(".like-img").attr("src") == "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png"){
-        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
+    if($(".like-img").attr("src") == "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png"){
+        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
         $("#TotalLikes").text(parseInt($("#TotalLikes").text()) + 1);
     }
     else {
-        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png");
+        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png");
         $("#TotalLikes").text(parseInt($("#TotalLikes").text()) - 1);
     }
     if($("#likes").hasClass("active") == true){
@@ -1050,7 +1050,7 @@ var ItemId = G_MediaRecord;
         for(var i=0; i<QueryResult.length; i++)
         {
         	if(QueryResult[i].LikeBy.EMail.toLowerCase() == _spPageContextInfo.userEmail.toLowerCase()){
-        		$('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
+        		$('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png");
         	}
             Html_Design = Html_Design + "<li class='likes-box'>" +
     									"<div class='comment-reply-user-name'><span class='comment-reply-user-name-lt'>TD</span><img class='comment-reply-user-name-img' id='ViewHitsProfileImages' src='"+QueryResult[i].UserImage+"'></div>"+
@@ -1062,7 +1062,7 @@ var ItemId = G_MediaRecord;
         $("#LikeshitlistMedia").append(Html_Design);
     }
     else {
-        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png");
+        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png");
         Html_Design = Html_Design + "<li class='likes-box'>" +
                                            "<div class='comment-reply-user-name' style='width:212px !important;border-radius:3% !important'>"+
                                            "<h4>No users liked!!</h4>"+
@@ -1380,12 +1380,12 @@ function DesignAnnChatting(QueryResult, Mode)
             {
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNoAnn"+QueryResult[i].ID+"'>"+
 	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>"+
-	                      									"<span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span>"+
+	                      									"<span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span>"+
 	                    								"</div>"+
 	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>"+
 	                      									"<div>"+
 	                        									"<div id='editMenuOpen2' class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>"+
-	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
+	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
 	                        									"</div>"+
 	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>"+
 	                          										"<li><a type='button' onclick='EditAnnComment("+QueryResult[i].ID+")'>Edit</a></li>"+
@@ -1404,11 +1404,11 @@ function DesignAnnChatting(QueryResult, Mode)
             else
             {
                 Commenthtmldesign = Commenthtmldesign +	"<div class='col-md-12 col-sm-12 reply-box-ext' id='CommentDivRecNoAnn"+QueryResult[i].ID+"'>"+
-	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='"+QueryResult[i].UserImage+"' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='UsernameAnn"+QueryResult[i].ID+"'>"+QueryResult[i].Author.Title+"</span><span class='pl5 pr5'>-</span><span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span> </div>"+
+	                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='"+QueryResult[i].UserImage+"' class='img-circle chat-user-image' width='30' height='30' data-themekey='#'></span><span class='b-500' id='UsernameAnn"+QueryResult[i].ID+"'>"+QueryResult[i].Author.Title+"</span><span class='pl5 pr5'>-</span><span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span> </div>"+
 	                    									"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>"+
 	                      										"<div class='mt-4 my-chat-edit-delete-panel-inside' id='CommentTextAnn"+QueryResult[i].ID+"'>"+QueryResult[i].Comment+"</div>"+
 	                      											"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>"+
-	                          											"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
+	                          											"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
 	                        										"</div>"+
 	                        										"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>"+
 	                          											"<li><button id='messageEdit' type='button' class='btn LikeCmntAnn"+QueryResult[i].ID+"' data-toggle='collapse' data-target='#messageReplyBox' aria-expanded='false' onclick='PushlikeforAnnComment("+QueryResult[i].ID+")'>"+CommentLikeValue+"</button></li>"+
@@ -1429,14 +1429,14 @@ function DesignAnnChatting(QueryResult, Mode)
             {
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-my' id='CommentDivRecNoAnn"+QueryResult[i].ID+"'>"+
 	                    								"<div class='col-md-12 col-sm-12 pl0 pr0 pb10'>"+
-	                      									"<span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span>"+
+	                      									"<span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png' data-themekey='#'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span>"+
 	                    								"</div>"+
 	                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel others-reply-text-box'>"+
 	                      									"<div class='reply-text-line'>"+
 	                        									"<a href='#' class='comment-reply-user-name-info'>@<span >"+AnnResponse[i].ReplyTo+"</span> :</a>"+
 	                        									"<span class='replymsgAnn'>"+AnnResponse[i].ReplyAgainst+"</span>"+
 	                        									"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>"+
-	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
+	                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz' data-themekey='#'>"+
 	                        									"</div>"+
 	                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>"+
 	                          										"<li><a type='button' onclick='EditAnnComment("+QueryResult[i].ID+")'>Edit</a></li>"+
@@ -1460,11 +1460,11 @@ function DesignAnnChatting(QueryResult, Mode)
             else
             {
                 Commenthtmldesign = Commenthtmldesign + "<div class='col-md-12 col-sm-12 reply-box-ext'>"+
-		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='"+QueryResult[i].UserImage+"' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500' id='UsernameAnn"+QueryResult[i].ID+"'>"+QueryResult[i].Author.Title+"</span><span class='pl5 pr5'>-</span><span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span> </div>"+
+		                    								"<div class='col-md-12 col-sm-12 reply-author-detail pl0 pr0 pb10 pt0'> <span class='mr10'><img src='"+QueryResult[i].UserImage+"' class='img-circle chat-user-image' width='30' height='30'></span> <span class='b-500' id='UsernameAnn"+QueryResult[i].ID+"'>"+QueryResult[i].Author.Title+"</span><span class='pl5 pr5'>-</span><span>"+formatDateComment(QueryResult[i].Created)+"</span> at <span> "+Event_time+"</span><span id='LikeSpanAnn"+QueryResult[i].ID+"' style='display:"+DisplayLikeDiv+"'><span><img class='msg-like-img' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png'></span><span class='countInnerLikes' id='LikesCountAnn"+QueryResult[i].ID+"' onclick='GetAllAnnLikesComment("+QueryResult[i].ID+")'>"+likesCount+"</span></span> </div>"+
 		                    								"<h4 class='col-md-12 col-sm-12 my-chat-edit-delete-panel'>"+
 		                      									"<div class='reply-text-line'><a href='javascript:void(0);' class='comment-reply-user-name-info'>@<span >"+AnnResponse[i].ReplyTo+"</span> :</a><span class='replymsgAnn'>"+AnnResponse[i].ReplyAgainst+"</span>"+
 		                      										"<div class='chat-edit-delete-panel dropdown-toggle' data-toggle='dropdown' aria-expanded='false'>"+
-		                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>"+
+		                          										"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/more-horiz.png' alt='more horiz'>"+
 		                        									"</div>"+
 		                        									"<ul class='dropdown-menu dropdown-menu-right chat-edit-delete-dropdown'>"+
 		                          										"<li><a type='button' class='LikeCmntAnn"+QueryResult[i].ID+"' onclick='PushlikeforAnnComment("+QueryResult[i].ID+")'>"+CommentLikeValue+"</a></li>"+
@@ -1517,13 +1517,13 @@ function DesignAnnChatting(QueryResult, Mode)
         for(var p=0; p<FilterResult.length; p++)
         {
             if(FilterResult[p].FileName.indexOf("docx") != -1){
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
             }
             else if(FilterResult[p].FileName.indexOf("pdf") != -1) {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
             }
             else if(FilterResult[p].FileName.indexOf("xlsx") != -1 || FilterResult[p].FileName.indexOf("csv") != -1) {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
+                Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
             }
 
             else if(FilterResult[p].FileName.indexOf("jpg") != -1 || FilterResult[p].FileName.indexOf("jpeg") != -1 || FilterResult[p].FileName.indexOf("JPEG") != -1 || FilterResult[p].FileName.indexOf("png") != -1 || FilterResult[p].FileName.indexOf("PNG") != -1) {
@@ -1531,7 +1531,7 @@ function DesignAnnChatting(QueryResult, Mode)
             }
 						
             else {
-                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
+                Attachmentdesign = Attachmentdesign + "<div class='m-0  upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" +FilterResult[p].ServerRelativeUrl+ "' onclick='previewfile(this);' href='javascript:void(0)'>"+FilterResult[p].FileName+"</a></span> <span class='chip-icon-box'> <a href='" +FilterResult[p].ServerRelativeUrl+ "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";		
             }
         }
         
@@ -1899,19 +1899,19 @@ function RetriveAnnUpdateData(RecID) {
                     for (var y = 0; y < Items[0].AttachmentFiles.results.length; y++) {
 
                         if (Items[0].AttachmentFiles.results[y].FileName.indexOf("docx") != -1) {
-                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Docx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/doc.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                         }
                         else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("pdf") != -1) {
-                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_PDF'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/pdf.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                         }
                         else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("xlsx") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("csv") != -1) {
-                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_xlsx'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/xls.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                         }
                         else if (Items[0].AttachmentFiles.results[y].FileName.indexOf("jpg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("jpeg") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("JPEG") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("png") != -1 || Items[0].AttachmentFiles.results[y].FileName.indexOf("PNG") != -1) {
                             Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Image'> <span class='pr-8 chip-text-box'><img src='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' title=" + Items[0].AttachmentFiles.results[y].FileName + " onclick='previewImage(this);'></img></div>";
                         }
                         else {
-                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
+                            Attachmentdesign = Attachmentdesign + "<div class='m-0 upload-chip chatAttach_Others'> <span class='pr-8 chip-text-box'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/Image/File_Icon/file.png'></img><a name='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' onclick='previewfile(this);' href='javascript:void(0)'>" + Items[0].AttachmentFiles.results[y].FileName + "</a></span> <span class='chip-icon-box'> <a href='" + Items[0].AttachmentFiles.results[y].ServerRelativeUrl + "' download><i class='fa fa-download cursor-pointer px-4' aria-hidden='true'></i></a></span> </div>";
                         }
                     }
                     $("#AttachmentlistAnn" + Items[0].ID).append(Attachmentdesign);

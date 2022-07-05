@@ -1,7 +1,7 @@
 <style type="text/css">
 
 .expand{
-	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
 	background-repeat:no-repeat;	
     float: left;
     min-height: 14px;
@@ -55,7 +55,7 @@ label#sitetitle {
 }
 
 .expand{
-	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
 	background-repeat:no-repeat;	
     float: left;
     min-height: 14px;
@@ -65,7 +65,7 @@ label#sitetitle {
 }
 
 .lexpand{
-	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
+	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/plus.jpg');
 	background-repeat:no-repeat;	
     float: left;
     min-height: 14px;
@@ -79,7 +79,7 @@ label#sitetitle {
 	color:white !important;
 }
 .collapse{
-	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/minus.jpg');
+	background-image:URL('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/GautamPermission/Image/minus.jpg');
 	background-repeat:no-repeat;
 	float: left;        
     padding-right: 18px;

@@ -110,14 +110,14 @@ ShowAnnouncements.prototype.ShowAnnouncement = function ShowAnnouncement(itemId)
             	$("#_ModelHeading").removeClass("panel-heading-bg-txt-clr");
             	$("#_ModelHeading").addClass("common-head-text-popup-Alert");
             	$("#_ModelHeading").removeAttr("style");
-            	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/DevelopersCode/DefaultHome/images/alert-popup.png");
+            	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/images/alert-popup.png");
             	$('#annReadMore').attr('style', 'background: #f00 !important');
             }
             else {
             	$("#_ModelHeading").removeClass("common-head-text-popup-Alert");
             	$("#_ModelHeading").addClass("common-head-text-popup");
             	$("#_ModelHeading").addClass("panel-heading-bg-txt-clr");
-            	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png");
+            	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png");
             	$('#annReadMore').attr('style', 'background: #ff9e20 !important');
             }
             //$("#_DtlDescription").html(description);

@@ -428,10 +428,10 @@ function ReadApprovalTaskListData()
 					var RequestDate = moment(ApprovalTaskListUsageData[i].Created).format('DD MMM YYYY');		
 					var Category = ApprovalTaskListUsageData[i].Category;
 					var StatusImg = '';
-						if(ApprovalTaskListUsageData[i].Status == "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-						else if(ApprovalTaskListUsageData[i].Status == "Initiated"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-						else if(ApprovalTaskListUsageData[i].Status == "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-						else if(ApprovalTaskListUsageData[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+						if(ApprovalTaskListUsageData[i].Status == "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+						else if(ApprovalTaskListUsageData[i].Status == "Initiated"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+						else if(ApprovalTaskListUsageData[i].Status == "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+						else if(ApprovalTaskListUsageData[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 					var ActionByDisplay = '';
 						if(ApprovalTaskListUsageData[i].Status == "Initiated")
 						{
@@ -561,10 +561,10 @@ function ReadApprovalProcessListData()
 					var RequestDate = moment(ApprovalProcessListUsageData[i].Created).format('DD MMM YYYY');		
 					var Category = ApprovalProcessListUsageData[i].RequestFor;
 					var StatusImg = '';
-						if(ApprovalProcessListUsageData[i].Status == "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-						else if(ApprovalProcessListUsageData[i].Status == "Initiated" || ApprovalProcessListUsageData[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-						else if(ApprovalProcessListUsageData[i].Status == "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-						else if(ApprovalProcessListUsageData[i].Status == "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+						if(ApprovalProcessListUsageData[i].Status == "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+						else if(ApprovalProcessListUsageData[i].Status == "Initiated" || ApprovalProcessListUsageData[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+						else if(ApprovalProcessListUsageData[i].Status == "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+						else if(ApprovalProcessListUsageData[i].Status == "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 					var ActionByDisplay = '';
 						if(ApprovalProcessListUsageData[i].Status == "Initiated" || ApprovalProcessListUsageData[i].Status == 'Pending')
 						{
@@ -600,7 +600,7 @@ function ReadApprovalProcessListData()
 					var PriorityImg ='';
 					if(ApprovalProcessListUsageData[i].Priority == 'High')
 					{
-						PriorityImg = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rd_icon.png';
+						PriorityImg = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rd_icon.png';
 					}
 					
 					var DueDate='';
@@ -702,10 +702,10 @@ function ReadDocumentApprovalRequestsData()
 					var RequestDate = moment(DocumentApprovalRequestsUsageData[i].Created).format('DD MMM YYYY');		
 					var Category = DocumentApprovalRequestsUsageData[i].DocumentType;
 					var StatusImg = '';
-						if(DocumentApprovalRequestsUsageData[i].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-						else if(DocumentApprovalRequestsUsageData[i].Status== "Initiated" || DocumentApprovalRequestsUsageData[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-						else if(DocumentApprovalRequestsUsageData[i].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-						else if(DocumentApprovalRequestsUsageData[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+						if(DocumentApprovalRequestsUsageData[i].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+						else if(DocumentApprovalRequestsUsageData[i].Status== "Initiated" || DocumentApprovalRequestsUsageData[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+						else if(DocumentApprovalRequestsUsageData[i].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+						else if(DocumentApprovalRequestsUsageData[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 					var ActionByDisplay = '';
 						if(DocumentApprovalRequestsUsageData[i].Status == "Initiated" || DocumentApprovalRequestsUsageData[i].Status == 'Pending')
 						{
@@ -1346,10 +1346,10 @@ function ActionTaken(Action,PassingValues)
     	if(QueryResult.length>0)
     	{
     		var StatusImg = '';
-				if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-				else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-				else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-				else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+				if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+				else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+				else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+				else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 			$('#StatusModelimg').attr('src', StatusImg);
 			$("#RemarkModel").text('');
 			
@@ -1824,10 +1824,10 @@ function ActionTaken(Action,PassingValues)
     		Status = QueryResult[0].Status;
     		if(QueryResult[0].Status == 'Pending'){Status = 'Initiated';}
     		var StatusImg = '';
-				if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-				else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-				else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-				else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+				if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+				else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+				else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+				else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 			$('#StatusImgProcessApproval').attr('src', StatusImg);
  
     		$("#StatusTextProcessApproval").text(Status);  		
@@ -2258,7 +2258,7 @@ function ApprovedAction(Action)
     	    		}
     	    		$('#approvalActionModal').modal('hide');
     	    		$('#approvalRejectionModal').modal('hide');										
-					$('#CurrentStepStatusImgProcessApproval').attr('src', 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png');
+					$('#CurrentStepStatusImgProcessApproval').attr('src', 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png');
 					$("#CurrentStep").text('Done');
 					GetDigitalSignatures();					
 					var Query =  _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('ApprovalProcessQueue')/items?$select=*,AttachmentFiles&$expand=AttachmentFiles&$filter=RequestID eq '"+ActiveTemplateID+"'&$orderby=Sequence_No asc";
@@ -2296,7 +2296,7 @@ function ApprovedAction(Action)
     				{
     					// CurrentStepApprovalProcessList12 $("#Status"+listName+Action.hreflang.split(',')[1]).text('Done');
     					//$("#CurrentStep"+listName+Action.hreflang.split(',')[1]).text(QueryResult[0].CurrentStep +'Done');
-    					var StatusImg = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png';						
+    					var StatusImg = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png';						
 						$('#CurrentStepStatusImage'+listName+Action.hreflang.split(',')[1]).attr('src', StatusImg);							
 						$("#ActionDiv"+listName+Action.hreflang.split(',')[1]).css("display", "inline-flex");
 						var ApprovedByImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +QueryResult[0].ApprovedBy.EMail;
@@ -2694,10 +2694,10 @@ function UniversalUpdateApprovalList(listName,item,dataid)
     		{
     			$("#Status"+listName+dataid).text(QueryResult[0].Status);
     			var StatusImg = '';
-					if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-					else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-					else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-					else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+					if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+					else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+					else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+					else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 				$('#StatusImage'+listName+dataid).attr('src', StatusImg);	
 				if(QueryResult[0].Status == "Initiated" || QueryResult[0].Status == 'Pending'){ $("#ActionDiv"+listName+dataid).css("display", "none"); }
 				else {	$("#ActionDiv"+listName+dataid).css("display", "inline-flex"); }
@@ -2749,10 +2749,10 @@ function UniversalUpdateApprovalProcessList(listName,item,dataid)
     		{
     			$("#Status"+listName+dataid).text(QueryResult[0].Status);
     			var StatusImg = '';
-					if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-					else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-					else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-					else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+					if(QueryResult[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+					else if(QueryResult[0].Status== "Initiated" || QueryResult[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+					else if(QueryResult[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+					else if(QueryResult[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 				$('#StatusImage'+listName+dataid).attr('src', StatusImg);	
 				if(QueryResult[0].Status == "Initiated" || QueryResult[0].Status == 'Pending'){ $("#ActionDiv"+listName+dataid).css("display", "none"); }
 				else {	$("#ActionDiv"+listName+dataid).css("display", "inline-flex"); }
@@ -3545,10 +3545,10 @@ function GetDigitalSignatures()
 		if(FilteredRec.length>0)
 		{
 			var StatusImg = '';
-				if(FilteredRec[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-				else if(FilteredRec[0].Status== "Initiated" || FilteredRec[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-				else if(FilteredRec[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-				else if(FilteredRec[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+				if(FilteredRec[0].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+				else if(FilteredRec[0].Status== "Initiated" || FilteredRec[0].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+				else if(FilteredRec[0].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+				else if(FilteredRec[0].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 				//$('#CurrentStepStatusImgProcessApproval').attr('src', StatusImg);
 				//$("#CurrentStep").text(FilteredRec[0].Status);
 		}
@@ -3740,7 +3740,7 @@ function GetHistory()
 			var RequestByPhoto=_spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +QueryResultInitialized[0].Author.EMail;
 			HistoryDesign = HistoryDesign + "<li>"+
 											"<span class='iconbox'>"+
-												"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/time-icon-1.png' alt=''>"+
+												"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/time-icon-1.png' alt=''>"+
     										"</span>"+
 											"<div class='approvelheadeing'>"+
 												"<h3 class='mainheading'>Approvel Initiation</h3>"+
@@ -3780,10 +3780,10 @@ function GetHistory()
 				var ActionByPhoto=_spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' +QueryResult[i].ActionTakenby.EMail;
 				
 				var StatusImg = '';
-						if(QueryResult[i].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/rejected-img.png";}
-						else if(QueryResult[i].Status== "Initiated" || QueryResult[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/initiated-img.png";}
-						else if(QueryResult[i].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/approved-img.png";}
-						else if(QueryResult[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
+						if(QueryResult[i].Status== "Rejected"){StatusImg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/rejected-img.png";}
+						else if(QueryResult[i].Status== "Initiated" || QueryResult[i].Status == 'Pending'){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/initiated-img.png";}
+						else if(QueryResult[i].Status== "Approved"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/approved-img.png";}
+						else if(QueryResult[i].Status== "Forwarded"){StatusImg ="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Approvals/assets/images/forwarded-img.png";}
 				
 				var SignatureDesignHTML='';		
 				if(QueryResult[i].SignType == 'SignText')//SignDraw
