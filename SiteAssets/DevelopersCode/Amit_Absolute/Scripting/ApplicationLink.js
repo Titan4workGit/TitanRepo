@@ -51,8 +51,8 @@ function ApplicationLink()
 			{
 			/*	for(k=0; k<8; k++)
 				{
-					if(k==0){ $('#H_learning').append('<div class="item active"><img src="../SiteAssets/Biography/images/i1.jpeg" id="sliderImage'+k+'"  alt=""><h5 class="event-text-head-new">Launch of Intranet Portal at new office location</h5></div>'); }
-					else { $('#H_learning').append('<div class="item"><img src="../SiteAssets/Biography/images/i2.jpg" id="sliderImage'+k+'"  alt=""><h5 class="event-text-head-new">Launch of Intranet Portal at new office location</h5></div>'); }				
+					if(k==0){ $('#H_learning').append('<div class="item active"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage'+k+'"  alt=""><h5 class="event-text-head-new">Launch of Intranet Portal at new office location</h5></div>'); }
+					else { $('#H_learning').append('<div class="item"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/images/i2.jpg" id="sliderImage'+k+'"  alt=""><h5 class="event-text-head-new">Launch of Intranet Portal at new office location</h5></div>'); }				
 				}
 				//$("#carousel-example-generic").hide();		
 			*/				

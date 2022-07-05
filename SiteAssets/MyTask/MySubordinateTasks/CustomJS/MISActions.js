@@ -1,4 +1,4 @@
-﻿//Differenet Action for Table
+//Differenet Action for Table
 function updateMISMeatdata(Action) {
     var Metdata;
     if (arrTaskInIds.length > 0) {

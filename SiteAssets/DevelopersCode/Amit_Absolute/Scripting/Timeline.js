@@ -173,7 +173,7 @@ function GenerateHtml(_itemID,_Type,_Title_text,_Description,_Modified,_Employee
     	  											"<p>"+_Designation+"</p>"+
     	  											"<p>"+_Department+"</p>"+
     	  											"<p>"+_OfficeLocation+"</p>"+
-    	  											"<div class='recognition-view p0'><a href='#' class='Btn_Recognition' target='_blank'><img src='../SiteAssets/DevelopersCode/Amit/images/view.png' width='31' height='11' alt=''></a>"+
+    	  											"<div class='recognition-view p0'><a href='#' class='Btn_Recognition' target='_blank'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/DevelopersCode/Amit/images/view.png' width='31' height='11' alt=''></a>"+
     	  												"<span class='recognition-button-area'><a data-toggle='modal' data-target='#myModal' class='recognition-button' onclick='GetdatainModel("+_itemID+");'>Details</a></span>"+
     	  											"</div>"+
     	  										"</div>"+
@@ -200,7 +200,7 @@ function GenerateHtml(_itemID,_Type,_Title_text,_Description,_Modified,_Employee
     	  														"<a href='#' class='general-button' onclick='GetdatainModel("+_itemID+");' data-toggle='modal' data-target='#myModal'><span>Details</span></a>"+
     	  													"</div>"+
     	  												"</div>"+
-						    	  						"<div class='general-view p0'><a href='#' class='Btn_General' target='_blank'><img src='../SiteAssets/DevelopersCode/Amit/images/view.png' width='31' height='11' alt=''/></a></div>"+
+						    	  						"<div class='general-view p0'><a href='#' class='Btn_General' target='_blank'><img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/DevelopersCode/Amit/images/view.png' width='31' height='11' alt=''/></a></div>"+
 						    	  				"</div>"+
 						    	  			"</div>"+
             							"</div>"+
@@ -278,12 +278,12 @@ function GetEmployeeImg(EmpID,emptype)
             		}
             		else
             		{
-            			employeePicURL = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+            			employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
             		}
             	}
             	else
             	{
-            		employeePicURL = "../SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+            		employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
             	}
             }
             else
@@ -457,8 +457,8 @@ function GetDocuments(filename,webpartname)
 			{
 				for(k=0; k<2; k++)
 				{
-					if(k==0){ $('#1stImg').append('<div class="item active"><img src="../SiteAssets/Biography/images/i1.jpeg" id="sliderImage'+k+'"  alt=""></div>'); }
-					else { $('#1stImg').append('<div class="item"><img src="../SiteAssets/Biography/images/i2.jpg" id="sliderImage'+k+'"  alt=""></div>'); }				
+					if(k==0){ $('#1stImg').append('<div class="item active"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage'+k+'"  alt=""></div>'); }
+					else { $('#1stImg').append('<div class="item"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/Biography/images/i2.jpg" id="sliderImage'+k+'"  alt=""></div>'); }				
 				}
 				$("#carousel-example-generic").hide();						
 			}	

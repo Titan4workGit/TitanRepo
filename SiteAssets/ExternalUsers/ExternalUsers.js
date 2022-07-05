@@ -1,4 +1,4 @@
-﻿var userID=_spPageContextInfo.userId;
+var userID=_spPageContextInfo.userId;
 var CompanyId = titanForWork.getQueryStringParameter('CompanyId');
 var countchat=0;
 var check=false;

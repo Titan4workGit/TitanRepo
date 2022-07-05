@@ -1,4 +1,4 @@
-﻿var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
 var arrItem=[];
 var employeePicURL='';
 var fileLeafRef='';
@@ -149,7 +149,7 @@ function GetMediaGalleryThumbNail(targetfolderUrl,folderName,Author,userImage)
 	            
 	            if(thumbNailUrl=="")
 	            {
-                  thumbNailUrl="../SiteAssets/MediaGallery/assets/images/album-icon.png";
+                  thumbNailUrl="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-icon.png";
                   extofImage=thumbNailUrl.split('.');
                   extofImage=extofImage[extofImage.length-1]
                 }
@@ -178,13 +178,13 @@ function GetMediaGalleryThumbNail(targetfolderUrl,folderName,Author,userImage)
                       }
 		           menuFolderHTML +='<div class="album-count-box">';
 		           menuFolderHTML +='<span class="album-count-box-count">'+ImageCount+'</span>';
-		           menuFolderHTML +='<img class="album-count-box-icon" src="../SiteAssets/MediaGallery/assets/images/album-icon.png" alt="album icon">';
+		           menuFolderHTML +='<img class="album-count-box-icon" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-icon.png" alt="album icon">';
 		           menuFolderHTML +='</div></a>';
 		           menuFolderHTML +='<div class="album-card-footer">';
 		           menuFolderHTML +='<p class="album-card-footer-title ellipsis-2">'+folderName+'</p>';
 		           menuFolderHTML +='<div class="dropdown custom-card-menu">';
 		           menuFolderHTML +='<button class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">';
-		           menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/more-horiz.png">';
+		           menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/more-horiz.png">';
 		           menuFolderHTML +='</button>';
 		           menuFolderHTML +='<ul class="dropdown-menu dropdown-menu-right">';
 		           //menuFolderHTML +='<ul class="dropdown-menu dropdown-menu-right">';
@@ -426,7 +426,7 @@ function GetEmployeeImg()
            		}
            		else
            		{
-           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail)//"../SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(_spPageContextInfo.userEmail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            		}
            	}
         }, 

@@ -1,4 +1,4 @@
-﻿var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
+var siteURL = titanForWork.getQueryStringParameter("CompanySiteUrl");
 var arrItem=[];
 var employeePicURL='';
 var fileLeafRef='';
@@ -489,7 +489,7 @@ function GetFolderDetails(targetfolderUrl)
              var Comment=folders[0].Comment;
              if(Comment==null)Comment=0;
              var userImg=folders[0].userImage;
-             if(userImg==null)userImg='../SiteAssets/QuestionAnswer/images/user_pic.jpg';
+             if(userImg==null)userImg='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg';
              listItem.push({
 	             Title:Title,
 	             Description:Description,
@@ -797,7 +797,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
                 menuFolderHTML +='<div class="col-xs-12 col-sm-12 album-col-info album-card album-card-default">'
                 menuFolderHTML +='<div class="col-xs-12 col-sm-3 album-card-left">'
                 menuFolderHTML +='<div class="album-img-grid-default" id="album-default-case">'
-                menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/default album.png" alt="album img grid default"></div></div>'                                 
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/default album.png" alt="album img grid default"></div></div>'                                 
                 menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right"><div class="album-detail-box"><div class="album-heading">'        
                 menuFolderHTML +='<a href="'+redirecturl+'">'+listItem[0].Title+'</a>' 
                 menuFolderHTML +='</div>'
@@ -832,25 +832,25 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
                 menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
                 menuFolderHTML +='<div class="album-inner-card-btn-item">'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-                menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-count">234</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
                 menuFolderHTML +='<span> </span></div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-                menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-count">3</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-                menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-count">1</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-                menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+                menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
                 menuFolderHTML +='</div>'
                 menuFolderHTML +='<div class="album-inner-card-btn-panel-count">5</div>'
                 menuFolderHTML +='</div>'
@@ -917,25 +917,25 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
 				menuFolderHTML +='<div class="album-inner-card-btn-item">'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#"/>'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#"/>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
 				menuFolderHTML +='<span> </span></div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#"/>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#"/>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#"/>'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#"/>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
 				menuFolderHTML +='</div></div></div></div>'
@@ -967,7 +967,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
 				var extofImage=ItemImage[1].ImgType;
@@ -980,7 +980,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }				
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div></div></div>'
 				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
 				menuFolderHTML +='<div class="album-detail-box">'
@@ -1014,25 +1014,25 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
 				menuFolderHTML +='<div class="album-inner-card-btn-item">'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
 				menuFolderHTML +='<span> </span></div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
 				menuFolderHTML +='</div></div></div></div></div>'
@@ -1062,7 +1062,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }				
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
 				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-1">'
@@ -1077,7 +1077,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 
                 }
 
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-2">'
 				var extofImage=ItemImage[2].ImgType;
@@ -1090,7 +1090,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div></div></div></div>'
 				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
 				menuFolderHTML +='<div class="album-detail-box">'
@@ -1123,25 +1123,25 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
 				menuFolderHTML +='<div class="album-inner-card-btn-item">'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
 				menuFolderHTML +='<span> </span></div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
 				menuFolderHTML +='</div></div></div></div></div>'
@@ -1173,7 +1173,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="col-xs-12 album-case-half-left-row-2">'
 				var extofImage=ItemImage[1].ImgType;
@@ -1186,7 +1186,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 		             menuFolderHTML +='<div class="play-icon"><i class="fa fa-play"></i></div>'
 
                 }
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div></div>'
 				menuFolderHTML +='<div class="col-xs-6 album-case-half-right">'
 				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-1">'
@@ -1201,7 +1201,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 
                 }
 
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="col-xs-12 album-case-half-right-row-2">'
 				var extofImage=ItemImage[3].ImgType;
@@ -1215,7 +1215,7 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 
                 }
 
-				//menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album img grid default">'
+				//menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album img grid default">'
 				menuFolderHTML +='</div></div></div></div>'
 				menuFolderHTML +='<div class="col-xs-12 col-sm-9 album-card-right">'
 				menuFolderHTML +='<div class="album-detail-box">'
@@ -1249,25 +1249,25 @@ function mediaHTML(ImageCount,targetfolderUrl,View,Like,comments){
 				menuFolderHTML +='<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">'
 				menuFolderHTML +='<div class="album-inner-card-btn-item">'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+ImageCount+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap">'
 				menuFolderHTML +='<span> </span></div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].View+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Like+'</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-gap"><span> </span>'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-icon">'
-				menuFolderHTML +='<img src="../SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
+				menuFolderHTML +='<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">'
 				menuFolderHTML +='</div>'
 				menuFolderHTML +='<div class="album-inner-card-btn-panel-count">'+listItem[0].Comments+'</div>'
 				menuFolderHTML +='</div></div></div></div></div>'

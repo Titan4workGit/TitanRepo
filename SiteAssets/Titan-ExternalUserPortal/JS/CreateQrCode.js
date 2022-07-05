@@ -1,4 +1,4 @@
-﻿$(document).ready(function (){
+$(document).ready(function (){
   $('#TitanQR').click(function (e) { //Add by lakhan 
        $('#qr-CodeForTitan').empty();
        createQRCodeForTitan();

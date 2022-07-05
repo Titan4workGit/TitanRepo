@@ -1,4 +1,4 @@
-﻿var assignBy = []; //for showing search result
+var assignBy = []; //for showing search result
 var assignByEmail = "";
 var FilterLocalStorage = [];
 var IsInboxProjectBind = false;

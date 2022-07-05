@@ -1,4 +1,4 @@
-﻿function getProjects() {
+function getProjects() {
   var ListName ='ProjectDetails';
     DeferredObj = $.Deferred();
     $.ajax({

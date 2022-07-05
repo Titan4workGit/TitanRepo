@@ -1,4 +1,4 @@
-﻿var arrContributorIds = [];
+var arrContributorIds = [];
 var companyID='';
 $(document).ready(function() {
 companyID=titanForWork.getQueryStringParameter('CompanyId');

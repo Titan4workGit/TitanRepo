@@ -1,4 +1,4 @@
-﻿var currentDlg = '';
+var currentDlg = '';
 var SharedUserName = [];
 $(document).ready(function () {
     //SP.SOD.executeOrDelayUntilScriptLoaded(getCurrentURL_EventEmmployeeDetals, "sp.js"); //Indramani
@@ -1173,7 +1173,7 @@ function GetFavourites() {
 	        TaskHTML += '<div class="my-favourites-panel-head-text"><div class="my-favourites-panel-head-text1" style="color:blue;">'+arrFavTasks[fav].Name+'</div>';
 	        TaskHTML += '<div class="my-favourites-panel-head-text2">'+arrFavTasks[fav].Category+'</div></div></div></a><div class="dropdown my-favourites-panel-head-right">';
 	        TaskHTML += '<button class="px-0 dropdown-toggle button-ed-menu my-favourites-panel-head-icon-button" type="button" data-toggle="dropdown" aria-expanded="false">';
-	        TaskHTML += '<img src="../SiteAssets/MyFavorite/Images/my-fav-menu-vertical.png" alt="menu vertical"></button><ul class="dropdown-menu dropdown-menu-right">';
+	        TaskHTML += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyFavorite/Images/my-fav-menu-vertical.png" alt="menu vertical"></button><ul class="dropdown-menu dropdown-menu-right">';
 	        TaskHTML += '<li><a data-toggle="modal" href="Javascript:void(0);" onclick="EditFavTask(\'' + arrFavTasks[fav].Category + '\',\'' + arrFavTasks[fav].Name + '\',\'' + arrFavTasks[fav].Link + '\', '+arrFavTasks[fav].Id+');" data-target="#MyFavEdit">Edit</a></li>';
 	        TaskHTML += '<li><a href="Javascript:void(0);" onclick="RemoveFav('+arrFavTasks[fav].Id+');">Remove</a></li></ul></div></div></div>';
         }
@@ -1324,7 +1324,7 @@ function filterMyFavorate(Category){
 	        TaskHTML += '<div class="my-favourites-panel-head-text"><div class="my-favourites-panel-head-text1" style="color:blue;">'+arrFavTasks[fav].Name+'</div>';
 	        TaskHTML += '<div class="my-favourites-panel-head-text2">'+arrFavTasks[fav].Category+'</div></div></div></a><div class="dropdown my-favourites-panel-head-right">';
 	        TaskHTML += '<button class="px-0 dropdown-toggle button-ed-menu my-favourites-panel-head-icon-button" type="button" data-toggle="dropdown" aria-expanded="false">';
-	        TaskHTML += '<img src="../SiteAssets/MyFavorite/Images/my-fav-menu-vertical.png" alt="menu vertical"></button><ul class="dropdown-menu dropdown-menu-right">';
+	        TaskHTML += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@tree/main/SiteAssets/MyFavorite/Images/my-fav-menu-vertical.png" alt="menu vertical"></button><ul class="dropdown-menu dropdown-menu-right">';
 	        TaskHTML += '<li><a data-toggle="modal" href="Javascript:void(0);" onclick="EditFavTask(\'' + arrFavTasks[fav].Category + '\',\'' + arrFavTasks[fav].Name + '\',\'' + arrFavTasks[fav].Link + '\', '+arrFavTasks[fav].Id+');" data-target="#MyFavEdit">Edit</a></li>';
 	        TaskHTML += '<li><a href="Javascript:void(0);" onclick="RemoveFav('+arrFavTasks[fav].Id+');">Remove</a></li></ul></div></div></div>';
         }

@@ -1,4 +1,4 @@
-﻿//TASK IS TO LOAD DASHBOARD AS PER RIGHT ASSIGNMENT FOR THE USERS
+//TASK IS TO LOAD DASHBOARD AS PER RIGHT ASSIGNMENT FOR THE USERS
 var sorterSharedWithMe;
 var ViewThoughts = function () {
 	this.Mode;					// Add, Update, View

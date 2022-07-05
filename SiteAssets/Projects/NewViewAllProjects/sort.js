@@ -1,4 +1,4 @@
-﻿function sort_name()
+function sort_name()
 {
 	 var table=$('#tableTempProjects');
 	 var tbody =$('#mainDivAreaOffice365');

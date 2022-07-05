@@ -1,4 +1,4 @@
-﻿/*
+/*
  tableExport.jquery.plugin
 
  Version 1.10.16

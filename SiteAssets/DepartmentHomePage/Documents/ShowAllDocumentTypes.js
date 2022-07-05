@@ -1,4 +1,4 @@
-﻿ var g_DepartmentUrl='';
+ var g_DepartmentUrl='';
  var documentCategoryCounter = 0;
  var departmentID = "";
  var arrDepartmentItems=[];

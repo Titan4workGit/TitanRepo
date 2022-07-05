@@ -1,4 +1,4 @@
-﻿.required:after {
+.required:after {
     content:" *";
     color: red;
     font-weight: 800;

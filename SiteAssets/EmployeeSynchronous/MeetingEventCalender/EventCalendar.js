@@ -1,4 +1,4 @@
-﻿var ele = [];
+var ele = [];
 var globalEventId = 0;
 var IsEventsAdmin = false;
 var userid = _spPageContextInfo.userId; //Check Login User

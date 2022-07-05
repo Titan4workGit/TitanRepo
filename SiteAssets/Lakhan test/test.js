@@ -1,4 +1,4 @@
-﻿$(document).ready(function (){
+$(document).ready(function (){
 	  var myVar = $("#btnSubmit").find('.panel-heading-bg-txt-clr').val();
 	  //alert(myVar);
 

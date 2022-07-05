@@ -1,4 +1,4 @@
-﻿// in reality we should put this inside our own namespace, but this is just a sample.
+// in reality we should put this inside our own namespace, but this is just a sample.
 var context;
 var web;
 var user;

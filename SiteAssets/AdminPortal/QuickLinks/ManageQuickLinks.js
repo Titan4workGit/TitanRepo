@@ -1,4 +1,4 @@
-﻿// JavaScript source code
+// JavaScript source code
 //TASK IS TO LOAD DASHBOARD AS PER RIGHT ASSIGNMENT FOR THE USERS
 
 
