@@ -22,7 +22,7 @@ body {
 }
 @font-face {
     font-family: BasierSquare-Regular;
-    src: url('../fonts/BasierSquare-Regular.woff'); 
+    src: url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/fonts/BasierSquare-Regular.woff'); 
 }
 
 ol, ul {
