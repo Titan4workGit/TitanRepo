@@ -1148,7 +1148,7 @@ function BindNonActiveUsers(App){
                 return (obj.User === DiffUsr[i]);					    	
             });
             /*		if(filteredValue.length > 0){		
-            // 			tblBodyData += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/WebAnalytics/assets/images/user_pic.jpg"><div class="analytical-user-image-text"><p class="mb0">'+uniqueUsers[i].User+'</p><p class="mb0">'+uniqueUsers[i].Designation+','+uniqueUsers[i].Department+'</p></div></div></td></tr>'							 			
+            // 			tblBodyData += '<tr class="text-left"><td class="text-left"><div class="analytical-user-image-box"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/WebAnalytics/assets/images/user_pic.jpg"><div class="analytical-user-image-text"><p class="mb0">'+uniqueUsers[i].User+'</p><p class="mb0">'+uniqueUsers[i].Designation+','+uniqueUsers[i].Department+'</p></div></div></td></tr>'							 			
                     } */
             if(filteredUserWebDetails.length > 0){
                 if(filteredUserWebDetails[0].Designation == null){

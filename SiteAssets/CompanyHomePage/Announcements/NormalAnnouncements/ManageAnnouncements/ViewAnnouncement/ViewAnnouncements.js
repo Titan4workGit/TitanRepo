@@ -185,7 +185,7 @@ function bindSearchFiles(Announecemnts) {
             var editItem = "../Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + Announecemnts[i].Id + "&Mode=Update&Type=" + Announecemnts[i].Announcement_Type + "";
             if (Announecemnts[i].Author.EMail == _spPageContextInfo.userEmail) {
                 AlertAnnouncment += '<div class="dropdown custom-card-menu"><button class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">';
-                AlertAnnouncment += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
+                AlertAnnouncment += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
                 AlertAnnouncment += '<ul class="dropdown-menu dropdown-menu-right">';
                 AlertAnnouncment += '<li><a href="' + editItem + '">Edit</a></li>';
                 AlertAnnouncment += '<li><a href="javascript:void(0);" onclick="DeleteAnnouncement(\'' + Announecemnts[i].Id + '\', \'' + Announecemnts[i].ApprovalStatus + '\')">Delete</a></li></ul></div>';
@@ -305,7 +305,7 @@ function getAlertAnnouncments(Action) {
                 var editItem = "../Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + Announecemnts[i].Id + "&Mode=Update&Type=" + Announecemnts[i].Announcement_Type + "";
                 if (Announecemnts[i].Author.EMail == _spPageContextInfo.userEmail) {
                     AlertAnnouncment += '<div class="dropdown custom-card-menu"><button class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">';
-                    AlertAnnouncment += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
+                    AlertAnnouncment += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
                     AlertAnnouncment += '<ul class="dropdown-menu dropdown-menu-right">';
                     AlertAnnouncment += '<li><a href="' + editItem + '">Edit</a></li>';
                     AlertAnnouncment += '<li><a href="javascript:void(0);" onclick="DeleteAnnouncement(\'' + Announecemnts[i].Id + '\', \'' + Announecemnts[i].ApprovalStatus + '\')">Delete</a></li></ul></div>';
@@ -502,7 +502,7 @@ function filterAlertAnnouncment(Action) {
                     var editItem = "../Pages/Announcements.aspx?WebAppId=" + Logged_CompanyId + "&ItemId=" + Announecemnts[i].Id + "&Mode=Update&Type=" + Announecemnts[i].Announcement_Type + "";
                     if (Announecemnts[i].Author.EMail == _spPageContextInfo.userEmail) {
                         AlertAnnouncment += '<div class="dropdown custom-card-menu"><button class="px-0 dropdown-toggle button-ed-menu" type="button" data-toggle="dropdown" aria-expanded="false">';
-                        AlertAnnouncment += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
+                        AlertAnnouncment += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/more-horiz.png"></button>';
                         AlertAnnouncment += '<ul class="dropdown-menu dropdown-menu-right">';
                         AlertAnnouncment += '<li><a href="' + editItem + '">Edit</a></li>';
                         AlertAnnouncment += '<li><a href="javascript:void(0);" onclick="DeleteAnnouncement(\'' + Announecemnts[i].Id + '\', \'' + Announecemnts[i].ApprovalStatus + '\')">Delete</a></li></ul></div>';

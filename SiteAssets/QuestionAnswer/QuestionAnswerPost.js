@@ -251,12 +251,12 @@ function GetEmployeeImg(EmpID,type)
            		}
            		else
            		{
-           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            		}
            	}
            	else
            	{
-           		employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           		employeePicURL = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            	}
 		}, 
         error: function (data)
@@ -441,12 +441,12 @@ function GetPostEmpPicURL (EmpID)
            	}
           	else
            	{
-           		PostEmpPicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           		PostEmpPicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            	}
 		}
         else
         {
-           	PostEmpPicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           	PostEmpPicURL = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
         }           
 	}, 
     error: function (data)
@@ -1565,12 +1565,12 @@ function GetImage()
            		}
            		else
            		{
-           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           			employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            		}
            	}
            	else
            	{
-           	  employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
+           	  employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/QuestionAnswer/images/user_pic.jpg";
            	}
 		}, 
         error: function (data)

@@ -548,7 +548,7 @@ function GetCompanyEmployees(paraMeterID) {
                     employeePicURL = items[i].AttachmentFiles.results[0].ServerRelativeUrl;
                 }
                 else {
-                    employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                    employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                 }
 
                 $('#profile-image1').prop('src', employeePicURL);
@@ -963,12 +963,12 @@ function GetEmployeeImg(EmpID,emptype) {
                 else {
                     if(emptype == "Internal Users")
                     {
-                        employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].LogonName.EMail)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";					
+                        employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].LogonName.EMail)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";					
                     }
                     else
                     {
-                        //employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
-                        employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        //employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].Email)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        employeePicURL = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                     }
                 }
                 $('#profile-image1').prop('src', employeePicURL);
@@ -1301,7 +1301,7 @@ function SetVisibility(text)
 {
     if(text == 'External Users')
     {
-        $('#profile-image1').attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg");
+        $('#profile-image1').attr("src","https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg");
         $("#InternalUsersDiv").css("display", "none");
         $("#ExternalUsersDiv").css("display", "block");
         $("#imguploadDIV").css("display", "block");
@@ -1316,7 +1316,7 @@ function SetVisibility(text)
     }
     else
     {
-        $('#profile-image1').attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg");
+        $('#profile-image1').attr("src","https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg");
         $("#ExternalUsersDiv").css("display", "none");
         $("#imguploadDIV").css("display", "none");
         $("#InternalUsersDiv").css("display", "block");
@@ -1865,7 +1865,7 @@ function GetEmployeeDTL(EmpID) {
             }
             else
             {
-            	EmpProfileImage = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+            	EmpProfileImage = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
             }
 			$('#EmpProfileImage').prop('src', EmpProfileImage);//profile-image1
 			$('#profile-image1').prop('src', EmpProfileImage);//profile-image1

@@ -30,16 +30,16 @@ function DisplayBannerss() {
                 {
                     if (IsUserLikedPost() == true) 
                     {
-                        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png")
+                        $('#like-Img-color').attr('src', "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/Experience/assets/images/like-icon-fill.png")
                     }
                     else
                     {
-                        $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png")
+                        $('#like-Img-color').attr('src', "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png")
                     }
                 }
                 else
                 {
-                    $('#like-Img-color').attr('src', "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png")
+                    $('#like-Img-color').attr('src', "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/Experience/assets/images/like-icon.png")
                 }
                 $("#TotalHits").text(results[0].ViewCount ? results[0].ViewCount : "0");
                 $("#TotalLikes").text(results[0].LikeCount ? results[0].LikeCount : "0");
@@ -70,11 +70,11 @@ function DisplayBannerss() {
                                     $('#UserProfile').attr("src", UserInfoDtl[0].AttachmentFiles.results[0].ServerRelativeUrl);
                                 }
                                 else {
-                                    $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                                    $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                                 }
                             }
                             else {
-                                $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                                $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
 
                             }
                         }
@@ -90,11 +90,11 @@ function DisplayBannerss() {
                                 $('#UserProfile').attr("src", results[0].AttachmentFiles.results[0].ServerRelativeUrl);
                             }
                             else {
-                                $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                                $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                             }
                         }
                         else {
-                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                         }
                     }
                 }
@@ -188,13 +188,13 @@ function DisplayBannerss() {
                                 $('#UserProfile').attr("src", postbyimg);
                             }
                             else {
-                                $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                                $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                             }
 
                         }
                         else {
-                            //postbyimg = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/user_pic.jpg";
-                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                            //postbyimg = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/user_pic.jpg";
+                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
 
                         }
 
@@ -212,7 +212,7 @@ function DisplayBannerss() {
                             $('#UserProfile').attr("src", results[0].ImageUrl);
                         }
                         else {
-                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                         }
                     }
                 }
@@ -249,12 +249,12 @@ function DisplayBannerss() {
                             		$('#UserProfile').attr("src", UserInfoDtl[0].AttachmentFiles.results[0].ServerRelativeUrl);
 		                        }
 		                        else {
-		                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+		                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
 		                        }
 							}
                         }
                         else {
-                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                         }
                     }
                     else {
@@ -262,7 +262,7 @@ function DisplayBannerss() {
                             $('#UserProfile').attr("src", UserInfoDtl[0].AttachmentFiles.results[0].ServerRelativeUrl);
                         }
                         else {
-                            $('#UserProfile').attr("src", 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
+                            $('#UserProfile').attr("src", 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg');
                         }
                     }
                 }
