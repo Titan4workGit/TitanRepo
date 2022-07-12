@@ -61,7 +61,7 @@ function ApplicationLink()
 			}
 			else
 			{
-				$('#H_learning').append('<div class="item active Null-Case-learning"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/ImageGallery/Default_Learning.png" alt="" class="LearningNull"></div>');
+				$('#H_learning').append('<div class="item active Null-Case-learning"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/Default_Learning.png" alt="" class="LearningNull"></div>');
 			
 			}	
 			

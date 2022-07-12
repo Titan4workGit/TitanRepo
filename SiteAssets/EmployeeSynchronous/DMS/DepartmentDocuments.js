@@ -994,7 +994,7 @@ function bindDocument(items,siteURL){
 															"</div>"+
 															"<div class='acknowledge-btns-box'>"+
 																"<a type='button' style='"+DispAckBtn+"' class='btn acknowledge-btn' data-toggle='modal' name="+items[i].File.ServerRelativeUrl+" data-target='#details-modal' onclick='AcknowledgeDoc(this,\""+PassingVal+"\", \"" + NewPassingVal + "\", \"" + AcknowledgeId + "\",\"" + likeId+ "\")'>Acknowledge</a>"+
-																"<a type='button' style='"+DownloadDocBtn+"' href='"+items[i].File.ServerRelativeUrl+"' target='_blank' class='btn acknowledge-btn' ><img class='detail-view-icon-info mr2' src='https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/download.png' alt='download'><span>Download</span></a>"+
+																"<a type='button' style='"+DownloadDocBtn+"' href='"+items[i].File.ServerRelativeUrl+"' target='_blank' class='btn acknowledge-btn' ><img class='detail-view-icon-info mr2' src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/download.png' alt='download'><span>Download</span></a>"+
 															"</div>"+	
 												        "</div>"+
 												"</td>"+
@@ -1014,15 +1014,15 @@ function bindDocument(items,siteURL){
 													"<div class='d-flex experiences-inner-card-btn-panel'>"+
 														"<ul class='experiences-inner-card-btn-item'>"+
 												        	"<li class='experiences-inner-card-btn-panel-icon'>"+
-																"<img src='https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/checkmark.png'>"+
+																"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/checkmark.png'>"+
 															"</li>"+
 															"<li class='experiences-inner-card-btn-panel-count' onclick='' id='"+AcknowledgeId+"'>"+FilteredRecAcknowledgeCount+"</li>"+
 												        	"<li class='experiences-inner-card-btn-panel-icon'>"+
-																"<img src='https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/visibility-icon.png'>"+
+																"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/visibility-icon.png'>"+
 															"</li>"+
 															"<li class='experiences-inner-card-btn-panel-count'>"+FilteredRecViewCount+"</li>"+
 															"<li class='experiences-inner-card-btn-panel-icon'>"+
-																"<img src='https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/like-icon.png'>"+
+																"<img src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/like-icon.png'>"+
 															"</li>"+
 															"<li class='experiences-inner-card-btn-panel-count' id='"+likeId+"'>"+FilteredRecLikeCount+"</li>"+
 														"</ul>"+
@@ -1091,7 +1091,7 @@ function ListofActiveusers(PassingValue)
 		var HtmlDesign='';
 		for(var i=0; i<ActionBy.length; i++)
 		{
-			var UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + ActionBy[i].Author.EMail//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+			var UserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + ActionBy[i].Author.EMail//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
 			HtmlDesign = HtmlDesign + 	"<li>"+
 											"<a href='#'>"+
 												"<img src='"+UserImage+"'>"+
@@ -1414,31 +1414,31 @@ function getCheckedOutBy() {
 
 function GetFileExtensionImage(tempval)
 {
-	res = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/file.png';
+	res = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/file.png';
 	switch(tempval)
 	{
-		case 'docx':	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/doc.png'; break;
-	    case 'pdf': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/pdf.png'; break;
-	 	case 'xlsx':	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/xls.png'; break;
-	 	case 'xls': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/xls.png'; break;
-	 	case 'doc': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/doc.png'; break;	 	
-	 	case 'html': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/html.png'; break;	 	
-	 	case 'js': 		tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/javascript.png'; break;	 	
-	 	case 'jpg': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/jpg.png'; break;	 	
-	 	case 'ppt': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/ppt.png'; break;	 	
-	 	case 'png': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/png.png'; break;	 	 	
-	 	case 'mp3': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/mp3.png'; break;
-	 	case 'mp4': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/mp4.png'; break;
-	 	case 'avi': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/avi.png'; break;
-	 	case 'csv': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/csv.png'; break;
-	 	case 'wmv': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/wmv.png'; break;
-	 	case 'jpeg':	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/jpeg.png'; break;
-	 	case 'bmp': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/bmp.png'; break;
-	 	case 'gif': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/gif.png'; break;
-	 	case 'txt': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/txt.png'; break;
-	 	case 'zip': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/zip.png'; break;
-	 	case 'css': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/css.png'; break;
-	 	case 'ppt': 	tempval  = 'https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/ContactCenter/assets/ExtensionImages/ppt.png'; break;
+		case 'docx':	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/doc.png'; break;
+	    case 'pdf': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/pdf.png'; break;
+	 	case 'xlsx':	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/xls.png'; break;
+	 	case 'xls': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/xls.png'; break;
+	 	case 'doc': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/doc.png'; break;	 	
+	 	case 'html': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/html.png'; break;	 	
+	 	case 'js': 		tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/javascript.png'; break;	 	
+	 	case 'jpg': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/jpg.png'; break;	 	
+	 	case 'ppt': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/ppt.png'; break;	 	
+	 	case 'png': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/png.png'; break;	 	 	
+	 	case 'mp3': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/mp3.png'; break;
+	 	case 'mp4': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/mp4.png'; break;
+	 	case 'avi': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/avi.png'; break;
+	 	case 'csv': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/csv.png'; break;
+	 	case 'wmv': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/wmv.png'; break;
+	 	case 'jpeg':	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/jpeg.png'; break;
+	 	case 'bmp': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/bmp.png'; break;
+	 	case 'gif': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/gif.png'; break;
+	 	case 'txt': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/txt.png'; break;
+	 	case 'zip': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/zip.png'; break;
+	 	case 'css': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/css.png'; break;
+	 	case 'ppt': 	tempval  = 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ContactCenter/assets/ExtensionImages/ppt.png'; break;
 	 	//case '': tempval  = 'B+'; break;	 	 	
  	};
  	return tempval;

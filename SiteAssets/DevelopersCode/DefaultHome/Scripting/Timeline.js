@@ -567,15 +567,15 @@ function GetEmployeeImg(EmpID, emptype) {
                     }
                     else {
                     	if(items[0].Email != null && items[0].Email != "null" && items[0].Email != ""){
-                        	employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        	employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                     	}
                     	else {
-                    		employeePicURL = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                    		employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                     	}
                     }
                 }
                 else {
-                    employeePicURL = "https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                    employeePicURL = "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                 }
             }
             else {
@@ -840,14 +840,14 @@ function GetdatainModel(id) {
                 	$("#_ModelHeading").removeClass("panel-heading-bg-txt-clr");
                 	$("#_ModelHeading").removeAttr("style");
                 	$("#_ModelHeading").addClass("common-head-text-popup-Alert");
-                	$("#NoticeBgImage").attr("src","https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/DevelopersCode/DefaultHome/images/alert-popup.png");
+                	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/images/alert-popup.png");
                 	$('#annReadMore').attr('style', 'background: #f00 !important');
                 }
                 else {
                 	$("#_ModelHeading").removeClass("common-head-text-popup-Alert");
                 	$("#_ModelHeading").addClass("common-head-text-popup");
                 	$("#_ModelHeading").addClass("panel-heading-bg-txt-clr");
-                	$("#NoticeBgImage").attr("src","https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png");
+                	$("#NoticeBgImage").attr("src","https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png");
                 	$('#annReadMore').attr('style', 'background: #ff9e20 !important');
                 }
 
@@ -994,8 +994,8 @@ function GetDocuments(filename, webpartname) {
                 }
                 else {
                     for (k = 0; k < 2; k++) {
-                        if (k == 0) { $('#1stImg').append('<div class="item active"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage' + k + '"  alt=""></div>'); }
-                        else { $('#1stImg').append('<div class="item"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/images/i2.jpg" id="sliderImage' + k + '"  alt=""></div>'); }
+                        if (k == 0) { $('#1stImg').append('<div class="item active"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage' + k + '"  alt=""></div>'); }
+                        else { $('#1stImg').append('<div class="item"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/images/i2.jpg" id="sliderImage' + k + '"  alt=""></div>'); }
                     }
                     $("#carousel-example-generic").hide();
                 }
@@ -1012,8 +1012,8 @@ function GetDocuments(filename, webpartname) {
                 }
                 else {
                     for (k = 0; k < 2; k++) {
-                        if (k == 0) { $('#1stImg').append('<div class="item active"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage' + k + '"  alt=""></div>'); }
-                        else { $('#1stImg').append('<div class="item"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/Biography/images/i2.jpg" id="sliderImage' + k + '"  alt=""></div>'); }
+                        if (k == 0) { $('#1stImg').append('<div class="item active"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/images/i1.jpeg" id="sliderImage' + k + '"  alt=""></div>'); }
+                        else { $('#1stImg').append('<div class="item"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/images/i2.jpg" id="sliderImage' + k + '"  alt=""></div>'); }
                     }
                     $("#carousel-example-generic").hide();
                 }
@@ -1068,7 +1068,7 @@ function GetEmployeeImages(EmpID) {
                         LoginUserImage = items[0].AttachmentFiles.results[0].ServerRelativeUrl;
                     }
                     else {
-                        LoginUserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        LoginUserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                     }
                     $('#LoginUserImage').attr("src", LoginUserImage);
                 }
@@ -1077,7 +1077,7 @@ function GetEmployeeImages(EmpID) {
                         CommentUserImage = items[0].AttachmentFiles.results[0].ServerRelativeUrl;
                     }
                     else {
-                        CommentUserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
+                        CommentUserImage = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[0].Email)//"https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg";
                     }
                 }
             }

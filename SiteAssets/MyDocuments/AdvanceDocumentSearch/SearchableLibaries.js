@@ -932,7 +932,7 @@ function PermissionsControl(data) {
             '<div class="col-md-4">' +
             '<div class="control_img">' +
             '<h3>' + data.RoleAssignments.results[i].RoleDefinitionBindings.results[0].Name + '</h3>' +
-            '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Acsesscontrol + '.png" alt="">' +
+            '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/' + Acsesscontrol + '.png" alt="">' +
             '</div>' +
             '</div>' +
 
@@ -2008,7 +2008,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds) {
         TypeValue = "userselection";
         ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -2026,7 +2026,7 @@ function AddMoreStep(EmpEmail, DisplayNames, EmpIds) {
         TypeValue = "outsidesetion";
         ApprovalStep += '<li class="StepClass removeDiv NewStep' + StepCount + '">';
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + $("#OutsiderName").val() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -2077,7 +2077,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         }
 
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + EmpEmail.toString() + '</span><span id="EmpIdStep' + StepCount + '">' + EmpIds.toString() + '</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -2094,7 +2094,7 @@ function EditAddedStep(EmpEmail, DisplayNames, EmpIds) {
         ValidCount++;
         TypeValue = "outsidesetion";
         ApprovalStep += '<div style="display:none;"><span id="EmailStep' + StepCount + '">' + $("#OutsiderEmail").val() + '</span><span id="EmpIdStep' + StepCount + '">NA</span><span id="NameStep' + StepCount + '">' + DisplayNames.toString() + '</span><span id="StepName' + StepCount + '">' + StepName + '</span><span id="TypeStep' + StepCount + '">' + TypeValue + '</span></div>';
-        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
+        ApprovalStep += '<div class="dropdown"><button class="dropdown-toggle" type="button" data-toggle="dropdown"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt="">';
         ApprovalStep += '</button><ul class="dropdown-menu pull-right"><li onclick="EditStep(' + StepCount + ');"><a href="javascript:void(0);" data-toggle="modal" data-target="#addsuccessor"><i class="fa fa-edit" aria-hidden="true"></i> Edit</a></li>';
         ApprovalStep += '<li class="DeleteStep" id="btnDeleteStep' + StepCount + '" onclick="DeleteSeletedStep(' + StepCount + ');"><a href="javascript:void(0);"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a></li></ul></div>';
         ApprovalStep += '<div class="approvelheadeing"><h3 class="mainheading" id="txtStep' + StepCount + 'Name">' + StepName + '</h3></div><div class="row">';
@@ -2395,7 +2395,7 @@ function BindApprovalHistory() {
         currentSigningApp = valuesArray[0].SigningApp;
         currentRequestId = valuesArray[0].Id;
         attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(valuesArray[0].Author.EMail);
-        AppHistory += '<li><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-1.png" alt=""></span>';
+        AppHistory += '<li><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-1.png" alt=""></span>';
         AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">Approval Initiation</h3><h3 class="SignType">Signing Type: ' + valuesArray[0].SigningApp + '</h3><span class="date-sec">' + moment(valuesArray[0].Created).format('DD-MMM-YYYY hh:mm A') + '</span><p class="StanderedTimeZone"> ' + (valuesArray[0].ActionByTimeZone ? valuesArray[0].ActionByTimeZone : "") + '</p></div>';
         AppHistory += '<p class="waitsec initialize">Initiated</p><div class="row"><div class="col-sm-6 flexitem"><div class="imgsetion">';
         AppHistory += '<img src="' + attachment + '" alt=""></div><div class="imagecontent">';
@@ -2409,9 +2409,9 @@ function BindApprovalHistory() {
         arrayCopy = valuesArray.filter(function (f) { return f; });
         for (var step = 0; step < valuesArray.length; step++) {
             if (valuesArray[step].Status == "Started") {
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-3.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle" type="button" style="display:' + Visibility + '" data-toggle="dropdown">';
-                AppHistory += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li style="display:none;"><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -2440,9 +2440,9 @@ function BindApprovalHistory() {
             }
             else if (valuesArray[step].Status == "Pending") {
                 arrayCopy = valuesArray.filter(function (f) { return f; });
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle"  style="display:' + Visibility + '" type="button" data-toggle="dropdown">';
-                AppHistory += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li style="display:none;"><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -2471,9 +2471,9 @@ function BindApprovalHistory() {
 
             else if (valuesArray[step].Status == "Not Started") {
                 arrayCopy = valuesArray.filter(function (f) { return f; });
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-2.png" alt=""></span>';
                 AppHistory += '<div class="dropdown"><button class="dropdown-toggle"  style="display:' + Visibility + '" type="button" data-toggle="dropdown">';
-                AppHistory += '<img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
+                AppHistory += '<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/dotting.png" alt=""></button><ul class="dropdown-menu pull-right">';
                 AppHistory += '<li><a href="javascript:void(0);" onclick="OpenNotifyPopup(' + step + ', ' + valuesArray[step].Id + ');"><i class="fa fa-envelope-o" aria-hidden="true"></i> Send Notification';
                 AppHistory += '</a></li><li><a href="javascript:void(0);" onclick="DeleteStep(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove this Step</a></li><li>';
                 AppHistory += '<a href="javascript:void(0);" onclick="OpenSuccessorModal(' + step + ', \'' + valuesArray[step].Sequence_No.toString() + '\');"><i class="fa fa-plus" aria-hidden="true"></i> Add a successor step</a></li>';
@@ -2514,7 +2514,7 @@ function BindApprovalHistory() {
                         }
                     }
                 }
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-4.png" alt=""></span>';
                 AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">' + valuesArray[step].StepName + '</h3><span class="date-sec">' + moment(valuesArray[step].Modified).format('DD-MMM-YYYY hh:mm A') + '<p> ' + (valuesArray[step].ActionByTimeZone ? valuesArray[step].ActionByTimeZone : "") + '</p></span>';
                 AppHistory += '</div><p class="waitsec completed" style="color:#4e9a06">Approved by e-Signed</p><div class="row"><div class="col-sm-6 flexitem">';
                 if (valuesArray[step].ApproverType == "User") {
@@ -2542,7 +2542,7 @@ function BindApprovalHistory() {
                     SignLinkHTML += '<span class="chip-icon-box"><a href="' + valuesArray[step].AttachmentFiles.results[0].ServerRelativeUrl + '" name="' + valuesArray[step].AttachmentFiles.results[0].ServerRelativeUrl + '" download>';
                     SignLinkHTML += '<i class="fa fa-download cursor-pointer px-4" aria-hidden="true"></i></a></span></div>';
                 }
-                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://github.com/Titan4workGit/TitanRepo/tree/main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt=""></span>';
+                AppHistory += '<li id="DocQueue' + valuesArray[step].Sequence_No + '"><span class="iconbox"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/time-icon-5.png" alt=""></span>';
                 AppHistory += '<div class="approvelheadeing"><h3 class="mainheading">' + valuesArray[step].StepName + '</h3><span class="date-sec">' + moment(valuesArray[step].Modified).format('DD-MMM-YYYY hh:mm A') + '<p> ' + (valuesArray[step].ActionByTimeZone ? valuesArray[step].ActionByTimeZone : "") + '</p></span>';
                 AppHistory += '</div><p class="waitsec completed" style="color:red">Rejected by e-Signed</p>' + SignLinkHTML + '<div class="row"><div class="col-sm-6 flexitem">';
                 if (valuesArray[step].ApproverType == "User") {
