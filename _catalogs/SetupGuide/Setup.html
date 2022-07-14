@@ -3438,7 +3438,7 @@ function setupComplete()
 		 
         //Set completion
         $.ajax({
-                                              url: "https://titandeployfunctions.azurewebsites.net/api/FinalSetup",                    
+                                              url: "https://titandeployfunctions.azurewebsites.net/api/FinalSetupOnline",                    
                                               crossDomain: true,
                                               method:'POST',
                                               //async: false,
@@ -3840,7 +3840,7 @@ siteurl=_spPageContextInfo.webAbsoluteUrl;
                                                 $("#TitanBodyMsg").show();    
                                                 $("#TitanBodySettings").hide();    
 
-												install();										
+												installSettings();										
                                                 
                                               },
                                               finally: function(){
