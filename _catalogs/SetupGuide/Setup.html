@@ -619,7 +619,7 @@ $( document ).ready(function() {
 							}
 							
 						}catch{}
-						if(setupstr=="")
+						if(setupstr=="" || setupstr==null)
 						{
 							let userName = urlParams.get('usr');
 							$("#txtUserName").val(userName);
@@ -3126,7 +3126,7 @@ function checkcompanysettings()
 													  
 													  $("#TitanBodyMsg").show(); 
 													 $("#TitanBodySettings").show();
-													  $("#lblMsg").text("Error Uploading Department Subsite Lists. Trying again.");
+													 //$("#lblMsg").text("Error Uploading Department Subsite Lists. Trying again.");
 													  
 													  
 													  $.ajax({
