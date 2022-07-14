@@ -1,0 +1,4153 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Document Management System, Modern Digital workplace,  readymade Intranet, Office365 productivity,SharePoint Intranet">
+    <title>Document Management System | Microsoft Teams Intranet | Organization Chart in microsoft teams | Project Management Office 365</title>
+	<meta property='og:title' content='Document Management System | Microsoft Teams Intranet | Organization Chart in microsoft teams | Project Management Office 365'/>
+	<meta name="description" content="Improve your Document Management System, Project Management & Organization Charts with Microsoft Teams Intranet Software by SharePoint & Office 365.">
+	<meta property='og:description' content='Improve your Document Management System, Project Management & Organization Charts with Microsoft Teams Intranet Software by SharePoint & Office 365.'/>
+	<link rel="SHORTCUT ICON" href="assets/images/Titan.ICO"/>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+#contentRow {
+    font-family: Poppins;
+    color: #484848;
+    background: url("https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/page-bg.jpg") no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: Poppins;
+    src:
+   
+		url("https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Poppins-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+.overflow-hidden {
+    overflow:hidden;    
+}
+
+.home-logo-box {
+    max-width: 450px;
+    margin: 0 auto;
+}
+.home-logo-box img {
+    height: 100%;
+    width: 100%;
+}
+.home-body-title {
+    font-size: 32px;
+    margin: 0;
+}
+.home-body-title2 {
+    font-size: 22px;
+    margin: 0;
+}
+.home-body-sub-title {
+    font-size: 18px;
+}
+
+.custom-btn, .custom-btn:focus {
+    background-color: #548dcb;
+    border-color: #548dcb;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover {
+    color: #548dcb;
+    background-color: #fff;
+    border-color: #548dcb;
+}
+.enter-url-panel-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.enter-url-panel-box .form-group {
+    max-width: 250px;
+    width: 100%;
+}
+.page-loader-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+/*Common CSS*/
+	/*Padding Classes*/
+		.p0{padding:0 !important;}
+        .p5{padding:5px !important;}
+        .p10{padding:10px !important;}
+        .p20{padding:20px !important;}
+        .p12{padding:12px !important;}
+		.pt0{padding-top: 0;}
+		.pt5{padding-top: 5px !important;}
+		.pt10{padding-top: 10px !important;}
+		.pt15{padding-top: 15px !important;}
+		.pt20{padding-top: 20px !important;}
+		.pt25{padding-top: 25px !important;}
+		.pt30{padding-top: 30px !important;}
+		.pt35{padding-top: 35px !important;}
+		.pt40{padding-top: 40px !important;}
+
+		.pb0{padding-bottom: 0 !important;}
+		.pb3{padding-bottom: 3px !important;}
+		.pb5{padding-bottom: 5px !important;}
+		.pb10{padding-bottom: 10px !important;}
+		.pb15{padding-bottom: 15px !important;}
+		.pb20{padding-bottom: 20px !important;}
+		.pb25{padding-bottom: 25px !important;}
+		.pb30{padding-bottom: 30px !important;}
+		.pb35{padding-bottom: 35px !important;}
+		.pb40{padding-bottom: 40px !important;}
+
+		.pl0{padding-left: 0;}
+		.pl5{padding-left: 5px !important;}
+		.pl10{padding-left: 10px !important;}
+		.pl15{padding-left: 15px !important;}
+		.pl20{padding-left: 20px !important;}
+		.pl25{padding-left: 25px !important;}
+		.pl30{padding-left: 30px !important;}
+
+		.pr0{padding-right: 0;}
+		.pr3{padding-right: 3px !important;}
+		.pr5{padding-right: 5px !important;}
+		.pr10{padding-right: 10px !important;}
+		.pr15{padding-right: 15px !important;}
+		.pr20{padding-right: 20px !important;}
+		.pr25{padding-right: 25px !important;}
+		.pr30{padding-right: 30px !important;}
+		/*For Ipad Pro*/
+			@media(max-width: 1024px){
+				.ip0{padding:0 !important;}
+				.ipt0{padding-top: 0px !important;}
+				.ipt5{padding-top: 5px !important;}
+				.ipt10{padding-top: 10px !important;}
+				.ipt15{padding-top: 15px !important;}
+				.ipt20{padding-top: 20px !important;}
+				.ipt25{padding-top: 25px !important;}
+				.ipt30{padding-top: 30px !important;}
+
+				.ipb0{padding-bottom: 0px !important;}
+				.ipb5{padding-bottom: 5px !important;}
+				.ipb10{padding-bottom: 10px !important;}
+				.ipb15{padding-bottom: 15px !important;}
+				.ipb20{padding-bottom: 20px !important;}
+				.ipb25{padding-bottom: 25px !important;}
+				.ipb30{padding-bottom: 30px !important;}
+
+				.ipl0{padding-left: 0px !important;}
+				.ipl5{padding-left: 5px !important;}
+				.ipl10{padding-left: 10px !important;}
+				.ipl15{padding-left: 15px !important;}
+				.ipl20{padding-left: 20px !important;}
+				.ipl25{padding-left: 25px !important;}
+				.ipl30{padding-left: 30px !important;}
+
+				.ipr0{padding-right: 0px !important;}
+				.ipr5{padding-right: 5px !important;}
+				.ipr10{padding-right: 10px !important;}
+				.ipr15{padding-right: 15px !important;}
+				.ipr20{padding-right: 20px !important;}
+				.ipr25{padding-right: 25px !important;}
+				.ipr30{padding-right: 30px !important;}
+			}
+		/*For Ipad Pro*/
+		/*For Tablets*/
+			@media(max-width: 768px){
+				.t-pull-left{
+					float: left !important;
+				}
+				.t-pull-right{
+					float: right !important;
+				}
+				.t-pull-none{
+					float: none !important;
+				}
+
+
+				.tp{padding:0 !important;}
+				.tpt0{padding-top: 0px !important;}
+				.tpt5{padding-top: 5px !important;}
+				.tpt10{padding-top: 10px !important;}
+				.tpt15{padding-top: 15px !important;}
+				.tpt20{padding-top: 20px !important;}
+				.tpt25{padding-top: 25px !important;}
+				.tpt30{padding-top: 30px !important;}
+
+				.tpb0{padding-bottom: 0px !important;}
+				.tpb5{padding-bottom: 5px !important;}
+				.tpb10{padding-bottom: 10px !important;}
+				.tpb15{padding-bottom: 15px !important;}
+				.tpb20{padding-bottom: 20px !important;}
+				.tpb25{padding-bottom: 25px !important;}
+				.tpb30{padding-bottom: 30px !important;}
+
+				.tpl0{padding-left: 0px !important;}
+				.tpl5{padding-left: 5px !important;}
+				.tpl10{padding-left: 10px !important;}
+				.tpl15{padding-left: 15px !important;}
+				.tpl20{padding-left: 20px !important;}
+				.tpl25{padding-left: 25px !important;}
+				.tpl30{padding-left: 30px !important;}
+
+				.tpr0{padding-right: 0px !important;}
+				.tpr5{padding-right: 5px !important;}
+				.tpr10{padding-right: 10px !important;}
+				.tpr15{padding-right: 15px !important;}
+				.tpr20{padding-right: 20px !important;}
+				.tpr25{padding-right: 25px !important;}
+				.tpr30{padding-right: 30px !important;}
+			}
+		/*For Tablets*/
+		/*For Mobile*/
+			@media(max-width: 414px){
+				.m-text-left{
+					text-align: left;
+				}
+				.m-text-center{
+					text-align: center;
+				}
+				.m-text-right{
+					text-align: right;
+				}
+				.m-pull-left{
+					float: left !important;
+				}
+				.mp0{padding:0;}
+				.mpt0{padding-top: 0 !important;}
+				.mpt5{padding-top: 5px !important;}
+				.mpt10{padding-top: 10px !important;}
+				.mpt15{padding-top: 15px !important;}
+				.mpt20{padding-top: 20px !important;}
+				.mpt25{padding-top: 25px !important;}
+				.mpt30{padding-top: 30px !important;}
+
+				.mpb0{padding-bottom: 0 !important;}
+				.mpb5{padding-bottom: 5px !important;}
+				.mpb10{padding-bottom: 10px !important;}
+				.mpb15{padding-bottom: 15px !important;}
+				.mpb20{padding-bottom: 20px !important;}
+				.mpb25{padding-bottom: 25px !important;}
+				.mpb30{padding-bottom: 30px !important;}
+
+				.mpl0{padding-left: 0 !important;}
+				.mpl5{padding-left: 5px !important;}
+				.mpl10{padding-left: 10px !important;}
+				.mpl15{padding-left: 15px !important;}
+				.mpl20{padding-left: 20px !important;}
+				.mpl25{padding-left: 25px !important;}
+				.mpl30{padding-left: 30px !important;}
+
+				.mpr0{padding-right: 0 !important;}
+				.mpr5{padding-right: 5px !important;}
+				.mpr10{padding-right: 10px !important;}
+				.mpr15{padding-right: 15px !important;}
+				.mpr20{padding-right: 20px !important;}
+				.mpr25{padding-right: 25px !important;}
+				.mpr30{padding-right: 30px !important;}
+			}
+		/*For Mobile*/
+
+	/*Padding Classes*/
+
+	/*Margin Classes*/
+		.ma0{margin: 0 auto;float: none;}
+		.m0{margin:0 !important;}
+		.mt0{margin-top: 0;}
+		.mt5{margin-top: 5px !important;}
+		.mt10{margin-top: 10px !important;}
+		.mt15{margin-top: 15px !important;}
+		.mt20{margin-top: 20px !important;}
+		.mt25{margin-top: 25px !important;}
+		.mt30{margin-top: 30px !important;}
+
+		.mb0{margin-bottom: 0 !important;}
+		.mb5{margin-bottom: 5px !important;}
+		.mb10{margin-bottom: 10px !important;}
+		.mb15{margin-bottom: 15px !important;}
+		.mb20{margin-bottom: 20px !important;}
+		.mb25{margin-bottom: 25px !important;}
+		.mb30{margin-bottom: 30px !important;}
+
+		.ml0{margin-left: 0 !important;}
+		.ml5{margin-left: 5px !important;}
+		.ml10{margin-left: 10px !important;}
+		.ml15{margin-left: 15px !important;}
+		.ml20{margin-left: 20px !important;}
+		.ml25{margin-left: 25px !important;}
+		.ml30{margin-left: 30px !important;}
+
+		.mr0{margin-right: 0 !important;}
+		.mr5{margin-right: 5px !important;}
+		.mr10{margin-right: 10px !important;}
+		.mr15{margin-right: 15px !important;}
+		.mr20{margin-right: 20px !important;}
+		.mr25{margin-right: 25px !important;}
+		.mr30{margin-right: 30px !important;}
+		/*For Ipad Pro*/
+			@media(max-width: 1024px){
+				.i-pull-left{
+					float:left;
+				}
+				.i-pull-right{
+					float:right;
+				}
+				.i-pull-none{
+					float:none;
+				}
+
+				.i0{margin:0 !important;}
+				.imt0{margin-top: 0px !important;}
+				.imt5{margin-top: 5px !important;}
+				.imt10{margin-top: 10px !important;}
+				.imt15{margin-top: 15px !important;}
+				.imt20{margin-top: 20px !important;}
+				.imt25{margin-top: 25px !important;}
+				.imt30{margin-top: 30px !important;}
+
+				.imb0{margin-bottom: 0px !important;}
+				.imb5{margin-bottom: 5px !important;}
+				.imb10{margin-bottom: 10px !important;}
+				.imb15{margin-bottom: 15px !important;}
+				.imb20{margin-bottom: 20px !important;}
+				.imb25{margin-bottom: 25px !important;}
+				.imb30{margin-bottom: 30px !important;}
+
+				.iml0{margin-left: 0px !important;}
+				.iml5{margin-left: 5px !important;}
+				.iml10{margin-left: 10px !important;}
+				.iml15{margin-left: 15px !important;}
+				.iml20{margin-left: 20px !important;}
+				.iml25{margin-left: 25px !important;}
+				.iml30{margin-left: 30px !important;}
+
+				.imr0{margin-right: 0px !important;}
+				.imr5{margin-right: 5px !important;}
+				.imr10{margin-right: 10px !important;}
+				.imr15{margin-right: 15px !important;}
+				.imr20{margin-right: 20px !important;}
+				.imr25{margin-right: 25px !important;}
+				.imr30{margin-right: 30px !important;}
+			}
+		/*For Ipad Pro*/
+		/*For Tablets*/
+			@media(max-width: 768px){
+				.t-pull-left{
+					float:left !important;
+				}
+				.t-pull-right{
+					float:right !important;
+				}
+				.t-pull-none{
+					float:none !important;
+				}
+
+				.tm0{margin:0 !important;}
+				.tmt0{margin-top: 0 !important;}
+				.tmt5{margin-top: 5px !important;}
+				.tmt10{margin-top: 10px !important;}
+				.tmt15{margin-top: 15px !important;}
+				.tmt20{margin-top: 20px !important;}
+				.tmt25{margin-top: 25px !important;}
+				.tmt30{margin-top: 30px !important;}
+
+				.tmb0{margin-bottom: 0 !important;}
+				.tmb5{margin-bottom: 5px !important;}
+				.tmb10{margin-bottom: 10px !important;}
+				.tmb15{margin-bottom: 15px !important;}
+				.tmb20{margin-bottom: 20px !important;}
+				.tmb25{margin-bottom: 25px !important;}
+				.tmb30{margin-bottom: 30px !important;}
+
+				.tml0{margin-left: 0 !important;}
+				.tml5{margin-left: 5px !important;}
+				.tml10{margin-left: 10px !important;}
+				.tml15{margin-left: 15px !important;}
+				.tml20{margin-left: 20px !important;}
+				.tml25{margin-left: 25px !important;}
+				.tml30{margin-left: 30px !important;}
+
+				.tmr0{margin-right: 0 !important;}
+				.tmr5{margin-right: 5px !important;}
+				.tmr10{margin-right: 10px !important;}
+				.tmr15{margin-right: 15px !important;}
+				.tmr20{margin-right: 20px !important;}
+				.tmr25{margin-right: 25px !important;}
+				.tmr30{margin-right: 30px !important;}
+			}
+		/*For Tablets*/
+		/*For Mobile*/
+			@media(max-width: 414px){
+				.m-pull-left{
+					float:left !important;
+				}
+				.m-pull-right{
+					float:right !important;
+				}
+				.m-pull-none{
+					float:none !important;
+				}
+
+				.mm0{margin:0 !important;}
+				.mmt0{margin-top: 0 !important;}
+				.mmt5{margin-top: 5px !important;}
+				.mmt10{margin-top: 10px !important;}
+				.mmt15{margin-top: 15px !important;}
+				.mmt20{margin-top: 20px !important;}
+				.mmt25{margin-top: 25px !important;}
+				.mmt30{margin-top: 30px !important;}
+
+				.mmb0{margin-bottom: 0 !important;}
+				.mmb5{margin-bottom: 5px !important;}
+				.mmb10{margin-bottom: 10px !important;}
+				.mmb15{margin-bottom: 15px !important;}
+				.mmb20{margin-bottom: 20px !important;}
+				.mmb25{margin-bottom: 25px !important;}
+				.mmb30{margin-bottom: 30px !important;}
+
+				.mml0{margin-left: 0 !important;}
+				.mml5{margin-left: 5px !important;}
+				.mml10{margin-left: 10px !important;}
+				.mml15{margin-left: 15px !important;}
+				.mml20{margin-left: 20px !important;}
+				.mml25{margin-left: 25px !important;}
+				.mml30{margin-left: 30px !important;}
+
+				.mmr0{margin-right: 0 !important;}
+				.mmr5{margin-right: 5px !important;}
+				.mmr10{margin-right: 10px !important;}
+				.mmr15{margin-right: 15px !important;}
+				.mmr20{margin-right: 20px !important;}
+				.mmr25{margin-right: 25px !important;}
+				.mmr30{margin-right: 30px !important;}
+			}
+		/*For Mobile*/
+		/*For Small Mobile*/
+			@media(max-width: 320px){
+				.sm-pull-left{
+					float:left !important;
+				}
+				.sm-pull-right{
+					float:right !important;
+				}
+				.sm-pull-none{
+					float:none !important;
+				}
+
+				.smm0{margin:0 !important;}
+				.smmt0{margin-top: 0 !important;}
+				.smmt5{margin-top: 5px !important;}
+				.smmt10{margin-top: 10px !important;}
+				.smmt15{margin-top: 15px !important;}
+				.smmt20{margin-top: 20px !important;}
+				.smmt25{margin-top: 25px !important;}
+				.smmt30{margin-top: 30px !important;}
+
+				.smmb0{margin-bottom: 0 !important;}
+				.smmb5{margin-bottom: 5px !important;}
+				.smmb10{margin-bottom: 10px !important;}
+				.smmb15{margin-bottom: 15px !important;}
+				.smmb20{margin-bottom: 20px !important;}
+				.smmb25{margin-bottom: 25px !important;}
+				.smmb30{margin-bottom: 30px !important;}
+
+				.smml0{margin-left: 0 !important;}
+				.smml5{margin-left: 5px !important;}
+				.smml10{margin-left: 10px !important;}
+				.smml15{margin-left: 15px !important;}
+				.smml20{margin-left: 20px !important;}
+				.smml25{margin-left: 25px !important;}
+				.smml30{margin-left: 30px !important;}
+
+				.smmr0{margin-right: 0 !important;}
+				.smmr5{margin-right: 5px !important;}
+				.smmr10{margin-right: 10px !important;}
+				.smmr15{margin-right: 15px !important;}
+				.smmr20{margin-right: 20px !important;}
+				.smmr25{margin-right: 25px !important;}
+				.smmr30{margin-right: 30px !important;}
+			}
+		/*For Small Mobile*/
+			@media(max-width:320px){
+				.margin-button-small{
+					margin-top: 10px;
+				}
+			}
+			@media(max-width: 360px){
+				.margin-button-medium{
+					margin-top: 10px;
+				}
+			}
+			@media(max-width: 375px){
+				.margin-button-large{
+					margin-top: 10px;
+				}
+			}
+	/*Margin Classes*/
+/*Common CSS*/
+
+#titlerow{
+	
+	display:none;
+}
+.ms-core-sideNavBox-removeLeftMargin{
+
+	display:none;
+}
+.ms-tableRow
+{
+display:none;
+
+}
+#s4-titlerow
+{
+display:none !important;
+
+}
+
+</style>
+</head>
+
+<body class="overflow-hidden">
+  <div id="TitanBody" style="display: inline-block">
+	<div class="home-logo-box pl15 pr15">
+		<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Titan-Logo.png" id="logo">
+	</div> 
+	<div class="home-body-box pt30 pl15 pr15">		
+		<h2 class="home-body-title2 text-center pb10">Titan Workspace Setup:</h2>
+		<div class="enter-url-panel pb20 pt10">
+			
+				<div class="row p-b-12">
+					<div class="form-group col-12">
+						<input type="text" class="form-control f-s-15 p-b-5" id="txtUserName" placeholder="Enter Site Collection Username" >
+					</div>
+        </div>
+        <div class="row p-b-5">
+          <div class="form-group col-12">
+						<input type="password" class="form-control" id="txtPassword" placeholder="Enter Password" >
+					</div>
+        </div>
+		<div class="row p-b-12">
+					<div class="form-group col-12">
+						<input type="text" class="form-control f-s-15 p-b-5" id="txtCompanyName" placeholder="Enter Company Name">
+					</div>
+        </div>
+        <div class="row p-b-5">
+          <div class="form-group col-12">
+						<input type="text" class="form-control f-s-15 p-b-5" id="txtDepartmentName" placeholder="Enter Department Name">
+					</div>
+        </div>
+        <div class="row p-b-5">
+          <div class="form-group col-12">
+						<input type="text" class="form-control f-s-15 p-b-5" id="txtOfficeLocation" placeholder="Enter Office Location">
+					</div>
+        </div>
+        <div class="row p-b-5">
+          <div class="form-group col-12 text-center">
+                <button type="button" class="btn custom-btn" onclick="setDefaultPage();">
+				Enter</button>
+          </div>
+    		</div>
+			
+		</div>
+		
+	</div>
+</div>
+<div id="TitanBodySettings" style="display: none">
+	
+</div>
+<div id="TitanBodyMsg" style="display: none">	
+	<div class="home-body-box pt30 pl15 pr15">
+		<h3 class="home-body-title text-center pb20" id="lblMsg"></h3>
+  </div>
+</div>
+
+  <div class="page-loader-overlay" style="display: none" id="loader">
+    <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Titan-Loader.gif" alt="Titan Loader" id="loaderimg">
+</div>
+<script>
+
+$( document ).ready(function() {
+	
+	$("#logo").attr("src","https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Titan-Logo.png");
+	$("#loaderimg").attr("src","https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Titan-Loader.gif");
+	$("head").append("<style>@font-face {font-family: Poppins; src:url('https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/Poppins-Regular.woff') format('woff'); font-weight: 400;;}</style>")
+	$("#contentRow").attr("style","background: url('https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/SetupGuide/page-bg.jpg') no-repeat;");
+	$("#contentRow").attr("style","font-family: Poppins");
+});
+
+</script>
+
+<script>
+
+                    
+					$( document ).ready(function() {
+						let urlParams = new URLSearchParams(document.location.search.substring(1));
+						var setupstr="";
+						try{
+							setupstr=urlParams.get('setup');
+							if(setupstr=="completed")
+							{
+							
+								companyid=urlParams.get('compid');
+								insertVal();
+							}
+							
+						}catch{}
+						if(setupstr=="")
+						{
+							let userName = urlParams.get('usr');
+							$("#txtUserName").val(userName);
+						   
+							let pass = urlParams.get('pass');
+							
+							if(pass !=null && pass!="")
+							{
+								$("#txtPassword").val(atob(pass));
+							}
+							
+							let companyName = urlParams.get('companyName');
+							$("#txtCompanyName").val(companyName);
+							
+							let departmentName = urlParams.get('departmentName');
+							$("#txtDepartmentName").val(departmentName);
+							
+							let officeLocation = urlParams.get('officeLocation');
+							$("#txtOfficeLocation").val(officeLocation);
+							
+							let start_time = urlParams.get('starttime');
+							try{
+								if(!isNaN(start_time))
+								{
+									startTime = new Date(parseFloat(start_time));  
+								}else{
+									startTime = new Date();	
+								}
+								
+							}catch{
+								startTime = new Date();						
+							}
+							
+							//alert($("#txtUserName").val());
+							//alert($("#txtPassword").val());
+							if($("#txtUserName").val()!="" && $("#txtPassword").val()!="")
+							{
+								$("#TitanBodyMsg").show(); 
+								$("#lblMsg").text("Uploading Configurable Apps. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+								setTimeout(install,1000);
+								
+							}else{
+								//$("#txtUserName").val(_spPageContextInfo.userLoginName);
+								
+								checkInList();
+							
+							}
+						}
+					});
+				
+
+ var startTime, endTime;
+ function endTime2() {
+  endTime = new Date();
+  var timeDiff = endTime - startTime; //in ms
+  // strip the ms
+  timeDiff /= 1000;
+
+  // get seconds 
+  var seconds = Math.round(timeDiff);
+  return seconds;
+}
+
+  var siteurl="";     
+
+
+
+
+	var uploadcount=0;
+  function install()
+  {         
+  
+					try{
+							if(isNaN(startTime))
+							{
+								startTime = new Date();	
+							}
+							
+						}catch{
+							startTime = new Date();						
+						}
+						
+		uploadcount=uploadcount+1
+		
+       if(uploadcount>30)
+		{
+			  $("#TitanBodyMsg").show();   
+			  $("#lblMsg").text("Error Uploading Apps. Please contact Titan Workspace: info@titanworkspace.com");
+				return;
+			  
+		}
+    //startTime = new Date();  
+	/*siteurl = window.location.href;
+	
+	if(siteurl.indexOf('/Pages')>=0)
+	{
+    	siteurl = siteurl.substring(0, siteurl.lastIndexOf('/Pages'));
+			//alert(siteurl);
+			//alert(window.location.href);
+	}
+	if(siteurl.indexOf('/?usr=')>=0)
+	{
+	
+		siteurl = siteurl.substring(0, siteurl.lastIndexOf('/?usr='));
+	
+	}*/
+	
+	siteurl=_spPageContextInfo.webAbsoluteUrl;
+	
+//alert(siteurl);
+    var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	var companyName=$("#txtCompanyName").val();
+	if(companyName=="")
+	{
+		alert("Please enter Company Name");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		companyName=companyName.replace(/\s/g, '_');
+	}
+	var departmentName=$("#txtDepartmentName").val();
+	if(departmentName=="")
+	{
+		alert("Please enter Department Name");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		departmentName=departmentName.replace(/\s/g, '_');
+	}
+	var officeLocation=$("#txtOfficeLocation").val();
+	if(officeLocation=="")
+	{
+		alert("Please enter OfficeLocation");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}
+    var fail=0;
+    var siteExists=0;        
+    $("#TitanBodyMsg").show(); 
+//$("#lblMsg").text("Checking..");
+$("#loader").show();  
+     //alert("Please wait...");
+      //File upload
+      //debugger;
+          $.ajax({
+                              url: siteurl+"/_api/web/AppTiles?$filter=AppPrincipalId%20ne%20%27%27&$select=Title",                    
+                              crossDomain: true,
+                              method:'GET',
+                              //async: false,
+                              headers: {  
+                                  "Accept": "application/json; odata=verbose"  
+                              }, 
+                              data: {},
+                              beforeSend: function()	
+                              {
+                                $("#loader").show();
+                              },
+                              success: function(result){
+                                $("#loader").hide();
+                                $("#TitanBody").hide();
+                                $("#TitanBodyMsg").show();    
+                                var asset1upload=0;
+                                var asset2upload=0;
+                                var asset3upload=0;
+								var asset4upload=0;
+								var asset5upload=0;
+                                var assetlistsupload=0;
+								
+								try{
+                                var appTiles = result.d.results;                                  
+                                appTiles.forEach(function(app) {
+							
+                                    if(app.Title =="titandeploy-asset-1")
+                                    {
+                                      asset1upload=1;
+                                    }
+                                    if(app.Title =="titandeploy-asset-2")
+                                    {
+                                      asset2upload=1;
+                                    }
+                                    if(app.Title =="titandeploy-asset-3")
+                                    {
+                                      asset3upload=1;
+                                    }
+                                    if(app.Title =="titandeploy-lists")
+                                    {
+                                      assetlistsupload=1;
+                                    }
+                                });  
+								}catch{}
+                                
+                                if(asset1upload==1 && asset2upload==1 && asset3upload==1 && assetlistsupload==1)
+								{
+									$("#lblMsg").text("Configurable Apps Installed. Please wait.");
+									//setTimeout(installSettings,30000);
+									installSettings();
+									return;
+								}else if(asset1upload==0 || asset2upload==0 || asset3upload==0 || asset4upload==0 || asset5upload==0 || assetlistsupload==0)
+                                {
+                                  $("#lblMsg").text("Installing Configurable Apps. Please wait.");
+                                }
+                                
+                                if(asset1upload==0){
+
+                                  $("#lblMsg").text("Uploading Configurable Apps 1. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+								  $("#loader").show();  
+								  
+								  /*setTimeout(function(){
+									  $.when(FileUpload("FileUpload1",siteurl,userName,password,companyName,departmentName,officeLocation)).done(function (itemresponse) {
+						
+						
+											$("#lblMsg").text("App1 installed. Time Elapsed: "+endTime2()+" seconds");
+										
+										
+										}).fail(function(){
+											install();
+										
+										});
+									},1000);*/
+									
+									$.ajax({
+                                      url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload1",                    
+                                      crossDomain: true,
+                                      method:'POST',
+                                      //async: false,
+                                      data: JSON.stringify({
+										  "SourceUrl": siteurl,
+										  "UserName": userName,
+										  "rawPass": password,
+										  "CompanyName": companyName,
+										  "DepartmentName": departmentName,
+										  "OfficeLocation": officeLocation
+										}),
+										headers:{'Content-Type': 'application/json'}, 
+										timeout: 600000,
+                                      beforeSend: function()
+                                      {
+                                        $("#loader").show();
+                                      },                                    
+                                      success: function(result){
+                                        //$("#loader").hide();
+                                        
+                                        $("#TitanBodyMsg").show();     
+                                        if(result.toLowerCase().indexOf("error")>=0)
+                                        {
+                                            $("#loader").hide();
+                                                //$("#TitanBody").show();
+                                                //$("#TitanBodyMsg").show(); 
+                                                $("#lblMsg").text("Error Uploading Configurable Apps1. Trying again: "+ result);
+                                                
+												install();
+												
+                                            return;
+                                        }else{
+										
+											//await delay(120000);
+										 
+											/*$.ajax({
+												url: siteurl+"/_api/web/GetFolderByServerRelativeUrl('/SiteAssets/DepartmentHomePage/Documents')/Files('ShowDocuments.html')/$value",         
+												crossDomain: true,
+												method:'GET',
+												//async: false,
+												headers: {  
+													  "Accept": "application/json; odata=verbose"  
+												  }, 
+												  data: {},                                  
+												success: function(result){
+																									   
+													if(result!=null)
+													{
+																											
+																										
+													}
+																									
+												},
+												
+												error: function(jqXHR, textStatus, errorThrown) {
+																									
+													}
+												});*/
+												
+											setTimeout(function(){
+											
+												if(asset2upload==0)
+												{
+												
+													$("#lblMsg").text("Uploading Configurable Apps 2. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+													$("#loader").show();  
+												
+													$.ajax({
+													  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload2",         
+													  crossDomain: true,
+													  method:'POST',
+													  //async: false,
+													  data: JSON.stringify({
+														  "SourceUrl": siteurl,
+														  "UserName": userName,
+														  "rawPass": password,
+														  "CompanyName": companyName,
+														  "DepartmentName": departmentName,
+														  "OfficeLocation": officeLocation
+														}),
+														headers:{'Content-Type': 'application/json'}, 
+														timeout: 600000,
+													  beforeSend: function()
+													  {
+														$("#loader").show();
+													  },                                    
+													  success: function(result){
+														//$("#loader").hide();
+														
+														$("#TitanBodyMsg").show();     
+														if(result.toLowerCase().indexOf("error")>=0)
+														{
+															$("#loader").hide();
+																//$("#TitanBody").show();
+																//$("#TitanBodyMsg").show(); 
+																$("#lblMsg").text("Error Uploading Configurable Apps2. Trying again: "+ result);
+																
+																install();
+																
+															return;
+														}else{
+															setTimeout(function(){
+															
+																if(asset3upload==0)
+																{
+																	$("#lblMsg").text("Uploading Configurable Apps 3. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																	$("#loader").show();  
+																
+																	$.ajax({
+																	  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload3",         
+																	  crossDomain: true,
+																	  method:'POST',
+																	  //async: false,
+																	  data: JSON.stringify({
+																		  "SourceUrl": siteurl,
+																		  "UserName": userName,
+																		  "rawPass": password,
+																		  "CompanyName": companyName,
+																		  "DepartmentName": departmentName,
+																		  "OfficeLocation": officeLocation
+																		}),
+																		headers:{'Content-Type': 'application/json'}, 
+																		timeout: 600000,
+																	  beforeSend: function()
+																	  {
+																		$("#loader").show();
+																	  },                                    
+																	  success: function(result){
+																		//$("#loader").hide();
+																		
+																		$("#TitanBodyMsg").show();     
+																		if(result.toLowerCase().indexOf("error")>=0)
+																		{
+																			$("#loader").hide();
+																				//$("#TitanBody").show();
+																				//$("#TitanBodyMsg").show(); 
+																				$("#lblMsg").text("Error Uploading Configurable Apps3. Trying again: "+ result);
+																				
+																				install();
+																				
+																			return;
+																		}else{
+																			setTimeout(function(){
+																				if(asset4upload==0)
+																				{
+																					$("#lblMsg").text("Uploading Configurable Apps 4. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																					$("#loader").show();  
+																				
+																					$.ajax({
+																					  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload4",         
+																					  crossDomain: true,
+																					  method:'POST',
+																					  //async: false,
+																					  data: JSON.stringify({
+																						  "SourceUrl": siteurl,
+																						  "UserName": userName,
+																						  "rawPass": password,
+																						  "CompanyName": companyName,
+																						  "DepartmentName": departmentName,
+																						  "OfficeLocation": officeLocation
+																						}),
+																						headers:{'Content-Type': 'application/json'}, 
+																						timeout: 600000,
+																					  beforeSend: function()
+																					  {
+																						$("#loader").show();
+																					  },                                    
+																					  success: function(result){
+																						//$("#loader").hide();
+																						
+																						$("#TitanBodyMsg").show();     
+																						if(result.toLowerCase().indexOf("error")>=0)
+																						{
+																							$("#loader").hide();
+																								//$("#TitanBody").show();
+																								//$("#TitanBodyMsg").show(); 
+																								$("#lblMsg").text("Error Uploading Configurable Apps4. Trying again: "+ result);
+																								
+																								install();
+																								
+																							return;
+																						}else{
+																							setTimeout(function(){
+																								if(asset5upload==0)
+																								{
+																									$("#lblMsg").text("Uploading Configurable Apps 5. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																									$("#loader").show();  
+																								
+																									$.ajax({
+																									  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload5",         
+																									  crossDomain: true,
+																									  method:'POST',
+																									  //async: false,
+																									  data: JSON.stringify({
+																										  "SourceUrl": siteurl,
+																										  "UserName": userName,
+																										  "rawPass": password,
+																										  "CompanyName": companyName,
+																										  "DepartmentName": departmentName,
+																										  "OfficeLocation": officeLocation
+																										}),
+																										headers:{'Content-Type': 'application/json'}, 
+																										timeout: 600000,
+																									  beforeSend: function()
+																									  {
+																										$("#loader").show();
+																									  },                                    
+																									  success: function(result){
+																										//$("#loader").hide();
+																										
+																										$("#TitanBodyMsg").show();     
+																										if(result.toLowerCase().indexOf("error")>=0)
+																										{
+																											$("#loader").hide();
+																												//$("#TitanBody").show();
+																												//$("#TitanBodyMsg").show(); 
+																												$("#lblMsg").text("Error Uploading Configurable Apps5. Trying again: "+ result);
+																												
+																												install();
+																												
+																											return;
+																										}else{
+																											setTimeout(function(){
+																											if(assetlistsupload==0)
+																												{
+																													$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																													$("#loader").show();  
+																												
+																													$.ajax({
+																													  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																													  crossDomain: true,
+																													  method:'POST',
+																													  //async: false,
+																													  data: JSON.stringify({
+																														  "SourceUrl": siteurl,
+																														  "UserName": userName,
+																														  "rawPass": password,
+																														  "CompanyName": companyName,
+																														  "DepartmentName": departmentName,
+																														  "OfficeLocation": officeLocation
+																														}),
+																														headers:{'Content-Type': 'application/json'}, 
+																														timeout: 600000,
+																													  beforeSend: function()
+																													  {
+																														$("#loader").show();
+																													  },                                    
+																													  success: function(result){
+																														//$("#loader").hide();
+																														
+																														$("#TitanBodyMsg").show();     
+																														if(result.toLowerCase().indexOf("error")>=0)
+																														{
+																															$("#loader").hide();
+																																//$("#TitanBody").show();
+																																//$("#TitanBodyMsg").show(); 
+																																$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																																
+																																install();
+																																
+																															return;
+																														}else{
+																															setTimeout(install,300000);
+																														
+																														}
+																														
+																													  },
+																													  finally: function(){
+																														$("#loader").hide();
+																														  //$("#TitanBody").hide();
+																														  //$("#TitanBodyMsg").show();    
+																													  },
+																													  error: function(jqXHR, textStatus, errorThrown) {
+																															$("#loader").hide();
+																																  $("#TitanBody").show();
+																																  $("#TitanBodyMsg").show(); 
+																															//if(textStatus == "timeout") {
+																																
+																																  //var responseText = jQuery.parseJSON(xhr.responseText);
+																																  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																																  fail=1;                                          
+																																 setTimeout(install,1000);
+																															//}               
+																														}
+																													});
+																												
+																												
+																												
+																												}
+																											},300000);
+																										}
+																										
+																									  },
+																									  finally: function(){
+																										$("#loader").hide();
+																										  //$("#TitanBody").hide();
+																										  //$("#TitanBodyMsg").show();    
+																									  },
+																									  error: function(jqXHR, textStatus, errorThrown) {
+																											$("#loader").hide();
+																												  $("#TitanBody").show();
+																												  $("#TitanBodyMsg").show(); 
+																											//if(textStatus == "timeout") {
+																												
+																												  //var responseText = jQuery.parseJSON(xhr.responseText);
+																												  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																												  fail=1;                                          
+																												 setTimeout(install,1000);
+																											//}               
+																										}
+																										 
+																										  
+																									  
+																									});
+																								
+																								
+																								
+																								}
+																							},300000);
+																						}
+																						
+																					  },
+																					  finally: function(){
+																						$("#loader").hide();
+																						  //$("#TitanBody").hide();
+																						  //$("#TitanBodyMsg").show();    
+																					  },
+																					  error: function(jqXHR, textStatus, errorThrown) {
+																							$("#loader").hide();
+																								  $("#TitanBody").show();
+																								  $("#TitanBodyMsg").show(); 
+																							//if(textStatus == "timeout") {
+																								
+																								  //var responseText = jQuery.parseJSON(xhr.responseText);
+																								  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																								  fail=1;                                          
+																								 setTimeout(install,1000);
+																							//}               
+																						}
+																						 
+																						  
+																					  
+																					});
+																				
+																				
+																				
+																				}
+																			},300000);
+																		}
+																		
+																	  },
+																	  finally: function(){
+																		$("#loader").hide();
+																		  //$("#TitanBody").hide();
+																		  //$("#TitanBodyMsg").show();    
+																	  },
+																	  error: function(jqXHR, textStatus, errorThrown) {
+																			$("#loader").hide();
+																				  $("#TitanBody").show();
+																				  $("#TitanBodyMsg").show(); 
+																			//if(textStatus == "timeout") {
+																				
+																				  //var responseText = jQuery.parseJSON(xhr.responseText);
+																				  $("#lblMsg").text("Error Uploading Configurable Apps 3. Please try again.");
+																				  fail=1;                                          
+																				 setTimeout(install,1000);
+																			//}               
+																		}
+																		 
+																		  
+																	  
+																	});
+																
+																
+																
+																}
+															},300000);
+														
+														}
+														
+													  },
+													  finally: function(){
+														$("#loader").hide();
+														  //$("#TitanBody").hide();
+														  //$("#TitanBodyMsg").show();    
+													  },
+													  error: function(jqXHR, textStatus, errorThrown) {
+																		$("#loader").hide();
+																			  $("#TitanBody").show();
+																			  $("#TitanBodyMsg").show(); 
+																		//if(textStatus == "timeout") {
+																			
+																			  //var responseText = jQuery.parseJSON(xhr.responseText);
+																			  $("#lblMsg").text("Error Uploading Configurable Apps 2. Please try again.");
+																			  fail=1;                                          
+																			 setTimeout(install,1000);
+																		//}               
+																	}
+													});
+												
+												
+												
+												}
+											
+											
+											
+											
+											},300000);
+										
+											
+										
+										}
+										
+                                      },
+                                      finally: function(){
+                                        $("#loader").hide();
+                                          //$("#TitanBody").hide();
+                                          //$("#TitanBodyMsg").show();    
+                                      },
+                                      error: function(jqXHR, textStatus, errorThrown) {
+																	$("#loader").hide();
+																		  $("#TitanBody").show();
+																		  $("#TitanBodyMsg").show(); 
+																	//if(textStatus == "timeout") {
+																		
+																		  //var responseText = jQuery.parseJSON(xhr.responseText);
+																		  $("#lblMsg").text("Error Uploading Configurable Apps 1. Please try again.");
+																		  fail=1;                                          
+																		 setTimeout(install,1000);
+																	//}               
+																}
+                                    });
+									
+								  }else{
+								  
+										if(asset2upload==0)
+											{
+												$("#lblMsg").text("Uploading Configurable Apps 2. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+												$("#loader").show();  
+											
+												$.ajax({
+												  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload2",         
+												  crossDomain: true,
+												  method:'POST',
+												  //async: false,
+												  data: JSON.stringify({
+													  "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password,
+													  "CompanyName": companyName,
+													  "DepartmentName": departmentName,
+													  "OfficeLocation": officeLocation
+													}),
+													headers:{'Content-Type': 'application/json'}, 
+													timeout: 600000,
+												  beforeSend: function()
+												  {
+													$("#loader").show();
+												  },                                    
+												  success: function(result){
+													$("#loader").hide();
+													
+													$("#TitanBodyMsg").show();     
+													if(result.toLowerCase().indexOf("error")>=0)
+													{
+														$("#loader").hide();
+															//$("#TitanBody").show();
+															//$("#TitanBodyMsg").show(); 
+															$("#lblMsg").text("Error Uploading Configurable Apps2. Trying again: "+ result);
+															
+															install();
+															
+														return;
+													}else{
+													
+														if(asset3upload==0)
+														{
+															$("#lblMsg").text("Uploading Configurable Apps 3. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+															$("#loader").show();  
+														
+															$.ajax({
+															  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload3",         
+															  crossDomain: true,
+															  method:'POST',
+															  //async: false,
+															  data: JSON.stringify({
+																  "SourceUrl": siteurl,
+																  "UserName": userName,
+																  "rawPass": password,
+																  "CompanyName": companyName,
+																  "DepartmentName": departmentName,
+																  "OfficeLocation": officeLocation
+																}),
+																headers:{'Content-Type': 'application/json'}, 
+																timeout: 600000,
+															  beforeSend: function()
+															  {
+																$("#loader").show();
+															  },                                    
+															  success: function(result){
+																$("#loader").hide();
+																
+																$("#TitanBodyMsg").show();     
+																if(result.toLowerCase().indexOf("error")>=0)
+																{
+																	$("#loader").hide();
+																		//$("#TitanBody").show();
+																		//$("#TitanBodyMsg").show(); 
+																		$("#lblMsg").text("Error Uploading Configurable Apps3. Trying again: "+ result);
+																		
+																		install();
+																		
+																	return;
+																}else{
+																
+																	if(asset4upload==0)
+																	{
+																		$("#lblMsg").text("Uploading Configurable Apps 4. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																		$("#loader").show();  
+																	
+																		$.ajax({
+																		  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload4",         
+																		  crossDomain: true,
+																		  method:'POST',
+																		  //async: false,
+																		  data: JSON.stringify({
+																			  "SourceUrl": siteurl,
+																			  "UserName": userName,
+																			  "rawPass": password,
+																			  "CompanyName": companyName,
+																			  "DepartmentName": departmentName,
+																			  "OfficeLocation": officeLocation
+																			}),
+																			headers:{'Content-Type': 'application/json'}, 
+																			timeout: 600000,
+																		  beforeSend: function()
+																		  {
+																			$("#loader").show();
+																		  },                                    
+																		  success: function(result){
+																			$("#loader").hide();
+																			
+																			$("#TitanBodyMsg").show();     
+																			if(result.toLowerCase().indexOf("error")>=0)
+																			{
+																				$("#loader").hide();
+																					//$("#TitanBody").show();
+																					//$("#TitanBodyMsg").show(); 
+																					$("#lblMsg").text("Error Uploading Configurable Apps4. Trying again: "+ result);
+																					
+																					install();
+																					
+																				return;
+																			}else{
+																			
+																				if(asset5upload==0)
+																				{
+																					$("#lblMsg").text("Uploading Configurable Apps 5. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																					$("#loader").show();  
+																				
+																					$.ajax({
+																					  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload5",         
+																					  crossDomain: true,
+																					  method:'POST',
+																					  //async: false,
+																					  data: JSON.stringify({
+																						  "SourceUrl": siteurl,
+																						  "UserName": userName,
+																						  "rawPass": password,
+																						  "CompanyName": companyName,
+																						  "DepartmentName": departmentName,
+																						  "OfficeLocation": officeLocation
+																						}),
+																						headers:{'Content-Type': 'application/json'}, 
+																						timeout: 600000,
+																					  beforeSend: function()
+																					  {
+																						$("#loader").show();
+																					  },                                    
+																					  success: function(result){
+																						$("#loader").hide();
+																						
+																						$("#TitanBodyMsg").show();     
+																						if(result.toLowerCase().indexOf("error")>=0)
+																						{
+																							$("#loader").hide();
+																								//$("#TitanBody").show();
+																								//$("#TitanBodyMsg").show(); 
+																								$("#lblMsg").text("Error Uploading Configurable Apps5. Trying again: "+ result);
+																								
+																								install();
+																								
+																							return;
+																						}else{
+																						
+																							if(assetlistsupload==0)
+																							{
+																								$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																								$("#loader").show();  
+																							
+																								$.ajax({
+																								  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																								  crossDomain: true,
+																								  method:'POST',
+																								  //async: false,
+																								  data: JSON.stringify({
+																									  "SourceUrl": siteurl,
+																									  "UserName": userName,
+																									  "rawPass": password,
+																									  "CompanyName": companyName,
+																									  "DepartmentName": departmentName,
+																									  "OfficeLocation": officeLocation
+																									}),
+																									headers:{'Content-Type': 'application/json'}, 
+																									timeout: 600000,
+																								  beforeSend: function()
+																								  {
+																									$("#loader").show();
+																								  },                                    
+																								  success: function(result){
+																									$("#loader").hide();
+																									
+																									$("#TitanBodyMsg").show();     
+																									if(result.toLowerCase().indexOf("error")>=0)
+																									{
+																										$("#loader").hide();
+																											//$("#TitanBody").show();
+																											//$("#TitanBodyMsg").show(); 
+																											$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																											
+																											install();
+																											
+																										return;
+																									}else{
+																										setTimeout(install,180000);
+																									
+																									}
+																									
+																								  },
+																								  finally: function(){
+																									$("#loader").hide();
+																									  //$("#TitanBody").hide();
+																									  //$("#TitanBodyMsg").show();    
+																								  },
+																								  error: function(jqXHR, textStatus, errorThrown) {
+																										$("#loader").hide();
+																											  $("#TitanBody").show();
+																											  $("#TitanBodyMsg").show(); 
+																										//if(textStatus == "timeout") {
+																											
+																											  //var responseText = jQuery.parseJSON(xhr.responseText);
+																											  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																											  fail=1;                                          
+																											 setTimeout(install,1000);
+																										//}               
+																									}
+																								});
+																							
+																							
+																							
+																							}
+																						
+																						}
+																						
+																					  },
+																					  finally: function(){
+																						$("#loader").hide();
+																						  //$("#TitanBody").hide();
+																						  //$("#TitanBodyMsg").show();    
+																					  },
+																					  error: function(jqXHR, textStatus, errorThrown) {
+																							$("#loader").hide();
+																								  $("#TitanBody").show();
+																								  $("#TitanBodyMsg").show(); 
+																							//if(textStatus == "timeout") {
+																								
+																								  //var responseText = jQuery.parseJSON(xhr.responseText);
+																								  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																								  fail=1;                                          
+																								 setTimeout(install,1000);
+																							//}               
+																						}
+																						 
+																						  
+																					  
+																					});
+																				
+																				
+																				
+																				}
+																			
+																			}
+																			
+																		  },
+																		  finally: function(){
+																			$("#loader").hide();
+																			  //$("#TitanBody").hide();
+																			  //$("#TitanBodyMsg").show();    
+																		  },
+																		  error: function(jqXHR, textStatus, errorThrown) {
+																				$("#loader").hide();
+																					  $("#TitanBody").show();
+																					  $("#TitanBodyMsg").show(); 
+																				//if(textStatus == "timeout") {
+																					
+																					  //var responseText = jQuery.parseJSON(xhr.responseText);
+																					  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																					  fail=1;                                          
+																					 setTimeout(install,1000);
+																				//}               
+																			}
+																			 
+																			  
+																		  
+																		});
+																	
+																	
+																	
+																	}
+																
+																}
+																
+															  },
+															  finally: function(){
+																$("#loader").hide();
+																  //$("#TitanBody").hide();
+																  //$("#TitanBodyMsg").show();    
+															  },
+															  error: function(jqXHR, textStatus, errorThrown) {
+																	$("#loader").hide();
+																		  $("#TitanBody").show();
+																		  $("#TitanBodyMsg").show(); 
+																	//if(textStatus == "timeout") {
+																		
+																		  //var responseText = jQuery.parseJSON(xhr.responseText);
+																		  $("#lblMsg").text("Error Uploading Configurable Apps 3. Please try again.");
+																		  fail=1;                                          
+																		 setTimeout(install,1000);
+																	//}               
+																}
+																 
+																  
+															  
+															});
+														
+														
+														
+														}
+													
+													}
+													
+												  },
+												  finally: function(){
+													$("#loader").hide();
+													  //$("#TitanBody").hide();
+													  //$("#TitanBodyMsg").show();    
+												  },
+												  error: function(jqXHR, textStatus, errorThrown) {
+																	$("#loader").hide();
+																		  $("#TitanBody").show();
+																		  $("#TitanBodyMsg").show(); 
+																	//if(textStatus == "timeout") {
+																		
+																		  //var responseText = jQuery.parseJSON(xhr.responseText);
+																		  $("#lblMsg").text("Error Uploading Configurable Apps 2. Please try again.");
+																		  fail=1;                                          
+																		 setTimeout(install,1000);
+																	//}               
+																}
+												});
+											
+											
+											
+											}else{
+											
+											
+												if(asset3upload==0)
+														{
+															$("#lblMsg").text("Uploading Configurable Apps 3. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+															$("#loader").show();  
+														
+															$.ajax({
+															  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload3",         
+															  crossDomain: true,
+															  method:'POST',
+															  //async: false,
+															  data: JSON.stringify({
+																  "SourceUrl": siteurl,
+																  "UserName": userName,
+																  "rawPass": password,
+																  "CompanyName": companyName,
+																  "DepartmentName": departmentName,
+																  "OfficeLocation": officeLocation
+																}),
+																headers:{'Content-Type': 'application/json'}, 
+																timeout: 600000,
+															  beforeSend: function()
+															  {
+																$("#loader").show();
+															  },                                    
+															  success: function(result){
+																$("#loader").hide();
+																
+																$("#TitanBodyMsg").show();     
+																if(result.toLowerCase().indexOf("error")>=0)
+																{
+																	$("#loader").hide();
+																		//$("#TitanBody").show();
+																		//$("#TitanBodyMsg").show(); 
+																		$("#lblMsg").text("Error Uploading Configurable Apps3. Trying again: "+ result);
+																		
+																		install();
+																		
+																	return;
+																}else{
+																
+																	if(asset4upload==0)
+																	{
+																		$("#lblMsg").text("Uploading Configurable Apps 4. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																		$("#loader").show();  
+																	
+																		$.ajax({
+																		  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload4",         
+																		  crossDomain: true,
+																		  method:'POST',
+																		  //async: false,
+																		  data: JSON.stringify({
+																			  "SourceUrl": siteurl,
+																			  "UserName": userName,
+																			  "rawPass": password,
+																			  "CompanyName": companyName,
+																			  "DepartmentName": departmentName,
+																			  "OfficeLocation": officeLocation
+																			}),
+																			headers:{'Content-Type': 'application/json'}, 
+																			timeout: 600000,
+																		  beforeSend: function()
+																		  {
+																			$("#loader").show();
+																		  },                                    
+																		  success: function(result){
+																			$("#loader").hide();
+																			
+																			$("#TitanBodyMsg").show();     
+																			if(result.toLowerCase().indexOf("error")>=0)
+																			{
+																				$("#loader").hide();
+																					//$("#TitanBody").show();
+																					//$("#TitanBodyMsg").show(); 
+																					$("#lblMsg").text("Error Uploading Configurable Apps4. Trying again: "+ result);
+																					
+																					install();
+																					
+																				return;
+																			}else{
+																			
+																				if(asset5upload==0)
+																				{
+																					$("#lblMsg").text("Uploading Configurable Apps 5. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																					$("#loader").show();  
+																				
+																					$.ajax({
+																					  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload5",         
+																					  crossDomain: true,
+																					  method:'POST',
+																					  //async: false,
+																					  data: JSON.stringify({
+																						  "SourceUrl": siteurl,
+																						  "UserName": userName,
+																						  "rawPass": password,
+																						  "CompanyName": companyName,
+																						  "DepartmentName": departmentName,
+																						  "OfficeLocation": officeLocation
+																						}),
+																						headers:{'Content-Type': 'application/json'}, 
+																						timeout: 600000,
+																					  beforeSend: function()
+																					  {
+																						$("#loader").show();
+																					  },                                    
+																					  success: function(result){
+																						$("#loader").hide();
+																						
+																						$("#TitanBodyMsg").show();     
+																						if(result.toLowerCase().indexOf("error")>=0)
+																						{
+																							$("#loader").hide();
+																								//$("#TitanBody").show();
+																								//$("#TitanBodyMsg").show(); 
+																								$("#lblMsg").text("Error Uploading Configurable Apps5. Trying again: "+ result);
+																								
+																								install();
+																								
+																							return;
+																						}else{
+																						
+																							if(assetlistsupload==0)
+																							{
+																								$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																								$("#loader").show();  
+																							
+																								$.ajax({
+																								  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																								  crossDomain: true,
+																								  method:'POST',
+																								  //async: false,
+																								  data: JSON.stringify({
+																									  "SourceUrl": siteurl,
+																									  "UserName": userName,
+																									  "rawPass": password,
+																									  "CompanyName": companyName,
+																									  "DepartmentName": departmentName,
+																									  "OfficeLocation": officeLocation
+																									}),
+																									headers:{'Content-Type': 'application/json'}, 
+																									timeout: 600000,
+																								  beforeSend: function()
+																								  {
+																									$("#loader").show();
+																								  },                                    
+																								  success: function(result){
+																									$("#loader").hide();
+																									
+																									$("#TitanBodyMsg").show();     
+																									if(result.toLowerCase().indexOf("error")>=0)
+																									{
+																										$("#loader").hide();
+																											//$("#TitanBody").show();
+																											//$("#TitanBodyMsg").show(); 
+																											$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																											
+																											install();
+																											
+																										return;
+																									}else{
+																										setTimeout(install,180000);
+																									
+																									}
+																									
+																								  },
+																								  finally: function(){
+																									$("#loader").hide();
+																									  //$("#TitanBody").hide();
+																									  //$("#TitanBodyMsg").show();    
+																								  },
+																								  error: function(jqXHR, textStatus, errorThrown) {
+																										$("#loader").hide();
+																											  $("#TitanBody").show();
+																											  $("#TitanBodyMsg").show(); 
+																										//if(textStatus == "timeout") {
+																											
+																											  //var responseText = jQuery.parseJSON(xhr.responseText);
+																											  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																											  fail=1;                                          
+																											 setTimeout(install,1000);
+																										//}               
+																									}
+																								});
+																							
+																							
+																							
+																							}
+																						
+																						}
+																						
+																					  },
+																					  finally: function(){
+																						$("#loader").hide();
+																						  //$("#TitanBody").hide();
+																						  //$("#TitanBodyMsg").show();    
+																					  },
+																					  error: function(jqXHR, textStatus, errorThrown) {
+																							$("#loader").hide();
+																								  $("#TitanBody").show();
+																								  $("#TitanBodyMsg").show(); 
+																							//if(textStatus == "timeout") {
+																								
+																								  //var responseText = jQuery.parseJSON(xhr.responseText);
+																								  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																								  fail=1;                                          
+																								 setTimeout(install,1000);
+																							//}               
+																						}
+																						 
+																						  
+																					  
+																					});
+																				
+																				
+																				
+																				}
+																			
+																			}
+																			
+																		  },
+																		  finally: function(){
+																			$("#loader").hide();
+																			  //$("#TitanBody").hide();
+																			  //$("#TitanBodyMsg").show();    
+																		  },
+																		  error: function(jqXHR, textStatus, errorThrown) {
+																				$("#loader").hide();
+																					  $("#TitanBody").show();
+																					  $("#TitanBodyMsg").show(); 
+																				//if(textStatus == "timeout") {
+																					
+																					  //var responseText = jQuery.parseJSON(xhr.responseText);
+																					  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																					  fail=1;                                          
+																					 setTimeout(install,1000);
+																				//}               
+																			}
+																			 
+																			  
+																		  
+																		});
+																	
+																	
+																	
+																	}
+																
+																}
+																
+															  },
+															  finally: function(){
+																$("#loader").hide();
+																  //$("#TitanBody").hide();
+																  //$("#TitanBodyMsg").show();    
+															  },
+															  error: function(jqXHR, textStatus, errorThrown) {
+																	$("#loader").hide();
+																		  $("#TitanBody").show();
+																		  $("#TitanBodyMsg").show(); 
+																	//if(textStatus == "timeout") {
+																		
+																		  //var responseText = jQuery.parseJSON(xhr.responseText);
+																		  $("#lblMsg").text("Error Uploading Configurable Apps 3. Please try again.");
+																		  fail=1;                                          
+																		 setTimeout(install,1000);
+																	//}               
+																}
+																 
+																  
+															  
+															});
+														
+														
+														
+														}else{
+														
+														
+															if(asset4upload==0)
+																	{
+																		$("#lblMsg").text("Uploading Configurable Apps 4. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																		$("#loader").show();  
+																	
+																		$.ajax({
+																		  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload4",         
+																		  crossDomain: true,
+																		  method:'POST',
+																		  //async: false,
+																		  data: JSON.stringify({
+																			  "SourceUrl": siteurl,
+																			  "UserName": userName,
+																			  "rawPass": password,
+																			  "CompanyName": companyName,
+																			  "DepartmentName": departmentName,
+																			  "OfficeLocation": officeLocation
+																			}),
+																			headers:{'Content-Type': 'application/json'}, 
+																			timeout: 600000,
+																		  beforeSend: function()
+																		  {
+																			$("#loader").show();
+																		  },                                    
+																		  success: function(result){
+																			$("#loader").hide();
+																			
+																			$("#TitanBodyMsg").show();     
+																			if(result.toLowerCase().indexOf("error")>=0)
+																			{
+																				$("#loader").hide();
+																					//$("#TitanBody").show();
+																					//$("#TitanBodyMsg").show(); 
+																					$("#lblMsg").text("Error Uploading Configurable Apps4. Trying again: "+ result);
+																					
+																					install();
+																					
+																				return;
+																			}else{
+																			
+																				if(asset5upload==0)
+																				{
+																					$("#lblMsg").text("Uploading Configurable Apps 5. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																					$("#loader").show();  
+																				
+																					$.ajax({
+																					  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload5",         
+																					  crossDomain: true,
+																					  method:'POST',
+																					  //async: false,
+																					  data: JSON.stringify({
+																						  "SourceUrl": siteurl,
+																						  "UserName": userName,
+																						  "rawPass": password,
+																						  "CompanyName": companyName,
+																						  "DepartmentName": departmentName,
+																						  "OfficeLocation": officeLocation
+																						}),
+																						headers:{'Content-Type': 'application/json'}, 
+																						timeout: 600000,
+																					  beforeSend: function()
+																					  {
+																						$("#loader").show();
+																					  },                                    
+																					  success: function(result){
+																						$("#loader").hide();
+																						
+																						$("#TitanBodyMsg").show();     
+																						if(result.toLowerCase().indexOf("error")>=0)
+																						{
+																							$("#loader").hide();
+																								//$("#TitanBody").show();
+																								//$("#TitanBodyMsg").show(); 
+																								$("#lblMsg").text("Error Uploading Configurable Apps5. Trying again: "+ result);
+																								
+																								install();
+																								
+																							return;
+																						}else{
+																						
+																							if(assetlistsupload==0)
+																							{
+																								$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																								$("#loader").show();  
+																							
+																								$.ajax({
+																								  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																								  crossDomain: true,
+																								  method:'POST',
+																								  //async: false,
+																								  data: JSON.stringify({
+																									  "SourceUrl": siteurl,
+																									  "UserName": userName,
+																									  "rawPass": password,
+																									  "CompanyName": companyName,
+																									  "DepartmentName": departmentName,
+																									  "OfficeLocation": officeLocation
+																									}),
+																									headers:{'Content-Type': 'application/json'}, 
+																									timeout: 600000,
+																								  beforeSend: function()
+																								  {
+																									$("#loader").show();
+																								  },                                    
+																								  success: function(result){
+																									$("#loader").hide();
+																									
+																									$("#TitanBodyMsg").show();     
+																									if(result.toLowerCase().indexOf("error")>=0)
+																									{
+																										$("#loader").hide();
+																											//$("#TitanBody").show();
+																											//$("#TitanBodyMsg").show(); 
+																											$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																											
+																											install();
+																											
+																										return;
+																									}else{
+																										setTimeout(install,180000);
+																									
+																									}
+																									
+																								  },
+																								  finally: function(){
+																									$("#loader").hide();
+																									  //$("#TitanBody").hide();
+																									  //$("#TitanBodyMsg").show();    
+																								  },
+																								  error: function(jqXHR, textStatus, errorThrown) {
+																										$("#loader").hide();
+																											  $("#TitanBody").show();
+																											  $("#TitanBodyMsg").show(); 
+																										//if(textStatus == "timeout") {
+																											
+																											  //var responseText = jQuery.parseJSON(xhr.responseText);
+																											  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																											  fail=1;                                          
+																											 setTimeout(install,1000);
+																										//}               
+																									}
+																								});
+																							
+																							
+																							
+																							}
+																						
+																						}
+																						
+																					  },
+																					  finally: function(){
+																						$("#loader").hide();
+																						  //$("#TitanBody").hide();
+																						  //$("#TitanBodyMsg").show();    
+																					  },
+																					  error: function(jqXHR, textStatus, errorThrown) {
+																							$("#loader").hide();
+																								  $("#TitanBody").show();
+																								  $("#TitanBodyMsg").show(); 
+																							//if(textStatus == "timeout") {
+																								
+																								  //var responseText = jQuery.parseJSON(xhr.responseText);
+																								  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																								  fail=1;                                          
+																								 setTimeout(install,1000);
+																							//}               
+																						}
+																						 
+																						  
+																					  
+																					});
+																				
+																				
+																				
+																				}
+																			
+																			}
+																			
+																		  },
+																		  finally: function(){
+																			$("#loader").hide();
+																			  //$("#TitanBody").hide();
+																			  //$("#TitanBodyMsg").show();    
+																		  },
+																		  error: function(jqXHR, textStatus, errorThrown) {
+																				$("#loader").hide();
+																					  $("#TitanBody").show();
+																					  $("#TitanBodyMsg").show(); 
+																				//if(textStatus == "timeout") {
+																					
+																					  //var responseText = jQuery.parseJSON(xhr.responseText);
+																					  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																					  fail=1;                                          
+																					 setTimeout(install,1000);
+																				//}               
+																			}
+																			 
+																			  
+																		  
+																		});
+																	
+																	
+																	
+																	}else{
+																		if(asset5upload==0)
+																				{
+																					$("#lblMsg").text("Uploading Configurable Apps 5. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																					$("#loader").show();  
+																				
+																					$.ajax({
+																					  url: "https://titandeployfunctions.azurewebsites.net/api/FileUpload5",         
+																					  crossDomain: true,
+																					  method:'POST',
+																					  //async: false,
+																					  data: JSON.stringify({
+																						  "SourceUrl": siteurl,
+																						  "UserName": userName,
+																						  "rawPass": password,
+																						  "CompanyName": companyName,
+																						  "DepartmentName": departmentName,
+																						  "OfficeLocation": officeLocation
+																						}),
+																						headers:{'Content-Type': 'application/json'}, 
+																						timeout: 600000,
+																					  beforeSend: function()
+																					  {
+																						$("#loader").show();
+																					  },                                    
+																					  success: function(result){
+																						$("#loader").hide();
+																						
+																						$("#TitanBodyMsg").show();     
+																						if(result.toLowerCase().indexOf("error")>=0)
+																						{
+																							$("#loader").hide();
+																								//$("#TitanBody").show();
+																								//$("#TitanBodyMsg").show(); 
+																								$("#lblMsg").text("Error Uploading Configurable Apps5. Trying again: "+ result);
+																								
+																								install();
+																								
+																							return;
+																						}else{
+																						
+																							if(assetlistsupload==0)
+																							{
+																								$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																								$("#loader").show();  
+																							
+																								$.ajax({
+																								  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																								  crossDomain: true,
+																								  method:'POST',
+																								  //async: false,
+																								  data: JSON.stringify({
+																									  "SourceUrl": siteurl,
+																									  "UserName": userName,
+																									  "rawPass": password,
+																									  "CompanyName": companyName,
+																									  "DepartmentName": departmentName,
+																									  "OfficeLocation": officeLocation
+																									}),
+																									headers:{'Content-Type': 'application/json'}, 
+																									timeout: 600000,
+																								  beforeSend: function()
+																								  {
+																									$("#loader").show();
+																								  },                                    
+																								  success: function(result){
+																									$("#loader").hide();
+																									
+																									$("#TitanBodyMsg").show();     
+																									if(result.toLowerCase().indexOf("error")>=0)
+																									{
+																										$("#loader").hide();
+																											//$("#TitanBody").show();
+																											//$("#TitanBodyMsg").show(); 
+																											$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																											
+																											install();
+																											
+																										return;
+																									}else{
+																										setTimeout(install,180000);
+																									
+																									}
+																									
+																								  },
+																								  finally: function(){
+																									$("#loader").hide();
+																									  //$("#TitanBody").hide();
+																									  //$("#TitanBodyMsg").show();    
+																								  },
+																								  error: function(jqXHR, textStatus, errorThrown) {
+																										$("#loader").hide();
+																											  $("#TitanBody").show();
+																											  $("#TitanBodyMsg").show(); 
+																										//if(textStatus == "timeout") {
+																											
+																											  //var responseText = jQuery.parseJSON(xhr.responseText);
+																											  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																											  fail=1;                                          
+																											 setTimeout(install,1000);
+																										//}               
+																									}
+																								});
+																							
+																							
+																							
+																							}
+																						
+																						}
+																						
+																					  },
+																					  finally: function(){
+																						$("#loader").hide();
+																						  //$("#TitanBody").hide();
+																						  //$("#TitanBodyMsg").show();    
+																					  },
+																					  error: function(jqXHR, textStatus, errorThrown) {
+																							$("#loader").hide();
+																								  $("#TitanBody").show();
+																								  $("#TitanBodyMsg").show(); 
+																							//if(textStatus == "timeout") {
+																								
+																								  //var responseText = jQuery.parseJSON(xhr.responseText);
+																								  $("#lblMsg").text("Error Uploading Configurable Apps 4. Please try again.");
+																								  fail=1;                                          
+																								 setTimeout(install,1000);
+																							//}               
+																						}
+																						 
+																						  
+																					  
+																					});
+																				
+																				
+																				
+																				}else{
+																					if(assetlistsupload==0)
+																							{
+																								$("#lblMsg").text("Uploading Configurable Apps Lists. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																								$("#loader").show();  
+																							
+																								$.ajax({
+																								  url: "https://titandeployfunctions.azurewebsites.net/api/FileUploadlist",         
+																								  crossDomain: true,
+																								  method:'POST',
+																								  //async: false,
+																								  data: JSON.stringify({
+																									  "SourceUrl": siteurl,
+																									  "UserName": userName,
+																									  "rawPass": password,
+																									  "CompanyName": companyName,
+																									  "DepartmentName": departmentName,
+																									  "OfficeLocation": officeLocation
+																									}),
+																									headers:{'Content-Type': 'application/json'}, 
+																									timeout: 600000,
+																								  beforeSend: function()
+																								  {
+																									$("#loader").show();
+																								  },                                    
+																								  success: function(result){
+																									$("#loader").hide();
+																									
+																									$("#TitanBodyMsg").show();     
+																									if(result.toLowerCase().indexOf("error")>=0)
+																									{
+																										$("#loader").hide();
+																											//$("#TitanBody").show();
+																											//$("#TitanBodyMsg").show(); 
+																											$("#lblMsg").text("Error Uploading Configurable Apps Lists. Trying again: "+ result);
+																											
+																											install();
+																											
+																										return;
+																									}else{
+																										setTimeout(install,180000);
+																									
+																									}
+																									
+																								  },
+																								  finally: function(){
+																									$("#loader").hide();
+																									  //$("#TitanBody").hide();
+																									  //$("#TitanBodyMsg").show();    
+																								  },
+																								  error: function(jqXHR, textStatus, errorThrown) {
+																										$("#loader").hide();
+																											  $("#TitanBody").show();
+																											  $("#TitanBodyMsg").show(); 
+																										//if(textStatus == "timeout") {
+																											
+																											  //var responseText = jQuery.parseJSON(xhr.responseText);
+																											  $("#lblMsg").text("Error Uploading Configurable Apps list. Please try again.");
+																											  fail=1;                                          
+																											 setTimeout(install,1000);
+																										//}               
+																									}
+																								});
+																							
+																							
+																							
+																							}else{
+																								setTimeout(install,1000);
+																							
+																							}
+																				
+																				}
+																		
+																	
+																	}
+														
+														
+														}
+											
+											
+											
+											}
+								  
+								  
+								  
+								  }
+								  
+								  
+                                  
+								
+								
+
+                              },
+                              finally: function(){
+                                $("#loader").hide();
+                                  //$("#TitanBody").hide();
+                                  //$("#TitanBodyMsg").show();    
+                              },
+                              error: function(response){
+                                  //error
+                                  $("#loader").hide();
+                                  $("#TitanBody").show();
+                                  $("#TitanBodyMsg").show(); 
+                                  $("#lblMsg").text("Error Uploading Configurable Apps. Please try again.");
+                                  fail=1; 
+                              }
+                          });
+              
+			  
+			  
+              
+              
+	}
+/*
+	function FileUpload(fileupload,siteurl,userName,password,companyName,departmentName,officeLocation)
+	{
+		var dfd = $.Deferred();
+	
+		$.ajax({
+                                      url: "https://titandeployfunctions.azurewebsites.net/api/"+fileupload,                    
+                                      crossDomain: true,
+                                      method:'POST',
+                                      async: false,
+                                      data: JSON.stringify({
+										  "SourceUrl": siteurl,
+										  "UserName": userName,
+										  "rawPass": password,
+										  "CompanyName": companyName,
+										  "DepartmentName": departmentName,
+										  "OfficeLocation": officeLocation
+										}),
+										headers:{'Content-Type': 'application/json'}, 
+                                      beforeSend: function()
+                                      {
+                                        $("#loader").show();
+                                      },                                    
+                                      success: function(result){
+                                        $("#loader").hide();
+                                        
+                                        $("#TitanBodyMsg").show();     
+                                        if(result.toLowerCase().indexOf("error")>=0)
+                                        {
+                                            $("#loader").hide();
+                                                //$("#TitanBody").show();
+                                                //$("#TitanBodyMsg").show(); 
+                                                $("#lblMsg").text("Error Uploading Configurable Apps: "+fileupload+". Trying again: "+ result);
+                                                
+												//dfd.resolve(true);
+												
+												//install();
+												dfd.reject(error);
+												
+                                            return;
+                                        }
+										dfd.resolve(true);
+                                      },
+                                      finally: function(){
+                                        $("#loader").hide();
+                                          //$("#TitanBody").hide();
+                                          //$("#TitanBodyMsg").show();    
+                                      },
+                                      error: function(response){
+                                          //error
+                                          $("#loader").hide();
+                                          $("#TitanBody").show();
+                                          $("#TitanBodyMsg").show(); 
+                                          $("#lblMsg").text("Error Uploading Configurable Apps "+fileupload+". Please try again.");
+                                          fail=1;                                          
+                                         
+                                      }
+                                    });
+                                
+	
+	
+	return dfd.promise();
+	
+	}*/
+
+var companysettingscount=0;		
+var companyid=0;
+ function installSettings()
+ {   
+     
+	companysettingscount=companysettingscount+1;
+	if(companysettingscount>30)
+	{
+	
+		$("#TitanBodyMsg").show();   
+			  $("#lblMsg").text("Error Uploading Apps. Please contact Titan Workspace: info@titanworkspace.com");
+				return;
+	
+	}
+	 
+    $("#loader").show();     
+    
+
+    var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	var CompanyName="";
+	var DepartmentName="";
+	var OfficeLocation="";
+	
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+	CompanyName=$("#txtCompanyName").val();
+	if(CompanyName=="")
+	{
+		alert("Please enter Company Name");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		CompanyName=CompanyName.replace(/\s/g, '_');
+	}
+	DepartmentName=$("#txtDepartmentName").val();
+	if(DepartmentName=="")
+	{
+		alert("Please enter Department Name");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		DepartmentName=DepartmentName.replace(/\s/g, '_');
+	}
+	OfficeLocation=$("#txtOfficeLocation").val();
+	if(OfficeLocation=="")
+	{
+		alert("Please enter OfficeLocation");
+	  $("#TitanBody").show();
+	  //$("#TitanBodySettings").show();
+      return;
+	
+	}
+	
+	$("#TitanBodyMsg").show();
+	$("#lblMsg").text("Company settings on process. Please wait.");
+	
+	$("#loader").show();
+    var fail=0;
+    //List Settings
+      //Check Companies List
+      var companylist=0;
+      
+          
+                  $.ajax({
+                                      url: siteurl+"/_api/Web/Lists/getbytitle('Companies')/Items",                  
+                                      crossDomain: true,
+                                      method:'GET',
+                                      //async: false,
+                                      headers: {  
+                                          "Accept": "application/json; odata=verbose"  
+                                      },                                       
+                                      beforeSend: function()
+                                      {
+                                        $("#loader").show();
+                                      },
+                                      success: function(data){
+                                        $("#loader").hide();
+                                        $("#TitanBodySettings").hide();
+                                        $("#TitanBodyMsg").show(); 
+                                       
+                                        if(data.d.results.length>0)
+                                        {                                          
+                                          $("#lblMsg").text("Company List settings success. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                         
+                                          
+                                          var companyname="";
+                                          var companysubsitename="";
+                                          for(var i=0;i<data.d.results.length;i++)
+                                          {
+                                            if(data.d.results[0].CompanyType=="Corporate")
+                                            {
+                                              companyid=data.d.results[0].ID;
+                                              companyname=data.d.results[0].CompanyName;
+                                              companysubsitename=data.d.results[0].SiteURL;
+                                            }
+                                          }
+                                          
+                                          var companysubsite=0;
+                                          //while(companysubsite==0)
+                                          //{
+                                            $.ajax({
+                                              url: companysubsitename+"/_api/web/AppTiles?$select=Title",                  
+                                              crossDomain: true,
+                                              method:'GET',
+                                              //async: false,
+                                              headers: {  
+                                                  "Accept": "application/json; odata=verbose"  
+                                              }, 
+                                              data: {},
+                                              beforeSend: function()
+                                              {
+                                                $("#loader").show();
+                                              },
+                                              success: function(result){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                              var OccasionDetails=0;
+											  var appexists=0;
+                                              
+                                                var appTiles = result.d.results;                                  
+                                                appTiles.forEach(function(app) {  
+													if(app.Title=="titandeploy-company-lists")
+													{
+														appexists=1;
+													
+													}
+                                                    if(app.Title =="OccasionDetails")
+                                                    {
+                                                      OccasionDetails=1;
+                                                    }
+                                                });
+
+                                                if(OccasionDetails==1 )
+                                                {
+                                                  $("#lblMsg").text("Subsite Company Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                                  companysubsite=1;
+                                                  companylist=1;
+                                                  $("#TitanBodySettings").hide();
+												  
+												  setTimeout(checkdepartmentsettings,1000);
+												  
+                                                }else{
+                                                  $("#lblMsg").text("Uploading Company Subsite Lists. Please wait.");
+                                                  companysubsite=0;
+												  if(appexists==1)
+												  {
+													//setTimeout(checkcompanysettings,40000);
+													setTimeout(installSettings,20000);
+												  }else{
+												  
+													  $("#loader").show();
+													  
+													  $("#TitanBodyMsg").show(); 
+													 $("#TitanBodySettings").show();
+													  $("#lblMsg").text("Error Uploading Company Subsite Lists. Trying again.");
+													  $.ajax({
+															url: "https://titandeployfunctions.azurewebsites.net/api/CompanySubSiteCreation",                    
+															crossDomain: true,
+															method:'POST',
+															//async: false,
+															data: JSON.stringify({
+															  "SourceUrl": siteurl,
+															  "UserName": userName,
+															  "rawPass": password,
+															  "CompanyName":CompanyName,
+															  "DepartmentName":DepartmentName,
+															  "OfficeLocation":OfficeLocation
+															  
+															}),
+															headers:{'Content-Type': 'application/json'},
+															//timeout: 600000,
+															//context: context,
+															beforeSend: function()
+																  {
+																	$("#loader").show();
+																  },
+															success: function(result){
+															  $("#loader").hide();
+															  $("#TitanBody").hide();
+															  $("#TitanBodyMsg").show();    
+															  $("#TitanBodySettings").hide();                       
+															  $("#lblMsg").text("Company Subsite creation on process. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+															  //setTimeout(checkcompanysettings,40000);
+															  setTimeout(installSettings,20000);
+															  
+															  
+															},
+															finally: function(){
+															  $("#loader").hide();
+																//$("#TitanBody").hide();
+																//$("#TitanBodyMsg").show();    
+															},
+															error: function(response){
+																//error
+																$("#loader").hide();
+																//$("#TitanBody").show();
+																$("#TitanBodyMsg").show(); 
+																 $("#TitanBodySettings").show(); 
+																$("#lblMsg").text("Company Subsite creation failed. Please try again.");
+																
+															}
+														});
+												  }
+                                                }             
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  
+                                                  $("#TitanBodyMsg").show(); 
+												 $("#TitanBodySettings").show();
+                                                  $("#lblMsg").text("Error Uploading Company Subsite Lists. Trying again. Please try again.");
+												  
+                                                  companysubsite=0;
+                                              }
+                                            });
+                                          //}
+
+
+                                        }else{
+										
+											$("#loader").show();
+												$("#TitanBodyMsg").show();    
+                                              $("#TitanBodySettings").hide();                       
+                                              $("#lblMsg").text("Company Subsite creation on process. Please wait.");
+                                          $.ajax({
+                                            url: "https://titandeployfunctions.azurewebsites.net/api/CompanySubSiteCreation",                    
+                                            crossDomain: true,
+                                            method:'POST',
+                                            //async: false,
+                                            data: JSON.stringify({
+                                              "SourceUrl": siteurl,
+                                              "UserName": userName,
+                                              "rawPass": password,
+											  "CompanyName":CompanyName,
+											  "DepartmentName":DepartmentName,
+											  "OfficeLocation":OfficeLocation
+											  
+                                            }),
+                                            headers:{'Content-Type': 'application/json'},
+											//timeout: 600000,
+                                            //context: context,
+                                            beforeSend: function()
+                                                  {
+                                                    $("#loader").show();
+                                                  },
+                                            success: function(result){
+                                              //$("#loader").hide();
+                                              $("#TitanBody").hide();
+                                              $("#TitanBodyMsg").show();    
+                                              $("#TitanBodySettings").hide();                       
+                                              $("#lblMsg").text("Company Subsite creation on process. Please wait.");
+											  //setTimeout(checkcompanysettings,40000);
+											  setTimeout(installSettings,20000);
+											  
+											  
+                                            },
+                                            finally: function(){
+                                              $("#loader").hide();
+                                                //$("#TitanBody").hide();
+                                                //$("#TitanBodyMsg").show();    
+                                            },
+                                            error: function(response){
+                                                //error
+                                                $("#loader").hide();
+                                                //$("#TitanBody").show();
+                                                $("#TitanBodyMsg").show(); 
+												 $("#TitanBodySettings").show(); 
+                                                $("#lblMsg").text("Company Subsite creation failed. Please try again.");
+                                                
+                                            }
+                                        });
+
+
+                                          
+                                           //$("#TitanBodySettings").show();
+                                           //$("#lblMsg").text("Please Enter Information to proceed further.");
+                                           companylist=0;
+                                        }
+                                        
+                                      },
+                                      finally: function(){
+                                        $("#loader").hide();                                          
+                                      },
+                                      error: function(response){
+                                          //error
+                                          $("#loader").hide();
+                                          $("#TitanBodyMsg").show(); 
+                                          $("#TitanBodySettings").show(); 
+                                          $("#lblMsg").text("Error settings Company List. Please try again.");
+                                          companylist=1;
+                                          fail=1;
+                                      }
+              });
+            
+
+             
+            
+  }
+/*
+function checkcompanysettings()
+		{
+                 //List Settings Check 
+                 //Company List
+                  //companyid=0;
+                  $.ajax({
+                                      url: siteurl+"/_api/Web/Lists/getbytitle('Companies')/Items",                  
+                                      crossDomain: true,
+                                      method:'GET',
+                                     // async: false,
+                                      headers: {  
+                                          "Accept": "application/json; odata=verbose"  
+                                      },                                       
+                                      beforeSend: function()
+                                      {
+                                        $("#loader").show();
+                                      },
+                                      success: function(data){
+                                        $("#loader").hide();
+                                        $("#TitanBody").hide();
+                                        $("#TitanBodyMsg").show(); 
+                                        $("#TitanBodySettings").hide();   
+                                        if(data.d.results.length>0)
+                                        {                                          
+                                          //$("#lblMsg").text("Company List settings success. Please wait.");
+                                         
+                                          
+                                          var companyname="";
+                                          var companysubsitename="";
+                                          for(var i=0;i<data.d.results.length;i++)
+                                          {
+                                            if(data.d.results[0].CompanyType=="Corporate")
+                                            {
+                                              companyid=data.d.results[0].ID;
+                                              companyname=data.d.results[0].CompanyName;
+                                              companysubsitename=data.d.results[0].SiteURL;
+                                            }
+                                          }
+                                          
+                                          var companysubsite=0;
+                                          //while(companysubsite==0)
+                                          //{
+                                            $.ajax({
+                                              url: ""+companysubsitename+"/_api/web/AppTiles?$select=Title",                  
+                                              crossDomain: true,
+                                              method:'GET',
+                                              //async: false,
+                                              headers: {  
+                                                  "Accept": "application/json; odata=verbose"  
+                                              }, 
+                                              data: {},
+                                              beforeSend: function()
+                                              {
+                                                $("#loader").show();
+                                              },
+                                              success: function(data){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                              var OccasionDetails=0;
+                                              var appexists=0;
+                                                var appTiles = data.d.results;                                  
+                                                appTiles.forEach(function(app) { 
+													if(app.Title=="titandeploy-company-lists")
+													{
+														appexists=1;
+													
+													}
+                                                    if(app.Title =="OccasionDetails")
+                                                    {
+                                                      OccasionDetails=1;
+                                                    }
+                                                });
+
+                                                if(OccasionDetails==1 )
+                                                {
+                                                  $("#lblMsg").text("Subsite Company Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                                  companysubsite=1;
+                                                  //$("#txtCompanyName").val(companyname);
+                                                  //$("#txtCompanyName").attr("disabled","disabled");
+												  checkdepartmentsettings();
+												  //setTimeout(checkdepartmentsettings(),40000);
+                                                }else{
+                                                  $("#lblMsg").text("Uploading Company Subsite Lists. Please wait.");
+                                                  companysubsite=0;
+												  if(appexists==1)
+												  {
+													setTimeout(checkcompanysettings,40000);
+												  }else{
+												  
+													  $("#loader").hide();
+													  
+													  $("#TitanBodyMsg").show(); 
+													 $("#TitanBodySettings").show();
+													  $("#lblMsg").text("Error Uploading Company Subsite Lists. Trying again.");
+													  $.ajax({
+															url: "https://titandeployfunctions.azurewebsites.net/api/CompanySubSiteCreation",                    
+															crossDomain: true,
+															method:'POST',
+															//async: false,
+															data: JSON.stringify({
+															  "SourceUrl": siteurl,
+															  "UserName": userName,
+															  "rawPass": password,
+															  "CompanyName":CompanyName,
+															  "DepartmentName":DepartmentName,
+															  "OfficeLocation":OfficeLocation
+															  
+															}),
+															headers:{'Content-Type': 'application/json'},
+															//context: context,
+															beforeSend: function()
+																  {
+																	$("#loader").show();
+																  },
+															success: function(result){
+															  $("#loader").hide();
+															  $("#TitanBody").hide();
+															  $("#TitanBodyMsg").show();    
+															  $("#TitanBodySettings").hide();                       
+															  $("#lblMsg").text("Company Subsite creation on process. Please wait.");
+															  setTimeout(checkcompanysettings,40000);
+															  
+															  
+															  
+															},
+															finally: function(){
+															  $("#loader").hide();
+																//$("#TitanBody").hide();
+																//$("#TitanBodyMsg").show();    
+															},
+															error: function(response){
+																//error
+																$("#loader").hide();
+																//$("#TitanBody").show();
+																$("#TitanBodyMsg").show(); 
+																 $("#TitanBodySettings").show(); 
+																$("#lblMsg").text("Company Subsite creation failed. Please try again.");
+																
+															}
+														});
+												  }
+                                                }             
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  
+                                                  $("#TitanBodyMsg").show(); 
+                                                  $("#lblMsg").text("Error Uploading Company Subsite Lists. Trying again. Please wait.");
+                                                  companysubsite=0;
+                                              }
+                                            });
+                                          //}
+
+
+                                        }else{
+                                          
+                                          //setTimeout(checkcompanysettings,40000);
+										  setTimeout(installSettings,40000);
+                                        }
+                                        
+                                      },
+                                      finally: function(){
+                                        $("#loader").hide();                                          
+                                      },
+                                      error: function(response){
+                                          //error
+                                          $("#loader").hide();
+                                         
+                                          $("#TitanBodyMsg").show(); 
+                                          $("#lblMsg").text("Error settings Company List. Please Try again.");
+                                         
+                                          fail=1;
+                                      }
+              });
+		}
+	*/	
+	var departmentsettingscount=0;
+ function checkdepartmentsettings()
+ {
+ 
+	departmentsettingscount=departmentsettingscount+1;
+	if(departmentsettingscount>30)
+	{
+	
+		$("#TitanBodyMsg").show();   
+			  $("#lblMsg").text("Error Uploading Apps. Please contact Titan Workspace: info@titanworkspace.com");
+				return;
+	
+	}
+              
+	var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	var CompanyName="";
+	var DepartmentName="";
+	var OfficeLocation="";
+	
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+	CompanyName=$("#txtCompanyName").val();
+	if(CompanyName=="")
+	{
+		alert("Please enter Company Name");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		CompanyName=CompanyName.replace(/\s/g, '_');
+	}
+	DepartmentName=$("#txtDepartmentName").val();
+	if(DepartmentName=="")
+	{
+		alert("Please enter Department Name");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		DepartmentName=DepartmentName.replace(/\s/g, '_');
+	}
+	OfficeLocation=$("#txtOfficeLocation").val();
+	if(OfficeLocation=="")
+	{
+		alert("Please enter OfficeLocation");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}
+	$("#loader").show();
+			$("#TitanBodyMsg").show();    
+                                              $("#TitanBodySettings").hide();                       
+                                              $("#lblMsg").text("Department Subsite creation on process. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+              //Department list
+              $.ajax({
+                                      url: siteurl+"/_api/Web/Lists/getbytitle('Departments')/Items",                  
+                                      crossDomain: true,
+                                      method:'GET',
+                                      //async: false,
+                                      headers: {  
+                                          "Accept": "application/json; odata=verbose"  
+                                      },                                       
+                                      beforeSend: function()
+                                      {
+                                        $("#loader").show();
+                                      },
+                                      success: function(data){
+                                        $("#loader").hide();
+                                        $("#TitanBody").hide();
+                                        $("#TitanBodyMsg").show(); 
+                                        $("#TitanBodySettings").hide();   
+                                        if(data.d.results.length>0)
+                                        {                                          
+                                          //$("#lblMsg").text("Departments List settings success. Please wait.");
+                                         
+                                          var departmentid=0;
+                                          var departmentname="";
+                                          var departmentsiteurl="";
+										  var deptexist=0;
+                                          for(var i=0;i<data.d.results.length;i++)
+                                          {
+											try{
+												if(parseInt(data.d.results[i].CompanyIDId)==parseInt(companyid))
+												{
+												  departmentid=data.d.results[i].ID;
+												  departmentname=data.d.results[i].Title;
+												  departmentsiteurl=data.d.results[i].SiteURL;
+												  deptexist=1;
+												}
+											}catch{}
+                                          }
+                                          if(deptexist==1)
+										  {
+                                           var departmentsubsite=0;
+                                          //while(departmentsubsite==0)
+                                          //{
+                                            $.ajax({
+                                              url: ""+departmentsiteurl+"/_api/web/AppTiles?$select=Title",                  
+                                              crossDomain: true,
+                                              method:'GET',
+                                              //async: false,
+                                              headers: {  
+                                                  "Accept": "application/json; odata=verbose"  
+                                              }, 
+                                              data: {},
+                                              beforeSend: function()
+                                              {
+                                                $("#loader").show();
+                                              },
+                                              success: function(data){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                              var KnowledgeBase=0;
+											  var appexists=0;
+                                              
+                                                var appTiles = data.d.results;                                  
+                                                appTiles.forEach(function(app) {  
+													if(app.Title=="titandeploy-dept-lists-client-side-solution")
+													{
+														appexists=1;
+													
+													}
+                                                    if(app.Title =="KnowledgeBase")
+                                                    {
+                                                      KnowledgeBase=1;
+                                                    }
+                                                });
+
+                                                if(KnowledgeBase==1 )
+                                                {
+                                                  $("#lblMsg").text("Subsite Department Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                                  departmentsubsite=1;
+                                                  setupComplete();
+                                                }else{
+                                                  $("#lblMsg").text("Uploading Department Subsite Lists. Please wait.");
+                                                  departmentsubsite=0;
+												  
+												  
+												  if(appexists==1)
+												  {
+													setTimeout(checkdepartmentsettings,20000);
+												  }else{
+												  
+													  $("#loader").show();
+													  
+													  $("#TitanBodyMsg").show(); 
+													 $("#TitanBodySettings").show();
+													  $("#lblMsg").text("Error Uploading Department Subsite Lists. Trying again.");
+													  
+													  
+													  $.ajax({
+															url: "https://titandeployfunctions.azurewebsites.net/api/DepartmentSubSiteCreation",                    
+															crossDomain: true,
+															method:'POST',
+															//async: false,
+															data: JSON.stringify({
+															  "SourceUrl": siteurl,
+															  "UserName": userName,
+															  "rawPass": password,
+															  "CompanyName":CompanyName,
+															  "DepartmentName":DepartmentName,
+															  "OfficeLocation":OfficeLocation
+															  
+															}),
+															headers:{'Content-Type': 'application/json'},
+															//timeout: 600000,
+															//context: context,
+															beforeSend: function()
+																  {
+																	$("#loader").show();
+																  },
+															success: function(result){
+															  //$("#loader").hide();
+															  $("#TitanBody").hide();
+															  $("#TitanBodyMsg").show();    
+															  $("#TitanBodySettings").hide();                       
+															  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
+															  if(result.indexOf("Department Setup Completed Successfully")>=0)
+															  {
+																$("#lblMsg").text("Subsite Department Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																  departmentsubsite=1;
+																  setupComplete();
+															  
+															  }else{
+																setTimeout(checkdepartmentsettings,20000);
+															  }
+															  
+															  
+															},
+															finally: function(){
+															  $("#loader").hide();
+																//$("#TitanBody").hide();
+																//$("#TitanBodyMsg").show();    
+															},
+															error: function(response){
+																//error
+																$("#loader").hide();
+																//$("#TitanBody").show();
+																$("#TitanBodyMsg").show(); 
+																 $("#TitanBodySettings").show(); 
+																$("#lblMsg").text("Department Subsite creation failed. Please try again.");
+																
+															}
+														});
+												  }
+												  
+												  
+												  
+												  
+												  
+                                                }             
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  
+                                                  $("#TitanBodyMsg").show(); 
+                                                  $("#lblMsg").text("Error Uploading Department Subsite Lists. Trying again. Please wait.");
+                                                  departmentsubsite=0;
+                                              }
+                                            });
+                                          }else{
+										  $("#loader").show();
+										  $("#TitanBodyMsg").show();    
+													  $("#TitanBodySettings").hide();                       
+													  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
+												  $.ajax({
+													url: "https://titandeployfunctions.azurewebsites.net/api/DepartmentSubSiteCreation",                    
+													crossDomain: true,
+													method:'POST',
+													//async: false,
+													data: JSON.stringify({
+													  "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password,
+													  "CompanyName":CompanyName,
+													  "DepartmentName":DepartmentName,
+													  "OfficeLocation":OfficeLocation
+													  
+													}),
+													headers:{'Content-Type': 'application/json'},
+													timeout: 600000,
+													//context: context,
+													beforeSend: function()
+														  {
+															$("#loader").show();
+														  },
+													success: function(result){
+													  $("#loader").hide();
+													  $("#TitanBody").hide();
+													  $("#TitanBodyMsg").show();    
+													  $("#TitanBodySettings").hide();                       
+													  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
+													  if(result.indexOf("Department Setup Completed Successfully")>=0)
+															  {
+																$("#lblMsg").text("Subsite Department Lists uploading completed. Please wait.");
+																  departmentsubsite=1;
+																  setupComplete();
+															  
+															  }else{
+																setTimeout(checkdepartmentsettings,40000);
+															  }
+													  
+													  
+													  
+													},
+													finally: function(){
+													  $("#loader").hide();
+														//$("#TitanBody").hide();
+														//$("#TitanBodyMsg").show();    
+													},
+													error: function(response){
+														//error
+														$("#loader").hide();
+														//$("#TitanBody").show();
+														$("#TitanBodyMsg").show(); 
+														 $("#TitanBodySettings").show(); 
+														$("#lblMsg").text("Department Subsite creation failed. Please try again.");
+														
+													}
+												});
+										  
+										  }
+
+
+                                        }else{
+                                          $("#loader").show();
+                                           //setTimeout(checkdepartmentsettings(),40000);
+										   $("#TitanBodyMsg").show();    
+													  $("#TitanBodySettings").hide();                       
+													  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
+												  $.ajax({
+													url: "https://titandeployfunctions.azurewebsites.net/api/DepartmentSubSiteCreation",                    
+													crossDomain: true,
+													method:'POST',
+													//async: false,
+													data: JSON.stringify({
+													  "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password,
+													  "CompanyName":CompanyName,
+													  "DepartmentName":DepartmentName,
+													  "OfficeLocation":OfficeLocation
+													  
+													}),
+													headers:{'Content-Type': 'application/json'},
+													timeout: 600000,
+													//context: context,
+													beforeSend: function()
+														  {
+															$("#loader").show();
+														  },
+													success: function(result){
+													  $("#loader").hide();
+													  $("#TitanBody").hide();
+													  $("#TitanBodyMsg").show();    
+													  $("#TitanBodySettings").hide();                       
+													  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
+													  if(result.indexOf("Department Setup Completed Successfully")>=0)
+															  {
+																$("#lblMsg").text("Subsite Department Lists uploading completed. Please wait.");
+																  departmentsubsite=1;
+																  setupComplete();
+															  
+															  }else{
+																setTimeout(checkdepartmentsettings,40000);
+															  }
+													  
+													  
+													  
+													},
+													finally: function(){
+													  $("#loader").hide();
+														//$("#TitanBody").hide();
+														//$("#TitanBodyMsg").show();    
+													},
+													error: function(response){
+														//error
+														$("#loader").hide();
+														//$("#TitanBody").show();
+														$("#TitanBodyMsg").show(); 
+														 $("#TitanBodySettings").show(); 
+														$("#lblMsg").text("Department Subsite creation failed. Please try again.");
+														
+													}
+												});
+                                        }
+                                        
+                                      },
+                                      finally: function(){
+                                        $("#loader").hide();                                          
+                                      },
+                                      error: function(response){
+                                          //error
+                                          $("#loader").hide();
+                                         
+                                          $("#TitanBodyMsg").show(); 
+                                          $("#lblMsg").text("Error settings Department List. Please Try again.");
+                                         
+                                          fail=1;
+                                      }
+              });
+
+             
+
+
+   }
+
+var setupcompleteno=0;
+function setupComplete()
+{
+	setupcompleteno=setupcompleteno+1;
+	if(setupcompleteno>30)
+	{
+	
+		$("#TitanBodyMsg").show();   
+			  $("#lblMsg").text("Error Uploading Apps. Please contact Titan Workspace: info@titanworkspace.com");
+				return;
+	
+	}
+	
+	var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	var CompanyName="";
+	var DepartmentName="";
+	var OfficeLocation="";
+	
+    if(password=="")
+    {
+      alert("Please enter Password");
+	  $("#TitanBody").show();
+	  $("#TitanBodySettings").hide();
+      return;
+
+    }
+	CompanyName=$("#txtCompanyName").val();
+	if(CompanyName=="")
+	{
+		alert("Please enter Company Name");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		CompanyName=CompanyName.replace(/\s/g, '_');
+	}
+	DepartmentName=$("#txtDepartmentName").val();
+	if(DepartmentName=="")
+	{
+		alert("Please enter Department Name");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}else{
+		DepartmentName=DepartmentName.replace(/\s/g, '_');
+	}
+	OfficeLocation=$("#txtOfficeLocation").val();
+	if(OfficeLocation=="")
+	{
+		alert("Please enter OfficeLocation");
+	  $("#TitanBody").hide();
+	  $("#TitanBodySettings").show();
+      return;
+	
+	}
+	$("#loader").show();
+			$("#TitanBodyMsg").show();    
+                                              $("#TitanBodySettings").hide();                       
+                                              $("#lblMsg").text("Final Setup on process. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+											  
+	 
+		 
+        //Set completion
+        $.ajax({
+                                              url: "https://titandeployfunctions.azurewebsites.net/api/FinalSetup",                    
+                                              crossDomain: true,
+                                              method:'POST',
+                                              //async: false,
+                                              data: JSON.stringify({
+                                                "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password,
+													  "CompanyName":CompanyName,
+													  "DepartmentName":DepartmentName,
+													  "OfficeLocation":OfficeLocation
+                                              }),
+                                              headers:{'Content-Type': 'application/json'},
+											  timeout: 600000,
+                                              //context: context,
+                                              beforeSend: function()
+                                                    {
+                                                      $("#loader").show();
+                                                    },
+                                              success: function(result){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                                $("#TitanBodySettings").hide();    
+
+												location.href="Setup.aspx?setup=completed&compid="+companyid;
+												/*try{
+												insertVal();
+												}catch{}
+												*/
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  $("#TitanBody").show();
+                                                  $("#TitanBodyMsg").show(); 
+                                                  $("#lblMsg").text("Setup failed. Try again.");
+                                                  setTimeout(setupComplete,30000);
+                                              }
+                                            });
+	
+	
+	
+}
+
+
+function updateListItem(listname,Metadata) {
+   
+    //var dfd = $.Deferred();
+	
+	$.ajax
+        ({
+            url: siteurl + "/_api/web/lists/getByTitle('"+listname+"')/items?$select=Id",
+            type: "GET",
+			async: false,
+            headers:
+               {                   
+                   "Accept": "application/json;odata=verbose"
+               },
+            success: function (data, status, xhr) {
+                var dataresults = data.d.results;
+				for(var i=0;i<data.d.results.length;i++)
+				{
+					//$.when(updateListItem2(listname,Metadata,dataresults[i]["Id"])).done(function (itemresponse) {
+					//});
+					updateListItem2(listname,Metadata,dataresults[i]["Id"]);
+                } 
+				//dfd.resolve(true);				
+            },
+            error: function (xhr, status, error) {
+                console.log("Failed");
+            }
+        }); 
+		
+    
+    //return dfd.promise();
+}
+
+function updateListItem2(listname,Metadata,listid) {
+   
+    //var dfd = $.Deferred();
+	
+	
+					var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items(" + listid + ")";
+					$.ajax({
+						url: oweburl,
+						type: "POST",
+						async: false,
+						headers: {
+							"accept": "application/json;odata=verbose",
+							"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+							"content-Type": "application/json;odata=verbose",
+							"X-Http-Method": "PATCH",
+							"If-Match": '*'
+						},
+						data: JSON.stringify(Metadata),
+						success: function (RESULT) {
+							 
+						   // alert("Event Updated successfully!");
+							
+							//location.reload();
+							//dfd.resolve(true);
+
+
+
+
+						},
+						error: function (error) {
+							alert(JSON.stringify(error));
+							//dfd.reject(error);
+						}
+					});
+                
+		
+    
+    //return dfd.promise();
+}
+
+
+function insertListItem(listname,Metadata)
+{
+	var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items";
+	$.ajax({  
+                url: oweburl,  
+				async: false,
+                type: "POST",  
+                headers: {  
+                    "accept": "application/json;odata=verbose",
+							"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+							"content-Type": "application/json;odata=verbose",
+							"X-Http-Method": "POST",
+							"If-Match": '*'
+                },  
+                data:  JSON.stringify(Metadata), 
+				success: function(data) {  
+					//alert("Item is Created successfully!!");  
+				}, 
+				eror: function(data) {  
+					console.log("An error occurred. Please try again.");  
+				}  
+        });  
+
+
+}
+
+
+  function wait(ms){
+   var start = new Date().getTime();
+   var end = start;
+   while(end < start + ms) {
+     end = new Date().getTime();
+  }
+}
+function insertVal()
+{
+
+ siteurl=_spPageContextInfo.webAbsoluteUrl;
+
+var Metadata;
+												var listname="";
+												
+												listname="AboutUs";
+												Metadata={
+													__metadata:
+													{
+													  
+													  type: "SP.Data.AboutUsListItem"
+													},
+													CompanyIDId: companyid 
+													};
+												//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+												updateListItem(listname,Metadata);
+													listname="Navigation";
+													Metadata={
+														__metadata:
+														{
+														  
+														  type: "SP.Data.NavigationListItem"
+														},
+														CompanyId: companyid 
+														};
+												
+													//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+													updateListItem(listname,Metadata);
+														listname="SocialMediaSettings";
+														Metadata={
+														__metadata:
+														{
+														  
+														  type: "SP.Data.SocialMediaSettingsListItem"
+														},
+														CompanyId: companyid 
+														};
+														
+														//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+														updateListItem(listname,Metadata);
+														
+														
+														try{
+															listname="EnvironmentalSettings";
+															Metadata={
+															__metadata:
+															{
+															  
+															  type: "SP.Data.EnvironmentalSettingsListItem"
+															},
+															Title: "Setup",
+															Description: "Completed"														
+															};
+															
+															insertListItem(listname,Metadata);
+														
+														}catch{}
+														
+															updateImageGalListItem();
+															
+															$("#lblMsg").text("Titan Workspace setup completed."+" Time Elapsed: "+endTime2()+" seconds");
+															
+															var domainName="";
+															var subsite="";
+															try{
+																let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
+																domainName=domain.hostname;
+																
+																subsite=siteurl.toLocaleLowerCase().substring(siteurl.toLocaleLowerCase().indexOf("/sites/")+7)
+																subsite=subsite.replace("/");
+																
+																if(domainName!="" && subsite!="")
+																{
+																	window.localStorage.setItem('domain', domainName);
+																	window.localStorage.setItem('subsite', subsite);
+																}
+															}catch{}
+															
+															
+															
+															const myTimeout = setTimeout(siteRedirect, 5000);
+															
+														
+														
+														//});
+													
+													
+													
+													//});
+												
+												
+												//});
+
+}
+function siteRedirect()
+{
+
+	location.replace(siteurl+"/Pages/default.aspx?WebAppId=1?TEAM");
+
+}
+
+
+
+function checkInList() {
+   
+   siteurl=_spPageContextInfo.webAbsoluteUrl;
+   	debugger;
+	$.ajax
+        ({
+            url: siteurl + "/_api/web/lists/getByTitle('Companies')/items?$select=Id,CompanyType,CompanyName",
+            type: "GET",
+			async: false,
+            headers:
+               {                   
+                   "Accept": "application/json;odata=verbose"
+               },
+            success: function (data, status, xhr) {
+                
+				for(var i=0;i<data.d.results.length;i++)
+                {
+                                            if(data.d.results[i].CompanyType=="Corporate")
+                                            {
+                                              companyid=data.d.results[i].ID;
+                                              var companyname=data.d.results[i].CompanyName;
+											  $("#txtCompanyName").val(companyname);
+											  $("#txtCompanyName").attr("readonly","readonly");
+                                            }
+               } 
+						
+            },
+            error: function (xhr, status, error) {
+                console.log("Failed");
+            }
+        }); 
+		
+	$.ajax
+        ({
+            url: siteurl + "/_api/web/lists/getByTitle('Departments')/items?$select=Id,Title,CompanyIDId",
+            type: "GET",
+			async: false,
+            headers:
+               {                   
+                   "Accept": "application/json;odata=verbose"
+               },
+            success: function (data, status, xhr) {
+                
+				for(var i=0;i<data.d.results.length;i++)
+                                          {
+											try{
+												if(parseInt(data.d.results[i].CompanyIDId)==parseInt(companyid))
+												{
+												  $("#txtDepartmentName").val(data.d.results[i].Title);
+												  $("#txtDepartmentName").attr("readonly","readonly");
+												}
+											}catch{}
+                                          }
+						
+            },
+            error: function (xhr, status, error) {
+                console.log("Failed");
+            }
+        }); 
+		$.ajax
+        ({
+            url: siteurl + "/_api/web/lists/getByTitle('OfficeLocation')/items?$select=Id,CompanyIDId,Title",
+            type: "GET",
+			async: false,
+            headers:
+               {                   
+                   "Accept": "application/json;odata=verbose"
+               },
+            success: function (data, status, xhr) {
+                
+				for(var i=0;i<data.d.results.length;i++)
+                                          {
+											try{
+												if(parseInt(data.d.results[i].CompanyIDId)==parseInt(companyid))
+												{
+												  $("#txtOfficeLocation").val(data.d.results[i].Title);
+												  $("#txtOfficeLocation").attr("readonly","readonly");
+												}
+											}catch{}
+                                          }
+						
+            },
+            error: function (xhr, status, error) {
+                console.log("Failed");
+            }
+        }); 
+}
+
+function setDefaultPage()
+{
+
+siteurl=_spPageContextInfo.webAbsoluteUrl;
+	
+//alert(siteurl);
+    var userName=$("#txtUserName").val();
+    if(userName=="")
+    {
+      alert("Please enter UserName");
+      return;
+
+    }
+    var password=$("#txtPassword").val();
+    if(password=="")
+    {
+      alert("Please enter Password");
+      return;
+
+    }else{
+      password=btoa(password);
+    }
+	$("#loader").show();  
+	 $("#TitanBodyMsg").show(); 
+	$("#lblMsg").text("Setup started. Please wait..");
+			$.ajax({
+                                              url: "https://titandeployfunctions.azurewebsites.net/api/ChangeDefaultPage",                    
+                                              crossDomain: true,
+                                              method:'POST',
+                                              //async: false,
+                                              data: JSON.stringify({
+                                                "SourceUrl": siteurl,
+													  "UserName": userName,
+													  "rawPass": password
+													  
+                                              }),
+                                              headers:{'Content-Type': 'application/json'},
+											  timeout: 600000,
+                                              //context: context,
+                                              beforeSend: function()
+                                                    {
+                                                      $("#loader").show();
+                                                    },
+                                              success: function(result){
+                                                $("#loader").hide();
+                                                $("#TitanBody").hide();
+                                                $("#TitanBodyMsg").show();    
+                                                $("#TitanBodySettings").hide();    
+
+												install();										
+                                                
+                                              },
+                                              finally: function(){
+                                                $("#loader").hide();
+                                                  //$("#TitanBody").hide();
+                                                  //$("#TitanBodyMsg").show();    
+                                              },
+                                              error: function(response){
+                                                  //error
+                                                  $("#loader").hide();
+                                                  $("#TitanBody").show();
+                                                  $("#TitanBodyMsg").show(); 
+                                                  $("#lblMsg").text("Setup failed. Try again.");
+                                                  
+                                              }
+                                            });
+
+
+
+}
+
+function updateImageGalListItem() {
+   
+    //var dfd = $.Deferred();
+	var Metadata;
+	$.ajax
+        ({
+            url: siteurl + "/_api/web/lists/getByTitle('ImageGallery')/items?$select=Id,FileLeafRef",
+            type: "GET",
+			async: false,
+            headers:
+               {                   
+                   "Accept": "application/json;odata=verbose"
+               },
+            success: function (data, status, xhr) {
+                var dataresults = data.d.results;
+				var dataType=dataresults[0].__metadata.type;
+				for(var i=0;i<data.d.results.length;i++)
+				{
+					if(dataresults[i]["FileLeafRef"]=="learn2.jpg")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "PicURL",
+							Keywords: "LINK",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="department.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "DEPARTMENT",//dataresults[i]["FileLeafRef"],
+							Keywords: "DEPARTMENT",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Team.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "TEAM",//dataresults[i]["FileLeafRef"],
+							Keywords: "TEAM",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="slider.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "SLIDER",//dataresults[i]["FileLeafRef"],
+							Keywords: "SLIDER",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="yammer.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "YAMMER",//dataresults[i]["FileLeafRef"],
+							Keywords: "YAMMER",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="ev3.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "EVENT",//dataresults[i]["FileLeafRef"],
+							Keywords: "EVENT",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="twitter.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "TWITTER",//dataresults[i]["FileLeafRef"],
+							Keywords: "TWITTER",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="instagram.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "INSTAGRAM",//dataresults[i]["FileLeafRef"],
+							Keywords: "INSTAGRAM",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="facebook.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "FACEBOOK",//dataresults[i]["FileLeafRef"],
+							Keywords: "FACEBOOK",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="culture-person.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "SECTION 3",//dataresults[i]["FileLeafRef"],
+							Keywords: "SECTION 3",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Anniversary.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Anniversary",//dataresults[i]["FileLeafRef"],
+							Keywords: "Anniversary",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Birthday.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Birthday",//dataresults[i]["FileLeafRef"],
+							Keywords: "Birthday",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="eventsDEFAULT.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "DEFAULT EVENT",//dataresults[i]["FileLeafRef"],
+							Keywords: "DEFAULT EVENT",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Workiversary.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Workiversary",//dataresults[i]["FileLeafRef"],
+							Keywords: "Workiversary",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Recognition.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Recognition",//dataresults[i]["FileLeafRef"],
+							Keywords: "Recognition",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="DefaultOccasion.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "DefaultOccasion",//dataresults[i]["FileLeafRef"],
+							Keywords: "DefaultOccasion",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="DefaultExperience.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Default Experience",//dataresults[i]["FileLeafRef"],
+							Keywords: "Default Experience",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Recognition-cover.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "RecognitionCover",//dataresults[i]["FileLeafRef"],
+							Keywords: "RecognitionCover",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="learning128.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "LINK",//dataresults[i]["FileLeafRef"],
+							Keywords: "LINK",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="event128.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "EVENT",//dataresults[i]["FileLeafRef"],
+							Keywords: "EVENT",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: dataresults[i]["FileLeafRef"],
+							Keywords: dataresults[i]["FileLeafRef"],
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}
+					updateListItem2("ImageGallery",Metadata,dataresults[i]["Id"]);
+                } 
+				//dfd.resolve(true);				
+            },
+            error: function (xhr, status, error) {
+                console.log("Failed");
+            }
+        }); 
+		
+    
+    //return dfd.promise();
+}
+
+
+</script>
+
+</body>
+</html>
