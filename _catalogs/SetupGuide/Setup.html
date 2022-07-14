@@ -2535,13 +2535,13 @@ var companyid=0;
                                         $("#loader").show();
                                       },
                                       success: function(data){
-                                        $("#loader").hide();
+                                        //$("#loader").hide();
                                         $("#TitanBodySettings").hide();
                                         $("#TitanBodyMsg").show(); 
                                        
                                         if(data.d.results.length>0)
                                         {                                          
-                                          $("#lblMsg").text("Company List settings success. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                          $("#lblMsg").text("Company List settings success. Please wait.");
                                          
                                           
                                           var companyname="";
@@ -2594,7 +2594,7 @@ var companyid=0;
 
                                                 if(OccasionDetails==1 )
                                                 {
-                                                  $("#lblMsg").text("Subsite Company Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                                  $("#lblMsg").text("Subsite Company Lists uploading completed. Please wait.");
                                                   companysubsite=1;
                                                   companylist=1;
                                                   $("#TitanBodySettings").hide();
@@ -2637,11 +2637,11 @@ var companyid=0;
 																	$("#loader").show();
 																  },
 															success: function(result){
-															  $("#loader").hide();
+															  //$("#loader").hide();
 															  $("#TitanBody").hide();
 															  $("#TitanBodyMsg").show();    
 															  $("#TitanBodySettings").hide();                       
-															  $("#lblMsg").text("Company Subsite creation on process. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+															  $("#lblMsg").text("Company Subsite creation on process. Please wait.");
 															  //setTimeout(checkcompanysettings,40000);
 															  setTimeout(installSettings,20000);
 															  
@@ -3030,7 +3030,7 @@ function checkcompanysettings()
 	$("#loader").show();
 			$("#TitanBodyMsg").show();    
                                               $("#TitanBodySettings").hide();                       
-                                              $("#lblMsg").text("Department Subsite creation on process. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                              $("#lblMsg").text("Department Subsite creation on process. Please wait.");
               //Department list
               $.ajax({
                                       url: siteurl+"/_api/Web/Lists/getbytitle('Departments')/Items",                  
@@ -3045,7 +3045,7 @@ function checkcompanysettings()
                                         $("#loader").show();
                                       },
                                       success: function(data){
-                                        $("#loader").hide();
+                                       // $("#loader").hide();
                                         $("#TitanBody").hide();
                                         $("#TitanBodyMsg").show(); 
                                         $("#TitanBodySettings").hide();   
@@ -3088,7 +3088,7 @@ function checkcompanysettings()
                                                 $("#loader").show();
                                               },
                                               success: function(data){
-                                                $("#loader").hide();
+                                               // $("#loader").hide();
                                                 $("#TitanBody").hide();
                                                 $("#TitanBodyMsg").show();    
                                               var KnowledgeBase=0;
@@ -3109,7 +3109,7 @@ function checkcompanysettings()
 
                                                 if(KnowledgeBase==1 )
                                                 {
-                                                  $("#lblMsg").text("Subsite Department Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+                                                  $("#lblMsg").text("Subsite Department Lists uploading completed. Please wait.");
                                                   departmentsubsite=1;
                                                   setupComplete();
                                                 }else{
@@ -3158,7 +3158,7 @@ function checkcompanysettings()
 															  $("#lblMsg").text("Department Subsite creation on process. Please wait.");
 															  if(result.indexOf("Department Setup Completed Successfully")>=0)
 															  {
-																$("#lblMsg").text("Subsite Department Lists uploading completed. Please wait."+" Time Elapsed: "+endTime2()+" seconds");
+																$("#lblMsg").text("Subsite Department Lists uploading completed. Please wait.");
 																  departmentsubsite=1;
 																  setupComplete();
 															  
@@ -3233,7 +3233,7 @@ function checkcompanysettings()
 															$("#loader").show();
 														  },
 													success: function(result){
-													  $("#loader").hide();
+													 // $("#loader").hide();
 													  $("#TitanBody").hide();
 													  $("#TitanBodyMsg").show();    
 													  $("#TitanBodySettings").hide();                       
@@ -3245,7 +3245,7 @@ function checkcompanysettings()
 																  setupComplete();
 															  
 															  }else{
-																setTimeout(checkdepartmentsettings,40000);
+																setTimeout(checkdepartmentsettings,20000);
 															  }
 													  
 													  
@@ -3298,7 +3298,7 @@ function checkcompanysettings()
 															$("#loader").show();
 														  },
 													success: function(result){
-													  $("#loader").hide();
+													 // $("#loader").hide();
 													  $("#TitanBody").hide();
 													  $("#TitanBodyMsg").show();    
 													  $("#TitanBodySettings").hide();                       
@@ -3310,7 +3310,7 @@ function checkcompanysettings()
 																  setupComplete();
 															  
 															  }else{
-																setTimeout(checkdepartmentsettings,40000);
+																setTimeout(checkdepartmentsettings,20000);
 															  }
 													  
 													  
