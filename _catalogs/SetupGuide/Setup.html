@@ -3658,6 +3658,22 @@ var Metadata;
 														
 														}catch{}
 														
+														try{
+															listname="DocumentManagementSystem";
+															Metadata={
+															__metadata:
+															{
+															  
+															  type: "SP.Data.DocumentManagementSystemItem"
+															},
+															Title: _spPageContextInfo.userEmail,
+															Name: _spPageContextInfo.userEmail														
+															};
+															
+															insertListItem(listname,Metadata);
+														
+														}catch{}
+														
 															updateImageGalListItem();
 															
 															$("#lblMsg").text("Titan Workspace setup completed.");
@@ -4119,6 +4135,18 @@ function updateImageGalListItem() {
 							},
 							Title: "EVENT",//dataresults[i]["FileLeafRef"],
 							Keywords: "EVENT",
+							IsActive: "true",
+							CompanyId: companyid																												
+						};
+					}else if(dataresults[i]["FileLeafRef"]=="Default_Learning.png")
+					{
+						Metadata={
+							__metadata:
+							{
+								type: dataType
+							},
+							Title: "Default Learning",//dataresults[i]["FileLeafRef"],
+							Keywords: "DefaultLearning",
 							IsActive: "true",
 							CompanyId: companyid																												
 						};
