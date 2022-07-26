@@ -3658,21 +3658,7 @@ var Metadata;
 														
 														}catch{}
 														
-														try{
-															listname="DocumentManagementSystem";
-															Metadata={
-															__metadata:
-															{
-															  
-															  type: "SP.Data.DocumentManagementSystemItem"
-															},
-															Title: _spPageContextInfo.userEmail,
-															Name: _spPageContextInfo.userEmail														
-															};
-															
-															insertListItem(listname,Metadata);
 														
-														}catch{}
 															
 															updateImageGalListItem();
 															addInitialFolderInDocLib();
@@ -3714,14 +3700,15 @@ var Metadata;
 																	"Status": "Live"
 																}),
 																success: function(result){
-																  
+																  alert("insert success");
 																	const myTimeout = setTimeout(siteRedirect, 5000);
 																},
 																finally: function(){
 																 
 																},
 																error: function(response){
-																	const myTimeout = setTimeout(siteRedirect, 5000);
+																	alert("Error in insert");
+																	//const myTimeout = setTimeout(siteRedirect, 5000);
 																}
 															});
 															
@@ -4229,7 +4216,7 @@ var Metadata={
                 },  
                 data:  JSON.stringify(Metadata), 
 				success: function(data) {  
-					alert("Item is Created successfully!!");  
+					alert("Dov=c item is Created successfully!!");  
 				}, 
 				eror: function(data) {  
 					console.log("An error occurred. Please try again.");  
