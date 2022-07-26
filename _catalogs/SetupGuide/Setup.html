@@ -615,6 +615,7 @@ $( document ).ready(function() {
 							{
 							
 								companyid=urlParams.get('compid');
+								
 								insertVal();
 							}
 							
@@ -3599,7 +3600,8 @@ function insertListItem(listname,Metadata)
 }
 function insertVal()
 {
-
+$("#TitanBodySettings").hide();                       
+$("#lblMsg").text("Final Setup on process. Please wait.");
  siteurl=_spPageContextInfo.webAbsoluteUrl;
 
 var Metadata;
