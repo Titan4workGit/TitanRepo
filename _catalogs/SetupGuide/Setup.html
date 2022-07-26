@@ -3673,10 +3673,13 @@ var Metadata;
 															insertListItem(listname,Metadata);
 														
 														}catch{}
-														
+															
 															updateImageGalListItem();
+															addInitialFolderInDocLib();
 															
 															$("#lblMsg").text("Titan Workspace setup completed.");
+															
+															
 															
 															var domainName="";
 															var subsite="";
@@ -3696,9 +3699,35 @@ var Metadata;
 																}
 															}catch{}
 															
+															/////
+															
+															$.ajax({
+																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domain,                        
+																method:'PUT',
+																async: false,
+																headers:{
+																	"XApiKey": "Abc",
+																	"Content-Type": "application/json"
+																},
+																data: JSON.stringify({
+																	"Website": domain,
+																	"Status": "Live"
+																}),
+																success: function(result){
+																  
+																	const myTimeout = setTimeout(siteRedirect, 5000);
+																},
+																finally: function(){
+																 
+																},
+																error: function(response){
+																	const myTimeout = setTimeout(siteRedirect, 5000);
+																}
+															});
+															
+															/////
 															
 															
-															const myTimeout = setTimeout(siteRedirect, 5000);
 															
 														
 														
@@ -4176,7 +4205,39 @@ function updateImageGalListItem() {
     //return dfd.promise();
 }
 
+function addInitialFolderInDocLib()
+{
 
+	
+var oweburl = siteurl + "/_api/Web/Folders";
+var Metadata={
+															__metadata:
+															{
+															  
+															  type: "SP.Folder"
+															},
+															'ServerRelativeUrl': 'DocumentManagementSystem/'+_spPageContextInfo.userEmail													
+															};
+	$.ajax({  
+                url: oweburl,  
+				async: false,
+                type: "POST",  
+                headers: {  
+                   "accept"          : "application/json; odata=verbose", 
+                "content-type"    : "application/json; odata=verbose",
+                "X-RequestDigest" : $("#__REQUESTDIGEST").val()
+                },  
+                data:  JSON.stringify(Metadata), 
+				success: function(data) {  
+					alert("Item is Created successfully!!");  
+				}, 
+				eror: function(data) {  
+					console.log("An error occurred. Please try again.");  
+				}  
+        });
+
+
+}
 </script>
 
 </body>
