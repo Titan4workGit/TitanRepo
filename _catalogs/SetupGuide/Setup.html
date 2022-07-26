@@ -3676,7 +3676,7 @@ var Metadata;
 															
 															$("#lblMsg").text("Titan Workspace setup completed.");
 															
-															
+															alert("Titan Workspace setup completed.");
 															
 															var domainName="";
 															var subsite="";
@@ -3697,9 +3697,10 @@ var Metadata;
 															}catch{}
 															
 															/////
+															alert(domainName);
 															
 															$.ajax({
-																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domain,                        
+																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
 																method:'PUT',
 																async: false,
 																headers:{
@@ -3707,7 +3708,7 @@ var Metadata;
 																	"Content-Type": "application/json"
 																},
 																data: JSON.stringify({
-																	"Website": domain,
+																	"Website": domainName,
 																	"Status": "Live"
 																}),
 																success: function(result){
