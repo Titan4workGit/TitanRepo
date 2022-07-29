@@ -622,7 +622,7 @@ $( document ).ready(function() {
 							setupstr=urlParams.get('setup');
 							if(setupstr=="completed")
 							{
-							
+								$("#TitanBody").hide(); 
 								companyid=urlParams.get('compid');
 								
 								insertVal();
@@ -3676,7 +3676,7 @@ var Metadata;
 															
 															$("#lblMsg").text("Titan Workspace setup completed.");
 															
-															alert("Titan Workspace setup completed.");
+															
 															
 															var domainName="";
 															var subsite="";
@@ -3697,8 +3697,8 @@ var Metadata;
 															}catch{}
 															
 															/////
-															alert(domainName);
-															
+															//alert(domainName);
+															alert("Titan Workspace setup completed.");
 															$.ajax({
 																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
 																method:'PUT',
@@ -3712,7 +3712,7 @@ var Metadata;
 																	"Status": "Live"
 																}),
 																success: function(result){
-																  alert("insert success");
+																  //alert("insert success");
 																	const myTimeout = setTimeout(siteRedirect, 5000);
 																},
 																finally: function(){
@@ -4206,7 +4206,7 @@ function updateImageGalListItem() {
 
 function addInitialFolderInDocLib()
 {
-
+/*
 	
 var oweburl = siteurl + "/_api/Web/Folders";
 var Metadata={
@@ -4234,7 +4234,27 @@ var Metadata={
 					console.log("An error occurred. Please try again.");  
 				}  
         });
+*/
 
+
+	var fullUrl = siteurl+"/_api/web/getfolderbyserverrelativeurl('DocumentManagementSystem')/Folders/add('"+_spPageContextInfo.userEmail+"')";
+	$.ajax({
+	url: fullUrl,
+	type: "POST",
+
+	headers: {
+	"accept": "application/json;odata=verbose",
+	"content-type": "application/json;odata=verbose",
+	"X-RequestDigest": $("#__REQUESTDIGEST").val(),
+		'Authorization': 'Bearer '+$("#__REQUESTDIGEST").val()
+	},
+	success: function(data) {  
+					//alert("Dov=c item is Created successfully!!");  
+				}, 
+	eror: function(data) {  
+					console.log("An error occurred. Please try again.");  
+				}  
+	});
 
 }
 </script>
