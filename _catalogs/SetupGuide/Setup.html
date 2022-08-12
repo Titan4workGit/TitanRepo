@@ -3708,18 +3708,18 @@ var Metadata;
 																			}catch{}
 																			
 																			/////
-																			//alert(domainName);
+																			alert(domainName);
 																			//alert("Titan Workspace setup completed.");
 																			
 																			$.ajax({
-																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domain,                        
+																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
 																				method:'GET',
 																				async: false,
 																				headers:{
 																					"X-ApiKey": "QWJj"
 																				},
 																				success: function(result){
-																				 
+																				 alert(result);
 																				  var websiteid=result[0].ID;
 																				  status="Live";
 																				  $.ajax({
@@ -3742,6 +3742,7 @@ var Metadata;
 																					 
 																					},
 																					error: function(response){
+																						alert("error");
 																						websiteid="";
 																						websitestatus="";
 																					}
@@ -3751,6 +3752,7 @@ var Metadata;
 																				 
 																				},
 																				error: function(response){
+																					alert("error:1");
 																					websiteid="";
 																					websitestatus="";
 																				}
