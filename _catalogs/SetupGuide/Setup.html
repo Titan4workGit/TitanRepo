@@ -3508,7 +3508,7 @@ function updateListItem(listname,Metadata) {
         ({
             url: siteurl + "/_api/web/lists/getByTitle('"+listname+"')/items?$select=Id",
             type: "GET",
-			async: false,
+			//async: false,
             headers:
                {                   
                    "Accept": "application/json;odata=verbose"
@@ -3543,7 +3543,7 @@ function updateListItem2(listname,Metadata,listid) {
 					$.ajax({
 						url: oweburl,
 						type: "POST",
-						async: false,
+						//async: false,
 						headers: {
 							"accept": "application/json;odata=verbose",
 							"X-RequestDigest": $("#__REQUESTDIGEST").val(),
@@ -3581,7 +3581,7 @@ function insertListItem(listname,Metadata)
 	var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items";
 	$.ajax({  
                 url: oweburl,  
-				async: false,
+				//async: false,
                 type: "POST",  
                 headers: {  
                     "accept": "application/json;odata=verbose",
@@ -3708,32 +3708,53 @@ var Metadata;
 																			/////
 																			//alert(domainName);
 																			//alert("Titan Workspace setup completed.");
+																			
 																			$.ajax({
-																				url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
-																				method:'POST', 
-																				//async: false,
+																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domain,                        
+																				method:'GET',
+																				async: false,
 																				headers:{
-																					"X-Apikey": "QWJj",
-																					"Content-Type": "application/json"
+																					"X-ApiKey": "QWJj"
 																				},
-																				data: JSON.stringify({
-																					"Website": domainName,
-																					"Status": "Live"
-																				}),
 																				success: function(result){
-																				  //alert("insert success");
-																					const myTimeout = setTimeout(siteRedirect, 5000);
+																				 
+																				  var websiteid=result[0].ID;
+																				  status="Live";
+																				  $.ajax({
+																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
+																					method:'POST',
+																					async: false,
+																					headers:{
+																						"X-Apikey": "QWJj",
+																						"Content-Type": "application/json"
+																					},
+																					data: JSON.stringify({
+																						"ID": websiteid,
+																						"Status": status
+																					}),
+																					success: function(result){
+																					  
+																					  const myTimeout = setTimeout(siteRedirect, 5000);
+																					},
+																					finally: function(){
+																					 
+																					},
+																					error: function(response){
+																						websiteid="";
+																						websitestatus="";
+																					}
+																				  });
 																				},
 																				finally: function(){
 																				 
 																				},
 																				error: function(response){
-																					alert("Error in insert");
-																					//const myTimeout = setTimeout(siteRedirect, 5000);
+																					websiteid="";
+																					websitestatus="";
 																				}
 																			});
 																			
-																			/////
+																			
 																	
 																		});
 																	
@@ -3927,7 +3948,7 @@ function updateImageGalListItem() {
         ({
             url: siteurl + "/_api/web/lists/getByTitle('ImageGallery')/items?$select=Id,FileLeafRef",
             type: "GET",
-			async: false,
+			//async: false,
             headers:
                {                   
                    "Accept": "application/json;odata=verbose"
