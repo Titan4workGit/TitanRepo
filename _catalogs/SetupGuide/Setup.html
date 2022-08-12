@@ -3698,13 +3698,13 @@ var Metadata;
 															
 															/////
 															//alert(domainName);
-															alert("Titan Workspace setup completed.");
+															//alert("Titan Workspace setup completed.");
 															$.ajax({
 																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
 																method:'PUT',
-																async: false,
+																//async: false,
 																headers:{
-																	"XApiKey": "Abc",
+																	"X-Apikey": "QWJj",
 																	"Content-Type": "application/json"
 																},
 																data: JSON.stringify({
