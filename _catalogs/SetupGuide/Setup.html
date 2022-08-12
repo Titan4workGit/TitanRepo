@@ -3508,7 +3508,7 @@ function updateListItem(listname,Metadata) {
         ({
             url: siteurl + "/_api/web/lists/getByTitle('"+listname+"')/items?$select=Id",
             type: "GET",
-			//async: false,
+			async: false,
             headers:
                {                   
                    "Accept": "application/json;odata=verbose"
@@ -3543,7 +3543,7 @@ function updateListItem2(listname,Metadata,listid) {
 					$.ajax({
 						url: oweburl,
 						type: "POST",
-						//async: false,
+						async: false,
 						headers: {
 							"accept": "application/json;odata=verbose",
 							"X-RequestDigest": $("#__REQUESTDIGEST").val(),
@@ -3581,7 +3581,7 @@ function insertListItem(listname,Metadata)
 	var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items";
 	$.ajax({  
                 url: oweburl,  
-				//async: false,
+				async: false,
                 type: "POST",  
                 headers: {  
                     "accept": "application/json;odata=verbose",
@@ -3614,10 +3614,12 @@ function insertListItem(listname,Metadata)
 }
 function insertVal()
 {
+$("#loader").show();
+$("#TitanBodyMsg").show();    
 $("#TitanBodySettings").hide();                       
 $("#lblMsg").text("Final Setup on process. Please wait.");
  siteurl=_spPageContextInfo.webAbsoluteUrl;
-debugger;
+//debugger;
 var Metadata;
 												var listname="";
 												
@@ -3948,7 +3950,7 @@ function updateImageGalListItem() {
         ({
             url: siteurl + "/_api/web/lists/getByTitle('ImageGallery')/items?$select=Id,FileLeafRef",
             type: "GET",
-			//async: false,
+			async: false,
             headers:
                {                   
                    "Accept": "application/json;odata=verbose"
@@ -4274,7 +4276,7 @@ var Metadata={
 	$.ajax({
 	url: fullUrl,
 	type: "POST",
-
+	async: false,
 	headers: {
 	"accept": "application/json;odata=verbose",
 	"content-type": "application/json;odata=verbose",
