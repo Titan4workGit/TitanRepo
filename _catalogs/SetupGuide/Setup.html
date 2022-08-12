@@ -3502,7 +3502,7 @@ function setupComplete()
 
 function updateListItem(listname,Metadata) {
    
-    //var dfd = $.Deferred();
+    var dfd = $.Deferred();
 	
 	$.ajax
         ({
@@ -3517,11 +3517,13 @@ function updateListItem(listname,Metadata) {
                 var dataresults = data.d.results;
 				for(var i=0;i<data.d.results.length;i++)
 				{
-					//$.when(updateListItem2(listname,Metadata,dataresults[i]["Id"])).done(function (itemresponse) {
-					//});
-					updateListItem2(listname,Metadata,dataresults[i]["Id"]);
+					$.when(updateListItem2(listname,Metadata,dataresults[i]["Id"])).done(function (itemresponse) {
+					
+						dfd.resolve(true);	
+					});
+					//supdateListItem2(listname,Metadata,dataresults[i]["Id"]);
                 } 
-				//dfd.resolve(true);				
+							
             },
             error: function (xhr, status, error) {
                 console.log("Failed");
@@ -3529,12 +3531,12 @@ function updateListItem(listname,Metadata) {
         }); 
 		
     
-    //return dfd.promise();
+    return dfd.promise();
 }
 
 function updateListItem2(listname,Metadata,listid) {
    
-    //var dfd = $.Deferred();
+    var dfd = $.Deferred();
 	
 	
 					var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items(" + listid + ")";
@@ -3555,7 +3557,7 @@ function updateListItem2(listname,Metadata,listid) {
 						   // alert("Event Updated successfully!");
 							
 							//location.reload();
-							//dfd.resolve(true);
+							dfd.resolve(true);
 
 
 
@@ -3563,18 +3565,19 @@ function updateListItem2(listname,Metadata,listid) {
 						},
 						error: function (error) {
 							alert(JSON.stringify(error));
-							//dfd.reject(error);
+							dfd.reject(error);
 						}
 					});
                 
 		
     
-    //return dfd.promise();
+    return dfd.promise();
 }
 
 
 function insertListItem(listname,Metadata)
 {
+	var dfd = $.Deferred();
 	var oweburl = siteurl + "/_api/Web/Lists/getByTitle('"+listname+"')/Items";
 	$.ajax({  
                 url: oweburl,  
@@ -3590,13 +3593,15 @@ function insertListItem(listname,Metadata)
                 data:  JSON.stringify(Metadata), 
 				success: function(data) {  
 					//alert("Item is Created successfully!!");  
+					dfd.resolve(true);
+
 				}, 
 				eror: function(data) {  
 					console.log("An error occurred. Please try again.");  
 				}  
         });  
 
-
+	return dfd.promise();
 }
 
 
@@ -3625,8 +3630,8 @@ var Metadata;
 													},
 													CompanyIDId: companyid 
 													};
-												//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
-												updateListItem(listname,Metadata);
+												$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+													//updateListItem(listname,Metadata);
 													listname="Navigation";
 													Metadata={
 														__metadata:
@@ -3637,8 +3642,8 @@ var Metadata;
 														CompanyId: companyid 
 														};
 												
-													//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
-													updateListItem(listname,Metadata);
+													$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+														//updateListItem(listname,Metadata);
 														listname="SocialMediaSettings";
 														Metadata={
 														__metadata:
@@ -3649,95 +3654,101 @@ var Metadata;
 														CompanyId: companyid 
 														};
 														
-														//$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
-														updateListItem(listname,Metadata);
+														$.when(updateListItem(listname,Metadata)).done(function (itemresponse) {
+															//updateListItem(listname,Metadata);
 														
 														
-														try{
-															listname="EnvironmentalSettings";
-															Metadata={
-															__metadata:
-															{
-															  
-															  type: "SP.Data.EnvironmentalSettingsListItem"
-															},
-															Title: "Setup",
-															Description: "Completed"														
-															};
-															
-															insertListItem(listname,Metadata);
-														
-														}catch{}
-														
-														
-															
-															updateImageGalListItem();
-															addInitialFolderInDocLib();
-															
-															$("#lblMsg").text("Titan Workspace setup completed.");
-															
-															
-															
-															var domainName="";
-															var subsite="";
-															try{
-																let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
-																domainName=domain.hostname;
-																
-																subsite=siteurl.toLocaleLowerCase().substring(siteurl.toLocaleLowerCase().indexOf("/sites/")+7)
-																subsite=subsite.replace("/");
-																
-																localStorage.clear();
-																
-																if(domainName!="" && subsite!="")
+															//try{
+																listname="EnvironmentalSettings";
+																Metadata={
+																__metadata:
 																{
-																	window.localStorage.setItem('domain', domainName);
-																	window.localStorage.setItem('subsite', subsite);
-																}
-															}catch{}
+																  
+																  type: "SP.Data.EnvironmentalSettingsListItem"
+																},
+																Title: "Setup",
+																Description: "Completed"														
+																};
+																
+																//insertListItem(listname,Metadata);
 															
-															/////
-															//alert(domainName);
-															//alert("Titan Workspace setup completed.");
-															$.ajax({
-																url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
-																method:'PUT',
-																//async: false,
-																headers:{
-																	"X-Apikey": "QWJj",
-																	"Content-Type": "application/json"
-																},
-																data: JSON.stringify({
-																	"Website": domainName,
-																	"Status": "Live"
-																}),
-																success: function(result){
-																  //alert("insert success");
-																	const myTimeout = setTimeout(siteRedirect, 5000);
-																},
-																finally: function(){
-																 
-																},
-																error: function(response){
-																	alert("Error in insert");
-																	//const myTimeout = setTimeout(siteRedirect, 5000);
-																}
+															//}catch{}
+															
+																$.when(insertListItem(listname,Metadata)).done(function (itemresponse) {
+														
+														
+																	$.when(updateImageGalListItem()).done(function (itemresponse) {
+																		//updateImageGalListItem();
+																		
+																		$.when(addInitialFolderInDocLib()).done(function (itemresponse) {
+																			//addInitialFolderInDocLib();
+																			
+																			$("#lblMsg").text("Titan Workspace setup completed.");
+																			
+																			
+																			
+																			var domainName="";
+																			var subsite="";
+																			try{
+																				let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
+																				domainName=domain.hostname;
+																				
+																				subsite=siteurl.toLocaleLowerCase().substring(siteurl.toLocaleLowerCase().indexOf("/sites/")+7)
+																				subsite=subsite.replace("/");
+																				
+																				localStorage.clear();
+																				
+																				if(domainName!="" && subsite!="")
+																				{
+																					window.localStorage.setItem('domain', domainName);
+																					window.localStorage.setItem('subsite', subsite);
+																				}
+																			}catch{}
+																			
+																			/////
+																			//alert(domainName);
+																			//alert("Titan Workspace setup completed.");
+																			$.ajax({
+																				url: "https://titansetup.azurewebsites.net/api/WebsiteInfo/UpdateByName/"+domainName,                        
+																				method:'PUT',
+																				//async: false,
+																				headers:{
+																					"X-Apikey": "QWJj",
+																					"Content-Type": "application/json"
+																				},
+																				data: JSON.stringify({
+																					"Website": domainName,
+																					"Status": "Live"
+																				}),
+																				success: function(result){
+																				  //alert("insert success");
+																					const myTimeout = setTimeout(siteRedirect, 5000);
+																				},
+																				finally: function(){
+																				 
+																				},
+																				error: function(response){
+																					alert("Error in insert");
+																					//const myTimeout = setTimeout(siteRedirect, 5000);
+																				}
+																			});
+																			
+																			/////
+																	
+																		});
+																	
+																	});
+														
 															});
-															
-															/////
-															
-															
-															
 														
-														
-														//});
+														});
 													
 													
 													
-													//});
+													});
 												
 												
-												//});
+												});
 
 }
 function siteRedirect()
@@ -3910,7 +3921,7 @@ siteurl=_spPageContextInfo.webAbsoluteUrl;
 
 function updateImageGalListItem() {
    
-    //var dfd = $.Deferred();
+    var dfd = $.Deferred();
 	var Metadata;
 	$.ajax
         ({
@@ -4193,7 +4204,7 @@ function updateImageGalListItem() {
 					}
 					updateListItem2("ImageGallery",Metadata,dataresults[i]["Id"]);
                 } 
-				//dfd.resolve(true);				
+				dfd.resolve(true);				
             },
             error: function (xhr, status, error) {
                 console.log("Failed");
@@ -4201,7 +4212,7 @@ function updateImageGalListItem() {
         }); 
 		
     
-    //return dfd.promise();
+    return dfd.promise();
 }
 
 function addInitialFolderInDocLib()
@@ -4236,6 +4247,7 @@ var Metadata={
         });
 */
 
+	var dfd = $.Deferred();
 
 	var fullUrl = siteurl+"/_api/web/getfolderbyserverrelativeurl('DocumentManagementSystem')/Folders/add('"+_spPageContextInfo.userEmail+"')";
 	$.ajax({
@@ -4250,12 +4262,14 @@ var Metadata={
 	},
 	success: function(data) {  
 					//alert("Dov=c item is Created successfully!!");  
+					dfd.resolve(true);				
 				}, 
 	eror: function(data) {  
 					console.log("An error occurred. Please try again.");  
 				}  
 	});
 
+	return dfd.promise();
 }
 </script>
 
