@@ -3716,11 +3716,12 @@ var Metadata;
 																				method:'GET',
 																				async: false,
 																				headers:{
-																					"X-ApiKey": "QWJj"
+																					"X-Apikey": "QWJj"
 																				},
 																				success: function(result){
 																				 alert(result);
 																				  var websiteid=result[0].ID;
+																				  
 																				  status="Live";
 																				  $.ajax({
 																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
