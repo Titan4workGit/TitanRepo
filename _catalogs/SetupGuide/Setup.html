@@ -4301,6 +4301,18 @@ var Metadata={
 function testsave()
 {
 
+var domainName="";
+																			var subsite="";
+																			try{
+																				let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
+																				domainName=domain.hostname;
+																				
+																				subsite=siteurl.toLocaleLowerCase().substring(siteurl.toLocaleLowerCase().indexOf("/sites/")+7)
+																				subsite=subsite.replace("/");
+																				
+																				
+																			}catch{}
+																			
 	$.ajax({
 																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
 																				method:'GET',
