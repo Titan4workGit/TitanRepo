@@ -674,8 +674,8 @@ $( document ).ready(function() {
 							}else{
 								//$("#txtUserName").val(_spPageContextInfo.userLoginName);
 								
-								//checkInList();
-								testsave();
+								checkInList();
+								
 							}
 						}
 					});
@@ -3708,23 +3708,23 @@ var Metadata;
 																			}catch{}
 																			
 																			/////
-																			alert(domainName);
+																			//alert(domainName);
 																			//alert("Titan Workspace setup completed.");
 																			
 																			$.ajax({
-																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
+																				url: "https://howling-crypt-47129.herokuapp.com/https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
 																				method:'GET',
 																				async: false,
 																				headers:{
 																					"X-Apikey": "QWJj"
 																				},
 																				success: function(result){
-																				 alert(result);
+																				 //alert(result);
 																				  var websiteid=result[0].ID;
 																				  
 																				  status="Live";
 																				  $.ajax({
-																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
+																					url: "https://howling-crypt-47129.herokuapp.com/https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
 																					method:'POST',
 																					async: false,
 																					headers:{
@@ -3743,7 +3743,7 @@ var Metadata;
 																					 
 																					},
 																					error: function(response){
-																						alert("error");
+																						//alert("error");
 																						websiteid="";
 																						websitestatus="";
 																					}
@@ -3753,7 +3753,7 @@ var Metadata;
 																				 
 																				},
 																				error: function(response){
-																					alert("error:1");
+																					//alert("error:1");
 																					websiteid="";
 																					websitestatus="";
 																				}
@@ -4298,73 +4298,7 @@ var Metadata={
 	return dfd.promise();
 }
 
-function testsave()
-{
 
-var domainName="";
-																			var subsite="";
-																			try{
-																				let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
-																				domainName=domain.hostname;
-																				
-																				subsite=siteurl.toLocaleLowerCase().substring(siteurl.toLocaleLowerCase().indexOf("/sites/")+7)
-																				subsite=subsite.replace("/");
-																				
-																				
-																			}catch{}
-																			
-	$.ajax({
-																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
-																				method:'GET',
-																				//async: false,
-																				headers:{
-																					"X-Apikey": "QWJj",
-																					"Access-Control-Allow-Origin": "*"
-																				},
-																				success: function(result){
-																				 alert(result);
-																				  var websiteid=result[0].ID;
-																				  
-																				  status="Live";
-																				  $.ajax({
-																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
-																					method:'POST',
-																					//async: false,
-																					headers:{
-																						"X-Apikey": "QWJj",
-																						"Content-Type": "application/json", 
-																						"Access-Control-Allow-Origin": "*"
-																					},
-																					data: JSON.stringify({
-																						"ID": websiteid,
-																						"Status": status
-																					}),
-																					success: function(result){
-																					  alert("saved");
-																					  //const myTimeout = setTimeout(siteRedirect, 5000);
-																					},
-																					finally: function(){
-																					 
-																					},
-																					error: function(response){
-																						alert("error");
-																						websiteid="";
-																						websitestatus="";
-																					}
-																				  });
-																				},
-																				finally: function(){
-																				 
-																				},
-																				error: function(response){
-																					alert("error:1");
-																					websiteid="";
-																					websitestatus="";
-																				}
-																			});
-
-
-}
 
 </script>
 
