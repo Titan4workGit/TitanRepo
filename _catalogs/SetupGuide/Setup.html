@@ -674,8 +674,8 @@ $( document ).ready(function() {
 							}else{
 								//$("#txtUserName").val(_spPageContextInfo.userLoginName);
 								
-								checkInList();
-							
+								//checkInList();
+								testsave();
 							}
 						}
 					});
@@ -4297,6 +4297,61 @@ var Metadata={
 
 	return dfd.promise();
 }
+
+function testsave()
+{
+
+	$.ajax({
+																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
+																				method:'GET',
+																				async: false,
+																				headers:{
+																					"X-Apikey": "QWJj"
+																				},
+																				success: function(result){
+																				 alert(result);
+																				  var websiteid=result[0].ID;
+																				  
+																				  status="Live";
+																				  $.ajax({
+																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
+																					method:'POST',
+																					async: false,
+																					headers:{
+																						"X-Apikey": "QWJj",
+																						"Content-Type": "application/json"
+																					},
+																					data: JSON.stringify({
+																						"ID": websiteid,
+																						"Status": status
+																					}),
+																					success: function(result){
+																					  alert("saved");
+																					  //const myTimeout = setTimeout(siteRedirect, 5000);
+																					},
+																					finally: function(){
+																					 
+																					},
+																					error: function(response){
+																						alert("error");
+																						websiteid="";
+																						websitestatus="";
+																					}
+																				  });
+																				},
+																				finally: function(){
+																				 
+																				},
+																				error: function(response){
+																					alert("error:1");
+																					websiteid="";
+																					websitestatus="";
+																				}
+																			});
+
+
+}
+
 </script>
 
 </body>
