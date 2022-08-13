@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * D3 Instant Charts 0.2.*
  *
  * https://github.com/forink/D3-Instant-Charts
