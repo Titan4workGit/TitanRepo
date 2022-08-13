@@ -4316,9 +4316,10 @@ var domainName="";
 	$.ajax({
 																				url: "https://titanworkspaceapp.com/api/WebsiteInfo/Get/"+domainName,                        
 																				method:'GET',
-																				async: false,
+																				//async: false,
 																				headers:{
-																					"X-Apikey": "QWJj"
+																					"X-Apikey": "QWJj",
+																					"Access-Control-Allow-Origin", "*"
 																				},
 																				success: function(result){
 																				 alert(result);
@@ -4328,10 +4329,11 @@ var domainName="";
 																				  $.ajax({
 																					url: "https://titanworkspaceapp.com/api/WebsiteInfo/Update",                        
 																					method:'POST',
-																					async: false,
+																					//async: false,
 																					headers:{
 																						"X-Apikey": "QWJj",
-																						"Content-Type": "application/json"
+																						"Content-Type": "application/json",
+																						"Access-Control-Allow-Origin", "*"
 																					},
 																					data: JSON.stringify({
 																						"ID": websiteid,
