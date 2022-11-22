@@ -4314,7 +4314,8 @@ var Metadata={
 
 
 function uploadDocument() {  
-   
+   let domain = (new URL(_spPageContextInfo.webAbsoluteUrl));
+   domainName=domain.hostname;
    $("#loader").show();
    $.ajax({
 	url: "https://titanworkflows.azurewebsites.net/api/Function1",
@@ -4325,8 +4326,8 @@ function uploadDocument() {
             },
    	//async: false,
 	data: JSON.stringify({
-		"domain": "adapt2.sharepoint.com",
-		"sitename": "tworkspace"
+		"domain": domainName,
+		"sitename": "TWorkspace"
 
 		}),
 	headers:{'Content-Type': 'application/json'},
@@ -4354,7 +4355,7 @@ function uploadDocument() {
 		   $("#loader").hide();
 		   $("#TitanWorkflow").show();
 		   var flowsUrl=targetUrl+"/flows.zip";
-		   $("#flowsId").html("<a href='"+flowsUrl+"' target='_blank'>"+flowsUrl+"</a>");
+		   $("#flowsId").html("<a href='"+domainName+flowsUrl+"' target='_blank'>"+domainName+flowsUrl+"</a>");
 		   
         }, function(data) {  
             alert("File uploading failed");  
