@@ -468,7 +468,9 @@ button:focus {
         align-items: center;
         list-style-type: none;
         padding-left: 0;
-        margin-bottom: 0;
+        /*margin-bottom: 0;*/
+        margin-bottom: 4px;
+    	margin-left: 26px;
     }
 
     .experiences-inner-card-btn-panel li {
@@ -514,6 +516,7 @@ button:focus {
         margin: 0px 8px;
         margin-top: 2px;
         opacity: 0.4;
+        visibility: hidden;
     }
 
     .experiences-inner-card-btn-panel .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-dot span {
@@ -1014,7 +1017,8 @@ button.close {
     flex-wrap: wrap;
 }
 .announcement-card-panel-row-bg,
-.alert-card-panel-row-bg {
+.alert-card-panel-row-bg,
+.view-at-a-glance {
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -1023,6 +1027,9 @@ button.close {
 }
 .alert-card-panel-row-bg {
     background-image: url('../images/alert-bg-view-all.png');
+}
+.view-at-a-glance {
+	background-image: url('../images/at-a-glance-bg-view-all.png');
 }
 .announcement-card-panel-bg-img {
     position: absolute;
@@ -1070,7 +1077,7 @@ button.close {
 .panel-img-heading-announcement,
 .panel-img-heading-alert {
     position: relative;
-    top: 0;
+    top: -15px;
     left: -15px;
     color: #ffffff;
     padding: 4px 12px;
@@ -1078,6 +1085,9 @@ button.close {
     white-space: nowrap;
     display: inline-block;
     margin-bottom: 8px;
+    border-radius: 6px 0px 12px 0px;
+    background-color: #494948 !important;
+    color: #fff !important;
 }
 .panel-img-heading-announcement {
     background: #ff9e20;
@@ -1096,6 +1106,7 @@ button.close {
 .announcement-card-body-head-text a {
     color: #2a6496;
     line-height: 1.3;
+    word-break: break-word;
 }
 .announcement-card-body-head {
     display: flex;
@@ -1141,6 +1152,7 @@ button.close {
     -webkit-box-orient: vertical;
     word-wrap: break-word;
     -webkit-line-clamp: 3;
+    word-break: break-word;
 }
 .announcement-inner-card {
     display: flex;
@@ -1285,10 +1297,28 @@ button.close {
 .draft-info {
     font-size: 14px;
     font-weight: 500;
-    background: #ff0000;
+    /* background: #ff0000; */
+    background: #1d6ec0;
     padding: 2px 8px;
     color: #fff;
 }
+ .Archived {
+    font-size: 14px;
+    font-weight: 500;
+    /* background: #ff0000; */
+    background: #494948;
+    padding: 2px 8px;
+    color: #fff;
+}
+.Rejected-info {
+    font-size: 14px;
+    font-weight: 500;
+    /* background: #ff0000; */
+    background: #e00;
+    padding: 2px 8px;
+    color: #fff;
+}
+
 .audience-name,
 .posted-date {
     font-size: 14px;

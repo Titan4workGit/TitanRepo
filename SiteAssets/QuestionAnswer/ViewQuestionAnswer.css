@@ -534,6 +534,7 @@ button.close {
     font-size: 24px;
     margin: 0;
     font-weight: 400;
+    color: #000 !important;
 }
 .search-icon {
     width: 20px;
@@ -930,7 +931,7 @@ button.close {
     color: #ffffff;
 }
 .custom-panel {
-    margin: 10px 0;
+    margin: 0px 0px 10px 0px;
     border: 1px solid #d4d4d4;
     background-color: #ffffff;
 }
@@ -1244,11 +1245,45 @@ button.close {
     padding: 2px 8px;
     color: #fff;
 }
+.draft-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #1d6ec0;
+    /*padding: 2px 8px;*/
+    padding: 12px 9px;
+    color: #fff;
+}
+.Rejected-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #e00;
+    padding: 12px 9px;
+    color: #fff;
+}
+.Archived-info, .Archived {
+    font-size: 14px;
+    font-weight: 500;
+    background: #494948;
+    padding: 12px 9px;
+    color: #fff;
+}
+.Waiting-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #1d6ec0;
+    padding: 12px 9px;
+    color: #fff;
+    white-space: nowrap;
+}
 .audience-name,
 .posted-date {
     font-size: 14px;
     margin: 0;
     font-weight: 600;
+}
+.experiences-inner-card-btn-item {
+    margin-bottom: 4px !important;
+    margin-left: 26px;
 }
 
 /* new css added on 17/8/2021 */

@@ -1,10 +1,12 @@
 .document-types-card .document-types-card-top {
     font-size: 24px;
 }
+
 .document-types-last-modified {
-    font-size: 14px;
-    margin-bottom: 0px;
+    font-weight: 600;
+    margin: 5px 5px !important;
 }
+
 .document-types-card-bottom .members-card-body-info {
     padding-left: 0;
 }
@@ -26,14 +28,17 @@
     -webkit-box-orient: vertical;
     word-wrap: break-word;
 }
+
 .document-types-card-panel {
-    width: 100%;
+    width: calc(100% - 37px);
 }
+
 .document-types-card-top-number {
     position: absolute;
     right: 30px;
     font-size: 40px;
     top: 5px;
+    box-shadow:1px 2px 5px -2px #333;
 }
 
 .document-types-card-top-number {
@@ -43,14 +48,14 @@
     text-align: center;
     font-size: 19px !important;
     line-height: 34px !important;
-    top:30px !important;
+    top:20px !important;
 }
 
 .document-types-card-bottom .members-card-body-info .flexing {
     margin-bottom: 0px;
 }
 .document-types-card-top-title {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     -webkit-line-clamp: 2;
     display: inline;
     text-overflow: ellipsis;
@@ -58,23 +63,22 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     word-wrap: break-word;
-    padding-right: 70px;
-    height: 68px;
+    padding-right: 26px;
 }
 .document-types-card {
-    padding: 15px 15px;
+    padding: 15px 15px !important;
 }
 .document-types-card-bottom .member-email {
     margin-bottom: 0px;
-    font-size: 12px;
-}
-.document-types-card-bottom .member-name {
     font-size: 13px;
+}
+.member-fileName,
+.document-types-card-bottom .member-name {
+    font-size: 13px !important;
 }
 
 .document-types-card-top-title{
- height:auto !important;
- font-size:16px !important;	
+ font-size:21px !important;	
 }
 
 .document-types-card-top-title a{
@@ -109,24 +113,53 @@ h1.panel-head-text{
  border:1px solid #ccccccc2 !important;
  box-shadow:0 5px 12px -5px rgb(0 0 0 / 18%) !important;	
 }
-.document-types-card-top-title{
- margin-bottom:10px !important;	
-}
 
 .userdetails .member-email span:last-child{
  margin-left:3px !important;	
 }
 
+.flexing p,
+.lastUpdate {
+    font-size: 13px !important;
+    font-weight:400 !important;
+    color:#323232 !important;
+}
 
+.documents-filter a {
+    color: #323232;
+    background-color: #fff;
+    border: 1px solid #b5b1b1 !important;
+    float: left;
+    border-radius: 20px;
+}
+
+.document-types-card{
+  min-height: 210px;	
+}
+
+.document-types-last-modified{
+  font-size:13px !important;	
+}
 
 /* all align gap css ----START---- */
-
 @media (min-width: 1200px) {
 
     .all-align-gap-home-layout {
         padding-right: 0;
         padding-left: 18px;
     }
+
+.btween_spacing{
+ margin-left:0px !important;	
+}
+
+}
+
+@media (max-width: 1009px){
+
+.btween_spacing{
+ margin-left:0px !important;	
+}
 
 }
 
@@ -138,3 +171,249 @@ h1.panel-head-text{
     }
 
 }
+
+/*******upload all file and folder full css********/
+
+.btngroupsec {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+}
+
+
+.flextyps{
+
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;  
+
+ -webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+            
+}
+
+
+.btngroupsec input[type="text"].form-control {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 11px;
+    padding:4px !important;
+}
+.btngroupsec input[type="text"].form-control:last-child {
+    margin-right: 0px;
+}
+.flexingboxs {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.two_option_checkbox {
+    padding-left: 15px;
+}
+
+.modal-header .close-round:hover {
+    color: #fff !important;
+}
+.modal-header .close-round {
+    min-width: 1em !important;
+    background: #fff;
+    color: #666;
+    line-height: 1.2;
+    transition: 0.5s;
+}
+
+.modal-body label {
+    margin-bottom: 2px !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+}
+
+.covertophere {
+    width: 90px;
+    position: relative;
+    cursor: pointer;
+}
+
+.covertophere:before {
+    content: 'Browse';
+    width: 90px;
+    height: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e4e4e4;
+    display: block;
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px #fff;
+    transition: 0.2s;
+}
+
+#FolderAttachment, 
+#AttachmentUploadField {
+    opacity: 0;
+    width: 90px;
+    height: 34px;
+    padding: 0 !important;
+    z-index: 5;
+    position: relative;
+    cursor: pointer;
+}
+ 
+#prefix_and_postfix_name {
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+}
+
+.flexingtypes {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#myModalupload input[type='radio'], 
+#myModalupload input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+    margin-top: 1px !important;
+}
+
+.RenameandUpload .btngroupsec{
+   margin-top:12px;	
+}
+
+
+#txtUploadFiles {
+    overflow: auto !important;
+    max-height: 113px !important;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top:12px;
+}
+
+#txtUploadFiles .NewFileUpload {
+    margin-left: 10px;
+    display: inline-block;
+    border: 1px solid #9e9e9e;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin-bottom: 6px;
+}
+#txtUploadFiles .NewFileUpload .fa-paperclip {
+    font-size: 15px !important;
+}
+
+#txtUploadFiles .NewFileUpload .fa-close {
+    color: #333 !important;
+    cursor: pointer;
+}
+
+@media(max-width:991px){
+#myModalupload .form-horizontal .control-label {
+    text-align: left !important;
+    font-weight: normal;
+}
+}
+
+@media(min-width:1149px){
+
+.marg-leftmag{
+ margin-left:5px;	
+} 	
+
+}
+
+@media(min-width:1200px){
+
+.spacing_leftsecs {
+    margin-left: 37px !important;
+}
+
+}
+
+@media(min-width:992px){
+
+.wid_pal, .wid_pad {
+    width: 15.3%;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.only_wid {
+    width: 33.8%;
+}
+.seven_magwth {
+    width: 51.33333333%;
+}
+
+.dottsmg{
+  position:absolute; 
+  bottom:0; 
+  right:-1px;	
+}
+
+label[data-localize="Reference"]{
+ padding-right:4px !important;	
+}
+
+.rfce{
+ padding-right:5px;	
+}
+
+}
+
+
+@media (min-width: 768px){
+
+#myModalupload .modal-dialog {
+    width: 60%;
+}
+
+#myModalupload .modal-dialog {
+    margin: 2px auto !important;
+}
+
+#myModalupload .modal-body {
+    padding: 10px 15px 0px !important;
+}
+
+}
+/******file upload css ed******/

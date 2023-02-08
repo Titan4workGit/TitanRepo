@@ -130,10 +130,7 @@ button:focus {
 .scrollbar-panel::-webkit-scrollbar-thumb:hover {
   background: #555555; 
 }
-.custom-panel {
-    margin: 10px 0;
-    border: 1px solid #d4d4d4;
-}
+
 .panel-head {
     color: #1b1b1b;
     padding: 8px 15px;
@@ -320,7 +317,7 @@ button:focus {
     background-color: #ffffff;
 }
 .custom-nav-main.nav-justified>li>a {
-    border-radius: 0 !important;
+    border-radius: 2px !important;
     margin: 0 1px;
 }
 .custom-nav-main.nav-justified>li:nth-child(1)>a {
@@ -345,16 +342,18 @@ button:focus {
     .custom-nav-main.nav-justified>li:nth-child(3)>a {
         margin-left: 0 !important;
     }
+    
 }
+
 .tab-pane-main {
-    padding: 10px 14px 0;
-    border: 1px solid #ddd;
     border-top: 0;
     background-color: #ffffff;
 }
+
 .footer-btn-group {
     text-align: center;
 }
+
 @media (max-width: 390px) {
     .footer-btn-group button {
         margin-bottom: 8px !important;
@@ -848,8 +847,15 @@ button:focus {
 
 
 
+/****aug-29-22-*******/
 
 
+/***sept-8-22***/
 
+.all-align-gap-container {
+    padding: 0px 15px !important;
+    background: #fff;
+    border: 1px solid #d4d4d4;
+}
 
 

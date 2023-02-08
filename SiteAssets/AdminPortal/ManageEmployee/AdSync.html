@@ -5,7 +5,7 @@
 
 
 <style>
-
+/*
 #overlayq{
   background: #ffffff;
   color: #666666;
@@ -20,11 +20,13 @@
   padding-top: 25%;
   opacity: .80;
 }
+*/
 button {
   margin: 40px;
   padding: 5px 20px;
   cursor: pointer;
 }
+/*
 .spinner {
     margin: 0 auto;
     height: 64px;
@@ -34,7 +36,7 @@ button {
     border-right-color: transparent;
     border-radius: 50%;
 }
-
+*/
 
 /*****june/16/21*************/
 
@@ -430,6 +432,144 @@ button.close{
   min-width:260px !important	
 }
 
+
+
+
+
+.alert_contentbx{
+	width:calc(100% - 20px);
+	display: -webkit-box;
+	display: -moz-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+}
+.iconbxsec img{
+	width:100px;
+}
+
+.effect_shadow {
+    color: var(--notify-success);
+    border: 1px solid #7ac043;
+    border-radius: 0;
+}
+
+.corse_buttondesg {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: #335c12;
+    min-width: auto;
+    width: 20px;
+    height: 20px;
+    line-height: 0;
+    text-align: center;
+    padding: 0;
+}
+.side_detailarea h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #427e12;
+    margin-bottom: 10px;
+
+}
+
+.side_detailarea h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.audience_select{
+display: -webkit-box;
+display: -moz-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+margin-top:5px;	
+}
+
+.audience_select label{
+ min-width:100px;
+ font-size:13px;
+}
+
+.radio_detailbx label {
+    margin-right: 10px;
+    margin-left: 0 !important;
+    margin-bottom: 10px;
+}
+
+.defferenct_radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.defferenct_radio input[type="radio"]{
+    display:none; 
+}
+
+.defferenct_radio span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #b3b2b2;
+    margin-right: 5px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.defferenct_radio span::before {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #619f31;
+    transform:scale(0);
+    transition:transform 0.2s ease 0.1s;
+}
+
+.defferenct_radio:has(input[type="radio"]:checked) {
+    color: #315e0d;
+}
+
+.defferenct_radio input[type="radio"]:checked + span{
+  border:2px solid #7ac043;
+}
+.defferenct_radio input[type="radio"]:checked + span::before{
+  transform:scale(1);
+}
+
+
+@media(max-width:767px){
+.alert_contentbx,
+.audience_select{
+ -webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+}
+
+}
+
+
+
+
 </style>
 	
 	<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
@@ -438,17 +578,12 @@ button.close{
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2491</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">07a84b8c-c406-4a3c-b829-029b9f9cb709</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2491, ADMIN-1645029823-2491</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">249100.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Untitled 1</title></head><body>
+</head><body>
 		<div class="container">
 			<div class="row">			
 			
@@ -504,9 +639,9 @@ button.close{
 							
 							<div class="panel-body px-0 pt-8">
 								<div class="row m-0">
-								<div id="overlayq" style="display:none;">
+								<!--<div id="overlayqd" style="display:none;">
 								<div class="spinner"></div> <br/>
-								Loading...</div>
+								Loading...</div>-->
 									<div class="col-md-12">
 										<div class="row m-0 manage-employees-right-top-box flexing">
 											<div class="col-xs-1 manage-employees-right-time-box-one">
@@ -947,6 +1082,75 @@ button.close{
 			  	</div>
 			</div>
 		</div>
+		
+		
+		
+		
+		
+		<!-- Alertbox -->
+<div id="successfully_notifications" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content effect_shadow">
+      <div class="modal-body" style="padding:5px 15px">
+      	<div class="alertArea_box">
+      	 <button type="button" class="corse_buttondesg" data-dismiss="modal">&times;</button>
+      	 <div class="alert_contentbx">
+      	 	<div class="iconbxsec">
+      	 		<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/ManageEmployee/assets/Images/successfully_icon.png" alt="">
+      	 	</div>
+      	 	<div class="side_detailarea">
+      	 		<h3>Employee has been added Successfully</h3>
+      	 		<h4>Do you want to send notification regarding <br>the new  joinee?</h4>
+      	 	</div>
+      	 </div>
+      	 <div class="audience_select" id="divAudience" style="display:none">
+      	 	<label>Audience :</label>
+      	 	<div class="radio_detailbx">
+      	 	
+      	 	
+      	 	
+      	 	      <label class="defferenct_radio" for="Corporatesec">
+                  <input type="radio" id="Corporatesec" value="Corporate" name="datasend">
+                  <span></span>
+                  Corportate
+                </label>
+                <label class="defferenct_radio" for="Companysec">
+                  <input type="radio" id="Companysec" value="Company" name="datasend">
+                  <span></span>
+
+                  Company
+                </label>
+                <label class="defferenct_radio" for="Departmentsec">
+		    		<input type="radio" id="Departmentsec" value="Department" name="datasend">
+                  <span></span>
+                  Department
+                </label>
+                <label class="defferenct_radio" for="locationsec">
+                  <input type="radio" id="locationsec" value="Location" name="datasend">
+                  <span></span>
+                  Office Location
+                </label>
+                <label class="defferenct_radio" for="nosenddata">
+                  <input type="radio" id="nosenddata" value="NotSave" name="datasend">
+                  <span></span>
+                  Don't send any notification
+                </label>
+		    		
+		    		
+		    	
+      	 </div>
+      	</div>
+      	</div>
+      </div>
+      <div class="modal-footer" style="text-align: center; margin-top:0; border-top:1px solid #50951a38;">
+        <button type="button" class="btn custom-btn" id="btnAudience" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+		
 		
 		
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/ManageEmployee/AdSync.js"></script>

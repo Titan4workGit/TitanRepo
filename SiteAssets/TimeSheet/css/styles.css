@@ -1,7 +1,21 @@
 
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+body #s4-bodyContainer {
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;*/
 }
+
+#s4-bodyContainer {
+	 /* font-family: "Segoe UI Semilight","Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif !important; */
+}
+#s4-bodyContainer {
+    /* font-family: BasierSquare-Regular; */
+}
+@font-face {
+    font-family: BasierSquare-Regular;
+    src: url('../fonts/BasierSquare-Regular.woff'); 
+}
+
+
+/*
 button:focus {
     outline: none !important;	
 }
@@ -80,19 +94,16 @@ a {
   height: 8px;
 }
 
-/* Track */
 .scrollbar-panel::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey; 
   border-radius: 10px;
 }
  
-/* Handle */
 .scrollbar-panel::-webkit-scrollbar-thumb {
   background: #888888; 
   border-radius: 10px;
 }
 
-/* Handle on hover */
 .scrollbar-panel::-webkit-scrollbar-thumb:hover {
   background: #555555; 
 }
@@ -150,7 +161,8 @@ a {
     border-color: #1d6ec0;
 }
 
-/* timesheet  stye */
+// timesheet  stye
+
 .timesheet-table {
     word-break: break-word;
 }
@@ -354,3 +366,5 @@ a {
         width: 100%;
     }
 }
+
+*/

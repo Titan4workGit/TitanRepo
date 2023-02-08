@@ -1,8 +1,14 @@
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyWorkplace/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyWorkplace/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.js?1235"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyWorkplace/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/assets/workplace-documents-dark-theme.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyWorkplace/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/JS/moment.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css?ctag=221206" >
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/ShowAllDocumentTypes.js?123545"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DepartmentHomePage/Documents/uploadDocument.js"></script>
+  
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-490</mso:_dlc_DocId>
@@ -11,103 +17,403 @@
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">40400.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title></title></head><body>
-		<div class="container">
-			<div class="row">
-				<div class="custom-panel">
-					<div class="panel-head">
-						<h1 class="panel-head-text">Company Documents</h1>
-						<!-- <p class="panel-head-sub-text">Department: <span id="txtDepartment"></span></p> -->
-                        <!-- <div class="owl-carousel documents-filter owl-theme">
-                        <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
-                          <a href="#"><span>Delivery</span></a>
-                          <a href="#"><span>Sales</span></a>
-                          <a href="#"><span>HR</span></a>currentDocDept
-                          <a href="#"><span>Technical</span></a>
-                        </div>  -->
-                        <div class="owl-carousel documents-filter owl-theme" id="documents-filter">
 
-                             <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
-                              <!-- <a href="#"><span>Admin</span></a>
-                              <a href="#"><span>Finance</span></a>
-                              <a href="#"><span>Hardware</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Information Technology</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Networkingg</span></a>
-                              <a href="#"><span>Purchase</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>R-Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>R-Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>Human Resource</span></a>
-                              <a href="#"><span>R-Human Resource</span></a>  --> 
 
-                            <!-- <div class="owl-nav">
-                                <button type="button" role="presentation" class="owl-prev disabled">
-                                    <span aria-label="Previous"></span>
-                                </button>
-                                <button type="button" role="presentation" class="owl-next">
-                                    <span aria-label="Next"></span>
-                                </button>
-                            </div> -->
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="custom-panel">
+        <div class="panel-head">
+          <div class="flextyps">
+	          <h1 class="panel-head-text" data-localize="Company Documents"></h1>
+	          <button type="button" id="btnUpload" class="btn custom-btn" data-toggle="modal" data-target="#myModalupload" style="height:34px; margin:5px 0px; display:none"><i class="fa fa-upload" aria-hidden="true"></i> Upload</button>
+          </div>
+          <!-- <p class="panel-head-sub-text">Department: <span id="txtDepartment"></span></p> -->
+                      <!-- <div class="owl-carousel documents-filter owl-theme">
+                      <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
+                        <a href="#"><span>Delivery</span></a>
+                        <a href="#"><span>Sales</span></a>
+                        <a href="#"><span>HR</span></a>currentDocDept
+                        <a href="#"><span>Technical</span></a>
+                      </div>  -->
+                      <div class="owl-carousel documents-filter owl-theme" id="documents-filter">
+                           <a href="#"><span id="btnAll">All</span></a>
+                           <a href="#"><span id="btnCorporate">Corporate</span></a>
+                           <a><span style="cursor:pointer;" id="currentDocDept"></span></a>
+                           
+                            <!-- <a href="#"><span>Admin</span></a>
+                            <a href="#"><span>Finance</span></a>
+                            <a href="#"><span>Hardware</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Information Technology</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Networkingg</span></a>
+                            <a href="#"><span>Purchase</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>R-Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>R-Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>Human Resource</span></a>
+                            <a href="#"><span>R-Human Resource</span></a>  --> 
 
-                        </div> 
+                          <!-- <div class="owl-nav">
+                              <button type="button" role="presentation" class="owl-prev disabled">
+                                  <span aria-label="Previous"></span>
+                              </button>
+                              <button type="button" role="presentation" class="owl-next">
+                                  <span aria-label="Next"></span>
+                              </button>
+                          </div> -->
 
-					</div>
-					<div class="panel-body pl0 pb0 pr0">
-						<div class="row ml0 mr0" id="departmentalDocuments">
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+                      </div> 
+                      <div class="company-documents-box" style="display:none">
+                        <select class="selectpicker" data-live-search="true" id="newDdlDepartment">
+                          <!--<option data-tokens="Human Capital administration">Human Capital administration</option>
+                          <option data-tokens="Technical">Technical</option>
+                          <option data-tokens="Human Capital">Human Capital</option>
+                          <option data-tokens="Delivery">Delivery</option>-->
+                        </select>
+                      </div>
 
-        <script type="text/javascript">
+        </div>
+        <div class="panel-body pl0 pb0 pr0">
+          <div class="row ml0 mr0" id="departmentalDocuments">
             
-            //  new code for owl filters 16/03/2022
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<!-------popup all------->
+  
+<!-- upload files Modal -->
+<div class="modal fade" id="myModalupload" role="dialog" ng-app="myApp" ng-controller="myCtrl">
+    <div class="container custom-container mrgn-tp10">
+        <div class="modal-dialog">
 
-            $('.hhdocuments-filter').owlCarousel({
-            //      loop:true,
-                    speed:500,
-                    margin:5,
-                    autoWidth:true,
-                    slideBy: 7,
-                    nav:true,
-                    dots:false,
-                    responsive:{
-                            0:{
-                                    items:1
-                            },
-                            768:{
-                                    items:3
-                            },
-                            1024:{
-                                    items:5
-                            },
-                            1366:{
-                                    items:10
-                            }
-                    }
-            });
+            <!-- Modal content-->
+            <div class="modal-content">
 
-        </script>
+                <div class="modal-header">
+                    <button type="button" class="close close-round uploadAttachmentCancel" data-dismiss="modal">×</button>
+                    <h4 class="modal-title" id="UploadHeader" data-localize="UploadFiles">Upload Files</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+						<div class="col-md-2 wid_pad control-label"></div>
+                        <div class="form-group" style="margin-bottom:0 !important;">
+                        	<div class="col-md-4 only_wid" style="text-align:right">	
+                             <label for="prefix_and_postfix_name" class="radio-inline forFileOnly" style="font-weight:400 !important; padding:3px 10px;"><input type="checkbox" id="prefix_and_postfix_name" name="optradiosec" />According FileName</label>
+                        	</div>
+                        </div>
 
-	</body>
+                        <div class="form-group">
+
+                            <div class="col-md-2 wid_pad control-label">
+                                <label for="" class="" data-localize="Title">Title</label> <label>:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="astTitle">*</span>
+                            </div>
+                            <div class="col-md-4 only_wid">
+                                <div class="formsections" style="">
+                                    <input type="text" class="same_all_file form-control" id="txtFileTitle" maxlength="250" ng-model="title" style="margin-bottom:0px" style="display:block;" />
+                                </div>
+                                <div class="prefix_and_postfix_name" style="display:none">
+
+                                    <div class="btngroupsec">
+                                        <input type="text" placeholder="Prefix" id="txtTitlePrefix" class="form-control" />
+                                        <input type="text" placeholder="File name" class="form-control" disabled="disabled" />
+                                        <input type="text" placeholder="Postfix" id="txtTitlePostfix" class="form-control" />
+                                    </div>
+                                    <!---------show only filename and postfix section
+                                    <div class="btngroupsec">
+                                      <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+                                      <input type="text" placeholder="Postfix" id="" class="form-control">
+                                    </div>-------->
+                                </div>
+                            </div>
+                            <div class="col-md-2 control-label wid_pal">
+					             <label for="" class="" data-localize="Department" value="">Department</label> <label>:</label>
+					             <span style="color:red; display:none;" class="MandSign" id="">*</span>
+					        </div>
+					        <div class="col-md-4 only_wid">
+					            <select class="form-control" id="ddlDepartment">
+					              
+					            </select>
+					        </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-md-2 control-label wid_pal">
+                                <label for="" class="required" data-localize="Category">Category</label> <label>:</label>
+                                <span style="color:red;display:inline-block;" class="MandSign" id="astDocumentType">*</span>
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <select name="documentType" id="ddlFileType" class="form-control"></select>
+                            </div>
+
+                            <div class="col-md-2 control-label wid_pal">
+                               
+							  <div class="" style="position:relative">	 
+                                <label for="" class="rfce" data-localize="Reference">Reference</label> <label class="label_leftmg dottsmg">:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="astReference">*</span>
+                              </div>  
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <input type="text" maxlength="100" class="form-control" id="txtdocumentNo" />
+                            </div>
+
+                        </div>
+                        <div class="form-group doc-type-div">
+
+                            <div class="col-md-2 control-label wid_pal">
+                                <label for="" class="rfce" data-localize="Sub-Category">Sub-Category</label> <label class="dottsmg">:</label>
+                            </div>
+                            <div class="col-md-4 only_wid">
+                                <select class="form-control" id="FileSubType" >
+                                    <option value="-Select-">-Select-</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 control-label wid_pad">
+                                <label for="" class="" data-localize="Author">Author</label> <label>:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="astAuthor">*</span>
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <input type="text" maxlength="100" class="form-control" id="FileAuthor" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2 control-label wid_pal">
+                                <label for="" class="" data-localize="Details">Details</label> <label>:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="astDetails">*</span>
+                            </div>
+                            <div class="col-md-4 only_wid">
+                                <textarea class="form-control" rows="3" id="UploadFileComment" style="min-height:60px !important; max-height:60px !important;"></textarea>
+                            </div>
+                            
+                            <div class="col-md-2 control-label wid_pal">
+						         <label for="" class="" data-localize="Message" value="">Message</label> <label>:</label>
+						    </div>
+						    
+						    <div class="col-md-4 only_wid">
+						        <textarea class="form-control" rows="3" id="txtShareMessage" style="min-height:60px !important; max-height:60px !important;"></textarea>
+						    </div>
+                        </div><!----formgroup--->
+
+                        <div class="form-group" id="changeProperties" ng-show="showhideUploader=='Show'" style="">
+                            <div class="col-md-2 control-label wid_pal">
+                                <label class="" data-localize="If File exists">If File exists</label> <label>:</label>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="check_sec">
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" checked="checked" id="chkReplaceVer" style="" />Replace with new version
+                                    </label>
+
+                                    <label class="radio-inline spacing_leftsecs">
+                                        <input type="radio" name="optradio" id="chkNotUpload" style="" />Do not upload
+                                    </label>
+
+                                    <label class="radio-inline spacing_leftsecs">
+                                        <input type="radio" name="optradio" id="RenameandUpload" style="" /> Rename and Upload
+                                    </label>
+
+                                    <div class="two_option_checkbox replaceOptions">
+
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio1" id="chkKeepExist" checked="checked" />Keep existing properties</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio1" id="chkUploadNew" />Upload new properties</label>
+                                        </div>
+
+                                    </div><!--two option ed-->
+
+                                    <div class="hidemy RenameandUpload" style="display:none">
+                                        <div class="btngroupsec">
+                                            <input type="text" placeholder="Prefix" id="txtNamePrefix" class="form-control" />
+                                            <input type="text" placeholder="File name" class="form-control" disabled="disabled" />
+                                            <input type="text" placeholder="Postfix" id="txtNamePostfix" class="form-control" />
+                                        </div>
+
+                                        <!---------show only filename and postfix section
+                                        <div class="btngroupsec">
+                                          <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+                                          <input type="text" placeholder="Postfix" id="" class="form-control">
+                                        </div>-------->
+
+                                    </div>
+
+                                </div><!---check_sec ed--->
+                            </div>
+
+                        </div>
+
+                        <!------<div class="form-group" id="changePropertiesFolder" ng-show="showhideUploader=='Show'" style="margin-bottom:0 !important;">
+                            <div class="col-sm-2 control-label wid_pal">
+                                <label class="" data-localize="If Folder exists">If Folder exists</label> <label>:</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <div class="check_sec">
+                                    <label class="radio-inline" style="padding:7px 0 0;">
+                                        <input type="checkbox" name="optradio" id="RenameandUploadFolder" style="position:relative; top:-2.5px;" /> Rename and Upload
+                                    </label>
+
+                                    <div class="RenameUploadFolder" style="display:none;">
+
+                                        <div class="btngroupsec">
+                                            <input type="text" placeholder="Prefix" id="txtNamePrefixFol" class="form-control" />
+                                            <input type="text" placeholder="Folder name" class="form-control" disabled="disabled" />
+                                            <input type="text" placeholder="Postfix" id="txtNamePostfixFold" class="form-control" />
+                                        </div>
+
+                                       show only filename and postfix section
+                                        <div class="btngroupsec">
+                                          <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+                                          <input type="text" placeholder="Postfix" id="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-------->
+
+                        <!-------<div class="form-group" id="folderPropertyTag" ng-show="showhideUploader=='Show'">
+                            <div class="col-sm-10 col-sm-offset-2 leftmg_mg">
+                                <input type="checkbox" id="chkFolderProp" />
+                                <label for="chkFolderProp" class="control-label" data-localize="Apply same properties on all files">Apply same properties on all files</label>
+                            </div>
+                        </div>------->
+                        
+                        
+                        <div class="form-group" style="margin-top:15px !important; margin-bottom:15px !important;">
+					       <div class="col-md-2 control-label wid_pal">
+					            <label for="" class="" data-localize="Access" value="">Access</label> <label>:</label>
+					        </div>
+						  <div class="col-md-4 only_wid">
+
+					           <select class="form-control" id="sharedWithPermission">
+					                <option value="Read">Read</option>
+	                                <option value="Restricted View">Restricted View</option>
+					           </select>
+					           
+					           <div style="margin-top:0px">
+						          <label class="radio-inline">
+						            <input type="radio" checked="checked" id="chkCorporate" name="company_opt"> All companies
+						          </label>
+						          <label class="radio-inline btween_spacing">
+						            <input type="radio" id="chkcompany" name="company_opt"> Current company only
+						          </label>
+						        </div>
+					       
+							 </div>
+						    <div class="col-md-2 control-label wid_pal">
+						        <label for="" class="" data-localize="Validity" value="">Validity</label> <label>:</label>
+						    </div>
+						   	<div class="col-md-4 flexingtypes only_wid">
+						      <label class="radio-inline">
+						        <input type="radio" id="forever" checked="checked" name="Validity_opt"> Forever
+						      </label>
+						      <label class="radio-inline">
+						        <input type="radio" id="expiredon" name="Validity_opt">Valid Till
+						      </label>
+						      <div class="date_optionsec" style="width:100%; margin:6px 0;">
+						      	<!--<input id="txtUpdateValidity" style="display:none" type="text" class="form-control hasDatepicker activating">-->
+						      	<input type="text" class="form-control clearValue" id="txtUpdateValidity" />
+							  </div>
+							  
+							   <div class="notifywrap">
+	                                <label class="checkbox-inline" style="font-weight:400; cursor:pointer;">
+	                                    <input type="checkbox" id="chkUploadMail" style="margin-top:1.5px">
+	                                     Notify this by  email
+	                                </label>
+	                            </div>
+	                            
+	                            <div class="notifywrap marg-leftmag btween_spacing">
+	                                <label class="checkbox-inline" style="font-weight:400; cursor:pointer;">
+	                                    <input type="checkbox" id="chckAcknowledgement" style="margin-top:1.5px">
+	                                    Need Acknowledgement
+	                                </label>
+	                            </div>
+							  
+						    </div>
+						     
+						  </div><!----form-group---->
+					      <div class="form-group" id="FileUploadControl" style="margin-bottom:2px !important;">
+                            <div class="col-sm-2 control-label wid_pal">
+                                <label for="" class="required" data-localize="File">File</label> <label>:</label>
+                            </div>
+                            <div id="" class="col-sm-10">
+                                <label class="covertophere"><input name="" id="AttachmentUploadField" type="file" class="browse form-control" multiple="" /></label>
+                            </div>
+                        </div>
+                        <div class="form-group" id="FileUploadControl" style="margin-bottom:2px !important;">
+                            <div class="col-sm-2 control-label wid_pal">
+                          	</div>
+                           <div class="col-sm-10 wdmengbox">
+                                <div id='txtUploadFiles' class="scrollbar-panel" style=" display:none"></div>
+                            </div>
+                        </div>    
+                        <!----------<div class="form-group" id="FolderUploadControl" style="margin-bottom:10px !important;">
+                            <div class="col-sm-2 control-label wid_pal">
+                                <label for="" class="required" data-localize="Folder">Folder</label> <label>:</label>
+                            </div>
+                            <div class="col-sm-10">
+                                <label class="covertophere">
+                                    <input id="FolderAttachment" type="file" class="folder" webkitdirectory=webkitdirectory />
+                                </label>
+                            </div>
+                            <div class="col-sm-10 col-sm-offset-2 wdmengbox">
+                                <div id='txtUploadFolder' class="scrollbar-panel" style=""></div>
+                            </div>
+                        </div>------------>
+                        
+                        <div class="form-group" style="margin-bottom:0 !important;">
+                            <label for="" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-10 doc-btn-center" style="width: 100%;text-align: center;">
+                                <button type="button" id="AttachAttachmentButton" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
+                                <!----<button type="button" id="btnFolderAttachment" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>---->
+                                <button type="button" id="AttachAttachmentCancel" class="btn custom-btn-two-cancel wpx-87 uploadAttachmentCancel" data-dismiss="modal"><label data-localize="Close">Close</label></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!----- myModalupload ed Modal ---->
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+</body>
 
 
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">

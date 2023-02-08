@@ -2046,14 +2046,9 @@
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">84100.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title></title></head><body class="custom-scroll">
+</head><body class="custom-scroll">
 	<!--New Messsage toast popup starts-->
 	<div class="toast" id="ToastPopup" style="display:none;">
 	    <div class="toast-body">
@@ -2134,7 +2129,7 @@
                     <div class="col-md-12 p0 pb5" style="display: none;" id="QuestionDiv">
                         <div class="panel panel-default panel-mb5">
                             <div class="panel-heading panel-heading-question">
-                                <span class="question-head-text panel-heading-bg-txt-clr"> Questions & Answers </span>
+                                <span class="question-head-text panel-heading-bg-txt-clr" data-localize="Questions & Answers"> Questions & Answers </span>
                                 <a href="#" class="question-plus"><strong>+</strong></a>
                             </div>
                             <div class="panel-body panel-body-question custom-scroll" id="QuestionList"> </div>
@@ -2157,7 +2152,7 @@
                     <div class="col-md-12 p0 pb5">
                         <div class="panel panel-default panel-mb5">
                             <div class="panel-heading panel-heading-new-learn">
-                                <span class="events-head-text panel-heading-bg-txt-clr"> Learning </span>
+                                <span class="events-head-text panel-heading-bg-txt-clr" data-localize="Learning"> Learning </span>
                                 <a class="learn-refresh"></a>
                             </div>
                             <div class="panel-body panel-body-new-learn">
@@ -2178,7 +2173,7 @@
                     <div class="col-md-12 p0 pb5">
                         <div class="panel panel-default panel-mb5">
                             <div class="panel-heading panel-heading-survey">
-                                <span class="survey-head-text panel-heading-bg-txt-clr">Survey </span>
+                                <span class="survey-head-text panel-heading-bg-txt-clr" data-localize="Surveys">Survey </span>
                                 <a href="#" class="survey-plus" id="addsuryey"><strong>+</strong></a>
                             </div>
                             <div class="panel-body panel-body-survey custom-scroll" id="divViewPolls">
@@ -2202,7 +2197,7 @@
                                             </div>
                                         </div>
                                         <div class='panel-heading panel-heading-occsn-date-lg'>
-                                            <span class='occsn-head-date-text-lg panel-heading-bg-txt-clr'>Occasion</span>
+                                            <span class='occsn-head-date-text-lg panel-heading-bg-txt-clr' data-localize="Occasion">Occasion</span>
                                         </div>
                                     </div>
                                 </div>
@@ -2214,7 +2209,7 @@
                     <div class="col-md-12 pl5 pr0 pb5 mob-up-events-align-all">
                         <div class="panel panel-default panel-mb5">
                             <div class="panel-heading panel-heading-events">
-                                <span class="events-head-text panel-heading-bg-txt-clr">Event</span>
+                                <span class="events-head-text panel-heading-bg-txt-clr" data-localize="Event">Event</span>
                             </div>
                             <div class="panel-body panel-body-events">
                                 <div class="owl-carousel owl-carousel-events events owl-theme" id="EventData">
@@ -2259,7 +2254,7 @@
                     <div class="col-md-12 pl5 pr0 mob-media-gallery-align-all">
                         <ul class="nav nav-tabs nav-custom-gallery">
                             <li class="active my_active_tab_all"><a data-toggle="tab" href="#MediaGallery">Media Gallery</a></li>
-                            <li style="display: none;"><a data-toggle="tab" href="#Magazine">Magazines</a></li>
+                            <li style="display: none;"><a data-toggle="tab" href="#Magazine" data-localize="Magazine">Magazines</a></li>
                         </ul>
                         <div class="tab-content tab-gallery-area panel-default">
                             <div id="MediaGallery" class="tab-pane fade in active">
@@ -3563,7 +3558,160 @@
             });
 
             userActivityNotificationEntry(_spPageContextInfo.userId, window.location);
+            ChangeLabels();
         });
+        
+/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'Home Page' ";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}
+        
+        
+        
+        
+        
     </script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/Slider/Slider.js"></script>
@@ -3578,9 +3726,9 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/js/platform_embed.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/SocialMedia/SocialMediaWebPart.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/MediaGallary/MediaGallary.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/js/gfapi.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/Scripting/Bonusly.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/Scripting/Rssfeed.js"></script>
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/js/gfapi.js"></script>-->
+    <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/Scripting/Bonusly.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/Scripting/Rssfeed.js"></script>-->
     <!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Attendance/assets/moment.min.js"></script>-->
 
     <script type="text/javascript">

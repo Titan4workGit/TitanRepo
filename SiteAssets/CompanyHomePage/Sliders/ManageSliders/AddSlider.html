@@ -26,11 +26,20 @@
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/NewJsCss/richtext.min.css">
 		
 		
-		<link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <style type="text/css">
+#btnDelete{
+	color: #fff;
+    background-color: #dc3545;
+    background-image: none;
+    border-color: #dc3545 !important;
+    padding: 4.5px 12px !important;
+}
 
+            
+            
             /* new css added on 01/7/2021 */
 
             .my_announce_department_list .dropdown-toggle {
@@ -313,6 +322,37 @@ div.ms-webpart-cell-vertical-inline-table{
 .all-align-gap-info-entryscreen {
     margin: 0px -15px 0px 3px !important;
 }
+#flagCheckbox+label {
+    margin: 4px 0px 0px 1px;
+    cursor: pointer;
+}
+
+/*-----------------09/092022----------------------------*/
+#DpdownData{
+ max-height:95px;
+ overflow:auto;
+ list-style-type:none;	
+}
+
+#DpdownData::-webkit-scrollbar {
+	width: 10px;
+	height:10px;
+	background-color: transparent;
+}
+#DpdownData::-webkit-scrollbar-thumb {
+	border: 3px solid transparent;
+	border-radius: 10px;
+	background-color: grey;
+	background-clip: content-box;
+	-webkit-background-clip: content-box;	
+	
+}	
+#DpdownData::-webkit-scrollbar-thumb:hover {
+	background-color: #333;
+	background-clip: border-box;
+	-webkit-background-clip: border-box;
+}
+
 
  </style>
 
@@ -329,7 +369,7 @@ div.ms-webpart-cell-vertical-inline-table{
 <mso:Order msdt:dt="string">39700.0000000000</mso:Order>
 <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:ContentTypeId msdt:dt="string">0x010100767E0F213A8F8542B95D9160C5D83BF9</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -453,6 +493,7 @@ div.ms-webpart-cell-vertical-inline-table{
                                             </div>
                                             </div>
                                             <div id="Publish" class="tab-pane fade">
+											
                                                 <div class="row flex-column-reverse-is-phone">
                                                     <div class="col-sm-6 col-xs-12">
                                                         <div class="form-group custom-form-group">
@@ -476,7 +517,7 @@ div.ms-webpart-cell-vertical-inline-table{
                                                         <div class="user-upload-image-box">
                                                             <img class="user-upload-image" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/ExperiencesNew/assets/images/user_pic.jpg" alt="user image" id="userImage">
                                                             <div class="user-upload-image-box-btn" id="ImageUploadBtn" style="display:none;">
-                                                                <input type="file" id="UploadImage" class="user-upload-image-inp" name="" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
+                                                                <input type="file" id="UploadImage" class="user-upload-image-inp" accept="image/x-png,image/gif,image/jpeg,image/jpg" name="" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
                                                                 <span class="user-upload-image-span">Upload<br>Profile Picture</span>
                                                             </div>
                                                         </div>
@@ -530,7 +571,7 @@ div.ms-webpart-cell-vertical-inline-table{
 
 								        <button type="button" class="btn btn-default btn-sm dropdown-toggle ApproverView" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
 								        </button>
-										<ul class="dropdown-menu" style="width:90% !important;" id="DpdownData">
+										<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData">
 										
 										  <!--<li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/><span>Sales</span></a></li>
 										  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/><span>Human Resources</span></a></li>
@@ -543,11 +584,19 @@ div.ms-webpart-cell-vertical-inline-table{
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+											<div class="row" style="display:none">
+												<div class="col-sm-12">
+													<input type="checkbox" id="flagCheckbox">
+													<label class="pin-flag-up-label" for="flagCheckbox">Pin Flag Up:</label>
+												</div>
+											</div>
+										</div>
                                     </div>
                                     <div class="col-xs-12 text-center">
                                         <a type="button" class="btn custom-btn mr-8 wpx-87" data-dismiss="modal" id="btnAddSlider" onclick="PostExperience();">Submit</a>
                                         <a type="button" class="btn custom-btn-two-cancel mr-8 wpx-87 closebtn" data-dismiss="modal" onclick="ClosePage();">Close</a>
+                                        <input id="btnDelete" type="button" style="font-size:10px; display:none" class="btn btn-outline-danger button ViewMode"  onclick="DeleteRecord()" value="Delete">							
+
                                     </div>
                                 </div>
                             </div>

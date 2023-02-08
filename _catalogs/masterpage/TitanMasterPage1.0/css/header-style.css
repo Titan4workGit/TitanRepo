@@ -18,7 +18,8 @@ li.dropdown-custom ul li a {
     font-size: 16px !important;
     background: #fff;
     min-height: 50px !important;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */ 
+    /* margin-bottom: 5px; */
 }
 .navbar-brand {
     padding: 5px 15px !important;
@@ -56,8 +57,12 @@ img.logo {
 
 /* new css added on 06/7/2021 */
 
-.open>#company {
+/* .open>#company {
     display: flex;
+} */
+
+.navbar-toggle {
+  margin-top: 16px !important;
 }
 
 /*************************Header End************************/
@@ -66,16 +71,37 @@ img.logo {
 
 /* responsive css media-query-classes -----START----- */
 
+@media only screen and (min-width: 1366px) {
+
+  /* #company {
+      transform: translate(-360px, 0px);
+  } */
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+  /* #company {
+      transform: translate(-530px, 0px);
+  } */
+
+}
+
 @media only screen and (min-width: 1200px) {
 
     #company {
-        /*width: 1020px;*/
-        width: auto;
-        height: auto;
-        padding: 5px 5px;
-        left: 0;
-        transform: translate(-575px, 0px);
-        min-width: auto !important;
+        /* width: 640px; */
+        width: auto !important;
+        height: auto !important;
+        padding: 5px 5px !important;
+        left: auto !important;
+        right: -1px !important;
+        /* transform: translate(-575px, 0px);
+        min-width: auto !important; */
+    }
+    #company.OutOfScreen {
+        left: 0px !important;
+        right: auto !important;
     }
     #company li {
         padding: 0px 0px !important;
@@ -86,6 +112,9 @@ img.logo {
         padding: 10px 15px !important;
         font-size: 13.3px;
     }
+    #myNavbar .open>.dropdown-menu {
+    	display: flex !important;
+	}
     /*li.dropdown-custom ul li {
         display: inline-flex;
     }
@@ -116,23 +145,34 @@ img.logo {
 
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
 
-    #company {
-        transform: translate(-530px, 0px);
-    }
-
-}
-
-@media only screen and (min-width: 1366px) {
-
-    #company {
-        /*transform: translate(-500px, 0px);*/
-        transform: translate(-360px, 0px);
-    }
+  .nav > li > a {
+      font-size: 15px !important;
+      padding: 16px 20px !important;
+  }
 
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) { 
 
+  .nav > li > a {
+    font-size: 13px !important;
+    /* padding: 16px 14px !important; */
+    padding: 16px 11px !important;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) { 
+
+  .navbar-toggle {
+    margin-top: 10px !important;
+  }
+  .navbar-custom .navbar-collapse>ul.navbar-nav {
+    margin: 30px -15px;
+  }
+
+}
 
 /* responsive css media-query-classes -----END----- */

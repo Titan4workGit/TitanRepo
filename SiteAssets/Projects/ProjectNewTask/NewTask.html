@@ -1318,6 +1318,28 @@ letter-spacing: 1px;
 }    
 
 
+.minattachmentbox {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 15px;
+    border: 1px solid #a5a5a5;
+    margin: 5px 3px 2px 3px;
+    font-size: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 180px;
+}
+
+.minattachmentbox:hover {
+    background: #6464642e;
+}
+
+.minattachmentbox .fa-lg {
+    margin-left: 5px;
+}
 
 @media(min-width:992px){
 	
@@ -1759,6 +1781,12 @@ letter-spacing: 1px;
  border:none !important;	
 }
 
+.panel-head-text {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    color: #333 !important;
+}
 /**feb/18/22**/
 
 #AttachmentView .embed-responsive-16by9 {
@@ -1862,6 +1890,187 @@ letter-spacing: 1px;
   font-size:15px !important;	
 }
 
+
+/****change history st****/
+
+.file_detailboxshow{
+white-space:normal;
+}  
+
+.file_detailboxshow .upload-chip {
+    border:1px solid #d6d6d6;
+    padding: 1px 5px 2px 5px;
+    border-radius: 10px;
+    margin: 3px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.file_detailboxshow:first-child .upload-chip{
+  margin-left: 0;
+}
+
+.file_detailboxshow .chip-text-box {
+    color:#6d6d6d !important;
+    max-width: 180px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+    position: relative;
+    top: 4px;
+}
+
+.file_detailboxshow .chip-icon-box{
+  margin-left: auto;
+}
+
+.additional_doms table tr th {
+    font-weight: 400;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 5;
+    border-top: 1px solid #ccc;
+    font-size: 13px;
+}
+
+.additional_doms table {
+    margin-bottom: 0;
+    border-top: 1px solid transparent;
+    border-collapse: inherit;
+}
+.additional_doms table tr:nth-child(2n+1) td {
+    background: #f5f5f5;
+}
+.additional_doms table tr td {
+    font-size: 13px;
+    padding: 5px;
+    vertical-align: unset !important;
+     border:none;
+    border-bottom: 1px solid #dbdbdb;
+}
+.additional_doms .chip-icon-box a{
+  margin:0 2px;
+  text-decoration: none;
+}
+
+.additional_doms .task_dName,
+.additional_doms .task_OName,
+.additional_doms .task_newName{
+font-size:13px;
+display: inline;
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+word-wrap: break-word;
+-webkit-line-clamp: 2;
+}
+
+.additional_doms {
+    overflow: auto;
+    max-height: 72.5vh;
+}
+
+.additional_doms::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.additional_doms::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.additional_doms::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+.additional_doms table tr th {
+    font-weight: 600;
+    padding: 6px 5px;
+    border-top: 1px solid #ccc !important;
+    border-left: none;
+}
+
+.additional_doms table tr td:last-child,
+.additional_doms table tr th:last-child{
+  text-align:left;
+}
+
+.additional_doms table td .custom-edit-btn {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+}
+
+.titlewrp{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.titlewrp img{
+  width:32px;
+  margin-right: 5px;
+}
+
+.addbutton_area {
+    width: 100%;
+    padding: 3px 15px;
+    text-align: right;
+    margin-top:5px;
+}
+
+.two_eventbx button.btn-sm, .addbutton_area button {
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+@media(max-width:1100px){
+.additional_doms table{
+ min-width:1100px;	
+}
+ 	
+}
+
+@media (min-width: 992px){
+#change_History .modal-lg {
+    width: 70%;
+}
+
+}
+
+/*****change history ed************/
 
 @media(min-width: 992px){
 
@@ -2046,12 +2255,27 @@ letter-spacing: 1px;
   margin:15px 0 5px; 	
 }
 
-    @media(min-width: 768px) {
+.panel-head h1.panel-head-text {
+    color: #333 !important;
+}
 
-        #Notificationlist .modal-dialog {
-            width: 420px;
-        }
-    }
+.panel-head-text {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+}
+
+@media(min-width: 768px) {
+
+#Notificationlist .modal-dialog {
+    width: 53%;
+}
+
+.botheventwork label:not(:last-child){
+ margin-right:25px;	
+}
+
+}
 
     @media(max-width: 500px) {
 
@@ -2070,6 +2294,18 @@ letter-spacing: 1px;
             margin-left: 0;
         }
     }
+    
+@media(max-width:381px){
+
+.ms-webpart-cell-horizontal,  
+.ms-webpart-zone{
+    display: block !important;
+}
+
+}    
+    
+    
+    
 </style>
 <!-- display: none; -->
 <div class="loader"></div>
@@ -2078,12 +2314,12 @@ letter-spacing: 1px;
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default shadow2">
-                    <div class="panel-heading panel-head-4 panel-head-new-task-bg-clr">
-                        <div class="panel-title" style="top:0;">
-                            <h4 class="h4-color">Task Details</h4>
+                    <div class="">
+                        <div class="panel-head" style="top:0;">
+                            <h1 class="panel-head-text">Task Details</h1>
                         </div>
                     </div>
-                    <div class="panel-body pt8">
+                    <div class="panel-body" style="padding-top:5px;">
                         <div class="row">
                             <div class="col-sm-6 left-panel">
                                 <div class="form-group custom-form-group">
@@ -2203,7 +2439,7 @@ letter-spacing: 1px;
                                     <div class="form-group col-md-6 searchiconmanage circle-manages">
                                         <label for="" class="font-12">Document Link:</label>
                                         <a href="javascript:void(0);" target="_blank" style="position: static;max-width: 409px;width: 409px;" id="txtDocLinkEdit">Select Document Link</a>
-                                        <button type="button" class="btn custom-btn ml-8 w-87 EditSuccPred" id="btnAddDocLink" data-toggle="modal" data-target="#copymove"><i class="fa fa-search"></i></button>
+                                        <button type="button" class="btn custom-btn ml-8 w-87 EditSuccPred LibTreeStruct" id="btnAddDocLink" data-toggle="modal" data-target="#copymove"><i class="fa fa-search"></i></button>
                                     </div>
 
                                     <div class="form-group col-md-6" id="divURL">
@@ -2405,9 +2641,9 @@ letter-spacing: 1px;
 <div class="row" id="create_task_without_comts" style="display:none">
     <div class="col-sm-12 my_new_task_box">
         <div class="panel panel-default shadow2">
-            <div class="panel-heading  panel-head-4">
-                <div class="panel-title">
-                    <h4 class="h4-color" data-localize="ManageTask">Manage Task</h4>
+            <div class="panel-head">
+                <div class="">
+                    <h1 class="panel-head-text" data-localize="ManageTask">New Task</h1>
                 </div>
             </div>
             <div class="panel-body">
@@ -2577,7 +2813,7 @@ letter-spacing: 1px;
 
                                                 <div class="monthlycoverbox">
                                                     <label for="day">Day:</label>
-                                                    <select class="form-control" id="MonthlyDays"></select>
+                                                    <select class="form-control" id="MonthlyDays"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option></select>
                                                 </div>
 
                                                 <span style="margin-left:5px;">of Every Month</span>
@@ -2762,7 +2998,7 @@ letter-spacing: 1px;
                                     <label for="" class="col-md-12 col-lg-3 control-label" data-localize="">Document Link</label>
                                     <div class="col-lg-9 col-md-12 searchiconmanage">
                                         <input type="text" class="form-control" id="txtDocLink">
-                                        <button type="button" class="btn custom-btn ml-8 w-87" data-toggle="modal" data-target="#copymove">
+                                        <button type="button" class="btn custom-btn ml-8 w-87 LibTreeStruct" data-toggle="modal" data-target="#copymove">
                                             <i class="fa fa-search"></i>
                                         </button>
                                     </div>
@@ -2807,8 +3043,8 @@ letter-spacing: 1px;
 
     <!--<button type="button" class="btn btn-outline-success" id="reminderTask" data-localize="Reminder" style="display:none">Reminder</button>-->
 
-    <button type="button" class="btn btn-outline-success" id="reminderTask" data-toggle="modal" data-target="#Notificationlist">Notify</button>
-
+    <button type="button" class="btn btn-outline-success" id="reminderTask" data-toggle="modal" style="display:none;" data-target="#Notificationlist">Notify</button>
+	<button type="button" class="btn btn-outline-success" id="btnchangeHistorys" data-toggle="modal" style="display:none;" data-target="#change_History">Change History</button>
     <button type="button" class="btn btn-outline-success" id="DeleteTask" data-localize="Delete" style="display:none;">Delete</button>
     <!-- <button type="button" class="btn btn-outline-secondary" id="btnAttchmentsView" data-localize="Attachments">Attachments</button>-->
 </div>
@@ -2937,7 +3173,7 @@ letter-spacing: 1px;
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer" style="text-align:center">
                 <button type="button" class="btn btn-outline-secondary" onclick="ClosedIframe()" data-dismiss="modal">Close</button>
 
             </div>
@@ -3637,11 +3873,12 @@ letter-spacing: 1px;
 
                     <div class="form-group">
                         <label for="">Message<span style="color:red;">*</span></label>
-                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control"></textarea>
+                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control" style="min-height:170px; max-height:170px"></textarea>
                     </div>
                     <div class="row">
                     
                     <div class="col-md-12">
+                    <label>Mail send to</label><label>:</label>
                         <div class="botheventwork" style="">
                             <label class="radio-inline">
                                 <input type="radio" class="hideSelective SelectMailSend" id="chkAllUser" value="All" name="rdoSendMail" checked="checked"> All
@@ -3678,6 +3915,66 @@ letter-spacing: 1px;
 <!---Notificationlist ed----->
 
 
+<!-- change_History st-->
+<div id="change_History" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Change History</h4>
+      </div>
+      <div class="modal-body">
+          <div class="additional_doms">
+            <table class="table table-bordered">
+              <thead>
+                  <tr>
+                    <th style="width:15%">Date</th>
+                    <th style="width:10%">Activity</th>
+                    <th style="width:20%">On Change</th>
+                    <th style="width:20%">Old Value</th>
+                    <th style="width:20%">Update Value</th>
+                    <th style="width:15%">Action By</th>
+                    
+                  </tr>
+              </thead>
+              <tbody id="bodyChangeHistory">
+                <tr>
+                    <td>
+                      <span class="date_dfine ">12 jun 2022 3:40 PM</span>
+                    </td>
+                    <td>
+                      <div class="modify_dfine">Modify</div>
+                    </td>
+                     <td>
+                      <div class="task_dName ellipsis-2">Task Name</div>
+                    </td> 
+                    <td>
+                      <div class="task_OName ellipsis-2">Old Task Name</div>
+                    </td> 
+                    <td>
+                      <div class="task_newName ellipsis-2">New Task Name</div>
+                    </td>
+                    <td>
+                      Dipankar Goswami
+                    </td> 
+                  </tr>  
+              </tbody>
+            </table>
+          </div>
+       
+      </div>
+     <div class="modal-footer" style="text-align: center; margin-top:0; padding:10px;">
+        <!--<button type="button" class="btn btn-outline-success">OK</button>-->
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- change_History ed-->
 
 
 

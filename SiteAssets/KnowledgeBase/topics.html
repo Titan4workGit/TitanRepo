@@ -399,7 +399,31 @@ h4.floating{
   padding:0 15px !important;
 }
 
- 
+/* new css added on 19-JAN-2023 */
+
+.topic-text {
+    margin-top: 0;
+}
+.topic-chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.topic-upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 1;
+}
+.topic-department-box {
+    margin-top: 20px;
+}
+
 
 @media(max-width: 991px){
 .img_box{
@@ -442,17 +466,12 @@ h4.floating{
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-410</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">0d9dc824-f706-4eb5-a41b-17e162a10798</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-410, ADMIN-1645029823-410</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">41000.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Department</title></head>       
+</head>       
 <body>             
 <!-- header -->
 <!-- Main -->
@@ -468,8 +487,14 @@ h4.floating{
 				<div class="panel-body pt-5">
 					<div class="col-md-12">
 						<div class="row mt-10">
-							<h3 class="head_border panel-heading-bg-txt-clr floating" data-localize="Topics"><span>Topic</span></h3>   
-							<h4 class="topic-department-name floating"><span>Department:</span> <span id="deptName"></span></h4>           
+							<!-- <h3 class="head_border panel-heading-bg-txt-clr floating" data-localize="Topics"><span>Topic</span></h3>   
+							<h4 class="topic-department-name floating"><span>Department:</span> <span id="deptName"></span></h4> -->
+							          
+							<h3 class="topic-text" data-localize="Topics">Topic</h3>    
+							<div class="topic-chip-box">
+								<div class="topic-upload-chip">Department: <span id="deptName"></span>
+								</div>
+							</div>
 
 							<div class="col-md-12 topic-department-box">
 								<div class="row">

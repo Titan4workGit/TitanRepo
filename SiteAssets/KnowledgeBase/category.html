@@ -218,13 +218,14 @@
 }
 
 .category_head.head_border:after{
- display:none !important;	
+ 	display:none !important;	
 } 
 
 .category_head.head_border{
-margin-left: -16px;
-padding: 2px 10px 5px;
-	
+	/*margin-left: -16px;
+	padding: 2px 10px 5px;*/
+    margin-left: 0px;
+    padding: 2px 10px 5px 0px;
 }
 
 .ajusting{
@@ -238,6 +239,30 @@ padding: 2px 10px 5px;
 .fa-edit:before, .fa-pencil-square-o:before{
   content: "\f040" !important;	
 }
+
+/* new css added on 19-JAN-2023 */
+
+.category-text {
+    margin-top: 0;
+}
+.category-chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.category-upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 1;
+}
+
+/* responsive start */
 
 @media(max-width:860px){
 #categoryListItems{
@@ -278,17 +303,12 @@ margin-left:0px;
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-413</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">d090bb4f-a6b5-49da-b6a8-87f5983fc520</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-413, ADMIN-1645029823-413</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">41300.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Department</title></head>      
+</head>      
 <body>
        
         
@@ -306,8 +326,11 @@ margin-left:0px;
 						<div class="col-sm-12">
 							<div class="row mt-10">
 								<div class="col-sm-12 my_category_heading"> 
-									<h3 class="head_border category_head panel-heading-bg-txt-clr" data-localize="Category">Category</h3>    
-									<h4 class="category_head ajusting">Department: <span id="deptName"></span></h4>
+									<h3 class="category-text" data-localize="Category">Category</h3>    
+									<div class="category-chip-box">
+										<div class="category-upload-chip">Department: <span id="deptName"></span>
+										</div>
+									</div>
 								</div>      
 								<div class="col-sm-12 mt-20">                 
 									<div class="row text-right">

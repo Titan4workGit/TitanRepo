@@ -26,12 +26,17 @@
 <script type="text/javascript" src="_layouts/15/autofill.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/dom-to-image.js"></script>
-
+<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/css/emojionearea.min.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/js/emojionearea.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/jq.tablesort.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Titan-ExternalUserPortal/JS/CreateQrCode.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TitanGeustPortalTemplate1/MyDocuments.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TitanGeustPortalTemplate1/Approval-IN_Out.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/js/jquery.qrcode.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MasterPageScripts/userActivityNotificationEntry.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/xlsx.core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/tableExport.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/Plugins/jquery.fileDownload.js"></script>
 
 <style>
     #document_tab .glyphicon-chevron-right::before {
@@ -289,11 +294,11 @@
 }
 
 #ms-belltown-table{
-    padding: 5px 15px !important;
+    padding: 5px 0px 5px !important;
 }
 
-#contentBox{
-  padding:5px 15px !important;
+#contentBox {
+    padding: 5px 0 5px 10px !important;
 }
 
 .contentwrapper {
@@ -355,12 +360,8 @@
 
 /****march-29-22 ed****/
 
-
-
-    @media(max-width:1199px) {
-
-
-        .contentwrapper {
+@media(max-width:1920px) {
+       .contentwrapper {
             width: 100% !important;
             min-width: auto !important;
         }
@@ -383,7 +384,7 @@
         table#layoutsTable > tbody,
         table#layoutsTable > tbody:first-child > tr,
         table#layoutsTable > tbody > tr:first-child > td {
-            width: 98% !important;
+            width: 100% !important;
             display: block !important;
         }
 
@@ -391,15 +392,15 @@
         .ms-tableCell {
             display: block !important;
         }
+    }
 
-        #s4-workspace {
-            overflow-x: hidden !important;
-        }
-       
-	.contentwrapper {
-	    margin: 0 5%!important;
-	}
- 
+
+@media (min-width: 992px){
+
+#approverssec .modal-lg {
+    width: 86%;
+}
+
 }
 
 
@@ -1509,6 +1510,7 @@ margin:0 5px;
 }
 
 /***Approval history**/
+
  
 .scrollingeffect::-webkit-scrollbar-thumb {
 border: 2px solid transparent;
@@ -1575,7 +1577,7 @@ background-color: transparent;
             .timebox ul.mainlst > li {
                 position: relative;
                 border: 1px solid #cdcdcd;
-                margin: 10px 10px 10px 20px;
+                margin:10px 5px;
                 border-radius: 5px;
                 padding: 5px 8px 8px 8px;
                 box-shadow: 2px 2px 4px #cccccc47;
@@ -1621,7 +1623,7 @@ background-color: transparent;
 
     .iconbox {
         position: absolute;
-        left: -36px;
+        left: -34px;
         top: calc(50% - 15px);
         width: 30px;
         height: 30px;
@@ -2016,9 +2018,7 @@ label{
 
 .overflowmanage table tbody tr td,
 .overflowmanage table thead tr th{
-  
  vertical-align:middle !important;	
-	
 }
 
 #addsuccessor .modal-footer.floatingdiv div, 
@@ -3003,6 +3003,10 @@ img.priority-icon{
 	
 }
 
+.RequestDate{
+ white-space:nowrap;	
+}
+
 /***feb-11-22***/
 
 .SharedByData .empoyeeimg{
@@ -3086,6 +3090,73 @@ img.priority-icon{
     padding: 0 2px;
 }
 
+#accordionsec .panel.custom-panel{
+  margin-bottom:12px !important;	
+}
+
+.downloadsec .fa{
+ margin-right:5px;	
+}
+#overlaysearch {
+    background: #ffffff;
+    color: #666666;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    padding-top: 25%;
+    opacity: .80 !important;
+    display:none;
+}
+.spinner {
+    margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    border-right-color: transparent;
+    border-radius: 50%;  
+}
+.labelflexing{
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex; 
+}
+
+.labelflexing label:last-child{
+ margin-left:2px; 
+}
+
+.SupprtedFileBox .chip-icon-box {
+    position: relative !important;
+    left: 3px;
+}
+
+.remarkboxsec{
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ margin:10px 0 5px 0;
+}
+
+.remarkboxsec p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+}
+
+.remarkboxsec label{
+ margin-right: 7px;
+}
+
 @media (min-width: 992px){
 
 .listimg {
@@ -3161,6 +3232,10 @@ img.priority-icon{
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head><body>
+	<div id="overlaysearch" >
+    <div class="spinner"><img style="width:50px;height:50px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Titan-Loader/images/Comp1_1.gif" alt="loader"></div>
+    </div>
+
     <nav class="navbar navbar-custom header-nav">
         <div class="container-fluid">
             <div class="navbar-header navbar-header-custom external-emp-header-box flxdirec">
@@ -3305,7 +3380,7 @@ img.priority-icon{
                                                                         <img class="dms-button-image-icon ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/expand-arrow-icon.png" alt="down arrow">
                                                                     </button>
                                                                     <ul class="dropdown-menu dropdown-color-menu-icon">
-                                                                        <li>
+                                                                        <li id="LiAddFolder">
                                                                             <a href="javascript:void(0);" data-toggle="modal" data-target="#dms-creat-folder">
                                                                                 <img class="color-dms-icon-info mr5" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/folder.png"
                                                                                      alt="folder">
@@ -3332,12 +3407,12 @@ img.priority-icon{
                                                                             </a>
                                                                         </li>
                                                                         <li>
-                                                                            <a href="javascript:void(0);" id="createNoteBook">
-                                                                                <img class="color-dms-icon-info mr5" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/onetoc.png"
-                                                                                     alt="onetoc">
-                                                                                <span>OneNote notebook</span>
-                                                                            </a>
-                                                                        </li>
+                                                                        <a href="javascript:void(0);" id="createTextFile">
+                                                                            <img class="color-dms-icon-info mr5" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/txt.png" alt="txtfile" />
+                                                                            <span data-localize="Text file">Text file</span>
+                                                                        </a>
+                                                                    </li>
+	
                                                                     </ul>
                                                                 </div>
                                                                 <div class="dropdown dms-table-btn" id="divUpload">
@@ -3446,7 +3521,7 @@ img.priority-icon{
                                                                             <div class="col-md-3 col-sm-3">
                                                                               
                                                                               <div id="divPendingAck" style="padding: 5px 0px; display: block;">
-																				<span id="txtPendingAck">Acknowledgement Pending: <span id="txtPendingCount" style="margin:0 5px;">10</span></span>
+																				<span id="txtPendingAck">Acknowledgement Pending: <span id="txtPendingCount" style="margin:0 5px;">0</span></span>
 																				</div>
                                                                             </div>
                                                                              <!---col-3ed-->
@@ -3466,16 +3541,17 @@ img.priority-icon{
 
                                                                                         <thead class='panel-heading '>
                                                                                             <tr>
-                                                                                            <th style="width:20%"><h6 data-localize="File">File Name</h6></th><!--0-->
-                                                                                            <th style="width:18%"><h6 data-localize="Title">Title</h6></th><!--1-->
-                                                                                            <th style="width:15%"><h6 data-localize="DocumentNo">Reference#</h6></th><!--2-->
-                                                                                            <th style="display:none; width:15%"><h6 data-localize="Type">Type</h6></th><!--3-->
-                                                                                            <th  style="width:15%" class='nosort'><h6 data-localize="Type">Type</h6></th> <!--4-->
-                                                                                            <th style="display:none; width:15%"><h6 data-localize="SharedBy">Shared By</h6></th>  <!--5-->                                                                                            <th><h6 data-localize="SharedBy">Shared By</h6></th>
-                                                                                            <th style="display:none;"><h6 data-localize="Acknowledge">Acknowledge</h6></th><!--6-->
-                                                                                            <th style="display:none;"><h6 data-localize="Sharedfrom">Shared from</h6></th><!--7-->
-                                                                                            <th style="text-align:center"><h6 data-localize="Permission">Permission</h6></th><!--8-->
-                                                                                            <th class='nosort' style='max-width:15px;width:15px'><h6 data-localize=""></h6></th><!--9-->
+                                                                                            <th style="width:20%" class="sortStyle"><h6 data-localize="File">File Name</h6></th><!--0-->
+                                                                                            <th style="width:18%" class="sortStyle"><h6 data-localize="Title">Title</h6></th><!--1-->
+                                                                                            <th style="width:15%" class="sortStyle"><h6 data-localize="Reference">Reference#</h6></th><!--2-->
+                                                                                            <th style="display:none; width:15%" class="sortStyle"><h6 data-localize="Category">Category</h6></th><!--3-->
+                                                                                            <th style="width:15%" class="sortStyle"><h6 data-localize="Category">Category</h6></th> <!--4-->
+                                                                                            <th class="sortStyle" style="display:none; width:15%"><h6 data-localize="SharedBy">Shared By</h6></th>  <!--5-->                                                                                            
+                                                                                            <th class="sortStyle"><h6 data-localize="SharedBy">Shared By</h6></th>
+                                                                                            <th class="sortStyle" style="display:none;"><h6 data-localize="Acknowledge">Acknowledge</h6></th><!--6-->
+                                                                                            <th class="sortStyle" style="display:none;"><h6 data-localize="Sharedfrom">Shared from</h6></th><!--7-->
+                                                                                            <th class="sortStyle" style="text-align:center"><h6 data-localize="Permission">Permission</h6></th><!--8-->
+                                                                                            <th class="sortStyle" style='max-width:15px;width:15px'><h6 data-localize=""></h6></th><!--9-->
 
                                                                                             </tr>
                                                                                         </thead>
@@ -3568,6 +3644,12 @@ img.priority-icon{
                                                                         <span>Filter</span>
                                                                     </button>
                                                                 </div>
+                                                                <div class="dropdown dms-table-btn DivAppExport">
+	                                                                <button class="btn dropdown-toggle" type="button">
+	                                                                    <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/export-icon.png" alt="Export" />
+	                                                                    <span data-localize="Export">Export</span>
+	                                                                </button>
+	                                                            </div>
 
                                                             </div>
 
@@ -3632,6 +3714,12 @@ img.priority-icon{
                                                                         <span>Filter</span>
                                                                     </button>
                                                                 </div>
+                                                                <div class="dropdown dms-table-btn DivAppExport" id="">
+	                                                                <button class="btn dropdown-toggle" type="button">
+	                                                                    <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/export-icon.png" alt="Export" />
+	                                                                    <span data-localize="Export">Export</span>
+	                                                                </button>
+	                                                            </div>
 
                                                             </div>
 
@@ -4874,318 +4962,6 @@ img.priority-icon{
             </div>
         </div>
     </div>
-    <!-- edit mamber modal-->
-    <!--div class="modal fade" id="member-edit-filter" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
-                    <h4 class="modal-title">Edit User</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="emp-upload-image-box">
-                                        <img class="emp-upload-image" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Titan-ExternalUserPortal/images/user_pic.jpg" alt="user image">
-                                        <div class="emp-upload-image-box-btn">
-                                            <input type="file" class="emp-upload-image-inp" name="">
-                                            <span class="emp-upload-image-span">
-                                                Upload<br>
-                                                Profile Picture
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Reference Number:</label>
-                                        <input type="text" class="form-control" placeholder="Reference Number" value="R001" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Status:<span class="color-red">*</span></label>
-                                        <select class="form-control">
-                                            <option>Active</option>
-                                            <option>Inactive</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Name:<span class="color-red">*</span></label>
-                                        <input type="text" class="form-control" placeholder="Name" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Email:<span class="color-red">*</span></label>
-                                        <input type="email" class="form-control" placeholder="Email Address" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Designation:</label>
-                                        <input class="form-control" type="text" name="" id="" placeholder="Designation">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group">
-                                        <label for="Project">Type:</label>
-                                        <select class="form-control" id="" disabled>
-                                            <option>Vender</option>
-                                            <option>Consultant</option>
-                                            <option>Guest</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Validity Upto:<span class="color-red">*</span></label>
-                                        <input class="form-control" type="date" name="" id="" disabled>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
-                    <button class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- Request to Add Guest user -->
-    <!--div class="modal fade" id="request-to-add-guest-user" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
-                    <h4 class="modal-title">Request to Add a Guest User</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="emp-upload-image-box">
-                                        <img class="emp-upload-image" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Titan-ExternalUserPortal/images/user_pic.jpg" alt="user image">
-                                        <div class="emp-upload-image-box-btn">
-                                            <input type="file" class="emp-upload-image-inp" name="">
-                                            <span class="emp-upload-image-span">
-                                                Upload<br>
-                                                Profile Picture
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Validity Upto:<span class="color-red">*</span></label>
-                                        <input class="form-control" type="date" name="" id="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Organization Name:<span class="color-red">*</span></label>
-                                        <input type="text" class="form-control" placeholder="Organization Name" disabled>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Name:<span class="color-red">*</span></label>
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Email:<span class="color-red">*</span></label>
-                                        <input type="email" class="form-control" placeholder="Email Address">
-                                    </div>
-                                </div>
-                                <div class="col-xs-12">
-                                    <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Designation:</label>
-                                        <input class="form-control" type="text" name="" id="" placeholder="Designation">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn custom-btn mr-8 w-87" data-dismiss="modal">Submit</button>
-                    <button class="btn custom-btn-two-cancel w-87" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- memberfilter modal -->
-    <!--div class="modal fade" id="member-filter" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
-                    <h4 class="modal-title">Edit</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row" style="">
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="form-group custom-form-group">
-                                <label for="Project">User:</label>
-                                <input type="text" class="form-control" name="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="form-group custom-form-group">
-                                <label for="Project">Designation:</label>
-                                <select class="form-control" id="">
-                                    <option>Designation 2</option>
-                                    <option>Designation 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="form-group custom-form-group">
-                                <label for="Project">Type:</label>
-                                <select class="form-control" id="">
-                                    <option>Vender</option>
-                                    <option>Consultant</option>
-                                    <option>Guest</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-6">
-                            <div class="form-group custom-form-group">
-                                <label for="Project">Status:</label>
-                                <select class="form-control" id="">
-                                    <option>Active</option>
-                                    <option>Inactive</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn custom-btn mr-8" data-dismiss="modal">Apply</button>
-                    <button class="btn custom-btn-two-cancel" data-dismiss="modal">Clear</button>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- Sharing Modal -->
-    <!--div class="modal fade" id="myModalShareHistory" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Sharing History</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>
-                                <label>File:</label>
-                                <span id="filenamee">File Name 1</span>
-                            </p>
-                            <p>
-                                <label>Title:</label>
-                                <span id="filetitle">Title Name 1</span>
-                            </p>
-                            <input type="text" id="query1" onkeyup="sorter.search('query1')" placeholder="Type here for search..." class="doc-search" style="width: 200px;font-size: 13px;padding:8px 5px !Important;float: right;margin-bottom: 12px;margin-top: -5px;">
-                            <label data-localize="SharedTo">Shared To</label>
-                            <select class="form-control" style="width:25%;margin-left: 76px;margin-top: -28px;">
-                                <option value="">All</option>
-                                <option value="">Option 1</option>
-                                <option value="">Option 2</option>
-                                <option value="">Option 3</option>
-                                <option value="">Option 4</option>
-                            </select>
-                            <div class="clearfix"></div>
-                            <div class="table-responsive table-responsive-2 scrollbar-panel">
-                                <table class="table mb-0 custom-table external-emp-table">
-                                    <thead>
-                                        <tr>
-                                            <th class="w-5 border-bottom-0 text-center"><input type="checkbox"></th>
-                                            <th class="w-10 border-bottom-0 text-center">Shared To</th>
-                                            <th class="w-10 border-bottom-0 text-center">Permission Type</th>
-                                            <th class="w-10 border-bottom-0 text-center">Shared On</th>
-                                            <th class="w-10 border-bottom-0 text-center">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer text-center">
-                    <button class="btn custom-btn mr-8" data-dismiss="modal">Revoke</button>
-                    <button class="btn custom-btn-two-cancel" data-dismiss="modal">Cancel</button>
-                </div>
-            </div>
-        </div>
-    </div-->
-    <!-- Message Document List -->
-    <!--div class="modal fade" id="document_list" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
-                    <h4 class="modal-title">Document List</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row m-0">
-                        <div class="table-responsive table-responsive-2 scrollbar-panel">
-                            <table class="table mb-0 custom-table external-emp-table">
-                                <thead>
-                                    <tr>
-                                        <th class="w-10 border-bottom-0 text-center">File</th>
-                                        <th class="w-10 border-bottom-0 text-center">Uploaded By</th>
-                                        <th class="w-10 border-bottom-0 text-center">Date</th>
-                                        <th class="w-10 border-bottom-0 text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center">
-                                        <td><span class="external-emp-table-ellipsis-2"><a href="#">File Name 1</a></span></td>
-                                        <td><span class="external-emp-table-ellipsis-2">Patrick Gould</span></td>
-                                        <td><span class="external-emp-table-ellipsis-2">07 Jan 2021</span></td>
-                                        <td>
-                                            <div class="attendance-view-btn-box text-center">
-                                                <a href="#" data-toggle="modal" data-target="#myModalShareHistory" class="custom-view-btn"> <i class="fa fa-download"></i> </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-center">
-                                        <td><span class="external-emp-table-ellipsis-2"><a href="#">File Name 2</a></span></td>
-                                        <td><span class="external-emp-table-ellipsis-2">Angela Parker</span></td>
-                                        <td><span class="external-emp-table-ellipsis-2">07 Jan 2021</span></td>
-                                        <td>
-                                            <div class="attendance-view-btn-box text-center">
-                                                <a href="#" data-toggle="modal" data-target="#myModalShareHistory" class="custom-view-btn"> <i class="fa fa-download"></i> </a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div-->
     <!-- View Profile -->
     <div class="modal fade" id="modal_profile" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -5212,7 +4988,7 @@ img.priority-icon{
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="form-group custom-form-group custom-form-group-manage-employee">
-                                        <label for="">Reference Number:</label>
+                                        <label for="" data-localize="Reference">Reference Number:</label>
                                         <input type="text" class="form-control" id="txtReferenceNumber" placeholder="Reference Number" disabled>
                                     </div>
                                 </div>
@@ -5411,7 +5187,7 @@ img.priority-icon{
                                                 <thead class='panel-heading'>
                                                     <tr>
                                                         <th class='nosort'><h6 data-localize='File'>File</h6></th>
-                                                        <th class='nosort'><h6 data-localize='DocumentNo'>Reference#</h6></th>
+                                                        <th class='nosort'><h6 data-localize="Reference">Reference#</h6></th>
                                                         <th class='nosort'><h6 data-localize='ModifiedDate'>Modified Date</h6></th>
                                                         <th class='nosort'><h6 data-localize='Details'>Details</h6></th>
                                                         <th class='nosort'><h6 data-localize='Download'></h6></th>
@@ -5670,11 +5446,11 @@ img.priority-icon{
 
                                                     <div class="col-md-12 col-sm-12 col-xs-12 apple-google-store-box">
                                                         <div class="col-md-6 col-sm-6 apple-store">
-                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/IOS-QR-Code.png" alt="ios-QR-Code" class="ios-QR-Code">
+                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/IOS-QR-Code_Guest.png" alt="ios-QR-Code" class="ios-QR-Code">
                                                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/App_Store_Badge.png" alt="apple-store" class="apple-store">
                                                         </div>
                                                         <div class="col-md-6 col-sm-6 google-play-store">
-                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/Android-QR-Code.png" alt="android-QR-Code" class="android-QR-Code">
+                                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/Android-QR-Code_Guest.png" alt="android-QR-Code" class="android-QR-Code">
                                                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/Play_Store_badge.png" alt="play-store" class="play-store">
                                                         </div>
                                                     </div>
@@ -5720,7 +5496,7 @@ img.priority-icon{
                                 <a href="javascript:void(0);" id="btnFullView" target="_blank">
                                     <button class="btn dropdown-toggle" type="button">
                                         <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/full-view.png" alt="Full View">
-                                        <span>Full View</span>
+                                        <span data-localize="Full View">Full View</span>
                                     </button>
                                 </a>
                             </div>
@@ -5734,32 +5510,40 @@ img.priority-icon{
                                 <a href="javascript:void(0);" id="DownloadFile" download>
                                     <button class="btn dropdown-toggle" type="button">
                                         <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/download.png" alt="Download">
-                                        <span>Download</span>
+                                        <span data-localize="Download">Download</span>
                                     </button>
                                 </a>
                             </div>
+                            <div class="dropdown detail-view-table-btn" id="ParentReview">
+		                        <a href="javascript:void(0);" id="" data-toggle="modal" data-target="#review_structure">
+		                            <button class="btn dropdown-toggle" type="button">
+		                                <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/new_review.png" alt="review" style="margin-right:5px;" />
+		                                <span data-localize="Review">Review</span>
+		                            </button>
+		                        </a>
+		                    </div>
                             <div class="dropdown detail-view-table-btn FileAction">
                                 <button class="btn dropdown-toggle" type="button" data-target="#approvalActionModal" data-toggle="modal">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/completed-icon.png" alt="completed">
-                                    <span>Approve</span>
+                                    <span data-localize="Approve">Approve</span>
                                 </button>
                             </div>
                             <div class="dropdown detail-view-table-btn FileAction">
                                 <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalRejectionModal">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/reject-icon.png" alt="reject-icon">
-                                    <span>Reject</span>
+                                    <span data-localize="Reject">Reject</span>
                                 </button>
                             </div>
                             <div class="dropdown detail-view-table-btn FileAction" id="ForwardToDiv">
                                 <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#ForwardedModal">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/forwarded-icon.png" alt="forwarded-icon">
-                                    <span>Forward</span>
+                                    <span data-localize="Forward">Forward</span>
                                 </button>
                             </div>
                             <div class="dropdown detail-view-table-btn" style="display:none;">
                                 <button class="btn dropdown-toggle" type="button">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/print-icon.png" alt="print">
-                                    <span>PDF</span>
+                                    <span data-localize="PDF">PDF</span>
                                 </button>
                             </div>
                             
@@ -5767,7 +5551,7 @@ img.priority-icon{
 		                        <a href="javascript:void(0);" id="btnAdobeLink" target="_blank">
 		                            <button class="btn dropdown-toggle" type="button">
 		                                <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/adobe-icon.png" alt="adobe">
-		                                <span>Adobe Sign</span>
+		                                <span data-localize="Adobe Sign">Adobe Sign</span>
 		                            </button>
 		                        </a>
 		                    </div>
@@ -5775,9 +5559,15 @@ img.priority-icon{
                             <div class="dropdown detail-view-table-btn">
                                 <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#notify" id="ApprovalNotify">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/notify.png" alt="notify">
-                                    <span>Notification</span>
+                                    <span data-localize="Notification">Notification</span>
                                 </button>
                             </div>
+                            <div class="dropdown detail-view-table-btn FileAction" id="ParentBtnCancel">
+	                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#approvalCancelModal" id="btnCancelApp">
+	                            <i class="fa fa-close detail-view-icon-info mr2"></i>
+	                            <span data-localize="Cancel">Cancel</span>
+	                        </button>
+	                    </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-8 col-xs-12">
@@ -5791,7 +5581,7 @@ img.priority-icon{
                             <div class="col-lg-4 col-xs-12">
                                 <ul class="detail-vide-panel scrollbar-panel">
                                     <li>
-                                        <label class="detail-label">Request By:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Request By">Request By</label><label>:</label></div>
                                         <div class="approval-dashboard-user-card-panel">
                                             <div class="approval-dashboard-user-card-img">
                                                 <img id="AuthorImg" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TitanGeustPortalTemplate1/images/user_pic.jpg" alt="user">
@@ -5808,36 +5598,36 @@ img.priority-icon{
                                         </div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Purpose:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Purpose">Purpose</label><label>:</label></div>
                                         <div class="detail-title ellipsis-2" id="txtPurposeApproval">
                                             tst
                                         </div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Priority:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Priority">Priority</label><label>:</label></div>
                                         <div class="detail-title ellipsis-2">
                                             <div class="d-flex">
-                                                <span id="FilePriority">Top</span>
+                                                <span id="FilePriority" data-localize="Top">Top</span>
                                                 <img class="ml5 priority-icon IsTop" width="20px" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/priority-icon.png" alt="priority icon">
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Due Date:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Due Date">Due Date</label><label>:</label></div>
                                         <div class="detail-title ellipsis-2" id="txtDueDate"></div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Document Type:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Category">Category</label><label>:</label></div>
                                         <div class="detail-title ellipsis-2" id="txtDocType">
                                             Execution Plan
                                         </div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Reference:</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Reference">Reference</label><label>:</label></div>
                                         <div class="detail-title ellipsis-2" id="txtRef"></div>
                                     </li>
                                     <li>
-                                        <label class="detail-label">Status</label>
+                                        <div class="labelflexing"><label class="detail-label" data-localize="Status">Status</label><label>:</label></div>
 
                                         <div class="wrapcheck">
 
@@ -5853,7 +5643,7 @@ img.priority-icon{
 
                                         <div style="width:100%; clear:both; display:block;">
 
-                                            <label class="detail-label">Last Action:</label>
+                                            <div class="labelflexing"><label class="detail-label" data-localize="Last Action">Last Action</label><label>:</label></div>
                                             <div class="last-action-panel">
                                                 <div class="approval-dashboard-user-card-panel">
                                                     <div class="approval-dashboard-user-card-img">
@@ -5873,7 +5663,7 @@ img.priority-icon{
                                                     </div>
                                                 </div>
 
-                                                <div style="text-align:right;"><a class="history-link btnApprovalHistry" data-toggle="modal" data-target="#approvalhistory" href="javascript:void(0);" style="color:#337ab7 !important">History</a></div>
+                                                <div style="text-align:right;"><a class="history-link btnApprovalHistry" href="javascript:void(0);" style="color:#337ab7 !important">History</a></div>
                                             </div>
 
                                         </div>
@@ -5897,7 +5687,7 @@ img.priority-icon{
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close close-round" onclick="Closepopup()" data-dismiss="modal"><span class="close-icon">&times;</span></button>
-                        <h4 class="modal-title">Details</h4>
+                        <h4 class="modal-title">File Details</h4>
                     </div>
                     <div class="modal-body">
                         <div class="detail-view-deta-btn-panel d-flex">
@@ -5906,7 +5696,7 @@ img.priority-icon{
                                     <button class="btn dropdown-toggle" type="button" id="">
                                         <img class="detail-view-icon-info mr2"
                                              src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View">
-                                        <span>View</span>
+                                        <span data-localize="Online View">Online View</span>
                                     </button>
                                 </a>
                             </div>
@@ -5914,7 +5704,7 @@ img.priority-icon{
                                 <a href="javascript:void(0);" id="btnEditViewFile" target="_blank">
                                     <button class="btn dropdown-toggle LockDisable" type="button" id="FileEditModal">
                                         <i class="fa fa-edit" style="color:#333; font-weight:600;"></i>
-                                        <span>Edit</span>
+                                        <span data-localize="Edit">Edit</span>
                                     </button>
                                 </a>
                             </div>
@@ -5922,21 +5712,21 @@ img.priority-icon{
                                 <a href="#" id="DownloadDocs" download>
                                     <button class="btn dropdown-toggle" type="button" id="modalDownloadBtn">
                                         <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/download.png" id="DownloadFileSRC" alt="Download">
-                                        <span>Download</span>
+                                        <span data-localize="Download">Download</span>
                                     </button>
                                 </a>
                             </div>
                             <div class="dropdown detail-view-table-btn btnNotSharedTab">
                                 <button class="btn dropdown-toggle LockDisable" type="button" id="btnDeleteFile">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/delete.png" alt="delete">
-                                    <span>Delete</span>
+                                    <span data-localize="Delete">Delete</span>
                                 </button>
                             </div>
 
                             <div class="dropdown detail-view-table-btn btnNotSharedTab" id="btnPopupRename">
                                 <button class="btn dropdown-toggle LockDisable" type="button" id="btnRenameFile" data-toggle="modal" data-target="#rename">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/rename.png" alt="rename">
-                                    <span>Rename</span>
+                                    <span data-localize="Rename">Rename</span>
                                 </button>
                             </div>
 
@@ -5944,7 +5734,7 @@ img.priority-icon{
                             <div class="dropdown detail-view-table-btn" id="btnPopupNotify">
                                 <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#notify">
                                     <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/notify.png" alt="notify">
-                                    <span>Notify</span>
+                                    <span data-localize="Notify">Notify</span>
                                 </button>
                             </div>
 
@@ -5957,7 +5747,7 @@ img.priority-icon{
                                 <button class="btn dropdown-toggle" id="starffect">
                                     <img class="detail-view-icon-info mr2 unfillstar" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-icon.png" alt="">
                                     <img class="detail-view-icon-info mr2 fillstar" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-fill.png" alt="">
-                                    <span class="favorite" id="txtFavorite">Add to Favorite</span>
+                                    <span class="favorite" id="txtFavorite" data-localize="Add to Favorite">Add to Favorite</span>
                                 </button>
                             </div>
                         </div><!--ed of section-->
@@ -5976,7 +5766,7 @@ img.priority-icon{
                                         <div class="panel-heading detail-panel-link">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordionsec" href="#properties2" aria-expanded="true">
-                                                    <span>Properties</span>
+                                                    <span data-localize="Properties">Properties</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                             </h4>
@@ -5985,23 +5775,27 @@ img.priority-icon{
                                             <div class="panel-body">
                                                 <ul class="detail-vide-panel scrollbar-panel" id="PopupPropertyBox">
                                                     <li>
-                                                        <label class="detail-label">Title:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Title">Title</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileTitle"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Document Type:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Category">Category</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileDocType"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Reference:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Reference">Reference</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileReference"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Author:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Author">Author</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileAuthorPopup"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Details:</label>
+		                                                <div class="labelflexing"><label class="detail-label" data-localize="Validity">File Validity</label><label>:</label></div>
+		                                                <div class="detail-title ellipsis-2" id="FileValidityPopup"></div>
+		                                            </li>
+                                                    <li>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Details">Details</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileDetalis"></div>
                                                     </li>
                                                 </ul>
@@ -6027,19 +5821,19 @@ img.priority-icon{
 		                                            <li>
 		                                                <div class="flxcolmn">
 		                                                    <div>
-		                                                        <label class="detail-label">Sharing:</label>
+		                                                        <div class="labelflexing"><label class="detail-label" data-localize="Sharing">Sharing</label><label>:</label></div>
 		                                                        <div class="detail-title ellipsis-2" id="ShareTabSharing"></div>
 		                                                    </div>
 		                                                    <div style="margin-top: 5px">
-		                                                        <label class="detail-label">Shared by:</label>
+		                                                        <div class="labelflexing"><label class="detail-label" data-localize="Shared by">Shared by</label><label>:</label></div>
 		                                                        <div class="detail-title ellipsis-2" id="txtShareBy"></div>
 		                                                    </div><br>
 		                                                    <div>
-		                                                        <label class="detail-label">Shared on:</label>
+		                                                        <div class="labelflexing"><label class="detail-label" data-localize="Shared on">Shared on</label><label>:</label></div>
 		                                                        <div class="detail-title ellipsis-2" id="txtShareOn"></div>
 		                                                    </div><br>
 		                                                    <div>
-		                                                        <label class="detail-label">Permission:</label>
+		                                                        <div class="labelflexing"><label class="detail-label" data-localize="Permission">Permission</label><label>:</label></div>
 		                                                        <div class="detail-title ellipsis-2" id="txtSharePermission"></div>
 		                                                    </div><br>
 		                                                    <div class="flxintype" id="ParentAck">
@@ -6071,7 +5865,7 @@ img.priority-icon{
                                                     <li>
                                                         <div class="detail-vide-panel-align">
                                                             <div>
-                                                                <label class="detail-label">Sharing:</label>
+                                                                <div class="labelflexing"><label class="detail-label" data-localize="Sharing">Sharing</label><label>:</label></div>
                                                                 <div class="detail-title ellipsis-2" id="FileSharing"></div>
                                                             </div>
                                                             <!----<a class="detail-panel-inner-link txtSharingHistoy" id="" href="javascript:void(0);" data-toggle="modal" data-target="#approvalhistory">Sharing History</a>---->
@@ -6079,8 +5873,8 @@ img.priority-icon{
                                                     </li>
                                                     <li>
                                                         <div class="">
-                                                            <div class="detail-vide-panel-align">
-                                                                <label class="detail-label">Approvals:</label>
+                                                            <div class="">
+                                                                <div class="labelflexing"><label class="detail-label" data-localize="Approvals">Approvals</label><label>:</label></div>
                                                                 <a id="btnApproval" class="detail-panel-inner-link btnNotSharedTab" href="javascript:void(0);" style="position:relative; top:1.2px;">Send for Approval</a>
                                                             </div>
                                                             <div class="wrapcheck">
@@ -6094,13 +5888,12 @@ img.priority-icon{
                                                             <div class="detail-title ellipsis-2 FileApprovalPDF"></div>
 
 
-                                                            <a class="detail-panel-inner-link btnApprovalHistry" id="" style="display:none;" href="javascript:void(0);" data-toggle="modal" data-target="#approvalhistory">Approvals History</a>
-
+															<a class="detail-panel-inner-link btnApprovalDetails" id="" style="display:none;" href="javascript:void(0);" data-toggle="modal" data-target="#approverssec">Approvals History</a>
                                                         </div>
                                                     </li>
                                                 </ul>
                                                 <div class="change-properties-pannel" style="display:none;">
-                                                    <a href="javascript:void(0);">Audit Trail</a>
+                                                    <a href="javascript:void(0);" data-localize="Audit Trail">Audit Trail</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -6112,7 +5905,7 @@ img.priority-icon{
                                         <div class="panel-heading detail-panel-link">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordionsec" href="#file-properties2" aria-expanded="false">
-                                                    <span>File Details</span>
+                                                    <span data-localize="File Details">File Details</span>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                             </h4>
@@ -6121,34 +5914,41 @@ img.priority-icon{
                                             <div class="panel-body text_breaking">
                                                 <ul class="detail-vide-panel scrollbar-panel">
                                                     <li>
-                                                        <label class="detail-label">File Name:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="File Name">File Name</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileName"></div>
                                                     </li>
                                                     <li>
                                                         <div class="detail-vide-panel-align">
                                                             <div>
-                                                                <label class="detail-label">Path:</label>
+                                                                <div class="labelflexing"><label class="detail-label" data-localize="Path">Path</label><label>:</label></div>
                                                                 <div class="detail-title" id="FilePath"></div>
                                                             </div>
                                                             <a class="detail-panel-inner-link" href="javascript:void(0);" data-toggle="modal" data-target="#copylink">Copy Links</a>
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Library:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Library">Library</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="LibProject"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Last Update on:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Last Update on">Last Update on</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileLastModified"></div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">Last Update by:</label>
-                                                        <div class="detail-title ellipsis-2" id="FileLastModifiedBy"></div>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Last Update by">Last Update by</label><label>:</label></div>
+                                                        
+                                                        <div class="detail-vide-panel-align">
+	                                                        <div class="detail-title ellipsis-2" id="FileLastModifiedBy"></div>
+	                                                        <div>
+	                                                        	<a class="detail-panel-inner-link" href="javascript:void(0);" id="txtDocComments" data-toggle="modal" data-target="#chat_sec">Comments</a>
+	                                                    	</div>
+                                                    	</div>
                                                     </li>
                                                     <li>
                                                         <div class="detail-vide-panel-align">
                                                             <div>
-                                                                <label class="detail-label">File Version:</label>
+                                                                <div class="labelflexing"><label class="detail-label" data-localize="File Version">File Version</label><label>:</label></div>
+
                                                                 <div class="detail-title ellipsis-2" id="FileVersion">1.0</div>
                                                             </div>
                                                             <div id="VerHisParent">
@@ -6157,8 +5957,13 @@ img.priority-icon{
                                                         </div>
                                                     </li>
                                                     <li>
-                                                        <label class="detail-label">File Size:</label>
-                                                        <div class="detail-title ellipsis-2" id="FileSize"></div>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="File Size">File Size</label><label>:</label></div>
+
+                                                       <div class="detail-vide-panel-align">
+ 															<div class="detail-title ellipsis-2" id="FileSize"></div>
+	                                                        <div id="AuditHisParent"><a class="detail-panel-inner-link" href="javascript:void(0);" id="btnAuditHist">Audit Trail</a></div>
+	                                                   </div>
+                                                        
                                                     </li>
                                                 </ul>
                                             </div>
@@ -6173,7 +5978,51 @@ img.priority-icon{
             </div>
         </div>
         <!-- File property display popup ends-->
+		<!-- approverssec -->
+<div id="approverssec" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">Approvals</h4>
+            </div>
+            <div class="modal-body">
+                <div class="lablebreak">
+                    <label for="" data-localize="File">File</label><label>:</label>
+                    <span id="AppFileName"></span>
+                </div>
+                <div class="lablebreak">
+                    <label for="" data-localize="Title">Title</label><label>:</label>
+                    <span id="AppFileTitle"></span>
+                </div>
+
+                <div class="lablebreak">
+                    <label for="" data-localize="Reference">Reference</label><label>:</label>
+                    <span id="AppFileRef"></span>
+                </div>
+
+                <div class="row" style="display: block;">
+                    <div class="col-md-3 pull-right">
+                        <input type="text" placeholder="Type to find.." id="AllApprHistSearch" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="table-responsive heightmajage" id="AllHistryBox">
+                </div>
+
+            </div>
+            <div class="modal-footer" style="text-align: center; padding:5px; margin-top:0;">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- approverssec -->
 
  <!----modalAcknowledgement--->
 <div class="modal fade" id="Acknowledgement" role="dialog">
@@ -6200,6 +6049,21 @@ img.priority-icon{
 
     </div>
 </div>
+<!-- Audit Trail File-->
+<div id="AuditHistory" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.4)">
+    <div class="modal-dialog widthmanagebox">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Audit Trail</h4>
+            </div>
+            <div class="modal-body scrollnew" id="bdyAuditHist">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Audit Trail History -->
 
 
       <!--Approval History Popup starts-->
@@ -6242,13 +6106,13 @@ img.priority-icon{
 		                <div class="row">
 		                    <div class="col-sm-6 col-xs-6">
 		                        <div class="form-group custom-form-group">
-		                            <label>Requested By:</label>
+		                            <label data-localize="Requested By">Requested By</label><label>:</label>
 		                            <div id="pplFilterAppInOut" class="form-control"></div>
 		                        </div>
 		                    </div>
 		                    <div class="col-sm-6 col-xs-6">
 		                        <div class="form-group custom-form-group">
-		                            <label>Status:</label>
+		                            <label data-localize="Status">Status</label><label>:</label>
 		                            <select class="form-control" id="ddlFilterStatus">
 		                                <option value="All" selected="selected">All</option>
 		                                <option value="Pending">Pending</option>
@@ -6262,13 +6126,13 @@ img.priority-icon{
 		                <div class="row">
 		                    <div class="col-sm-6 col-xs-6">
 		                        <div class="form-group custom-form-group">
-		                            <label>Reference#:</label>
+		                            <label data-localize="Reference">Reference</label><label>#</label>
 		                            <input type="text" id="RefFilterAppInOut" class="form-control">
 		                        </div>
 		                    </div>
 		                    <div class="col-sm-6 col-xs-6">
 		                        <div class="form-group custom-form-group">
-		                            <label>Document Type:</label>
+		                            <label data-localize="Category">Category:</label><label>:</label>
 		                            <select class="form-control" id="ddlDocTypeFilter"></select>
 		                        </div>
 		                    </div>
@@ -6288,159 +6152,291 @@ img.priority-icon{
 
  <!-- Creat a Folder Modal -->
     <div class="modal fade" id="dms-creat-folder" role="dialog" data-backdrop="static">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content ">
-                <div class="modal-header">
-                    <button type="button" class="close close-round" data-dismiss="modal">
-                        <span class="close-icon">&times;</span>
-                    </button>
-                    <h4 class="modal-title">Create a Folder</h4>
-                </div>
-                <div class="modal-body dms-inbox-istab">
-                    <div class="form-group custom-form-group mb0">
-                        <label>Folder Name:</label>
-                        <input type="text" id="txtnewSubFolderName" class="form-control" maxlength="40" placeholder="Enter your folder name">
-                    </div>
-                </div>
-                <div class="modal-footer dms-modal-footer" style="text-align:center">
-                    <button type="button" class="btn custom-btn wpx-87" id="btnAddFolder">Create</button>
-                </div>
-            </div>
-        </div>
-    </div>
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close close-round" data-dismiss="modal">
+	                    <span class="close-icon">&times;</span>
+	                </button>
+	                <h4 class="modal-title" data-localize="Create a Folder">Create a Folder</h4>
+	            </div>
+	            <div class="modal-body dms-inbox-istab">
+	                
+	                <div class="form-group custom-form-group row">
+	                	<div class="col-md-6">
+		                	<label data-localize="Folder Name">Folder Name</label><label>:</label><span style="color: red; display: inline;">*</span>
+		                    <input type="text" id="txtnewSubFolderName" class="form-control" maxlength="100" placeholder="Enter your folder name" />
+	                    </div>
+	                    <div class="col-md-6">
+		                	<label data-localize="Title">Title</label><label>:</label>
+		                	<input type="text" class="form-control" id="AddFolderTitle" maxlength="250">
+		                </div>
+					</div>
+	                
+	                <div class="form-group custom-form-group row">
+	                  <div class="col-md-6">
+	                  	  <label data-localize="Category">Category</label><label>:</label>
+		                  <select class="form-control" id="ddlAddFolderCateg">
+		                  </select>
+	                  </div><!--col-6-->
+	                  <div class="col-md-6">
+	                  	  <label data-localize="Reference">Reference</label><label>:</label>
+		                  <input type="text" class="form-control" id="ddlAddFolderRef" maxlength="250">
+	                  </div><!--col-6-->
+			       </div><!---group ed-->
+			       
+			       <div class="form-group custom-form-group row">
+	                  <div class="col-md-6">
+	                  	  <label data-localize="Sub-Category">Sub-Category</label><label>:</label>
+		                  <select class="form-control" id="ddlAddFolderSubC">
+		                  	<option value="-Select-">-Select-</option>
+		                  </select>
+	                  </div><!--col-6-->
+	                  <div class="col-md-6">
+	                  	  <label data-localize="Author">Author</label><label>:</label>
+		                  <input type="text" class="form-control" id="ddlAddFolderAuth">
+	                  </div><!--col-6-->
+			       </div><!---group ed-->
+			       <div class="form-group custom-form-group">
+			        <label data-localize="Details">Details</label><label>:</label>
+			        <textarea class="form-control" id="ddlAddFolderDetails" style="min-height:120px; max-height:120px;"></textarea>
+			       </div>
+	            </div>
+	            <div class="modal-footer dms-modal-footer" style="text-align:center; padding:5px; margin-top:0px;">
+	                <button type="button" class="btn custom-btn wpx-87" id="btnAddFolder">Create</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 
        <!-- upload files Modal -->
         <div class="modal fade" id="myModalupload" role="dialog" ng-app="myApp" ng-controller="myCtrl">
-            <div class="container custom-container mrgn-tp10">
-                <div class="modal-dialog">
-
-                    <!-- Modal content-->
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <button type="button" class="close close-round uploadAttachmentCancel" data-dismiss="modal"><span class="close-icon">×</span></button>
-                            <h4 class="modal-title" id="UploadHeader" data-localize="UploadFiles">Upload Files</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-horizontal">
-
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label" data-localize="Title">Title</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="txtFileTitle" maxlength="50" ng-model="title">
-
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label" data-localize="Reference No">Reference No</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" maxlength="20" class="form-control" id="txtdocumentNo">
-                                    </div>
-                                </div>
-
-                                <div class="form-group doc-type-div">
-                                    <label for="" class="col-sm-2 control-label  required" data-localize="Type">Document Type</label>
-                                    <div class="col-sm-10">
-                                        <select name="documentType" id="ddlFileType" class="form-control"></select>
-
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label" data-localize="Author">Author</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" maxlength="50" class="form-control" id="FileAuthor">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label" data-localize="Details">Details</label>
-                                    <div class="col-sm-10">
-                                        <textarea class="form-control" rows="3" id="UploadFileComment"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="form-group" id="changeProperties" ng-show="showhideUploader=='Show'">
-                                    <div class="col-md-10 col-md-offset-2">
-                                        <div class="check_sec">
-                                            <h5>If any file already exists in destination, then</h5>
-
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optradio" checked="checked" id="chkReplaceVer">Replace with new version
-                                            </label>
-
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optradio" id="chkNotUpload">Do not upload
-                                            </label>
-
-                                            <div class="two_option_checkbox">
-
-                                                <div class="radio">
-                                                    <label><input type="radio" name="optradio1" id="chkKeepExist" checked="checked">Keep existing properties</label>
-                                                </div>
-                                                <div class="radio">
-                                                    <label><input type="radio" name="optradio1" id="chkUploadNew">Upload new properties</label>
-                                                </div>
-
-                                            </div><!--two option ed-->
-
-                                        </div><!---check_sec ed--->
-                                    </div>
-                                </div>
-                                <div class="form-group" id="folderPropertyTag" ng-show="showhideUploader=='Show'">
-
-                                    <div class="col-sm-10 col-sm-offset-2">
-                                        <input type="checkbox" id="chkFolderProp">
-                                        <label for="chkFolderProp" class="control-label">Apply same properties on all files</label>
-                                    </div>
-
-                                </div>
-
-                                <div class="form-group" id="FileUploadControl">
-                                    <label for="" class="col-sm-2 control-label required" data-localize="File">File</label>
-
-                                    <div id="" class="col-sm-10">
-                                        <label class="covertophere"><input name="" id="AttachmentUploadField" type="file" class="browse form-control" multiple=""></label>
-                                    </div>
-
-                                    <div class="row">
-                                        <div id='txtUploadFiles' class="col-sm-10 col-sm-offset-2" style=""></div>
-                                    </div>
-
-                                </div>
-                                <div class="form-group" id="FolderUploadControl">
-                                    <label for="" class="col-sm-2 control-label required" data-localize="Folder">Folder</label>
-
-
-                                    <div class="col-sm-10">
-
-                                        <label class="covertophere">
-                                            <input id="FolderAttachment" type="file" class="folder" webkitdirectory>
-                                        </label>
-
-                                    </div>
-
-                                    <div class="row">
-                                        <div id='txtUploadFolder' class="col-sm-10 col-sm-offset-2" style=""></div>
-                                    </div>
-
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="col-sm-2 control-label"></label>
-                                    <div class="col-sm-10 doc-btn-center" style="width: 100%;text-align: center;">
-                                        <button type="button" id="AttachAttachmentButton" class="btn custom-btn wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
-                                        <button type="button" id="btnFolderAttachment" class="btn custom-btn wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
-                                        <button type="button" id="AttachAttachmentCancel" class="btn custom-btn-two-cancel wpx-87 uploadAttachmentCancel" data-dismiss="modal"><label data-localize="Close">Close</label></button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+		    <div class="container custom-container mrgn-tp10">
+		        <div class="modal-dialog">
+		
+		            <!-- Modal content-->
+		            <div class="modal-content">
+		
+		                <div class="modal-header">
+		                    <button type="button" class="close close-round uploadAttachmentCancel" data-dismiss="modal">×</button>
+		                    <h4 class="modal-title" id="UploadHeader" data-localize="UploadFiles">Upload Files</h4>
+		                </div>
+		                <div class="modal-body">
+		                    <div class="form-horizontal">
+		
+		                        <div class="form-group" style="text-align:right; padding:0 30px; margin-bottom:0 !important;">
+		                            <label for="prefix_and_postfix_name" class="radio-inline forFileOnly" style="font-weight:400 !important;"><input type="checkbox" id="prefix_and_postfix_name" name="optradiosec" />According FileName</label>
+		                        </div>
+		
+		                        <div class="form-group">
+		
+		                            <div class="col-md-2 wid_pad control-label">
+		                                <label for="" class="" data-localize="Title">Title</label>
+		                                <span style="color:red;display:none;" class="MandSign" id="astTitle">*</span>
+		                            </div>
+		                            <div class="col-md-10">
+		                                <div class="formsections" style="">
+		                                    <input type="text" class="same_all_file form-control" id="txtFileTitle" maxlength="50" ng-model="title" style="margin-bottom:0px" style="display:block;" />
+		                                </div>
+		                                <div class="prefix_and_postfix_name">
+		
+		                                    <div class="btngroupsec">
+		                                        <input type="text" placeholder="Prefix" id="txtTitlePrefix" class="form-control" />
+		                                        <input type="text" placeholder="File name" class="form-control" disabled="disabled" />
+		                                        <input type="text" placeholder="Postfix" id="txtTitlePostfix" class="form-control" />
+		                                    </div>
+		                                    <!---------show only filename and postfix section
+		                                    <div class="btngroupsec">
+		                                      <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+		                                      <input type="text" placeholder="Postfix" id="" class="form-control">
+		                                    </div>-------->
+		                                </div>
+		                            </div>
+		                        </div>
+		
+		                        <div class="form-group">
+		
+		                            <div class="col-md-2 control-label wid_pal">
+		                                <label for="" class="required" data-localize="Category">Category</label><label>:</label>
+		                                <span style="color:red;display:none;" class="MandSign" id="astDocumentType">*</span>
+		                            </div>
+		
+		                            <div class="col-md-4 only_wid">
+		                                <select name="documentType" id="ddlFileType" class="form-control"></select>
+		                            </div>
+		
+		                            <div class="col-md-2 control-label wid_pal">
+		                                <label for="" class="" data-localize="Reference">Reference</label>
+		                                <span style="color:red;display:none;" class="MandSign" id="astReference">*</span>
+		                            </div>
+		
+		                            <div class="col-md-4 only_wid">
+		                                <input type="text" maxlength="20" class="form-control" id="txtdocumentNo" />
+		                            </div>
+		
+		                        </div>
+		                        <div class="form-group doc-type-div">
+		
+		                            <div class="col-md-2 control-label wid_pal">
+		                                <label for="" class="" data-localize="Sub-Category">Sub-Category</label>
+		                            </div>
+		                            <div class="col-md-4 only_wid">
+		                                <select class="form-control" id="FileSubType">
+		                                    <option value="-Select-">-Select-</option>
+		                                </select>
+		                            </div>
+		                            <div class="col-md-2 control-label wid_pad">
+		                                <label for="" class="" data-localize="Author">Author</label>
+		                                <span style="color:red;display:none;" class="MandSign" id="astAuthor">*</span>
+		                            </div>
+		
+		                            <div class="col-md-4 only_wid">
+		                                <input type="text" maxlength="50" class="form-control" id="FileAuthor" />
+		                            </div>
+		
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-md-2 control-label wid_pal">
+		                                <label for="" class="" data-localize="Details">Details</label>
+		                                <span style="color:red;display:none;" class="MandSign" id="astDetails">*</span>
+		                            </div>
+		                            <div class="col-md-10">
+		                                <textarea class="form-control" rows="3" id="UploadFileComment" style="min-height:60px !important; max-height:60px !important;"></textarea>
+		                            </div>
+		                        </div>
+		
+		                        <div class="form-group" id="changeProperties" ng-show="showhideUploader=='Show'" style="">
+		                            <div class="col-md-2 control-label wid_pal">
+		                                <label class="" data-localize="If File exists">If File exists</label>
+		                            </div>
+		                            <div class="col-md-10">
+		                                <div class="check_sec">
+		
+		                                    <label class="radio-inline">
+		                                        <input type="radio" name="optradio" checked="checked" id="chkReplaceVer" style="position:relative; top:-2.5px;" />Replace with new version
+		                                    </label>
+		
+		                                    <label class="radio-inline spacing_leftsecs">
+		                                        <input type="radio" name="optradio" id="chkNotUpload" style="position:relative; top:-2.5px;" />Do not upload
+		                                    </label>
+		
+		                                    <label class="radio-inline spacing_leftsecs">
+		                                        <input type="radio" name="optradio" id="RenameandUpload" style="position:relative; top:-2.5px;" /> Rename and Upload
+		                                    </label>
+		
+		                                    <div class="two_option_checkbox replaceOptions">
+		
+		                                        <div class="radio">
+		                                            <label><input type="radio" name="optradio1" id="chkKeepExist" checked="checked" />Keep existing properties</label>
+		                                        </div>
+		                                        <div class="radio">
+		                                            <label><input type="radio" name="optradio1" id="chkUploadNew" />Upload new properties</label>
+		                                        </div>
+		
+		                                    </div><!--two option ed-->
+		
+		                                    <div class="hidemy RenameandUpload">
+		                                        <div class="btngroupsec">
+		                                            <input type="text" placeholder="Prefix" id="txtNamePrefix" class="form-control" />
+		                                            <input type="text" placeholder="File name" class="form-control" disabled="disabled" />
+		                                            <input type="text" placeholder="Postfix" id="txtNamePostfix" class="form-control" />
+		                                        </div>
+		
+		                                        <!---------show only filename and postfix section
+		                                        <div class="btngroupsec">
+		                                          <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+		                                          <input type="text" placeholder="Postfix" id="" class="form-control">
+		                                        </div>-------->
+		
+		                                    </div>
+		
+		                                </div><!---check_sec ed--->
+		                            </div>
+		
+		                        </div>
+		
+		                        <div class="form-group" id="changePropertiesFolder" ng-show="showhideUploader=='Show'" style="margin-bottom:0 !important;">
+		                            <div class="col-sm-2 control-label wid_pal">
+		                                <label class="" data-localize="If Folder exists">If Folder exists</label>
+		                            </div>
+		                            <div class="col-sm-10">
+		                                <div class="check_sec">
+		                                    <label class="radio-inline" style="padding:7px 0 0;">
+		                                        <input type="checkbox" name="optradio" id="RenameandUploadFolder" style="position:relative; top:-2.5px;" /> Rename and Upload
+		                                    </label>
+		
+		                                    <div class="RenameUploadFolder" style="display:none;">
+		
+		                                        <div class="btngroupsec">
+		                                            <input type="text" placeholder="Prefix" id="txtNamePrefixFol" class="form-control" />
+		                                            <input type="text" placeholder="Folder name" class="form-control" disabled="disabled" />
+		                                            <input type="text" placeholder="Postfix" id="txtNamePostfixFold" class="form-control" />
+		                                        </div>
+		
+		                                        <!--------- show only filename and postfix section
+		                                        <div class="btngroupsec">
+		                                          <input type="text" placeholder="File name" class="form-control" disabled="disabled">
+		                                          <input type="text" placeholder="Postfix" id="" class="form-control">
+		                                        </div>-------->
+		
+		                                    </div>
+		                                </div><!---check_sec ed--->
+		                            </div>
+		                        </div>
+		
+		                        <div class="form-group" id="folderPropertyTag" ng-show="showhideUploader=='Show'">
+		                            <div class="col-sm-10 col-sm-offset-2 leftmg_mg">
+		                                <input type="checkbox" id="chkFolderProp" />
+		                                <label for="chkFolderProp" class="control-label" data-localize="Apply same properties on all files">Apply same properties on all files</label>
+		                            </div>
+		                        </div>
+		                        <div class="form-group" id="FileUploadControl" style="margin-bottom:2px !important;">
+		                            <div class="col-sm-2 control-label wid_pal">
+		                                <label for="" class="required" data-localize="File">File</label>
+		                            </div>
+		                            <div id="" class="col-sm-10">
+		                                <label class="covertophere"><input name="" id="AttachmentUploadField" type="file" class="browse form-control" multiple="" /></label>
+		                                <span class="notifywrap " style="float:right;">
+		                                    <label for="notifymail" class="">
+		                                        Notify this by  email
+		                                        <input type="checkbox" id="chkUploadMail" style="margin:0 5px; position: relative; top:-2px;" />
+		                                    </label>
+		                                </span>
+		                            </div>
+		                            <div class="col-sm-10 col-sm-offset-2 wdmengbox">
+		                                <div id='txtUploadFiles' class="scrollbar-panel" style=""></div>
+		                            </div>
+		                        </div>
+		                        <div class="form-group" id="FolderUploadControl" style="margin-bottom:10px !important;">
+		                            <div class="col-sm-2 control-label wid_pal">
+		                                <label for="" class="required" data-localize="Folder">Folder</label>
+		                            </div>
+		                            <div class="col-sm-10">
+		                                <label class="covertophere">
+		                                    <input id="FolderAttachment" type="file" class="folder" webkitdirectory=webkitdirectory />
+		                                </label>
+		                            </div>
+		                            <div class="col-sm-10 col-sm-offset-2 wdmengbox">
+		                                <div id='txtUploadFolder' class="scrollbar-panel" style=""></div>
+		                            </div>
+		                        </div>
+		                        <div class="form-group" style="margin-bottom:0 !important;">
+		                            <label for="" class="col-sm-2 control-label"></label>
+		                            <div class="col-sm-10 doc-btn-center" style="width: 100%;text-align: center;">
+		                                <button type="button" id="AttachAttachmentButton" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
+		                                <button type="button" id="btnFolderAttachment" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
+		                                <button type="button" id="AttachAttachmentCancel" class="btn custom-btn-two-cancel wpx-87 uploadAttachmentCancel" data-dismiss="modal"><label data-localize="Close">Close</label></button>
+		                            </div>
+		                        </div>
+		
+		                    </div>
+		                </div>
+		
+		            </div>
+		
+		        </div>
+		    </div>
+		</div>
 
 <!-- Settings Modal -->
 
@@ -6456,7 +6452,7 @@ img.priority-icon{
                         <div class="row" id="ColumnBox">
                             <div class="col-sm-6 form-check-box">
                                 <div class="form-group custom-form-group">
-                                    <label>Title:</label>
+                                    <label data-localize="Title">Title</label><label>:</label>
                                     <input type="text" class="form-control clearValue" id="txtUpdateTitle" maxlength="250">
                                 </div>
                                 <div class="checkbox ml5 mb0">
@@ -6465,7 +6461,7 @@ img.priority-icon{
                             </div>
                             <div class="col-sm-6 form-check-box">
                                 <div class="form-group custom-form-group">
-                                    <label>Document Type:</label>
+                                    <label data-localize="Category">Category</label><label>:</label>
                                     <select class="form-control" id="txtUpdateType"></select>
                                 </div>
                                 <div class="checkbox ml5 mb0">
@@ -6473,8 +6469,19 @@ img.priority-icon{
                                 </div>
                             </div>
                             <div class="col-sm-6 form-check-box">
+		                        <div class="form-group custom-form-group">
+		                            <label data-localize="Sub-Category">Sub-Category</label><label>:</label>
+		                            <select class="form-control" id="txtUpdateSubType">
+		                                <option value="-Select-">-Select-</option>
+		                            </select>
+		                        </div>
+		                        <div class="checkbox ml5 mb0">
+		                            <label><input type="checkbox" id="chkUpdateSubType" value="" /></label>
+		                        </div>
+		                    </div>
+                            <div class="col-sm-6 form-check-box">
                                 <div class="form-group custom-form-group">
-                                    <label>Reference:</label>
+                                    <label data-localize="Reference">Reference</label><label>:</label>
                                     <input type="text" class="form-control clearValue" id="txtUpdateRef" maxlength="250">
                                 </div>
                                 <div class="checkbox ml5 mb0">
@@ -6483,16 +6490,25 @@ img.priority-icon{
                             </div>
                             <div class="col-sm-6 form-check-box">
                                 <div class="form-group custom-form-group">
-                                    <label>Author:</label>
+                                    <label data-localize="Author">Author</label><label>:</label>
                                     <input type="text" class="form-control clearValue" id="txtUpdateAuthor" maxlength="250">
                                 </div>
                                 <div class="checkbox ml5 mb0">
                                     <label><input type="checkbox" id="chkUpdateAuthor" value=""></label>
                                 </div>
                             </div>
+                            <div class="col-sm-6 form-check-box">
+		                        <div class="form-group custom-form-group">
+		                            <label data-localize="Validity">Validity</label><label>:</label>
+		                            <input type="text" class="form-control clearValue" id="txtUpdateValidity" />
+		                        </div>
+		                        <div class="checkbox ml5 mb0">
+		                            <label><input type="checkbox" id="chkUpdateValidity" value="" /></label>
+		                        </div>
+		                    </div>
                             <div class="col-xs-12 form-check-box">
                                 <div class="form-group custom-form-group">
-                                    <label>Details:</label>
+                                    <label data-localize="Details">Details</label><label>:</label>
                                     <textarea class="form-control resize-none clearValue" rows="3" id="txtUpdateDetails"></textarea>
                                 </div>
                                 <div class="checkbox ml5 mb0">
@@ -6524,7 +6540,7 @@ img.priority-icon{
                         <div class="row" id="FilterControlBox">
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>File Type:</label>
+                                    <label data-localize="File Type">File Type</label><label>:</label>
                                     <select class="form-control" id="FileTypeList">
                                         <option value="All">All</option>
                                         <option value="Word">Word</option>
@@ -6541,25 +6557,33 @@ img.priority-icon{
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Document Type:</label>
+                                    <label data-localize="Category">Category</label><label>:</label>
                                     <select class="form-control" id="ddlFilterDocType"></select>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-6">
+		                        <div class="form-group custom-form-group">
+		                            <label data-localize="Sub-Category">Sub-Category</label><label>:</label>
+		                            <select class="form-control" id="ddlFilterSubType">
+		                                <option value="All">All</option>
+		                            </select>
+		                        </div>
+		                    </div>
+                            <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Reference:</label>
+                                    <label data-localize="Reference">Reference</label><label>:</label>
                                     <input type="text" class="form-control" id="txtFilterRefe">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Author:</label>
+                                    <label data-localize="Author">Author</label><label>:</label>
                                     <input type="text" class="form-control" id="txtFilterAuthor">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-6" style="display:none;">
                                 <div class="form-group custom-form-group">
-                                    <label>Sharing:</label>
+                                    <label data-localize="Sharing">Sharing</label><label>:</label>
                                     <select class="form-control" id="ddlShareFilter">
                                         <option value="All">All</option>
                                         <option value="Not Shared">Not Shared</option>
@@ -6571,7 +6595,7 @@ img.priority-icon{
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Approval:</label>
+                                    <label data-localize="Approval">Approval</label><label>:</label>
                                     <select class="form-control" id="ddlFilterApprovl">
                                         <option value="All">All</option>
                                         <option value="Approved">Approved</option>
@@ -6582,13 +6606,13 @@ img.priority-icon{
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Modified Date From:</label>
+                                    <label data-localize="Modified Date From">Modified Date From</label><label>:</label>
                                     <input type="text" class="form-control" id="FilterModFrom">
                                 </div>
                             </div>
                             <div class="col-sm-6 col-xs-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Modified Date To:</label>
+                                    <label data-localize="Modified Date To">Modified Date To</label><label>:</label>
                                     <input type="text" class="form-control" id="FilterModTo">
                                 </div>
                             </div>
@@ -6616,14 +6640,14 @@ img.priority-icon{
 
                             <div class="col-md-12">
                                 <div class="form-group custom-form-group">
-                                    <label>Purpose:</label>
+                                    <label data-localize="Purpose">Purpose</label><label>:</label>
                                     <input type="text" id="txtPurpose" class="form-control" maxlength="200">
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div class="form-group custom-form-group">
-                                    <label>Note:</label>
+                                    <label data-localize="Note">Note</label><label>:</label>
                                     <textarea class="form-control resize-none" id="txtNote" rows="5"></textarea>
                                 </div>
                             </div>
@@ -6634,10 +6658,10 @@ img.priority-icon{
 
                             <div class="col-md-6">
                                 <div class="form-group custom-form-group">
-                                    <label>Priority:</label>
+                                    <label data-localize="Priority">Priority</label><label>:</label>
                                     <select class="form-control" id="ddlPriority">
-                                        <option value="Medium">Medium</option>
-                                        <option value="Top">Top</option>
+                                        <option value="Top">High</option>
+                                        <option value="Medium" selected="selected">Medium</option>
                                         <option value="Low">Low</option>
                                     </select>
                                 </div>
@@ -6648,7 +6672,7 @@ img.priority-icon{
 
                                     <div class="coverradio" style="margin-bottom:4px;">
                                         <input class="radio-btn-position-top--2" id="dueDate" type="radio" name="optradio" style="display:none; position:relative; top:-2px;">
-                                        <label class="radio-inline due-date-container" style="padding-left:0px; display:inline-block !important;">
+                                        <label class="radio-inline due-date-container" style="padding-left:0px; display:inline-block !important;" data-localize="Due Date">
                                             Due Date
                                         </label>
                                         <label class="checkbox-inline" style="float:right;">
@@ -6661,6 +6685,21 @@ img.priority-icon{
                                 </div>
 
                             </div>
+                            <div class="col-md-6">
+		                        <div class="form-group custom-form-group">
+		                            <div class="coverradio" style="margin-bottom:4px;">
+		                                <input class="radio-btn-position-top--2" id="AppValidDate" type="radio" name="optradio" style="display:none; position:relative; top:-2px;" />
+		                                <label class="radio-inline due-date-container" style="padding-left:0px; display:inline-block !important;" data-localize="Validity">
+		                                    Validity
+		                                </label><label>:</label>
+		                                <label class="checkbox-inline" style="float:right;">
+		                                    <input class="radio-btn-position-top-0" id="noAppValidDate" type="checkbox" name="optradio" style="position:relative; top:-1px" checked= checked />Forever
+		                                </label>
+		                            </div>
+		                            <input id="AppValidDateField" type="text" class="form-control" disabled="disabled" />
+		                        </div>
+		                    </div>
+
 
                         </div>
 
@@ -6669,7 +6708,7 @@ img.priority-icon{
                             <div class="col-md-6">
 
                                 <div class="form-group custom-form-group">
-                                    <label>Signing App:</label>
+                                    <label data-localize="Signing App">Signing App</label><label>:</label>
                                     <select class="form-control" id="ddlSign">
                                         <option value="Adobe Sign">Adobe Sign</option>
                                         <option value="E-Sign">Titan E-Sign</option>
@@ -6681,7 +6720,7 @@ img.priority-icon{
                             <div class="col-md-6">
 
                                 <div class="form-group custom-form-group">
-                                    <label>Process Steps:</label>
+                                    <label data-localize="Process Steps">Process Steps</label><label>:</label>
                                     <select class="form-control process-step-dropdown" id="ddlAppStep">
                                         <option value="Customize">Customize</option>
                                         <option value="PreDefined">Pre Defined</option>
@@ -6689,10 +6728,28 @@ img.priority-icon{
                                 </div>
 
                             </div>
-
+							<div class="col-md-6 PreDefinedTemplatesBox" style="display:none;">
+		                        <div class="form-group custom-form-group">
+		                            <label data-localize="Templates">Templates</label><label>:</label>
+		                            <select class="form-control process-step-dropdown" id="ddlTemplateTitles"></select>
+		                        </div>
+		
+		                    </div>
                         </div><!---row ed-->
 
-
+						<div class="row">
+		                    <div class="col-md-12">
+		                        <div id="form-group custom-form-group">
+		                            <div class="wrapingattachments">
+		                                <input type="file" name="file" id="ApprovlUpload" class="form-control" multiple=multiple />
+		                                <label for="ApprovlUpload" class="control-label" data-localize="Supporting Document">Supporting Document</label>
+		                            </div>
+		                            <div class="uploadwrapings">
+		                                <div id="ApprovlUploadBox" style="padding:10px 10px 0px 0px;"></div>
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
                         <div class="full-expand-panel customizedSteps">
 
 
@@ -6702,7 +6759,7 @@ img.priority-icon{
                                     <div class="panel-heading detail-panel-link">
                                         <h4 class="panel-title">
                                             <a data-toggle="collapse" data-parent="" href="#step1" onclick="onChangeTask('ApproverName1_TopSpan', 'ApproverName1', 'userHTMLBox1', 1);" aria-expanded="false" class="collapsed">
-                                                <span>Step 1</span>
+                                                <span data-localize="Step 1">Step 1</span>
                                                 <input class="StepTitle" type="text" id="txtStep1Name" maxlength="50">
                                             </a>
                                         </h4>
@@ -6713,14 +6770,14 @@ img.priority-icon{
                                             <input type="radio" class="radioEmp" id="rdoOutsider1" name="Employee" value="Outsider">Outsider
 
                                             <div class="form-group custom-form-group" style="display:none;" id="OutsiderUser1">
-                                                <label>Name:</label>
+                                                <label data-localize="Name">Name</label><label>:</label>
                                                 <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'NameAction')" id="OutsiderName1" maxlength="50">
-                                                <label>Email:</label>
+                                                <label data-localize="Email">Email</label><label>:</label>
                                                 <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'EmailAction')" id="OutsiderEmail1" maxlength="50">
                                             </div>
 
                                             <div class="form-group custom-form-group" id="ADUser1">
-                                                <label>Approvers Name:</label>
+                                                <label data-localize="Approvers Name">Approvers Name</label><label>:</label>
                                                 <div class="web-block add-button-box">
                                                     <div class="form-control link-input-fild"></div>
 
@@ -6737,7 +6794,7 @@ img.priority-icon{
                                 </div>
                             </div>
 
-                            <div class="text-right add-step-panel" style="margin-top:5px;">
+                            <div class="text-right add-step-panel CustomizeAddStepBox" style="margin-top:5px;">
                                 <button type="button" class="btn custom-btn" id="btnAddStep">Add Step</button>
                             </div>
 
@@ -6799,6 +6856,19 @@ img.priority-icon{
                                 </label>
 
                             </div><!---userbox ed-->
+                            <div class="userboxTitan">
+
+		                        <label for="rdoUserTitan" id="UserTitanSection">
+		                            <input type="radio" class="radioEmpTitanSign" id="rdoUserTitan" name="userTitanESign" value="" checked= checked />
+		                            User
+		                        </label>
+		
+		                        <label for="rdoRunTimeTitan" id="RunTimeTitanSection">
+		                            <input type="radio" class="radioEmpTitanSign" id="rdoRunTimeTitan" name="userTitanESign" value="RunTime" />
+		                            Runtime
+		                        </label>
+		
+		                    </div><!---userbox ed-->
 
 
                             <div class="usercover">
@@ -6808,6 +6878,7 @@ img.priority-icon{
                                     <div class="form-group">
                                         <div class="sharingbox">
                                             <div class="form-control link-input-fild" id="ApproverName"></div>
+                                            <select class="form-control link-input-fild" id="ddlAllDefinedSteps"></select>
                                             <button type="button" class="btn custom-btn" style="min-width:auto !Important;display:none;">
                                                 <i class="fa fa-paper-plane"></i>
                                             </button>
@@ -6819,6 +6890,11 @@ img.priority-icon{
                                         <div class="row fullcoverbox" id="userHTMLBox"></div><!--row ed-->
 
                                     </div>
+                                    <div class="form-group" style="margin-top:12px" id="ParentFooterSign" style="display:none;">
+		                                <label class="inline-checkbox" style="font-weight: 400 !important; font-size: 13px !important; color: #666;">
+		                                    <input type="checkbox" id="chkFooterSign" style="width: 15px;height: 15px;margin-top: 0;" /> Signature will also show at footer of all pages
+		                                </label>
+		                            </div>
                                     <span style="display:none;" id="LiCount"></span>
 
                                 </div><!----userbox1--->
@@ -6888,6 +6964,214 @@ img.priority-icon{
         </div>
 
 <!----copy link---->
+<!--Create doc/xlsx/ppt/one file starts-->
+<div class="modal fade in" id="dms-creat-file" role="dialog" data-backdrop="static" style="display: none; padding-left: 0px;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">
+                    <span class="close-icon">&times;</span>
+                </button>
+                <h4 class="modal-title" data-localize="Create a File" value="">Create a File</h4>
+            </div>
+            <div class="modal-body dms-inbox-istab">
+                
+                <div class="form-group custom-form-group row">
+                    <div class="col-md-6">
+                    	<label data-localize="File Name" value="">File Name</label><label>:</label><span style="color:red;">*</span>
+	                    <div class="wraping_boxhere">
+		                    <input type="text" id="txtNewFileName" class="form-control" maxlength="30" placeholder="Enter your file name">
+		                    <label id="NewFileExtension" style="color: #555; font-size:12px !important;"></label>
+		                    
+	                    </div>
+	                </div>
+	                <div class="col-md-6">
+	                   <label data-localize="Title" value="">Title</label><label>:</label>
+	                   	<span style="color:red;display:none;" class="MandSignAddF" id="astAddFileTitle">*</span>
+	                   <input type="text" class="form-control" id="txtAddFileTitle">
+					 </div>    
+	            </div>
+                
+                <div class="form-group custom-form-group row">
+                  <div class="col-md-6">
+                      <label data-localize="Category">Category</label><label>:</label>
+                      <span style="color:red;display:none;" class="MandSignAddF" id="astAddFileDocumentType">*</span>
+                    <select class="form-control" id="ddlAddFileCateg">
+                    </select>
+                  </div><!--col-6-->
+                  <div class="col-md-6">
+                      <label data-localize="Reference">Reference</label><label>:</label>
+                      <span style="color:red;display:none;" class="MandSignAddF" id="astAddFileReference">*</span>
+                    <input type="text" class="form-control" id="txtAddFileRef">
+                  </div><!--col-6-->
+        		</div><!---group ed-->
+        		
+				<div class="form-group custom-form-group row">
+	              <div class="col-md-6">
+	                  <label data-localize="Sub-Category">Sub-Category</label><label>:</label>
+	                <select class="form-control" id="ddlAddFileSubC">
+	                  <option value="-Select-">-Select-</option>
+	                </select>
+	              </div><!--col-6-->
+	              <div class="col-md-6">
+	                  <label data-localize="Author">Author</label><label>:</label>
+	                  <span style="color:red;display:none;" class="MandSignAddF" id="astAddFileAuthor">*</span>
+	                <input type="text" class="form-control" id="txtAddFileAuth">
+	              </div><!--col-6-->
+	        	</div><!---group ed-->
+				
+				<div class="form-group custom-form-group">
+	            <label data-localize="Details">Details</label><label>:</label>
+	            <span style="color:red;display:none;" class="MandSignAddF" id="astAddFileDetails">*</span>
+	            <textarea class="form-control" style="min-height:120px; max-height:120px;" id="txtAddFileDetails"></textarea>
+	           </div>
+	           	        	
+	        </div>
+            <div class="modal-footer dms-modal-footer">
+                <button type="button" class="btn custom-btn wpx-87" id="btnCreateFiles">Create</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Create doc/xlsx/ppt/one file ends-->
+<!-- chat_sec -->
+<div id="chat_sec" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">
+                    <span class="close-icon">×</span>
+                </button>
+                <h4 class="modal-title">Write a Message</h4>
+            </div>
+            <div class="modal-body">
+                <div class="mes_topsec">
+                    <div class="ms_left">
+                        <div class="combo_label">
+                            <label for="" data-localize="Title">Title</label><label>:</label>
+                            <span class="mess_title" id="CommentFileTitle"></span>
+                        </div>
+                        <div class="combo_label">
+                            <label for="" data-localize="Name">Name</label><label>:</label>
+                            <span class="mess_title" id="CommentFileName"></span>
+                        </div>
+                        <div class="combo_label">
+                            <label data-localize="Category">Category</label><label>:</label>
+                            <span class="mess_title" id="CommentFileDocType"></span>
+                        </div>
+                    </div><!---my_left_section--->
+                    <div class="ms_rightsec">
+                        <div class="combo_modify">
+                            <label for="" data-localize="Modify by">Modify by</label><label>:</label>
+                            <span class="mess_username" id="CommentModify"></span>
+                        </div>
+                        <div class="msg_detailbx">
+                            <span class="msg_imgsec"><img id="CommentModImage" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt="" /></span>
+                            <div class="msg_details">
+                                <a href="javascript:void(0);" id="CommentModEmail"></a>
+                                <h6>
+                                    <span class="ms_details" id="CommentModTime"></span>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div><!---topsec--->
+
+                <div class="col-lg-12 col-md-12 detail-view-right-chat-area" style="position: sticky; top: 20px;">
+                    <div class="comment-container">
+                        <div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+                            <ul class="nav experiences-inner-card-btn-item">
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/visibility-icon.png" />
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#views" id="TotalHits">0</a></li>
+                                <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img id="like-Img-color" class="like-img" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/like-icon.png" onclick="TriggerLikes();" />
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likes" id="TotalLikes">0</a></li>
+                                <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                                <li class="experiences-inner-card-btn-panel-icon">
+                                    <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/chat-icon.png" />
+                                </li>
+                                <li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#comments" id="TotalComments">0</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="views" class="tab-pane fade">
+                                <ul class="show-comment-panel likes-panel" id="ViewHitList"></ul>
+                            </div>
+                            <div id="likes" class="tab-pane fade">
+                                <ul class="show-comment-panel likes-panel" id="Likeshitlist"></ul>
+                            </div>
+                            <div id="comments" class="tab-pane fade in active">
+                                <div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+                                    <div class="row ml0 mr0" id="reply_area">
+                                        <div class="col-xs-12 text-center pt-15">
+                                            <a style="display:none;cursor:pointer;" class="view-more-replies" id="seemorebtnGeneral" onclick="ReadTimeLine('GetAll', 'Logged_InUser', Url4ViewallOcc, 'ViewMore')">View Previous</a>
+                                        </div>
+                                        <div id="CommentsArea">
+                                        </div><!----commentsarea--->
+                                        <div id="showInnerLikes" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                                            <div class="likes-close-box">
+                                                <i id="likeCloseBox" class="fa fa-times cursor-pointer"></i>
+                                            </div>
+                                            <ul class="likes-panel scrollbar-panel" id="CommentLikeList"></ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="main-chat-text-area main-chat-text-area-border">
+                                    <div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3" style="display:none;">
+                                        <div class="reply-text-line">
+                                            <div class="reply-text-line-cross">
+                                                <a id="replyHide" type="button" onclick="DeActiveReplyControl()"><i class="fa fa-times"></i></a>
+                                            </div>
+                                            <a href="javascript:void(0);" class="comment-reply-user-name-info">@<span id="replyforuser"></span> :</a>
+                                            <span id="ReplyforMsg"></span>
+
+                                        </div>
+                                        <div class="attachment-badge chip-box">
+
+                                        </div>
+                                    </div>
+                                    <div class="main-comment-panel">
+                                        <div class="comment-area">
+                                            <div class="custom-form-group" id="FileCommArea">
+                                                <textarea class="form-control" rows="3" id="commentText"></textarea>
+                                            </div>
+                                            <div id='NewAttachmentFiles' class="oldfilename1"></div>
+                                            <div id='oldfilename' class="oldfilename"></div>
+                                        </div>
+                                        <div class="comment-btn-pannel">
+                                            <div class="btn mr-8">
+                                                <div>
+                                                    <div id="clickHere">
+                                                        <input class="btn-file-upload" type="file" name="" id="CommentFileAttach" multiple=multiple />
+                                                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/attach-file.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <button type="button" class="btn" id="btnAddComment">
+                                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/send.png" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<a href="#" class="view_more" id="seemorebtnGeneral" style="display:none;" onclick="ReadTimeLine();">View More</a>-->
+                </div>
+            </div><!---modal_body--->
+        </div>
+
+    </div>
+</div><!---chat_sec--->
 
  <!----versionhistory popup--->
 
@@ -6904,11 +7188,11 @@ img.priority-icon{
                     <div class="modal-body">
 
                         <div class="filedetailing">
-                            <label>File:</label> <span class="filenameshow" id="VerHisFile"></span>
+                            <label data-localize="File">File</label><label>:</label> <span class="filenameshow" id="VerHisFile"></span>
                         </div>
 
                         <div class="filedetailing">
-                            <label>Title:</label> <span class="filenameshow" id="VerHisTitle"></span>
+                            <label data-localize="Title">Title</label><label>:</label> <span class="filenameshow" id="VerHisTitle"></span>
                         </div>
 
                         <div class="wrapinghistory scrollbar-panel">
@@ -6965,7 +7249,7 @@ img.priority-icon{
                 </div>
                 <div class="modal-body">
                     <div class="input_box">
-                        <label class="control-lablee">New Name</label>
+                        <label data-localize="New Name">New Name</label><label>:</label>
 
                         <div class="flexingstyle">
                             <input type="text" class="form-control input-lg" style="width:460px" id="txtRenamefile" placeholder="">
@@ -7015,26 +7299,53 @@ img.priority-icon{
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
-                <h4 class="modal-title">Forward Request</h4>
+                <h4 class="modal-title" data-localize="Forward Request">Forward Request</h4>
             </div>
             <div class="modal-body">
                 <div class="input_box">
 
                     <div class="labelbox">
-
-                        <label>Forward to:</label>
+                        <div><label data-localize="Approvers / Forward To">Approvers / Forward To</label><label>:</label></div>
                     </div>
 
                     <div id="divlistForwardee">
 
                     </div><!--coverbox ed-->
 
+                    <div class="form-group" style="margin-top:20px;">
+                        <label for="add_as_an_approver" class="radio-inline" style="font-weight:400 !important; font-size:13px !important;">
+                            <input type="radio" id="add_as_an_approver" name="forward_option" checked="checked" style="width:15px; height:15px; margin-top:0;" />
+                            Add as an approver
+                        </label>
+
+                        <label for="forward_for_review" class="radio-inline marginleft_manage" style="font-weight:400 !important; font-size:13px !important;">
+                            <input type="radio" id="forward_for_review" name="forward_option" style="width:15px; height:15px; margin-top:0;" />
+                            Forward for Review
+                        </label>
+
+                    </div>
+
                     <div class="form-group">
-                        <label for="linkdoc">Message:</label>
+                        <label for="linkdoc" data-localize="Message">Message</label>
                         <textarea class="form-control" id="txtForwardMessage"></textarea>
                     </div><!--form group-->
-                    <div class="checkbox mt0 mb10 alignmentcenter">
+
+                    <div class="form-group">
+                        <label for="RestrictToOthers" class="checkbox-inline restrictViewBox" style="display:none;font-weight:400 !important; font-size:13px !important;">
+                            <input type="checkbox" id="RestrictToOthers" name="Restrict_option" style="width:15px; height:15px; margin-top:0;" />
+                            Restrict view to others
+                        </label>
+                    </div>
+
+                    <!----<div class="checkbox mt0 mb10 alignmentcenter">
                         <label><input type="checkbox" value="" id="chkForward">Forward</label>
+                    </div>--------->
+                    <div id="form-group custom-form-group" style="margin-top:20px; display:none;">
+                        <div class="wrapingattachments">
+                            <input type="file" name="file" id="UploadForwardFiles" class="form-control" multiple=multiple />
+                            <label for="UploadForwardFiles" class="control-label" data-localize="Supporting Document">Supporting Document</label>
+                        </div>
+                        <div id="UploadBoxForward" style="padding:10px 10px 0px 0px;"></div>
                     </div>
                 </div>
             </div>
@@ -7046,7 +7357,6 @@ img.priority-icon{
     </div>
 </div>
 <!--Forwarded Popup ends -->
-
 
     <!----notify popup--->
     <!-- Modal -->
@@ -7064,7 +7374,7 @@ img.priority-icon{
 
                         <div class="labelbox" id="NotifyHeaderSelect" style="display:none;">
 
-                            <label>Send mail to:</label>
+                            <div><label data-localize="Send mail to">Send mail to</label><label>:</label></div>
 
                             <label for="checkall" class="checkbox-inline" style="color:#338dcc; font-size:13px; right:15px; padding-right:25px; position:relative">
                                 Select All
@@ -7079,12 +7389,12 @@ img.priority-icon{
                         </div><!--coverbox ed-->
 
                         <div class="form-group">
-                            <label for="linkdoc">Document Link:</label>
+                            <label for="linkdoc" data-localize="Document Link">Document Link</label><label>:</label>
                             <input type="email" class="form-control input-lg txtCopyLink" id="linkdoc">
                         </div><!--form group-->
 
                         <div class="form-group">
-                            <label for="linkdoc">Message:</label>
+                            <label for="linkdoc" data-localize="Message">Message</label><label>:</label>
                             <textarea class="form-control" id="txtMessage"></textarea>
                         </div><!--form group-->
 
@@ -7136,7 +7446,24 @@ img.priority-icon{
                     <label for="">Remarks:</label>
                     <textarea class="form-control resize-none" name="" id="txtApproveRemarks" rows="4"></textarea>
                 </div>
+				<div class="form-group custom-form-group" id="AskAppArea">
+                    <!--div class="form-group custom-form-group">
+                        <label data-localize="Requested By">Approver for <label id="DecidingStepName"></label>:<span style="color:red;">*</span></label>
+                        <div id="pplDecidingApp" class="form-control"></div>
+                    </div-->
+                </div>
+                <div class="form-group custom-form-group flexingtype_boxsc">
+                    <div class="wrapingattachments">
+                        <input type="file" name="file" id="UploadApproveFiles" class="form-control" multiple=multiple />
+                        <label for="UploadApproveFiles" class="control-label" data-localize="Supporting Document">Supporting Document</label>
+                    </div>
+                </div>
 
+                <div class="form-group custom-form-group">
+                    <div class="uploadwrapings">
+                        <div id="UploadBoxApprove" style="padding:10px 10px 0px 0px;"></div>
+                    </div>
+                </div>
                 <div class="checkbox mt0 mb10 alignmentcenter">
                     <label><input type="checkbox" value="" id="chkApproved">Approved</label>
                 </div>
@@ -7169,7 +7496,13 @@ img.priority-icon{
                 <div class="checkbox mt0 mb10 alignmentcenter">
                     <label><input type="checkbox" value="" id="chkRejected">Rejected</label>
                 </div>
-
+				<div id="form-group custom-form-group">
+                    <div class="wrapingattachments">
+                        <input type="file" name="file" id="UploadRejectFiles" class="form-control" multiple=multiple />
+                        <label for="UploadRejectFiles" class="control-label" data-localize="Supporting Document">Supporting Document</label>
+                    </div>
+                    <div id="UploadBoxReject" style="padding:10px 10px 0px 0px;"></div>
+                </div>
             </div>
             <div class="modal-footer" style="text-align:center;">
                 <button type="button" class="btn custom-btn mr-8 wpx-80" id="btnRejectProcess">Submit</button>
@@ -7179,10 +7512,161 @@ img.priority-icon{
     </div>
 </div>
 <!--Document Reject Action Popup ends-->
+<!-- Approvers listing -->
+<div id="Approverslisting" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog modal-sm">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Approvers</h4>
+            </div>
 
+            <div class="modal-body" style="padding:0 !important">
+                <ul class="group-taks-item scrollbar-panel group-taks-item-panel" id="ulAllApprovers" style="margin:0; padding:0; overflow:auto; transform:translate(0px,0px) !important;">
+                    <li>
+                        <div class="Approversperson">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt="" />
+                            <div class="Approverspersondetail">
+                                <p>Dipankar Goswami</p>
+                                <a href="emailsec">d.goswami@adapt-india.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Approversperson">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt="" />
+                            <div class="Approverspersondetail">
+                                <p>Dipankar Goswami</p>
+                                <a href="emailsec">d.goswami@adapt-india.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Approversperson">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt="" />
+                            <div class="Approverspersondetail">
+                                <p>Dipankar Goswami</p>
+                                <a href="emailsec">d.goswami@adapt-india.com</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Approversperson">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt="" />
+                            <div class="Approverspersondetail">
+                                <p>Dipankar Goswami</p>
+                                <a href="emailsec">d.goswami@adapt-india.com</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="forwarding_process" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Forward</h4>
+            </div>
+            <div class="modal-body">
+                <div class="forward_wraping scrollingeffect timlineheight" id="listForwardee">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Approvers listing -->
+	<!--Document Cancel Action Popup starts-->
+	<div class="modal fade approval-rejection-modal in" id="approvalCancelModal" role="dialog" style="display: none; background:rgba(0,0,0,0.6);">
+	    <div class="modal-dialog modal-md">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+	                <h4 class="modal-title">Cancel</h4>
+	            </div>
+	            <div class="modal-body pb0">
+	
+	                <div class="form-group custom-form-group">
+	                    <label for="">Remarks: <span class="color-red">*</span></label>
+	                    <textarea class="form-control resize-none" id="txtCancelRemark" rows="5"></textarea>
+	                </div>
+	
+	                <div class="checkbox mt0 mb10 alignmentcenter">
+	                    <label><input type="checkbox" value="" id="chkCancel">Cancel</label>
+	                </div>
+					<div id="form-group custom-form-group">
+	                    <input type="file" name="file" id="UploadCancelFiles" class="form-control" multiple=multiple />
+	                    <label for="UploadCancelFiles" class="control-label"><i class="fa fa-download"></i></label>
+	                    <div id="UploadBoxCancel" style="padding:10px 10px 0px 0px;"></div>
+	                </div>
+	            </div>
+	            <div class="modal-footer" style="text-align:center;">
+	                <button type="button" class="btn custom-btn mr-8 wpx-80" id="btnCancelProcess">Submit</button>
+	                <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal" id="btnCancelClose">Close</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!--Document Cancel Action Popup ends-->
     
-    
+    <table class="table-design" id="TBLExportApproval" style="display:none;">
+	    <thead>
+	
+	        <tr>
+	            <th colspan="2"><h3>Approval Documents</h3></th>
+	        </tr>
+	        <tr>
+	            <td>
+	                <label for="">User</label> <label for="">:</label>
+	            </td>
+	            <td id="ExportUserName"></td>
+	        </tr>
+	        <tr>
+	            <td></td>
+	            <td id="ExportUserEmail"></td>
+	        </tr>
+	        <tr>
+	            <td>
+	                <label for="">Date</label> <label for="">:</label>
+	            </td>
+	            <td>
+	                <span id="ExportUserDate"></span>
+	            </td>
+	            <td>
+	                <a href=""></a>
+	            </td>
+	        </tr>
+	        <tr>
+	            <th class="border-bottom-0">Title</th>
+	            <th class="border-bottom-0 w-20" data-localize="File Name">File Name</th>
+	            <th class="border-bottom-0">Origin Library</th>
+	            <th class="border-bottom-0" data-localize="Category">Category</th>
+	            <th class="border-bottom-0" data-localize="Reference">Reference</th>
+	            <th class="border-bottom-0" data-localize="Purpose">Purpose</th>
+	            <th class="border-bottom-0" data-localize="Priority">Priority</th>
+	            <th class="border-bottom-0 w-8" data-localize="Status">Status</th>
+	            <th class="border-bottom-0 w-8">Initiate by</th>
+	            <th class="border-bottom-0 w-8">Initiate Date</th>
+	            <th class="border-bottom-0 w-8">Due Date</th>
+	            <th class="border-bottom-0 w-8">Last Action Date</th>
+	            <th class="border-bottom-0 w-8">Last Action by</th>
+	            <th class="border-bottom-0 w-8">Approval Validity</th>
+	            <th class="border-bottom-0 w-8">Next Step Name</th>
+	            <th class="border-bottom-0 w-8">Next Action Approver</th>
+	        </tr>
+	    </thead>
+	    <tbody id="ExportApprovaltbody"></tbody>
+	</table>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
 

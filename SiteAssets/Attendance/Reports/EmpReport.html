@@ -421,7 +421,7 @@ a.LinkBtn:hover span{
 									<div class="col-lg-3 col-md-4 col-sm-5">
 										<div class="text-right attendance-report-btn-position">
 											<a class="btn custom-btn w-121 mr-8" data-toggle="modal" data-target="#attendance-report-filter" onclick="ValidateHrAdmin();">Filter</a>
-											<a class="btn custom-btn w-121" onclick="tableToExcel('EmpReportTableData', 'Timesheet Report')">Export</a>
+											<a class="btn custom-btn w-121" onclick="tableToExcel('EmpReportTableData', 'Timesheet Report')" id="btnExport">Export</a>
 										</div>
 									</div>
 								</div>
@@ -736,5 +736,21 @@ a.LinkBtn:hover span{
 		    })
 		}
 		</script>
+		
+		<script>
+$(document).ready(function () {
+
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#btnExport").hide();
+	
+	}
+});
+
+</script>
+		
 	</body>
 </html>

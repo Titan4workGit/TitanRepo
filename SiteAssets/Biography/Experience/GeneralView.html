@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/css/styles.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
 
 
@@ -295,7 +295,8 @@
 	overflow: hidden !important;
 }*/
 .detail-view-right-chat-area {
-    width: 85%;
+    /* width: 85%; */
+    width: 100%;
     margin: 10px auto 0 auto;
     float: none;
 }
@@ -317,11 +318,19 @@
 
 .info-detail .relatedWord {
     font-size: 16px;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
+    margin-bottom: 10px;
     margin-left: 2px;
 }
 .info-detail #RelatedWordArea {
     padding-left: 10px;
+}
+p.slider-type-info {
+    margin-bottom: 16px;
+    font: normal normal normal 16px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* new css added on 04/8/2021 */
@@ -340,8 +349,79 @@
 }
 
 .info-head-bg {
-    margin: -10px 0px 0px -18px !important;
+    /* margin: -10px 0px 0px -18px !important; */
+    margin: 0px 0px 10px -18px !important;
 }
+.all-align-gap .article-content {
+    margin: 0px 0px 0px 18px !important;
+}
+
+/* new css added for the image center header part display image */
+
+.info-head-area {
+	/* height: 350px; */
+	height: 355px;
+    overflow: hidden;
+	position: relative;
+}
+.info-head-bg {
+    z-index: 1;
+    height: 100%;
+    opacity: 0.9;
+    filter: blur(5px);
+}
+.info-head-bg img{
+    width: 100%;
+}
+.image-detail-section {
+    /* height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+}
+    
+.image-detail-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.shade-detail {
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(0,0,0,0.8));
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+.info-detail {
+    padding: 10px 10px;
+}
+
+/* new css added on 11/11/2022 */
+
+.panel-body {
+    padding: 0px !important;
+}
+.info-detail {
+    padding: 10px 30px 20px 30px;
+}
+.info-content-detail #description>div {
+    word-break: break-all;
+}
+
+div.ms-webpart-cell-vertical-inline-table, 
+.ms-webpart-chrome-vertical {
+    display: block !important;
+}
+
 
 /* responsive css start */
 
@@ -464,30 +544,38 @@
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2066</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">3cd65b27-ec95-48c4-96de-eee64965da99</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2066, ADMIN-1645029823-2066</mso:_dlc_DocIdUrl>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
-<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
 
 <body>
 	
-	<div class="info-head-bg">
-		<div class="image-detail-section"> <img src="" class="img-responsive" alt="" id="sliderimg">
-			<div class="shade-detail"></div>
-		</div>
-		<div class="panel-heading panel-heading-info-detail">
-			<span class="info-head-text-detail panel-heading-bg-txt-clr" id="slidertype"></span>
-		</div>
-	</div>
+	
 	<div class="container-fluid container-content">
 		<div id="info_detail_main_area" class="col-sm-12 info-detail-area">
 			<div class="panel panel-default">
 				<div class="panel-body pl20 pr20 pt20 pb20">
+				
+					<div class="info-head-area">
+                        <div class="image-detail-section"> <img src="" class="img-responsive" alt="" id="sliderimg">
+                        </div>
+                        <div class="shade-detail"></div>
+                        <div class="info-head-bg"> <img src="" class="img-responsive" alt="" id="sliderimg-bg"></div>
+                    </div>
+				
+					<!-- <div class="info-head-bg">
+						<div class="image-detail-section"> <img src="" class="img-responsive" alt="" id="sliderimg">
+						<div class="shade-detail"></div>
+						</div>
+						<!-- <div class="panel-heading panel-heading-info-detail">
+							<span class="info-head-text-detail panel-heading-bg-txt-clr" id="slidertype"></span>
+						</div> 
+					</div> -->
+				
 					<div id="title_author_area" class="info-detail">
 						<h1 id="slidertitle"></h1>
 						<i class="fa fa-bars relatedWord" style="display:none;"><span id="RelatedWordArea"></span></i>
+						<p class="slider-type-info"><span id="slidertype"></span></p>
 						<div class="experiences-inner-card experiences-details-inner-card">
 							<div class="experiences-inner-card-head">
 								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/img-21.jpg" alt="user" id="UserProfile">
@@ -585,7 +673,7 @@
 									</div>
 								</div>
 								<!-- <div class="col-lg-4 col-md-5 detail-view-right-chat-area detail-view-right" style="position: sticky;top: 20px;"> -->
-								<div class="col-lg-12 col-md-12 detail-view-right-chat-area" style="position: sticky;top: 20px;">
+								<div class="col-lg-12 col-md-12 detail-view-right-chat-area Allow-Comments" style="position: sticky;top: 20px;">
 									<div class="comment-container">
 										<div class="experiences-inner-card-btn-panel experiences-comment-container-count">
 											<ul class="nav experiences-inner-card-btn-item">
@@ -692,7 +780,7 @@
 
 
 
-												<div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+												<div class="chat-main-panel scrollbar-panel " id="hideCommentScroll">
 													<div class="row ml0 mr0" id="reply_area">
 														<div class="col-xs-12 text-center pt-15">
 															<a style="display:none;cursor:pointer;" class="view-more-replies" id="seemorebtnGeneral" onclick="ReadTimeLine('GetAll', 'Logged_InUser', Url4ViewallOcc, 'ViewMore')">View Previous</a>
@@ -745,7 +833,7 @@
 													</div>
 												</div>
 												<div class="clearfix"></div>
-												<div class="main-chat-text-area main-chat-text-area-border">
+												<div class="main-chat-text-area main-chat-text-area-border Stop-Allow-Comments">
 													<div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3">
 														<div class="reply-text-line">
 															<div class="reply-text-line-cross">

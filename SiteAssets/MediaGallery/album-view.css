@@ -265,7 +265,13 @@
     cursor: pointer;
 }
 .album-delete-btn {
-    margin-left: 20px;
+    margin-left: 15px;
+}
+.album-edit-btn {
+    font-size: 16px;
+    color: #000 !important;
+    cursor: pointer;
+    margin-left: 15px;
 }
 .event-search {
     min-width: 2em;

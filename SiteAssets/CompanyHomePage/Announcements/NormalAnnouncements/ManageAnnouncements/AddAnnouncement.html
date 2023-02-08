@@ -6,6 +6,8 @@
 
 <style>
 
+
+
 .LabelAsButton {
   	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -147,6 +149,8 @@ border-radius: 20px;
 .description-box-add-announcement .input-group {
     display: block;
 }
+
+
 #Imagefilename div, #filename div {
     padding: 3px 10px 7px 10px;
     background: linear-gradient(to bottom,#fff,#ccc);
@@ -159,6 +163,7 @@ border-radius: 20px;
     margin: 5px 5px;
     border-radius: 30px;
 }
+
 #OldImagename div, #oldfilename tr {
     padding: 7px 10px 7px 10px;
     background: linear-gradient(to bottom,#fff,#ccc);
@@ -221,6 +226,37 @@ border-radius: 20px;
 	margin-bottom:0 !important;
 }
 
+.both_mgset{
+ margin-left:0 !important;
+ margin-right:0 !important;	
+}
+
+#Attachmentbox .ajustmentbxsec {
+    position: relative !important;
+    text-align: center;
+    border-bottom: 1px solid #afafaf;
+    padding: 0px 0 10px;
+    margin-bottom: 10px;
+}
+
+.btn-outline-danger, 
+input.btn-outline-danger {
+    color: #fff;
+    background-color: #dc3545;
+    background-image: none;
+    border-color: #dc3545 !important;
+    padding: 4.5px 12px !important;
+}
+
+.btn-outline-danger:hover, 
+input.btn-outline-danger:hover {
+    color: #dc3545;
+    background-color:transparent;
+    background-image: none;
+    border-color: #dc3545 !important;
+    padding: 4.5px 12px !important;
+}
+
 
 @media(max-width:400px){
 
@@ -273,6 +309,13 @@ border-radius: 20px;
 /***july-8-21****/
 
 
+#Attachmentbox #drop-zone{
+width:320px;
+cursor:pointer;	
+height:45px;
+margin:0 auto; 	
+}
+
 #drop-zone{
  position:relative !important;	
 }
@@ -285,7 +328,6 @@ border-radius: 20px;
     width:320px;
     cursor:pointer;	
     height:45px;
-    
 }
 
 #drop-zone label{
@@ -301,6 +343,91 @@ border-radius: 20px;
 
 }
 
+
+/***sept-29-22*****/
+
+.add-button-box {
+    position: relative;
+}
+
+.video-help-btn {
+    float: right;
+    font-size: 18px;
+    cursor: pointer;
+    color: #1d6ec0;
+}
+
+.add-button-box .link-add-btn {
+    margin-right: 0;
+    padding: 5px 12px;
+}
+
+.link-add-btn, .link-add-btn:focus, .link-delete-btn, .link-delete-btn:focus {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin:0;
+}
+
+.link-delete-btn, .link-delete-btn:focus {
+    background: #d43f3a;
+    border-color: #d43f3a;
+}
+
+.link-delete-btn:hover{
+ border:1px solid #d43f3a;
+ color:#d43f3a !important;	
+}
+
+.position-relative {
+    position: relative;
+    margin-top: 12px;
+}
+
+.help-modal-body img {
+    width: 100%;
+}
+
+/***sept-29 ed-22*****/
+
+
+#coverImage div {
+    padding: 3px 10px 7px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+
+#coverImage div .DeletePic {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+/***oct-19 st-22*****/
+
+
+
+
+/***oct-19 ed-22 ed*****/
+
+
+
 @media(max-width:500px){
 
 #drop-zone label,
@@ -311,6 +438,7 @@ border-radius: 20px;
 }
 	
 }
+
 
 
 /****july-27-21***/
@@ -329,12 +457,67 @@ border-radius: 20px;
     margin-left: 3px;
 }
 
+#flagCheckbox+label {
+    margin: 2px 0px 0px 4px;
+}
+
+/*-----------------09/092022----------------------------*/
+#DpdownData{
+ max-height:200px;
+ overflow:auto;
+ list-style-type:none;	
+}
+
+#DpdownData::-webkit-scrollbar {
+	width: 10px;
+	height:10px;
+	background-color: transparent;
+}
+#DpdownData::-webkit-scrollbar-thumb {
+	border: 3px solid transparent;
+	border-radius: 10px;
+	background-color: grey;
+	background-clip: content-box;
+	-webkit-background-clip: content-box;	
+	
+}	
+#DpdownData::-webkit-scrollbar-thumb:hover {
+	background-color: #333;
+	background-clip: border-box;
+	-webkit-background-clip: border-box;
+}
+
+.panel-head-text {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    color:#333 !important;
+}
+
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px 0;
+}
+
+/****oct-99-22******/
+
+@media(min-width:768px){
+	
+.col-sm-6.righsidebox .form-group{
+  margin: 32px 0 !important;	
+}
+
+.col-sm-6.righsidebox.responsivebox .form-group{
+  margin:0px 0px 5px 0px  !important;	
+}
+
+	
+}
+
 </style>
 
 
-<div class="row department-header" style="
-    display: none;
-"> 
+<div class="row department-header" style="display: none;"> 
 	<ol class="breadcrumb">    
 		<li><h4 data-localize="Announcements"><b>Announcements</b></h4></li>           
 	</ol>
@@ -346,10 +529,13 @@ border-radius: 20px;
 	<!-- <div class="col-md-6"> -->
 	<div class="col-md-12">
 			<div class="panel panel-default">                          
-				  <div class="panel-heading panel-head-4">
-					  <div class="panel-title">
+				   <div class="">
+					  <div class="panel-head">
 					  <!--<h4 class="h4-color" data-localize="Announcements">Announcements</h4>-->
-					  <h4 class="h4-color" id="HeaderTitle">Announcement</h4>
+					  <div id="HeaderTitleDiv">
+					     <!--<h1 class="panel-head-text" id="HeaderTitle">Announcement</h1>-->					  
+					  </div>
+					  
 					</div>
 				  </div>
 			   <div class="panel-body">
@@ -360,9 +546,10 @@ border-radius: 20px;
 				  		<div class="form-group">
                      <div class="col-sm-6">
                          <label class="required">Type:</label>
-                         <select class="form-control ViewMode" id="AnounacementType" onchange="ValidateLoginUserEntryscreen(this.value);" disabled>
-                         <option>Announcement</option>
-                         <option>Alert</option>
+                         <!--<select class="form-control ViewMode" id="AnounacementType" onchange="ValidateLoginUserEntryscreen(this.value);" disabled>-->
+                         <select class="form-control ViewMode" id="AnounacementType" disabled>
+                         <option data-localize="Announcement" value="Announcement">Announcement</option>
+                         <option data-localize="Alert" value="Alert">Alert</option>
                          </select>
                      </div>
                      <div class="col-sm-6">
@@ -420,11 +607,11 @@ border-radius: 20px;
 							<div class="col-sm-6">
 								<label class="required">Audience</label>
 								<select id="Audience" class="form-control ViewMode" onchange="DisplayDepartmentBox(this.value);">
-								  <option>Corporate</option>
-								  <option>Company</option>
-								  <option>Department</option>
-								  <option>Location</option>
-								  <option>Selective</option>
+								  <option value="Corporate">All Companies</option>
+								  <option value="Company">Company</option>
+								  <option value="Department">Department</option>
+								  <option value="Location">Location</option>
+								  <option value="Selective">Selective</option>
 								</select>
 							</div>
 							
@@ -434,7 +621,7 @@ border-radius: 20px;
 									<div class="button-group my_announce_department_list">
 								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
 								        </button>
-										<ul class="dropdown-menu" style="width:90% !important;" id="DpdownData">
+										<ul class="dropdown-menu" style="width:96% !important;" id="DpdownData">
 										
 										  <!--<li><a href="#" class="small" data-value="option1" tabIndex="-1"><input type="checkbox"/><span>Sales</span></a></li>
 										  <li><a href="#" class="small" data-value="option2" tabIndex="-1"><input type="checkbox"/><span>Human Resources</span></a></li>
@@ -464,44 +651,92 @@ border-radius: 20px;
 							</div>-->
 						</div>
 						<div class="form-group" id="">
+							<div class="">
+								<div class="col-sm-6 righsidebox">
+								
+									<div class="form-group both_mgset" id="coverImageDiv" style="display:none">
+								    	<label for="">Cover Image:<span class="color-red"></span></label>
+								    	<input type="file" class="form-control ApproverView" accept="image/x-png,image/gif,image/jpeg,image/jpg" id="CoverImage">
+								    </div>
+									<div class="coverImage">
+									    <div id='coverImage' class="conerImage1" style="padding:0px 0px 5px 0px;"></div>
+									</div>
+									<div class="form-group both_mgset">
+								      <div class="block add-button-box">
+	                                        <div>
+	                                            <label for="">Video Link:</label>
+	                                            <a class="video-help-btn" data-toggle="modal" data-target="#videoHelpModel"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+	                                        </div>
+	                                        <input type="text" class="form-control link-input-fild ApproverView" name="" id="VideoLinkInput0"> 
+	                                        <a class="btn custom-btn add link-add-btn ApproverHide"><i class="fa fa-plus"></i></a>
+	                                   </div> 
+	                                 <div class="block"> 
+	                                 </div>
+	                                 
+									</div>
+									
+									<div class="form-group both_mgset">	
+										<label class="">Web Link:</label>
+										<input id="Link" type="text" class="form-control ViewMode" name="Link">
+									</div>
+									
+								</div><!---col-6--->
+								<div class="col-sm-6">
+									
+										<div class="form-group both_mgset" id="Attachmentbox">
+										    
+											<div class="">
+											  <label class="">Images</label>
+											   <div class="ajustmentbxsec">
+												
+													<div id="drop-zone" class="entry_screen_dropzone_images">
+														<div id="clickHere">
+															<input type="file" class="form-control ViewMode ImageDragUpload" name="file" style="display:block;" id="ImageUpload" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 500Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." multiple >
+															<label for="ImageUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload" title="Upload upto 5 images of total file size upto 500Mb. Only JPEG, JPG, GIF and PNG formats are allowed.">Click & Drop here <i class="fa fa-download"></i></label>
+														</div>
+													</div>
+													<div class="entry_screen_images">
+														<div id='Imagefilename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
+														<div id='OldImagename' class="oldfilename1" style="padding:0px 0px 0px 0px;"></div>
+													</div>
+												
+												</div>
+												<label class="">Attachments</label>							
+												<div class="ajustmentbxsec">
+												
+														<div id="drop-zone" class="entry_screen_dropzone_attachments">
+					  										<div id="clickHere">
+					  											<input type="file" name="file" id="FileUpload" style="display:none;" class="form-control ViewMode" multiple />
+					  											<label for="FileUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload">Click & Drop here <i class="fa fa-download"></i></label>
+					  										</div>
+					  									</div>	
+					  										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
+					  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+					  									<div class="entry_screen_attachments">
+															<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
+					  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+														</div>
+												</div>	
+											</div>
+										</div>									
+													
+								</div><!---col6--->
+								
+							</div>
+							
+						</div>
+						<div class="form-group" id="" style="display:none">
 							<div class="col-sm-12">
-								<label class="">Web Link:</label>
-								<input id="Link" type="text" class="form-control ViewMode" name="Link">
+							    <input type="checkbox" id="flagCheckbox" >
+								<label class="">Pin Flag Up:</label>
+							
 							</div>
 						</div>
 
+
 						
 						<!-- Note For Developer - This Below Multiple Attachments Section Is Static only, you need to make it dynamic for uploading multiple attachments -->
-						<div class="form-group" id="Attachmentbox">
-							<div class="col-sm-12">
-								<label class="">Images</label>
-									<div id="drop-zone" class="entry_screen_dropzone_images">
-										<div id="clickHere">
-											<input type="file" class="form-control ViewMode ImageDragUpload" name="file" style="display:block;" id="ImageUpload" accept="image/x-png,image/gif,image/jpeg,image/jpg" title="Maximum file upload size is 500Mb, Maximum number of photos that can be uploaded are 5, files extensions allowed are jpg, png, jpeg and gif." multiple >
-											<label for="ImageUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload" title="Upload upto 5 images of total file size upto 500Mb. Only JPEG, JPG, GIF and PNG formats are allowed.">Click & Drop here <i class="fa fa-download"></i></label>
-										</div>
-									</div>
-									<div class="entry_screen_images">
-										<div id='Imagefilename' class="oldfilename1" style="padding:10px 0px 0px 0px;"></div>
-										<div id='OldImagename' class="oldfilename1" style="padding:0px 0px 0px 0px;"></div>
-									</div>							
-							
-								<label class="">Attachments</label>
-									<div id="drop-zone" class="entry_screen_dropzone_attachments">
-  										<div id="clickHere">
-  											<input type="file" name="file" id="FileUpload" style="display:none;" class="form-control ViewMode" multiple />
-  											<label for="FileUpload" class="control-label LabelAsButton ViewMode" data-localize="Click to upload">Click & Drop here <i class="fa fa-download"></i></label>
-  										</div>
-  										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
-  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
-  									</div>
-  									<div class="entry_screen_attachments">
-										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
-  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
-									</div>
-							</div>
-						</div>
-  						
+						
 						<!-- New Form Fields Code Addeed END -->	
 						<div class="form-group" style="display:none;">
 							<label for="" class="col-sm-4 control-label">Publish</label>
@@ -523,8 +758,9 @@ border-radius: 20px;
 						
 						<div class="clearfix"></div>
 						<div class="row text-center top20">
-							 <input id="Submit" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" data-localize="Submit" value="Submit">
-                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close" value="Close">							
+							 <input id="Submit" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" data-localize="Submit" value="Submit">							 
+                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close" value="Close">
+                  			<input id="btnDelete" type="button" style="font-size:13px; display:none" class="btn btn-outline-danger button ViewMode" data-localize="Delete" value="Delete">							
 						</div> 
 				  </div>
 				</div>
@@ -594,6 +830,17 @@ border-radius: 20px;
 	</div>
 </div>
 
+<div id="videoHelpModel" class="modal fade" role="dialog">
+   <div class="modal-dialog modal-lg">
+                <!-- Modal content-->
+     <div class="modal-content">
+        <div class="modal-body help-modal-body">
+           <img class="" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/ExperiencesNew/assets/images/Help_Image.png">
+        </div>
+    </div>
+ </div>
+</div>
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/AddAnnouncement.js">	</script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/DMS/dropzone.js"></script>
 
@@ -612,6 +859,7 @@ border-radius: 20px;
   		$('.richText-help').hide();
   		$('.richText-toolbar').hide();
   	});	
+  	
 
 </script>
 
@@ -620,14 +868,17 @@ border-radius: 20px;
 <!--  --><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">System Account</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-370</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">2fe7233e-e07f-401e-9089-3f7a3e69324b</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-370, ADMIN-1645029823-370</mso:_dlc_DocIdUrl>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:Order msdt:dt="string">37000.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:ContentTypeId msdt:dt="string">0x010100767E0F213A8F8542B95D9160C5D83BF9</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 <title>Untitled 1</title></head>

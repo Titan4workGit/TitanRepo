@@ -98,7 +98,7 @@ button.close {
     color: #ffffff;
 }
 .custom-panel {
-    margin: 10px 0;
+    margin:0px 0;
     border: 1px solid #d4d4d4;
     background-color: #ffffff;
 }
@@ -130,7 +130,8 @@ button.close {
     width: 87px;
 }
 .container-content {
-    width:95%;
+    /* width:95%; */
+    width: 98%;
     position:relative;
 }
 .experiences-inner-card-row,
@@ -161,6 +162,9 @@ button.close {
     width: 34px;
     background: #1d6ec0;
     border-color: #1d6ec0;
+}
+#btnSearch {
+    min-width: 34px !important;
 }
 .experiences-head-btn {
     display: flex;
@@ -393,11 +397,33 @@ button.close {
 .draft-info {
     font-size: 14px;
     font-weight: 500;
-    background: #ff0000;
+    background: #1d6ec0;
     /*padding: 2px 8px;*/
     padding: 12px 9px;
     color: #fff;
 }
+.Rejected-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #e00;
+    padding: 12px 9px;
+    color: #fff;
+}
+.Archived-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #494948;
+    padding: 12px 9px;
+    color: #fff;
+}
+.Waiting-info {
+    font-size: 14px;
+    font-weight: 500;
+    background: #1d6ec0;
+    padding: 12px 9px;
+    color: #fff;
+}
+
 @media (max-width: 991px) {
     .experiences-inner-card-btn-panel-isTab {
         margin-top: 4px;
@@ -489,7 +515,8 @@ button.owl-dot {
 }
 
 .info-head-bg {
-    height: 350px;
+    /* height: 350px; */
+    height: 400px;
     overflow: hidden;
     position: relative;
 }
@@ -502,7 +529,8 @@ button.owl-dot {
 .image-detail-section img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
     object-position: center;
 }
 
@@ -532,22 +560,25 @@ button.owl-dot {
     height: 100%;
     width: 100%;
     top: 0px;
+    display: none; 
 }
 
 .info-detail-area {
     position: relative;
-    top:-160px;
-    margin-bottom: -160px;
+    /* top:-160px; */
+    /* margin-bottom: -160px; */
 }
 .info-detail {
-    padding:10px;
+    /* padding:10px; */
+    padding: 10px 30px;
 }
 
 .info-detail h1 {
     margin-top:0px;
     /*font-size: 30px;*/
     font-size: 28px;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
+    margin-bottom: 16px;
     font-weight: 600;
     color: #333;
 }
@@ -1460,7 +1491,7 @@ input.btn-file-upload[type=file] {
 @media (min-width: 320px) and (max-width: 425px) {
     .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count>a {
         position: relative;
-        top: 0px !important;
+        top: -10px !important;
     }
 }
 
@@ -2760,6 +2791,7 @@ button:focus {
 }
 #experiences-filter .bg-white-round-btn {
     font-size: 20px;
+    color: #000;
 }
 #experiences-filter .bg-white-round-btn .close-icon {
     /*top: 0px;*/
@@ -4186,7 +4218,8 @@ white-space: nowrap;
     align-items: center;
     list-style-type: none;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 26px;
 }
 
 .experiences-inner-card-btn-panel li {
@@ -4780,6 +4813,15 @@ white-space: nowrap;
     border-left-color: transparent;
     border-top-color: transparent;
     cursor: pointer !important;
+}
+
+.panel-img-heading-general {
+    border-radius: 6px 0px 12px 0px;
+    top: 0;
+}
+
+.all-align-gap .article-content {
+    margin:0px 0px 0px 18px !important;
 }
 
 /* responsive css start */

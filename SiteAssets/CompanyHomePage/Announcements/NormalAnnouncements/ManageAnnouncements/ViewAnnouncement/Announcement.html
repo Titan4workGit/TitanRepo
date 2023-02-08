@@ -46,7 +46,7 @@
 }
 
 .container-content{
- width:99% !important;	
+ width:100% !important;	
 }
 
 .announcement-card-body-dec{
@@ -82,7 +82,8 @@
 }
 
 .new-announcement-alert-modal .panel-heading-common-popup {
-    padding: 14px 0px 7px 0px !important;
+    /* padding: 14px 0px 7px 0px !important; */
+    padding: 14px 20px 7px 20px !important;
     border: none !important;
     background-color: transparent !important;
     position: absolute;
@@ -138,10 +139,10 @@
 
 .new-announcement-alert-modal .common-head-text-popup {
     font-size: 16px;
-    padding: 4px 10px;
-    color: #fff;
+    /* padding: 4px 10px; */
+    color: #000;
     letter-spacing: 1px;
-    background-color: #ff9e20 !important;
+    /* background-color: #ff9e20 !important; */
     width: 100%;
     font-weight: 600;
     font-family:sans-serif;
@@ -178,7 +179,8 @@
 }
 
 #_TextTitle{
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 18px;
     font-weight: 600;
     font-family: sans-serif;
     margin-bottom:5px;
@@ -494,7 +496,7 @@
     height: 170px !important;
 }
 #Announcement_Alert .new-announcement-alert-modal .common-content-popup {
-    padding-left: 10px !important;
+    /* padding-left: 10px !important; */
 }
 .main-chat-text-area-border {
     margin: 0px 1px 0px 0px !important;
@@ -526,9 +528,9 @@
 
 /****march-22-22****/
 
-body #s4-workspace {
+/* body #s4-workspace {
     overflow: auto !Important;
-}
+} */
 
 .mangheight{
  overflow-y: auto;
@@ -573,6 +575,37 @@ body #s4-workspace {
     border-radius: 15px;
 }
 
+/****oct-19-22****/
+
+
+.new-announcement-alert-modal .panel-heading-common-popup{
+  width:calc(100% - 40px);	
+}
+
+#_TextTitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    -webkit-line-clamp: 2;
+}
+
+
+@media(max-width:767px){
+	
+#_TextTitle {
+    font-size: 15px;
+}
+	
+	
+}
+
+
 @media (min-width: 1199px){
 
 #AttachmentView .modal-lg {
@@ -591,7 +624,69 @@ body #s4-workspace {
 }
 
 /****march-22-22****/
+#DeltaPlaceHolderMain .all-align-ms-tasks-gap {
+    padding-right: 0;
+    margin-left: 3px;
+}
 
+/* new css added on 17/10/2022 */
+
+.experiences-inner-card.at-a-glance-user-info {
+    display: flex;
+    align-items: center;
+}
+.at-a-glance-user-info .experiences-inner-card-head {
+    max-width: 55px;
+    min-width: 55px;
+    height: 55px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.at-a-glance-user-info .experiences-inner-card-head>img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: cover;
+}
+.at-a-glance-user-info .experiences-inner-card-body {
+    padding-left: 12px;
+    width: 100%;
+}
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.at-a-glance-user-info .member-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+.at-a-glance-user-info .experiences-inner-card-body .member-category #_ModelHeading {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+}
+.at-a-glance-user-info .experiences-inner-card-body .member-deg {
+    margin-bottom: 2px !important;
+}
+.at-a-glance-user-info .experiences-inner-card-body .member-date {
+    margin-bottom: 2px !important;
+}
+.at-a-glance-user-info .experiences-inner-card-body .member-category {
+    margin-bottom: 0 !important;
+}
+.at-a-glance-modal.new-announcement-alert-modal .panel-heading-common-popup {
+    padding: 4px 20px 7px 20px !important;
+    /* width: 75%; */
+}
+.at-a-glance-modal.new-announcement-alert-modal .common-head-text-popup {
+    padding: 0;
+}
 
 /* responsive css for modal-chat-boxses START */
 
@@ -768,11 +863,6 @@ body #s4-workspace {
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">251100.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -789,43 +879,46 @@ body #s4-workspace {
 	</div>
 	<!--New Messsage toast popup ends for Announcement-->
 
-	<div class="container-fluid container-content">
-		<div class="col-sm-12">
-			<div class="custom-panel">
-				<div class="panel-head">
-					<h1 class="announcement-head-text">Announcement</h1>
-				</div>
-				<div class="panel-body announcement-panel-body">
-					<div class="row announcement-head-panel">
-						<div class="col-sm-6">
-							<div class="input-group custom-form-group announcement-form-group">
-								<input type="text" class="form-control" id="SearchInput" name="" placeholder="Search">
-								<button class="input-group-addon" type="button" id="btnSearchtxt">
-									<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/search-icon.png" class="search-icon" alt="search-icon"></button>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="announcement-head-btn">
-								<div class="my_view_announce_add_btn dropdown pull-right">
-		   							<button class="btn btn-primary dropdown-toggle" id="" type="button" data-toggle="dropdown" aria-expanded="false">Add<span class="caret"></span></button>
-									<ul class="dropdown-menu">
-	  									<li><a href="javascript:void(0);" id="_btnaddviewAlert">Alert</a></li>
-	  									<li><a href="javascript:void(0);" id="_btnaddviewAnnouncement">Announcement</a></li>      									
-									</ul>
-								</div>
-  								<button type="button" class="btn custom-btn w-87" data-toggle="modal" data-target="#announcement-filter" style="padding:0;">Filter</button>
-							</div>
-						</div>
-					</div>
-					<div class="announcement-card-panel" id="allAnnouncements">
-					</div>
-					
-					<div class="announcement-pagination-panel">
-						<button type="button" class="btn custom-btn w-87" id="btnSeeMore">See More</button>
-						<button type="button" id="btnSeeMoreFilter" class="btn custom-btn wpx-87">See More</button>
-					</div>
-				</div>
-			</div>
+	<div class="container-fluid container-content all-align-gap-container">
+        <div class="row">
+    		<div class="col-sm-12">
+    			<div class="custom-panel">
+    				<div class="panel-head">
+    					<h1 class="announcement-head-text" data-localize="ImportantFeed">Important Feed</h1>
+    				</div>
+    				<div class="panel-body announcement-panel-body">
+    					<div class="row announcement-head-panel">
+    						<div class="col-sm-6">
+    							<div class="input-group custom-form-group announcement-form-group">
+    								<input type="text" class="form-control" id="SearchInput" name="" placeholder="Search">
+    								<button class="input-group-addon" type="button" id="btnSearchtxt">
+    									<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/ViewAnnouncement/assets/images/search-icon.png" class="search-icon" alt="search-icon"></button>
+    							</div>
+    						</div>
+    						<div class="col-sm-6">
+    							<div class="announcement-head-btn">
+    								<div class="my_view_announce_add_btn dropdown pull-right">
+    		   							<button class="btn btn-primary dropdown-toggle" id="" type="button" data-toggle="dropdown" aria-expanded="false">Add<span class="caret"></span></button>
+    									<ul class="dropdown-menu">
+    	  									<li><a href="javascript:void(0);" id="_btnaddviewAlert" data-localize="Alert">Alert</a></li>
+    	  									<li><a href="javascript:void(0);" id="_btnaddviewAnnouncement" data-localize="Announcement">Announcement</a></li>  
+    	  									<li><a href="javascript:void(0);" id="_btnaddviewAtaGlance" data-localize="AtaGlance">At a Glance</a></li>    									
+    									</ul>
+    								</div>
+      								<button type="button" class="btn custom-btn w-87" data-toggle="modal" data-target="#announcement-filter" style="padding:0;">Filter</button>
+    							</div>
+    						</div>
+    					</div>
+    					<div class="announcement-card-panel" id="allAnnouncements">
+    					</div>
+    					
+    					<div class="announcement-pagination-panel">
+    						<button type="button" class="btn custom-btn w-87" id="btnSeeMore">See More</button>
+    						<button type="button" id="btnSeeMoreFilter" class="btn custom-btn wpx-87">See More</button>
+    					</div>
+    				</div>
+    			</div>
+            </div>
 		</div>
 	</div>
 
@@ -857,8 +950,9 @@ body #s4-workspace {
 								<label>Category:</label>
 								<select class="form-control" id="ddlCategory">
 									<option value="All">All</option>
-									<option value="Announcement">Announcement</option>
-									<option value="Alert">Alert</option>
+									<option value="Announcement" data-localize="Announcement">Announcement</option>
+									<option value="Alert" data-localize="Alert">Alert</option>
+									<option value="At a Glance" data-localize="AtaGlance">At a Glance</option>
 								</select>
 							</div>
 						</div>
@@ -885,7 +979,7 @@ body #s4-workspace {
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                    <!-- <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
                         <button type="button" class="close common-modal-close" id="btnCloseViewModal">×</button>
                         <div class="panel-heading panel-heading-common-popup">
                             <span class="common-head-text-popup" id="_ModelHeading">Announcement</span>
@@ -901,7 +995,40 @@ body #s4-workspace {
                             <p class="common-title-popup" id="_TextTitle"></p>
                             <p><span class="date-time-card" id="AnnouncmntAuthor"></span> | <span class="date-time-card" id="AnnouncmntCreated"> </span></p>
                         </div>
+                    </div> -->
+                    
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-modal-header">
+                        <button type="button" class="close common-modal-close annClosePopup" data-dismiss="modal">×</button>
+                        <div class="panel-heading panel-heading-common-popup">
+                            <span class="common-head-text-popup" id="_TextTitle"></span>
+                        </div>
                     </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 modal-body-bg">
+                        <div class="common-image-section-popup">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/images/announcement-popup.png" id="NoticeBgImage" class="img-responsive" alt="" />
+                            <div class="shade-common-popup"></div>
+                        </div>
+
+                        <div class="col-md-9 col-sm-9 col-xs-12 common-content-popup pl20 pr0">
+                            <!-- <p class="common-title-popup" id="_TextTitle"></p> 
+                            <p><span class="date-time-card" id="AnnouncmntAuthor"></span> | <span class="date-time-card" id="AnnouncmntCreated"> </span></p> -->
+                            <div class="experiences-inner-card at-a-glance-user-info">
+                            	<div class="experiences-inner-card-head">
+                            		<img src="/SiteAssets/EmployeeSynchronous/EmployeeDirectory/user_pic.jpg" alt="user" id="userImage" data-themekey="#">
+                            	</div>
+                            	<div class="experiences-inner-card-body text-ellipsis">
+                            		<div class="experiences-inner-card-body-info text-ellipsis">
+                            			<h3 class="member-name text-ellipsis" id="AnnouncmntAuthor">Dipankar Goswami</h3>
+                            			<p class="member-deg text-ellipsis" id="User-Dept-Desig" style=""><span id="userDesig">CTO</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span id="userDept">IT</span></p>
+                            			<p class="member-date text-ellipsis"><span class="mr-4">Posted on:</span><span id="AnnouncmntCreated">07 Oct 2022</span></p>
+                            			<p class="member-category text-ellipsis" id="modulCategoryType"></p>
+                            			<!--<p class="member-category text-ellipsis"><span class="mr-4" data-localize="Category">Category:</span><span data-localize="AtaGlance" id="modelType">At a Glance</span></p>-->
+                            		</div>
+                            	</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="col-md-12 col-sm-12 col-xs-12 pt15 pl20 pr20 pb15 mangheight">
                         <div class="col-md-12 col-sm-12 col-xs-12 pl0 pr0 common-popup-description-text">
                             <p id="_DtlDescription"><a class="common-popup-description-more" href="javascript:void(0);" id="annReadMore" style="display:none;">Read More</a></p>

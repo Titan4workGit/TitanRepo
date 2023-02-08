@@ -604,6 +604,7 @@ display:none !important;
 		Step3: Click on "Solution" menu from the left hand side panel<br>
 		Step4: Click on "Import solution" button and choose the zip file you downloaded from the above link.<br>
 		</h3>
+		<h3>After all steps completed, reload the App</h3>
   </div>
 </div>
 
@@ -4356,7 +4357,7 @@ function uploadDocument() {
 		   $("#loader").hide();
 		   $("#TitanWorkflow").show();
 		   var flowsUrl=targetUrl+"/flows.zip";
-		   $("#flowsId").html("<a href='https://"+domainName+flowsUrl+"' target='_blank'>"+domainName+flowsUrl+"</a>");
+		   $("#flowsId").html("<a href='https://"+domainName+flowsUrl+"' target='_blank'>https://"+domainName+flowsUrl+"</a>");
 		   
         }, function(data) {  
             alert("File uploading failed");  

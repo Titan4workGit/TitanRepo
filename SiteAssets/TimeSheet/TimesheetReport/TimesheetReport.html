@@ -139,15 +139,28 @@ div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTab
 }
 		
 </style>
-		
+<script>
+$(document).ready(function () {
+//alert(window.screen.width+","+ window.screen.height);
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#btnExport").hide();
+	
+	}
+});
+
+</script>
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:Order msdt:dt="string">170600.000000000</mso:Order>
 <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
+<mso:ContentTypeId msdt:dt="string">0x010100B68794DA7B64C04CB60E7EF80C84BDFA</mso:ContentTypeId>
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1706</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">f961ca00-b33c-4d6a-a0f3-6eb3d523d907</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1706, ADMIN-1645029823-1706</mso:_dlc_DocIdUrl>
@@ -156,7 +169,8 @@ div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTab
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Titan</title></head>
+<title>Titan</title>
+</head>
 <body>
 	<div class="container">
 		<div class="row">
@@ -181,7 +195,7 @@ div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTab
 									<div class="text-right approval-btn-position">
 										<a type="button" class="btn custom-btn w-125 ml-4" data-toggle="modal" data-target="#approval-filter"><i class="fa fa-filter" aria-hidden="true"></i> Filter</a>
 										<!--<a type="button" class="btn custom-btn w-125 ml-4" href="#"><span class="" data-localize="Export to Excel" onclick="tableToExcel('ReporTimesheet', 'Timesheet Report')"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</span></a>-->
-										<a type="button" class="btn custom-btn w-125 ml-4" href="#"><span class="" data-localize="Export to Excel" onclick="ExcelDataReport('TimeSheetTableData');"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</span></a>
+										<a type="button" class="btn custom-btn w-125 ml-4" href="#" id="btnExport"><span class="" data-localize="Export to Excel" onclick="ExcelDataReport('TimeSheetTableData');"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</span></a>
 									</div>
 								</div>
 							</div>
@@ -438,4 +452,7 @@ div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTab
 		    })
 		}
 		</script>
+		
+		
+		
 </body>

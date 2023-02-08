@@ -93,13 +93,27 @@ input.hidden {
  padding:0 15px !important;
 }
 
-.listing_detail li{
- list-style: disc !important;
+.listing_detail>li{
  color: #1d1d1d !important;
  margin: 10px 0;
  font-weight: 600;
  line-height:25px;
+ position:relative;
+}
 
+.listing_detail>li::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -27px;
+    background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeDirectory/right-arrow_1.png);
+    background-position: center center;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    opacity: 0.8;
 }
 
 .click_Box{
@@ -164,9 +178,7 @@ input.hidden {
 /****oct-6-21****/
 
 #managerPicker .sp-peoplepicker-topLevel{
-
  padding:3px 5px 3px 3px !important;	
- min-height: 58.7px !important;
 }
 
 #managerPicker .sp-peoplepicker-editorInput{
@@ -190,6 +202,39 @@ align-items: center;
 -webkit-align-items: center;
 -ms-flex-align: center;
 align-items: center;	
+
+}
+
+.sp-peoplepicker-topLevel{
+ padding:1px !important;	
+}
+
+.sp-peoplepicker-editorInput{
+ width:100% !important;
+ max-width:100% !important;
+ border:none !important; 	
+}
+.sp-peoplepicker-initialHelpText{
+  top:1px !important;	
+}
+ul.sub_listing li label input[type="radio"]{
+ margin-right:5px;	
+}
+
+ul.sub_listing li{
+ margin-bottom:10px;	
+}
+
+ul.sub_listing li:last-child{
+ margin-bottom:0;	
+}
+
+
+@media(min-width:768px){
+
+ul.sub_listing {
+    padding: 15px 20px 0;
+}
 
 }
 
@@ -320,7 +365,8 @@ $(document).ready(function(){
               <h4 class="main_heading" style="color:#ff0000">Employee Termination</h4>              
                            
              <div class="panel-body" style="padding:5px 0 15px 0">
-                
+               
+			<div class="row" style="margin:0;">
                <div class="col-md-12" style="background-color:#f5f5f5; padding-top:15px; padding-bottom:15px; margin-bottom:30px;">
                
                   <div class="row">
@@ -360,7 +406,9 @@ $(document).ready(function(){
 				  </div>
                 </div>
                
-            </div><!---row ed-->
+            </div>
+            
+            </div>
             
             <div class="row">
             
@@ -370,23 +418,58 @@ $(document).ready(function(){
             	     <li>The terminated user will not be able to access the portal</li>
             	     <li>The terminated user will be inactivate from all Project Team.</li>
             	     <li>
-            	         <div class="accesdms flexingsection">
-            	         <h3>Define new Project Manager, for those projects, where terminated user was in that role: </h3>
-            	          <div class="inputarea">
-            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
-            	         	<span id="ProjectManagerPicker"></span>	
-            	         </div>
-            	       </div>
+            	        <div class="accesdms flexingsection">
+            	         <h3>The Terminated user was Project Manager</h3>
+            	         <a href="#" class="linkbos" style="margin-left:10px; color:#1d6ec0;">10 Live Projects</a>
+            	        </div> 
+            	         <ul class="sub_listing">
+            	         	<li>	
+            	         		<div class="accesdms flexingsection">
+            	         		  <label for="re_assignedtobox">
+            	         		    <input type="radio" id="re_assignedtobox" name="assignsects" style="width:15px; height:15px; margin-top: 0 !important;">
+            	         		    Re-assigned to:
+            	         		  </label>
+									<div class="inputarea">
+			            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+			            	         	<span id="ProjectManagerPicker"></span>	
+		            	            </div>
+		            	         </div>   
+	            	         </li>
+	            	         <li>
+	            	         	<label for="terminate_projects">
+            	         		    <input type="radio" id="terminate_projects" name="assignsects" style="width:15px; height:15px; margin-top: 0 !important;">
+            	         		    Terminate those Projects
+            	         		  </label>
+							 </li>   
+            	         </ul>
             	     </li>
-            	     
             	     <li>
             	       <div class="accesdms flexingsection">
-            	         <h3>Define new Manager for those subordinates of the terminated user: </h3>
-            	          <div class="inputarea">
-            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
-            	         	<span id="subordinatesManagerPicker"></span>	
-            	         </div>
-            	       </div>
+            	         <h3>The Terminated user was Manager</h3>
+            	         <a href="#" class="linkbos" style="margin-left:10px; color:#1d6ec0;">5 subordinates</a>
+            	       </div>  
+            	       
+            	       <ul class="sub_listing">
+            	        	<li>
+            	        		<div class="accesdms flexingsection">
+	            	        		<label for="re_assigned_tosec">
+	            	         		    <input type="radio" id="re_assigned_tosec" name="new_reassigned" style="width:15px; height:15px; margin-top: 0 !important;">
+	            	         		    Re-assigned to:
+	            	         		  </label>
+	            	        		 <div class="inputarea">
+			            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+			            	         	<span id="subordinatesManagerPicker"></span>	
+			            	         </div>
+            	        		</div>
+							</li>
+							<li>
+	            	         	<label for="skip_fornow">
+            	         		    <input type="radio" id="skip_fornow" name="new_reassigned" style="width:15px; height:15px; margin-top: 0 !important;">
+            	         		    Skip for now
+            	         		  </label>
+							 </li> 
+            	       </ul>
+            	         
             	     </li>
             	     <!--<li>Define new Project Manager, for those projects, where terminated user was in that role <span id="ProjectManagerPicker"></span></li>
             	     <li>Define new Manager for those subordinates of the terminated user <span id="subordinatesManagerPicker"></span></li>
@@ -397,13 +480,28 @@ $(document).ready(function(){
             	     <li>The terminated user will be removed from all “My Groups”</li>
             	     <li>Access will be revoked from all kind of document library. i.e. My DMS, all Project DMS, Departmental DMS, Guest Portal DMS, Group DMS etc.</li>
             	     <li>
-            	       <div class="accesdms flexingsection">
-            	         <h3>The access of personal documents reassigned to: </h3>
-            	          <div class="inputarea">
-            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
-            	         	<span id="managerPicker"></span>	
-            	         </div>
-            	       </div>
+            	      The access of personal documents
+            	       <ul class="sub_listing">
+            	       		<li>
+            	       			<div class="accesdms flexingsection">
+	            	       			 <label for="access_documentsec">
+								      <input type="radio" id="access_documentsec" name="access_documentsec" style="width:15px; height:15px; margin-top: 0 !important;">
+								      Re-assigned to:
+								    </label>
+								     <div class="inputarea">
+			            	         	<!--<input type="text" class="form-control" placeholder="user here.">-->
+			            	         	<span id="managerPicker"></span>	
+			            	         </div>
+            	       			</div>
+            	       		</li>
+            	       		<li>
+            	       		<label for="skip_documentsec">
+							      <input type="radio" id="skip_documentsec" name="access_documentsec" style="width:15px; height:15px; margin-top: 0 !important;">
+							      Skip for now
+						    </label>
+            	       		</li>
+            	       </ul>
+            	       
             	     </li>
             	   </ul>
             	   
@@ -433,7 +531,7 @@ $(document).ready(function(){
     
     <!--<button type="button" class="btn  btn-outline-success" ng-show="mystatus=='Active'"  class="btn btn-success" style="font-size:11px;" ng-click="confirmation()"><label  data-localize="Submit"></label></button>-->	
     <button type="button" style="font-size:13px;" ng-show="mystatus=='Active'" ng-click="confirmation()" class="btn btn-outline-danger btnHR" id="terminate_btn" data-localize="Terminate">Terminate</button>
-    <button type="button" class="btn btn-outline-secondary" class="btn btn-warning" style="font-size:11px;" ng-click="redirectCancel()"><label  data-localize="Close"></label></button>	
+    <button type="button" class="btn btn-outline-secondary" class="btn btn-warning" style="font-size:11px;" ng-click="redirectCancel()"><label  data-localize="Close">Close</label></button>	
     
     
 	<!---	<input type="button" class="btn  btn-outline-success" ng-show="mystatus=='Active'"  class="btn btn-success" style="font-size:11px;" ng-click="confirmation()" value="Submit">
@@ -480,14 +578,9 @@ $(function () {
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-250</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">c96f3b0b-fb7a-4eee-9ffa-1245c926cf97</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-250, ADMIN-1645029823-250</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">25000.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title></title></head>
+</head>

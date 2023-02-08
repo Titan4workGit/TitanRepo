@@ -643,7 +643,7 @@ table.newgridtable tr td{
                 <div class="tab-content">
                     <div class="custom-panel custom-panel-box" style="padding:0 15px;">
                         <div class="panel-head">
-                            <h3 class="m-0">
+                            <h3 class="m-0" data-localize="Project">
                                 Project
                             </h3>
                         </div>
@@ -651,23 +651,23 @@ table.newgridtable tr td{
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Project:<sup class="start-box">*</sup></label>
+                                        <label for="" class="font-12" data-localize="ProjectName">Project Name:<sup class="start-box">*</sup></label>
                                         <input type="text" class="form-control" id="txtProjectName" maxlength="100">
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Department:<sup class="start-box">*</sup></label>
+                                        <label for="" class="font-12" data-localize="Department">Department:<sup class="start-box">*</sup></label>
                                         <div id="departmentDiv">
                                         </div>
                                     </div>
 
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Office Location:</label>
+                                        <label for="" class="font-12" data-localize="OfficeLocation">Office Location:</label>
                                         <div id="officeLocation">
                                         </div>
                                     </div>
 
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Client:<sup class="start-box">*</sup></label>
+                                        <label for="" class="font-12" data-localize="Customer">Customer:<sup class="start-box">*</sup></label>
                                         <!-- <div id="clientNameDiv"></div> -->
                                         <div class="create-new-project-client-box searchiconajust" style="display:block; position:relative;">
                                             <input type="text" id="CreateNewProjectClientInput" class="form-control" disabled="disabled" placeholder="Client Name">
@@ -680,35 +680,35 @@ table.newgridtable tr td{
                                     <div class="row">
                                         <div class="col-xs-6 istab-date">
                                             <div class="form-group custom-form-group">
-                                                <label class="font-12">Planned Start Date:<sup class="start-box">*</sup></label>
+                                                <label class="font-12" data-localize="PlannedStartDate">Planned Start Date:<sup class="start-box">*</sup></label>
                                                 <input type="text" placeholder="" class="form-control txtPlannedStartDate" readonly="true" name="date">
                                             </div>
                                         </div>
 
                                         <div class="col-xs-6 istab-date">
                                             <div class="form-group custom-form-group">
-                                                <label class="font-12">Planned End Date:<sup class="start-box">*</sup></label>
+                                                <label class="font-12" data-localize="PlannedEndDate">Planned End Date:<sup class="start-box">*</sup></label>
                                                 <input type="text" placeholder="" class="form-control txtPlannedEndDate" readonly="true" name="date">
                                             </div>
                                         </div>
 
                                         <div class="col-xs-6 istab-date">
                                             <div class="form-group custom-form-group">
-                                                <label class="font-12">Actual Start Date: </label>
+                                                <label class="font-12" data-localize="ActualStartDate">Actual Start Date: </label>
                                                 <input type="text" placeholder="" class="form-control txtActualStartDate" readonly="true" name="date">
                                             </div>
                                         </div>
 
                                         <div class="col-xs-6 istab-date ActualEndDate">
                                             <div class="form-group custom-form-group">
-                                                <label class="font-12">Actual End Date:</label>
+                                                <label class="font-12" data-localize="ActualEndDate">Actual End Date:</label>
                                                 <input type="text" placeholder="" class="form-control txtActualEndDate" readonly="true" name="date">
                                             </div>
 
                                         </div>
                                         <div class="col-xs-6 istab-date">
                                             <div class="form-group custom-form-group">
-                                                <label for="" class="font-12">Reference Code:</label>
+                                                <label for="" class="font-12" data-localize="Reference">Reference:</label>
                                                 <input type="text" class="form-control" id="txtProjectCode" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g, '')">
                                             </div>
                                         </div>
@@ -723,7 +723,7 @@ table.newgridtable tr td{
                                         
                                         <div class="col-xs-6 istab-date">
                                             <div class="form-group custom-form-group">
-                                                <label for="" class="font-12">Project Type:</label>
+                                                <label for="" class="font-12" data-localize="ProjectType">Project Type:</label>
                                                 <!--<input type="" class="form-control" id="txtTechnology" maxlength="50">	-->
                                                 <select class="form-control" id="txtTechnology"></select>
                                             </div>
@@ -735,21 +735,21 @@ table.newgridtable tr td{
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Business Domain:</label>
+                                        <label for="" class="font-12" data-localize="BusinessDomain">Business Domain:</label>
                                         <input type="text" class="form-control" id="txtDomain">
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Project Manager:<sup class="start-box">*</sup></label>
+                                        <label for="" class="font-12" data-localize="ProjectManager">Project Manager:</label><sup class="start-box">*</sup>
                                         <div id="ProjectManagerEmployeePicker" class=""></div>
                                     </div>
 
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Stakeholder:</label>
+                                        <label for="" class="font-12" data-localize="Stakeholder">Stakeholder:</label>
                                         <div id="StackeholderTeamEmployeePicker" class=""></div>
                                     </div>
 
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Project Sponsor:</label>
+                                        <label for="" class="font-12" data-localize="ProjectSponsor">Project Sponsor:</label>
                                         <div id="SponsorTeamEmployeePicker" class=""></div>
                                     </div>
 
@@ -763,12 +763,12 @@ table.newgridtable tr td{
                                         </select>
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Program:</label>
+                                        <label for="" class="font-12" data-localize="Program">Program:</label>
                                         <select class="form-control" id="ddlProgramList">
                                         </select>
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="" class="font-12">Details:</label>
+                                        <label for="" class="font-12" data-localize="ProjectDetails">Project Details:</label>
                                         <textarea class="form-control details-box-h" id="txtDescription" rows="5" id="" style="resize:none;" placeholder="Enter Details"></textarea>
                                     </div>
                                 </div>

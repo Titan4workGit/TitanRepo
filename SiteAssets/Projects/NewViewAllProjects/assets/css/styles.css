@@ -90,16 +90,13 @@ button.close {
 }
 .close-icon {
     position: relative;
-    top: -2px;
+    top: 0px;
     left: 0px;
 }
-.close-round:hover {
-    opacity: 1;
-    background-color: #333333;
-    color: #ffffff;
-}
+
 .custom-panel {
-    margin: 10px 0;
+    /* margin: 10px 0; */
+    margin: 0px 0;
     border: 1px solid #d4d4d4;
     background-color: #ffffff;
 }
@@ -366,6 +363,80 @@ label {
     font-weight: 500;
     font-size: 14px;
 }
+
+.program-edit-lock-btn-box,
+.Live-Projects,
+.total-Projects,
+.Completion{
+ text-align:center;	
+}
+
+#pickerSponsors .sp-peoplepicker-topLevel,
+#pickerStakeholders .sp-peoplepicker-topLevel{
+  padding:6px;	
+}
+
+#pickerSponsors .sp-peoplepicker-topLevel input.sp-peoplepicker-editorInput[type=text],
+#pickerStakeholders .sp-peoplepicker-topLevel input.sp-peoplepicker-editorInput[type=text]{
+    border: 0px;
+    padding: 0px 1px;
+    margin-left: 5px;
+    vertical-align: inherit;
+    background-color: transparent;
+    border: none !important;
+    width: auto;
+}
+
+#tblProgram tr td p.mb-10{
+  margin-bottom:3px !important;	
+}
+
+#tblProgram tr td:nth-last-child(2){
+  text-align:center;	
+}
+
+#tblProgram tr td .programname{
+ color:#1d6ec0;
+ font-weight:600;
+ font-size: 12px;
+ font-weight: 600;
+ text-overflow: ellipsis;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ word-wrap: break-word;
+ -webkit-line-clamp: 3;
+
+}
+
+#tblProgram tr td .refsec{
+  text-overflow: ellipsis;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-box-orient: vertical;
+ word-wrap: break-word;
+ -webkit-line-clamp: 3;
+
+}
+
+
+@media(min-width:767px){
+
+#myProgram .modal-lg {
+    width: 96% !important;
+    margin: 5px auto !important;
+}
+
+#myProgram .modal-body{
+ height:calc(100vh - 75px);	
+}
+
+#myProgram .wraptable.table-responsive {
+    max-height: calc(100vh - 150px);
+}
+
+}
+
 
 @media (max-width: 767px) {
     .project-view-deta-btn-panel {

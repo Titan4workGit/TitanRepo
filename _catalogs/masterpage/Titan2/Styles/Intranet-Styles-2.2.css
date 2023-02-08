@@ -9075,6 +9075,10 @@
 	.all-align-gap-container {
 	    padding: 0px 0px !important;
 	}
+	.all-align-gap-sub-container {
+	    padding-right: 0px !important;
+	    margin-left: 3px !important;
+	}
 	/* new css added on 17/9/2021 ----END---- */ 
 	
 	/* new css added for side panel new fav on 11/11/2021 ----START---- */ 
@@ -9109,7 +9113,8 @@
 	    align-items: center;
 	}
 	.my-favourites-panel-head-icon {
-	    max-width: 27px;
+	    /*max-width: 27px;*/
+	    max-width: 76px;
 	    width: 100%;
 	}
 	.my-favourites-panel-head-text {
@@ -9298,7 +9303,7 @@
 	    padding: 4px 7px !important;
 	    border-radius: 50% !important;
 	}
-	#galleryFirstImgThumb .cuadro_intro_hover:hover .caption {
+	/*#galleryFirstImgThumb .cuadro_intro_hover:hover .caption {
 	    transform: translateY(0px);
 	    -webkit-transform: translateY(0px);
 	    -moz-transform: translateY(0x);
@@ -9311,7 +9316,7 @@
 	    -moz-transform: translateY(0px);
 	    -ms-transform: translateY(0px);
 	    -o-transform: translateY(0px);
-	}
+	}*/
 	#gallerySecondImgThumb .videoThumbView, #galleryFirstImgThumb .videoThumbView {
 	    object-fit: scale-down !important;
 	}
@@ -9352,8 +9357,94 @@
 	#QRCodeModal .modal-dialog {
 	    margin: 15px auto 10px auto;
 	}
+	.menu-area>ul li>a {
+		text-decoration: none;
+	}
+	.menu-area>ul li>a span {
+	    color: #333 !important;
+	}
+	#MyFavEdit .modal-footer #btnEditFav {
+	    background-color: #1d6ec0;
+	    border-color: #1d6ec0;
+	    color: #ffffff;
+	    border-radius: 2px;
+	    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+	}
+	#MyFavEdit .modal-footer #btnEditFav:hover {
+	    color: #1d6ec0;
+	    background-color: #fff;
+	    border-color: #1d6ec0;
+	}
+	#MyFavEdit button.close {
+	    background: transparent;
+	    opacity: 1;
+	    color: #fff !important;
+	    top: 6px !important;
+	    margin-top: 0 !important;
+	    box-shadow: none;
+	    line-height: 1 !important;
+	}
+	#MyFavModal .modal-header .close, #MyFavAdd .modal-header .close {
+	    background: transparent;
+	    opacity: 1;
+	    color: #fff !important;
+	    top: 6px !important;
+	    margin-top: 0 !important;
+	    box-shadow: none;
+	    line-height: 1 !important;
+	    font-size: 21px !important;
+	}
 
 	/* new css added for side panel new fav on 11/11/2021 ----END---- */ 
+	
+	/* new css added 18-JAN-2023 Onwards ----START---- */ 
+.my-favourite-search {
+    float: right;
+    position: relative;
+    top: -9px;
+}
+#MyFavModal .my-favourite-add-edit-box {
+    overflow: visible;
+    box-shadow: none;
+    border: none;
+}
+#MyFavModal .my-favourites-panel {
+    /* background: #f9f9f9; */
+    background: #f3f3f3;
+    box-shadow: 0px 0px 6px #e2e2e2;
+    border-radius: 8px !important;
+}
+#MyFavModal .my-favourites-panel-head {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.my-favourites-panel-head-text1 {
+    color: #333 !important;
+    -webkit-line-clamp: 2;
+    font-size: 15px;
+}
+.my-favourites-panel-head-text2 {
+    color: #1d6ec0;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.my-favourites-panel-head-right {
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 2px #000;
+}
+.myFavAlertMsg {
+    padding: 0px 8px;
+}
+.my-favourite-search>input.fav-search:focus {
+    box-shadow: none;
+}
+#MyFavModal .modal-dialog {
+    width: 760px;
+}
+.my-favourites-panel-head-text {
+    padding-right: 5px;
+}
+	/* new css added 18-JAN-2023 Onwards ----END---- */ 
 	/* #F_A.l.l */
 
 	/* new responsive css added ----START---- */
@@ -9991,6 +10082,15 @@
 		#Attachmentbox #drop-zone {
 		    margin-bottom: 12px;
 		}
+		.my-favourite-search {
+    		float: inherit;
+    		position: relative;
+    		top: 0;
+    		margin-top: 15px;
+		}
+		#MyFavModal .modal-dialog {
+			width: auto;
+		}
 
 	}
 
@@ -10037,6 +10137,15 @@
 		}
 		.experiences-head-btn {
 		    flex-wrap: wrap;
+		}
+		.MyFavorite-new-menu-ul .MyFavorite-new-menu-ul-main-li {
+    		margin-bottom: 15px;
+		}
+		.my-favourite-search {
+    		margin-top: 0;
+		}
+		.my-favourite-add-edit-box {
+    		margin-bottom: 0px !important;
 		}
 
 	}

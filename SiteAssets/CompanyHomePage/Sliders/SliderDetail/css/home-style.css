@@ -8,9 +8,9 @@ body {
     font-family: SegoeUI;
     src:
         local("Segoe UI"),
-        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2") format("woff2"),
-        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"),
-        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2") format("woff2"),
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff") format("woff"),
+        url("//adaptindia.sharepoint.com///adaptindia.sharepoint.com///c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf") format("truetype");
     font-weight: 400;
 }
 ol, ul {

@@ -13,6 +13,12 @@
 		<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/JS/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js?1542"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css?ctag=221206" >
+
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/js/DocumentComments.js"></script>
 
 <style type="text/css">
 
@@ -49,25 +55,20 @@
 	text-align:center !important;
 }
 .table-icon-box{
- width:40px !important;	
+ width:32px !important;	
 }
 
-.acknowledge-btn{
- padding: 3px 12px !important;
- font-size: 12px !important;
- background:linear-gradient(to top, #dadada, transparent) !important;
- background:-webkit-linear-gradient(to top, #dadada, transparent) !important;
- background:-ms-linear-gradient(to top, #dadada, transparent) !important;
- background:-moz-linear-gradient(to top, #dadada, transparent)!important;	
- background:-o-linear-gradient(to top, #dadada, transparent)!important;	
- box-shadow: inset -1px -1px #fff;
- border-color:#bdbbbb !important;
- transition:0.2s;
+.acknowledge-btn {
+    padding: 3px 12px !important;
+    font-size: 12px !important;
+    background: #f0f0f0;
+    border-color: #abaaaa !important;
+    transition: 0.2s;
+    color: #333;
 }
 
 .acknowledge-btn:hover{
  border-color: #979797 !important;
- box-shadow: inset 1px 1px #fff;	
 }
 
 
@@ -108,8 +109,9 @@
  font-size:13px;	
 }
 
-.detail-view-table-btn .btn{
- font-size: 13px !important;	
+.detail-view-table-btn .btn {
+    font-size: 13px !important;
+    color: #333;
 }
 
 .detail-view-icon-info{
@@ -125,10 +127,1599 @@ max-width:18px !important;
 }
 
 .detail-modal-footer-right .experiences-inner-card-btn-panel-count .dropdown-menu {
-    bottom: auto;
-    top: 46%;
+    bottom: 117%;
+    top: auto;
+    background: #fdfdfd;
+    padding: 2px 2px;
+    box-shadow: none;
+    border: 1px solid #c7c4c4;
+    right: auto;
+    left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-o-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+    overflow:visible;
+    box-shadow:0px 0px 5px #e3e3e3;
+} 	
+
+.detail-modal-footer-right .experiences-inner-card-btn-panel-count .dropdown-menu::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fdfdfd;
+    position: absolute;
+    left: 49%;
+    display: block;
+     -webkit-transform:rotate(45deg) translate(-50%, 0);
+    -moz-transform:rotate(45deg) translate(-50%, 0);
+    -ms-transform:rotate(45deg) translate(-50%, 0);
+    -o-transform:rotate(45deg) translate(-50%, 0);
+    transform:rotate(45deg) translate(-50%, 0);
+    bottom: -8px;
+    border-right: 1px solid #c7c4c4;
+    border-bottom: 1px solid #c7c4c4;
 }
-	
+
+#doc-viewer #iframe-viewer{
+ height: calc(100vh - 156px);
+ min-height:calc(100vh - 156px);	
+}
+
+.dropdown-menu.blank_options{
+  display:none !important;	
+}
+
+.detail-modal-footer-right .experiences-inner-card-btn-panel-count .dropdown-menu li a {
+    padding:4px 6px !important;
+}
+
+.Corporatediv{
+width: 250px;
+margin-left:0;
+display: block;
+font-size:12px;	
+}
+
+.Corporatediv div label{
+ margin-right:3px;	
+}
+
+.Corporatediv div span{
+ margin-left:3px;	
+}
+
+
+.close-round{
+    font-weight: bold !important;
+    font-size: 18px;
+    top: 10px;
+    background: #fff;
+    text-shadow: 0px 0px 4px #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgb(0 0 0 / 23%);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+    padding: 2px 0px 0px 0px !important;
+    color: #000;
+    top: 12px;
+}
+
+.modal-header .close {
+    margin-top: -4px;
+    min-width: 1rem !important;
+    background: #fff;
+}
+
+.modal-header .close:hover {
+    margin-top: -4px;
+    min-width: 1rem !important;
+    background: #333;
+    color:#fff;
+}
+
+/* message panel classes   */
+.mr-8 {
+    margin-right: 8px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+.chat-main-panel {
+  overflow: auto;
+  max-height: 385px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 16px;
+}
+.view-more-replies {
+    color: #1d6ec0;
+}
+.reply-box-ext {
+    padding: 2px 5px;
+    background: #ffffff;
+    clear: both;
+    width: auto;
+    max-width: 80%;
+    margin-bottom: 5px;
+}
+.reply-author-detail {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+}
+.reply-author-detail span {
+    font-size: 14px;
+    display: inline-block;
+}
+.chat-user-image {
+    border: 1px solid #e1e1e1;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+}
+.b-500 {
+    font-weight: 500;
+}
+.msg-like-img {
+    max-width: 16px;
+    margin: 0px 4px 0px 6px;
+}
+.my-chat-edit-delete-panel {
+    position: relative;
+}
+.reply-box-ext h4 {
+    font-size: 14px;
+    margin-top: 0px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+    margin-bottom: 5px;
+}
+.mt-4 {
+    margin-top: 4px;
+}
+.chat-edit-delete-panel {
+    position: absolute;
+    top: -15px;
+    right: 3px;
+    height: 30px;
+    width: 30px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.chat-edit-delete-panel img {
+    max-width: 20px;
+    width: 100%;
+}
+.my-chat-edit-delete-panel:hover .chat-edit-delete-panel {
+    opacity: 1;
+}
+.chat-edit-delete-dropdown {
+    top: 0px;
+    border-radius: 10px;
+    min-width: 100px;
+    border: 0;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+}
+.chat-edit-delete-dropdown li {
+    padding-left: 10px;
+}
+.chat-edit-delete-dropdown li a, .chat-edit-delete-dropdown li button {
+    padding: 3px 10px 3px 4px;
+    border-bottom: 1px solid #cccccc;
+    background: #ffffff;
+    width: 100%;
+    text-align: left;
+    border-radius: 0px;
+}
+.chat-edit-delete-dropdown li:last-child a, .chat-edit-delete-dropdown li:last-child button {
+    border-bottom: 0;
+}
+.attachment-badge {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+.chip-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 3px 0;
+}
+.attachment-badge .upload-chip {
+    font-size: 10px;
+    line-height: 11px;
+    margin-top: 3px;
+    margin-right: 4px;
+    padding: 3px 5px;
+    color: #666 !important;
+    background-color: white !important;
+    border: 1px solid #e1e1e1 !important;
+    width: auto;
+    float: left;
+    border-radius: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    padding-right: 16px;
+}
+.chip-text-box {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.chip-icon-box {
+    position: absolute;
+    right: 4px;
+    background: #fff;
+}
+.reply-box-my {
+    padding: 2px 0px;
+    background: #ffffff;
+    text-align: right;
+    width: 100%;
+    float: right;
+    max-width: 80%;
+    margin-bottom: 5px;
+}
+.reply-box-my h4 {
+    font-size: 14px;
+    margin-top: 0px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+    margin-bottom: 5px;
+}
+.reply-box-my .chip-box {
+    justify-content: flex-end;
+}
+.reply-box-my .attachment-badge .upload-chip {
+    margin-right: 0px;
+    margin-left: 4px;
+}
+.mt-14 {
+    margin-top: 14px;
+}
+.reply-text-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.comment-reply-user-name-info {
+    color: #2a6496;
+    padding-right: 4px;
+}
+.reply-text-box {
+    font-size: 14px;
+    word-break: break-all;
+    text-align: justify;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 2px #c5c5c5;
+}
+/*.upload-outer-chip-box-3 {
+    position: absolute;
+    z-index: 100;
+    bottom: 74px;
+    width: calc(100% - 18px);
+    padding: 5px 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0),rgb(255 255 255 / 60%),rgb(255 255 255 / 80%), rgb(255 255 255 / 88%), rgb(255 255 255 / 90%), rgba(255,255,255,1));
+} */  
+.reply-text-line-cross {
+    text-align: right;
+}
+
+.reply-text-line-cross a {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  /*background: rgb(0 0 0 / 30%);*/
+  background: #ccc;
+  color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.4s;
+}
+.reply-text-line-cross a:hover {
+  background: rgb(0 0 0 / 35%);
+  color: #000000;
+}
+.upload-outer-chip-box-2 .attachment-badge .upload-chip {
+    padding-right: 32px;
+}
+.main-comment-panel {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+.main-comment-panel .comment-area {
+  width: 100%;
+  margin-right: 8px;
+}
+.main-comment-panel .comment-area .custom-form-group .form-control {
+    border-radius: 10px;
+    resize: none;
+    border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);
+}
+.main-comment-panel .comment-btn-pannel {
+    display: flex;
+}
+.main-comment-panel .comment-btn-pannel .btn {
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #e1e1e1;
+    box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+    position: relative;
+}
+.main-comment-panel .mr-8 {
+    margin-right: 8px;
+}
+.main-comment-panel .btn-file-upload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.main-comment-panel input.btn-file-upload[type=file] {
+    font-size: 0px;
+}
+.main-comment-panel .comment-btn-pannel .btn img {
+    max-width: 22px;
+}
+.main-comment-panel .comment-btn-pannel .btn {
+    padding: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    border-color: #e1e1e1;
+    box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+    position: relative;
+}
+.main-chat-text-area {
+  position: relative;
+}
+/* .experiences-inner-card-btn-panel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+} */
+.experiences-inner-card-btn-item {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.experiences-inner-card-btn-panel li {
+    line-height: 0px;
+    font-size: 14px;
+}
+.experiences-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+.experiences-inner-card-btn-panel-icon button {
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    line-height: 0px;
+}
+.experiences-inner-card-btn-panel-icon button:active {
+    box-shadow: none;
+}
+.experiences-inner-card-btn-panel-icon img {
+    max-width: 16px;
+}
+.experiences-inner-card-btn-panel-dot span {
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: #000000;
+    margin: 0px 8px;
+    margin-top: 2px;
+    opacity: 0.4;
+}
+
+    /* occassion chat top views, comments and likes section css START */
+
+    .mr-8 {
+        margin-right: 8px;
+    }
+
+    .mr-4 {
+        margin-right: 4px;
+    }
+
+    .chat-main-panel {
+        overflow: auto;
+        max-height: 210px;
+        /*max-height: 186px;*/
+        padding-right: 12px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 16px;
+        margin-bottom: 1px;
+    }
+
+    .view-more-replies {
+        color: #1d6ec0;
+    }
+
+    .reply-box-ext {
+        padding: 2px 5px;
+        background: #ffffff;
+        clear: both;
+        width: auto;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-ext .chip-box {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-author-detail {
+        font-size: 14px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+        .reply-author-detail span {
+            font-size: 14px;
+            display: inline-block;
+        }
+
+    .chat-user-image {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+    }
+
+    .b-500 {
+        font-weight: 500;
+    }
+
+    .msg-like-img {
+        max-width: 16px;
+        margin: 0px 4px 0px 6px;
+    }
+
+    .my-chat-edit-delete-panel {
+        position: relative;
+    }
+
+    .reply-box-ext h4 {
+        /*font-size: 14px;*/
+        font-size: 13.5px;
+        margin-top: 0px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 8px 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        margin-bottom: 5px;
+        color: #4a4a4a;
+        background: #e6e6e6;
+    }
+
+    .reply-box-ext .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .mt-4 {
+        margin-top: 4px;
+    }
+
+    .chat-edit-delete-panel {
+        position: absolute;
+        top: -15px;
+        right: 3px;
+        height: 30px;
+        width: 30px;
+        background: #ffffff;
+        border-radius: 50%;
+        /*border: 1px solid #e1e1e1;*/
+        border: 1px solid #bbbbbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 6px 0 rgb(0 0 0 / 20%);
+        opacity: 0;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+        .chat-edit-delete-panel img {
+            max-width: 20px;
+            width: 100%;
+        }
+
+    .my-chat-edit-delete-panel:hover .chat-edit-delete-panel {
+        opacity: 1;
+    }
+
+    .chat-edit-delete-dropdown {
+        top: 0px;
+        border-radius: 10px;
+        min-width: 100px;
+        border: 0;
+        /*box-shadow: 0 2px 12px rgb(0 0 0 / 18%);*/
+        box-shadow: 0 2px 12px rgb(74 74 74 / 44%);
+    }
+
+        .chat-edit-delete-dropdown li {
+            padding-left: 10px;
+        }
+
+            .chat-edit-delete-dropdown li a, .chat-edit-delete-dropdown li button {
+                padding: 3px 10px 3px 4px;
+                border-bottom: 1px solid #cccccc;
+                background: #ffffff;
+                width: 100%;
+                text-align: left;
+                border-radius: 0px;
+                color: #262626;
+            }
+
+            .chat-edit-delete-dropdown li:last-child a, .chat-edit-delete-dropdown li:last-child button {
+                border-bottom: 0;
+            }
+
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+    .dropdown-menu > li > button:hover, .dropdown-menu > li > button:focus {
+        text-decoration: none;
+        color: #262626;
+        background-color: #f5f5f5;
+        border-right-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        cursor: pointer !important;
+    }
+
+    .main-comment-panel .comment-btn-pannel button {
+        min-width: 2em !important;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 0 3px 0;
+    }
+
+    .attachment-badge .upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 5px;
+        color: #666 !important;
+        background-color: white !important;
+        /*border: 1px solid #e1e1e1 !important;*/
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /*border-radius: 20px;*/
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        padding-right: 16px;
+    }
+
+    .chip-text-box {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .chip-icon-box {
+        position: absolute;
+        right: 4px;
+        background: #fff;
+    }
+
+    .reply-box-my .attachment-badge a {
+        font-size: 11px;
+        line-height: 10px;
+        margin-top: 0px;
+        margin-right: 3px;
+        margin-left: 0px;
+        padding: 2px 6px;
+        border-color: #e1e1e1 !important;
+        color: #666 !important;
+        background-color: #ffffff;
+        /* border: 1px solid #666; */
+        border: none !important;
+        width: auto;
+        border-radius: 20px;
+        display: inline-block;
+    }
+
+    .reply-box-my {
+        padding: 2px 0px;
+        background: #ffffff;
+        text-align: right;
+        width: 100%;
+        float: right;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+        .reply-box-my h4 {
+            /*font-size: 14px;*/
+            font-size: 13.5px;
+            margin-top: 0px;
+            word-break: break-all;
+            text-align: justify;
+            font-weight: 400;
+            border-radius: 10px;
+            padding: 8px 10px;
+            /*box-shadow: 0 0 2px #9c9c9c;*/
+            box-shadow: 0 0 2px #4a4a4a;
+            margin-bottom: 5px;
+            color: #4a4a4a;
+        }
+
+        .reply-box-my .chip-box {
+            justify-content: flex-end;
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+        .reply-box-my .attachment-badge .upload-chip {
+            margin-right: 0px;
+            margin-left: 4px;
+        }
+
+    .mt-14 {
+        margin-top: 14px;
+    }
+
+   /* .reply-text-line {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }*/
+
+    .comment-reply-user-name-info {
+        color: #2a6496;
+        padding-right: 4px;
+    }
+
+    .reply-text-box {
+        /*font-size: 14px;*/
+        font-size: 13.8px;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        border-radius: 10px;
+        padding: 10px;
+        /*box-shadow: 0 0 2px #9c9c9c;*/
+        box-shadow: 0 0 2px #4a4a4a;
+        color: #4a4a4a;
+    }
+
+    .upload-outer-chip-box-3 {
+        /*position: absolute;
+    z-index: 100;
+    bottom: auto;
+    top: -59px;
+    width: calc(100% - 9px);
+    padding: 5px 5px;
+    background: #fff;
+    border: 1px solid #c8c8c8;
+    border-radius: 8px;
+    border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);*/
+        position: relative;
+        z-index: 100;
+        bottom: auto;
+        top: 0;
+        width: 100%;
+        /*padding: 0px 2px 5px 2px;*/
+        padding: 0px 30px 5px 2px;
+        font-size: 13.5px;
+        font-weight: 400;
+    }
+
+        .upload-outer-chip-box-3 .attachment-badge {
+            margin-top: 8px;
+            word-break: break-all;
+        }
+
+    .reply-text-line-cross {
+        text-align: right;
+        cursor: pointer;
+        position: absolute;
+        right: -4px;
+        top: -5px;
+
+    }
+
+        .reply-text-line-cross a {
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            line-height: 20px;
+            /*background: rgb(0 0 0 / 30%);*/
+            background: #ccc;
+            color: #000;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+            .reply-text-line-cross a:hover {
+                background: rgb(0 0 0 / 35%);
+                color: #000000;
+            }
+
+    .upload-outer-chip-box-2 .attachment-badge .upload-chip {
+        padding-right: 32px;
+    }
+
+    .main-comment-panel {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        z-index: 1;
+    }
+
+        .main-comment-panel .comment-area {
+            width: 100%;
+            margin-right: 8px;
+        }
+
+            .main-comment-panel .comment-area .custom-form-group .form-control {
+                border-radius: 10px;
+                resize: none;
+                /* border-color: #e1e1e1;
+    box-shadow: 0 5px 14px 0px rgb(0 0 0 / 9%);*/
+                border-color: #c7c7c7;
+                box-shadow: 0 4px 12px 0px rgb(0 0 0 / 14%);
+            }
+
+        .main-comment-panel .comment-btn-pannel {
+            display: flex;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn {
+                padding: 5px;
+                border-radius: 10px !important;
+                background: #ffffff;
+                border-color: #e1e1e1;
+                box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+                position: relative;
+            }
+
+        .main-comment-panel .mr-8 {
+            margin-right: 8px;
+        }
+
+        .main-comment-panel .btn-file-upload {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .main-comment-panel input.btn-file-upload[type=file] {
+            font-size: 0px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn img {
+            max-width: 22px;
+        }
+
+        .main-comment-panel .comment-btn-pannel .btn {
+            padding: 5px;
+            border-radius: 10px;
+            background: #ffffff;
+            /*border-color: #e1e1e1;*/
+            border-color: #bbbbbb;
+            box-shadow: 0 8px 20px 1px rgb(0 0 0 / 9%);
+            position: relative;
+            transition: all 0.35s;
+        }
+
+            .main-comment-panel .comment-btn-pannel .btn:hover {
+                /* border-color: #bbbbbb;*/
+                box-shadow: 0 0 0 3px rgb(0 0 0 / 9%);
+            }
+
+                .main-comment-panel .comment-btn-pannel .btn:hover > div {
+                    transform: rotate(-45deg);
+                    transition: all 0.35s;
+                }
+
+        .main-comment-panel .comment-btn-pannel a.btn:hover img {
+            transform: rotate(45deg);
+            transition: all 0.35s;
+        }
+
+    .main-chat-text-area {
+        position: relative;
+        word-break: break-all;
+        text-align: justify;
+        font-weight: 400;
+        color: #4a4a4a;
+    }
+
+    .main-chat-text-area-border {
+        padding: 10px;
+        margin: 0px 1px 0px 4px;
+        box-shadow: 0 0 2px #4a4a4a;
+        border-radius: 10px;
+        background: #e6e6e6;
+    }
+
+    /* .experiences-inner-card-btn-panel {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        justify-content: flex-start;
+        margin-bottom: 25px;
+        padding-left: 4px;
+    } */
+
+    .experiences-inner-card-btn-item {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .experiences-inner-card-btn-panel li {
+        line-height: 0px;
+        font-size: 14px;
+    }
+
+    .experiences-comment-container-count .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-count > a {
+        padding-left: 0px;
+        padding-right: 0px;
+        color: #000000;
+        position: relative;
+        top: -3px;
+        /*padding-left: 0px;
+        padding-right: 0px;
+        color: #000000;
+        position: relative;
+        top: 0px;
+        margin-top: 0;*/
+    }
+
+    .experiences-inner-card-btn-panel-icon {
+        margin-right: 8px;
+    }
+
+        .experiences-inner-card-btn-panel-icon button {
+            padding: 0;
+            background: transparent;
+            border: 0;
+            font-size: 14px;
+            line-height: 0px;
+        }
+
+            .experiences-inner-card-btn-panel-icon button:active {
+                box-shadow: none;
+            }
+
+        .experiences-inner-card-btn-panel-icon img {
+            max-width: 16px;
+        }
+
+    .experiences-inner-card-btn-panel-dot span {
+        display: block;
+        height: 4px;
+        /* width: 4px; */
+        width: 10px;
+        border-radius: 50%;
+        background-color: #000000;
+        margin: 0px 8px;
+        margin-top: 2px;
+        opacity: 0.4;
+    }
+
+    .experiences-inner-card-btn-panel .experiences-inner-card-btn-item .experiences-inner-card-btn-panel-dot span {
+        margin-top: 2px !important;
+        padding: 0px 0px !Important;
+        visibility: hidden;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+        .show-comment-panel::-webkit-scrollbar-track {
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar {
+            width: 6px;
+            background-color: #F5F5F5;
+        }
+
+        .show-comment-panel::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            background-color: #999;
+        }
+
+    .pb-40 {
+        padding-bottom: 40px;
+    }
+
+    .mt-10 {
+        margin-top: 10px;
+    }
+
+    .mb-20 {
+        margin-bottom: 20px;
+    }
+
+    .pt-8 {
+        padding-top: 8px;
+    }
+
+    .pt-15 {
+        padding-top: 15px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .like-user-name {
+        /* padding-left: 10px; */
+        padding-left: 10px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        width: calc(100% - 28px);
+    }
+
+        .like-user-name h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+    .likes-panel .likes-box:last-child {
+        padding-bottom: 0;
+    }
+
+    .show-comment-panel {
+        overflow: auto;
+        max-height: calc(100vh - 200px);
+        padding-top: 0;
+        margin-top: 14px;
+        padding: 0px 10px 14px 14px;
+    }
+
+    .likes-box {
+        display: flex;
+        align-items: center;
+        padding: 6px 0;
+        /* border-bottom: 1px solid #cccccc; */
+        position: relative;
+    }
+
+        .likes-box::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 38px);
+            height: 1px;
+            background: #cccccc;
+        }
+
+    .likes-panel .likes-box:last-child::after {
+        display: none;
+    }
+
+    .comment-reply-user-name {
+        border: 1px solid #e1e1e1;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: #ffffff;
+        font-size: 12px;
+        text-align: center;
+        line-height: 29px;
+        overflow: hidden;
+    }
+
+    .comment-reply-user-name-lt {
+        display: none;
+    }
+
+    .comment-reply-user-name-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .show-inner-likes-box {
+        max-width: 259px;
+        width: 100%;
+        background: #ffffff;
+        position: absolute;
+        top: 98px;
+        right: 14px;
+        z-index: 10;
+        transition: all 0.5s;
+    }
+
+    .comment-container {
+        box-shadow: 0 2px 13px 1px rgb(0 0 0 / 10%);
+        border-radius: 10px;
+    }
+
+    .likes-close-box {
+        padding: 8px 14px 0px 14px;
+        text-align: right;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box .likes-panel {
+        max-height: 200px;
+        overflow: auto;
+        padding-left: 14px;
+    }
+
+    .show-inner-likes-box-hide {
+        /*transform: translate(106%);*/
+        transform: translate(146%);
+    }
+
+    .hide-comment-box-scroll {
+        /*overflow: hidden;*/
+    }
+
+    .countInnerLikes {
+        cursor: pointer;
+    }
+
+    .attachment-badge {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .chip-box {
+        display: flex;
+        padding: 0 0 3px 0;
+        flex-wrap: wrap;
+    }
+
+    .comment-container .attachment-badge {
+        margin-top: 8px;
+        word-break: break-all;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .show-inner-likes-box-hide {
+        transform: translate(146%);
+        /*transform: translate(16%);*/
+        opacity: 0;
+    }
+
+    .my-chat-edit-delete-panel-inside .emojioneemoji {
+        width: 22px;
+    }
+
+    .emojionearea .emojionearea-picker.emojionearea-picker-position-left, .emojionearea .emojionearea-picker.emojionearea-picker-position-right {
+        margin-right: -104px !important;
+        top: 30px !important;
+    }
+
+    #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-left, #comments .main-chat-text-area .emojionearea .emojionearea-button.active + .emojionearea-picker-position-right {
+        margin-right: -92px !important;
+        top: 30px !important;
+    }
+
+    #myModalforwish {
+        overflow-x: hidden;
+    }
+
+    .reply-author-detail span {
+        font-size: 13.5px !important;
+        font-weight: 400 !important;
+    }
+
+    .msg-like-img {
+        position: relative;
+        top: -2px;
+    }
+
+    .my-chat-edit-delete-panel .emojioneemoji, .upload-outer-chip-box-3 .emojioneemoji {
+        /*width: 22px;*/
+        /*width: 19.5px;*/
+        width: 17px;
+    }
+
+    .reply-text-line {
+        overflow: hidden;
+        /*max-height: 70px;*/
+        max-height: 18px;
+        line-height: 17px;
+    }
+    .replymsg {
+        display: inline;
+    }
+    .attachment-badge-name {
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+    }
+    #oldfilename .attachment-badge-name:first-child {
+        margin: 0px 5px 0px 0px;
+    }
+    #oldfilename .Closebtn {
+        cursor: pointer;
+    }
+    #NewAttachmentFiles {
+        margin: 1px 0px 0px 0px;
+        float: left;
+        /*overflow: auto;*/
+        /*max-height: 48px;*/
+    }
+    .comment-upload-chip .closeBtn {
+        cursor: pointer;
+    }
+    .comment-upload-chip {
+        font-size: 10px;
+        line-height: 11px;
+        margin-top: 3px;
+        margin-right: 4px;
+        padding: 3px 6px;
+        color: #666 !important;
+        background-color: white !important;
+        /* border: 1px solid #e1e1e1 !important; */
+        border: 1px solid #bbbbbb !important;
+        width: auto;
+        float: left;
+        /* border-radius: 20px; */
+        border-radius: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-comment-panel .emojionearea .emojionearea-editor {
+        /*max-height: 7em;*/
+        max-height: 6em;
+    }
+    .reply-inside-text-box {
+        background: #fff;
+    }
+    .others-reply-text-box {
+        background: #e6e6e6;
+    }
+    .main-comment-panel .emojionearea-editor {
+        margin-right: 0px;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar-track {
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+    .main-comment-panel .emojionearea-editor::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #999;
+    }
+    .chat-main-panel {
+        padding-bottom: 10px;
+    }
+
+    /* new css added on 29-8-2022 */
+
+    #chat_sec {
+        overflow-x: hidden;
+    }
+    .mes_topsec{ 
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom:5px;
+    }
+    .msg_detailbx{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+    }
+
+    .ms_left{
+      min-width:310px;
+    }
+
+    .msg_imgsec {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+      box-shadow: 2px 2px 5px #ccc;
+    }
+
+    .msg_imgsec img{
+      width:35px;
+      height:35px;
+      border-radius:50%;
+    }
+
+    .combo_modify, .combo_label {
+        font-size: 13px;
+        color: #4A4A4A;
+    }
+
+    .combo_modify label,
+    .combo_label label{
+    font-weight: 600;
+    font-size:13.5px;
+    }
+
+    .combo_modify,
+    .combo_label{
+    margin-bottom:5px;	
+    }
+
+    .msg_details h6{
+      padding:0;
+      margin:2px 0 0;
+      font-size:12px;
+    }
+
+    #chat_sec .modal-body label {
+        font-size: 13px !important;
+    }
+
+    .msg_details a {
+        /* display: block; */
+        font-size: 13px;
+        text-decoration: none;
+        color: #337ab7 !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+        -webkit-line-clamp: 1;
+        width: 175px;
+    }
+
+    .message_info{
+    box-shadow:0 2px 13px 1px rgb(74 74 74 / 40%);
+    border-radius: 10px;
+    }
+    .experiences-inner-card-btn-panel li {
+        cursor: pointer;
+    }
+
+/* new css added on 29-8-2022 */
+
+#chat_sec {
+        overflow-x: hidden;
+    }
+    .mes_topsec{ 
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+
+      justify-content: space-between;
+      -webkit-justify-content: space-between;
+
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom:5px;
+    }
+    .msg_detailbx{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; 
+    }
+
+    .ms_left{
+      min-width:310px;
+    }
+
+    .msg_imgsec {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      margin-right: 10px;
+      box-shadow: 2px 2px 5px #ccc;
+    }
+
+    .msg_imgsec img{
+      width:35px;
+      height:35px;
+      border-radius:50%;
+    }
+
+    .combo_modify, .combo_label {
+        font-size: 13px;
+        color: #4A4A4A;
+    }
+
+    .combo_modify label,
+    .combo_label label{
+    font-weight: 600;
+    font-size:13.5px;
+    }
+
+    .combo_modify,
+    .combo_label{
+    margin-bottom:5px;	
+    }
+
+    .msg_details h6{
+      padding:0;
+      margin:2px 0 0;
+      font-size:12px;
+    }
+
+    #chat_sec .modal-body label {
+        font-size: 13px !important;
+    }
+
+    .msg_details a {
+        /* display: block; */
+        font-size: 13px;
+        text-decoration: none;
+        color: #337ab7 !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        word-wrap: break-word;
+        -webkit-line-clamp: 1;
+        width: 175px;
+    }
+
+    .message_info{
+    box-shadow:0 2px 13px 1px rgb(74 74 74 / 40%);
+    border-radius: 10px;
+    }
+    .experiences-inner-card-btn-panel li[data-target="#chat_sec"] {
+      cursor: pointer;
+  }
+  #chat_sec .detail-view-right-chat-area {
+  padding-left: 0;
+  padding-right: 0;
+}
+#chat_sec .detail-view-right-chat-area {
+  width: 100%;
+  margin: 10px auto 0 auto;
+  float: none;
+}
+#chat_sec .comment-container {
+  /* box-shadow: 0 2px 13px 1px rgb(0 0 0 / 10%); */
+  box-shadow: 0 2px 13px 1px rgb(74 74 74 / 40%);
+  border-radius: 10px;
+}
+#chat_sec .experiences-inner-card-btn-panel {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 0px;
+    position: relative;
+    border: 10px;
+    right: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+}
+#chat_sec .experiences-inner-card-btn-panel ul.nav.experiences-inner-card-btn-item {
+    padding: 10px 0 0 0;
+    margin: 0px;
+    list-style: none;
+}
+#chat_sec .experiences-inner-card-btn-panel li {
+    line-height: 0px;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin-right: 0;
+}
+#chat_sec .experiences-inner-card-btn-panel-icon {
+    margin-right: 8px;
+}
+#chat_sec .experiences-inner-card-btn-panel-icon img {
+    max-width: 16px;
+    position: relative;
+    top: 0px;
+}
+#chat_sec .experiences-inner-card-btn-panel li a {
+    padding: 0;
+}
+#chat_sec .experiences-inner-card-btn-panel-dot span {
+    display: block;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 0px 8px;
+    margin-top: 2px;
+    opacity: 0.4;
+}
+#chat_sec .experiences-inner-card-btn-panel-icon {
+    margin-right: 8px !important;
+}
+/* occassion chat top views, comments and likes section css END */
+
+/***nov-14-22****/
+
+.custom-panel.custom-panel-box,
+.article-content {
+    margin:0 5px !important;
+}
+
+.detail-view-icon-info{
+    filter: none !important;
+}
+
+
+textarea#DocShareCommentsModel[readonly]{
+ background:#fff !important;
+ cursor:default !important;
+}
+
+textarea#DocShareCommentsModel[readonly]:focus,
+textarea#DocShareCommentsModel[readonly]:hover{
+ outline:!important;
+ box-shadow:none !important;
+ }
+
+/***nov-14-22 ed****/
+
+
+table tr td .experiences-inner-card-btn-item .acknowledge-div,
+table tr td .experiences-inner-card-btn-item .view-div,
+table tr td .experiences-inner-card-btn-item .like-div,
+table tr td .experiences-inner-card-btn-item .comment-div{
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items:center; 	
+margin-right:10px;
+
+}
+table tr td .experiences-inner-card-btn-item .view-div {
+    pointer-events: none;
+}
 </style>
 
  <script type="text/javascript">
@@ -155,11 +1746,6 @@ max-width:18px !important;
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">333600.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -170,9 +1756,14 @@ max-width:18px !important;
 					<div class="tab-content">
 						<div class="custom-panel custom-panel-box">
 							<div class="panel-head">
-								<h3 class="m-0">
-									Company Documents
-	                            </h3>
+								<div class="topmangheadsec">
+									<h3 class="m-0" data-localize="Company Documents">Company Documents</h3>
+									<div class="detail-view-table-btn" style="margin-bottom:0;">
+										<!--------<button type="button" class="btn" data-toggle="modal" data-target="#myModalupload">
+										<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/upload.png" atr="upload" style="width:18px; margin-right:3px;"> 
+										Upload</button>------>
+									</div>
+								</div>
 							</div>
 							<div class="panel-body px-0 pt-8">
 								<div class="row m-0">
@@ -180,7 +1771,7 @@ max-width:18px !important;
 										<div class="scrollbar-panel chip-panel">
 											<div class="chip-box">
 												<div class="upload-chip" id="DeptTitleCard">Department: </div>
-												<div class="upload-chip" id="DocTypeCard">Type: </div>
+												<div class="upload-chip"  id="DocTypeCard"></div>
 											</div>
 										</div>
 									</div>
@@ -192,7 +1783,7 @@ max-width:18px !important;
 									<div class="col-sm-10 col-sm-push-2 document-top-panel-box-istad" style="margin-top:0px">
 										<div class="detail-view-deta-btn-panel d-flex">
 								            <div class="dropdown detail-view-table-btn">
-								              <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#document-filter">
+								              <button class="btn dropdown-toggle" onclick="filterEvent()" type="button" data-toggle="modal" data-target="#multi_box">
 								                  <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/filter-icon.png" alt="filter">
 								                  <span>Filter</span>
 								              </button>
@@ -356,7 +1947,7 @@ max-width:18px !important;
 		</div>
 
 	  	<!-- filter Modal -->
-		<div class="modal fade" id="document-filter" role="dialog">
+		<!------------<div class="modal fade" id="document-filter" role="dialog">
 			<div class="modal-dialog modal-sm">
 			  	<div class="modal-content ">
 				    <div class="modal-header">
@@ -377,9 +1968,80 @@ max-width:18px !important;
 				    </div>
 			  	</div>
 			</div>
-		</div>
+		</div>------>
+		
 
-		<!-- Details Modal -->
+<!-- filter_box -->
+<div id="multi_box" class="modal fade" role="dialog" style="background: rgba(0,0,0,0.5)">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+        <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Filter</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Category</label>
+              <select class="form-control" id="ddlFilterCategory" onchange="getSubCategory(this.value)">
+                
+              </select>
+            </div>
+          </div><!---col ed6-->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Sub Category</label>
+               <select class="form-control" id="ddlFilerSubCatergory">
+                
+              </select>
+            </div>
+          </div><!---col ed6-->
+        </div><!---row ed-->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Company</label>
+              <select class="form-control" id="ddlCompanyFilter" onchange="getAllDepartment(this.value)">
+                
+              </select>
+            </div>
+          </div><!---col ed6-->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Department</label>
+               <select class="form-control" id="ddlDepartmentList">
+                
+              </select>
+            </div>
+          </div><!---col ed6-->
+        </div><!---row ed-->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Acknowledgement</label>
+              <select class="form-control" id="ddlAcknowledgement">
+                <option value="both">-select-</option>
+                <option value="yes">Required</option>
+                <option value="No">Not Required</option>
+              </select>
+            </div>
+          </div><!---col ed6-->
+        </div>        
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" onclick="getDataFromShareDocumentbyFilterQuery();" data-dismiss="modal" class="btn custom-btn">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!---filter--->
+		
+		
 		<div class="modal fade detail-modal-panel pr0" id="details-modal" role="dialog">
 			<div class="modal-dialog modal-md">
 			  	<div class="modal-content ">
@@ -403,18 +2065,50 @@ max-width:18px !important;
 						                  <span>Download</span>
 						              </a>
 						            </div>
-						      	</div>
+						            <div class="dropdown detail-view-table-btn">
+				                        <button class="btn dropdown-toggle" type="button" id="btnDeleteFile">
+				                            <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/delete.png" alt="delete" />
+				                            <span data-localize="Delete">Delete</span>
+				                        </button>
+				                    </div>
+				                     <div class="dropdown detail-view-table-btn">
+				                        <button class="btn dropdown-toggle" id="btnRenameFile" type="button" data-toggle="modal" data-target="#rename">
+				                            <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/rename.png" alt="rename" />
+				                            <span data-localize="Rename">Rename</span>
+				                        </button>
+				                    </div>
+				                    <div class="dropdown detail-view-table-btn" style="display:none">
+				                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#notify">
+				                            <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/notify.png" alt="notify" />
+				                            <span data-localize="Notify">Notify</span>
+				                        </button>
+				                    </div>
+				                    
+				                    <div class="dropdown detail-view-table-btn">
+				                        <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#Properties">
+				                            <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/properties.png" alt="properties" />
+				                            <span data-localize="Properties">Properties</span>
+				                        </button>
+				                    </div>
+				                    
+				                    <div class="dropdown detail-view-table-btn" style="display:none">
+				                       <div class="Acknowledgebtnbox" style="padding: 7px 8px 3px 8px; font-weight: 400; color: #333;">
+				                            <label data-localize="Acknowledged">Acknowledged</label><label>:</label>
+				                            <a href="#" class="countingbox" style="margin-left:5px" data-toggle="modal" data-target="#Acknowledgement">00</a>
+			                            </div>
+			                        </div>
+								</div>
 				    		</div>
 				    		<div class="col-md-8">
 				    			<div class="preview-box scrollbar-panel">
-                            		<div style="height: 130vh; padding: 10px;" id="doc-viewer">
+                            		<div style="padding: 10px;" id="doc-viewer">
                                 		<!--img src="assets/images/file-img.png" style="width:100%;"-->
                             		</div>
                             		<!--<iframe src="https://docs.google.com/gview?url=http://infolab.stanford.edu/pub/papers/google.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>-->
                         		</div>
 				    			<!--<div class="preview-box scrollbar-panel">
 					                <div style="height: 150vh;padding: 10px;">
-					                  <!--<img id="DocPreviewBox" src="" style="width:100%;">\
+					                  <img id="DocPreviewBox" src="" style="width:100%;">\
 					                  <iframe id="DocPreviewBox" src="" title="" ></iframe>
 					                </div>
 				              	</div>-->
@@ -425,29 +2119,41 @@ max-width:18px !important;
 					                    <div class="panel-body">
 					                      <ul class="detail-vide-panel scrollbar-panel">
 					                        <li>
-					                          <label class="detail-label">Title:</label>
+					                          <label class="detail-label" data-localize='Title'>Title</label><label> :</label>
 					                          <div class="detail-title ellipsis-3" id="DocTitleModel">File title in bigger font as show as here File title in bigger font as show as here File title in bigger font as show as here File title in bigger font as show as here</div>
 					                        </li>
 					                        <li>
-					                          <label class="detail-label">Document Type:</label>
+					                          <label class="detail-label" data-localize='Category'>Category</label><label>:</label>
 					                          <div class="detail-title ellipsis-3" id="DocTypeModel">File title in bigger font as show as here File title in bigger </div>
 					                        </li>
+                                            <li>
+                                              <label class="detail-label" data-localize='SubCategory'>Sub-Category</label><label>:</label>
+                                              <div class="detail-title ellipsis-3" id="DocSubTypeModel">File title in bigger font as show as here File title in bigger </div>
+                                            </li>
 					                        <li>
-					                          <label class="detail-label">Reference:</label>
+					                          <label class="detail-label" data-localize='Reference'>Reference</label><label>:</label>
 					                          <div class="detail-title ellipsis-3" id="referenceModel"></div>
 					                        </li>
 					                        <li>
-					                          <label class="detail-label">Author:</label>
-					                          <div class="detail-title ellipsis-2" id="DocAothorModel">Dipankar Goswami</div>
+					                          <label class="detail-label" data-localize='Author'>Author</label><label>:</label>
+					                          <div class="detail-title ellipsis-2" id="fileAuthorName">Dipankar Goswami</div>
 					                        </li>
 					                        <li>
-					                          <label class="detail-label">Details:</label>
-					                          <div class="detail-title ellipsis-3" id="DocDescModel">Description of that files , maximum two lines…… Description of that files , maximum two lines …… Description of that files , maximum two lines … Description of that files , maximum two lines…</div>
+					                          <label class="detail-label" data-localize='Details'></label><label> :</label>
+					                          <div class="detail-title ellipsis-3" id="FileDetalis">Description of that files , maximum two lines…… Description of that files , maximum two lines …… Description of that files , maximum two lines … Description of that files , maximum two lines…</div>
 					                        </li>
+                                            <li>
+                                              <label class="detail-label" data-localize='ShareBy'>Share By</label><label> :</label>
+                                              <div class="detail-title ellipsis-3" id="DocShareByModel">name and date-time</div>
+                                            </li>
+                                            <li>
+                                              <label class="detail-label" data-localize='ShareComments'>Share Comments</label><label> :</label>
+                                              <div class="cover_comment"><textarea class="form-control resize-none share-comments-area" rows="3" id="DocShareCommentsModel" readonly></textarea></div>
+                                            </li>
 					                      </ul>
 					                    </div>
 					                  <div class="detail-modal-footer-right p15">
-					                  	<div class="detail-title" id="AcknowledgeChkboxDIV">
+					                  	<div class="detail-title AcknowledgeChkboxDIV" id="AcknowledgeChkboxDIV" style="display:none">
 				                          	<!--<div class="detail-title-info">
 				                          		<div class="detail-title-info-2 d-none">Thank you for you acknowledgement!</div>
 				                          	</div>-->
@@ -458,12 +2164,21 @@ max-width:18px !important;
 					                      	<span style="margin: 10px 0 !important;display: inline-block;line-height: 1.5;" id="acknowledgeMassage">By clicking this you agree that you understand and acknowledge this document.</span>
 			                          	</div>
 			                          	
-			                          	<div class="detail-title" id="AcknowledgeChkboxDIV">
+			                          	<div class="detail-title AcknowledgeChkboxDIV" id="">
+				                          	<ul class="detail-vide-panel scrollbar-panel">
+						                        <li>
+						                          <label class="detail-label" data-localize='IPAddress'>IP Address</label><label> :</label>
+						                          <div class="detail-title ellipsis-3" id="IPAddress"></div>
+						                        </li>
+						                        <li>
+						                          <label class="detail-label" data-localize='AcknowledgeOn'>Acknowledge On</label><label>:</label>
+						                          <div class="detail-title ellipsis-3" id="AcknowledgeOn"></div>
+						                        </li>
+				                          	</ul>
 				                          	<!--<div class="detail-title-info">
 				                          		<div class="detail-title-info-2 d-none">Thank you for you acknowledgement!</div>
 				                          	</div>-->
-				                          	<div class="change-properties-pannel">
-						                        <!--<a href="#">Acknowledge that you have read and understood</a>-->
+				                          	<div class="change-properties-pannel" style="display:none">						                        
 						                        <input type="checkbox" onchange="LikeRecord()" id="LikeChkbox" name="Like" value="Like"><label> Like.</label>
 					                      	</div>
 			                          	</div>
@@ -471,14 +2186,14 @@ max-width:18px !important;
 							      		
 							      	  </div>
 					                </div>
-					                <div class="panel custom-panel-right panel-default mt20">
+					                <!-- <div class="panel custom-panel-right panel-default mt20">
 					                    <div class="detail-modal-footer-right p15 border-0">
 					                    	<ul class="experiences-inner-card-btn-item justify-content-center">
 							        			<li class="experiences-inner-card-btn-panel-icon">
 													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/checkmark.png">
 												</li>
 												<li class="experiences-inner-card-btn-panel-count">
-													<div class="dropup">
+													<div class="dropdown dropup">
 														<a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="AcknowledgeCount" onclick="ListofActiveusers('AcknowledgeUsers')">0</a>
 														<ul class="dropdown-menu dropdown-menu-right scrollbar-panel detail-dropdown-menu-left-isphone" id="AcknowledgeCountLists">
 															<li>
@@ -530,7 +2245,7 @@ max-width:18px !important;
 													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/visibility-icon.png">
 												</li>
 												<li class="experiences-inner-card-btn-panel-count">
-													<div class="dropup">
+													<div class="dropdown dropup">
 														<a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="ViewsCount" onclick="ListofActiveusers('ViewsUsers')">0</a>
 														<ul class="dropdown-menu dropdown-menu-right scrollbar-panel detail-dropdown-menu-left-isphone" id="ViewsCountLists">
 															<li>
@@ -578,61 +2293,19 @@ max-width:18px !important;
 														</ul>
 													</div>
 												</li>
-												<li class="experiences-inner-card-btn-panel-icon">
+												<li class="experiences-inner-card-btn-panel-icon" onclick="LikeRecord()" style="cursor: pointer">
 													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/like-icon.png">
 												</li>
 												<li class="experiences-inner-card-btn-panel-count">
-													<div class="dropup">
+													<div class="dropdown dropup">
 														<a class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="LikesCount" onclick="ListofActiveusers('LikeUsers')">0</a>
-														<ul class="dropdown-menu dropdown-menu-right scrollbar-panel" id="LikesCountLists">
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Dipankar Goswami</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Amit Kumar</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Swapnil Kataria</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Dipankar Goswami</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Amit Kumar</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Swapnil Kataria</span>
-																</a>
-															</li>
-															<li>
-																<a href="#">
-																	<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="user img">
-																	<span class="ml5">Swapnil Kataria</span>
-																</a>
-															</li>
+														<ul class="dropdown-menu dropdown-menu-right scrollbar-panel"  id="LikesCountLists">
 														</ul>
 													</div>
 												</li>
 											</ul>
 					                    </div>
-					                </div>
+					                </div> -->
 				                </div>
 				    		</div>
 				    	</div>
@@ -643,35 +2316,742 @@ max-width:18px !important;
 
 
 
+<!-- chat_sec -->
+<div id="chat_sec" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog modal-lg">
 
-				<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/DMS/DepartmentDocuments.js"></script>
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">
+                    <span class="close-icon">×</span>
+                </button>
+                <h4 class="modal-title">Write a Message</h4>
+            </div>
+            <div class="modal-body">
+
+              <div class="mes_topsec">
+                <div class="ms_left">
+                    <div class="combo_label">
+                        <label for="" data-localize="Title">Title</label><label>:</label>
+                        <span class="mess_title" id="CommentFileTitle"></span>
+                    </div>
+                    <div class="combo_label">
+                        <label for="" data-localize="Name">Name</label><label>:</label>
+                        <span class="mess_title" id="CommentFileName"></span>
+                    </div>
+                    <div class="combo_label">
+                        <label data-localize="Category">Category</label><label>:</label>
+                        <span class="mess_title" id="CommentFileDocType"></span>
+                    </div>
+                </div>
+                <div class="ms_rightsec">
+                    <div class="combo_modify">
+                        <label for="" data-localize="Modify by">Modify by</label><label>:</label>
+                        <span class="mess_username" id="CommentModify"></span>
+                    </div>
+                    <div class="msg_detailbx">
+                        <span class="msg_imgsec"><img id="CommentModImage" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DMS/assets/images/user-circle.png" alt=""></span>
+                        <div class="msg_details">
+                            <a href="javascript:void(0);" id="CommentModEmail"></a>
+                            <h6>
+                                <span class="ms_details" id="CommentModTime"></span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 detail-view-right-chat-area" style="position: sticky; top: 20px;">
+              <div class="comment-container">
+                <div class="experiences-inner-card-btn-panel experiences-comment-container-count">
+                  <ul class="nav experiences-inner-card-btn-item">
+                    <li class="experiences-inner-card-btn-panel-icon">
+                      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/visibility-icon.png?ctag=210426" data-themekey="#">
+                    </li>
+                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#views" id="TotalHits">3</a></li>
+                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                    <li class="experiences-inner-card-btn-panel-icon">
+                      <img class="like-img" id="like-Img-color" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/like-icon.png"
+                        onclick="TriggerLikes();" data-themekey="#">
+                    </li>
+                
+                    
+                    <li class="experiences-inner-card-btn-panel-count"><a data-toggle="tab" href="#likes" id="TotalLikes">20</a></li>
+                
+                    <li class="experiences-inner-card-btn-panel-dot"><span></span></li>
+                    <li class="experiences-inner-card-btn-panel-icon">
+                      <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/chat-icon.png?ctag=210426" data-themekey="#">
+                    </li>
+                    <li class="experiences-inner-card-btn-panel-count active"><a data-toggle="tab" href="#comments"
+                        id="TotalComments">0</a></li>
+                  </ul>
+                </div>
+                
+                <div class="tab-content">
+                  <div id="views" class="tab-pane fade">
+                    <ul class="show-comment-panel likes-panel" id="ViewHitList">
+                
+                    </ul>
+                  </div>
+                  <div id="likes" class="tab-pane fade">
+                    <ul class="show-comment-panel likes-panel" id="Likeshitlist">
+                
+                    </ul>
+                  </div>
+                  <div id="comments" class="tab-pane fade in active">
+                    <div class="chat-main-panel scrollbar-panel" id="hideCommentScroll">
+                      <div class="row ml0 mr0" id="reply_area">
+                        <div class="col-xs-12 text-center pt-15" id="seemorebtnOccasion" style="cursor:pointer;">
+                          <a class="view-more-replies" href="javascript:void(0);" style="cursor:pointer;"
+                            onclick="ReadOccasionComment('GetAll', 'Logged_InUser', Url4ViewallOcc, 'ViewMore');">View Previous</a>
+                        </div>
+                        <div id="CommentsArea4OCC"></div>
+                
+                
+                      </div>
+                    </div>
+                
+                    <div class="clearfix"></div>
+                
+                    <div class="main-chat-text-area main-chat-text-area-border">
+                      <div id="replyTextarea" class="upload-outer-chip-box-2 upload-outer-chip-box-3" style="display: none;">
+                        <div class="reply-text-line">
+                          <div class="reply-text-line-cross">
+                            <a id="replyHide" type="button" onclick="ReactiveCtrl();"><i class="fa fa-times"></i></a>
+                          </div>
+                          <a href="#" class="comment-reply-user-name-info">@ <span id="replyforuser"></span> :</a>
+                          <span id="ReplyforMsg"></span>
+                        </div>
+                      </div>
+                      <div class="main-comment-panel">
+                        <div class="comment-area">
+                          <div class="custom-form-group" id="FileCommArea">
+                            <textarea class="form-control" rows="3" id="CommentEditor"></textarea>
+                            <div id="NewAttachmentFiles" class="oldfilename1 scrollbar-panel"></div>
+                            <div id="oldfilename" class="oldfilename scrollbar-panel"></div>
+                
+                          </div>
+                        </div>
+                        <div class="comment-btn-pannel">
+                          <div class="btn mr-8">
+                            <div id="drop-zone">
+                              <div id="clickHere">
+                                <input class="btn-file-upload" type="file" name="" multiple="" id="CommentFileAttach">
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/attach-file.png?ctag=210426">
+                              </div>
+                            </div>
+                          </div>
+                          <a type="button" class="btn" onclick="PushRootComment();">
+                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/send.png?ctag=210426">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <!-- Side tab on like click to see who has liked the post  -->
+                  <div id="showInnerLikes" class="comment-container show-inner-likes-box show-inner-likes-box-hide">
+                    <div class="likes-close-box">
+                      <i id="likeCloseBox" class="fa fa-times cursor-pointer"></i>
+                    </div>
+                    <ul class="likes-panel scrollbar-panel" id="CommentLikeList">
+                    </ul>
+                  </div>
+                  <!-- Side tab on like click to see who has liked the post  -->
+                
+                </div>  
+              </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Attachment IFrame popup starts-->
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" data-localize="Attachment View">
+                    Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="sign-viewer">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--Attachment IFrame popup ends-->
+
+
+<!-- Modal rename rename -->
+<div id="rename" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Rename</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                    <label class="control-lablee" data-localize="New Name">New Name</label>
+
+                    <div class="flexingstyle">
+                        <input type="text" class="form-control input-lg" style="width:460px" id="txtRenamefile" placeholder="" />
+                        <h5 id="txtFileExt">.docx</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn w-70" id="btnChangeFileName" value="">Submit</button>
+                <button type="button" class="btn custom-btn w-70" id="btnChangeFolderName" value="">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal rename end -->
+
+<!----notify popup--->
+
+<div id="notify" class="modal fade" role="dialog" style="background: rgba(0, 0, 0, 0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Notify</h4>
+            </div>
+            <div class="modal-body">
+                <div class="input_box">
+                	<div class="form-group">
+                	 <label>Send to</label><label>:</label>
+                	   <div class="selectbtn_group">
+						  <div class="radio">
+							  <label>
+							    <input type="radio" name="selectopt" style="margin:0 0 0 -20px !important; width:15px; height:15px; position:relative; top:2px;" class="selective_me">
+							    Ever
+							    </label>
+						  </div>
+						  <div class="radio">
+							  <label>
+							    <input type="radio" name="selectopt" style="margin:0 0 0 -20px !important; width:15px; height:15px; position:relative; top:2px;" value="selective_now" class="selective_me">
+							    Selective
+							   </label>
+						  </div>
+						</div>
+                	 </div>
+                	
+                	<div class="form-group hidearea selective_now groupmanages">
+                	<div class="teambox" style="margin-bottom: 0px;">
+				              <div class="fullcoverbox">
+				                <div class="row">
+				                    
+				                    <div class="col-md-4 col-sm-6">
+				                        <div class="employeesection">
+				                          <div class="empoyeeimg">
+				                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="">
+				                          </div>
+				                          <div class="employeeinfo">
+				                            <h3>Dipankar Goswami</h3>
+				                            <a href="#">d.goswami@adapt-india.com</a>
+				                          </div>
+				                        </div>
+				                     </div><!--col-4 ed--->
+				                    
+									 <div class="col-md-4 col-sm-6">
+				                        <div class="employeesection">
+				                          <div class="empoyeeimg">
+				                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="">
+				                          </div>
+				                          <div class="employeeinfo">
+				                            <h3>Dipankar Goswami</h3>
+				                            <a href="#">d.goswami@adapt-india.com</a>
+				                          </div>
+				                        </div>
+				                     </div><!--col-4 ed--->
+
+				                     <div class="col-md-4 col-sm-6">
+				                        <div class="employeesection">
+				                          <div class="empoyeeimg">
+				                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg" alt="">
+				                          </div>
+				                          <div class="employeeinfo">
+				                            <h3>Dipankar Goswami</h3>
+				                            <a href="#">d.goswami@adapt-india.com</a>
+				                          </div>
+				                        </div>
+				                     </div><!--col-4 ed--->
+				                </div><!---row ed-->
+				              </div>
+				              <div class="addeventcircle">
+				                 <input type="text" class="form-control increase_effect">
+				                 <button type="button" class="btn custom-btn multi_addnowsec">
+				                  <i class="fa fa-plus"></i>
+				                 </button>
+				              </div>
+				          </div><!---teams---> 
+                    </div><!--form group-->
+
+                    <div class="form-group">
+                        <label for="linkdoc" data-localize="Message">Message</label><label>:</label>
+                        <textarea class="form-control" id="txtMessage" style="min-height:98px; max-height:98px;"></textarea>
+                    </div><!--form group-->
+
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center; padding:6px 15px !important; margin-top:0 !important;">
+                <button type="button" class="btn custom-btn w-70" id="btnSendNotifyMail" value="">Send</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Properties multiple selective files Modal -->
+<div class="modal fade" id="Properties" role="dialog" style="background:rgba(0,0,0,0.5)">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title">Properties</h4>
+            </div>
+            <div class="modal-body dms-inbox-istab pb0">
+                <div class="row" id="ColumnBox">
+                	<div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Title">Title</label><label>:</label>
+                            <input type="text" class="form-control clearValue" id="txtUpdateTitle" maxlength="250" />
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" value="" id="chkUpdateTitle" /></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Category">Category</label><label>:</label>
+                            <select class="form-control" id="txtUpdateType"></select>
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateType" value="" /></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Sub-Category">Sub-Category</label><label>:</label>
+                            <select class="form-control" id="txtUpdateSubType">
+                                <option value="-Select-">-Select-</option>
+                            </select>
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateSubType" value="" /></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Reference">Reference</label><label>:</label>
+                            <input type="text" class="form-control clearValue" id="txtUpdateRef" maxlength="250" />
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateRef" value="" /></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Author">Author</label><label>:</label>
+                            <input type="text" class="form-control clearValue" id="txtUpdateAuthor" maxlength="250" />
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateAuthor" value="" /></label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Validity">Validity</label><label>:</label>
+                            <input type="text" class="form-control clearValue" id="txtUpdateValidity" />
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateValidity" value="" /></label>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 form-check-box">
+                        <div class="form-group custom-form-group">
+                            <label data-localize="Details">Details</label><label>:</label>
+                            <textarea class="form-control resize-none clearValue" rows="3" id="txtUpdateDetails"></textarea>
+                        </div>
+                        <div class="checkbox ml5 mb0">
+                            <label><input type="checkbox" id="chkUpdateDetails" value="" /></label>
+                        </div>
+                    </div>
+                   </div>
+            </div>
+            <div class="modal-footer dms-modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn mr-8 wpx-87" id="btnUpdateProp">Update</button>
+                <button type="button" class="btn custom-btn-two-cancel wpx-87 btnCloseProp" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- upload files Modal -->
+<div class="modal fade" id="myModalupload" role="dialog" ng-app="myApp" ng-controller="myCtrl">
+    <div class="container custom-container mrgn-tp10">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close close-round uploadAttachmentCancel" data-dismiss="modal">
+                     <span class="close-icon">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="UploadHeader" data-localize="Upload Documents">Upload Documents</h4>
+                </div>
+                <div class="modal-body" style="padding:20px 20px !important;">
+                    <div class="form-horizontal">
+						
+						<div class="form-group">
+						
+					        <div class="col-md-2 control-label wid_pal">
+					             <label for="" class="" data-localize="Title">Title</label> <label>:</label>
+					             <span style="color:red;" class="MandSign" id="">*</span>
+					             
+					        </div>
+					
+					        <div class="col-md-4 only_wid">
+					            <div class="formsections" style="">
+					                <input type="text" class="same_all_file form-control" id="txtFileTitle" maxlength="50" ng-model="title" style="margin-bottom:0px" style="display:block;" />
+					            </div>
+					        </div>
+					
+					        <div class="col-md-2 control-label wid_pal">
+					          <div class="flexingboxs">  
+					             <label for="" class="" data-localize="Department">Department</label> <label>:</label>
+					             <span style="color:red;" class="MandSign" id="">*</span>
+					             
+					          </div>  
+					        </div>
+					
+					        <div class="col-md-4 only_wid">
+					            <select class="form-control">
+					              <option selected="selected">-select-</option>
+					            </select>
+					        </div>
+					
+						</div>
+                       
+                        <div class="form-group">
+
+                            <div class="col-md-2 control-label wid_pal">
+                                <label for="" class="required" data-localize="Category">Category</label> <label>:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="astDocumentType">*</span>
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <select name="documentType" id="ddlFileType" class="form-control"></select>
+                            </div>
+
+                            <div class="col-md-2 control-label wid_pal">
+                               
+							  <div class="flexingboxs">	 
+                                <label for="" class="" data-localize="Reference">Reference</label> <label class="label_leftmg">:</label>
+                                <span style="color:red;display:none;" class="MandSign" id="">*</span>
+                              </div>  
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <input type="text" maxlength="20" class="form-control" id="txtdocumentNo" />
+                            </div>
+
+                        </div>
+                        
+                        <div class="form-group doc-type-div">
+
+                            <div class="col-md-2 control-label wid_pal">
+                                <label for="" class="" data-localize="Sub-Category">Sub-Category</label> <label>:</label>
+                            </div>
+                            <div class="col-md-4 only_wid">
+                                <select class="form-control" id="FileSubType">
+                                    <option value="-Select-">-Select-</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 control-label wid_pad">
+                                <label for="" class="" data-localize="Author">Author</label> <label>:</label>
+                                <span style="color:red;" class="MandSign">*</span>
+                            </div>
+
+                            <div class="col-md-4 only_wid">
+                                <input type="text" maxlength="50" class="form-control" id="FileAuthor" />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+						   <div class="col-md-2 control-label wid_pal">
+						        <label for="" class="" data-localize="Details">Details</label> <label>:</label>
+						        <span style="color:red;display:none;" class="MandSign">*</span>
+						    </div>
+						
+						    <div class="col-md-4 only_wid">
+						       <textarea class="form-control" rows="3" id="UploadFileComment" style="min-height:60px !important; max-height:60px !important;"></textarea>
+						    </div>
+						
+						    <div class="col-md-2 control-label wid_pal">
+						      <div class="flexingboxs">  
+						         <label for="" class="" data-localize="Message">Message</label> <label>:</label>
+						      </div>  
+						    </div>
+						
+						    <div class="col-md-4 only_wid">
+						        <textarea class="form-control" rows="3" id="" style="min-height:60px !important; max-height:60px !important;"></textarea>
+						    </div>
+						</div>
+                        <div class="form-group" id="changeProperties" ng-show="showhideUploader=='Show'" style="">
+                            <div class="col-md-2 control-label wid_pal">
+                                <label class="" data-localize="If File exists">If File exists</label> <label>:</label>
+                            </div>
+                            <div class="col-md-10 big_ten">
+                                <div class="check_sec">
+
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio" checked="checked" id="chkReplaceVer" style="position:relative; top:-2.5px;" />Replace with new version
+                                    </label>
+
+                                    <label class="radio-inline spacing_leftsecs">
+                                        <input type="radio" name="optradio" id="chkNotUpload" style="position:relative; top:-2.5px;" />Do not upload
+                                    </label>
+                                </div><!---check_sec ed--->
+                            </div>
+
+                        </div>
+                        
+                        <div class="form-group" style="margin-top:15px !important; margin-bottom:15px !important;">
+					       <div class="col-md-2 control-label wid_pal">
+					            <label for="" class="" data-localize="Access">Access</label> <label>:</label>
+					            
+					        </div>
+					
+					        <div class="col-md-4 only_wid">
+					           <select class="form-control">
+					              <option value="Read">Read</option>
+					              <option value="Restricted">Restricted</option>
+					           </select>
+					        </div>
+					
+					        <div class="col-md-6">
+					        	
+					        	<div style="margin-top:0px">
+						          <label class="radio-inline">
+						            <input type="radio" name="company_opt"> All companies
+						          </label>
+						          <label class="radio-inline">
+						            <input type="radio" name="company_opt"> current company only
+						          </label>
+						        </div>
+					        </div>
+						</div>
+						
+						<div class="form-group">
+						   <div class="col-md-2 control-label wid_pal">
+						        <label for="" class="" data-localize="Validity">Validity</label> <label>:</label>
+						    </div>
+						
+						    <div class="col-md-7 flexingtypes seven_magwth">
+						      <label class="radio-inline">
+						        <input type="radio" name="Validity_opt"> forever
+						      </label>
+						      <label class="radio-inline">
+						        <input type="radio" name="Validity_opt"> current company only
+						      </label>
+						      <div class="date_optionsec" style="width: 120px; margin:1px 3px;">
+						      	<input type="date" class="form-control">
+						      </div>
+						    </div>
+						    <div class="col-md-3">
+							    
+							    <div class="notifywrap">
+	                                <label class="" style="font-weight:400; cursor:pointer;">
+	                                    Notify this by  email
+	                                    <input type="checkbox" id="chkUploadMail" style="margin:0 2px; position: relative; top:-2px;">
+	                                </label>
+	                            </div>
+	                            
+	                            <div class="notifywrap" style="">
+	                                <label class="" style="font-weight:400; cursor:pointer;">
+	                                    Need Acknowledgement
+	                                    <input type="checkbox" id="" style="margin:0 2px; position: relative; top:-2px;">
+	                                </label>
+	                            </div>
+	                            
+						    </div>
+						    
+						</div>
+    
+                        <div class="form-group" style="margin-bottom:0 !important;">
+                            <label for="" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-10 doc-btn-center" style="width: 100%;text-align: center;">
+                                 <!---<button type="button" id="AttachAttachmentButton" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>-->
+                                <button type="button" id="btnFolderAttachment" class="btn custom-btn mr-8 wpx-87" style="margin-bottom: 5px;margin-top: 4px;"><label data-localize="Upload">Upload</label></button>
+                                <button type="button" id="AttachAttachmentCancel" class="btn custom-btn-two-cancel wpx-87 uploadAttachmentCancel" data-dismiss="modal"><label data-localize="Close">Close</label></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!----modalAcknowledgement--->
+
+<div class="modal fade" id="Acknowledgement" role="dialog" style="background:rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title" data-localize="Acknowledgement">Acknowledgement</h4>
+            </div>
+
+            <div class="modal-body pb0">
+			  <div class="coverboxlist">
+			      <ul id="AckUserList">
+                    	<li>
+	                    	<div class="detailsectionbox">
+							  <span class="imgboxsectin">
+							    <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/assets/images/img-21.jpg">
+							  </span>
+							  <div class="detalbox">Abhishek Negi
+							    <a href="#" class="emilbox" style="cursor:pointer;color:blue;">Abhishek.Negi@titan4work.com</a>
+							  </div>
+							</div>
+							<div class="Acknowledgementsec">
+							  <p style="color:red">Not Acknowledged</p>
+							  <div class="btnParent">
+							    <button class="btn custom-btn w-70" type="button">Notify</button>
+							  </div>
+							</div>
+						</li>
+                    </ul>
+			 </div>
+
+            </div>
+
+            <div class="modal-footer dms-modal-footer" style="text-align:center">
+                <button type="button" class="btn custom-btn mr-8" data-dismiss="modal" id="btnAckNotifyAll">Notify to All</button>
+                <button type="button" class="btn custom-btn-two-cancel wpx-87" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<input type="hidden" id="DucumentURl">
+<input type="hidden" id="">
+
+
+				<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/DocumentsForAll/DocumentsForAll.js"></script>
 		<script>
 			$(".toggle-button-name").click(function(){
 			  $(".toggle-button-name").toggleClass("acknowledged-active");
 			});
 			
-			function searchTable() {
-			    var input, filter, found, table, tr, td, i, j;
-			    input = document.getElementById("serchDocument");
-			    filter = input.value.toUpperCase();
-			    table = document.getElementById("tableTempEmpOffice365DepartmentDocumentEveryone");
-			    tr = table.getElementsByTagName("tr");
-			    for (i = 0; i < tr.length; i++) {
-			        td = tr[i].getElementsByTagName("td");
-			        for (j = 0; j < td.length; j++) {
-			            if (td[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
-			                found = true;
-			            }
-			        }
-			        if (found) {
-			            tr[i].style.display = "";
-			            found = false;
-			        } else {
-			            tr[i].style.display = "none";
-			        }
-			    }
-			}
+			
 			
 		</script>
-	</body>
+
+    <!--Iframe Image POpup ends-->
+<script>
+  $(document).ready(function() {
+    $("#CommentEditor").emojioneArea({    
+        pickerPosition: "right",
+          tonesStyle: "bullet",
+        events:{
+              keyup: function (editor, event) {
+           
+            }
+          }
+      });
+      
+      
+          $("#replyTextarea").hide();
+       
+  
+      
+  });
+  
+  </script>
+    
+  <!-- CodeCommentScroll -->
+    <script>
+      $(document).ready(function(){
+        $("#replyHide").click(function(){
+          $("#replyTextarea").hide();
+        });
+      });					
+    </script>	
+  
+  <!-- CodeCommentScroll -->
+  
+<!-----toggling_plusbutton---->  
+  
+<script type="text/javascript">
+  
+$(document).ready(function(){
+
+  $('.multi_addnowsec').click(function(){
+     $(this).siblings('.increase_effect').fadeToggle(50);
+
+ });
+ 
+ $('.selective_me').click(function(){
+   var storeval = $(this).val(); 
+
+  if($(this).is(':checked')){
+    $('.hidearea').not('.'+storeval).removeClass('active');
+    $('.'+storeval).addClass('active');
+  }
+  
+})
+
+})
+
+</script>  
+  
+  
+  
+</body>
 </html>

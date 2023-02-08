@@ -20,7 +20,9 @@
 	<script  type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/Dashboard.js"></script>		
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/js/pieChart.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/js/barChart.js"></script>
-	<script  type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/Program.js"></script>
+	<script  type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/Program.js"></script>	
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+
  
  <style>
 	
@@ -94,7 +96,8 @@ div.ms-webpart-cell-vertical-inline-table{
 }
 
 .all-align-gap .article-content{
- margin:10px 0px 0px 0px !important;	
+ /* margin:10px 0px 0px 0px !important;	*/
+ margin: 0px 0px 0px 0px !important;
 }
 
 .custom-form-group.search-box{
@@ -288,7 +291,7 @@ label.lable-view-name{
 }
 
 .totalcounting tr td{
-	padding:10px 0px !important;
+	padding:45px 0px !important;
 	border-bottom:1px solid #999 !important;	
 	text-align:center;
 }
@@ -450,6 +453,10 @@ display:inline-block;
  border:1px solid #ccc;	
 }
 
+#programlisting table tr:nth-child(2n) td{
+  background:#f5f5f5;	
+}
+
 #programlisting table tr td{
  padding:6px 4px  8px 4px !important;
  font-size:13px !important;	
@@ -573,13 +580,13 @@ display:inline-block;
 #pieChartClient div[dir="ltr"],
 #pieChartClient svg,
 #pieChartClient svg rect{
-  height:167px !Important;  	
+  height:203px !Important;  	
 }
 
 #pieChartDepartment div[dir="ltr"],
 #pieChartDepartment svg,
 #pieChartDepartment svg rect{
-  height:167px !Important;  	
+  height:203px !Important;  	
 }
 
 .pieChartProgrambox{
@@ -671,7 +678,28 @@ display:inline-block;
   margin-left:0 !important;
 }
 
+#programlisting tbody tr td:first-child a{
+    font-size: 13px !Important;
+    color: #1d6ec0;
+    width: 300px;
+    text-align: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
+#programlisting .modal-dialog{
+ margin:5px auto;	
+}
+
+#CreateProject:hover, 
+#CreateProject:active {
+    color: #333;
+    background-color:#efefef;
+    border-color: #98d6d8 !important;
+}
 
 @media all and (max-width: 1499px) and (min-width: 1440px){
 
@@ -787,6 +815,16 @@ display:inline-block;
 	
 }
 
+
+@media(min-width:768px){
+
+#search{
+ width:210px;	
+}
+
+}
+
+
 @media(max-width:1100px){
 
 #mainTablearea #tableTempProjects{
@@ -827,11 +865,6 @@ display:inline-block;
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2959</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">a48d4853-dbf5-4a47-89b4-549dbc64f84c</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2959, ADMIN-1645029823-2959</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">295900.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
@@ -847,7 +880,7 @@ display:inline-block;
 				
 				 <div class="row">
 				  <div class="col-md-5">
-				    <h1 class="project-head-text" style="padding:0px 14px">Projects</h1>
+				    <h1 class="project-head-text" style="padding:0px 14px" data-localize="Project">Project</h1>
 				   </div>
 				   <div class="col-md-7">
 				    <div class="project-view-deta-btn-panel d-flex">
@@ -862,7 +895,7 @@ display:inline-block;
                     <div class="dropdown project-view-table-btn" id="btnViewProgram" style="display:none">
                         <button class="btn dropdown-toggle" id="" type="button" data-toggle="modal" data-target="#myProgram">
                             <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/programe.png" alt="plus icon" style="max-width:17.5px !important;">
-                            <span>Program</span>
+                            <span data-localize="Program">Program</span>
                         </button>
                       </div>
   
@@ -886,12 +919,12 @@ display:inline-block;
                                       <img class="project-view-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/expand-arrow-icon.png" alt="expand arrow">
                                     </button>
                                     <ul class="dropdown-menu dropdown-color-menu-icon dropdown-menu-right">
-                                      <li><a  href="javascript:void(0);" id="RecentProject"><span>Recent Project</span></a></li>
+                                      <li><a  href="javascript:void(0);" id="RecentProject"><span data-localize="Recent Project">Recent Project</span></a></li>
                                       <!--<li><a  href="javascript:void(0);" id="ProjectName"><span class="SortClass">Department </span></a></li>-->
-                    <li><a  href="javascript:void(0);" id="ProjectName"><span class="SortClass" onclick="sortProjectName()">Project Name</span></a></li>
+                    <li><a  href="javascript:void(0);" id="ProjectName"><span class="SortClass" onclick="sortProjectName()" data-localize="Project Name">Project Name</span></a></li>
                     <!--<li><a  href="javascript:void(0);" id="OfficeLocation"><span class="SortClass">Office Location </span></a></li>-->
-                    <li><a  href="javascript:void(0);" id=""><span class="SortClass" onclick="sortClientName()">Customer</span></a></li>
-                    <li><a href="javascript:void(0);" id=""><span class="SortClass" onclick="sortManagerName()">Manager</span></a></li>
+                    <li><a  href="javascript:void(0);" id=""><span class="SortClass" onclick="sortClientName()" data-localize="Customer">Customer</span></a></li>
+                    <li><a href="javascript:void(0);" id=""><span class="SortClass" onclick="sortManagerName()" data-localize="Manager">Manager</span></a></li>
                         </ul>
                     </div>
                   </div>
@@ -985,13 +1018,13 @@ display:inline-block;
 					         <thead>
 					          
 							  <tr class="clickable">
-					             <th style="width:40%; text-align:left;" onclick="sort_programName();">Program</th>
+					             <th style="width:40%; text-align:left;" onclick="sort_programName();" data-localize="Program">Program</th>
 					             <th style="width:10%;" onclick="sortTable('tbodyProgram',1);">Overdue</th>
 					             <th style="width:10%;" onclick="sortTable('tbodyProgram',2);">Live</th>
 					             <th style="width:10%;" onclick="sortTable('tbodyProgram',3);">Completed</th>
 					             <th style="width:10%;" onclick="sortTable('tbodyProgram',4);">On Hold</th>
 					             <th style="width:10%;" onclick="sortTable('tbodyProgram',4);">Terminated</th>
-					             <th style="width:10%;" onclick="sortTable('tbodyProgram',6);">Total Project</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',6);">Total</th>
 					          </tr>
 					          
 					         </thead>
@@ -1113,9 +1146,9 @@ display:inline-block;
                                     <div id='mainTablearea' class='table-responsive scrollbar-panel'><table cellpadding='0' cellspacing='0' border='1' id='tableTempProjects' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
                                     <thead class='panel-heading'>
                                         <tr>
-                                            <th class="nosort">Project</th>
+                                            <th class="nosort" data-localize="Project">Project</th>
 											<th class="nosort">Customer</th>
-											<th class="nosort" style="width:24%">Manager</th>
+											<th class="nosort" style="width:24%" data-localize="Manager">Manager</th>
 											<th class="nosort" style="width: 11%;">Status</th>
 											<th class="nosort" style="width: 60px;">Action</th>							 
                                         	                                          
@@ -1179,7 +1212,7 @@ display:inline-block;
 <table style="display:none" id="exceltable">
 	<thead>
 		<tr>
-		   <th>Project</th><th>Type</th><th>Reference</th><th>Program</th><th>Customer</th><th>Department</th><th>OfficeLocation</th><th>Manager</th><th>Status</th><th>CompletionPercentage</th>
+		   <th data-localize="Project">Project</th><th data-localize="Type">Type</th><th data-localize="Reference">Reference</th><th data-localize="Program">Program</th><th data-localize="Customer">Customer</th><th>Department</th><th>OfficeLocation</th><th data-localize="Manager">Manager</th><th>Status</th><th>CompletionPercentage</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -1225,7 +1258,7 @@ display:inline-block;
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group custom-form-group">
-								<label for="Project">Customer:</label>
+								<label for="Project" data-localize="Customer">Customer:</label>
 								<select class="form-control" id="ddlCustomer"></select>
 							</div>
 						</div>
@@ -1243,7 +1276,7 @@ display:inline-block;
 						
 					    <div class="col-sm-6">
 							<div class="form-group custom-form-group">
-								<label for="Project">Program:</label>
+								<label for="Project" data-localize="Program">Program:</label>
 								<select class="form-control" id="ddlProgram">
 								  
 								</select>
@@ -1253,7 +1286,7 @@ display:inline-block;
 						
 						<div class="col-sm-6">
 							<div class="form-group custom-form-group">
-								<label for="Project">Manager:</label>
+								<label for="Project" data-localize="Manager">Manager:</label>
 								<span id="managerPicker"></span>
 							</div>
 						</div>
@@ -1282,7 +1315,7 @@ display:inline-block;
         <button type="button" class="close close-round" data-dismiss="modal">
           <span class="close-icon">&times;</span>
         </button>
-        <h4 class="modal-title">Programs</h4>
+        <h4 class="modal-title" data-localize="Program">Programs</h4>
       </div>
       <div class="modal-body">
 
@@ -1319,10 +1352,13 @@ display:inline-block;
            <table class="table table-striped table-hover" id="tblProgram" style="border:1px solid #ccc">
               <thead>
                 <tr>
-                  <th style="width: 30%">Program Name</th>
-                  <th style="width: 15%;">Reference Number</th>
-                  <th style="width: 30%">Description</th>
-                  <th style="text-align:center">Projects</th>
+                  <th style="width: 22%" data-localize="Program">Program</th>
+                  <th style="width: 10%;" data-localize="Reference">Reference</th>
+                  <th style="width: 23%">Description</th>
+                  <th style="width: 9%; text-align:center;">Open Tasks</th>
+                  <th style="width: 9%; text-align:center;">Live Projects</th>
+                  <th style="text-align:center; width: 9%;" data-localize="Total Project">Total Projects</th>
+                  <th style="width: 13%; text-align:center;">Completion</th>
                   <th style="text-align:center">Action</th>
                 </tr>
               </thead>
@@ -1348,7 +1384,7 @@ display:inline-block;
 
 <!-- new Programe -->
 <div id="newProgram" class="modal fade"  role="dialog" style="background:rgba(0,0,0,0.4)">
-  <div class="modal-dialog modal-sm">
+  <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
@@ -1356,26 +1392,63 @@ display:inline-block;
         <button type="button" class="close close-round" data-dismiss="modal">
           <span class="close-icon">&times;</span>
         </button>
-        <h4 class="modal-title">New Program</h4>
+        <h4 class="modal-title" data-localize="Program">Program</h4>
       </div>
       <div class="modal-body">
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+		          <label for="" data-localize="Program">Program</label> :<span class="color-red">*</span>
+		          <input type="text" id="txtProgramName" maxlength="250" class="form-control">
+		        </div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Reference">Reference:</label>
+			        <input type="text" id="txtrefNo" maxlength="100" class="form-control">
+		      	</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+			 	<div class="form-group">
+			        <label for="" data-localize="Planned Start Date">Planned Start Date:</label>
+			        <input type="text" id="startDate" name="date" readonly="readonly" class="form-control">
+			  	</div>	
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Planned End Date">Planned End Date:</label>
+			        <input type="text" class="form-control" id="endDate"  name="date" readonly="readonly">
+			        
+			  	</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Stakeholders">Stakeholders:</label>
+			        <!--<input type="text" id="pickerStakeholders" class="form-control">-->
+			        <span id="pickerStakeholders" style="width:100%"></span>
+			  	</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Sponsors">Sponsors:</label>
+			        <!--<input type="text" id="pickerSponsors" class="form-control">-->
+			        <span id="pickerSponsors" style="width:100%"></span>
+			  	</div>
+			</div>
+		</div>
 
-        <div class="form-group">
-          <label for="">Program Name:<span class="color-red">*</span></label>
-          <input type="text" id="txtProgramName" class="form-control">
-        </div>
-      
-      <div class="form-group">
-        <label for="">Reference Number:</label>
-        <input type="text" id="txtrefNo" class="form-control">
-      </div>
-
-      <div class="form-group">
-        <label for="pwd">Description:</label>
-       <textarea name=""  id="txtDescription" cols="30" rows="3" class="form-control"></textarea>
-      </div>
-      
-        
+	      <div class="form-group">
+	        <label for="pwd">Description:</label>
+	       <textarea name=""  id="txtDescription" cols="30" rows="3" class="form-control"></textarea>
+	      </div>
+	      
       </div>
       
       <div class="modal-footer" style="text-align:center;">
@@ -1397,19 +1470,19 @@ display:inline-block;
   <div class="modal-dialog modal-lg">
    <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Project</h4>
+        <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+        <h4 class="modal-title" data-localize="Project">Project</h4>
       </div>     
       <div class="modal-body">
         
         <div class="wraptable table-responsive heightmanage">
 
-          <table class="table table-striped table-hover" id="commonTble">
+          <table class="table table-hover" id="commonTble">
 
             <thead>
               <tr>
-                <th style="width:40%">Project</th>
-                <th style="width:40%">Manager</th>
+                <th style="width:40%" data-localize="Project">Project</th>
+                <th style="width:40%" data-localize="Manager">Manager</th>
                 <th style="width:20%">Status</th>
               </tr>
             </thead>
@@ -1555,7 +1628,40 @@ items.forEach(function (item, index) {
 <!---snake effect--->	
 	
 	
+<script>
+$(document).ready(function () {
 
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#ProjectExport").hide();
+		
+	
+	}
+});
+
+</script> 
+
+
+
+<!------modal-view only---->
+
+<script>
+
+$(document).ready(function () {
+
+$('.modal').on("hidden.bs.modal", function (e) { 
+    if ($('.modal:visible').length) { 
+        $('body').addClass('modal-open');
+    }
+})
+
+})
+ 
+</script>
+ 
 </body>
 
 </html>

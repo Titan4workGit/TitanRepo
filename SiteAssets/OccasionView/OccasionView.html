@@ -146,10 +146,19 @@ input[type="date"]{
 }
 
 .occsn-head-date-text-lg{
- position:relative;
- left:0px;	
- z-index:2;
- font-size:15px !important;
+ 	/*position:relative;
+ 	left:0px;	
+ 	z-index:2;
+ 	font-size:15px !important;*/
+     z-index: 2;
+    background-color: #494948 !important;
+    color: #fff !important;
+    position: relative;
+    left: 0px;
+    top: -10px;
+    padding: 4px 12px;
+    font-size: 14px !important;
+    border-radius: 6px 0px 8px 0px;
 }
 
 /* new css added for chat box 19/05/2021 */
@@ -1611,11 +1620,6 @@ input[type="date"]{
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1466</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">c8855652-6eda-45bb-ac8c-183044bbcc6d</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1466, ADMIN-1645029823-1466</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">146600.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
@@ -1651,8 +1655,8 @@ input[type="date"]{
 				</div>
 				<div class="col-lg-4 col-md-5 col-sm-6">
 					<div class="text-right attendance-btn-position">
-                        <input type="text" id="myInput" placeholder="Search" class="occasions-search" onkeyup="myFunction()">
-						<button  type="button" class="btn custom-btn w-121" data-toggle="modal" data-target="#occasions-filter">Filter</button>
+                        <input type="text" id="myInput" placeholder="Search" class="occasions-search" onkeyup="KeyUpSearch()">
+						<button  type="button" class="btn custom-btn w-121" data-toggle="modal" id="btnFilterOcc" data-target="#occasions-filter">Filter</button>
 					</div>
 				</div>
 			</div>

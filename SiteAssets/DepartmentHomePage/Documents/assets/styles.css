@@ -34,6 +34,30 @@ button:focus {
   background: #555555; 
 }
 
+
+/*custom scroll*/
+#bs-select-1::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+#bs-select-1::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+#bs-select-1::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#bs-select-1::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+
 .custom-form-group .form-control {
     border-radius: 0;
     box-shadow: none;
@@ -145,6 +169,7 @@ button.close {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:240px;
 }
 
 .document-types-card-bottom {
@@ -156,12 +181,13 @@ button.close {
     align-items: center;  
 }
 .document-types-card-panel {
-    width: calc(100% - 74px);
+    width: calc(100% - 30px);
 }
 .document-types-last-modified {
     margin-top: 8px;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
+    color:#333;
 }
 .document-types-card-bottom .members-card-head {
     max-width: 40px;
@@ -194,13 +220,21 @@ button.close {
 }
 .document-types-card-bottom .member-email {
     margin-bottom: 4px;
+    color:#1d6ec0 !important;
 }
+
+
+
 .document-types-card-top-number {
     font-size: 46px;
     color: #1d6ec0;
 }
 .document-types-card-top-number:hover {
     text-decoration: none;
+}
+
+#DeltaPlaceHolderMain .all-align-ms-tasks-gap .ms-webpart-zone.ms-fullWidth {
+    margin: 0px -12px 0px 3px !important;
 }
 
 @media (max-width: 767px) {
@@ -221,7 +255,7 @@ button.close {
     .document-types-card-top-number {
         margin-top: 4px;
         width: 100%;
-        text-align: right;
+        text-align: center;
     }
 }
 
@@ -354,6 +388,84 @@ h1.panel-head-text {
     width: 3500px !important;
 }
 
+.member-fileName{
+ font-size:12px;	
+}
+
+.lastUpdate{
+font-size: 11px;
+font-weight: 600;
+display: block;
+margin: 5px 0 0 0 !important;	
+color:#333;
+}
+
 /*************************Documents filter end************************/
 
+/* css added on 19-09-2022 */
 
+.custom-panel {
+    margin: 0px 0px 10px 0px;
+}
+.custom-panel .panel-body {
+    padding-top: 5px;
+}
+#documents-filter {
+    padding-left: 0;
+}
+#documents-filter .owl-stage {
+    margin: 5px 0px 5px 0px;
+}
+.company-documents-box .dropdown .dropdown-toggle {
+    width: auto;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border-color: #adadad;
+    border-radius: 8px !important;
+    cursor: pointer;
+}
+.company-documents-box .dropdown .dropdown-toggle:hover,
+.company-documents-box .dropdown .dropdown-toggle:focus {
+    background-color: #f7f7f7;
+    outline: none !important;
+} 
+.company-documents-box .dropdown .dropdown-toggle>span.bs-caret {
+    display: none;
+}
+.company-documents-box .dropdown .dropdown-toggle .filter-option {
+    padding-right: 0;
+}
+.company-documents-box .bs-searchbox>input {
+    font-size: 14px;
+    height: auto;
+    padding: 4px 8px;
+    border-radius: 8px;
+    box-shadow: none;
+    background-color: #f7f7f7;
+}
+ul.dropdown-menu.inner li.active>a {
+    color: #333333;
+    text-decoration: none;
+    background-color: #efefef !important;
+    outline: 0;
+}
+ul.dropdown-menu.inner li>a {
+    /*border-bottom: 1px solid #dddddd;*/
+    padding: 5px 15px;
+}
+ul.dropdown-menu.inner li:last-child>a {
+    border-bottom: none;
+}
+
+/* css added on 06/10/2022 */
+
+.docCommThem {
+	text-decoration: none !important;
+    color: #ffffff !important;
+    display: block !important;
+    background: #494948 !important;
+    border: 1px solid #494948 !important;
+    -webkit-border-radius: 20px !important;
+    border-radius: 20px !important;
+}

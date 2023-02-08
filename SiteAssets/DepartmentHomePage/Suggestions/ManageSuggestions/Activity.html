@@ -9,6 +9,14 @@
 
 <style>
 
+#btnDelete{
+	color: #fff;
+    background-color: #dc3545;
+    background-image: none;
+    border-color: #dc3545 !important;
+    padding: 4.5px 12px !important;
+}
+
 
 .container{
   width: 100%;
@@ -210,6 +218,24 @@ border-radius: 20px;
   color:#333 !important;	
 }
 
+
+/****oct-18-22***/
+
+.panel-head-text h4#txtActivity {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    color: #333 !important;
+    padding: 0 15px;
+}
+.panel-head {
+    color: #1b1b1b !important;
+   
+}
+.all-align-gap .article-content {
+    margin:0px 0px 0px 18px !important;
+}
+
 /* responsive css START */
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -234,10 +260,10 @@ border-radius: 20px;
 <div class="row">
 	<div class="col-md-6">
 			<div class="panel panel-default">                          
-				  <div class="panel-heading panel-head-4">
-					  <div class="panel-title">
+				  <div class="panel-head">
+					  <div class="panel-head-text" id="ActivityHeading" style="color:#333 !important">
 					  <!--<h4 class="h4-color" data-localize="Announcements"></h4>-->
-					  <h4 class="h4-color">Activity</h4>
+					  
 					</div>
 				  </div>
 			   <div class="panel-body">
@@ -246,8 +272,8 @@ border-radius: 20px;
 				  <div class="form-horizontal">
 				  		<!-- New Form Fields Code Addeed START -->
 				  		<div class="form-group">
-                     <div class="col-sm-6">
-                         <label class="required">Category:</label>
+                     <div class="col-sm-6" id="CategoryDiv" style="display:none">
+                         <label class="required" data-localize="Category">Category:</label>
                          <select class="form-control ViewMode" id="DDL_Category" onchange="">
                          
                          </select>
@@ -263,7 +289,7 @@ border-radius: 20px;
 						 </div>
 						 <div class="form-group">
 							<div class="col-sm-12">
-								<label for="" class="control-label required" data-localize="Suggestions">Suggestions</label>
+								<label for="" class="control-label required" data-localize="Details">Details</label>
 								<div class="">
 								  <textarea id="Suggestions" class="form-control content ViewMode" rows="8"></textarea>
 								</div>
@@ -301,7 +327,7 @@ border-radius: 20px;
 							
 							
 							<div class="col-sm-6">
-								<label class="">Attachments</label>
+								<label class="" data-localize="Attachments">Attachments</label>
 									<div id="drop-zone">
   										<div id="clickHere"><input type="file" name="file" id="FileUpload" class="form-control ViewMode" multiple /></div>
   										
@@ -359,8 +385,10 @@ border-radius: 20px;
 						
 						<div class="clearfix"></div>
 						<div class="row text-center top20">
-							 <input id="Submitbtn" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" data-localize="Submit" onclick="Activity();">
-                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" data-localize="Close">							
+							 <input id="Submitbtn" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" value="Submit" onclick="Activity();">
+							 <input id="btnDelete" type="button" style="font-size:13px; display:none" class="btn btn-outline-danger button ViewMode" value="Delete" onclick="changeActivityStatus();">
+
+                  			<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" value="Close">							
 						</div> 
 				  </div>
 				</div>

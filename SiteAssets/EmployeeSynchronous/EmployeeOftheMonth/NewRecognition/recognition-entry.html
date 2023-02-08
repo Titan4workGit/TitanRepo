@@ -424,6 +424,9 @@ margin-right:20px !important;
 #Achivements .richText-dropdown-outer ul.richText-dropdown {
     z-index: 9;
 }
+.custom-panel {
+    margin: 0px 0;
+}
 
 @media(max-width:767px){
 	
@@ -443,19 +446,19 @@ margin-right:20px !important;
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2416</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">dd85fffc-dc1c-438e-9f1e-5d3fd9c121b6</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2416, ADMIN-1645029823-2416</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:Order msdt:dt="string">241600.000000000</mso:Order>
 <mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
-<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:ContentTypeId msdt:dt="string">0x010100767E0F213A8F8542B95D9160C5D83BF9</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
     <body>
-        <div class="container">
+        <div class="container all-align-gap-container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="tab-content">
@@ -566,7 +569,7 @@ margin-right:20px !important;
                                                         <div id="Upload-user-image" class="recognition-upload-image-box">
                                                             <img id="userImage" class="recognition-upload-image" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/NewRecognition/assets/images/user_pic.jpg" alt="user image">
                                                             <div class="recognition-upload-image-box-btn">
-                                                                <input type="file" id="profileimageupload" class="recognition-upload-image-inp" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
+                                                                <input type="file" id="profileimageupload" accept="image/x-png,image/gif,image/jpeg,image/jpg" class="recognition-upload-image-inp" onchange="document.getElementById('userImage').src = window.URL.createObjectURL(this.files[0])">
                                                                 <span class="recognition-upload-image-span">Upload<br>Profile Picture</span>
                                                             </div>
                                                         </div>

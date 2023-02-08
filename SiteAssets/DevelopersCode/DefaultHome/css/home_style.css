@@ -22,7 +22,7 @@ body {
 }
 @font-face {
     font-family: BasierSquare-Regular;
-    src: url('https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/DevelopersCode/DefaultHome/fonts/BasierSquare-Regular.woff'); 
+    src: url('../fonts/BasierSquare-Regular.woff'); 
 }
 
 ol, ul {
@@ -3686,10 +3686,36 @@ span.date-time-card {
     object-fit: cover;
     margin: 0px auto 0px 0px;
 }
+.owl-stage {
+    /* min-width: 1000px !important; */
+    min-width: 8000px !important;
+}
 
 /*************************Timeline All Common CSS end************************/
 
 /* Responsive CSS media-query-classes -----START----- */
+
+@media only screen and (min-width: 1920px) {
+
+    .tab-social-area {
+        border: 1px solid #ddd;
+        border-radius: 0px 0px 5px 5px;
+        outline: none;
+        /*min-height: 598px !important;
+        height: 598px !important;*/
+        min-height: 554px !important;
+        height: 554px !important;
+        overflow-y: auto;
+    }
+    .panel-padding-area {
+        padding: 5px 5px;
+        /*min-height: 2151px !important;
+        height: 2151px !important;
+        overflow-y: scroll;
+        overflow-x: hidden;*/
+    }
+
+}
 
 @media (max-width: 1899px) and (min-width: 1600px) {
 
@@ -3713,6 +3739,28 @@ span.date-time-card {
 
 }
 
+@media only screen and (min-width: 1700px) {
+
+    .owl-carousel.timeline-filter {
+        width: 84% !important;
+    }
+    .timeline-filter .owl-nav .owl-prev:after {
+        right: -1.9vw;
+    }
+    .timeline-filter .owl-nav .owl-next:after {
+        right: -2.8vw;
+    }
+
+}
+
+@media (min-width: 1600px) and (max-width: 1699px) {
+
+    .owl-carousel.timeline-filter {
+        width: 84% !important;
+    }
+
+}
+
 @media (max-width: 1599px) and (min-width: 1536px) {
 
     .tab-social-area {
@@ -3728,24 +3776,10 @@ span.date-time-card {
 
 }
 
-@media only screen and (min-width: 1920px) {
+@media (min-width: 1440px) and (max-width: 1599px) {
 
-    .tab-social-area {
-        border: 1px solid #ddd;
-        border-radius: 0px 0px 5px 5px;
-        outline: none;
-        /*min-height: 598px !important;
-        height: 598px !important;*/
-        min-height: 554px !important;
-        height: 554px !important;
-        overflow-y: auto;
-    }
-    .panel-padding-area {
-        padding: 5px 5px;
-        /*min-height: 2151px !important;
-        height: 2151px !important;
-        overflow-y: scroll;
-        overflow-x: hidden;*/
+    .owl-carousel.timeline-filter {
+        width: 83% !important;
     }
 
 }
@@ -4205,8 +4239,36 @@ span.date-time-card {
     }
 
 }
+@media not all and (min-resolution:.001dpcm) { @supports (-webkit-appearance:none) and (display:flow-root) { 
+
+    .timeline-plus {
+        font-size: 22px !important;
+    }
+    .timeline-plus strong {
+        padding: 3px 3px 4px 3px;
+        font-weight: 500;
+    }
+
+} }
 
 /* Responsive CSS media-query-classes -----END----- */
+
+/* new css added for safari browser only for teams app issues */
+
+.timeline-plus.mac-teams-mode-timeline-plus strong {
+    /*padding: 3px 3px 4px 3px;*/
+    /*padding: 2px 3px 4px 3px;*/
+    padding: 1px 2.5px 5px 2.5px;
+    font-weight: 500;
+    font-size: 21px;
+}
+.question-plus.mac-teams-mode-question-plus strong {
+    padding: 2px 3px 3px 3px;
+}
+/*.survey-plus.mac-teams-mode-survey-plus strong {
+    padding: 2px 3px 3px 3px;
+}*/
+
 
 /*CSS For Left and Right Arrow For BirthdayWebpart*/
 

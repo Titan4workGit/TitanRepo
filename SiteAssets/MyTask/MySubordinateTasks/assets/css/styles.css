@@ -361,9 +361,13 @@ button:focus {
     .tab-col {
         width: 400px;
     }
-    .subord-right {
-        width: calc(100% - 400px);
-    }
+   .subord-right {
+    width: calc(100% - 415px);
+    margin-left: 15px;
+    background: #fff;
+    box-shadow: 0 0 5px #ccc;
+ }
+    
 }
 
 @media (max-width: 991px) {
@@ -526,7 +530,7 @@ button:focus {
 }
 .subordinate-main-user .tab-user-deg, 
 .subordinate-main-user .tab-user-email {
-    font-size: 14px;
+    font-size: 12px;
 }
 .custom-panel-box .table-responsive {
     word-break: break-word;
@@ -753,4 +757,53 @@ button:focus {
     .dashboard-new-panel-col-2 .task_graph {
         margin-top: 15px;
     }
+}
+
+
+/*****sept-23-22*********/
+
+
+
+.col-lg-6.task_graph{
+  min-height:132px;	
+}
+.scrllajustment {
+    max-height: 455px !important;
+}
+
+@media all and (max-width: 1199px) and (min-width: 992px){
+
+.scrllajustment {
+    max-height: 345px !important;
+}
+
+}
+
+
+
+/****layout setting dec-20-22*******/
+
+.ms-rtestate-field {
+    background: #fff;
+    border: 1px solid #d4d4d4;
+}
+
+.tab-content{
+ margin-bottom:0 !important;
+ border:none !important;	
+}
+
+.user-details-panel h4 span.ellipsis-2{
+  font-size:13.3px;
+  color:#1d6ec0;
+  font-weight:600;	
+}
+
+.nav.pillajust > li:first-of-type a{
+    border-left: 1px solid transparent !important;
+}
+
+
+.dashboard-new-panel{
+ margin-top:10px;	
 }

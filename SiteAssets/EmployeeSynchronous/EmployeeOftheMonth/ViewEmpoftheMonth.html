@@ -22,22 +22,23 @@ font-weight: 600;
 margin: 5px 0;
 }
 
-.tile_box:before{
+/*.tile_box:before{
     content: '';
     width: 100%;
     height: 36%;
     position: absolute;
     bottom: 0;
     right: 0;
-    background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/EmployeeOftheMonth/achievement_background.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/employee-left-leaf.png);
     background-size: 66%;
     background-repeat: no-repeat;
     opacity: 0.2;
     background-position:right;
-}
+}*/
 
 #itemCollection .tile_box {
-    min-height: 320px !important;
+    /* min-height: 320px !important; */
+    min-height: 210px !important;
 }
 
 .row:after, .row:before {
@@ -344,11 +345,15 @@ a.recognition-popup-hide-button:hover {
 
 #itemCollection .tile_box{
 
-background: linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
+/* background: linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
 background: -webkit-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
 background: -moz-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
-background: -o-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
-	
+background: -o-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important; */
+ background: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/employee-left-leaf.png), url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/ImageGallery/employee-right-leaf.png), linear-gradient(0deg, rgba(255,255,255,1) 255%, rgba(255,255,255,1) 255%);
+ background-position: left -5% top 0%, right -5% top 0%;
+ background-repeat: no-repeat;
+ background-size: 14%, 14%, 100%;
+ 
 }
 
 .modal-header .close-round{
@@ -368,14 +373,14 @@ background: -o-linear-gradient(to bottom ,#ff9e2000,#25a8f714) !important;
 }
 
 
-#month_year{
+/* #month_year{
     padding: 3px 13px;
     font-size: 15px;
     display: inline-block;
     margin:10px 0 18px 0;
     position: relative;
     left: -11px;	
-}
+} */
 
 #itemCollection .tile_box{
  position:relative;	
@@ -417,17 +422,20 @@ border-right: 1px solid #4c4c4c;
 
 .my_rec_dtl_btn{
  position:absolute !important;
- top: 25%;
+ /* top: 25%; */
+ bottom: 8% !important;
  right: 5% !important; 
 }
 
 .Rec_Status{
    left: 13px;
-   bottom: 30px;	
+   /*bottom: 30px;*/
+   bottom: 15px;	
 }
 
 .my_rec_edt_del_box{
-    top:150px !important;
+    /* top:150px !important; */
+    top: 0px !important;
 }
 
 .tile_box .my_rec_edt_del_box a{
@@ -533,6 +541,99 @@ ol.breadcrumb li h4{
     display: flex;
     max-width: 330px;
 }
+
+/* new css added on dec 2022 */
+
+	.panel-heading-recognition-employee {
+    /* padding: 10px 0px 7px 0px !important; */
+    padding: 6px 0px 7px 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+    color: #333;
+}
+.recognition-employee-month {
+    /* padding: 12px 6px; */
+    padding: 8px 7px;
+    border-radius: 0px 9px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #494948 !important;
+    width: 100%;
+}
+.panel-body-recognition {
+    padding: 0px 0px 0px 0px;
+}
+.recognition-type {
+    line-height: 1.42857143 !important;
+    font-size: 18px;
+    font-weight: 400;
+    width: calc(100% - 70px);
+    color: #000;
+    margin: 0px 0px 20px 0px !important;
+}
+.recognition-type>a {
+    color: #000;
+}
+.recognition-type>a:hover {
+    color: #2a6496;
+}
+.recognition-content {
+    text-align: left;
+}
+.recognition-title {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    margin-top: -2px;
+    margin-bottom: 0px !important;
+    word-break: break-word;
+}
+.recognition-title>a {
+    cursor: pointer;
+    color: #000;
+}
+.recognition-title>a:hover {
+    color: #2a6496;
+}
+.recognition-content p {
+    margin: 5px 0px;
+    text-align: left;
+    font-size: 12px;
+    color: #000;
+    word-break: break-word;
+}
+.ellipsis-1, .ellipsis-2, .ellipsis-3 {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.ellipsis-1 {
+    -webkit-line-clamp: 1;
+}
+.ellipsis-2 {
+    -webkit-line-clamp: 2;
+}
+.welcome-image-div img {
+    max-width: 95px;
+    height: 95px !important;
+    box-shadow: none !important;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50% !important;
+    border: 1px solid #828282;
+    margin: 0px auto 0px 0px;
+    overflow: hidden !important;
+}
+
+/* responsive css start */
 
 @media (max-width: 768px) and (min-width: 320px){
 
@@ -940,14 +1041,11 @@ ol.breadcrumb li h4{
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
 <!--[if gte mso 9]><xml>
 <mso:CustomDocumentProperties>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-263</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">95fb3f40-32a3-49a4-adc2-1b2efa37d0d8</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-263, ADMIN-1645029823-263</mso:_dlc_DocIdUrl>
-<mso:Order msdt:dt="string">26300.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>

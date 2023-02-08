@@ -3,7 +3,10 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/SupportLib/mdtimepicker.css">
 <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/css/styles.css">
 <script type="" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-multidatespicker/1.6.6/jquery-ui.multidatespicker.js" integrity="sha512-shDVoXhqpazAEKzSzJQTn5mAtynJ5eIl8pNX2Ah25/GZvZWDEJ/EKiVwfu7DGo8HnIwxlbu4xPi+C0SsHWCCNw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-multidatespicker/1.6.6/jquery-ui.multidatespicker.css" integrity="sha512-VXbqGGD29gdYg6HSSzLd6+eVwBznGTrVoIqZOruvkIbuWSZNDjg/I4p2/zKGMllL5dxzj1PoNoh0dqX1dWxBsQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <style type="text/css" >
 
@@ -18,8 +21,6 @@
 .custom-panel{
 	margin-top:0px !important;	
 }
-
-
 
 /***feb-28-22**/
 
@@ -103,19 +104,11 @@ input[type="text"]{
     background-color: #f7f7f7 !important;
 }
 
-body #s4-workspace {
+/* body #s4-workspace {
     overflow: auto !Important;
-}
+} */
 /***march-11-22***/
 
-
-
-
-
-	body 
-	{
-		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	}
 
 	button:focus 
 	{
@@ -497,9 +490,19 @@ body #s4-workspace {
 }
 
 .scrllajustment{
-    max-height: 375px;
+    max-height: 294px;
     overflow-y: auto; 
 }
+
+@media(min-width:992px){
+	
+#byTaskSearch .modal-dialog {
+    margin: 7px auto !important;
+    width:78% !important;
+}
+
+}
+
 
 @media (max-width: 450px) {
     .timesheet-entry-right-time-box-two,
@@ -886,6 +889,37 @@ tbody#ProjectTableDTL tr td:first-child{
 	color:#000 !important;
 }
 
+/* new css added on 14/3/2022 */
+
+.navbar-custom {
+    margin-bottom: 0px !important;
+}
+
+.date_sec{
+  display:none;
+} 
+
+.date_sec.active{
+  display:block;
+} 
+
+
+
+/***oct-28-22 st***/
+
+#MultiDatesTimeSheet .ui-datepicker-inline{
+ margin:0 auto;	
+}
+
+
+/***oct-28-22 ed***/
+
+/* new css added on 10/11/2022 */
+
+.all-align-gap .article-content {
+    margin: 0px 0px 0px 18px !important;
+}
+
 
 @media (max-width: 991px) {
     /*.filter-align-button {
@@ -1015,6 +1049,30 @@ table.newgridtable{
 
 }
 
+
+/****dec-20-22****/
+
+.timesheet-entry-reply-box {
+    background:#f3f3f3 !important;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+}
+.timesheet-entry-right-middle-box{
+  padding:0 !important;	
+}
+.timesheet-entry-right-middle-box>.col-md-12{
+  padding:0 !important;	
+}
+.timesheet-entry-reply-box {
+    margin-top: 0px !important;
+}
+.timesheet-entry-chat-main-panel {
+    overflow: auto;
+    max-height: 358px !important;
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+
 </style>
 
 <html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
@@ -1033,7 +1091,8 @@ table.newgridtable{
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 <title></title></head><body>
-	<div class="container">
+
+	<div class="container-fluid all-align-gap-container">
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="custom-panel">
@@ -1280,7 +1339,22 @@ table.newgridtable{
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="row m-0 timesheet-entry-right-top-box">
+							
+								<div class="row">
+									<div class="tab_listboxs" style="text-align:right">
+										<label class="radio-inline mydate_now">
+										  <input type="radio" name="MultiDatesRadio" value="specific_date" checked="checked">
+										  Specific Date
+										</label>
+										
+										<label class="radio-inline mydate_now">
+										  <input type="radio" name="MultiDatesRadio" value="Multi_date">
+										  Multi Date
+										</label>
+									</div>	
+								</div>
+								
+								<div class="row m-0 timesheet-entry-right-top-box date_sec specific_date active">
 									<div class="col-xs-6 timesheet-entry-right-time-box-one">
 										<div class="text-center">
 											<h3 class="m-0 timesheet-t-title" id="TOTALHOURS">00:00</h3>
@@ -1306,8 +1380,21 @@ table.newgridtable{
 											<!--<span><i class="fa fa-lock" aria-hidden="true"></i></span>-->									
 										</div>
 										
-									</div>
+								</div><!----right1--->
 								</div>
+								
+								<div class="row date_sec Multi_date timesheet-entry-right-top-box m-0">
+									<div class="col-md-6 timesheet-entry-right-time-box-one">
+										<!--<input type="date" class="form-control">-->
+										<div id="MultiDatesTimeSheet" class=""></div>
+									</div>
+									<div class="col-md-6 timesheet-entry-right-time-box-two">
+									   <textarea class="form-control" style="min-height:120px; resize:none;" id="MultiDatesSelections" readonly="readonly" disabled="disabled"></textarea>
+									   
+									</div>
+								</div><!--right2 ed--->	
+								
+								<div class="date_sec specific_date active">
 								<div class="row m-0 timesheet-entry-right-middle-box">
 									<div class="col-xs-12">
 										<div class="row">
@@ -1340,6 +1427,7 @@ table.newgridtable{
 											</div>
 										</div>
 									</div>
+								</div><!----date_sec--->
 								</div>
 								<div class="col-xs-12 text-center timesheet-entry-footer-btn-group">
 									<a class="btn custom-btn mr-8 w-87" onclick="RestControls();">Reset</a>
@@ -1454,7 +1542,7 @@ table.newgridtable{
 						<table cellpadding='0' cellspacing='0' border='1' id='TempTableQuestions' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
 							<thead class='panel-heading '><tr>
 								<th style="width:5%"><h6 data-localize="" ></h6></th>
-								<th style=""><h6 data-localize="Task" >Task</h6></th>
+								<th style="width:33%"><h6 data-localize="Task" >Task</h6></th>
 								<th style=""><h6 data-localize="ProjectName" >Project Name</h6></th>								
 								<th style=""><h6 data-localize="AssignedBy" >Assigned By</h6></th>
 								<th style=""><h6 data-localize="Priority" >Priority</h6></th>								
@@ -1650,7 +1738,7 @@ table.newgridtable{
 				</div>
 			</div>
 		    <div class="modal-footer timesheet-entry-footer-btn-group footer-btn-group">
-		        <a type="button" class="btn custom-btn w-87" data-dismiss="modal" onclick="GetprojectfromGrid();">Select</a>
+		        <a type="button" class="btn custom-btn w-87"  onclick="GetprojectfromGrid();">Select</a>
 		        <button type="button" class="btn custom-btn custom-btn-two-danger w-87" data-dismiss="modal">Close</button>
 		    </div>
 		</div>
@@ -2388,7 +2476,7 @@ $( document ).ready(function() {
 	});
 	
 	$(function() {
-		$("[name=timesheetEntry]").click(function(){
+		$("[name=timesheetEntry]").click(function(){debugger;
 			
 			$('.toHide').hide();
 			$('.DependencyDIV').hide();
@@ -2397,16 +2485,20 @@ $( document ).ready(function() {
 			$("#TaskComplitionDiv").css("display", "block");
 			$("#barVal").text('0%');
 			$("#TaskComplition").val('0');
-
 			
 			if($(this).val()=="3")
 			{
 				$("#TaskSearchBtn").css("display", "none");
 				$("#timesheetEntry-box-1").show('slow');
 				$('.DependencyDIV').show();	//TaskComplitionDiv	
-				//$("#TaskComplitionDiv").css("display", "none");	
 			}
-				
+			
+			$(".ResetCTRL").val('');
+			$("#TaskComplition").val('0');
+			$("#barVal").text('0%');
+			$("#startTime").val('');
+			$("#EndTime").val('');
+			$("#OtherstartTime").val('');
 		});
 	});
 });
@@ -2498,6 +2590,28 @@ $(".projectlg").each(function(i){
 </script>
 
 <!---project popup texts length control--->
+
+<!----script for right side tab--->
+<script>
+  
+$(function(){
+
+  $('.mydate_now input[type="radio"]').click(function(){
+  var storeval = $(this).val();
+  if(storeval == "Multi_date")
+  {
+  	$("#AttendanceDDL").val('Full Day');
+  }
+  if($(this).is(':checked')){
+      $('.date_sec').not('.'+storeval).removeClass('active');
+      $('.'+storeval).addClass('active');
+      }
+  
+  });
+
+})
+
+</script>
 
 
 

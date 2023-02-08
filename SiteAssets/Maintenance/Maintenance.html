@@ -7,6 +7,7 @@
 <script type="text/javascript" src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/moment.min.js'></script>
 <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Maintenance/CreateCustemColumn.js"></script>
 <script type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Maintenance/ProjectTaskCounters.js"></script>
+<script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-browser/0.1.0/jquery.browser.min.js"></script>
 <title>Titan Demo</title>
 
 
@@ -120,6 +121,7 @@
      
      <button type="button" id="btnChangeCompanyId" class="btn btn-primary" style="margin-left:20px" type="button">Fill 'Company' to 'CompanyId' in ApplicationLink</button>
      <button type="button" id="btnDocumentColumn" class="btn btn-primary" style="margin-left:20px" type="button">Fill ShareDocument Column</button>
+     <button type="button" id="btnFillcompanyAndDepartmentId" class="btn btn-primary" style="margin-left:20px" type="button">Fill Company and DepartmentId in ShareDocument</button>
 
   </div>
   
@@ -149,6 +151,39 @@
   </div>
   
 </div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="form-group">
+     <div class="col-sm-12">
+     <input type="text"  class="col-sm-6" id="HistoryURL" placeholder="Enter DMS Site Url"/>
+
+     <button type="button" id="btnSharingHistory" class="btn btn-primary" style="margin-left:20px" type="button">Sharing Maintenaince History</button>
+
+  </div>
+  
+</div>
+<br/>
+<br/>
+<div class="form-group">
+<div class="col-sm-12">
+     <div class="col-sm-3">
+	     <select class="col-sm-2 form-control" id="DepartmentDDL">
+	     <option>All</option>
+	     </select>     
+     </div>
+     <div class="col-sm-6">
+     	<input type="text" class="form-control" id="sharedDmsURL" placeholder="Enter DMS Site Url"/>
+     </div class="col-sm-3">
+     <button type="button" id="btnDmsToshared" onclick="GetDMSDocuments();" class="btn btn-primary"  type="button">Copy DMS To shared Document Items</button>
+   <div>
+  </div>
+</div>  
+</div>
+
 
 
 </body>

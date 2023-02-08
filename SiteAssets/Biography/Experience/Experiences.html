@@ -7,8 +7,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/css/styles.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/css/info-dark-theme.css">
 <script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
 <script type="text/javascript" src="_layouts/15/clientforms.js"></script>
 <script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
@@ -20,7 +21,7 @@
 <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
 
  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
- <link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
  <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Attendance/assets/moment.min.js"></script>
  
  <style>
@@ -88,6 +89,20 @@
 .MyFavorite-new-menu-ul .MyFavorite-new-menu-ul-main-li a {
     text-decoration: none;
 }
+.experiences-card-body-dec>div {
+    word-break: break-all;
+}
+
+/* new css added on 16-dec-2022 */
+#FilterDate .experiences-card-img .panel-img-heading-general {
+    background-color: #494948 !important;
+    color: #fff !important;
+}
+
+div.ms-webpart-cell-vertical-inline-table, 
+.ms-webpart-chrome-vertical {
+    display: block !important;
+}
  
 </style>
 
@@ -118,9 +133,9 @@
 						<div class="row experiences-head-panel">
 							<div class="col-sm-6">
 								<div class="input-group custom-form-group experiences-form-group">
-									<input type="text" class="form-control" name="" placeholder="Search" id="myInput" onkeyup="myFunction()">
-									<a class="input-group-addon"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/search-icon.png"
-											class="search-icon" alt="search-icon"></a>
+									<input type="text" class="form-control" name="" placeholder="Search" id="myInput"><!--onkeyup="myFunction()"-->
+									<button class="input-group-addon" type="button" id="btnSearch"><img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Biography/Experience/assets/images/search-icon.png"
+											class="search-icon" onclick="searchRecord()" alt="search-icon"></button>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -160,7 +175,7 @@
 			<div class="modal-content ">
 				<div class="modal-header"> 
 					<button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span
-							class="close-icon">×</span></button>
+							class="close-icon">&times;</span></button>
 					<h4 class="modal-title">Filter</h4>
 				</div>
 				<div class="modal-body">

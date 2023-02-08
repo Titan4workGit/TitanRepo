@@ -13,9 +13,10 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/ClientMaster/ClientMaster.css">
 <script type="text/javascript" src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/downloadFile.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-multidownload@4.0.1/jquery-multidownload.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/MediaGellary.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/MediaGellary.js?1245"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/downloadFile.js?254l"></script>
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-multidownload@4.0.1/jquery-multidownload.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/js/multiDownload.js?584j"></script>
 
 <style>
 
@@ -28,6 +29,14 @@
     text-align: left;
 }
 
+/*****march-22-22*****/
+
+#s4-bodyContainer {
+    min-height: calc( 100vh - 38px ) !important;
+}
+
+/*****march-22-22*****/
+
 </style>
 
 
@@ -39,11 +48,6 @@
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">260900.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
 </head>
@@ -55,19 +59,19 @@
 			<div class="col-sm-12">
 				<div class="custom-panel">
 					<div class="panel-head">
-						<h1 class="media-gallery-heading">Media Gallery</h1>
+						<h1 class="media-gallery-heading" data-localize="WorkplaceMedia">Media Gallery</h1>
 					</div>
 					<div class="panel-head-hidden-div" style="display: none;">
 					</div>
 					<div class="col-sm-12 col-xs-12 album-head-box">
 						<div class="row">
 							<div class="col-sm-3 col-xs-12 album-head-title">
-								<h2 class="media-gallery-sub-heading">Albums</h2>
+								<h2 class="media-gallery-sub-heading" data-localize="Albums">Albums</h2>
 							</div>
 							<div class="col-sm-9 col-xs-12 create-new-album-box">
 								<div class="form-group">
 									<!-- id="searchMgs" onkeyup="SearchMessage()" -->
-		  							<input type="text" style="display:none" class="form-control form-control-info album-search" placeholder="Album Search">
+		  							<input type="text" class="form-control form-control-info album-search" id="txtAlbumSearch" placeholder="Search" onkeyup="KeyUpSearch(newArr);">
 		  							<!-- Create New Album -->
 									<a class="new-album-btn" id="btnCreateNewAlbum" data-toggle="modal" data-target="#createNew"> 
 										<i class="fa fa-plus" aria-hidden="true"></i> <span> New Album</span> 
@@ -117,445 +121,7 @@
 						<!-- id="galleryFirstImgThumb" -->
 						<div class="row album-row-info" id="galleryFirstImgThumb">
 
-							<!-- Default case no images -->
-							<!--<div class="col-xs-12 col-sm-12 album-col-info album-card">
-								<div class="col-xs-12 col-sm-3 album-card-left">
-									<div class="album-img-grid-default" id="album-default-case">
-										<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/default album.png" alt="album img grid default">	
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9 album-card-right">
-									<div class="album-detail-box">
-										<div class="album-heading">
-											<a href="../Pages/MediaGalleryDetail.aspx" target="_blank">Diwali party 0f 2019 album, Diwali party 0f 2019 album, Diwali party 0f 2019 album, Diwali party 0f 2019 album</a> 
-										</div>
-										<div class="album-info">
-											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
-										</div>
-										<div class="row album-detail-footer">
-											<div class="col-sm-6 col-xs-12 album-detail-left">
-												<div class="album-user-info-grid">
-													<div class="album-user-image-box">
-														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
-														<div class="album-user-image-text">
-															<p class="mb0">Dipankar Goswami</p>
-															<p class="mb0">Test | IT </p>
-															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
-														</div>
-													</div>
-													<div class="album-user-details-box">
-														<p class="media-event">
-															Event: <span id=""> Diwali Party </span>
-														</p>
-														<p class="media-place">
-															Place: <span id=""> Gurgaon city club </span>
-														</p>
-														<p class="media-date">
-															Date: <span id=""> 12 Jan 2021 </span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12 album-detail-right">
-												<div class="album-data-box">
-													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
-														<div class="album-inner-card-btn-item">
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">234</div>
-															<div class="album-inner-card-btn-panel-gap">
-																<span> </span></div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">3</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">1</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">5</div>
-														</div>
-													</div>	
-												</div>
-											</div>
-										</div>
-										<div class="dropdown custom-card-menu">
-											<a class="album-download-btn"> 
-												 <i class="fa fa-download" aria-hidden="true"></i>
-											</a>
-											<a class="album-delete-btn"> 
-												<i class="fa fa-trash-o" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Case with 1 image -->
-							<!--<div class="col-xs-12 col-sm-12 album-col-info album-card">
-								<div class="col-xs-12 col-sm-3 album-card-left">
-									<div class="album-img-grid-case-1" id="album-case-1">
-										<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid case 1">	
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9 album-card-right">
-									<div class="album-detail-box">
-										<div class="album-heading">
-											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 1</a> 
-										</div>
-										<div class="album-info">
-											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
-										</div>
-										<div class="row album-detail-footer">
-											<div class="col-sm-6 col-xs-12 album-detail-left">
-												<div class="album-user-info-grid">
-													<div class="album-user-image-box">
-														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
-														<div class="album-user-image-text">
-															<p class="mb0">Dipankar Goswami</p>
-															<p class="mb0">Test | IT </p>
-															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
-														</div>
-													</div>
-													<div class="album-user-details-box">
-														<p class="media-event">
-															Event: <span id=""> Diwali Party </span>
-														</p>
-														<p class="media-place">
-															Place: <span id=""> Gurgaon city club </span>
-														</p>
-														<p class="media-date">
-															Date: <span id=""> 12 Jan 2021 </span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12 album-detail-right">
-												<div class="album-data-box">
-													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
-														<div class="album-inner-card-btn-item">
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">234</div>
-															<div class="album-inner-card-btn-panel-gap">
-																<span> </span></div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">3</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">1</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">5</div>
-														</div>
-													</div>	
-												</div>
-											</div>
-										</div>
-										<div class="dropdown custom-card-menu">
-											<a class="album-download-btn"> 
-												 <i class="fa fa-download" aria-hidden="true"></i>
-											</a>
-											<a class="album-delete-btn"> 
-												<i class="fa fa-trash-o" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Case with 2 images -->
-							<!--<div class="col-xs-12 col-sm-12 album-col-info album-card">
-								<div class="col-xs-12 col-sm-3 album-card-left">
-									<div class="row album-img-grid-case-2" id="album-case-2">
-										<div class="col-xs-6 album-case-half-left">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
-										</div>
-										<div class="col-xs-6 album-case-half-right">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9 album-card-right">
-									<div class="album-detail-box">
-										<div class="album-heading">
-											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 2</a> 
-										</div>
-										<div class="album-info">
-											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
-										</div>
-										<div class="row album-detail-footer">
-											<div class="col-sm-6 col-xs-12 album-detail-left">
-												<div class="album-user-info-grid">
-													<div class="album-user-image-box">
-														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
-														<div class="album-user-image-text">
-															<p class="mb0">Dipankar Goswami</p>
-															<p class="mb0">Test | IT </p>
-															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
-														</div>
-													</div>
-													<div class="album-user-details-box">
-														<p class="media-event">
-															Event: <span id=""> Diwali Party </span>
-														</p>
-														<p class="media-place">
-															Place: <span id=""> Gurgaon city club </span>
-														</p>
-														<p class="media-date">
-															Date: <span id=""> 12 Jan 2021 </span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12 album-detail-right">
-												<div class="album-data-box">
-													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
-														<div class="album-inner-card-btn-item">
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">234</div>
-															<div class="album-inner-card-btn-panel-gap">
-																<span> </span></div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">3</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">1</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">5</div>
-														</div>
-													</div>	
-												</div>
-											</div>
-										</div>
-										<div class="dropdown custom-card-menu">
-											<a class="album-download-btn"> 
-												 <i class="fa fa-download" aria-hidden="true"></i>
-											</a>
-											<a class="album-delete-btn"> 
-												<i class="fa fa-trash-o" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Case with 3 images -->
-							<!--<div class="col-xs-12 col-sm-12 album-col-info album-card">
-								<div class="col-xs-12 col-sm-3 album-card-left">
-									<div class="row album-img-grid-case-3" id="album-case-3">
-										<div class="col-xs-6 album-case-half-left">
-											<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
-										</div>
-										<div class="col-xs-6 album-case-half-right">
-											<div class="col-xs-12 album-case-half-right-row-1">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
-											</div>
-											<div class="col-xs-12 album-case-half-right-row-2">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9 album-card-right">
-									<div class="album-detail-box">
-										<div class="album-heading">
-											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 3</a> 
-										</div>
-										<div class="album-info">
-											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
-										</div>
-										<div class="row album-detail-footer">
-											<div class="col-sm-6 col-xs-12 album-detail-left">
-												<div class="album-user-info-grid">
-													<div class="album-user-image-box">
-														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
-														<div class="album-user-image-text">
-															<p class="mb0">Dipankar Goswami</p>
-															<p class="mb0">Test | IT </p>
-															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
-														</div>
-													</div>
-													<div class="album-user-details-box">
-														<p class="media-event">
-															Event: <span id=""> Diwali Party </span>
-														</p>
-														<p class="media-place">
-															Place: <span id=""> Gurgaon city club </span>
-														</p>
-														<p class="media-date">
-															Date: <span id=""> 12 Jan 2021 </span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12 album-detail-right">
-												<div class="album-data-box">
-													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
-														<div class="album-inner-card-btn-item">
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">234</div>
-															<div class="album-inner-card-btn-panel-gap">
-																<span> </span></div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">3</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">1</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">5</div>
-														</div>
-													</div>	
-												</div>
-											</div>
-										</div>
-										<div class="dropdown custom-card-menu">
-											<a class="album-download-btn"> 
-												 <i class="fa fa-download" aria-hidden="true"></i>
-											</a>
-											<a class="album-delete-btn"> 
-												<i class="fa fa-trash-o" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Case with 4 images -->
-							<!--<div class="col-xs-12 col-sm-12 album-col-info album-card">
-								<div class="col-xs-12 col-sm-3 album-card-left">
-									<div class="row album-img-grid-case-4" id="album-case-4">
-										<div class="col-xs-6 album-case-half-left">
-											<div class="col-xs-12 album-case-half-left-row-1">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-1.jpg" alt="album img grid default">
-											</div>
-											<div class="col-xs-12 album-case-half-left-row-2">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-2.jpg" alt="album img grid default">
-											</div>
-										</div>
-										<div class="col-xs-6 album-case-half-right">
-											<div class="col-xs-12 album-case-half-right-row-1">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-3.jpg" alt="album img grid default">
-											</div>
-											<div class="col-xs-12 album-case-half-right-row-2">
-												<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/album-bg-4.jpg" alt="album img grid default">
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-12 col-sm-9 album-card-right">
-									<div class="album-detail-box">
-										<div class="album-heading">
-											<a href="#" target="_blank">Diwali party 0f 2019 album - Case 4</a> 
-										</div>
-										<div class="album-info">
-											<span>Vivamus luctus nulla sit amet pharetra consectetur. Cras tincidunt, libero sed lobortis scelerisque, tortor enim laoreet odio, vel ultrices eros urna ac velit. Mauris fermentum consectetur massa facilisis ornare. Integer viverra dui eu congue laoreet. Pellentesque ultrices magna quis felis pharetra gravida.</span> 
-										</div>
-										<div class="row album-detail-footer">
-											<div class="col-sm-6 col-xs-12 album-detail-left">
-												<div class="album-user-info-grid">
-													<div class="album-user-image-box">
-														<img src="/sites/Titan_2_2_1_DEV/Lists/Employees/Attachments/400/dipankar1.jpg" data-themekey="#">
-														<div class="album-user-image-text">
-															<p class="mb0">Dipankar Goswami</p>
-															<p class="mb0">Test | IT </p>
-															<p class="mb0 Emailfont">d.goswami@adapt-india.com</p>
-														</div>
-													</div>
-													<div class="album-user-details-box">
-														<p class="media-event">
-															Event: <span id=""> Diwali Party </span>
-														</p>
-														<p class="media-place">
-															Place: <span id=""> Gurgaon city club </span>
-														</p>
-														<p class="media-date">
-															Date: <span id=""> 12 Jan 2021 </span>
-														</p>
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-6 col-xs-12 album-detail-right">
-												<div class="album-data-box">
-													<div class="album-inner-card-btn-panel album-inner-card-btn-panel-isTab">
-														<div class="album-inner-card-btn-item">
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/image-gallery-icon.jpg" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">234</div>
-															<div class="album-inner-card-btn-panel-gap">
-																<span> </span></div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/visibility-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">3</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/like-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">1</div>
-															<div class="album-inner-card-btn-panel-gap"><span> </span>
-															</div>
-															<div class="album-inner-card-btn-panel-icon">
-																<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MediaGallery/assets/images/chat-icon.png" data-themekey="#">
-															</div>
-															<div class="album-inner-card-btn-panel-count">5</div>
-														</div>
-													</div>	
-												</div>
-											</div>
-										</div>
-										<div class="dropdown custom-card-menu">
-											<a class="album-download-btn"> 
-												 <i class="fa fa-download" aria-hidden="true"></i>
-											</a>
-											<a class="album-delete-btn"> 
-												<i class="fa fa-trash-o" aria-hidden="true"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>-->			  
+										  
 
 						</div>
 						<!-- see more -->	
@@ -580,20 +146,20 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal"><span class="close-icon">&times;</span></button>
-	        <h4 class="modal-title">Create New Album</h4>
+	        <h4 class="modal-title" id="modalHeader" data-localize="Create">Create New Album</h4>
 	      </div>
 	      <div class="modal-body">
 	        <div class="row">
 
 	        	<div class="form-horizontal">
 	        		<div class="form-group">
-				        <label class="col-sm-3 control-label">Title:<span class="color-red">*</span></label>
+				        <label class="col-sm-3 control-label" data-localize="Title">Title:<span class="color-red">*</span></label>
 				        <div class="col-sm-8">
 				            <input type="text" id="txtTitle" class="form-control" name="">
 				        </div>
 				    </div>
 				    <div class="form-group">
-				        <label class="col-sm-3 control-label">Event:</label>
+				        <label class="col-sm-3 control-label" data-localize="Event">Event:</label>
 				        <div class="col-sm-8">
 				            <div class="input-group create-new-album-search-box">
 						      <input type="text" class="form-control" id="txteventName" disabled=""  placeholder="Search your event" name="search your event">
@@ -606,21 +172,31 @@
 				        </div>
 				    </div>
 				    <div class="form-group">
-				        <label class="col-sm-3 control-label">Place:<span class="color-red">*</span></label>
+				        <label class="col-sm-3 control-label" data-localize="Place">Place:</label>
 				        <div class="col-sm-8">
 				            <input type="text" id="txtLocation"  class="form-control" name="">
 				        </div>
 				    </div>
 				    <div class="form-group">
-				        <label class="col-sm-3 control-label">Date:<span class="color-red">*</span></label>
+				        <label class="col-sm-3 control-label" data-localize="Date">Date:<span class="color-red">*</span></label>
 				        <div class="col-sm-8">
 				            <input type="text" id="txtDate"   class="form-control ViewMode" name="date">
 				        </div>
 				    </div>
 				    <div class="form-group">
-				        <label class="col-sm-3 control-label">Description:<span class="color-red">*</span></label>
+				        <label class="col-sm-3 control-label" data-localize="Description">Description:</label>
 				        <div class="col-sm-8">
 				            <textarea class="form-control resize-none"id="txtDescription" rows="7"></textarea>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <label class="col-sm-3 control-label" data-localize="AllowComment">Allow User's Comments:</label>
+				        <div class="col-sm-8">
+				            <select class="Allow-Comments-ChkBox form-control ViewMode" id="AllowComments">
+                         	<option value="Allowed">Allowed</option>
+                         	<option value="Not Allowed">Not Allowed</option>
+                         	
+                         </select>
 				        </div>
 				    </div>
 	        	</div>
@@ -666,6 +242,7 @@
 	      </div>
 	      <div class="modal-footer">
 	        <button type="button" id="btnSubmit" class="btn custom-btn mr-8 wpx-80">Create</button>
+	        <button type="button" style="display:none" class="btn custom-btn mr-8 wpx-80" id="btnUpdatefolder" data-dismiss="modal">Save</button>
 	        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
@@ -673,7 +250,7 @@
 	  </div>
 	</div>
 
-	<!-- Album Edit Modal 
+	<!-- Album Edit Modal -->
 	<div id="album-edit" class="modal fade" role="dialog">
 	  <div class="modal-dialog">
 
@@ -729,7 +306,7 @@
 	    </div>
 
 	  </div>
-	</div> -->
+	</div>
 
 	<!-- Create Album Events Modal -->
 	<div id="album-event" class="modal fade" role="dialog">

@@ -1075,7 +1075,7 @@
     text-align: center;
     font-size: 18px;
     color: #747474;
-    border: 1px dashed #474747;
+    /* border: 1px dashed #474747; */
     background-color: #ffffff;
     /* box-shadow: 0 0 12px 0 rgb(0 0 0 / 12%); */
     border-radius: 10px;
@@ -1147,6 +1147,81 @@
 }
 
 /* new css added on 01/9/2021, 02/9/2021 for modal-chat-boxses END */
+
+/* new css added on 16-dec-2022 */
+
+#photo-view-with-comments .comment-hide {
+    display: flex;
+    width: 100%;
+   padding-bottom: 15px;
+}
+#photo-view-with-comments .comment-hide #myCarousel {
+    display: flex;
+    width: 75%;
+    /* box-shadow: 0 0px 7px 0 rgb(0 0 0 / 23%);  */
+    border: 1px solid #ddd;
+}
+#photo-view-with-comments .comment-hide #myCarousel .carousel-inner>.item>img {
+    margin: 0 auto;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 35%;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-detail-left {
+    width: 100%;
+    display: flex;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-info-grid {
+    flex-direction: column;
+    /*align-items: center;
+    justify-content: center;*/
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: inherit;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-info-grid>p {
+    font-weight: 600;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-image-box {
+    /*flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-image-box img {
+    /*max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+    padding: 4px;*/
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-image-box .album-user-image-text {
+    /*text-align: center;*/
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-image-box .album-user-image-text p#AothName {
+    /* font-size: 20px; */
+    font-size: 13px;
+    font-weight: 600;
+    /* margin-bottom: 10px !important; */
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-image-box .album-user-image-text p#AothEmail {
+    /* font-size: 16px !important;
+    margin-bottom: 10px !important; */
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-details-box {
+    /* text-align: center; */
+    padding-left: 50px;
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-details-box p.media-date {
+    /*font-size: 16px !important;
+    margin-bottom: 10px !important;*/
+}
+#photo-view-with-comments .comment-hide .album-detail-footer .album-user-details-box p.media-size {
+   /* font-size: 16px !important;
+    margin-bottom: 10px !important; */
+}
 
 /* responsive css START */
 

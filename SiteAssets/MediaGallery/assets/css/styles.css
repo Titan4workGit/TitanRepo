@@ -451,6 +451,7 @@ button.close {
     line-height: 1;
     height: 100%;
     object-fit: contain;
+    margin: 0 auto;
 }
 .view-image-title {
     margin: 20px 0px;

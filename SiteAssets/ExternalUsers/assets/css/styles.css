@@ -629,7 +629,40 @@ width:auto;
 #External-filter .project-modal-footer {
     text-align: center;
 }
+#tablefooterMyCustomer
+{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#tablenavMyCustomer {
+    float: left;
+}
+    
+#tablenavMyCustomer div 
+{
+    float: left;
+    margin-right: 15px;
+}
 
+#tablelocationMyCustomer {
+    float: right;
+    font-size: 12px;
+}
+#tablelocationMyCustomer div {
+    float: left;
+    margin-left: 15px;
+}
+
+/* footer fix bottom */
+body #s4-workspace {
+  height: 100% !important;
+  min-height: 100% !important;
+}
+#s4-bodyContainer {
+  min-height: -webkit-calc( 100vh - 38px );
+  min-height: calc( 100vh - 38px );
+}
 
 /* responsive css start */
 
@@ -711,33 +744,3 @@ width:auto;
     }
 }
 
-#tablefooterMyCustomer
-{
-    height: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-#tablenavMyCustomer {
-    float: left;
-}
-    
-#tablenavMyCustomer div 
-{
-    float: left;
-    margin-right: 15px;
-}
-
-#tablelocationMyCustomer {
-    float: right;
-    font-size: 12px;
-}
-#tablelocationMyCustomer div {
-    float: left;
-    margin-left: 15px;
-}
-
-  
-  
-  
-  
-  

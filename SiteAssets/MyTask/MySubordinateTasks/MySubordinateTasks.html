@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
-
-<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/CommonMethods.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/CustomJS/MySubordinateTasks.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/CustomJS/MISActions.js"></script>
-    <style>
+    <style type="text/css">
         .removing_box {
             display: none;
         }
@@ -1277,6 +1273,60 @@ text-decoration: none;
   width:100% !important;	
 }
 
+#doc-viewer{
+ overflow:hidden;	
+}
+
+#iframe-viewer {
+    height: calc(100vh - -17px) !important;
+    margin-top: -72px;
+}
+
+
+@media(max-width:991px){
+	
+#iframe-viewer {
+    height: calc(100vh - -28px) !important;
+    margin-top: -72px;
+}
+
+.ms-webpart-cell-horizontal,
+.ms-webpart-zone{
+   display: block !important;
+}
+	
+}
+
+
+@media(max-width:487px){
+	
+#iframe-viewer {
+    height: calc(100vh - -58px) !important;
+    margin-top: -72px;
+}	
+	
+}
+
+@media(max-width:381px){
+	
+#iframe-viewer {
+    height: calc(100vh - -100px) !important;
+    margin-top: -80px;
+}
+	
+}
+
+
+
+
+@media(min-width:992px){
+	
+#AttachmentView .modal-dialog{
+ margin:10px auto;
+ width:82%;	
+}	
+	
+}
 
 @media(min-width:768px) {
 
@@ -1306,23 +1356,19 @@ text-decoration: none;
 }
 
 }      
-        
+
+
+@media (max-width: 1360px) and (min-width: 1200px){
+
+.task_graph .colorlist.list_mng {
+    right: 15px !important;
+}
+
+}        
         
 </style>
 
 
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2844</mso:_dlc_DocId>
-<mso:_dlc_DocIdItemGuid msdt:dt="string">7af300ef-b261-4ae7-8d3c-0f9a5da1dac6</mso:_dlc_DocIdItemGuid>
-<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2844, ADMIN-1645029823-2844</mso:_dlc_DocIdUrl>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
-<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
-</head>
-<body>
 
 
     <div class="panel-head">
@@ -1896,7 +1942,7 @@ text-decoration: none;
                             <div id="PieDeptProj">
                             </div>
                             <div class="blankcircleDeptProj"></div>
-                            <ul class="colorlist">
+                            <ul class="colorlist list_mng">
                                 <li><span class="open"></span> Open</li>
                                 <li><span class="completed"></span> Completed</li>
                                 <li><span class="hold"></span> Hold</li>
@@ -2154,7 +2200,7 @@ text-decoration: none;
                             <div id="PieDeptEmp">
                             </div>
                             <div class="blankcircleDeptEmp"></div>
-                            <ul class="colorlist">
+                            <ul class="colorlist list_mng">
                                 <li><span class="open"></span> Open</li>
                                 <li><span class="completed"></span> Completed</li>
                                 <li><span class="hold"></span> Hold</li>
@@ -2319,10 +2365,35 @@ text-decoration: none;
                                 </select>
                             </div>
                         </div>
+                    
+                   
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date From:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="fromDatetaskIn" name="fromDatetaskIn" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date To:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="toDatetaskIn" name="toDatetaskIn" />
+                            </div>
+                        </div>
+                        
+                         <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned By:</label>
+                                <div id="tempPickerInbox">
+                                    <div class="form-control" id="pplassigntoInbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                   
 
                         <div class="col-md-4 col-sm-6 col-xs-12">
                             <div class="form-group custom-form-group">
-                                <label>Due Date(less than):</label>
+                                <label>Due Date(Upto):</label>
                                 <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn" />
                             </div>
                         </div>
@@ -2356,21 +2427,16 @@ text-decoration: none;
                                     <option>All</option>
                                     <option>Low</option>
                                     <option>Medium</option>
-                                    <option>Top</option>
+                                    <option>High</option>
                                 </select>
 
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 col-xs-12">
-                            <div class="form-group custom-form-group">
-                                <label>Assigned By:</label>
-                                <div id="tempPickerInbox">
-                                    <div class="form-control" id="pplassigntoInbox"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+ </div>
+
+                   
+                    
                 </div>
                 <div class="modal-footer text-center">
                     <button class="btn custom-btn mr-8 wpx-80" id="btnSubFilter" onclick="MutipleBaseFilter()" data-dismiss="modal">Apply</button>
@@ -2686,16 +2752,16 @@ text-decoration: none;
                 <div class="modal-header">
                     <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">
-                        Attachment View
+                        Task Details View
                     </h4>
                 </div>
                 <div class="modal-body form-horizontal">
 
                     <div class="embed-responsive embed-responsive-16by9">
-                        <div id="doc-viewer" style="height:400px;width:"></div>
+                        <div id="doc-viewer" style="height: calc(100vh - 158px);"></div>
                     </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer" style="text-align:center; margin-top:0;">
                     <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 
                 </div>
@@ -2835,7 +2901,15 @@ text-decoration: none;
     </div>
 
     <!----dependencies---->    
-
-</body>
-
-</html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2844</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">7af300ef-b261-4ae7-8d3c-0f9a5da1dac6</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2844, ADMIN-1645029823-2844</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

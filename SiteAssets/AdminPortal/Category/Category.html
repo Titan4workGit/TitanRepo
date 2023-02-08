@@ -1,7 +1,7 @@
 <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
 <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js?123'></script>
-<script src="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js?123"></script>
+<script src="//adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///adaptindia.sharepoint.com///ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js?123"></script>
 
 <style>
 
@@ -150,6 +150,167 @@ input[type=text]::-ms-clear {
 	margin-top:0px !important;	
 }
 
+/****june-27-22*****/
+
+table.category_table {
+    border: 1px solid #cccc;
+    margin-bottom: 0;
+    border-top: 2px solid transparent;
+    border-collapse: inherit !important;
+}
+
+table.category_table tr th {
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    background: #eee;
+    border-top: 1px solid #ccc !important;
+}
+
+table.category_table tr th,
+table.category_table tr td{
+  padding:5px 5px;
+}
+
+table.category_table tr td p{
+ margin-bottom:0;
+}
+
+table.category_table tr th:nth-child(2),
+table.category_table tr td:nth-child(2),
+table.category_table tr td:nth-child(3),
+table.category_table tr td:nth-child(4){
+  text-align: center;
+}
+
+table.category_table tr td{
+ vertical-align: middle !important; 
+ padding:3px 5px;
+ border-bottom:1px solid #cccccc45;
+}
+
+.crosebtn, .addptnnow {
+    width: 32px;
+    min-width: 32px;
+    height: 30px;
+    font-size: 17px;
+    transition: 0.1s;
+    padding: 0;
+    margin: 3px 6px;
+    line-height: 30px;
+}
+.crosebtn{
+    background: #d43f3a;
+    border-color: #d43f3a;
+    color:#fff;
+}
+.crosebtn:focus,
+.crosebtn:hover{
+	background:#fff;
+    border-color:#d43f3a;
+    color:#333;
+}
+
+.table_covering {
+    overflow: auto;
+    max-height: 52vh;
+}
+
+.table_covering::-webkit-scrollbar-thumb{
+  background: #4b4b4b;
+  border:2px solid transparent;
+  background-clip:content-box; 
+  -webkit-background-clip:content-box;
+  border-radius: 5px;
+}
+
+.table_covering::-webkit-scrollbar-thumb:hover{
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+}
+
+.table_covering::-webkit-scrollbar{
+  width:8px;
+  height:8px;
+ 
+}
+#modalApprovalCategory .modal-body{
+ padding:10px 20px !important;
+}
+
+.add_categorys{
+  
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 5px !important;
+  box-shadow: none !important;
+}
+
+.heading_category{
+ display:inline-block;	
+}
+
+#tblSubCategory td a.btn-outline-primary,
+#tblSubCategory td a.btn-outline-danger{
+ height: 30px !important;
+    width: 30px !important;
+    line-height: 30px;
+    font-size: 13px !important;
+    text-align: center;
+    border-radius: 50% !important;
+    border: 0;
+    padding: 0 !important;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+    color: #1d6ec0 !important; 
+} 
+
+#tblSubCategory td a.btn-outline-primary:hover,
+#tblSubCategory td a.btn-outline-danger:hover{
+  background:#ccc;	
+}
+
+.addbuttonsec {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: #eee;
+    position: sticky;
+    bottom: 0;
+    color: #1d6ec0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-top-color: #1d6ec0;
+    border-top-width: 1px;
+}
+
+.addbuttonsec label{
+ margin:0 !important;	
+}
+
+@media (min-width: 768px){
+
+#modalApprovalCategory .modal-dialog {
+    width: 42%;
+    margin:3px auto 30px auto;
+}
+
+}
+
+
+
+
 @media(max-width:767px){
 
 	div.ms-webpart-cell-vertical-inline-table{
@@ -271,18 +432,18 @@ input[type=text]::-ms-clear {
 					<div class="row" id="managesec">
 						<label for="" style="margin-top:9px;margin-left:-5px;" class="col-sm-1 control-label" data-localize="Type">Type</label>
 						<select id="ddlCategoryTypet" style="width:200px;font-size: 13px;margin-left:-25px;padding:8px 5px !Important;"  class="pull-left"> 
-						<option value="0">All</option>
+						<!--<option value="0">All</option>
 						<option value="7">Activity</option>
 						<option value="2">Document</option>
 						<option value="5">Event</option>
 						<option value="1">Experience</option>
-						<option value="1">Guest Type</option>						
+						<option value="9">Guest Type</option>						
 						<option value="4">Information</option>
 						<option value="9">Project Type</option>
 						<option value="10">Questions</option>				
 					    <option value="3">Recognition</option>					    		          
 					    <option value="6">Welcome</option>
-					    <option value="8">Work Type</option>
+					    <option value="8">Work Type</option>-->
 					          
 						</select>
 					   <input type="text" id="query" onkeyup="sorter.search('query')" placeholder="Search..." class="doc-search"style="margin-left:12px;width:200px;font-size: 13px;padding:8px 5px !Important;" />
@@ -294,9 +455,9 @@ input[type=text]::-ms-clear {
 					<div class="table-responsive">
 						<table cellpadding='0' cellspacing='0' border='1' id='TempTableCategory' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
 							<thead class='panel-heading'><tr>
-								<th><h6 data-localize="Type">Type</h6></th>
-								<th><h6 data-localize="Categories">Categories</h6></th>
-								<th><h6 data-localize="Status">Status</h6></th>
+								<th class='nosort'><h6 data-localize="Type">Type</h6></th>
+								<th class='nosort'><h6 data-localize="Categories">Categories</h6></th>
+								<th class='nosort'><h6 data-localize="Status">Status</h6></th>
 								<th class='nosort' style='width:140px; text-align:center'><h6 data-localize="Action">Action</h6></th>
 								</tr>
 							</thead>
@@ -355,11 +516,11 @@ input[type=text]::-ms-clear {
  <div class="panel-body">
     <div class="form-horizontal">
     <div class="form-group">
-        <label for="" class="col-sm-3 control-label popup_label" data-localize="Type">Type</label>       
-         <div class="col-sm-9">
+        <label for="" class="" data-localize="Type" style="padding:3px 15px">Type</label>       
+         <div class="col-sm-12">
           <select id="ddlCategorytype" class="form-control">
           <!--<option value="">Select Module</option>-->
-                        <option value="Activity">Activity</option>
+                        <!--<option value="Activity">Activity</option>
 						<option value="Document">Document</option>
 						<option value="Event">Event</option>
 						<option value="Experience">Experience</option>
@@ -369,56 +530,127 @@ input[type=text]::-ms-clear {
 						<option value="Questions">Questions</option>			
 					    <option value="Recognition">Recognition</option>					    		          
 					    <option value="Welcome">Welcome</option>
-					    <option value="Work Type">Work Type</option>		        			          
+					    <option value="Work Type">Work Type</option>-->		        			          
           </select>
          </div>
        </div>    
-	<div class="form-group" id="myfromgroup">
-        <label for="" class="col-sm-3 control-label popup_label" data-localize="Category">Category</label>
-       
-         <div class="col-sm-9">
+	   <div class="form-group" id="myfromgroup">
+        <label for="" class="" data-localize="Category" style="padding:3px 15px">Category</label>
+        <div class="col-sm-12">
           <input type="" class="form-control" id="txtCategoryName" name="txtCategoryName">
          </div>
        </div>  
      
 
-      <div class="form-group">
-        <label for="" class="col-sm-3 control-label popup_label" data-localize="Active">Active</label>       
-         <div class="col-sm-9">
-		<input type="checkbox" name="" id="checkbox" value="0" checked></div>
+      <div class="form-group" style="padding-left:15px;">
+        <input type="checkbox" name="" id="checkbox" style="margin:0; width:15px; height:15px;" value="0" checked>
+        <label for="checkbox" data-localize="Active" style="margin:0 5px">Active</label>
      </div>
+     
+     <div class="form-group" style="padding:0 15px; text-align:right">
+       <button type="button" class="btn  custom-btn" name="createCategory" id="createCategory" data-localize="Add">Add</button>
+       <button type="button" class="btn custom-btn"  style="display:none" id="addSubCategory" data-toggle="modal" data-target="#add_category" style="border:1px solid #ccc; margin-right:0px; padding:5px 10px">Add Sub Category</button>
+     </div>
+     
+     <div class="form-group" id="subCategoryDiv" style="display:none">
+	      <div class="table_covering" style="padding:0px 15px 1px 15px;">
+	        <table class="table category_table">
+	          <thead>
+	              <tr>
+	                <th>Sub Category</th>
+	                <th style="width:12%">Active</th>
+	                <th style="width:20%; text-align:center">Action</th>
+	            </tr>
+	          </thead>
+	          <tbody id="tblSubCategory">	            
+	            <tr>
+	              <td>
+	                <input type="text" name="" placeholder="Add Category here.." class="form-control add_categorys" style="padding:5px !important;">
+	              </td>
+	              <td>
+	                <input type="checkbox" readonly="" style="width:15px; height: 15px;">
+	              </td>
+	              <td>
+	                <button class="btn custom-btn addptnnow"><i class="fa fa-plus"></i></button>
+	              </td>
+	            </tr>
+	            <tr>
+	              <td>
+	                Sub category-1
+	              </td>
+	              <td>
+	                <input type="checkbox" readonly="" style="width:15px; height: 15px;">
+	              </td>
+	              <td>
+	                <button class="btn crosebtn" type="button"><i class="fa fa-minus"></i></button>
+	              </td>
+	            </tr>
+	
+	          </tbody>
+	        </table>
+		 </div>
+     </div><!---form-group-->
      
      
      <!--new -->
     <div class="panel panel-default" style="display:none">
-<div class="panel-heading panel-head-4" role="tab" id="headingOne">
-	<h4 class="panel-title h4-color">
-		<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapslang" aria-expanded="false" aria-controls="collapslang" class="collapsed">
-		<i class="short-full glyphicon-chevron-down glyphicon"></i>
-		<span data-localize="OtherLanguages">Other Languages</span>
-		</a>
-	</h4>
-</div>
-<div id="collapslang" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"  style="height: 0px;">
-<div class="panel-body PollCategory">
-
-
-</div>
-</div>
-</div>
-     
-     
-	 <div class="row text-center">               
-		<button type="button" class="btn  btn-outline-success" name="createCategory" id="createCategory" data-localize="Add">Add</button>
-	 </div>
-    </div>
-   </div>
-   </div>
+			<div class="panel-heading panel-head-4" role="tab" id="headingOne">
+				<h4 class="panel-title h4-color">
+					<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapslang" aria-expanded="false" aria-controls="collapslang" class="collapsed">
+					<i class="short-full glyphicon-chevron-down glyphicon"></i>
+					<span data-localize="OtherLanguages">Other Languages</span>
+					</a>
+				</h4>
+			</div>
+			<div id="collapslang" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne"  style="height: 0px;">
+				<div class="panel-body PollCategory">
+				</div>
+			</div>
+		</div>
+		   </div>
+		   </div>
+		   </div>
 		</div>
 	</div>
 </div>	
 
 </section>
+
+
+<!-- add_category -->
+<div id="add_category" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.4)">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header panel-head-4">
+        <button type="button" class="close h4-color" data-dismiss="modal" style="min-width:auto !important;">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Sub Category</h4>
+      </div>
+      <div class="modal-body">
+       
+        <div class="form-group">
+          <label for="text">Sub Category</label>
+          <input type="text" id="txtSubCategory" class="form-control">
+        </div>
+        <div class="form-group" id="chckDiv" style="display:none;">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="chckSubCategory"   class="" style="width:15px; height: 15px; margin-top:0;">
+              Active
+            </label>
+        </div>
+     
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" id="btnSubCategoryAdd" class="btn custom-btn wpx-87">Submit</button>
+      </div>
+    </div>
+ </div>
+</div>
+<!-- add_category -->
+
+
+
 
 
 <script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
@@ -433,14 +665,9 @@ input[type=text]::-ms-clear {
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">2600.00000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rahul  Rana</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title></title></head><body></body>
+</head><body></body>
                 <script type="text/javascript">
                  var gearPage = document.getElementById('GearPage');
                  if(null != gearPage)

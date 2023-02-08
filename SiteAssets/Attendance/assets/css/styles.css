@@ -365,6 +365,12 @@ button:focus {
     padding-right: 9px;
 }
 
+/* new css added on 15/03/2022 */
+
+#EmpReportTable .employee-report-holiday {
+    float: left;
+}
+
 /* responsive css start */
 
 @media screen and (max-width: 767px) {

@@ -11,6 +11,19 @@
 
 <style>
 
+input[type="button"].custom-btn{
+ background:#1d6ec0;
+ color:#fff;	
+}
+
+input[type="button"].custom-btn:focus,
+input[type="button"].custom-btn:hover{
+ background:#fff;
+ color:#1d6ec0;
+ border:1px solid #1d6ec0 !important;	
+}
+
+
 .modal-header{
 
  background-color:#666;	
@@ -57,6 +70,24 @@
 .dataTables_filter label input{
 	min-width:275px !important;
 }
+
+
+.manage-employees-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+.manage-employees-right-time-box-one,
+.manage-employees-right-time-box-two {
+    border-right: 1px solid #d2d2d2;
+}
+.manage-employees-right-time-box-one,
+.manage-employees-right-time-box-two,
+.manage-employees-right-time-box-three {
+    padding: 10px;
+}
+
+
 
 @media(min-width:768px){
 
@@ -434,21 +465,71 @@
 		                                    </div>
 		                                </div>
 		                            </div>
-		                            <div class="col-md-3 col-sm-12 col-xs-12 guest-user-top-panel-box-istad">
-		                                <div class="form-group custom-form-group search-box" style="display:none">
-		                                    <input class="form-control" type="text" name="" placeholder="Search">
-		                                </div>
-		                            </div>
 		                            <div class="col-md-9 col-sm-12 col-xs-12 guest-user-top-panel-box-istad">
+		                                <!--<div class="form-group custom-form-group search-box" style="display:none">
+		                                    <input class="form-control" type="text" name="" placeholder="Search">
+		                                </div>-->
+		                                
+		                               
+                                        <div class="row m-0 manage-employees-right-top-box flexing">
+											<div class="col-xs-2 manage-employees-right-time-box-one">
+												<div class="text-center" >
+													<h3 class="m-0" id="hInitiated" >0</h3>
+													<p class="m-0">Initiated</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 color-green" id="hInvited">0</h3>
+													<p class="m-0">Invited</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 text-success" id="hAccepted">0</h3>
+													<p class="m-0">Accepted</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 text-danger" id="hInactive">0</h3>
+													<p class="m-0">Inactive</p>
+												</div>
+											</div>
+											
+											<div class="col-xs-2 manage-employees-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0 text-success" id="hActive">0</h3>
+													<p class="m-0">Active</p>
+												</div>
+											</div>
+											<div class="col-xs-2 manage-employees-right-time-box-three">
+												<div class="text-center">
+													<h3 class="m-0" id="hAvilableLicenses" ></h3>
+													<p class="m-0">Avilable Licenses</p>
+												</div>
+											</div>
+										</div>
+		                                
+		                                
+		                                
+		                                
+		                                
+		                                
+		                                
+		                                
+		                                
+		                            </div>
+		                            <div class="col-md-3 col-sm-12 col-xs-12 guest-user-top-panel-box-istad">
 		                                <div class="text-right guest-user-btn-position">
 		                                    <a type="button" class="btn custom-btn min-wpx-90" data-toggle="modal" onclick="Getinvitebox()" data-target="#Invite-Guest-User">
-		                                        <span class="ml-4">Invite a Guest User</span>
+		                                        <span class="ml-4">Invite</span>
 		                                    </a>
 		                                    <a type="button" class="btn custom-btn min-wpx-90" data-toggle="modal" style="display:none" data-target="#Bulk-Invitation">
 		                                        <span class="ml-4">Bulk Invitation</span>
 		                                    </a>
 		                                    <a type="button" class="btn custom-btn min-wpx-90" data-toggle="modal" onclick="cleartextBox()" data-target="#Permitting-into-Portal">
-		                                        <span class="ml-4">Permitting into Portal</span>
+		                                        <span class="ml-4">Activate</span>
 		                                    </a>
 		                                    <a type="button" class="btn custom-btn min-wpx-90" data-toggle="modal" style="display:none" data-target="#Bulk-Permitting">
 		                                        <span class="ml-4">Bulk Permitting</span>
@@ -1053,14 +1134,9 @@
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2302</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">d14a5f3b-2436-4598-91d4-ea785719ba50</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2302, ADMIN-1645029823-2302</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">230200.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>jQuery UI Datepicker - Icon trigger</title></head>
+</head>

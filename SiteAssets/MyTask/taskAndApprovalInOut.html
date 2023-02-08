@@ -32,7 +32,6 @@
     <!--script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MyApprovalInbox.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MyApprovalOutbox.js"></script-->
 
-
     <style>
         .three-dots:after {
             cursor: pointer;
@@ -905,7 +904,7 @@ border-radius: 50%;
 
 
         .dashboard-table-btn {
-            margin: 0px 3px 10px 0px !important;
+            margin: 0px 6px 10px 0px !important;
         }
 
             #tableTempTaskOutBox .dropdown-menu > li.parentlist,
@@ -956,28 +955,32 @@ border-radius: 50%;
                     border-top: 1px solid #ccc;
                 }
 
-        #tableTempTaskOutBox .dropdown-menu:before,
-        #TempTableQuestions .dropdown-menu:before {
-            content: '';
-            width: 12px;
-            height: 12px;
-            background-color: #fff;
-            display: block;
-            position: absolute;
-            top: -6px;
-            transform: rotate(45deg);
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            right: 6px;
-            border-left: 1px solid #ccc;
-            border-top: 1px solid #ccc;
-        }
 
-        #tableTempTaskOutBox .dropdown-container.dropdown .dropdown-menu,
-        #TempTableQuestions .dropdown-container.dropdown .dropdown-menu {
-            top: 80%;
-        }
+#tableTempTaskOutBox .dropdown-menu:before, 
+#TempTableQuestions .dropdown-menu:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    right: 12px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}        
+
+
+#tableTempTaskOutBox .dropdown-container.dropdown .dropdown-menu,
+#TempTableQuestions .dropdown-container.dropdown .dropdown-menu {
+    top: 80%;
+    left:-2px;
+}
+
 
         #tableTempTaskOutBox .fa-flag-o,
         #TempTableQuestions .fa-flag-o {
@@ -2155,6 +2158,7 @@ background-clip: border-box;
             background-color: #ccc;
             -webkit-transition: .4s;
             transition: .4s;
+            text-align:right !important;
         }
 
             .switchboxsec .slider:before {
@@ -2173,6 +2177,7 @@ background-clip: border-box;
                 background-color: #1d6ec0;
     			opacity: 1;
     			color: #fff;
+    			text-align:left !important;
         }
 
         .switchboxsec input:focus + .slider {
@@ -2212,7 +2217,14 @@ background-clip: border-box;
             display: flex;
             margin: 3px 0;
         }
-
+        
+        .prjectdivide:last-child .projectdescription{
+			font-weight:600;
+		}
+		
+		#reminders table tr td{
+			padding:5px;	
+		}
 
         .datedivides select {
             width: 32%;
@@ -2391,7 +2403,7 @@ background-clip: border-box;
         .taskse {
             font-size: 13px;
             color: #1d6ec0 !important;
-            margin: 0 0 6px 0;
+            margin:0;
             line-height: 1.6 !important;
         }
 
@@ -2404,12 +2416,11 @@ background-clip: border-box;
         .totaltime,
         .projectdescription,
         .descriptionboxhere {
-            font-size: 12px;
+            font-size: 13px;
         }
 
         .projectdescription {
-            font-weight: 600;
-            margin-right: 5px;
+           margin-right: 5px;
         }
 
         #reminders table tr td:nth-child(1) {
@@ -2598,11 +2609,14 @@ background-clip: border-box;
             padding: 5px !important;
         }
 
-        #setreminder .modal-body,
         #bucketbox .modal-body,
         #renameboard .modal-body {
             padding: 20px !important;
         }
+        
+        #setreminder .modal-body{
+		 padding: 15px 15px !important;
+		}
 
         #reminders .modal-body {
             padding-top: 20px !important;
@@ -2662,11 +2676,11 @@ background-clip: border-box;
             box-sizing: border-box;
             text-decoration: none;
             font-size: 12px !important;
-            width: 85%;
+            width:calc(100% - 40px);
         }
 
         .task-name-box > b {
-            font-size: 12px !important;
+            font-size: 13.3px !important;
         }
 
         #mainDivAreaTaskOutBox .dropdown-container.dropdown,
@@ -3173,17 +3187,16 @@ background-clip: border-box;
             padding: 20px !important;
         }
 
-        .wrapse {
-            padding: 15px 5px;
-            border: 1px solid #d9d9d9;
-            border-radius: 5px;
-            box-shadow: 2px 2px 11px -3px #ccccccfc;
-            min-height: 52vh;
-            min-height: 52vh;
-            overflow-y: auto;
-            max-height: 52vh;
-        }
-
+       .wrapse {
+		    padding: 15px 5px;
+		    border: 1px solid #d9d9d9;
+		    border-radius: 5px;
+		    box-shadow: 2px 2px 11px -3px #ccccccfc;
+		    min-height: 52vh;
+		    min-height: 59vh;
+		    overflow-y: auto;
+		    max-height: 59vh;
+		}
             .wrapse h3 {
                 text-align: center;
             }
@@ -3478,7 +3491,7 @@ h3.linkheading{
 
 .innboxsection label.radio-inline{
  margin-right:10px !important;
- padding:3px 5px !important;
+ padding:3px 15px !important;
 }
 
 .innboxsection label.radio-inline input[type="radio"]{
@@ -3486,6 +3499,15 @@ h3.linkheading{
  top:-2px; 	
 }
 
+
+textarea.form-control {
+    min-height: 140px;
+    max-height: 140px;
+}
+
+.topsec_reminder .radio-inline{
+ padding:0 15px;	
+}
 
 
         /*****nov-15-21****/
@@ -3758,6 +3780,7 @@ background-color: transparent;
 #Notificationlist .botheventwork .radio-inline{
  margin-bottom:5px !Important;
  margin-top:5px !Important;
+ margin-right:25px;
  	
 }
 
@@ -3870,13 +3893,52 @@ background-color: transparent;
 }
 
 
+.reminder_heightmanage{
+ max-height:72vh;	
+}
+
+.dashboard-deta-btn-panel .dashboard-icon-info {
+    filter: none !important;
+    opacity: 1;
+    margin: 0 5px !important;
+}
+
+@media(min-width:992px){
+
+#progresschat .modal-dialog{
+  width:70.5%;	
+} 
+
+#progresschat .modal-dialog .space_manage .col-md-5{
+ padding-right:7px;	
+}
+#progresschat .modal-dialog .space_manage .col-md-7{
+ padding-left:7px;	
+}
+
+
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
 
     .all-align-ms-tasks-gap {
         padding-left: 27px;
         padding-right: 15px;
     }
-
+    .chatuser li{
+	  -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .TimeSheetHour {
+    margin-left: auto;
+    min-width:85px;
+    text-align:right;
+   }
+   .TimeSheetHour h4.TimeHeader{
+	text-align:right;	
+	}
+    
 }
 
 /* css for overall alignment for this task page ----- END ----- */
@@ -3941,10 +4003,14 @@ background-color: transparent;
 
             #changepriority .modal-dialog,
             #changeduedate .modal-dialog,
-            #changestatus .modal-dialog,
-            #Notificationlist .modal-dialog {
+            #changestatus .modal-dialog{
                 width: 380px;
             }
+            
+            #Notificationlist .modal-dialog{
+                width: 53%;
+            }
+
 
             #progression .modal-dialog {
                 width: 575px;
@@ -3952,10 +4018,15 @@ background-color: transparent;
 
             #dependenciesmodl .modal-body,
             #addsssignee .modal-body,
-            #Notificationlist .modal-body,
-            #progression .modal-body {
+            #progression .modal-body{
                 padding: 20px 30px !important;
             }
+            
+            #Notificationlist .modal-body{
+			 padding: 20px 30px 10px 30px !important;
+			}
+          
+            
         }
 
         @media(max-width: 500px) {
@@ -3996,7 +4067,7 @@ background-color: transparent;
     <iframe id="txtArea1" style="display:none"></iframe>
     <div class="container-fluid all-align-gap-container">
         <div class="row">
-            <div class="col-xs-12 mt-10 mb-10 paddmag">
+            <div class="col-xs-12 mb-10 paddmag">
 
                 <div class="panel-head">
                     <h3 class="m-0">Task & Planner</h3>
@@ -4448,7 +4519,7 @@ background-color: transparent;
                                 </div>
                                 <div class="row m-0">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
-                                        <div class="table-responsive">
+                                        <div class="table-responsive scrollbar-panel" style="">
                                             <div id="tablewrapper">
                                                 <div id="tableheader" style="height: auto !important;">
                                                     <div class="search" style="display:none;">
@@ -4461,7 +4532,7 @@ background-color: transparent;
                                                         </span>
                                                     </div>
                                                 </div>
-                                                <div class="table-responsive scrollbar-panel">
+                                                <div class="" style="">
                                                     <table cellpadding='0' cellspacing='0' border='1' id='TempTableQuestions' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
                                                         <thead class='panel-heading '>
                                                             <tr>
@@ -4525,7 +4596,7 @@ background-color: transparent;
                                                                 <option value="100">100</option>
                                                             </select>
                                                         </div>
-                                                        <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                                                        <div class=""><span data-localize="Page">Page</span>&nbsp;<span id="currentpage"></span>&nbsp;<span data-localize="Of" style="margin:0 3px">Of</span>&nbsp;<span id="totalpages"></span></div>
                                                     </div>
                                                 </div>
                                                 <div><a href="javascript:void(0)" data-localize="See more..." id="SeeMoreInbox" value="">See more...</a></div>
@@ -5109,6 +5180,30 @@ background-color: transparent;
                                                                 </select>
                                                             </div>
                                                         </div>
+                                                        
+                                                        
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date From:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="fromDatetaskout" name="fromDatetaskIn" >
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date To:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="toDatetaskout" name="toDatetaskIn" >
+                            </div>
+                        </div>
+
+                                                       <div class="col-md-4">
+                                                            <div class="form-group custom-form-group">
+                                                                <label for="Project">Assigned To:</label>
+                                                                <div id="pplassigntoOutbox" style="width:100% !important"></div>
+                                                            </div>
+                                                        </div> 
+                                                        
+                                                        
                                                         <div class="col-md-4">
                                                             <div class="form-group custom-form-group">
                                                                 <label for="Project">Due Date(less than):</label>
@@ -5155,12 +5250,7 @@ background-color: transparent;
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group custom-form-group">
-                                                                <label for="Project">Assigned To:</label>
-                                                                <div id="pplassigntoOutbox" style="width:100% !important"></div>
-                                                            </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">
@@ -5174,7 +5264,7 @@ background-color: transparent;
 
                                 <div class="row m-0">
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mob-tab-table-mytask">
-                                        <div class="table-responsive">
+                                        <div class="table-responsive scrollbar-panel" style="">
                                             <div id="tablewrapper">
                                                 <div class="search" style="display:none;">
                                                     <select class="form-control" style="height:37px;float:left;width:200px;" id="columnsOutBox" onchange="sorterTaskOutBox.search('query')"></select>
@@ -5189,7 +5279,7 @@ background-color: transparent;
                                                 </div>
                                                 <div>
 
-                                                    <div id='mainTablearea' class='table-responsive scrollbar-panel'>
+                                                    <div id='mainTablearea' class=''>
                                                         <table cellpadding='0' cellspacing='0' border='1' id='tableTempTaskOutBox' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
                                                             <thead class='panel-heading '>
                                                                 <tr>
@@ -5246,7 +5336,7 @@ background-color: transparent;
                                                                 <option value="100">100</option>
                                                             </select>
                                                         </div>
-                                                        <div><span data-localize="Page"></span><span id="currentpageTaskOutBox"></span><span data-localize="Of"></span><span id="totalpagesTaskOutBox"></span></div>
+                                                        <div><span data-localize="Page"></span><span id="currentpageTaskOutBox"></span><span data-localize="Of" style="margin:0 4px;"></span><span id="totalpagesTaskOutBox"></span></div>
                                                     </div>
                                                 </div>
                                                 <div><a href="javascript:void(0)" data-localize="See more..." id="SeeMoreOutbox" value="">See more...</a></div>
@@ -5955,11 +6045,36 @@ background-color: transparent;
                                 </select>
                             </div>
                         </div>
+                        
+                        
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date From:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="fromDatetaskIn" name="fromDatetaskIn" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Assigned Date To:</label>
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="toDatetaskIn" name="toDatetaskIn" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="form-group custom-form-group">
+                                <label for="Project" id="txtFilterAssignBy">Assigned By:</label>
+                                <div id="tempPickerInbox">
+                                    <div class="form-control" id="pplassigntoInbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="col-md-4">
                             <div class="form-group custom-form-group">
                                 <label for="Project">Due Date(less than):</label>
                                 <!-- <input class="form-control" type="date" name=""> -->
-                                <input type="text" class="form-control" id="taskIn" name="taskIn" />
+                                <input type="text" placeholder="mm/dd/yyyy" class="form-control" id="taskIn" name="taskIn" />
                             </div>
                         </div>
                         <!----<div class="col-md-4">
@@ -6005,14 +6120,7 @@ background-color: transparent;
                             </div>
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="form-group custom-form-group">
-                                <label for="Project" id="txtFilterAssignBy">Assigned By:</label>
-                                <div id="tempPickerInbox">
-                                    <div class="form-control" id="pplassigntoInbox"></div>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div>
                 </div>
@@ -7564,7 +7672,7 @@ background-color: transparent;
                 </div>
                 <div class="modal-body">
 
-                    <div class="table-responsive scrollbar-panel">
+                    <div class="table-responsive scrollbar-panel reminder_heightmanage">
                         <table class="table table-striped" style="border:1px solid #ccc">
                             <tbody id="tbdyReminder"></tbody>
                         </table>
@@ -7746,7 +7854,7 @@ background-color: transparent;
 
                 </div><!---modal-body--->
 
-                <div class="modal-footer" style="text-align: center; margin-top:0px;">
+                <div class="modal-footer" style="text-align: center; margin-top:0px; padding:5px;">
                     <button type="button" class="btn custom-btn" id="btnSetReminder">Submit</button>
                 </div>
             </div>
@@ -8019,9 +8127,10 @@ background-color: transparent;
 
                     <div class="form-group">
                         <label for="">Message<span style="color:red;">*</span></label>
-                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control"></textarea>
+                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control" style="min-height:170px; max-height:170px"></textarea>
                     </div>
                     <div class="">
+                       <label>Mail send to</label><label>:</label>
                         <div class="botheventwork" style="">
                             <label class="radio-inline">
                                 <input type="radio" class="hideSelective SelectMailSend" id="chkAllUser" value="All" name="rdoSendMail" checked="checked"> All
@@ -8042,7 +8151,7 @@ background-color: transparent;
                     </div>
                 </div>
 
-                <div class="modal-footer" style="text-align: center">
+                <div class="modal-footer" style="text-align: center; margin-top:0px;">
                     <button type="button" class="btn custom-btn" id="btnSendNotify">Send Mail</button>
                 </div>
             </div>
@@ -8183,18 +8292,15 @@ background-color: transparent;
 
                 <div class="modal-body">
 
-                    <div class="row">
-
-                        <div class="col-md-8 col-md-push-4">
-                            <div class="wrapse wrapsetwo" id="line-chart">
-
-                            </div><!---grapsec--->
-                        </div>
-
-                        <div class="col-md-4 col-md-pull-8">
+                    <div class="row space_manage">
+						<div class="col-md-5">
                             <div class="wrapse wrapseone">
                                 <ul class="chatuser" id="ulProgresUsers"></ul>
                             </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="wrapse wrapsetwo" id="line-chart">
+							</div><!---grapsec--->
                         </div>
                     </div><!--row ed-->
                 </div>
@@ -8254,6 +8360,74 @@ background-color: transparent;
 </div>
 <!-- Meeting Task Popup ends-->
 
+<!-- change_History st-->
+<div id="change_History" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Change History</h4>
+      </div>
+      <div class="modal-body">
+          <div class="additional_doms">
+            <table class="table table-bordered">
+              <thead>
+                  <tr>
+                    <th style="width:15%">Date</th>
+                    <th style="width:10%">Activity</th>
+                    <th style="width:20%">On Change</th>
+                    <th style="width:20%">Old Value</th>
+                    <th style="width:20%">Update Value</th>
+                    <th style="width:15%">Action By</th>
+                    
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>
+                      <span class="date_dfine ">12 jun 2022 3:40 PM</span>
+                    </td>
+                    <td>
+                      <div class="modify_dfine">Modify</div>
+                    </td>
+                     <td>
+                      <div class="task_dName ellipsis-2">Task Name</div>
+                    </td> 
+                    <td>
+                      <div class="task_OName ellipsis-2">Old Task Name</div>
+                    </td> 
+                    <td>
+                      <div class="task_newName ellipsis-2">New Task Name</div>
+                    </td>
+                    <td>
+                      Dipankar Goswami
+                    </td> 
+                  </tr>  
+              </tbody>
+            </table>
+          </div>
+       
+      </div>
+     <div class="modal-footer" style="text-align: center; margin-top:0; padding:10px;">
+        <button type="button" class="btn btn-outline-success">OK</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- change_History ed-->
+
+
+
+
+
+
+
+
     
     
 <!---tootltip workbox---->    
@@ -8262,7 +8436,7 @@ background-color: transparent;
     
 
 
-    <script src="https://use.fontawesome.com/edb0de374a.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/edb0de374a.js"></script>
     <script>
         $(document).ready(function () {
             userActivityNotificationEntry(_spPageContextInfo.userId, window.location);
@@ -8284,9 +8458,9 @@ background-color: transparent;
         var datefield = document.createElement("input")
         datefield.setAttribute("type", "date")
         if (datefield.type != "date") { //if browser doesn't support input type="date", load files for jQuery UI Date Picker
-            document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
-            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
-            document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n')
+            //document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+            document.write('<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/jquery.min.js"><\/script>\n')
+            document.write('<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/jquery-ui.min.js"><\/script>\n')
         }
     </script>
 
@@ -8484,6 +8658,68 @@ var attrstore = $(this).attr('data-target');
 
     </script>
     <!----range slider--->
+
+<script>
+$(document).ready(function () {
+
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#TaskExport").hide();
+		$("#TaskExportOutbox").hide();
+	
+	}
+});
+
+</script>
+
+
+<!----dropdown overflow hide manage inside table---------->
+
+<script>
+
+$(document).ready(function (){  
+
+$('.table-responsive .dropdown').on('show.bs.dropdown', function(){
+  var dropbtn = $(this).find('.dropdown-toggle');
+  var dropmenu = $(this).find('.dropdown-menu');
+  var dropheight = $(this).find('.dropdown-menu').outerHeight();
+  var dropwidth = $(this).find('.dropdown-menu').outerWidth();
+
+  $(this).css('position','static');
+  dropmenu.css({
+    "top":(dropbtn.position().top - dropheight)+'px',
+    "left":(dropbtn.position().left - dropwidth + 30)+'px'
+  })
+dropmenu.data('open',true);
+});
+
+$('.table-responsive .dropdown').on('hidden.bs.dropdown', function(){
+  var dropbtn = $(this).find('.dropdown-toggle');
+  var dropmenu = $(this).find('.dropdown-menu');
+  dropmenu.data('open',false);
+  });
+
+$('.table-responsive').on('scroll', function(){
+ 
+  var dropbtn = $(this).find('.dropdown-toggle');
+  var dropmenu = $(this).find('.dropdown-menu');
+  var dropheight = $(this).find('.dropdown-menu').outerHeight();
+  if(dropmenu.data('open')){
+  dropmenu.css({
+    "top":(dropbtn.position().top - dropheight)+'px',
+    "left":(dropbtn.position().left - dropwidth + 30)+'px'
+  })
+}
+
+});  
+
+});
+  
+</script>
+
 
 </body>
 </html>

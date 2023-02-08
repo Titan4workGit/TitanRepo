@@ -190,6 +190,7 @@ return false;
 	height:300px !important;
 	overflow:hidden;
 	box-shadow:0px 21px 9px -14px #5b5b5b;
+	border-radius: 10px;
 }
 
 .view-btn-magzine h4 img{
@@ -205,7 +206,8 @@ return false;
 
 .tile_box2 img{
 	height:300px;
-	border:2px solid #727272;	
+	border:2px solid #727272;
+	border-radius: 10px;	
 }
 .tile_box2.view-btn-magzine{
 
@@ -557,6 +559,43 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
 	
 }
 
+/* new css added on 21/11/2022 */
+
+.panel-footer-MagazineView {
+    padding: 5px 0px 0px 20px;
+    position: relative;
+}
+.panel-footer-MagazineView>p {
+    margin-bottom: 0;
+}
+.panel-footer-MagazineView>p>span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 15px;
+}
+
+/* new css added on 19-JAN-2023 */
+
+.tile_box2.view-btn-magzine span.magazinedate {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    color: #ffffff;
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 6px 0px 12px 0px;
+    background-color: #494948 !important;
+    width: auto;
+}
+.tile_box2.view-btn-magzine span span {
+    padding: 0 0px;
+}
+span.new_ajusthere {
+    bottom: 12px;
+    left: 10px;
+}
+
 @media(max-width:550px){
 
 .right_aligment,
@@ -625,10 +664,14 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
                         
                         <div class="col-md-3 right_aligment">
                         
-                          <button type="button"  id="btnAddNew" class="btn btn-outline-primary newMaazine" data-toggle="modal" data-target="#mazinemodle" data-localize="Add Magazine">Add Magazine</button>
+                          <button type="button"  id="btnAddNew" class="btn btn-outline-primary newMaazine" data-toggle="modal" data-target="#mazinemodle" data-localize="AddNew">Add New</button>
 					<!--<a type="button" id="AddNewMagazine" class="btn btn-outline-primary newMaazine" href="#"><span class="glyphicon glyphicon-plus" style="padding-right: 5px;"></span><span>Add Magazine</span></a>-->
                         				         
   						</div>
+  						
+  						<div class="col-md-12 panel-footer-MagazineView">
+                			<p> <span>*</span> By clicking on the below links, you will be redirected to a new page. </p>
+                		</div>
                         
                     </div>    
                         
@@ -655,13 +698,13 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
       <div class="modal-content">
         <div class="modal-header" style="background-color:#1c4587">
           <button type="button" class="close close-round" onclick="ClearFields();" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" data-localize="AddMagazine">Add Magazine</h4>
+          <h4 class="modal-title" data-localize="AddMagazine">Add New</h4>
         </div>
         <div class="modal-body">
           <div class="row">
           	<label for="tital" class="col-sm-3 staring" data-localize="Title">Title</label>
           	<span class="col-sm-9">
-             	<input type="text" class="form-control" id="input2" placeholder="Title">
+             	<input type="text" class="form-control" maxlength="200" id="input2" placeholder="Title">
             </span>	
           </div>
           <div class="row">
@@ -671,9 +714,9 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
             </span>	
           </div>
           <div class="row">
-          	<label for="tital" class="col-sm-3 staring" data-localize="Volume">Volume</label>
+          	<label for="tital" class="col-sm-3" style="position:relative; text-align:right !important;" data-localize="Volume">Volume</label>
           	<span class="col-sm-9">
-             	<input type="" class="form-control" id="input" maxlenght = "50" placeholder="Volume">
+             	<input type="" class="form-control" maxlength="100" id="input" maxlenght = "50" placeholder="Volume">
             </span>          
           </div>
 		
@@ -686,17 +729,17 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
             </span>	
           </div>
           <div class="row">
-          	<label for="tital" class="col-sm-3 staring" data-localize="Magazine"><br><b>(PDF File)</b></label>
+          	<label for="tital" class="col-sm-3 staring" data-localize="Magazine"><br><b>PDF File</b></label>
           	<span class="col-sm-9">
              	<input name="filename" type="file" class="form-control" accept="application/pdf" id="file2" onchange="Checkfiles(this)" >
-                <span style="color:#1a1a1a; font-size:12px" data-localize="PdfOnly">PDF Only</span>
+                <!--<span style="color:#1a1a1a; font-size:12px" data-localize="PdfOnly">(PDF Only)</span>-->
 
             </span>	
           </div>
 
         </div><!--modal body-->
         
-        <div class="modal-footer">
+        <div class="modal-footer" style="text-align:center">
          	<button type="button" id="Submit" class="btn custom-btn mr-8 w-70" data-localize="Submit">Submit</button>
 			<button type="button" class="btn custom-btn-two-cancel w-70" id=""  onclick="ClearFields()" data-dismiss="modal">Close</button>
         </div>
@@ -712,14 +755,9 @@ transition:-o-cubic-bezier(.54,-0.39,.41,1.91) 0.5s;
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-52</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">66965fe4-3c7a-42eb-97d6-8f6adc123a1d</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-52, ADMIN-1645029823-52</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Lakhan Kumar Sharma</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">5200.00000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Adapt Intranet</title></head>
+</head>

@@ -34,6 +34,13 @@
  color: #fff;
 }
 
+.modal-body-items{
+ padding-left: 30px;	
+}
+.modal-body-items li {
+    list-style: disc;
+    font-size: 14px;
+}
 </style>
 
 
@@ -201,22 +208,23 @@
                 </div>
                 <div class="modal-body">
                     <ul class="modal-body-items">
-                        <li>Task name is mandatory,  and should be less than 250 char.</li>
-                        <li>Task type will be any one of “Project Task” or “General Task”.</li>
-                        <li>If task type not mentioned properly (blank or miss spell)  then system will consider “General Task” as default.</li>
-                        <li> In case of “Project Task”, Project name or Project ID is mandatory</li>
-                        <li>Module name or Module ID will be under specified project. For miss-spelled or wrong ID, module information will be skipped.</li>
-                        <li>In case of “General Task”, customer is mandatory.</li>
-                        <li>If Customer name or Customer ID, found blank or wrong then system will consider “Self Company” as a default customer.</li>
-                        <li>The “Assigned by” user is defined by the email. If it is blank then system consider logged-user as default “Assigned by”</li>
-                        <li>For “Assigned to” users are defined as email, separated by (;) semicolon.</li>
-                        <li>All the user must be valid employee or guest user. If found any wrong user, then task will not create.</li>
-                        <li>In case of “Project Task”, all “Assigned to” users must be in the project team.</li>
-                        <li>Due date is MM/DD/YYYY formatted.</li>
-                        <li>Due date must be today or future date. If due date is wrong or blank, then task will not create.</li>
-                        <li>Priority of task will any one of  “High” , “Medium” or “Low”. If blank or miss spell, system consider “Medium” as default.</li>
+                    	<li>Task name is mandatory, and should be less than 250 char.</li>
+						<li>Task type will be any one of “Project Task” or “General Task”.</li>
+						<li>If task type is not mentioned properly (blank or miss spell) then system will consider “General Task” as default.</li>
+						<li>In the case of “Project Task”, Project name or Project ID is mandatory.</li>
+						<li>Module name or Module ID will be under specified project. For miss-spelled or wrong ID, module information will be skipped.</li>
+						<li>In the case of “General Task”, customer is mandatory.</li>
+						<li>If Customer name or Customer ID, found blank or wrong then system will consider “Self-Company” as a default customer.</li>
+						<li>The “Assigned by” user is defined by the email. If it is blank, then the system considers the logged user as default “Assigned by”.</li>
+						<li>For “Assigned to” users are defined as email, separated by (;) semicolon.</li>
+						<li>All the users must be a valid employee or active guest user. If found any wrong user, then task will not create.</li>
+						<li>In the case of “Project Task”, all “Assigned to” users must be in the project team.</li>
+						<li>Due date is MM/DD/YYYY formatted.</li>
+						<li>The due date must be today or a future date. If the due date is wrong or blank, then the task will not be created.</li>
+						<li>Priority of task will any one of “High” , “Medium” or “Low”. If there is a blank or miss spell, the system considers “Medium” as default.</li>
+                    
                     </ul>
-                    <div class="download-btn-panel">
+                    <div class="download-btn-panel" style="padding-left:0px;">
                         <a href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/task-import-excel/assets/Sample Task Import template.xlsx">Click here</a>
                         <span>&nbsp;to download the sample Excel file</span>
                     </div>

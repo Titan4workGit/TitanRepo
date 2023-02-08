@@ -2,11 +2,17 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/styles.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/file-explore.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
 <script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/JS/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.2/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/2.3.2/js/buttons.html5.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/SearchableLibaries.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/advance-document-search.js"></script>
@@ -230,7 +236,7 @@
     #ModalDisplayProperty .detail-label {
         font-weight: 600 !important;
         font-size: 13px !important;
-        margin: 3px 0px !important;
+        margin:0px 0px !important;
         display:block !important;
     }
     
@@ -797,6 +803,16 @@
             text-align: right;
             padding: 5px 8px;
         }
+ 
+.flextype .labelflexing{
+ width:18%;	
+}
+ 
+ .flextype .labelflexing label {
+            width: auto;
+            text-align: right;
+            padding:0 2px;
+        }
 
         .flextype input[type="text"],
         .flextype textarea,
@@ -1172,6 +1188,36 @@ height: 8px;
 background-color: transparent;
 }
 
+.SupprtedFileBox .chip-icon-box {
+    position: relative !important;
+    left: 3px;
+}
+
+.remarkboxsec{
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ margin:10px 0 5px 0;
+}
+
+.remarkboxsec p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+}
+
+.remarkboxsec label{
+ margin-right: 7px;
+}
+
+
+
+
+
 
     @media(max-width:500px) {
 
@@ -1359,7 +1405,13 @@ background-color: transparent;
         .flexitem {
             margin: 7px 0;
         }
-    }
+        
+.flextype .labelflexing{
+  width:100%;	
+}    
+        
+        
+}
 
     @media(max-width:991px) {
 
@@ -1961,9 +2013,11 @@ display: flex;
  margin:3px 0;
 }
 
-#sharedHistoryTable tr th{
+#sharedHistoryTable,
+#sharedHistoryTable thead th,
+#sharedHistoryTable tbody tr td{
  font-size:12px !important;
-	
+ box-sizing: border-box !important;
 }
 
 #sharedHistoryList tr td:last-child{
@@ -2003,11 +2057,13 @@ background-color: transparent;
     font-size: 13px !important;
 }
 
-
+#sharedHistoryTable{
+  border-top:none !important;	
+}
 #sharedHistoryTable thead th {
     border-bottom: 1px solid #1111114d !important;
-    border-top: 1px solid #6161614d !important;
-    padding: 2px 10px !important;
+    border-top: 1px solid #1111114d !important;
+    padding: 7px 10px !important;
     border-left: none;
 }
 
@@ -2051,7 +2107,6 @@ background-color: transparent;
 #sharedHistoryTable thead th {
     border-bottom: 1px solid #1111114d !important;
     padding: 5px 6px !important;
-    border-top: none !important;
     border-left: none;
     border:none;
 }
@@ -2300,6 +2355,24 @@ flex-direction: column !important;
     max-width: 180px !important;
 }
 
+.labelflexing{
+ display: -webkit-box;
+ display: -moz-box;
+ display: -ms-flexbox;
+ display: -webkit-flex;
+ display: flex; 
+}
+
+.labelflexing label:last-child{
+ margin-left:2px; 
+}
+
+
+#myModalShareHistory .modal-dialog{
+ margin:1px auto !important;	
+}
+
+
 @media(max-width: 1024px){
 
 table#sharedHistoryTable {
@@ -2392,23 +2465,23 @@ table#sharedHistoryTable {
                             <div class="col-sm-6">
                                 <div class="advance-panel-body">
                                     <div class="form-group custom-form-group">
-                                        <label for="document">Title or File Name:</label>
+                                        <label for="document"><span data-localize='Title'>Title</span> or File Name</label><label>:</label>
                                         <input type="text" id="txtTitlesearchBox" class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="document">Text Content:</label>
+                                        <label for="document" data-localize="Text Content">Text Content</label><label>:</label>
                                         <input type="text" id="txtContentsearchBox" class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group custom-form-group" style="display:none">
-                                        <label for="document">File Name:</label>
+                                        <label for="document" data-localize="File Name">File Name</label><label>:</label>
                                         <input type="text" class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group custom-form-group">
-                                        <label for="document">Reference#:</label>
+                                        <label for="document" data-localize='Reference'>Reference</label><label>:</label>
                                         <input type="text" id="txtReference" class="form-control" placeholder="">
                                     </div>
                                     <div class="form-group custom-form-group mb-0">
-                                        <label for="document">Document Type:</label>
+                                        <label for="document" data-localize='Category'>Category</label><label>:</label>
                                         <select class="form-control" id="ddlDocumentType">
                                             <option>ALL</option>
                                         </select>
@@ -2427,7 +2500,7 @@ table#sharedHistoryTable {
                                                         </div>
                                                     </th>
                                                     <th class="border-bottom-0 w-25">All Document Library</th>
-                                                    <th class="border-bottom-0 w-73"></th>
+                                                    <th class="border-bottom-0 w-73" id="sharewithmeth"></th>
                                                 </tr>
                                             </thead>
                                             <tbody id="tbodyDocLibraries"></tbody>
@@ -2447,9 +2520,17 @@ table#sharedHistoryTable {
                             <div class="col-xs-12">
 
                                 <div class="search-table-btn-box-main">
-                                    <h4 class="search-sub-headeing">Search Results</h4>
+                                    <h4 class="search-sub-headeing" data-localize="Search Results"> Advanced Search Output</h4>
                                     <div class="search-table-btn-box">
                                         <div class="search-deta-btn-panel d-flex">
+                                            <div class="dropdown search-table-btn" id="btnExopt">
+                                                   <button class="btn dropdown-toggle" type="button" id="downloadfile" onclick="exelExopt()">
+                                                    <span class="fa fa-file-excel-o font-12"></span>
+                                                    <span>Excel</span>
+                                                </button>
+
+                                            </div>
+
                                             <div class="dropdown search-table-btn">
                                                 <button class="btn dropdown-toggle" type="button" id="downloadfile" onclick="downloadfiles()">
                                                     <span class="fa fa-download font-12"></span>
@@ -2479,17 +2560,17 @@ table#sharedHistoryTable {
                                                 <ul class="dropdown-menu dropdown-color-menu-icon">
                                                     <li>
                                                         <a href="javascript:void(0)" name="=asc" id="iTitle" onclick="Tablesorting(this,1)">
-                                                            <span>Title</span>
+                                                            <span data-localize="Title">Title</span>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="javascript:void(0)" name="=asc" id="iFileType" onclick="Tablesorting(this,2)">
-                                                            <span>File Type</span>
+                                                            <span data-localize="File Type">File Type</span>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="javascript:void(0)" name="=asc" id="iDate" onclick="Tablesorting(this,3)">
-                                                            <span>Date</span>
+                                                            <span data-localize="Date">Date</span>
                                                         </a>
                                                     </li>
 
@@ -2531,7 +2612,7 @@ table#sharedHistoryTable {
                             <button class="btn dropdown-toggle" type="button" id="">
                                 <img class="detail-view-icon-info mr2"
                                      src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/full-view.png" alt="Full View">
-                                <span>Full View</span>
+                                <span data-localize="Full View">Full View</span>
                             </button>
                         </a>
                     </div>
@@ -2539,41 +2620,41 @@ table#sharedHistoryTable {
                         <a href="#" id="DownloadFile" download>
                             <button class="btn dropdown-toggle" type="button">
                                 <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/download.png" id="DownloadFileSRC" alt="Download">
-                                <span>Download</span>
+                                <span data-localize="Download">Download</span>
                             </button>
                         </a>
                     </div>
                     <div class="dropdown detail-view-table-btn">
                         <button class="btn dropdown-toggle LockDisable" type="button" id="btnDeleteFile">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/delete.png" alt="delete">
-                            <span>Delete</span>
+                            <span data-localize="Delete">Delete</span>
                         </button>
                     </div>
                     <div class="detail-view-table-btn" id="btnCopyFile">
                         <button class="btn LockDisable" type="button" data-toggle="modal" data-target="#copymove">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/copy.png" alt="copy">
-                            <span>Copy</span>
+                            <span data-localize="Copy">Copy</span>
                         </button>
                     </div>
 
                     <div class="detail-view-table-btn" id="btnMoveFile">
                         <button class="btn LockDisable" type="button" id="LoackMove" data-toggle="modal" data-target="#copymove">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/move.png" alt="move">
-                            <span>Move</span>
+                            <span data-localize="Move">Move</span>
                         </button>
                     </div>
 
                     <div class="dropdown detail-view-table-btn">
                         <button class="btn dropdown-toggle LockDisable" type="button" id="btnRenameFile" data-toggle="modal" data-target="#rename">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/rename.png" alt="rename">
-                            <span>Rename</span>
+                            <span data-localize="Rename">Rename</span>
                         </button>
                     </div>
 
                     <div class="dropdown detail-view-table-btn">
                         <button class="btn dropdown-toggle LockDisable" type="button" data-toggle="modal" data-target="#sharingfile" id="btnShareFile">
                             <i class="fa fa-share-square-o"></i>
-                            <span>Share</span>
+                            <span data-localize="Share">Share</span>
                         </button>
                     </div>
 
@@ -2581,14 +2662,14 @@ table#sharedHistoryTable {
                     <div class="dropdown detail-view-table-btn">
                         <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#notify">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/notify.png" alt="notify">
-                            <span>Notify</span>
+                            <span data-localize="Notify">Notify</span>
                         </button>
                     </div>
 
                     <div class="dropdown detail-view-table-btn">
                         <button class="btn dropdown-toggle" data-toggle="modal" data-target="#mypermission" type="button">
                             <img class="detail-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/permissions.png" alt="permissions">
-                            <span>Permissions</span>
+                            <span data-localize="Permissions">Permissions</span>
                         </button>
                     </div>
 
@@ -2596,12 +2677,12 @@ table#sharedHistoryTable {
                         <button class="btn dropdown-toggle" id="lockeffect">
                             <img class="detail-view-icon-info mr2 lock" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/lock-icon2.png" alt="">
                             <img class="detail-view-icon-info mr2 unlock" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/unlock-icon.png" alt="">
-                            <span class="texthere">Lock</span>
+                            <span class="texthere" data-localize="Lock">Lock</span>
                         </button>
                         <h5 id="LockStatus" style="display:none;"></h5>
                         <button class="btn dropdown-toggle" id="btnUndoLock" style="display:none;">
                             <img class="detail-view-icon-info mr2 unlock" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/unlock-icon.png" alt="">
-                            <span>Unlock</span>
+                            <span data-localize="Unlock">Unlock</span>
                         </button>
                     </div>
 
@@ -2614,7 +2695,7 @@ table#sharedHistoryTable {
                         <button class="btn dropdown-toggle" id="starffect">
                             <img class="detail-view-icon-info mr2 unfillstar" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-icon.png" alt="">
                             <img class="detail-view-icon-info mr2 fillstar" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/star-fill.png" alt="">
-                            <span class="favorite" id="txtFavorite">Add to Favorite</span>
+                            <span class="favorite" id="txtFavorite" data-localize="Add to Favorite">Add to Favorite</span>
                         </button>
                     </div>
 
@@ -2636,7 +2717,7 @@ table#sharedHistoryTable {
                                 <div class="panel-heading detail-panel-link">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#properties" aria-expanded="true">
-                                            <span>Properties</span>
+                                            <span data-localize="Properties">Properties</span>
                                             <i class="fa fa-angle-down icon-rotate"></i>
                                         </a>
                                     </h4>
@@ -2645,28 +2726,28 @@ table#sharedHistoryTable {
                                     <div class="panel-body">
                                         <ul class="detail-vide-panel scrollbar-panel">
                                             <li>
-                                                <label class="detail-label">Title:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize='Title'>Title</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileTitle"></div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Document Type:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize='Category'>Category</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileDocType"></div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Reference:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize='Reference'>Reference</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileReference">1234567890</div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Author:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize="Author">Author</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileAuthor">Dipankar Goswami</div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Details:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize="Details">Details</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileDetalis"></div>
                                             </li>
                                         </ul>
                                         <div class="change-properties-pannel">
-                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#propertypopup" id="btnChangeProp">Change Properties</a>
+                                            <a href="javascript:void(0);" data-toggle="modal" data-target="#propertypopup" id="btnChangeProp" data-localize="Change Properties">Change Properties</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2675,7 +2756,7 @@ table#sharedHistoryTable {
                                 <div class="panel-heading detail-panel-link">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#activities" aria-expanded="false">
-                                            <span>Activities</span>
+                                            <span data-localize="Activities">Activities</span>
                                             <i class="fa fa-angle-down icon-rotate"></i>
                                         </a>
                                     </h4>
@@ -2686,17 +2767,17 @@ table#sharedHistoryTable {
                                             <li>
                                                 <div class="detail-vide-panel-align">
                                                     <div>
-                                                        <label class="detail-label">Sharing:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Sharing">Sharing</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileSharing"></div>
                                                     </div>
-                                                    <a class="detail-panel-inner-link" id="txtSharingHistoy" href="javascript:void(0);">Sharing History</a>
+                                                    <a class="detail-panel-inner-link" id="txtSharingHistoy" href="javascript:void(0);" data-localize="Sharing History">Sharing History</a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <div class="detail-vide-panel-align flxcolumn">
                                                     <div>
-                                                        <label class="detail-label">Approvals:</label>
-                                                        <a id="btnApproval" class="detail-panel-inner-link" href="javascript:void(0);" style="position:relative; top:1.2px;">Send for Approval</a>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Approvals">Approvals</label><label>:</label></div>
+                                                        <a id="btnApproval" class="detail-panel-inner-link" href="javascript:void(0);" style="position:relative; top:1.2px;" data-localize="Send for Approval">Send for Approval</a>
                                                        
                                                         <div class="wrapcheck">
                                                         
@@ -2714,7 +2795,7 @@ table#sharedHistoryTable {
                                             </li>
                                         </ul>
                                         <div class="change-properties-pannel" style="display:none;">
-                                            <a href="javascript:void(0);">Audit Trail</a>
+                                            <a href="javascript:void(0);" data-localize="Audit Trail">Audit Trail</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2723,7 +2804,7 @@ table#sharedHistoryTable {
                                 <div class="panel-heading detail-panel-link">
                                     <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#file-properties" aria-expanded="false">
-                                            <span>File Details</span>
+                                            <span data-localize="File Details">File Details</span>
                                             <i class="fa fa-angle-down icon-rotate"></i>
                                         </a>
                                     </h4>
@@ -2732,39 +2813,39 @@ table#sharedHistoryTable {
                                     <div class="panel-body text_breaking">
                                         <ul class="detail-vide-panel scrollbar-panel">
                                             <li>
-                                                <label class="detail-label">File Name:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize="File Name">File Name</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileName"></div>
                                             </li>
                                             <li>
                                                 <div class="detail-vide-panel-align">
                                                     <div>
-                                                        <label class="detail-label">Path:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="Path">Path</label><label>:</label></div>
                                                         <div class="detail-title" id="FilePath"></div>
                                                     </div>
-                                                    <a class="detail-panel-inner-link" href="javascript:void(0);" data-toggle="modal" data-target="#copylink">Copy Links</a>
+                                                    <a class="detail-panel-inner-link" href="javascript:void(0);" data-toggle="modal" data-target="#copylink" data-localize="Copy Links">Copy Links</a>
                                                 </div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Library:</label>
+                                                 <div class="labelflexing"><label class="detail-label" data-localize="Library">Library</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="LibProject"></div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Last Update on:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize="Last Update on">Last Update on</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileLastModified"></div>
                                             </li>
                                             <li>
-                                                <label class="detail-label">Last Update by:</label>
+                                                <div class="labelflexing"><label class="detail-label" data-localize="Last Update by">Last Update by</label><label>:</label></div>
                                                 <div class="detail-title ellipsis-2" id="FileLastModifiedBy">Dipankar Goswami</div>
                                             </li>
                                             <li>
                                                 <div class="detail-vide-panel-align">
                                                     <div>
-                                                        <label class="detail-label">File Version:</label>
+                                                        <div class="labelflexing"><label class="detail-label" data-localize="File Version">File Version</label><label>:</label></div>
                                                         <div class="detail-title ellipsis-2" id="FileVersion">Last file version</div>
                                                     </div>
                                                    
 	                                                    <div id="VerHisParent">
-	                                                    	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist">Version History</a>
+	                                                    	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnVerHist" data-localize="Version History">Version History</a>
 	                                                    </div>
 	                                                    
                                                 </div>
@@ -2774,12 +2855,12 @@ table#sharedHistoryTable {
                                             <div class="detail-vide-panel-align">
                                             	
                                             	<div>
-                                                	<label class="detail-label">File Size:</label>
+                                                	<div class="labelflexing"><label class="detail-label" data-localize="File Size">File Size</label><label>:</label></div>
 	                                                <div class="detail-title ellipsis-2" id="FileSize"></div>
 	                                            </div>
 	                                            
 	                                            <div id="AuditHisParent">
-                                                	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnAuditHist">Audit History</a>
+                                                	<a class="detail-panel-inner-link" href="javascript:void(0);" id="btnAuditHist" data-localize="Audit History">Audit History</a>
                                                 </div>
                                             
                                             </div>    
@@ -2833,7 +2914,7 @@ table#sharedHistoryTable {
                     <div class="col-md-4">
 
                         <div class="control_img">
-                            <h3>Full Control</h3>
+                            <h3 data-localize="Full Control">Full Control</h3>
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Full_control.png" alt="">
                         </div>
                     </div>
@@ -2860,7 +2941,7 @@ table#sharedHistoryTable {
                     <div class="col-md-4">
 
                         <div class="control_img">
-                            <h3>Contributor</h3>
+                            <h3 data-localize="Contributor">Contributor</h3>
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Contributor.png" alt="">
                         </div>
                     </div>
@@ -2887,7 +2968,7 @@ table#sharedHistoryTable {
                     <div class="col-md-4">
 
                         <div class="control_img">
-                            <h3>Reader</h3>
+                            <h3 data-localize="Reader">Reader</h3>
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Reader.png" alt="">
                         </div>
                     </div>
@@ -2914,7 +2995,7 @@ table#sharedHistoryTable {
                     <div class="col-md-4">
 
                         <div class="control_img">
-                            <h3>Restricted View</h3>
+                            <h3 data-localize="Restricted View">Restricted View</h3>
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Restricted.png" alt="">
                         </div>
                     </div>
@@ -2941,7 +3022,7 @@ table#sharedHistoryTable {
                     <div class="col-md-4">
 
                         <div class="control_img">
-                            <h3>Full Control</h3>
+                            <h3 data-localize="Full Control">Full Control</h3>
                             <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/images/Full_control.png" alt="">
                         </div>
                     </div>
@@ -3009,7 +3090,7 @@ table#sharedHistoryTable {
 
                     <div class="labelbox">
 
-                        <label>Send mail to:</label>
+                        <div><label data-localize="Send mail to">Send mail to</label><label>:</label></div>
 
                         <label for="checkall" class="checkbox-inline" style="color:#338dcc;font-size:13px;">
                             Select All
@@ -3110,12 +3191,12 @@ table#sharedHistoryTable {
                     </div><!--coverbox ed-->
 
                     <div class="form-group">
-                        <label for="linkdoc">Document Link:</label>
+                        <label for="linkdoc" data-localize="Document Link">Document Link</label><label>:</label>
                         <input type="email" class="form-control input-lg txtCopyLink" id="linkdoc">
                     </div><!--form group-->
 
                     <div class="form-group">
-                        <label for="linkdoc">Message:</label>
+                        <label for="linkdoc" data-localize="Message">Message</label><label>:</label>
                         <textarea class="form-control" id="txtMessage"></textarea>
                     </div><!--form group-->
 
@@ -3170,7 +3251,7 @@ table#sharedHistoryTable {
             </div>
             <div class="modal-body">
                 <div class="input_box">
-                    <label class="control-lablee">New Name</label>
+                    <label class="control-lablee" data-localize="New Name">New Name</label>
 
                     <div class="flexingstyle">
                         <input type="text" class="form-control input-lg" style="width:460px" id="txtRenamefile" placeholder="">
@@ -3224,7 +3305,7 @@ table#sharedHistoryTable {
                 <!--tree section start-->
 
                 <caption style="padding:5px 10px; background:#1d6ec014; border:1px solid #ccc; border-bottom:none !important;">
-                    <h4 class="FolderCaption" style="display:none; margin-bottom:10px;">Select Folder</h4>
+                    <h4 class="FolderCaption" style="display:none; margin-bottom:10px;" data-localize="Select Folder">Select Folder</h4>
                     <h4 class="FolderCaption" id="FolderNameCopy" style="display:none; margin:0;"></h4>
                 </caption>
                 <div class="treesec scrollbar-panel" style="display: none">
@@ -3259,14 +3340,14 @@ table#sharedHistoryTable {
 
                     <div class="col-md-12">
                         <div class="form-group custom-form-group">
-                            <label>Purpose:</label>
+                            <label data-localize="Purpose">Purpose</label><label>:</label>
                             <input type="text" id="txtPurpose" class="form-control" maxlength="200">
                         </div>
                     </div>
 
                     <div class="col-md-12">
                         <div class="form-group custom-form-group">
-                            <label>Note:</label>
+                            <label data-localize="Note">Note</label><label>:</label>
                             <textarea class="form-control resize-none" id="txtNote" rows="5"></textarea>
                         </div>
                     </div>
@@ -3277,7 +3358,7 @@ table#sharedHistoryTable {
 
                     <div class="col-md-6">
                         <div class="form-group custom-form-group">
-                            <label>Priority:</label>
+                            <label data-localize="Priority">Priority</label><label>:</label>
                             <select class="form-control" id="ddlPriority">
                             	<option value="Medium">Medium</option>
                                 <option value="Top">Top</option>
@@ -3291,9 +3372,9 @@ table#sharedHistoryTable {
 
                             <div class="coverradio" style="margin-bottom:4px;">
                                 <input class="radio-btn-position-top--2" id="dueDate" type="radio" name="optradio" style="display:none">
-                                <label class="radio-inline due-date-container" style="padding-left:0px">
+                                <label class="radio-inline due-date-container" style="padding-left:0px; font-weight:600;" data-localize="Due Date">
                                     Due Date
-                                </label>
+                                </label><label>:</label>
                                 <label class="checkbox-inline" style="float:right;">
                                     <input class="radio-btn-position-top-0" id="noDueDate" type="checkbox" name="optradio" style="position:relative; top:-1px" checked>No Due Date
                                 </label>
@@ -3312,7 +3393,7 @@ table#sharedHistoryTable {
                     <div class="col-md-6">
 
                         <div class="form-group custom-form-group">
-                            <label>Signing App:</label>
+                            <label data-localize="Signing App">Signing App</label><label>:</label>
                             <select class="form-control" id="ddlSign">
                                 <option value="Adobe Sign">Adobe Sign</option>
                                 <option value="E-Sign">Titan E-Sign</option>
@@ -3324,7 +3405,7 @@ table#sharedHistoryTable {
                     <div class="col-md-6">
 
                         <div class="form-group custom-form-group">
-                            <label>Process Steps:</label>
+                            <label data-localize="Process Steps">Process Steps</label><label>:</label>
                             <select class="form-control process-step-dropdown" id="ddlAppStep">
                                 <option value="Customize">Customize</option>
                                 <option value="PreDefined" style="display:none;">Pre Defined</option>
@@ -3345,7 +3426,7 @@ table#sharedHistoryTable {
                             <div class="panel-heading detail-panel-link">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="" href="#step1" onclick="onChangeTask('ApproverName1_TopSpan', 'ApproverName1', 'userHTMLBox1', 1);" aria-expanded="false" class="collapsed">
-                                        <span>Step 1</span>
+                                        <span data-localize="Step 1">Step 1</span>
                                         <input class="StepTitle" type="text" id="txtStep1Name" maxlength="50">
                                     </a>
                                 </h4>
@@ -3356,14 +3437,14 @@ table#sharedHistoryTable {
                                     <input type="radio" class="radioEmp" id="rdoOutsider1" name="Employee" value="Outsider">Outsider
 
                                     <div class="form-group custom-form-group" style="display:none;" id="OutsiderUser1">
-                                        <label>Name:</label>
+                                        <label data-localize="Name">Name</label><label>:</label>
                                         <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'NameAction')" id="OutsiderName1" maxlength="50">
-                                        <label>Email:</label>
+                                        <label data-localize="Email">Email</label><label>:</label>
                                         <input type="text" class="form-control link-input-fild" onblur="onChangeName(this, 1, 'EmailAction')" id="OutsiderEmail1" maxlength="50">
                                     </div>
 
                                     <div class="form-group custom-form-group" id="ADUser1">
-                                        <label>Approvers Name:</label>
+                                        <label data-localize="Approvers Name">Approvers Name</label><label>:</label>
                                         <div class="web-block add-button-box">
                                             <div class="form-control link-input-fild"></div>
 
@@ -3422,11 +3503,11 @@ table#sharedHistoryTable {
             <div class="modal-body">
 
                 <div class="filedetailing">
-                    <label>File:</label> <span class="filenameshow" id="VerHisFile"></span>
+                    <label data-localize="File">File</label><label>:</label> <span class="filenameshow" id="VerHisFile"></span>
                 </div>
 
                 <div class="filedetailing">
-                    <label>Title:</label> <span class="filenameshow" id="VerHisTitle"></span>
+                    <label data-localize="Title">Title</label><label>:</label> <span class="filenameshow" id="VerHisTitle"></span>
                 </div>
 
 
@@ -3473,7 +3554,7 @@ table#sharedHistoryTable {
             <div class="modal-body">
 
                 <div class="flextype">
-                    <label for="">Title</label>
+                    <div class="labelflexing"><label for="" data-localize="Title">Title</label><label>:</label></div>
                     <input type="text" id="txtUpdateTitle" class="form-control clearPropBox" maxlength="50">
                     <div class="radiobox">
                         <input type="checkbox" class="chkProperty" id="chkUpdateTitle" name="property" checked="checked">
@@ -3481,7 +3562,7 @@ table#sharedHistoryTable {
                 </div>
 
                 <div class="flextype">
-                    <label for="">Reference#</label>
+                    <div class="labelflexing"><label for="" data-localize="Reference#">Reference#</label><label>:</label></div>
                     <input type="text" id="txtUpdateRef" class="form-control clearPropBox" maxlength="20">
                     <div class="radiobox">
                         <input type="checkbox" class="chkProperty" id="chkUpdateRef" name="property" checked="checked">
@@ -3489,7 +3570,7 @@ table#sharedHistoryTable {
                 </div>
 
                 <div class="flextype">
-                    <label for="">Document Type</label>
+                    <div class="labelflexing"><label for="" data-localize="Category">Category</label><label>:</label></div>
                     <select id="txtUpdateType" class="form-control"></select>
                     <div class="radiobox">
                         <input type="checkbox" class="chkProperty" id="chkUpdateType" name="property" checked="checked">
@@ -3497,14 +3578,14 @@ table#sharedHistoryTable {
                 </div>
 
                 <div class="flextype">
-                    <label for="">Author</label>
+                    <div class="labelflexing"><label for="" data-localize="Author">Author</label><label>:</label></div>
                     <input type="text" id="txtUpdateAuthor" class="form-control clearPropBox" maxlength="50">
                     <div class="radiobox">
                         <input type="checkbox" class="chkProperty" id="chkUpdateAuthor" name="property" checked="checked">
                     </div>
                 </div>
                 <div class="flextype noalign">
-                    <label for="">Details</label>
+                    <div class="labelflexing"><label for="" data-localize="Details">Details</label><label>:</label></div>
                     <textarea id="txtUpdateDetails" cols="30" rows="4" class="form-control clearPropBox"></textarea>
                     <div class="radiobox">
                         <input type="checkbox" class="chkProperty" id="chkUpdateDetails" name="property" checked="checked">
@@ -3558,9 +3639,9 @@ table#sharedHistoryTable {
                         </div>
                         <div class="mrg-top-10m  lablefont" style="padding:0 15px">
 
-                            <label style="margin-bottom:3px;margin-left: -15px;">File:</label><span id="filenamee" style="margin-left:3px"></span>
-                            <p style="margin-bottom:-3px;margin-left: -15px;"><label>Title:</label><span id="filetitle" style="margin-left:3px"> </span></p>
-                            <p style="margin-left: -15px;"><label>Reference:</label><span id="referNo" style="margin-left:3px"></span></p>
+                            <label style="margin-bottom:3px;margin-left: -15px;" data-localize="File">File</label><label>:</label><span id="filenamee" style="margin-left:3px"></span>
+                            <p style="margin-bottom:-3px;margin-left: -15px;"><label data-localize="Title">Title</label><label>:</label><span id="filetitle" style="margin-left:3px"> </span></p>
+                            <p style="margin-left: -15px;"><label data-localize="Reference">Reference</label><label>:</label><span id="referNo" style="margin-left:3px"></span></p>
 
                             <div class="row sharing_history_shared_to_box">
                               
@@ -3581,7 +3662,7 @@ table#sharedHistoryTable {
 
                             </div>
                         </div>
-                        <div class="table-responsive heightmajage" style="padding:3px;">
+                        <div class="table-responsive heightmajage" style="padding:0 3px;">
                             <table cellpadding='0' cellspacing='0' border='1' id='sharedHistoryTable' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
                                 <thead class='panel-heading '>
                                     <tr>
@@ -3591,7 +3672,7 @@ table#sharedHistoryTable {
                                         <th style="width:18%"><h6 data-localize="Shared On">Shared On</h6></th>
                                         <th width="120"><h6 data-localize="Shared By">Shared By</h6></th>
                                         <th width="120"><h6 data-localize="Valid Upto">Valid Upto</h6></th>
-                                        <th width="128"><h6 data-localize="Acknowledgements">Acknowledgements</h6></th>
+                                        <th width="140"><h6 data-localize="Acknowledgements">Acknowledgements</h6></th>
                                         <th class='nosort' style='width:12%; text-align:center'><h6 data-localize="Action">Action</h6></th>
                                     </tr>
                                 </thead>
@@ -3632,7 +3713,7 @@ table#sharedHistoryTable {
                                         <option value="100">100</option>
                                     </select>
                                 </div>
-                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+                                <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of">Of</span>&nbsp;<span id="totalpages"></span></div>
                             </div>
                         </div>
                         <div class="sharing_history_modal_btns">
@@ -3678,7 +3759,7 @@ table#sharedHistoryTable {
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="">Share With:</label>
+                    <label for="" data-localize="Share With">Share With</label><label>:</label>
                     <select class="form-control" id="sharewith">
                         <option value="--Select--">--Select--</option>
                         <option value="My-Groups">My Groups</option>
@@ -3693,7 +3774,7 @@ table#sharedHistoryTable {
                 <div class="projectesmbox form-group My-Groups box" style="display:none;">
 
                     <div class="dropdown" style="margin-bottom:10px">
-                        <label for="">My Groups</label>
+                        <label for="" data-localize="My Groups">My Groups</label>
 
                         <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnmygroupsec" aria-expanded="false">
                             <span class="slectbox txtselect" id="selectedGroupNames">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
@@ -3707,10 +3788,10 @@ table#sharedHistoryTable {
                 <div class="projectesmbox form-group Organization box" style="display:none;">
 
                     <div class="dropdown" style="margin-bottom:10px">
-                        <label for="">Guest Client</label>
+                        <label for="" data-localize="Guest Client">Guest Client</label>
 
                         <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnguestclient" aria-expanded="false">
-                            <span class="slectbox txtselect" id="selectClientName">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
+                            <span class="slectbox txtselect" id="selectClientName" data-localize="Select">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
                         </button>
 
                         <div class="dropdown-menu" id="ClientList"></div>
@@ -3722,7 +3803,7 @@ table#sharedHistoryTable {
                 <div class="projectesmbox form-group Project-Team box" style="display:none;">
 
                     <div class="dropdown" style="margin-bottom:10px">
-                        <label for="">Project Team</label>
+                        <label for="" data-localize="Project Team">Project Team</label>
 
                         <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="btnProjectName" aria-expanded="false">
                             <span class="slectbox txtselect" id="selectProjectNames">Select</span><span class="fa fa-angle-down" style="float:right;"></span>
@@ -3736,7 +3817,7 @@ table#sharedHistoryTable {
 
                 <div class="user-add-box-area-box Selective box" style="display:none;">
                     <div class="form-group custom-form-group mb10">
-                        <label>Users:</label>
+                        <label data-localize="Users">Users</label><label>:</label>
                     </div>
                 </div>
 
@@ -3760,7 +3841,7 @@ table#sharedHistoryTable {
             <div class="row" style="margin:0 0">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="share Type">Share Type:</label>
+                        <label for="share Type" data-localize="Share Type">Share Type</label><label>:</label>
                         <select class="form-control shareing-permission-view" id="sharedWithPermission">
                             <option value="Contribute">Contribute</option>
                             <option value="Read">Read</option>
@@ -3768,7 +3849,7 @@ table#sharedHistoryTable {
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="share Type">Message:</label>
+                        <label for="share Type" data-localize="Message">Message</label><label>:</label>
                         <textarea class="form-control" id="txtShareMessage" style="max-height:60px !important; min-height:60px !important;"></textarea>
                     </div>
                 </div>
@@ -3784,7 +3865,7 @@ table#sharedHistoryTable {
                        
                      <div class="row">
                      
-                         <label for="" class="col-md-5" style="padding-right:0;">Sharing Validity:</label>
+                         <label for="" class="col-md-5" style="padding-right:0;" data-localize="Sharing Validity">Sharing Validity</label>
                          
                          <div class="col-md-7 padinghere">
 		                        <div class="radio">
@@ -3808,7 +3889,7 @@ table#sharedHistoryTable {
                             </label>
                         </div>
                         <div class="Acknowledgment">
-                            <label for="Acknowledgment">Need Acknowledgment</label>
+                            <label for="Acknowledgment" data-localize="Need Acknowledgment">Need Acknowledgment</label>
                             <input type="checkbox" id="Acknowledgment" style="margin:0 5px; position: relative; top:-2px;">
                         </div>
                     </div>
@@ -3859,7 +3940,7 @@ table#sharedHistoryTable {
                 <h4 class="modal-title">Notification to Approvers</h4>
             </div>
             <div class="modal-body">
-                <label for="">Your Message<span style="color:red">*</span></label>
+                <label for="" data-localize="Your Message">Your Message<span style="color:red">*</span></label>
                 <textarea class="form-control" id="txtNotifyMsg"></textarea>
                 <div id="NotifyMailPicker"></div>
             </div>
@@ -3886,13 +3967,13 @@ table#sharedHistoryTable {
             <div class="modal-body">
 
                 <div class="form-group">
-                    <label for="">Step Name<span style="color:red;">*</span></label>
+                    <label for="" data-localize="Step Name">Step Name<span style="color:red;">*</span></label>
                     <input type="text" id="AddEditStepName" class="form-control" maxlength="50">
                 </div>
 
                 <div class="projectesmbox form-group">
 
-                    <label for="">Approvers</label>
+                    <label for="" data-localize="Approvers">Approvers</label>
 
                     <div class="userbox">
 
@@ -3934,12 +4015,12 @@ table#sharedHistoryTable {
                         <div id="userbox-2" style="display: none;">
 
                             <div class="form-group">
-                                <label for="">Name</label>
+                                <label for="" data-localize="Name">Name</label>
                                 <input type="text" class="form-control" id="OutsiderName" maxlength="50">
                             </div>
 
                             <div class="form-group">
-                                <label for="">Email Address</label>
+                                <label for="" data-localize="Email Address">Email Address</label>
                                 <input type="text" class="form-control" id="OutsiderEmail" maxlength="50">
                             </div>
 

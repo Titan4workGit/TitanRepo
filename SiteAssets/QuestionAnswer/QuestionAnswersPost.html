@@ -59,7 +59,19 @@ height: 3rem; }
     background-color: #24bad6 !important;
     width: 100%;
 }
-
+#question_detail_main_area .question-head-text-detail {
+    background-color: #494948 !important;
+    color: #fff !important;
+    position: relative;
+    left: 0px;
+    top: -16px;
+    padding: 4px 16px;
+    font-size: 18px;
+    border-radius: 6px 0px 8px 0px;
+}
+#question_detail_main_area .panel-default {
+    border-top-left-radius: 8px;
+}
 .question-detail {
   padding:0px 10px 0px 0px;
 }
@@ -406,6 +418,28 @@ height: 3rem; }
     margin-top: 0 !important;
 }
 
+.label_withflx {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.label_withflx label{
+    white-space: nowrap;
+    margin-right: 5px;
+    min-width: 73px;
+}
+.question-detail h1>span {
+    font-weight: 600;
+    color: #333;
+}
+
 /*media-query-classes*/
 
 @media only screen and (min-width: 1200px) {
@@ -646,27 +680,24 @@ li.dropdown-custom ul li {
 
 #AuthorName{
    font-size: 14px;
-    color: #212121;
+    color: #333;
     letter-spacing: 0.8px;
     margin-bottom: 5px;
     display: block; 
 }
 #userDesignation{
-   
-   font-size: 14px;
+   font-size: 13px;
    margin-bottom: 5px;
    display: block;
-   color: #2a6496;
+   color: #333;
    font-weight: 600;
-
 }
 
 #userDepartment,
 #userOfficeLocation{
-
    font-size: 13px;
    margin-bottom: 5px;
-   color:#444444; 
+   color:#333; 
 }
 
 p.font-ajusting{
@@ -696,22 +727,50 @@ p.font-ajusting{
     cursor: pointer;
 }
 
+/* new css added on 19-JAN-2023 */
+
+.QA-post-chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+    flex-wrap: wrap;
+}
+.QA-post-upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+    line-height: 1;
+}
+.question-detail h1 {
+    margin-bottom: 15px;
+}
+
 </style>
     
   
 <div class="container-fluid container-content">
   <div id="question_detail_main_area" class="col-sm-12 question-detail-area">
     <div class="panel panel-default ">
-      <div class="panel-heading panel-heading-question-detail">
-        <span class="question-head-text-detail panel-heading-bg-txt-clr">Questions &amp; Answers</span>
+      <div class="panel-heading panel-heading-question-detail" style="display: none;">
+        <span class="question-head-text-detail" data-localize="Questions & Answers">Questions &amp; Answers</span>
       </div>
-      <div class="panel-body pl20 pr20 pt0 pb20">
+      <div class="panel-body pl20 pr20 pt20 pb20">
         <div id=""  class="col-md-12 col-sm-12 question-detail">
           <h1><span id="QuestionTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ?</span></h1>
-        <div class="two_sec">
+        
+        <!-- <div class="two_sec">
           <label> Category :</label>
           <span id="txtCategory"></span>
-        </div>    
+        </div> -->
+        
+		<div class="QA-post-chip-box">
+			<div class="QA-post-upload-chip">Category: <span id="txtCategory">IT</span>
+			</div>
+		</div>  
                         
         <div class="col-md-12 col-sm-12 question-author-detail p0 flex_sec">
           
@@ -724,7 +783,7 @@ p.font-ajusting{
           <span id="AuthorName">Tom Patrick</span>
           <div class="leader_sec" id=""><span id="userDesignation"></span></div>
           <span id="userDepartment"></span> <span style="font-size:13px; color:#444444;">|</span> <span id="userOfficeLocation"></span>
-          <div style="display:block; font-size:14px; margin-top:10px;">
+          <div style="display:block; font-size:13px; margin-top:5px;color: #333;">
             <span id="QuestionDate">24 Feb</span> at <span id="QuestionTime"> 4:15 pm</span>
             </div>
   
@@ -752,10 +811,12 @@ p.font-ajusting{
         <div class="col-md-12 col-sm-12 p0 like-count" style="">
           <span id="Likesonpost" style="display:none">Patrick Gould, John Davis and 4 others like this</span>
           <div class="form-group col-sm-3 col-xs-12 mpl0 tpl0 tpt10 mpt10 pr0 question-filter">
+           <div class="label_withflx"> 
+            <label>Reply From:</label>
             <select class="form-control" id="RepliedBy" onchange="ReadComments_LikesOnPost(test='',this.value)">
             <option>- Select -</option>
-            
             </select>
+           </div> 
           </div>
         </div>
         <div class="clearfix"></div>
@@ -898,6 +959,158 @@ p.font-ajusting{
   $(document).ready(function() {
   
 });
+	$(document).ready(function(){
+	  ChangeLabels();
+	})
+	
+	/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'Home Page' ";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}        
+</script>
+
 
 </script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
 <!--[if gte mso 9]><xml>
@@ -908,11 +1121,6 @@ p.font-ajusting{
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">129800.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Indramani Gautam</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AB3CA9BBCC75BB4D960EDF9C33169BDB</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>TITAN</title></head>
+</head>
