@@ -1,0 +1,48 @@
+<p>Script Editor is on page.</p>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/testpnp/pnp.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    pnp.Logger.subscribe(new pnp.ConsoleListener());
+    pnp.Logger.activeLogLevel = pnp.LogLevel.Info;
+
+    pnp.sp.web.get().then(w => {
+
+        console.log(JSON.stringify(w, null, 4));
+    });
+	
+	let Notificationdata=[];
+	let items= pnp.sp.web.lists
+    .getByTitle("NotificationCenter")
+    .items.select("Id,Application,UserAction")
+   // .orderBy("Created",false)
+    //.filter("UserAction eq 'Page Visited'")
+    //.top(2000)
+    //.get()
+    .getAll()
+    .then(d => {
+      Notificationdata=d;
+      //console.log(d);
+	  console.log(Notificationdata.length);
+    });
+    
+   // Notificationdata: json1.value ? json1.value : [];
+    //console.log(Notificationdata.length);
+   // this.setState({MargedItems: Notificationdata});
+    //console.log("lastid"+Notificationdata[28848].Id);
+    //console.log("firstid"+Notificationdata[0].Id);
+	
+	
+	
+
+</script><html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2740</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">7b3a66b1-bfd2-4716-bd49-742649ab30b6</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2740, ADMIN-1645029823-2740</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

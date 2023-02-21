@@ -1,0 +1,900 @@
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+	<script type="text/javascript" src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.js"></script>
+	<script type="" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/Script/TimeSheet.js"></script>	
+
+		
+<style type="text/css">
+
+
+/****oct-27-22-st****/
+
+.all-align-gap .article-content{
+ margin:0 !important;	
+}
+.ms-rtestate-field>p{
+ margin-bottom:0;
+ font-size:10px;
+}
+/****oct-27-22- ed****/
+
+
+.navbar-custom{
+	margin-bottom:0 !important;	
+}
+
+.article-content{
+	margin-top:0px !important;
+}
+
+.custom-panel{
+
+	margin-top:0px !important;	
+}
+		
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+button:focus {
+    outline: none !important;	
+}
+a {
+    color: #333;
+    text-decoration: none !important;
+}
+.w-15 {
+    width: 15%;
+}
+.w-10 {
+    width: 10%;
+}
+.font-12 {
+    font-size: 12px;
+}
+.m-0 {
+    margin: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.ml-8 {
+    margin-left: 8px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.mr-4 {
+    margin-right: 4px;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-20 {
+    width: 20%;
+}
+.w-30 {
+    width: 30%;
+}
+.mt-21{
+	margin-top:21px;
+}
+
+.approval-edit-lock-btn-box {
+    display: flex;
+}
+.approval-edit-lock-btn-box .custom-edit-btn {
+    margin-right: 0px;
+}
+.approval-edit-lock-btn-box .custom-edit-btn,
+.approval-edit-lock-btn-box .custom-lock-btn {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+}
+.approval-edit-lock-btn-box .custom-edit-btn {
+    color: #1d6ec0;
+    display: block;
+}
+.approval-edit-lock-btn-box .custom-edit-btn:hover,
+.approval-edit-lock-btn-box .custom-delete-btn:hover {
+    background-color: #cccccc;
+}
+
+
+
+
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+    background-color: #ffffff;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+}
+.panel-body {
+    background-color: #ffffff;
+}
+.timesheet-panel-head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+@media (max-width: 425px) {
+    .timesheet-panel-head {
+        flex-direction: column;
+    }
+    .timesheet-add-new {
+        text-align: right;
+        margin-top: 6px;
+    }
+}
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+
+.scrollbar-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.border-bottom-0 {
+    border-bottom: 0 !important;
+}
+.table-responsive-2 {
+    border: 1px solid #ddd;
+}
+.custom-table {
+    background-color: #ffffff;
+}
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+@media (max-width: 991px) {
+    .table-responsive-2 .custom-table {
+        min-width: 800px;
+    }
+}
+@media screen and (max-width: 767px){
+    .table-responsive>.table>tbody>tr>td, 
+    .table-responsive>.table>tbody>tr>th, 
+    .table-responsive>.table>tfoot>tr>td, 
+    .table-responsive>.table>tfoot>tr>th, 
+    .table-responsive>.table>thead>tr>td, 
+    .table-responsive>.table>thead>tr>th {
+         white-space: normal; 
+    }
+}
+.custom-btn {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover, .custom-btn:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+
+/* timesheet  stye */
+.timesheet-table {
+    word-break: break-word;
+}
+.custom-timesheet-panel .panel {
+    border-radius: 0px;
+}
+.timesheet-date-file {
+    max-width: 250px;
+    width: 100%;
+}
+.timesheet-box {
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+.timesheet-today-date-panel {
+    width: 30%;
+    text-align: right;
+    padding: 0 15px;  
+    display: flex;
+    justify-content: flex-end;  
+}
+.timesheet-today-date {
+    padding: 4px 10px;
+    text-align: center;
+    background: #f5f5f5;
+    max-width: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.panel-group .timesheet-panel-heading {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;  
+    cursor: pointer;
+}
+.timesheet-panel-heading .panel-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.timesheet-hrs {
+    color: #1d6ec0;
+}
+.timesheet-hrs:hover {
+    text-decoration: underline !important;
+}
+.timesheet-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+.timesheet-right-time-box-one {
+    border-right: 1px solid #d2d2d2;
+}
+.timesheet-right-time-box-two,
+.timesheet-right-time-box-one {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media (max-width: 575px) {
+    .timesheet-t-title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .timesheet-t-pr {
+        font-size: 12px;
+    }
+    .timesheet-right-time-box-two, .timesheet-right-time-box-one {
+        padding: 10px 0px;
+    }
+}
+.timesheet-table tr th {
+    font-weight: 400;
+}
+@media (max-width: 1199px) {
+    .timesheet-table {
+        min-width: 1070px !important;
+    }
+}
+.custom-btn-two-cancel {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover, .custom-btn-two-cancel:focus {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.w-102 {
+    width: 102px;
+}
+.chip-panel {
+    overflow-x: auto;
+}
+.chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+}
+.upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+    background-color: #ffffff;
+}
+.upload-chip:hover {
+    background-color: #f2f2f2;
+}
+.timesheet-table-ellipsis-2 {
+    -webkit-line-clamp: 2;
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.timesheet-modal-footer {
+    text-align: center;
+}
+
+/* new css added on 16/10/20 */
+
+.timesheet-left-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+.timesheet-left-time-box-one {
+    border-right: 1px solid #d2d2d2;
+}
+.timesheet-left-time-box-one, .timesheet-left-time-box-two {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.timesheet-right-time-box-two {
+    padding: 23px 10px;
+}
+.timesheet-btn-position a:visited {
+    color: #fff;
+}
+.timesheet-btn-position .custom-btn:hover, .timesheet-btn-position .custom-btn:focus {
+    color: #1d6ec0;
+}
+
+/***march-1-22**/
+
+.scrllajustment{
+    max-height: 375px;
+    overflow-y: auto; 
+}
+
+
+textarea, select, input[type="text"] {
+    font-size: 12px !important;
+}
+ 
+#TaskListTable thead tr th{
+    position: sticky;
+    top: -1.8px;
+    background-color: #fff;
+    z-index: 5;
+}
+
+.table-responsive.scrollbar-panel {
+    padding: 1px 0 !Important;
+}
+
+#TaskListTable{
+  border-top-color:transparent;	
+}
+
+.modal-header button.close-round{
+    min-width: auto !important;
+    background: #fff;
+    text-shadow: 0px 0px 4px #fff;
+    color:#333;
+}
+.modal-header button.close-round:hover{
+    background: #040404;
+    color: #fff;
+}
+
+/***march-1-22**/
+
+
+
+@media screen and (max-width: 991px) {
+
+	.timesheet-left-top-box {
+	    margin-bottom: 35px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+    .timesheet-btn-position {
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .timesheet-btn-position {
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .timesheet-date-box-isPhone {
+        width: 100%;
+    }
+    .timesheet-filter-istab .col-xs-6 {
+        width: 100%;
+    }
+}
+
+@media(max-width:900px){
+	
+.ms-webpart-chrome-vertical {
+
+    display: block !important;
+
+}
+
+div.ms-webpart-cell-vertical-inline-table{
+
+	display: block !important;
+
+}	
+
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+    min-width: 901px !important;
+
+}
+
+}
+
+@media(max-width:532px){
+
+.timesheet-btn-position a.custom-btn{
+
+	margin: 5px auto;
+    padding: 5px;
+    font-size: 11px !important;		
+
+}	
+
+.timesheet-right-time-box-two{
+
+  padding:0px 5px !important;	
+
+}
+
+}
+
+@media (min-width: 1300px){
+
+.timesheet-box .timesheet-left-time-box-one h3,
+.timesheet-box .timesheet-left-time-box-two h3,
+.timesheet-box .timesheet-right-time-box-one h3{
+
+	font-size:16px !important;
+
+}	
+
+.timesheet-box .timesheet-left-time-box-one p,
+.timesheet-box .timesheet-left-time-box-two p,
+.timesheet-box .timesheet-right-time-box-one p{
+
+	font-size:18px !important;	
+}	
+
+
+}
+	
+@media(max-width:600px){
+
+.timesheet-box .timesheet-left-time-box-one.col-xs-6,
+.timesheet-box .timesheet-left-time-box-two.col-xs-6,
+.timesheet-box .timesheet-right-time-box-one.col-xs-6,
+.timesheet-box .timesheet-right-time-box-two.col-xs-6{
+	
+	width:100% !important;
+	border-bottom:1px solid #ccc !important;
+	border-right:none !important;
+}	
+
+.timesheet-left-top-box,
+.timesheet-right-top-box{
+	padding:0px !important;	
+}
+	
+}
+	
+</style>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1396</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">380854ca-a562-417f-9296-7250f66e75d9</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1396, ADMIN-1645029823-1396</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head><body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="custom-panel">
+					<div class="panel-head timesheet-panel-head">
+						<h3 class="m-0"> My Timesheet </h3>
+						<div class="timesheet-add-new"> </div>
+					</div>
+					<div class="panel-body pt-8"> <div>
+					<div class="row mb-8">
+						<div class="col-lg-9 col-md-8 col-sm-7">
+							<div class="scrollbar-panel chip-panel">
+								<div class="chip-box" id="filterchips">
+									
+								<!-- FILTER CHIPS HERE -->
+								
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-5">										
+							<div class="text-right timesheet-btn-position">
+								<!--<input type="text" id="queryclient" onkeyup="sorter.search('queryclient')" placeholder="Type here for search..." class="doc-search timeline_search" style="width:100%" >-->
+							</div>
+						</div>
+					</div>
+					<div class="row timesheet-box">
+
+						<!-- <div class="col-md-6 col-sm-12" id="datebox">
+							<div class="row">
+								<div class="col-xs-12 timesheet-date-box-isPhone">
+									<div class="form-group custom-form-group">
+										<span>Period:</span>&nbsp;&nbsp;<span id="txtStartDate"> 00-00-0000</span>&nbsp;&nbsp;<span>&nbsp; to &nbsp;</span>&nbsp;&nbsp;<span id="txtEndDate">00-00-0000</span>			
+									</div>
+								</div>								        	
+							</div>
+						</div> -->
+
+						<div class="col-md-6 col-sm-12">
+							<div class="row m-0 timesheet-left-top-box">
+								<div class="col-xs-6 timesheet-left-time-box-one">
+									<!-- <label class="font-12">From:</label> -->
+									<div class="text-center">
+										<h3 class="m-0 timesheet-t-title">From</h3>
+										<p class="m-0 timesheet-t-pr" id="txtStartDate"></p>
+									</div>
+								</div>
+								<div class="col-xs-6 timesheet-left-time-box-two">
+									<!-- <label class="font-12">To:</label> -->
+									<div class="text-center">
+										<h3 class="m-0 timesheet-t-title">To</h3>
+										<p class="m-0 timesheet-t-pr" id="txtEndDate"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-sm-12">
+							<div class="row m-0 timesheet-right-top-box">
+								<div class="col-xs-6 timesheet-right-time-box-one">
+									<div class="text-center">
+										<h3 class="m-0">
+											<div class="timesheet-t-title" id="TOTALHOURS">212.45</div>
+										</h3>
+										<p class="m-0 timesheet-t-pr">Hours Logged</p>
+									</div>
+								</div>
+								<div class="col-xs-6 timesheet-right-time-box-two">
+									<div class="text-center timesheet-btn-position">
+										<a class="btn custom-btn" data-toggle="modal" data-target="#timesheet-filter" onclick="">Filter</a>
+										<a href="" class="btn custom-btn ml-4" id="NewTimeSheeT"><span class="glyphicon glyphicon-plus"></span><span class="ml-4">Add New</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+								<div id="tableheader" style="height: auto !important;">
+									<div class="search" style="display:none;">
+										<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+									</div>
+									<div>
+										<span class="details">
+											<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+											<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+										</span>
+									</div>
+								</div>
+								<div class="mrg-top-10m  btm10 container"> </div>	
+								<div class="table-responsive px-15  scrollbar-panel">
+									<table cellpadding='0' cellspacing='0' border='1' id='TimeSheetTableData' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+										<thead class='panel-heading '>
+											<tr>
+												<th style="width:12%"><h6 data-localize="Date">Date</h6></th>
+												<th style=""><h6 data-localize="Task" >Task</h6></th>
+												<th style=""><h6 data-localize="Project" >Project</h6></th>								
+												<th style=""><h6 data-localize="Module" >Module</h6></th>
+												<th style=""><h6 data-localize="Client" >Client</h6></th>								
+												<th style="width:10%"><h6 data-localize="WorkType" >Work Type</h6></th>
+												<th style=""><h6 data-localize="Period" >Period</h6></th>
+												<th class='nosort' style='width:10%'><h6 data-localize="Hours Logged">Hours Logged</h6></th>
+												<th class='nosort' style='width:5%'><h6 data-localize=""></h6></th>
+											</tr>
+										</thead>
+										<tbody class='panel TimeSheetTableDataDIV'>					
+										</tbody>
+									</table>					
+									<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+									<div id="mainDivAllAnnouncements"> 			</div>				
+								</div>
+								<div id="tablefooter" style="margin-bottom: 10px;">
+									<div id="tablenav">
+										<div>
+											<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+											<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+											<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+											<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+										</div>
+										<div>
+											<select id="pagedropdown"></select>
+										</div>
+									<div>
+										<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+								</div>
+							</div>
+							<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+							<div id="tablelocation">						
+								<div>
+									<span data-localize="LinesPerPage"></span>
+									<select onchange="sorter.size(this.value)">
+										<option value="5" >5</option>
+										<option value="10" selected="selected">10</option>
+										<option value="20">20</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+									</select>
+								</div>						
+								<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+
+		<!-- Appeoval filter Modal -->
+		<div class="modal fade" id="timesheet-filter" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body timesheet-filter-istab">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">From Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="timesheetFrom" name="From" readonly="readonly" onchange="ResetControl();" >
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">To Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="timesheetTo" name="to" readonly="readonly" onchange="ResetControl();" >
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Client:</label>
+									<select class="form-control ResetCTRL" id="ClientDDL">
+										
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Project:</label>
+									<select class="form-control ResetCTRL" id="ProjectDDL">
+										
+										
+									</select>
+								</div>
+							</div>
+							<!--<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Module:</label>
+									<select class="form-control">
+										<option>Billing</option>
+										<option>Account</option>
+									</select>
+								</div>
+							</div>-->
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Work Type:</label>
+									<select class="form-control ResetCTRL" id="WorkType">										
+									</select>
+								</div>
+							</div>
+							<!--<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Task:</label>
+									<select class="form-control">
+										<option>Task 1</option>
+										<option>Task 2</option>
+									</select>
+								</div>
+							</div>-->							
+						</div>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Retrieve my task of status:</label>
+									<select class="form-control" id="StatusFilter">
+										<option value="Open">Open</option>
+										<option value="All">All</option>
+										<option value="Completed">Completed</option>
+										<option value="Hold">Hold</option>
+										<option value="Canceled">Canceled</option>
+										<option value="Closed">Closed</option>														
+									</select>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">							
+						    	<a class="btn custom-btn mt-21"  onclick="loadtaskinfilter();" id="Retrieve">Retrieve</a>									
+							</div>						
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								
+								
+								
+								<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="mrg-top-10m  btm10 container">
+					
+					</div>	
+					<div class="table-responsive px-15  scrollbar-panel scrllajustment" style="border-top:1px solid #12121247;">
+						<table cellpadding='0' cellspacing='0' border='1' id='TaskListTable' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading '><tr>
+								
+								<th style="width:5%"><h6 data-localize="" ></h6></th>
+								<th style=""><h6 data-localize="Task" >Task Name</h6></th>
+								<th style=""><h6 data-localize="Project">Project</h6></th>								
+								<th style=""><h6 data-localize="AssignedBy" >Assigned By</h6></th>								
+								<th style=""><h6 data-localize="DueDate" >Due Date</h6></th>
+								<th style=""><h6 data-localize="Status" >Status</h6></th>
+								<!--<th class='nosort' style=''><h6 data-localize="Completion%">Completion %</h6></th>-->
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllTask'>					
+							</tbody>
+						</table>
+					
+					<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+						
+					<div id="mainDivAllAnnouncements">
+					</div>				
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdowns"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+							</div>
+						</div>
+						<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscounts"></span></div>
+						<div id="tablelocation">
+						
+							<div>
+							
+								<span data-localize="LinesPerPage"></span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5" selected="selected">5</option>
+								<option value="10" >10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpages"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpagess"></span></div>
+						</div>
+					</div>					
+				</div>
+								
+								
+								
+							
+							</div>
+						</div>
+				    </div>
+				    
+				    <div class="modal-footer timesheet-modal-footer">
+				    	<a class="btn custom-btn mr-8"  data-dismiss="modal" onclick="ApplyFilter();" id="Apply">Apply</a>
+						<a class="btn custom-btn-two-cancel"  data-dismiss="modal" onclick="ClearControl();">Clear</a>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+		 /*   var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+		    }*/
+		</script>
+		 
+		<script>
+		
+	var Addnewlink=  _spPageContextInfo.webServerRelativeUrl + "/Pages/TimeSheetEntry.aspx?WebAppId="+titanForWork.getQueryStringParameter("CompanyId")+"&sourcelocation=../Pages/timesheet.aspx#";
+  	$('#NewTimeSheeT').attr('href', Addnewlink);
+		
+		/*
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+		    jQuery(function($){ //on document.ready From
+		       // $('#timesheetTo').datepicker({ dateFormat: "dd/mm/yy"}).datepicker("setDate", new Date());
+		       // $('#timesheetFrom').datepicker();
+		    })
+		}*/
+		</script>
+
+	</body>

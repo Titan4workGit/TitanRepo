@@ -1,0 +1,92 @@
+.drop-container {
+  width: 100%;
+  overflow: hidden;
+  border: 3px dashed rgba(0, 0, 0, .3);
+  border-radius: 5px;
+  font-family: Arial;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  color: #7E7E7E;
+  padding-top: 8px;
+}
+.drop-container input {
+  position: absolute;
+  cursor: pointer;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: 100%;
+}
+/*Important*/
+
+.drop-container.mouse-over {
+  border: 3px dashed rgba(0, 0, 0, .3);
+  color: #7E7E7E;
+}
+/*If you dont want the button*/
+
+.upload-here {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+  width: 150px;
+  border-radius: 4px;
+  background-color: #4679BD;
+  padding: 10px;
+}
+.upload-here:hover {
+  background-color: #376199;
+}
+.filename-container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+.file-preview {
+  background: #ccc;
+  border: 5px solid #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.closeBtn:hover {
+  color: #d43f3a;
+  display:inline-block;
+}
+
+
+/*}*/
+.upload-show-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 12px;
+  margin-bottom: 8px;
+}
+.upload-doc-title-box {
+  width: calc(100% - 20px);
+  display: flex;
+}
+.upload-doc-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 1.8em;
+  display: flex;
+  align-items: center;
+}
+.upload-doc-title {
+  text-align: left;
+  padding: 0 4px 0 10px;
+}
+.drop-here-text {
+  font-size: 14px;
+  padding-top: 8px;
+  margin-bottom: 8px;
+}

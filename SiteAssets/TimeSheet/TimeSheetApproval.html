@@ -1,0 +1,1120 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/SupportLib/styles.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.js"></script>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/SupportLib/moment.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/SupportLib/bootstrap-datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/SupportLib/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
+<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/jquery.richtext.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Sliders/ManageSliders/Plugin/richtext.min.css">
+
+
+<style type="text/css">
+
+/****oct-27-22-*****/
+
+
+.all-align-gap .article-content{
+ margin:0 !important;	
+}
+
+
+.navbar-custom{
+
+	margin-bottom: 20px !important;	
+}
+.article-content{
+	margin-top:0px !important;
+}
+
+.custom-panel{
+
+	margin-top:0px !important;	
+}
+		
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+button:focus {
+    outline: none !important;	
+}
+.d-none {
+    display: none !important;
+}
+.font-12 {
+    font-size: 12px;
+}
+.m-0 {
+    margin: 0;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mb-8 {
+    margin-bottom: 8px;
+}
+.ml-4 {
+    margin-left: 4px;
+}
+.px-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.pt-8 {
+    padding-top: 8px;
+}
+.w-121 {
+    width: 121px;
+}
+.wpx-36 {
+    width: 36px !important;
+}
+
+/*custom scroll*/
+.scrollbar-panel::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+.scrollbar-panel::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar-panel::-webkit-scrollbar-thumb {
+  background: #888888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar-panel::-webkit-scrollbar-thumb:hover {
+  background: #555555; 
+}
+.custom-panel {
+    margin: 10px 0;
+    border: 1px solid #d4d4d4;
+}
+.panel-head {
+    color: #1b1b1b;
+    padding: 8px 15px;
+}
+.custom-form-group .form-control {
+    border-radius: 0;
+    box-shadow: none;
+}
+.custom-form-group .form-control:focus {
+    border-color: #1d6ec0;
+}
+.custom-btn {
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+    color: #ffffff;
+    border-radius: 2px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn:hover,
+.custom-btn:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+.custom-btn-two-cancel {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+.custom-btn-two-cancel:hover, .custom-btn-two-cancel:focus {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+
+
+.approval-right-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.approval-right-time-box-one,
+.approval-right-time-box-two {
+    border-right: 1px solid #d2d2d2;
+}
+.approval-right-time-box-one,
+.approval-right-time-box-two,
+.approval-right-time-box-three {
+    padding: 10px;
+}
+
+
+/***march-1-22***/
+
+textarea, 
+select, 
+input[type="text"] {
+    font-size: 12px !important;
+}
+
+.sp-peoplepicker-initialHelpText{
+ top:6px !important;	
+} 
+
+@media (max-width: 525px) {
+    .approval-right-time-box-one,
+    .approval-right-time-box-two,
+    .approval-right-time-box-three {
+        width: 100%;
+    } 
+    .approval-right-time-box-one,
+    .approval-right-time-box-two {
+        border-right: 0;
+        border-bottom: 1px solid #d2d2d2;
+    } 
+}
+@media (max-width: 425px) {
+    .approval-box-isPhone {
+        width: 100%;
+    }
+}
+.approval-thead-checkbox label {
+    min-height: 15px;
+}
+
+.approval-edit-lock-btn-box {
+    display: flex;
+}
+.approval-edit-lock-btn-box .custom-edit-btn {
+    margin-right: 0px;
+}
+.approval-edit-lock-btn-box .custom-edit-btn,
+.approval-edit-lock-btn-box .custom-lock-btn {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+}
+.approval-edit-lock-btn-box .custom-edit-btn {
+    color: #1d6ec0;
+    display: block;
+}
+.approval-edit-lock-btn-box .custom-edit-btn:hover,
+.approval-edit-lock-btn-box .custom-delete-btn:hover {
+    background-color: #cccccc;
+}
+
+.approval-table {
+    margin-top: 20px;
+    border: 1px solid #d2d2d2;
+}
+@media (max-width: 1199px) {
+    .approval-table .custom-table {
+        min-width: 1170px;
+    }
+}
+.approval-table .custom-table {
+    margin-bottom: 0;   
+}
+.approval-table .custom-table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+.approval-table .custom-table thead tr {
+    background-color: #ffffff !important;
+    border-top: 0 !important;
+}
+.approval-table .table tbody tr {
+    border-top: 1px solid #d2d2d2;
+}
+.approval-table .table>thead>tr>th {
+    width: 10%;
+    border-bottom: 0;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.white-space-nowrap {
+    white-space: nowrap;
+}
+.approval-table .table>tbody>tr>td {
+    border-top: 0;
+    padding: 10px 8px;
+    word-break: break-word;
+}
+.approval-table-ellipsis-1,
+.approval-table-ellipsis-2 {
+    display: inline;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+.approval-table-ellipsis-1 {
+    -webkit-line-clamp: 1;
+}
+.approval-table-ellipsis-2 {
+    -webkit-line-clamp: 2;
+}
+.approval-footer-btn-group {
+    margin-top: 14px;
+}
+.approval-footer-btn-group .w-87 {
+    width: 87px;
+}
+.approval-footer-btn-group .custom-btn-two-danger {
+    border-radius: 2px;
+    color: #fff;
+    background-color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.approval-footer-btn-group .custom-btn-two-danger:hover, 
+.approval-footer-btn-group .custom-btn-two-danger:focus {
+    background: #ffffff;
+    color: #7B7A7A;
+    border-color: #7B7A7A;
+}
+.approved-form-control {
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+}
+.approved-form-control:focus {
+    border-color: #1d6ec0;
+    box-shadow: none;
+}
+.approval-modal-footer {
+    text-align: center;
+}
+
+.chip-panel {
+    overflow-x: auto;
+}
+.chip-box {
+    display: flex;
+    padding: 0 0 3px 0;
+}
+.upload-chip {
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    padding: 6px 10px;
+    margin-right: 4px;
+    font-size: 12px;
+    height: 28px;
+    white-space: nowrap;
+}
+.upload-chip:hover {
+    background-color: #f2f2f2;
+}
+.close-round {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,0.23);
+    opacity: 1;
+    text-align: center;
+    line-height: 22px;
+}
+.close-round:hover {
+    opacity: 1;
+    background-color: #333333;
+    color: #ffffff;
+}
+.description-read-mode {
+    font-size: 12px;
+    color: #1d6ec0;
+    text-decoration: underline;
+}
+
+/* new css added on 16/10/20 */
+
+.timesheet-left-top-box {
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+.timesheet-left-time-box-one {
+    border-right: 1px solid #d2d2d2;
+}
+.timesheet-left-time-box-one, .timesheet-left-time-box-two {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.timesheet-left-time-box-two p, .timesheet-left-time-box-one p {
+    font-weight: bold;
+}
+#approval-filter .bg-white-round-btn {
+    color: #000;
+}
+.approval-btn-position .custom-btn {
+    white-space: normal;
+    font-size: 15px !important;
+    /* width: auto; */
+    padding: 6px 0px;
+}
+.timesheet-to-time-picker #EndTime {
+    background: #eee !important;
+}
+#VerifiedHoursDIV label {
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+#BillableHoursDIV label {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}	
+#TimeSheetApprovalModel .bg-white-round-btn {
+    color: #000;
+    top: 12px;
+}
+.timesheet-approval-filter-undefinedManager label {
+    position: relative;
+    top: 4.5px;
+    left: 5px;
+}
+.timesheet-approval-filter-managerName label {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+
+.timesheet-box .sp-peoplepicker-topLevel .sp-peoplepicker-editorInput {
+    max-width: 100% !important;
+}
+
+#VerifiedBy_TopSpan, #UpdatedBy_TopSpan {
+    padding: 3px 2px 3px 2px;
+}
+
+.infobox{
+	position: fixed;
+    width: 91%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    box-shadow: 0 0 11px 0 #00000038;
+}
+/*#sendModal .modal-content{
+	margin: 100px auto;
+}*/
+#MailTrigger {
+    display: block;
+    margin: 0 auto;
+    width: 87px;
+    color: #fff;
+    background-color: #1d6ec0;
+    border-color: #1d6ec0;
+}
+#MailTrigger:hover, #MailTrigger:focus {
+    color: #1d6ec0;
+    background-color: #fff;
+    border-color: #1d6ec0;
+}
+#sendModal .richText .richText-editor {
+    overflow-y: auto;
+}
+
+
+/**july-16-21**/
+
+.row.ajsuting_pad #VerifiedBy_TopSpan_EditorInput,
+.row.ajsuting_pad #UpdatedBy_TopSpan_AutoFillDiv,
+#ManagerforHR_TopSpan_EditorInput,
+#UpdatedBy_TopSpan_EditorInput{
+ border:none !important;	
+}
+
+
+@media(max-width:378px){
+	
+.timesheet-entry-add-footer-btn-group a{
+
+ margin:3px !important;
+ 	
+	
+}	
+	
+	
+}
+
+
+
+/* responsive start */
+
+@media screen and (max-width: 991px) {
+
+	.timesheet-left-top-box {
+	    margin-bottom: 35px;
+	}
+  
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>td, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>thead>tr>th {
+        white-space: normal;
+    }
+    .approval-btn-position {
+        margin-top: 8px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .approval-btn-position {
+        text-align: center;
+    }
+}
+@media (max-width: 425px) {
+    .approval-inbox-istab .col-xs-6 {
+        width: 100%;
+    }
+}
+
+
+@media(max-width:900px){
+
+div.ms-webpart-cell-vertical-inline-table{
+  display:block !important; 
+}
+
+.ms-webpart-chrome-vertical{
+
+  display:block !important; 
+
+}
+
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+  min-width: 901px !important;  
+}   
+
+}
+
+.timesheet-approval-filter-undefinedManager label{
+	display:inline !important;	
+}
+
+@media all and (max-width: 373px) and (min-width: 320px){
+
+.approval-btn-position a.w-121{
+
+	width:92px !important;
+	font-size:12px !important;
+}	
+	
+}
+
+@media(max-width:991px){
+	
+#HRADMINDIV label{
+
+	font-size:11px !important;	
+
+}		
+
+#HRADMINDIV .col-xs-6{
+
+	width:100% !important;	
+	padding:0 0 !important; 
+}	
+
+th.head{
+
+	width:200px !important;	
+}
+
+th.nosort{
+
+	width:50px !important;	
+	
+}
+
+}
+
+@media(max-width:525px){
+
+.timesheet-left-time-box-one.col-xs-6,
+.timesheet-left-time-box-two.col-xs-6{
+ 
+ width:100% !important;
+	
+} 
+.timesheet-left-time-box-one{
+
+	border-right:none !important;
+	border-bottom:1px solid #ccc;	
+}
+	
+}
+
+</style>
+
+	<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1404</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">e74b5795-26d0-4a99-97f1-72919bd37bbd</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1404, ADMIN-1645029823-1404</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head><body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					
+					<div class="tab-content">
+						<div class="custom-panel custom-panel-box">
+							<div class="panel-head">
+								<h3 class="m-0">
+									Timesheet Approval
+	                            </h3>
+							</div>
+							<div class="panel-body px-0 pt-8">
+								<div class="row m-0 mb-8">
+									<div class="col-lg-9 col-md-8 col-sm-7">
+										<div class="scrollbar-panel chip-panel">
+											<div class="chip-box" id="filterchips">
+												<!--<div class="upload-chip">Neha Kaushik</div>
+												<div class="upload-chip">ABCD</div>
+												<div class="upload-chip">Foundation</div>-->
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-4 col-sm-5">
+										<div class="text-right approval-btn-position">
+											<a class="btn custom-btn w-121" data-toggle="modal" data-target="#approval-filter" onclick="ValidateHrAdmin();">Filter</a>
+											<a class="btn custom-btn w-121" onclick="tableToExcel('TimeSheetTableData', 'Timesheet Report')" id="btnExport">Export to Excel </a>
+
+											
+
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<!-- <div class="col-md-6 col-xs-12">
+										<div class="row">
+											<div class="col-xs-6 approval-box-isPhone">
+												<div class="form-group custom-form-group">
+													<span>Period:</span>&nbsp;&nbsp;<span id="txtStartDate"> 00-00-0000</span>&nbsp;&nbsp;<span>&nbsp; to &nbsp;</span>&nbsp;&nbsp;<span id="txtEndDate">00-00-0000</span>			
+												</div>
+											</div>											
+										</div>
+									</div> -->
+									<div class="col-md-6 col-sm-12">
+										<div class="row m-0 timesheet-left-top-box">
+											<div class="col-xs-6 timesheet-left-time-box-one">
+												<!-- <label class="font-12">From:</label> -->
+												<div class="text-center">
+													<p class="m-0 timesheet-t-pr">From</p>
+													<h3 class="m-0 timesheet-t-title" id="txtStartDate" style="display: none;">19/10/2020</h3>
+													<h3 class="m-0 timesheet-t-title" id="txtStartDateDisplay">19/10/2020</h3>
+												</div>
+											</div>
+											<div class="col-xs-6 timesheet-left-time-box-two">
+												<!-- <label class="font-12">To:</label> -->
+												<div class="text-center">
+													<p class="m-0 timesheet-t-pr">To</p>
+													<h3 class="m-0 timesheet-t-title" id="txtEndDate" style="display: none;">19/10/2020</h3>
+													<h3 class="m-0 timesheet-t-title" id="txtEndDateDisplay">19/10/2020</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-xs-12">
+										<div class="row m-0 approval-right-top-box">
+											<div class="col-xs-4 approval-right-time-box-one">
+												<div class="text-center">
+													<h3 class="m-0" id="TimeWork">00:00</h3>
+													<p class="m-0">Worked Hours</p>
+												</div>
+											</div>
+											<div class="col-xs-4 approval-right-time-box-two">
+												<div class="text-center">
+													<h3 class="m-0" id="TimeApproved">00:00</h3>
+													<p class="m-0">Approved Hours</p>
+												</div>
+											</div>
+											<div class="col-xs-4 approval-right-time-box-three">
+												<div class="text-center">
+													<h3 class="m-0" id="BilledTime">00.00</h3>
+													<p class="m-0">Billed Hours</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row m-0">
+									<div class="col-xs-12">
+										
+					
+
+
+<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+	<div id="tableheader" style="height: auto !important;">
+		<div class="search" style="display:none;">
+			<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+		</div>
+		<div>
+			<span class="details">
+				<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+				<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+			</span>
+		</div>
+	</div>
+	<div class="mrg-top-10m  btm10 container"> </div>	
+	<div class="table-responsive px-15  scrollbar-panel">
+		<table cellpadding='0' cellspacing='0' border='1' id='TimeSheetTableData' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+			<thead class='panel-heading '>
+				<tr>
+					<th class='nosort' style="width:3%"><h6 data-localize=""><input type="checkbox" id="" name="Allrecord"></h6></th>
+								<th style="width:9%"><h6 data-localize="Date">Date</h6></th>
+								<th style=""><h6 data-localize="Project">Project</h6></th>								
+								<th style=""><h6 data-localize="Client">Client</h6></th>
+								<th style=""><h6 data-localize="Task">Task</h6></th>								
+								<th style="width:10%"><h6 data-localize="WorkType">Work Type</h6></th>
+								<th style=""><h6 data-localize="User" >User</h6></th>
+								<th style='display: none;'><h6 data-localize="">Start Time</h6></th>
+								<th style='display: none;'><h6 data-localize="">End Time</h6></th>								
+								<th style="width:8%"><h6 data-localize="HoursLogged">Logged Hours</h6></th>
+								<th style="width:8%"><h6 data-localize="ApprovedTime">Approved Hours</h6></th>
+								<th style="width:8%"><h6 data-localize="BillableTime" >Billable Hours</h6></th>
+								<th style='display: none;'><h6 data-localize="">Details</h6></th>
+								
+								<th class='nosort' style='width:5%'><h6 data-localize=""></h6></th>
+
+
+				</tr>
+			</thead>
+			<tbody class='panel TimeSheetTableDataDIV' id="TimeSheetEXCEl">					
+			</tbody>
+		</table>					
+		<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+		<div id="mainDivAllAnnouncements"> 			</div>				
+	</div>
+	<div id="tablefooter" style="margin-bottom: 10px;">
+		<div id="tablenav">
+			<div>
+				<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+				<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+				<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+				<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+			</div>
+			<div>
+				<select id="pagedropdown"></select>
+			</div>
+			<div>
+				<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+			</div>
+		</div>
+		<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+		<div id="tablelocation">						
+			<div>
+				<span data-localize="LinesPerPage"></span>
+				<select onchange="sorter.size(this.value)">
+					<option value="5" >5</option>
+					<option value="10" selected="selected">10</option>
+					<option value="20">20</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+				</select>
+			</div>						
+			<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+		</div>
+	</div>					
+</div>
+</div>
+<!--			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>		-->			
+										
+										
+								
+										
+										
+										
+										
+				
+<!---- DefaultTable End---->	
+				
+
+
+			
+										
+										
+										
+										
+										
+										
+									</div>
+									<!--<div class="col-xs-12 text-center approval-footer-btn-group">
+										<button class="btn custom-btn mr-8 w-87">Submit</button>
+										<button class="btn custom-btn-two-danger w-87">Close</button>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		  <!-- Appeoval filter Modal -->
+		<div class="modal fade" id="approval-filter" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+				      <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+				      <h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body approval-inbox-istab">
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">From Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="timesheetFrom" name="From" readonly="readonly" onchange="" >
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">To Date:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="timesheetTo" name="to" readonly="readonly" onchange="" >
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Subordinates:</label>
+									<select class="form-control" id="UserDDL">
+										<option>Neha Kaushik</option>
+										<option>Tom Patrick</option>
+										<option>Ashish Kamotra</option>
+									</select>
+								</div>
+							</div>
+							<!--<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Project Name:</label>
+									<select class="form-control">
+										<option>ABCD</option>
+										<option>EFGH</option>
+										<option>ABCD</option>
+										<option>EFGH</option>
+									</select>
+								</div>
+							</div>-->
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Client Name:</label>
+									<select class="form-control" id="ClientDDL">
+										<option>ALL</option>
+										<option>YYY</option>
+										<option>XXX</option>
+										<option>YYY</option>
+									</select>
+								</div>
+							</div>
+							<!--<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Module:</label>
+									<select class="form-control">
+										<option>Foundation</option>
+										<option>Bricks</option>
+									</select>
+								</div>
+							</div>-->
+							<div class="col-md-4 col-sm-6 col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Work Type:</label>
+									<select class="form-control" id="WorkTypeProj">
+										<option>Plaster</option>
+									</select>
+								</div>
+							</div>
+							
+							
+							<div class="col-md-12 col-sm-12 col-xs-12" id="HRADMINDIV">
+								<div class="col-md-6 col-sm-6 col-xs-6 timesheet-approval-filter-undefinedManager">
+									<div class="form-group custom-form-group" >									
+										<input type="checkbox" id="HrAdminChk" class="" name="TaskListchk" value="HrAdmin" onchange="takeactionHrAdmin();" onclick="onlyOne(this);" >
+										<label> Show entries having undefined manager</label>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6 timesheet-approval-filter-managerName">
+									<div class="form-group custom-form-group" >									
+										<input type="checkbox" id="HrAdminChkByManager" class="" name="TaskListchk" value="ByManager" onchange="takeactionHrAdmin();" onclick="onlyOne(this);" >
+										<label> By manager name</label>
+									</div>
+									<div class="form-group custom-form-group timesheet-approval-filter-managerforHR" >									
+										<div id="ManagerforHR" class="peoplepicker" style="display: none;"></div>
+									</div>
+								</div>
+								<!-- <div class="col-md-12 col-sm-12 col-xs-12 timesheet-approval-filter-managerforHR">
+									<div class="form-group custom-form-group" >									
+										<div id="ManagerforHR" class="peoplepicker" style="display: none;"></div>
+									</div>
+								</div> -->
+								<!--<div class="form-group custom-form-group" >									
+									<input type="checkbox" id="HrAdminChk" class="" name="TaskListchk" value="HrAdmin" onchange="takeactionHrAdmin();" onclick="onlyOne(this);" ><label> Show entries having undefined manager</label><br><input type="checkbox" id="HrAdminChkByManager" class="" name="TaskListchk" value="ByManager" onchange="takeactionHrAdmin();" onclick="onlyOne(this);" ><label> By manager name</label><div id="ManagerforHR" class="peoplepicker" style="display: none;"></div>
+								</div>-->
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer approval-modal-footer">
+				    	<a class="btn custom-btn mr-8"  data-dismiss="modal" onclick="ApplyFilter();">Apply</a>
+						<button class="btn custom-btn-two-cancel"  data-dismiss="modal">Clear</button>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="modal fade" id="TimeSheetApprovalModel" role="dialog">
+			    <div class="modal-dialog modal-lg">
+			      	<div class="modal-content">
+				        <div class="modal-header">
+				          	<button type="button" class="close close-round m-0 bg-white-round-btn" data-dismiss="modal">&times;</button>
+				          	<h4 class="modal-title">Timesheet Approval</h4>
+				        </div>
+				        <div class="modal-body TimesheetApprovalEditModal">
+							<div class="custom-panel">
+								<div class="panel-body">
+									<div>
+										<div class="row timesheet-box">
+											<div class="col-xs-12">
+												<div class="row">
+													<div class="col-sm-6 col-xs-12">
+														<div class="form-group">
+															<label for="" class="font-12">Employee:</label>
+															<p class="m-0 font-16" id="Username"></p>
+														</div>
+													</div>
+													
+													
+													<div class="col-sm-6 col-xs-12">
+														<div class="form-group">
+															<label for="" class="font-12">Logged Hours:</label>
+															<p class="m-0 font-16" id="LoggedHours"></p>
+														</div>
+													</div>
+													
+													
+													
+												</div>
+											</div>
+											<div class="col-xs-12 mt-6">
+												<div class="row">
+													<div class="col-sm-6 col-xs-12" id="TaskDiv">
+														<div class="form-group custom-form-group" >
+															<label for="" class="font-12">Task:</label>
+															<input type="text" id="Task" class="form-control" placeholder="Enter Task" disabled>
+														</div>
+													</div>
+													<div class="col-sm-6 col-xs-12" id="ProjectDiv">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Project:</label>
+															<input type="text" class="form-control" id="Project" placeholder="Enter Project" disabled>
+														</div>
+													</div>
+													<div class="col-sm-6 col-xs-12" id="ModuledIV">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Module:</label>
+															<input type="text" class="form-control" id="Module" placeholder="Enter Module" disabled>
+														</div>
+													</div>
+													<div class="col-sm-6 col-xs-12" id="ClientDiv">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Client:</label>
+															<input type="text" class="form-control" id="Client" placeholder="Enter Client" disabled>
+														</div>
+													</div>
+													<div class="col-sm-6 col-xs-12" id="WorkTypeDiv">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Work Type:</label>
+															<input type="text" class="form-control" id="WorkType" placeholder="Enter Work Type" disabled>
+														</div>
+													</div>
+										        	<div class="col-sm-3 col-xs-12 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label class="font-12">From:</label>
+															<div class="custom-time-picker">
+																<input id="StartTime" class="timepicker form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown" disabled>
+																<span class="glyphicon glyphicon-time clock-icon"></span>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3 col-xs-12 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label class="font-12">To:</label>
+															<div class="custom-time-picker timesheet-to-time-picker">
+																<input id="EndTime" class="timepicker form-control" jt-timepicker="" time="model.time" time-string="model.timeString" default-time="model.options.defaultTime" time-format="model.options.timeFormat" start-time="model.options.startTime" min-time="model.options.minTime" max-time="model.options.maxTime" interval="model.options.interval" dynamic="model.options.dynamic" scrollbar="model.options.scrollbar" dropdown="model.options.dropdown" disabled>
+																<span class="glyphicon glyphicon-time clock-icon"></span>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-6 col-xs-12">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Details:</label>
+															<textarea class="form-control" rows="3" id="Details" style="resize:none;" placeholder="Enter Details" disabled></textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-12">
+												<div class="row">
+													<div class="col-sm-6 col-xs-12">
+														<div class="form-group" id="VerifiedHoursDIV">
+															<!--<label for="" class="font-12">Employee:</label>-->
+															<input type="checkbox" id="VerifiedHours" name="VerifiedHours" value="VerifiedHours" onchange="SetSameasVerifychk();"><label for="vehicle1"> Same as logged hours</label>
+														</div>
+													</div>
+													
+													
+													<div class="col-sm-6 col-xs-12">
+														<div class="form-group" id="BillableHoursDIV">
+															<input type="checkbox" id="BillableHours" name="BillableHours" value="BillableHours" onchange="SetSameasBillablechk();"><label for="vehicle1"> Same as logged hours</label>
+														</div>
+													</div>
+
+											</div>
+												<div class="row ajsuting_pad">
+													<div class="col-sm-3 col-xs-6 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Verified Hours:</label>
+															<input type="text" id="VerifiedHHMM" class="form-control" placeholder="HH:MM">	 
+														</div>
+													</div>
+													<div class="col-sm-3 col-xs-6 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Verified By:</label>
+															<!--<input type="text" class="form-control" value="Amit Kumar">-->
+															<div id="VerifiedBy" class="peoplepicker"></div>
+														</div>
+													</div>
+													<div class="col-sm-3 col-xs-6 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Billable Hours:</label>
+															<input type="text" id="BillableHHMM" class="form-control" placeholder="HH.MM">
+														</div>
+													</div>
+													<div class="col-sm-3 col-xs-6 timesheet-entry-add-date-box-isPhone">
+														<div class="form-group custom-form-group">
+															<label for="" class="font-12">Updated By:</label>
+															<!--<input type="text" class="form-control" value="Gautam">-->
+															<div id="UpdatedBy" class="peoplepicker"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 text-center timesheet-entry-add-footer-btn-group">
+												<a class="btn custom-btn mr-8 w-87" onclick="UpdateApprovar();">Submit</a>
+												<a class="btn custom-btn mr-8 w-87" data-toggle="modal" data-target="#sendModal" onclick="Getdata4Mail()">Email</a>
+												<a class="btn custom-btn custom-btn-two-danger w-87" data-dismiss="modal">Close</a>
+
+											</div>
+										</div>
+							        </div>
+								</div>
+							</div>
+						</div>
+			      	</div>
+			    </div>
+			</div>
+
+			
+<div class="modal fade" id="ProcessModel" role="dialog">
+	<div class="modal-dialog">
+    	<div class="modal-content">        
+        	<div class="modal-body">
+        		<strong>Processing....Please wait..</strong><br>
+    			<span id="End"></span> of <span id="Start"></span>         		              
+        	</div>        
+      	</div>      
+    </div>
+</div>
+		
+
+<!---modal send--->		
+<div id="sendModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		<h4 class="modal-title">Send Mail</h4>
+      		</div>
+      		<div class="modal-body">
+        		<textarea class="form-control content" placeholder="Msg" id="MailData"></textarea>
+        		<a id="MailTrigger" class="btn btn-primary" style="display:block; margin:15px auto">Send</a>
+      		</div>      
+     	</div>
+	</div>
+</div>		
+<!---modal send--->		
+		
+
+
+<script type="" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/Script/TimeSheetApproval.js"></script>
+	<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/edb0de374a.js"></script>-->
+		<script type="text/javascript">
+		    var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"><\/script>\n')
+		        document.write('<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"><\/script>\n') 
+		    }
+		</script>
+		 
+		<script>
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+		    jQuery(function($){ //on document.ready From
+		        $('#approvalFrom').datepicker();
+		        $('#approvalTo').datepicker();
+		    })
+		}
+		</script>
+	
+<script>
+$(document).ready(function () {
+
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#btnExport").hide();
+	
+	}
+});
+
+</script> 
+	
+	</body>

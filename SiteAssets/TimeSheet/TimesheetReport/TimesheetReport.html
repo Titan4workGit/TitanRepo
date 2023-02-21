@@ -1,0 +1,458 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/TimesheetReport/css/styles.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.css">
+	<script type="text/javascript" src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/jquery-ui.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Attendance/assets/moment.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/TimesheetReport/js/jquery.tabletoCSV.js"></script>
+
+
+	<!--<script src="https://use.fontawesome.com/edb0de374a.js"></script>-->
+	<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>
+	<script type="text/javascript" src="_layouts/15/clientforms.js"></script>
+	<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>
+	<script type="text/javascript" src="_layouts/15/autofill.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/TimeSheet/TimesheetReport/js/TimesheetReport.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/WebAnalytics/assets/js/table2excel.js"></script>
+
+	
+	<style type="text/css">
+
+	.navbar-custom{
+	margin-bottom: 20px !important;	
+	}
+	.article-content{
+		margin-top:0px !important;
+	}
+	.custom-panel {
+	    margin: 0px 0px;
+	}
+
+#EmpName_TopSpan_EditorInput,
+#ManagerName_TopSpan_EditorInput{
+ border:none !important;	
+}
+
+#EmpName_TopSpan_AutoFillDiv,
+#ManagerName_TopSpan_AutoFillDiv{
+ min-width:265px !important;	
+}
+
+.NoRecordFound{
+ border:0.5px solid #d6d6d6;	
+}
+
+
+.timesheet-report-user-img {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 2px solid #bbbbbb;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+}
+
+/* new css added on 30/9/2021 */
+
+#dvpieChart .canvasjs-chart-credit {
+    display: none;
+}
+.timesheet-report-user-img {
+    margin-right: 10px;
+}
+
+
+@media all and (max-width: 991px) and (min-width: 320px){
+
+.ms-webpart-chrome-vertical{
+	
+	display:block !important;
+
+}
+
+#MSOZoneCell_WebPartWPQ2.ms-webpart-cell-vertical-inline-table{
+
+	display:block !important;
+
+}
+
+	
+}
+
+.Required{
+	color:red;
+}
+
+.approval-btn-position a:last-child{
+
+	color:#fff !important;	
+}
+
+.approval-btn-position a:hover:last-child{
+
+	color:#1d6ec0 !important;	
+}
+
+.modal-header button{
+
+ min-width:1rem !important;		
+
+}
+
+
+
+
+@media(max-width:385px){
+	
+.approval-btn-position a.w-121,
+.approval-btn-position a.w-125{
+
+    width: 100px !important;
+    font-size: 12px !important;
+    padding: 2px 0px !important;
+   
+}	
+	
+}
+
+@media(max-width:767px){
+
+.article-content{
+	
+	margin:15px 15px !important;	
+		
+}
+	
+div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table{
+
+	min-width:901px !important;	
+
+}	
+	
+	
+}
+		
+</style>
+<script>
+$(document).ready(function () {
+//alert(window.screen.width+","+ window.screen.height);
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#btnExport").hide();
+	
+	}
+});
+
+</script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Sunil Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">170600.000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100B68794DA7B64C04CB60E7EF80C84BDFA</mso:ContentTypeId>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1706</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f961ca00-b33c-4d6a-a0f3-6eb3d523d907</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1706, ADMIN-1645029823-1706</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Titan</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="tab-content">
+					<div class="custom-panel custom-panel-box">
+						<div class="panel-head">
+							<h3 class="m-0">
+								Timesheet Report
+	                    	</h3>
+						</div>
+						<div class="panel-body px-0 pt-8">
+							<div class="row m-0 mb-8">
+								<div class="col-lg-9 col-md-8 col-sm-7">
+									<div class="scrollbar-panel chip-panel">
+										<div class="chip-box" id="filterchips">
+										<!--<div class="upload-chip" ></div>-->
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3 col-md-4 col-sm-5">
+									<div class="text-right approval-btn-position">
+										<a type="button" class="btn custom-btn w-125 ml-4" data-toggle="modal" data-target="#approval-filter"><i class="fa fa-filter" aria-hidden="true"></i> Filter</a>
+										<!--<a type="button" class="btn custom-btn w-125 ml-4" href="#"><span class="" data-localize="Export to Excel" onclick="tableToExcel('ReporTimesheet', 'Timesheet Report')"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</span></a>-->
+										<a type="button" class="btn custom-btn w-125 ml-4" href="#" id="btnExport"><span class="" data-localize="Export to Excel" onclick="ExcelDataReport('TimeSheetTableData');"><i class="fa fa-file-excel-o" aria-hidden="true"></i> Export</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="row m-0">
+								<div class="col-md-5 col-xs-12">
+									<div class="row m-0 approval-right-top-box approval-right-top-box-two">
+										<div class="col-xs-6 approval-right-time-box-two">
+											<div class="text-center">
+												<h3 class="m-0">From</h3>
+												<p class="m-0" id="StartDate">DD/MM/YYY</p>
+											</div>
+										</div>
+										<div class="col-xs-6 approval-right-time-box-three">
+											<div class="text-center">
+												<h3 class="m-0">To</h3>
+												<p class="m-0" id="EndDate">DD/MM/YYYY</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-7 col-xs-12">
+									<div class="row m-0 approval-right-top-box">
+										<div class="col-xs-4 approval-right-time-box-one">
+											<div class="text-center">
+												<h3 class="m-0" id="TimeWork">00:00</h3>
+												<p class="m-0">Logged Hours</p>
+											</div>
+										</div>
+										<div class="col-xs-4 approval-right-time-box-two">
+											<div class="text-center">
+												<h3 class="m-0" id="TimeApproved">00:00</h3>
+												<p class="m-0">Approved Hours</p>
+											</div>
+										</div>
+										<div class="col-xs-4 approval-right-time-box-three">
+											<div class="text-center">
+												<h3 class="m-0" id="BilledTime">00:00</h3>
+												<p class="m-0">Billable Hours</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row m-0">
+    							<div class="col-md-6 col-xs-12">
+									<div class="chart-container" style="position: relative; height:377px; width:100%" id="dvlineChart">
+										<canvas id="line-Chart"></canvas>
+									</div>
+
+								</div>
+								<div class="col-md-6 col-xs-12">
+									<div class="chart-container" style="height: 377px; max-width: 920px; margin: 0px auto;" id="dvpieChart">
+							    
+									</div>									
+								</div>
+							</div>
+							
+							<div class="row m-0">
+								<div class="col-xs-12">
+									<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+										<div id="tableheader" style="height: auto !important;">
+											<div class="search" style="display:none;">
+												<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+											</div>
+											<div>
+												<span class="details">
+													<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+													<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+												</span>
+											</div>
+										</div>
+										<div class="mrg-top-10m  btm10 container"> </div>	
+										<div class="table-responsive px-15  scrollbar-panel">
+											<div id="ReporTimesheet">
+												<table cellpadding='0' cellspacing='0' border='1' id='TimeSheetTableDataHead' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+													<thead>
+														<tr style="display:none;">
+															<th class="text-left border-bottom-0">From Date</th>
+															<th class="text-left border-bottom-0">End Date</th>
+															<th class="text-left border-bottom-0"></th>
+							        						<th class="text-center border-bottom-0"></th>							        	
+							        						<th class="text-left border-bottom-0"></th>
+							        						<th class="text-left border-bottom-0"></th>
+															<th class="text-left border-bottom-0">Worked Hours</th>
+															<th class="text-left border-bottom-0">Approved Hours</th>
+							       	 						<th class="text-center border-bottom-0">Billed Hours</th>
+														</tr>
+														<tr style="display:none;">
+															<th class="text-left border-bottom-0" id="FdateTH"></th>
+															<th class="text-left border-bottom-0" id="EdateTH"></th>
+															<th class="text-left border-bottom-0"></th>
+							        						<th class="text-center border-bottom-0" ></th>
+							        				        <th class="text-left border-bottom-0" ></th>
+							        						<th class="text-left border-bottom-0"></th>
+															<th class="text-left border-bottom-0" id="WHTH"></th>
+															<th class="text-left border-bottom-0" id="AHTH"></th>
+							        						<th class="text-center border-bottom-0" id="BHTH"></th>
+														</tr>
+													</thead>
+												</table>
+												<table cellpadding='0' cellspacing='0' border='1' id='TimeSheetTableData' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+													<thead class='panel-heading '>
+														<tr>
+															<th style=""><h6 data-localize="Date">Date</h6></th>
+															<th style=""><h6 data-localize="Project">Project</h6></th>								
+															<th style=""><h6 data-localize="Client">Client</h6></th>
+															<th style=""><h6 data-localize="Task">Task</h6></th>								
+															<th style=""><h6 data-localize="WorkType">Work Type</h6></th>
+															<th style="width: 240px;"><h6 data-localize="User" >User</h6></th>
+															<th style="width: 100px;"><h6 data-localize="">Hours<br>Logged</h6></th>
+															<th style="width: 100px;"><h6 data-localize="">Hours<br>Approved</h6></th>								
+															<th class='nosort' style="width: 100px;"><h6 data-localize="">Hours<br>Billable</h6></th>
+														</tr>
+													</thead>
+													<tbody class='panel TimeSheetTableDataDIV'>					
+													</tbody>
+												</table>
+											</div>					
+											<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+											<div id="mainDivAllAnnouncements"> 			</div>				
+										</div>
+										<div id="tablefooter" style="margin-bottom: 10px;">
+											<div id="tablenav">
+												<div>
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+													<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+												</div>
+												<div>
+													<select id="pagedropdown"></select>
+												</div>
+												<div>
+													<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+												</div>
+											</div>
+											<div style="float:left !important;"><span>Showing Items &nbsp</span><span id="TotalItemscount"></span></div>
+											<div id="tablelocation">						
+												<div>
+													<span data-localize="LinesPerPage"></span>
+													<select onchange="sorter.size(this.value)">
+														<option value="5" >5</option>
+														<option value="10" selected="selected">10</option>
+														<option value="20">20</option>
+														<option value="50">50</option>
+														<option value="100">100</option>
+													</select>
+												</div>						
+												<div class=""><span data-localize="Page">&nbsp;</span><span id="currentpage"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpages"></span></div>
+											</div>
+										</div>					
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<!-- Appeoval filter Modal -->
+		<div class="modal fade" id="approval-filter" role="dialog">
+			<div class="modal-dialog">
+			  	<div class="modal-content">
+				    <div class="modal-header">
+						<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+						<h4 class="modal-title">Filter</h4>
+				    </div>
+				    <div class="modal-body approval-inbox-istab">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>From:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="ReportFrom" name="approvalFrom" readonly="readonly">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>To:</label>
+									<input type="text" placeholder="mm/dd/yyyy" class="form-control" id="ReportTo" name="approvalTo" readonly="readonly">
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Client Name:</label><label class="Required">*</label>
+									<select class="form-control" id="ClientDDL" onchange="GetProjectbyClient(this.value);">
+										<option>Select</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label>&nbsp;</label>
+									<div class="form-control border-0 px-0">
+										<label class="checkbox-inline"><input type="checkbox" id="ALL" name="FilterCHK" value="ALL" checked="checked" onclick="onlyOne(this);">All</label>
+										<label class="checkbox-inline"><input type="checkbox" name="FilterCHK" value="Verified" onclick="onlyOne(this);">Verified</label>
+										<label class="checkbox-inline"><input type="checkbox" name="FilterCHK" value="Billable" onclick="onlyOne(this);">Billable</label>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Project Name:</label>
+									<select class="form-control" id="ProjectDDL">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Work Type:</label>
+									<select class="form-control" id="WorkTypeProj">
+										<option>ALL</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Employee Name:</label>
+									<div id="EmpName" class="peoplepicker"></div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="form-group custom-form-group">
+									<label for="Project">Manager:</label>
+									<div id="ManagerName" class="peoplepicker"></div>
+								</div>
+							</div>
+						</div>
+				    </div>
+				    <div class="modal-footer approval-modal-footer">
+				    	<!--<a class="btn custom-btn mr-8"  data-dismiss="modal" id="ApplyFilter">Apply</a>-->
+				    	<a class="btn custom-btn mr-8" id="ApplyFilter">Apply</a>
+						<a class="btn custom-btn-two-cancel"  data-dismiss="modal">Clear</a>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		    var datefield=document.createElement("input")
+		    datefield.setAttribute("type", "date")
+		    if (datefield.type!="date"){ //if browser doesn't support input type="date", load files for jQuery UI Date Picker
+		        document.write('<link href="assets/css/date-picker.css" rel="stylesheet" type="text/css" />\n')
+		        document.write('<script src="assets/js/datepicker-jquery.min.js"><\/script>\n')
+		        document.write('<script src="assets/js/datepicker-jquery-ui.min.js"><\/script>\n') 
+		    }
+		</script>		 
+		<script>
+		if (datefield.type!="date"){ //if browser doesn't support input type="date", initialize date picker widget:
+		    jQuery(function($){ //on document.ready From
+		        $('#approvalFrom').datepicker();
+		        $('#approvalTo').datepicker();
+		    })
+		}
+		</script>
+		
+		
+		
+</body>
