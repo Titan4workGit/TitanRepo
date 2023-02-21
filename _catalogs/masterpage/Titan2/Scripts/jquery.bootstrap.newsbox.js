@@ -1,4 +1,4 @@
-/*
+﻿/*
  * jQuery Bootstrap News Box v1.0.1
  * 
  * Copyright 2014, Dragan Mitrovic
