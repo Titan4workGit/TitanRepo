@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/css/drag_drop_style.css">
+
+  <script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/svgDraw.js"></script>
+  <script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/js/jquery-ui.js"></script>
+
+<style>
+/*Now the CSS*/
+* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top:30px; 
+    position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 25px 0 25px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 2px solid #bdbdbd;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 2px solid #bdbdbd;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+.tree li:only-child::before {
+    display: block;
+    border-left: 2px solid #ccc;
+    border-radius: 0 !important;
+    left: 2px;
+}
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding:20px 0 0 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 2px solid #bdbdbd;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 2px solid #ccc;
+	width: 0; height: 30px;
+}
+
+.tree li div.covernows {
+    border: 1px solid #ccc;
+    padding: 0;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    width: 310px;
+    min-height: 80px;
+    background: #fff;
+    position: relative;
+    box-shadow: 1px 1px 3px #b9e3ff;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+
+/*Connector styles on hover*/
+.tree li div.covernows:hover+ul li::after, 
+.tree li div.covernows:hover+ul li::before, 
+.tree li div.covernows:hover+ul::before, 
+.tree li div.covernows:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+
+.tree{
+    display: flex;
+    justify-content: center;
+    clear:both;
+}
+
+
+/**svg container setting****/
+
+#svgContainer { 
+  z-index: -10;
+  position:absolute;
+  opacity:1;
+}
+
+svg#svg1 {
+ 
+    width: calc(100% + 15px) !important;
+
+}
+
+
+/*****flow setting*******/
+
+.left_flow, 
+.right_flow {
+    width: 1px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+
+.left_flow{
+ left: -20px;
+ top: 50%;	
+}
+
+
+.right_flow {
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.right_flow::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    background: #397eab;
+    right: -0.2px;
+}    
+
+.left_flow::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    left: 0px;
+    background: #397eab;
+    transform: rotate(180deg);
+}
+
+.top_flow {
+    width: 2px;
+    height: 20px;
+    background:#397eab;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -15px;
+}
+
+.bottom_flow {
+    width:0px;
+    height:2px;
+    background:#397eab;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom:-15px;
+}
+
+.bottom_flow::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    bottom: 0px;
+    background: #397eab;
+    top: -12px;
+    left: -1px;
+}
+
+
+
+/*****arrow setting*******/
+
+.arrow_bottom,
+.arrow_left,
+.arrow_right{
+  position:absolute;
+  border:7px solid transparent;
+}
+
+.arrow_left{
+  left:-6px;
+  top:50%;
+  border-left-color:#000;
+  transform: translateY(-50%);	
+}
+
+.arrow_right {
+    right: -6px;
+    top: 50%;
+    border-right-color: #000;
+    transform: translateY(-50%);
+}
+
+.arrow_bottom {
+    left: 50%;
+    bottom: -5px;
+    border-bottom-color: #000;
+    transform: translateX(-50%);
+}
+.left_flow.increase_point{
+    left: -27px;
+    top: 40%;
+}
+
+.right_flow.increase_point{
+    right: -27px;    top: 40%;
+}
+.arrow_left.increase_point{
+    top: 40%;
+}
+
+.arrow_right.increase_point{
+    top: 40%;
+}
+
+.top_area {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    background: #eee;
+    border-radius: 5px 5px 0 0;
+    padding: 5px;
+}
+
+.top_area h5 {
+    color: #333;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+.optionbox {
+    position: absolute;
+    z-index: 55;
+    right: 2px;
+}
+
+.optionbx {
+    display: none;
+    min-width: 140px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    position: absolute;
+    right: 5px;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 4px;
+}
+
+.optionbx a {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    color: #333;
+    padding: 3px 5px;
+    text-decoration: none;
+}
+
+.optionbx a:hover{
+  background: #fbfbfb;
+}
+
+.optionbx.active{
+    display: block;
+}
+
+.clickevent{
+    cursor: pointer;
+}
+
+
+.user_cover{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.user_img{
+    width: 23px;
+    min-width:23px;
+    border-radius: 50%;
+    margin:3px;
+}
+
+.user_img img{
+    width: 23px;
+    min-width:23px;
+    border-radius: 50%;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #818181;
+    letter-spacing: 0.2px;
+    text-align: left;
+    padding: 5px;
+    margin:0;
+}
+
+.user_detail {
+    text-align: left;
+    min-width: calc(100% - 28px);
+}
+
+.user_detail h6 {
+    text-align: left;
+    font-size: 11px;
+    color: #333;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.user_detail a{
+  white-space: nowrap; 
+  width:100px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+  color:#1d6ec0; 
+  display:block;
+  text-decoration: none;
+}
+.select_userbox .col-md-6{
+  padding:0 3px;
+}
+
+.fullcover {
+    width: 97%;
+    margin:0 auto;
+    overflow: hidden;
+    height: 97vh;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.drgabox{
+    margin:0 -970px;
+}
+
+.menus{
+    padding:5px 5px; 
+    text-align: right;
+}
+
+.menus button, 
+.menus button:focus {
+    outline: none !important;
+    border: none !important;
+    background: transparent;
+    margin:0 2px;
+}
+
+.menus button img{
+    width:16px;
+    opacity: 0.6;
+}
+
+/*****arrow setting*******/
+
+path {
+    stroke: #397eab;
+
+}
+
+.hidding{
+ display:none;	
+}
+
+.hidding.showing{
+ display:block;	
+}
+.custom-panel{
+ margin-bottom:15px;	
+}
+
+li.remove_upaline::before{
+ border:none !important;	
+}
+
+ul#InitialNodeChild {
+    padding-top: 0;
+}
+
+
+.right_flow.red::before,
+.left_flow.red::before{
+ background:#ff0000;	
+}
+
+.right_flow.blue::before,
+.left_flow.blue::before{
+ background:#397eab;	
+}
+
+.close-icon {
+    position: relative;
+    top: -0.8px;
+    left: 0px;
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5200</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fd30a548-2d18-4f13-99e8-25f3c4c606ec</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5200, ADMIN-1645029823-5200</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="custom-panel">
+      <h1 class="panel-head-text">Process Step</h1>
+      <div class="navareabx"> 
+        <ul class="activating" style="display: inline-block;">
+          <li class="newitem is-active" data-id="form_design">
+            Form Design
+          </li>
+          <li class="newitem" style="color: rgb(29, 110, 192);" data-id="workflow">
+            Workflow
+          </li>
+
+          <span class="slidesec" style="width: 95px; left: 6px; background-color: rgb(29, 110, 192);"></span>
+        </ul>
+         
+        <ul class="moreopts"> 
+          <li><a href="#" data-toggle="modal" data-target="#access_modl"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/access.png"> Access</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#Appearance_modl"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/appeance.png"> Appearance</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#about_modl"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/about.png"> About</a></li>
+        </ul> 
+      </div><!----topsection ed----->
+
+      <div class="tab-content">
+        <div class="form_design hidding showing">
+          <div class="coverdrag">
+            <div class="dragaable">
+             
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/text.png"> Text</span>
+                <div class="childbox">
+                  <label>Text</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="items col-md-12">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/textarea.png"> Multiline</span>
+                <div class="childbox">
+                  <label>Multiline</label>
+                  <textarea class="form-control" style="resize: none"></textarea>
+                </div>
+
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/dropdown.png"> Dropdown</span>
+                <div class="childbox">
+                  <label>Dropdown</label>
+                  <select class="form-control"></select>
+                </div>
+              </div>
+
+
+              <div class="items col-md-4">
+                 <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/numbers.png"> Number</span>
+                <div class="childbox">
+                  <label>Number</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/checkbox.png"> Checkbox</span>
+                <div class="childbox">
+                  <label>Checkbox</label>
+                  <div class="switcharea">
+                   <span>Prefix</span>
+                   <img src="img/checkbox.png" alt="" style="float: right;position: relative;top: -5px;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/date.png"> Date</span>
+                <div class="childbox">
+                  <label>Date</label>
+                  <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/due_date.png"> Due Date</span>
+                <div class="childbox">
+                  <label>Due Date</label>
+                  <input type="text" class="form-control" placeholder="mm/dd/yyyy">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/doller.png"> Currency</span>
+                <div class="childbox">
+                  <label>Currency</label>
+                  <select class="form-control">
+                  </select>
+                </div>  
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/priority.png"> Priority</span>
+                <div class="childbox">
+                  <label>Priority</label>
+                  <input type="text" name="" placeholder="Priority" class="form-control">
+                </div>  
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/user.png"> Person</span>
+                <div class="childbox">
+                  <label>Person</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/attachment.png"> Attachment</span>
+                <div class="childbox">
+                  <label>Attachment</label>
+                  <input type="text" class="form-control" placeholder="Choose File">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                 <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/numbers.png"> Serial Number</span>
+                <div class="childbox">
+                  <label>Serial Number</label>
+                  <input type="number" class="form-control">
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon">
+                  <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/calculator.png"> Calculated</span>
+                  <div class="childbox">
+                    <label>Calculated Value</label>
+                    <input type="text" placeholder="Define the Formula" class="form-control">
+                  </div>
+              </div>
+
+              
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/sum.png"> Sum Value</span>
+                <div class="childbox">
+                  <label>Summerized Value</label>
+                  <input type="text" placeholder="Define the Formula" class="form-control">
+                </div>
+              </div>
+              
+               <div class="items col-md-12">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/table.png"> Table</span>
+                <div class="childbox">
+                  <div class="wraptable table-responsive">
+                    <table class="table table-bordered table-condensed clienttable table-hover">
+                      <thead>
+                        <tr>
+                          <th>Column 1</th>
+                          <th>Column 2</th>
+                          <th>Column 3</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>value</td>
+                          <td>value</td>
+                          <td>value</td>
+                        </tr>
+                        <tr>
+                          <td>value</td>
+                          <td>value</td>
+                          <td>value</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                </div>
+
+              
+
+              <div class="items col-md-12">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/header.png"> Header</span>
+                <div class="childbox">
+                  <label class="colorsetdyn">Header</label>
+                  <hr>
+                </div>
+              </div>
+
+              
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/QR.png"> QR Code</span>
+                <div class="childbox">
+                  <label>QR Code</label>
+                  <div class="qr_box">
+                    <img src="img/qr_code.png" alt="">
+                  </div>
+                </div>
+              </div>
+              
+
+               <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/globe.png"> Link</span>
+                <div class="childbox">
+                  <label>Link</label>
+                  <input type="text" placeholder="http://www.info" class="form-control">
+                </div>
+               </div>
+
+               
+              <div class="items col-md-12">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/note.png"> Note</span>
+                <div class="childbox">
+                  <label>Note</label>
+                  <div class="notearea"></div>
+                </div>
+              </div>
+
+              <div class="items col-md-4">
+                <span class="show_only_icon"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/switch_icon.png"> Switch</span>
+                <div class="childbox">
+                  <label>Switch</label>
+                  <div class="switcharea">
+                    <span>Prefix</span>
+                    <img src="img/switch.png" alt="">
+                    <span>Sufix</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boxleft">
+              <div class="headingbox">
+                <div class="leftbx">
+                  <span class="logoarea"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/Steps_FlowChart/img/logo.png" alt=""></span>
+                  <div class="lftdetails">
+                    <h3>Process for Tamplate</h3>
+                    <p>Tamplate name</p>
+                  </div>
+                </div>
+                <div class="righbx">
+                  <h2>Process Name</h2>
+                </div>
+              </div>
+            <div id="dropbox">
+            </div>
+            </div>
+          </div><!----coverdrag--->
+        </div><!------form_design area----->
+        <div class="workflow hidding">
+         <div class="fullcover">
+				<div class="drgabox">
+					<div id="svgContainer" style="margin:0px;">
+					</div>		
+					<div class="tree" style="margin:0 auto">
+						<ul id="InitialNodeChild">		
+						</ul>
+					</div>		
+					<div style="clear:both">
+					</div>
+				</div>
+			</div>
+	   </div>
+      </div><!---tab-content--->  
+
+    </div><!----custom-panel--->
+</div>
+
+<!--------------modalarea------->
+<!-- about_modl -->
+<div id="about_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+       </button>
+        <h4 class="modal-title">About</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Process Name:</label><span class="red_stt">*</span>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Tamplate Name:</label><span class="red_stt">*</span>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Process For:</label><span class="red_stt">*</span>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Details:</label>
+          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Instruction:</label>
+          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+        </div>
+        <div class="form-group">
+          <label>Prerequisite:</label>
+          <textarea name="" id="" cols="30"class="form-control" style="min-height: 90px;"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- about_modl -->
+<div id="Appearance_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+         <span class="close-icon">&times;</span>
+       </button>
+        <h4 class="modal-title">Appearance</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="form-group">
+          <label>Page Column:</label>
+          <select class="form-control">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>process icon:</label>
+          <ul class="timelist">
+             <li>  
+             <label class="radio">
+              <input type="radio" name="UpdateEmpN" id="test1" value="choose_gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
+            </li>
+            <li>    
+            <label class="radio"><input type="radio" name="UpdateEmpN" id="test2" value="upload_gallary" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
+            </li>
+          </ul>
+          <div class="slider-panel changemeN widtmagingsbox choose_gallery both_gallery" style="position:relative; margin-bottom:0px !important;">
+                <div id="slider-container" class="slider">
+                   <div class="slide slideN image-active">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process1.png" alt="process1">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process2.png" alt="process2">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process3.png" alt="process3">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process4.png" alt="process4">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process5.png" alt="process5">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process6.png" alt="process6">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process7.png" alt="process7">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process8.png" alt="process8">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process9.png" alt="process9">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process10.png" alt="process10">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process11.png" alt="process11">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process12.png" alt="process12">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process13.png" alt="process13">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process14.png" alt="process14">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process15.png" alt="process15">
+                        </div>
+                         <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process16.png" alt="process16">
+                        </div>
+                        
+                         <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process17.png" alt="process17">
+                        </div>
+                        
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process18.png" alt="process18">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process19.png" alt="process19">
+                        </div>
+                         <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process20.png" alt="process20">
+                        </div>
+
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process31.png" alt="process31">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process32.png" alt="process32">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process33.png" alt="process33">
+                        </div>
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process34.png" alt="process34">
+                        </div>
+
+                        <div class="slide slideN">
+                            <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/process35.png" alt="process35">
+                        </div>
+                </div>
+                <div onclick="prev()" class="control-prev-btn">
+                     <i class="fa fa-angle-left"></i>
+                </div>
+                <div onclick="next()" class="control-next-btn">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+           </div>
+           <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none upload_gallary both_gallery" style="display: none;">
+                <div class="approve-process-upload-image-box-btn">
+                
+                  <div class="form-group custom-form-group">
+                  
+                  <label class="covertophere">
+                  
+                      <input type="file" class="form-control approve-process-upload-image-inp" name="" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">                                         
+                    
+                    </label>
+                    
+                    </div>
+                    
+                    <div class="approve-process-upload-data">
+                      <img src="#" id="blah" alt="your image">
+                        <!--<img id="blah" alt="your image" width="100" height="100" />-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label>Appearance:</label>
+          <div class="radio_grouop" style="margin-bottom: 5px;">
+            <label class="radio-inline">
+              <input type="radio" name="them_setting" value="default" checked>
+              Default
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="them_setting" value="theme">
+              Theme
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="them_setting" value="Customs">
+              Customs
+            </label>
+          </div>
+
+          <div class="themsbox theme">
+            <input type="color" name="" class="form-control" style="padding: 0 !important;">
+          </div>
+
+          <div class="themsbox Customs">
+            <input type="text" class="form-control" placeholder="Customs">
+          </div>
+        </div>
+        <div class="form-group">
+          <ul class="default_opts">
+            <li>Title background</li>
+            <li>Form background</li>
+            <li>Header line</li>
+            <li>Table header</li>
+          </ul>
+        </div>
+      </div><!---md-bdy--->
+      <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-----appearance ed---->
+<!------Access----->
+
+<div id="access_modl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal" class="form-control">
+         <span class="close-icon">&times;</span>
+       </button>
+        <h4 class="modal-title">Access</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row" style="margin-bottom: 12px">
+          <div class="col-md-3">
+            <label>Process Owner:</label>
+          </div>
+          <div class="col-md-9">
+            <input type="text" placeholder="Enter names  or email address..." class="form-control">
+          </div>
+        </div><!---row ed--->
+        <div class="row" style="margin-bottom: 12px">
+          <div class="col-md-3">
+            <label>Initiator:</label>
+          </div>
+          <div class="col-md-9">
+            <div class="gribxall">
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Anyone
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Employee
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Group
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Client
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Department
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Office
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Guest User
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="Initiator_opt">
+                Selective
+              </label>  
+            </div>
+          </div>
+        </div><!---row ed--->
+        <div class="row" style="margin-bottom: 12px">
+          <div class="col-md-3">
+            <div class="form-group">
+            <label>User:</label>
+          </div>
+          </div>
+          <div class="col-md-9">
+             <input type="text" class="form-control" placeholder="Enter names or email address.">
+          </div>
+        </div><!---row ed-->
+        <div class="row">
+          <div class="col-md-3">
+            <label>Edit Scope:</label>
+          </div>
+          <div class="col-md-9">
+            <div class="gribxall">
+              <label class="radio-inline">
+                <input type="radio" name="editscrop_opt">
+                Full Form
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="editscrop_opt">
+                Partial
+              </label>
+            </div>
+          </div>
+        </div><!---row ed--->
+      </div>
+      <div class="modal-footer" style="margin-top: 0; text-align: center; padding:10px;">
+        <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!------Access----->
+
+<!-------coding area----->
+
+
+<!------tabcode---->
+<script>
+
+$(window).ready(function(){
+
+	$('.activating li').click(function(){
+		var storelist = $(this).data('id');
+		$('.hidding').not('.'+storelist).removeClass('showing');
+		$('.'+storelist).addClass('showing');
+	});
+
+});
+
+</script>
+<!------tabcode end---->
+
+<script>
+  
+$(function () {
+    $(".dragaable div").draggable({
+        revert: "invalid",
+        helper:"clone",
+        distance: 5,
+        cursor:"move"
+          });
+    $("#dropbox").droppable({
+        accept:'.items',
+        drop: function (event, ui) {
+            var store = ui.draggable.clone();
+            $(this).append(store);
+        }
+    }).sortable({
+        helper: 'clone',
+        cursor:"move",
+        revert:true,
+        distance: 5,
+        items:".items",
+        connectWith: "#dropbox",
+        stop: function(event, ui) {
+            $(ui.helper).clone(false).removeClass('box ui-draggable ui-draggable-dragging');
+        }
+    });
+   
+});
+
+</script>
+<!--------------------tab setting----->
+
+<!---snake effect--->
+
+<script>
+
+var indicator = document.querySelector('.slidesec');
+var items = document.querySelectorAll('.newitem');
+
+function handleIndicator(el) {
+  items.forEach(function (item) {
+    item.classList.remove('is-active');
+    item.removeAttribute('style');
+  });
+  indicator.style.width = "".concat(el.offsetWidth, "px");
+  indicator.style.left = "".concat(el.offsetLeft, "px");
+  indicator.style.backgroundColor = el.getAttribute('active-color');
+  el.classList.add('is-active');
+  el.style.color = el.getAttribute('active-color');
+}
+
+items.forEach(function (item, index) {
+  item.addEventListener('click', function (e) {
+    handleIndicator(e.target);
+  });
+  item.classList.contains('is-active') && handleIndicator(item);
+});
+</script>
+
+<!---snake effect---> 
+
+
+<script>
+function prev(){
+    document.getElementById('slider-container').scrollLeft -= 100;
+}
+
+function next()
+{
+document.getElementById('slider-container').scrollLeft += 100;
+}
+
+$(document).ready(function(){
+
+$('.slide').click(function(){
+$('.slide').removeClass('image-active');
+$(this).addClass('image-active');
+});
+
+$('input[name="UpdateEmpN"]').click(function(){
+var valstre = $(this).val();
+$('.both_gallery').not('.'+valstre).hide();
+$('.'+valstre).show();
+})
+
+});
+
+</script>
+
+<script>
+
+$(document).ready(function(){
+
+$('.thembx').hide();
+
+$('input[name="themopts"]').on('click', function(){
+var storevlus = $(this).val();
+$('.thembx').not('.'+storevlus).hide();
+$('.'+storevlus).show();
+})
+
+
+$('.themsbox.Customs, .themsbox.theme').hide();
+$('input[name="them_setting"]').on('click', function(){
+
+    var storval = $(this).val();
+    $('.themsbox').not('.'+storval).hide();
+    $('.'+storval).show();
+
+  });
+
+});
+
+
+</script>
+
+
+
+</body>
