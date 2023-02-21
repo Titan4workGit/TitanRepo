@@ -1,0 +1,329 @@
+<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<!--<script type="text/javascript"  src=" https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>-->
+<!--<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>-->
+
+
+<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/Mytable.js?123'></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/AdminPortal/QuickLinks/assets/styles.css">
+
+
+
+<div class=" row department-header" style="display:none;">
+	<ol class="breadcrumb">
+		<li><h4><b>Manage Quick Links</b></h4></li>
+	</ol>
+</div>
+<section class="content panel panel-default mrgn-tp10">
+	<div class="panel-heading   panel-head-4">
+		<div class="panel-title">
+			<h4 class="h4-color" data-localize="ApplicationLink">Application Link</h4>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> PagesOf  <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="mrg-top-10m  btm10 container">
+						<div class="row" id="ajustinglink">
+							<label for="" style="margin-top:8px; padding:0px; text-align:left; width:6%;" class="col-sm-1 control-label" data-localize="Visible At">Visible At</label>
+
+						    <select id="ddlVisibleAtFilter" style="width:200px;font-size: 13px; padding:8px 5px !Important;"  class="pull-left"> 
+							<option value="0">All</option>
+						    <option value="2">Home Page</option>							
+							<option value="1">Workplace</option>
+						          
+							</select>
+
+							<input type="text" id="query"  onkeyup="sorter.search('query')" placeholder="Search..." class="doc-search" style="width:200px;   margin-left:12px;  font-size: 13px;padding:8px 5px !Important;" />
+							<button type="button" id="closeApplicationLink" style="font-size:13px;margin-right:0px;" class="btn btn-outline-secondary  pull-right " data-localize="Close">Close</button>
+							<button type="button" id="addApplicationLink" style="font-size:13px;" class="btn btn-outline-success pull-right " data-localize="Add">Add</button>
+						</div>
+					</div>
+					<div class="table-responsive">
+						<table cellpadding='0' cellspacing='0' border='1' id='TempTableApplicationLink' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer sharedwithme_table'>
+							<thead class='panel-heading'>
+								<tr>
+									<th><h6 data-localize="IconName">Icon Name</h6></th>
+									<th><h6 data-localize="HyperLink">HyperLink</h6></th>
+									<th style="width:13% !important; text-align:center;"><h6 data-localize="Visible At">Visible At</h6></th>
+									<th style="width:10% !important; text-align:center;"><h6 data-localize="Protected">Protected</h6></th>
+									<th style="width:10% !important; text-align:center;"><h6 data-localize="Status">Status</h6></th>
+									<th class='nosort' style='width:130px; text-align:center;'><h6 data-localize="Action">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel mainDivAllApplicationLink'>
+							</tbody>
+						</table>
+
+						<div class="NoRecordFound" style='text-align:  center;font-size:14px; display:none' data-localize='NoRecordFound'>No Record Found</div>
+
+						<div id="mainDivAllApplicationLink">
+						</div>
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div>
+								<select id="pagedropdown"></select>
+							</div>
+							<div>
+								<a href="javascript:sorter.showall()" data-localize="ViewAll">View All</a>
+							</div>
+						</div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage">Lines Per Page</span>
+								<select onchange="sorter.size(this.value)">
+								<option value="5">5</option>
+								<option value="10" selected="selected">10</option>
+								<option value="20">20</option>
+								<option value="50">50</option>
+								<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">Page</span><span id="currentpage"></span><span data-localize="Of">Of</span><span id="totalpages"></span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="modalApprovalApplicationLink" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content" class="modal-dialog">
+				<div class="modal-header panel-head-4">
+
+					<button type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title h4-color" data-localize="ApplicationLink">Application Link</h4>
+				</div>
+				<div class="modal-body">
+					<div class="panel-body">
+						<div class="form-horizontal">
+							<div class="form-group">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="Visible At">Visible At</label>
+								<div class="col-sm-9">
+									<select id="ddlVisibleAt" class="form-control">
+										<option>Select Visible At</option>
+									   <option value="Home Page">Home Page</option>
+										<option value="Workplace">Workplace</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group"  id="diveRadioButton" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label" ></label>
+
+								<div class="col-sm-9">
+									<label class="radio-inline">
+								      <input type="radio" name="optradio" id="radioLink" onclick="showLink()" value="Link" checked>Link
+								    </label>
+								    <label class="radio-inline">
+								      <input type="radio" name="optradio" id="radioGroup"  onclick="showGroup()" value="Group" >Group
+								    </label>
+								</div>
+							</div>
+							
+							<div class="form-group" id="divLinkTitle">
+								<label for="" class="col-sm-3 control-label popup_label required" id="labelTitle">Title</label>
+
+								<div class="col-sm-9">
+									<input type="" class="form-control" id="txtTitle" maxlength="15">
+								</div>
+							</div>
+							<!--<div class="form-group" id="divGroupName" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="Group Name">Group Name</label>
+
+								<div class="col-sm-9">
+									<input type="" class="form-control" id="txtGroupName" maxlength="15">
+								</div>
+							</div>-->
+
+							<div class="form-group" id="divLink">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="Link">Link</label>
+								<div class="col-sm-9">
+									<input type="" class="form-control" id="txtLink" onblur="is_url()"> 
+								</div>
+							</div>
+							<div class="form-group" style="display:none" id="divActiveBox">
+								<label for="" class="col-sm-3 control-label popup_label" data-localize="Active">Active</label>
+								<div class="col-sm-9">
+									<input type="checkbox" name="" id="checkbox" value="0" checked>
+								</div>
+							</div>
+							<div class="form-group" id="check" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="Image">Image</label>
+								<div class="col-sm-9">
+									<select id="slctimage" class="form-control">
+										<option>--Choose Option--</option>
+										<option value="Upload">Upload</option>
+										<option value="Choose from Gallery">Choose from Gallery</option>
+									</select>
+								</div>
+							</div>
+
+
+							<div class="form-group" id="fileUpload1" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="Icon">Icon</label>
+								<div class="col-sm-9">
+									<input type="file" id="file1" title="File type must be JPEG,JPG,GIF or PNG and less than 15kb" onchange="objViewApplicationLink.readURL(this);">
+									<img id="blah" src="" alt="">
+								</div>
+							</div>
+							<div class="form-group" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="ImageURL">ImageURL</label>
+								<div class="col-sm-9">
+									<input type="" class="form-control" id="txtImageUrl">
+								</div>
+							</div>
+							<div class="form-group" id="imageSliderDiv" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label required" data-localize="SelectImage">Select Image</label>
+
+								<div id="my_events_slider_box" class="col-sm-9">
+									<div class="my_events_slider_contain">
+										<div id="mysliderDiv">
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="form-group" id="divGroupDropdown" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label" data-localize="Group">Group</label>
+
+								<div class="col-sm-9">
+									<select id="ddlGroups" class="form-control ViewMode">								  
+									  <option value="-Select-">-Select-</option>	                                  
+
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-group"  id="AudienceDiv" style="display:none">
+							
+							 <label class="col-sm-3 control-label popup_label">Audience</label>
+							 <div class="col-sm-9">								
+								<select id="Audience" class="form-control ViewMode" onchange="DisplayDepartmentBox(this.value);">								  
+								  <option value="Corporate">Corporate</option>
+                                  <option value="Company">Company</option>
+								  <option value="Department">Department</option>
+								  <option value="Selective">Selective</option>
+
+								</select>
+							</div>
+							
+							<!-- New Multiple Select Dropdown  START -->
+								
+							
+							
+							
+							
+						
+						</div>
+							
+							
+							
+							
+							<div class="form-group"  id="DepartmentListBox" style="display:none;">	
+							  <label class="col-sm-3 required control-label"  id="DropLable">Department</label>						   
+							   <div class="col-sm-9">									
+									<div class="button-group my_announce_department_list">
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+								        </button>
+										<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData">
+										  
+										</ul>
+								  	</div>
+								</div>			   
+							   
+							</div>
+							
+							
+							<div class="form-group" id="SelectiveDiv" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label" data-localize="Selective user">Selective user</label>
+								<div class="col-sm-9" id="SelectivePickerDiv">
+								<span id="SelectivePicker"></span>
+								</div>
+							</div>
+
+							
+							
+							
+							
+							<div class="form-group" id="ProtectedDiv" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label" data-localize="Pasword Protected">Password Protected</label>
+								<div class="col-sm-9">
+									<input type="checkbox" name="password"  onchange="showPassword();" id="ProtectedCheckBox" value="0">
+								</div>
+							</div>
+							<div class="form-group" id="passwordDiv" style="display:none">
+								<label for="" class="col-sm-3 control-label popup_label" data-localize="Password">Password</label>
+								<div class="col-sm-9">
+									<input  type="password" class="form-control" id="txtPassword">
+								</div>
+							</div>
+
+
+
+
+
+
+							<div class="row text-center">
+								<button type="button" class="btn  btn-outline-success" name="createApplicationLink" id="createApplicationLink" data-localize="Submit">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">-->
+<script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/AdminPortal/QuickLinks/ManageQuickLinks.js"></script>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.16/js/bootstrap-multiselect.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.16/css/bootstrap-multiselect.css">-->
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<!--[if gte mso 9]><xml>
+	<mso:CustomDocumentProperties>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+	<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+	<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4270</mso:_dlc_DocId>
+	<mso:_dlc_DocIdItemGuid msdt:dt="string">4597b219-1958-4358-ba9c-eb418812e491</mso:_dlc_DocIdItemGuid>
+	<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4270, ADMIN-1645029823-4270</mso:_dlc_DocIdUrl>
+	<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+	</xml><![endif]-->
+	<title>SiteAssets/ApplicationsLink/ViewApplicationsLink.html</title>
+</head>

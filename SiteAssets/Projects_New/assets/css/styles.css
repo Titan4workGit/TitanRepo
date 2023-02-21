@@ -1054,7 +1054,7 @@ ul#myTabs.nav > li > a{
 
 .chexbox_mg :checked + label:before {
     content: " " !important;
-    background-image: url(https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Projects_New/assets/images/checkmark.png);
+    background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Projects_New/assets/images/checkmark.png);
     background-position: top 1px center;
     background-repeat: no-repeat;
     background-size: 12px;

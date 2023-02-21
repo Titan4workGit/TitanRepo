@@ -1,7 +1,7 @@
-    <script src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
-    <script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Magazine/ViewAllMagazine.js"></script>    
-    <script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Magazine/AddEditMagazine.js"></script>
-    <link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Magazine/ViewAllMagazine.js"></script>    
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Magazine/AddEditMagazine.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/jquery-ui.css">
 
 	<script type="text/javascript">
 	$(document).ready(function() {
@@ -664,7 +664,7 @@ span.new_ajusthere {
                         
                         <div class="col-md-3 right_aligment">
                         
-                          <button type="button"  id="btnAddNew" class="btn btn-outline-primary newMaazine" data-toggle="modal" data-target="#mazinemodle" data-localize="Add Magazine">Add Magazine</button>
+                          <button type="button"  id="btnAddNew" class="btn btn-outline-primary newMaazine" data-toggle="modal" data-target="#mazinemodle" data-localize="AddNew">Add New</button>
 					<!--<a type="button" id="AddNewMagazine" class="btn btn-outline-primary newMaazine" href="#"><span class="glyphicon glyphicon-plus" style="padding-right: 5px;"></span><span>Add Magazine</span></a>-->
                         				         
   						</div>
@@ -698,13 +698,13 @@ span.new_ajusthere {
       <div class="modal-content">
         <div class="modal-header" style="background-color:#1c4587">
           <button type="button" class="close close-round" onclick="ClearFields();" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title" data-localize="AddMagazine">Add Magazine</h4>
+          <h4 class="modal-title" data-localize="AddMagazine">Add New</h4>
         </div>
         <div class="modal-body">
           <div class="row">
           	<label for="tital" class="col-sm-3 staring" data-localize="Title">Title</label>
           	<span class="col-sm-9">
-             	<input type="text" class="form-control" id="input2" placeholder="Title">
+             	<input type="text" class="form-control" maxlength="200" id="input2" placeholder="Title">
             </span>	
           </div>
           <div class="row">
@@ -714,9 +714,9 @@ span.new_ajusthere {
             </span>	
           </div>
           <div class="row">
-          	<label for="tital" class="col-sm-3 staring" data-localize="Volume">Volume</label>
+          	<label for="tital" class="col-sm-3" style="position:relative; text-align:right !important;" data-localize="Volume">Volume</label>
           	<span class="col-sm-9">
-             	<input type="" class="form-control" id="input" maxlenght = "50" placeholder="Volume">
+             	<input type="" class="form-control" maxlength="100" id="input" maxlenght = "50" placeholder="Volume">
             </span>          
           </div>
 		
@@ -729,10 +729,10 @@ span.new_ajusthere {
             </span>	
           </div>
           <div class="row">
-          	<label for="tital" class="col-sm-3 staring" data-localize="Magazine"><br><b>(PDF File)</b></label>
+          	<label for="tital" class="col-sm-3 staring" data-localize="Magazine"><br><b>PDF File</b></label>
           	<span class="col-sm-9">
              	<input name="filename" type="file" class="form-control" accept="application/pdf" id="file2" onchange="Checkfiles(this)" >
-                <span style="color:#1a1a1a; font-size:12px" data-localize="PdfOnly">PDF Only</span>
+                <!--<span style="color:#1a1a1a; font-size:12px" data-localize="PdfOnly">(PDF Only)</span>-->
 
             </span>	
           </div>
@@ -758,11 +758,6 @@ span.new_ajusthere {
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">swapnil kataria</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">5200.00000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Harsh Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title>Adapt Intranet</title></head>
+</head>

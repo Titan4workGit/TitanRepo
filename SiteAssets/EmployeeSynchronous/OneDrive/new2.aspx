@@ -32,7 +32,7 @@
     </script>
    
 
-<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,MediaLengthInSeconds"><xml>
+<!--[if gte mso 9]><SharePoint:CTFieldRefs runat=server Prefix="mso:" FieldList="FileLeafRef,MediaLengthInSeconds,ImageMetadataListItemId,ImageMetadataListFieldId,_dlc_DocId,_dlc_DocIdUrl,_dlc_DocIdPersistId"><xml>
 <mso:CustomDocumentProperties>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
 <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
@@ -42,9 +42,6 @@
 <mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
 <mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 <mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-<mso:Order msdt:dt="string">28400.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
 </mso:CustomDocumentProperties>
 </xml></SharePoint:CTFieldRefs><![endif]-->
 <title></title></head>

@@ -2,10 +2,10 @@
 <head>
 
 
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/css/drag-drop.css">
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/css/padding.css">
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/css/transactionReport.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/css/drag-drop.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/css/padding.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/css/transactionReport.css">
 <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <script type="text/javascript" src="https://unpkg.com/complex-js@5.0.0/dst/complex.min.js"></script>
 
@@ -67,21 +67,54 @@ text-overflow: ellipsis;
     width: 16px;
     height: 10px;
 }
-.colorlist li span.Approved {
+span.Approved {
     background-color: #299439;
 }
-.colorlist li span.Rejected {
+span.Rejected {
     background-color: #db4035;
 }
-.colorlist li span.Forwarded {
+span.Forwarded {
     background-color: #ff9933;
 }
-.colorlist li span.Initiated {
+span.Initiated {
     background-color: #14aaf5;
 }
 
-.colorlist li span.cancelled {
+span.cancelled {
     background-color: #333;
+}
+
+span.overdue{
+    background-color:#ffff08;
+}
+
+
+#export_pops .modal-footer{
+ padding:10px;	
+}
+
+#export_pops .modal-dialog{
+  width:98%;
+  margin:5px auto;	
+}
+
+.countingrun.overdue,
+.countingrun.Initiated,
+.countingrun.Approved,
+.countingrun.Rejected,
+.countingrun.Forwarded,
+.countingrun.cancelled{
+ background:transparent;
+ font-size:15px !important;
+ font-weight:600;	
+}
+
+#export_pops .modal-body{
+ height: calc(100vh - 125px);	
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td{
+ border-bottom: 1px solid #d7d2d2;	
 }
 
 
@@ -94,16 +127,9 @@ text-overflow: ellipsis;
 <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5112</mso:_dlc_DocId>
 <mso:_dlc_DocIdItemGuid msdt:dt="string">e01f52d0-0115-4d7e-b8db-e30d955484fd</mso:_dlc_DocIdItemGuid>
 <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5112, ADMIN-1645029823-5112</mso:_dlc_DocIdUrl>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
-<mso:Order msdt:dt="string">511200.000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Amit Kumar</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
 </mso:CustomDocumentProperties>
 </xml><![endif]-->
-<title></title></head>
+</head>
 <body>
 
 <div class="container-fluid" style="padding:0 0;">
@@ -117,7 +143,7 @@ text-overflow: ellipsis;
 				
 				<div class="proces_viewbox">
 				     <div class="process_view_img" id="PrLogoDiv">
-				       <!--<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/process5.png">-->
+				       <!--<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/process5.png">-->
 				     </div>
 				     
 					  <div class="process_titlbx">
@@ -143,7 +169,7 @@ text-overflow: ellipsis;
 				     <div class="dropdown dashboard-table-btn active">
 				        <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#get_reporting">
 				        <img class="dashboard-icon-info mr2"
-				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/edit_report.png" alt="report"
+				                src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/edit_report.png" alt="report"
 				                data-themekey="#">
 						 <span>Get Report</span>
 				        </a>
@@ -152,17 +178,26 @@ text-overflow: ellipsis;
 				      <div class="dropdown dashboard-table-btn" id="ExportBtnDiv">
 				        <a class="btn dropdown-toggle" type="button" onclick="ExportToExcel();">
 				            <img class="dashboard-icon-info mr2"
-				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
-				                data-themekey="#">
-				            <span>Export</span>
+				                src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
+				                data-themekey="#" style="min-width:24px; width:24px; opacity:0.8;">
+				            <span>Summarize Report</span>
+				        </a>
+				      </div>
+				      
+				      <div class="dropdown dashboard-table-btn" id="ExportFullBtnDiv" style="display:none">
+				        <a class="btn dropdown-toggle" type="button" onclick="ExportToExcelfull();">
+				            <img class="dashboard-icon-info mr2"
+				                src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/export-icon.png" alt="export"
+				                data-themekey="#" style="min-width:24px; width:24px; opacity:0.8;">
+				            <span>Detail Report</span>
 				        </a>
 				      </div>
 				      
 				      <div class="dropdown dashboard-table-btn">
 					     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-		                    <img class="dashboard-icon-info mr2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/sort-icon.png" alt="sort" data-themekey="#">
+		                    <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/sort-icon.png" alt="sort" data-themekey="#">
 		                    <span>Sort</span>
-		                    <img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/arow_down.png" alt="expand arrow" data-themekey="#" style="cursor: default;">
+		                    <img class="dashboard-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/arow_down.png" alt="expand arrow" data-themekey="#" style="cursor: default;">
 		                </button>
 						 <ul class="dropdown-menu dropdown-color-menu-icon">
 		                    
@@ -182,7 +217,7 @@ text-overflow: ellipsis;
 				      
 					<div class="dropdown dashboard-table-btn">
 				        <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#stepsapprovers" onclick="GetWorkflow()">
-				        <img class="dashboard-icon-info mr2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/workflow.png" alt="Workflow" data-themekey="#">
+				        <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/workflow.png" alt="Workflow" data-themekey="#">
 				         Workflow
 				        </a> 
 				    </div>
@@ -190,7 +225,7 @@ text-overflow: ellipsis;
 				    <!--<div class="dropdown dashboard-table-btn">
 				        <a class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#process_action">
 				        <img class="dashboard-icon-info mr2"
-				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/information.png" alt="information" data-themekey="#">
+				                src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/information.png" alt="information" data-themekey="#">
 				         About this Process
 				        </a> 
 				    </div>
@@ -198,7 +233,7 @@ text-overflow: ellipsis;
 					<div class="dropdown dashboard-table-btn">
 				        <a class="btn dropdown-toggle" type="button">
 				        <img class="dashboard-icon-info mr2"
-				                src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/star.png" alt="favorite"
+				                src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/star.png" alt="favorite"
 				                data-themekey="#">
 				         Add to Favorite
 				        </a> 
@@ -209,26 +244,34 @@ text-overflow: ellipsis;
 		    </div>
 		   	
 		   	<div class="total_requestbx">
-			   	<div class="total_sects">
+			   	<!------<div class="total_sects">
 			    	<span class="small_titles">Pending</span>
 			    	<div class="countingbox pendingbx">0</div>
-			    </div>
-			    <div class="total_sects">
+			    </div>------->
+			    
+			    <!----<div class="total_sects">
 			    	<span class="small_titles">Overdue</span>
 			    	<div class="countingbox overduebx">0</div>
-			    </div>
+			    </div>------->
+			    
+			    <div class="colorListing_wth_val">
+  				  <ul>
+				   <li><span class="overdue"></span> Overdue <span class="countingbox overduebx overdue">0</span></li>
+				   <li><span class="Initiated"></span> Open <span class="countingrun Initiated">0</span></li>
+				   <li><span class="Approved"></span> Approved <span class="countingrun Approved">0</span></li>
+				  </ul>
+				
+				  <ul>
+				    <li><span class="Rejected"></span> Rejected <span class="countingrun Rejected">0</span></li>
+				    <li><span class="Forwarded"></span> Forwarded <span class="countingrun Forwarded">0</span></li>
+				    <li><span class="cancelled"></span> Cancelled <span class="countingrun cancelled">0</span></li>
+				 </ul>
+				</div><!----colist----->
+		    
 		    </div>
 		    
 		    <div class="pieboxarea" style="position:relative">
 		    	<div id="pie"></div>
-		    	<ul class="colorlist">
-				  <li><span class="Approved"></span> Approved</li>
-				  <li><span class="Rejected"></span> Rejected</li>
-				  <li><span class="Forwarded"></span> Forwarded</li>
-				  <li><span class="Initiated"></span> Initiated</li>
-				  <li><span class="cancelled"></span> Cancelled</li>
-
-				</ul>
 		    </div>
 		</div><!---topsec--->
 		<!--<div class="form-group custom-form-group search-box" style="width:210px;">
@@ -243,7 +286,9 @@ text-overflow: ellipsis;
 		        
 		     </tbody>
 		    </table>
+		    
 		</div>
+		<div id="AssociateTableData"  class="table-responsive scrollbar-panel ajustingtable" style="margin-top:12px; display:none;"></div>
 		
 		<div class="total_items">
 		 <span>Total Items :</span> <span class="subtotals" id="TotalReq"></span>
@@ -332,7 +377,7 @@ text-overflow: ellipsis;
                     <div class="row">
                       <div class="col-md-4 col-sm-6 flexitem">
                         <div class="imgsetion">
-                          <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/images/user-circle.png" alt="">
+                          <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/images/user-circle.png" alt="">
                         </div>
                         <div class="imagecontent">
                           <h4>Priyanshu Pandey</h4>
@@ -417,6 +462,39 @@ text-overflow: ellipsis;
 <!-- process_action ed -->
 
 
+<!----- Export ---->
+
+<!-- Modal -->
+<div id="export_pops" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+	<!-- Modal content-->
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close close-round" data-dismiss="modal">
+        			<span class="close-icon">&times;</span>
+       			</button>
+        		<h4 class="modal-title" id="HeadTitle">Export</h4>
+      		</div>
+      		<div class="modal-body" id="ExpBody">
+      		
+        		<div class="container">
+  					<table class="table table-striped">
+    					<thead>    	  					
+    					</thead>
+    					<tbody>      					
+    					</tbody>
+  					</table>
+				</div>
+      		</div>
+      		<div class="modal-footer" style="text-align: center; margin-top: 5px;">      			
+				<a type="button" class="btn custom-btn" data-dismiss="modal">Close</a>
+				<a href="#" type="button" class="btn custom-btn" id="exportpopbtn">Export</a>
+      		</div>
+    	</div>
+  	</div>
+</div>
+
+<!----- Export ---->
 
 
   
@@ -437,14 +515,14 @@ $(document).ready(function(){
 
 
 
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/TransactionReport/Assets/tableToExcel.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/JS/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/TransactionReport/Assets/tableToExcel.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/JS/moment.min.js"></script>
 <script type="text/javascript" src="https://d3js.org/d3.v7.min.js"></script>
-<!--<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/JS/d3.min.js"></script>-->
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/TransactionReport/Assets/d3pie.js"></script>
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/JS/d3.min.js"></script>-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/TransactionReport/Assets/d3pie.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/assets/SignatureLinks/math.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/Approvals/TransactionReport/TransactionReport.js"></script>  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/assets/SignatureLinks/math.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/Approvals/TransactionReport/TransactionReport.js"></script>  
 
 </body>
 </html>

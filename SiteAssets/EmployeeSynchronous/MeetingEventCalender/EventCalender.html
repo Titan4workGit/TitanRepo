@@ -1,15 +1,16 @@
 <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script><!--Added -->
-<link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
-<link href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
-<script src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
-<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/EventCalendar.js?18kh"></script>
-<!--<script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/adal.min.js"></script>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
+<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/NewEvent/Event.js?18kh"></script>
+<!--<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/adal.min.js"></script>-->
 <script type="text/javascript" src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script>
 <script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
-<!--<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>-->
-<link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/assets/css/event_style.css">
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/assets/css/event_style.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script>
 let userAgent = navigator.userAgent;
@@ -23,9 +24,284 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
 </script>
 
 <style>
+/*new css add in 06/02/2023*/
+.richText-editor{
+	    height: 150px !important;
+	    padding:10px !important;
+	   }
+	   
+ ul, li {
+    list-style: unset !important;
+}
+.richText-editor{
+	    border-left: #FFFFFF solid 0px;
+}
+
+.richText .richText {
+ display:none;
+}
+
+/*-------------------------------------*/
 
 
+.fc-day-grid-container {
+    min-height: 725px !important;
+    max-height: 727px !important;
+    height: auto !important;
+    overflow:auto !important;
+}
 
+.fc-basic-view .fc-body .fc-row {
+    min-height:121px !important;
+    height:auto !important;
+}
+.fc-listWeek-button{
+ display:none;	
+}
+
+#calendar{
+ margin-bottom:0;	
+}
+
+/****editor****/
+.description-box-add-announcement .richText-dropdown-outer ul.richText-dropdown {
+    z-index: 9;
+}
+.richText-editor{
+      height:380px !important;
+      padding:10px 26px 10px 10px !important;
+}
+.richText-editor{
+      border-left: #FFFFFF solid 0px;
+}
+
+.richText .richText-toolbar ul li a {
+    color: #585757;
+}
+
+.richText .richText-editor:focus{
+ border:none !important;	
+}
+
+.wrapingboxsec{
+ position:relative;	
+}
+
+.wrapingboxsec .richText-editor{
+   height: 114px !important;	
+}
+
+.wrapingboxsec .close_texeditor{
+  display:none;	
+}
+.wrapingboxsec.bigsize .close_texeditor{
+ display:block;
+ opacity:0.7;	
+}
+
+.wrapingboxsec.bigsize .optn_texeditor{
+  display:none;	
+}
+
+.wrapingboxsec.bigsize .richText-editor{
+   height: 380px !important;	
+}
+
+.wrapingboxsec .richText-toolbar{
+ display:none;	
+}
+
+.wrapingboxsec.bigsize .richText-toolbar{
+ display:block;	
+}
+
+.wrapingboxsec button {
+    position: absolute;
+    top:10px;
+    right: 17px;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    min-width: 26px !important;
+    border: none;
+    opacity: 0.8;
+    z-index: 5;
+    cursor: pointer;
+}
+.wrapingboxsec button:focus,
+.wrapingboxsec button:hover{
+  border:none !important;
+  box-shadow:none !important;
+  background:none !important;	
+}
+
+.wrapingboxsec button img{
+  width:21px;
+  cursor:pointer !important;	
+}
+
+.wrapingboxsec textarea{
+  padding-right:28px;	
+}
+
+.richText-toolbar ul li:nth-last-child(1),
+.richText-toolbar ul li:nth-last-child(2),
+.richText-toolbar ul li:nth-last-child(3),
+.richText-toolbar ul li:nth-last-child(4),
+.richText-toolbar ul li:nth-last-child(5),
+.richText-toolbar ul li:nth-last-child(6),
+.richText-toolbar ul li:nth-last-child(7){
+  display:none;	
+}
+
+
+#Management_tab .richText .richText-toolbar{
+  display:none;	
+}
+#Management_tab .richText .richText-editor{
+ height: 84px !important;	
+}
+
+.richText {
+    position: relative;
+    background-color: #FAFAFA;
+    border:#c9c6c6 solid 1px !important;
+    color: #333333;
+    width: 100%;
+}
+
+.flexintype{
+   display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;	
+
+}
+
+.flexintype p {
+    min-width: 110px;
+}
+.ellipsbox{
+text-overflow: ellipsis;
+overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+word-wrap: break-word;
+-webkit-line-clamp: 3;	
+
+}
+.close-icon {
+    position: relative;
+    top: -1px;
+    left: 0px;
+}
+
+.richText .richText-help{
+ display:none !important;	
+}
+
+/***editor ed***/
+
+@media(max-width:767px){
+
+.fc-day-grid-container {
+    min-height: 426px !important;
+    max-height: 426px !important;
+}
+
+.fc-basic-view .fc-body .fc-row {
+    min-height: 60px !important;
+    height:auto !important;
+}
+.calander_area{
+ margin-bottom:12px;	
+}
+
+.event_listse {
+    overflow: auto;
+    max-height: calc(100vh);
+    min-height:auto;
+}
+
+	
+}
+
+
+@media(min-width:768px){
+
+#new_Procesing_tbs .modal-body{
+ padding:10px 30px !important;	
+}
+
+	
+}
+
+@media(max-width:650px){
+
+.two_dividor_box{
+ padding:15px 3px;	
+}
+	
+}
+
+/*----------------------add by lakhan 15/02/2023------------------------------------*/
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
 
 </style>
 
@@ -36,15 +312,16 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
         <!-- <div class="panel-heading  panel-head-4 event_top_band"> -->
         <div class="panel-title">
             <!-- class="h4-color" -->
-            <h4>
+            <h4 style="margin-bottom:0;">
                 <span class="h4-color my_event_heading" data-localize="EventCalendar">Event Calendar</span>
             </h4>
         </div>
     </div>
-
+   
     <div class="mrg-top-10m  btm10 container">
-
-       <div class="row">
+	
+	<!--------------this area hide now--------------->
+       <div class="row" style="display:none;">
             <div class="col-sm-6 col-xs-6 event-calender-top-panel-box-istad-left">
                 <div class="text-left event-calender-btn-position">
                     <div class="event-calender-search">
@@ -64,11 +341,45 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
                 </div>
             </div>
         </div>
+        <!--------------hide area--------------->
     </div>
-
+	<div class="">
+		<div class="col-md-12">
+			<div class="dms-deta-btn-panel d-flex">
+			  <div class="dropdown dms-table-btn">
+			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#new_Procesing_tbs">
+			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/add.png" alt="">
+			      <span data-localize="New" value="">New</span>
+			    </button>
+			  </div>
+			  <div class="dropdown dms-table-btn">
+			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#event-filter">
+			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/filter.png" alt="">
+			      <span data-localize="Filter" value="">Filter</span>
+			    </button>
+			  </div>
+			   <div class="dropdown dms-table-btn">
+			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#reminders">
+			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/alert.png" alt="">
+			      <span data-localize="Reminders" value="">Reminders</span>
+			    </button>
+			  </div>
+			</div><!--group ed-->
+		</div>
+	</div>
     <div style="height:20px;"></div>
     <!---<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>--->
-    <div id='calendar' class="calendar-div search-results"> </div>
+    <div class="two_dividor_box">
+    	<div class="calander_area">
+    		<div id='calendar' class="calendar-div search-results"> </div>
+    	</div>
+    	<div class="eventlistbox">
+    	 <ul class="event_listse coverboxlist" id="monthlyEventBox">
+    	 	 
+    	 </ul>	
+    	</div>
+    </div><!---two_divorobox ed--->
+    
 </section>
 
 <!--------------------------View Event----------------->
@@ -595,7 +906,7 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
                             <div class="form-group" style="display:none">
                                 <label for="" class="col-sm-3 control-label required" data-localize="ImageUrl">ImageUrl</label>
                                 <div class="col-sm-8">
-                                    <input type="text" id="txtEventUrl" class="form-control">
+                                    <input type="text" id="txtEventUrls" class="form-control">
                                 </div>
                             </div>
 
@@ -719,6 +1030,817 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
     </div>
 </div>
 
+
+<!---- new_Procesing_tbs ---->
+<div id="new_Procesing_tbs" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- new_Procesing_tbs-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Add Event</h4>
+      </div>
+      <div class="modal-body">
+          <ul class="activating">
+            
+            <li class="newitem active" active-color="#548dcb" data-toggle="pill" data-target="#Schedule_tab" 
+            id="" style="color: rgb(84, 141, 203);">
+                <span>Schedule</span>
+            </li>
+
+            <li class="newitem" active-color="#548dcb" data-toggle="pill" data-target="#Management_tab" 
+            id="" style="">
+                <span>Management</span>
+            </li>
+            <span class="slidesec" style="width: 112px; display: block; left: 0px; background-color: rgb(84, 141, 203);"></span>
+         </ul>
+        <div class="tab-content">
+          
+          <div id="Schedule_tab" class="tab-pane fade active in">
+           <div class="row">
+            
+			<div class="col-md-6">
+				 <div class="form-group">
+                  <label class="required">
+                    Title:
+                  </label>
+                  <input type="text" id="txtTitle" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label class="required">
+                    Category:
+                  </label>
+                  <select class="form-control" id="ddlFileType">
+                      
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="required">
+                    Organizing Department:
+                  </label>
+                  <select class="form-control" id="ddlOrganizingDepartment">
+                      
+                  </select>
+                </div>
+                 <div class="form-group">
+                  <label>
+                    Organizing Office:
+                  </label>
+                  <select class="form-control" id="ddlOrganizingLocation">
+                      
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>
+                   Venue or Location:
+                  </label>
+                  <input type="text" id="txtVenue" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>
+                   Direction:
+                  </label>
+                  <input type="text" id="txtDirection" class="form-control">
+                </div>
+
+                
+			</div><!---col-md-6---->
+			
+			 <div class="col-md-6">
+                <div class="form-group">
+                   <label>Occurrence:</label>
+                    <ul class="timelist">
+                     <li>
+                       <label class="radio">
+                         <input type="radio" name="dayEvent" id="eventDay" value="Once" checked="checked">
+                         Once
+                       </label>
+                     </li>
+                     <li>
+                       <label class="radio">
+                         <input type="radio" name="dayEvent" id="eventDay2" value="Daily">
+                         Daily
+                       </label>
+                     </li>
+                     <li>
+                       <label class="radio">
+                         <input type="radio" name="dayEvent" id="eventDay3" value="Weekly">
+                         Weekly
+                       </label>
+                     </li>
+                     <li>
+                       <label class="radio">
+                         <input type="radio" name="dayEvent" id="eventDay4" value="Monthly">
+                         Monthly
+                       </label>
+                     </li>
+                   </ul>
+                </div>
+               
+                 <div class="option_seduls">    
+                    
+                      <div class="form-group custom-form-group">
+                        <label for="">Start Date:</label>
+                        <input type="text" class="form-control" id="txtStartDate" readonly="readonly">
+                      </div>
+                    <div class="date-range d-none">
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <div class="form-group custom-form-group">
+                            <label for="">End Date:</label>
+                            <input type="text" class="form-control" id="txtEndDate" readonly="readonly">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="weekly d-none">
+                       <div class="row">
+                        <div class="col-xs-12">
+                            <div class="form-group custom-form-group">
+                              <label for="">End Date:</label>
+                              <input type="date" class="form-control" id="">
+                            </div>
+                          </div>
+                        </div>
+                      <div class="mb15 spacing-bottom" id="monthlyChcek">
+                        <label class="checkbox-inline"><input type="checkbox" value="Mon">Mon</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Tue">Tue</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Wed">Wed</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Thu">Thu</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Fri">Fri</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Sat">Sat</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Sun">Sun</label>
+                        </div>
+                      </div>
+                    <div class="monthly d-none">
+                      <div class="row">
+                       <div class="col-xs-12">
+                        <div class="form-group custom-form-group">
+                          <label for="">End Date:</label>
+                          <input type="date" class="form-control" id="">
+                        </div>
+                        </div>
+                        <div class="col-xs-12">
+                           <div class="form-group custom-form-group">
+                              <label for="">Day of Month:</label>
+                              <select class="form-control" id="ddlDayOfMonth">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div><!---seduletypes--->
+				
+				<div class="fullcover">
+              <div class="form-group">
+               <ul class="timelist">
+                 <li>
+                   <label class="radio">
+                     <input type="radio" name="timeEvent" id="timeRange" value="15" checked="">
+                     Time Range
+                   </label>
+                 </li>
+                 <li>
+                   <label class="radio">
+                     <input type="radio" name="timeEvent" id="timeSlots" value="16">
+                     Time Slots
+                   </label>
+                 </li>
+                 <li>
+                   <label class="radio">
+                     <input type="radio" name="timeEvent" id="fullDay" value="17">
+                     Full Day
+                   </label>
+                 </li>
+               </ul>
+             </div>
+             <div class="time-range d-block">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group custom-form-group">
+                      <label for="">Start Time:</label>
+                      <input type="time" class="form-control" id="">
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group custom-form-group">
+                    <label for="">End Time:</label>
+                    <input type="time" class="form-control" id="">
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div><!---fullcover---->	
+				
+			</div><!----col-6--->    
+           </div><!---row ed--> 
+          </div>  
+
+          <div id="Management_tab" class="tab-pane fade">
+          	<div class="row">
+          	 <div class="col-md-6">
+          	 <div class="form-group">
+	              <label>
+	                Event Manager:
+	              </label>
+	              <span id="pickerManager"></span>
+	          </div>
+	          <div class="form-group">
+	              <label>
+	                Role:
+	              </label>
+	              <select class="form-control" id="ddlRole">
+	                <option value="Speaker">Speaker</option>
+	                <option value="Presenter">Presenter</option>
+	                <option value="Host">Host</option>
+	                <option value="Panelist">Panelist</option>
+	                <option value="Participator">Participator</option>
+	              </select>
+              </div>
+              <div class="form-group">
+	              <label>
+	                Speaker/Presenter/Host/Participator/Panelists:
+	              </label>
+	              <span id="pickerSpeaker"></span>
+              </div>
+			  <div class="form-group" id="AudienceDiv">
+	              <label>
+	                Audience:
+	              </label>
+	              <select class="form-control" id="ddlAudience" onchange="DisplayDepartmentBox(this.value);">
+	                <option value="Corporate">Everyone</option>
+	                <option value="Company">Company</option>
+	                <option value="Department">Department</option>
+	                <option value="Office">Office</option>
+	                <option value="Selective">Selective</option>
+	              </select>
+             </div>
+             <div class="form-group" id="SelectiveDiv" style="display:none">
+			    <label for="" class="col-sm-3 control-label popup_label" data-localize="Selective user">Selective user</label>
+				<div class="col-sm-9" id="userDiv">
+					<span id="SelectivePicker"></span>
+				</div>
+			</div>
+             <div class="form-group" id="DepartmentListBox" style="display:none;">
+             <label class="col-sm-3 required control-label"  id="DropLable">Department</label>						   
+			 <div class="col-sm-9">									
+			   <div class="button-group my_announce_department_list">
+					<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+				    </button>
+					<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData">
+										  
+					</ul>
+			  </div>
+		    </div>
+            </div>
+            
+            <div class="atttachment_area">
+             
+              <label class="covertophere">
+			     <input type="file" class="form-control approve-process-upload-image-inp" name="" multiple>                                         
+			</label>
+            
+	             <div class="attachment-badge chip-box">
+	              <div href="#" class="m-0  upload-chip"> <span class="pr-8 chip-text-box">Img3.png</span> <span class="chip-icon-box"> <i class="fa fa-times cursor-pointer"></i></span> </div>
+	              <div href="#" class="m-0  upload-chip"> <span class="pr-8 chip-text-box">Img3.png</span> <span class="chip-icon-box"> <i class="fa fa-times cursor-pointer"></i></span> </div>
+	            </div>
+        	</div>
+            	             
+          	 </div><!---FIRST 6---->
+          	 
+          	 <div class="col-md-6">
+          	  <div class="form-group">
+               <label>Description:</label>
+               <textarea id="richDescription" class="form-control" rows="4" style="resize: none;"></textarea>
+             </div>
+             <div class="row">
+                  <div class="col-md-6 form-group">
+                     <label>Allow Comments</label>
+                    <select class="form-control" id="ddlAllowComments">
+                      <option value="allow">Allow</option>
+                      <option value="not allow">Not Allow</option>
+                    </select>
+                  </div>
+          
+                 <div class="col-md-6 form-group">
+                  <label>
+                    Registration:
+                  </label>
+                  <select class="form-control" id="ddlRegistration">
+                    <option value="Required">Required</option>
+                    <option value="Not required">Not Required</option>
+                  </select>
+                </div>
+              </div><!--row ed child-->
+          	  <div class="row">
+	            <div class="col-md-6 form-group">
+	                <label>Link:</label>
+	                <input type="text" id="txtLink" class="form-control" placeholder="Registration link">
+	              </div>
+	              
+	              <div class="col-md-6 form-group">
+	                <label>QR code:</label>
+	                  <input type="file" id="uploadFiles" class="form-control">
+	            </div>
+             </div>
+	           <div class="form-group custom-form-group custom-form-group-radio-inline mb5 mt5">
+	               <label>Cover Image:</label>
+	              <ul class="timelist">
+	                 <li>  
+	                 <label class="radio">
+	                  <input type="radio" name="ChooseImage" id="test1" value="Choose from Gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
+	                </li>
+	                <li>    
+	                <label class="radio"><input type="radio" name="ChooseImage" id="test2" value="Upload" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
+	                </li>
+	              </ul>  
+	            </div>
+	            <div class="slider-panel changemeN widtmagingsbox choose_gallery both_gallery" style="position:relative; margin-bottom:0px !important;">
+                    <div id="slider-container" class="slider">
+                        
+                        
+                    </div>
+                    <div onclick="prev()" class="control-prev-btn">
+                         <i class="fa fa-angle-left"></i>
+                    </div>
+                    <div onclick="next()" class="control-next-btn">
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+                <input type="text" style="display:none" id="txtEventUrl">
+                <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none upload_gallary both_gallery">
+                    <div class="approve-process-upload-image-box-btn">
+                    
+                      <div class="form-group custom-form-group">
+                      
+                      <label class="covertophere">
+                      
+                          <input type="file" class="form-control approve-process-upload-image-inp" accept="image/*" name=""  onchange="document.getElementById('uploadImage').src = window.URL.createObjectURL(this.files[0])">                                         
+                        
+                        </label>
+                        
+                        </div>
+                        
+                        <div class="approve-process-upload-data">
+                          <img src="" id="uploadImage">
+                            
+                        </div>
+                    </div>
+                </div>
+          
+          	 </div><!---SECOND 6---->
+          	</div><!--main row--->
+          </div><!----tab---second---->
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center; padding:10px;">
+        <button type="button" class="btn custom-btn">Submit</button>
+        <button type="button" id="btnEventDelete" style="display:none" class="btn custom-btn-two-delete">Delete</button>
+        <button type="button" class="btn custom-btn-two-cancel">Close</button>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+<!---- new_Procesing_tbs ed---->
+
+
+<!-- Notificationlist -->
+    <div id="Notificationlist" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Notification</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="">Message<span style="color:red;">*</span></label>
+                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control" style="min-height:170px; max-height:170px"></textarea>
+                    </div>
+                    <div class="">
+                       <label>Mail send to</label><label>:</label>
+                        <div class="botheventwork" style="">
+                            <label class="radio-inline">
+                                <input type="radio" class="hideSelective SelectMailSend" id="chkAllUser" value="All" name="rdoSendMail" checked="checked"> All Attendee
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" class="SelectMailSend hideSelective" value="Selective" name="rdoSendMail"> Selective
+                            </label>
+                        </div><!---box event--->
+                        
+                        <div id="SendNotiPicker" style="display:none;"></div>
+
+                    </div>
+                </div>
+
+                <div class="modal-footer" style="text-align: center; margin-top:0px;">
+                    <button type="button" class="btn custom-btn" id="btnSendNotify">Send Mail</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---Notificationlist ed----->
+    
+ 
+<!-- reminders -->
+    <div id="reminders" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.4)">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">
+                        <span class="close-icon">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Reminders</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="table-responsive scrollbar-panel reminder_heightmanage">
+                        <table class="table table-striped" style="border:1px solid #ccc">
+                            <tbody id="tbdyReminder"></tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- reminders -->
+   
+    
+    
+
+<!-- setreminder -->
+    <div id="setreminder" class="modal fade" role="dialog" data-backdrop="static" style="background:rgba(0,0,0,0.4)">
+        <div class="modal-dialog modal-md">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round btncloseRem" data-dismiss="modal">
+                        <span class="close-icon">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Reminder</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="topsec_reminder" style="text-align: center">
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" class="ReminderType" value="Once" id="OnceTime" data-target="opttab-2" checked>Once
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" class="ReminderType" value="Daily" id="DailyTime" data-target="opttab-1">Daily
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" class="ReminderType" value="Weekly" id="WeeklyTime" data-target="opttab-3">Weekly
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optradio" class="ReminderType" value="Monthly" id="MonthlyTime" data-target="opttab-4">Monthly
+                        </label>
+                    </div>
+
+                    <div id="opttab-1">
+
+                        <div class="form-group activts" style="margin:0 0 10px 0; padding:0" id="opttab-2">
+                            <label class="col-md-3" for="">Date:</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="ReminderOnDate">
+                            </div>
+                        </div>
+
+                        <div class="col-md-12" id="opttab-3" style="text-align: center">
+
+                            <label class="checkbox-inline" for="Mon">
+                                <input type="checkbox" class="Days" value="Mon" id="Mon">Mon
+                            </label>
+                            <label class="checkbox-inline" for="Tue">
+                                <input type="checkbox" class="Days" value="Tue" id="Tue">Tue
+                            </label>
+                            <label class="checkbox-inline" for="Wed">
+                                <input type="checkbox" class="Days" value="Wed" id="Wed">Wed
+                            </label>
+                            <label class="checkbox-inline" for="Thu">
+                                <input type="checkbox" class="Days" value="Thu" id="Thu">Thu
+                            </label>
+                            <label class="checkbox-inline" for="Fri">
+                                <input type="checkbox" class="Days" value="Fri" id="Fri">Fri
+                            </label>
+                            <label class="checkbox-inline" for="Sat">
+                                <input type="checkbox" class="Days" value="Sat" id="Sat">Sat
+                            </label>
+                            <label class="checkbox-inline" for="Sun">
+                                <input type="checkbox" class="Days" value="Sun" id="Sun">Sun
+                            </label>
+                        </div><!---weelky--->
+
+                        <div class="form-group" style="margin:0 0 10px 0; padding:0" id="opttab-4">
+                            <label class="col-md-3" for="">Day:</label>
+                            <div class="col-md-9" style="text-align:right">
+                               <div class="flexintype">
+                                <select class="form-control" id="multdy">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                </select>
+                                <p style="margin:0px !important">of every Month</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!--optioned-->
+
+
+                    <div class="row norepeatbox" style="margin:0;">
+
+                        <div class="form-group" style="margin-bottom: 10px">
+                            <label class="col-md-3" for="">Time:</label>
+                            <div class="col-md-9">
+                                <select class="form-control" id="AtTime">
+                                    <option value="Early Morning">Early Morning</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Evening">Evening</option>
+                                    <option value="Night">Night</option>
+                                    <option value="Mid Night">Mid Night</option>
+                                </select>
+                            </div>
+                        </div>
+						<div class="form-group" style="margin-bottom: 10px">
+                            <label class="col-md-3" for="">Message:</label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="txtReminderMsg"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-4 col-sm-3">Status:</label>
+                            <div class="col-xs-8 col-sm-9 switchboxsec" style="margin-bottom:5px;">
+                                <label class="switch">
+                                    <input type="checkbox" class="texcopy" checked>
+                                    <span class="slider round onsec" id="ReminderStatus" style="text-align:left; padding:3px 5px; font-size:11px;">ON</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                     <div class="form-group">
+                     
+                        <label class="col-md-3">Send email to:</label>
+                        
+                        <div class="botheventwork col-md-9">
+                        
+                         <div class="innboxsection">
+                            <label class="radio-inline" style="">
+                                <input type="radio" class="ReminderTo" id="chkSelfReminder" value="Self" name="rdoReminder" checked="checked"> Self
+                            </label>
+
+                            <label class="radio-inline">
+                                <input type="radio" class="ReminderTo" id="chkAllReminder" value="All" name="rdoReminder"> All Attendee
+                            </label>
+                            
+                             <label class="radio-inline" style="">
+                                <input type="radio" class="ReminderTo" id="" value="Selective" name="rdoReminder" checked="checked"> Selective
+                            </label>
+                         </div>   
+                            
+                        </div>
+                        
+                        
+                     </div>   
+                        
+                        
+                        
+                    </div><!--norepeatbox---->
+
+                </div><!---modal-body--->
+
+                <div class="modal-footer" style="text-align: center; margin-top:0px; padding:5px;">
+                    <button type="button" class="btn custom-btn" id="btnSetReminder">Submit</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!---set reminder--->
+
+
+<!-- Time slot -->
+<div id="timeslotsbx" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+        <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Time Slots</h4>
+      </div>
+      <div class="modal-body">
+        
+        <div class="raiobox">
+          <label class="radio-inline">
+            <input type="radio" name="slottimes" value="same_slotday" checked>
+            Same slots for all days
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="slottimes" value="differentslot_slot">
+            Different slots
+          </label>
+        </div>
+        <div class="table-responsive coverboxlist same_slotday sltim_view">
+          <table class="table mb0 table_designs">
+            <thead>
+              <tr>
+                <th style="width:10%;">Start Time</th>
+                <th style="width:10%;">End Time</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9:00 AM</td>
+                <td>11:30 AM</td>
+                <td>
+                <span class="ellipsbox">Program 1.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>9:00 AM</td>
+                <td>11:30 AM</td>
+                <td>
+                  <span class="ellipsbox">Program 1.</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!----sane slot day--->
+        <div class="table-responsive coverboxlist differentslot_slot sltim_view">
+          <table class="table mb0 table_designs">
+            <thead>
+              <tr>
+                <th style="width:5%">Date</th>
+                <th style="width:3%">Type</th>
+                <th style="width:14%">Start Time</th>
+                <th style="width:14%">End Time</th>
+                <th>Remarks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12 Jan 2023</td>
+                <td>Slot</td>
+                <td>9:00 AM</td>
+                <td>11:30 AM</td>
+                <td>
+                <span class="ellipsbox">Program 1.</span>
+                </td>
+              </tr>
+              <tr>
+                <td>15 Jan 2023</td>
+                <td>Slot</td>
+                <td>10:00 AM</td>
+                <td>12:30 AM</td>
+                <td>
+                <span class="ellipsbox">Program 2.</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!----differentslot_slotday--->
+        <div class="plus_btnarea" style="text-align: right;">
+          <button class="btn custom-btn magebox" type="button" data-toggle="modal" data-target="#addnwTime">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer" style="text-align: center;">
+        <button type="button" class="btn custom-btn">submit</button>
+      </div>
+    </div>
+ </div>
+</div>
+<!-----time slots settings------>
+
+
+
+<!-----addnwTime---->
+<div id="addnwTime" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+  <div class="modal-dialog">
+   <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      <button type="button" class="close close-round" data-dismiss="modal">
+      <span class="close-icon">&times;</span>
+      </button>
+      <h4 class="modal-title">Add Time Slots</h4>
+      </div>
+      <div class="modal-body">
+       <div class="row">
+          <div class="col-md-12">
+          	<div class="form-group">
+			  <label>Type</label>
+	           <select class="form-control">
+	           	<option value="slot">Slot</option>
+	           	<option value="no event">No event</option>
+	           	<option value="full day">Full day</option>
+			  </select> 
+	      	</div>    
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group custom-form-group">
+              <label for="">Start Time:</label>
+              <input type="time" class="form-control" id="">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form-group custom-form-group">
+            <label for="">End Time:</label>
+            <input type="time" class="form-control" id="">
+          </div>
+          </div>
+          <div class="col-md-12">
+            <label>Remarks:</label>
+            <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="margin-top:0; text-align:center;">
+       <button type="button" class="btn custom-btn">Submit</button>
+      </div>
+    </div>
+  </div>
+</div><!----addnewtime--->
+
+
 <!--Added by Subhankar -->
 <!-- Commented by Amit on 18-5-21 Now using authentication_graphapi.js
 THIS HAS TO BE HERE---UNCOMMENTED BY SUBHANKAR
@@ -734,7 +1856,7 @@ THIS HAS TO BE HERE---UNCOMMENTED BY SUBHANKAR
                 clientId: '895e6de8-6dbb-47e1-a171-af9b8ad5f5c2', //Need to change in client environment
 				tenant: '3c55c7bf-896d-4f85-aceb-124dca48c080',  //Need to change in client environment
                 postLogoutRedirectUri: window.location,
-                redirectUri: 'https://adaptindia.sharepoint.com/sites/Titan_3_0_Master/Pages/AllEvents.aspx',  //Need to change in client environment
+                redirectUri: 'https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/Pages/AllEvents.aspx',  //Need to change in client environment
 				endpoints: {
 					graphApiUri: "https://graph.microsoft.com"
 				  },
@@ -887,9 +2009,242 @@ THIS HAS TO BE HERE---UNCOMMENTED BY SUBHANKAR
 </script>
 
 
+
+
+<!-------tab_design---->
+
+<!---snake effect--->
+<script>
+
+    var indicator = document.querySelector('.slidesec');
+    var items = document.querySelectorAll('.newitem');
+
+    function handleIndicator(el) {
+        items.forEach(function (item) {
+            item.classList.remove('active');
+            item.removeAttribute('style');
+        });
+        indicator.style.width = "".concat(el.offsetWidth, "px");
+        indicator.style.left = "".concat(el.offsetLeft, "px");
+        indicator.style.backgroundColor = el.getAttribute('active-color');
+        el.classList.add('active');
+        el.style.color = el.getAttribute('active-color');
+    }
+    items.forEach(function (item, index) {
+        item.addEventListener('click', function (e) {
+            handleIndicator(e.target);
+        });
+        item.classList.contains('active') && handleIndicator(item);
+    });
+
+$(window).ready(function(){
+
+  $('.slidesec').css('width','80px');
+
+});
+
+</script>
+
+
+<!-- Event Date show hide -->
+<script>
+    $('#eventDay[name=dayEvent]').change(function(){
+        if($('#eventDay[name=dayEvent]:checked')) {
+            // debugger;
+            $('.one-day').removeClass('d-none');
+            $('.one-day').addClass('d-block');
+
+            $('.date-range,.weekly,.monthly').removeClass('d-block');
+            $('.date-range,.weekly,.monthly').addClass('d-none');
+        } 
+    });
+    $('#eventDay2[name=dayEvent]').change(function(){
+        
+        if($('#eventDay2[name=dayEvent]:checked')) {
+            // debugger;
+            $('.date-range').removeClass('d-none');
+            $('.date-range').addClass('d-block');
+
+            $('.one-day,.weekly,.monthly').removeClass('d-block');
+            $('.one-day,.weekly,.monthly').addClass('d-none');
+        }
+    });
+    $('#eventDay3[name=dayEvent]').change(function(){
+        
+        if($('#eventDay3[name=dayEvent]:checked')) {
+            // debugger;
+            $('.weekly').removeClass('d-none');
+            $('.weekly').addClass('d-block');
+
+            $('.one-day,.date-range,.monthly').removeClass('d-block');
+            $('.one-day,.date-range,.monthly').addClass('d-none');
+        }
+    });
+    $('#eventDay4[name=dayEvent]').change(function(){
+        
+        if($('#eventDay4[name=dayEvent]:checked')) {
+            // debugger;
+            $('.monthly').removeClass('d-none');
+            $('.monthly').addClass('d-block');
+
+            $('.one-day,.date-range,.weekly').removeClass('d-block');
+            $('.one-day,.date-range,.weekly').addClass('d-none');
+        }
+    });
+</script>
+
+  <!-- Time Range show hide -->
+<script >
+    $('#timeRange[name=timeEvent]').change(function(){
+        if($('#timeRange[name=timeEvent]:checked')) {
+            // debugger;
+            $('.time-range').removeClass('d-none');
+            $('.time-range').addClass('d-block');
+
+            $('.time-slots,.full-day').removeClass('d-block');
+            $('.time-slots,.full-day').addClass('d-none');
+        } 
+    });
+    $('#timeSlots[name=timeEvent]').change(function(){
+        
+        if($('#timeSlots[name=timeEvent]:checked')) {
+            // debugger;
+            $('.time-slots').removeClass('d-none');
+            $('.time-slots').addClass('d-block');
+
+            $('.time-range,.full-day').removeClass('d-block');
+            $('.time-range,.full-day').addClass('d-none');
+        }
+    });
+    $('#fullDay[name=timeEvent]').change(function(){
+        
+        if($('#fullDay[name=timeEvent]:checked')) {
+            // debugger;
+            $('.time-slots,.time-range').removeClass('d-block');
+            $('.time-slots,.time-range').addClass('d-none');
+        }
+    });
+</script>
+        
+
+<script>
+function prev(){
+        document.getElementById('slider-container').scrollLeft -= 100;
+}
+
+function next()
+{
+    document.getElementById('slider-container').scrollLeft += 100;
+}
+function prevE(){
+        document.getElementById('slider-containerE').scrollLeft -= 100;
+}
+
+function nextE()
+{
+    document.getElementById('slider-containerE').scrollLeft += 100;
+}
+
+$(document).ready(function(){
+
+  $('.slide').click(function(){
+    $('.slide').removeClass('image-active');
+    $(this).addClass('image-active');
+  });
+
+  $('input[name="UpdateEmpN"]').click(function(){
+    var valstre = $(this).val();
+    $('.both_gallery').not('.'+valstre).hide();
+    $('.'+valstre).show();
+  })
+  
+ $('.texcopy[type="checkbox"]').click(function(){
+ if($(this).is(':checked')){
+      $(this).siblings('.onsec').text('ON').css('text-align','left');
+  }
+  else{
+    $(this).siblings('.onsec').text('OFF').css('text-align','right');
+  }
+}) 
+
+});
+
+</script>
+
+<!----reminder------>
+
+
+<!---set reminder--->
+ <script>
+
+$(function(){
+
+$('.topsec_reminder input[type="radio"]').click(function(){
+
+var attmath = $('.topsec_reminder input[type="radio"]:checked');
+attmath.each(function(){
+
+var attrstore = $(this).attr('data-target');
+
+    if(attrstore=='opttab-1'){
+        $('#opttab-1').hide();
+      }
+
+    else{
+      $('#opttab-1').show();
+      $('#'+attrstore).addClass('activts').siblings().removeClass('activts');
+    }
+
+  });
+
+});
+});
+
+</script>
+
+   
+
+
+<!-----time slots settings------>
+<script>
+  
+$(document).ready(function(){
+
+  $('input[id="timeSlots"]').on('change', function(e){
+   if(e.target.checked){
+     $('#timeslotsbx').modal();
+   }
+});
+
+  $('.sltim_view').hide();
+  $('.sltim_view.same_slotday').show();
+
+  $('input[name="slottimes"]').on('click', function(){
+    var storeval = $(this).val();
+    $('.sltim_view').not('.'+storeval).hide();
+    $('.'+storeval).show();
+
+  });  
+
+$('#richDescription').richText();
+$('.modal').on("hidden.bs.modal", function (e) { 
+    if ($('.modal:visible').length) { 
+        $('body').addClass('modal-open');
+    }
+});
+
+
+});
+</script>
+
+<!-----time slots settings------>
+
+
+
+
 <!-- /Main -->
-  <script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/jquery.richtext.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/richtext.min.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/jquery.richtext.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@latest/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/richtext.min.css">
 
         
 
@@ -901,15 +2256,9 @@ THIS HAS TO BE HERE---UNCOMMENTED BY SUBHANKAR
     <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-267</mso:_dlc_DocId>
     <mso:_dlc_DocIdItemGuid msdt:dt="string">442cc410-ddf8-4b0c-b34a-7bb2baa8c33b</mso:_dlc_DocIdItemGuid>
     <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-267, ADMIN-1645029823-267</mso:_dlc_DocIdUrl>
-    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Ben Williams</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+    <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
     <mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Mohd  Muqtdeer</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
-    <mso:Order msdt:dt="string">26700.0000000000</mso:Order>
-<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
-<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
-<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
-<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
-<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
-</mso:CustomDocumentProperties>
+    </mso:CustomDocumentProperties>
     </xml><![endif]-->
     <title></title>
 </head>
