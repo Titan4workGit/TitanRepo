@@ -419,6 +419,14 @@ label {
 
 }
 
+#pieChartClients svg,
+#pieChartDepartments svg{
+  border:1px solid #ccc;	
+}
+
+.pieChartProgrambox {
+    margin-top: 15px !important;
+}
 
 @media(min-width:767px){
 

@@ -1218,6 +1218,10 @@ a.linkopts{
 #txtPublishBy .groups-card-body{
   width:100%;	
 }
+
+.box_coverinside{
+ padding-top:6px;	
+}
  
 @media(min-width:992px){
 

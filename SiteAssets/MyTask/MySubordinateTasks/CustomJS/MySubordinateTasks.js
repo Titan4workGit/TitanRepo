@@ -1,1 +1,2760 @@
-var a371_0x272e70=a371_0x2457;(function(_0x11a3f3,_0x1429b8){var _0x105101=a371_0x2457,_0x5aeb0f=_0x11a3f3();while(!![]){try{var _0xa26c2f=parseInt(_0x105101(0x2df))/0x1*(parseInt(_0x105101(0x356))/0x2)+parseInt(_0x105101(0x168))/0x3*(-parseInt(_0x105101(0x203))/0x4)+-parseInt(_0x105101(0x277))/0x5*(parseInt(_0x105101(0x286))/0x6)+-parseInt(_0x105101(0x173))/0x7+parseInt(_0x105101(0x17c))/0x8+-parseInt(_0x105101(0x270))/0x9*(-parseInt(_0x105101(0x2fd))/0xa)+-parseInt(_0x105101(0x2de))/0xb*(parseInt(_0x105101(0x2ca))/0xc);if(_0xa26c2f===_0x1429b8)break;else _0x5aeb0f['push'](_0x5aeb0f['shift']());}catch(_0x415e2d){_0x5aeb0f['push'](_0x5aeb0f['shift']());}}}(a371_0x3cc2,0xc454f));var assignBy=[],assignByEmail='',FilterLocalStorage=[],IsInboxProjectBind=![],arrAllTaskUserWise=[],AllTaskInbox=[],arrLimitTaskInbox=[],arrFilterDataBind=[],IsInboxClientBind=![],LoadAllData=![],currentPhase=a371_0x272e70(0x280),TaskAction=a371_0x272e70(0x15c),currentDlg='',IsThresholdLimitCorssed=![],arrFilterDeptProj=[],arrLimitTaskDeptProj=[],arrFilterDeptEmp=[],arrLimitTaskDeptEmp=[],arrTaskInIds=[],arrDeptEmployee=[],arrDeptProjects=[],arrMySubordinate=[],arrTaskParentDeptProj=[],arrTaskParentDeptEmp=[],arrTaskMySubordinate=[];$(document)['ready'](function(){var _0x2dc4f1=a371_0x272e70;initializePeoplePicker(_0x2dc4f1(0x332)),initializePeoplePicker(_0x2dc4f1(0x2a5)),getSubordinatesLoad(),getAllDataByPnp('*,ProjectID/DepartmentId,PredecessorTask/Id,PredecessorTask/Title,SuccessorTask/Id,SuccessorTask/Title,ClientID/ID,ClientID/Title,Module/Title,Module/ID,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Author/Title,Author/EMail,DependencyTo/EMail,DependencyTo/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/ID,AttachmentFiles',_0x2dc4f1(0x31f),'',_0x2dc4f1(0x283),_0x2dc4f1(0x304),''),$('#ProjectModule')['attr'](_0x2dc4f1(0x192),!![]),$(_0x2dc4f1(0x2f7))[_0x2dc4f1(0x2a9)](function(){var _0x1db159=_0x2dc4f1;$(_0x1db159(0x21f))[_0x1db159(0x2f6)]('show');$(_0x1db159(0x2cd))[_0x1db159(0x292)]==0x0&&bindAllWorkType();$(_0x1db159(0x338))[_0x1db159(0x1ab)](),$(_0x1db159(0x338))[_0x1db159(0x1ab)](_0x1db159(0x250),_0x1db159(0x293),_0x1db159(0x262));if($('ul#myTabs')[_0x1db159(0x1ac)](_0x1db159(0x2c7))[_0x1db159(0x22d)]('id')==_0x1db159(0x264))$(_0x1db159(0x174))['val'](_0x1db159(0x2a0)),$(_0x1db159(0x174))[_0x1db159(0x289)]('change'),$(_0x1db159(0x174))[_0x1db159(0x22d)](_0x1db159(0x192),_0x1db159(0x192));else $('ul#myTabs')['find'](_0x1db159(0x2c7))[_0x1db159(0x22d)]('id')==_0x1db159(0x24e)?($(_0x1db159(0x174))[_0x1db159(0x24a)](_0x1db159(0x178)),$(_0x1db159(0x174))[_0x1db159(0x289)](_0x1db159(0x290)),$(_0x1db159(0x174))['prop'](_0x1db159(0x192),'')):($('#UserAllProject')[_0x1db159(0x24a)](_0x1db159(0x178)),$(_0x1db159(0x174))[_0x1db159(0x289)](_0x1db159(0x290)),$('#UserAllProject')[_0x1db159(0x2b5)](_0x1db159(0x192),''));}),$('.SortProject')[_0x2dc4f1(0x2a9)](function(){var _0x16ee8f=_0x2dc4f1;SortProjectTable(this[_0x16ee8f(0x308)]);}),$(_0x2dc4f1(0x333))[_0x2dc4f1(0x2a9)](function(){var _0x37204e=_0x2dc4f1;$(_0x37204e(0x2f0))['prop'](_0x37204e(0x18f),''),$(_0x37204e(0x273))[_0x37204e(0x2b5)]('checked',''),arrTaskInIds=[];}),$(_0x2dc4f1(0x174))[_0x2dc4f1(0x290)](function(){var _0x4dd299=_0x2dc4f1;$(_0x4dd299(0x2f9))[_0x4dd299(0x2c6)]()['append'](_0x4dd299(0x359)),$(_0x4dd299(0x2e2))['empty']()[_0x4dd299(0x165)](_0x4dd299(0x359));if(this['value']==_0x4dd299(0x303))$(_0x4dd299(0x1f1))[_0x4dd299(0x1f2)](),$(_0x4dd299(0x1e3))[_0x4dd299(0x2a1)]();else this[_0x4dd299(0x1c0)]=='Projects'?($(_0x4dd299(0x1f1))[_0x4dd299(0x2a1)](),$(_0x4dd299(0x1e3))[_0x4dd299(0x1f2)]()):($(_0x4dd299(0x1e3))['hide'](),$(_0x4dd299(0x1f1))[_0x4dd299(0x2a1)]());var _0x41f82b=$(_0x4dd299(0x174))[_0x4dd299(0x24a)]();_0x41f82b=='Projects'?$(_0x4dd299(0x1e6))[_0x4dd299(0x24b)]('activnating'):$(_0x4dd299(0x1e6))[_0x4dd299(0x259)](_0x4dd299(0x158));}),$(_0x2dc4f1(0x340))['click'](function(){var _0x3e7416=_0x2dc4f1;if(IsInboxProjectBind==![]){var _0x300b2d=_0x3e7416(0x267),_0x18c65f=_0x3e7416(0x16a),_0x21c842=0xc8,_0x2c9e7f=0x190;SP[_0x3e7416(0x19c)][_0x3e7416(0x19f)](['strings.js','sp.ui.dialog.js'],function(){var _0x4d0a2d=_0x3e7416;currentDlg=SP['UI'][_0x4d0a2d(0x23c)][_0x4d0a2d(0x1b8)](_0x300b2d,_0x18c65f,_0x21c842,_0x2c9e7f);}),setTimeout(function(){ReadInDepartment(),loadprojectInsearch();},0x64);}$(_0x3e7416(0x25b))[_0x3e7416(0x2f6)](_0x3e7416(0x1f2));}),$(_0x2dc4f1(0x26b))[_0x2dc4f1(0x290)](function(){var _0x10a164=_0x2dc4f1;this['value']==_0x10a164(0x1f6)?$(_0x10a164(0x1f1))['show']():$(_0x10a164(0x1f1))['hide']();}),$(_0x2dc4f1(0x201))[_0x2dc4f1(0x2a9)](function(){var _0x5beb4b=_0x2dc4f1;if(IsInboxClientBind==![]){var _0x27e5b9=_0x5beb4b(0x225),_0x388700=_0x5beb4b(0x16a),_0x363147=0xc8,_0x93ac2f=0x190;SP[_0x5beb4b(0x19c)]['loadMultiple']([_0x5beb4b(0x23f),_0x5beb4b(0x349)],function(){var _0x5f5699=_0x5beb4b;currentDlg=SP['UI'][_0x5f5699(0x23c)][_0x5f5699(0x1b8)](_0x27e5b9,_0x388700,_0x363147,_0x93ac2f);}),setTimeout(function(){var _0x13b196=_0x5beb4b;$(_0x13b196(0x278))[_0x13b196(0x1f2)](),$(_0x13b196(0x17d))['hide'](),getClientMaster(_0x13b196(0x1b2));},0x64);}else $(_0x5beb4b(0x298))['modal'](_0x5beb4b(0x1f2));}),$('#btnSelectCustomer')[_0x2dc4f1(0x2a9)](function(){setCustomerValue();}),$(_0x2dc4f1(0x32d))[_0x2dc4f1(0x2a9)](function(){var _0x4a1dfb=_0x2dc4f1,_0x386082=_0x4a1dfb(0x2b3),_0x431607=_0x4a1dfb(0x16a),_0xbe335f=0xc8,_0x553322=0x190;SP[_0x4a1dfb(0x19c)][_0x4a1dfb(0x19f)]([_0x4a1dfb(0x23f),_0x4a1dfb(0x349)],function(){var _0xe89ad5=_0x4a1dfb;currentDlg=SP['UI'][_0xe89ad5(0x23c)][_0xe89ad5(0x1b8)](_0x386082,_0x431607,_0xbe335f,_0x553322);}),setTimeout(function(){loadprojectInsearch();},0x64);}),$('#btnInProject')[_0x2dc4f1(0x2a9)](function(){setInboxProjectValue();}),$(_0x2dc4f1(0x1f8))[_0x2dc4f1(0x2a9)](function(){var _0x5368ab=_0x2dc4f1;currentPhase='Open',TaskAction='';var _0x473946=$(_0x5368ab(0x204))['val']();getSelectedEmpTasks($(_0x5368ab(0x2e4))[_0x5368ab(0x1b3)]()),$(_0x5368ab(0x204))[_0x5368ab(0x24a)](_0x473946),$(_0x5368ab(0x204))['trigger'](_0x5368ab(0x290));}),$('#SeeMoreDeptProj')[_0x2dc4f1(0x2a9)](function(){var _0x515a00=_0x2dc4f1,_0x594cab=$('#pageDropDownDeptProj')[_0x515a00(0x24a)]();DepartmentalProjTasks('',$(_0x515a00(0x2c2))['val']());;$(_0x515a00(0x1d4))['val'](_0x594cab),$(_0x515a00(0x1d4))[_0x515a00(0x289)](_0x515a00(0x290));}),$(_0x2dc4f1(0x274))['click'](function(){var _0x9f0249=_0x2dc4f1,_0x240d01=$('#pageDropDownDeptEmp')[_0x9f0249(0x24a)]();DeptEmpTasks('',[]),$(_0x9f0249(0x1dc))['val'](_0x240d01),$(_0x9f0249(0x1dc))['trigger'](_0x9f0249(0x290));}),$(_0x2dc4f1(0x1f4))[_0x2dc4f1(0x2a9)](function(){var _0x11e2b0=_0x2dc4f1,_0x1997a5=$('#pageDropDownInbox')[_0x11e2b0(0x24a)](),_0x59dc11=[];_0x59dc11=arrFilterDataBind[_0x11e2b0(0x1e1)](parseInt($(_0x11e2b0(0x1ec))[_0x11e2b0(0x1b3)]()),parseInt($('#DiplayTaskCount')[_0x11e2b0(0x1b3)]())+0x1f4),BindInboxTasks(_0x59dc11,'mainDivAllAnnouncements','MySubordinate');if(arrFilterDataBind[_0x11e2b0(0x292)]<=parseInt($(_0x11e2b0(0x1ec))[_0x11e2b0(0x1b3)]())+0x1f4)$(_0x11e2b0(0x2fb))[_0x11e2b0(0x1f2)](),$(_0x11e2b0(0x247))['hide'](),$('#TotalItemscount')[_0x11e2b0(0x1b3)](arrFilterDataBind[_0x11e2b0(0x292)]),$(_0x11e2b0(0x1f4))[_0x11e2b0(0x2a1)]();else{var _0x5a5e5b=parseInt($(_0x11e2b0(0x1ec))['text']())+0x1f4;$(_0x11e2b0(0x2fb))[_0x11e2b0(0x2a1)](),$(_0x11e2b0(0x247))['show'](),$(_0x11e2b0(0x1ec))[_0x11e2b0(0x1b3)](_0x5a5e5b[_0x11e2b0(0x312)]()),$(_0x11e2b0(0x1f9))[_0x11e2b0(0x1b3)](arrFilterDataBind['length']),$('#SeeMoreFilterInbox')[_0x11e2b0(0x1f2)]();}$(_0x11e2b0(0x204))[_0x11e2b0(0x24a)](_0x1997a5),$('#pageDropDownInbox')[_0x11e2b0(0x289)](_0x11e2b0(0x290));}),$(_0x2dc4f1(0x28b))['click'](function(){var _0x53c656=_0x2dc4f1,_0x20f48c=$('#pageDropDownDeptProj')[_0x53c656(0x24a)](),_0x551c99=[];_0x551c99=arrFilterDeptProj[_0x53c656(0x1e1)](parseInt($(_0x53c656(0x17a))[_0x53c656(0x1b3)]()),parseInt($(_0x53c656(0x17a))[_0x53c656(0x1b3)]())+0x1f4),BindInboxTasks(_0x551c99,_0x53c656(0x24d),_0x53c656(0x321));if(arrFilterDeptProj['length']<=parseInt($('#TaskCountDeptProj')[_0x53c656(0x1b3)]())+0x1f4)$('#ShowTotalItemsDeptProj')[_0x53c656(0x1f2)](),$(_0x53c656(0x19d))[_0x53c656(0x2a1)](),$(_0x53c656(0x302))[_0x53c656(0x1b3)](arrFilterDeptProj[_0x53c656(0x292)]),$('#SeeMoreFilterDeptProj')[_0x53c656(0x2a1)]();else{var _0x1c2a71=parseInt($(_0x53c656(0x17a))['text']())+0x1f4;$(_0x53c656(0x19e))[_0x53c656(0x2a1)](),$(_0x53c656(0x19d))[_0x53c656(0x1f2)](),$(_0x53c656(0x17a))['text'](_0x1c2a71['toString']()),$(_0x53c656(0x19a))['text'](arrFilterDeptProj['length']),$(_0x53c656(0x28b))[_0x53c656(0x1f2)]();}$(_0x53c656(0x1d4))[_0x53c656(0x24a)](_0x20f48c),$(_0x53c656(0x1d4))['trigger'](_0x53c656(0x290));}),$(_0x2dc4f1(0x230))[_0x2dc4f1(0x2a9)](function(){var _0x136892=_0x2dc4f1,_0x4aa61a=$('#pageDropDownDeptProj')[_0x136892(0x24a)](),_0x3aaf46=[];_0x3aaf46=arrFilterDeptEmp[_0x136892(0x1e1)](parseInt($(_0x136892(0x1c3))['text']()),parseInt($(_0x136892(0x1c3))['text']())+0x1f4),BindInboxTasks(_0x3aaf46,_0x136892(0x282),_0x136892(0x180));if(arrFilterDeptEmp['length']<=parseInt($(_0x136892(0x1c3))[_0x136892(0x1b3)]())+0x1f4)$(_0x136892(0x159))[_0x136892(0x1f2)](),$('#ShowItemsDeptEmp')[_0x136892(0x2a1)](),$(_0x136892(0x2e0))[_0x136892(0x1b3)](arrFilterDeptEmp[_0x136892(0x292)]),$(_0x136892(0x230))['hide']();else{var _0x333da1=parseInt($('#TaskCountDeptEmp')[_0x136892(0x1b3)]())+0x1f4;$('#ShowTotalItemsDeptEmp')[_0x136892(0x2a1)](),$('#ShowItemsDeptEmp')[_0x136892(0x1f2)](),$(_0x136892(0x1c3))[_0x136892(0x1b3)](_0x333da1['toString']()),$(_0x136892(0x1c3))['text'](arrFilterDeptEmp[_0x136892(0x292)]),$(_0x136892(0x230))[_0x136892(0x1f2)]();}$(_0x136892(0x1dc))['val'](_0x4aa61a),$(_0x136892(0x1dc))[_0x136892(0x289)]('change');}),$(_0x2dc4f1(0x32c))['click'](function(){var _0x1e6ece=_0x2dc4f1,_0x4af6bf=_0x1e6ece(0x170),_0xcf0f6b='<br\x20/>Please\x20wait!!',_0x7fc885=0xc8,_0x3f1964=0x190;currentDlg=SP['UI'][_0x1e6ece(0x23c)][_0x1e6ece(0x1b8)](_0x4af6bf,_0xcf0f6b,_0x7fc885,_0x3f1964),setTimeout(function(){generateTaskInExcel();},0x64);}),$(_0x2dc4f1(0x2a8))[_0x2dc4f1(0x2a9)](function(){SetTaskPending();}),$(_0x2dc4f1(0x31a))['click'](function(){SetTaskOverdue();}),$('.SortClass')['click'](function(){SortTable(this['textContent']);}),$(_0x2dc4f1(0x233))['change'](function(){var _0x199029=_0x2dc4f1;$(_0x199029(0x241))[_0x199029(0x1ac)]('li.active')[_0x199029(0x22d)]('id')==_0x199029(0x264)?(DepartmentalProjTasks('PageLoad',$(_0x199029(0x2c2))['val']()),getDeptEmployee($(_0x199029(0x2c2))[_0x199029(0x24a)]())):getDeptEmployee($(_0x199029(0x279))[_0x199029(0x24a)]());}),$('#btnSendNotifyMIS')[_0x2dc4f1(0x2a9)](function(){var _0x26a871=_0x2dc4f1;if($['trim']($(_0x26a871(0x21d))[_0x26a871(0x24a)]())!='')updateMISMeatdata(_0x26a871(0x2dd));else return alert(_0x26a871(0x35e)),![];}),$(_0x2dc4f1(0x273))['click'](function(_0x48a19d){var _0x3b9601=_0x2dc4f1;currentTab='';if($('ul#myTabs')['find'](_0x3b9601(0x2c7))[_0x3b9601(0x22d)]('id')==_0x3b9601(0x264))currentTab=_0x3b9601(0x299);else $(_0x3b9601(0x241))['find'](_0x3b9601(0x2c7))[_0x3b9601(0x22d)]('id')==_0x3b9601(0x24e)?currentTab=_0x3b9601(0x2e7):currentTab='TempTableQuestions';this[_0x3b9601(0x18f)]==!![]?($('#'+currentTab+_0x3b9601(0x20e))['prop']('checked',''),$('#'+currentTab+_0x3b9601(0x20e))[_0x3b9601(0x289)](_0x3b9601(0x2a9))):($('#'+currentTab+_0x3b9601(0x20e))[_0x3b9601(0x2b5)](_0x3b9601(0x18f),''),arrTaskInIds=[]);}),$(_0x2dc4f1(0x200))[_0x2dc4f1(0x290)](function(){var _0x26ff20=_0x2dc4f1;this[_0x26ff20(0x18f)]==![]&&$(_0x26ff20(0x284))['prop'](_0x26ff20(0x18f),'');}),$(_0x2dc4f1(0x19b))['change'](function(){var _0x495996=_0x2dc4f1;this[_0x495996(0x18f)]==![]&&$(_0x495996(0x1b1))[_0x495996(0x2b5)]('checked','');}),$('#TempTableQuestions\x20.taskchkIn')[_0x2dc4f1(0x290)](function(){var _0x44d1d6=_0x2dc4f1;this[_0x44d1d6(0x18f)]==![]&&$(_0x44d1d6(0x1ca))[_0x44d1d6(0x2b5)](_0x44d1d6(0x18f),'');}),$('.AddDepedncySub')['click'](function(){var _0x7cedc0=_0x2dc4f1;if(arrTaskInIds['length']==0x0)return alert(_0x7cedc0(0x2a4)),![];else $(_0x7cedc0(0x24c))[_0x7cedc0(0x2f6)](_0x7cedc0(0x1f2));}),$(_0x2dc4f1(0x32b))[_0x2dc4f1(0x2a9)](function(){var _0x37cd39=_0x2dc4f1;if(arrTaskInIds[_0x37cd39(0x292)]==0x0)return alert(_0x37cd39(0x2a4)),![];else $(_0x37cd39(0x177))['modal'](_0x37cd39(0x1f2));}),dependencyEvent();});function getSubordinatesLoad(){var _0x396756=a371_0x272e70,_0x432578='',_0x142b3c=[],_0x5141e4=_0x396756(0x280),_0x3dc6a3='0',_0x1744d5='0',_0x202723=_0x396756(0x2bf)+_spPageContextInfo[_0x396756(0x25e)]+_0x396756(0x179)+Logged_CompanyId+'\x27';$[_0x396756(0x186)](getLimitedEmployeess(_0x396756(0x190),_0x202723))[_0x396756(0x20f)](function(_0x2d0168){var _0x5056d7=_0x396756;for(var _0x16d321=0x0;_0x16d321<_0x2d0168[_0x5056d7(0x292)];_0x16d321++){if(_0x2d0168[_0x16d321][_0x5056d7(0x22f)]['results'][_0x5056d7(0x292)]>0x0)var _0x57b376=_0x2d0168[_0x16d321][_0x5056d7(0x22f)][_0x5056d7(0x24f)][0x0][_0x5056d7(0x219)];else var _0x57b376=_spPageContextInfo[_0x5056d7(0x15a)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]);_0x142b3c=getSelectedEmpTaskCount(_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]);_0x142b3c[_0x5056d7(0x292)]>0x0?(_0x3dc6a3=_0x142b3c[0x0]['OpenTasksCount']?_0x142b3c[0x0][_0x5056d7(0x2b0)]:'0',_0x1744d5=_0x142b3c[0x0][_0x5056d7(0x335)]?_0x142b3c[0x0][_0x5056d7(0x335)]:'0',$(_0x5056d7(0x1bd))['text'](parseInt($(_0x5056d7(0x1bd))[_0x5056d7(0x1b3)]())+parseInt(_0x3dc6a3)),$(_0x5056d7(0x20c))[_0x5056d7(0x1b3)](parseInt($(_0x5056d7(0x20c))[_0x5056d7(0x1b3)]())+parseInt(_0x1744d5))):(_0x3dc6a3='0',_0x1744d5='0');if(_0x16d321==0x0){_0x432578+=_0x5056d7(0x269);var _0x9efb98=checkForSubordinates(_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]);_0x9efb98==!![]?_0x432578+='<i\x20class=\x22fa\x20fa-angle-right\x20my-sub-arrow-icon\x22\x20data-toggle=\x22collapse\x22\x20data-target=\x22#Subrdinate'+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['ID']+_0x5056d7(0x350):_0x432578+='';_0x432578+=_0x5056d7(0x1d3),_0x432578+='<div\x20class=\x22d-flex\x20align-items-center\x20side-bar-icon-center\x22>',_0x432578+=_0x5056d7(0x171)+_0x57b376+_0x5056d7(0x229),_0x432578+=_0x5056d7(0x234),_0x432578+='<h4\x20class=\x22tab-user-name\x22><span\x20class=\x22mr-4\x20ellipsis-2\x20firstSubordinate\x22\x20onclick=getSelectedEmpTasks(\x27'+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['EMail']+_0x5056d7(0x256)+_0x2d0168[_0x16d321][_0x5056d7(0x2fa)]+_0x5056d7(0x352)+_0x16d321+'\x22>'+_0x3dc6a3+_0x5056d7(0x33e)+_0x16d321+'\x22>'+_0x1744d5+_0x5056d7(0x1bc),_0x432578+='<p\x20class=\x22tab-user-deg\x22><span\x20class=\x22ellipsis-2\x22>'+_0x2d0168[_0x16d321][_0x5056d7(0x28e)]+_0x5056d7(0x1eb)+_0x2d0168[_0x16d321][_0x5056d7(0x1d1)][_0x5056d7(0x1d8)]+_0x5056d7(0x1f0),_0x432578+='<p\x20class=\x22tab-user-email\x20ellipsis-2\x22><span\x20onclick=\x22OpenEmail(this);\x22>'+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]+'</span></p></div></div></a></div>';var _0xecafeb=_0x5056d7(0x31b)+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]+_0x5056d7(0x179)+Logged_CompanyId+'\x27\x20';$['when'](getLimitedEmployeess('Employees',_0xecafeb))['done'](function(_0x5ba6ef){var _0xbf488a=_0x5056d7;if(_0x5ba6ef['length']>0x0){_0x432578+=_0xbf488a(0x28c)+_0x2d0168[_0x16d321][_0xbf488a(0x2e1)]['ID']+_0xbf488a(0x1da),_0x432578+=_0xbf488a(0x2e6);for(var _0xe6847c=0x0;_0xe6847c<_0x5ba6ef[_0xbf488a(0x292)];_0xe6847c++){_0x142b3c=getSelectedEmpTaskCount(_0x5ba6ef[_0xe6847c]['LogonName'][_0xbf488a(0x346)]);_0x142b3c['length']>0x0?(_0x3dc6a3=_0x142b3c[0x0][_0xbf488a(0x2b0)]?_0x142b3c[0x0]['OpenTasksCount']:'0',_0x1744d5=_0x142b3c[0x0][_0xbf488a(0x335)]?_0x142b3c[0x0][_0xbf488a(0x335)]:'0',$('#TotalPending')[_0xbf488a(0x1b3)](parseInt($(_0xbf488a(0x1bd))['text']())+parseInt(_0x3dc6a3)),$(_0xbf488a(0x20c))[_0xbf488a(0x1b3)](parseInt($('#TotalOverdue')[_0xbf488a(0x1b3)]())+parseInt(_0x1744d5))):(_0x3dc6a3='0',_0x1744d5='0');if(_0x5ba6ef[_0xe6847c][_0xbf488a(0x22f)][_0xbf488a(0x24f)][_0xbf488a(0x292)]>0x0)var _0x4e7229=_0x5ba6ef[_0xe6847c][_0xbf488a(0x22f)][_0xbf488a(0x24f)][0x0][_0xbf488a(0x219)];else var _0x4e7229=_spPageContextInfo[_0xbf488a(0x15a)]+_0xbf488a(0x2f5)+escapeProperly(_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)]['EMail']);var _0x30430b=checkForSubordinates(_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)][_0xbf488a(0x346)]);_0x432578+='<div\x20class=\x22panel\x20panel-default\x22\x20id=\x22Manager'+_0x5ba6ef[_0xe6847c]['LogonName']['ID']+'\x22><div\x20class=\x22panel-heading\x22><h4\x20class=\x22panel-title\x22><div\x20class=\x22my-sub-arrow\x22>',_0x30430b==!![]?_0x432578+=_0xbf488a(0x31c)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)]['ID']+_0xbf488a(0x2c4)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)][_0xbf488a(0x346)]+'\x27);openToggle(this,\x20'+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)]['ID']+_0xbf488a(0x345)+_0x5ba6ef[_0xe6847c]['LogonName']['ID']+_0xbf488a(0x25d):_0x432578+='',_0x432578+=_0xbf488a(0x33c)+_0x4e7229+_0xbf488a(0x229),_0x432578+=_0xbf488a(0x287)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)][_0xbf488a(0x346)]+_0xbf488a(0x354)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2fa)]+'</span>',_0x432578+=_0xbf488a(0x1ee)+_0xe6847c+'\x22>'+_0x3dc6a3+_0xbf488a(0x33e)+_0x16d321+'\x22>'+_0x1744d5+_0xbf488a(0x1bc),_0x432578+=_0xbf488a(0x1b6)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x28e)]+_0xbf488a(0x1eb)+_0x5ba6ef[_0xe6847c][_0xbf488a(0x1d1)][_0xbf488a(0x1d8)]+_0xbf488a(0x1f0),_0x432578+='<p\x20class=\x22tab-user-email\x20ellipsis-2\x22><span\x20onclick=\x22OpenEmail(this);\x22>'+_0x5ba6ef[_0xe6847c][_0xbf488a(0x2e1)]['EMail']+_0xbf488a(0x268),_0x432578+=_0xbf488a(0x17f);}_0x432578+='</div></div></div>';}});}else{_0x432578+='</li><li\x20class=\x22panel\x22\x20id=\x22Manager'+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['ID']+'\x22><div\x20class=\x22my-sub-arrow\x22>';var _0x9efb98=checkForSubordinates(_0x2d0168[_0x16d321][_0x5056d7(0x2e1)][_0x5056d7(0x346)]);_0x9efb98==!![]?_0x432578+=_0x5056d7(0x1bf)+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['ID']+_0x5056d7(0x358)+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['ID']+_0x5056d7(0x2c4)+_0x2d0168[_0x16d321]['LogonName']['EMail']+_0x5056d7(0x17b)+_0x2d0168[_0x16d321]['LogonName']['ID']+_0x5056d7(0x1d9):_0x432578+='',_0x432578+=_0x5056d7(0x1d3),_0x432578+=_0x5056d7(0x176),_0x432578+='<img\x20src=\x22'+_0x57b376+_0x5056d7(0x229),_0x432578+=_0x5056d7(0x234),_0x432578+='<h4\x20class=\x22tab-user-name\x22><span\x20class=\x22mr-4\x20ellipsis-2\x22\x20onclick=getSelectedEmpTasks(\x27'+_0x2d0168[_0x16d321][_0x5056d7(0x2e1)]['EMail']+_0x5056d7(0x354)+_0x2d0168[_0x16d321][_0x5056d7(0x2fa)]+_0x5056d7(0x352)+_0x16d321+'\x22>'+_0x3dc6a3+_0x5056d7(0x33e)+_0x16d321+'\x22>'+_0x1744d5+_0x5056d7(0x1bc),_0x432578+='<p\x20class=\x22tab-user-deg\x22><span\x20class=\x22ellipsis-2\x22>'+_0x2d0168[_0x16d321][_0x5056d7(0x28e)]+_0x5056d7(0x1eb)+_0x2d0168[_0x16d321][_0x5056d7(0x1d1)][_0x5056d7(0x1d8)]+_0x5056d7(0x1f0),_0x432578+=_0x5056d7(0x301)+_0x2d0168[_0x16d321]['LogonName'][_0x5056d7(0x346)]+_0x5056d7(0x35c);}}$(_0x5056d7(0x28d))[_0x5056d7(0x165)](_0x432578);});}function getSelectedEmpTaskCount(_0x2608db){var _0x42928e=a371_0x272e70,_0xe731b7=[],_0x5ba6b9=_0x42928e(0x26c)+_0x2608db+'\x27\x20';return $[_0x42928e(0x186)](getLimitedEmployeess(_0x42928e(0x1e2),_0x5ba6b9))[_0x42928e(0x20f)](function(_0x7ebb7){_0xe731b7=_0x7ebb7;}),_0xe731b7;}function openToggle(_0x2f4ce7,_0x57be51){var _0x220390=a371_0x272e70;$(_0x2f4ce7)['hasClass'](_0x220390(0x2f1))==!![]?setTimeout(function(){var _0x855af=_0x220390;$(_0x2f4ce7)[_0x855af(0x22d)](_0x855af(0x1a2),_0x855af(0x1db)),$(_0x2f4ce7)[_0x855af(0x259)](_0x855af(0x2f1)),$(_0x855af(0x316)+_0x57be51)['attr'](_0x855af(0x1a2),'true'),$(_0x855af(0x316)+_0x57be51)[_0x855af(0x24b)]('in'),$(_0x855af(0x316)+_0x57be51)['css']('height','');},0x64):($(_0x2f4ce7)['attr']('aria-expanded',_0x220390(0x2b7)),$(_0x2f4ce7)[_0x220390(0x24b)](_0x220390(0x2f1)),$('#Subrdinate'+_0x57be51)[_0x220390(0x22d)](_0x220390(0x1a2),'false'),$(_0x220390(0x316)+_0x57be51)[_0x220390(0x259)]('in'),$('#Subrdinate'+_0x57be51)[_0x220390(0x243)](_0x220390(0x21b),_0x220390(0x218)));}function getSubordinatesOnClick(_0x1d0335,_0x548054){var _0x495f97=a371_0x272e70,_0x11173c='',_0x121812=[];if($(_0x495f97(0x32e)+_0x1d0335)[_0x495f97(0x164)]()[_0x495f97(0x1ae)]('panel\x20panel-default')==![]){var _0x5b1933=_0x495f97(0x29b)+_0x548054+_0x495f97(0x179)+Logged_CompanyId+'\x27\x20';$[_0x495f97(0x186)](getLimitedEmployeess(_0x495f97(0x190),_0x5b1933))[_0x495f97(0x20f)](function(_0x2b4a84){var _0x4c89a0=_0x495f97;if(_0x2b4a84[_0x4c89a0(0x292)]>0x0){_0x11173c+='<div\x20id=\x22Subrdinate'+_0x1d0335+_0x4c89a0(0x2d5),_0x11173c+='<div\x20class=\x22\x20inner-collapse-panel\x22><div\x20class=\x22panel-group\x22>';for(var _0x1fa3f2=0x0;_0x1fa3f2<_0x2b4a84['length'];_0x1fa3f2++){_0x121812=getSelectedEmpTaskCount(_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)][_0x4c89a0(0x346)]);_0x121812['length']>0x0?(PendingCount=_0x121812[0x0][_0x4c89a0(0x2b0)]?_0x121812[0x0][_0x4c89a0(0x2b0)]:'0',OverDueCOunt=_0x121812[0x0]['OverdueCount']?_0x121812[0x0][_0x4c89a0(0x335)]:'0',$(_0x4c89a0(0x1bd))[_0x4c89a0(0x1b3)](parseInt($(_0x4c89a0(0x1bd))[_0x4c89a0(0x1b3)]())+parseInt(PendingCount)),$(_0x4c89a0(0x20c))[_0x4c89a0(0x1b3)](parseInt($(_0x4c89a0(0x20c))[_0x4c89a0(0x1b3)]())+parseInt(OverDueCOunt))):(PendingCount='0',OverDueCOunt='0');if(_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x22f)][_0x4c89a0(0x24f)][_0x4c89a0(0x292)]>0x0)var _0xf4586=_0x2b4a84[_0x1fa3f2]['AttachmentFiles'][_0x4c89a0(0x24f)][0x0]['ServerRelativeUrl'];else var _0xf4586=_spPageContextInfo[_0x4c89a0(0x15a)]+_0x4c89a0(0x2f5)+escapeProperly(_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)][_0x4c89a0(0x346)]);_0x11173c+=_0x4c89a0(0x1cd)+_0x2b4a84[_0x1fa3f2]['LogonName']['ID']+_0x4c89a0(0x1e5);var _0x591a3b=checkForSubordinates(_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)][_0x4c89a0(0x346)]);_0x591a3b==!![]?_0x11173c+=_0x4c89a0(0x31c)+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)]['ID']+_0x4c89a0(0x2c4)+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)]['EMail']+_0x4c89a0(0x17b)+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)]['ID']+');\x22\x20data-target=\x22#Subrdinate'+_0x2b4a84[_0x1fa3f2]['LogonName']['ID']+_0x4c89a0(0x25d):_0x11173c+='',_0x11173c+=_0x4c89a0(0x33c)+_0xf4586+_0x4c89a0(0x229),_0x11173c+='<div\x20class=\x22user-details-panel\x20mt3\x20ml10\x22><h4\x20class=\x22tab-user-name\x22><span\x20class=\x22mr-4\x20ellipsis-2\x22\x20onclick=getSelectedEmpTasks(\x27'+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2e1)][_0x4c89a0(0x346)]+_0x4c89a0(0x354)+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x2fa)]+'</span>',_0x11173c+='<span\x20class=\x22d-flex\x20color-black\x22\x20style=\x22display:\x20none\x20!important;\x22><span\x20id=\x22PendingCount'+_0x1fa3f2+'\x22>'+PendingCount+'</span>,\x20<span\x20class=\x22color-red\x20ml-4\x22\x20id=\x22OverDueCOunt'+_0x1fa3f2+'\x22>'+OverDueCOunt+'</span></span></h4>',_0x11173c+=_0x4c89a0(0x1b6)+_0x2b4a84[_0x1fa3f2][_0x4c89a0(0x28e)]+_0x4c89a0(0x1eb)+_0x2b4a84[_0x1fa3f2]['Department'][_0x4c89a0(0x1d8)]+_0x4c89a0(0x1f0),_0x11173c+='<p\x20class=\x22tab-user-email\x20ellipsis-2\x22><span\x20onclick=\x22OpenEmail(this);\x22>'+_0x2b4a84[_0x1fa3f2]['LogonName'][_0x4c89a0(0x346)]+_0x4c89a0(0x268),_0x11173c+='</a></div></div></h4></div>';}_0x11173c+=_0x4c89a0(0x2f4),$(_0x4c89a0(0x32e)+_0x1d0335)[_0x4c89a0(0x165)](_0x11173c);}});}}function getParentSubrdinate(_0xe05ce2,_0x33621c){var _0x31fa51=a371_0x272e70,_0x538998='',_0x390b23=[];if($('#Manager'+_0xe05ce2)[_0x31fa51(0x164)]()[_0x31fa51(0x1ae)](_0x31fa51(0x181))==![]){var _0x245842=_0x31fa51(0x31b)+_0x33621c+_0x31fa51(0x179)+Logged_CompanyId+'\x27\x20';$[_0x31fa51(0x186)](getLimitedEmployeess('Employees',_0x245842))['done'](function(_0x23c3ef){var _0x17315d=_0x31fa51;if(_0x23c3ef[_0x17315d(0x292)]>0x0){_0x538998+=_0x17315d(0x28c)+_0xe05ce2+_0x17315d(0x1da),_0x538998+=_0x17315d(0x2e6);for(var _0x353b47=0x0;_0x353b47<_0x23c3ef[_0x17315d(0x292)];_0x353b47++){_0x390b23=getSelectedEmpTaskCount(_0x23c3ef[_0x353b47][_0x17315d(0x2e1)][_0x17315d(0x346)]);_0x390b23[_0x17315d(0x292)]>0x0?(PendingCount=_0x390b23[0x0]['OpenTasksCount']?_0x390b23[0x0][_0x17315d(0x2b0)]:'0',OverDueCOunt=_0x390b23[0x0]['OverdueCount']?_0x390b23[0x0]['OverdueCount']:'0',$('#TotalPending')['text'](parseInt($(_0x17315d(0x1bd))[_0x17315d(0x1b3)]())+parseInt(PendingCount)),$(_0x17315d(0x20c))['text'](parseInt($(_0x17315d(0x20c))[_0x17315d(0x1b3)]())+parseInt(OverDueCOunt))):(PendingCount='0',OverDueCOunt='0');if(_0x23c3ef[_0x353b47]['AttachmentFiles']['results']['length']>0x0)var _0x51932f=_0x23c3ef[_0x353b47][_0x17315d(0x22f)]['results'][0x0][_0x17315d(0x219)];else var _0x51932f=_spPageContextInfo[_0x17315d(0x15a)]+_0x17315d(0x2f5)+escapeProperly(_0x23c3ef[_0x353b47][_0x17315d(0x2e1)][_0x17315d(0x346)]);_0x538998+=_0x17315d(0x1cd)+_0x23c3ef[_0x353b47]['LogonName']['ID']+_0x17315d(0x1e5);var _0x417292=checkForSubordinates(_0x23c3ef[_0x353b47][_0x17315d(0x2e1)]['EMail']);_0x417292==!![]?_0x538998+=_0x17315d(0x31c)+_0x23c3ef[_0x353b47][_0x17315d(0x2e1)]['ID']+_0x17315d(0x2c4)+_0x23c3ef[_0x353b47][_0x17315d(0x2e1)]['EMail']+_0x17315d(0x17b)+_0x23c3ef[_0x353b47]['LogonName']['ID']+_0x17315d(0x345)+_0x23c3ef[_0x353b47]['LogonName']['ID']+_0x17315d(0x25d):_0x538998+='',_0x538998+='<a\x20href=\x22javascript:void(0);\x22><div\x20class=\x22d-flex\x20align-items-center\x22><img\x20src=\x22'+_0x51932f+'\x22\x20alt=\x22EmpImage\x22>',_0x538998+=_0x17315d(0x287)+_0x23c3ef[_0x353b47][_0x17315d(0x2e1)][_0x17315d(0x346)]+'\x27)>'+_0x23c3ef[_0x353b47][_0x17315d(0x2fa)]+_0x17315d(0x315),_0x538998+=_0x17315d(0x1ee)+_0x353b47+'\x22>'+PendingCount+'</span>,\x20<span\x20class=\x22color-red\x20ml-4\x22\x20id=\x22OverDueCOunt'+_0x353b47+'\x22>'+OverDueCOunt+_0x17315d(0x1bc),_0x538998+=_0x17315d(0x1b6)+_0x23c3ef[_0x353b47][_0x17315d(0x28e)]+_0x17315d(0x1eb)+_0x23c3ef[_0x353b47]['Department'][_0x17315d(0x1d8)]+_0x17315d(0x1f0),_0x538998+='<p\x20class=\x22tab-user-email\x20ellipsis-2\x22><span\x20onclick=\x22OpenEmail(this);\x22>'+_0x23c3ef[_0x353b47][_0x17315d(0x2e1)]['EMail']+'</span></p></div></div>',_0x538998+=_0x17315d(0x17f);}_0x538998+=_0x17315d(0x2f4),$(_0x17315d(0x32e)+_0xe05ce2)[_0x17315d(0x165)](_0x538998);}});}}var getSelectedEmpTasksv='';function getSelectedEmpTasks(_0x114eb3){getSelectedEmpTasksv=getSelectedEmpTasks,$['ajax']({'cache':![],'beforeSend':function(){var _0x342f2a=a371_0x2457;$(_0x342f2a(0x1ed))[_0x342f2a(0x260)]();},'success':function(_0x2dc765){LoadSelectedEmpTasks(_0x114eb3,getSelectedEmpTasksv);}});}function LoadSelectedEmpTasks(_0x15e6e9,_0x43a082){var _0x5bca9f=a371_0x272e70;$(_0x5bca9f(0x342))['show'](),$(_0x5bca9f(0x1f4))[_0x5bca9f(0x2a1)]();var _0x4ca094,_0x252011=[];if(TaskAction==_0x5bca9f(0x15c)){arrFilterDataBind=[];var _0xc88d03=new Date();_0xc88d03=_0xc88d03[_0x5bca9f(0x2d3)](_0xc88d03['getFullYear']()-0x1),_0xc88d03=new Date(_0xc88d03);var _0x433f0c=_0x5bca9f(0x34a)+_0x15e6e9+_0x5bca9f(0x2c8)+Logged_CompanyId+'\x27\x20';$[_0x5bca9f(0x186)](getLimitedEmployeess(_0x5bca9f(0x190),_0x433f0c))[_0x5bca9f(0x20f)](function(_0x51370c){var _0x4aa352=_0x5bca9f;if(_0x51370c[_0x4aa352(0x292)]>0x0){var _0x5c47e2=_0x51370c[0x0];_0x5c47e2['AttachmentFiles'][_0x4aa352(0x24f)][_0x4aa352(0x292)]>0x0?attachmentUrl=_0x5c47e2[_0x4aa352(0x22f)][_0x4aa352(0x24f)][0x0][_0x4aa352(0x219)]:attachmentUrl=_spPageContextInfo[_0x4aa352(0x15a)]+_0x4aa352(0x2f5)+escapeProperly(_0x5c47e2[_0x4aa352(0x2e1)][_0x4aa352(0x346)]),$('#SelectedEmpImage')[_0x4aa352(0x22d)]('src',attachmentUrl),$(_0x4aa352(0x265))[_0x4aa352(0x1b3)](_0x5c47e2['FullName']),$(_0x4aa352(0x232))[_0x4aa352(0x1b3)](_0x5c47e2[_0x4aa352(0x28e)]+'\x20|\x20'+_0x5c47e2['Department'][_0x4aa352(0x1b7)]),$(_0x4aa352(0x2e4))['text'](_0x15e6e9);}}),$('#mainDivAllAnnouncements')[_0x5bca9f(0x2c6)](),arrAllTaskUserWise=AllTaskInbox[_0x5bca9f(0x322)](function(_0x557b50){var _0x3c5133=_0x5bca9f,_0x3c1e96=[],_0x23270e=[],_0x266f67=!![],_0x5dedfe=!![];if(_0x557b50[_0x3c5133(0x2dc)]!=null)for(var _0x147294=0x0;_0x147294<_0x557b50[_0x3c5133(0x2dc)][_0x3c5133(0x292)];_0x147294++){_0x557b50[_0x3c5133(0x2dc)][_0x147294][_0x3c5133(0x346)]['indexOf']('#')!=-0x1&&(_0x557b50['TaskAssignTo'][_0x147294][_0x3c5133(0x346)]=_0x557b50[_0x3c5133(0x2dc)][_0x147294][_0x3c5133(0x346)][_0x3c5133(0x306)]('#')[0x0],_0x557b50[_0x3c5133(0x2dc)][_0x147294]['EMail']=_0x557b50[_0x3c5133(0x2dc)][_0x147294][_0x3c5133(0x346)][_0x3c5133(0x30a)]('_','@')),_0x3c1e96['push'](_0x557b50[_0x3c5133(0x2dc)][_0x147294]['EMail']['toLowerCase']()==_0x15e6e9[_0x3c5133(0x313)]());}_0x3c1e96['forEach'](function(_0x19e978,_0x44dfe){_0x44dfe==0x0?_0x266f67=_0x19e978:_0x266f67=_0x19e978||_0x266f67;});if(_0x557b50['DependencyTo']!=null)for(var _0x1ef4f4=0x0;_0x1ef4f4<_0x557b50[_0x3c5133(0x1c1)][_0x3c5133(0x292)];_0x1ef4f4++){_0x557b50[_0x3c5133(0x1c1)][_0x1ef4f4]['EMail'][_0x3c5133(0x291)]('#')!=-0x1&&(_0x557b50['DependencyTo'][_0x1ef4f4][_0x3c5133(0x346)]=_0x557b50[_0x3c5133(0x1c1)][_0x1ef4f4][_0x3c5133(0x346)][_0x3c5133(0x306)]('#')[0x0],_0x557b50[_0x3c5133(0x1c1)][_0x1ef4f4][_0x3c5133(0x346)]=_0x557b50[_0x3c5133(0x1c1)][_0x1ef4f4][_0x3c5133(0x346)][_0x3c5133(0x30a)]('_','@')),_0x23270e[_0x3c5133(0x221)](_0x557b50[_0x3c5133(0x1c1)][_0x1ef4f4]['EMail'][_0x3c5133(0x313)]()==_0x15e6e9[_0x3c5133(0x313)]());}else _0x5dedfe=![];return _0x23270e[_0x3c5133(0x261)](function(_0x51d082,_0x23f336){_0x23f336==0x0?_0x5dedfe=_0x51d082:_0x5dedfe=_0x51d082||_0x5dedfe;}),_0x266f67||_0x5dedfe;}),_0x252011=arrLimitTaskInbox=arrAllTaskUserWise[_0x5bca9f(0x322)](function(_0x51abde){var _0xf4dbcc=_0x5bca9f;return _0x51abde[_0xf4dbcc(0x310)]==currentPhase;}),_0x252011['length']>=0x1f4?($(_0x5bca9f(0x1f9))[_0x5bca9f(0x1b3)](_0x252011[_0x5bca9f(0x292)]),_0x252011=_0x252011[_0x5bca9f(0x1e1)](0x0,0x1f4),$(_0x5bca9f(0x2fb))['hide'](),$(_0x5bca9f(0x247))[_0x5bca9f(0x1f2)](),$(_0x5bca9f(0x1ec))[_0x5bca9f(0x1b3)]('500'),$(_0x5bca9f(0x1f8))[_0x5bca9f(0x1f2)]()):($(_0x5bca9f(0x2fb))[_0x5bca9f(0x1f2)](),$(_0x5bca9f(0x247))['hide'](),$(_0x5bca9f(0x295))['text'](_0x252011['length']),$(_0x5bca9f(0x1f8))[_0x5bca9f(0x2a1)]()),BindInboxTasks(_0x252011,_0x5bca9f(0x1af),_0x5bca9f(0x339)),_0x252011[_0x5bca9f(0x292)]==0x0?($('.NoRecordFound')['show'](),$(_0x5bca9f(0x1f8))[_0x5bca9f(0x2a1)]()):$(_0x5bca9f(0x1a6))[_0x5bca9f(0x2a1)](),ShowPieChartInbox(),GetTaskInboxCount(),waitingDialog[_0x5bca9f(0x2a1)]();}else{_0x252011=arrLimitTaskInbox[_0x5bca9f(0x1e1)](parseInt($(_0x5bca9f(0x1ec))['text']()),parseInt($(_0x5bca9f(0x1ec))[_0x5bca9f(0x1b3)]())+0x1f4),BindInboxTasks(_0x252011,_0x5bca9f(0x1af),_0x5bca9f(0x339));if(arrLimitTaskInbox[_0x5bca9f(0x292)]<=parseInt($(_0x5bca9f(0x1ec))['text']())+0x1f4)$(_0x5bca9f(0x2fb))[_0x5bca9f(0x1f2)](),$(_0x5bca9f(0x247))[_0x5bca9f(0x2a1)](),$(_0x5bca9f(0x295))[_0x5bca9f(0x1b3)](arrLimitTaskInbox['length']),$(_0x5bca9f(0x1f8))[_0x5bca9f(0x2a1)]();else{var _0x47cb54=parseInt($(_0x5bca9f(0x1ec))['text']())+0x1f4;$(_0x5bca9f(0x2fb))['hide'](),$(_0x5bca9f(0x247))['show'](),$(_0x5bca9f(0x1ec))['text'](_0x47cb54[_0x5bca9f(0x312)]()),$(_0x5bca9f(0x1f9))[_0x5bca9f(0x1b3)](arrLimitTaskInbox[_0x5bca9f(0x292)]),$(_0x5bca9f(0x1f8))['show']();}}}function BindInboxTasks(_0x26b64e,_0x1839fe,_0x4ebea9){var _0x502a4f=a371_0x272e70,_0x39540c='';if(_0x26b64e[_0x502a4f(0x292)]>0x0){for(var _0x5b1a1f=0x0;_0x5b1a1f<_0x26b64e[_0x502a4f(0x292)];_0x5b1a1f++){var _0xa82fd1='',_0x18f813=_0x26b64e[_0x5b1a1f]['ID'],_0x472605=_0x26b64e[_0x5b1a1f][_0x502a4f(0x166)],_0x13ec4e=_0x26b64e[_0x5b1a1f][_0x502a4f(0x1b7)],_0x43fe79=_0x26b64e[_0x5b1a1f][_0x502a4f(0x22c)],_0x2e4c72=_0x26b64e[_0x5b1a1f][_0x502a4f(0x266)][_0x502a4f(0x1b7)],_0x52f8af=_0x26b64e[_0x5b1a1f]['TaskPriority'],_0x116513=_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c6)],_0x5c7a6b=new Date(_0x116513),_0x3c4b2b='',_0x1b9cd5='';_0x5c7a6b=new Date(_0x5c7a6b);var _0x25e54a=new Date(),_0x42df35=Math[_0x502a4f(0x33a)](_0x25e54a[_0x502a4f(0x1cb)]()-_0x5c7a6b[_0x502a4f(0x1cb)]())/_0x25e54a,_0x3df248='';_0x116513!=null?(_0x116513=new Date(_0x116513),_0x116513=titanForWork[_0x502a4f(0x1a7)](_0x116513)):_0x116513=_0x502a4f(0x1a1);_0x472605!=null?(_0x472605=new Date(_0x472605),_0x472605=titanForWork[_0x502a4f(0x1a7)](_0x472605)):_0x472605=_0x502a4f(0x1a1);var _0xf663fa=_0x26b64e[_0x5b1a1f][_0x502a4f(0x1f5)],_0x32908d=_0x26b64e[_0x5b1a1f][_0x502a4f(0x310)];_0x32908d==_0x502a4f(0x331)?(_0xa82fd1=new Date(_0x26b64e[_0x5b1a1f]['CompletionDate']),_0xa82fd1=titanForWork[_0x502a4f(0x1a7)](_0xa82fd1)):_0xa82fd1='';var _0x67ed1c='';if(_0x26b64e[_0x5b1a1f][_0x502a4f(0x2b9)]!=null){var _0x67ed1c=_0x26b64e[_0x5b1a1f][_0x502a4f(0x2b9)][_0x502a4f(0x1b7)];_0x67ed1c==null&&(_0x67ed1c='');}var _0x4f0198='';if(_0x26b64e[_0x5b1a1f][_0x502a4f(0x2bc)]!=null){var _0x4f0198=_0x26b64e[_0x5b1a1f][_0x502a4f(0x2bc)][_0x502a4f(0x1b7)];_0x4f0198==null&&(_0x4f0198='');}var _0x111219='';_0x43fe79=='2'&&(_0x111219=_0x502a4f(0x32f)+_0x4f0198+_0x502a4f(0x315));_0x43fe79=='1'&&(_0x111219='<label\x20class=\x27m-0\x20b-400\x27>Module:</label><span\x20class=\x27ml-4\x20my-task-names\x27>'+_0x67ed1c+_0x502a4f(0x315));var _0x435ac6='',_0x32408f=_0x26b64e[_0x5b1a1f]['ProjectFullName'],_0x526707='';_0x32408f==null?(_0x435ac6=_0x502a4f(0x18e),_0x32408f=_0x502a4f(0x175)+_0x4f0198,_0x526707=_0x502a4f(0x1a5)+_0x4f0198+')'):(_0x435ac6='Project\x20task',_0x526707=_0x502a4f(0x1fe)+_0x32408f+')',_0x32408f=_0x502a4f(0x1cc)+_0x32408f);var _0x582ea5=_0x26b64e[_0x5b1a1f][_0x502a4f(0x2e9)];_0x582ea5==null&&(_0x582ea5='');var _0x2695c3=_0x26b64e[_0x5b1a1f]['DependencyCount'];(_0x2695c3==null||_0x2695c3==0x0)&&(_0x2695c3='');var _0x2c31e8='';if(_0x2695c3>0x0&&_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c1)]!=undefined){_0x2695c3=_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c1)][_0x502a4f(0x292)];for(depency=0x0;depency<_0x26b64e[_0x5b1a1f]['DependencyTo'][_0x502a4f(0x292)];depency++){_0x2c31e8+=_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c1)][depency]['Title']+',\x20';}_0x2c31e8=_0x2c31e8['substring'](0x0,_0x2c31e8[_0x502a4f(0x292)]-0x2);}var _0x2b5e95=_0x26b64e[_0x5b1a1f][_0x502a4f(0x166)],_0x4d64a6=_0x26b64e[_0x5b1a1f][_0x502a4f(0x2dc)],_0x1219be='';if(_0x4d64a6!=null){if(_0x4d64a6[_0x502a4f(0x292)]>0x0){var _0x1219be=_0x4d64a6[0x0][_0x502a4f(0x1b7)];for(assignto=0x0;assignto<_0x4d64a6[_0x502a4f(0x292)];assignto++){_0x3c4b2b+=_0x4d64a6[assignto]['Title']+',\x20';}_0x3c4b2b=_0x3c4b2b[_0x502a4f(0x271)](0x0,_0x3c4b2b['length']-0x2);}}var _0x44ddb8='';_0x4d64a6!=null&&(_0x4d64a6[_0x502a4f(0x292)]>0x1&&(_0x44ddb8=_0x502a4f(0x1c9)+_0x18f813+'\x27)>Group</button>'));var _0x4051f2=_spPageContextInfo['userId'],_0x14f60e='';if(_0x4d64a6!=null){var _0x14f60e=_0x4d64a6[_0x502a4f(0x320)](function(_0x399299){return _0x399299['ID'];})[_0x502a4f(0x291)](_0x4051f2),_0x43be4d='';if(_0x14f60e!=-0x1)var _0x43be4d='<button\x20type=\x27button\x27\x20class=\x27btn\x20btn-danger\x20custom-btn-two\x20custom-btn-two-danger\x20mt-16\x27\x20onclick=\x27timeSheetEntry('+_0x18f813+_0x502a4f(0x167);}var _0x25a966=_0x502a4f(0x2ce)+_spPageContextInfo[_0x502a4f(0x15a)]+_0x502a4f(0x1ba)+Logged_CompanyId+_0x502a4f(0x1a0)+window['btoa'](_0x18f813)+_0x502a4f(0x1b0)+window[_0x502a4f(0x1d2)](_0x502a4f(0x2cf))+_0x502a4f(0x29f)+_0x13ec4e+'</b></a>';_0x42df35>0x1&&_0x32908d=='Open'?_0x39540c+=_0x502a4f(0x214)+_0x502a4f(0x2b6)+_0x18f813+_0x502a4f(0x182)+'<td>'+_0x25a966+_0x502a4f(0x227)+_0x502a4f(0x242)+_0x32408f+_0x502a4f(0x226)+_0x502a4f(0x15f)+_0x13ec4e+_0x502a4f(0x1b9)+_0x502a4f(0x15f)+_0x526707+'<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27></td>'+_0x502a4f(0x27f)+_0x582ea5+'</p></td>'+_0x502a4f(0x28f)+_0x2e4c72+'</p>'+'<p\x20class=\x27m-0\x20font-12\x27>Date:\x20<span>\x20'+_0x472605+'</span></p>'+'</td>'+_0x502a4f(0x28f)+_0x1219be+_0x502a4f(0x35a)+_0x502a4f(0x1aa)+_0x44ddb8+_0x502a4f(0x1de)+_0x502a4f(0x1fd)+_0x502a4f(0x27f)+_0x3c4b2b+'</p></td>'+_0x502a4f(0x2f8)+_0x32908d+_0x502a4f(0x35a)+_0x502a4f(0x196)+_0x116513+_0x502a4f(0x1f0)+_0x502a4f(0x1cf)+_0x502a4f(0x1e4)+_0xf663fa+'%\x27></div></div></td>'+_0x502a4f(0x27f)+_0x26b64e[_0x5b1a1f][_0x502a4f(0x1b4)]+_0x502a4f(0x2d9)+'<td\x20class=\x27text-center\x27\x20style=\x27display:none;\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c6)]+_0x502a4f(0x2d9)+_0x502a4f(0x27f)+_0x116513+_0x502a4f(0x2d9)+_0x502a4f(0x27f)+_0x32908d+_0x502a4f(0x2d9)+_0x502a4f(0x27f)+_0x26b64e[_0x5b1a1f]['TaskPriority']+'</p></td>'+_0x502a4f(0x15b)+_0x2695c3+_0x502a4f(0x21e)+_0x502a4f(0x27f)+_0x2c31e8+_0x502a4f(0x2d9)+_0x502a4f(0x162):_0x39540c+=_0x502a4f(0x214)+_0x502a4f(0x2b6)+_0x18f813+_0x502a4f(0x182)+'<td>'+_0x25a966+'<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27>'+_0x502a4f(0x242)+_0x32408f+'</span></p></td>'+_0x502a4f(0x15f)+_0x13ec4e+'<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27></td>'+_0x502a4f(0x15f)+_0x526707+'<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27></td>'+_0x502a4f(0x27f)+_0x582ea5+_0x502a4f(0x2d9)+_0x502a4f(0x28f)+_0x2e4c72+'</p>'+_0x502a4f(0x2eb)+_0x472605+'</span></p>'+_0x502a4f(0x1fd)+_0x502a4f(0x28f)+_0x1219be+_0x502a4f(0x35a)+'<div\x20class=\x27text-center\x20mt-4\x20position-relative\x27>'+_0x44ddb8+_0x502a4f(0x1de)+_0x502a4f(0x1fd)+_0x502a4f(0x27f)+_0x3c4b2b+_0x502a4f(0x2d9)+_0x502a4f(0x2f8)+_0x32908d+'</p>'+'<p\x20class=\x27m-0\x20font-12\x27>Due:<span>'+_0x116513+_0x502a4f(0x1f0)+_0x502a4f(0x217)+'<div\x20class=\x27progress-bar\x20progress-bar-success\x27\x20role=\x27progressbar\x27\x20aria-valuenow=\x2740\x27\x20aria-valuemin=\x270\x27\x20aria-valuemax=\x27100\x27\x20style=\x27width:'+_0xf663fa+_0x502a4f(0x26f)+_0x502a4f(0x27f)+_0x26b64e[_0x5b1a1f][_0x502a4f(0x1b4)]+'</p></td>'+_0x502a4f(0x27f)+_0x26b64e[_0x5b1a1f][_0x502a4f(0x1c6)]+_0x502a4f(0x2d9)+_0x502a4f(0x27f)+_0x116513+'</p></td>'+'<td\x20class=\x27text-center\x27\x20style=\x27display:none;\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>'+_0x32908d+'</p></td>'+_0x502a4f(0x27f)+_0x26b64e[_0x5b1a1f][_0x502a4f(0x187)]+_0x502a4f(0x2d9)+_0x502a4f(0x15b)+_0x2695c3+_0x502a4f(0x21e)+_0x502a4f(0x27f)+_0x2c31e8+_0x502a4f(0x2d9)+_0x502a4f(0x162);}$('#'+_0x1839fe)[_0x502a4f(0x165)](_0x39540c);if(_0x4ebea9==_0x502a4f(0x339))TableConfiguration(),arrMySubordinate=_0x26b64e;else _0x4ebea9==_0x502a4f(0x321)?(TableConfigurationDeptProj(),arrDeptProjects=_0x26b64e):(TableConfigDeptEmp(),arrDeptEmployee=_0x26b64e);$('.taskchkIn')[_0x502a4f(0x2a9)](function(){var _0x4758c9=_0x502a4f;currentTab='';if($(_0x4758c9(0x241))[_0x4758c9(0x1ac)](_0x4758c9(0x2c7))[_0x4758c9(0x22d)]('id')==_0x4758c9(0x264)){currentTab=_0x4758c9(0x299);if(this['checked']==!![])$('#'+currentTab+_0x4758c9(0x22b))[_0x4758c9(0x292)]==0x1&&(arrTaskParentDeptProj=[]),arrTaskParentDeptProj[_0x4758c9(0x221)](this[_0x4758c9(0x1c0)]);else{var _0x2ba96d=this[_0x4758c9(0x1c0)];arrTaskParentDeptProj=arrTaskParentDeptProj[_0x4758c9(0x322)](function(_0x237f89){return _0x237f89!==_0x2ba96d;});}}else{if($(_0x4758c9(0x241))[_0x4758c9(0x1ac)](_0x4758c9(0x2c7))[_0x4758c9(0x22d)]('id')==_0x4758c9(0x24e)){currentTab=_0x4758c9(0x2e7);if(this[_0x4758c9(0x18f)]==!![])$('#'+currentTab+_0x4758c9(0x22b))[_0x4758c9(0x292)]==0x1&&(arrTaskParentDeptEmp=[]),arrTaskParentDeptEmp[_0x4758c9(0x221)](this['value']);else{var _0x2ba96d=this[_0x4758c9(0x1c0)];arrTaskParentDeptEmp=arrTaskParentDeptEmp['filter'](function(_0x8e78ea){return _0x8e78ea!==_0x2ba96d;});}}else{currentTab=_0x4758c9(0x2a2);if(this['checked']==!![])$('#'+currentTab+'\x20.taskchkIn:checked')[_0x4758c9(0x292)]==0x1&&(arrTaskMySubordinate=[]),arrTaskMySubordinate[_0x4758c9(0x221)](this[_0x4758c9(0x1c0)]);else{var _0x2ba96d=this[_0x4758c9(0x1c0)];arrTaskMySubordinate=arrTaskMySubordinate[_0x4758c9(0x322)](function(_0x48337b){return _0x48337b!==_0x2ba96d;});}}}});}else _0x39540c=_0x502a4f(0x2cb),$('#'+_0x1839fe)[_0x502a4f(0x165)](_0x39540c);currentDlg!=''&&currentDlg[_0x502a4f(0x216)](),waitingDialog[_0x502a4f(0x2a1)]();}function taskAssignToUsersModal(_0x39877c){var _0x2ed13b=a371_0x272e70;$(_0x2ed13b(0x27d))[_0x2ed13b(0x164)]('');var _0x53f146=AllTaskInbox['filter'](function(_0x806f54){return _0x806f54['ID']==_0x39877c;}),_0x4abf83=[],_0x1a6e31='';if(_0x53f146[_0x2ed13b(0x292)]>0x0){var _0x6ae035=_0x53f146[0x0][_0x2ed13b(0x2dc)];for(var _0xf12415=0x0;_0xf12415<_0x6ae035['length'];_0xf12415++){var _0x103068=_0x2ed13b(0x34a)+_0x6ae035[_0xf12415]['EMail']+_0x2ed13b(0x2c8)+Logged_CompanyId+'\x27\x20';$[_0x2ed13b(0x186)](getLimitedEmployeess('Employees',_0x103068))[_0x2ed13b(0x20f)](function(_0xb4f63a){var _0xff6e09=_0x2ed13b;if(_0xb4f63a[_0xff6e09(0x292)]>0x0){var _0xd5b412=_0xb4f63a[0x0];_0xd5b412[_0xff6e09(0x22f)][_0xff6e09(0x292)]>0x0?attachmentUrl=_0xd5b412[_0xff6e09(0x22f)][0x0][_0xff6e09(0x219)]:attachmentUrl=_spPageContextInfo[_0xff6e09(0x15a)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0xd5b412['LogonName'][_0xff6e09(0x346)]),_0x1a6e31+=_0xff6e09(0x20d),_0x1a6e31+=_0xff6e09(0x285)+attachmentUrl+_0xff6e09(0x29e),_0x1a6e31+=_0xff6e09(0x28a)+_0xd5b412[_0xff6e09(0x2fa)]+'</span></h4>',_0x1a6e31+=_0xff6e09(0x288)+_0xd5b412[_0xff6e09(0x28e)]+_0xff6e09(0x337)+_0xd5b412[_0xff6e09(0x1d1)][_0xff6e09(0x1b7)]+_0xff6e09(0x1f0),_0x1a6e31+=_0xff6e09(0x33d)+_0x6ae035[_0xf12415][_0xff6e09(0x346)]+_0xff6e09(0x268);}});}$('#assignToUserList')['append'](_0x1a6e31);}$(_0x2ed13b(0x2c0))[_0x2ed13b(0x2f6)]('show');}function ShowPieChartInbox(){var _0x32a7d7=a371_0x272e70,_0x211539=$[_0x32a7d7(0x347)](),_0x983d5e=[],_0x587ec1=[],_0x56c067=[],_0x328273=[],_0x431264=[],_0x445823='',_0x113e29='';$(_0x32a7d7(0x1ef))[_0x32a7d7(0x2c6)]();if(arrAllTaskUserWise['length']>0x0){$(_0x32a7d7(0x1ef))[_0x32a7d7(0x1f2)](),$(_0x32a7d7(0x2bb))[_0x32a7d7(0x2a1)](),_0x983d5e=arrAllTaskUserWise[_0x32a7d7(0x322)](function(_0x47f257){var _0xc91375=_0x32a7d7;return _0x47f257['CurrentPhase'][_0xc91375(0x313)]()==_0xc91375(0x235);}),_0x587ec1=arrAllTaskUserWise[_0x32a7d7(0x322)](function(_0x28bdec){var _0x801d6f=_0x32a7d7;return _0x28bdec[_0x801d6f(0x310)][_0x801d6f(0x313)]()=='open';}),_0x56c067=arrAllTaskUserWise[_0x32a7d7(0x322)](function(_0x278bbf){var _0x490800=_0x32a7d7;return _0x278bbf[_0x490800(0x310)][_0x490800(0x313)]()==_0x490800(0x30e);}),_0x328273=arrAllTaskUserWise['filter'](function(_0x18ba8a){var _0x11f6d0=_0x32a7d7;return _0x18ba8a[_0x11f6d0(0x310)]['toLowerCase']()=='cancelled';}),_0x431264=arrAllTaskUserWise[_0x32a7d7(0x322)](function(_0x5bdc33){var _0x53c9e2=_0x32a7d7;return _0x5bdc33['CurrentPhase'][_0x53c9e2(0x313)]()==_0x53c9e2(0x216);});_0x983d5e['length']==0x0&&_0x587ec1[_0x32a7d7(0x292)]==0x0&&_0x56c067['length']==0x0&&_0x328273[_0x32a7d7(0x292)]==0x0&&_0x431264['length']==0x0&&$(_0x32a7d7(0x1ef))[_0x32a7d7(0x2a1)]();var _0x2e0711=new d3pie(_0x32a7d7(0x212),{'header':{'title':{'text':'','fontSize':0x1e}},'data':{'content':[{'label':_0x32a7d7(0x331),'value':_0x983d5e[_0x32a7d7(0x292)],'valueType':_0x32a7d7(0x23d)},{'label':_0x32a7d7(0x280),'value':_0x587ec1[_0x32a7d7(0x292)],'valueType':_0x32a7d7(0x23d)},{'label':_0x32a7d7(0x2a6),'value':_0x56c067[_0x32a7d7(0x292)],'valueType':_0x32a7d7(0x23d)},{'label':_0x32a7d7(0x26e),'value':_0x328273['length'],'valueType':_0x32a7d7(0x23d)},{'label':_0x32a7d7(0x323),'value':_0x431264[_0x32a7d7(0x292)],'valueType':'percentage'}]},'callbacks':{'onload':null,'onMouseoverSegment':null,'onMouseoutSegment':null,'onClickSegment':function(_0x110c98,_0x5e62ab){clickInboxChart(_0x110c98);}}});}else $(_0x32a7d7(0x1ef))[_0x32a7d7(0x2a1)](),$(_0x32a7d7(0x2bb))[_0x32a7d7(0x1f2)]();}function GetTaskInboxCount(){var _0x162ad1=a371_0x272e70,_0x4bc460=0x0,_0x26ac21=0x0,_0x4b809e=new Date();_0x4b809e=_0x4b809e[_0x162ad1(0x2b2)](0x0,0x0,0x0,0x0),_0x4b809e=new Date(_0x4b809e);for(var _0x21bebe=0x0;_0x21bebe<arrLimitTaskInbox[_0x162ad1(0x292)];_0x21bebe++){var _0x4b1846=new Date(moment(arrLimitTaskInbox[_0x21bebe][_0x162ad1(0x1c6)][_0x162ad1(0x306)]('T')[0x0])['format'](_0x162ad1(0x2ad)));_0x4b1846[_0x162ad1(0x254)](_0x4b1846[_0x162ad1(0x2c9)]()),_0x4b1846=new Date(_0x4b1846),arrLimitTaskInbox[_0x21bebe][_0x162ad1(0x310)]=='Open'&&(_0x4b1846>=_0x4b809e?_0x4bc460++:_0x26ac21++);}$(_0x162ad1(0x2e3))[_0x162ad1(0x1b3)](_0x26ac21),$(_0x162ad1(0x2a3))['text'](_0x4bc460);}function a371_0x3cc2(){var _0x14dad6=['valueAsDate','currentpageDeptProj','columns','oddselected','currentpageDeptEmp','appendTo','#TotalOverdue','<div\x20class=\x22d-flex\x20align-items-center\x20user-detail-panel\x22>','\x20.taskchkIn','done','.blankcircleDeptEmp','userId','pie','#DueDeptEmp','<tr>','evenrow','close','<div\x20class=\x27progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x27>','0px','ServerRelativeUrl','ProjectCode','height','tableExport','#txtTaskNotify','</h4></td>','#Inbox','DD/MM/YYYY','push','#WorkTypeOfProject','#DueDateAsTask','<td><p\x20class=\x27pjecname\x27>','Loading\x20clients...','</span></p></td>','<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27>','#txtPriority','\x22\x20alt=\x22EmpImage\x22>','#RecentDeptEmp','\x20.taskchkIn:checked','TaskType','attr','#txtDetails','AttachmentFiles','#SeeMoreFilterDeptEmp','ProjectFullName','#SelectedEmpData','.ddlDeptHOD','<div\x20class=\x22user-details-panel\x20mt3\x20ml10\x22>','completed','#PriorityDeptProj','startInrecord','promise','totalInProj','#ShowItemsDeptEmp','null','ModalDialog','percentage','totalrecords','strings.js','#WorkTypeOfProjectOutbox','ul#myTabs','<span\x20class=\x27ml-4\x20my-task-names\x27>','css','pageDropDownDeptEmp','.blankcircleDeptProj','each','#ShowItemsInbox','TempTableQuestions','mailto:','val','addClass','#dependenciesmodl','mainDivAllDeptProj','ParentDeptEmp','results','option','<option\x20value=\x22All\x22>All</option>','isSame','tablenavDeptEmp','setDate','endInrecord','\x27);>','evenselected','/_api/web/lists/getbytitle(\x27CategoryMaster\x27)/items?$select=CategoryType,CatogeryName&$orderby=CatogeryName\x20asc&$filter=CategoryType\x20eq\x20\x27Work\x20Type\x27','removeClass','TaskOverdue','#ProjectInboxSearch','ProjectID','\x22\x20aria-expanded=\x22false\x22></i>','userEmail','totalInrecords','fadeIn','forEach','MM\x20dd,\x20yy','label','ParentDeptProj','#SelectedEmpName','AssignedBy','Loading\x20projects...','</span></p></div></div>','<li\x20class=\x22panel\x20active\x22><div\x20class=\x22my-sub-arrow\x22>','<iframe>','#Clientid','?$top=5000&$select=ID,OpenTasksCount,OverdueCount,UserId/EMail&$expand=UserId&$filter=UserId/EMail\x20eq\x20\x27','selected','Cancelled','%\x27></div></div></td>','9JcrGFA','substring','sorter','.selectAllIn','#SeeMoreDeptEmp','ProjectName','application/json;odata=verbose','27955QWGFJc','#btnSelectCustomer','#ddlDeptEmp','#ProjectInTables','Departmental-Projects','End\x20date\x20should\x20be\x20in-between\x20task\x22s\x20start\x20date\x20and\x20due\x20Date.','#assignToUserList','reject','<td\x20class=\x27text-center\x27\x20style=\x27display:none;\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>','Open','totalpagesDeptEmp','mainDivAllDeptEmp','EmployeeTaskDetails','#TempTableDeptProj\x20.selectAllIn','<img\x20src=','198GYOTys','<div\x20class=\x22user-details-panel\x20mt3\x20ml10\x22><h4\x20class=\x22tab-user-name\x22><span\x20class=\x22mr-4\x20ellipsis-2\x22\x20onclick=getSelectedEmpTasks(\x27','<p\x20class=\x22tab-user-deg\x22><span>','trigger','<div\x20class=\x22user-details-panel\x20mt3\x20ml10\x22><h4\x20class=\x22tab-user-name\x22><span>','#SeeMoreFilterDeptProj','<div\x20id=\x22Subrdinate','#SubordinatesList','Designation','<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20ellipsis-2\x27>','change','indexOf','length','dateFormat','ProjectModules','#TotalItemscount','#pplassigntoInbox_TopSpan_ResolvedList','\x27\x20value=\x27','#otherCustomerSearch','TempTableDeptProj','input[name=\x22TaskInListchk\x22]:checked','?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/EMail,LogonName/ID,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName\x20asc&$filter=ManagerLoginName/EMail\x20eq\x20\x27','</option>','Recent\x20Task','\x20alt=\x22EmpImage\x22>','\x27><b\x20class=\x27ellipsis-2\x27>','Projects','hide','TempTableMySubordinate','#TaskPending','Kindly\x20select\x20any\x20task\x20first.','SendNotiPicker','Hold','taskIn','.PendingTask','click','date','ProjectTeamDetails','columnsDeptEmp','MM/DD/YYYY','ProjectDetails','\x27&$top=5000&$orderby=Title\x20asc','OpenTasksCount','#mainDivAllDeptProj','setHours','Filtering\x20projects...','\x27></td>','prop','<td\x20class=\x27text-center\x20vertical-align-middle\x27><label\x20class=\x27checkbox-inline\x20hpx-20\x27><input\x20type=\x27checkbox\x27\x20value=\x27','false','#__REQUESTDIGEST','Module','totalpagesDeptProj','.blankcircle','ClientID','endrecordDeptProj','/_api/web/lists/getbytitle(\x27','?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/EMail,LogonName/ID,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName\x20asc&$filter=LogonName/EMail\x20eq\x20\x27','#taskGroup1','DependencyToId','#ddlDeptProj','Live',',\x20\x27','#ProjectModule','empty','li.active','\x27\x20and\x20Company/Id\x20eq\x20\x27','getDate','12zZDRVS','<tr><td\x20colspan=7\x20style=\x27text-align:\x20center\x27>No\x20record\x20found!!</td></tr>','log','#WorkTypeOfProject\x20option','<a\x20class=\x27task-name-box\x27\x20href=\x27javascript:void(0);\x27\x20onclick=\x27OpenIframeTask(this);\x27\x20name=\x27','False','...','#btnAddDependency','#TaskOverdueDeptProj','setFullYear','tablenavDeptProj','\x22\x20class=\x22panel-collapse\x20collapse\x20in\x22\x20aria-expanded=\x22true\x22><div\x20class=\x22panel-body\x20p0\x22>','head','\x27)/items?$select=ID,Title,Project/ID,Project/ProjectName&$expand=Project&$filter=\x20ProjectId\x20eq\x20\x27','#tablelocation','</p></td>','TaskPending','#ParentDeptEmp','TaskAssignTo','NotifyByMail','1684837ltJWYV','9RtoZIN','#TotalItemscountDeptEmp','LogonName','#ddlInboxProject','#TaskOverdue','#SelectedEmpEmail','100%','<div\x20class=\x22\x20inner-collapse-panel\x22><div\x20class=\x22panel-group\x22>','TempTableDeptEmp','columnsInbox','Worktype','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status\x20eq\x20(\x27','<p\x20class=\x27m-0\x20font-12\x27>Date:\x20<span>\x20','attributes','#DeptsInboxProject','error','format','.taskchkIn','collapsed','columnsDeptProj','#txtFilterStatusInbox\x20option','</div></div></div>','/_layouts/15/userphoto.aspx?accountname=','modal','.FilterInbox','<td\x20class=\x27text-center\x27><p\x20class=\x27m-0\x20mb-10\x27>','#ddlInboxClient','FullName','#ShowTotalItemsInbox','#ProjectSort','10997390boxTWq','select#StatusInProj\x20option:selected','#doc-viewer','asc','<p\x20class=\x22tab-user-email\x20ellipsis-2\x22><span\x20onclick=\x22OpenEmail(this);\x22>','#TotalItemscountDeptProj','General\x20Task','Modified','Status','split','type','textContent','open','replace','DepartmentId','Departmental-Employees','pageDropDownInbox','hold','<a\x20href=\x22javscript:void(0);\x22>Departmental\x20Projects</a>','CurrentPhase','\x22\x20Selected>','toString','toLowerCase','#AttachmentView','</span>','#Subrdinate','#chkIsMandatory','selectedrow','sorterDept','.OverDueTask','?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/ID,LogonName/EMail,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName\x20asc&$filter=ManagerLoginName/EMail\x20eq\x20\x27','<i\x20class=\x22fa\x20fa-angle-right\x20my-sub-arrow-icon\x20collapsed\x22\x20onclick=\x22getSubordinatesOnClick(','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=DepartmentName\x20eq\x20(\x27','PieChart','PredecessorTask,SuccessorTask,ClientID,Module,Author,AssignedBy,AttachmentFiles,TaskAssignTo,DependencyTo,ProjectID','map','DeptProjects','filter','Close','<option\x20value=\x22','</span></td>','tableInnav','</div></div></td>','csv','#SeeMoreDeptProj','GET','.liNotifySub','.TaskExport','#FilterInProject','#Manager','<label\x20class=\x27m-0\x20b-400\x27>Client:</label><span\x20class=\x27ml-4\x20my-task-names\x27>','?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=ID\x20eq\x20\x27','Completed','pplassigntoInbox','.MISTab','<tr><td><input\x20type=\x27radio\x27\x20class=\x27ProjectInchkList\x27\x20name=\x27TaskInListchk\x27\x20title=\x27','OverdueCount','.StartDependecyDate','\x20</span><span\x20class=\x22ml5\x20mr5\x22>|</span><span>\x20','#taskIn','MySubordinate','round','#tableInLocation','<a\x20href=\x22javascript:void(0);\x22><div\x20class=\x22d-flex\x20align-items-center\x22><img\x20src=\x22','<p\x20class=\x22tab-user-email\x22><span>','</span>,\x20<span\x20class=\x22color-red\x20ml-4\x22\x20id=\x22OverDueCOunt','responseJSON','#searchInProject','holdcolor','#DetailsArea','#TaskPendingDeptProj','PieDeptEmp',');\x22\x20data-target=\x22#Subrdinate','EMail','Deferred','Due\x20Date','sp.ui.dialog.js','?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,LogonName/EMail,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status\x20eq\x20\x27Active\x27\x20and\x20LogonName/EMail\x20eq\x20\x27','</p><span\x20class=\x27spanmg\x27>Ref:</span><span\x20class=\x27spanmg\x20projectlg\x27>','concat','\x27)\x20and\x20ID\x20eq\x20\x27','CatogeryName','#mainDivAllAnnouncements','\x22\x20aria-expanded=\x22true\x22></i>','Add','</span><span\x20class=\x22d-flex\x20color-black\x22\x20style=\x22display:\x20none\x20!important;\x22><span\x20id=\x22PendingCount','PieDeptProj','\x27)>','</p><span\x20class=\x27spanmg\x27>Status:</span>\x20<span\x20class=\x27spanmg\x20','209074JTthNN','#txtTitle','\x22\x20onclick=\x22getParentSubrdinate(','<option\x20value=\x27All\x27>All</option>','</p>','Customer','</span></p></div></div></a></div></li>','totalpages','Kindly\x20enter\x20message\x20first','activnating','#ShowTotalItemsDeptEmp','webAbsoluteUrl','<td\x20class=\x27text-center\x27><h4\x20class=\x27m-0\x27>','PageLoad','DependencyCount','sorterDeptEmp','<td\x20style=\x27display:none;\x27>','#PieDeptEmp','Priority','</tr>','location','html','append','StartDate',')\x27>Fill</button>','415707euQkwC','<a\x20href=\x22javscript:void(0);\x22>Departmental\x20Employees</a>','<br\x20/>Please\x20wait!!','totalrecordsDeptProj','#myTaskInboxChip','All\x20the\x20dependencies\x20are\x20updated\x20for\x20selected\x20task(s).','#mainDivAllDeptEmp','TaskDependencies','Generating\x20excelsheet...','<img\x20src=\x22','#RecentDeptProj','3712499oMqxNn','#UserAllProject','<b>Client:</b>\x20','<div\x20class=\x22d-flex\x20align-items-center\x20side-bar-icon-center\x22>','#Notificationlist','All','\x27\x20and\x20Status\x20eq\x20\x27Active\x27\x20and\x20Company/Id\x20eq\x20\x27','#TaskCountDeptProj','\x27);openToggle(this,\x20','4812904bObdTC','#btnOutSelectCustomer','#PieDeptProj','</a></div></div></h4></div>','DeptEmps','panel\x20panel-default','\x27\x20class=\x27taskchkIn\x27></label></td>','ManagerName','#fromDatetaskIn','\x27)\x20and\x20DepartmentName\x20eq\x20(\x27','when','TaskPriority','\x27)/items/','#PrioritySub','#txtFilterStatusInbox','TableInProjects','#StartDateAsTask','#DueSub','General\x20task','checked','Employees','title','disabled','input[name=\x22Customer\x22]:checked','500','ajax','<p\x20class=\x27m-0\x20font-12\x27\x20style=\x27font-weight:\x20bold;color:\x20red;\x27>Due:<span>','.DueDependecyDate','getElementById','table','#TotalTaskCountDeptProj','#TempTableDeptEmp\x20.taskchkIn','SOD','#ShowItemsDeptProj','#ShowTotalItemsDeptProj','loadMultiple','&TaskId=','N/A','aria-expanded','resolve','#TaskNameSub','Client\x20(','.NoRecordFound','ShowCommonStandardDateFormat','oddrow','\x27)and\x20ID\x20eq\x20\x27','<div\x20class=\x27text-center\x20mt-4\x20position-relative\x27>','datepicker','find','pageDropDownDeptProj','includes','mainDivAllAnnouncements','&EditMode=','#TempTableDeptEmp\x20.selectAllIn','mainDivAreaClientmaster','text','Created','AssaginToDependency','<p\x20class=\x22tab-user-deg\x22><span\x20class=\x22ellipsis-2\x22>','Title','showWaitScreenWithNoClose','<p\x20class=\x27m-0\x20mt-4\x20ellipsis-1\x27></td>','/Pages/TaskDetails.aspx?WebAppId=','Terminatedcolor','</span></span></h4>','#TotalPending','EndDate','<i\x20class=\x22fa\x20fa-angle-right\x20my-sub-arrow-icon\x20collapsed\x22\x20data-target=\x22#Subrdinate','value','DependencyTo','Inactive','#TaskCountDeptEmp','startrecordDeptProj','livcolor','DueDate','data','\x22\x20title=\x22','<button\x20type=\x27button\x27\x20class=\x27btn\x20custom-btn\x20custom-btn-two\x20mt10\x27\x20onclick=taskAssignToUsersModal(\x27','#TempTableQuestions\x20.selectAllIn','getTime','<b>Project:</b>\x20','<div\x20class=\x22panel\x20panel-default\x22\x20id=\x22Manager','currentInProj','<div\x20class=\x27progress\x20custom-progress\x20progress-danger\x20m-0\x20mt-4\x27>','desc','Department','btoa','<a\x20class=\x22cursor-pointer\x22\x20data-toggle=\x22pill\x22>','#pageDropDownDeptProj','#TotalTaskCountDeptEmp','isAfter','An\x20error\x20occurred\x20in\x20ReadInDepartment\x20method.','DepartmentName',');\x22\x20aria-expanded=\x22false\x22></i>','\x22\x20class=\x22inner-collapse-panel-mobile\x20collapse\x20in\x22\x20aria-expanded=\x22true\x22\x20style=\x22\x22>','true','#pageDropDownDeptEmp','<td><div\x20class=\x27managersec\x27><div\x20class=\x27mangimg\x27><img\x20src=','</div>','\x20alt=\x27\x27></div><div\x20class=\x27managerdetails\x27>','Subordinate-Tasks_','slice','EmployeeTaskCounter','.projectDiv','<div\x20class=\x27progress-bar\x20progress-bar-danger\x27\x20role=\x27progressbar\x27\x20aria-valuenow=\x2740\x27\x20aria-valuemin=\x270\x27\x20aria-valuemax=\x27100\x27\x20style=\x27width:','\x22><div\x20class=\x22panel-heading\x22><h4\x20class=\x22panel-title\x22><div\x20class=\x22my-sub-arrow\x22>','.removing_box','Task\x20Name','select#DeptsInboxProject\x20option:selected','Start\x20date\x20should\x20be\x20in-between\x20task\x22s\x20start\x20date\x20and\x20due\x20Date.','<option\x20value=\x27','\x20|\x20','#DiplayTaskCount','#overlaysearch','<span\x20class=\x22d-flex\x20color-black\x22\x20style=\x22display:\x20none\x20!important;\x22><span\x20id=\x22PendingCount','#pie','</span></p>','.ClientDiv','show','?$top=5000&$select=Id,Title,WebPartName,Contributors/EMail,Contributors/Id,Contributors/Title,Company/Id,Department/Id,Department/Title&$expand=Contributors,Company,Department&$filter=Contributors/EMail\x20eq\x20\x27','#SeeMoreFilterInbox','CompletionPersent','Clients','isBefore','#SeeMoreInbox','#TotalTaskCount','?$select=*,TeamMember/EMail&$top=5000&$expand=TeamMember&$filter=TeamMember/EMail\x20eq\x20(\x27','#TaskPendingDeptEmp','#toDatetaskIn','</td>','Project\x20(','#ParentDeptProj','#TempTableDeptProj\x20.taskchkIn','#searchInClient','name','28bEcLIN','#pageDropDownInbox','cancelled'];a371_0x3cc2=function(){return _0x14dad6;};return a371_0x3cc2();}function GetDeptProjCount(){var _0x1305c0=a371_0x272e70,_0x1c5840=0x0,_0x145c8d=0x0,_0x530056=new Date();_0x530056=_0x530056[_0x1305c0(0x2b2)](0x0,0x0,0x0,0x0),_0x530056=new Date(_0x530056);for(var _0x28c4d=0x0;_0x28c4d<arrLimitTaskDeptProj[_0x1305c0(0x292)];_0x28c4d++){var _0x22691b=new Date(moment(arrLimitTaskDeptProj[_0x28c4d][_0x1305c0(0x1c6)][_0x1305c0(0x306)]('T')[0x0])[_0x1305c0(0x2ef)](_0x1305c0(0x2ad)));_0x22691b[_0x1305c0(0x254)](_0x22691b['getDate']()),_0x22691b=new Date(_0x22691b),arrLimitTaskDeptProj[_0x28c4d][_0x1305c0(0x310)]==_0x1305c0(0x280)&&(_0x22691b>=_0x530056?_0x1c5840++:_0x145c8d++);}$(_0x1305c0(0x2d2))[_0x1305c0(0x1b3)](_0x145c8d),$(_0x1305c0(0x343))[_0x1305c0(0x1b3)](_0x1c5840);}function GetDeptEmpCount(){var _0x5edd8f=a371_0x272e70,_0x3a6c52=0x0,_0x335c97=0x0,_0x1ded7f=new Date();_0x1ded7f=_0x1ded7f[_0x5edd8f(0x2b2)](0x0,0x0,0x0,0x0),_0x1ded7f=new Date(_0x1ded7f);for(var _0xf9a872=0x0;_0xf9a872<arrLimitTaskDeptEmp['length'];_0xf9a872++){var _0x21959c=new Date(moment(arrLimitTaskDeptEmp[_0xf9a872][_0x5edd8f(0x1c6)][_0x5edd8f(0x306)]('T')[0x0])['format'](_0x5edd8f(0x2ad)));_0x21959c[_0x5edd8f(0x254)](_0x21959c[_0x5edd8f(0x2c9)]()),_0x21959c=new Date(_0x21959c),arrLimitTaskDeptEmp[_0xf9a872][_0x5edd8f(0x310)]==_0x5edd8f(0x280)&&(_0x21959c>=_0x1ded7f?_0x3a6c52++:_0x335c97++);}$('#TaskOverdueDeptEmp')[_0x5edd8f(0x1b3)](_0x335c97),$(_0x5edd8f(0x1fb))[_0x5edd8f(0x1b3)](_0x3a6c52);}function bindAllWorkType(){var _0x5a33c2=a371_0x272e70;$(_0x5a33c2(0x222))['empty']();var _0xa7f0e3=_spPageContextInfo['webAbsoluteUrl']+_0x5a33c2(0x258);$[_0x5a33c2(0x195)]({'url':_0xa7f0e3,'headers':{'Accept':_0x5a33c2(0x276)},'async':![],'success':function(_0x2a1859){var _0x15306c=_0x5a33c2;$(_0x15306c(0x251))[_0x15306c(0x20b)]('#WorkTypeOfProject'),$(_0x15306c(0x251))[_0x15306c(0x20b)](_0x15306c(0x240));for(var _0x370671=0x0;_0x370671<_0x2a1859['d'][_0x15306c(0x24f)][_0x15306c(0x292)];_0x370671++){$(_0x15306c(0x222))[_0x15306c(0x165)](_0x15306c(0x324)+_0x2a1859['d'][_0x15306c(0x24f)][_0x370671][_0x15306c(0x34e)]+'\x22>'+_0x2a1859['d']['results'][_0x370671][_0x15306c(0x34e)]+'</option>');}},'myError':function(_0x431e86){var _0x108d94=_0x5a33c2;waitingDialog[_0x108d94(0x2a1)]();}});}function CurrentProjectModule(_0x338818){var _0xf264f=a371_0x272e70;$(_0xf264f(0x2c5))['attr'](_0xf264f(0x192),![]),$('#ProjectModule')[_0xf264f(0x2c6)](),$('<option\x20value=\x22All\x22>All</option>')[_0xf264f(0x20b)](_0xf264f(0x2c5));var _0x28f35a=_0xf264f(0x294),_0xdaabce=_spPageContextInfo[_0xf264f(0x15a)]+_0xf264f(0x2be)+_0x28f35a+_0xf264f(0x2d7)+_0x338818+'\x27';$['ajax']({'url':_0xdaabce,'type':'get','headers':{'Accept':_0xf264f(0x276)},'success':function(_0x1c19fc){var _0x1403ad=_0xf264f,_0x13b717='',_0x571f46=_0x1c19fc['d'][_0x1403ad(0x24f)];$[_0x1403ad(0x246)](_0x571f46,function(_0x376d74,_0x16ed8d){var _0x3117ec=_0x1403ad;_0x13b717+=_0x3117ec(0x1ea)+_0x16ed8d['ID']+'\x27>'+_0x16ed8d[_0x3117ec(0x1b7)]+_0x3117ec(0x29c);}),$(_0x1403ad(0x2c5))[_0x1403ad(0x165)](_0x13b717);},'error':function(_0x367db1){var _0xc6e1b6=_0xf264f;console[_0xc6e1b6(0x2cc)](_0x367db1[_0xc6e1b6(0x33f)][_0xc6e1b6(0x2ee)]);}});}function MutipleBaseFilter(_0x1857c4){var _0x3cea62=a371_0x272e70,_0x192930=[],_0x2d6632=[];if($(_0x3cea62(0x241))[_0x3cea62(0x1ac)](_0x3cea62(0x2c7))[_0x3cea62(0x22d)]('id')=='ParentDeptProj')$('#SeeMoreDeptProj')[_0x3cea62(0x2a1)](),$(_0x3cea62(0x28b))[_0x3cea62(0x1f2)](),arrFilterDeptProj=[],_0x2d6632=arrLimitTaskDeptProj[_0x3cea62(0x322)](function(_0x51e225){return _0x51e225;});else $(_0x3cea62(0x241))[_0x3cea62(0x1ac)](_0x3cea62(0x2c7))[_0x3cea62(0x22d)]('id')==_0x3cea62(0x24e)?($('#SeeMoreDeptEmp')[_0x3cea62(0x2a1)](),$(_0x3cea62(0x230))['show'](),arrFilterDeptEmp=[],_0x2d6632=arrLimitTaskDeptEmp[_0x3cea62(0x322)](function(_0x434a0b){return _0x434a0b;})):($('#SeeMoreInbox')[_0x3cea62(0x2a1)](),$('#SeeMoreFilterInbox')[_0x3cea62(0x1f2)](),arrFilterDataBind=[],_0x2d6632=arrAllTaskUserWise[_0x3cea62(0x322)](function(_0x2f894c){return _0x2f894c;}));var _0x486487='',_0x119d21='',_0x8b1d34='',_0x74f368='',_0x4200e0='',_0x1652df=[];$(_0x3cea62(0x296))[_0x3cea62(0x1b3)]()!=''?getUserInformation(_0x3cea62(0x332)):assignByEmail='';var _0x378bda=$(_0x3cea62(0x184))['val']();_0x378bda!=''&&(_0x378bda=moment(_0x378bda)[_0x3cea62(0x2ef)](_0x3cea62(0x2ad)));var _0x3f90bc=$(_0x3cea62(0x1fc))[_0x3cea62(0x24a)]();_0x3f90bc!=''&&(_0x3f90bc=moment(_0x3f90bc)[_0x3cea62(0x2ef)](_0x3cea62(0x2ad)));if(_0x378bda>_0x3f90bc)return alert('Assigned\x20Date\x20From\x20is\x20greater\x20than\x20Assigned\x20Date\x20To'),![];_0x192930=_0x2d6632[_0x3cea62(0x322)](function(_0x2d48cb,_0x1915d8){var _0x2aadbf=_0x3cea62;_0x74f368='';if($('#UserAllProject')['val']()!=_0x2aadbf(0x178)){if($(_0x2aadbf(0x174))[_0x2aadbf(0x24a)]()=='General\x20Task')var _0x52b134=null,_0x2f2ca5=_0x52b134==_0x2aadbf(0x178)?_0x2d48cb['ProjectFullName']!='':_0x2d48cb[_0x2aadbf(0x231)]==_0x52b134;else{if($(_0x2aadbf(0x2e2))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x2f2ca5=_0x52b134==_0x2aadbf(0x178)?_0x2d48cb['ProjectName']!='':_0x2d48cb[_0x2aadbf(0x275)]==$(_0x2aadbf(0x2e2))['val']();else var _0x52b134=null,_0x2f2ca5=_0x52b134==_0x2aadbf(0x178)?_0x2d48cb[_0x2aadbf(0x231)]!='':_0x2d48cb[_0x2aadbf(0x231)]!=_0x52b134;}}else var _0x52b134=_0x2aadbf(0x178),_0x2f2ca5=_0x52b134==_0x2aadbf(0x178)?_0x2d48cb[_0x2aadbf(0x231)]!='':_0x2d48cb[_0x2aadbf(0x231)]==_0x52b134;if($(_0x2aadbf(0x2c5))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x1e6bca=$(_0x2aadbf(0x2c5))[_0x2aadbf(0x24a)]();else var _0x1e6bca=_0x2aadbf(0x178);if($(_0x2aadbf(0x2f9))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x13865c=$(_0x2aadbf(0x2f9))['val']();else var _0x13865c=_0x2aadbf(0x178);if($(_0x2aadbf(0x222))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x20bb59=$('#WorkTypeOfProject')['val']();else var _0x20bb59=_0x2aadbf(0x178);if($(_0x2aadbf(0x228))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x356836=$(_0x2aadbf(0x228))[_0x2aadbf(0x24a)]();else var _0x356836=_0x2aadbf(0x178);if($(_0x2aadbf(0x18a))[_0x2aadbf(0x24a)]()!=_0x2aadbf(0x178))var _0x5addf0=$(_0x2aadbf(0x18a))[_0x2aadbf(0x24a)]();else var _0x5addf0=_0x2aadbf(0x178);if($(_0x2aadbf(0x338))[_0x2aadbf(0x24a)]()!=null&&$('#taskIn')['val']()!=''){var _0x136584=$('#taskIn')[_0x2aadbf(0x24a)](),_0x2ccf74=new Date($(_0x2aadbf(0x338))[_0x2aadbf(0x24a)]())[_0x2aadbf(0x2b2)](0x0,0x0,0x0,0x0);_0x2ccf74=new Date(_0x2ccf74);var _0x4ca483=new Date(moment(_0x2d48cb['DueDate'][_0x2aadbf(0x306)]('T')[0x0])[_0x2aadbf(0x2ef)](_0x2aadbf(0x2ad)));_0x4ca483[_0x2aadbf(0x254)](_0x4ca483[_0x2aadbf(0x2c9)]()+0x1),_0x4ca483=new Date(_0x4ca483);if(_0x1857c4==_0x2aadbf(0x2da))var _0x3812b1=_0x2ccf74==''?_0x4ca483!='':_0x4ca483>=_0x2ccf74;else{if(_0x1857c4==_0x2aadbf(0x25a))var _0x3812b1=_0x2ccf74==''?_0x4ca483!='':_0x4ca483<_0x2ccf74;else var _0x3812b1=_0x2ccf74==''?_0x4ca483!='':_0x4ca483<=_0x2ccf74;}}else var _0x3812b1=!![];_0x4200e0='';var _0x33abc3=[];if(assignByEmail!=''){var _0x2ca086=assignByEmail[_0x2aadbf(0x306)]('|');_0x2ca086['pop']();for(var _0x55352b=0x0;_0x55352b<_0x2ca086[_0x2aadbf(0x292)];_0x55352b++){_0x2ca086[_0x55352b][_0x2aadbf(0x291)]('#')!=-0x1&&(_0x2ca086[_0x55352b]=_0x2ca086[_0x55352b][_0x2aadbf(0x306)]('#')[0x0],_0x2ca086[_0x55352b]=_0x2ca086[_0x55352b][_0x2aadbf(0x30a)]('_','@')),_0x55352b==0x0?_0x33abc3['push'](_0x2d48cb['AssignedBy'][_0x2aadbf(0x346)][_0x2aadbf(0x313)]()==_0x2ca086[_0x55352b]['toLowerCase']()):_0x33abc3[_0x2aadbf(0x221)](_0x2d48cb[_0x2aadbf(0x266)][_0x2aadbf(0x346)]['toLowerCase']()==_0x2ca086[_0x55352b][_0x2aadbf(0x313)]());}}else{var _0x11c871=[];_0x33abc3[_0x2aadbf(0x221)](!![]);}return _0x33abc3[_0x2aadbf(0x261)](function(_0x3d9965,_0x51701f){_0x51701f==0x0?_0x4200e0=_0x3d9965:_0x4200e0=_0x3d9965||_0x4200e0;}),_0x2d48cb[_0x2aadbf(0x2b9)]!=null?_0x119d21=_0x2d48cb[_0x2aadbf(0x2b9)]['ID']?_0x2d48cb[_0x2aadbf(0x2b9)]['ID']:'':_0x119d21='',_0x2d48cb[_0x2aadbf(0x2bc)]!=null?_0x8b1d34=_0x2d48cb['ClientID']['ID']:_0x8b1d34='',_0x2f2ca5&&(_0x13865c==_0x2aadbf(0x178)?_0x8b1d34!=_0x2aadbf(0x23b):_0x8b1d34==_0x13865c)&&(_0x1e6bca==_0x2aadbf(0x178)?_0x119d21!=_0x2aadbf(0x23b):_0x119d21==_0x1e6bca)&&(_0x20bb59==_0x2aadbf(0x178)?_0x2d48cb[_0x2aadbf(0x2e9)]!='':_0x2d48cb[_0x2aadbf(0x2e9)]==_0x20bb59)&&(_0x5addf0==_0x2aadbf(0x178)?_0x2d48cb[_0x2aadbf(0x310)]!='':_0x2d48cb['CurrentPhase']==_0x5addf0)&&(_0x356836=='All'?_0x2d48cb[_0x2aadbf(0x187)]!='':_0x2d48cb[_0x2aadbf(0x187)]==_0x356836)&&_0x3812b1&&_0x4200e0&&(_0x378bda==''?_0x2d48cb['StartDate']!='':moment(_0x2d48cb[_0x2aadbf(0x166)])[_0x2aadbf(0x1d6)](moment(_0x378bda))||moment(_0x2d48cb['StartDate'])[_0x2aadbf(0x252)](moment(_0x378bda)))&&(_0x3f90bc==''?_0x2d48cb[_0x2aadbf(0x166)]!='':moment(_0x2d48cb[_0x2aadbf(0x166)])[_0x2aadbf(0x1f7)](moment(_0x3f90bc))||moment(_0x2d48cb[_0x2aadbf(0x166)])[_0x2aadbf(0x252)](moment(_0x3f90bc)));});var _0x45eb28=[];$(_0x3cea62(0x16c))[_0x3cea62(0x2c6)](),$(_0x3cea62(0x16c))[_0x3cea62(0x165)](_0x486487);if($(_0x3cea62(0x241))[_0x3cea62(0x1ac)](_0x3cea62(0x2c7))['attr']('id')==_0x3cea62(0x264))_0x45eb28=arrFilterDeptProj=_0x192930['filter'](function(_0xccd889){return _0xccd889;}),_0x45eb28['length']>=0x1f4?($('#TotalTaskCountDeptProj')[_0x3cea62(0x1b3)](_0x45eb28['length']),_0x45eb28=_0x45eb28[_0x3cea62(0x1e1)](0x0,0x1f4),$(_0x3cea62(0x19e))['hide'](),$(_0x3cea62(0x19d))['show'](),$(_0x3cea62(0x17a))[_0x3cea62(0x1b3)](_0x3cea62(0x194)),$(_0x3cea62(0x28b))[_0x3cea62(0x1f2)]()):($(_0x3cea62(0x19e))[_0x3cea62(0x1f2)](),$(_0x3cea62(0x19d))[_0x3cea62(0x2a1)](),$(_0x3cea62(0x302))[_0x3cea62(0x1b3)](_0x45eb28[_0x3cea62(0x292)]),$('#SeeMoreFilterDeptProj')['hide']()),$(_0x3cea62(0x2b1))[_0x3cea62(0x2c6)](),BindInboxTasks(_0x45eb28,_0x3cea62(0x24d),_0x3cea62(0x321));else $(_0x3cea62(0x241))[_0x3cea62(0x1ac)](_0x3cea62(0x2c7))[_0x3cea62(0x22d)]('id')==_0x3cea62(0x24e)?(_0x45eb28=arrFilterDeptEmp=_0x192930['filter'](function(_0x3e76c0){return _0x3e76c0;}),_0x45eb28[_0x3cea62(0x292)]>=0x1f4?($(_0x3cea62(0x1d5))[_0x3cea62(0x1b3)](_0x45eb28[_0x3cea62(0x292)]),_0x45eb28=_0x45eb28[_0x3cea62(0x1e1)](0x0,0x1f4),$(_0x3cea62(0x159))[_0x3cea62(0x2a1)](),$('#ShowItemsDeptEmp')[_0x3cea62(0x1f2)](),$(_0x3cea62(0x1c3))[_0x3cea62(0x1b3)](_0x3cea62(0x194)),$(_0x3cea62(0x230))['show']()):($(_0x3cea62(0x159))['show'](),$(_0x3cea62(0x23a))[_0x3cea62(0x2a1)](),$(_0x3cea62(0x2e0))['text'](_0x45eb28[_0x3cea62(0x292)]),$(_0x3cea62(0x230))['hide']()),$(_0x3cea62(0x16e))[_0x3cea62(0x164)](''),BindInboxTasks(_0x45eb28,_0x3cea62(0x282),_0x3cea62(0x180))):(_0x45eb28=arrFilterDataBind=_0x192930[_0x3cea62(0x322)](function(_0x4fd35d){return _0x4fd35d;}),_0x45eb28['length']>=0x1f4?($(_0x3cea62(0x1f9))[_0x3cea62(0x1b3)](_0x45eb28[_0x3cea62(0x292)]),_0x45eb28=_0x45eb28[_0x3cea62(0x1e1)](0x0,0x1f4),$(_0x3cea62(0x2fb))[_0x3cea62(0x2a1)](),$(_0x3cea62(0x247))['show'](),$(_0x3cea62(0x1ec))[_0x3cea62(0x1b3)](_0x3cea62(0x194)),$(_0x3cea62(0x1f4))[_0x3cea62(0x1f2)]()):($('#ShowTotalItemsInbox')[_0x3cea62(0x1f2)](),$(_0x3cea62(0x247))[_0x3cea62(0x2a1)](),$(_0x3cea62(0x295))[_0x3cea62(0x1b3)](_0x45eb28['length']),$('#SeeMoreFilterInbox')[_0x3cea62(0x2a1)]()),$(_0x3cea62(0x34f))[_0x3cea62(0x164)](''),BindInboxTasks(_0x45eb28,_0x3cea62(0x1af),'MySubordinate'));}function OpenIframeTask(_0x30d10b){var _0x3efa4a=a371_0x272e70;src=_0x30d10b[_0x3efa4a(0x202)];var _0x312905=$(_0x3efa4a(0x2ff))[_0x3efa4a(0x2c6)]();$(_0x3efa4a(0x26a),{'src':src,'id':'iframe-viewer','frameborder':0x0,'scrolling':'yes','width':_0x3efa4a(0x2e5),'height':'98%'})[_0x3efa4a(0x20b)](_0x312905),$(_0x3efa4a(0x314))[_0x3efa4a(0x2f6)]('show');}function ClearFilter(){var _0x4b7b2e=a371_0x272e70;$('#UserAllProject')[_0x4b7b2e(0x24a)](_0x4b7b2e(0x178)),$(_0x4b7b2e(0x174))[_0x4b7b2e(0x289)]('change'),$(_0x4b7b2e(0x2c5))[_0x4b7b2e(0x24a)]('All'),$(_0x4b7b2e(0x222))[_0x4b7b2e(0x24a)](_0x4b7b2e(0x178)),$('#txtPriority')[_0x4b7b2e(0x24a)]('All'),$('#ddlInboxClient')[_0x4b7b2e(0x2c6)]()[_0x4b7b2e(0x165)]('<option\x20value=\x27All\x27>All</option>'),$(_0x4b7b2e(0x2e2))[_0x4b7b2e(0x2c6)]()['append'](_0x4b7b2e(0x359)),$('#taskIn')[_0x4b7b2e(0x24a)]('')[_0x4b7b2e(0x22d)]('type',_0x4b7b2e(0x1b3))['attr'](_0x4b7b2e(0x307),_0x4b7b2e(0x2aa)),$('#fromDatetaskIn')['val'](''),$(_0x4b7b2e(0x1fc))[_0x4b7b2e(0x24a)](''),$(_0x4b7b2e(0x18a))[_0x4b7b2e(0x24a)]('Open'),clearPeoplePickerControl(_0x4b7b2e(0x332)),currentPhase='Open',TaskAction=_0x4b7b2e(0x15c);if($('ul#myTabs')[_0x4b7b2e(0x1ac)](_0x4b7b2e(0x2c7))[_0x4b7b2e(0x22d)]('id')==_0x4b7b2e(0x264)){$(_0x4b7b2e(0x2b1))[_0x4b7b2e(0x2c6)](),$('#SeeMoreFilterDeptProj')['hide']();var _0x36ffe9=[];_0x36ffe9=arrLimitTaskDeptProj[_0x4b7b2e(0x322)](function(_0x2a3bb1){return _0x2a3bb1;}),_0x36ffe9[_0x4b7b2e(0x292)]>=0x1f4?($(_0x4b7b2e(0x19a))[_0x4b7b2e(0x1b3)](_0x36ffe9[_0x4b7b2e(0x292)]),_0x36ffe9=_0x36ffe9['slice'](0x0,0x1f4),$('#ShowTotalItemsDeptProj')[_0x4b7b2e(0x2a1)](),$(_0x4b7b2e(0x19d))[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x17a))[_0x4b7b2e(0x1b3)](_0x4b7b2e(0x194)),$(_0x4b7b2e(0x329))[_0x4b7b2e(0x1f2)]()):($(_0x4b7b2e(0x19e))[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x19d))['hide'](),$(_0x4b7b2e(0x302))[_0x4b7b2e(0x1b3)](_0x36ffe9[_0x4b7b2e(0x292)]),$(_0x4b7b2e(0x329))['hide']()),BindInboxTasks(_0x36ffe9,_0x4b7b2e(0x24d),_0x4b7b2e(0x321)),_0x36ffe9[_0x4b7b2e(0x292)]==0x0?($(_0x4b7b2e(0x1a6))[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x329))[_0x4b7b2e(0x2a1)]()):$(_0x4b7b2e(0x1a6))[_0x4b7b2e(0x2a1)]();}else{if($(_0x4b7b2e(0x241))[_0x4b7b2e(0x1ac)]('li.active')['attr']('id')==_0x4b7b2e(0x24e)){$(_0x4b7b2e(0x16e))[_0x4b7b2e(0x2c6)](),$('#SeeMoreFilterDeptEmp')[_0x4b7b2e(0x2a1)]();var _0x36ffe9=[];_0x36ffe9=arrLimitTaskDeptEmp[_0x4b7b2e(0x322)](function(_0x26169f){return _0x26169f;}),_0x36ffe9[_0x4b7b2e(0x292)]>=0x1f4?($(_0x4b7b2e(0x1d5))[_0x4b7b2e(0x1b3)](_0x36ffe9[_0x4b7b2e(0x292)]),_0x36ffe9=_0x36ffe9[_0x4b7b2e(0x1e1)](0x0,0x1f4),$(_0x4b7b2e(0x159))['hide'](),$(_0x4b7b2e(0x23a))['show'](),$('#TaskCountDeptEmp')['text'](_0x4b7b2e(0x194)),$('#SeeMoreDeptEmp')[_0x4b7b2e(0x1f2)]()):($(_0x4b7b2e(0x159))[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x23a))[_0x4b7b2e(0x2a1)](),$(_0x4b7b2e(0x2e0))[_0x4b7b2e(0x1b3)](_0x36ffe9[_0x4b7b2e(0x292)]),$(_0x4b7b2e(0x274))[_0x4b7b2e(0x2a1)]()),BindInboxTasks(_0x36ffe9,_0x4b7b2e(0x282),_0x4b7b2e(0x180)),_0x36ffe9[_0x4b7b2e(0x292)]==0x0?($(_0x4b7b2e(0x1a6))[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x274))['hide']()):$('.NoRecordFound')[_0x4b7b2e(0x2a1)]();}else{$(_0x4b7b2e(0x34f))[_0x4b7b2e(0x2c6)](),$('#SeeMoreFilterInbox')[_0x4b7b2e(0x2a1)]();var _0x36ffe9=[];_0x36ffe9=arrLimitTaskInbox[_0x4b7b2e(0x322)](function(_0x27b8e8){return _0x27b8e8;}),_0x36ffe9[_0x4b7b2e(0x292)]>=0x1f4?($(_0x4b7b2e(0x1f9))[_0x4b7b2e(0x1b3)](_0x36ffe9[_0x4b7b2e(0x292)]),_0x36ffe9=_0x36ffe9[_0x4b7b2e(0x1e1)](0x0,0x1f4),$(_0x4b7b2e(0x2fb))[_0x4b7b2e(0x2a1)](),$(_0x4b7b2e(0x247))[_0x4b7b2e(0x1f2)](),$('#DiplayTaskCount')['text'](_0x4b7b2e(0x194)),$('#SeeMoreInbox')['show']()):($('#ShowTotalItemsInbox')[_0x4b7b2e(0x1f2)](),$(_0x4b7b2e(0x247))[_0x4b7b2e(0x2a1)](),$(_0x4b7b2e(0x295))[_0x4b7b2e(0x1b3)](_0x36ffe9['length']),$('#SeeMoreInbox')['hide']()),BindInboxTasks(_0x36ffe9,_0x4b7b2e(0x1af),'MySubordinate'),_0x36ffe9[_0x4b7b2e(0x292)]==0x0?($(_0x4b7b2e(0x1a6))['show'](),$(_0x4b7b2e(0x1f8))[_0x4b7b2e(0x2a1)]()):$(_0x4b7b2e(0x1a6))['hide']();}}}function generateTaskInExcel(){var _0x5415f2=a371_0x272e70,_0x34fa07='',_0x397909='';if($(_0x5415f2(0x241))[_0x5415f2(0x1ac)]('li.active')['attr']('id')==_0x5415f2(0x264))_0x34fa07=_0x5415f2(0x27b),_0x397909=_0x5415f2(0x299);else $('ul#myTabs')['find']('li.active')[_0x5415f2(0x22d)]('id')=='ParentDeptEmp'?(_0x34fa07=_0x5415f2(0x30c),_0x397909='TempTableDeptEmp'):(_0x34fa07=_0x5415f2(0x1e0)+$(_0x5415f2(0x265))[_0x5415f2(0x1b3)](),_0x397909=_0x5415f2(0x248));$('#'+_0x397909)[_0x5415f2(0x21c)]({'type':_0x5415f2(0x328),'exportHiddenCells':!![],'fileName':_0x34fa07,'ignoreColumn':[0x0,0x1,0x6,0x8,0x9,0xa,0xd]}),currentDlg[_0x5415f2(0x216)]();}function SetTaskPending(){var _0x5d42e0=a371_0x272e70;$(_0x5d42e0(0x2cd))[_0x5d42e0(0x292)]==0x0&&bindAllWorkType(),$('#UserAllProject')[_0x5d42e0(0x24a)](_0x5d42e0(0x178)),$(_0x5d42e0(0x174))['trigger'](_0x5d42e0(0x290)),$(_0x5d42e0(0x2c5))[_0x5d42e0(0x24a)](_0x5d42e0(0x178)),$('#WorkTypeOfProject')[_0x5d42e0(0x24a)](_0x5d42e0(0x178)),$(_0x5d42e0(0x228))[_0x5d42e0(0x24a)]('All'),$(_0x5d42e0(0x2f9))[_0x5d42e0(0x2c6)]()['append'](_0x5d42e0(0x359)),$('#ddlInboxProject')['empty']()[_0x5d42e0(0x165)](_0x5d42e0(0x359)),$(_0x5d42e0(0x338))[_0x5d42e0(0x24a)]('')[_0x5d42e0(0x22d)](_0x5d42e0(0x307),'text')[_0x5d42e0(0x22d)](_0x5d42e0(0x307),_0x5d42e0(0x2aa)),$(_0x5d42e0(0x18a))[_0x5d42e0(0x24a)](_0x5d42e0(0x280)),clearPeoplePickerControl(_0x5d42e0(0x332)),currentPhase=_0x5d42e0(0x280),TaskAction='PageLoad',$(_0x5d42e0(0x2f3))[_0x5d42e0(0x322)](function(){var _0x3f678e=_0x5d42e0;return $(this)[_0x3f678e(0x1b3)]()==_0x3f678e(0x280);})[_0x5d42e0(0x2b5)](_0x5d42e0(0x26d),!![]),document[_0x5d42e0(0x198)](_0x5d42e0(0x2a7))[_0x5d42e0(0x206)]=new Date(),MutipleBaseFilter(_0x5d42e0(0x2da));}function SetTaskOverdue(_0x4a3c1e){var _0x2b2b39=a371_0x272e70;$(_0x2b2b39(0x2cd))[_0x2b2b39(0x292)]==0x0&&bindAllWorkType(),$(_0x2b2b39(0x174))['val']('All'),$('#UserAllProject')[_0x2b2b39(0x289)](_0x2b2b39(0x290)),$(_0x2b2b39(0x2c5))[_0x2b2b39(0x24a)](_0x2b2b39(0x178)),$(_0x2b2b39(0x222))[_0x2b2b39(0x24a)]('All'),$('#txtPriority')[_0x2b2b39(0x24a)](_0x2b2b39(0x178)),$(_0x2b2b39(0x2f9))[_0x2b2b39(0x2c6)]()[_0x2b2b39(0x165)](_0x2b2b39(0x359)),$('#ddlInboxProject')[_0x2b2b39(0x2c6)]()[_0x2b2b39(0x165)](_0x2b2b39(0x359)),$('#taskIn')[_0x2b2b39(0x24a)]('')['attr'](_0x2b2b39(0x307),_0x2b2b39(0x1b3))['attr'](_0x2b2b39(0x307),_0x2b2b39(0x2aa)),$(_0x2b2b39(0x18a))[_0x2b2b39(0x24a)](_0x2b2b39(0x280)),clearPeoplePickerControl(_0x2b2b39(0x332)),currentPhase=_0x2b2b39(0x280),TaskAction=_0x2b2b39(0x15c),$('#txtFilterStatusInbox\x20option')['filter'](function(){var _0xdef188=_0x2b2b39;return $(this)['text']()==_0xdef188(0x280);})[_0x2b2b39(0x2b5)](_0x2b2b39(0x26d),!![]),document[_0x2b2b39(0x198)]('taskIn')[_0x2b2b39(0x206)]=new Date(),MutipleBaseFilter('TaskOverdue');}function clickInboxChart(_0x4edd4c,_0x4f886b){var _0x443f78=a371_0x272e70;$(_0x443f78(0x2cd))[_0x443f78(0x292)]==0x0&&bindAllWorkType(),$(_0x443f78(0x174))[_0x443f78(0x24a)]('All'),$(_0x443f78(0x174))[_0x443f78(0x289)](_0x443f78(0x290)),$('#ProjectModule')[_0x443f78(0x24a)](_0x443f78(0x178)),$('#WorkTypeOfProject')[_0x443f78(0x24a)](_0x443f78(0x178)),$(_0x443f78(0x228))[_0x443f78(0x24a)](_0x443f78(0x178)),$('#ddlInboxClient')[_0x443f78(0x2c6)]()[_0x443f78(0x165)]('<option\x20value=\x27All\x27>All</option>'),$('#ddlInboxProject')[_0x443f78(0x2c6)]()['append'](_0x443f78(0x359)),$('#taskIn')[_0x443f78(0x24a)]('')[_0x443f78(0x22d)]('type',_0x443f78(0x1b3))[_0x443f78(0x22d)]('type',_0x443f78(0x2aa)),$(_0x443f78(0x18a))['val'](_0x443f78(0x280)),clearPeoplePickerControl(_0x443f78(0x332)),currentPhase=_0x443f78(0x280),TaskAction='PageLoad',$(_0x443f78(0x2f3))[_0x443f78(0x322)](function(){var _0x48e47d=_0x443f78;return $(this)[_0x48e47d(0x1b3)]()==_0x4edd4c[_0x48e47d(0x1c7)][_0x48e47d(0x263)];})[_0x443f78(0x2b5)](_0x443f78(0x26d),!![]),MutipleBaseFilter(_0x443f78(0x31e));}function ReadInDepartment(){var _0x58c004=a371_0x272e70,_0x13a2a8='',_0x345228=_spPageContextInfo['webAbsoluteUrl']+'/_api/web/lists/getbytitle(\x27Departments\x27)/items?select=ID,Title&$filter=CompanyID\x20eq\x20\x27'+Logged_CompanyId+_0x58c004(0x2af);$[_0x58c004(0x195)]({'url':_0x345228,'async':![],'headers':{'Accept':_0x58c004(0x276)},'success':function(_0x5b7c84){var _0x5985f4=_0x58c004,_0x3951ed=_0x5b7c84['d'][_0x5985f4(0x24f)];if(_0x3951ed[_0x5985f4(0x292)]>0x0){$('#DeptsInboxProject')['empty'](),$(_0x5985f4(0x2ed))[_0x5985f4(0x165)]($('<option></option>')[_0x5985f4(0x24a)]('All')['html'](_0x5985f4(0x178)));for(i=0x0;i<_0x3951ed['length'];i++){parseInt(_0x3951ed[i][_0x5985f4(0x1b7)][_0x5985f4(0x292)])>0x22?_0x13a2a8=_0x3951ed[i][_0x5985f4(0x1b7)]['substring'](0x0,0x22)+_0x5985f4(0x2d0):_0x13a2a8=_0x3951ed[i][_0x5985f4(0x1b7)],$(_0x5985f4(0x2ed))[_0x5985f4(0x165)](_0x5985f4(0x324)+_0x3951ed[i][_0x5985f4(0x1b7)]+_0x5985f4(0x1c8)+_0x3951ed[i][_0x5985f4(0x1b7)]+'\x22>'+_0x13a2a8+_0x5985f4(0x29c));}$(_0x5985f4(0x2ed))[_0x5985f4(0x24a)](_0x5985f4(0x178));}},'error':function(_0x24e8f9){var _0x52159e=_0x58c004;currentDlg!=''&&currentDlg[_0x52159e(0x216)](),console[_0x52159e(0x2cc)](_0x52159e(0x1d7)+_0x24e8f9);}});}function loadprojectInsearch(){var _0x345a57=a371_0x272e70,_0xcecb81='',_0x1d23ab=[],_0x3431dd='',_0x442e57=0x0,_0x1f012f=_0x345a57(0x1fa)+_spPageContextInfo[_0x345a57(0x25e)]+'\x27)\x20and\x20Status\x20eq\x20\x27Active\x27\x20and\x20TaskPermission\x20eq\x20\x271\x27&$orderby=Project\x20asc';$[_0x345a57(0x186)](getLimitedItems(_0x345a57(0x2ab),_0x1f012f))[_0x345a57(0x20f)](function(_0x197d86){var _0x56570e=_0x345a57,_0x19cedb=_0x197d86['results'];for(var _0x59f664=0x0;_0x59f664<_0x19cedb['length'];_0x59f664++){_0x1d23ab[_0x56570e(0x221)](_0x19cedb[_0x59f664]['ProjectId']);}_0xcecb81=_0x1d23ab[_0x56570e(0x322)](function(_0xdf81b0,_0x89a332,_0xe13636){var _0x4546c2=_0x56570e;return _0x89a332==_0xe13636[_0x4546c2(0x291)](_0xdf81b0);});});if(_0xcecb81[_0x345a57(0x292)]>0x0){var _0x43d430=[];for(var _0x55d991=0x0;_0x55d991<_0xcecb81[_0x345a57(0x292)];_0x55d991++){var _0x16f267=_0xcecb81[_0x55d991],_0x1b5782=$(_0x345a57(0x2fe))[_0x345a57(0x24a)](),_0x3324eb=$(_0x345a57(0x1e8))['val']();if(_0x1b5782!=_0x345a57(0x178)){if(_0x3324eb!=_0x345a57(0x178))var _0x1f012f=_0x345a57(0x2ea)+_0x1b5782+_0x345a57(0x185)+_0x3324eb+_0x345a57(0x1a9)+_0x16f267+'\x27\x20';else var _0x1f012f=_0x345a57(0x2ea)+_0x1b5782+_0x345a57(0x34d)+_0x16f267+'\x27\x20';}else{if(_0x3324eb!=_0x345a57(0x178))var _0x1f012f=_0x345a57(0x31d)+_0x3324eb+'\x27)and\x20ID\x20eq\x20\x27'+_0x16f267+'\x27';else var _0x1f012f=_0x345a57(0x330)+_0x16f267+'\x27';}$[_0x345a57(0x186)](getLimitedItems(_0x345a57(0x2ae),_0x1f012f))[_0x345a57(0x20f)](function(_0x4bbf37){var _0x2c0429=_0x345a57,_0x171785=_0x4bbf37['results'];IsInboxProjectBind=!![];if(_0x171785[_0x2c0429(0x292)]>0x0)for(var _0x59a271=0x0;_0x59a271<_0x171785['length'];_0x59a271++){var _0x5b599a=_0x171785[_0x59a271]['ID'];if(_0x171785[_0x59a271][_0x2c0429(0x305)]==_0x2c0429(0x2c3))colorCss=_0x2c0429(0x1c5);else{if(_0x171785[_0x59a271][_0x2c0429(0x305)]=='OnHold')colorCss=_0x2c0429(0x341);else _0x171785[_0x59a271][_0x2c0429(0x305)]=='Completed'?colorCss='Completecolor':colorCss=_0x2c0429(0x1bb);}var _0x2a0334=_0x171785[_0x59a271][_0x2c0429(0x275)];_0x171785[_0x59a271][_0x2c0429(0x275)][_0x2c0429(0x292)]>0x78&&(_0x2a0334=_0x2a0334[_0x2c0429(0x271)](0x0,0x78));var _0xaf8ea5=_0x171785[_0x59a271][_0x2c0429(0x2bc)]['Title'];_0x171785[_0x59a271][_0x2c0429(0x2bc)][_0x2c0429(0x1b7)][_0x2c0429(0x292)]>0x78&&(_0xaf8ea5=_0xaf8ea5[_0x2c0429(0x271)](0x0,0x78));var _0x1b9f83=_0x171785[_0x59a271][_0x2c0429(0x21a)]?_0x171785[_0x59a271]['ProjectCode']:'';_0x1b9f83[_0x2c0429(0x292)]>0x1e&&(_0x1b9f83=_0x1b9f83[_0x2c0429(0x271)](0x0,0x1e));_0x442e57++;var _0x9b0f61=_spPageContextInfo['webAbsoluteUrl']+_0x2c0429(0x2f5)+escapeProperly(_0x171785[_0x59a271]['ManagerName'][_0x2c0429(0x346)]);_0x3431dd+=_0x2c0429(0x334)+_0x171785[_0x59a271][_0x2c0429(0x275)]+_0x2c0429(0x297)+_0x5b599a+_0x2c0429(0x2b4),_0x3431dd+=_0x2c0429(0x224)+_0x2a0334+_0x2c0429(0x34b)+_0x1b9f83+_0x2c0429(0x325),_0x3431dd+='<td><p\x20class=\x27customernamshow\x27>'+_0xaf8ea5+_0x2c0429(0x355)+colorCss+'\x27>'+_0x171785[_0x59a271][_0x2c0429(0x305)]+_0x2c0429(0x325),_0x3431dd+=_0x2c0429(0x1dd)+_0x9b0f61+_0x2c0429(0x1df),_0x3431dd+='<h4>'+_0x171785[_0x59a271][_0x2c0429(0x183)]['Title']+'</h4><div\x20class=\x27mailsec\x27><span\x20onclick=\x27OpenEmail(this)\x27>'+_0x171785[_0x59a271][_0x2c0429(0x183)][_0x2c0429(0x346)]+'</span></div>',_0x3431dd+=_0x2c0429(0x327),_0x3431dd+=_0x2c0429(0x162);}});}$('#ProjectInTables')[_0x345a57(0x2c6)]()[_0x345a57(0x165)](_0x3431dd),$(_0x345a57(0x2d8))[_0x345a57(0x1f2)](),_0x442e57==0x0?(_0x3431dd+='<tr><td\x20class=\x27NoRecordFound\x27\x20colspan=\x274\x27\x20style=\x27text-align:\x20center;font-size:14px;\x27\x20data-localize=\x27NoRecordFound\x27>No\x20record\x20found!!</td></tr>',$(_0x345a57(0x27a))[_0x345a57(0x2c6)]()[_0x345a57(0x165)](_0x3431dd),$(_0x345a57(0x33b))['hide']()):(TableConfigInboxProject(),$(_0x345a57(0x33b))[_0x345a57(0x1f2)]());}currentDlg!=''&&currentDlg[_0x345a57(0x216)]();}function TableConfigInboxProject(){var _0x39b58a=a371_0x272e70;sorter=new TINY[(_0x39b58a(0x199))][(_0x39b58a(0x272))](_0x39b58a(0x272),_0x39b58a(0x18b),{'headclass':_0x39b58a(0x2d6),'ascclass':'asc','descclass':_0x39b58a(0x1d0),'evenclass':_0x39b58a(0x215),'oddclass':'oddrow','evenselclass':_0x39b58a(0x257),'oddselclass':'oddselected','paginate':!![],'size':0x5,'colddid':_0x39b58a(0x2e8),'currentid':_0x39b58a(0x1ce),'totalid':_0x39b58a(0x239),'startingrecid':_0x39b58a(0x237),'endingrecid':_0x39b58a(0x255),'totalrecid':_0x39b58a(0x25f),'hoverid':_0x39b58a(0x318),'pageddid':'pageddlInProject','navid':_0x39b58a(0x326),'sortdir':0x1,'init':!![]});}function setInboxProjectValue(){var _0x4eded7=a371_0x272e70;if($(_0x4eded7(0x29a))[0x0]!=null){$(_0x4eded7(0x2e2))['html']('');var _0x2a881a=$(_0x4eded7(0x29a))[0x0][_0x4eded7(0x2ec)][_0x4eded7(0x191)][_0x4eded7(0x1c0)],_0x493472=_0x4eded7(0x324)+$(_0x4eded7(0x29a))['val']()+_0x4eded7(0x311)+_0x2a881a+_0x4eded7(0x29c);$('#ddlInboxProject')[_0x4eded7(0x165)](_0x493472),$(_0x4eded7(0x25b))['modal'](_0x4eded7(0x2a1)),projectid=$(_0x4eded7(0x29a))['val'](),projectid!=_0x4eded7(0x303)&&projectid!=_0x4eded7(0x178)?CurrentProjectModule(projectid):($(_0x4eded7(0x2c5))[_0x4eded7(0x22d)]('disabled',!![]),$(_0x4eded7(0x2c5))[_0x4eded7(0x2c6)](),$(_0x4eded7(0x251))['appendTo']('#ProjectModule'));}}function setCustomerValue(){var _0x384b6a=a371_0x272e70;$(_0x384b6a(0x2f9))[_0x384b6a(0x164)]('');var _0x217137=$(_0x384b6a(0x193))[0x0][_0x384b6a(0x2ec)]['title'][_0x384b6a(0x1c0)],_0x12e867=_0x384b6a(0x324)+$('input[name=\x22Customer\x22]:checked')[_0x384b6a(0x24a)]()+_0x384b6a(0x311)+_0x217137+'</option>';$(_0x384b6a(0x2f9))['append'](_0x12e867),$(_0x384b6a(0x298))[_0x384b6a(0x2f6)](_0x384b6a(0x2a1));}function getLimitedEmployeess(_0x4e036c,_0x577596){var _0x422338=a371_0x272e70;return DeferredObj=$[_0x422338(0x347)](),$['ajax']({'url':_spPageContextInfo[_0x422338(0x15a)]+_0x422338(0x2be)+_0x4e036c+_0x422338(0x188)+_0x577596,'type':_0x422338(0x32a),'async':![],'headers':{'ACCEPT':'application/json;odata=verbose','X-RequestDigest':$(_0x422338(0x2b8))[_0x422338(0x24a)]()},'success':function(_0x45e375){var _0x574abe=_0x422338;DeferredObj[_0x574abe(0x1a3)](_0x45e375['d'][_0x574abe(0x24f)]);},'error':function(_0x48774c){var _0x5747c5=_0x422338;HandleError(JSON['stringify'](_0x48774c)),DeferredObj[_0x5747c5(0x27e)](_0x48774c);}}),DeferredObj[_0x422338(0x238)]();};function TableConfiguration(){var _0x1d21ea=a371_0x272e70;sorter=new TINY[(_0x1d21ea(0x199))]['sorter'](_0x1d21ea(0x272),_0x1d21ea(0x248),{'headclass':_0x1d21ea(0x2d6),'ascclass':_0x1d21ea(0x300),'descclass':_0x1d21ea(0x1d0),'evenclass':_0x1d21ea(0x215),'oddclass':_0x1d21ea(0x1a8),'evenselclass':_0x1d21ea(0x257),'oddselclass':_0x1d21ea(0x209),'paginate':!![],'size':0xa,'colddid':_0x1d21ea(0x208),'currentid':'currentpage','totalid':_0x1d21ea(0x35d),'startingrecid':'startrecord','endingrecid':'endrecord','totalrecid':_0x1d21ea(0x23e),'hoverid':_0x1d21ea(0x318),'pageddid':_0x1d21ea(0x30d),'navid':'tablenav','sortdir':0x1,'init':!![]});}function TableConfigurationDeptProj(){var _0x347c22=a371_0x272e70;sorterDept=new TINY['table'][(_0x347c22(0x272))](_0x347c22(0x319),_0x347c22(0x299),{'headclass':_0x347c22(0x2d6),'ascclass':_0x347c22(0x300),'descclass':_0x347c22(0x1d0),'evenclass':_0x347c22(0x215),'oddclass':'oddrow','evenselclass':_0x347c22(0x257),'oddselclass':_0x347c22(0x209),'paginate':!![],'size':0xa,'colddid':_0x347c22(0x2f2),'currentid':_0x347c22(0x207),'totalid':_0x347c22(0x2ba),'startingrecid':_0x347c22(0x1c4),'endingrecid':_0x347c22(0x2bd),'totalrecid':_0x347c22(0x16b),'hoverid':_0x347c22(0x318),'pageddid':_0x347c22(0x1ad),'navid':_0x347c22(0x2d4),'sortdir':0x1,'init':!![]});}function TableConfigDeptEmp(){var _0x7a8cbb=a371_0x272e70;sorterDeptEmp=new TINY[(_0x7a8cbb(0x199))][(_0x7a8cbb(0x272))](_0x7a8cbb(0x15e),_0x7a8cbb(0x2e7),{'headclass':_0x7a8cbb(0x2d6),'ascclass':_0x7a8cbb(0x300),'descclass':_0x7a8cbb(0x1d0),'evenclass':'evenrow','oddclass':_0x7a8cbb(0x1a8),'evenselclass':'evenselected','oddselclass':_0x7a8cbb(0x209),'paginate':!![],'size':0xa,'colddid':_0x7a8cbb(0x2ac),'currentid':_0x7a8cbb(0x20a),'totalid':_0x7a8cbb(0x281),'startingrecid':'startrecordDeptEmp','endingrecid':'endrecordDeptEmp','totalrecid':'totalrecordsDeptEmp','hoverid':_0x7a8cbb(0x318),'pageddid':_0x7a8cbb(0x244),'navid':_0x7a8cbb(0x253),'sortdir':0x1,'init':!![]});}function OpenEmail(_0x2ef3ce){var _0x3b1126=a371_0x272e70,_0x5dca43='Loading...',_0x151aae=_0x3b1126(0x16a),_0x58c095=0xc8,_0x412e19=0x190;currentDlg=SP['UI'][_0x3b1126(0x23c)][_0x3b1126(0x1b8)](_0x5dca43,_0x151aae,_0x58c095,_0x412e19),setTimeout(function(){var _0x949c16=_0x3b1126;window[_0x949c16(0x163)]=_0x949c16(0x249)+_0x2ef3ce['textContent'],currentDlg[_0x949c16(0x216)]();},0x64);}function checkForSubordinates(_0x19313f){var _0x3aae24=a371_0x272e70,_0x528ca6=![],_0x111fc7='?$top=5000&$select=Status,ManagerLoginName/EMail,Company/Id&$expand=Company,ManagerLoginName&$filter=ManagerLoginName/EMail\x20eq\x20\x27'+_0x19313f+_0x3aae24(0x179)+Logged_CompanyId+'\x27\x20';return $[_0x3aae24(0x186)](getLimitedEmployeess(_0x3aae24(0x190),_0x111fc7))[_0x3aae24(0x20f)](function(_0x5254d7){var _0x4c1374=_0x3aae24;_0x5254d7[_0x4c1374(0x292)]>0x0&&(_0x528ca6=!![]);}),_0x528ca6;}function checkHOD(){var _0x4a1001=a371_0x272e70,_0x11398f=_0x4a1001(0x1f3)+_spPageContextInfo['userEmail']+'\x27\x20and\x20WebPartName\x20eq\x20\x27Head\x20of\x20the\x20department\x27\x20and\x20Company/Id\x20eq\x20\x27'+Logged_CompanyId+'\x27\x20';$[_0x4a1001(0x186)](getLimitedItems('ProcessApprovers',_0x11398f))['done'](function(_0x49ce75){var _0x558e53=_0x4a1001;_0x49ce75=_0x49ce75[_0x558e53(0x24f)];if(_0x49ce75[_0x558e53(0x292)]){for(var _0x10d24b=0x0;_0x10d24b<_0x49ce75[_0x558e53(0x292)];_0x10d24b++){$('.ddlDeptHOD')[_0x558e53(0x165)](_0x558e53(0x324)+_0x49ce75[_0x10d24b][_0x558e53(0x1d1)]['Id']+'\x22>'+_0x49ce75[_0x10d24b][_0x558e53(0x1d1)]['Title']+_0x558e53(0x29c));}DepartmentalProjTasks(_0x558e53(0x15c),_0x49ce75[0x0][_0x558e53(0x1d1)]['Id']),getDeptEmployee(_0x49ce75[0x0]['Department']['Id']);}else $(_0x558e53(0x1ff))[_0x558e53(0x2c6)]()[_0x558e53(0x165)](_0x558e53(0x30f)),$(_0x558e53(0x2db))[_0x558e53(0x2c6)]()['append'](_0x558e53(0x169));});}function SortProjectTable(_0x12e3a5){var _0x545aee=a371_0x272e70;if(_0x12e3a5=='Project\x20Name')$(_0x545aee(0x2fc))[_0x545aee(0x289)](_0x545aee(0x2a9));else _0x12e3a5==_0x545aee(0x35b)&&$('#CustomerProjSort')[_0x545aee(0x289)](_0x545aee(0x2a9));}function DepartmentalProjTasks(_0x3876bd,_0x10956d){var _0x57ef74=a371_0x272e70;$(_0x57ef74(0x329))['hide']();var _0xc0a436='',_0x14872a,_0x51842c=[];if(_0x3876bd==_0x57ef74(0x15c)){arrFilterDeptProj=[],$(_0x57ef74(0x2b1))[_0x57ef74(0x2c6)](),arrLimitTaskDeptProj=AllTaskInbox[_0x57ef74(0x322)](function(_0x5d8d75){var _0x4b3efe=_0x57ef74;return _0x5d8d75[_0x4b3efe(0x25c)]!=null?_0xc0a436=_0x5d8d75[_0x4b3efe(0x25c)][_0x4b3efe(0x30b)]:_0xc0a436='',_0x10956d==''?_0xc0a436!=_0x4b3efe(0x23b):_0xc0a436==_0x10956d;}),_0x51842c=arrLimitTaskDeptProj[_0x57ef74(0x322)](function(_0x6d2c8c){var _0x5d18fa=_0x57ef74;return _0x6d2c8c['CurrentPhase']==_0x5d18fa(0x280);});_0x51842c[_0x57ef74(0x292)]>=0x1f4?($(_0x57ef74(0x19a))[_0x57ef74(0x1b3)](_0x51842c[_0x57ef74(0x292)]),_0x51842c=_0x51842c[_0x57ef74(0x1e1)](0x0,0x1f4),$(_0x57ef74(0x19e))['hide'](),$('#ShowItemsDeptProj')[_0x57ef74(0x1f2)](),$(_0x57ef74(0x17a))[_0x57ef74(0x1b3)](_0x57ef74(0x194)),$(_0x57ef74(0x329))[_0x57ef74(0x1f2)]()):($(_0x57ef74(0x19e))[_0x57ef74(0x1f2)](),$(_0x57ef74(0x19d))[_0x57ef74(0x2a1)](),$(_0x57ef74(0x302))[_0x57ef74(0x1b3)](_0x51842c[_0x57ef74(0x292)]),$(_0x57ef74(0x329))[_0x57ef74(0x2a1)]());BindInboxTasks(_0x51842c,_0x57ef74(0x24d),_0x57ef74(0x321));if(_0x51842c[_0x57ef74(0x292)]==0x0)$('#SeeMoreDeptProj')['hide']();else{}ShowPieChartDeptProj(),GetDeptProjCount();}else{_0x51842c=arrLimitTaskDeptProj[_0x57ef74(0x1e1)](parseInt($(_0x57ef74(0x17a))[_0x57ef74(0x1b3)]()),parseInt($(_0x57ef74(0x17a))['text']())+0x1f4),BindInboxTasks(_0x51842c,_0x57ef74(0x24d),_0x57ef74(0x321));if(arrLimitTaskDeptProj[_0x57ef74(0x292)]<=parseInt($('#TaskCountDeptProj')[_0x57ef74(0x1b3)]())+0x1f4)$(_0x57ef74(0x19e))[_0x57ef74(0x1f2)](),$(_0x57ef74(0x19d))['hide'](),$(_0x57ef74(0x302))[_0x57ef74(0x1b3)](arrLimitTaskDeptProj[_0x57ef74(0x292)]),$('#SeeMoreDeptProj')['hide']();else{var _0x532fbe=parseInt($(_0x57ef74(0x17a))[_0x57ef74(0x1b3)]())+0x1f4;$(_0x57ef74(0x19e))[_0x57ef74(0x2a1)](),$(_0x57ef74(0x19d))['show'](),$(_0x57ef74(0x17a))['text'](_0x532fbe[_0x57ef74(0x312)]()),$('#TotalTaskCountDeptProj')[_0x57ef74(0x1b3)](arrLimitTaskDeptProj['length']),$(_0x57ef74(0x329))['show']();}}}function DeptEmpTasks(_0x3b4a30,_0x1de103){var _0x2dcbba=a371_0x272e70;$(_0x2dcbba(0x274))['hide']();var _0x32b627,_0x341496=[];if(_0x3b4a30=='PageLoad'){arrFilterDeptEmp=[],arrLimitTaskDeptEmp=[],$(_0x2dcbba(0x16e))[_0x2dcbba(0x2c6)]();for(var _0x1c66be=0x0;_0x1c66be<_0x1de103['length'];_0x1c66be++){_0x341496=AllTaskInbox[_0x2dcbba(0x322)](function(_0x3080cb){var _0x3ee9b1=_0x2dcbba,_0x677128=_0x1de103[_0x1c66be][_0x3ee9b1(0x1d1)]['Id'];return _0x3080cb[_0x3ee9b1(0x25c)]!=null?ProjDeptId=_0x3080cb[_0x3ee9b1(0x25c)][_0x3ee9b1(0x30b)]:ProjDeptId='',_0x677128==''?ProjDeptId!=_0x3ee9b1(0x23b):ProjDeptId==_0x677128;}),arrLimitTaskDeptEmp=arrLimitTaskDeptEmp[_0x2dcbba(0x34c)](_0x341496),_0x341496=[];}arrDataBind=arrLimitTaskDeptEmp[_0x2dcbba(0x322)](function(_0x9c2c6a){var _0x4e62e2=_0x2dcbba;return _0x9c2c6a['CurrentPhase']==_0x4e62e2(0x280);});arrDataBind[_0x2dcbba(0x292)]>=0x1f4?($(_0x2dcbba(0x1d5))[_0x2dcbba(0x1b3)](arrDataBind['length']),arrDataBind=arrDataBind[_0x2dcbba(0x1e1)](0x0,0x1f4),$(_0x2dcbba(0x159))[_0x2dcbba(0x2a1)](),$('#ShowItemsDeptEmp')[_0x2dcbba(0x1f2)](),$(_0x2dcbba(0x1c3))['text'](_0x2dcbba(0x194)),$(_0x2dcbba(0x274))[_0x2dcbba(0x1f2)]()):($(_0x2dcbba(0x159))[_0x2dcbba(0x1f2)](),$(_0x2dcbba(0x23a))[_0x2dcbba(0x2a1)](),$(_0x2dcbba(0x2e0))['text'](arrDataBind[_0x2dcbba(0x292)]),$('#SeeMoreDeptEmp')[_0x2dcbba(0x2a1)]());BindInboxTasks(arrDataBind,_0x2dcbba(0x282),'DeptEmps');if(arrDataBind[_0x2dcbba(0x292)]==0x0)$('#SeeMoreDeptEmp')[_0x2dcbba(0x2a1)]();else{}ShowPieChartDeptEmp(),GetDeptEmpCount();}else{arrDataBind=arrLimitTaskDeptEmp[_0x2dcbba(0x1e1)](parseInt($('#TaskCountDeptEmp')[_0x2dcbba(0x1b3)]()),parseInt($(_0x2dcbba(0x1c3))[_0x2dcbba(0x1b3)]())+0x1f4),BindInboxTasks(arrDataBind,_0x2dcbba(0x282),_0x2dcbba(0x180));if(arrLimitTaskDeptEmp['length']<=parseInt($(_0x2dcbba(0x1c3))[_0x2dcbba(0x1b3)]())+0x1f4)$(_0x2dcbba(0x159))[_0x2dcbba(0x1f2)](),$(_0x2dcbba(0x23a))[_0x2dcbba(0x2a1)](),$(_0x2dcbba(0x2e0))[_0x2dcbba(0x1b3)](arrLimitTaskDeptEmp[_0x2dcbba(0x292)]),$(_0x2dcbba(0x274))[_0x2dcbba(0x2a1)]();else{var _0x18321a=parseInt($('#TaskCountDeptEmp')[_0x2dcbba(0x1b3)]())+0x1f4;$(_0x2dcbba(0x159))[_0x2dcbba(0x2a1)](),$(_0x2dcbba(0x23a))[_0x2dcbba(0x1f2)](),$(_0x2dcbba(0x1c3))[_0x2dcbba(0x1b3)](_0x18321a['toString']()),$(_0x2dcbba(0x1d5))['text'](arrLimitTaskDeptEmp[_0x2dcbba(0x292)]),$(_0x2dcbba(0x274))[_0x2dcbba(0x1f2)]();}}}function ShowPieChartDeptProj(){var _0x561415=a371_0x272e70,_0x5f3787=$[_0x561415(0x347)](),_0x2b6b21=[],_0x412f53=[],_0x4e1ab0=[],_0x496b54=[],_0x5933fd=[],_0x44ad5f='',_0x36a6e5='';$('#PieDeptProj')[_0x561415(0x2c6)]();if(arrLimitTaskDeptProj[_0x561415(0x292)]>0x0){$(_0x561415(0x17e))['show'](),$(_0x561415(0x245))['hide'](),_0x2b6b21=arrLimitTaskDeptProj[_0x561415(0x322)](function(_0x73520f){var _0x25d25f=_0x561415;return _0x73520f[_0x25d25f(0x310)][_0x25d25f(0x313)]()==_0x25d25f(0x235);}),_0x412f53=arrLimitTaskDeptProj[_0x561415(0x322)](function(_0x1a3547){var _0x26013e=_0x561415;return _0x1a3547[_0x26013e(0x310)]['toLowerCase']()==_0x26013e(0x309);}),_0x4e1ab0=arrLimitTaskDeptProj[_0x561415(0x322)](function(_0x1a59fd){var _0x4a564e=_0x561415;return _0x1a59fd['CurrentPhase']['toLowerCase']()==_0x4a564e(0x30e);}),_0x496b54=arrLimitTaskDeptProj[_0x561415(0x322)](function(_0x442c7f){var _0x238832=_0x561415;return _0x442c7f['CurrentPhase'][_0x238832(0x313)]()==_0x238832(0x205);}),_0x5933fd=arrLimitTaskDeptProj[_0x561415(0x322)](function(_0x4a0d84){var _0x500772=_0x561415;return _0x4a0d84[_0x500772(0x310)][_0x500772(0x313)]()==_0x500772(0x216);});_0x2b6b21['length']==0x0&&_0x412f53[_0x561415(0x292)]==0x0&&_0x4e1ab0[_0x561415(0x292)]==0x0&&_0x496b54[_0x561415(0x292)]==0x0&&_0x5933fd[_0x561415(0x292)]==0x0&&$(_0x561415(0x17e))['hide']();var _0x33cd74=new d3pie(_0x561415(0x353),{'header':{'title':{'text':'','fontSize':0x1e}},'data':{'content':[{'label':_0x561415(0x331),'value':_0x2b6b21['length'],'valueType':_0x561415(0x23d)},{'label':'Open','value':_0x412f53[_0x561415(0x292)],'valueType':'percentage'},{'label':_0x561415(0x2a6),'value':_0x4e1ab0[_0x561415(0x292)],'valueType':'percentage'},{'label':'Cancelled','value':_0x496b54['length'],'valueType':_0x561415(0x23d)},{'label':_0x561415(0x323),'value':_0x5933fd['length'],'valueType':_0x561415(0x23d)}]},'callbacks':{'onload':null,'onMouseoverSegment':null,'onMouseoutSegment':null,'onClickSegment':function(_0x5ad0ce,_0x1b542d){clickInboxChart(_0x5ad0ce);}}});}else $(_0x561415(0x17e))['hide'](),$(_0x561415(0x245))[_0x561415(0x1f2)]();}function a371_0x2457(_0x464ae1,_0x176c39){var _0x3cc200=a371_0x3cc2();return a371_0x2457=function(_0x2457d2,_0x520a1a){_0x2457d2=_0x2457d2-0x158;var _0x3d60fa=_0x3cc200[_0x2457d2];return _0x3d60fa;},a371_0x2457(_0x464ae1,_0x176c39);}function ShowPieChartDeptEmp(){var _0x4987fa=a371_0x272e70,_0x352a4b=$['Deferred'](),_0x36dc69=[],_0x48506e=[],_0x4ca925=[],_0x285684=[],_0x1b4796=[],_0x392699='',_0x120559='';$(_0x4987fa(0x160))[_0x4987fa(0x2c6)]();if(arrLimitTaskDeptEmp[_0x4987fa(0x292)]>0x0){$(_0x4987fa(0x160))['show'](),$(_0x4987fa(0x210))[_0x4987fa(0x2a1)](),_0x36dc69=arrLimitTaskDeptEmp[_0x4987fa(0x322)](function(_0x484045){var _0x3b943b=_0x4987fa;return _0x484045[_0x3b943b(0x310)]['toLowerCase']()=='completed';}),_0x48506e=arrLimitTaskDeptEmp[_0x4987fa(0x322)](function(_0x46aecd){var _0x30a3fa=_0x4987fa;return _0x46aecd[_0x30a3fa(0x310)][_0x30a3fa(0x313)]()==_0x30a3fa(0x309);}),_0x4ca925=arrLimitTaskDeptEmp['filter'](function(_0x28e1a6){var _0x3a2b15=_0x4987fa;return _0x28e1a6[_0x3a2b15(0x310)]['toLowerCase']()==_0x3a2b15(0x30e);}),_0x285684=arrLimitTaskDeptEmp['filter'](function(_0x135bdf){var _0x4a7db9=_0x4987fa;return _0x135bdf[_0x4a7db9(0x310)][_0x4a7db9(0x313)]()=='cancelled';}),_0x1b4796=arrLimitTaskDeptEmp[_0x4987fa(0x322)](function(_0x9f439d){var _0x38764a=_0x4987fa;return _0x9f439d[_0x38764a(0x310)][_0x38764a(0x313)]()==_0x38764a(0x216);});_0x36dc69['length']==0x0&&_0x48506e[_0x4987fa(0x292)]==0x0&&_0x4ca925['length']==0x0&&_0x285684[_0x4987fa(0x292)]==0x0&&_0x1b4796[_0x4987fa(0x292)]==0x0&&$(_0x4987fa(0x160))[_0x4987fa(0x2a1)]();var _0x1f9e6c=new d3pie(_0x4987fa(0x344),{'header':{'title':{'text':'','fontSize':0x1e}},'data':{'content':[{'label':'Completed','value':_0x36dc69[_0x4987fa(0x292)],'valueType':_0x4987fa(0x23d)},{'label':_0x4987fa(0x280),'value':_0x48506e[_0x4987fa(0x292)],'valueType':'percentage'},{'label':_0x4987fa(0x2a6),'value':_0x4ca925['length'],'valueType':_0x4987fa(0x23d)},{'label':_0x4987fa(0x26e),'value':_0x285684[_0x4987fa(0x292)],'valueType':_0x4987fa(0x23d)},{'label':_0x4987fa(0x323),'value':_0x1b4796[_0x4987fa(0x292)],'valueType':_0x4987fa(0x23d)}]},'callbacks':{'onload':null,'onMouseoverSegment':null,'onMouseoutSegment':null,'onClickSegment':function(_0x3dce68,_0xe03a66){clickInboxChart(_0x3dce68);}}});}else $(_0x4987fa(0x160))[_0x4987fa(0x2a1)](),$(_0x4987fa(0x210))[_0x4987fa(0x1f2)]();}function SortTable(_0x1503e9){var _0x56fa77=a371_0x272e70;if($(_0x56fa77(0x241))[_0x56fa77(0x1ac)](_0x56fa77(0x2c7))[_0x56fa77(0x22d)]('id')==_0x56fa77(0x264)){if(_0x1503e9=='Task\x20Name')$('#TaskNameDeptProj')[_0x56fa77(0x289)]('click');else{if(_0x1503e9==_0x56fa77(0x29d))$(_0x56fa77(0x172))[_0x56fa77(0x289)](_0x56fa77(0x2a9));else{if(_0x1503e9==_0x56fa77(0x348))$('#DueDeptProj')[_0x56fa77(0x289)]('click');else _0x1503e9==_0x56fa77(0x161)&&$(_0x56fa77(0x236))[_0x56fa77(0x289)](_0x56fa77(0x2a9));}}}else{if($(_0x56fa77(0x241))['find'](_0x56fa77(0x2c7))[_0x56fa77(0x22d)]('id')=='ParentDeptEmp'){if(_0x1503e9==_0x56fa77(0x1e7))$('#TaskNameDeptEmp')[_0x56fa77(0x289)](_0x56fa77(0x2a9));else{if(_0x1503e9=='Recent\x20Task')$(_0x56fa77(0x22a))[_0x56fa77(0x289)](_0x56fa77(0x2a9));else{if(_0x1503e9=='Due\x20Date')$(_0x56fa77(0x213))[_0x56fa77(0x289)](_0x56fa77(0x2a9));else _0x1503e9==_0x56fa77(0x161)&&$('#PriorityDeptEmp')[_0x56fa77(0x289)](_0x56fa77(0x2a9));}}}else{if(_0x1503e9==_0x56fa77(0x1e7))$(_0x56fa77(0x1a4))[_0x56fa77(0x289)](_0x56fa77(0x2a9));else{if(_0x1503e9==_0x56fa77(0x29d))$('#RecentSub')[_0x56fa77(0x289)](_0x56fa77(0x2a9));else{if(_0x1503e9==_0x56fa77(0x348))$(_0x56fa77(0x18d))[_0x56fa77(0x289)](_0x56fa77(0x2a9));else _0x1503e9==_0x56fa77(0x161)&&$(_0x56fa77(0x189))[_0x56fa77(0x289)](_0x56fa77(0x2a9));}}}}}function AddDependencyInTask(_0x4fc8d2){var _0x57f2ca=a371_0x272e70,_0x144017,_0x527860=[],_0x24764c=[],_0x200aa6=[],_0x51eea3='';if(arrTaskMySubordinate[_0x57f2ca(0x292)]>0x0)_0x51eea3='TempTableMySubordinate',_0x527860=arrTaskMySubordinate['filter'](function(_0xe18d53){return _0xe18d53;});else{if(arrTaskParentDeptProj[_0x57f2ca(0x292)]>0x0)_0x51eea3=_0x57f2ca(0x299),_0x527860=arrTaskParentDeptProj[_0x57f2ca(0x322)](function(_0x24ff9d){return _0x24ff9d;});else arrTaskParentDeptEmp['length']>0x0&&(_0x51eea3=_0x57f2ca(0x2e7),_0x527860=arrTaskParentDeptEmp[_0x57f2ca(0x322)](function(_0x353aab){return _0x353aab;}));}if(arrTaskMySubordinate[_0x57f2ca(0x292)]!=0x0||arrTaskParentDeptProj[_0x57f2ca(0x292)]!=0x0||arrTaskParentDeptEmp[_0x57f2ca(0x292)]!=0x0){var _0x13831e=GetItemTypeForListName(_0x57f2ca(0x283));if(_0x4fc8d2=='AddDependency'){_0x200aa6=[];var _0x5b892b=!![],_0x13831e=GetItemTypeForListName(_0x57f2ca(0x16f)),_0x19dcef=GetItemTypeForListName('EmployeeTaskDetails');getDependencyUserInfo(_0x57f2ca(0x1b5)),_0x527860[_0x57f2ca(0x261)](function(_0x298e0e,_0x1affe8){var _0x4771b8=_0x57f2ca,_0x14f626=[];_0x5b892b=!![];if(_0x51eea3==_0x4771b8(0x2a2))_0x200aa6=arrMySubordinate[_0x4771b8(0x322)](function(_0x266b96){return _0x266b96['Id']==_0x298e0e;});else _0x51eea3=='TempTableDeptProj'?_0x200aa6=arrDeptProjects[_0x4771b8(0x322)](function(_0x1fc9ce){return _0x1fc9ce['Id']==_0x298e0e;}):_0x200aa6=arrDeptEmployee[_0x4771b8(0x322)](function(_0x47ba02){return _0x47ba02['Id']==_0x298e0e;});var _0x2af873=[];if(_0x200aa6[0x0][_0x4771b8(0x15d)]!=0x0&&_0x200aa6[0x0]['DependencyCount']!=null)for(var _0x558bf9=0x0;_0x558bf9<_0x200aa6[0x0]['DependencyTo']['results'][_0x4771b8(0x292)];_0x558bf9++){_0x2af873[_0x4771b8(0x221)]({'email':_0x200aa6[0x0][_0x4771b8(0x1c1)]['results'][_0x558bf9][_0x4771b8(0x346)],'userId':_0x200aa6[0x0][_0x4771b8(0x2c1)][_0x4771b8(0x24f)][_0x558bf9]});}AllAddedAssignee=AllAddedAssignee[_0x4771b8(0x34c)](_0x2af873),_0x14f626=checkUserValid(),_0x14f626=_0x14f626['filter'](function(_0x10e6d1,_0x56fafd){return _0x14f626['indexOf'](_0x10e6d1)==_0x56fafd;}),MetadataforDependencyTask={'__metadata':{'type':_0x19dcef},'DependencyCount':_0x14f626['length']+parseInt(_0x200aa6[0x0]['DependencyCount']?_0x200aa6[0x0][_0x4771b8(0x15d)]:0x0),'DependencyToId':{'results':_0x14f626}},arrDepIds=[],arrTemp=[];if($(_0x4771b8(0x2d1))['text']()=='Add')_0x2af873['length']>0x0?arrDepIds=getUserInformation(_0x4771b8(0x1b5)):arrDepIds=_0x14f626[_0x4771b8(0x322)](function(_0x50d529){return _0x50d529;});else{AllAddedAssignee=[],getDependencyUserInfo('AssaginToDependency'),arrDepIds=[];for(var _0x3c3b80=0x0;_0x3c3b80<AllAddedAssignee[_0x4771b8(0x292)];_0x3c3b80++){arrDepIds[_0x4771b8(0x221)](AllAddedAssignee[_0x3c3b80][_0x4771b8(0x211)]);}}if(arrDepIds[_0x4771b8(0x292)]>0x0){Metadata={'__metadata':{'type':_0x13831e},'Title':$(_0x4771b8(0x357))[_0x4771b8(0x24a)](),'Details':$(_0x4771b8(0x22e))[_0x4771b8(0x24a)](),'Status':_0x4771b8(0x1c2),'CompanyIDId':Logged_CompanyId,'AssignedToId':{'results':arrDepIds},'TaskIdId':_0x298e0e};if($('.StartDependecyDate')[_0x4771b8(0x24a)]()!=''){FormattedStartDate=new Date(_0x200aa6[0x0][_0x4771b8(0x166)])[_0x4771b8(0x2b2)](0x0,0x0,0x0,0x0),FormattedStartDate=new Date(FormattedStartDate),FormattedEndDate=new Date(_0x200aa6[0x0][_0x4771b8(0x1c6)])[_0x4771b8(0x2b2)](0x0,0x0,0x0,0x0),FormattedEndDate=new Date(FormattedEndDate);if(_0x527860[_0x4771b8(0x292)]==0x1){if(FormattedStartDate<=new Date(GetDateStandardFormat(moment($(_0x4771b8(0x336))[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220))))&&FormattedEndDate>=new Date(GetDateStandardFormat(moment($(_0x4771b8(0x336))[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220)))))Metadata[_0x4771b8(0x166)]=GetDateStandardFormat(moment($('.StartDependecyDate')[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220)));else return AllAddedAssignee=[],_0x5b892b==![],alert(_0x4771b8(0x1e9)),![];}else Metadata['StartDate']=GetDateStandardFormat(moment($(_0x4771b8(0x336))[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220)));}else $(_0x4771b8(0x18c))[_0x4771b8(0x2b5)](_0x4771b8(0x18f))==!![]&&(Metadata[_0x4771b8(0x166)]=GetDateStandardFormat(moment(_0x200aa6[0x0][_0x4771b8(0x166)][_0x4771b8(0x306)]('T')[0x0])[_0x4771b8(0x2ef)](_0x4771b8(0x220))));if($('.DueDependecyDate')['val']()!=''){FormattedStartDate=new Date(_0x200aa6[0x0][_0x4771b8(0x166)])[_0x4771b8(0x2b2)](0x0,0x0,0x0,0x0),FormattedStartDate=new Date(FormattedStartDate),FormattedEndDate=new Date(_0x200aa6[0x0][_0x4771b8(0x1c6)])['setHours'](0x0,0x0,0x0,0x0),FormattedEndDate=new Date(FormattedEndDate);if(_0x527860[_0x4771b8(0x292)]==0x1){if(FormattedStartDate<=new Date(GetDateStandardFormat(moment($(_0x4771b8(0x197))[_0x4771b8(0x24a)]())['format']('DD/MM/YYYY')))&&FormattedEndDate>=new Date(GetDateStandardFormat(moment($(_0x4771b8(0x197))[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220)))))Metadata[_0x4771b8(0x1be)]=GetDateStandardFormat(moment($(_0x4771b8(0x197))[_0x4771b8(0x24a)]())[_0x4771b8(0x2ef)](_0x4771b8(0x220)));else return _0x5b892b==![],AllAddedAssignee=[],alert(_0x4771b8(0x27c)),![];}else Metadata['EndDate']=GetDateStandardFormat(moment($(_0x4771b8(0x197))[_0x4771b8(0x24a)]())['format'](_0x4771b8(0x220)));}else{if($(_0x4771b8(0x223))[_0x4771b8(0x2b5)]('checked')==!![]){var _0x35b7dc=new Date(new Date(_0x200aa6[0x0][_0x4771b8(0x1c6)][_0x4771b8(0x306)]('T')[0x0])[_0x4771b8(0x254)](new Date(_0x200aa6[0x0][_0x4771b8(0x1c6)][_0x4771b8(0x306)]('T')[0x0])[_0x4771b8(0x2c9)]()+0x1));Metadata[_0x4771b8(0x1be)]=GetDateStandardFormat(moment(_0x35b7dc)[_0x4771b8(0x2ef)](_0x4771b8(0x220)));}}Metadata['MandatoryCompletion']=$(_0x4771b8(0x317))[_0x4771b8(0x2b5)](_0x4771b8(0x18f)),UpdateTaskList('EmployeeTaskDetails',MetadataforDependencyTask,_0x298e0e),_0x5b892b==!![]&&($(_0x4771b8(0x2d1))[_0x4771b8(0x1b3)]()==_0x4771b8(0x351)&&AddDependyList(_0x4771b8(0x16f),Metadata,_0x298e0e,_0x51eea3,_0x14f626['length']));}_0x527860[_0x4771b8(0x292)]==_0x1affe8+0x1&&(arrTaskIds=[],arrTaskInIds=[],alert(_0x4771b8(0x16d)));});}}else return alert(_0x57f2ca(0x2a4)),![];}
+var assignBy = []; //for showing search result
+var assignByEmail = "";
+var FilterLocalStorage = [];
+var IsInboxProjectBind = false;
+var arrAllTaskUserWise = []; //filter = Assignto = LoggedIN user and Dependency = LoggedIN user
+var AllTaskInbox = []; //all the Employee list tasks
+var arrLimitTaskInbox = []; //filter = Assignto = LoggedIN user and Dependency = LoggedIN user and CompanyId = LoggedIN and Status = open
+var arrFilterDataBind = []; //Filtered data
+var IsInboxClientBind = false;
+var LoadAllData = false;
+var currentPhase = "Open";
+var TaskAction = "PageLoad";
+var currentDlg = '';
+var IsThresholdLimitCorssed = false;
+var arrFilterDeptProj = []; //Filtered data for Departmental Projects
+var arrLimitTaskDeptProj = []; //Contains Department-wise Project's tasks (Selected Department)
+var arrFilterDeptEmp = []; //Filtered data for Departmental Employees
+var arrLimitTaskDeptEmp = []; //Contains Department-wise tasks (Selected Department)
+var arrTaskInIds = [];
+var arrDeptEmployee=[];
+var arrDeptProjects=[];
+var arrMySubordinate=[];
+var arrTaskParentDeptProj=[];
+var arrTaskParentDeptEmp =[];
+var arrTaskMySubordinate =[];
+
+$(document).ready(function () {
+    initializePeoplePicker("pplassigntoInbox");
+    initializePeoplePicker("SendNotiPicker");
+    getSubordinatesLoad();
+    
+
+    
+    getAllDataByPnp('*,ProjectID/DepartmentId,PredecessorTask/Id,PredecessorTask/Title,SuccessorTask/Id,SuccessorTask/Title,ClientID/ID,ClientID/Title,Module/Title,Module/ID,AssignedBy/EMail,AssignedBy/Title,AssignedBy/Id,Author/Title,Author/EMail,DependencyTo/EMail,DependencyTo/Title,TaskAssignTo/EMail,TaskAssignTo/Title,TaskAssignTo/ID,AttachmentFiles', 'PredecessorTask,SuccessorTask,ClientID,Module,Author,AssignedBy,AttachmentFiles,TaskAssignTo,DependencyTo,ProjectID', '', 'EmployeeTaskDetails', 'Modified', '');
+    $('#ProjectModule').attr('disabled', true);
+    $(".FilterInbox").click(function () {
+        $("#Inbox").modal("show");
+        //    $('#taskIn').val('').attr('type', 'text').attr('type', 'date');
+   // $('#fromDatetaskIn').val('');
+  //  $('#toDatetaskIn').val('');
+
+        if ($('#WorkTypeOfProject option').length == 0) {
+            bindAllWorkType();
+        }
+        $("#taskIn").datepicker();
+        $('#taskIn').datepicker("option", "dateFormat", "MM dd, yy");
+          
+        if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+            $("#UserAllProject").val("Projects");
+            $("#UserAllProject").trigger("change");
+            $("#UserAllProject").attr('disabled', 'disabled');
+
+        }
+        else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+            $("#UserAllProject").val("All");
+            $("#UserAllProject").trigger("change");
+            $("#UserAllProject").prop('disabled', '');
+
+        }
+        else {
+            $("#UserAllProject").val("All");
+            $("#UserAllProject").trigger("change");
+            $("#UserAllProject").prop('disabled', '');
+
+        }
+    });
+    $(".SortProject").click(function () {
+        SortProjectTable(this.textContent);
+    });
+
+    $(".MISTab").click(function () {
+        $('.taskchkIn').prop("checked", "");
+        $('.selectAllIn').prop("checked", "");
+        arrTaskInIds = [];
+    });
+    
+    $(".addSubordinateDependency").click(function () {
+        if($.trim($("#txtTitle").val()) != '' && $.trim($("#txtDetails").val()) != '' && $("#AssaginToDependency_TopSpan_ResolvedList").text() != '') {
+            AddDependencyInTask('AddDependency');
+        }
+        else {
+            alert("Kindly fill all the mandatory fields.");
+            return false;
+        }
+    });
+
+    $("#UserAllProject").change(function () {
+        $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+        $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+
+        if (this.value == "General Task") {
+            $(".ClientDiv").show();
+            $(".projectDiv").hide();
+        }
+        else if (this.value == "Projects") {
+            $(".ClientDiv").hide();
+            $(".projectDiv").show();
+        }
+        else { //"All" select
+            $(".projectDiv").hide();
+            $(".ClientDiv").hide();
+        }
+        var storenow = $('#UserAllProject').val();
+        if (storenow == "Projects") {
+            $('.removing_box').addClass('activnating');
+        }
+        else {
+            $('.removing_box').removeClass('activnating');
+        }
+    });
+    $("#searchInProject").click(function () {
+        if (IsInboxProjectBind == false) {
+            var dlgTitle = 'Loading projects...';
+            var dlgMsg = '<br />Please wait!!';
+            var dlgHeight = 200;
+            var dlgWidth = 400;
+            SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+                currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+            });
+            setTimeout(function () {
+                ReadInDepartment();
+                loadprojectInsearch();
+            }, 100);
+        }
+        $("#ProjectInboxSearch").modal('show');
+    });
+    $("#Clientid").change(function () {
+        if (this.value == "Clients") {
+            $(".ClientDiv").show();
+        }
+        else {
+            $(".ClientDiv").hide();
+        }
+    });
+    $("#searchInClient").click(function () {
+        if (IsInboxClientBind == false) {
+            var dlgTitle = 'Loading clients...';
+            var dlgMsg = '<br />Please wait!!';
+            var dlgHeight = 200;
+            var dlgWidth = 400;
+            SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+                currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+            });
+            setTimeout(function () {
+                $("#btnSelectCustomer").show();
+                $("#btnOutSelectCustomer").hide();
+                getClientMaster('mainDivAreaClientmaster');
+            }, 100);
+        }
+        else {
+            $("#otherCustomerSearch").modal("show");
+        }
+    });
+    $("#btnSelectCustomer").click(function () {
+        setCustomerValue();
+    });
+
+    $("#FilterInProject").click(function () {
+        var dlgTitle = 'Filtering projects...';
+        var dlgMsg = '<br />Please wait!!';
+        var dlgHeight = 200;
+        var dlgWidth = 400;
+        SP.SOD.loadMultiple(['strings.js', 'sp.ui.dialog.js'], function () {
+            currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+        });
+        setTimeout(function () {
+            loadprojectInsearch();
+        }, 100);
+    });
+    $("#btnInProject").click(function () {
+        setInboxProjectValue();
+    });
+
+    $("#SeeMoreInbox").click(function () { ////See more for Page load content
+        currentPhase = "Open";
+        TaskAction = "";
+        var lastPage = $("#pageDropDownInbox").val();
+        getSelectedEmpTasks($("#SelectedEmpEmail").text());
+        $("#pageDropDownInbox").val(lastPage);
+        $("#pageDropDownInbox").trigger("change");
+    });
+    $("#SeeMoreDeptProj").click(function () { ////See more for Page load content
+        var lastPage = $("#pageDropDownDeptProj").val();
+        DepartmentalProjTasks("", $("#ddlDeptProj").val());;
+        $("#pageDropDownDeptProj").val(lastPage);
+        $("#pageDropDownDeptProj").trigger("change");
+    });
+    $("#SeeMoreDeptEmp").click(function () { ////See more for Page load content
+        var lastPage = $("#pageDropDownDeptEmp").val();
+        DeptEmpTasks('', []);
+        $("#pageDropDownDeptEmp").val(lastPage);
+        $("#pageDropDownDeptEmp").trigger("change");
+    });
+
+    $("#SeeMoreFilterInbox").click(function () { //See more for filtered data
+        var lastPage = $("#pageDropDownInbox").val();
+        var arrDataBind = [];
+        arrDataBind = arrFilterDataBind.slice(parseInt($("#DiplayTaskCount").text()), (parseInt($("#DiplayTaskCount").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllAnnouncements', 'MySubordinate');
+        if (arrFilterDataBind.length <= (parseInt($("#DiplayTaskCount").text()) + 500)) {
+            $("#ShowTotalItemsInbox").show();
+            $("#ShowItemsInbox").hide();
+            $("#TotalItemscount").text(arrFilterDataBind.length);
+            $("#SeeMoreFilterInbox").hide();
+        }
+        else {
+            var currentDisplayCOunt = parseInt($("#DiplayTaskCount").text()) + 500;
+            $("#ShowTotalItemsInbox").hide();
+            $("#ShowItemsInbox").show();
+            $("#DiplayTaskCount").text(currentDisplayCOunt.toString());
+            $("#TotalTaskCount").text(arrFilterDataBind.length);
+            $("#SeeMoreFilterInbox").show();
+        }
+        //FilterTaskData(Query, "SeeMore");
+        $("#pageDropDownInbox").val(lastPage);
+        $("#pageDropDownInbox").trigger("change");
+    });
+
+    $("#SeeMoreFilterDeptProj").click(function () { //See more for filtered data
+        var lastPage = $("#pageDropDownDeptProj").val();
+        var arrDataBind = [];
+        arrDataBind = arrFilterDeptProj.slice(parseInt($("#TaskCountDeptProj").text()), (parseInt($("#TaskCountDeptProj").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptProj', 'DeptProjects');
+        if (arrFilterDeptProj.length <= (parseInt($("#TaskCountDeptProj").text()) + 500)) {
+            $("#ShowTotalItemsDeptProj").show();
+            $("#ShowItemsDeptProj").hide();
+            $("#TotalItemscountDeptProj").text(arrFilterDeptProj.length);
+            $("#SeeMoreFilterDeptProj").hide();
+        }
+        else {
+            var currentDisplayCOunt = parseInt($("#TaskCountDeptProj").text()) + 500;
+            $("#ShowTotalItemsDeptProj").hide();
+            $("#ShowItemsDeptProj").show();
+            $("#TaskCountDeptProj").text(currentDisplayCOunt.toString());
+            $("#TotalTaskCountDeptProj").text(arrFilterDeptProj.length);
+            $("#SeeMoreFilterDeptProj").show();
+        }
+        //FilterTaskData(Query, "SeeMore");
+        $("#pageDropDownDeptProj").val(lastPage);
+        $("#pageDropDownDeptProj").trigger("change");
+    });
+
+    $("#SeeMoreFilterDeptEmp").click(function () { //See more for filtered data
+        var lastPage = $("#pageDropDownDeptProj").val();
+        var arrDataBind = [];
+        arrDataBind = arrFilterDeptEmp.slice(parseInt($("#TaskCountDeptEmp").text()), (parseInt($("#TaskCountDeptEmp").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptEmp', 'DeptEmps');
+        if (arrFilterDeptEmp.length <= (parseInt($("#TaskCountDeptEmp").text()) + 500)) {
+            $("#ShowTotalItemsDeptEmp").show();
+            $("#ShowItemsDeptEmp").hide();
+            $("#TotalItemscountDeptEmp").text(arrFilterDeptEmp.length);
+            $("#SeeMoreFilterDeptEmp").hide();
+        }
+        else {
+            var currentDisplayCOunt = parseInt($("#TaskCountDeptEmp").text()) + 500;
+            $("#ShowTotalItemsDeptEmp").hide();
+            $("#ShowItemsDeptEmp").show();
+            $("#TaskCountDeptEmp").text(currentDisplayCOunt.toString());
+            $("#TaskCountDeptEmp").text(arrFilterDeptEmp.length);
+            $("#SeeMoreFilterDeptEmp").show();
+        }
+        //FilterTaskData(Query, "SeeMore");
+        $("#pageDropDownDeptEmp").val(lastPage);
+        $("#pageDropDownDeptEmp").trigger("change");
+    });
+
+    $(".TaskExport").click(function () {
+        var dlgTitle = 'Generating excelsheet...';
+        var dlgMsg = '<br />Please wait!!';
+        var dlgHeight = 200;
+        var dlgWidth = 400;
+        currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+        setTimeout(function () {
+            generateTaskInExcel();
+        }, 100);
+    });
+
+    //Pending count click
+    $(".PendingTask").click(function () {
+        SetTaskPending();
+    });
+    //Overdue count click
+    $(".OverDueTask").click(function () {
+        SetTaskOverdue();
+    });
+    $(".SortClass").click(function () {
+        SortTable(this.textContent);
+    });
+    $(".ddlDeptHOD").change(function () {
+        if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+            DepartmentalProjTasks("PageLoad", $("#ddlDeptProj").val());
+            getDeptEmployee($("#ddlDeptProj").val());
+        }
+        else {
+            //DepartmentalProjTasks("PageLoad", $("#ddlDeptEmp").val());
+            getDeptEmployee($("#ddlDeptEmp").val());
+        }
+    });
+    $("#btnSendNotifyMIS").click(function () {
+        if ($.trim($("#txtTaskNotify").val()) != "") {
+            updateMISMeatdata('NotifyByMail');
+        }
+        else {
+            alert("Kindly enter message first");
+            return false;
+        }
+    });
+    $(".selectAllIn").click(function (e) {
+        currentTab = '';
+        if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+            currentTab = "TempTableDeptProj";
+        }
+        else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+            currentTab = "TempTableDeptEmp";
+        }
+        else {
+            currentTab = "TempTableQuestions";
+        }
+        if (this.checked == true) {
+            $('#' + currentTab + ' .taskchkIn').prop("checked", "");
+            $('#' + currentTab + ' .taskchkIn').trigger('click');
+        }
+        else {
+            $('#' + currentTab + ' .taskchkIn').prop("checked", "");
+            arrTaskInIds = [];
+        }
+    });
+    $('#TempTableDeptProj .taskchkIn').change(function () {
+        if (this.checked == false) {
+            $('#TempTableDeptProj .selectAllIn').prop("checked", "")
+        }
+    });
+    $('#TempTableDeptEmp .taskchkIn').change(function () {
+        if (this.checked == false) {
+            $('#TempTableDeptEmp .selectAllIn').prop("checked", "")
+        }
+    });
+    $('#TempTableQuestions .taskchkIn').change(function () {
+        if (this.checked == false) {
+            $('#TempTableQuestions .selectAllIn').prop("checked", "")
+        }
+    });
+    $(".AddDepedncySub").click(function () {
+        if(arrTaskInIds.length == 0){
+            alert("Kindly select any task first.");
+            return false;
+        }
+        else {
+        	$("#dependenciesmodl").modal('show');
+        }
+    });
+    $(".liNotifySub").click(function () {
+        if(arrTaskInIds.length == 0) {
+	    	alert("Kindly select any task first.");
+	    	return false;
+        }
+	    else {
+	    	$("#Notificationlist").modal('show');
+	    }
+    });
+    
+    //dependencyEvent();
+});
+
+
+//show subordinates on page load
+function getSubordinatesLoad() {
+    //checkHOD();
+    var subordinates = '';
+    var PendingOverdueCounts = [];
+    //var TargetCount = 0;
+    var CurrentPase = "Open";
+    var PendingCount = "0";
+    var OverDueCOunt = "0";
+    //ManagerLoginName/EMail eq '" + _spPageContextInfo.userEmail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "'
+    var Query = "?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/EMail,LogonName/ID,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName asc&$filter=LogonName/EMail eq '" + _spPageContextInfo.userEmail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "'";
+    $.when(getLimitedEmployeess('Employees', Query)).done(function (Subordinates) {
+        /*getLogonUserValue=Subordinates.filter(function (v)
+        {
+          return v.LogonName.EMail==_spPageContextInfo.userEmail;
+        })
+        //var arr=getLogonUserValue.concat(Subordinates)
+        Subordinates=getLogonUserValue;//[... new Set (arr)];*/
+        for (var sub = 0; sub < Subordinates.length; sub++) {
+            if (Subordinates[sub].AttachmentFiles.results.length > 0) {
+                var employeePicURL = Subordinates[sub].AttachmentFiles.results[0].ServerRelativeUrl;
+            }
+            else {
+                var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Subordinates[sub].LogonName.EMail)
+            }
+            PendingOverdueCounts = getSelectedEmpTaskCount(Subordinates[sub].LogonName.EMail);
+            if (PendingOverdueCounts.length > 0) {
+                PendingCount = PendingOverdueCounts[0].OpenTasksCount ? PendingOverdueCounts[0].OpenTasksCount : "0";
+                OverDueCOunt = PendingOverdueCounts[0].OverdueCount ? PendingOverdueCounts[0].OverdueCount : "0";
+                $("#TotalPending").text(parseInt($("#TotalPending").text()) + parseInt(PendingCount));
+                $("#TotalOverdue").text(parseInt($("#TotalOverdue").text()) + parseInt(OverDueCOunt));
+            }
+            else {
+                PendingCount = "0";
+                OverDueCOunt = "0";
+            }
+            if (sub == 0) {
+                subordinates += '<li class="panel active"><div class="my-sub-arrow">';
+                var HasSubordinates = checkForSubordinates(Subordinates[sub].LogonName.EMail);
+                if (HasSubordinates == true) {
+                    subordinates += '<i class="fa fa-angle-right my-sub-arrow-icon" data-toggle="collapse" data-target="#Subrdinate' + Subordinates[sub].LogonName.ID + '" aria-expanded="true"></i>';
+                }
+                else {
+                    subordinates += '';
+                }
+                subordinates += '<a class="cursor-pointer" data-toggle="pill">';
+                subordinates += '<div class="d-flex align-items-center side-bar-icon-center">';
+                subordinates += '<img src="' + employeePicURL + '" alt="EmpImage">';
+                subordinates += '<div class="user-details-panel mt3 ml10">';
+                subordinates += '<h4 class="tab-user-name"><span class="mr-4 ellipsis-2 firstSubordinate" onclick=getSelectedEmpTasks(\'' + Subordinates[sub].LogonName.EMail + '\');>' + Subordinates[sub].FullName + '</span><span class="d-flex color-black" style="display: none !important;"><span id="PendingCount'+sub+'">' + PendingCount + '</span>, <span class="color-red ml-4" id="OverDueCOunt'+sub+'">' + OverDueCOunt + '</span></span></h4>';
+                subordinates += '<p class="tab-user-deg"><span class="ellipsis-2">' + Subordinates[sub].Designation + ' | ' + Subordinates[sub].Department.DepartmentName + '</span></p>';
+                subordinates += '<p class="tab-user-email ellipsis-2"><span onclick="OpenEmail(this);">' + Subordinates[sub].LogonName.EMail + '</span></p></div></div></a></div>';
+
+                //Finding Sub-SubOrdinates and so on
+                var Query = "?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/ID,LogonName/EMail,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName asc&$filter=ManagerLoginName/EMail eq '" + Subordinates[sub].LogonName.EMail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "' ";
+                $.when(getLimitedEmployeess('Employees', Query)).done(function (SubSubordinates) {
+                    if (SubSubordinates.length > 0) {
+                        subordinates += '<div id="Subrdinate' + Subordinates[sub].LogonName.ID + '" class="inner-collapse-panel-mobile collapse in" aria-expanded="true" style="">';
+                        subordinates += '<div class=" inner-collapse-panel"><div class="panel-group">';
+                        for (var sub1 = 0; sub1 < SubSubordinates.length; sub1++) {
+                            PendingOverdueCounts = getSelectedEmpTaskCount(SubSubordinates[sub1].LogonName.EMail);
+                            if (PendingOverdueCounts.length > 0) {
+                                PendingCount = PendingOverdueCounts[0].OpenTasksCount ? PendingOverdueCounts[0].OpenTasksCount : "0";
+                                OverDueCOunt = PendingOverdueCounts[0].OverdueCount ? PendingOverdueCounts[0].OverdueCount : "0";
+                                $("#TotalPending").text(parseInt($("#TotalPending").text()) + parseInt(PendingCount));
+                                $("#TotalOverdue").text(parseInt($("#TotalOverdue").text()) + parseInt(OverDueCOunt));
+                            }
+                            else {
+                                PendingCount = "0";
+                                OverDueCOunt = "0";
+                            }
+
+                            if (SubSubordinates[sub1].AttachmentFiles.results.length > 0) {
+                                var SubemployeePicURL = SubSubordinates[sub1].AttachmentFiles.results[0].ServerRelativeUrl;
+                            }
+                            else {
+                                var SubemployeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(SubSubordinates[sub1].LogonName.EMail)
+                            }
+                            //check if employee has subordinates
+                            var HasSubordinates = checkForSubordinates(SubSubordinates[sub1].LogonName.EMail);
+                            subordinates += '<div class="panel panel-default" id="Manager' + SubSubordinates[sub1].LogonName.ID + '"><div class="panel-heading"><h4 class="panel-title"><div class="my-sub-arrow">';
+                            if (HasSubordinates == true) {
+                                subordinates += '<i class="fa fa-angle-right my-sub-arrow-icon collapsed" onclick="getSubordinatesOnClick(' + SubSubordinates[sub1].LogonName.ID + ', \'' + SubSubordinates[sub1].LogonName.EMail + '\');openToggle(this, ' + SubSubordinates[sub1].LogonName.ID + ');" data-target="#Subrdinate' + SubSubordinates[sub1].LogonName.ID + '" aria-expanded="false"></i>';
+                            }
+                            else {
+                                subordinates += '';
+
+                            }
+                            subordinates += '<a href="javascript:void(0);"><div class="d-flex align-items-center"><img src="' + SubemployeePicURL + '" alt="EmpImage">';
+                            subordinates += '<div class="user-details-panel mt3 ml10"><h4 class="tab-user-name"><span class="mr-4 ellipsis-2" onclick=getSelectedEmpTasks(\'' + SubSubordinates[sub1].LogonName.EMail + '\')>' + SubSubordinates[sub1].FullName + '</span>';
+                            subordinates += '<span class="d-flex color-black" style="display: none !important;"><span id="PendingCount'+sub1+'">' + PendingCount + '</span>, <span class="color-red ml-4" id="OverDueCOunt'+sub+'">' + OverDueCOunt + '</span></span></h4>';
+                            subordinates += '<p class="tab-user-deg"><span class="ellipsis-2">' + SubSubordinates[sub1].Designation + ' | ' + SubSubordinates[sub1].Department.DepartmentName + '</span></p>';
+                            subordinates += '<p class="tab-user-email ellipsis-2"><span onclick="OpenEmail(this);">' + SubSubordinates[sub1].LogonName.EMail + '</span></p></div></div>';
+                            subordinates += '</a></div></div></h4></div>';
+                        }
+                        subordinates += '</div></div></div>';
+                    }
+                });
+                //subordinates += '';
+            }
+            else {
+                subordinates += '</li><li class="panel" id="Manager' + Subordinates[sub].LogonName.ID + '"><div class="my-sub-arrow">';
+                var HasSubordinates = checkForSubordinates(Subordinates[sub].LogonName.EMail);
+                if (HasSubordinates == true) {
+                    subordinates += '<i class="fa fa-angle-right my-sub-arrow-icon collapsed" data-target="#Subrdinate' + Subordinates[sub].LogonName.ID + '" onclick="getParentSubrdinate(' + Subordinates[sub].LogonName.ID + ', \'' + Subordinates[sub].LogonName.EMail + '\');openToggle(this, ' + Subordinates[sub].LogonName.ID + ');" aria-expanded="false"></i>';
+                }
+                else {
+                    subordinates += '';
+                }
+                subordinates += '<a class="cursor-pointer" data-toggle="pill">';
+                subordinates += '<div class="d-flex align-items-center side-bar-icon-center">';
+                subordinates += '<img src="' + employeePicURL + '" alt="EmpImage">';
+                subordinates += '<div class="user-details-panel mt3 ml10">';
+                subordinates += '<h4 class="tab-user-name"><span class="mr-4 ellipsis-2" onclick=getSelectedEmpTasks(\'' + Subordinates[sub].LogonName.EMail + '\')>' + Subordinates[sub].FullName + '</span><span class="d-flex color-black" style="display: none !important;"><span id="PendingCount'+sub+'">' + PendingCount + '</span>, <span class="color-red ml-4" id="OverDueCOunt'+sub+'">' + OverDueCOunt + '</span></span></h4>';
+                subordinates += '<p class="tab-user-deg"><span class="ellipsis-2">' + Subordinates[sub].Designation + ' | ' + Subordinates[sub].Department.DepartmentName + '</span></p>';
+                subordinates += '<p class="tab-user-email ellipsis-2"><span onclick="OpenEmail(this);">' + Subordinates[sub].LogonName.EMail + '</span></p></div></div></a></div></li>';
+            }
+
+        }
+        $("#SubordinatesList").append(subordinates);
+    });
+}
+
+//get Pending and Overdue task count of selected employee
+function getSelectedEmpTaskCount(UserEmail) {
+    var PendingOverdue = [];
+    var Query = "?$top=5000&$select=ID,OpenTasksCount,OverdueCount,UserId/EMail&$expand=UserId&$filter=UserId/EMail eq '" + UserEmail + "' ";
+    $.when(getLimitedEmployeess('EmployeeTaskCounter', Query)).done(function (TasksCount) {
+        PendingOverdue = TasksCount;
+    });
+    return PendingOverdue;
+}
+
+//To open subordinates list
+function openToggle(Action, ID) {
+    if ($(Action).hasClass("collapsed") == true) {
+        setTimeout(function () {
+            $(Action).attr('aria-expanded', 'true'); $(Action).removeClass("collapsed");
+            $("#Subrdinate" + ID).attr('aria-expanded', 'true'); $("#Subrdinate" + ID).addClass("in"); $("#Subrdinate" + ID).css("height", "");
+        }, 100);
+    }
+    else {
+        $(Action).attr('aria-expanded', 'false'); $(Action).addClass("collapsed");
+        $("#Subrdinate" + ID).attr('aria-expanded', 'false'); $("#Subrdinate" + ID).removeClass("in"); $("#Subrdinate" + ID).css("height", "0px");
+    }
+}
+
+//get sub-subordinates employee's tasks on click
+function getSubordinatesOnClick(ManagerLogonId, ManagerEmail) {
+    var subordinates = '';
+    var PendingOverdueCounts = [];
+
+    if ($("#Manager" + ManagerLogonId).html().includes("panel panel-default") == false) {
+        var Query = "?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/EMail,LogonName/ID,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName asc&$filter=ManagerLoginName/EMail eq '" + ManagerEmail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "' ";
+        $.when(getLimitedEmployeess('Employees', Query)).done(function (Subordinates) {
+            if (Subordinates.length > 0) {
+                subordinates += '<div id="Subrdinate' + ManagerLogonId + '" class="panel-collapse collapse in" aria-expanded="true"><div class="panel-body p0">';
+                subordinates += '<div class=" inner-collapse-panel"><div class="panel-group">';
+
+                for (var sub = 0; sub < Subordinates.length; sub++) {
+                    PendingOverdueCounts = getSelectedEmpTaskCount(Subordinates[sub].LogonName.EMail);
+                    if (PendingOverdueCounts.length > 0) {
+                        PendingCount = PendingOverdueCounts[0].OpenTasksCount ? PendingOverdueCounts[0].OpenTasksCount : "0";
+                        OverDueCOunt = PendingOverdueCounts[0].OverdueCount ? PendingOverdueCounts[0].OverdueCount : "0";
+                        $("#TotalPending").text(parseInt($("#TotalPending").text()) + parseInt(PendingCount));
+                        $("#TotalOverdue").text(parseInt($("#TotalOverdue").text()) + parseInt(OverDueCOunt));
+                    }
+                    else {
+                        PendingCount = "0";
+                        OverDueCOunt = "0";
+                    }
+
+                    if (Subordinates[sub].AttachmentFiles.results.length > 0) {
+                        var employeePicURL = Subordinates[sub].AttachmentFiles.results[0].ServerRelativeUrl;
+                    }
+                    else {
+                        var employeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(Subordinates[sub].LogonName.EMail)
+                    }
+                    subordinates += '<div class="panel panel-default" id="Manager' + Subordinates[sub].LogonName.ID + '"><div class="panel-heading"><h4 class="panel-title"><div class="my-sub-arrow">';
+                    var HasSubordinates = checkForSubordinates(Subordinates[sub].LogonName.EMail);
+                    if (HasSubordinates == true) {
+                        subordinates += '<i class="fa fa-angle-right my-sub-arrow-icon collapsed" onclick="getSubordinatesOnClick(' + Subordinates[sub].LogonName.ID + ', \'' + Subordinates[sub].LogonName.EMail + '\');openToggle(this, ' + Subordinates[sub].LogonName.ID + ');" data-target="#Subrdinate' + Subordinates[sub].LogonName.ID + '" aria-expanded="false"></i>';
+                    }
+                    else {
+                        subordinates += '';
+                    }
+                    subordinates += '<a href="javascript:void(0);"><div class="d-flex align-items-center"><img src="' + employeePicURL + '" alt="EmpImage">';
+                    subordinates += '<div class="user-details-panel mt3 ml10"><h4 class="tab-user-name"><span class="mr-4 ellipsis-2" onclick=getSelectedEmpTasks(\'' + Subordinates[sub].LogonName.EMail + '\')>' + Subordinates[sub].FullName + '</span>';
+                    subordinates += '<span class="d-flex color-black" style="display: none !important;"><span id="PendingCount'+sub+'">' + PendingCount + '</span>, <span class="color-red ml-4" id="OverDueCOunt'+sub+'">' + OverDueCOunt + '</span></span></h4>';
+                    subordinates += '<p class="tab-user-deg"><span class="ellipsis-2">' + Subordinates[sub].Designation + ' | ' + Subordinates[sub].Department.DepartmentName + '</span></p>';
+                    subordinates += '<p class="tab-user-email ellipsis-2"><span onclick="OpenEmail(this);">' + Subordinates[sub].LogonName.EMail + '</span></p></div></div>';
+                    subordinates += '</a></div></div></h4></div>'
+                }
+                subordinates += '</div></div></div>';
+                $("#Manager" + ManagerLogonId).append(subordinates);
+            }
+        });
+    }
+}
+
+//get subordinates employee's tasks on click
+function getParentSubrdinate(ManagerLogonId, ManagerEmail) {
+    var subordinates = '';
+    //var CurrentPase = "Open";
+    var PendingOverdueCounts = [];
+    //$("#Manager" + ManagerLogonId).empty();
+    if ($("#Manager" + ManagerLogonId).html().includes("panel panel-default") == false) {
+        var Query = "?$top=5000&$select=ID,Status,AttachmentFiles,LogonName/ID,LogonName/EMail,Designation,FullName,ManagerLoginName/EMail,Department/DepartmentName,Company/Id&$expand=Company,Department,ManagerLoginName,LogonName,AttachmentFiles&$OrderBy=FullName asc&$filter=ManagerLoginName/EMail eq '" + ManagerEmail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "' ";
+        $.when(getLimitedEmployeess('Employees', Query)).done(function (SubSubordinates) {
+            if (SubSubordinates.length > 0) {
+                subordinates += '<div id="Subrdinate' + ManagerLogonId + '" class="inner-collapse-panel-mobile collapse in" aria-expanded="true" style="">';
+                subordinates += '<div class=" inner-collapse-panel"><div class="panel-group">';
+                for (var sub1 = 0; sub1 < SubSubordinates.length; sub1++) {
+                    PendingOverdueCounts = getSelectedEmpTaskCount(SubSubordinates[sub1].LogonName.EMail);
+                    if (PendingOverdueCounts.length > 0) {
+                        PendingCount = PendingOverdueCounts[0].OpenTasksCount ? PendingOverdueCounts[0].OpenTasksCount : "0";
+                        OverDueCOunt = PendingOverdueCounts[0].OverdueCount ? PendingOverdueCounts[0].OverdueCount : "0";
+                        $("#TotalPending").text(parseInt($("#TotalPending").text()) + parseInt(PendingCount));
+                        $("#TotalOverdue").text(parseInt($("#TotalOverdue").text()) + parseInt(OverDueCOunt));
+                    }
+                    else {
+                        PendingCount = "0";
+                        OverDueCOunt = "0";
+                    }
+
+                    if (SubSubordinates[sub1].AttachmentFiles.results.length > 0) {
+                        var SubemployeePicURL = SubSubordinates[sub1].AttachmentFiles.results[0].ServerRelativeUrl;
+                    }
+                    else {
+                        var SubemployeePicURL = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(SubSubordinates[sub1].LogonName.EMail)
+                    }
+                    subordinates += '<div class="panel panel-default" id="Manager' + SubSubordinates[sub1].LogonName.ID + '"><div class="panel-heading"><h4 class="panel-title"><div class="my-sub-arrow">';
+                    var HasSubordinates = checkForSubordinates(SubSubordinates[sub1].LogonName.EMail);
+                    if (HasSubordinates == true) {
+                        subordinates += '<i class="fa fa-angle-right my-sub-arrow-icon collapsed" onclick="getSubordinatesOnClick(' + SubSubordinates[sub1].LogonName.ID + ', \'' + SubSubordinates[sub1].LogonName.EMail + '\');openToggle(this, ' + SubSubordinates[sub1].LogonName.ID + ');" data-target="#Subrdinate' + SubSubordinates[sub1].LogonName.ID + '" aria-expanded="false"></i>';
+                    }
+                    else {
+                        subordinates += '';
+                    }
+                    subordinates += '<a href="javascript:void(0);"><div class="d-flex align-items-center"><img src="' + SubemployeePicURL + '" alt="EmpImage">';
+                    subordinates += '<div class="user-details-panel mt3 ml10"><h4 class="tab-user-name"><span class="mr-4 ellipsis-2" onclick=getSelectedEmpTasks(\'' + SubSubordinates[sub1].LogonName.EMail + '\')>' + SubSubordinates[sub1].FullName + '</span>';
+                    subordinates += '<span class="d-flex color-black" style="display: none !important;"><span id="PendingCount'+sub1+'">' + PendingCount + '</span>, <span class="color-red ml-4" id="OverDueCOunt'+sub1+'">' + OverDueCOunt + '</span></span></h4>';
+                    subordinates += '<p class="tab-user-deg"><span class="ellipsis-2">' + SubSubordinates[sub1].Designation + ' | ' + SubSubordinates[sub1].Department.DepartmentName + '</span></p>';
+                    subordinates += '<p class="tab-user-email ellipsis-2"><span onclick="OpenEmail(this);">' + SubSubordinates[sub1].LogonName.EMail + '</span></p></div></div>';
+                    subordinates += '</a></div></div></h4></div>';
+                }
+                subordinates += '</div></div></div>';
+                $("#Manager" + ManagerLogonId).append(subordinates);
+            }
+        });
+    }
+}
+
+//get selected user Inbox tasks
+
+var getSelectedEmpTasksv="";
+function getSelectedEmpTasks(AssignTo) {
+getSelectedEmpTasksv=getSelectedEmpTasks;
+    $.ajax({
+        cache: false,
+        beforeSend: function() {
+            $("#overlaysearch").fadeIn();
+        },
+        success: function(html) {
+            LoadSelectedEmpTasks(AssignTo,getSelectedEmpTasksv);
+        },
+    });
+}
+
+
+
+function LoadSelectedEmpTasks(AssignTo,getSelectedEmpTasksv) {
+    $("#DetailsArea").show();
+    $("#SeeMoreFilterInbox").hide();
+    var restQuery,
+        arrDataBind = [];
+    if(TaskAction == "PageLoad") {
+        arrFilterDataBind = [];
+        var dateFilter = new Date();
+        dateFilter = dateFilter.setFullYear(dateFilter.getFullYear() - 1);
+        dateFilter = new Date(dateFilter);
+        //get Employee Details
+        var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,LogonName/EMail,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and LogonName/EMail eq '" + AssignTo + "' and Company/Id eq '" + Logged_CompanyId + "' ";
+        $.when(getLimitedEmployeess('Employees', Query)).done(function(UserResults) {
+            if(UserResults.length > 0) {
+                var value = UserResults[0];
+                if(value.AttachmentFiles.results.length > 0) {
+                    attachmentUrl = value.AttachmentFiles.results[0].ServerRelativeUrl;
+                } else {
+                    attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                }
+                $("#SelectedEmpImage").attr("src", attachmentUrl);
+                $("#SelectedEmpName").text(value.FullName);
+                $("#SelectedEmpData").text(value.Designation + " | " + value.Department.Title);
+                $("#SelectedEmpEmail").text(AssignTo);
+            }
+        });
+        //Start getting tasks 
+        $("#mainDivAllAnnouncements").empty();
+        arrAllTaskUserWise = AllTaskInbox.filter(function(obj) { //Filter array on the basis of CurrentPhase
+            var arrAssigntoQuery = [];
+            var arrDependencyQuery = [];
+            var AssigntoQuery = true;
+            var DependencyQuery = true;
+            if(obj.TaskAssignTo != null) {
+                for(var i = 0; i < obj.TaskAssignTo.length; i++) {
+                    if(obj.TaskAssignTo[i].EMail.indexOf("#") != -1) {
+                        obj.TaskAssignTo[i].EMail = obj.TaskAssignTo[i].EMail.split("#")[0];
+                        obj.TaskAssignTo[i].EMail = obj.TaskAssignTo[i].EMail.replace("_", "@");
+                    }
+                    arrAssigntoQuery.push(obj.TaskAssignTo[i].EMail.toLowerCase() == AssignTo.toLowerCase());
+                }
+            }
+            arrAssigntoQuery.forEach(function(entry, index) {
+                if(index == 0) {
+                    AssigntoQuery = entry;
+                } else {
+                    AssigntoQuery = entry || AssigntoQuery;
+                }
+            });
+            if(obj.DependencyTo != null) {
+                for(var j = 0; j < obj.DependencyTo.length; j++) {
+                    if(obj.DependencyTo[j].EMail.indexOf("#") != -1) {
+                        obj.DependencyTo[j].EMail = obj.DependencyTo[j].EMail.split("#")[0];
+                        obj.DependencyTo[j].EMail = obj.DependencyTo[j].EMail.replace("_", "@");
+                    }
+                    arrDependencyQuery.push(obj.DependencyTo[j].EMail.toLowerCase() == AssignTo.toLowerCase());
+                }
+            } else {
+                DependencyQuery = false;
+            }
+            arrDependencyQuery.forEach(function(entry, index) {
+                if(index == 0) {
+                    DependencyQuery = entry;
+                } else {
+                    DependencyQuery = entry || DependencyQuery;
+                }
+            });
+            return (AssigntoQuery || DependencyQuery); //(obj.CompanyId ==  Logged_CompanyId && 
+        });
+        arrDataBind = arrLimitTaskInbox = arrAllTaskUserWise.filter(function(obj) { //Filter array on the basis of CurrentPhase    
+            return (obj.CurrentPhase == currentPhase)
+        });
+        //Showing data out of total
+        if(arrDataBind.length >= 500) {
+            $("#TotalTaskCount").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsInbox").hide();
+            $("#ShowItemsInbox").show();
+            $("#DiplayTaskCount").text("500");
+            $("#SeeMoreInbox").show();
+        } else {
+            $("#ShowTotalItemsInbox").show();
+            $("#ShowItemsInbox").hide();
+            $("#TotalItemscount").text(arrDataBind.length);
+            $("#SeeMoreInbox").hide();
+        }
+        BindInboxTasks(arrDataBind, 'mainDivAllAnnouncements', 'MySubordinate');
+        if(arrDataBind.length == 0) {
+            $(".NoRecordFound").show();
+            $("#SeeMoreInbox").hide();
+        } else {
+            $(".NoRecordFound").hide();
+        }
+        ShowPieChartInbox();
+        GetTaskInboxCount();
+        waitingDialog.hide();
+    } else {
+        arrDataBind = arrLimitTaskInbox.slice(parseInt($("#DiplayTaskCount").text()), (parseInt($("#DiplayTaskCount").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllAnnouncements', 'MySubordinate');
+        if(arrLimitTaskInbox.length <= (parseInt($("#DiplayTaskCount").text()) + 500)) {
+            $("#ShowTotalItemsInbox").show();
+            $("#ShowItemsInbox").hide();
+            $("#TotalItemscount").text(arrLimitTaskInbox.length);
+            $("#SeeMoreInbox").hide();
+        } else {
+            var currentDisplayCOunt = parseInt($("#DiplayTaskCount").text()) + 500;
+            $("#ShowTotalItemsInbox").hide();
+            $("#ShowItemsInbox").show();
+            $("#DiplayTaskCount").text(currentDisplayCOunt.toString());
+            $("#TotalTaskCount").text(arrLimitTaskInbox.length);
+            $("#SeeMoreInbox").show();
+        }
+    }
+    
+    
+   // $("#"+getSelectedEmpTasksv.caller.arguments[0].path[1].children[1].childNodes[2].id).text($("#TaskOverdue").text());
+   // $("#"+getSelectedEmpTasksv.caller.arguments[0].path[1].children[1].childNodes[0].id).text($("#TaskPending").text());
+
+}
+
+
+//bind inbox tasks as per given data
+function BindInboxTasks(arrDataBind, HTMLID, TabName) {
+    var tableItemsHTML = "";
+    if (arrDataBind.length > 0) {
+        for (var i = 0; i < arrDataBind.length; i++) {
+            var CompletionDate = '';
+            var ItemID = arrDataBind[i].ID;
+            var StartDates = arrDataBind[i].StartDate
+            var Title = arrDataBind[i].Title;
+            var taskType = arrDataBind[i].TaskType;
+            var TaskAssignFrom = arrDataBind[i].AssignedBy.Title;
+            var TaskPriority = arrDataBind[i].TaskPriority;
+            var DueDate = arrDataBind[i].DueDate;
+            var modifiedDate = new Date(DueDate);
+            var ExcelAssignTo = '';
+            var ExcelDependencies = '';
+            modifiedDate = new Date(modifiedDate);
+            var todayDate = new Date;
+            var diffDaysServices = Math.round(todayDate.getTime() - modifiedDate.getTime()) / (todayDate);
+            var OverDueDate = ""
+            if (DueDate != null) {
+                DueDate = new Date(DueDate);
+                DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+            }
+            else {
+                DueDate = 'N/A';
+            }
+            if(StartDates !=null)
+            {
+            
+            StartDates = new Date(StartDates);
+               StartDates = titanForWork.ShowCommonStandardDateFormat(StartDates);//.toLocaleDateString();
+            
+
+            }else
+            {
+            StartDates = 'N/A';
+            }
+            var CompletionPersent = arrDataBind[i].CompletionPersent;
+            var CurrentPhase = arrDataBind[i].CurrentPhase;
+            if (CurrentPhase == "Completed") {
+                CompletionDate = new Date(arrDataBind[i].CompletionDate);
+                CompletionDate = titanForWork.ShowCommonStandardDateFormat(CompletionDate);//.toLocaleDateString();
+            }
+            else {
+                CompletionDate = "";
+            }
+
+            var ModuleTitle = '';
+            if (arrDataBind[i].Module != null) {
+                var ModuleTitle = arrDataBind[i].Module.Title;
+                if (ModuleTitle == null) {
+                    ModuleTitle = "";
+                }
+            }
+            var ClientTitle = '';
+            if (arrDataBind[i].ClientID != null) {
+                var ClientTitle = arrDataBind[i].ClientID.Title;
+                if (ClientTitle == null) {
+                    ClientTitle = "";
+                }
+            }
+
+            var ClientModuleType = '';
+            if (taskType == "2") {
+                ClientModuleType = "<label class='m-0 b-400'>Client:</label><span class='ml-4 my-task-names'>" + ClientTitle + "</span>";
+            }
+
+            if (taskType == "1") {
+                ClientModuleType = "<label class='m-0 b-400'>Module:</label><span class='ml-4 my-task-names'>" + ModuleTitle + "</span>";
+            }
+            var TaskMethod = '';
+            var ProjectFullName = arrDataBind[i].ProjectFullName;
+            var ProjectFullNameExcel = "";
+            if (ProjectFullName == null) {
+                TaskMethod = "General task";
+                ProjectFullName = "<b>Client:</b> " + ClientTitle;
+                ProjectFullNameExcel = "Client (" + ClientTitle + ")";
+            }
+            else {
+                TaskMethod = "Project task";
+                ProjectFullNameExcel = "Project (" + ProjectFullName + ")";
+                ProjectFullName = "<b>Project:</b> " + ProjectFullName;
+            }
+            var Worktype = arrDataBind[i].Worktype;
+            if (Worktype == null) {
+                Worktype = '';
+            }
+
+            var DependencyCount = arrDataBind[i].DependencyCount;
+            if (DependencyCount == null || DependencyCount == 0) {
+                DependencyCount = '';
+            }
+
+            var ExcelDependenciesName = "";
+            if (DependencyCount > 0 && arrDataBind[i].DependencyTo != undefined) {
+                DependencyCount = arrDataBind[i].DependencyTo.length;
+                //dependencyActionButton = "<button type='button' class='btn custom-btn custom-btn-two mt-16' onclick=taskDependency('" + ItemID + "') >Action</button>";
+                for (depency = 0; depency < arrDataBind[i].DependencyTo.length; depency++) {
+                    ExcelDependenciesName += arrDataBind[i].DependencyTo[depency].Title + ", ";
+                }
+                ExcelDependenciesName = ExcelDependenciesName.substring(0, ExcelDependenciesName.length - 2);
+            }
+            var taskStartDate = arrDataBind[i].StartDate;
+            var TaskAssignTo = arrDataBind[i].TaskAssignTo;
+            var TaskAssignToUsers = '';
+	        if(TaskAssignTo != null){
+	            if (TaskAssignTo.length > 0) {
+	                var TaskAssignToUsers = TaskAssignTo[0].Title;
+	                for (assignto = 0; assignto < TaskAssignTo.length; assignto++) {
+	                    ExcelAssignTo += TaskAssignTo[assignto].Title + ", ";
+	                }
+	                ExcelAssignTo = ExcelAssignTo.substring(0, ExcelAssignTo.length - 2);
+	            }
+	        }
+
+            var TaskAssignToButton = '';
+            if(TaskAssignTo != null){
+	            if (TaskAssignTo.length > 1) {
+	                TaskAssignToButton = "<button type='button' class='btn custom-btn custom-btn-two mt10' onclick=taskAssignToUsersModal('" + ItemID + "')>Group</button>";
+	            }
+	        }
+            var currentuserID = _spPageContextInfo.userId;
+            var IsUserInAssigntoGroup = '';
+            if(TaskAssignTo != null) {
+	            var IsUserInAssigntoGroup = TaskAssignTo.map(function (e) { return e.ID; }).indexOf(currentuserID);
+	            var timeSheetFillButton = '';
+	            if (IsUserInAssigntoGroup != -1) {
+	                var timeSheetFillButton = "<button type='button' class='btn btn-danger custom-btn-two custom-btn-two-danger mt-16' onclick=\'timeSheetEntry(" + ItemID + ")\'>Fill</button>";
+	            }
+	        }
+
+            var Titleurl = "<a class='task-name-box' href='javascript:void(0);' onclick='OpenIframeTask(this);' name='" + _spPageContextInfo.webAbsoluteUrl + "/Pages/TaskDetails.aspx?WebAppId=" + Logged_CompanyId + "&TaskId=" + window.btoa(ItemID) + "&EditMode=" + window.btoa('False') + "'><b class='ellipsis-2'>" + Title + "</b></a>";
+            // Generate Dynamic HTML
+            if (diffDaysServices > 1 && CurrentPhase == "Open") {
+                tableItemsHTML += "<tr>" +
+                	"<td class='text-center vertical-align-middle'><label class='checkbox-inline hpx-20'><input type='checkbox' value='" + ItemID + "' class='taskchkIn'></label></td>" +
+	                "<td>" + Titleurl + "<p class='m-0 mt-4 ellipsis-1'>" +
+                    "<span class='ml-4 my-task-names'>" + ProjectFullName + "</span></p></td>" +
+                    "<td style='display:none;'>" + Title + "<p class='m-0 mt-4 ellipsis-1'></td>" +
+	                "<td style='display:none;'>" + ProjectFullNameExcel + "<p class='m-0 mt-4 ellipsis-1'></td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + Worktype + "</p></td>" +
+	                "<td class='text-center'><p class='m-0 ellipsis-2'>" + TaskAssignFrom + "</p>"+
+	                "<p class='m-0 font-12'>Date: <span> "+StartDates+"</span></p>"+
+	                "</td>" +
+	                "<td class='text-center'><p class='m-0 ellipsis-2'>" + TaskAssignToUsers + "</p>" +
+	                "<div class='text-center mt-4 position-relative'>" + TaskAssignToButton + "</div>" +
+	                "</td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + ExcelAssignTo + "</p></td>" +
+	                "<td class='text-center'><p class='m-0 mb-10'>" + CurrentPhase + "</p>" +
+	                "<p class='m-0 font-12' style='font-weight: bold;color: red;'>Due:<span>" + DueDate + "</span></p>" +
+	                "<div class='progress custom-progress progress-danger m-0 mt-4'>" +
+	                "<div class='progress-bar progress-bar-danger' role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width:" + CompletionPersent + "%'></div></div></td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].Created + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].DueDate + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + DueDate + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + CurrentPhase + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].TaskPriority + "</p></td>" +
+                    "<td class='text-center'><h4 class='m-0'>" + DependencyCount + "</h4></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + ExcelDependenciesName + "</p></td>" +
+	                //"<td class='text-center myTask-timesheet-col'><h4 class='m-0 cursor-pointer' id='timehrs" + ItemID + "' onclick=\'timeSheetHours(this," + ItemID + ")\'></h4><button type='button' class='btn custom-btn custom-btn-two mt-16 hourbtn' onclick=\'timeSheetHours(this," + ItemID + ")\'>Hours</button>" + timeSheetFillButton + "</td>" +
+	            "</tr>";
+            }
+            else {
+                tableItemsHTML += "<tr>" +
+                	"<td class='text-center vertical-align-middle'><label class='checkbox-inline hpx-20'><input type='checkbox' value='" + ItemID + "' class='taskchkIn'></label></td>" +
+	                "<td>" + Titleurl + "<p class='m-0 mt-4 ellipsis-1'>" +
+                    "<span class='ml-4 my-task-names'>" + ProjectFullName + "</span></p></td>" +
+                    "<td style='display:none;'>" + Title + "<p class='m-0 mt-4 ellipsis-1'></td>" +
+	                "<td style='display:none;'>" + ProjectFullNameExcel + "<p class='m-0 mt-4 ellipsis-1'></td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + Worktype + "</p></td>" +
+	                "<td class='text-center'><p class='m-0 ellipsis-2'>" + TaskAssignFrom + "</p>"+
+	                "<p class='m-0 font-12'>Date: <span> "+StartDates+"</span></p>"+
+                    "</td>" +
+	                "<td class='text-center'><p class='m-0 ellipsis-2'>" + TaskAssignToUsers + "</p>" +
+	                "<div class='text-center mt-4 position-relative'>" + TaskAssignToButton + "</div>" +
+	                "</td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + ExcelAssignTo + "</p></td>" +
+	                "<td class='text-center'><p class='m-0 mb-10'>" + CurrentPhase + "</p>" +
+	                "<p class='m-0 font-12'>Due:<span>" + DueDate + "</span></p>" +
+	                "<div class='progress custom-progress progress-success m-0 mt-4'>" +
+	                "<div class='progress-bar progress-bar-success' role='progressbar' aria-valuenow='40' aria-valuemin='0' aria-valuemax='100' style='width:" + CompletionPersent + "%'></div></div></td>" +
+	                "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].Created + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].DueDate + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + DueDate + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + CurrentPhase + "</p></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + arrDataBind[i].TaskPriority + "</p></td>" +
+                    "<td class='text-center'><h4 class='m-0'>" + DependencyCount + "</h4></td>" +
+                    "<td class='text-center' style='display:none;'><p class='m-0 ellipsis-2'>" + ExcelDependenciesName + "</p></td>" +
+	                //"<td class='text-center myTask-timesheet-col'><h4 class='m-0 cursor-pointer' id='timehrs" + ItemID + "' onclick=\'timeSheetHours(this," + ItemID + ")\'></h4><button type='button' class='btn custom-btn custom-btn-two mt-16 hourbtn' onclick=\'timeSheetHours(this," + ItemID + ")\'>Hours</button>" + timeSheetFillButton + "</td>" +
+	            "</tr>";
+            }
+        }
+        $("#" + HTMLID).append(tableItemsHTML);
+        if (TabName == "MySubordinate") {
+            TableConfiguration();
+            arrMySubordinate=arrDataBind;
+        }
+        else if (TabName == "DeptProjects") {
+            TableConfigurationDeptProj();
+            arrDeptProjects=arrDataBind;
+        }
+        else {
+            TableConfigDeptEmp();
+            arrDeptEmployee=arrDataBind;
+        }
+        $(".taskchkIn").click(function () {
+            currentTab = '';
+            if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+                currentTab = "TempTableDeptProj";
+                if (this.checked == true) {
+	                if ($("#" + currentTab + " .taskchkIn:checked").length == 1) {
+	                     arrTaskParentDeptProj= [];
+	                     arrTaskInIds=[];
+	                }
+		            arrTaskParentDeptProj.push(this.value);
+		            arrTaskInIds.push(this.value);
+		        }
+		        else {
+		                var selected = this.value;
+		                arrTaskParentDeptProj= arrTaskParentDeptProj.filter(function (obj) {
+		                    return obj !== selected;
+		                });
+		        }
+            }
+            else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+                currentTab = "TempTableDeptEmp";
+                if (this.checked == true) {
+	                if ($("#" + currentTab + " .taskchkIn:checked").length == 1) {
+	                    arrTaskParentDeptEmp = [];
+	                    arrTaskInIds=[];
+	                }
+	                arrTaskParentDeptEmp .push(this.value);
+	                arrTaskInIds.push(this.value);
+	                
+	            }
+	            else {
+	                var selected = this.value;
+	                arrTaskParentDeptEmp = arrTaskParentDeptEmp.filter(function (obj) {
+	                    return obj !== selected;
+	                });
+	            }
+            }
+            else {
+                currentTab = "TempTableMySubordinate";
+                if (this.checked == true) {
+	                if ($("#" + currentTab + " .taskchkIn:checked").length == 1) {
+	                    arrTaskMySubordinate = [];
+	                    arrTaskInIds=[];
+	                }
+                    arrTaskMySubordinate.push(this.value);
+                    arrTaskInIds.push(this.value);
+                    
+	            }
+	            else {
+	                var selected = this.value;
+	                arrTaskMySubordinate= arrTaskMySubordinate.filter(function (obj) {
+	                    return obj !== selected;
+	                });
+	            }
+            }
+            
+        });
+    }
+    else {
+        tableItemsHTML = "<tr><td colspan=7 style='text-align: center'>No record found!!</td></tr>";
+        $("#" + HTMLID).append(tableItemsHTML);
+    }
+    if (currentDlg != "") {
+        currentDlg.close();
+    }
+    waitingDialog.hide();
+}
+
+//Render list of assign to 
+function taskAssignToUsersModal(itemid) {
+    $('#assignToUserList').html('')
+    var items = AllTaskInbox.filter(function (data) {
+        return data.ID == itemid
+    });
+    var arrEmpData = [];
+    var AssignTo = '';
+
+    if (items.length > 0) {
+        var TaskAssignTo = items[0].TaskAssignTo;
+        for (var m = 0; m < TaskAssignTo.length; m++) {
+            var Query = "?$select=Id,Title,PrimaryCompany,AttachmentFiles,Status,FullName,LogonName/EMail,Company/Id,Company/Title,Department/Title,Designation&$expand=LogonName,AttachmentFiles,Company,Department&$top=5000&$filter=Status eq 'Active' and LogonName/EMail eq '" + TaskAssignTo[m].EMail + "' and Company/Id eq '" + Logged_CompanyId + "' ";
+            $.when(getLimitedEmployeess('Employees', Query)).done(function (UserResults) {
+                if (UserResults.length > 0) {
+                    var value = UserResults[0];
+                    if (value.AttachmentFiles.length > 0) {
+                        attachmentUrl = value.AttachmentFiles[0].ServerRelativeUrl;
+                    }
+                    else {
+                        attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(value.LogonName.EMail);
+                    }
+                    AssignTo += '<div class="d-flex align-items-center user-detail-panel">';
+                    AssignTo += '<img src=' + attachmentUrl + ' alt="EmpImage">';
+                    AssignTo += '<div class="user-details-panel mt3 ml10"><h4 class="tab-user-name"><span>' + value.FullName + '</span></h4>';
+                    AssignTo += '<p class="tab-user-deg"><span>' + value.Designation + ' </span><span class="ml5 mr5">|</span><span> ' + value.Department.Title + '</span></p>';
+                    AssignTo += '<p class="tab-user-email"><span>' + TaskAssignTo[m].EMail + '</span></p></div></div>';
+                }
+            });
+        }
+        $('#assignToUserList').append(AssignTo);
+    }
+    $("#taskGroup1").modal("show");
+}
+
+//make percentage wise pie chart 
+function ShowPieChartInbox() {
+    var dfds = $.Deferred(),
+		arrComplatedTasks = [],
+    	arrOpenTasks = [],
+    	arrHoldTasks = [],
+    	arrCancelTasks = [],
+    	arrCloseTasks = [],
+    	TaskAssigneeMail = "",
+    	TaskDependencyMail = "";
+    $("#pie").empty();
+
+    if (arrAllTaskUserWise.length > 0) {
+        $("#pie").show();
+        $(".blankcircle").hide();
+        arrComplatedTasks = arrAllTaskUserWise.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "completed"
+        });
+        arrOpenTasks = arrAllTaskUserWise.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "open"
+        });
+        arrHoldTasks = arrAllTaskUserWise.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "hold"
+        });
+        arrCancelTasks = arrAllTaskUserWise.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "cancelled"
+        });
+        arrCloseTasks = arrAllTaskUserWise.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "close"
+        });
+        if (arrComplatedTasks.length == 0 && arrOpenTasks.length == 0 && arrHoldTasks.length == 0 && arrCancelTasks.length == 0 && arrCloseTasks.length == 0) {
+            $("#pie").hide();
+        }
+
+        //});
+        var pie = new d3pie("pie", {
+            header: {
+                title: {
+                    text: "",
+                    fontSize: 30
+                }
+            },
+            data: {
+                content: [
+                  { label: "Completed", value: arrComplatedTasks.length, valueType: "percentage" },
+                  { label: "Open", value: arrOpenTasks.length, valueType: "percentage" },
+                  { label: "Hold", value: arrHoldTasks.length, valueType: "percentage" },
+                  { label: "Cancelled", value: arrCancelTasks.length, valueType: "percentage" },
+                  { label: "Close", value: arrCloseTasks.length, valueType: "percentage" }
+                ]
+            },
+            callbacks: {
+                onload: null,
+                onMouseoverSegment: null,
+                onMouseoutSegment: null,
+                onClickSegment: function (evt, item) {
+                    clickInboxChart(evt);
+                }
+            }
+        });
+    }
+    else {
+        $("#pie").hide();
+        $(".blankcircle").show();
+    }
+}
+
+//get Pending and Overdue tasks count
+function GetTaskInboxCount() {
+    var pendingCounter = 0;
+    var overdueCounter = 0;
+    var CurrentDate = new Date();
+    CurrentDate = CurrentDate.setHours(0, 0, 0, 0);
+    CurrentDate = new Date(CurrentDate)
+
+    for (var i = 0; i < arrLimitTaskInbox.length; i++) {
+        var DueDate = new Date(moment(arrLimitTaskInbox[i].DueDate.split('T')[0]).format("MM/DD/YYYY"));
+        DueDate.setDate(DueDate.getDate());
+        DueDate = new Date(DueDate);
+
+        if (arrLimitTaskInbox[i].CurrentPhase == "Open") {
+            if (DueDate >= CurrentDate) {
+                pendingCounter++;
+            }
+            else {
+                overdueCounter++;
+            }
+        }
+    }
+    $("#TaskOverdue").text(overdueCounter);
+    $("#TaskPending").text(pendingCounter);
+}
+
+//get Pending and Overdue tasks count
+function GetDeptProjCount() {
+    var pendingCounter = 0;
+    var overdueCounter = 0;
+    var CurrentDate = new Date();
+    CurrentDate = CurrentDate.setHours(0, 0, 0, 0);
+    CurrentDate = new Date(CurrentDate)
+    for (var i = 0; i < arrLimitTaskDeptProj.length; i++) {
+        var DueDate = new Date(moment(arrLimitTaskDeptProj[i].DueDate.split('T')[0]).format("MM/DD/YYYY"));
+        DueDate.setDate(DueDate.getDate());
+        DueDate = new Date(DueDate);
+
+        if (arrLimitTaskDeptProj[i].CurrentPhase == "Open") {
+            if (DueDate >= CurrentDate) {
+                pendingCounter++;
+            }
+            else {
+                overdueCounter++;
+            }
+        }
+    }
+
+    $("#TaskOverdueDeptProj").text(overdueCounter);
+    $("#TaskPendingDeptProj").text(pendingCounter);
+}
+
+//get Pending and Overdue tasks count
+function GetDeptEmpCount() {
+    var pendingCounter = 0;
+    var overdueCounter = 0;
+    var CurrentDate = new Date();
+    CurrentDate = CurrentDate.setHours(0, 0, 0, 0);
+    CurrentDate = new Date(CurrentDate);
+    for (var i = 0; i < arrLimitTaskDeptEmp.length; i++) {
+        var DueDate = new Date(moment(arrLimitTaskDeptEmp[i].DueDate.split('T')[0]).format("MM/DD/YYYY"));
+        DueDate.setDate(DueDate.getDate());
+        DueDate = new Date(DueDate);
+        if (arrLimitTaskDeptEmp[i].CurrentPhase == "Open") {
+            if (DueDate >= CurrentDate) {
+                pendingCounter++;
+            }
+            else {
+                overdueCounter++;
+            }
+        }
+    }
+    $("#TaskOverdueDeptEmp").text(overdueCounter);
+    $("#TaskPendingDeptEmp").text(pendingCounter);
+}
+
+
+//to bind all project type in Filter Popup
+function bindAllWorkType() {
+    $("#WorkTypeOfProject").empty();
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('CategoryMaster')/items?$select=CategoryType,CatogeryName&$orderby=CatogeryName asc&$filter=CategoryType eq 'Work Type'";
+    $.ajax({
+        url: Ownurl,
+        headers: { Accept: "application/json;odata=verbose" },
+        async: false,
+        success: function (response) {
+            $('<option value="All">All</option>').appendTo("#WorkTypeOfProject");
+            $('<option value="All">All</option>').appendTo("#WorkTypeOfProjectOutbox");
+            for (var index = 0; index < response.d.results.length; index++) {
+                $("#WorkTypeOfProject").append('<option value="' + response.d.results[index].CatogeryName + '">' + response.d.results[index].CatogeryName + '</option>');
+            }
+        }, myError: function (response) {
+            waitingDialog.hide();
+        }
+    });
+}
+
+//get modules for project
+function CurrentProjectModule(projectid) {
+    $('#ProjectModule').attr('disabled', false);
+    $("#ProjectModule").empty();
+    $('<option value="All">All</option>').appendTo("#ProjectModule");
+    var listName = 'ProjectModules';
+    var siteURL = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + listName + "')/items?$select=ID,Title,Project/ID,Project/ProjectName&$expand=Project&$filter= ProjectId eq '" + projectid + "'";
+    $.ajax({
+        url: siteURL,
+        type: "get",
+        headers: { "Accept": "application/json;odata=verbose" },
+        success: function (data) {
+            var option = "";
+            var valuesArray = data.d.results;
+
+            $.each(valuesArray, function (i, el) {
+                option += "<option value='" + el.ID + "'>" + el.Title + "</option>";
+            });
+
+            $("#ProjectModule").append(option);
+        },
+        error: function (data) {
+            console.log(data.responseJSON.error);
+        }
+    });
+}
+
+//Filter the data through array
+function MutipleBaseFilter(TaskOutCome) {
+    var arrTemp = [];
+    var arrFiltered = [];
+    if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+        $("#SeeMoreDeptProj").hide();
+        $("#SeeMoreFilterDeptProj").show();
+        arrFilterDeptProj = [];
+        arrFiltered = arrLimitTaskDeptProj.filter(function (f) { return f; });
+    }
+    else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+        $("#SeeMoreDeptEmp").hide();
+        $("#SeeMoreFilterDeptEmp").show();
+        arrFilterDeptEmp = [];
+        arrFiltered = arrLimitTaskDeptEmp.filter(function (f) { return f; });
+    }
+    else {
+        $("#SeeMoreInbox").hide();
+        $("#SeeMoreFilterInbox").show();
+        arrFilterDataBind = [];
+        arrFiltered = arrAllTaskUserWise.filter(function (f) { return f; });
+    }
+
+    var TaskinboxChip = "",
+    	ModuleId = '',
+    	ClientId = '',
+        FilterQuery = "",
+        assigntoQuery = '',
+        assigntobyme = [];
+
+    if ($("#pplassigntoInbox_TopSpan_ResolvedList").text() != "") {
+        getUserInformation('pplassigntoInbox');
+    }
+    else {
+        assignByEmail = "";
+    }
+
+    //Filter value display ends
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+   
+         var StartDate = $('#fromDatetaskIn').val();
+         if(StartDate != "") {
+             StartDate = moment(StartDate).format("MM/DD/YYYY")
+         }
+         var toDate = $('#toDatetaskIn').val();
+         if(toDate != "") {
+             toDate = moment(toDate).format("MM/DD/YYYY")
+         }
+         if(StartDate > toDate) {
+             alert("Assigned Date From is greater than Assigned Date To");
+             return false;
+         }
+
+
+
+   arrTemp = arrFiltered.filter(function (obj, index) { //Filter array
+        FilterQuery = '';
+
+        if ($('#UserAllProject').val() != "All") {
+            if ($('#UserAllProject').val() == "General Task") {
+                var ProjectValue = null;
+                var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName == ProjectValue);
+            }
+            else {
+                if ($('#ddlInboxProject').val() != "All") {
+                    var ProjectFilter = (ProjectValue == "All" ? obj.ProjectName != "" : obj.ProjectName == $('#ddlInboxProject').val());
+                }
+                else {
+                    var ProjectValue = null;
+                    var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName != ProjectValue);
+                }
+            }
+        }
+        else {
+            var ProjectValue = "All";
+            var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName == ProjectValue);
+        }
+        
+
+        
+
+        if ($('#ProjectModule').val() != "All") {
+            var ModuleValue = $('#ProjectModule').val();
+        }
+        else {
+            var ModuleValue = "All";
+        }
+
+        if ($('#ddlInboxClient').val() != "All") {
+            var ClientValue = $('#ddlInboxClient').val();
+        }
+        else {
+            var ClientValue = "All";
+        }
+
+        if ($('#WorkTypeOfProject').val() != "All") {
+            var WorkTypeValue = $('#WorkTypeOfProject').val()
+        }
+        else {
+            var WorkTypeValue = "All"
+        }
+
+        if ($('#txtPriority').val() != "All") {
+            var PriorityValue = $('#txtPriority').val();
+        }
+        else {
+            var PriorityValue = "All";
+        }
+        if ($('#txtFilterStatusInbox').val() != "All") {
+            var CurrentPhaseValue = $('#txtFilterStatusInbox').val();
+        }
+        else {
+            var CurrentPhaseValue = "All";
+        }
+
+        if ($('#taskIn').val() != null && $('#taskIn').val() != "") {
+            var DueDate = $("#taskIn").val();
+            var dateDueDate = new Date($("#taskIn").val()).setHours(0, 0, 0, 0);//moment($("#taskIn").val()).format('MM/DD/YYYY');
+            dateDueDate = new Date(dateDueDate);
+            var arrDueDate = new Date(moment(obj.DueDate.split('T')[0]).format("MM/DD/YYYY"));//moment(obj.DueDate).format('MM/DD/YYYY');
+            arrDueDate.setDate(arrDueDate.getDate() + 1);
+            arrDueDate = new Date(arrDueDate);
+            if (TaskOutCome == "TaskPending") {
+                var DueDateFilter = (dateDueDate == "" ? arrDueDate != "" : arrDueDate >= dateDueDate);
+            }
+            else if (TaskOutCome == "TaskOverdue") {
+                var DueDateFilter = (dateDueDate == "" ? arrDueDate != "" : arrDueDate < dateDueDate);
+            }
+            else {
+                var DueDateFilter = (dateDueDate == "" ? arrDueDate != "" : arrDueDate <= dateDueDate);
+            }
+        }
+        else {
+            var DueDateFilter = true;
+        }
+
+        assigntoQuery = '';
+        var StringAssigntoQuery = [];
+
+        if (assignByEmail != "") {
+            var FilterAssignByEmail = assignByEmail.split('|');
+            FilterAssignByEmail.pop(); //remove last element of array.
+            for (var i = 0; i < FilterAssignByEmail.length; i++) {
+                if (FilterAssignByEmail[i].indexOf("#") != -1) {
+                    FilterAssignByEmail[i] = FilterAssignByEmail[i].split("#")[0];
+                    FilterAssignByEmail[i] = FilterAssignByEmail[i].replace("_", "@");
+                }
+                if (i == 0) {
+                    StringAssigntoQuery.push(obj.AssignedBy.EMail.toLowerCase() == FilterAssignByEmail[i].toLowerCase());
+                }
+                else {
+                    StringAssigntoQuery.push(obj.AssignedBy.EMail.toLowerCase() == FilterAssignByEmail[i].toLowerCase());
+                }
+            }
+        }
+        else {
+            var assigntobyme = [];
+            StringAssigntoQuery.push(true);
+        }
+
+        StringAssigntoQuery.forEach(function (entry, index) {
+            if (index == 0) {
+                assigntoQuery = entry;
+            }
+            else {
+                assigntoQuery = entry || assigntoQuery;
+            }
+        });
+        if (obj.Module != null) {
+            ModuleId = obj.Module.ID ? obj.Module.ID : "";
+        }
+        else {
+            ModuleId = ''
+        }
+        if (obj.ClientID != null) {
+            ClientId = obj.ClientID.ID;
+        }
+        else {
+            ClientId = '';
+        }
+        return (ProjectFilter) &&
+                (ClientValue == "All" ? ClientId != "null" : ClientId == ClientValue) &&
+                (ModuleValue == "All" ? ModuleId != "null" : ModuleId == ModuleValue) &&
+                (WorkTypeValue == "All" ? obj.Worktype != "" : obj.Worktype == WorkTypeValue) &&
+                (CurrentPhaseValue == "All" ? obj.CurrentPhase != "" : obj.CurrentPhase == CurrentPhaseValue) &&
+                (PriorityValue == "All" ? obj.TaskPriority != "" : obj.TaskPriority == PriorityValue) &&
+                (DueDateFilter) && (assigntoQuery) &&(StartDate == "" ? obj.StartDate != "" : moment(obj.StartDate).isAfter(moment(StartDate)) || moment(obj.StartDate).isSame(moment(StartDate))) && (toDate == "" ? obj.StartDate != "" : moment(obj.StartDate).isBefore(moment(toDate)) || moment(obj.StartDate).isSame(moment(toDate)))
+    });
+
+    var arrDataBind = [];
+    $("#myTaskInboxChip").empty();
+    $("#myTaskInboxChip").append(TaskinboxChip);
+    //Cloning array
+    if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+        arrDataBind = arrFilterDeptProj = arrTemp.filter(function (f) { return f; });
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptProj").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptProj").hide();
+            $("#ShowItemsDeptProj").show();
+            $("#TaskCountDeptProj").text("500");
+            $("#SeeMoreFilterDeptProj").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptProj").show();
+            $("#ShowItemsDeptProj").hide();
+            $("#TotalItemscountDeptProj").text(arrDataBind.length);
+            $("#SeeMoreFilterDeptProj").hide();
+        }
+        $("#mainDivAllDeptProj").empty();
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptProj', 'DeptProjects');
+    }
+    else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+        arrDataBind = arrFilterDeptEmp = arrTemp.filter(function (f) { return f; });
+
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptEmp").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptEmp").hide();
+            $("#ShowItemsDeptEmp").show();
+            $("#TaskCountDeptEmp").text("500");
+            $("#SeeMoreFilterDeptEmp").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptEmp").show();
+            $("#ShowItemsDeptEmp").hide();
+            $("#TotalItemscountDeptEmp").text(arrDataBind.length);
+            $("#SeeMoreFilterDeptEmp").hide();
+        }
+        $("#mainDivAllDeptEmp").html('');
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptEmp', 'DeptEmps');
+    }
+    else {
+        arrDataBind = arrFilterDataBind = arrTemp.filter(function (f) { return f; });
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCount").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsInbox").hide();
+            $("#ShowItemsInbox").show();
+            $("#DiplayTaskCount").text("500");
+
+            $("#SeeMoreFilterInbox").show();
+        }
+        else {
+            $("#ShowTotalItemsInbox").show();
+            $("#ShowItemsInbox").hide();
+            $("#TotalItemscount").text(arrDataBind.length);
+            $("#SeeMoreFilterInbox").hide();
+        }
+        $("#mainDivAllAnnouncements").html('');
+        BindInboxTasks(arrDataBind, 'mainDivAllAnnouncements', 'MySubordinate');
+    }
+    
+   // ClearFilter();
+}
+
+
+function OpenIframeTask(Action) {
+    src = Action.name;
+    var container = $("#doc-viewer").empty();
+    $('<iframe>', {
+        src: src,
+        id: 'iframe-viewer',
+        frameborder: 0,
+        scrolling: 'yes',
+        width: '100%',
+        height: '98%'
+    }).appendTo(container);
+    $("#AttachmentView").modal("show");
+}
+
+
+
+
+
+//reset the table data and clear the FIlter modal boxes value
+function ClearFilter() {
+    $('#UserAllProject').val("All");
+    $("#UserAllProject").trigger("change");
+    $('#ProjectModule').val("All");
+    $('#WorkTypeOfProject').val("All");
+    $('#txtPriority').val("All");
+    $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+    $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+    $('#taskIn').val('').attr('type', 'text')
+      .attr('type', 'date');
+    $('#fromDatetaskIn').val('');
+    $('#toDatetaskIn').val('');
+
+
+    $('#txtFilterStatusInbox').val("Open");
+    clearPeoplePickerControl("pplassigntoInbox");
+    currentPhase = "Open";
+    TaskAction = "PageLoad";
+
+    //Bind the page load data
+
+
+    if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+        $("#mainDivAllDeptProj").empty();
+        $("#SeeMoreFilterDeptProj").hide();
+        var arrDataBind = [];
+        //Cloning array
+        arrDataBind = arrLimitTaskDeptProj.filter(function (f) { return f; });
+        //Showing data out of total
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptProj").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptProj").hide();
+            $("#ShowItemsDeptProj").show();
+            $("#TaskCountDeptProj").text("500");
+            $("#SeeMoreDeptProj").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptProj").show();
+            $("#ShowItemsDeptProj").hide();
+            $("#TotalItemscountDeptProj").text(arrDataBind.length);
+            $("#SeeMoreDeptProj").hide();
+        }
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptProj', 'DeptProjects');
+
+        if (arrDataBind.length == 0) {
+            $(".NoRecordFound").show();
+            $("#SeeMoreDeptProj").hide();
+        }
+        else {
+            $(".NoRecordFound").hide();
+        }
+    }
+    else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+        $("#mainDivAllDeptEmp").empty();
+        $("#SeeMoreFilterDeptEmp").hide();
+        var arrDataBind = [];
+        //Cloning array
+        arrDataBind = arrLimitTaskDeptEmp.filter(function (f) { return f; });
+        //Showing data out of total
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptEmp").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptEmp").hide();
+            $("#ShowItemsDeptEmp").show();
+            $("#TaskCountDeptEmp").text("500");
+            $("#SeeMoreDeptEmp").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptEmp").show();
+            $("#ShowItemsDeptEmp").hide();
+            $("#TotalItemscountDeptEmp").text(arrDataBind.length);
+            $("#SeeMoreDeptEmp").hide();
+        }
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptEmp', 'DeptEmps');
+        if (arrDataBind.length == 0) {
+            $(".NoRecordFound").show();
+            $("#SeeMoreDeptEmp").hide();
+        }
+        else {
+            $(".NoRecordFound").hide();
+        }
+    }
+    else {
+        $("#mainDivAllAnnouncements").empty();
+        $("#SeeMoreFilterInbox").hide();
+        var arrDataBind = [];
+        //Cloning array
+        arrDataBind = arrLimitTaskInbox.filter(function (f) { return f; });
+        //Showing data out of total
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCount").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsInbox").hide();
+            $("#ShowItemsInbox").show();
+            $("#DiplayTaskCount").text("500");
+            $("#SeeMoreInbox").show();
+        }
+        else {
+            $("#ShowTotalItemsInbox").show();
+            $("#ShowItemsInbox").hide();
+            $("#TotalItemscount").text(arrDataBind.length);
+            $("#SeeMoreInbox").hide();
+        }
+
+        BindInboxTasks(arrDataBind, 'mainDivAllAnnouncements', 'MySubordinate');
+
+        if (arrDataBind.length == 0) {
+            $(".NoRecordFound").show();
+            $("#SeeMoreInbox").hide();
+        }
+        else {
+            $(".NoRecordFound").hide();
+        }
+    }
+}
+
+//to genrate excel of Task In table
+function generateTaskInExcel() {
+    var FileName = '';
+    var HTMLId = '';
+    if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+        FileName = "Departmental-Projects";
+        HTMLId = "TempTableDeptProj";
+    }
+    else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+        FileName = "Departmental-Employees";
+        HTMLId = "TempTableDeptEmp";
+    }
+    else {
+        FileName = "Subordinate-Tasks_" + $("#SelectedEmpName").text();
+        HTMLId = "TempTableQuestions";
+    }
+
+    $('#' + HTMLId).tableExport({
+        //type: 'excel',
+        type: 'csv',
+        exportHiddenCells: true,
+        fileName: FileName,
+        ignoreColumn: [0, 1, 6, 8, 9, 10, 13],
+    });
+    currentDlg.close();
+}
+
+//get data on 'Task Pending' click
+function SetTaskPending() {
+    if ($('#WorkTypeOfProject option').length == 0) {
+        bindAllWorkType();
+    }
+    $('#UserAllProject').val("All");
+    $("#UserAllProject").trigger("change");
+    $('#ProjectModule').val("All");
+    $('#WorkTypeOfProject').val("All");
+    $('#txtPriority').val("All");
+    $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+    $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+    $('#taskIn').val('')
+      .attr('type', 'text')
+      .attr('type', 'date');
+
+    $('#txtFilterStatusInbox').val("Open");
+    clearPeoplePickerControl("pplassigntoInbox");
+    currentPhase = "Open";
+    TaskAction = "PageLoad";
+    $('#txtFilterStatusInbox option').filter(function () {
+        return ($(this).text() == "Open"); //To select text wise
+    }).prop('selected', true)
+    document.getElementById("taskIn").valueAsDate = new Date();
+    MutipleBaseFilter("TaskPending");
+}
+
+//get data on 'Task Overdue' click
+function SetTaskOverdue(TabName) {
+    if ($('#WorkTypeOfProject option').length == 0) {
+        bindAllWorkType();
+    }
+    $('#UserAllProject').val("All");
+    $("#UserAllProject").trigger("change");
+    $('#ProjectModule').val("All");
+    $('#WorkTypeOfProject').val("All");
+    $('#txtPriority').val("All");
+    $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+    $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+    $('#taskIn').val('')
+      .attr('type', 'text')
+      .attr('type', 'date');
+
+    $('#txtFilterStatusInbox').val("Open");
+    //$('#assigntodrp').val(_spPageContextInfo.userId);
+    clearPeoplePickerControl("pplassigntoInbox");
+    currentPhase = "Open";
+    TaskAction = "PageLoad";
+
+    $('#txtFilterStatusInbox option').filter(function () {
+        return ($(this).text() == "Open"); //To select text wise
+    }).prop('selected', true)
+    document.getElementById("taskIn").valueAsDate = new Date();
+    MutipleBaseFilter("TaskOverdue");
+
+}
+
+
+//filter data on status when data click and chat segment
+function clickInboxChart(Action, TabName) {
+    if ($('#WorkTypeOfProject option').length == 0) {
+        bindAllWorkType();
+    }
+    $('#UserAllProject').val("All");
+    $("#UserAllProject").trigger("change");
+    $('#ProjectModule').val("All");
+    $('#WorkTypeOfProject').val("All");
+    $('#txtPriority').val("All");
+    $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+    $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+    $('#taskIn').val('')
+      .attr('type', 'text')
+      .attr('type', 'date');
+
+    $('#txtFilterStatusInbox').val("Open");
+    clearPeoplePickerControl("pplassigntoInbox");
+    currentPhase = "Open";
+    TaskAction = "PageLoad";
+
+    $('#txtFilterStatusInbox option').filter(function () {
+        return ($(this).text() == Action.data.label); //To select Blue
+    }).prop('selected', true)
+    MutipleBaseFilter("PieChart");
+}
+
+//Read department for projects Inbox
+function ReadInDepartment() {
+    var splittedDeptName = "";
+    var Ownurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Departments')/items?select=ID,Title&$filter=CompanyID eq '" + Logged_CompanyId + "'&$top=5000&$orderby=Title asc";
+    $.ajax({
+        url: Ownurl,
+        async: false,
+        headers: { Accept: "application/json;odata=verbose" },
+        success: function (data) {
+            var items = data.d.results;
+            if (items.length > 0) {
+                $('#DeptsInboxProject').empty();
+                $("#DeptsInboxProject").append($("<option></option>").val("All").html("All"));
+                for (i = 0; i < items.length; i++) {
+                    if (parseInt(items[i].Title.length) > 34) {
+                        splittedDeptName = items[i].Title.substring(0, 34) + "...";
+                    }
+                    else {
+                        splittedDeptName = items[i].Title;
+                    }
+                    $("#DeptsInboxProject").append('<option value="' + items[i].Title + '" title="' + items[i].Title + '">' + splittedDeptName + '</option>');
+                }
+                $("#DeptsInboxProject").val("All");
+
+            }
+        },
+        error: function (data) {
+            if (currentDlg != "") {
+                currentDlg.close();
+            }
+            console.log("An error occurred in ReadInDepartment method." + data);
+        }
+    });
+}
+
+
+//get list of projects for Inbox
+function loadprojectInsearch() {
+    var ProjectsListunique = '';
+    var ProjectsList = [];
+    var tableItemsHTML = '';
+    var CountProject = 0;
+    var RestQuery = "?$select=*,TeamMember/EMail&$top=5000&$expand=TeamMember&$filter=TeamMember/EMail eq ('" + _spPageContextInfo.userEmail + "') and Status eq 'Active' and TaskPermission eq '1'&$orderby=Project asc";
+    $.when(getLimitedItems("ProjectTeamDetails", RestQuery)).done(function (Results) {
+        var items = Results.results;
+        for (var x = 0; x < items.length; x++) {
+            ProjectsList.push(items[x].ProjectId);
+        }
+        ProjectsListunique = ProjectsList.filter(function (itm, i, ProjectsList) {
+            return i == ProjectsList.indexOf(itm);
+        });
+    });
+    if (ProjectsListunique.length > 0) {
+        var UserProjectList = [];
+        for (var K = 0; K < ProjectsListunique.length; K++) {
+            var PROJID = ProjectsListunique[K];
+            var sTatuS = $('select#StatusInProj option:selected').val();
+            var Department = $('select#DeptsInboxProject option:selected').val();
+
+            if (sTatuS != "All") {
+                if (Department != "All") {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status eq ('" + sTatuS + "') and DepartmentName eq ('" + Department + "')and ID eq '" + PROJID + "' ";
+                }
+                else {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=Status eq ('" + sTatuS + "') and ID eq '" + PROJID + "' ";
+                }
+            }
+            else {
+                if (Department != "All") {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=DepartmentName eq ('" + Department + "')and ID eq '" + PROJID + "'";
+                }
+                else {
+                    var RestQuery = "?$select=*,ManagerName/Title,ManagerName/EMail,ClientID/Title,Office_Location_Id/Title&$expand=ManagerName,ClientID,Office_Location_Id&$filter=ID eq '" + PROJID + "'";
+                }
+            }
+
+            $.when(getLimitedItems("ProjectDetails", RestQuery)).done(function (ProjDetails) {
+                var items = ProjDetails.results;
+                IsInboxProjectBind = true;
+                if (items.length > 0) {
+                    for (var i = 0; i < items.length; i++) {
+                        var itemId = items[i].ID;
+                        if (items[i].Status == "Live") {
+                            colorCss = "livcolor";
+                        }
+                        else if (items[i].Status == "OnHold") {
+                            colorCss = "holdcolor";
+                        }
+                        else if (items[i].Status == "Completed") {
+                            colorCss = "Completecolor";
+                        }
+                        else {
+                            colorCss = "Terminatedcolor";
+                        }
+                        var ProjectName = items[i].ProjectName;
+                        if (items[i].ProjectName.length > 120) {
+                            ProjectName = ProjectName.substring(0, 120);
+                        }
+                        var ClientName = items[i].ClientID.Title;
+                        if (items[i].ClientID.Title.length > 120) {
+                            ClientName = ClientName.substring(0, 120);
+                        }
+                        var ProjectCode = (items[i].ProjectCode ? items[i].ProjectCode : '');
+                        if (ProjectCode.length > 30) {
+                            ProjectCode = ProjectCode.substring(0, 30);
+                        }
+                        //get Employee Details
+                        CountProject++;
+                        var attachmentUrl = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(items[i].ManagerName.EMail);
+                        tableItemsHTML += "<tr><td><input type='radio' class='ProjectInchkList' name='TaskInListchk' title='" + items[i].ProjectName + "' value='" + itemId + "'></td>";
+                        tableItemsHTML += "<td><p class='pjecname'>" + ProjectName + "</p><span class='spanmg'>Ref:</span><span class='spanmg projectlg'>" + ProjectCode + "</span></td>";
+                        tableItemsHTML += "<td><p class='customernamshow'>" + ClientName + "</p><span class='spanmg'>Status:</span> <span class='spanmg " + colorCss + "'>" + items[i].Status + "</span></td>";
+                        tableItemsHTML += "<td><div class='managersec'><div class='mangimg'><img src=" + attachmentUrl + " alt=''></div><div class='managerdetails'>";
+                        tableItemsHTML += "<h4>" + items[i].ManagerName.Title + "</h4><div class='mailsec'><span onclick='OpenEmail(this)'>" + items[i].ManagerName.EMail + "</span></div>";
+                        tableItemsHTML += "</div></div></td>";
+                        tableItemsHTML += '</tr>';
+                    }
+                }
+            });
+        }
+        $("#ProjectInTables").empty().append(tableItemsHTML);
+        $("#tablelocation").show();
+        if (CountProject == 0) {
+            tableItemsHTML += "<tr><td class='NoRecordFound' colspan='4' style='text-align: center;font-size:14px;' data-localize='NoRecordFound'>No record found!!</td></tr>"
+            $("#ProjectInTables").empty().append(tableItemsHTML);
+            $("#tableInLocation").hide()
+        }
+        else {
+            TableConfigInboxProject();
+            $("#tableInLocation").show();
+        }
+    }
+    if (currentDlg != "") {
+        currentDlg.close();
+    }
+}
+
+function TableConfigInboxProject() {
+    sorter = new TINY.table.sorter('sorter', 'TableInProjects', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 5,
+        colddid: 'columnsInbox',
+        currentid: 'currentInProj',
+        totalid: 'totalInProj',
+        startingrecid: 'startInrecord',
+        endingrecid: 'endInrecord',
+        totalrecid: 'totalInrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pageddlInProject',
+        navid: 'tableInnav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+function setInboxProjectValue() {
+    if ($('input[name="TaskInListchk"]:checked')[0] != null) {
+        $("#ddlInboxProject").html('');
+        var customerValue = $('input[name="TaskInListchk"]:checked')[0].attributes.title.value;
+        var value = '<option value="' + $('input[name="TaskInListchk"]:checked').val() + '" Selected>' + customerValue + '</option>';
+        $("#ddlInboxProject").append(value);
+        $("#ProjectInboxSearch").modal('hide');
+        projectid = $('input[name="TaskInListchk"]:checked').val();
+        if (projectid != "General Task" && projectid != "All") {
+            CurrentProjectModule(projectid);
+        }
+        else {
+            $('#ProjectModule').attr('disabled', true);
+            $("#ProjectModule").empty();
+            $('<option value="All">All</option>').appendTo("#ProjectModule");
+        }
+    }
+}
+
+//set client value and ID
+function setCustomerValue() {
+    $("#ddlInboxClient").html('');
+    var customerValue = $('input[name="Customer"]:checked')[0].attributes.title.value;
+    var value = '<option value="' + $('input[name="Customer"]:checked').val() + '" Selected>' + customerValue + '</option>';
+    $("#ddlInboxClient").append(value);
+    $("#otherCustomerSearch").modal('hide');
+}
+
+
+//get list-items from list upto 5000 only
+function getLimitedEmployeess(ListName, Query) {
+    DeferredObj = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('" + ListName + "')/items/" + Query,
+        type: "GET",
+        async: false,
+        headers: {
+            ACCEPT: "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val()
+        },
+        success: function (data) {
+            DeferredObj.resolve(data.d.results);
+        },
+        error: function (error) {
+            HandleError(JSON.stringify(error));
+            //alert(JSON.stringify(error));
+            DeferredObj.reject(error);
+        }
+    });
+    return DeferredObj.promise();
+};
+function TableConfiguration() {
+    sorter = new TINY.table.sorter('sorter', 'TempTableQuestions', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columns',
+        currentid: 'currentpage',
+        totalid: 'totalpages',
+        startingrecid: 'startrecord',
+        endingrecid: 'endrecord',
+        totalrecid: 'totalrecords',
+        hoverid: 'selectedrow',
+        pageddid: 'pageDropDownInbox',
+        navid: 'tablenav',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+
+    });
+}
+
+function TableConfigurationDeptProj() {
+    sorterDept = new TINY.table.sorter('sorterDept', 'TempTableDeptProj', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columnsDeptProj',
+        currentid: 'currentpageDeptProj',
+        totalid: 'totalpagesDeptProj',
+        startingrecid: 'startrecordDeptProj',
+        endingrecid: 'endrecordDeptProj',
+        totalrecid: 'totalrecordsDeptProj',
+        hoverid: 'selectedrow',
+        pageddid: 'pageDropDownDeptProj',
+        navid: 'tablenavDeptProj',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+function TableConfigDeptEmp() {
+    sorterDeptEmp = new TINY.table.sorter('sorterDeptEmp', 'TempTableDeptEmp', {
+        headclass: 'head',
+        ascclass: 'asc',
+        descclass: 'desc',
+        evenclass: 'evenrow',
+        oddclass: 'oddrow',
+        evenselclass: 'evenselected',
+        oddselclass: 'oddselected',
+        paginate: true,
+        size: 10,
+        colddid: 'columnsDeptEmp',
+        currentid: 'currentpageDeptEmp',
+        totalid: 'totalpagesDeptEmp',
+        startingrecid: 'startrecordDeptEmp',
+        endingrecid: 'endrecordDeptEmp',
+        totalrecid: 'totalrecordsDeptEmp',
+        hoverid: 'selectedrow',
+        pageddid: 'pageDropDownDeptEmp',
+        navid: 'tablenavDeptEmp',
+        //sortcolumn: 3,//uncomment if you want to sorting on here on page loading by default on column based
+        sortdir: 1,
+        init: true
+    });
+}
+
+function OpenEmail(Email) {
+    var dlgTitle = 'Loading...';
+    var dlgMsg = '<br />Please wait!!';
+    var dlgHeight = 200;
+    var dlgWidth = 400;
+    currentDlg = SP.UI.ModalDialog.showWaitScreenWithNoClose(dlgTitle, dlgMsg, dlgHeight, dlgWidth);
+    setTimeout(function () {
+        window.location = "mailto:" + Email.textContent;
+        currentDlg.close();
+    }, 100);
+}
+
+//to check if user has subordinates 
+function checkForSubordinates(userEmail) {
+    var HasSubordinates = false;
+    var Query = "?$top=5000&$select=Status,ManagerLoginName/EMail,Company/Id&$expand=Company,ManagerLoginName&$filter=ManagerLoginName/EMail eq '" + userEmail + "' and Status eq 'Active' and Company/Id eq '" + Logged_CompanyId + "' ";
+    $.when(getLimitedEmployeess('Employees', Query)).done(function (Subordinates) {
+        if (Subordinates.length > 0) {
+            HasSubordinates = true;
+        }
+    });
+    return HasSubordinates;
+}
+
+
+//Check if logged-In user is HOD or not
+function checkHOD() {
+    var Query = "?$top=5000&$select=Id,Title,WebPartName,Contributors/EMail,Contributors/Id,Contributors/Title,Company/Id,Department/Id,Department/Title&$expand=Contributors,Company,Department&$filter=Contributors/EMail eq '" + _spPageContextInfo.userEmail + "' and WebPartName eq 'Head of the department' and Company/Id eq '" + Logged_CompanyId + "' ";
+    $.when(getLimitedItems('ProcessApprovers', Query)).done(function (ProcessApprovers) {
+        ProcessApprovers = ProcessApprovers.results;
+        if (ProcessApprovers.length) {
+            for (var dept = 0; dept < ProcessApprovers.length; dept++) {
+                $(".ddlDeptHOD").append('<option value="' + ProcessApprovers[dept].Department.Id + '">' + ProcessApprovers[dept].Department.Title + '</option>')
+            }
+            DepartmentalProjTasks("PageLoad", ProcessApprovers[0].Department.Id);
+            getDeptEmployee(ProcessApprovers[0].Department.Id);
+        }
+        else {
+            $("#ParentDeptProj").empty().append('<a href="javscript:void(0);">Departmental Projects</a>');
+            $("#ParentDeptEmp").empty().append('<a href="javscript:void(0);">Departmental Employees</a>');
+        }
+    });
+}
+
+//Project table sort
+function SortProjectTable(Name) {
+    if (Name == "Project Name") {
+        $("#ProjectSort").trigger("click");
+    }
+    else if (Name == "Customer") {
+        $("#CustomerProjSort").trigger("click");
+    }
+}
+
+//Get Departmental Projects
+function DepartmentalProjTasks(TaskAction, DeptId) {
+    $("#SeeMoreDeptProj").hide();
+    var ProjDeptId = '';
+    var restQuery,
+	    arrDataBind = [];
+    if (TaskAction == "PageLoad") {
+        arrFilterDeptProj = [];
+        //Start getting tasks 
+        $("#mainDivAllDeptProj").empty();
+        arrLimitTaskDeptProj = AllTaskInbox.filter(function (obj) { //Filter array on the basis of Department Id
+            if (obj.ProjectID != null) {
+                ProjDeptId = obj.ProjectID.DepartmentId;
+            }
+            else {
+                ProjDeptId = '';
+            }
+            return DeptId == "" ? ProjDeptId != "null" : ProjDeptId == DeptId
+            //return obj.ProjectID.DepartmentId == DeptId;
+        });
+        arrDataBind = arrLimitTaskDeptProj.filter(function (obj) { //Filter array on the basis of CurrentPhase - Open   
+            return (obj.CurrentPhase == "Open")
+        });
+        //Showing data out of total
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptProj").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptProj").hide();
+            $("#ShowItemsDeptProj").show();
+            $("#TaskCountDeptProj").text("500");
+            $("#SeeMoreDeptProj").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptProj").show();
+            $("#ShowItemsDeptProj").hide();
+            $("#TotalItemscountDeptProj").text(arrDataBind.length);
+            $("#SeeMoreDeptProj").hide();
+        }
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptProj', 'DeptProjects');
+
+        if (arrDataBind.length == 0) {
+            $("#SeeMoreDeptProj").hide();
+        }
+        else {
+            //$(".NoRecordFound").hide();
+        }
+        ShowPieChartDeptProj();
+        GetDeptProjCount();
+    }
+    else {
+        arrDataBind = arrLimitTaskDeptProj.slice(parseInt($("#TaskCountDeptProj").text()), (parseInt($("#TaskCountDeptProj").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptProj', 'DeptProjects');
+
+        if (arrLimitTaskDeptProj.length <= (parseInt($("#TaskCountDeptProj").text()) + 500)) {
+            $("#ShowTotalItemsDeptProj").show();
+            $("#ShowItemsDeptProj").hide();
+            $("#TotalItemscountDeptProj").text(arrLimitTaskDeptProj.length);
+            $("#SeeMoreDeptProj").hide();
+        }
+        else {
+            var currentDisplayCOunt = parseInt($("#TaskCountDeptProj").text()) + 500;
+            $("#ShowTotalItemsDeptProj").hide();
+            $("#ShowItemsDeptProj").show();
+            $("#TaskCountDeptProj").text(currentDisplayCOunt.toString());
+            $("#TotalTaskCountDeptProj").text(arrLimitTaskDeptProj.length);
+            $("#SeeMoreDeptProj").show();
+        }
+    }
+}
+
+
+//Get Tasks of all Current Department's
+function DeptEmpTasks(TaskAction, arrEmps) {
+    $("#SeeMoreDeptEmp").hide();
+    //var ProjDeptId = '';
+    var restQuery,
+        arrTemp = [];
+	    
+    if (TaskAction == "PageLoad") {
+        arrFilterDeptEmp = [];
+        arrLimitTaskDeptEmp = [];
+        //Start getting tasks 
+        $("#mainDivAllDeptEmp").empty();
+        for (var emp = 0; emp < arrEmps.length; emp++) {
+        
+          arrTemp = AllTaskInbox.filter(function(obj) { //Filter array on the basis of Department Id
+          var DeptId =arrEmps[emp].Department.Id;
+           if (obj.ProjectID != null) {
+                ProjDeptId = obj.ProjectID.DepartmentId;
+            }
+            else {
+                ProjDeptId = '';
+            }
+            return DeptId == "" ? ProjDeptId != "null" : ProjDeptId == DeptId
+            //return obj.ProjectID.DepartmentId == DeptId;
+        });
+
+
+
+
+          
+          
+          
+         
+
+/*
+            arrTemp = AllTaskInbox.filter(function(obj) { //Filter array on the basis of Department Id
+                var arrAssigntoQuery = [];
+                var arrDependencyQuery = [];
+                var AssigntoQuery = true;
+                var DependencyQuery = true;
+                for(var i = 0; i < obj.TaskAssignTo.length; i++) {
+                    if(obj.TaskAssignTo[i].EMail.indexOf("#") != -1) {
+                        obj.TaskAssignTo[i].EMail = obj.TaskAssignTo[i].EMail.split("#")[0];
+                        obj.TaskAssignTo[i].EMail = obj.TaskAssignTo[i].EMail.replace("_", "@");
+                    }
+                    arrAssigntoQuery.push(obj.TaskAssignTo[i].EMail.toLowerCase().trim() == arrEmps[emp].Email.toLowerCase().trim());
+                }
+                arrAssigntoQuery.forEach(function(entry, index) {
+                    if(index == 0) {
+                        AssigntoQuery = entry;
+                    } else {
+                        AssigntoQuery = entry || AssigntoQuery;
+                    }
+                });
+                if(obj.DependencyTo != null) {
+                    for(var j = 0; j < obj.DependencyTo.length; j++) {
+                        if(obj.DependencyTo[j].EMail.indexOf("#") != -1) {
+                            obj.DependencyTo[j].EMail = obj.DependencyTo[j].EMail.split("#")[0];
+                            obj.DependencyTo[j].EMail = obj.DependencyTo[j].EMail.replace("_", "@");
+                        }
+                        arrDependencyQuery.push(obj.DependencyTo[j].EMail.toLowerCase().trim() == arrEmps[emp].Email.toLowerCase().trim());
+                    }
+                } else {
+                    DependencyQuery = false;
+                }
+                arrDependencyQuery.forEach(function(entry, index) {
+                    if(index == 0) {
+                        DependencyQuery = entry;
+                    } else {
+                        DependencyQuery = entry || DependencyQuery;
+                    }
+                });
+                // return (AssigntoQuery || DependencyQuery);
+            });
+
+*/
+
+
+            arrLimitTaskDeptEmp = arrLimitTaskDeptEmp.concat(arrTemp);
+            arrTemp = [];
+        }
+        arrDataBind = arrLimitTaskDeptEmp.filter(function (obj) { //Filter array on the basis of CurrentPhase - Open   
+            return (obj.CurrentPhase == "Open")
+        });
+        //Showing data out of total
+        if (arrDataBind.length >= 500) {
+            $("#TotalTaskCountDeptEmp").text(arrDataBind.length);
+            arrDataBind = arrDataBind.slice(0, 500); //get 500 elements at first call
+            $("#ShowTotalItemsDeptEmp").hide();
+            $("#ShowItemsDeptEmp").show();
+            $("#TaskCountDeptEmp").text("500");
+            $("#SeeMoreDeptEmp").show();
+        }
+        else {
+            $("#ShowTotalItemsDeptEmp").show();
+            $("#ShowItemsDeptEmp").hide();
+            $("#TotalItemscountDeptEmp").text(arrDataBind.length);
+            $("#SeeMoreDeptEmp").hide();
+        }
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptEmp', 'DeptEmps');
+
+        if (arrDataBind.length == 0) {
+            $("#SeeMoreDeptEmp").hide();
+        }
+        else {
+            //$(".NoRecordFound").hide();
+        }
+        ShowPieChartDeptEmp();
+        GetDeptEmpCount();
+    }
+    else {
+        arrDataBind = arrLimitTaskDeptEmp.slice(parseInt($("#TaskCountDeptEmp").text()), (parseInt($("#TaskCountDeptEmp").text()) + 500)); //get 500 elements at first call
+        BindInboxTasks(arrDataBind, 'mainDivAllDeptEmp', 'DeptEmps');
+
+        if (arrLimitTaskDeptEmp.length <= (parseInt($("#TaskCountDeptEmp").text()) + 500)) {
+            $("#ShowTotalItemsDeptEmp").show();
+            $("#ShowItemsDeptEmp").hide();
+            $("#TotalItemscountDeptEmp").text(arrLimitTaskDeptEmp.length);
+            $("#SeeMoreDeptEmp").hide();
+        }
+        else {
+            var currentDisplayCOunt = parseInt($("#TaskCountDeptEmp").text()) + 500;
+            $("#ShowTotalItemsDeptEmp").hide();
+            $("#ShowItemsDeptEmp").show();
+            $("#TaskCountDeptEmp").text(currentDisplayCOunt.toString());
+            $("#TotalTaskCountDeptEmp").text(arrLimitTaskDeptEmp.length);
+            $("#SeeMoreDeptEmp").show();
+        }
+    }
+}
+
+//make percentage wise pie chart for Dept-Projects
+function ShowPieChartDeptProj() {
+    var dfds = $.Deferred(),
+		arrComplatedTasks = [],
+    	arrOpenTasks = [],
+    	arrHoldTasks = [],
+    	arrCancelTasks = [],
+    	arrCloseTasks = [],
+    	TaskAssigneeMail = "",
+    	TaskDependencyMail = "";
+    $("#PieDeptProj").empty();
+
+    if (arrLimitTaskDeptProj.length > 0) {
+        $("#PieDeptProj").show();
+        $(".blankcircleDeptProj").hide();
+        arrComplatedTasks = arrLimitTaskDeptProj.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "completed"
+        });
+        arrOpenTasks = arrLimitTaskDeptProj.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "open"
+        });
+        arrHoldTasks = arrLimitTaskDeptProj.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "hold"
+        });
+        arrCancelTasks = arrLimitTaskDeptProj.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "cancelled"
+        });
+        arrCloseTasks = arrLimitTaskDeptProj.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "close"
+        });
+        if (arrComplatedTasks.length == 0 && arrOpenTasks.length == 0 && arrHoldTasks.length == 0 && arrCancelTasks.length == 0 && arrCloseTasks.length == 0) {
+            $("#PieDeptProj").hide();
+        }
+
+        //});
+        var pie = new d3pie("PieDeptProj", {
+            header: {
+                title: {
+                    text: "",
+                    fontSize: 30
+                }
+            },
+            data: {
+                content: [
+                  { label: "Completed", value: arrComplatedTasks.length, valueType: "percentage" },
+                  { label: "Open", value: arrOpenTasks.length, valueType: "percentage" },
+                  { label: "Hold", value: arrHoldTasks.length, valueType: "percentage" },
+                  { label: "Cancelled", value: arrCancelTasks.length, valueType: "percentage" },
+                  { label: "Close", value: arrCloseTasks.length, valueType: "percentage" }
+                ]
+            },
+            callbacks: {
+                onload: null,
+                onMouseoverSegment: null,
+                onMouseoutSegment: null,
+                onClickSegment: function (evt, item) {
+                    clickInboxChart(evt);
+                }
+            }
+        });
+    }
+    else {
+        $("#PieDeptProj").hide();
+        $(".blankcircleDeptProj").show();
+    }
+}
+
+
+//make percentage wise pie chart for Dept-Employees
+function ShowPieChartDeptEmp() {
+    var dfds = $.Deferred(),
+		arrComplatedTasks = [],
+    	arrOpenTasks = [],
+    	arrHoldTasks = [],
+    	arrCancelTasks = [],
+    	arrCloseTasks = [],
+    	TaskAssigneeMail = "",
+    	TaskDependencyMail = "";
+    $("#PieDeptEmp").empty();
+
+    if (arrLimitTaskDeptEmp.length > 0) {
+        $("#PieDeptEmp").show();
+        $(".blankcircleDeptEmp").hide();
+        arrComplatedTasks = arrLimitTaskDeptEmp.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "completed"
+        });
+        arrOpenTasks = arrLimitTaskDeptEmp.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "open"
+        });
+        arrHoldTasks = arrLimitTaskDeptEmp.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "hold"
+        });
+        arrCancelTasks = arrLimitTaskDeptEmp.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "cancelled"
+        });
+        arrCloseTasks = arrLimitTaskDeptEmp.filter(function (data) {
+            return data.CurrentPhase.toLowerCase() == "close"
+        });
+        if (arrComplatedTasks.length == 0 && arrOpenTasks.length == 0 && arrHoldTasks.length == 0 && arrCancelTasks.length == 0 && arrCloseTasks.length == 0) {
+            $("#PieDeptEmp").hide();
+        }
+
+        //});
+        var pie = new d3pie("PieDeptEmp", {
+            header: {
+                title: {
+                    text: "",
+                    fontSize: 30
+                }
+            },
+            data: {
+                content: [
+                  { label: "Completed", value: arrComplatedTasks.length, valueType: "percentage" },
+                  { label: "Open", value: arrOpenTasks.length, valueType: "percentage" },
+                  { label: "Hold", value: arrHoldTasks.length, valueType: "percentage" },
+                  { label: "Cancelled", value: arrCancelTasks.length, valueType: "percentage" },
+                  { label: "Close", value: arrCloseTasks.length, valueType: "percentage" }
+                ]
+            },
+            callbacks: {
+                onload: null,
+                onMouseoverSegment: null,
+                onMouseoutSegment: null,
+                onClickSegment: function (evt, item) {
+                    clickInboxChart(evt);
+                }
+            }
+        });
+    }
+    else {
+        $("#PieDeptEmp").hide();
+        $(".blankcircleDeptEmp").show();
+    }
+}
+
+//function Sort 'MySubordinate', "Departmental Projects" and Departmental Employees Table
+function SortTable(Name) {
+    if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptProj") {
+        if (Name == "Task Name") {
+            $("#TaskNameDeptProj").trigger("click");
+        }
+        else if (Name == "Recent Task") {
+            $("#RecentDeptProj").trigger("click");
+        }
+        else if (Name == "Due Date") {
+            $("#DueDeptProj").trigger("click");
+        }
+        else if (Name == "Priority") {
+            $("#PriorityDeptProj").trigger("click");
+        }
+    }
+    else if ($('ul#myTabs').find('li.active').attr('id') == "ParentDeptEmp") {
+        if (Name == "Task Name") {
+            $("#TaskNameDeptEmp").trigger("click");
+        }
+        else if (Name == "Recent Task") {
+            $("#RecentDeptEmp").trigger("click");
+        }
+        else if (Name == "Due Date") {
+            $("#DueDeptEmp").trigger("click");
+        }
+        else if (Name == "Priority") {
+            $("#PriorityDeptEmp").trigger("click");
+        }
+    }
+    else {
+        if (Name == "Task Name") {
+            $("#TaskNameSub").trigger("click");
+        }
+        else if (Name == "Recent Task") {
+            $("#RecentSub").trigger("click");
+        }
+        else if (Name == "Due Date") {
+            $("#DueSub").trigger("click");
+        }
+        else if (Name == "Priority") {
+            $("#PrioritySub").trigger("click");
+        }
+    }
+}
+
+
+
+
+
+/********************************************-----add-Dependency --------*************************************************************************/
+
+//update the selected Tasks metadata
+function AddDependencyInTask(Action) {
+    var Metdata;
+    var arrTempTaskId = [];
+    var arrDataBind = [];
+    var arrTaskTemp = [];
+    var updateTab = '';
+    if (arrTaskMySubordinate.length > 0) { //first check MySubordinate array
+        updateTab = 'TempTableMySubordinate';
+        arrTempTaskId = arrTaskMySubordinate.filter(function (f) { return f; });
+    }
+    else if (arrTaskParentDeptProj.length > 0) { //then check Departmental Projects array
+        updateTab = 'TempTableDeptProj';
+        arrTempTaskId = arrTaskParentDeptProj.filter(function (f) { return f; });
+    }
+    else if (arrTaskParentDeptEmp.length > 0) { //then check Departmental Employee array
+        updateTab = 'TempTableDeptEmp';
+        arrTempTaskId = arrTaskParentDeptEmp.filter(function (f) { return f; });
+    }
+    if (arrTaskMySubordinate.length != 0 || arrTaskParentDeptProj.length != 0 || arrTaskParentDeptEmp.length != 0) {
+        var ItemType = GetItemTypeForListName('EmployeeTaskDetails');        
+        if(Action == "AddDependency") { 
+            arrTaskTemp = [];
+            var IsDepValidateOk = true;
+            var ItemType = GetItemTypeForListName('TaskDependencies');
+            var ItemTypeTaskist = GetItemTypeForListName('EmployeeTaskDetails');
+            getDependencyUserInfo('AssaginToDependency');
+            arrTempTaskId.forEach(function (value, i) {
+                var arrFinalAssigneeIds = [];
+                //AllAddedAssignee = [];
+                IsDepValidateOk = true;
+                if(updateTab == "TempTableMySubordinate") {
+                    arrTaskTemp = arrMySubordinate.filter(function (obj) { //Filter array on the basis of CurrentPhase
+                        return obj.Id == value;
+                    });
+                }
+                else if(updateTab == "TempTableDeptProj"){
+                    arrTaskTemp = arrDeptProjects.filter(function (obj) { //Filter array on the basis of CurrentPhase
+                        return obj.Id == value;
+                    });
+                }
+                else{
+                    arrTaskTemp = arrDeptEmployee.filter(function (obj) { //Filter array on the basis of CurrentPhase
+                        return obj.Id == value;
+                    });
+                }
+                var AlreadyDepenedency = [];
+                if(arrTaskTemp[0].DependencyCount != 0 && arrTaskTemp[0].DependencyCount != null) {
+                    for(var usr=0;usr<arrTaskTemp[0].DependencyTo.length;usr++) {
+                        AlreadyDepenedency.push({
+                            email: arrTaskTemp[0].DependencyTo[usr].EMail,
+                            userId: arrTaskTemp[0].DependencyToId[usr]
+                        });
+                    }
+                }
+                AllAddedAssignee = AllAddedAssignee.concat(AlreadyDepenedency);
+                
+                arrFinalAssigneeIds = checkUserValid();
+                //Remove duplicate elements Azure Array
+                arrFinalAssigneeIds = arrFinalAssigneeIds.filter(function (item, pos) { 
+                    return arrFinalAssigneeIds.indexOf(item) == pos 
+                });
+                //Add in EmployeeTaskDetails list
+                
+                MetadataforDependencyTask = {
+                    __metadata: {
+                        'type': ItemTypeTaskist
+                    },
+                    DependencyCount: arrFinalAssigneeIds.length + parseInt(arrTaskTemp[0].DependencyCount ? arrTaskTemp[0].DependencyCount: 0),
+                    DependencyToId: { 'results': arrFinalAssigneeIds }
+                };	
+                
+                
+                //remove those dependency which are already added.
+                arrDepIds = [];
+                arrTemp = [];
+                if($("#btnAddDependencys").text() == "Add"){
+                    if(AlreadyDepenedency.length > 0) {
+                        /*for(var u=0;u<AlreadyDepenedency.length;u++){
+                            arrTemp = arrFinalAssigneeIds.filter(function( obj ) {
+                                return obj != AlreadyDepenedency[u].userId;
+                            });
+                            arrDepIds.push(arrTemp[0]);
+                        }*/
+                        arrDepIds = getUserInformation('AssaginToDependency');
+                    }
+                    else {
+                        arrDepIds = arrFinalAssigneeIds.filter(function(f){return f;})
+                    }
+                }
+                else {
+                    AllAddedAssignee = [];
+                    getDependencyUserInfo('AssaginToDependency');
+                    arrDepIds = [];
+                    for(var u=0;u<AllAddedAssignee.length;u++){
+                        arrDepIds.push(AllAddedAssignee[u].userId);
+                    }
+                }
+	            
+                //return;
+                if(arrDepIds.length > 0){
+                    Metadata = {
+                        __metadata: {
+                            'type': ItemType
+                        },
+                        Title: $('#txtTitle').val(),
+                        Details: $('#txtDetails').val(),
+                        Status: 'Inactive',
+                        CompanyIDId: Logged_CompanyId,
+                        AssignedToId: {
+                            'results': arrDepIds 
+                        },
+                        TaskIdId: value
+                    };
+                    if($('.StartDependecyDate').val() != ""){
+                    	FormattedStartDate = new Date(arrTaskTemp[0].StartDate).setHours(0, 0, 0, 0);
+                    	FormattedStartDate = new Date(FormattedStartDate);
+                    	FormattedEndDate = new Date(arrTaskTemp[0].DueDate).setHours(0, 0, 0, 0);
+                    	FormattedEndDate = new Date(FormattedEndDate);
+
+                        if(arrTempTaskId.length == 1){
+                            if (FormattedStartDate <= new Date(GetDateStandardFormat(moment($('.StartDependecyDate').val()).format('DD/MM/YYYY'))) && FormattedEndDate >= new Date(GetDateStandardFormat(moment($('.StartDependecyDate').val()).format('DD/MM/YYYY')))) {
+                                Metadata["StartDate"] = GetDateStandardFormat(moment($('.StartDependecyDate').val()).format('DD/MM/YYYY'));
+                            }
+                            else {
+                                AllAddedAssignee = [];
+                                IsDepValidateOk == false;
+                                alert('Start date should be in-between task"s start date and due Date.');
+                                return false;
+                            }
+                        }
+                        else {
+                            Metadata["StartDate"] = GetDateStandardFormat(moment($('.StartDependecyDate').val()).format('DD/MM/YYYY'));
+                        }
+                    }
+                    else {
+                        if($("#StartDateAsTask").prop('checked') == true){
+                            Metadata["StartDate"] = GetDateStandardFormat(moment(arrTaskTemp[0].StartDate.split('T')[0]).format("DD/MM/YYYY"));
+                        }
+                    }
+
+                    if($('.DueDependecyDate').val() != ""){
+                    	FormattedStartDate = new Date(arrTaskTemp[0].StartDate).setHours(0, 0, 0, 0);
+                    	FormattedStartDate = new Date(FormattedStartDate);
+                    	FormattedEndDate = new Date(arrTaskTemp[0].DueDate).setHours(0, 0, 0, 0);
+                    	FormattedEndDate = new Date(FormattedEndDate);
+                        if(arrTempTaskId.length == 1){
+                            if (FormattedStartDate <= new Date(GetDateStandardFormat(moment($('.DueDependecyDate').val()).format('DD/MM/YYYY'))) && FormattedEndDate >= new Date(GetDateStandardFormat(moment($('.DueDependecyDate').val()).format('DD/MM/YYYY')))) {
+                                Metadata["EndDate"] = GetDateStandardFormat(moment($('.DueDependecyDate').val()).format('DD/MM/YYYY'));
+                            }
+                            else {
+                                IsDepValidateOk == false;
+                                AllAddedAssignee = [];
+                                alert('End date should be in-between task"s start date and due Date.');
+                                return false;
+                            }
+                        }
+                        else {
+                            Metadata["EndDate"] = GetDateStandardFormat(moment($('.DueDependecyDate').val()).format('DD/MM/YYYY'));
+                        }
+                    }
+                    else {
+                        if($("#DueDateAsTask").prop('checked') == true){
+                        	var TempDate = new Date(new Date(arrTaskTemp[0].DueDate.split('T')[0]).setDate(new Date(arrTaskTemp[0].DueDate.split('T')[0]).getDate() + 1));
+                            Metadata["EndDate"] = GetDateStandardFormat(moment(TempDate).format("DD/MM/YYYY"));
+                        }
+                    }
+                    Metadata["MandatoryCompletion"] = $('#chkIsMandatory').prop('checked');
+                    UpdateTaskList('EmployeeTaskDetails', MetadataforDependencyTask, value);
+                    if(IsDepValidateOk == true) {
+                        if($("#btnAddDependencys").text() == "Add"){
+                            AddDependyList('TaskDependencies', Metadata, value, updateTab, arrFinalAssigneeIds.length);
+                        }
+                    }
+                }
+                //else {
+                if (arrTempTaskId.length == (i + 1)) {
+                    arrTaskIds = [];
+                    arrTaskInIds = [];
+                    $(".btnCloseDependency").trigger('click');
+                    /*if($("#btnAddDependencys").text() == "Update"){
+                        taskDependency(arrTempTaskId[0], true);
+                    }
+                    else {
+                        if(arrTempTaskId.length == 1){
+                            taskDependency(arrTempTaskId[0], false);
+                        }
+                    }*/
+                    /*if(updateTab == "Inbox") {
+                        GetTasksInboxTasks("Open", _spPageContextInfo.userEmail, "PageLoad");
+                    }
+                    else {
+                        GetTasksOutboxTasks("Open", "PageLoad");
+                    }*/
+                    alert("All the dependencies are updated for selected task(s).");
+                }
+                //}
+            });
+        }
+        
+    }
+    else {
+        alert("Kindly select any task first.");
+        return false;
+    }
+}
+
+
+//check if user id valid or not - Internal and External both
+function checkUserValid(Email) {
+    var arrFinalMembers = [];
+    var arrTemp = [];
+    var IsExternalUserBind = false;
+    var arrExternal = [];
+    var RestQuery = "?$select=*,AttachmentFiles,LogonName/EMail,LogonName/Title,LogonName/Id,LogonName/FirstName,LogonName/LastName,LogonName/EMail,Department/ID, Department/DepartmentName,Company/ID&$expand=AttachmentFiles,LogonName,Department,Company&$top=5000";
+    $.when(getLimitedItems("Employees", RestQuery)).done(function (Employees) {
+        Employees = Employees.results;
+        Employees = Employees.filter(function (obj) { //Filter array on the basis of Status == "Active"
+            return obj.Status.toLowerCase() == 'active';
+        });
+        for (var i = 0; i < AllAddedAssignee.length; i++) {
+            arrTemp = Employees.filter(function (obj) { //Filter array on the basis of CurrentPhase
+                return obj.Email.toLowerCase() == AllAddedAssignee[i].email.toLowerCase();
+            });
+
+            if (arrTemp.length > 0) {
+                arrFinalMembers.push(arrTemp[0].LogonName.Id);
+            }
+            else {
+                //Check in External Users list
+                if (IsExternalUserBind == false) {
+                    IsExternalUserBind = true;
+                    var RestQuery = "?$select=LoginName/Id,email&$expand=LoginName&$top=5000";
+                    $.when(getLimitedItems("ExternalUsers", RestQuery)).done(function (ExtEmployees) {
+                        ExtEmployees = ExtEmployees.results;
+                        arrExternal = ExtEmployees;
+                        //for (var j = 0; j < ExtEmployees.length; j++) {
+                        arrTemp = ExtEmployees.filter(function (obj) { //Filter array on the basis of email
+                            return AllAddedAssignee[i].email.toLowerCase() == obj.email.toLowerCase();
+                        });
+                        if (arrTemp.length > 0) {
+                            arrFinalMembers.push(arrTemp[0].LoginName.Id);
+                        }
+                        //}
+                    });
+                }
+                else {
+                    //for (var j = 0; j < arrExternal.length; j++) {
+                    arrTemp = arrExternal.filter(function (obj) { //Filter array on the basis of email
+                        return AllAddedAssignee[i].email.toLowerCase() == obj.email.toLowerCase();
+                    });
+                    //}
+                    if (arrTemp.length > 0) {
+                        arrFinalMembers.push(arrTemp[0].LoginName.Id);
+                    }
+                }
+            }
+        }
+
+    });
+    return arrFinalMembers;
+}

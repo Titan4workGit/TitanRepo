@@ -1,1 +1,1387 @@
-var a367_0x293906=a367_0x3c92;(function(_0xa67210,_0x110298){var _0x2861c3=a367_0x3c92,_0x306ae5=_0xa67210();while(!![]){try{var _0x5119a4=parseInt(_0x2861c3(0x1f7))/0x1+-parseInt(_0x2861c3(0x1ce))/0x2+parseInt(_0x2861c3(0x23f))/0x3*(parseInt(_0x2861c3(0x246))/0x4)+-parseInt(_0x2861c3(0x189))/0x5+parseInt(_0x2861c3(0x215))/0x6+-parseInt(_0x2861c3(0x1d1))/0x7+-parseInt(_0x2861c3(0x122))/0x8*(-parseInt(_0x2861c3(0x1a9))/0x9);if(_0x5119a4===_0x110298)break;else _0x306ae5['push'](_0x306ae5['shift']());}catch(_0x244d13){_0x306ae5['push'](_0x306ae5['shift']());}}}(a367_0x59b9,0x7a321));var SelectedBoard='';function a367_0x3c92(_0x40c696,_0x55bcd5){var _0x59b906=a367_0x59b9();return a367_0x3c92=function(_0x3c929d,_0x15bb56){_0x3c929d=_0x3c929d-0x121;var _0x469063=_0x59b906[_0x3c929d];return _0x469063;},a367_0x3c92(_0x40c696,_0x55bcd5);}$(document)[a367_0x293906(0x175)](function(){var _0x4704fd=a367_0x293906;$(_0x4704fd(0x12d))[_0x4704fd(0x129)](function(){var _0x24914b=_0x4704fd;if(arrTaskInIds['length']>0x0){var _0x467dfe='';if($(_0x24914b(0x231))[_0x24914b(0x184)](_0x24914b(0x1bd))==!![])_0x467dfe=$(_0x24914b(0x195))[_0x24914b(0x192)]();else{if($('#newboardname')['prop'](_0x24914b(0x1bd))==!![]){var _0x436eb8=[];_0x436eb8=allBoardName[_0x24914b(0x1e3)](function(_0x22cd0a){var _0x524ba0=_0x24914b;return _0x22cd0a['toLowerCase']()==$(_0x524ba0(0x17f))[_0x524ba0(0x192)]()[_0x524ba0(0x151)]();}),_0x436eb8[_0x24914b(0x135)]==0x0?_0x467dfe=$(_0x24914b(0x17f))['val']()['trim']():_0x467dfe=_0x436eb8[0x0];}}if(_0x467dfe!='')updateBoardName(_0x467dfe);else return alert('Kindly\x20select/write\x20any\x20board\x20name.'),![];}else return alert(_0x24914b(0x153)),![];}),SortKanbanTasks(),$(_0x4704fd(0x131))[_0x4704fd(0x129)](function(){var _0x457e71=_0x4704fd;$('#BoardPopupHeader')[_0x457e71(0x174)](_0x457e71(0x22c)),$(_0x457e71(0x12d))[_0x457e71(0x142)](),$(_0x457e71(0x1f0))[_0x457e71(0x136)]();}),$(_0x4704fd(0x1fb))['click'](function(){var _0x2ae15f=_0x4704fd;$(_0x2ae15f(0x24b))[_0x2ae15f(0x18e)](_0x2ae15f(0x138),_0x2ae15f(0x186)),$('#BoardPopupHeader')[_0x2ae15f(0x174)]('Add\x20Board'),$('#btnBoardSubmit')[_0x2ae15f(0x136)](),$(_0x2ae15f(0x1f0))[_0x2ae15f(0x142)](),$('#bucketbox')[_0x2ae15f(0x15c)]('show');}),$(_0x4704fd(0x1f0))[_0x4704fd(0x129)](function(){var _0x526c09=_0x4704fd,_0xb185f7='';if($('#existingbucket')['prop']('checked')==!![])_0xb185f7=$(_0x526c09(0x195))[_0x526c09(0x192)]();else $(_0x526c09(0x130))[_0x526c09(0x184)](_0x526c09(0x1bd))==!![]&&(_0xb185f7=$('#txtBoardName')[_0x526c09(0x192)]());if(_0xb185f7!='')AddKanbanBoard(_0xb185f7);else return alert(_0x526c09(0x1f2)),![];}),$(_0x4704fd(0x20d))[_0x4704fd(0x129)](function(){FilterKanban();}),$(_0x4704fd(0x251))[_0x4704fd(0x129)](function(){var _0x3f020e=_0x4704fd;$(_0x3f020e(0x1e0))[_0x3f020e(0x15c)](_0x3f020e(0x142)),$('.botheventwork')[_0x3f020e(0x136)](),$('#btnTaskInFilter')[_0x3f020e(0x136)](),$(_0x3f020e(0x1d7))[_0x3f020e(0x136)](),$('#btnKanbanFilter')[_0x3f020e(0x142)](),$(_0x3f020e(0x1eb))[_0x3f020e(0x142)](),$(_0x3f020e(0x171))[_0x3f020e(0x136)](),$(_0x3f020e(0x198))[_0x3f020e(0x136)](),$(_0x3f020e(0x15e))[_0x3f020e(0x174)](_0x3f020e(0x15d)),$(_0x3f020e(0x1a0))['length']==0x0&&bindAllWorkType(),$(_0x3f020e(0x199))['datepicker'](),$(_0x3f020e(0x199))[_0x3f020e(0x121)](_0x3f020e(0x14f),'dateFormat',_0x3f020e(0x204));}),$(_0x4704fd(0x1eb))[_0x4704fd(0x129)](function(){ClearKanbanFilter();}),$(_0x4704fd(0x1ea))[_0x4704fd(0x129)](function(){var _0x476775=_0x4704fd;this[_0x476775(0x1bd)]==!![]?($(_0x476775(0x1bc))['prop'](_0x476775(0x1bd),_0x476775(0x1bd)),arrTaskInIds=[],arrTaskInIds=arrOpenKanbanTask['filter'](function(_0x53c8d7){return _0x53c8d7;})):($('.kanbanOpenTsk')[_0x476775(0x184)](_0x476775(0x1bd),''),arrTaskInIds=[]);});});var arrOpenKanbanTask=[];function BindTaskToBoard(){var _0x264b43=a367_0x293906,_0x437c45='',_0x354ed2='',_0xc743c='',_0x4e05c6='',_0x558ba1='',_0x35cf47=[];taskchkIn=[],arrOpenKanbanTask=[],_0x35cf47=arrLimitTaskInbox[_0x264b43(0x1e3)](function(_0x5045c8){var _0x55465a=_0x264b43;return _0x5045c8[_0x55465a(0x12b)]==null||_0x5045c8[_0x55465a(0x12b)]=='';});for(var _0xb270ac=0x0;_0xb270ac<_0x35cf47['length'];_0xb270ac++){_0x35cf47[_0xb270ac][_0x264b43(0x211)]==null?(_0xc743c=_0x264b43(0x24d),_0x354ed2=_0x35cf47[_0xb270ac][_0x264b43(0x1e4)]['Title']):(_0xc743c=_0x264b43(0x13f),_0x354ed2=_0x35cf47[_0xb270ac][_0x264b43(0x211)]),_0x35cf47[_0xb270ac][_0x264b43(0x1c5)]!=null?(_0x4e05c6=new Date(_0x35cf47[_0xb270ac]['DueDate']),_0x4e05c6=titanForWork[_0x264b43(0x20c)](_0x4e05c6)):_0x4e05c6='',_0x35cf47[_0xb270ac][_0x264b43(0x1df)]==_0x264b43(0x185)||_0x35cf47[_0xb270ac][_0x264b43(0x1df)]==_0x264b43(0x208)?_0x558ba1=_0x264b43(0x227):_0x558ba1=_0x264b43(0x1d6),arrOpenKanbanTask[_0x264b43(0x21c)](_0x35cf47[_0xb270ac]['ID']['toString']()),_0x437c45+='<tr><td><input\x20type=\x22checkbox\x22\x20value=\x22'+_0x35cf47[_0xb270ac]['ID']+_0x264b43(0x1f1),_0x437c45+='<div\x20class=\x22dvids\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/repeat_circle.png\x22\x20style=\x22display:none;\x22\x20alt=\x22\x22><h3>'+_0x35cf47[_0xb270ac][_0x264b43(0x253)]+'</h3></div>',_0x437c45+=_0x264b43(0x212),_0x437c45+=_0x264b43(0x1e2)+_0x35cf47[_0xb270ac][_0x264b43(0x1fd)]['Title']+_0x264b43(0x127),_0x437c45+=_0x264b43(0x1ec)+_0xc743c+_0x264b43(0x1f3)+_0x354ed2+_0x264b43(0x225),_0x437c45+=_0x264b43(0x220),_0x437c45+=_0x264b43(0x1cf)+_0x558ba1+'\x22\x20class=\x22redcirle_icon\x22></td><td><div\x20class=\x22duedatebox\x22>',_0x437c45+=_0x264b43(0x190)+_0x4e05c6+_0x264b43(0x203),_0x437c45+=_0x264b43(0x22b)+_0x35cf47[_0xb270ac]['CompletionPersent']+_0x264b43(0x1c4);}$(_0x264b43(0x17b))['empty']()[_0x264b43(0x1da)](_0x437c45),$(_0x264b43(0x249))[_0x264b43(0x129)](function(){var _0x11da33=_0x264b43;if(this[_0x11da33(0x1bd)]==!![])arrTaskInIds[_0x11da33(0x21c)](this[_0x11da33(0x15f)]);else{var _0x18a89c=this[_0x11da33(0x15f)];$('.chkAllKanbanTsk')['prop'](_0x11da33(0x1bd),''),arrTaskInIds=arrTaskInIds[_0x11da33(0x1e3)](function(_0x14055a){return _0x14055a!==_0x18a89c;});}});}function updateBoardName(_0x420e75){var _0x40fa0b,_0x232204=[],_0x1ade96=GetItemTypeForListName('EmployeeTaskDetails');arrTaskInIds['forEach'](function(_0x5efa3d,_0x220178){var _0x5619c8=a367_0x3c92;_0x40fa0b={'__metadata':{'type':_0x1ade96},'BoardName':_0x420e75};var _0x274dda=$[_0x5619c8(0x147)]();return $[_0x5619c8(0x22a)]({'url':_spPageContextInfo[_0x5619c8(0x164)]+'/_api/web/lists/getbytitle(\x27EmployeeTaskDetails\x27)/GetItemById(\x27'+_0x5efa3d+'\x27)','type':'POST','async':![],'headers':{'accept':_0x5619c8(0x1e9),'X-RequestDigest':$(_0x5619c8(0x248))[_0x5619c8(0x192)](),'content-Type':'application/json;odata=verbose','X-Http-Method':'PATCH','If-Match':'*'},'data':JSON['stringify'](_0x40fa0b),'success':function(_0x5401ca){var _0x14ad7c=_0x5619c8;if(_0x220178+0x1==arrTaskInIds[_0x14ad7c(0x135)]){$(_0x14ad7c(0x249))[_0x14ad7c(0x184)](_0x14ad7c(0x1bd),'');if($('#newboardname')[_0x14ad7c(0x184)]('checked')==!![]){if(_0x420e75[_0x14ad7c(0x151)]()==_0x14ad7c(0x165)||jQuery[_0x14ad7c(0x15b)](_0x420e75[_0x14ad7c(0x151)](),allBoardName)!='-1'){}else AddBoard(_0x420e75);}else $(_0x14ad7c(0x17f))[_0x14ad7c(0x192)](''),$(_0x14ad7c(0x195))['val']('To\x20do');arrLimitTaskInbox[_0x14ad7c(0x1a2)](function(_0x28890a,_0xe23efc){var _0x252dbe=_0x14ad7c;for(id=0x0;id<arrTaskInIds[_0x252dbe(0x135)];id++){_0x28890a['Id']==arrTaskInIds[id]&&(_0x28890a[_0x252dbe(0x12b)]=_0x420e75,_0x28890a[_0x252dbe(0x23b)]=new Date()[_0x252dbe(0x170)]());}}),_0x232204=arrSortBoard=arrLimitTaskInbox[_0x14ad7c(0x1e3)](function(_0x2d327d){var _0x245ba6=_0x14ad7c;return _0x2d327d[_0x245ba6(0x12b)]!=null&&_0x2d327d[_0x245ba6(0x12b)]!='';}),BindBucketName(_0x232204,''),arrTaskInIds=[],alert(_0x14ad7c(0x152));}_0x274dda[_0x14ad7c(0x217)](_0x5401ca);},'eror':function(_0x392dbf){var _0x2eb097=_0x5619c8;_0x274dda[_0x2eb097(0x168)](error),console[_0x2eb097(0x1d2)](_0x2eb097(0x149)+JSON[_0x2eb097(0x1b7)](_0x392dbf));}}),_0x274dda['promise']();});}function AddBoard(_0xaaba13){var _0x5d78f5=a367_0x293906,_0x49ead5=0x1,_0x175227=_0x5d78f5(0x143)+_spPageContextInfo[_0x5d78f5(0x13a)]+_0x5d78f5(0x1be);$[_0x5d78f5(0x226)](getLimitedItems(_0x5d78f5(0x1d0),_0x175227))[_0x5d78f5(0x202)](function(_0x2e6751){var _0x201497=_0x5d78f5,_0x447818=_0x2e6751[_0x201497(0x23d)];_0x447818[_0x201497(0x135)]>0x0&&(_0x49ead5=_0x447818[0x0][_0x201497(0x124)],_0x49ead5++);});var _0x8c42f6,_0x39690e=GetItemTypeForListName('PlannerBoardList');_0x8c42f6={'__metadata':{'type':_0x39690e},'Title':_0xaaba13,'Sequence_No':_0x49ead5},$[_0x5d78f5(0x22a)]({'url':_spPageContextInfo[_0x5d78f5(0x164)]+_0x5d78f5(0x1a6),'type':_0x5d78f5(0x19d),'async':![],'headers':{'accept':_0x5d78f5(0x1e9),'X-RequestDigest':$(_0x5d78f5(0x248))[_0x5d78f5(0x192)](),'content-Type':_0x5d78f5(0x1e9)},'data':JSON[_0x5d78f5(0x1b7)](_0x8c42f6),'success':function(_0x102b96){var _0x5a5889=_0x5d78f5;$(_0x5a5889(0x17f))[_0x5a5889(0x192)](''),$(_0x5a5889(0x195))[_0x5a5889(0x192)](_0x5a5889(0x1ac));},'error':function(_0x58dba5){var _0x54fdc4=_0x5d78f5;console['log'](JSON[_0x54fdc4(0x1b7)](_0x58dba5));}});}var allBoardName=[];function BindBucketName(_0x11d5d7,_0xb30173){var _0x19c422=a367_0x293906,_0x2b6f8b='';$(_0x19c422(0x195))[_0x19c422(0x1b1)](),$(_0x19c422(0x242))[_0x19c422(0x1c0)](_0x19c422(0x195));var _0x4a7138=[],_0x449fc3='?$top=5000&$select=ID,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No\x20asc';$[_0x19c422(0x226)](getLimitedItems(_0x19c422(0x1d0),_0x449fc3))[_0x19c422(0x202)](function(_0x2721cf){var _0x35cb60=_0x19c422,_0x123572=_0x4a7138=_0x2721cf['results'];_0x123572=removeDuplicates(_0x123572,'Title'),_0x123572[_0x35cb60(0x18c)](),_0x123572[_0x35cb60(0x135)]>0x0&&$[_0x35cb60(0x1a8)](_0x123572,function(_0x3b8dfe,_0x1bd2cb){var _0x6bdb9b=_0x35cb60;_0x2b6f8b+=_0x6bdb9b(0x1f8)+_0x1bd2cb['Title']+'\x27>'+_0x1bd2cb[_0x6bdb9b(0x253)]+'</option>',allBoardName[_0x6bdb9b(0x21c)](_0x1bd2cb['Title']);});});var _0x42ccf5=[];$['each'](_0x11d5d7,function(_0x390ccb,_0x4a1be1){var _0x3acf91=_0x19c422;_0x42ccf5=_0x4a7138['filter'](function(_0x56b621){var _0xe941be=a367_0x3c92;return _0x56b621[_0xe941be(0x253)]==_0x4a1be1[_0xe941be(0x12b)];}),_0x42ccf5[_0x3acf91(0x135)]==[]&&_0x4a1be1[_0x3acf91(0x12b)]!=_0x3acf91(0x1ac)&&_0x4a1be1[_0x3acf91(0x12b)]!=_0x3acf91(0x144)&&_0x4a1be1[_0x3acf91(0x12b)]!='Done'?(_0x2b6f8b+='<option\x20value=\x27'+_0x4a1be1[_0x3acf91(0x12b)]+'\x27>'+_0x4a1be1[_0x3acf91(0x12b)]+_0x3acf91(0x18d),allBoardName[_0x3acf91(0x21c)](_0x4a1be1[_0x3acf91(0x253)])):_0x42ccf5=[];}),$(_0x19c422(0x195))[_0x19c422(0x1da)](_0x2b6f8b),PrepareBoards(_0x11d5d7,_0x4a7138,_0xb30173);}var bindBoardNames=[];function PrepareBoards(_0x4ac8ab,_0x457db1,_0x3ff5d8){var _0x2eaaaf=a367_0x293906,_0x1b0537='',_0x3c7b26=[],_0x3278fc=[],_0x4f5e69='',_0x1505cc='',_0x16b312='',_0x45ccec='',_0xa9da7d=![],_0x1ff687=[];listClass=0x1,DueDate='',$(_0x2eaaaf(0x1f9))[_0x2eaaaf(0x1b1)](),bindBoardNames=[],_0x3278fc=_0x4ac8ab['filter'](function(_0x14f7cc){var _0x4df070=_0x2eaaaf;return _0x14f7cc['BoardName']==_0x4df070(0x1ac);}),bindBoardNames[_0x2eaaaf(0x21c)](_0x2eaaaf(0x1ac)),_0x1b0537+=_0x2eaaaf(0x24f),_0x1b0537+='<div\x20class=\x22col-md-6\x22\x20style=\x22text-align:\x20right;\x22><div\x20class=\x22dropsec\x22\x20style=\x22display:\x20inline-block;\x20position:\x20relative;\x22>',_0x1b0537+=_0x2eaaaf(0x1cd)+listClass+_0x2eaaaf(0x1f5),_0x1b0537+='</div></div></div>',_0x1b0537+=_0x2eaaaf(0x234)+listClass+'\x22\x20class=\x22listshow\x22\x20data-value=\x22connect\x22>',_0x1ff687[_0x2eaaaf(0x21c)](_0x2eaaaf(0x191)+listClass),listClass++;_0x3278fc['length']>0x0?(_0x3ff5d8==''&&_0x3278fc[_0x2eaaaf(0x1ff)](function(_0x55c44a,_0x1dae19){var _0x5b0b6f=_0x2eaaaf,_0xc164cd=new Date(_0x55c44a[_0x5b0b6f(0x23b)]),_0x5b6257=new Date(_0x1dae19[_0x5b0b6f(0x23b)]);return _0x5b6257-_0xc164cd;}),$[_0x2eaaaf(0x1a8)](_0x3278fc,function(_0x1f5583,_0x2c9522){var _0x530225=_0x2eaaaf;if(jQuery['inArray'](_0x2c9522[_0x530225(0x12b)],_0x3c7b26)!='-1'){}else{_0x16b312=_0x530225(0x181),_0x3c7b26['push'](_0x2c9522[_0x530225(0x12b)]);for(var _0x1f5583=0x0;_0x1f5583<_0x3278fc['length'];_0x1f5583++){if(_0x3278fc[_0x1f5583][_0x530225(0x211)]==null){if(_0x3278fc[_0x1f5583][_0x530225(0x1d9)]==_0x530225(0x178))_0x4f5e69=_0x530225(0x1c6),_0x1505cc=_0x3278fc[_0x1f5583]['TeamItemName'];else _0x3278fc[_0x1f5583][_0x530225(0x1d9)]==_0x530225(0x243)?(_0x4f5e69=_0x530225(0x19e),_0x1505cc=_0x3278fc[_0x1f5583][_0x530225(0x24c)]):(_0x4f5e69=_0x530225(0x24d),_0x1505cc=_0x3278fc[_0x1f5583][_0x530225(0x1e4)]['Title']);}else _0x4f5e69=_0x530225(0x13f),_0x1505cc=_0x3278fc[_0x1f5583][_0x530225(0x211)];_0x3278fc[_0x1f5583][_0x530225(0x1c5)]!=null&&(DueDate=new Date(_0x3278fc[_0x1f5583][_0x530225(0x1c5)]),DueDate=titanForWork[_0x530225(0x20c)](DueDate));_0x3278fc[_0x1f5583][_0x530225(0x1df)]=='High'||_0x3278fc[_0x1f5583]['TaskPriority']=='Top'?_0x45ccec=_0x530225(0x227):_0x45ccec=_0x530225(0x1d6);_0x3278fc[_0x1f5583]['Title'][_0x530225(0x135)]>0x58&&(_0x3278fc[_0x1f5583][_0x530225(0x253)]=_0x3278fc[_0x1f5583][_0x530225(0x253)][_0x530225(0x24a)](0x0,0x58)+'...');if(_0x3278fc[_0x1f5583][_0x530225(0x1b6)]==_0x530225(0x1a7)){var _0x247b8d=_0x530225(0x1b0);_0x16b312=_0x530225(0x1a7),DueDate=new Date(_0x3278fc[_0x1f5583][_0x530225(0x247)]),DueDate=titanForWork[_0x530225(0x20c)](DueDate);}else{if(_0x3278fc[_0x1f5583]['CurrentPhase']==_0x530225(0x123))var _0x247b8d=_0x530225(0x1af);else{if(_0x3278fc[_0x1f5583][_0x530225(0x1b6)]==_0x530225(0x193))var _0x247b8d=_0x530225(0x1dd);else{if(_0x3278fc[_0x1f5583][_0x530225(0x1b6)]==_0x530225(0x20e)){var _0x247b8d=_0x530225(0x1fe);_0x16b312=_0x530225(0x1a7),DueDate=new Date(_0x3278fc[_0x1f5583][_0x530225(0x247)]),DueDate=titanForWork['ShowCommonStandardDateFormat'](DueDate);}else var _0x247b8d=_0x530225(0x1a3);}}}var _0x139360='';if(_0x3278fc[_0x1f5583][_0x530225(0x1ba)]==_0x530225(0x139))_0x139360=_0x530225(0x13b);else{if(_0x3278fc[_0x1f5583][_0x530225(0x1ba)]==_0x530225(0x19b))_0x139360=_0x530225(0x238);else{if(_0x3278fc[_0x1f5583][_0x530225(0x1ba)]=='Green')_0x139360=_0x530225(0x200);else _0x3278fc[_0x1f5583][_0x530225(0x1ba)]=='Yellow'?_0x139360=_0x530225(0x18f):_0x139360='';}}_0x3278fc[_0x1f5583][_0x530225(0x18a)]=_0x3278fc[_0x1f5583][_0x530225(0x18a)]?_0x3278fc[_0x1f5583][_0x530225(0x18a)]:'0';var _0x400113=_spPageContextInfo[_0x530225(0x164)]+_0x530225(0x221)+escapeProperly(_0x3278fc[_0x1f5583]['AssignedBy'][_0x530225(0x1bb)]);_0x1b0537+=_0x530225(0x126)+_0x3278fc[_0x1f5583]['Id']+_0x530225(0x1a4)+_0x247b8d+_0x530225(0x16b)+_0x3278fc[_0x1f5583][_0x530225(0x253)]+_0x530225(0x1bf),_0x1b0537+=_0x530225(0x205)+_0x3278fc[_0x1f5583]['ID']+'\x22)\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22\x20aria-expanded=\x22false\x22>',_0x1b0537+='<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/dotting.png\x22\x20alt=\x22\x22></button>',_0x1b0537+=_0x530225(0x1a1),_0x1b0537+='<li\x20class=\x22clsCompletion\x22><a\x20class=\x22dropdown-toggle\x22\x20id=\x22\x22>',_0x1b0537+=_0x530225(0x1dc),_0x1b0537+=_0x530225(0x156),_0x1b0537+=_0x530225(0x214),_0x1b0537+=_0x530225(0x1b2),_0x1b0537+=_0x530225(0x20a),_0x1b0537+='</a></li><li><a\x20class=\x22ModalAddMessage\x22\x20href=\x22javascript:void(0);\x22><i\x20class=\x22fa\x20fa-comments-o\x22></i>',_0x1b0537+=_0x530225(0x1b5),_0x1b0537+=_0x530225(0x18b),_0x1b0537+=_0x530225(0x16f),_0x1b0537+=_0x530225(0x14d),_0x1b0537+=_0x530225(0x14a),_0x1b0537+=_0x530225(0x23a),_0x1b0537+=_0x530225(0x228),_0x1b0537+=_0x530225(0x14e),_0x1b0537+='<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/favorite_new-icon.png\x22\x20alt=\x22\x22><span>Add\x20to\x20Favorite</span></a></li></ul></li></ul>',_0x1b0537+=_0x530225(0x148)+_0x400113+_0x530225(0x1b9),_0x1b0537+='<div\x20class=\x22assignbx\x22><span\x20class=\x22assignby\x22>Assign\x20by:-</span><span\x20class=\x22clientname\x22>'+_0x3278fc[_0x1f5583][_0x530225(0x1fd)][_0x530225(0x253)]+_0x530225(0x206),_0x1b0537+=_0x530225(0x1ca)+_0x4f5e69+_0x530225(0x194)+_0x1505cc+_0x530225(0x225),_0x1b0537+=_0x530225(0x1c3)+_0x16b312+':\x20</span>'+DueDate+_0x530225(0x225),_0x1b0537+='<div\x20class=\x22progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x22\x20style=\x22width:124px;\x22><div\x20class=\x22progress-bar\x20progress-bar-success\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:'+_0x3278fc[_0x1f5583][_0x530225(0x18a)]+_0x530225(0x222),_0x1b0537+=_0x530225(0x157),_0x1b0537+='<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/red_circle.png\x22\x20alt=\x22\x22\x20style=\x22display:'+_0x45ccec+'\x22>'+_0x139360+_0x530225(0x1f4),_0x1b0537+='</li>';}}})):(bindBoardNames=[],_0xa9da7d=!![]);_0x1b0537+=_0x2eaaaf(0x17d);for(seq=0x0;seq<_0x457db1[_0x2eaaaf(0x135)];seq++){_0x3278fc=_0x4ac8ab[_0x2eaaaf(0x1e3)](function(_0x4901d1){var _0x28eb55=_0x2eaaaf;return _0x4901d1[_0x28eb55(0x12b)]==_0x457db1[seq][_0x28eb55(0x253)];}),_0x3ff5d8==''&&_0x3278fc['sort'](function(_0x431e4d,_0x38a441){var _0x166f88=_0x2eaaaf,_0x37c8c3=new Date(_0x431e4d[_0x166f88(0x23b)]),_0x216cb6=new Date(_0x38a441['Modified']);return _0x216cb6-_0x37c8c3;}),_0x3278fc[_0x2eaaaf(0x135)]>0x0&&$[_0x2eaaaf(0x1a8)](_0x3278fc,function(_0x67aa87,_0x474bc3){var _0x2f18ac=_0x2eaaaf;if(jQuery[_0x2f18ac(0x15b)](_0x474bc3[_0x2f18ac(0x12b)],_0x3c7b26)!='-1'){}else{_0x16b312='Due',_0x3c7b26[_0x2f18ac(0x21c)](_0x474bc3['BoardName']),_0x1b0537+='<div\x20class=\x22dragbox\x20KanbanList\x22><div\x20class=\x22row\x20addtasksec\x22><div\x20class=\x22col-md-6\x20KanbanName\x22\x20style=\x22font-size:12px;\x20color:#1a80d7;\x20font-weight:\x20600;\x22>'+_0x474bc3['BoardName']+_0x2f18ac(0x132),_0x1b0537+=_0x2f18ac(0x1d3),_0x1b0537+='<button\x20type=\x22button\x22\x20class=\x22addtaskbutton\x22\x20value=\x22'+_0x474bc3[_0x2f18ac(0x12b)]+'\x22\x20name=\x22list'+listClass+_0x2f18ac(0x1c2),_0x1b0537+=_0x2f18ac(0x155)+_0x474bc3[_0x2f18ac(0x12b)]+'\x27,\x20\x27'+_0x457db1[seq][_0x2f18ac(0x124)]+'\x27);\x22\x20class=\x22editbutton\x22><i\x20class=\x22fa\x20fa-edit\x22></i>\x20Edit</button></div></div>',bindBoardNames['push'](_0x474bc3['BoardName']),_0x1b0537+=_0x2f18ac(0x234)+listClass+_0x2f18ac(0x1aa),_0x1ff687[_0x2f18ac(0x21c)](_0x2f18ac(0x191)+listClass),listClass++;for(var _0x67aa87=0x0;_0x67aa87<_0x3278fc[_0x2f18ac(0x135)];_0x67aa87++){if(_0x3278fc[_0x67aa87][_0x2f18ac(0x211)]==null){if(_0x3278fc[_0x67aa87][_0x2f18ac(0x1d9)]==_0x2f18ac(0x178))_0x4f5e69=_0x2f18ac(0x1c6),_0x1505cc=_0x3278fc[_0x67aa87][_0x2f18ac(0x24c)];else _0x3278fc[_0x67aa87][_0x2f18ac(0x1d9)]==_0x2f18ac(0x243)?(_0x4f5e69=_0x2f18ac(0x19e),_0x1505cc=_0x3278fc[_0x67aa87]['TeamItemName']):(_0x4f5e69=_0x2f18ac(0x24d),_0x1505cc=_0x3278fc[_0x67aa87]['ClientID']['Title']);}else _0x4f5e69=_0x2f18ac(0x13f),_0x1505cc=_0x3278fc[_0x67aa87][_0x2f18ac(0x211)];_0x3278fc[_0x67aa87][_0x2f18ac(0x1c5)]!=null&&(DueDate=new Date(_0x3278fc[_0x67aa87][_0x2f18ac(0x1c5)]),DueDate=titanForWork['ShowCommonStandardDateFormat'](DueDate));_0x3278fc[_0x67aa87][_0x2f18ac(0x1df)]=='High'||_0x3278fc[_0x67aa87][_0x2f18ac(0x1df)]==_0x2f18ac(0x208)?_0x45ccec='block':_0x45ccec='none';_0x3278fc[_0x67aa87]['Title']['length']>0x58&&(_0x3278fc[_0x67aa87]['Title']=_0x3278fc[_0x67aa87][_0x2f18ac(0x253)][_0x2f18ac(0x24a)](0x0,0x58)+_0x2f18ac(0x209));if(_0x3278fc[_0x67aa87][_0x2f18ac(0x1b6)]==_0x2f18ac(0x1a7)){var _0x340076=_0x2f18ac(0x1b0);_0x16b312=_0x2f18ac(0x1a7),DueDate=new Date(_0x3278fc[_0x67aa87][_0x2f18ac(0x247)]),DueDate=titanForWork[_0x2f18ac(0x20c)](DueDate);}else{if(_0x3278fc[_0x67aa87][_0x2f18ac(0x1b6)]=='Open')var _0x340076='#14aaf5';else{if(_0x3278fc[_0x67aa87]['CurrentPhase']==_0x2f18ac(0x193))var _0x340076='#ff9933';else{if(_0x3278fc[_0x67aa87][_0x2f18ac(0x1b6)]==_0x2f18ac(0x20e)){var _0x340076=_0x2f18ac(0x1fe);_0x16b312=_0x2f18ac(0x1a7),DueDate=new Date(_0x3278fc[_0x67aa87][_0x2f18ac(0x247)]),DueDate=titanForWork[_0x2f18ac(0x20c)](DueDate);}else var _0x340076=_0x2f18ac(0x1a3);}}}var _0x33f198='';if(_0x3278fc[_0x67aa87][_0x2f18ac(0x1ba)]==_0x2f18ac(0x139))_0x33f198=_0x2f18ac(0x13b);else{if(_0x3278fc[_0x67aa87]['SetFlag']==_0x2f18ac(0x19b))_0x33f198=_0x2f18ac(0x238);else{if(_0x3278fc[_0x67aa87]['SetFlag']=='Green')_0x33f198=_0x2f18ac(0x200);else _0x3278fc[_0x67aa87][_0x2f18ac(0x1ba)]==_0x2f18ac(0x158)?_0x33f198=_0x2f18ac(0x1d4):_0x33f198='';}}_0x3278fc[_0x67aa87][_0x2f18ac(0x18a)]=_0x3278fc[_0x67aa87]['CompletionPersent']?_0x3278fc[_0x67aa87][_0x2f18ac(0x18a)]:'0';var _0x461f57=_spPageContextInfo[_0x2f18ac(0x164)]+'/_layouts/15/userphoto.aspx?accountname='+escapeProperly(_0x3278fc[_0x67aa87][_0x2f18ac(0x1fd)][_0x2f18ac(0x1bb)]);_0x1b0537+='<li\x20id=\x22'+_0x3278fc[_0x67aa87]['Id']+_0x2f18ac(0x1a4)+_0x340076+_0x2f18ac(0x16b)+_0x3278fc[_0x67aa87][_0x2f18ac(0x253)]+'</h3>',_0x1b0537+=_0x2f18ac(0x205)+_0x3278fc[_0x67aa87]['ID']+'\x22)\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22\x20aria-expanded=\x22false\x22>',_0x1b0537+='<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/dotting.png\x22\x20alt=\x22\x22></button>',_0x1b0537+=_0x2f18ac(0x1a1),_0x1b0537+=_0x2f18ac(0x146),_0x1b0537+='<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/check_icon_1.png\x22\x20alt=\x22\x22><span>Mark\x20as\x20Completed</span></a></li>',_0x1b0537+='<li\x20class=\x22clsProgression\x22><a\x20href=\x22javascript:void(0);\x22>',_0x1b0537+=_0x2f18ac(0x214),_0x1b0537+=_0x2f18ac(0x233),_0x1b0537+=_0x2f18ac(0x20a),_0x1b0537+=_0x2f18ac(0x180),_0x1b0537+=_0x2f18ac(0x1b5),_0x1b0537+=_0x2f18ac(0x18b),_0x1b0537+=_0x2f18ac(0x16f),_0x1b0537+=_0x2f18ac(0x14d),_0x1b0537+=_0x2f18ac(0x14a),_0x1b0537+=_0x2f18ac(0x23a),_0x1b0537+='<li><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#setreminder\x22><i\x20class=\x22fa\x20fa-bell-o\x22\x20style=\x22margin:0px\x208px\x200\x200px\x20!important\x22></i>',_0x1b0537+='<span>Set\x20Reminder</span></a></li><li><a\x20href=\x22javascript:void(0);\x22>',_0x1b0537+=_0x2f18ac(0x17a),_0x1b0537+=_0x2f18ac(0x148)+_0x461f57+_0x2f18ac(0x1b9),_0x1b0537+='<div\x20class=\x22assignbx\x22><span\x20class=\x22assignby\x22>Assign\x20by:-</span><span\x20class=\x22clientname\x22>'+_0x3278fc[_0x67aa87][_0x2f18ac(0x1fd)][_0x2f18ac(0x253)]+'</span></div></div>',_0x1b0537+=_0x2f18ac(0x1ca)+_0x4f5e69+_0x2f18ac(0x194)+_0x1505cc+'</span>',_0x1b0537+=_0x2f18ac(0x1c3)+_0x16b312+_0x2f18ac(0x218)+DueDate+_0x2f18ac(0x225),_0x1b0537+=_0x2f18ac(0x22f)+_0x3278fc[_0x67aa87]['CompletionPersent']+_0x2f18ac(0x222),_0x1b0537+='\x20\x20</span></span></div><div\x20class=\x22smalliconbox\x22\x20style=\x22display:inline-block;\x20text-align:\x20right;\x22>',_0x1b0537+='<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/red_circle.png\x22\x20alt=\x22\x22\x20style=\x22display:'+_0x45ccec+'\x22>'+_0x33f198+_0x2f18ac(0x1f4),_0x1b0537+=_0x2f18ac(0x162);}_0x1b0537+=_0x2f18ac(0x17d);}});}$[_0x2eaaaf(0x1a8)](_0x4ac8ab,function(_0xd24eaa,_0x108840){var _0x4c8726=_0x2eaaaf;if(jQuery[_0x4c8726(0x15b)](_0x108840[_0x4c8726(0x12b)],_0x3c7b26)!='-1'){}else{_0x3c7b26[_0x4c8726(0x21c)](_0x108840[_0x4c8726(0x12b)]),_0x1b0537+=_0x4c8726(0x237)+_0x108840[_0x4c8726(0x12b)]+_0x4c8726(0x132),_0x1b0537+=_0x4c8726(0x1d3),_0x1b0537+=_0x4c8726(0x166)+_0x108840[_0x4c8726(0x12b)]+'\x22\x20name=\x22list'+listClass+_0x4c8726(0x1c2),_0x1b0537+=_0x4c8726(0x155)+_0x108840[_0x4c8726(0x12b)]+'\x27,\x20\x27'+_0x457db1[seq][_0x4c8726(0x124)]+_0x4c8726(0x20b),bindBoardNames[_0x4c8726(0x21c)](_0x108840[_0x4c8726(0x12b)]),_0x3278fc=_0x4ac8ab[_0x4c8726(0x1e3)](function(_0x194e6b){var _0x4751e5=_0x4c8726;return _0x194e6b[_0x4751e5(0x12b)]==_0x108840[_0x4751e5(0x12b)];});_0x3ff5d8==''&&_0x3278fc[_0x4c8726(0x1ff)](function(_0xdbcad7,_0x36351e){var _0x28c4f1=_0x4c8726,_0x458e58=new Date(_0xdbcad7['Modified']),_0x3db246=new Date(_0x36351e[_0x28c4f1(0x23b)]);return _0x3db246-_0x458e58;});_0x1b0537+=_0x4c8726(0x234)+listClass+_0x4c8726(0x1aa),_0x1ff687['push'](_0x4c8726(0x191)+listClass),listClass++;for(var _0xd24eaa=0x0;_0xd24eaa<_0x3278fc[_0x4c8726(0x135)];_0xd24eaa++){_0x16b312=_0x4c8726(0x181);if(_0x3278fc[_0xd24eaa][_0x4c8726(0x211)]==null){if(_0x3278fc[_0xd24eaa]['TaskCategory']==_0x4c8726(0x178))_0x4f5e69='Team\x20Channel:\x20',_0x1505cc=_0x3278fc[_0xd24eaa][_0x4c8726(0x24c)];else _0x3278fc[_0xd24eaa]['TaskCategory']=='TeamMeeting'?(_0x4f5e69=_0x4c8726(0x19e),_0x1505cc=_0x3278fc[_0xd24eaa][_0x4c8726(0x24c)]):(_0x4f5e69=_0x4c8726(0x24d),_0x1505cc=_0x3278fc[_0xd24eaa][_0x4c8726(0x1e4)][_0x4c8726(0x253)]);}else _0x4f5e69=_0x4c8726(0x13f),_0x1505cc=_0x3278fc[_0xd24eaa][_0x4c8726(0x211)];_0x3278fc[_0xd24eaa][_0x4c8726(0x1c5)]!=null&&(DueDate=new Date(_0x3278fc[_0xd24eaa][_0x4c8726(0x1c5)]),DueDate=titanForWork[_0x4c8726(0x20c)](DueDate));_0x3278fc[_0xd24eaa]['TaskPriority']==_0x4c8726(0x185)||_0x3278fc[_0xd24eaa][_0x4c8726(0x1df)]==_0x4c8726(0x208)?_0x45ccec=_0x4c8726(0x227):_0x45ccec=_0x4c8726(0x1d6);_0x3278fc[_0xd24eaa][_0x4c8726(0x253)][_0x4c8726(0x135)]>0x58&&(_0x3278fc[_0xd24eaa][_0x4c8726(0x253)]=_0x3278fc[_0xd24eaa][_0x4c8726(0x253)][_0x4c8726(0x24a)](0x0,0x58)+_0x4c8726(0x209));if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1b6)]=='Completed'){var _0x1541fd=_0x4c8726(0x1b0);_0x16b312='Completed',DueDate=new Date(_0x3278fc[_0xd24eaa][_0x4c8726(0x247)]),DueDate=titanForWork[_0x4c8726(0x20c)](DueDate);}else{if(_0x3278fc[_0xd24eaa]['CurrentPhase']==_0x4c8726(0x123))var _0x1541fd='#14aaf5';else{if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1b6)]==_0x4c8726(0x193))var _0x1541fd=_0x4c8726(0x1dd);else{if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1b6)]==_0x4c8726(0x20e)){var _0x1541fd=_0x4c8726(0x1fe);_0x16b312=_0x4c8726(0x1a7),DueDate=new Date(_0x3278fc[_0xd24eaa][_0x4c8726(0x247)]),DueDate=titanForWork[_0x4c8726(0x20c)](DueDate);}else var _0x1541fd='#db4035';}}}var _0x11cc74='';if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1ba)]==_0x4c8726(0x139))_0x11cc74=_0x4c8726(0x13b);else{if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1ba)]==_0x4c8726(0x19b))_0x11cc74='<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:blue\x22></i>';else{if(_0x3278fc[_0xd24eaa][_0x4c8726(0x1ba)]==_0x4c8726(0x22e))_0x11cc74=_0x4c8726(0x200);else _0x3278fc[_0xd24eaa]['SetFlag']==_0x4c8726(0x158)?_0x11cc74=_0x4c8726(0x1d4):_0x11cc74='';}}_0x3278fc[_0xd24eaa][_0x4c8726(0x18a)]=_0x3278fc[_0xd24eaa][_0x4c8726(0x18a)]?_0x3278fc[_0xd24eaa]['CompletionPersent']:'0';var _0x5c62e8=_spPageContextInfo[_0x4c8726(0x164)]+_0x4c8726(0x221)+escapeProperly(_0x3278fc[_0xd24eaa][_0x4c8726(0x1fd)][_0x4c8726(0x1bb)]);_0x1b0537+='<li\x20id=\x22'+_0x3278fc[_0xd24eaa]['Id']+_0x4c8726(0x1a4)+_0x1541fd+'\x22><div\x20class=\x22twopart\x22><div\x20class=\x22righttpart\x22><div\x20class=\x22divtwosec\x22\x20style=\x22\x22><h3>'+_0x3278fc[_0xd24eaa]['Title']+_0x4c8726(0x1bf),_0x1b0537+=_0x4c8726(0x205)+_0x3278fc[_0xd24eaa]['ID']+'\x22)\x20type=\x22button\x22\x20data-toggle=\x22dropdown\x22\x20aria-expanded=\x22false\x22>',_0x1b0537+=_0x4c8726(0x187),_0x1b0537+=_0x4c8726(0x1a1),_0x1b0537+=_0x4c8726(0x146),_0x1b0537+=_0x4c8726(0x1dc),_0x1b0537+=_0x4c8726(0x156),_0x1b0537+=_0x4c8726(0x214),_0x1b0537+=_0x4c8726(0x233),_0x1b0537+='<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/dependency-icon.png\x22\x20alt=\x22\x22><span>Add\x20Dependency</span>',_0x1b0537+=_0x4c8726(0x180),_0x1b0537+=_0x4c8726(0x1b5),_0x1b0537+=_0x4c8726(0x18b),_0x1b0537+='<li\x20class=\x22parentlist\x22><ul><li\x20id=\x22InboxAddBoard\x22\x20class=\x22KanbanClass\x22><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#bucketbox\x22>',_0x1b0537+=_0x4c8726(0x14d),_0x1b0537+=_0x4c8726(0x14a),_0x1b0537+='<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/flag-icon.png\x22\x20alt=\x22\x22><span>Set\x20Flag</span></a></li>',_0x1b0537+=_0x4c8726(0x228),_0x1b0537+=_0x4c8726(0x14e),_0x1b0537+=_0x4c8726(0x17a),_0x1b0537+=_0x4c8726(0x148)+_0x5c62e8+'\x22\x20alt=\x22\x22\x20class=\x22assignimg\x22>',_0x1b0537+=_0x4c8726(0x125)+_0x3278fc[_0xd24eaa][_0x4c8726(0x1fd)][_0x4c8726(0x253)]+'</span></div></div>',_0x1b0537+=_0x4c8726(0x1ca)+_0x4f5e69+_0x4c8726(0x194)+_0x1505cc+_0x4c8726(0x225),_0x1b0537+=_0x4c8726(0x1c3)+_0x16b312+_0x4c8726(0x218)+DueDate+_0x4c8726(0x225),_0x1b0537+=_0x4c8726(0x22f)+_0x3278fc[_0xd24eaa][_0x4c8726(0x18a)]+_0x4c8726(0x222),_0x1b0537+=_0x4c8726(0x157),_0x1b0537+=_0x4c8726(0x1d5)+_0x45ccec+'\x22>'+_0x11cc74+_0x4c8726(0x1f4),_0x1b0537+=_0x4c8726(0x162);}_0x1b0537+=_0x4c8726(0x17d);}}),$(_0x2eaaaf(0x1f9))[_0x2eaaaf(0x1da)](_0x1b0537);$(_0x2eaaaf(0x1f9))[_0x2eaaaf(0x163)]()!=''&&_0xa9da7d==!![]&&$(_0x2eaaaf(0x12e))[_0x2eaaaf(0x21f)]();$(_0x1ff687[_0x2eaaaf(0x19f)]())[_0x2eaaaf(0x16e)]({'connectWith':_0x1ff687['toString'](),'opacity':0.5,'cursor':_0x2eaaaf(0x245),'delay':0xc8,'receive':function(_0x5f139a,_0x585b9d){var _0x2b4d01=_0x2eaaaf;updateTaskBoard(_0x585b9d['item'][0x0][_0x2b4d01(0x188)][0x0][_0x2b4d01(0x1fa)],_0x5f139a['target'][_0x2b4d01(0x1ab)][_0x2b4d01(0x16d)][0x0][_0x2b4d01(0x16d)][0x0][_0x2b4d01(0x167)]);}}),$(_0x2eaaaf(0x207))[_0x2eaaaf(0x129)](function(){var _0x52e062=_0x2eaaaf;BindTaskToBoard(),$(_0x52e062(0x1ea))[_0x52e062(0x184)](_0x52e062(0x1bd),''),arrTaskInIds=[],SelectedBoard=this['value'],$(_0x52e062(0x1b4))[_0x52e062(0x15c)](_0x52e062(0x142));}),$('.KanbanClass')[_0x2eaaaf(0x129)](function(){var _0x27cde3=_0x2eaaaf;$(_0x27cde3(0x1e6))[_0x27cde3(0x174)](_0x27cde3(0x22c)),$(_0x27cde3(0x12d))['show'](),$('#btnBoardOnly')[_0x27cde3(0x136)]();}),$('.AddDepedncy')[_0x2eaaaf(0x129)](function(){var _0x534ce8=_0x2eaaaf;$(_0x534ce8(0x23c))['text'](_0x534ce8(0x154));if(arrTaskInIds[_0x534ce8(0x135)]==0x0&&arrTaskIds[_0x534ce8(0x135)]==0x0){}else arrTaskInIds[_0x534ce8(0x135)]==0x1?($('#DueDateHTML')[_0x534ce8(0x136)](),$(_0x534ce8(0x21a))[_0x534ce8(0x136)]()):arrTaskIds[_0x534ce8(0x135)]==0x1?($(_0x534ce8(0x1ad))[_0x534ce8(0x136)](),$('#StartDateHTML')[_0x534ce8(0x136)]()):($(_0x534ce8(0x1ad))['show'](),$(_0x534ce8(0x21a))[_0x534ce8(0x142)]());}),$(_0x2eaaaf(0x161))['empty']()[_0x2eaaaf(0x1da)](_0x2eaaaf(0x14b)),$('.ModalAddMessage')[_0x2eaaaf(0x129)](function(){var _0x440cc7=_0x2eaaaf;if(EmployeeDetails[0x0][_0x440cc7(0x1e7)]!=-0x9)updateTaskMeatdata('Add\x20Message');else return alert(_0x440cc7(0x19c)),![];}),$(_0x2eaaaf(0x1db))[_0x2eaaaf(0x1b1)]()[_0x2eaaaf(0x1da)](_0x2eaaaf(0x172)),$('.btnAddFavorite')['click'](function(){var _0x4e1b1e=_0x2eaaaf;updateTaskMeatdata(_0x4e1b1e(0x12f));}),$(_0x2eaaaf(0x177))[_0x2eaaaf(0x129)](function(){updateBoardName(SelectedBoard);}),$('#positionlist')['empty']();for(var _0xe7cd35=0x0;_0xe7cd35<$(_0x2eaaaf(0x1a5))[_0x2eaaaf(0x135)]+0x1;_0xe7cd35++){$(_0x2eaaaf(0x1de))['append']('<option\x20value=\x27'+(parseInt(_0xe7cd35)+0x1)+'\x27>'+(parseInt(_0xe7cd35)+0x1)+'</option>');}}function updateTaskBoard(_0xe1c17e,_0x3eb4ff){var _0x234c80=a367_0x293906,_0x8fc701=GetItemTypeForListName(_0x234c80(0x13e));Metadata={'__metadata':{'type':_0x8fc701},'BoardName':_0x3eb4ff};var _0x58e91e=$['Deferred']();return $[_0x234c80(0x22a)]({'url':_spPageContextInfo['webAbsoluteUrl']+_0x234c80(0x159)+_0xe1c17e+'\x27)','type':'POST','async':![],'headers':{'accept':'application/json;odata=verbose','X-RequestDigest':$(_0x234c80(0x248))['val'](),'content-Type':_0x234c80(0x1e9),'X-Http-Method':_0x234c80(0x229),'If-Match':'*'},'data':JSON[_0x234c80(0x1b7)](Metadata),'success':function(_0xa32d84){var _0x8737f0=_0x234c80;arrAllTaskInbox[_0x8737f0(0x1a2)](function(_0x3db490,_0x4e193a){var _0x4529f0=_0x8737f0;_0x3db490['Id']==_0xe1c17e&&(_0x3db490[_0x4529f0(0x12b)]=_0x3eb4ff);}),_0x58e91e[_0x8737f0(0x217)](_0xa32d84);},'eror':function(_0x46b2f7){var _0x50643a=_0x234c80;_0x58e91e['reject'](error),console[_0x50643a(0x1d2)](_0x50643a(0x235)+JSON[_0x50643a(0x1b7)](_0x46b2f7));}}),_0x58e91e[_0x234c80(0x17c)]();}function AddKanbanBoard(_0x164a89){var _0x161621=a367_0x293906;if($('#newboardname')[_0x161621(0x184)]('checked')==!![]){if(_0x164a89[_0x161621(0x151)]()=='to\x20do'||jQuery[_0x161621(0x15b)](_0x164a89['toLowerCase'](),allBoardName)!='-1'){}else AddBoard(_0x164a89);}else $(_0x161621(0x17f))[_0x161621(0x192)](''),$(_0x161621(0x195))['val']('To\x20do');var _0x388919=[],_0x112fe8=_0x161621(0x21b)+($(_0x161621(0x19a))['length']+0x1),_0x1c25c4='';jQuery['inArray'](_0x164a89,bindBoardNames)=='-1'&&(_0x1c25c4+=_0x161621(0x12c)+_0x164a89+'</div>',_0x1c25c4+=_0x161621(0x1d3),_0x1c25c4+=_0x161621(0x1d8)+_0x112fe8+_0x161621(0x1cb)+_0x164a89+_0x161621(0x1c2),_0x1c25c4+=_0x161621(0x1c7),_0x1c25c4+=_0x161621(0x1ef)+_0x112fe8+_0x161621(0x1aa),_0x1c25c4+=_0x161621(0x17d),$('#fullydrag')['append'](_0x1c25c4),bindBoardNames[_0x161621(0x21c)](_0x164a89));for(var _0x4cb970=0x0;_0x4cb970<$('#fullydrag\x20.dragbox')[_0x161621(0x135)];_0x4cb970++){_0x388919[_0x161621(0x21c)](_0x161621(0x191)+(_0x4cb970+0x1));}$(_0x388919['toString']())[_0x161621(0x16e)]({'connectWith':_0x388919[_0x161621(0x19f)](),'opacity':0.5,'cursor':_0x161621(0x245),'delay':0xc8,'receive':function(_0x3c12b2,_0x4818af){var _0x5c5f67=_0x161621;updateTaskBoard(_0x4818af[_0x5c5f67(0x210)][0x0]['attributes'][0x0]['nodeValue'],_0x3c12b2[_0x5c5f67(0x16a)][_0x5c5f67(0x1ab)][_0x5c5f67(0x16d)][0x0][_0x5c5f67(0x16d)][0x0][_0x5c5f67(0x167)]);}}),$('.addtaskbutton')[_0x161621(0x129)](function(){var _0x25eb2f=_0x161621;BindTaskToBoard(),SelectedBoard=this['value'],$('#opentasksec')[_0x25eb2f(0x15c)]('show');}),$(_0x161621(0x177))[_0x161621(0x129)](function(){updateBoardName(SelectedBoard);});}function FilterKanban(){var _0x33d0f0=a367_0x293906;arrTaskInIds=[],arrFilterDataBind=[];var _0x59c8d5='',_0x1dde3d='',_0x13f572=[];assigntobyme=[];$(_0x33d0f0(0x145))[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)&&($('#UserAllProject')[_0x33d0f0(0x192)]()=='General\x20Task'?_0x59c8d5+='<div\x20class=\x27upload-chip\x27>General\x20Task</div>':$('#ddlInboxProject')[_0x33d0f0(0x192)]()!='All'?_0x59c8d5+=_0x33d0f0(0x201)+$(_0x33d0f0(0x252))[_0x33d0f0(0x174)]()+_0x33d0f0(0x132):_0x59c8d5+=_0x33d0f0(0x201)+$(_0x33d0f0(0x252))[_0x33d0f0(0x174)]()+_0x33d0f0(0x132));if($(_0x33d0f0(0x240))[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)){var _0x3e35c0=$('#ProjectModule')[_0x33d0f0(0x192)]();_0x59c8d5+=_0x33d0f0(0x201)+$(_0x33d0f0(0x196))[_0x33d0f0(0x174)]()+'</div>';}$('#ddlInboxClient')[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)&&(_0x59c8d5+='<div\x20class=\x27upload-chip\x27>'+$(_0x33d0f0(0x1e1))[_0x33d0f0(0x174)]()+'</div>');$(_0x33d0f0(0x13d))[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)&&(_0x59c8d5+=_0x33d0f0(0x201)+$(_0x33d0f0(0x219))['text']()+'</div>');$(_0x33d0f0(0x22d))[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)&&(_0x59c8d5+=_0x33d0f0(0x201)+$(_0x33d0f0(0x128))[_0x33d0f0(0x174)]()+_0x33d0f0(0x132));$(_0x33d0f0(0x160))[_0x33d0f0(0x192)]()!=_0x33d0f0(0x1ed)&&(_0x59c8d5+=_0x33d0f0(0x201)+$('#txtFilterStatusInbox\x20option:selected')[_0x33d0f0(0x174)]()+_0x33d0f0(0x132));if($('#taskIn')[_0x33d0f0(0x192)]()!=null&&$(_0x33d0f0(0x199))['val']()!=''){if(TaskOutCome=='TaskPending')_0x59c8d5+=_0x33d0f0(0x1cc);else TaskOutCome==_0x33d0f0(0x1c1)?_0x59c8d5+=_0x33d0f0(0x230):_0x59c8d5+=_0x33d0f0(0x201)+moment($(_0x33d0f0(0x199))[_0x33d0f0(0x192)]())[_0x33d0f0(0x223)](_0x33d0f0(0x13c))+_0x33d0f0(0x132);}$('#pplassigntoInbox_TopSpan_ResolvedList')[_0x33d0f0(0x174)]()!=''?(getUserInformation(_0x33d0f0(0x183)),_0x59c8d5+=_0x33d0f0(0x201)+assignBy['join'](',\x20')+_0x33d0f0(0x132)):(_0x59c8d5+=_0x33d0f0(0x201)+_spPageContextInfo['userDisplayName']+_0x33d0f0(0x132),assignByEmail=''),_0x13f572=arrAllTaskInbox[_0x33d0f0(0x1e3)](function(_0x923f72){var _0x18bafc=_0x33d0f0;return _0x923f72[_0x18bafc(0x12b)]!=null&&_0x923f72['BoardName']!='';}),arrFilterDataBind=_0x13f572['filter'](function(_0x566fb4,_0x2738d3){var _0x4be088=_0x33d0f0;if($(_0x4be088(0x145))[_0x4be088(0x192)]()!=_0x4be088(0x1ed)){if($(_0x4be088(0x145))[_0x4be088(0x192)]()==_0x4be088(0x1e8))var _0x19e63c=null,_0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x211)]!='':_0x566fb4[_0x4be088(0x211)]==_0x19e63c;else{if($(_0x4be088(0x145))[_0x4be088(0x192)]()==_0x4be088(0x243))var _0x19e63c=null,_0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4['TaskCategory']!='':_0x566fb4[_0x4be088(0x1d9)]==$(_0x4be088(0x145))[_0x4be088(0x192)]();else{if($(_0x4be088(0x145))[_0x4be088(0x192)]()==_0x4be088(0x178))var _0x19e63c=null,_0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x1d9)]!='':_0x566fb4[_0x4be088(0x1d9)]==$(_0x4be088(0x145))['val']();else{if($(_0x4be088(0x134))['val']()!=_0x4be088(0x1ed))var _0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x1b8)]!='':_0x566fb4[_0x4be088(0x1b8)]==$(_0x4be088(0x134))['val']();else var _0x19e63c=null,_0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x211)]!='':_0x566fb4[_0x4be088(0x211)]!=_0x19e63c;}}}}else var _0x19e63c=_0x4be088(0x1ed),_0x2f81ad=_0x19e63c==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x211)]!='':_0x566fb4['ProjectFullName']==_0x19e63c;if($(_0x4be088(0x240))[_0x4be088(0x192)]()!='All')var _0x2384b5=$('#ProjectModule')['val']();else var _0x2384b5=_0x4be088(0x1ed);if($('#ddlInboxClient')[_0x4be088(0x192)]()!=_0x4be088(0x1ed))var _0x37ab19=$(_0x4be088(0x1e5))[_0x4be088(0x192)]();else var _0x37ab19=_0x4be088(0x1ed);if($(_0x4be088(0x13d))[_0x4be088(0x192)]()!=_0x4be088(0x1ed))var _0x54e5f9=$(_0x4be088(0x13d))[_0x4be088(0x192)]();else var _0x54e5f9='All';if($(_0x4be088(0x22d))[_0x4be088(0x192)]()!=_0x4be088(0x1ed))var _0x3b6114=$('#txtPriority')[_0x4be088(0x192)]();else var _0x3b6114='All';if($(_0x4be088(0x160))[_0x4be088(0x192)]()!='All')var _0x3d1cf7=$(_0x4be088(0x160))['val']();else var _0x3d1cf7='All';if($(_0x4be088(0x199))[_0x4be088(0x192)]()!=null&&$(_0x4be088(0x199))[_0x4be088(0x192)]()!=''){var _0x2402a0=$(_0x4be088(0x199))[_0x4be088(0x192)](),_0x2b943c=new Date($(_0x4be088(0x199))[_0x4be088(0x192)]())[_0x4be088(0x250)](0x0,0x0,0x0,0x0);_0x2b943c=new Date(_0x2b943c);var _0x16336d=new Date(moment(_0x566fb4[_0x4be088(0x1c5)]['split']('T')[0x0])['format'](_0x4be088(0x1ae)));_0x16336d[_0x4be088(0x16c)](_0x16336d[_0x4be088(0x1c9)]()+0x1),_0x16336d=new Date(_0x16336d);var _0x13c661=_0x2b943c==''?_0x16336d!='':_0x16336d<=_0x2b943c;}else var _0x13c661=!![];_0x1dde3d='';var _0x3e638c=[];if(assignByEmail!=''){var _0xd84a98=assignByEmail[_0x4be088(0x141)]('|');_0xd84a98[_0x4be088(0x18c)]();for(var _0xe4ffac=0x0;_0xe4ffac<_0xd84a98[_0x4be088(0x135)];_0xe4ffac++){_0xd84a98[_0xe4ffac]['indexOf']('#')!=-0x1&&(_0xd84a98[_0xe4ffac]=_0xd84a98[_0xe4ffac][_0x4be088(0x141)]('#')[0x0],_0xd84a98[_0xe4ffac]=_0xd84a98[_0xe4ffac][_0x4be088(0x173)]('_','@')),_0xe4ffac==0x0?_0x3e638c[_0x4be088(0x21c)](_0x566fb4[_0x4be088(0x1fd)]['EMail'][_0x4be088(0x151)]()==_0xd84a98[_0xe4ffac][_0x4be088(0x151)]()):_0x3e638c[_0x4be088(0x21c)](_0x566fb4[_0x4be088(0x1fd)][_0x4be088(0x1bb)]['toLowerCase']()==_0xd84a98[_0xe4ffac][_0x4be088(0x151)]());}}else{var _0x4c1646=[];_0x3e638c['push'](!![]);}return _0x3e638c[_0x4be088(0x1a2)](function(_0x56cec1,_0x345dbb){_0x345dbb==0x0?_0x1dde3d=_0x56cec1:_0x1dde3d=_0x56cec1||_0x1dde3d;}),_0x566fb4[_0x4be088(0x24e)]['ID']=_0x566fb4['Module']['ID']?_0x566fb4[_0x4be088(0x24e)]['ID']:'',_0x2f81ad&&(_0x37ab19==_0x4be088(0x1ed)?_0x566fb4['ClientID']['ID']!=_0x4be088(0x213):_0x566fb4[_0x4be088(0x1e4)]['ID']==_0x37ab19)&&(_0x2384b5=='All'?_0x566fb4['Module']['ID']!=_0x4be088(0x213):_0x566fb4[_0x4be088(0x24e)]['ID']==_0x2384b5)&&(_0x54e5f9=='All'?_0x566fb4[_0x4be088(0x169)]!='':_0x566fb4['Worktype']==_0x54e5f9)&&(_0x3d1cf7==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x1b6)]!='':_0x566fb4[_0x4be088(0x1b6)]==_0x3d1cf7)&&(_0x3b6114==_0x4be088(0x1ed)?_0x566fb4[_0x4be088(0x1df)]!='':_0x566fb4['TaskPriority']==_0x3b6114)&&_0x13c661&&_0x1dde3d;}),$(_0x33d0f0(0x15a))['empty'](),$(_0x33d0f0(0x15a))['append'](_0x59c8d5),arrSortBoard=arrFilterDataBind[_0x33d0f0(0x1e3)](function(_0xc2fb17){return _0xc2fb17;}),BindBucketName(arrFilterDataBind,'');}function ClearKanbanFilter(){var _0x369b05=a367_0x293906;$(_0x369b05(0x145))[_0x369b05(0x192)](_0x369b05(0x1ed)),$(_0x369b05(0x145))[_0x369b05(0x12a)](_0x369b05(0x1f6)),$('#ProjectModule')[_0x369b05(0x192)](_0x369b05(0x1ed)),$(_0x369b05(0x13d))[_0x369b05(0x192)](_0x369b05(0x1ed)),$(_0x369b05(0x22d))[_0x369b05(0x192)](_0x369b05(0x1ed)),$(_0x369b05(0x1e5))[_0x369b05(0x1b1)]()[_0x369b05(0x1da)](_0x369b05(0x21d)),$('#ddlInboxProject')[_0x369b05(0x1b1)]()[_0x369b05(0x1da)](_0x369b05(0x21d)),$('#taskIn')[_0x369b05(0x192)]('')[_0x369b05(0x14c)](_0x369b05(0x1c8),_0x369b05(0x174))[_0x369b05(0x14c)](_0x369b05(0x1c8),_0x369b05(0x140)),$(_0x369b05(0x160))[_0x369b05(0x192)](_0x369b05(0x123)),clearPeoplePickerControl(_0x369b05(0x183));var _0x5861de=_0x369b05(0x123),_0x24b0ab=_spPageContextInfo[_0x369b05(0x13a)];$('#myKanbanChip')[_0x369b05(0x1b1)]();var _0x191f5b='';_0x191f5b+=_0x369b05(0x20f),$(_0x369b05(0x15a))[_0x369b05(0x1b1)](),$(_0x369b05(0x15a))['append'](_0x191f5b);var _0x4f62b5=[],_0xa3fc22=[];_0x4f62b5=arrLimitTaskInbox[_0x369b05(0x1e3)](function(_0x3f0a0c){return _0x3f0a0c;}),_0xa3fc22=arrSortBoard=_0x4f62b5[_0x369b05(0x1e3)](function(_0x4eb385){var _0x2b3bb8=_0x369b05;return _0x4eb385['BoardName']!=null&&_0x4eb385[_0x2b3bb8(0x12b)]!='';}),BindBucketName(_0xa3fc22,'');}function SortKanbanTasks(){var _0x35db20=a367_0x293906;$(_0x35db20(0x179))[_0x35db20(0x129)](function(){var _0x54fee9=_0x35db20;arrSortBoard['sort']((_0x275a4d,_0x2f0a07)=>{var _0x39dd52=a367_0x3c92;let _0x344849=_0x275a4d[_0x39dd52(0x253)][_0x39dd52(0x151)](),_0x2cdee7=_0x2f0a07[_0x39dd52(0x253)][_0x39dd52(0x151)]();if(_0x344849<_0x2cdee7)return-0x1;if(_0x344849>_0x2cdee7)return 0x1;return 0x0;}),BindBucketName(arrSortBoard,_0x54fee9(0x224));}),$(_0x35db20(0x232))[_0x35db20(0x129)](function(){var _0x1afe82=_0x35db20;arrSortBoard['sort'](function(_0x54534d,_0x248018){var _0x14e127=a367_0x3c92,_0x2fc231=new Date(_0x54534d[_0x14e127(0x241)]),_0x3d05d0=new Date(_0x248018['Created']);return _0x3d05d0-_0x2fc231;}),BindBucketName(arrSortBoard,_0x1afe82(0x224));}),$(_0x35db20(0x216))[_0x35db20(0x129)](function(){var _0x417e2e=_0x35db20;arrSortBoard[_0x417e2e(0x1ff)](function(_0x419679,_0x15b0bf){var _0x2fb391=_0x417e2e,_0x29fa8c=new Date(_0x419679[_0x2fb391(0x1c5)]),_0x2591c2=new Date(_0x15b0bf[_0x2fb391(0x1c5)]);return _0x2591c2-_0x29fa8c;}),BindBucketName(arrSortBoard,_0x417e2e(0x224));}),$(_0x35db20(0x236))[_0x35db20(0x129)](function(){var _0x22a8bd=_0x35db20;const _0x47e67c=[_0x22a8bd(0x208),_0x22a8bd(0x21e),_0x22a8bd(0x23e)];arrSortBoard[_0x22a8bd(0x1ff)]((_0x3242cb,_0x216c5a)=>_0x47e67c['indexOf'](_0x3242cb[_0x22a8bd(0x1df)])-_0x47e67c[_0x22a8bd(0x239)](_0x216c5a[_0x22a8bd(0x1df)])),BindBucketName(arrSortBoard,_0x22a8bd(0x224));});}function a367_0x59b9(){var _0xd7fa06=['High','560px','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/dotting.png\x22\x20alt=\x22\x22></button>','attributes','1370900cXEVlS','CompletionPersent','<i\x20class=\x22fa\x20fa-envelope-o\x22\x20aria-hidden=\x22true\x22\x20style=\x22margin:0px\x208px\x200\x200px\x20!important\x22></i><span>Notify\x20by\x20mail</span></a></li></ul></li>','pop','</option>','css','<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:#ffa500\x22></i>','<span>Due:</span><span>','#list','val','Hold','</span>\x20<span\x20class=\x22projectdefine\x22>','#ddlExistingBoards','#ProjectModule\x20option:selected','<button\x20type=\x22button\x22\x20class=\x22btn\x20custom-btn\x20mr-8\x22\x20id=\x22btnEditKanban\x22>Submit</button>','#btnGanttClear','#taskIn','#fullydrag\x20.dragbox','Blue','You\x20are\x20not\x20authorized\x20to\x20perform\x20this\x20operation.','POST','Team\x20Meeting:\x20','toString','#WorkTypeOfProject\x20option','<ul\x20class=\x22dropdown-menu\x20dropdown-color-menu-icon\x22><li\x20class=\x22parentlist\x22><ul>','forEach','#db4035','\x22\x20style\x20=\x22border-left:\x205px\x20solid\x20','#fullydrag\x20.KanbanList','/_api/web/lists/getbytitle(\x27PlannerBoardList\x27)/items','Completed','each','322857vtTnoB','\x22\x20class=\x22listshow\x22\x20data-value=\x22connect\x22>','parentElement','To\x20do','#DueDateHTML','MM/DD/YYYY','#14aaf5','#afb83b','empty','</a></li></ul></li><li\x20class=\x22parentlist\x22><ul><li\x20class=\x22AddDepedncy\x22><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#dependenciesmodl\x22>','?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No\x20asc&$filter=Sequence_No\x20eq\x20\x27','#opentasksec','<span>Add\x20a\x20Message</span></a></li><li><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#Notificationlist\x22>','CurrentPhase','stringify','ProjectName','\x22\x20alt=\x22\x22\x20class=\x22assignimg\x22>','SetFlag','EMail','.kanbanOpenTsk','checked','\x27&$orderby=Created\x20desc','</h3>','appendTo','TaskOverdue','\x22><i\x20class=\x22fa\x20fa-plus\x22></i>\x20Add\x20Task</button>','</span></div><div\x20class=\x22flgndprogress\x22><div\x20class=\x22duedatesec\x22\x20style=\x22display:inline-block;\x22><span\x20class=\x22duedate\x22><span>','%\x22></div></div></td></tr>','DueDate','Team\x20Channel:\x20','</div></div></div>','type','getDate','<div\x20class=\x22projectsec\x22\x20style=\x22display:block;\x22><span><span\x20class=\x22pojectdefine\x22>','\x22\x20value=\x22','<div\x20class=\x27upload-chip\x27>Pending</div>','<button\x20type=\x22button\x22\x20class=\x22addtaskbutton\x22\x20name=\x22list','288082oJQcUb','<td><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/rd_icon.png\x22\x20alt=\x22\x22\x20style=\x22display:','PlannerBoardList','5083050vFvvoc','log','<div\x20class=\x22col-md-6\x22\x20style=\x22text-align:\x20right;\x22><div\x20class=\x22dropsec\x22\x20style=\x22display:\x20inline-block;\x20position:\x20relative;\x22>','<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:yellow\x22></i>','<img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/red_circle.png\x22\x20alt=\x22\x22\x20style=\x22display:','none','#btnTaskInClear','<button\x20type=\x22button\x22\x20class=\x22addtaskbutton\x22\x20name=\x22','TaskCategory','append','.ParentAddFavorite','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/check_icon_1.png\x22\x20alt=\x22\x22><span>Mark\x20as\x20Completed</span></a></li>','#ff9933','#positionlist','TaskPriority','.callinginbox','#ddlInboxClient\x20option:selected','<div\x20class=\x22asigsec\x22><span\x20class=\x22assignby\x22>Assign\x20by:</span><span\x20class=\x22assignprson\x22>','filter','ClientID','#ddlInboxClient','#BoardPopupHeader','ParentId','General\x20Task','application/json;odata=verbose','.chkAllKanbanTsk','#btnClearKanban','<div\x20class=\x22prosec\x22><span\x20class=\x22prosecby\x22>','All','Details\x20has\x20been\x20updated.','<ul\x20id=\x22','#btnBoardOnly','\x22\x20class=\x22chbox\x20taskchkIn\x20kanbanOpenTsk\x22></td><td>','Kindly\x20select/write\x20any\x20board\x20name.','</span><span\x20class=\x22prosecprson\x22>','</div></div></div></div>','\x22\x20value=\x22To\x20do\x22><i\x20class=\x22fa\x20fa-plus\x22></i>\x20Add\x20Task</button>','change','66958aCGvRk','<option\x20value=\x27','#fullydrag','nodeValue','#btnAddBoard','?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No\x20asc&$filter=Title\x20eq\x20\x27','AssignedBy','#299438','sort','<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:green\x22></i>','<div\x20class=\x27upload-chip\x27>','done','</span></div><div\x20class=\x22progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x22\x20style=\x22width:124px;\x22>','MM\x20dd,\x20yy','<div\x20class=\x22dropdown\x20dashboard-table-btn\x22\x20style=\x22margin-left:\x20auto\x22><button\x20class=\x22btn\x20dropdown-toggle\x20btnmange\x20ui-KanbanButton\x22\x20onclick=SelectArray(\x22','</span></div></div>','.addtaskbutton','Top','...','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/dependency-icon.png\x22\x20alt=\x22\x22><span>Add\x20Dependency</span>','\x27);\x22\x20class=\x22editbutton\x22><i\x20class=\x22fa\x20fa-edit\x22></i>\x20Edit</button></div></div>','ShowCommonStandardDateFormat','#btnKanbanFilter','Close','<div\x20class=\x27upload-chip\x27>Open</div>','item','ProjectFullName','<div\x20class=\x22dvids\x22><img\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/flag-red.png\x22\x20style=\x22display:none;\x22\x20alt=\x22\x22\x20class=\x22redflg\x22><div\x20class=\x22wapbox\x22>','null','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/percentage-icon.png\x22\x20alt=\x22\x22><span>Update\x20Progress</span>','4791450dvsYYu','#DateSortKanban','resolve',':\x20</span>','#WorkTypeOfProject\x20option:selected','#StartDateHTML','list','push','<option\x20value=\x27All\x27>All</option>','Medium','remove','</div></div></div></td>','/_layouts/15/userphoto.aspx?accountname=','%\x22></div></div>','format','Sort','</span>','when','block','<li><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#setreminder\x22><i\x20class=\x22fa\x20fa-bell-o\x22\x20style=\x22margin:0px\x208px\x200\x200px\x20!important\x22></i>','PATCH','ajax','<div\x20class=\x22progress-bar\x20progress-bar-success\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','Set\x20Board','#txtPriority','Green','<div\x20class=\x22progress\x20custom-progress\x20progress-success\x20m-0\x20mt-4\x22\x20style=\x22width:124px;\x22><div\x20class=\x22progress-bar\x20progress-bar-success\x22\x20role=\x22progressbar\x22\x20aria-valuenow=\x2240\x22\x20aria-valuemin=\x220\x22\x20aria-valuemax=\x22100\x22\x20style=\x22width:','<div\x20class=\x27upload-chip\x27>Overdue</div>','#existingbucket','#RecentSortKanban','</a></li></ul></li><li\x20class=\x22parentlist\x22><ul><li><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#dependenciesmodl\x22>','<ul\x20id=\x22list','Error\x20while\x20update\x20bucket\x20name\x20of\x20task.\x20','#PrioritySortKanban','<div\x20class=\x22dragbox\x20KanbanList\x22><div\x20class=\x22row\x20addtasksec\x22><div\x20class=\x22col-md-6\x20KanbanName\x22\x20style=\x22font-size:12px;\x20color:#1a80d7;\x20font-weight:\x20600;\x22>','<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:blue\x22></i>','indexOf','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/flag-icon.png\x22\x20alt=\x22\x22><span>Set\x20Flag</span></a></li>','Modified','#btnAddDependency','results','Low','743478tyAjFN','#ProjectModule','Created','<option\x20value=\x22To\x20do\x22>To\x20do</option>','TeamMeeting','?$top=5000&$select=Id,Title,BoardName&$filter=BoardName\x20eq\x20\x27','move','12odSjrK','CompletionDate','#__REQUESTDIGEST','.taskchkIn','substr','#board-box\x20.panel-body','TeamItemName','Client:\x20','Module','<div\x20class=\x22dragbox\x20KanbanList\x22\x20id=\x22todoKanban\x22><div\x20class=\x22row\x20addtasksec\x22><div\x20class=\x22col-md-6\x20KanbanName\x22\x20style=\x22font-size:12px;\x20color:#1a80d7;\x20font-weight:\x20600;\x22>To\x20do</div>','setHours','#inboxcalling','#ddlInboxProject\x20option:selected','Title','datepicker','8MAyOMU','Open','Sequence_No','<div\x20class=\x22assignbx\x22><span\x20class=\x22assignby\x22>Assign\x20by:-</span><span\x20class=\x22clientname\x22>','<li\x20id=\x22','</span></div>','#txtPriority\x20option:selected','click','trigger','BoardName','<div\x20class=\x22dragbox\x22><div\x20class=\x22row\x20addtasksec\x22><div\x20class=\x22col-md-6\x20KanbanName\x22\x20style=\x22font-size:12px;\x20color:#1a80d7;\x20font-weight:\x20600;\x22>','#btnBoardSubmit','#todoKanban','AddFavorite','#newboardname','.KanbanClass','</div>','.parentEditKambnan','#ddlInboxProject','length','hide','#btnEditKanban','min-height','Red','userEmail','<i\x20class=\x22fa\x20fa-flag-o\x22\x20style=\x22font-size:23px;color:red\x22></i>','DD/MMM/YYYY','#WorkTypeOfProject','EmployeeTaskDetails','Project:\x20','date','split','show','?$top=5000&$select=ID,Title,Sequence_No,Author/EMail&$Expand=Author&$filter=Author/EMail\x20eq\x27','Doing','#UserAllProject','<li\x20class=\x22clsCompletion\x22><a\x20class=\x22dropdown-toggle\x22\x20id=\x22\x22>','Deferred','</div></div><div\x20class=\x22assignbynow\x22><img\x20src=\x22','An\x20error\x20occurred\x20while\x20deleting\x20task.\x20','<li><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#flagmodal\x22>','<a\x20href=\x22javascript:void(0);\x22\x20class=\x22ModalAddMessage\x22><i\x20class=\x22fa\x20fa-comments-o\x22></i><span>Add\x20a\x20Message</span></a>','attr','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/collect.png\x22\x20alt=\x22\x22><span>Set\x20Board</span></a></li>','<span>Set\x20Reminder</span></a></li><li><a\x20href=\x22javascript:void(0);\x22>','option','#renameboard','toLowerCase','The\x20tasks\x20has\x20been\x20added\x20into\x20the\x20board.','Kindly\x20select\x20any\x20task\x20to\x20add\x20in\x20board.','Add','</div><button\x20type=\x22button\x22\x20onclick=\x22OpenEditKanban(\x27','<li\x20class=\x22clsProgression\x22><a\x20href=\x22javascript:void(0);\x22>','\x20\x20</span></span></div><div\x20class=\x22smalliconbox\x22\x20style=\x22display:inline-block;\x20text-align:\x20right;\x22>','Yellow','/_api/web/lists/getbytitle(\x27EmployeeTaskDetails\x27)/GetItemById(\x27','#myKanbanChip','inArray','modal','Assigned\x20By:','#txtFilterAssignBy','value','#txtFilterStatusInbox','.ModalAddMessageParent','</li>','html','webAbsoluteUrl','to\x20do','<button\x20type=\x22button\x22\x20class=\x22addtaskbutton\x22\x20value=\x22','innerText','reject','Worktype','target','\x22><div\x20class=\x22twopart\x22><div\x20class=\x22righttpart\x22><div\x20class=\x22divtwosec\x22\x20style=\x22\x22><h3>','setDate','childNodes','sortable','<li\x20class=\x22parentlist\x22><ul><li\x20id=\x22InboxAddBoard\x22\x20class=\x22KanbanClass\x22><a\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#bucketbox\x22>','toISOString','#btnGanttFilter','<a\x20href=\x22javascript:void(0);\x22\x20class=\x22btnAddFavorite\x22><img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/favorite_new-icon.png\x22\x20alt=\x22\x22><span>Add\x20to\x20Favorite</span></a>','replace','text','ready','#txtEditBoardName','#addTaskToSetBoard','TeamChannel','#NameSortKanban','<img\x20class=\x22dashboard-icon-info\x20ml2\x22\x20src=\x22https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/favorite_new-icon.png\x22\x20alt=\x22\x22><span>Add\x20to\x20Favorite</span></a></li></ul></li></ul>','#tbdyOpenTasks','promise','</ul></div>','#positionlist\x20:selected','#txtBoardName','</a></li><li><a\x20class=\x22ModalAddMessage\x22\x20href=\x22javascript:void(0);\x22\x20data-toggle=\x22modal\x22\x20data-target=\x22#addmessage\x22><i\x20class=\x22fa\x20fa-comments-o\x22></i>','Due','trim','pplassigntoInbox','prop'];a367_0x59b9=function(){return _0xd7fa06;};return a367_0x59b9();}function OpenEditKanban(_0x35c39f,_0x535d8a){var _0x1b57a0=a367_0x293906;$('#txtEditBoardName')['val'](_0x35c39f),$(_0x1b57a0(0x1de))[_0x1b57a0(0x192)](_0x535d8a),$(_0x1b57a0(0x150))['modal']('show'),$(_0x1b57a0(0x133))[_0x1b57a0(0x1b1)]()[_0x1b57a0(0x1da)](_0x1b57a0(0x197));var _0x465377=$(_0x1b57a0(0x176))[_0x1b57a0(0x192)](),_0x445e26=$(_0x1b57a0(0x17e))[_0x1b57a0(0x174)]();$(_0x1b57a0(0x137))['click'](function(){var _0x1c81fd=_0x1b57a0,_0x5f289c=[];_0x5f289c=allBoardName['filter'](function(_0x35026a){return _0x35026a;}),_0x5f289c=_0x5f289c[_0x1c81fd(0x1e3)](function(_0x57becd){var _0x6dcb04=_0x1c81fd;return _0x57becd[_0x6dcb04(0x151)]()!=_0x465377[_0x6dcb04(0x151)]();}),UpdateKanban(_0x465377,_0x445e26);});}function UpdateKanban(_0x562657,_0x11e2d3){var _0x441bf6=a367_0x293906,_0x5dd12e='',_0x15a77f=[],_0x2bd569=GetItemTypeForListName(_0x441bf6(0x1d0)),_0x46e90e=_0x441bf6(0x1fc)+_0x562657+'\x27\x20';$[_0x441bf6(0x226)](getLimitedItems(_0x441bf6(0x1d0),_0x46e90e))[_0x441bf6(0x202)](function(_0x2099ea){var _0x520ebb=_0x441bf6,_0x2f906f=_0x2099ea[_0x520ebb(0x23d)];if(_0x2f906f['length']>0x0){_0x5dd12e=_0x2f906f[0x0]['Id'];if(_0x11e2d3==$(_0x520ebb(0x17e))[_0x520ebb(0x174)]())Metadata={'__metadata':{'type':_0x2bd569},'Title':$(_0x520ebb(0x176))[_0x520ebb(0x192)]()},UpdateTaskList(_0x520ebb(0x1d0),Metadata,_0x5dd12e);else{Metadata={'__metadata':{'type':_0x2bd569},'Title':$(_0x520ebb(0x176))[_0x520ebb(0x192)](),'Sequence_No':parseInt($('#positionlist')['val']())};var _0x313048=_0x520ebb(0x1b3)+$('#positionlist')['val']()+'\x27\x20';$[_0x520ebb(0x226)](getLimitedItems(_0x520ebb(0x1d0),_0x313048))['done'](function(_0x587b70){var _0x4060c9=_0x520ebb,_0x140b27=_0x587b70[_0x4060c9(0x23d)];_0x140b27[_0x4060c9(0x135)]>0x0&&(currentItemIdSwap=_0x140b27[0x0]['Id'],SwapMetadata={'__metadata':{'type':_0x2bd569},'Sequence_No':parseInt(_0x11e2d3)},UpdateTaskList(_0x4060c9(0x1d0),SwapMetadata,currentItemIdSwap));}),UpdateTaskList(_0x520ebb(0x1d0),Metadata,_0x5dd12e);}}if(_0x562657['trim']()!=$[_0x520ebb(0x182)]($(_0x520ebb(0x176))[_0x520ebb(0x192)]())){var _0x94db2e=_0x520ebb(0x244)+_0x562657['trim']()+'\x27\x20',_0x3e4676=GetItemTypeForListName(_0x520ebb(0x13e));$[_0x520ebb(0x226)](getLimitedItems(_0x520ebb(0x13e),_0x94db2e))[_0x520ebb(0x202)](function(_0x5ed91e){var _0x39104c=_0x520ebb,_0x5972e2=_0x5ed91e[_0x39104c(0x23d)];$['each'](_0x5972e2,function(_0x570bb3,_0x5c5572){var _0x2a215b=_0x39104c;Metadata={'__metadata':{'type':_0x3e4676},'BoardName':$[_0x2a215b(0x182)]($(_0x2a215b(0x176))[_0x2a215b(0x192)]())},_0x15a77f[_0x2a215b(0x21c)](_0x5c5572['Id']),UpdateTaskList(_0x2a215b(0x13e),Metadata,_0x5c5572['Id']),_0x5972e2['length']==_0x570bb3+0x1&&(alert(_0x2a215b(0x1ee)),$(_0x2a215b(0x150))[_0x2a215b(0x15c)](_0x2a215b(0x136)));});});}else alert(_0x520ebb(0x1ee)),$('#renameboard')[_0x520ebb(0x15c)](_0x520ebb(0x136));}),arrAllTaskInbox[_0x441bf6(0x1a2)](function(_0x5e194c,_0x427b24){var _0x305c14=_0x441bf6;for(id=0x0;id<_0x15a77f['length'];id++){_0x5e194c['Id']==_0x15a77f[id]&&(_0x5e194c['BoardName']=$[_0x305c14(0x182)]($('#txtEditBoardName')[_0x305c14(0x192)]()));}}),arrLimitTaskInbox=arrAllTaskInbox[_0x441bf6(0x1e3)](function(_0x46a899){var _0x1b7366=_0x441bf6;return _0x46a899['CurrentPhase']==_0x1b7366(0x123);}),arrBoards=[],arrSortBoard=arrBoards=arrLimitTaskInbox[_0x441bf6(0x1e3)](function(_0x5025dd){var _0x108aad=_0x441bf6;return _0x5025dd[_0x108aad(0x12b)]!=null&&_0x5025dd[_0x108aad(0x12b)]!='';}),BindBucketName(arrBoards,'');}
+var SelectedBoard = '';
+$(document).ready(function () {
+    $("#btnBoardSubmit").click(function () {
+        if (arrTaskInIds.length > 0) {
+            var BoardName = '';
+            if ($("#existingbucket").prop('checked') == true) {
+                BoardName = $("#ddlExistingBoards").val();
+            }
+            else if ($("#newboardname").prop('checked') == true) {
+            	var tempBoard = [];
+            	tempBoard = allBoardName.filter(function( obj ) {
+				    return obj.toLowerCase() == $("#txtBoardName").val().toLowerCase();
+				});
+				if(tempBoard.length == 0) {
+					BoardName = $("#txtBoardName").val().trim();
+				}
+				else {
+                	BoardName = tempBoard[0];
+				}
+            }
+            //return false;
+            if (BoardName != "") {
+                updateBoardName(BoardName);
+            }
+            else {
+                alert("Kindly select/write any board name.");
+                return false;
+            }
+        }
+        else {
+            alert("Kindly select any task to add in board.");
+            return false;
+        }
+    });
+    SortKanbanTasks();
+    $(".KanbanClass").click(function () {
+        $("#BoardPopupHeader").text("Set Board");
+        $("#btnBoardSubmit").show();
+        $("#btnBoardOnly").hide();
+    });
+    $('#btnAddBoard').click(function () {
+        $('#board-box .panel-body').css('min-height', '560px');
+        $("#BoardPopupHeader").text("Add Board");
+        $("#btnBoardSubmit").hide();
+        $("#btnBoardOnly").show();
+        $("#bucketbox").modal("show");
+    });
+    $('#btnBoardOnly').click(function () {
+        var BoardName = '';
+        if ($("#existingbucket").prop('checked') == true) {
+            BoardName = $("#ddlExistingBoards").val();
+        }
+        else if ($("#newboardname").prop('checked') == true) {
+            BoardName = $("#txtBoardName").val();
+        }
+        if (BoardName != "") {
+            AddKanbanBoard(BoardName);
+        }
+        else {
+            alert("Kindly select/write any board name.");
+            return false;
+        }
+    });
+    $("#btnKanbanFilter").click(function () {
+        FilterKanban();
+    });
+    $("#inboxcalling").click(function () {
+        $('.callinginbox').modal('show');
+        $('.botheventwork').hide();
+        $('#btnTaskInFilter').hide();
+        $('#btnTaskInClear').hide();
+        $('#btnKanbanFilter').show();
+        $('#btnClearKanban').show();
+        $('#btnGanttFilter').hide();
+        $('#btnGanttClear').hide();
+        $("#txtFilterAssignBy").text("Assigned By:");
+        if ($('#WorkTypeOfProject option').length == 0) {
+            bindAllWorkType();
+        }
+        $("#taskIn").datepicker();
+        $('#taskIn').datepicker("option", "dateFormat", "MM dd, yy");
+    });
+    $("#btnClearKanban").click(function () {
+        ClearKanbanFilter();
+    });
+    $(".chkAllKanbanTsk").click(function () {
+        if (this.checked == true) {
+            $(".kanbanOpenTsk").prop('checked', 'checked');
+            arrTaskInIds = [];
+            arrTaskInIds = arrOpenKanbanTask.filter(function(f){return f;});
+        }
+        else {
+            $(".kanbanOpenTsk").prop('checked', '');
+            arrTaskInIds = [];
+        }
+    });
+});
+
+var arrOpenKanbanTask = [];
+//bind task while click on 'Add task' - Status with 'Open' and No Board Name
+function BindTaskToBoard() {
+    var TaskHTML = '',
+        TaskName = '',
+        TaskMethod = '',
+        DueDate = '',
+        Priority = '',
+        array = [];
+    taskchkIn = [];
+    arrOpenKanbanTask = [];
+    array = arrLimitTaskInbox.filter(function (obj) { //Filter array on the basis of Board Name
+        return obj.BoardName == null || obj.BoardName == '';
+    });
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].ProjectFullName == null) {
+            TaskMethod = "Client: ";
+            TaskName = array[i].ClientID.Title;
+        }
+        else {
+            TaskMethod = "Project: ";
+            TaskName = array[i].ProjectFullName;
+        }
+        if (array[i].DueDate != null) {
+            DueDate = new Date(array[i].DueDate);
+            DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+        }
+        else {
+            DueDate = '';
+        }
+        if (array[i].TaskPriority == "High" || array[i].TaskPriority == "Top") {
+            Priority = "block";
+        }
+        else {
+            Priority = "none";
+        }
+        arrOpenKanbanTask.push(array[i].ID.toString());
+        TaskHTML += '<tr><td><input type="checkbox" value="' + array[i].ID + '" class="chbox taskchkIn kanbanOpenTsk"></td><td>';
+        TaskHTML += '<div class="dvids"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/repeat_circle.png" style="display:none;" alt=""><h3>' + array[i].Title + '</h3></div>';
+        TaskHTML += '<div class="dvids"><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/flag-red.png" style="display:none;" alt="" class="redflg"><div class="wapbox">';
+        TaskHTML += '<div class="asigsec"><span class="assignby">Assign by:</span><span class="assignprson">' + array[i].AssignedBy.Title + '</span></div>';
+        TaskHTML += '<div class="prosec"><span class="prosecby">' + TaskMethod + '</span><span class="prosecprson">' + TaskName + '</span>';
+        TaskHTML += '</div></div></div></td>';
+        TaskHTML += '<td><img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/rd_icon.png" alt="" style="display:' + Priority + '" class="redcirle_icon"></td><td><div class="duedatebox">';
+        TaskHTML += '<span>Due:</span><span>' + DueDate + '</span></div><div class="progress custom-progress progress-success m-0 mt-4" style="width:124px;">';
+        TaskHTML += '<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:' + array[i].CompletionPersent + '%"></div></div></td></tr>';
+    }
+    $("#tbdyOpenTasks").empty().append(TaskHTML);
+    $(".taskchkIn").click(function () {
+        if (this.checked == true) {
+            arrTaskInIds.push(this.value);
+        }
+        else {
+            var selected = this.value;
+            $(".chkAllKanbanTsk").prop('checked', '');
+            arrTaskInIds = arrTaskInIds.filter(function (obj) {
+                return obj !== selected;
+            });
+        }
+    });
+}
+
+
+//to update the board name for tasks
+function updateBoardName(BoardName) {
+    var Metadata;
+    var arrBoards = [];
+    var ItemType = GetItemTypeForListName('EmployeeTaskDetails');
+    arrTaskInIds.forEach(function (value, i) {
+        Metadata = {
+            __metadata: {
+                'type': ItemType
+            },
+            BoardName: BoardName
+        }
+        var dfd = $.Deferred();
+        $.ajax({
+            url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('EmployeeTaskDetails')/GetItemById('" + value + "')",
+            type: "POST",
+            async: false,
+            headers: {
+                "accept": "application/json;odata=verbose",
+                "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+                "content-Type": "application/json;odata=verbose",
+                "X-Http-Method": "PATCH",
+                "If-Match": '*'
+            },
+            data: JSON.stringify(Metadata),
+            success: function (data) {
+                if ((i + 1) == arrTaskInIds.length) {
+
+                    $(".taskchkIn").prop("checked", '');
+                    if ($("#newboardname").prop('checked') == true) {
+                    	if (BoardName.toLowerCase() == 'to do' || jQuery.inArray(BoardName.toLowerCase(), allBoardName) != '-1') {
+                    		//Do nothing
+                		}
+                		else {
+                        	AddBoard(BoardName);
+                		}
+                    }
+                    else {
+                        $("#txtBoardName").val('');
+                        $("#ddlExistingBoards").val('To do');
+                    }
+                    arrLimitTaskInbox.forEach(function (value, i) {
+                        for (id = 0; id < arrTaskInIds.length; id++) {
+                            if (value.Id == arrTaskInIds[id]) {
+                                value.BoardName = BoardName;
+                                value.Modified = new Date().toISOString();
+                            }
+                        }
+                    });
+                    arrBoards = arrSortBoard = arrLimitTaskInbox.filter(function (obj) { //Filter array on the basis of Board Name
+                        return obj.BoardName != null && obj.BoardName != '';
+                    });
+                    BindBucketName(arrBoards, '');
+                    arrTaskInIds = [];
+                    alert("The task(s) have been added to the board.");
+                }
+                dfd.resolve(data);
+            },
+            eror: function (data) {
+                dfd.reject(error);
+                console.log("An error occurred while deleting task. " + JSON.stringify(data));
+            }
+        });
+        return dfd.promise();
+    });
+}
+
+
+//get the latestBoardName's sequence number and add new one
+function AddBoard(BoardName) {
+    var NewSeqNumber = 1;
+    //get the latest added board Squence_No
+    var Query = "?$top=5000&$select=ID,Title,Sequence_No,Author/EMail&$Expand=Author&$filter=Author/EMail eq'" + _spPageContextInfo.userEmail + "'&$orderby=Created desc";
+    $.when(getLimitedItems('PlannerBoardList', Query)).done(function (Board) {
+        var items = Board.results;
+        if (items.length > 0) {
+            NewSeqNumber = items[0].Sequence_No;
+            NewSeqNumber++;
+        }
+    });
+    //Add the board
+    var Metadata;
+    var ItemType = GetItemTypeForListName('PlannerBoardList');
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        Title: BoardName,
+        Sequence_No: NewSeqNumber
+    };
+
+    // Add metedata to defined SP list
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('PlannerBoardList')/items",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose"
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            $("#txtBoardName").val('');
+            $("#ddlExistingBoards").val('To do');
+            //alert("The tasks has been added into the board.");
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+
+var allBoardName = [];
+//Bind the Bucket name
+function BindBucketName(array, Action) {
+    var option = '';
+    $("#ddlExistingBoards").empty();
+    //$("#positionlist").empty();
+    $('<option value="To do">To do</option>').appendTo("#ddlExistingBoards");
+    var FirstArray = [];
+    var Query = "?$top=5000&$select=ID,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc";
+    $.when(getLimitedItems('PlannerBoardList', Query)).done(function (Board) {
+        var items = FirstArray = Board.results;
+        items = removeDuplicates(items, "Title");
+        items.pop();
+        if (items.length > 0) {
+            $.each(items, function (i, value) {
+                option += "<option value='" + value.Title + "'>" + value.Title + "</option>";
+                //$("#positionlist").append("<option value='" + value.Title + "'>" + value.Sequence_No + "</option>");
+                allBoardName.push(value.Title);
+            });
+            
+        }
+    });
+    //difference = items.filter(x => !array.includes(x));
+    var IsDuplicate = [];
+    $.each(array, function (i, value) {
+        IsDuplicate = FirstArray.filter(function (obj) {
+            return obj.Title == value.BoardName;
+        });
+        if (IsDuplicate.length == [] && value.BoardName != "To do" && value.BoardName != "Doing" && value.BoardName != "Done") {
+            option += "<option value='" + value.BoardName + "'>" + value.BoardName + "</option>";
+            allBoardName.push(value.Title);
+        }
+        else {
+            IsDuplicate = [];
+        }
+    });
+    $("#ddlExistingBoards").append(option);
+    PrepareBoards(array, FirstArray, Action);
+}
+
+var bindBoardNames = [];
+
+//Bind Boards
+function PrepareBoards(array, BucketArray, Action) {
+    var Board = '',
+        AlreadyBindBoard = [],
+        CurrentBindBoard = [],
+        TaskMethod = '',
+        TaskName = '',
+        DateText = '',
+        Priority = '',
+        IsToDoBlank = false,
+        listRow = [];
+    listClass = 1,
+    DueDate = '';
+    $("#fullydrag").empty();
+    
+    bindBoardNames = [];
+    //Bind 'To do' option first
+    CurrentBindBoard = array.filter(function (obj) { //Filter array on the basis of Board Name's Sequence number
+        return obj.BoardName == "To do";
+    });
+    bindBoardNames.push("To do");
+    Board += '<div class="dragbox KanbanList" id="todoKanban"><div class="row addtasksec"><div class="col-md-6 KanbanName" style="font-size:12px; color:#1a80d7; font-weight: 600;">To do</div>';
+    Board += '<div class="col-md-6" style="text-align: right;"><div class="dropsec" style="display: inline-block; position: relative;">';
+    Board += '<button type="button" class="addtaskbutton" name="list' + listClass + '" value="To do"><i class="fa fa-plus"></i> Add Task</button>';
+    Board += '</div></div></div>';
+    Board += '<ul id="list' + listClass + '" class="listshow" data-value="connect">'; listRow.push("#list" + listClass); listClass++;
+    if(CurrentBindBoard.length > 0){
+        if(Action == '') {
+            CurrentBindBoard.sort(function (a, b) {
+                var dateA = new Date(a.Modified), dateB = new Date(b.Modified)
+                return dateB - dateA;
+            });
+        }
+
+        $.each(CurrentBindBoard, function (i, value) {
+            if (jQuery.inArray(value.BoardName, AlreadyBindBoard) != '-1') {
+                //Do Nothing. Elements contains this already
+            }
+            else {
+                DateText = "Due";
+                AlreadyBindBoard.push(value.BoardName);
+                for (var i = 0; i < CurrentBindBoard.length; i++) {
+                    if (CurrentBindBoard[i].ProjectFullName == null) {
+	                    if(CurrentBindBoard[i].TaskCategory == "TeamChannel") {
+	                        TaskMethod = "Team Channel: ";
+	                        TaskName = CurrentBindBoard[i].TeamItemName;
+		                }
+		                else if(CurrentBindBoard[i].TaskCategory == "TeamMeeting"){
+	                        TaskMethod = "Team Meeting: ";
+	                        TaskName = CurrentBindBoard[i].TeamItemName;
+		                }
+		                else {
+	                        TaskMethod = "Client: ";
+	                        TaskName = CurrentBindBoard[i].ClientID.Title;
+	                    }
+                    }
+                    
+                    else {
+                        TaskMethod = "Project: ";
+                        TaskName = CurrentBindBoard[i].ProjectFullName;
+                    }
+                    if (CurrentBindBoard[i].DueDate != null) {
+                        DueDate = new Date(CurrentBindBoard[i].DueDate);
+                        DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+                    }
+                    if (CurrentBindBoard[i].TaskPriority == "High" || CurrentBindBoard[i].TaskPriority == "Top") {
+                        Priority = "block";
+                    }
+                    else {
+                        Priority = "none";
+                    }
+                    if (CurrentBindBoard[i].Title.length > 88) {
+                        CurrentBindBoard[i].Title = CurrentBindBoard[i].Title.substr(0, 88) + '...';
+                    }
+                    if (CurrentBindBoard[i].CurrentPhase == 'Completed') {
+                        var color = '#afb83b';
+                        DateText = "Completed";
+                        DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                        DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                    }
+                    else if (CurrentBindBoard[i].CurrentPhase == 'Open') {
+                        var color = '#14aaf5';
+                    }
+                    else if (CurrentBindBoard[i].CurrentPhase == 'Hold') {
+                        var color = '#ff9933';
+                    }
+                    else if (CurrentBindBoard[i].CurrentPhase == 'Close') {
+                        var color = '#299438';
+                        DateText = "Completed";
+                        DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                        DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                    }
+                    else { //Cancelled
+                        var color = '#db4035';
+                    }
+                    var FlagHTML = '';
+                    if (CurrentBindBoard[i].SetFlag == "Red") {
+                        FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:red"></i>';
+                    }
+                    else if (CurrentBindBoard[i].SetFlag == "Blue") {
+                        FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:blue"></i>';
+                    }
+                    else if (CurrentBindBoard[i].SetFlag == "Green") {
+                        FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:green"></i>';
+                    }
+                    else if (CurrentBindBoard[i].SetFlag == "Yellow") {
+                        FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:#ffa500"></i>';
+                    }
+                    else {
+                        FlagHTML = '';
+                    }
+                    var dependency="none";
+                    if(CurrentBindBoard[i].CurrentPhase=='Open')
+                    {
+                       dependency="block";
+                    }                  
+
+                    CurrentBindBoard[i].CompletionPersent = CurrentBindBoard[i].CompletionPersent ? CurrentBindBoard[i].CompletionPersent : "0";
+                    var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(CurrentBindBoard[i].AssignedBy.EMail);
+                    Board += '<li id="' + CurrentBindBoard[i].Id + '" style ="border-left: 5px solid ' + color + '"><div class="twopart"><div class="righttpart"><div class="divtwosec" style=""><h3>' + CurrentBindBoard[i].Title + '</h3>';
+                    Board += '<div class="dropdown dashboard-table-btn" style="margin-left: auto"><button class="btn dropdown-toggle btnmange ui-KanbanButton" onclick=SelectArray("' + CurrentBindBoard[i].ID + '") type="button" data-toggle="dropdown" aria-expanded="false">';
+                    Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dotting.png" alt=""></button>';
+
+                    Board += '<ul class="dropdown-menu dropdown-color-menu-icon"><li class="parentlist"><ul>';
+                    Board += '<li class="clsCompletion"><a class="dropdown-toggle" id="">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/check_icon_1.png" alt=""><span>Mark as Completed</span></a></li>';
+                    Board += '<li class="clsProgression"><a href="javascript:void(0);">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/percentage-icon.png" alt=""><span>Update Progress</span>';
+                    Board += '</a></li></ul></li><li class="parentlist"><ul><li class="AddDepedncy" style="display:' +dependency+ '"><a href="javascript:void(0);" data-toggle="modal" data-target="#dependenciesmodl">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dependency-icon.png" alt=""><span>Add Dependency</span>';
+                    Board += '</a></li><li><a class="ModalAddMessage" href="javascript:void(0);"><i class="fa fa-comments-o"></i>';
+                    Board += '<span>Add a Message</span></a></li><li><a href="javascript:void(0);" data-toggle="modal" data-target="#Notificationlist">';
+                    Board += '<i class="fa fa-envelope-o" aria-hidden="true" style="margin:0px 8px 0 0px !important"></i><span>Notify by mail</span></a></li></ul></li>';
+                    Board += '<li class="parentlist"><ul><li id="InboxAddBoard" class="KanbanClass"><a href="javascript:void(0);" data-toggle="modal" data-target="#bucketbox">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/collect.png" alt=""><span>Set Board</span></a></li>';
+                    Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#flagmodal">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/flag-icon.png" alt=""><span>Set Flag</span></a></li>';
+                    Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#setreminder"><i class="fa fa-bell-o" style="margin:0px 8px 0 0px !important"></i>';
+                    Board += '<span>Set Reminder</span></a></li><li><a href="javascript:void(0);">';
+                    Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/favorite_new-icon.png" alt=""><span>Add to Favorite</span></a></li></ul></li></ul>';
+
+                    Board += '</div></div><div class="assignbynow"><img src="' + attachment + '" alt="" class="assignimg">';
+                    Board += '<div class="assignbx"><span class="assignby">Assign by:-</span><span class="clientname">' + CurrentBindBoard[i].AssignedBy.Title + '</span></div></div>';
+                    Board += '<div class="projectsec" style="display:block;"><span><span class="pojectdefine">' + TaskMethod + '</span> <span class="projectdefine">' + TaskName + '</span>';
+                    Board += '</span></div><div class="flgndprogress"><div class="duedatesec" style="display:inline-block;"><span class="duedate"><span>'+DateText+': </span>' + DueDate + '</span>';
+                    Board += '<div class="progress custom-progress progress-success m-0 mt-4" style="width:124px;"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:' + CurrentBindBoard[i].CompletionPersent + '%"></div></div>';
+                    Board += '  </span></span></div><div class="smalliconbox" style="display:inline-block; text-align: right;">';
+                    Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/red_circle.png" alt="" style="display:' + Priority + '">' + FlagHTML + '</div></div></div></div>';
+                    Board += '</li>';
+                }
+            }
+        });
+    }
+    else {
+        bindBoardNames = [];
+        IsToDoBlank = true;
+    }
+    Board += '</ul></div>';
+
+    for (seq = 0; seq < BucketArray.length; seq++) {
+        CurrentBindBoard = array.filter(function (obj) { //Filter array on the basis of Board Name's Sequence number
+            return obj.BoardName == BucketArray[seq].Title;
+        });
+        if(Action == '') {
+            CurrentBindBoard.sort(function (a, b) {
+                var dateA = new Date(a.Modified), dateB = new Date(b.Modified)
+                return dateB - dateA;
+            });
+        }
+
+        // after finding the board details on the basis of sequence number bind the the board
+        if (CurrentBindBoard.length > 0) {
+            $.each(CurrentBindBoard, function (i, value) {
+                if (jQuery.inArray(value.BoardName, AlreadyBindBoard) != '-1') {
+                    //Do Nothing. Elements contains this already
+                }
+                else {
+                    DateText = "Due";
+                    AlreadyBindBoard.push(value.BoardName);
+                    Board += '<div class="dragbox KanbanList"><div class="row addtasksec"><div class="col-md-6 KanbanName" style="font-size:12px; color:#1a80d7; font-weight: 600;">' + value.BoardName + '</div>';
+                    Board += '<div class="col-md-6" style="text-align: right;"><div class="dropsec" style="display: inline-block; position: relative;">';
+                    Board += '<button type="button" class="addtaskbutton" value="' + value.BoardName + '" name="list' + listClass + '"><i class="fa fa-plus"></i> Add Task</button>';
+                    Board += '</div><button type="button" onclick="OpenEditKanban(\'' + value.BoardName + '\', \'' + BucketArray[seq].Sequence_No + '\');" class="editbutton"><i class="fa fa-edit"></i> Edit</button></div></div>';
+                    bindBoardNames.push(value.BoardName);
+                    Board += '<ul id="list' + listClass + '" class="listshow" data-value="connect">'; listRow.push("#list" + listClass); listClass++;
+                    for (var i = 0; i < CurrentBindBoard.length; i++) {
+                        if (CurrentBindBoard[i].ProjectFullName == null) {
+	                        if(CurrentBindBoard[i].TaskCategory == "TeamChannel") {
+		                        TaskMethod = "Team Channel: ";
+		                        TaskName = CurrentBindBoard[i].TeamItemName;
+			                }
+			                else if(CurrentBindBoard[i].TaskCategory == "TeamMeeting"){
+		                        TaskMethod = "Team Meeting: ";
+		                        TaskName = CurrentBindBoard[i].TeamItemName;
+			                }
+			                else {
+                            	TaskMethod = "Client: ";
+                            	TaskName = CurrentBindBoard[i].ClientID.Title;
+                            }
+                        }
+                        else {
+                            TaskMethod = "Project: ";
+                            TaskName = CurrentBindBoard[i].ProjectFullName;
+                        }
+                        if (CurrentBindBoard[i].DueDate != null) {
+                            DueDate = new Date(CurrentBindBoard[i].DueDate);
+                            DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+                        }
+                        if (CurrentBindBoard[i].TaskPriority == "High" || CurrentBindBoard[i].TaskPriority == "Top") {
+                            Priority = "block";
+                        }
+                        else {
+                            Priority = "none";
+                        }
+                        if (CurrentBindBoard[i].Title.length > 88) {
+                            CurrentBindBoard[i].Title = CurrentBindBoard[i].Title.substr(0, 88) + '...';
+                        }
+                        if (CurrentBindBoard[i].CurrentPhase == 'Completed') {
+                            var color = '#afb83b';
+                            DateText = "Completed";
+                            DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                            DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                        }
+                        else if (CurrentBindBoard[i].CurrentPhase == 'Open') {
+                            var color = '#14aaf5';
+                        }
+                        else if (CurrentBindBoard[i].CurrentPhase == 'Hold') {
+                            var color = '#ff9933';
+                        }
+                        else if (CurrentBindBoard[i].CurrentPhase == 'Close') {
+                            var color = '#299438';
+                            DateText = "Completed";
+                            DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                            DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                        }
+                        else { //Cancelled
+                            var color = '#db4035';
+                        }
+                        var FlagHTML = '';
+                        if (CurrentBindBoard[i].SetFlag == "Red") {
+                            FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:red"></i>';
+                        }
+                        else if (CurrentBindBoard[i].SetFlag == "Blue") {
+                            FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:blue"></i>';
+                        }
+                        else if (CurrentBindBoard[i].SetFlag == "Green") {
+                            FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:green"></i>';
+                        }
+                        else if (CurrentBindBoard[i].SetFlag == "Yellow") {
+                            FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:yellow"></i>';
+                        }
+                        else {
+                            FlagHTML = '';
+                        }
+                        CurrentBindBoard[i].CompletionPersent = CurrentBindBoard[i].CompletionPersent ? CurrentBindBoard[i].CompletionPersent : "0";
+                        var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(CurrentBindBoard[i].AssignedBy.EMail);
+                        Board += '<li id="' + CurrentBindBoard[i].Id + '" style ="border-left: 5px solid ' + color + '"><div class="twopart"><div class="righttpart"><div class="divtwosec" style=""><h3>' + CurrentBindBoard[i].Title + '</h3>';
+                        Board += '<div class="dropdown dashboard-table-btn" style="margin-left: auto"><button class="btn dropdown-toggle btnmange ui-KanbanButton" onclick=SelectArray("' + CurrentBindBoard[i].ID + '") type="button" data-toggle="dropdown" aria-expanded="false">';
+                        Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dotting.png" alt=""></button>';
+
+                        Board += '<ul class="dropdown-menu dropdown-color-menu-icon"><li class="parentlist"><ul>';
+                        Board += '<li class="clsCompletion"><a class="dropdown-toggle" id="">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/check_icon_1.png" alt=""><span>Mark as Completed</span></a></li>';
+                        Board += '<li class="clsProgression"><a href="javascript:void(0);">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/percentage-icon.png" alt=""><span>Update Progress</span>';
+                        Board += '</a></li></ul></li><li class="parentlist"><ul><li><a href="javascript:void(0);" data-toggle="modal" data-target="#dependenciesmodl">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dependency-icon.png" alt=""><span>Add Dependency</span>';
+                        Board += '</a></li><li><a class="ModalAddMessage" href="javascript:void(0);" data-toggle="modal" data-target="#addmessage"><i class="fa fa-comments-o"></i>';
+                        Board += '<span>Add a Message</span></a></li><li><a href="javascript:void(0);" data-toggle="modal" data-target="#Notificationlist">';
+                        Board += '<i class="fa fa-envelope-o" aria-hidden="true" style="margin:0px 8px 0 0px !important"></i><span>Notify by mail</span></a></li></ul></li>';
+                        Board += '<li class="parentlist"><ul><li id="InboxAddBoard" class="KanbanClass"><a href="javascript:void(0);" data-toggle="modal" data-target="#bucketbox">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/collect.png" alt=""><span>Set Board</span></a></li>';
+                        Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#flagmodal">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/flag-icon.png" alt=""><span>Set Flag</span></a></li>';
+                        Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#setreminder"><i class="fa fa-bell-o" style="margin:0px 8px 0 0px !important"></i>';
+                        Board += '<span>Set Reminder</span></a></li><li><a href="javascript:void(0);">';
+                        Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/favorite_new-icon.png" alt=""><span>Add to Favorite</span></a></li></ul></li></ul>';
+
+                        Board += '</div></div><div class="assignbynow"><img src="' + attachment + '" alt="" class="assignimg">';
+                        Board += '<div class="assignbx"><span class="assignby">Assign by:-</span><span class="clientname">' + CurrentBindBoard[i].AssignedBy.Title + '</span></div></div>';
+                        Board += '<div class="projectsec" style="display:block;"><span><span class="pojectdefine">' + TaskMethod + '</span> <span class="projectdefine">' + TaskName + '</span>';
+                        Board += '</span></div><div class="flgndprogress"><div class="duedatesec" style="display:inline-block;"><span class="duedate"><span>'+DateText+': </span>' + DueDate + '</span>';
+                        Board += '<div class="progress custom-progress progress-success m-0 mt-4" style="width:124px;"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:' + CurrentBindBoard[i].CompletionPersent + '%"></div></div>';
+                        Board += '  </span></span></div><div class="smalliconbox" style="display:inline-block; text-align: right;">';
+                        Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/red_circle.png" alt="" style="display:' + Priority + '">' + FlagHTML + '</div></div></div></div>';
+                        Board += '</li>';
+                    }
+                    Board += '</ul></div>';
+                }
+
+            });
+        }
+    }
+
+    //now bind boards in which you are added by other users
+    $.each(array, function (i, value) {
+        if (jQuery.inArray(value.BoardName, AlreadyBindBoard) != '-1') {
+            //Do Nothing. Elements contains this already
+        }
+        else {
+            AlreadyBindBoard.push(value.BoardName);
+            Board += '<div class="dragbox KanbanList"><div class="row addtasksec"><div class="col-md-6 KanbanName" style="font-size:12px; color:#1a80d7; font-weight: 600;">' + value.BoardName + '</div>';
+            Board += '<div class="col-md-6" style="text-align: right;"><div class="dropsec" style="display: inline-block; position: relative;">';
+            Board += '<button type="button" class="addtaskbutton" value="' + value.BoardName + '" name="list' + listClass + '"><i class="fa fa-plus"></i> Add Task</button>';
+            Board += '</div><button type="button" onclick="OpenEditKanban(\'' + value.BoardName + '\', \'' + BucketArray[seq].Sequence_No + '\');" class="editbutton"><i class="fa fa-edit"></i> Edit</button></div></div>';
+            bindBoardNames.push(value.BoardName);
+            CurrentBindBoard = array.filter(function (obj) { //Filter array on the basis of CurrentPhase
+                return obj.BoardName == value.BoardName;
+            });
+            if(Action == '') {
+                CurrentBindBoard.sort(function (a, b) {
+                    var dateA = new Date(a.Modified), dateB = new Date(b.Modified)
+                    return dateB - dateA;
+                });
+            }
+
+            Board += '<ul id="list' + listClass + '" class="listshow" data-value="connect">'; listRow.push("#list" + listClass); listClass++;
+            for (var i = 0; i < CurrentBindBoard.length; i++) {
+                DateText = "Due";
+                if (CurrentBindBoard[i].ProjectFullName == null) {
+                	if(CurrentBindBoard[i].TaskCategory == "TeamChannel") {
+                        TaskMethod = "Team Channel: ";
+                        TaskName = CurrentBindBoard[i].TeamItemName;
+	                }
+	                else if(CurrentBindBoard[i].TaskCategory == "TeamMeeting"){
+                        TaskMethod = "Team Meeting: ";
+                        TaskName = CurrentBindBoard[i].TeamItemName;
+	                }
+	                else {
+                    	TaskMethod = "Client: ";
+                    	TaskName = CurrentBindBoard[i].ClientID.Title;
+                    }
+                }
+                else {
+                    TaskMethod = "Project: ";
+                    TaskName = CurrentBindBoard[i].ProjectFullName;
+                }
+                if (CurrentBindBoard[i].DueDate != null) {
+                    DueDate = new Date(CurrentBindBoard[i].DueDate);
+                    DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);//.toLocaleDateString();
+                }
+
+                if (CurrentBindBoard[i].TaskPriority == "High" || CurrentBindBoard[i].TaskPriority == "Top") {
+                    Priority = "block";
+                }
+                else {
+                    Priority = "none";
+                }
+                if (CurrentBindBoard[i].Title.length > 88) {
+                    CurrentBindBoard[i].Title = CurrentBindBoard[i].Title.substr(0, 88) + '...';
+                }
+                if (CurrentBindBoard[i].CurrentPhase == 'Completed') {
+                    var color = '#afb83b';
+                    DateText = "Completed";
+                    DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                    DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                }
+                else if (CurrentBindBoard[i].CurrentPhase == 'Open') {
+                    var color = '#14aaf5';
+                }
+                else if (CurrentBindBoard[i].CurrentPhase == 'Hold') {
+                    var color = '#ff9933';
+                }
+                else if (CurrentBindBoard[i].CurrentPhase == 'Close') {
+                    var color = '#299438';
+                    DateText = "Completed";
+                    DueDate = new Date(CurrentBindBoard[i].CompletionDate);
+                    DueDate = titanForWork.ShowCommonStandardDateFormat(DueDate);
+                }
+                else { //Cancelled
+                    var color = '#db4035';
+                }
+                var FlagHTML = '';
+                if (CurrentBindBoard[i].SetFlag == "Red") {
+                    FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:red"></i>';
+                }
+                else if (CurrentBindBoard[i].SetFlag == "Blue") {
+                    FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:blue"></i>';
+                }
+                else if (CurrentBindBoard[i].SetFlag == "Green") {
+                    FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:green"></i>';
+                }
+                else if (CurrentBindBoard[i].SetFlag == "Yellow") {
+                    FlagHTML = '<i class="fa fa-flag-o" style="font-size:23px;color:yellow"></i>';
+                }
+                else {
+                    FlagHTML = '';
+                }
+                CurrentBindBoard[i].CompletionPersent = CurrentBindBoard[i].CompletionPersent ? CurrentBindBoard[i].CompletionPersent : "0";
+                var attachment = _spPageContextInfo.webAbsoluteUrl + '/_layouts/15/userphoto.aspx?accountname=' + escapeProperly(CurrentBindBoard[i].AssignedBy.EMail);
+                Board += '<li id="' + CurrentBindBoard[i].Id + '" style ="border-left: 5px solid ' + color + '"><div class="twopart"><div class="righttpart"><div class="divtwosec" style=""><h3>' + CurrentBindBoard[i].Title + '</h3>';
+                Board += '<div class="dropdown dashboard-table-btn" style="margin-left: auto"><button class="btn dropdown-toggle btnmange ui-KanbanButton" onclick=SelectArray("' + CurrentBindBoard[i].ID + '") type="button" data-toggle="dropdown" aria-expanded="false">';
+                Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dotting.png" alt=""></button>';
+
+                Board += '<ul class="dropdown-menu dropdown-color-menu-icon"><li class="parentlist"><ul>';
+                Board += '<li class="clsCompletion"><a class="dropdown-toggle" id="">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/check_icon_1.png" alt=""><span>Mark as Completed</span></a></li>';
+                Board += '<li class="clsProgression"><a href="javascript:void(0);">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/percentage-icon.png" alt=""><span>Update Progress</span>';
+                Board += '</a></li></ul></li><li class="parentlist"><ul><li><a href="javascript:void(0);" data-toggle="modal" data-target="#dependenciesmodl">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/dependency-icon.png" alt=""><span>Add Dependency</span>';
+                Board += '</a></li><li><a class="ModalAddMessage" href="javascript:void(0);" data-toggle="modal" data-target="#addmessage"><i class="fa fa-comments-o"></i>';
+                Board += '<span>Add a Message</span></a></li><li><a href="javascript:void(0);" data-toggle="modal" data-target="#Notificationlist">';
+                Board += '<i class="fa fa-envelope-o" aria-hidden="true" style="margin:0px 8px 0 0px !important"></i><span>Notify by mail</span></a></li></ul></li>';
+                Board += '<li class="parentlist"><ul><li id="InboxAddBoard" class="KanbanClass"><a href="javascript:void(0);" data-toggle="modal" data-target="#bucketbox">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/collect.png" alt=""><span>Set Board</span></a></li>';
+                Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#flagmodal">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/flag-icon.png" alt=""><span>Set Flag</span></a></li>';
+                Board += '<li><a href="javascript:void(0);" data-toggle="modal" data-target="#setreminder"><i class="fa fa-bell-o" style="margin:0px 8px 0 0px !important"></i>';
+                Board += '<span>Set Reminder</span></a></li><li><a href="javascript:void(0);">';
+                Board += '<img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/favorite_new-icon.png" alt=""><span>Add to Favorite</span></a></li></ul></li></ul>';
+
+                Board += '</div></div><div class="assignbynow"><img src="' + attachment + '" alt="" class="assignimg">';
+                Board += '<div class="assignbx"><span class="assignby">Assign by:-</span><span class="clientname">' + CurrentBindBoard[i].AssignedBy.Title + '</span></div></div>';
+                Board += '<div class="projectsec" style="display:block;"><span><span class="pojectdefine">' + TaskMethod + '</span> <span class="projectdefine">' + TaskName + '</span>';
+                Board += '</span></div><div class="flgndprogress"><div class="duedatesec" style="display:inline-block;"><span class="duedate"><span>'+DateText+': </span>' + DueDate + '</span>';
+                Board += '<div class="progress custom-progress progress-success m-0 mt-4" style="width:124px;"><div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:' + CurrentBindBoard[i].CompletionPersent + '%"></div></div>';
+                Board += '  </span></span></div><div class="smalliconbox" style="display:inline-block; text-align: right;">';
+                Board += '<img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/red_circle.png" alt="" style="display:' + Priority + '">' + FlagHTML + '</div></div></div></div>';
+                Board += '</li>';
+            }
+            Board += '</ul></div>';
+        }
+    });
+    $("#fullydrag").append(Board);
+    if($("#fullydrag").html() != "" && IsToDoBlank == true){
+        $("#todoKanban").remove();
+    }
+    //console.log(listRow.toString());
+    $(listRow.toString()).sortable({
+        connectWith: listRow.toString(),
+        opacity: 0.5,
+        cursor: 'move',
+        delay: 200,
+        receive: function (event, ui) {
+            updateTaskBoard(ui.item[0].attributes[0].nodeValue, event.target.parentElement.childNodes[0].childNodes[0].innerText); //Dropped task Id, Target bucket name
+        }
+    });
+    $(".addtaskbutton").click(function () {
+        BindTaskToBoard();
+        $(".chkAllKanbanTsk").prop('checked', '');
+        arrTaskInIds = [];
+        SelectedBoard = this.value;
+        $("#opentasksec").modal('show');
+    });
+    $(".KanbanClass").click(function () {
+        $("#BoardPopupHeader").text("Set Board");
+        $("#btnBoardSubmit").show();
+        $("#btnBoardOnly").hide();
+    });
+    $(".AddDepedncy").click(function () {
+    	$("#btnAddDependency").text('Add');
+        if (arrTaskInIds.length == 0 && arrTaskIds.length == 0) {
+            //alert("Kindly select any task first.");
+        }
+        else {
+            if (arrTaskInIds.length == 1) {
+                $("#DueDateHTML").hide();
+                $("#StartDateHTML").hide();
+            }
+            else {
+                if (arrTaskIds.length == 1) {
+                    $("#DueDateHTML").hide();
+                    $("#StartDateHTML").hide();
+                }
+                else {
+                    $("#DueDateHTML").show();
+                    $("#StartDateHTML").show();
+                }
+            }
+        }
+    });
+
+    $(".ModalAddMessageParent").empty().append('<a href="javascript:void(0);" class="ModalAddMessage"><i class="fa fa-comments-o"></i><span>Add a Message</span></a>');
+    $(".ModalAddMessage").click(function () {
+    	//to check if logged_In user is external or not; -9 == External User
+		if(EmployeeDetails[0].ParentId != -9) {
+			updateTaskMeatdata('Add Message');
+		}
+	    else {
+	    	alert("You are not authorized to perform this operation.");
+	        return false;
+    	}
+	});
+	
+	$(".ParentAddFavorite").empty().append('<a href="javascript:void(0);" class="btnAddFavorite"><img class="dashboard-icon-info ml2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MyTask/assets/images/favorite_new-icon.png" alt=""><span>Add to Favorite</span></a>');
+    $(".btnAddFavorite").click(function () {
+    	updateTaskMeatdata('AddFavorite');
+	});
+	
+    $("#addTaskToSetBoard").click(function () {
+        updateBoardName(SelectedBoard);
+    });
+    $("#positionlist").empty();
+    for(var buckCount=0;buckCount < ($("#fullydrag .KanbanList").length + 1);buckCount++) {
+    	$("#positionlist").append("<option value='"+(parseInt(buckCount)+1)+"'>" + (parseInt(buckCount)+1) + "</option>");
+    }
+}
+
+//update Board name of task while dropping to other area
+function updateTaskBoard(TaskId, NewBoardName) {
+    var ItemType = GetItemTypeForListName('EmployeeTaskDetails');
+    Metadata = {
+        __metadata: {
+            'type': ItemType
+        },
+        BoardName: NewBoardName
+    }
+    var dfd = $.Deferred();
+    $.ajax({
+        url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('EmployeeTaskDetails')/GetItemById('" + TaskId + "')",
+        type: "POST",
+        async: false,
+        headers: {
+            "accept": "application/json;odata=verbose",
+            "X-RequestDigest": $("#__REQUESTDIGEST").val(),
+            "content-Type": "application/json;odata=verbose",
+            "X-Http-Method": "PATCH",
+            "If-Match": '*'
+        },
+        data: JSON.stringify(Metadata),
+        success: function (data) {
+            //alert("dropped");
+            arrAllTaskInbox.forEach(function (value, i) {
+                if (value.Id == TaskId) {
+                    value.BoardName = NewBoardName;
+                }
+            });
+            dfd.resolve(data);
+        },
+        eror: function (data) {
+            dfd.reject(error);
+            console.log("Error while update bucket name of task. " + JSON.stringify(data));
+        }
+    });
+    return dfd.promise();
+}
+
+
+// add kanban board without any task
+function AddKanbanBoard(BoardName) {
+    if ($("#newboardname").prop('checked') == true) {
+    	if (BoardName.toLowerCase() == 'to do' || jQuery.inArray(BoardName.toLowerCase(), allBoardName) != '-1') {
+            //Do nothing
+        }
+        else {
+        	AddBoard(BoardName);
+        }
+    }
+    else {
+        $("#txtBoardName").val('');
+        $("#ddlExistingBoards").val('To do');
+    }
+    var listRow = [];
+    var NewUlListId = "list" + ($("#fullydrag .dragbox").length + 1);
+    var Board = '';
+    if (jQuery.inArray(BoardName, bindBoardNames) == '-1') {
+        Board += '<div class="dragbox"><div class="row addtasksec"><div class="col-md-6 KanbanName" style="font-size:12px; color:#1a80d7; font-weight: 600;">' + BoardName + '</div>';
+        Board += '<div class="col-md-6" style="text-align: right;"><div class="dropsec" style="display: inline-block; position: relative;">';
+        Board += '<button type="button" class="addtaskbutton" name="' + NewUlListId + '" value="' + BoardName + '"><i class="fa fa-plus"></i> Add Task</button>';
+        Board += '</div></div></div>';
+        Board += '<ul id="' + NewUlListId + '" class="listshow" data-value="connect">';
+        Board += '</ul></div>';
+        $("#fullydrag").append(Board);
+        bindBoardNames.push(BoardName);
+    }
+
+    for (var list = 0; list < $("#fullydrag .dragbox").length; list++) {
+        listRow.push("#list" + (list + 1));
+    }
+    $(listRow.toString()).sortable({
+        connectWith: listRow.toString(),
+        opacity: 0.5,
+        cursor: 'move',
+        delay: 200,
+        receive: function (event, ui) {
+            updateTaskBoard(ui.item[0].attributes[0].nodeValue, event.target.parentElement.childNodes[0].childNodes[0].innerText); //Dropped task Id, Target bucket name
+        }
+    });
+    $(".addtaskbutton").click(function () {
+        BindTaskToBoard();
+        SelectedBoard = this.value;
+        $("#opentasksec").modal('show');
+
+    });
+    $("#addTaskToSetBoard").click(function () {
+        updateBoardName(SelectedBoard);
+    });
+}
+
+//Filter Kanban chart
+function FilterKanban() {
+    arrTaskInIds = [];
+    arrFilterDataBind = [];
+    var TaskKanbanChip = "",
+        assigntoQuery = '',
+        arrBoards = [];
+    assigntobyme = [];
+
+    //Filter value display starts
+    if ($('#UserAllProject').val() != "All") {
+        if ($('#UserAllProject').val() == "General Task") {
+            TaskKanbanChip += "<div class='upload-chip'>General Task</div>";
+        }
+        else {
+            if ($('#ddlInboxProject').val() != "All") {
+                TaskKanbanChip += "<div class='upload-chip'>" + $('#ddlInboxProject option:selected').text() + "</div>";
+            }
+            else {
+                TaskKanbanChip += "<div class='upload-chip'>" + $('#ddlInboxProject option:selected').text() + "</div>";
+            }
+        }
+    }
+
+    if ($('#ProjectModule').val() != "All") {
+        var ModuleValue2 = $('#ProjectModule').val();
+        TaskKanbanChip += "<div class='upload-chip'>" + $('#ProjectModule option:selected').text() + "</div>";
+    }
+
+    if ($('#ddlInboxClient').val() != "All") {
+        TaskKanbanChip += "<div class='upload-chip'>" + $('#ddlInboxClient option:selected').text() + "</div>";
+    }
+
+    if ($('#WorkTypeOfProject').val() != "All") {
+        TaskKanbanChip += "<div class='upload-chip'>" + $('#WorkTypeOfProject option:selected').text() + "</div>";
+    }
+
+    if ($('#txtPriority').val() != "All") {
+        TaskKanbanChip += "<div class='upload-chip'>" + $('#txtPriority option:selected').text() + "</div>";
+    }
+
+    if ($('#txtFilterStatusInbox').val() != "All") {
+        TaskKanbanChip += "<div class='upload-chip'>" + $('#txtFilterStatusInbox option:selected').text() + "</div>";
+    }
+
+    if ($('#taskIn').val() != null && $('#taskIn').val() != "") {
+        if (TaskOutCome == "TaskPending") {
+            TaskKanbanChip += "<div class='upload-chip'>Pending</div>";
+        }
+        else if (TaskOutCome == "TaskOverdue") {
+            TaskKanbanChip += "<div class='upload-chip'>Overdue</div>";
+        }
+        else {
+            TaskKanbanChip += "<div class='upload-chip'>" + moment($("#taskIn").val()).format("DD/MMM/YYYY") + "</div>";
+        }
+    }
+
+    if ($("#pplassigntoInbox_TopSpan_ResolvedList").text() != "") {
+        getUserInformation('pplassigntoInbox');
+        TaskKanbanChip += "<div class='upload-chip'>" + assignBy.join(', ') + "</div>";
+    }
+    else {
+        TaskKanbanChip += "<div class='upload-chip'>" + _spPageContextInfo.userDisplayName + "</div>";
+        assignByEmail = "";
+    }
+    //Filter value display ends
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    arrBoards = arrAllTaskInbox.filter(function (obj) { //Filter array on the basis of Board Name
+        return obj.BoardName != null && obj.BoardName != '';
+    });
+    arrFilterDataBind = arrBoards.filter(function (obj, index) { //Filter array
+        if ($('#UserAllProject').val() != "All") {
+            if ($('#UserAllProject').val() == "General Task") {
+                var ProjectValue = null;
+                var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName == ProjectValue);
+            }
+            else if($('#UserAllProject').val() == "TeamMeeting") {
+            	var ProjectValue = null;
+                var ProjectFilter = (ProjectValue == "All" ? obj.TaskCategory != "" : obj.TaskCategory == $('#UserAllProject').val());
+            }
+            else if($('#UserAllProject').val() == "TeamChannel") {
+            	var ProjectValue = null;
+                var ProjectFilter = (ProjectValue == "All" ? obj.TaskCategory != "" : obj.TaskCategory == $('#UserAllProject').val());
+            }
+
+            else {
+                if ($('#ddlInboxProject').val() != "All") {
+                    var ProjectFilter = (ProjectValue == "All" ? obj.ProjectName != "" : obj.ProjectName == $('#ddlInboxProject').val());
+                }
+                else {
+                    var ProjectValue = null;
+                    var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName != ProjectValue);
+                }
+            }
+        }
+        else {
+            var ProjectValue = "All";
+            var ProjectFilter = (ProjectValue == "All" ? obj.ProjectFullName != "" : obj.ProjectFullName == ProjectValue);
+        }
+        if ($('#ProjectModule').val() != "All") {
+            var ModuleValue = $('#ProjectModule').val();
+        }
+        else {
+            var ModuleValue = "All";
+        }
+
+        if ($('#ddlInboxClient').val() != "All") {
+            var ClientValue = $('#ddlInboxClient').val();
+        }
+        else {
+            var ClientValue = "All";
+        }
+
+        if ($('#WorkTypeOfProject').val() != "All") {
+            var WorkTypeValue = $('#WorkTypeOfProject').val()
+        }
+        else {
+            var WorkTypeValue = "All"
+        }
+
+        if ($('#txtPriority').val() != "All") {
+            var PriorityValue = $('#txtPriority').val();
+        }
+        else {
+            var PriorityValue = "All";
+        }
+        if ($('#txtFilterStatusInbox').val() != "All") {
+            var CurrentPhaseValue = $('#txtFilterStatusInbox').val();
+        }
+        else {
+            var CurrentPhaseValue = "All";
+        }
+
+        if ($('#taskIn').val() != null && $('#taskIn').val() != "") {
+            var DueDate = $("#taskIn").val();
+            var dateDueDate = new Date($("#taskIn").val()).setHours(0, 0, 0, 0);//moment($("#taskIn").val()).format('MM/DD/YYYY');
+            dateDueDate = new Date(dateDueDate);
+            var arrDueDate = new Date(moment(obj.DueDate.split('T')[0]).format("MM/DD/YYYY"));//moment(obj.DueDate).format('MM/DD/YYYY');
+            arrDueDate.setDate(arrDueDate.getDate() + 1);
+            arrDueDate = new Date(arrDueDate);
+            var DueDateFilter = (dateDueDate == "" ? arrDueDate != "" : arrDueDate <= dateDueDate);
+        }
+        else {
+            var DueDateFilter = true;
+        }
+
+        assigntoQuery = '';
+        var StringAssigntoQuery = [];
+
+        if (assignByEmail != "") {
+            var FilterAssignByEmail = assignByEmail.split('|');
+            FilterAssignByEmail.pop(); //remove last element of array.
+            for (var i = 0; i < FilterAssignByEmail.length; i++) {
+                if (FilterAssignByEmail[i].indexOf("#") != -1) {
+                    FilterAssignByEmail[i] = FilterAssignByEmail[i].split("#")[0];
+                    FilterAssignByEmail[i] = FilterAssignByEmail[i].replace("_", "@");
+                }
+                if (i == 0) {
+                    StringAssigntoQuery.push(obj.AssignedBy.EMail.toLowerCase() == FilterAssignByEmail[i].toLowerCase());
+                }
+                else {
+                    StringAssigntoQuery.push(obj.AssignedBy.EMail.toLowerCase() == FilterAssignByEmail[i].toLowerCase());
+                }
+            }
+        }
+        else {
+            var assigntobyme = [];
+            StringAssigntoQuery.push(true);
+        }
+
+        StringAssigntoQuery.forEach(function (entry, index) {
+            if (index == 0) {
+                assigntoQuery = entry;
+            }
+            else {
+                assigntoQuery = entry || assigntoQuery;
+            }
+        });
+        obj.Module.ID = obj.Module.ID ? obj.Module.ID : "";
+        return (ProjectFilter) &&
+                (ClientValue == "All" ? obj.ClientID.ID != "null" : obj.ClientID.ID == ClientValue) &&
+                (ModuleValue == "All" ? obj.Module.ID != "null" : obj.Module.ID == ModuleValue) &&
+                (WorkTypeValue == "All" ? obj.Worktype != "" : obj.Worktype == WorkTypeValue) &&
+                (CurrentPhaseValue == "All" ? obj.CurrentPhase != "" : obj.CurrentPhase == CurrentPhaseValue) &&
+                (PriorityValue == "All" ? obj.TaskPriority != "" : obj.TaskPriority == PriorityValue) &&
+                (DueDateFilter) &&
+                (assigntoQuery)
+    });
+
+    $("#myKanbanChip").empty();
+    $("#myKanbanChip").append(TaskKanbanChip);
+    arrSortBoard = arrFilterDataBind.filter(function (f) { return f; });
+    BindBucketName(arrFilterDataBind, '');
+}
+
+//Clear Kanban filter
+function ClearKanbanFilter() {
+    $('#UserAllProject').val("All");
+    $("#UserAllProject").trigger("change");
+    $('#ProjectModule').val("All");
+    $('#WorkTypeOfProject').val("All");
+    $('#txtPriority').val("All");
+
+    $('#ddlInboxClient').empty().append("<option value='All'>All</option>");
+    $('#ddlInboxProject').empty().append("<option value='All'>All</option>");
+    $('#taskIn').val('')
+      .attr('type', 'text')
+      .attr('type', 'date');
+
+    $('#txtFilterStatusInbox').val("Open");
+    clearPeoplePickerControl("pplassigntoInbox");
+    var Current = "Open";
+    var AssignTodata = _spPageContextInfo.userEmail;
+    $("#myKanbanChip").empty();
+
+    var TaskinboxChip = '';
+    TaskinboxChip += "<div class='upload-chip'>Open</div>";
+    $("#myKanbanChip").empty();
+    $("#myKanbanChip").append(TaskinboxChip);
+    var arrDataBind = [];
+    var arrBoards = [];
+    //Cloning array
+    arrDataBind = arrLimitTaskInbox.filter(function (f) { return f; });
+    arrBoards = arrSortBoard = arrDataBind.filter(function (obj) { //Filter array on the basis of Board Name
+        return obj.BoardName != null && obj.BoardName != '';
+    });
+
+    BindBucketName(arrBoards, '');
+}
+
+//Sort the Kanban tasks
+function SortKanbanTasks() {
+    $("#NameSortKanban").click(function () {
+        arrSortBoard.sort((a, b) => {
+            let fa = a.Title.toLowerCase(),
+            fb = b.Title.toLowerCase();
+		
+        if (fa < fb) {
+            return -1;
+        }
+        if (fa > fb) {
+            return 1;
+        }
+        return 0;
+    });        
+    BindBucketName(arrSortBoard, "Sort");
+});
+$("#RecentSortKanban").click(function () {
+    arrSortBoard.sort(function (a, b) {
+        var dateA = new Date(a.Created), dateB = new Date(b.Created)
+        return dateB - dateA;
+    });
+    BindBucketName(arrSortBoard, "Sort");
+});
+$("#DateSortKanban").click(function () {
+    arrSortBoard.sort(function (a, b) {
+        var dateA = new Date(a.DueDate), dateB = new Date(b.DueDate)
+        return dateB - dateA;
+    });
+    BindBucketName(arrSortBoard, "Sort");
+});
+$("#PrioritySortKanban").click(function () {
+    const order = ['Top', 'Medium', 'Low'];
+    arrSortBoard.sort((x, y) => order.indexOf(x.TaskPriority) - order.indexOf(y.TaskPriority));
+    BindBucketName(arrSortBoard, "Sort");
+});
+}
+
+
+//Open Modal to edit Kanban data
+function OpenEditKanban(ChangedBoard, SequenceNumber) {
+    $("#txtEditBoardName").val(ChangedBoard);
+    $("#positionlist").val(SequenceNumber);
+    $("#renameboard").modal('show');
+    $(".parentEditKambnan").empty().append('<button type="button" class="btn custom-btn mr-8" id="btnEditKanban">Submit</button>');
+    var PreviousName = $("#txtEditBoardName").val();
+    var PreviousSeq = $("#positionlist :selected").text();
+    $("#btnEditKanban").click(function () {
+        var arrAllBoardTemp = [];
+        arrAllBoardTemp = allBoardName.filter(function(f){return f;})
+        arrAllBoardTemp = arrAllBoardTemp.filter(function (obj) {
+            return obj.toLowerCase() != PreviousName.toLowerCase();
+        });
+        UpdateKanban(PreviousName, PreviousSeq);
+    });
+}
+
+//update kanban Sequence Number and Name
+function UpdateKanban(PreviousName, PreviousSeq) {
+    //get updated Kanban item id
+    var currentItemId = '';
+    var TaskUpdateId = [];
+    var ItemType = GetItemTypeForListName('PlannerBoardList');
+    var Query = "?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc&$filter=Title eq '" + PreviousName + "' ";
+    $.when(getLimitedItems('PlannerBoardList', Query)).done(function (Board) {
+        var items = Board.results;
+        if (items.length > 0) {
+            currentItemId = items[0].Id;
+            if (PreviousSeq == $("#positionlist :selected").text()) { //if previous_sequence is same as current_sequence
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    Title: $("#txtEditBoardName").val()
+                }
+                UpdateTaskList('PlannerBoardList', Metadata, currentItemId); 
+            }
+            else {
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    Title: $("#txtEditBoardName").val(),
+                    Sequence_No: parseInt($("#positionlist").val())
+                }
+                //Swap the sequeunce number
+                var Query = "?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc&$filter=Sequence_No eq '" + $("#positionlist").val() + "' ";
+                $.when(getLimitedItems('PlannerBoardList', Query)).done(function (SwapBoard) {
+                    var itemSwap = SwapBoard.results;
+                    if (itemSwap.length > 0) {
+                        currentItemIdSwap = itemSwap[0].Id;
+                        SwapMetadata = {
+                            __metadata: {
+                                'type': ItemType
+                            },
+                            Sequence_No: parseInt(PreviousSeq)
+                        }
+                        UpdateTaskList('PlannerBoardList', SwapMetadata, currentItemIdSwap);
+                    }
+                });
+                UpdateTaskList('PlannerBoardList', Metadata, currentItemId); 
+            }
+        }
+        if(PreviousName.trim() != $.trim($("#txtEditBoardName").val())){
+            var TQuery = "?$top=5000&$select=Id,Title,BoardName&$filter=BoardName eq '" + PreviousName.trim() + "' ";
+            var TaskItemType = GetItemTypeForListName('EmployeeTaskDetails'); 
+            $.when(getLimitedItems('EmployeeTaskDetails', TQuery)).done(function (Tasksres) {
+                var TasksRes = Tasksres.results;
+                $.each(TasksRes, function (i, value) {
+                    Metadata = {
+                        __metadata: {
+                            'type': TaskItemType
+                        },
+                        BoardName: $.trim($("#txtEditBoardName").val())
+                    }
+                    TaskUpdateId.push(value.Id);
+                    UpdateTaskList('EmployeeTaskDetails', Metadata, value.Id);
+                    if(TasksRes.length == (i+1)){
+                        alert("Details has been updated.");
+                        $("#renameboard").modal('hide');
+                    }
+                });
+            });
+        }
+        else {
+            alert("Details has been updated.");
+            $("#renameboard").modal('hide');
+        }
+    });
+    arrAllTaskInbox.forEach(function (value, i) {
+    	for (id = 0; id < TaskUpdateId.length; id++) {
+		    if (value.Id == TaskUpdateId[id]) {
+		        value.BoardName = $.trim($("#txtEditBoardName").val());
+		    }
+        }
+    });
+	arrLimitTaskInbox = arrAllTaskInbox.filter(function (obj) { //Filter array on the basis of CurrentPhase
+	    return obj.CurrentPhase == "Open";
+	});
+	arrBoards= [];
+	arrSortBoard = arrBoards =  arrLimitTaskInbox.filter(function (obj) { //Filter array on the basis of Board Name
+        return obj.BoardName != null && obj.BoardName != '';
+    });
+	BindBucketName(arrBoards, '');
+}
+
+//update kanban Sequence Number and Name
+/*function UpdateKanban(PreviousName, PreviousSeq) {
+    //get updated Kanban item id
+    var currentItemId = '';
+    var ItemType = GetItemTypeForListName('PlannerBoardList');
+    var Query = "?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc&$filter=Title eq '" + PreviousName + "' ";
+    $.when(getLimitedItems('PlannerBoardList', Query)).done(function (Board) {
+        var items = Board.results;
+        if (items.length > 0) {
+            currentItemId = items[0].Id;
+            if(PreviousSeq == $("#positionlist :selected").text()) { //if previous_sequence is same as current_sequence
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    Title: $("#txtEditBoardName").val()
+                }
+            }
+            else {
+                //re-shuffle the other sequence number
+                if($('#positionlist option:last-child').text() != $("#positionlist :selected").text()) { //if user does not pick the last/new sequence number
+                    if((parseInt($('#positionlist :selected').text()) > parseInt(PreviousSeq))) { //if user increases the sequence
+                        var PlannerQuery = "?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc&$filter=Sequence_No ge " + parseInt($('#positionlist :selected').text());
+                        $.when(getLimitedItems('PlannerBoardList', PlannerQuery )).done(function (Board) {
+                            var BoardResults = Board.results;
+                            $.each(BoardResults, function (i, value) {
+                                var newSequence = parseInt(value.Sequence_No + 1);
+                                Metadata = {
+                                    __metadata: {
+                                        'type': ItemType
+                                    },
+                                    Sequence_No: newSequence
+                                }
+                                UpdateTaskList('PlannerBoardList', Metadata, value.Id);
+                            });
+                        });
+                        
+                    }
+                    else { //if user decreases the sequence
+                        var PlannerQuery = "?$top=5000&$select=Id,Title,Author/EMail,Sequence_No&$Expand=Author&$orderby=Sequence_No asc&$filter=Sequence_No le " + parseInt($('#positionlist :selected').text());
+                        $.when(getLimitedItems('PlannerBoardList', PlannerQuery )).done(function (Board) {
+                            var BoardResults = Board.results;
+                            $.each(BoardResults, function (i, value) {
+                                var newSequence = parseInt(value.Sequence_No - 1);
+                                Metadata = {
+                                    __metadata: {
+                                        'type': ItemType
+                                    },
+                                    Sequence_No: newSequence
+                                }
+                                UpdateTaskList('PlannerBoardList', Metadata, value.Id);
+                            });
+                        });
+                    }
+                }
+                else {
+                    $("#positionlist").append("<option value=''>" + (parseInt($('#positionlist option:last-child').text()) + 1) + "</option>");
+                }
+                Metadata = {
+                    __metadata: {
+                        'type': ItemType
+                    },
+                    Title: $("#txtEditBoardName").val(),
+                    Sequence_No: parseInt($("#positionlist :selected").text())
+                }
+            
+            }
+            UpdateTaskList('PlannerBoardList', Metadata, currentItemId);// update the sequence number of the selected kanban
+
+            //if title of Kanban changes then all tasks with this kanban also changes
+            $.each(arrAllTaskInbox, function (i, obj) {
+                if(obj.BoardName == PreviousName) {
+                    obj.BoardName = $.trim($("#txtEditBoardName").val());
+                }
+            });
+			
+            if(PreviousName.trim() != $.trim($("#txtEditBoardName").val())){
+                var TQuery = "?$top=5000&$select=Id,Title,BoardName&$filter=BoardName eq '" + PreviousName.trim() + "' ";
+                var TaskItemType = GetItemTypeForListName('EmployeeTaskDetails'); 
+                $.when(getLimitedItems('EmployeeTaskDetails', TQuery)).done(function (Tasksres) {
+                    var TasksRes = Tasksres.results;
+                    $.each(TasksRes, function (i, value) {
+                        Metadata = {
+                            __metadata: {
+                                'type': TaskItemType
+                            },
+                            BoardName: $.trim($("#txtEditBoardName").val())
+                        }
+                        UpdateTaskList('EmployeeTaskDetails', Metadata, value.Id);
+                        if(TasksRes.length == (i+1)){
+                            BindBucketName(arrSortBoard);
+                            alert("Details has been updated.");
+                            $("#renameboard").modal('hide');
+                        }
+                    });
+                });
+            }
+            else {
+                BindBucketName(arrSortBoard);
+                alert("Details has been updated.");
+                $("#renameboard").modal('hide');
+            }
+        }
+    });
+}*/

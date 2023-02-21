@@ -1555,6 +1555,9 @@ align-items: end;
     width: 100%;
 }
 
+
+
+
 /***june-ed-22-****/
 
 .dyamicTableboxes.text-center{
@@ -2456,7 +2459,7 @@ cursor: pointer;
 
 .additional_doms{
   overflow:auto;
-  max-height: 55vh;
+  max-height: 64vh;
 }
 
 .additional_doms::-webkit-scrollbar-thumb {
@@ -2543,7 +2546,7 @@ background-color: transparent;
 
 @media (min-width: 992px){
 #additional_document .modal-lg {
-    width: 65%;
+    width: 80%;
 }
 
 }
@@ -2827,34 +2830,39 @@ background-color: transparent;
     font-family: inherit;
     font-size: 14px;
     padding: 0px;
-    height: 100px;
+    height: auto !important;
     resize: vertical;
     overflow: auto;
-    min-height:100px;
+    min-height: 100px;
 }
 
-.units-2 .richText{
-  max-height:100px !important;
+.resize_richTexbx.Auto .richText .richText-editor{
+	min-height: 100px !important;
+}
+
+.units-2 .richText,
+.Auto .richText{
+  min-height:100px !important;
 }
 
 .units-4 .richText{
-  max-height:300px !important;
+  min-height:200px !important;
 }
 
 .units-6 .richText{
-  max-height:500px !important;
+  min-height:300px !important;
 }
 
 .units-8 .richText{
-  max-height:700px !important;
+  min-height:400px !important;
 }
 
 .units-10 .richText{
-  max-height:800px !important;
+  min-height:500px !important;
 }
 
 .resize_richTexbx .richText .richText-editor {
-    padding: 6px 0 6px 12px;
+    padding: 6px 6px 6px 12px;
     background-color: #FFFFFF;
     border-left: #FFFFFF solid 2px;
     font-family: inherit;
@@ -2866,7 +2874,142 @@ background-color: transparent;
     height: 100% !important;
 }
 
+.btngroupsetting a.btn-danger img,
+.btngroupsetting a.custom-btn img{
+ -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+    -ms-filter: invert(1);
+    -o-filter: invert(1);    
+    filter:invert(1);
+    width:20px; 
+ 	
+}
 
+.btngroupsetting a.btn-default img{
+  width:20px;	
+}
+
+.btngroupsetting a[type="button"]{
+  min-width:144px;	
+}
+
+.btngroupsetting a.custom-btn:hover img{
+ -webkit-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);
+    -moz-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);
+    -ms-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);
+    -o-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);    
+    filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);
+    width:20px; 
+}
+
+.btngroupsetting a.btn-danger:hover img{
+ -webkit-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(273deg) brightness(101%) contrast(88%);
+    -moz-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(273deg) brightness(101%) contrast(88%);
+    -ms-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(273deg) brightness(101%) contrast(88%);
+    -o-filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);    
+    filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(273deg) brightness(101%) contrast(88%);
+    width:20px; 
+}
+
+.btngroupsetting .custom-btn,
+.btngroupsetting .custom-btn-two-cancel{
+	min-width:144px !important;
+}
+.btngroupsetting .custom-btn-two-cancel img{
+  	-webkit-filter:invert(1);
+    -moz-filter:invert(1);
+    -ms-filter:invert(1);
+    -o-filter:invert(1);    
+    filter:invert(1);
+    width:20px;
+}
+
+.btngroupsetting .custom-btn-two-cancel:hover img{
+  	-webkit-filter:invert(0);
+    -moz-filter:invert(0);
+    -ms-filter:invert(0);
+    -o-filter:invert(0);    
+    filter:invert(0);
+
+}
+
+.sp-peoplepicker-topLevel span[id$="TopSpan_NotificationSpan"] {
+    display: none !important;
+}
+   
+.roundcirclebox{
+  position:relative;
+  padding:5px;
+}
+
+.roundcirclebox .form-control{
+  padding-right:35px !important;
+  opacity:0;
+  visibility: hidden;
+  transition:0.1s;
+}
+
+.roundcirclebox.circle_effect .form-control {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0 10px 10px 0;
+}
+.roundcirclebox .btntoggling{
+    position: absolute;
+    bottom:5px;
+    right: -2px;
+    width: 34px;
+    min-width: 34px;
+    border-radius: 50% !important;
+    padding: 0;
+    height: 34px;
+    min-height: 34px;
+}
+
+#ListReturnForwardUser.fullcoverbox{
+ max-height: 187px !important;	
+}
+
+#ListReturnForwardUser.fullcoverbox::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+#ListReturnForwardUser.fullcoverbox::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+#ListReturnForwardUser.fullcoverbox::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+
+#DocfilenameAction{
+ width:100%;	
+}
+
+#DocfilenameAction .approve-process-upload-data-chip{
+  display:inline-block;	
+}
+
+
+@media(min-width:768px){
+
+.roundcirclebox{
+  width:70%;
+  margin-left:auto;	
+}
+	
+}
 
 @media (min-width: 767px){
 #new_history .modal-dialog.widthajust {

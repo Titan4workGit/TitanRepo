@@ -1,16 +1,16 @@
 <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script><!--Added -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
-<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
-<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/EventCalendar.js?18kh"></script>
-<!--<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/adal.min.js"></script>-->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.css" rel="stylesheet" />
+<script src='https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/_catalogs/masterpage/Titan2/Scripts/moment.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/fullcalendar.min.js"></script>
+<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/NewEvent/Event.js?18kh"></script>
+<!--<script src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/adal.min.js"></script>-->
 <script type="text/javascript" src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script>
 <script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
-<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/assets/css/event_style.css">
-
+<!--<script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/MasterPageScripts/authentication_graphapi.js"></script>-->
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/assets/css/event_style.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 <script>
 let userAgent = navigator.userAgent;
@@ -24,6 +24,25 @@ if(userAgent.toLowerCase().indexOf("teams")>=0 || userAgent.toLowerCase().indexO
 </script>
 
 <style>
+/*new css add in 06/02/2023*/
+.richText-editor{
+	    height: 150px !important;
+	    padding:10px !important;
+	   }
+	   
+ ul, li {
+    list-style: unset !important;
+}
+.richText-editor{
+	    border-left: #FFFFFF solid 0px;
+}
+
+.richText .richText {
+ display:none;
+}
+
+/*-------------------------------------*/
+
 
 .fc-day-grid-container {
     min-height: 725px !important;
@@ -229,6 +248,61 @@ word-wrap: break-word;
 	
 }
 
+/*----------------------add by lakhan 15/02/2023------------------------------------*/
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
 </style>
 
 <section class="content panel panel-default mrgn-tp10">
@@ -274,19 +348,19 @@ word-wrap: break-word;
 			<div class="dms-deta-btn-panel d-flex">
 			  <div class="dropdown dms-table-btn">
 			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#new_Procesing_tbs">
-			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/add.png" alt="">
+			      <img class="dms-button-image-icon mr2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/add.png" alt="">
 			      <span data-localize="New" value="">New</span>
 			    </button>
 			  </div>
 			  <div class="dropdown dms-table-btn">
 			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#event-filter">
-			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/filter.png" alt="">
+			      <img class="dms-button-image-icon mr2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/filter.png" alt="">
 			      <span data-localize="Filter" value="">Filter</span>
 			    </button>
 			  </div>
 			   <div class="dropdown dms-table-btn">
 			    <button class="btn dropdown-toggle" type="button" data-toggle="modal" data-target="#reminders">
-			      <img class="dms-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/alert.png" alt="">
+			      <img class="dms-button-image-icon mr2" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/alert.png" alt="">
 			      <span data-localize="Reminders" value="">Reminders</span>
 			    </button>
 			  </div>
@@ -300,61 +374,8 @@ word-wrap: break-word;
     		<div id='calendar' class="calendar-div search-results"> </div>
     	</div>
     	<div class="eventlistbox">
-    	 <ul class="event_listse coverboxlist">
-    	 	<li>
-    	 		<div class="eventcards">
-			    <div class="right_sec">
-			      <h3>The Winning Ingredients of a Successful Hybrid Workplace.</h3>
-			      <div class="timearea">
-			        <ul class="event-card-info">
-			          <li>
-			            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/calendar-icon.png" alt="calendar">
-			            <div class="event-card-info-text">04 nov - 07 Nov</div>
-			          </li>
-			          <li>
-			            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/clock-icon.png" alt="clock">
-			            <div class="event-card-info-text">09:00 AM - 04:00 PM</div>
-			          </li>
-			          <li>
-			            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/location-icon.png" alt="location">
-			            <div class="event-card-info-text">1st Floor Meeting Room</div>
-			          </li>
-			        </ul>
-			        <ul class="recognition-inner-card-btn-item">
-			            <li class="recognition-inner-card-btn-panel-icon">
-			              <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/visibility-icon.png">
-			            </li>
-			            <li class="recognition-inner-card-btn-panel-count">9999</li>
-			            <li class="recognition-inner-card-btn-panel-dot"><span></span></li>
-			            <li class="recognition-inner-card-btn-panel-icon">
-			              <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/like-icon.png">
-			            </li>
-			            <li class="recognition-inner-card-btn-panel-count">236</li>
-			            <li class="recognition-inner-card-btn-panel-dot"><span></span></li>
-			            <li class="recognition-inner-card-btn-panel-icon">
-			              <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/chat-icon.png">
-			            </li>
-			            <li class="recognition-inner-card-btn-panel-count">146</li>
-			          <div class="draft_reminderbox">Draft</div>  
-			        </ul>
-			        <div class="dropdown optiong">
-			          <button class="btn more_opt" type="button" data-toggle="dropdown">
-			            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/MeetingEventCalender/img/more-horiz.png">
-			          </button>
-			          <ul class="dropdown-menu pull-right">
-			            <li><a href="#">Edit</a></li>
-			            <li><a href="#">Delete</a></li>
-			            <li><a href="#" data-toggle="modal" data-target="#setreminder">Set Reminder</a></li>
-			            <li><a href="#">Add to Outlook</a></li>
-			            <li><a href="#">Add to Favorite</a></li>
-			            <li><a href="#" data-toggle="modal" data-target="#Notificationlist">Send Notification</a></li>
-			            <li><a href="#">Open media</a></li>
-			          </ul>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-    	 	</li> 
+    	 <ul class="event_listse coverboxlist" id="monthlyEventBox">
+    	 	 
     	 </ul>	
     	</div>
     </div><!---two_divorobox ed--->
@@ -885,7 +906,7 @@ word-wrap: break-word;
                             <div class="form-group" style="display:none">
                                 <label for="" class="col-sm-3 control-label required" data-localize="ImageUrl">ImageUrl</label>
                                 <div class="col-sm-8">
-                                    <input type="text" id="txtEventUrl" class="form-control">
+                                    <input type="text" id="txtEventUrls" class="form-control">
                                 </div>
                             </div>
 
@@ -1046,43 +1067,43 @@ word-wrap: break-word;
                   <label class="required">
                     Title:
                   </label>
-                  <input type="text" placeholder="" class="form-control">
+                  <input type="text" id="txtTitle" class="form-control">
                 </div>
                 <div class="form-group">
                   <label class="required">
                     Category:
                   </label>
-                  <select class="form-control">
-                      <option value="" selected="selected">select</option>
+                  <select class="form-control" id="ddlFileType">
+                      
                   </select>
                 </div>
                 <div class="form-group">
                   <label class="required">
                     Organizing Department:
                   </label>
-                  <select class="form-control">
-                      <option value="" selected="selected">select</option>
+                  <select class="form-control" id="ddlOrganizingDepartment">
+                      
                   </select>
                 </div>
                  <div class="form-group">
                   <label>
                     Organizing Office:
                   </label>
-                  <select class="form-control">
-                      <option value="" selected="selected">select</option>
+                  <select class="form-control" id="ddlOrganizingLocation">
+                      
                   </select>
                 </div>
                 <div class="form-group">
                   <label>
                    Venue or Location:
                   </label>
-                  <input type="text" class="form-control">
+                  <input type="text" id="txtVenue" class="form-control">
                 </div>
                 <div class="form-group">
                   <label>
                    Direction:
                   </label>
-                  <input type="text" class="form-control">
+                  <input type="text" id="txtDirection" class="form-control">
                 </div>
 
                 
@@ -1094,25 +1115,25 @@ word-wrap: break-word;
                     <ul class="timelist">
                      <li>
                        <label class="radio">
-                         <input type="radio" name="dayEvent" id="eventDay" value="10" checked="checked">
+                         <input type="radio" name="dayEvent" id="eventDay" value="Once" checked="checked">
                          Once
                        </label>
                      </li>
                      <li>
                        <label class="radio">
-                         <input type="radio" name="dayEvent" id="eventDay2" value="11">
+                         <input type="radio" name="dayEvent" id="eventDay2" value="Daily">
                          Daily
                        </label>
                      </li>
                      <li>
                        <label class="radio">
-                         <input type="radio" name="dayEvent" id="eventDay3" value="12">
+                         <input type="radio" name="dayEvent" id="eventDay3" value="Weekly">
                          Weekly
                        </label>
                      </li>
                      <li>
                        <label class="radio">
-                         <input type="radio" name="dayEvent" id="eventDay4" value="13">
+                         <input type="radio" name="dayEvent" id="eventDay4" value="Monthly">
                          Monthly
                        </label>
                      </li>
@@ -1121,59 +1142,51 @@ word-wrap: break-word;
                
                  <div class="option_seduls">    
                     
-                    <div class="one-day d-block">
                       <div class="form-group custom-form-group">
                         <label for="">Start Date:</label>
-                        <input type="date" class="form-control" id="">
+                        <input type="text" class="form-control" id="txtStartDate" readonly="readonly">
                       </div>
-                    </div>
                     <div class="date-range d-none">
                       <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
-                          <div class="form-group custom-form-group">
-                            <label for="">Start Date:</label>
-                            <input type="date" class="form-control" id="">
-                          </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="col-xs-12">
                           <div class="form-group custom-form-group">
                             <label for="">End Date:</label>
-                            <input type="date" class="form-control" id="">
+                            <input type="text" class="form-control" id="txtEndDate" readonly="readonly">
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="weekly d-none">
-                      <div class="mb15 spacing-bottom">
-                        <label class="checkbox-inline"><input type="checkbox" value="">Mon</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Tue</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Wed</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Thu</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Fri</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Sat</label>
-                        <label class="checkbox-inline"><input type="checkbox" value="">Sun</label>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group custom-form-group">
-                              <label for="">Start Date:</label>
-                              <input type="date" class="form-control" id="">
-                            </div>
-                          </div>
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+                       <div class="row">
+                        <div class="col-xs-12">
                             <div class="form-group custom-form-group">
                               <label for="">End Date:</label>
                               <input type="date" class="form-control" id="">
                             </div>
                           </div>
                         </div>
+                      <div class="mb15 spacing-bottom" id="monthlyChcek">
+                        <label class="checkbox-inline"><input type="checkbox" value="Mon">Mon</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Tue">Tue</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Wed">Wed</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Thu">Thu</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Fri">Fri</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Sat">Sat</label>
+                        <label class="checkbox-inline"><input type="checkbox" value="Sun">Sun</label>
+                        </div>
                       </div>
                     <div class="monthly d-none">
                       <div class="row">
+                       <div class="col-xs-12">
+                        <div class="form-group custom-form-group">
+                          <label for="">End Date:</label>
+                          <input type="date" class="form-control" id="">
+                        </div>
+                        </div>
                         <div class="col-xs-12">
                            <div class="form-group custom-form-group">
                               <label for="">Day of Month:</label>
-                              <select class="form-control">
+                              <select class="form-control" id="ddlDayOfMonth">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -1203,18 +1216,6 @@ word-wrap: break-word;
                                 <option value="27">27</option>
                                 <option value="28">28</option>
                               </select>
-                            </div>
-                          </div>
-                           <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group custom-form-group">
-                              <label for="">Start Date:</label>
-                              <input type="date" class="form-control" id="">
-                            </div>
-                          </div>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="form-group custom-form-group">
-                              <label for="">End Date:</label>
-                              <input type="date" class="form-control" id="">
                             </div>
                           </div>
                         </div>
@@ -1273,13 +1274,13 @@ word-wrap: break-word;
 	              <label>
 	                Event Manager:
 	              </label>
-	              <input type="text" class="form-control">
+	              <span id="pickerManager"></span>
 	          </div>
 	          <div class="form-group">
 	              <label>
 	                Role:
 	              </label>
-	              <select class="form-control">
+	              <select class="form-control" id="ddlRole">
 	                <option value="Speaker">Speaker</option>
 	                <option value="Presenter">Presenter</option>
 	                <option value="Host">Host</option>
@@ -1291,26 +1292,37 @@ word-wrap: break-word;
 	              <label>
 	                Speaker/Presenter/Host/Participator/Panelists:
 	              </label>
-	              <input type="text" class="form-control">
+	              <span id="pickerSpeaker"></span>
               </div>
-			  <div class="form-group">
+			  <div class="form-group" id="AudienceDiv">
 	              <label>
 	                Audience:
 	              </label>
-	              <select class="form-control">
-	                <option value="Everyone">Everyone</option>
+	              <select class="form-control" id="ddlAudience" onchange="DisplayDepartmentBox(this.value);">
+	                <option value="Corporate">Everyone</option>
 	                <option value="Company">Company</option>
 	                <option value="Department">Department</option>
 	                <option value="Office">Office</option>
 	                <option value="Selective">Selective</option>
 	              </select>
              </div>
-             <div class="form-group">
-              <label>
-                Company:
-              </label>
-              <select class="form-control">
-              </select>
+             <div class="form-group" id="SelectiveDiv" style="display:none">
+			    <label for="" class="col-sm-3 control-label popup_label" data-localize="Selective user">Selective user</label>
+				<div class="col-sm-9" id="userDiv">
+					<span id="SelectivePicker"></span>
+				</div>
+			</div>
+             <div class="form-group" id="DepartmentListBox" style="display:none;">
+             <label class="col-sm-3 required control-label"  id="DropLable">Department</label>						   
+			 <div class="col-sm-9">									
+			   <div class="button-group my_announce_department_list">
+					<button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span>
+				    </button>
+					<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData">
+										  
+					</ul>
+			  </div>
+		    </div>
             </div>
             
             <div class="atttachment_area">
@@ -1330,12 +1342,12 @@ word-wrap: break-word;
           	 <div class="col-md-6">
           	  <div class="form-group">
                <label>Description:</label>
-               <textarea class="form-control rich_textbx"></textarea>
+               <textarea id="richDescription" class="form-control" rows="4" style="resize: none;"></textarea>
              </div>
              <div class="row">
                   <div class="col-md-6 form-group">
                      <label>Allow Comments</label>
-                    <select class="form-control">
+                    <select class="form-control" id="ddlAllowComments">
                       <option value="allow">Allow</option>
                       <option value="not allow">Not Allow</option>
                     </select>
@@ -1345,7 +1357,7 @@ word-wrap: break-word;
                   <label>
                     Registration:
                   </label>
-                  <select class="form-control">
+                  <select class="form-control" id="ddlRegistration">
                     <option value="Required">Required</option>
                     <option value="Not required">Not Required</option>
                   </select>
@@ -1354,12 +1366,12 @@ word-wrap: break-word;
           	  <div class="row">
 	            <div class="col-md-6 form-group">
 	                <label>Link:</label>
-	                <input type="text" class="form-control" placeholder="Registration link">
+	                <input type="text" id="txtLink" class="form-control" placeholder="Registration link">
 	              </div>
 	              
 	              <div class="col-md-6 form-group">
 	                <label>QR code:</label>
-	                  <input type="file" class="form-control">
+	                  <input type="file" id="uploadFiles" class="form-control">
 	            </div>
              </div>
 	           <div class="form-group custom-form-group custom-form-group-radio-inline mb5 mt5">
@@ -1367,60 +1379,17 @@ word-wrap: break-word;
 	              <ul class="timelist">
 	                 <li>  
 	                 <label class="radio">
-	                  <input type="radio" name="UpdateEmpN" id="test1" value="choose_gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
+	                  <input type="radio" name="ChooseImage" id="test1" value="Choose from Gallery" checked="checked" style="width:15px; height:15px; margin-top:0 !important">Choose from gallery</label>
 	                </li>
 	                <li>    
-	                <label class="radio"><input type="radio" name="UpdateEmpN" id="test2" value="upload_gallary" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
+	                <label class="radio"><input type="radio" name="ChooseImage" id="test2" value="Upload" style="width:15px; height:15px; margin-top:0 !important">Upload</label>
 	                </li>
 	              </ul>  
 	            </div>
 	            <div class="slider-panel changemeN widtmagingsbox choose_gallery both_gallery" style="position:relative; margin-bottom:0px !important;">
                     <div id="slider-container" class="slider">
-                        <div class="slide slideN image-active">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process1.png" alt="process1">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process2.png" alt="process2">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process3.png" alt="process3">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process4.png" alt="process4">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process5.png" alt="process5">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process6.png" alt="process6">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process7.png" alt="process7">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process8.png" alt="process8">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process9.png" alt="process9">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process10.png" alt="process10">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process11.png" alt="process11">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process12.png" alt="process12">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process13.png" alt="process13">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process14.png" alt="process14">
-                        </div>
-                        <div class="slide slideN">
-                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/process15.png" alt="process15">
-                        </div>
+                        
+                        
                     </div>
                     <div onclick="prev()" class="control-prev-btn">
                          <i class="fa fa-angle-left"></i>
@@ -1429,6 +1398,7 @@ word-wrap: break-word;
                         <i class="fa fa-angle-right"></i>
                     </div>
                 </div>
+                <input type="text" style="display:none" id="txtEventUrl">
                 <div id="Upload-user-imageN" class="approve-process-upload-image-box d-none upload_gallary both_gallery">
                     <div class="approve-process-upload-image-box-btn">
                     
@@ -1436,15 +1406,15 @@ word-wrap: break-word;
                       
                       <label class="covertophere">
                       
-                          <input type="file" class="form-control approve-process-upload-image-inp" name=""  onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">                                         
+                          <input type="file" class="form-control approve-process-upload-image-inp" accept="image/*" name=""  onchange="document.getElementById('uploadImage').src = window.URL.createObjectURL(this.files[0])">                                         
                         
                         </label>
                         
                         </div>
                         
                         <div class="approve-process-upload-data">
-                          <img src="#" id="blah"  alt="your image">
-                            <!--<img id="blah" alt="your image" width="100" height="100" />-->
+                          <img src="" id="uploadImage">
+                            
                         </div>
                     </div>
                 </div>
@@ -1456,7 +1426,7 @@ word-wrap: break-word;
       </div>
       <div class="modal-footer" style="text-align: center; padding:10px;">
         <button type="button" class="btn custom-btn">Submit</button>
-        <button type="button" class="btn custom-btn-two-delete">Delete</button>
+        <button type="button" id="btnEventDelete" style="display:none" class="btn custom-btn-two-delete">Delete</button>
         <button type="button" class="btn custom-btn-two-cancel">Close</button>
         
       </div>
@@ -2232,24 +2202,7 @@ var attrstore = $(this).attr('data-target');
 
 </script>
 
-<!---richtext---->
-
-<script>
-
-$(document).ready(function(){
-
-$('.rich_textbx').richText();
-
-$('.modal').on("hidden.bs.modal", function (e) { 
-    if ($('.modal:visible').length) { 
-        $('body').addClass('modal-open');
-    }
-});
-
-});
-
-
-</script>	   
+   
 
 
 <!-----time slots settings------>
@@ -2273,6 +2226,14 @@ $(document).ready(function(){
 
   });  
 
+$('#richDescription').richText();
+$('.modal').on("hidden.bs.modal", function (e) { 
+    if ($('.modal:visible').length) { 
+        $('body').addClass('modal-open');
+    }
+});
+
+
 });
 </script>
 
@@ -2282,8 +2243,8 @@ $(document).ready(function(){
 
 
 <!-- /Main -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/jquery.richtext.js"></script>
-  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/richtext.min.css"/>
+  <script type="text/javascript" src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/jquery.richtext.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/CompanyHomePage/Announcements/NormalAnnouncements/ManageAnnouncements/Plugin/richtext.min.css">
 
         
 

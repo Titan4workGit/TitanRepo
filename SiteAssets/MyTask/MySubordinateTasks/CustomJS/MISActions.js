@@ -1,1 +1,142 @@
-(function(_0x614ca4,_0x5cffe5){var _0x2e6dd8=a370_0x1ba8,_0x269359=_0x614ca4();while(!![]){try{var _0xe0d7d=parseInt(_0x2e6dd8(0xdb))/0x1*(-parseInt(_0x2e6dd8(0xd9))/0x2)+parseInt(_0x2e6dd8(0xcc))/0x3*(-parseInt(_0x2e6dd8(0xd0))/0x4)+-parseInt(_0x2e6dd8(0xe0))/0x5+parseInt(_0x2e6dd8(0xb7))/0x6+-parseInt(_0x2e6dd8(0xbd))/0x7*(-parseInt(_0x2e6dd8(0xe8))/0x8)+-parseInt(_0x2e6dd8(0xf2))/0x9*(parseInt(_0x2e6dd8(0xb1))/0xa)+parseInt(_0x2e6dd8(0xbc))/0xb*(parseInt(_0x2e6dd8(0xb9))/0xc);if(_0xe0d7d===_0x5cffe5)break;else _0x269359['push'](_0x269359['shift']());}catch(_0x12976c){_0x269359['push'](_0x269359['shift']());}}}(a370_0x1ed6,0xd3425));var arrAllTaskInbox=[];function a370_0x1ba8(_0xcd1dc9,_0x219ccf){var _0x1ed6cb=a370_0x1ed6();return a370_0x1ba8=function(_0x1ba8c5,_0x42f043){_0x1ba8c5=_0x1ba8c5-0xad;var _0x2cb004=_0x1ed6cb[_0x1ba8c5];return _0x2cb004;},a370_0x1ba8(_0xcd1dc9,_0x219ccf);}function a370_0x1ed6(){var _0x1b9b17=['This\x20is\x20an\x20auto\x20generated\x20email.\x20Please\x20don\x27t\x20reply.','All','4095300ziQvux','.taskchkIn','420qhMRRL','SP.Utilities.EmailProperties','EMail','992189VadpZE','1019382FLayfx','SendNotiPicker','Kindly\x20select\x20any\x20user\x20to\x20send\x20mail.','</div>','SendEmailSharedNotification\x20\x20','hide','<div><strong>Due\x20Date\x20:</strong>\x20','toString','<div><strong>Description\x20:</strong>\x20','Description','#Notificationlist','log','webServerRelativeUrl','<div><strong>Priority\x20:</strong>\x20','prop','15lXgtlb','stringify','<div><strong>Message\x20:</strong>\x20','modal','1332700OFvbOp','All\x20Dependency','<br/><br/>','.hideSelective:checked','NotifyByMail','DueDate','filter','#chkAllUser','Dear\x20User,<br/><br/>','862OcAyMI','length','1601wldNVR','userEmail','Task\x20notification','TaskAssignTo','application/json','3372175JmJRJy','#__REQUESTDIGEST','TaskPriority','#txtTaskNotify','TaskType','General\x20Task','CurrentPhase',',\x20has\x20shared\x20the\x20following\x20message\x20regarding\x20a\x20task\x20with\x20you.<br/><br/>','24JyTPiQ','POST','</div></br></br>','checked','Kindly\x20select\x20any\x20task\x20first.','/Pages/mydashboard.aspx?WebAppId=','<div><strong>Type:</strong>\x20','concat','</div><br/>','All\x20Assignee','45fCQUPk','application/json;odata=verbose','<div><strong>Assigned\x20To\x20:</strong>','val','>Click\x20here</a>\x20to\x20open\x20the\x20Task.</div>','#SendNotiPicker','ShowCommonStandardDateFormat','push','761470eQuFhU','DependencyTo','Title','Notification\x20has\x20been\x20sent.'];a370_0x1ed6=function(){return _0x1b9b17;};return a370_0x1ed6();}function updateMISMeatdata(_0x143357){var _0x3898f9=a370_0x1ba8,_0x4f5dd6;if(arrTaskInIds[_0x3898f9(0xda)]>0x0)_0x143357==_0x3898f9(0xd4)&&getAssignToMIS(arrTaskInIds);else return alert(_0x3898f9(0xec)),![];}function getAssignToMIS(_0xb36317){var _0x30e451=a370_0x1ba8,_0x51017e=[],_0x574609=[],_0x90c116=[],_0x3b9bc3=[],_0x1817d5=[],_0x4064a3='',_0x22f401=[],_0x3de16f='',_0x121f0a=_spPageContextInfo['webAbsoluteUrl']+_0x30e451(0xed)+Logged_CompanyId;_0xb36317['forEach'](function(_0x2d4428,_0x75045b){var _0x1be0de=_0x30e451;_0x22f401=[],_0x51017e=[],_0x574609=[],_0x90c116=[],_0x3b9bc3=[],_0x22f401=AllTaskInbox[_0x1be0de(0xd6)](function(_0x26d432){return _0x26d432['Id']==_0x2d4428;});for(var _0xdf7b60=0x0;_0xdf7b60<_0x22f401[0x0]['TaskAssignTo'][_0x1be0de(0xda)];_0xdf7b60++){_0x51017e[_0x1be0de(0xb0)](_0x22f401[0x0][_0x1be0de(0xde)][_0xdf7b60][_0x1be0de(0xbb)]),_0x574609['push'](_0x22f401[0x0][_0x1be0de(0xde)][_0xdf7b60][_0x1be0de(0xb3)]);}if(_0x22f401[0x0][_0x1be0de(0xb2)]!=null)for(var _0x250dbc=0x0;_0x250dbc<_0x22f401[0x0][_0x1be0de(0xb2)][_0x1be0de(0xda)];_0x250dbc++){_0x90c116[_0x1be0de(0xb0)](_0x22f401[0x0][_0x1be0de(0xb2)][_0x250dbc][_0x1be0de(0xbb)]),_0x3b9bc3['push'](_0x22f401[0x0][_0x1be0de(0xb2)][_0x250dbc]['Title']);}if($(_0x1be0de(0xd3))[_0x1be0de(0xf5)]()==_0x1be0de(0xb6))_0x1817d5=_0x51017e[_0x1be0de(0xef)](_0x90c116);else{if($(_0x1be0de(0xd3))[_0x1be0de(0xf5)]()==_0x1be0de(0xf1))_0x1817d5=_0x51017e[_0x1be0de(0xd6)](function(_0x1de8b0){return _0x1de8b0;});else $('.hideSelective:checked')[_0x1be0de(0xf5)]()==_0x1be0de(0xd1)?_0x1817d5=_0x90c116['filter'](function(_0x527304){return _0x527304;}):_0x1817d5=getUserInformationEmail(_0x1be0de(0xbe));}_0x22f401[0x0][_0x1be0de(0xe4)]=='1'?_0x3de16f='Project\x20Task':_0x3de16f=_0x1be0de(0xe5);if(_0x1817d5[_0x1be0de(0xda)]>0x0){var _0x23116c='',_0x2241b2=_0x22f401[0x0][_0x1be0de(0xc6)]?_0x22f401[0x0][_0x1be0de(0xc6)]:'';_0x23116c=_0x1be0de(0xd8)+_spPageContextInfo['userDisplayName']+_0x1be0de(0xe7),_0x23116c=_0x23116c+_0x1be0de(0xce)+$(_0x1be0de(0xe3))[_0x1be0de(0xf5)]()+_0x1be0de(0xea)+'<div><strong>Task\x20Detail</strong></div><div><strong>---------------</strong></div>'+_0x1be0de(0xf4)+_0x574609[_0x1be0de(0xc4)]()+_0x1be0de(0xc0)+'<div><strong>Assigned\x20By\x20:</strong>\x20'+_0x22f401[0x0]['Author'][_0x1be0de(0xb3)]+_0x1be0de(0xc0)+'<div><strong>Modify\x20On\x20:</strong>\x20'+titanForWork[_0x1be0de(0xaf)](new Date(_0x22f401[0x0]['Modified']))+_0x1be0de(0xc0)+'<div><strong>Status\x20:</strong>\x20'+_0x22f401[0x0][_0x1be0de(0xe6)]+'</div>'+'<div><strong>Task\x20Name:</strong>\x20'+_0x22f401[0x0]['Title']+'</div>'+_0x1be0de(0xee)+_0x3de16f+_0x1be0de(0xc0)+_0x1be0de(0xca)+_0x22f401[0x0][_0x1be0de(0xe2)]+'</div>'+'<div><strong>Starting\x20Date\x20:</strong>\x20'+titanForWork[_0x1be0de(0xaf)](new Date(_0x22f401[0x0]['StartDate']))+_0x1be0de(0xc0)+_0x1be0de(0xc3)+titanForWork[_0x1be0de(0xaf)](new Date(_0x22f401[0x0][_0x1be0de(0xd5)]))+_0x1be0de(0xc0)+_0x1be0de(0xc5)+_0x2241b2+_0x1be0de(0xf0)+'<div><a\x20href='+_0x121f0a+_0x1be0de(0xad)+_0x1be0de(0xd2),_0x23116c+=_0x1be0de(0xb5);var _0x64050d;_0x64050d={'properties':{'__metadata':{'type':_0x1be0de(0xba)},'From':_spPageContextInfo[_0x1be0de(0xdc)],'To':{'results':_0x1817d5},'Body':_0x23116c,'Subject':_0x1be0de(0xdd)}};var _0x27cbc7=_spPageContextInfo[_0x1be0de(0xc9)]+'/_api/SP.Utilities.Utility.SendEmail';$['ajax']({'contentType':_0x1be0de(0xdf),'url':_0x27cbc7,'type':_0x1be0de(0xe9),'data':JSON[_0x1be0de(0xcd)](_0x64050d),'async':![],'headers':{'Accept':_0x1be0de(0xf3),'content-type':_0x1be0de(0xf3),'X-RequestDigest':$(_0x1be0de(0xe1))[_0x1be0de(0xf5)]()},'success':function(_0x496c98){var _0x3f32da=_0x1be0de;_0xb36317['length']==_0x75045b+0x1&&(alert(_0x3f32da(0xb4)),$(_0x3f32da(0xc7))[_0x3f32da(0xcf)](_0x3f32da(0xc2)),$('#txtTaskNotify')[_0x3f32da(0xf5)](''),$(_0x3f32da(0xd7))[_0x3f32da(0xcb)]('checked',_0x3f32da(0xeb)),$('#SendNotiPicker')['hide'](),$(_0x3f32da(0xb8))[_0x3f32da(0xcb)](_0x3f32da(0xeb),''),clearPeoplePickerControl('SendNotiPicker'),arrTaskInIds=[]);},'error':function(_0x574a37){var _0x4edf0e=_0x1be0de;console[_0x4edf0e(0xc8)](_0x4edf0e(0xc1)+JSON['stringify'](_0x574a37));}});}else alert(_0x1be0de(0xbf)),_0xb36317['length']==_0x75045b+0x1&&(alert('Notification\x20has\x20been\x20sent.'),$('#Notificationlist')[_0x1be0de(0xcf)](_0x1be0de(0xc2)),$(_0x1be0de(0xe3))['val'](''),$(_0x1be0de(0xd7))[_0x1be0de(0xcb)](_0x1be0de(0xeb),_0x1be0de(0xeb)),$(_0x1be0de(0xae))[_0x1be0de(0xc2)](),$(_0x1be0de(0xb8))['prop'](_0x1be0de(0xeb),''),clearPeoplePickerControl(_0x1be0de(0xbe)),arrTaskInIds=[]);});}
+var arrAllTaskInbox=[];
+//Differenet Action for Table
+function updateMISMeatdata(Action) {
+    var Metdata;
+    if (arrTaskInIds.length > 0) {
+        if (Action == "NotifyByMail") {
+            getAssignToMIS(arrTaskInIds);
+        }
+    }
+    else {
+        alert("Kindly select any task first.");
+        return false;
+    }
+}
+
+//get Assigned to of all selected task to send mail
+function getAssignToMIS(array) {
+    var arrAllAssignTo = [];
+    var arrAllAssignToName = [];
+    var arrDependency = [];
+    var arrDependencyName = [];
+    var arrSendUser = [];
+    var EmailDesign = '';
+    var arrTemp = [];
+    var TaskType = '';
+    var DashboardURL = _spPageContextInfo.webAbsoluteUrl + "/Pages/mydashboard.aspx?WebAppId=" + Logged_CompanyId;
+    array.forEach(function (value, count) {
+        arrTemp = [];
+        arrAllAssignTo = [];
+        arrAllAssignToName = [];
+        arrDependency = [];
+        arrDependencyName = [];
+        arrTemp = AllTaskInbox.filter(function (data) {
+            return data.Id == value;
+        });
+
+        for (var i = 0; i < arrTemp[0].TaskAssignTo.length; i++) {
+            arrAllAssignTo.push(arrTemp[0].TaskAssignTo[i].EMail);
+            arrAllAssignToName.push(arrTemp[0].TaskAssignTo[i].Title);
+        }
+        if (arrTemp[0].DependencyTo != null) {
+            for (var j = 0; j < arrTemp[0].DependencyTo.length; j++) {
+                arrDependency.push(arrTemp[0].DependencyTo[j].EMail);
+                arrDependencyName.push(arrTemp[0].DependencyTo[j].Title);
+            }
+        }
+
+        if ($('.hideSelective:checked').val() == "All") {
+            arrSendUser = arrAllAssignTo.concat(arrDependency);
+        }
+        else if ($('.hideSelective:checked').val() == "All Assignee") {
+            arrSendUser = arrAllAssignTo.filter(function (f) { return f; });
+        }
+        else if ($('.hideSelective:checked').val() == "All Dependency") {
+            arrSendUser = arrDependency.filter(function (f) { return f; });
+        }
+        else {
+            arrSendUser = getUserInformationEmail("SendNotiPicker");
+        }
+        if (arrTemp[0].TaskType == "1") {
+            TaskType = "Project Task";
+        }
+        else {
+            TaskType = "General Task";
+        }
+        if (arrSendUser.length > 0) {
+            var EmailDesign = '';
+            var mailDesc = arrTemp[0].Description ? arrTemp[0].Description : "";
+            EmailDesign = "Dear User,<br/><br/>" + _spPageContextInfo.userDisplayName + ", has shared the following message regarding a task with you.<br/><br/>";
+            EmailDesign = EmailDesign + "<div><strong>Message :</strong> " + $("#txtTaskNotify").val() + "</div></br></br>" +
+							            "<div><strong>Task Detail</strong></div><div><strong>---------------</strong></div>" +
+            							"<div><strong>Assigned To :</strong>" + arrAllAssignToName.toString() + "</div>" +
+                					    "<div><strong>Assigned By :</strong> " + arrTemp[0].Author.Title + "</div>" +
+                					    "<div><strong>Modify On :</strong> " + titanForWork.ShowCommonStandardDateFormat(new Date(arrTemp[0].Modified)) + "</div>" +
+                    				    "<div><strong>Status :</strong> " + arrTemp[0].CurrentPhase + "</div>" +
+                    				    "<div><strong>Task Name:</strong> " + arrTemp[0].Title + "</div>" +
+                    				    "<div><strong>Type:</strong> " + TaskType + "</div>" +
+                    				    "<div><strong>Priority :</strong> " + arrTemp[0].TaskPriority + "</div>" +
+                    				    "<div><strong>Starting Date :</strong> " + titanForWork.ShowCommonStandardDateFormat(new Date(arrTemp[0].StartDate)) + "</div>" +
+                    				    "<div><strong>Due Date :</strong> " + titanForWork.ShowCommonStandardDateFormat(new Date(arrTemp[0].DueDate)) + "</div>" +
+                    				    "<div><strong>Description :</strong> " + mailDesc + "</div><br/>" +
+		        					    "<div><a href=" + DashboardURL + ">Click here</a> to open the Task.</div>" + "<br/><br/>";
+
+            EmailDesign += "This is an auto generated email. Please don't reply.";
+            var Metadata;
+            Metadata = {
+                'properties': {
+                    '__metadata': {
+                        'type': 'SP.Utilities.EmailProperties'
+                    },
+                    'From': _spPageContextInfo.userEmail,
+                    'To': {
+                        'results': arrSendUser
+                    },
+                    'Body': EmailDesign,
+                    'Subject': "Task notification"
+                }
+            };
+            var sitetemplateurl = _spPageContextInfo.webServerRelativeUrl + "/_api/SP.Utilities.Utility.SendEmail";
+            $.ajax({
+                contentType: 'application/json',
+                url: sitetemplateurl,
+                type: "POST",
+                data: JSON.stringify(Metadata),
+                async: false,
+                headers: {
+                    "Accept": "application/json;odata=verbose",
+                    "content-type": "application/json;odata=verbose",
+                    "X-RequestDigest": $("#__REQUESTDIGEST").val()
+                },
+                success: function (data) {
+                    if (array.length == (count + 1)) {
+                        alert("Notification has been sent.");
+                        $("#Notificationlist").modal("hide");
+                        $("#txtTaskNotify").val('');
+                        $("#chkAllUser").prop("checked", "checked");
+                        $("#SendNotiPicker").hide();
+                        $(".taskchkIn").prop("checked", '');//MIS
+                        clearPeoplePickerControl("SendNotiPicker");
+                        arrTaskInIds = [];
+                    }
+                },
+                error: function (err) {
+                    console.log("SendEmailSharedNotification  " + JSON.stringify(err));
+                }
+            });
+        }
+        else {
+            alert("Kindly select any user to send mail.");
+            if (array.length == (count + 1)) {
+                alert("Notification has been sent.");
+                $("#Notificationlist").modal("hide");
+                $("#txtTaskNotify").val('');
+                $("#chkAllUser").prop("checked", "checked");
+                $("#SendNotiPicker").hide();
+                $(".taskchkIn").prop("checked", '');//MIS
+                clearPeoplePickerControl("SendNotiPicker");
+                arrTaskInIds = [];
+            }
+        }
+    });
+}

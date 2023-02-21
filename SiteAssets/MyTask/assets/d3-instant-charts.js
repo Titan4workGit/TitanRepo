@@ -1,1 +1,704 @@
-(function(_0x412161,_0x2564b6){var _0x567800=a353_0x5d48,_0xaf97e9=_0x412161();while(!![]){try{var _0x52217=parseInt(_0x567800(0x1db))/0x1*(parseInt(_0x567800(0x1ee))/0x2)+parseInt(_0x567800(0x1cd))/0x3+-parseInt(_0x567800(0x1c0))/0x4+-parseInt(_0x567800(0x1e5))/0x5+parseInt(_0x567800(0x222))/0x6+parseInt(_0x567800(0x1eb))/0x7*(-parseInt(_0x567800(0x207))/0x8)+parseInt(_0x567800(0x1fb))/0x9*(parseInt(_0x567800(0x20e))/0xa);if(_0x52217===_0x2564b6)break;else _0xaf97e9['push'](_0xaf97e9['shift']());}catch(_0x182c9d){_0xaf97e9['push'](_0xaf97e9['shift']());}}}(a353_0x414f,0xec2d1),function(_0x4f60c8){'use strict';var _0x5d9b33=a353_0x5d48;var _0x1f3f66=0x1f4,_0x1d39dd=0x15e,_0x5dc20b=0x12c,_0x6a34b3=0xc8;_0x4f60c8['fn'][_0x5d9b33(0x1f8)]({'barChart':function(_0x564538){var _0x28bb14=_0x5d9b33,_0x3f6cd6=_0x4f60c8[_0x28bb14(0x1f8)]({'jsonUrl':'','width':_0x1f3f66,'height':_0x1d39dd,'marginTop':0x1e,'marginRight':0x1e,'marginButtom':0x32,'marginLeft':0x14,'barSpacing':0.1,'barWidthRate':0.3,'axisXScaleCount':0xa,'axisYPadding':0x0,'axisYPaddingEllipses':'…','autoFitAxisY':!![],'autoFitScaling':0x1,'toolTipFormat':_0x28bb14(0x1b9),'ajaxType':'GET','blankDataMessage':_0x28bb14(0x1f9)},_0x564538),_0x39ad5b=_0x4f60c8(this)[_0x28bb14(0x1f7)]('id'),_0x4e8557=_0x3f6cd6[_0x28bb14(0x1f2)],_0x542739={'top':_0x3f6cd6[_0x28bb14(0x195)],'right':_0x3f6cd6[_0x28bb14(0x1d2)],'bottom':_0x3f6cd6['marginButtom'],'left':_0x3f6cd6['marginLeft']},_0x2fcbec=_0x4f6bc2(_0x39ad5b,_0x3f6cd6[_0x28bb14(0x18e)],_0x3f6cd6[_0x28bb14(0x1fc)]),_0x1ffef8=_0x2fcbec['width'],_0x2bdf4a=_0x2fcbec[_0x28bb14(0x1fc)],_0x10446c=d3[_0x28bb14(0x1ab)]('#'+_0x39ad5b)[_0x28bb14(0x1bc)](_0x28bb14(0x229))[_0x28bb14(0x1f7)](_0x28bb14(0x1a1),_0x28bb14(0x198))[_0x28bb14(0x1f7)](_0x28bb14(0x18e),_0x1ffef8)[_0x28bb14(0x1f7)](_0x28bb14(0x1fc),_0x2bdf4a);if(!_0x31498a(_0x4e8557)){_0x42d3c2(_0x39ad5b,_0x1ffef8,_0x2bdf4a,_0x3f6cd6['blankDataMessage']);return;}var _0x14f577=_0x4e8557[_0x28bb14(0x1b3)],_0x23cd02=d3['max'](_0x14f577,function(_0x4e18da){var _0x167ad0=_0x28bb14;return _0x4e18da[_0x167ad0(0x1ae)];}),_0x3b5121=d3['max'](_0x14f577,function(_0x5ad8cb){var _0x1dd9bc=_0x28bb14;return _0x5ad8cb[_0x1dd9bc(0x1f3)];});_0x3b5121=_0x428151(_0x3b5121,_0x3f6cd6['axisYPadding'],_0x3f6cd6['axisYPaddingEllipses']);_0x3f6cd6[_0x28bb14(0x1a5)]&&(_0x542739[_0x28bb14(0x217)]=_0x1ac9b1(_0x3b5121)*_0x3f6cd6['autoFitScaling']+_0x3f6cd6[_0x28bb14(0x218)]);var _0x333766=d3[_0x28bb14(0x1f1)](0x0,_0x23cd02,_0x3f6cd6[_0x28bb14(0x190)]),_0x22f70e=_0x333766-_0x23cd02%_0x333766+_0x23cd02,_0x4ca06c=_0x1ffef8-(_0x542739[_0x28bb14(0x217)]+_0x542739[_0x28bb14(0x1a4)]),_0x24b817=_0x2bdf4a-(_0x542739[_0x28bb14(0x1c5)]+_0x542739[_0x28bb14(0x1b4)]),_0x440d00=_0x10446c[_0x28bb14(0x1bc)]('g')[_0x28bb14(0x1a0)](_0x28bb14(0x19f),!![])[_0x28bb14(0x1f7)](_0x28bb14(0x18e),_0x1ffef8)[_0x28bb14(0x1f7)]('height',_0x2bdf4a),_0x983404=_0x10446c['append']('g')['classed'](_0x28bb14(0x1bf),!![])[_0x28bb14(0x1f7)](_0x28bb14(0x18e),_0x4ca06c)[_0x28bb14(0x1f7)](_0x28bb14(0x1fc),_0x24b817)[_0x28bb14(0x1f7)](_0x28bb14(0x191),_0x28bb14(0x1e9)+[_0x542739[_0x28bb14(0x217)],_0x542739[_0x28bb14(0x1c5)]]+')'),_0x18c437=d3[_0x28bb14(0x20f)]()[_0x28bb14(0x21f)]([0x0,_0x22f70e])[_0x28bb14(0x1bd)]([0x0,_0x4ca06c]),_0x34b5a4=d3[_0x28bb14(0x1fe)]()[_0x28bb14(0x209)]([0x0,_0x24b817])[_0x28bb14(0x1c9)](_0x3f6cd6['barSpacing'])[_0x28bb14(0x21f)](_0x14f577[_0x28bb14(0x1dc)](function(_0x4dadd6){return _0x4dadd6['name'];}))[_0x28bb14(0x21c)](_0x3f6cd6[_0x28bb14(0x200)]),_0x746c90=_0x440d00[_0x28bb14(0x1bc)]('g')['attr'](_0x28bb14(0x1a1),_0x28bb14(0x1cb))['attr'](_0x28bb14(0x191),_0x28bb14(0x1e9)+_0x542739[_0x28bb14(0x217)]+','+(_0x24b817+_0x542739[_0x28bb14(0x1c5)])+')')[_0x28bb14(0x204)](d3[_0x28bb14(0x19b)](_0x18c437)[_0x28bb14(0x21e)]()['tickSizeInner'](-_0x24b817)[_0x28bb14(0x1b2)]('')),_0x29e30a=_0x440d00[_0x28bb14(0x1bc)]('g')[_0x28bb14(0x1f7)](_0x28bb14(0x1a1),'axis-x')['attr']('transform','translate('+_0x542739[_0x28bb14(0x217)]+','+(_0x24b817+_0x542739[_0x28bb14(0x1c5)])+')')[_0x28bb14(0x204)](d3[_0x28bb14(0x19b)](_0x18c437)[_0x28bb14(0x21e)]()),_0x2dfe84=_0x440d00[_0x28bb14(0x1bc)]('g')[_0x28bb14(0x1f7)](_0x28bb14(0x1a1),_0x28bb14(0x1ed))[_0x28bb14(0x1f7)](_0x28bb14(0x191),_0x28bb14(0x1e9)+_0x542739[_0x28bb14(0x217)]+','+_0x542739['top']+')')[_0x28bb14(0x204)](d3[_0x28bb14(0x1c6)](_0x34b5a4)['ticks']()['tickFormat'](function(_0x4e9e0f){var _0x5ee93c=_0x28bb14;return _0x428151(_0x4e9e0f,_0x3f6cd6[_0x5ee93c(0x1e2)],_0x3f6cd6[_0x5ee93c(0x1d1)]);})),_0x57dc97=d3[_0x28bb14(0x1ab)](_0x28bb14(0x1e0))[_0x28bb14(0x1bc)](_0x28bb14(0x1f5))['attr'](_0x28bb14(0x1a1),_0x28bb14(0x18d)),_0x354429=_0x983404['append']('g')[_0x28bb14(0x19e)](_0x28bb14(0x224))['data'](_0x14f577)[_0x28bb14(0x1b7)]()[_0x28bb14(0x1bc)]('g');_0x354429[_0x28bb14(0x1bc)](_0x28bb14(0x224))['attr']('x',0x2)[_0x28bb14(0x1f7)]('y',function(_0x426b3e){return _0x34b5a4(_0x426b3e['name']);})[_0x28bb14(0x1f7)](_0x28bb14(0x1a1),_0x28bb14(0x1a3))['attr'](_0x28bb14(0x1fc),_0x34b5a4[_0x28bb14(0x1e3)]())['on'](_0x28bb14(0x1dd),function(_0x46966e){var _0x5973cc=_0x28bb14;_0x57dc97[_0x5973cc(0x1ad)]()[_0x5973cc(0x1d4)](0xc8)[_0x5973cc(0x1d5)](_0x5973cc(0x1af),0.8),_0x57dc97[_0x5973cc(0x1a9)](String(_0x3f6cd6['toolTipFormat'])[_0x5973cc(0x194)](_0x5973cc(0x1b0),_0x46966e['name'])[_0x5973cc(0x194)](_0x5973cc(0x1b8),_0x46966e[_0x5973cc(0x1ae)]))[_0x5973cc(0x1d5)]('left',d3[_0x5973cc(0x1d9)][_0x5973cc(0x208)]+'px')[_0x5973cc(0x1d5)](_0x5973cc(0x1c5),d3['event'][_0x5973cc(0x1d8)]-0x1c+'px'),d3[_0x5973cc(0x1ab)](this)[_0x5973cc(0x1d5)](_0x5973cc(0x1c7),_0x5973cc(0x20d))[_0x5973cc(0x1d5)](_0x5973cc(0x21a),_0x5973cc(0x1ac))['attr']('x',0x3)[_0x5973cc(0x1f7)](_0x5973cc(0x18e),function(_0x242aa9){var _0x3322b8=_0x5973cc;return _0x18c437(_0x242aa9[_0x3322b8(0x1ae)])-0x2;});})['on'](_0x28bb14(0x20b),function(){var _0x35f59c=_0x28bb14;return _0x57dc97[_0x35f59c(0x1d5)](_0x35f59c(0x1c5),d3[_0x35f59c(0x1d9)]['pageY']-0xa+'px')[_0x35f59c(0x1d5)](_0x35f59c(0x217),d3[_0x35f59c(0x1d9)]['pageX']+0xa+'px');})['on'](_0x28bb14(0x1ce),function(_0x11529e){var _0x113035=_0x28bb14;_0x57dc97['transition']()[_0x113035(0x1d4)](0x1f4)[_0x113035(0x1d5)]('opacity',0x0),d3[_0x113035(0x1ab)](this)[_0x113035(0x1d5)](_0x113035(0x1c7),_0x113035(0x21d))[_0x113035(0x1d5)](_0x113035(0x21a),'0')[_0x113035(0x1f7)]('x',0x2)[_0x113035(0x1f7)](_0x113035(0x18e),function(_0x1165ae){var _0x3be182=_0x113035;return _0x18c437(_0x1165ae[_0x3be182(0x1ae)]);});})['transition']()['duration'](0x4b0)[_0x28bb14(0x1f7)](_0x28bb14(0x18e),function(_0x35b7e0){return _0x18c437(_0x35b7e0['value']);});},'lineChart':function(_0x2730d1){var _0x431f3e=_0x5d9b33,_0x587563=_0x4f60c8[_0x431f3e(0x1f8)]({'jsonUrl':'','width':_0x1f3f66,'height':_0x1d39dd,'marginTop':0x32,'marginRight':0x32,'marginButtom':0x32,'marginLeft':0x32,'axisYScaleCount':0xa,'toolTipFormat':'{%name%}:\x20{%values.x%}\x20-\x20{%values.y%}','xAxisTimeFormat':_0x431f3e(0x206),'legendWidthRate':0.5,'ajaxType':_0x431f3e(0x1cc),'blankDataMessage':_0x431f3e(0x1f9)},_0x2730d1),_0x1d4ac5=_0x4f60c8(this)['attr']('id'),_0x4f54d7=_0x587563[_0x431f3e(0x1f2)],_0x508b18={'top':_0x587563['marginTop'],'right':_0x587563['marginRight'],'bottom':_0x587563['marginButtom'],'left':_0x587563['marginLeft']},_0x4ec948=_0x4f6bc2(_0x1d4ac5,_0x587563['width'],_0x587563['height']),_0x4ccac3=_0x4ec948['width'],_0x8954e0=_0x4ec948[_0x431f3e(0x1fc)],_0x21f4d5=_0x4f54d7[_0x431f3e(0x1b3)][0x0],_0x13379a=_0x21f4d5[0x0][_0x431f3e(0x1e1)][_0x431f3e(0x215)],_0xecf374=d3['timeParse'](_0x431f3e(0x1bb)),_0x1c64b5=_0x13379a>0x2?d3[_0x431f3e(0x1cf)](_0x587563['xAxisTimeFormat']):d3[_0x431f3e(0x1cf)](_0x431f3e(0x201));_0x21f4d5['forEach'](function(_0x5bf452){var _0x4b1d13=_0x431f3e;_0x5bf452[_0x4b1d13(0x1e1)][_0x4b1d13(0x223)](function(_0x46e274){_0x46e274['x']=_0xecf374(_0x46e274['x']),_0x46e274['y']=+_0x46e274['y'];});});var _0x3f3e06=d3[_0x431f3e(0x19a)](_0x21f4d5,function(_0x303a31){var _0x109635=_0x431f3e;return d3[_0x109635(0x19a)](_0x303a31[_0x109635(0x1e1)],function(_0x4ff2f5){return _0x4ff2f5['y'];});}),_0x26ffed=d3[_0x431f3e(0x1f6)](_0x21f4d5,function(_0x503374){var _0x4cf964=_0x431f3e;return d3['min'](_0x503374[_0x4cf964(0x1e1)],function(_0x2c1a4f){return _0x2c1a4f['y'];});}),_0x2ae67b=_0x4ccac3-(_0x508b18[_0x431f3e(0x217)]+_0x508b18[_0x431f3e(0x1a4)]),_0x1bed0e=_0x8954e0-(_0x508b18[_0x431f3e(0x1c5)]+_0x508b18[_0x431f3e(0x1b4)]),_0x239ef4=_0x4ccac3*_0x587563[_0x431f3e(0x19c)],_0x5a1040=d3[_0x431f3e(0x1ab)]('#'+_0x1d4ac5)[_0x431f3e(0x1bc)](_0x431f3e(0x229))[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x198))['attr']('width',_0x4ccac3)[_0x431f3e(0x1f7)](_0x431f3e(0x1fc),_0x8954e0);if(!_0x31498a(_0x4f54d7)||_0x3f3e06===0x0&&_0x26ffed===0x0){_0x42d3c2(_0x1d4ac5,_0x4ccac3,_0x8954e0,_0x587563['blankDataMessage']);return;}var _0x17a3ab=_0x5a1040['append']('g')[_0x431f3e(0x1a0)](_0x431f3e(0x19f),!![])[_0x431f3e(0x1f7)](_0x431f3e(0x18e),_0x4ccac3)[_0x431f3e(0x1f7)]('height',_0x8954e0),_0x1ed666=_0x5a1040[_0x431f3e(0x1bc)]('g')['classed'](_0x431f3e(0x1bf),!![])[_0x431f3e(0x1f7)](_0x431f3e(0x18e),_0x2ae67b)['attr'](_0x431f3e(0x1fc),_0x1bed0e)['attr'](_0x431f3e(0x191),'translate('+[_0x508b18[_0x431f3e(0x217)],_0x508b18[_0x431f3e(0x1c5)]]+')'),_0x227681=_0x5a1040[_0x431f3e(0x1bc)]('g')['classed'](_0x431f3e(0x205),!![])['attr'](_0x431f3e(0x18e),_0x239ef4)[_0x431f3e(0x1f7)](_0x431f3e(0x1fc),_0x508b18[_0x431f3e(0x1c5)]),_0x116514=_0x3f3e06/_0x587563[_0x431f3e(0x219)]>=0x1?d3[_0x431f3e(0x1bd)](_0x587563[_0x431f3e(0x219)])[_0x431f3e(0x1dc)](function(_0x2c6211){var _0x177a49=_0x431f3e;return Math[_0x177a49(0x1ba)](d3[_0x177a49(0x1ff)]([_0x26ffed,_0x3f3e06],_0x2c6211/(_0x587563[_0x177a49(0x219)]-0x1)));}):null,_0x26daa5=d3[_0x431f3e(0x1ca)]()[_0x431f3e(0x21f)](d3[_0x431f3e(0x1e7)](_0x21f4d5[0x0][_0x431f3e(0x1e1)],function(_0x49de04){return _0x49de04['x'];}))[_0x431f3e(0x1bd)]([0x0,_0x2ae67b]),_0x31d134=d3['scaleLinear']()['domain']([0x0,_0x3f3e06])[_0x431f3e(0x1bd)]([_0x1bed0e,0x0]),_0x19e5d4=_0x17a3ab['append']('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x1cb))[_0x431f3e(0x1f7)](_0x431f3e(0x191),_0x431f3e(0x1e9)+_0x508b18[_0x431f3e(0x217)]+','+(_0x1bed0e+_0x508b18[_0x431f3e(0x1c5)])+')')[_0x431f3e(0x204)](d3[_0x431f3e(0x19b)](_0x26daa5)[_0x431f3e(0x21e)](_0x13379a)[_0x431f3e(0x1df)](-_0x1bed0e)[_0x431f3e(0x1b2)]('')),_0x3ed9d0=_0x17a3ab[_0x431f3e(0x1bc)]('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),'grid-y')['attr']('transform',_0x431f3e(0x1e9)+_0x508b18[_0x431f3e(0x217)]+','+_0x508b18[_0x431f3e(0x1c5)]+')')['call'](d3['axisLeft'](_0x31d134)['tickValues'](_0x116514)['tickSizeInner'](-_0x2ae67b)[_0x431f3e(0x1b2)]('')),_0xe562=_0x17a3ab[_0x431f3e(0x1bc)]('g')[_0x431f3e(0x1f7)]('class',_0x431f3e(0x21b))['attr'](_0x431f3e(0x191),_0x431f3e(0x1e9)+_0x508b18[_0x431f3e(0x217)]+','+(_0x1bed0e+_0x508b18[_0x431f3e(0x1c5)])+')')[_0x431f3e(0x204)](d3[_0x431f3e(0x19b)](_0x26daa5)[_0x431f3e(0x21e)](_0x13379a)[_0x431f3e(0x1b2)](_0x1c64b5)),_0x48f6b3=_0x17a3ab[_0x431f3e(0x1bc)]('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x1ed))[_0x431f3e(0x1f7)](_0x431f3e(0x191),_0x431f3e(0x1e9)+_0x508b18['left']+','+_0x508b18[_0x431f3e(0x1c5)]+')')[_0x431f3e(0x204)](d3[_0x431f3e(0x1c6)](_0x31d134)['tickValues'](_0x116514)),_0x5300cd=d3[_0x431f3e(0x1ab)]('body')[_0x431f3e(0x1bc)](_0x431f3e(0x1f5))[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x18d)),_0x4f642f=d3[_0x431f3e(0x1da)](d3[_0x431f3e(0x196)]),_0x481cfd=d3['line']()['x'](function(_0x35feb0){return _0x26daa5(_0x35feb0['x']);})['y'](function(_0x3b581b){return _0x31d134(_0x3b581b['y']);})[_0x431f3e(0x1c1)](d3[_0x431f3e(0x1f0)]),_0x56907e=_0x1ed666[_0x431f3e(0x1bc)]('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x1ec));_0x56907e['selectAll'](_0x431f3e(0x221))[_0x431f3e(0x227)](_0x21f4d5)[_0x431f3e(0x1b7)]()[_0x431f3e(0x1bc)]('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),_0x431f3e(0x1de))['attr'](_0x431f3e(0x1f4),function(_0x33d2ed){var _0x36fa17=_0x431f3e;return _0x33d2ed[_0x36fa17(0x1f3)];})[_0x431f3e(0x1bc)](_0x431f3e(0x192))['attr']('class',_0x431f3e(0x202))[_0x431f3e(0x1f7)]('d',function(_0x4e7aee){var _0x14d64f=_0x431f3e;return _0x481cfd(_0x4e7aee[_0x14d64f(0x1e1)]);})[_0x431f3e(0x1d5)](_0x431f3e(0x1a8),function(_0x1c17af,_0xda5a86){return _0x4f642f(_0x1c17af['name']);})[_0x431f3e(0x1d5)]('opacity',0.3)['call'](_0x128c12)['on'](_0x431f3e(0x1dd),function(_0x210d07){var _0x406925=_0x431f3e;_0x5300cd[_0x406925(0x1ad)]()[_0x406925(0x1d4)](0xc8)[_0x406925(0x1d5)](_0x406925(0x1af),0.8),_0x5300cd[_0x406925(0x1a9)](_0x210d07[_0x406925(0x1f3)])['style'](_0x406925(0x217),d3['event']['pageX']+'px')[_0x406925(0x1d5)](_0x406925(0x1c5),d3['event']['pageY']-0x1c+'px'),d3[_0x406925(0x1ab)](this)[_0x406925(0x1d5)](_0x406925(0x1af),0.8);})['on'](_0x431f3e(0x20b),function(){var _0x462985=_0x431f3e;return _0x5300cd[_0x462985(0x1d5)]('top',d3[_0x462985(0x1d9)][_0x462985(0x1d8)]-0xa+'px')[_0x462985(0x1d5)](_0x462985(0x217),d3['event'][_0x462985(0x208)]+0xa+'px');})['on']('mouseout',function(_0x575b32){var _0x501da9=_0x431f3e;_0x5300cd[_0x501da9(0x1ad)]()[_0x501da9(0x1d4)](0x1f4)[_0x501da9(0x1d5)](_0x501da9(0x1af),0x0),d3[_0x501da9(0x1ab)](this)['style']('opacity',0.3);}),_0x56907e[_0x431f3e(0x19e)]('.circle-group')[_0x431f3e(0x227)](_0x21f4d5)[_0x431f3e(0x1b7)]()['append']('g')[_0x431f3e(0x1f7)](_0x431f3e(0x1a1),'circle-group')[_0x431f3e(0x1f7)](_0x431f3e(0x1f4),function(_0x2f82bc){var _0x497d7a=_0x431f3e;return _0x2f82bc[_0x497d7a(0x1f3)];})[_0x431f3e(0x1d5)](_0x431f3e(0x1c7),function(_0xda8878,_0x3d5abe){return _0x4f642f(_0xda8878['name']);})[_0x431f3e(0x19e)]('circle')[_0x431f3e(0x227)](function(_0x264dd2){var _0x3af80f=_0x431f3e;return _0x264dd2[_0x3af80f(0x1e1)];})['enter']()['append']('g')[_0x431f3e(0x1f7)]('class',_0x431f3e(0x1d6))[_0x431f3e(0x1bc)](_0x431f3e(0x1d6))[_0x431f3e(0x1f7)]('cx',function(_0x2b43be){return _0x26daa5(_0x2b43be['x']);})[_0x431f3e(0x1f7)]('cy',function(_0x37373){return _0x31d134(_0x37373['y']);})[_0x431f3e(0x1f7)]('r',0x0)[_0x431f3e(0x1d5)]('opacity',0.6)['on'](_0x431f3e(0x1dd),function(_0x5b57a6){var _0x2b7a7b=_0x431f3e;_0x5300cd[_0x2b7a7b(0x1ad)]()['duration'](0xc8)['style'](_0x2b7a7b(0x1af),0.8),_0x5300cd[_0x2b7a7b(0x1a9)](String(_0x587563[_0x2b7a7b(0x212)])['replace'](_0x2b7a7b(0x1b0),d3['select'](this['parentNode'][_0x2b7a7b(0x220)])['datum']()[_0x2b7a7b(0x1f3)])[_0x2b7a7b(0x194)](_0x2b7a7b(0x18c),_0x1c64b5(_0x5b57a6['x']))['replace'](_0x2b7a7b(0x213),_0x5b57a6['y']))[_0x2b7a7b(0x1d5)](_0x2b7a7b(0x217),d3['event'][_0x2b7a7b(0x208)]+'px')[_0x2b7a7b(0x1d5)](_0x2b7a7b(0x1c5),d3['event'][_0x2b7a7b(0x1d8)]-0x1c+'px'),d3[_0x2b7a7b(0x1ab)](this)[_0x2b7a7b(0x1d5)](_0x2b7a7b(0x1af),0x1)['style'](_0x2b7a7b(0x21a),_0x2b7a7b(0x1ac));})['on'](_0x431f3e(0x20b),function(){var _0x83e622=_0x431f3e;return _0x5300cd['style'](_0x83e622(0x1c5),d3[_0x83e622(0x1d9)][_0x83e622(0x1d8)]-0xa+'px')[_0x83e622(0x1d5)]('left',d3['event'][_0x83e622(0x208)]+0xa+'px');})['on'](_0x431f3e(0x1ce),function(_0x30de46){var _0x30e7be=_0x431f3e;_0x5300cd[_0x30e7be(0x1ad)]()[_0x30e7be(0x1d4)](0x1f4)[_0x30e7be(0x1d5)](_0x30e7be(0x1af),0x0),d3[_0x30e7be(0x1ab)](this)[_0x30e7be(0x1d5)](_0x30e7be(0x1af),0.6)[_0x30e7be(0x1d5)](_0x30e7be(0x21a),'0');})[_0x431f3e(0x1ad)]()[_0x431f3e(0x1d4)](0xaf0)['attr']('r',0x6);var _0x463986=0xc,_0xe9598d=0x6,_0x1bda74=0x0,_0x27167c=0x0,_0x84a730=_0x227681[_0x431f3e(0x19e)](_0x431f3e(0x20a))['data'](_0x4f642f['domain']())[_0x431f3e(0x1b7)]()[_0x431f3e(0x1bc)]('g')['attr'](_0x431f3e(0x1a1),_0x431f3e(0x1ea)),_0x32f8f0=_0x431f3e(0x1ef);_0x84a730[_0x431f3e(0x1bc)](_0x431f3e(0x224))[_0x431f3e(0x1f7)]('width',_0x463986)[_0x431f3e(0x1f7)](_0x431f3e(0x1fc),_0x463986)[_0x431f3e(0x1d5)]('fill',_0x4f642f)[_0x431f3e(0x1d5)](_0x431f3e(0x1a8),_0x4f642f)['on']('click',function(_0x1b13c5){_0x503d97(this,_0x1b13c5);}),_0x84a730[_0x431f3e(0x1bc)]('text')[_0x431f3e(0x1f7)]('x',_0x463986+_0xe9598d)[_0x431f3e(0x1f7)]('y',_0x463986-_0xe9598d/0x2)[_0x431f3e(0x197)](function(_0x14488c){return _0x14488c;});var _0x141f91=0x0,_0x5124a2=0x0;_0x84a730[_0x431f3e(0x1f7)]('transform',function(_0x14e854,_0x31cb66){var _0x35ecc1=_0x431f3e;_0x1bda74+=_0x141f91;var _0xebaf38=d3[_0x35ecc1(0x1ab)](this)['select'](_0x35ecc1(0x197))[_0x35ecc1(0x1b1)]()[_0x35ecc1(0x22a)]();return _0x141f91=_0x463986+_0xe9598d*0x3+_0xebaf38*1.2,_0x141f91=_0x141f91+0x46,_0x27167c=-0x2*_0x463986,_0x227681['attr'](_0x35ecc1(0x191),_0x35ecc1(0x1e9)+[_0x4ccac3/0x2-_0x239ef4/0x2,_0x508b18[_0x35ecc1(0x1c5)]-_0x463986]+')'),_0x35ecc1(0x1e9)+_0x1bda74+','+_0x27167c+')';});function _0x503d97(_0x57750b,_0x18eaab){var _0x56f92c=_0x431f3e;d3[_0x56f92c(0x1e6)](d3[_0x56f92c(0x1ab)](_0x57750b)[_0x56f92c(0x1d5)](_0x56f92c(0x1c7)))[_0x56f92c(0x18f)]()===d3['color'](_0x32f8f0)[_0x56f92c(0x18f)]()?(d3[_0x56f92c(0x19e)](_0x56f92c(0x1c4)+_0x18eaab+'\x22]')[_0x56f92c(0x1d5)](_0x56f92c(0x1c8),_0x56f92c(0x1d7)),d3['selectAll'](_0x56f92c(0x1c4)+_0x18eaab+'\x22]')[_0x56f92c(0x1ad)]()[_0x56f92c(0x1d4)](0x1f4)[_0x56f92c(0x1f7)](_0x56f92c(0x1af),0x1),d3[_0x56f92c(0x1ab)](_0x57750b)[_0x56f92c(0x1ad)]()['duration'](0x1f4)[_0x56f92c(0x1d5)](_0x56f92c(0x1c7),_0x4f642f)):(d3['selectAll'](_0x56f92c(0x1c4)+_0x18eaab+'\x22]')['attr'](_0x56f92c(0x1af),0x0),d3['selectAll'](_0x56f92c(0x1c4)+_0x18eaab+'\x22]')[_0x56f92c(0x1d5)](_0x56f92c(0x1c8),'none'),d3[_0x56f92c(0x1ab)](_0x57750b)[_0x56f92c(0x1d5)](_0x56f92c(0x1c7),_0x32f8f0));}function _0x128c12(_0x207fb9){var _0x416eee=_0x431f3e;_0x207fb9[_0x416eee(0x1ad)]()['duration'](0x7d0)[_0x416eee(0x1c3)](_0x416eee(0x1e4),_0x52ffe1);}function _0x52ffe1(){var _0x391791=_0x431f3e,_0x5d1470=this['getTotalLength'](),_0x17eb8e=d3[_0x391791(0x225)]('0,'+_0x5d1470,_0x5d1470+','+_0x5d1470);return function(_0xb9f493){return _0x17eb8e(_0xb9f493);};}}});var _0x13b34b=function(_0x29c1c0,_0x3921bd){var _0x324928=_0x5d9b33,_0x574eae='';return _0x4f60c8[_0x324928(0x1a6)]({'url':_0x29c1c0,'type':_0x3921bd,'async':![],'cache':![],'dataType':_0x324928(0x1fa),'success':function(_0x1a615a){_0x574eae=_0x1a615a;},'error':function(){var _0x52f844=_0x324928;_0x574eae=_0x52f844(0x228);}}),_0x574eae;},_0x31498a=function(_0x57ca46){var _0xa8a524=_0x5d9b33,_0x1395ed=![];try{if(_0x57ca46==='IO\x20ERROR')console[_0xa8a524(0x20c)](_0xa8a524(0x1aa));else{if(_0x4f60c8[_0xa8a524(0x199)](_0x57ca46))console[_0xa8a524(0x20c)](_0xa8a524(0x1e8));else{if(JSON['parse'](JSON[_0xa8a524(0x211)](_0x57ca46))==='ERROR')console[_0xa8a524(0x20c)](_0xa8a524(0x1be));else{if(!_0x57ca46[_0xa8a524(0x226)](_0xa8a524(0x1b3)))console[_0xa8a524(0x20c)](_0xa8a524(0x1a7));else _0x57ca46[_0xa8a524(0x1b3)][_0xa8a524(0x215)]===0x0||Object['keys'](_0x57ca46['d3chart'][0x0])[_0xa8a524(0x215)]===0x0?console[_0xa8a524(0x20c)]('The\x20root\x20element\x20of\x20JSON\x20is\x20null\x20or\x20empty.'):_0x1395ed=!![];}}}}catch(_0x4636ac){console[_0xa8a524(0x20c)](_0xa8a524(0x1b6));}return _0x1395ed;},_0x42d3c2=function(_0x23bcb5,_0x133082,_0x5472ec,_0x2f3004){var _0x311ba9=_0x5d9b33,_0x193652=d3['select']('#'+_0x23bcb5)['select'](_0x311ba9(0x1b5));_0x193652['append'](_0x311ba9(0x224))['attr']('x',0x0)[_0x311ba9(0x1f7)]('y',0x0)[_0x311ba9(0x1f7)](_0x311ba9(0x1a1),_0x311ba9(0x214))[_0x311ba9(0x1f7)](_0x311ba9(0x18e),_0x133082)[_0x311ba9(0x1f7)]('height',_0x5472ec)[_0x311ba9(0x1d5)](_0x311ba9(0x1c7),_0x311ba9(0x216)),_0x193652[_0x311ba9(0x1bc)](_0x311ba9(0x224))['attr']('x',_0x133082/0x8)[_0x311ba9(0x1f7)]('y',_0x5472ec*0x3/0x8)[_0x311ba9(0x1f7)](_0x311ba9(0x1a1),_0x311ba9(0x1d0))[_0x311ba9(0x1f7)](_0x311ba9(0x18e),_0x133082*0x3/0x4)[_0x311ba9(0x1f7)](_0x311ba9(0x1fc),_0x5472ec/0x4)[_0x311ba9(0x1d5)](_0x311ba9(0x1c7),'#FFFFFF')[_0x311ba9(0x1d5)]('stroke',_0x311ba9(0x210))[_0x311ba9(0x1d5)]('stroke-dasharray',_0x311ba9(0x1fd))[_0x311ba9(0x1d5)](_0x311ba9(0x21a),'1px')[_0x311ba9(0x1d5)](_0x311ba9(0x1af),0x0)[_0x311ba9(0x1ad)]()[_0x311ba9(0x1d4)](0x3e8)[_0x311ba9(0x1d5)](_0x311ba9(0x1af),0.6),_0x193652[_0x311ba9(0x1bc)](_0x311ba9(0x197))[_0x311ba9(0x1f7)]('x',_0x133082/0x2)[_0x311ba9(0x1f7)]('y',_0x5472ec/0x2+0x5)[_0x311ba9(0x197)](_0x2f3004)[_0x311ba9(0x1d5)](_0x311ba9(0x19d),_0x311ba9(0x22b))[_0x311ba9(0x1d5)](_0x311ba9(0x1af),0x0)['transition']()[_0x311ba9(0x1d4)](0x3e8)[_0x311ba9(0x1d5)](_0x311ba9(0x1af),0.6);},_0x428151=function(_0x354e9e,_0x3cf11f,_0x3b73d4){var _0x4b7671=_0x5d9b33;return _0x3cf11f!==0x0&&_0x354e9e[_0x4b7671(0x215)]>Math[_0x4b7671(0x1d3)](_0x3cf11f)&&(_0x3cf11f>0x0?_0x354e9e=_0x354e9e[_0x4b7671(0x1a2)](0x0,_0x3cf11f)+_0x3b73d4:_0x354e9e=_0x3b73d4+_0x354e9e[_0x4b7671(0x1a2)](_0x354e9e[_0x4b7671(0x215)]+_0x3cf11f,_0x354e9e['length'])),_0x354e9e;},_0x1ac9b1=function(_0x1633f3){var _0x543f88=_0x5d9b33,_0x121fb8=d3['select'](_0x543f88(0x229))[_0x543f88(0x1bc)]('text')[_0x543f88(0x1f7)](_0x543f88(0x1a1),_0x543f88(0x193))['attr']('x',0x0)[_0x543f88(0x1f7)]('y',0x0)[_0x543f88(0x197)](_0x1633f3)[_0x543f88(0x1d5)]('visibility',_0x543f88(0x203)),_0x1ac241=_0x121fb8['node']()['getComputedTextLength']();return _0x121fb8['remove'](),_0x1ac241;},_0x4f6bc2=function(_0x2834c8,_0x39dbcb,_0x47caeb){var _0x3b2564=_0x5d9b33,_0x1daf02,_0x51101b;return _0x39dbcb!==_0x1f3f66?_0x1daf02=_0x39dbcb>_0x5dc20b?_0x39dbcb:_0x1f3f66:(_0x1daf02=document['querySelector']('#'+_0x2834c8)[_0x3b2564(0x1c2)],_0x1daf02<=_0x5dc20b&&(_0x1daf02=_0x1f3f66)),_0x47caeb!==_0x1d39dd?_0x51101b=_0x47caeb>_0x6a34b3?_0x47caeb:_0x1d39dd:_0x51101b=_0x1d39dd,{'width':_0x1daf02,'height':_0x51101b};};}(jQuery));function a353_0x5d48(_0x38a53c,_0x4ef1f3){var _0x414fdd=a353_0x414f();return a353_0x5d48=function(_0x5d481e,_0x37d36c){_0x5d481e=_0x5d481e-0x18c;var _0x4dec14=_0x414fdd[_0x5d481e];return _0x4dec14;},a353_0x5d48(_0x38a53c,_0x4ef1f3);}function a353_0x414f(){var _0x102e26=['7581820xTrHfo','curve','clientWidth','attrTween','g[data-id=\x22','top','axisLeft','fill','display','padding','scaleTime','grid-x','GET','3653127yzlUsV','mouseout','timeFormat','no-data-box','axisYPaddingEllipses','marginRight','abs','duration','style','circle','unset','pageY','event','scaleOrdinal','905548UlXOrC','map','mouseover','line-group','tickSizeInner','body','values','axisYPadding','bandwidth','stroke-dasharray','8303900PIqOSJ','color','extent','The\x20JSON\x20object\x20is\x20null\x20or\x20empty.','translate(','legend','3530597IlEeCV','lines','axis-y','4XIqvkx','#FFFFFF','curveMonotoneX','tickStep','jsonUrl','name','data-id','div','min','attr','extend','No\x20Data\x20Available.','json','17104455GjOwEr','height','5\x202','scaleBand','quantile','barWidthRate','%Y-%m-%d','line','hidden','call','legend-layer','%m/%d','16CXXQUt','pageX','rangeRound','.legend','mousemove','log','#3379c4','10nayNbt','scaleLinear','#999999','stringify','toolTipFormat','{%values.y%}','no-data-frame','length','#EEEEEE','left','marginLeft','axisYScaleCount','stroke-width','axis-x','paddingInner','#65a7ef','ticks','domain','parentNode','.line-group','3618324ESQUDO','forEach','rect','interpolateString','hasOwnProperty','data','IO\x20ERROR','svg','getComputedTextLength','middle','{%values.x%}','d3-instant-charts-tooltip','width','hex','axisXScaleCount','transform','path','temp-text','replace','marginTop','schemeCategory10','text','d3-instant-charts','isEmptyObject','max','axisBottom','legendWidthRate','text-anchor','selectAll','axis-layer','classed','class','substring','bar','right','autoFitAxisY','ajax','The\x20root\x20element\x20of\x20JSON\x20is\x20invalid.','stroke','html','An\x20error\x20occurred\x20while\x20reading\x20the\x20JSON\x20source.','select','2px','transition','value','opacity','{%name%}','node','tickFormat','d3chart','bottom','svg.d3-instant-charts','An\x20error\x20occurred\x20while\x20validating\x20the\x20JSON\x20format.','enter','{%value%}','{%name%}\x20-\x20{%value%}','round','%m-%d','append','range','The\x20JSON\x20format\x20is\x20invalid.','chart-layer'];a353_0x414f=function(){return _0x102e26;};return a353_0x414f();}
+/*!
+ * D3 Instant Charts 0.2.*
+ *
+ * https://github.com/forink/D3-Instant-Charts
+ *
+ * Depends on jquery 3.x and D3.js v5 library
+ *
+ * Copyright (c) 2018 Yifong Jiang
+ * Released under the BSD 2-clause License.
+ */
+
+/*eslint no-extra-parens: [2, "functions"]*/
+
+(function ($) {
+    'use strict';
+    var svgDefaultWidth = 500, svgDefaultHeight = 350, svgMinWidth = 300, svgMinHeight = 200;
+
+    $.fn.extend({
+        barChart: function (options) {
+            // Default options
+            var settings = $.extend({
+                jsonUrl: '',
+                width: svgDefaultWidth,  //svg width
+                height: svgDefaultHeight,  //svg height
+                marginTop: 30,  //svg margin top
+                marginRight: 30,  //svg margin right
+                marginButtom: 50,  //svg margin buttom
+                marginLeft: 20,  //svg margin left
+                barSpacing: 0.1,  //設定Bar間距
+                barWidthRate: 0.3,  //設定Bar寬比率 (0~1，數字越小越粗)
+                axisXScaleCount: 10,  //X軸刻度數量
+                axisYPadding: 0,  // Y軸標題略縮字數: =0 顯示完整標題; >0 省略點在右邊; <0 省略點在左邊
+                axisYPaddingEllipses: '…',  // Y軸省略標題時的代替字串
+                autoFitAxisY: true,  //自動判定Y軸字串長度以調整左邊寬度
+                autoFitScaling: 1,  //縮放比率
+                toolTipFormat: '{%name%} - {%value%}', //{%name%} 名稱; {%value%} 數值
+                ajaxType: 'GET',
+                blankDataMessage: 'No Data Available.'
+            }, options);
+
+            var targetId = $(this).attr('id');
+            var jsonObj = settings.jsonUrl;//callJson(settings.jsonUrl, settings.ajaxType);
+            //console.log(jsonObj.d3chart);
+
+            //設定畫布邊界
+            var margin = {
+                top: settings.marginTop,
+                right: settings.marginRight,
+                bottom: settings.marginButtom,
+                left: settings.marginLeft
+            };
+
+            //設定畫布大小(若未設定，則檢查客戶端的尺寸，若客戶端的尺寸小於最小可容許尺寸，則使用預設尺寸)
+            var suitableSize = getSuitableSize(targetId, settings.width, settings.height);
+            var svgWidth = suitableSize.width;
+            var svgHeight = suitableSize.height;
+            //console.log(suitableSize);
+
+            //建立圖框
+            var svg = d3.select('#' + targetId)
+                .append('svg')
+                .attr('class', 'd3-instant-charts')
+                .attr('width', svgWidth)
+                .attr('height', svgHeight);
+
+            //檢查資料是否可輸出，否則繪出錯誤訊息
+            if (!checkJsonIsValid(jsonObj)) {
+                drawNoDataMsg(targetId, svgWidth, svgHeight, settings.blankDataMessage);
+                return;
+            }
+
+            //設定資料Root
+            var dataset = jsonObj.d3chart;
+
+            //取得資料最大值
+            var maxDataVal = d3.max(dataset, function (d) { return d.value; });
+
+            //取得Y軸標題文字長度的最大值
+            var maxLengthAxisYLabel = d3.max(dataset, function (d) { return d.name; });
+
+            //如果有省略字元，連最寬文字長度也要處理
+            maxLengthAxisYLabel = getPaddingText(maxLengthAxisYLabel, settings.axisYPadding, settings.axisYPaddingEllipses);
+
+            if (settings.autoFitAxisY) {
+                margin.left = calculateTextLength(maxLengthAxisYLabel) * settings.autoFitScaling + settings.marginLeft;
+            }
+
+            //刻度值
+            var tickVal = d3.tickStep(0, maxDataVal, settings.axisXScaleCount);
+
+            //計算出X軸最大值
+            var axisXMaxVal = (tickVal - (maxDataVal % tickVal)) + maxDataVal;
+
+            //設定圖表大小
+            var chartWidth = svgWidth - (margin.left + margin.right);
+            var chartHeight = svgHeight - (margin.top + margin.bottom);
+
+            //建立坐標軸圖層
+            var axisLayer = svg.append('g')
+                .classed('axis-layer', true)
+                .attr('width', svgWidth)
+                .attr('height', svgHeight);
+
+            //建立主圖表圖層
+            var chartLayer = svg.append('g')
+                .classed('chart-layer', true)
+                .attr('width', chartWidth)
+                .attr('height', chartHeight)
+                .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
+
+            //設定X軸尺度
+            var xScale = d3.scaleLinear()
+                .domain([0, axisXMaxVal])
+                .range([0, chartWidth]);
+
+            //設定Y軸尺度
+            var yScale = d3.scaleBand()
+                .rangeRound([0, chartHeight])
+                .padding(settings.barSpacing)
+                .domain(dataset.map(function (d) { return d.name; }))
+                .paddingInner(settings.barWidthRate);
+
+            //繪製 X Grid
+            var gridX = axisLayer.append('g')
+                .attr('class', 'grid-x')
+                .attr('transform', 'translate(' + margin.left + ',' + (chartHeight + margin.top) + ')')
+                .call(d3.axisBottom(xScale)
+                    .ticks()
+                    .tickSizeInner(-chartHeight)
+                    .tickFormat('')
+                );
+
+            //繪製X軸
+            var axisX = axisLayer.append('g')
+                .attr('class', 'axis-x')
+                .attr('transform', 'translate(' + margin.left + ',' + (chartHeight + margin.top) + ')')
+                .call(d3.axisBottom(xScale)
+                    .ticks()
+                );
+
+            //繪製Y軸
+            var axisY = axisLayer.append('g')
+                .attr('class', 'axis-y')
+                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+                .call(d3.axisLeft(yScale)
+                    .ticks()
+                    .tickFormat(function (d) {
+                        return getPaddingText(d, settings.axisYPadding, settings.axisYPaddingEllipses);
+                    })
+                );
+
+            //滑鼠移過時的Tooltip區塊
+            var tooltip = d3.select('body').append('div')
+                .attr('class', 'd3-instant-charts-tooltip');
+
+            //建立長條圖POOL
+            var gs = chartLayer.append('g')
+                .selectAll('rect')
+                .data(dataset)
+                .enter()
+                .append('g');
+
+            //繪製長條圖 (含滑鼠移過時的Tooltip)
+            gs.append('rect')
+                .attr('x', 2)
+                .attr('y', function (d) { return (yScale(d.name)); })
+                .attr('class', 'bar')
+                .attr('height', yScale.bandwidth())
+                .on('mouseover', function (d) {
+                    tooltip.transition().duration(200)
+                        .style('opacity', 0.8);
+                    tooltip.html(String(settings.toolTipFormat)
+                            .replace('{%name%}', d.name)
+                            .replace('{%value%}', d.value))
+                        .style('left', (d3.event.pageX) + 'px')
+                        .style('top', (d3.event.pageY - 28) + 'px');
+                    d3.select(this)
+                        .style('fill', '#3379c4')
+                        .style('stroke-width', '2px')
+                        .attr('x', 3)
+                        .attr('width', function (d) {
+                            return xScale(d.value) - 2;
+                        });
+                })
+                .on('mousemove', function () {
+                    return tooltip
+                        .style('top', (d3.event.pageY - 10) + 'px')
+                        .style('left', (d3.event.pageX + 10) + 'px');
+                })
+                .on('mouseout', function (d) {
+                    tooltip
+                        .transition()
+                        .duration(500)
+                        .style('opacity', 0);
+                    d3.select(this)
+                        .style('fill', '#65a7ef')
+                        .style('stroke-width', '0')
+                        .attr('x', 2)
+                        .attr('width', function (d) {
+                            return xScale(d.value);
+                        });
+                })
+                .transition()
+                .duration(1200)
+                .attr('width', function (d) {
+                    return xScale(d.value);
+                });
+
+            //Bar後面的文字
+            /*
+            gs.append('text')
+                .attr('class', 'bar-text')
+                .attr('x', padding.left)
+                .attr('y', function (d) { return yScale(d.name); })
+                .attr('dx', 5)
+                .attr('dy', ((yScale.bandwidth()) / 2)+4)
+                .text(function (d) {
+                    return d.value;
+                })
+                .transition()
+                .duration(1200)
+                .attr('x', function (d) {
+                    return xScale(d.value);
+                })
+                */
+
+            /*************************************/
+        },
+
+        //$.fn.columnChart = function (options) {};
+
+        //$.fn.dataBar = function (options) {};
+
+        lineChart: function (options) {
+
+            // Default options
+            var settings = $.extend({
+                jsonUrl: '',
+                width: svgDefaultWidth,  //svg width
+                height: svgDefaultHeight,  //svg height
+                marginTop: 50,  //svg margin top
+                marginRight: 50,  //svg margin right
+                marginButtom: 50,  //svg margin buttom
+                marginLeft: 50,  //svg margin left
+                axisYScaleCount: 10,  //Y軸刻度數量
+                toolTipFormat: '{%name%}: {%values.x%} - {%values.y%}',
+                xAxisTimeFormat: '%m/%d',
+                legendWidthRate: 0.5,
+                ajaxType: 'GET',
+                blankDataMessage: 'No Data Available.'
+            }, options);
+
+            var targetId = $(this).attr('id');
+            var jsonObj = settings.jsonUrl;//callJson(settings.jsonUrl, settings.ajaxType);
+            //console.log(jsonObj.d3chart);
+
+            //設定畫布邊界
+            var margin = {
+                top: settings.marginTop,
+                right: settings.marginRight,
+                bottom: settings.marginButtom,
+                left: settings.marginLeft
+            };
+
+            //設定畫布大小(若未設定，則檢查客戶端的尺寸，若客戶端的尺寸小於最小可容許尺寸，則使用預設尺寸)
+            var suitableSize = getSuitableSize(targetId, settings.width, settings.height);
+            var svgWidth = suitableSize.width;
+            var svgHeight = suitableSize.height;
+            //console.log(suitableSize);
+
+            //設定資料Root
+            var dataset = jsonObj.d3chart[0];
+
+            //取得X軸組數
+            var axisXPointsCount = dataset[0].values.length;
+
+            //日期資料Parse格式
+            var timeParseFormat = d3.timeParse('%m-%d');
+            var outputTimeFormat = (axisXPointsCount > 2) ?
+                d3.timeFormat(settings.xAxisTimeFormat) : d3.timeFormat('%Y-%m-%d');
+
+            //處理時間序列資料
+            dataset.forEach(function (d) {
+                d.values.forEach(function (d) {
+                    d.x = timeParseFormat(d.x);
+                    d.y = +d.y;
+                });
+            });
+
+            //取得資料最大值
+            var maxDataVal = d3.max(dataset, function (d) {
+                return d3.max(d.values, function (d) {
+                    return d.y;
+                });
+            });
+
+            //取得資料最小值
+            var minDataVal = d3.min(dataset, function (d) {
+                return d3.min(d.values, function (d) {
+                    return d.y;
+                });
+            });
+
+            //設定圖表大小
+            var chartWidth = svgWidth - (margin.left + margin.right);
+            var chartHeight = svgHeight - (margin.top + margin.bottom);
+
+            //設定圖例圖層寬度
+            var legendWidth = svgWidth * settings.legendWidthRate;
+
+            //建立圖框
+            var svg = d3.select('#' + targetId)
+                .append('svg')
+                .attr('class', 'd3-instant-charts')
+                .attr('width', svgWidth)
+                .attr('height', svgHeight);
+
+            //檢查資料是否可輸出，否則繪出錯誤訊息
+            if (!checkJsonIsValid(jsonObj) || (maxDataVal === 0 && minDataVal === 0)) {
+                drawNoDataMsg(targetId, svgWidth, svgHeight, settings.blankDataMessage);
+                return;
+            }
+
+            //建立坐標軸圖層
+            var axisLayer = svg.append('g')
+                .classed('axis-layer', true)
+                .attr('width', svgWidth)
+                .attr('height', svgHeight);
+
+            //建立主圖表圖層
+            var chartLayer = svg.append('g')
+                .classed('chart-layer', true)
+                .attr('width', chartWidth)
+                .attr('height', chartHeight)
+                .attr('transform', 'translate(' + [margin.left, margin.top] + ')');
+
+            //建立圖例圖層
+            var legendLayer = svg.append('g')
+                .classed('legend-layer', true)
+                .attr('width', legendWidth)
+                .attr('height', margin.top);
+
+            //取得Y軸可變級距的座標陣列
+            var yTicks = (maxDataVal / settings.axisYScaleCount >= 1) ?
+                d3.range(settings.axisYScaleCount).map(function (i) {
+                    //檢查Y軸資料最大值是否大於指定刻度數量，符合條件轉整數，否則使用自動刻度
+                    return Math.round(d3.quantile([minDataVal, maxDataVal], i / (settings.axisYScaleCount - 1)));
+                }) : null;
+
+            //console.log(yTicks);
+
+            //設定X軸尺度
+            var xScale = d3.scaleTime()
+                .domain(d3.extent(dataset[0].values, function (d) { return d.x; }))
+                .range([0, chartWidth]);
+
+            //設定Y軸尺度
+            var yScale = d3.scaleLinear()
+                .domain([0, maxDataVal])
+                .range([chartHeight, 0]);
+
+            //繪製 X Grid
+            var gridX = axisLayer.append('g')
+                .attr('class', 'grid-x')
+                .attr('transform', 'translate(' + margin.left + ',' + (chartHeight + margin.top) + ')')
+                .call(d3.axisBottom(xScale)
+                    .ticks(axisXPointsCount)
+                    .tickSizeInner(-chartHeight)
+                    .tickFormat('')
+                );
+
+            //繪製 Y Grid
+            var gridY = axisLayer.append('g')
+                .attr('class', 'grid-y')
+                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+                .call(d3.axisLeft(yScale)
+                    .tickValues(yTicks)
+                    .tickSizeInner(-chartWidth)
+                    .tickFormat('')
+                );
+
+            //繪製X軸
+            var axisX = axisLayer.append('g')
+                .attr('class', 'axis-x')
+                .attr('transform', 'translate(' + margin.left + ',' + (chartHeight + margin.top) + ')')
+                .call(d3.axisBottom(xScale)
+                    .ticks(axisXPointsCount)
+                    .tickFormat(outputTimeFormat)
+                );
+
+            //繪製Y軸
+            var axisY = axisLayer.append('g')
+                .attr('class', 'axis-y')
+                .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+                .call(d3.axisLeft(yScale)
+                    .tickValues(yTicks)
+                );
+
+            //滑鼠移過時的Tooltip區塊
+            var tooltip = d3.select('body').append('div')
+                .attr('class', 'd3-instant-charts-tooltip');
+
+            //設定折線顏色
+            var lineColor = d3.scaleOrdinal(d3.schemeCategory10);
+
+            //設定折線綁定
+            var line = d3.line()
+                .x(function (d) { return xScale(d.x); })
+                .y(function (d) { return yScale(d.y); })
+                .curve(d3.curveMonotoneX);
+
+            //建立折線
+            var lines = chartLayer.append('g')
+                .attr('class', 'lines');
+
+            //繪製折線
+            lines.selectAll('.line-group')
+                .data(dataset)
+                .enter()
+                .append('g')
+                .attr('class', 'line-group')
+                .attr('data-id', function (d) { return d.name; })
+                .append('path')
+                .attr('class', 'line')
+                .attr('d', function (d) { return line(d.values); })
+                .style('stroke', function (d, i) { return lineColor(d.name); })
+                .style('opacity', 0.3)
+                .call(lineTransition)
+                .on('mouseover', function (d) {
+                    tooltip.transition().duration(200)
+                        .style('opacity', 0.8);
+                    tooltip.html(d.name)
+                        .style('left', (d3.event.pageX) + 'px')
+                        .style('top', (d3.event.pageY - 28) + 'px');
+                    d3.select(this).style('opacity', 0.8);
+                })
+                .on('mousemove', function () {
+                    return tooltip
+                        .style('top', (d3.event.pageY - 10) + 'px')
+                        .style('left', (d3.event.pageX + 10) + 'px');
+                })
+                .on('mouseout', function (d) {
+                    tooltip.transition().duration(500).style('opacity', 0);
+                    d3.select(this).style('opacity', 0.3);
+                });
+
+            //繪製折線點
+            lines.selectAll('.circle-group')
+                .data(dataset)
+                .enter()
+                .append('g')
+                .attr('class', 'circle-group')
+                .attr('data-id', function (d) { return d.name; })
+                .style('fill', function (d, i) { return lineColor(d.name); })
+                .selectAll('circle')
+                .data(function (d) { return d.values; })
+                .enter()
+                .append('g')
+                .attr('class', 'circle')
+                .append('circle')
+                .attr('cx', function (d) { return xScale(d.x); })
+                .attr('cy', function (d) { return yScale(d.y); })
+                .attr('r', 0)
+                .style('opacity', 0.6)
+                .on('mouseover', function (d) {
+                    tooltip.transition().duration(200)
+                        .style('opacity', 0.8);
+                    tooltip.html(String(settings.toolTipFormat)
+                            .replace('{%name%}', d3.select(this.parentNode.parentNode).datum().name)
+                            .replace('{%values.x%}', outputTimeFormat(d.x))
+                            .replace('{%values.y%}', d.y))
+                        .style('left', (d3.event.pageX) + 'px')
+                        .style('top', (d3.event.pageY - 28) + 'px');
+                    d3.select(this)
+                        .style('opacity', 1)
+                        .style('stroke-width', '2px');
+                })
+                .on('mousemove', function () {
+                    return tooltip.style('top', (d3.event.pageY - 10) + 'px')
+                        .style('left', (d3.event.pageX + 10) + 'px');
+                })
+                .on('mouseout', function (d) {
+                    tooltip.transition().duration(500).style('opacity', 0);
+                    d3.select(this).style('opacity', 0.6).style('stroke-width', '0');
+                })
+                .transition()
+                .duration(2800)
+                .attr('r', 6);
+
+            //圖例的大小應該要計算項目與文字長度
+            var legendRectSize = 12;
+            var legendSpacing = 6;
+            var horz = 0, vert = 0;
+
+            //繪製圖例
+            var legend = legendLayer.selectAll('.legend')
+                .data(lineColor.domain())
+                .enter()
+                .append('g')
+                .attr('class', 'legend');
+
+            //繪製圖例方塊
+            var blankColor = '#FFFFFF';
+            legend.append('rect')
+                .attr('width', legendRectSize)
+                .attr('height', legendRectSize)
+                .style('fill', lineColor)
+                .style('stroke', lineColor)
+                .on("click", function (d) {
+                    clickLegendIcon(this, d);
+                });
+
+            //繪製圖例文字
+            legend.append('text')
+                .attr('x', legendRectSize + legendSpacing)
+                .attr('y', legendRectSize - legendSpacing / 2)
+                .text(function (d) { return d; });
+
+            //喬位置
+            var textLoc = 0;
+            var lastWidth = 0;
+            legend.attr('transform', function (d, i) {
+                horz += textLoc;
+                var textWidth = d3.select(this).select('text').node().getComputedTextLength();
+                textLoc = legendRectSize + legendSpacing * 3 + textWidth * 1.2;
+                textLoc = textLoc + 70;//Priyanshu change
+                vert = -2 * legendRectSize;
+                legendLayer
+                    .attr('transform', 'translate(' + [(svgWidth / 2) - (legendWidth / 2), margin.top - legendRectSize] + ')');
+                return 'translate(' + horz + ',' + vert + ')';
+            });
+
+            //Function-點擊圖例
+            function clickLegendIcon(target, data) {
+                if (d3.color(d3.select(target).style('fill')).hex() === d3.color(blankColor).hex()) {
+                    d3.selectAll('g[data-id="' + data + '"]').style('display', 'unset');
+                    d3.selectAll('g[data-id="' + data + '"]').transition().duration(500).attr('opacity', 1);
+                    d3.select(target).transition().duration(500).style('fill', lineColor);
+                } else {
+                    d3.selectAll('g[data-id="' + data + '"]').attr('opacity', 0);
+                    d3.selectAll('g[data-id="' + data + '"]').style('display', 'none');
+                    d3.select(target).style('fill', blankColor);
+                }
+            }
+
+            //Function-設定折線漸變效果
+            function lineTransition(line) {
+                line.transition().duration(2000).attrTween("stroke-dasharray", calcTween);
+            }
+
+            //Function-計算折線方位
+            function calcTween() {
+                var len = this.getTotalLength();
+                var ips = d3.interpolateString("0," + len, len + "," + len);
+                return function (t) { return ips(t); };
+            }
+        }
+    }
+    );
+
+    //$.fn.areaChart = function (options) { };
+
+    //$.fn.pieChart = function (options) {};
+
+    //$.fn.radarChart = function (options) { };
+
+    //$.fn.gaugeChart = function (options) {};
+
+    //Get json data from url
+    var callJson = function (url, ajaxType) {
+
+        var jsonData = '';
+
+        $.ajax({
+            url: url,
+            type: ajaxType,
+            async: false,
+            cache:false,
+            dataType: 'json',
+            success: function (data) {
+                jsonData = data;
+            },
+            error: function () {
+                jsonData = 'IO ERROR';
+            }
+        });
+        //console.log(jsonData);
+        return jsonData;
+    };
+
+    var checkJsonIsValid = function (jsonObj) {
+
+        var isValid = false;
+        try {
+            if (jsonObj === 'IO ERROR') {
+                console.log('An error occurred while reading the JSON source.');
+            } else if ($.isEmptyObject(jsonObj)) {
+                console.log('The JSON object is null or empty.');
+            } else if (JSON.parse(JSON.stringify(jsonObj)) === 'ERROR') {
+                console.log('The JSON format is invalid.');
+            } else if (!jsonObj.hasOwnProperty('d3chart')) {
+                console.log('The root element of JSON is invalid.');
+            } else if (jsonObj['d3chart'].length === 0 || Object.keys(jsonObj['d3chart'][0]).length === 0) {
+                console.log('The root element of JSON is null or empty.');
+            } else {
+                isValid = true;
+            }
+        }
+        catch (e) {
+            console.log('An error occurred while validating the JSON format.');
+        }
+        return isValid;
+    };
+
+    var drawNoDataMsg = function (targetId, svgWidth, svgHeight, blankDataMessage) {
+
+        var svg = d3.select('#' + targetId)
+            .select('svg.d3-instant-charts');
+
+        svg.append('rect')
+            .attr('x', 0)
+            .attr('y', 0)
+            .attr('class', 'no-data-frame')
+            .attr('width', svgWidth)
+            .attr('height', svgHeight)
+            .style('fill', '#EEEEEE');
+
+        svg.append('rect')
+            .attr('x', svgWidth / 8)
+            .attr('y', (svgHeight * 3) / 8)
+            .attr('class', 'no-data-box')
+            .attr('width', (svgWidth * 3) / 4)
+            .attr('height', svgHeight / 4)
+            .style('fill', '#FFFFFF')
+            .style('stroke', '#999999')
+            .style('stroke-dasharray', '5 2')
+            .style('stroke-width', '1px')
+            .style('opacity', 0)
+            .transition()
+            .duration(1000)
+            .style('opacity', 0.6);
+
+        //繪製沒資料的錯誤訊息
+        svg.append('text')
+            .attr('x', svgWidth / 2)
+            .attr('y', (svgHeight / 2) + 5)
+            .text(blankDataMessage)
+            .style("text-anchor", "middle")
+            .style('opacity', 0)
+            .transition()
+            .duration(1000)
+            .style('opacity', 0.6);
+    };
+
+    var getPaddingText = function (text, padding, paddingStr) {
+        if (padding !== 0 && text.length > Math.abs(padding)) {
+            if (padding > 0) {
+                text = text.substring(0, padding) + paddingStr;
+            } else {
+                text = paddingStr + text.substring(text.length + padding, text.length);
+            }
+        }
+        return text;
+    };
+
+    var calculateTextLength = function (text) {
+
+        var tempText = d3.select('svg')
+            .append('text')
+            .attr('class', 'temp-text')
+            .attr('x', 0)
+            .attr('y', 0)
+            .text(text)
+            .style('visibility', 'hidden');
+
+        var textLength = tempText.node().getComputedTextLength();
+        tempText.remove();
+
+        return textLength;
+    };
+
+    var getSuitableSize = function (targetId, alterWidth, alterHeight) {
+        var svgWidth, svgHeight;
+
+        if (alterWidth !== svgDefaultWidth) { //有設定
+            svgWidth = (alterWidth > svgMinWidth) ? alterWidth : svgDefaultWidth;
+        } else { //沒設定
+            //取得客戶端寬度，若太小則設定為預設寬度
+            svgWidth = document.querySelector('#' + targetId).clientWidth;
+            if (svgWidth <= svgMinWidth) {
+                svgWidth = svgDefaultWidth;
+            }
+        }
+
+        if (alterHeight !== svgDefaultHeight) { //有設定
+            svgHeight = (alterHeight > svgMinHeight) ? alterHeight : svgDefaultHeight;
+        } else { //沒設定
+            svgHeight = svgDefaultHeight;
+        }
+
+        return { width: svgWidth, height: svgHeight };
+    };
+
+}(jQuery));

@@ -258,7 +258,7 @@ function getDynamicTemplateName()
 				}
 				if(value.ProcessType == 'Document')
 				{
-					iconurl += 'https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/assets/images/default.png'
+					iconurl += 'https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/assets/images/default.png'
 				}
 				var template = "<div class='col-md-4 col-sm-6 col-xs-12 new-request-panel'>\
 									<div class='new-request-panel-card new-process-panel-group'>\
@@ -897,7 +897,7 @@ var ApproversListForward  = '';
 					     return filterData.UserId == QueryDataRetResult[0].RequestById;
 					 });
 					bindfile2 += '<li>'
-		            bindfile2 += '<span class="iconbox"> <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/NewEntryAssets/images/time-icon-1.png" alt=""> </span>'
+		            bindfile2 += '<span class="iconbox"> <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/NewEntryAssets/images/time-icon-1.png" alt=""> </span>'
 					bindfile2 += '<div class="approvelheadeing">  <h3 class="mainheading">Approval Initiation</h3>  <span class="date-sec">'+moment(QueryDataRetResult[0].Created).format('lll')+'</span> </div>'
 		            bindfile2 += '<p class="waitsec initialize">Initialized</p>'	
 					bindfile2 += '<div class="row">'
@@ -929,7 +929,7 @@ var ApproversListForward  = '';
 						break;
 					}else{
 					bindfile2 +=  	'<li>'
-			     	bindfile2 +=    '<span class="iconbox"> <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/NewEntryAssets/images/time-icon-4.png" alt="" data-themekey="#"> </span>' 		
+			     	bindfile2 +=    '<span class="iconbox"> <img src="https://raw.githubusercontent.com/Titan4workGit/TitanRepo/main/SiteAssets/ProcessApproval/NewEntryAssets/images/time-icon-4.png" alt="" data-themekey="#"> </span>' 		
 			        bindfile2 +=    '<div class="approvelheadeing"> <h3 class="mainheading">'+QueryDataQueueResult[q].StepName+'</h3> <span class="date-sec">'+moment(QueryDataQueueResult[q].Modified).format('lll')+'</span> </div>'
 			        bindfile2 +=    '<p class="waitsec initialize">'+QueryDataQueueResult[q].Status+'</p>'
 					

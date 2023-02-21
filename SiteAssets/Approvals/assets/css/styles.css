@@ -754,11 +754,11 @@ button.close {
 .color-red {
     color: #ff0000;
 }
-.signature-front {
-    font-family:Caveat-VariableFont_wght;
-    font-size: 30px;
-}
 
+.signature-front {
+    font-family: Caveat-VariableFont_wght;
+    font-size: 24px;
+}
 
 .new-request-qr-box {
     margin-bottom: 15px;
@@ -1410,7 +1410,8 @@ margin-top: 5px;
 .watermark_controlsec {
     position: relative;
     z-index: 1;
-    height: calc(100vh - 128px);
+    min-height: calc(100vh - 128px);
+    height:100%;
 }
 
 .water_mark_show {
@@ -1963,6 +1964,12 @@ background-color: transparent;
     margin: 0px 5px !important;
 }
 
+#SignatureText{
+  -ms-word-break:break-all;
+  word-break:break-word;
+  word-wrap:break-word;	
+}
+
 
 @media (min-width: 992px){
 #approval_doms .modal-lg {
@@ -1981,6 +1988,18 @@ background-color: transparent;
 
 /****nov-8-22- ed*****/
 
+.upload-chip .chip-text-box {
+    color: #333 !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: inline-block;
+    max-width: 174px !important;
+}
+
+#ApprovalSignatureArea{
+        page-break-inside: avoid !important;
+    }
 
 @media(max-width:550px){
 
