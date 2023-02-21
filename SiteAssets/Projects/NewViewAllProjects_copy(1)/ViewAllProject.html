@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<title>Projects</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/css/Padding.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ViewAllProjects/assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/xlsx.core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/tableExport.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/sort.js"></script>
+    <script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/AllViewProject.js"></script> 
+	<!--<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/jq.tablesort.js"></script>-->
+	<script  type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/Dashboard.js"></script>		
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/js/pieChart.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/js/barChart.js"></script>
+	<script  type="text/jscript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/Program.js"></script>	
+	<link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+
+ 
+ <style>
+	
+.ms-webpart-titleText{
+	display:none;
+}
+
+.clickable{
+	cursor:pointer;
+	/*background: !important;*/
+}
+	#mainDivAreaOffice365 tr td{
+	    border: none;
+	    border-top: 0;
+	    vertical-align: top !important;
+	    /*text-align: center;*/
+	    padding: 5px 8px;
+	}
+	
+	.sortStyle { cursor: pointer; }
+
+.ascStyle {
+  /*background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/assets/images/asc.gif);*/
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.descStyle {
+  /*-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/assets/images/desc.gif);*/
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.unsortStyle {
+  /*background-image: url(https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/MySubordinateTasks/assets/images/bg.gif);*/
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+/***9-28-21****/
+
+#tableTempProjects tr th,
+#tableTempProjects tr td{
+ border-left:none !important;
+ border-right:none !important; 
+ 
+}
+ 
+#tableTempProjects tbody tr{
+ border:1px solid #ccc;	
+}
+
+/*****9-29-21*******/
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table{
+ display:block !Important;	
+}
+
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField>p:first-child{
+ margin-bottom:0 !Important;
+ display:none;
+}
+
+.ms-webpart-chrome-title{
+ display:none;
+}
+
+.ms-webpart-chrome-title{
+ margin-bottom:0 !important;	
+}
+
+.all-align-gap .article-content{
+ /* margin:10px 0px 0px 0px !important;	*/
+ margin: 0px 0px 0px 0px !important;
+}
+
+.custom-form-group.search-box{
+ margin-bottom:1px !important;	
+}
+
+
+.project-view-icon-info{
+ filter:none !important;	
+}
+
+.project-view-table-btn{
+ margin:0px 8px 1px 0px !important;	
+}
+
+.project-view-deta-btn-panel .project-view-table-btn button{
+  font-size:14px !important;	
+}
+
+#mainDivAreaOffice365 .project-manager-card-head{
+ border:none !important;	
+}
+
+.project-view-table-btn .dropdown-menu{
+ border:1px solid #ccc;	
+}
+
+.project-head-text{
+ color:#333 !important;	
+}
+
+button.close-round{
+
+ background: #fff;
+ color: #333;
+ min-width: 1em !important;
+	
+}
+
+#managerPicker .sp-peoplepicker-topLevel{
+ width:100% !important;
+ padding:6px 3px;	
+}
+
+#managerPicker .sp-peoplepicker-editorInput{
+ max-width:100% !important;
+ border:none !Important;	
+}
+
+.sp-peoplepicker-autoFillContainer{
+  max-width: 100% !important;
+  min-width: 100% !important;	
+}
+
+
+.custom-progress{
+ height:12px !Important;
+ border:none !important;
+ box-shadow:inset 0px 1px 5px rgb(0 0 0 / 30%) !important;	
+}
+
+#mainDivAreaOffice365 tr td:nth-child(3){
+ vertical-align:middle !Important;	
+}
+
+label.lable-view-name{
+ margin-bottom:0 !important;
+ font-weight:600 !important;	
+}
+
+.d-flex.mt5,
+.btspace{
+ margin:8px 0; 	
+}
+
+
+
+.ref{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;	
+}
+
+.pep{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 300px;	
+}
+
+.loc{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 340px;	
+}
+
+#tableTempProjects tr th:nth-child(4),
+#tableTempProjects tr td:nth-child(4){
+  text-align:center;	
+}
+
+
+/****snak effect width tabs*******/
+
+.activating{
+
+  display: inline-block;
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+} 
+
+.activating li{
+  padding:10px 5px;
+  display: inline-block;
+  letter-spacing: 0.5px;
+  font-size:15px !important;
+  width: 95px;
+  text-align: center;
+}
+
+ .slidesec{
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   height: 4px;
+   transition: 0.4s;
+   height: 5px;
+   z-index: 1;
+   border-radius: 8px 8px 0 0;
+   background: #1d6ec0;
+   width:88px !important;
+}
+
+ .newitem {
+   color: #333;
+   cursor:pointer;
+   padding: 20px;
+   text-decoration: none;
+   transition: 0.3s;
+   margin: 0 6px;
+   z-index: 1;
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 500;
+   position: relative;
+}
+ .newitem:before {
+   content: "";
+   position: absolute;
+   bottom: -6px;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background-color: #dfe2ea;
+   border-radius: 8px 8px 0 0;
+   opacity: 0;
+   transition: 0.3s;
+}
+ .newitem:not(.is-active):hover:before {
+   opacity: 1;
+   bottom: 0;
+}
+ .newitem:not(.is-active):hover {
+   color: #333;
+}
+
+#thistab-1,
+#thistab-2{
+  display: none;
+}
+
+#thistab-1.actives,
+#thistab-2.actives{
+ display: block;
+
+}
+
+/****snak effect width tabs done*******/
+
+.coverbox{
+    border: 1px solid #d1d1d1;
+    padding: 15px;
+    margin-bottom: 15px;	
+}
+
+.clienttable tr td{
+  text-align:left;	
+}
+
+.totalcounting tr td{
+	padding:45px 0px !important;
+	border-bottom:1px solid #999 !important;	
+	text-align:center;
+}
+
+.totalcounting tr:last-child td{
+  border-bottom:none;	
+}
+
+.totalcounting tr td h3{
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color:#555 !important;
+}
+
+.totalcounting tr td div{
+ margin-top:2px;
+ font-size:35px;
+}
+ 
+.clienttable tr th,
+.clienttable tr td{
+ color:#333 !important;
+ font-size:13px;	
+}
+
+.clienttable tr th{
+ letter-spacing: 1px;
+ background-color:#efefef;	
+}
+
+.clienttable tr th,	
+.clienttable tr td{
+  border:1px solid #cfcfcf !important;	
+  padding:5px !Important;
+  text-align:center;  
+}
+
+.clienttable tr:nth-child(even) td{
+ background-color:#f9f9f9 !important;	
+}
+
+.totalcounting tr td{
+ border:1px solid #cfcfcf !important;	
+}
+
+.clienttable tr td:first-child{
+  text-align:left;
+}
+
+.clienttable tr td:nth-child(2){
+ color:#ff0000 !important;	
+
+}
+.clienttable tr td:nth-child(3){
+ color:#088bd7 !important;	
+}
+
+.clienttable tr td:nth-child(4){
+ color:#039b03 !important;	
+}
+
+.clienttable tr td:nth-child(6){
+ color:#ffa500 !important;	
+}
+
+.totalcounting tr td div.overduecount{
+ color:#ff0000;	
+	
+}
+
+.totalcounting tr td div.terminatedcount{
+	color:#ffa500;
+}
+
+.totalcounting tr td div.livecount{
+ color:#088bd7;	
+}
+
+.totalcounting tr td div.completedcount{
+ color:#039b03;	
+}
+
+
+.wraptable::-webkit-scrollbar-thumb {
+border:3px solid transparent;
+border-radius: 5px;
+background-color: #919191;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.wraptable::-webkit-scrollbar-thumb:hover {
+background-color: #5e5e5e;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+
+.wraptable::-webkit-scrollbar {
+width: 10px;
+height:10px;
+background-color: transparent;
+}
+
+
+
+.conditionshow{
+ padding-top:2px;
+ padding-bottom:2px;	
+}
+.conditionshow .search-box{
+ float:right;	
+}
+
+
+.refsec{
+   -ms-word-break: break-all;
+     word-break: break-all;
+    word-break: break-word;
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+#myProgram table tr td:nth-child(4),
+#myProgram table tr td:nth-child(5){
+ text-align:center;	
+}
+
+
+.program-edit-lock-btn-box a.custom-edit-btn{
+
+height: 30px;
+width: 30px;
+line-height: 30px;
+font-size: 16px;
+text-align: center;
+border-radius: 50%;
+border: 0;
+padding: 0;
+transition: all 0.3s;
+background-color: #e7e7e7;
+margin: 0 2px;	
+display:inline-block;
+
+}
+
+.program-edit-lock-btn-box a.custom-edit-btn:hover{
+ background-color:#cccccc;
+}
+
+#programlisting table{
+ border:1px solid #ccc;	
+}
+
+#programlisting table tr:nth-child(2n) td{
+  background:#f5f5f5;	
+}
+
+#programlisting table tr td{
+ padding:6px 4px  8px 4px !important;
+ font-size:13px !important;	
+}
+
+#programlisting table tr td p{
+ font-size:13px !important;	
+}
+
+#programlisting table tr td label{
+ font-size:13px !important;	
+}
+
+
+#programlisting table tr td:last-child{
+ text-align:center;	
+}
+
+
+#programlisting table tr:nth-child(odd) td,
+#myProgram table tr:nth-child(odd) td{
+ border-bottom:1px solid #ccc;
+ border-top:1px solid #ccc;	 
+}
+
+#programlisting .table>thead>tr>th,
+#myProgram .table>thead>tr>th{
+  border-bottom:1px solid #ddd !important;
+  position:sticky;
+  top:-0.5px;
+  background:#e6e6e6;
+  border:none !Important;	
+}
+
+.heightmanage{
+ max-height:326px;
+ overflow-y:auto;
+}
+
+.wraptable.table-responsive{
+ max-height: 320px;
+ overflow-y: auto;
+}
+
+.wraptable table{
+  border:none;	
+}
+
+#tableTempProjects label{
+ font-size:13px !Important;	
+}
+
+#programlisting tbody tr td:first-child a,
+#tableTempProjects tbody tr td:first-child .font-16.ellipsis-2{
+  font-size:13px !Important;
+  color:#1d6ec0;	
+}
+
+#tableTempProjects .project-manager-card-body p.text-ellipsis{
+  width:250px;	
+}
+
+#tableTempProjects tr td:last-child{
+ vertical-align:middle !Important;	
+}
+
+
+#tableTempProjects tr td p{
+  margin-bottom:7px !Important;	
+}
+
+#tableTempProjects tr td p.member-email.text-ellipsis{
+ width:258px;	
+}
+
+#programlisting tbody tr td p.member-email{
+ width:250px;	
+}
+
+
+
+#mainDivAreaOffice365 tr td:nth-child(1),
+#mainDivAreaOffice365 tr td:nth-child(2){
+ vertical-align:middle !important;
+ padding:6px 5px 0 5px;	
+}
+
+
+#total{
+  font-size: 13px;	
+  margin-left: 7px;
+}
+
+.member-name{
+ font-size:13px !Important;	
+}
+
+.clienttable thead th{
+ position:sticky;
+ top:-1px;	
+}
+
+.pieChartProgrambox{
+
+   border: 1px solid #ccc;
+    padding: 15px 5px 30px 5px;
+    margin-top: 15px;	
+
+}
+
+#pieChartClient,
+#pieChartDepartment{
+    border: 1px solid #ccc;
+    padding:0 5px;
+}
+
+.bordermang{
+ border-bottom:1px solid #ccc;	
+}
+
+#pieChartClient div[dir="ltr"],
+#pieChartClient svg,
+#pieChartClient svg rect{
+  height:203px !Important;  	
+}
+
+#pieChartDepartment div[dir="ltr"],
+#pieChartDepartment svg,
+#pieChartDepartment svg rect{
+  height:203px !Important;  	
+}
+
+.pieChartProgrambox{
+  position:relative;	
+}
+
+.pieChartProgrambox .btnsection{
+  position:absolute;
+  bottom:5px;
+  left:0;
+  width:100%;
+  padding:0 5px;
+  	
+}
+
+.pieChartProgrambox .btnsection #prevside{
+  float:left;	
+}
+
+.pieChartProgrambox .btnsection #nextside{
+  float:right;	
+}
+
+
+.pieChartProgrambox .btnsection #prevside,
+.pieChartProgrambox .btnsection #nextside{
+  min-width:auto !Important;
+  width:25px;
+  background:#838383;
+  padding:0;
+  border:none;
+  transition:1s;
+  display:none;	
+
+}
+
+.pieChartProgrambox .btnsection #prevside:hover,
+.pieChartProgrambox .btnsection #nextside:hover{
+
+  background:#4c4c4c !important;
+
+}
+
+#mainTablearea table tbody tr td:nth-child(4) p.font-12 span{
+  margin-left:5px;	
+}
+
+
+#programlisting .wraptable.table-responsive{
+ max-height:530px;	
+}
+
+
+.custom-progress.progress-warning{
+ border:1px solid #a9aeb3 !important;	
+}
+
+
+/***feb-14-22***/
+
+#tablefooterMyProject{
+  padding:10px 0;	
+}
+
+#tablelocationMyProject,
+#tablenavMyProject{
+  display:inline-block;
+  padding:5px 0;	
+}
+
+#tablelocationMyProject div,
+#tablenavMyProject div{
+
+ float:left;
+ display:inline;
+ margin:0 4px;	
+	
+}
+
+#tablelocationMyProject{
+ float:right;	
+}
+
+
+/***feb-18-22***/
+
+#txtFilterStatus{
+  width:100% !important;
+  margin-left:0 !important;
+}
+
+#programlisting tbody tr td:first-child a{
+    font-size: 13px !Important;
+    color: #1d6ec0;
+    width: 300px;
+    text-align: break-spaces;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#programlisting .modal-dialog{
+ margin:5px auto;	
+}
+
+#CreateProject:hover, 
+#CreateProject:active {
+    color: #333;
+    background-color:#efefef;
+    border-color: #98d6d8 !important;
+}
+
+@media all and (max-width: 1499px) and (min-width: 1440px){
+
+#pieChartProgram svg{
+  width:845px !Important;  	
+}
+	
+}
+
+
+@media(max-width:1320px){
+	
+#tableTempProjects tr td p.member-email.text-ellipsis{
+ width:195px;	
+}
+	
+}
+
+
+@media(min-width: 992px){
+
+#myProgram .modal-lg{
+ width:992px;	
+	
+}
+
+#pieChartClient,
+#pieChartDepartment,
+#pieChartProgram{
+ margin-bottom:5px 0;	
+}
+
+.paddingleftmange{
+ padding-right:1px;	
+}
+
+	
+}
+
+@media(max-width: 991px){
+	
+#myProgram .wraptable table{
+ min-width: 910px !important;	
+}
+
+#pieChartClient{
+  margin-top:15px;	
+}
+
+#programlisting table{
+  min-width:991px !Important;	
+}
+
+
+}
+
+
+@media(max-width:767px){
+	
+.project-view-deta-btn-panel{
+  display:block !important; 	
+}	
+
+.project-view-deta-btn-panel .project-view-table-btn{
+ display:inline-block;	
+}
+
+#queryMyProject{
+  float:none !Important;	
+}	
+
+.project-view-table-btn,
+.project-view-table-btn .btn{
+ Padding:3 !important;
+ margin:0px 2px 1px 0px !important;	
+}
+
+.project-view-deta-btn-panel .project-view-table-btn button{
+  font-size:12px !important;	
+}
+
+#tablelocationMyProject{
+ margin:5px 0px;	
+}
+
+.dropdown-menu-right{
+ left: 0;
+ right: auto;
+}
+
+.wraptable table{
+ min-width:910px !important;	
+}
+
+.conditionshow .search-box{
+ float:none;	
+}
+
+.conditionshow .search-box,
+.conditionshow .search-box input[type="text"]{
+  max-width:100% !important;
+  width:100%;
+  margin-left:0 !important;
+}
+
+.project-view-table-btn .btn{
+ padding:3px !Important;	
+}
+
+.wraptable:hover::-webkit-scrollbar-track{
+ background:#efefef;	
+}
+	
+}
+
+
+@media(min-width:768px){
+
+#search{
+ width:210px;	
+}
+
+}
+
+
+@media(max-width:1100px){
+
+#mainTablearea #tableTempProjects{
+ min-width:1100px !Important;	
+}
+	
+}
+
+
+@media(max-width:500px){
+
+#thistab-1 .col-sm-4 img,
+#thistab-2 .col-sm-4 img{
+  width:200px !important;	
+} 
+
+.widthmang{
+ width:100% !important;	
+} 
+ 
+}
+
+@media(max-width:386px){
+	
+.spacemanage{
+ margin:5px 0;	
+}	
+	
+	
+}
+
+
+</style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5205</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">db95c2db-1721-4ee1-b107-420e85f95946</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5205, ADMIN-1645029823-5205</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-sm-12" style="padding:0 5px">
+			<div class="custom-panel">
+				<div class="panel-head" style="padding:8px 15px 0px 15px">
+				
+				 <div class="row">
+				  <div class="col-md-5">
+				    <h1 class="project-head-text" style="padding:0px 14px" data-localize="Project">Project</h1>
+				   </div>
+				   <div class="col-md-7">
+				    <div class="project-view-deta-btn-panel d-flex">
+				    
+                     <div class="dropdown project-view-table-btn">
+                        <button class="btn dropdown-toggle" id="CreateProject" type="button">
+                            <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/plus-icon.png" alt="plus icon">
+                            <span>New</span>
+                        </button>
+                      </div>
+                      
+                    <div class="dropdown project-view-table-btn" id="btnViewProgram" style="display:none">
+                        <button class="btn dropdown-toggle" id="" type="button" data-toggle="modal" data-target="#myProgram">
+                            <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/programe.png" alt="plus icon" style="max-width:17.5px !important;">
+                            <span data-localize="Program">Program</span>
+                        </button>
+                      </div>
+  
+                      
+                      <div class="dropdown project-view-table-btn" id="filterDiv" style="display:none">
+                        <button class="btn dropdown-toggle" type="button" id="btnFilter" data-toggle="modal" data-target="#project-filter">
+                            <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/filter-icon.png" alt="filter">
+                            <span>Filter</span>
+                        </button>
+                      </div>
+                      <div class="dropdown project-view-table-btn">
+                        <button class="btn dropdown-toggle" id="ProjectExport" type="button">
+                            <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/export-icon.png" alt="export icon">
+                            <span>Export</span>
+                        </button>
+                      </div>
+                      <div class="dropdown project-view-table-btn" id="sortDiv" style="display:none">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                                      <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/sort-icon.png" alt="sort">
+                                      <span>Sort</span>
+                                      <img class="project-view-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/expand-arrow-icon.png" alt="expand arrow">
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-color-menu-icon dropdown-menu-right">
+                                      <li><a  href="javascript:void(0);" id="RecentProject"><span data-localize="Recent Project">Recent Project</span></a></li>
+                                      <!--<li><a  href="javascript:void(0);" id="ProjectName"><span class="SortClass">Department </span></a></li>-->
+                    <li><a  href="javascript:void(0);" id="ProjectName"><span class="SortClass" onclick="sortProjectName()" data-localize="Project Name">Project Name</span></a></li>
+                    <!--<li><a  href="javascript:void(0);" id="OfficeLocation"><span class="SortClass">Office Location </span></a></li>-->
+                    <li><a  href="javascript:void(0);" id=""><span class="SortClass" onclick="sortClientName()" data-localize="Customer">Customer</span></a></li>
+                    <li><a href="javascript:void(0);" id=""><span class="SortClass" onclick="sortManagerName()" data-localize="Manager">Manager</span></a></li>
+                        </ul>
+                    </div>
+                  </div>
+				   
+				   </div>
+				   
+				</div><!--row ed-->
+				
+                <div class="row" style="margin-top:15px">
+                 
+                 <div class="col-md-6">
+                 
+                 	<ul class="activating">
+				      <li class="newitem is-active" id="ModuleGanttTab" active-color="#1d6ec0" data-target="thistab-1">Dashboard</li>
+				      <li class="newitem" id="TaskGanttTab" active-color="#1d6ec0" data-target="thistab-2">List</li>
+				      <span class="slidesec"></span>
+				  </ul>
+				  
+                 </div>
+                 
+                 <div class="col-md-6 conditionshow" style="display:none;">
+                 	<div class="form-group custom-form-group search-box">
+						<input type="text" id="queryMyProject" onkeyup="sorterTableMyProjectList.search('queryMyProject')" placeholder="Search..." style="width:100%">
+					</div>
+                 </div>
+                
+                </div> 	
+					
+				</div><!---top header---->
+				
+				<div class="panel-body" style="padding:15px 15px">
+				
+				<div id="thistab-1" class="actives">
+							   
+				 <div class="coverbox">
+				 	 
+				  <div class="row">
+				    
+				     <div class="col-md-8 paddingleftmange">
+				     
+				      <div class="wraptable table-responsive">
+				     	
+				     	<table class="table table-bordered totalcounting table-condensed" id="tblTotalCount">
+				     	  
+				     	</table>
+				     	
+				      </div><!--wrapbox-->
+				      
+                     <div class="pieChartProgrambox">
+                      
+                      <div id="pieChartProgram" style="width:100%; height:100%;"></div>
+                      
+                      <div class="btnsection">
+	                      <button type="button" class="btn btn-info" id="prevside"><i class="fa fa-angle-left"></i></button>
+	                      <button type="button" class="btn btn-info" id="nextside"><i class="fa fa-angle-right"></i></button>
+                      </div>
+                                           
+                     </div>	
+				     
+				     </div><!--col8 ed--->
+				     
+				     <div class="col-md-4">
+				       
+				       <div class="row">
+				         
+				         <div class="col-md-12">
+				           <div id="pieChartClient" style="width:100%; height:100%; margin-bottom:15px;"></div>
+				         </div>
+				        
+				       </div><!--row ed-->
+				       
+				       <div class="row">
+				         
+				         <div class="col-md-12">
+				          <div id="pieChartDepartment" style="width:100%; height:80%;"></div>
+				         </div>
+				        
+				       </div><!--row ed-->
+
+				     
+				     </div><!---col4 ed-->
+				  
+				  </div><!---row ed-->
+				  
+				  
+				     <div class="row" style="margin-top:15px;">
+							
+				     <div class="col-md-12">
+					      <div class="wraptable table-responsive bordermang">
+					       <table class="table table-bordered table-condensed clienttable table-hover" id="tblProgramGroup">
+					         <thead>
+					          
+							  <tr class="clickable">
+					             <th style="width:40%; text-align:left;" onclick="sort_programName();" data-localize="Program">Program</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',1);">Overdue</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',2);">Live</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',3);">Completed</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',4);">On Hold</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',4);">Terminated</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyProgram',6);">Total</th>
+					          </tr>
+					          
+					         </thead>
+					         
+					         <tbody id="tbodyProgram">           
+					          				           
+					         </tbody>
+					         
+					       </table>
+						  </div>
+				  	</div>
+				  	
+				 </div><!----row ed---->
+				  				  
+				  
+				  <div class="row" style="margin-top:20px; margin-bottom:20px;">
+				               		
+				     <div class="col-md-12">
+					      <div class="wraptable table-responsive bordermang">
+					       <table class="table table-bordered table-condensed clienttable table-hover" id="tblClientGroup">
+					         <thead>
+					          
+							  <tr class="clickable">
+					             <th style="width:40%; text-align:left;" onclick="sortClient();">Client</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',1);">Overdue</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',2);">Live</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',3);">Completed</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',4);">On Hold</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',5);">Terminated</th>
+					             <th style="width:10%" onclick="sortTable('tbodyClient',6);">Total Project</th>
+					          </tr>
+					          
+					         </thead>
+					         
+					         <tbody id="tbodyClient">
+					           
+					          
+
+
+					           
+					         </tbody>
+					         
+					       </table>
+						  </div>
+				  	</div>
+				  	<input type="hidden" id="ClientOrder" value="asc">
+                    <input type="hidden" id="Departmentorder" value="asc">
+                    <input type="hidden" id="ProgramOrder" value="asc">
+				 </div><!----row ed----> 
+				 
+				 <div class="row" style="margin-top:15px;">
+             		
+				     <div class="col-md-12">
+					      <div class="wraptable table-responsive bordermang">
+					       <table class="table table-bordered table-condensed clienttable table-hover" id="tblDepartmentGroup">
+					         <thead>
+					          
+							  <tr class="clickable">
+					             <th style="width:40%; text-align:left;" onclick="sortDepartment();">Department</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',1);">Overdue</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',2);">Live</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',3);">Completed</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',4);">On Hold</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',5);">Terminated</th>
+					             <th style="width:10%;" onclick="sortTable('tbodyDepartment',6);">Total Project</th>
+					          </tr>
+					          
+					         </thead>
+					         
+					         <tbody id="tbodyDepartment">
+					           
+					           
+					           
+					         </tbody>
+					         
+					       </table>
+						  </div>
+				  	</div>
+			
+				 </div><!----row ed----> 
+				  
+				  
+				</div><!---coverbox--->  
+				    
+				  
+				</div><!---tab 1 end-->
+				
+				  
+		<div id="thistab-2">
+				  					
+			<div class="row clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="body">
+                        <div class="table-responsive">
+                            <!--<table id="myFirstTable" class="table table-bordered table-striped table-hover js-basic-example dataTable"></table>-->
+                            <div id="tablewrapper">
+                                <div id="tableheader" style="height: auto !important;">
+                                    <div class="search" style="display:none;">
+
+                                    </div>
+                                    <div>
+                                        <span class="details">
+                                            <div style="display:none;">Records  <span id="startrecordMyProject"></span>-<span id="endrecordMyProject"></span> PagesOf  <span id="totalrecordsMyProject"></span></div>
+                                            <div style="display:none;"><a href="javascript:sorterTableMyProjectList.reset()">Reset </a></div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- <div class="mrg-top-10m  btm10 container">
+                                    <div class="row">
+                                        <select class="form-control" style="width:200px;font-size: 13px; float:left" id="columnsMyProject" onchange="sorterTableMyProjectList.search('query')"></select>
+                                        <input type="text" id="queryMyProject" onkeyup="sorterTableMyProjectList.search('queryMyProject')" placeholder="Search..." class="doc-search" style="width:200px;margin-left:4px; font-size: 13px;padding:8px 5px !Important; float:left;" />
+                                    </div>
+                                </div> -->
+                                <div>
+                                 <input type="hidden" id="name_order" value="asc">
+                                 <input type="hidden" id="manager" value="asc">
+
+                                    <div id='mainTablearea' class='table-responsive scrollbar-panel'><table cellpadding='0' cellspacing='0' border='1' id='tableTempProjects' class='table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table'>
+                                    <thead class='panel-heading'>
+                                        <tr>
+                                            <th class="nosort" data-localize="Project">Project</th>
+											<th class="nosort">Customer</th>
+											<th class="nosort" style="width:24%" data-localize="Manager">Manager</th>
+											<th class="nosort" style="width: 11%;">Status</th>
+											<th class="nosort" style="width: 60px;">Action</th>							 
+                                        	                                          
+                                        </tr>
+                                    </thead><tbody class='panel' id="mainDivAreaOffice365"></tbody></table>
+                                    <div style='text-align: center;font-size:14px;display:none' id="norecordFoundMyProject" data-localize="NoRecordFound">No Record Found</div>
+
+
+
+                                </div>
+                                <div id="tablefooterMyProject" style="margin-bottom: 10px;">
+                                    <div id="tablenavMyProject">
+                                        <div>
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(-1,true)" />
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(-1)" />
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterTableMyProjectList.move(1)" />
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterTableMyProjectList.move(1,true)" />
+                                        </div>
+                                        <div>
+                                            <select id="pagedropdownMyProject"></select>
+                                        </div>
+                                        <div class="spacemanage">
+                                            <a href="javascript:sorterTableMyProjectList.showall()" data-localize="ViewAll">ViewAll </a>
+                                            <span id="total">Total Item: <span id="totalIcaon"></span></span>
+                                        </div>
+                                    </div>
+                                    <div id="tablelocationMyProject">
+                                        <div>
+                                            <span data-localize="LinesPerPage">Lines Per Page</span>
+                                            <select class="myListPagingValue" onchange="sorterTableMyProjectList.size(this.value)">
+                                                <option value="5">5</option>
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </div>
+                                        <div class=""><span data-localize="Page">Page</span><span id="currentpageMyProject"></span><span data-localize="Of" style="margin:0 5px">of</span><span id="totalpagesMyProject"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>		
+					
+					
+		</div>
+		
+		 </div><!--tab-1ed---->
+		 
+	   </div><!---bodysec-->
+			
+			
+		</div>
+	</div>
+	
+<div style="display:none">
+<table style="display:none" id="exceltable">
+	<thead>
+		<tr>
+		   <th data-localize="Project">Project</th><th data-localize="Type">Type</th><th data-localize="Reference">Reference</th><th data-localize="Program">Program</th><th data-localize="Customer">Customer</th><th>Department</th><th>OfficeLocation</th><th data-localize="Manager">Manager</th><th>Status</th><th>CompletionPercentage</th>
+		</tr>
+	</thead>
+	<tbody>
+	  
+	</tbody>
+</table>
+
+</div>
+
+</div>
+
+	<div class="modal fade" id="project-filter" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<button type="button" class="close close-round" data-dismiss="modal">
+					  <span class="close-icon">&times;</span>
+					</button>
+					
+					<h4 class="modal-title">Filter</h4>
+				</div>
+				<div class="modal-body pb0">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Department:</label>
+								<select class="form-control" id="txtFilterDepartment">
+									<!--<option>All</option>
+									<option>IT</option>
+									<option>Marketting</option>-->
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Location:</label>
+								<select class="form-control" id="ddlLocation">
+									<!--<option>Location</option>
+									<option>Location 2</option>
+									<option>Location 3</option>-->
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project" data-localize="Customer">Customer:</label>
+								<select class="form-control" id="ddlCustomer"></select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label>Status:</label>
+								<select class="form-control" id="txtFilterStatus">
+									<option>Live</option>
+									<option>OnHold</option>
+									<option>Terminated</option>
+									<option>Completed</option>
+								</select>
+							</div>
+						</div>
+						
+					    <div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project" data-localize="Program">Program:</label>
+								<select class="form-control" id="ddlProgram">
+								  
+								</select>
+							</div>
+						</div>
+	
+						
+						<div class="col-sm-6">
+							<div class="form-group custom-form-group">
+								<label for="Project" data-localize="Manager">Manager:</label>
+								<span id="managerPicker"></span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="modal-footer project-modal-footer">
+					<button type="button" class="btn custom-btn mr-8 w-87" id="btnApply" data-dismiss="modal">Apply</button>
+					<button type="button" class="btn custom-btn-two-cancel w-87" onclick="clearSelection()" id="btnClose" data-dismiss="modal">Clear</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<input id="hdnIsProjectAdmin" type="hidden" value="false">
+	
+	
+<!-- Trigger the modal with a button -->
+
+<!-- programe strat -->
+<div id="myProgram" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title" data-localize="Program">Programs</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="row" style="margin-bottom:15px;">
+          <div class="col-md-3">
+            <input type="text" name="" id="search" class="form-control" placeholder="Search">
+          </div>
+          <div class="col-md-9" style="text-align:right;" id="btnCreateProgram" style="display:none"> 
+          
+            <button type="button" style="border:none; background:transparent; font-size:14px;" data-toggle="modal" data-target="#newProgram">
+            <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/plus-icon.png" alt="plus icon" style="position:relative; top:-1.5px;"> New
+            </button>
+            
+            <div class="dropdown" style="display:inline-block; text-align:left;">
+			  <button type="button" data-toggle="dropdown" style="background:transparent; border:none;">
+			  <img class="project-view-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/sort-icon.png" alt="sort">
+			    <span>Sort</span>
+			  <img class="project-view-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/NewViewAllProjects/assets/Images/expand-arrow-icon.png" alt="expand arrow">  
+			  </button>
+			  
+			  <ul class="dropdown-menu pull-right" style="border:1px solid #cccccc75;">
+			    <li><a href="javascript:void(0);" onclick="sort_Program(0)">Program Name</a></li>
+			    <li><a href="javascript:void(0);" onclick="recentPrograms()">Recent Program</a></li>
+			    <!--<li><a href="javascript:void(0);" onclick="sort_RefNo()">Reference Number</a></li>-->
+			    <li><a href="javascript:void(0);" onclick="sort_Total()">Number of Projects</a></li>
+			  </ul>
+			</div>
+            
+          </div>
+        </div><!---row ed-->
+
+          <div class="wraptable table-responsive heightmanage">
+           
+           <table class="table table-striped table-hover" id="tblProgram" style="border:1px solid #ccc">
+              <thead>
+                <tr>
+                  <th style="width: 22%" data-localize="Program">Program</th>
+                  <th style="width: 10%;" data-localize="Reference">Reference</th>
+                  <th style="width: 23%">Description</th>
+                  <th style="width: 9%; text-align:center;">Open Tasks</th>
+                  <th style="width: 9%; text-align:center;">Live Projects</th>
+                  <th style="text-align:center; width: 9%;" data-localize="Total Project">Total Projects</th>
+                  <th style="width: 13%; text-align:center;">Completion</th>
+                  <th style="text-align:center">Action</th>
+                </tr>
+              </thead>
+              <tbody id="tblbody">
+                
+
+                            
+              </tbody>
+              
+              </table>
+            
+            </div>  
+
+      
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- programe ed -->
+
+<!-- new Programe -->
+<div id="newProgram" class="modal fade"  role="dialog" style="background:rgba(0,0,0,0.4)">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title" data-localize="Program">Program</h4>
+      </div>
+      <div class="modal-body">
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+		          <label for="" data-localize="Program">Program</label> :<span class="color-red">*</span>
+		          <input type="text" id="txtProgramName" maxlength="250" class="form-control">
+		        </div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Reference">Reference:</label>
+			        <input type="text" id="txtrefNo" maxlength="100" class="form-control">
+		      	</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+			 	<div class="form-group">
+			        <label for="" data-localize="Planned Start Date">Planned Start Date:</label>
+			        <input type="text" id="startDate" name="date" readonly="readonly" class="form-control">
+			  	</div>	
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Planned End Date">Planned End Date:</label>
+			        <input type="text" class="form-control" id="endDate"  name="date" readonly="readonly">
+			        
+			  	</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Stakeholders">Stakeholders:</label>
+			        <!--<input type="text" id="pickerStakeholders" class="form-control">-->
+			        <span id="pickerStakeholders" style="width:100%"></span>
+			  	</div>
+			</div>
+			<div class="col-md-6">
+				<div class="form-group">
+			        <label for="" data-localize="Sponsors">Sponsors:</label>
+			        <!--<input type="text" id="pickerSponsors" class="form-control">-->
+			        <span id="pickerSponsors" style="width:100%"></span>
+			  	</div>
+			</div>
+		</div>
+
+	      <div class="form-group">
+	        <label for="pwd">Description:</label>
+	       <textarea name=""  id="txtDescription" cols="30" rows="3" class="form-control"></textarea>
+	      </div>
+	      
+      </div>
+      
+      <div class="modal-footer" style="text-align:center;">
+        <button type="button" id="btnAddProgram" class="btn custom-btn">Submit</button>
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!----- new Programe ---->
+
+<!----<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#programlisting">Open Modal</button>----->
+
+<!----Modalprogramlisting ---->
+
+<div id="programlisting" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+   <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+        <h4 class="modal-title" data-localize="Project">Project</h4>
+      </div>     
+      <div class="modal-body">
+        
+        <div class="wraptable table-responsive heightmanage">
+
+          <table class="table table-hover" id="commonTble">
+
+            <thead>
+              <tr>
+                <th style="width:40%" data-localize="Project">Project</th>
+                <th style="width:40%" data-localize="Manager">Manager</th>
+                <th style="width:20%">Status</th>
+              </tr>
+            </thead>
+
+            <tbody id="commonTbody">
+              
+            </tbody>
+
+          </table>
+
+        </div>  
+
+      </div><!--modal-body--->
+    </div>
+  </div>
+</div>
+
+
+
+<!---programe script---->
+<script type="text/javascript">
+  
+$(function(){
+
+$(".programname").each(function(i){
+
+    len=$(this).text().length;
+    if(len>100)
+    {
+      $(this).text($(this).text().substr(0,100)+'...');
+    }
+
+  });
+
+$(".descriptionbbox").each(function(i){
+
+    len=$(this).text().length;
+    if(len>200)
+    {
+      $(this).text($(this).text().substr(0,200)+'...');
+    }
+
+  });
+
+$(".refsec").each(function(i){
+
+    len=$(this).text().length;
+    if(len>50)
+    {
+      $(this).text($(this).text().substr(0,50)+'...');
+    }
+
+  });
+
+
+});
+
+</script>
+
+
+
+
+
+
+	
+	
+	
+
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-datepicker.js"></script>-->
+
+	<script>
+		$("#datepicker").datepicker({   
+		    format: "yyyy",
+		    viewMode: "years", 
+		    minViewMode: "years"
+		});
+		
+
+		
+	</script>
+	
+<!---tab event sec--->
+<script type="text/javascript">
+  
+$(function(){
+
+  $('.activating li').click(function(){
+
+    var storeattr = $(this).attr("data-target");
+
+    $('#'+storeattr).addClass('actives').siblings().removeClass('actives');
+    
+    if(storeattr=='thistab-2'){
+
+      $('.conditionshow').show();
+      $('#filterDiv').show();
+      $('#sortDiv').show();
+
+    }
+    else{
+    $('.conditionshow').hide();
+    $('#sortDiv').hide();
+    $('#filterDiv').hide();
+    } 
+})
+
+})
+
+</script>
+
+<!---tab event sec--->
+
+
+<!---snake effect--->
+
+<script>
+
+var indicator = document.querySelector('.slidesec');
+var items = document.querySelectorAll('.newitem');
+
+function handleIndicator(el) {
+  items.forEach(function (item) {
+    item.classList.remove('is-active');
+    item.removeAttribute('style');
+  });
+  indicator.style.width = "".concat(el.offsetWidth, "px");
+  indicator.style.left = "".concat(el.offsetLeft, "px");
+  indicator.style.backgroundColor = el.getAttribute('active-color');
+  el.classList.add('is-active');
+  el.style.color = el.getAttribute('active-color');
+}
+
+items.forEach(function (item, index) {
+  item.addEventListener('click', function (e) {
+    handleIndicator(e.target);
+  });
+  item.classList.contains('is-active') && handleIndicator(item);
+});
+
+</script>
+<!---snake effect--->	
+	
+	
+<script>
+$(document).ready(function () {
+
+	var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+	
+	if(isMobile)
+	{
+	
+		$("#ProjectExport").hide();
+		
+	
+	}
+});
+
+</script> 
+
+
+
+<!------modal-view only---->
+
+<script>
+
+$(document).ready(function () {
+
+$('.modal').on("hidden.bs.modal", function (e) { 
+    if ($('.modal:visible').length) { 
+        $('body').addClass('modal-open');
+    }
+})
+
+})
+ 
+</script>
+ 
+</body>
+
+</html>

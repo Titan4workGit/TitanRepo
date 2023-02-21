@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8;">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<title> Admin Panel Content Only </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/Environmentsetting/css/env_setting_styles.css" rel="stylesheet">
+	 
+	<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/Environmentsetting/TITAN-Admin Panel-Options.js"></script>
+	 <!-- header -->
+
+
+<style>
+
+.sp-peoplepicker-topLevel{
+
+	height:auto !important;	
+	width:100% !important;
+    border:1px solid #cacaca !important;
+    border-radius:3px;
+    
+}
+
+input.sp-peoplepicker-editorInput[type="text"]{
+	border:none !important;	
+}
+
+.sp-peoplepicker-initialHelpText{
+
+	top:5px !important;	
+}
+
+#collapse7 label{
+
+	margin-left:0 !important;
+	width:25%;
+	
+}
+
+#collapse8 .ajusting{
+
+	width:25%;
+
+}
+
+#collapse8 label h4{
+
+	color: #1c1c1c;
+	font-size: 15px;
+}
+
+#collapse8 #txtName3{
+	
+	margin-left:24.5% !important;
+	
+}
+
+#collapse7 input,
+#collapse7 select{
+
+	margin-left:26% !important;
+
+}
+
+.panel-title h4{
+
+	color:#090909;	
+		
+}
+
+.article-content{
+
+	margin:0 30px !important;	
+}
+
+#my_environmental_main_box{
+	
+	margin-top:0px !important;
+
+}
+
+.ms-rtestate-field p, p.ms-rteElement-P{
+	margin:0 !important;	
+}
+
+/* New css added on 07/7/2021 */
+
+.my_env_btns_box #Submit:hover, .my_env_btns_box #Submit:focus,
+.my_env_btns_box #Close:hover, .my_env_btns_box #Close #Submit:focus {
+    color: #1d6ec0;
+    background-color: #ffffff;
+    border-color: #1d6ec0 !important;
+}
+
+/* Responsive css start */
+
+@media all and (max-width: 991px) and (min-width: 768px){
+	
+#collapse7 input,
+#collapse7 select{
+
+	margin-left:15% !important;
+
+}
+
+#collapse8 #txtName3{
+	
+	margin-left:24.5% !important;
+	
+}
+	
+}
+
+@media(max-width:767px){
+
+div.ms-webpart-cell-vertical-inline-table,
+.ms-webpart-chrome-vertical{
+	display:block !important;
+}
+
+#collapse7 input,
+#collapse7 select{
+
+	margin-left:auto !important;
+
+}
+
+
+#collapse7 label {
+
+    margin-left: 0 !important;
+    width: 100%;		
+}
+
+
+#collapse8 #txtName3{
+	
+	margin-left:10px !important;
+	margin-bottom:15px;	
+}
+
+#collapse8 .ajusting{
+
+	width:100%;
+
+}
+
+
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Rahul  Rana</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rahul  Rana</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-601</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">f12abec1-b2bf-45f3-bd1a-4a049bfb1ce1</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-601, ADMIN-1645029823-601</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+	<body>
+		<!-- Main -->
+		<div class="container mt-15" id="my_environmental_main_box">
+			<div class="clearfix"></div>
+			<div class="panel panel-default shadow2">
+				<div class="panel-heading  panel-head-4">
+					<div class="panel-title">
+						<h4 class="h4-color">Environmental Settings</h4>
+					</div>
+				</div>
+				<div class="panel-body">
+					<div class="col-lg-12">
+						<div class="panel-group">
+						
+							<div class="panel panel-default shadow3" id="departmentdiv" style="overflow:visible">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Department Access </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="deptbtn" type="button" class="btn btn-lg btn-lg-2 btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse4"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse4" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;">Show all departments to</label>
+												<div class="col-sm-6 col-xs-12">
+													<select id="slctdept" onchange="showhide2(this);" class="form-control">
+														<!-- <option value="None">-- Socpe --</option>-->
+														<option>Everyone</option>
+														<option>Selective</option>
+													</select>
+												</div>
+											</div>
+											<!-- <div class="form-group">  -->
+											<div id="Deptsiteadd" style="display:none; height:80px;">
+												<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;">Select Members</label>
+												<div class="col-sm-6 col-xs-12">
+													<span id="peoplePickerdept"></span>
+													<!--<input id="deptuser" type="text" class="form-control">-->
+												</div>
+											</div>
+											<!--</div>  -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end 1 -->
+							<div class="panel panel-default shadow3" id="personaldiv" style="overflow:visible">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Show Personal Details </h4>
+									<!--  Employee Personal Details  -->
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="empbtn" type="button" class="btn btn-lg btn-lg-3 btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse5"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse5" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="col-sm-12">
+
+											<div class="form-group">
+												<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;"> Show personal details to </label>
+												<div class="col-sm-6 col-xs-12">
+													<select id="slctpersonal" onchange="showhide3(this);" class="form-control">
+														<!--   <option value="None">-- Socpe --</option>-->
+														<option>Everyone</option>
+														<option>Selective</option>
+													</select>
+												</div>
+											</div>
+											<!-- <div class="form-group">-->
+											<div id="Employeeadd" style="display:none; height:80px;">
+												<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;"> Select Members </label>
+												<div class="col-sm-6 col-xs-12">
+
+													<span id="peoplePickerpersonal"></span>
+
+
+													<!--  <input type="text" class="form-control">-->
+												</div>
+											</div><!--</div>-->
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- end 2 -->
+							<!-- </div>
+							<div class="col-lg-12"> -->
+							<!-- <div class="panel panel-default shadow3">
+									   <div class="panel-heading panel-heading-custom">
+										   <div class="clearfix"></div>
+										   <h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> One Drive </h4>
+										   <div class="col-sm-5 col-xs-12 mt-10" id="ID">
+											   <button id="onedrivebtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off" >
+												   <div class="handle collapsed" href="#collapse2"></div>
+											   </button>
+										   </div>
+										   <div class="clearfix"></div>
+									   </div>
+									   <div id="collapse2" class="panel-collapse collapse">
+										   <div class="panel-body">
+											   <div class="col-sm-12">
+
+												   <div class="form-group">
+													   <label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;">One Drive Access</label>
+													   <div class="col-sm-6 col-xs-12">
+														   <select id="optionvalue" onchange="showhide1(this);" class="form-control">
+
+																<option>For All</option>
+															   <option>Selective</option>
+														   </select>
+													   </div>
+												   </div>
+
+
+
+												   <div id="onedrvadd" style="display:none; height:80px;">
+													   <label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;">Select Members</label>
+													   <div id="adduser" class="col-sm-6 col-xs-12">
+
+														   <span id="peoplePickeruser"></span>
+
+
+
+													   </div>
+
+												   </div>
+
+											   </div>
+										   </div>
+									   </div>
+								   </div> -->
+							<!-- end 3 -->
+					 
+							<div class="panel panel-default shadow3" id="NewLayoutdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Intranet Layout </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="siteviewbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							 
+							<!-- end 4 -->
+							<div class="panel panel-default shadow3" id="splashdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Splash Page </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="splashbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse3"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 5 -->
+							<div class="panel panel-default shadow3" id="prayerdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Prayer Schedule </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="prayerbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 6 -->
+
+
+							<div class="panel panel-default shadow3" id="newsdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;">Information </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="newsbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!--end 7-->
+							<div class="panel panel-default shadow3" id="QuestionAnswerdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Question & Answer </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="questbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!--end 8 -->
+							<div class="panel panel-default shadow3" id="Surveydiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Survey </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="surveybtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 9-->
+							<div class="panel panel-default shadow3" id="Magazinediv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Magazine </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="magazinebtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 10-->
+							<div class="panel panel-default shadow3" id="Suggestiondiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Suggestion </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="sugbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 11-->
+							<div class="panel panel-default shadow3" id="Initiativediv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Initiative </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="initiativebtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 12-->
+							<div class="panel panel-default shadow3" id="Productdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Product Page </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="Pagebtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 13-->
+							<div class="panel panel-default shadow3" id="Carrierdiv">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Carrier Page </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="Carrierbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse1"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+							</div>
+							<!-- end 14-->
+							<div class="panel panel-default shadow3" id="Rssfeed1div">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> RSS Feed1 </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="rss1btn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse6"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse6" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="form-group">
+											<div class="col-xs-12">
+
+												<label style="margin-left:150px;height:35px;">
+													<h5> Name:</h5>
+
+												</label>
+
+												<input type="text" id="txtName" style=" margin-left: 450px;height: 30px !important; border-radius: 4px !important;">
+
+											</div>
+											<div class="col-xs-12">
+												<label style="margin-left:150px; height:35px;"><h5> Link:</h5></label>
+												<input type="url" id="Link" style="margin-left: 460px;width: 350px;height:30px !important; border-radius: 4px !important;">
+											</div>
+											<div class="col-xs-12">
+												<label style="margin-left:150px;height:35px;"><h5> Refresh Timer:</h5></label>
+												<select id="timer" style=" margin-left: 400px;height: 30px !important; border-radius: 4px !important;">
+													<!--   <option value="None">-- Socpe --</option>-->
+													<option>0 (No refresh)</option>
+													<option>5 minute</option>
+													<option>15 minute</option>
+													<option>30 minute</option>
+													<option>1 hour</option>
+													<option>5 hour</option>
+													<option>8 hour</option>
+												</select>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!--end15-->
+							<div class="panel panel-default shadow3" id="Rssfeed2div">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> RSS Feed2 </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="rssbtn2" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse7"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse7" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="form-group">
+											<div class="col-xs-12">
+
+												<label style="margin-left:150px;height:35px;">
+													<h5> Name:</h5>
+
+												</label>
+
+												<input type="text" id="txtName2" style=" margin-left: 450px;height: 30px !important; border-radius: 4px !important;">
+
+											</div>
+											<div class="col-xs-12">
+												<label style="margin-left:150px; height:35px;"> <h5> Link:</h5></label>
+												<input type="url" id="Link2" style="margin-left: 460px;width: 350px;height:30px !important; border-radius: 4px !important;">
+											</div>
+											<div class="col-xs-12">
+												<label style="margin-left:150px;height:35px;"> <h5> Refresh Timer:</h5></label>
+												<select id="timer2" style=" margin-left: 400px;height: 30px !important; border-radius: 4px !important;">
+													<!--   <option value="None">-- Socpe --</option>-->
+													<option>0 (No refresh)</option>
+													<option>5 minute</option>
+													<option>15 minute</option>
+													<option>30 minute</option>
+													<option>1 hour</option>
+													<option>5 hour</option>
+													<option>8 hour</option>
+												</select>
+											</div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!--end16-->
+							<div class="panel panel-default shadow3" id="Quicklinkdiv" style="overflow:visible">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> Quick Link </h4>
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="quicklink" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse8"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse8" class="panel-collapse collapse">
+									<div class="panel-body">
+
+										<div class="col-xs-12">
+
+											<label style=" margin-left:12px; height:35px;" class="ajusting">
+												<h4> Name:</h4>
+
+											</label>
+
+											<input type="text" id="txtName3" style=" margin-left: 460px;height: 30px !important; border-radius: 4px !important;">
+
+										</div>
+										<div class="col-sm-12"style="height:80px;">
+											<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;"> Contributors(Users) </label>
+											<div class="col-sm-6 col-xs-12">
+												<span id="peoplePickerquicklinks"></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!--end 17-->
+							<div class="panel panel-default shadow3" id="Aboutusdiv" style="overflow:visible">
+								<div class="panel-heading panel-heading-custom">
+									<div class="clearfix"></div>
+									<h4 class="panel-title col-sm-7 col-xs-12 p-0 mt-10 mb-10" style="font-size:20px!important; color:#000000; font-weight:500 !important;"> About-Us Page </h4>
+									<!--  Employee Personal Details  -->
+									<div class="col-sm-5 col-xs-12 mt-10">
+										<button id="aboutusbtn" type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+											<div class="handle collapsed" href="#collapse9"></div>
+										</button>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div id="collapse9" class="panel-collapse collapse">
+									<div class="panel-body">
+										<div class="col-sm-12"style="height:80px;">
+
+
+											<label class="col-sm-6 col-xs-12" style="font-size:16px; color:#000000; font-weight:500 !important;"> Contributors(Users) </label>
+											<div class="col-sm-6 col-xs-12">
+												<span id="peoplePickeraboutus"></span>
+											</div>
+											<!--</div>-->
+
+
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 my_env_btns_box">
+
+						<input id="Submit" type="button" class="btn btn-outline-success button" data-localize="Submit" value="Submit">
+
+						<input id="Close" type="button" class="btn btn-outline-secondary button" data-localize="Close" value="Close">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix"></div>
+
+
+
+	</body>
+</html>

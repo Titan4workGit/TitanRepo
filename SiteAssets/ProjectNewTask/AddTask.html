@@ -1,0 +1,4111 @@
+<script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/tableStyle.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/_catalogs/masterpage/Titan2/Styles/jquery.rateyo.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyDocuments/AdvanceDocumentSearch/assets/css/file-explore.css">
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/_catalogs/masterpage/Titan2/Styles/bootstrap-multiselect.css" type="text/css">
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/_catalogs/masterpage/Titan2/Scripts/bootstrap-multiselect.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/FIles/moment.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/dist/js/tabulator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/_catalogs/masterpage/Titan2/Scripts/jquery.rateyo.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/FIles/emojionearea.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/FIles/emojionearea.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/NewStyle.css">
+<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/Mytable.js'></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/CommonMethods.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/AddTask.js?6"></script>
+<!--<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/UpdateTask.js"></script>-->
+<script>
+var ClientId="";
+var ClentSecret="";
+var TenantId="";
+
+/*
+function ClientCredentials()
+{  
+   var Listname= "AppConfig";
+ 
+    var siteurl = _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/GetByTitle('" + Listname+ "')/items?$filter=Title eq 'Config' ";
+    $.ajax({  
+		url: siteurl,  
+        headers: { Accept: "application/json;odata=verbose" },  
+        async:false,  
+        success: function (data)
+		{	  
+		    var items = data.d.results;  
+            ClientId =items[0].clientid; 
+            ClentSecret = items[0].clientsecret; 
+            TenantId =items[0].tenantID; 
+            //requestAuth();
+            requestToken();
+        },
+		error: function (data) 
+		{  
+        	console.log(data);
+		}  
+    });  
+}*/
+/*
+var token="";
+   
+function getToken()
+{
+    debugger;
+    $.ajax({
+        //"async": true,
+        //"crossDomain": true,
+        "url": "https://howling-crypt-47129.herokuapp.com/https://accounts.accesscontrol.windows.net/3c55c7bf-896d-4f85-aceb-124dca48c080/tokens/OAuth/2",  
+        "method": "POST",
+        "headers": {
+				"Authorization": "Bearer",
+				"Content-Type": "application/x-www-form-urlencoded"
+			  },
+       
+        "data": {
+				"grant_type": "client_credentials",
+				"client_id": "43008ce0-d7ea-49c7-b8a7-887b77481b03@3c55c7bf-896d-4f85-aceb-124dca48c080",
+				"client_secret": "6JS8Q~wWz-W8fzGEWOEHYfWc~6_Me.M-1ZnfaauZ", 
+				"resource": "00000003-0000-0000-c000-000000000000/adaptindia.sharepoint.com@3c55c7bf-896d-4f85-aceb-124dca48c080",
+                "audience": "https://graph.microsoft.com"
+			  },
+        success: function (data) {
+            debugger;
+            token=data.access_token;
+
+            
+            getTeamsMessage();
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+}
+function getTeamsMessage() {
+
+    var chaturl="";
+
+    if (teamid != "" && channelid!= "") {
+        chaturl= "https://graph.microsoft.com/v1.0/teams/"+teamid+"/channels/"+channelid+"/messages";
+    }else{
+       chaturl= "https://graph.microsoft.com/v1.0/chats/"+chatid+"/messages";
+    }
+//alert(chaturl);
+
+  $.ajax({
+        "async": true,
+        "crossDomain": true,
+        "url": chaturl,  
+        "method": "GET",
+        "headers": {
+            "Authorization": "Bearer "+token,
+				"Content-Type": "application/x-www-form-urlencoded"
+        },
+        success: function (data) {
+            //debugger;
+            var items = data.value; 
+            var msg=items[0].body.content;
+            //alert(msg);
+            $("#msgText").html(msg);
+           // console.log($("#msgText").html());
+           // console.log($("#msgText").text());
+           // var element = $('#msgText');
+           // var tags = element.find('*');
+           // tags.remove();
+           // var plainText = element.text().trim();
+            var plainText=$("#msgText").text().trim();
+            if(plainText=="")
+            {
+                plainText="BLANK MESSAGE";    
+
+            }
+
+            $("#comment").val(plainText);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    })
+}
+*/
+</script>    
+
+<script>
+
+var teamid="";
+var channelid="";
+var entityid="";
+var tid="";
+var chatid="";
+var msgId="";
+$(document).ready(function()
+{
+	
+	let urlParams = new URLSearchParams(document.location.search.substring(1));
+    teamid= urlParams.get('teamid');
+	channelid= urlParams.get('channelid');
+	//let entityid= urlParams.get('entityid');
+	//let tid= urlParams.get('tid');
+	chatid= urlParams.get('chatid');
+    msgId=urlParams.get('msgId');
+	//alert("teamid="+teamid);	
+	//alert("channelid="+channelid);	
+	//alert("chatid="+chatid);	
+	$("#global-menu-gear").hide();
+	$("#SideTabIdMenu").hide();
+
+  // getToken();
+
+
+	//$("#masterFooter").hide();
+
+         $.ajax({
+        "async": true,
+        "crossDomain": true,
+        "url": "https://prod-18.centralindia.logic.azure.com:443/workflows/94ef50e70f63431ba5c22361a0335b30/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=A0wBjyoWazhX45WYoR2F40cOtBuROAnBDSP0o2vzGxY",  
+        "method": "POST",
+        "headers": {            
+				"Content-Type": "application/json"
+        },
+        "data": JSON.stringify({
+                "teamid": teamid,
+                "channelid": channelid,
+                "chatid": chatid
+            }),
+        success: function (data) {
+            //debugger;
+            var items = data.value; 
+            var msg="";
+            for(var i=0;i<items.length;i++)
+            {
+                if(items[i].id==msgId)   
+                {
+                    msg=items[i].body.content;
+                    break;
+                }
+
+                if(i>50)
+                    break;
+            }
+            //var msg=items[0].body.content;
+            //alert(msg);
+            $("#msgText").html(msg);
+           // console.log($("#msgText").html());
+           // console.log($("#msgText").text());
+           // var element = $('#msgText');
+           // var tags = element.find('*');
+           // tags.remove();
+           // var plainText = element.text().trim();
+            var plainText=$("#msgText").text().trim();
+            if(plainText=="")
+            {
+                plainText="BLANK MESSAGE";    
+
+            }
+
+            $("#comment").val(plainText);
+        },
+        error: function (error) {
+            console.log(JSON.stringify(error));
+        }
+    });
+    
+});
+	
+</script>
+
+<style>
+    #AssaginToTaskProjectTeam_TopSpan.sp-peoplepicker-topLevel {
+        width: 100% !important;
+        border: none !important;
+    }
+
+    #AssaginToTaskProjectTeam_TopSpan_EditorInput.sp-peoplepicker-editorInput {
+        border: none !important;
+    }
+
+    .flx_ajust {
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+    }
+
+    .search-box #queryProject {
+        width: 100% !important;
+        padding: 7px 3px !important;
+    }
+
+    #divURL #RefURLUpdate {
+        border: none !important;
+    }
+
+    .border_define {
+        padding: 0 0px !important;
+        border: 1px solid #ccc;
+        min-height: 30px;
+        line-height: 27px;
+        margin-bottom: 7px;
+    }
+
+        .border_define a {
+            padding: 0px 5px;
+            position: relative;
+            z-index: 9;
+        }
+
+    #tablelocationMyCustomer {
+        float: right;
+        text-align: right;
+    }
+
+    #tablefooterMyCustomer {
+        margin-top: 15px;
+    }
+
+    #txtReassignee_TopSpan,
+    #txtReassignee_TopSpan_EditorInput {
+        width: 100% !important;
+    }
+
+    #txtReassignee_TopSpan_EditorInput {
+        border: none !important;
+    }
+
+    #Reassignee-Popup button.close {
+        min-width: 1em !important;
+        background-color: #fff;
+        line-height: 24px;
+    }
+
+        #Reassignee-Popup button.close:hover {
+            min-width: 1em !important;
+            background-color: #ccc;
+            color: #000 !important;
+        }
+
+    #tablenavMyCustomer {
+        display: inline-block !important;
+    }
+
+        #tablenavMyCustomer div {
+            display: inline !important;
+        }
+
+    #tablelocationMyCustomer div {
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+    .ajustment_sec {
+        display: inline-block;
+        margin: 5px 0;
+    }
+
+    #otherCustomerSearch .modal-header button.close {
+        min-width: 1em !important;
+        background: #fff;
+        line-height: 24px;
+        color: #000;
+    }
+
+    #myModal input,
+    #myModal select {
+        font-size: 12px !important;
+        color: #4a4a4a !important;
+    }
+
+    .tabulator-paginator button {
+        min-width: 2em !important;
+        background: linear-gradient(to bottom,#fffefe,#e3dede) !important;
+        background: -webkit-linear-gradient(to bottom,#fffefe,#e3dede) !important;
+        background: -ms-linear-gradient(to bottom,#fffefe,#e3dede) !important;
+        background: -o-linear-gradient(to bottom,#fffefe,#e3dede) !important;
+        opacity: 1 !important;
+        color: #535252 !important;
+        transition: 0.s;
+    }
+
+        .tabulator-paginator button:hover {
+            background: #fff;
+        }
+
+    #ui-datepicker-div {
+        z-index: 20 !important;
+    }
+
+    .pd-ajusting {
+        padding-top: 24px;
+    }
+
+    .modal-header button {
+        min-width: 1em !important;
+        background: #fff !important;
+        color:#666;
+        line-height:1.2;
+    }
+
+        .modal-header button.close:hover {
+            color: #fff !important;
+            background-color: #000 !important;
+        }
+
+    #example-table .tabulator-row .tabulator-cell:nth-child(2) img {
+        width: 25px !important;
+        height: 25px !important;
+        border-radius: 50%;
+        margin: 3px 5px 3px 2px !Important;
+    }
+
+    #example-table {
+        height: 298px !Important;
+    }
+
+    #Rowcount.badge {
+        background-color: transparent !Important;
+        color: #666 !important;
+    }
+    
+#ActionInbox button#btnaddDependencies{
+ padding:6px 12px; 
+
+} 
+
+#ActionInbox button#btnaddDependencies img{
+ width:20px;
+ filter: invert(255) sepia(255) saturate(255) hue-rotate( 
+187deg ) brightness(255%) contrast(255%) !Important;
+}
+
+#ActionInbox button#btnaddDependencies:hover img{
+ filter:none !important;
+}
+
+#ActionInbox .actiondefine button.custom-btn-two-danger{
+ background: #ffffff;
+ color: #d43f3a;
+ border: 1px solid #d43f3a;
+ display: inline-block;
+padding: 1px 3px;
+min-width: auto;
+font-size: 10px !important;
+width: 55px;
+border-radius: 15px !important;
+letter-spacing: 1px;
+ 
+}
+  
+#ActionInbox .actiondefine button.custom-btn-two-danger:hover{
+ background:#d43f3a;
+ color:#fff;
+}
+
+#taskDependencyTaskInbox tr td select.mangewidth {
+    height: 29px;
+    padding: 5px;
+    width: 100%;
+    margin: 5px auto;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+
+}
+
+#taskDependencyTaskInbox tr td{
+  text-align:left;
+}
+
+#taskDependencyTaskInbox tr td:last-child{
+  text-align:center;
+}
+
+#taskDependencyTaskInbox tr td .assignbybox h4{
+ font-size: 13px;
+ margin: 0 0 3px 0;
+ padding: 0;
+ line-height: 16px;
+ color: #2f2f2f !important;
+
+}
+
+#taskDependencyTaskInbox tr td .flexrange{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flexrange input[type=range]{
+ width:75.5%;
+ height:10px;
+}
+
+.flexrange h2{ 
+ font-size:12px;
+ margin-left:3px;
+}
+
+.flexrange .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.flexrange .slider::-moz-range-thumb {
+  width: 14px;
+  height: 13px;
+  cursor: pointer;
+}
+
+
+.heightwithscroll{
+    overflow-y: auto;
+    max-height: 420px;
+}
+
+#AssaginToDependency{
+  height:auto !important;
+  padding:1px 5px !important;
+}
+
+#AssaginToDependency #AssaginToDependency_TopSpan,
+#AssaginToDependency #AssaginToDependency_TopSpan .sp-peoplepicker-editorInput{
+
+ width:100% !important;
+ border:none !Important;
+
+}
+
+
+#ActionInbox .statussetion {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    padding: 0 9px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#ActionInbox table tr{
+ border-bottom:1px solid #ccc !important;
+}
+
+
+#ActionInbox  table tr td button.editcircle{
+    min-width: auto;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    transition: all 0.3s;
+    background-color: #e7e7e7;
+    margin: 0 2px;
+}
+
+#ActionInbox  table tr td button.editcircle:hover{
+	background:#c5c5c5 !important;
+}
+
+.statussetion span{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+#ActionInbox .statussetion span:nth-child(2) {
+    margin-left: 4px;
+}
+
+#ActionInbox .statussetion .MandatoryToComplete {
+    margin-left: auto;
+}
+
+#AssignTo,
+#EmpName{
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+}
+
+#AssignTo{
+ margin-bottom:8px;
+}
+
+#AssignTo img{
+ margin-bottom:5px; 
+}
+
+
+/***feb-17-22****/
+
+#aTaskProjectTeam {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #1d6ec0;
+    display: block;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    transition: 0.5s;
+    border: 1px solid transparent;
+    font-size: 14px;
+}
+
+#aTaskProjectTeam:hover{
+ background:#fff;
+ color:#1d6ec0;
+ border:1px solid #1d6ec0;
+
+}
+
+@media(max-width:426px){
+
+#Notificationlist .botheventwork label.radio-inline{
+ display:block !important;
+ margin-left:0 !important;
+ margin-top:15px !important;
+}
+
+
+}
+
+    @media(min-width:1200px) {
+
+        #myModal .modal-dialog.modal-lg {
+            width: 1170px;
+        }
+    }
+
+    @media(min-width:992px) {
+
+        #Reassignee-Popup .modal-dialog {
+            width: 550px !important;
+        }
+
+        #otherProjectSearch .table-responsive.px-15 {
+            padding: 0 0px !important;
+        }
+    }
+
+    @media(max-width:767px) {
+
+        div#tablewrapper table, div#tablewrapper div.table-responsive table, div#mainTablearea table {
+            min-width: 910px;
+            !important;
+        }
+
+        #myModal .col-sm-4,
+        #myModal .col-sm-3,
+        #myModal .col-sm-2 {
+            margin-top: 15px;
+        }
+
+        #otherProjectSearch .modal-body {
+            padding: 0 5px !important;
+        }
+
+        #otherCustomerSearch .col-xs-12.table-responsive {
+            padding: 0 0 !important;
+        }
+
+        #queryCustomer {
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        #otherProjectSearch .table-responsive.px-15 {
+            padding: 0 0 !important;
+        }
+
+        .pd-ajusting {
+            padding-top: 12px;
+            margin-bottom: 12px;
+        }
+
+        .pding-ajust {
+            padding: 0 5px !important;
+        }
+    }
+
+
+
+    #barVal {
+        font-size: 25px !important;
+    }
+
+    #linkReassignee {
+        float: right;
+        background-color: #1d6ec0;
+        color: white;
+        padding: 0.6em 1.5em;
+        text-transform: uppercase;
+        display: none;
+    }
+
+    @media(max-width:991px) {
+
+        #timehours {
+            font-size: 18px !important;
+        }
+
+        #txtDependencyCount {
+            font-size: 18px !important;
+        }
+    }
+
+
+    @media(max-width:534px) {
+
+        .sp-peoplepicker-topLevel, .sp-peoplepicker-topLevelDisabled {
+            width: auto !important;
+        }
+    }
+
+    @media all and (max-width: 600px) and (min-width: 300px) {
+
+        .btn-outline-success,
+        .btn-outline-secondary,
+        input.btn.btn-outline-success {
+            padding: 4.5px 5px !important;
+            font-size: 12px !important;
+        }
+
+        #AddAttachEditTask {
+            margin-top: 0px !important;
+        }
+
+        #AssaginToTaskProjectTeam_TopSpan_EditorInput {
+            width: 220px !important;
+        }
+
+        #AddComment {
+            margin-bottom: 5px;
+        }
+    }
+
+    @media all and (max-width: 364px) and (min-width: 320px) {
+
+        #AssaginToTaskProjectTeam_TopSpan_EditorInput {
+            width: 199px !important;
+        }
+
+        .sp-peoplepicker-initialHelpText {
+            font-size: 12px;
+        }
+    }
+
+
+
+    .browse {
+        padding: 5px;
+        border: 1px solid #ddd !important;
+        width: 100%;
+        background: transparent;
+    }
+
+    .panel-group .panel {
+        border-radius: 5px;
+        border-color: #EEEEEE;
+        padding: 0;
+    }
+
+    .panel-title {
+        font-size: 14px;
+    }
+
+        .panel-title > a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+    /* new css added on 13/7/2020 -----START----- */
+
+    .my_new_task_comnts {
+        /* padding: 7px 0px; */
+        padding: 7px 7px 7px 7px;
+        background: #e6e6e6;
+        border-radius: 8px;
+        margin-top: 12px;
+    }
+
+    .middle_task_col .form_btm_gap {
+        margin-bottom: 12px;
+    }
+
+    .left_task_col #comment {
+        min-height: 104px;
+    }
+
+    .edit_task_post_box {
+        padding: 10px 0px 6px 0px;
+        /*background: #e6e6e6;*/
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .edit_task_comnts_box {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100%;
+        max-height: 345px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .reply_box {
+        overflow: hidden;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+        .reply_box h4 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+    .reply_btns_box .question-edit-button a {
+        color: #386cbb;
+        font-size: 16px;
+    }
+
+    .reply_btns_box .question-delete-button {
+        margin-left: 15px !important;
+    }
+
+        .reply_btns_box .question-delete-button a {
+            color: #e00;
+            font-size: 16px;
+        }
+
+    .reply_btns_box .form-control2 {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .reply_btns_box .question-edit-button {
+        margin-left: 2px;
+    }
+
+    .reply_btns_box .badge, .left_task_col .badge {
+        display: inline-block;
+        min-width: 10px;
+        padding: 3px 7px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #8e8e8e;
+        line-height: 1;
+        vertical-align: baseline;
+        white-space: nowrap;
+        text-align: center;
+        background-color: #ffffff;
+        border-radius: 8px;
+        border: 1px solid #8e8e8e;
+        margin: 0px 0px 5px 0px;
+    }
+
+    .reply_btns_box #btnLinkAttachment + a, .left_task_col #btnLinkAttachment + a {
+        color: #386cbb;
+        font-size: 16px;
+    }
+
+    .reply_btns_box .LinkView, .left_task_col .LinkView {
+        color: #386cbb;
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    .btn-post {
+        background-color: #386cbb;
+        color: #fff;
+        height: 53px;
+    }
+
+    #AddAttachEditTask {
+        margin-top: 6.8px;
+    }
+
+        #AddComment:hover, #AddComment:active, #UpdateComment:hover, #UpdateComment:active, #AddAttachEditTask:hover, #AddAttachEditTask:active {
+            background: #fff;
+            color: #386cbb;
+            border-color: #386cbb;
+        }
+
+    .edit_task_post_box_profile img {
+        width: 53px;
+        height: 53px;
+    }
+
+    .tabulator .tabulator-footer .tabulator-page.active {
+        color: #1d6ec0 !important;
+        background: #fff !important;
+        border-color: #1d6ec0;
+    }
+
+    .tabulator .tabulator-footer .tabulator-page:not(.disabled):hover {
+        background: rgba(255,255,255,.8) !important;
+    }
+
+    .edit_task_post_box_textarea {
+        padding-left: 0;
+    }
+
+    .edit_task_post_box_btns {
+        padding-left: 0;
+        /*padding-right: 0;*/
+    }
+
+        .edit_task_post_box_btns button {
+            min-width: 100%;
+            margin-right: 0;
+        }
+
+    .edit_task_post_box_attach {
+        display: inline-block;
+        position: absolute;
+        z-index: 9;
+        transform: translate(-37px, 28px);
+    }
+
+    .edit_task_post_box_textarea .emojionearea .emojionearea-editor {
+        /*min-height: 3.7em;*/
+        max-height: 8em;
+        min-height: 8em;
+    }
+
+    .edit_task_post_box_attach .custom-file-upload {
+        cursor: pointer;
+    }
+
+        .edit_task_post_box_attach .custom-file-upload i {
+            color: #b1b1b1;
+        }
+
+    /* new css added on 13/7/2020 -----END----- */
+
+    /* new css added on 25/10/20 */
+    .panel-head-4.panel-head-new-task-bg-clr {
+        background-color: #655c5c;
+    }
+
+        .panel-head-4.panel-head-new-task-bg-clr .panel-title {
+            position: relative;
+            top: -6px;
+        }
+
+    #tbDependencies tr > td > .custom-btn-two {
+        border-radius: 16px !important;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        font-size: 12px !important;
+        padding: 1px 3px;
+        width: 39px;
+        min-width: 5em;
+    }
+
+    .slidecontainer input[type=range] {
+        padding: 0;
+    }
+
+    .slidecontainer h2 {
+        margin-top: 7px;
+    }
+
+    .right-time-box .right-time-box-one button:hover, .right-time-box .right-time-box-two button:hover {
+        color: #1d6ec0;
+    }
+
+    .right-time-box .right-time-box-one button:focus, .right-time-box .right-time-box-two button:focus, .right-time-box .right-time-box-one button:active, .right-time-box .right-time-box-two button:active {
+        color: #1d6ec0;
+        background: #fff;
+    }
+
+    #AddDependencies .bg-white-round-btn {
+        border-radius: 50%;
+        opacity: 1;
+        padding: 2px 4px 2px 4px;
+        top: 4px;
+    }
+
+
+    /**july-15-21**/
+
+    .fade_effect {
+        background-color: #eeeeee !important;
+    }
+
+        .fade_effect #RefURLUpdate {
+            background-color: #fff !important;
+        }
+
+        .fade_effect #RefLinkUpdate {
+            display: block;
+            background-color: #fff !important;
+        }
+
+    #drop-zone {
+        position: relative;
+    }
+
+        #drop-zone #clickHere {
+            width: 100%;
+            height: 34px;
+            border: 1px dotted #868686 !important;
+            background: transparent !important;
+            color: #444343 !important;
+            line-height: 24px;
+        }
+
+            #drop-zone #clickHere input {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 34px;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+
+
+
+    .oldfile div,
+    .oldfilename1 div,
+    .oldfilename div {
+        padding: 1px 5px;
+        background: linear-gradient(to bottom,#fff,#ccc);
+        background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+        background: -moz-linear-gradient(to bottom,#fff,#ccc);
+        background: -o-linear-gradient(to bottom,#fff,#ccc);
+        border: 1px solid #ccc;
+        display: inline-block;
+        clear: both;
+        margin: 5px 5px;
+        border-radius: 30px;
+        color: #656565 !important;
+    }
+
+        .oldfile div .closeBtn,
+        .oldfilename1 div .closeBtn,
+        .oldfilename div .closeBtn {
+            display: inline-block;
+            font-size: 14px;
+            padding: 5px 4px;
+            border: 1px solid #b5b5b5;
+            border-radius: 15px;
+            margin: 3px 2px;
+            border: 1px solid #ccc;
+            color: #333 !important;
+            font-size: 13px;
+            cursor: pointer !important;
+            transition: 0.5s;
+        }
+
+            .oldfile div .closeBtn:hover,
+            .oldfilename1 div .closeBtn:hover,
+            .oldfilename div .closeBtn:hover {
+                background-color: #1d6ec0 !important;
+                color: #fff !important;
+                cursor: pointer !important;
+            }
+
+
+        .oldfile div .fa-stack-1x,
+        .oldfilename div .fa-stack-1x,
+        .oldfilename1 div .fa-stack-1x {
+            width: 2em !important;
+            left: 1em !important;
+            color: #6b6b6b !important;
+        }
+
+    .attachment-badge .upload-chip {
+        background: linear-gradient(to bottom,#fff,#ccc) !important;
+        background: -webkit-linear-gradient(to bottom,#fff,#ccc) !important;
+        background: -moz-linear-gradient(to bottom,#fff,#ccc) !important;
+        background: -o-linear-gradient(to bottom,#fff,#ccc) !important;
+        border: 1px solid #ccc !important;
+    }
+
+    #accordionGroup h4 a i.fa-chevron-down {
+        float: right;
+    }
+
+    .flx_ajust#ProjectName {
+        display: block !important;
+    }
+
+        .flx_ajust#ProjectName #searchProject {
+            position: absolute;
+            top: 6px;
+            right: 14px;
+            min-width: auto;
+            padding: 0;
+            width: 23px;
+            height: 23px;
+            display: block;
+            border-radius: 50% !important;
+            z-index: 5;
+        }
+        
+
+
+    @media(max-width:420px) {
+
+        #drop-zone #clickHere,
+        #drop-zone #clickHere input {
+            width: 100% !important;
+        }
+    }
+
+    /* new css added on 25/10/20 */
+
+    .short-full {
+        float: right;
+        color: #000;
+    }
+
+    .control-label {
+        text-align: left !important;
+    }
+
+    .redMark {
+        color: red;
+    }
+
+    .required:after {
+        content: " *";
+        color: red;
+    }
+
+    }
+
+    @media (min-width:768px) {
+        .modal-dialog {
+            width: 850px !important;
+            margin: 30px auto;
+        }
+
+        .emojionearea-standalone {
+            float: right;
+        }
+
+        .emojionearea-editor {
+            min-height: 4em !important;
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite; /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+    }
+
+
+
+
+    /****july-19-21******/
+
+
+    /***newgridtable 9-21-21 start***/
+
+    .newgridtable.table-striped > tbody > tr:nth-child(odd) > td {
+        background-color: #f5f5f594 !important;
+    }
+
+    .newgridtable h3,
+    .newgridtable p,
+    .newgridtable h4,
+    .newgridtable a {
+        margin: 0;
+        padding: 0;
+    }
+
+        .newgridtable p.pjecname {
+            color: #1d6ec0;
+        }
+
+    .newgridtable p {
+        font-size: 13px;
+        line-height: 1.3;
+        margin-bottom: 3px;
+    }
+
+    .newgridtable span.spanmg {
+        font-weight: 600;
+        font-size: 11px;
+        padding: 6px 2px 0;
+        display: inline-block;
+    }
+
+    .managersec {
+        display: flex;
+        align-items: center;
+    }
+
+    .mangimg img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        margin: 0px 8px;
+    }
+
+    .managerdetails h4 {
+        font-size: 13px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .managerdetails a {
+        font-size: 13px;
+        margin: 2px 0;
+        display: block;
+        color: #1d6ec0;
+    }
+
+    .livcolor {
+        color: #00b8ff;
+    }
+
+    .holdcolor {
+        color: #ff0740;
+    }
+
+    .Completecolor {
+        color: #06d216;
+    }
+
+    #tableInfooter div {
+        display: inline-block;
+    }
+
+    #tableInnav {
+        display: inline-block;
+        float: left;
+    }
+
+        #tableInnav div {
+            display: inline-block;
+        }
+
+    #tableInLocation {
+        display: inline-block;
+        float: right;
+    }
+
+    #tableInfooter {
+        padding: 10px 2px;
+    }
+
+    .radiotick {
+        width: 15px;
+        height: 15px;
+    }
+
+    table.newgridtable tr td {
+        border-bottom: 1px solid #cccccc63 !important;
+    }
+
+    .table.newgridtable > thead > tr > th {
+        border-bottom: 1px solid #ddd !important;
+    }
+
+    .sortingsec .dropdown-menu > li > a {
+        color: #333 !important;
+    }
+
+    .paddajust button,
+    .paddajust a {
+        min-width: auto !important;
+        padding: 5px 6px !important;
+        font-size: 14px !important;
+        background: transparent !important;
+    }
+
+    .paddajust button,
+    .paddajust a {
+        min-width: auto !important;
+        padding: 5px 6px !important;
+        font-size: 14px !important;
+    }
+
+
+    .flx_ajust#CustomerName {
+        display: block;
+        position: relative;
+    }
+
+    .searchiconmanage {
+        position: relative;
+    }
+
+        .searchiconmanage select,
+        .searchiconmanage input[type="text"] {
+            padding-right: 26px !important;
+        }
+
+        .searchiconmanage a,
+        .searchiconmanage button,
+        .flx_ajust#CustomerName button {
+            position: absolute;
+            top: 6px;
+            right: 14px;
+            min-width: auto;
+            padding: 0;
+            width: 23px;
+            height: 23px;
+            display: block;
+            border-radius: 50% !important;
+            z-index: 5;
+        }
+
+
+        .searchiconmanage a {
+            right: 17px;
+        }
+
+        .searchiconmanage.circle-manages button {
+            top: auto !Important;
+            bottom: 6px !important;
+        }
+
+    .client-name-search #queryCustomer {
+        width: 342px;
+    }
+
+
+    .row.peopleboxajust {
+        border: 1px solid #ccc;
+        margin: 0 0px;
+        padding: 10px 0 0 0;
+        border-radius: 5px;
+        max-height: 158px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+        .row.peopleboxajust::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .row.peopleboxajust::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            width: 5px;
+        }
+
+        .row.peopleboxajust::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+            .row.peopleboxajust::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+
+        .row.peopleboxajust .gridbox {
+            display: flex;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 6px;
+            min-height: 65px;
+        }
+
+            .row.peopleboxajust .gridbox img {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #c1c1c1;
+                box-shadow: 0px 1px 4px #afadad;
+                border-radius: 50%;
+                margin-right: 10px;
+                display: block;
+            }
+
+            .row.peopleboxajust .gridbox .crosebox {
+                position: absolute;
+                width: 18px;
+                display: block;
+                height: 18px;
+                top: -3px;
+                right: -3px;
+                background: #fff;
+                border-radius: 50%;
+                color: #000;
+                text-align: center;
+                line-height: 18px;
+                cursor: pointer;
+                opacity: 0;
+                transition: 0.3s;
+                box-shadow: 1px 0px 5px #00000073;
+                transition: 0.5s;
+            }
+
+            .row.peopleboxajust .gridbox:hover .crosebox {
+                opacity: 1;
+            }
+
+    .peopleinfo {
+        word-break: normal;
+        word-break: break-all;
+        word-break: keep-all;
+        word-break: break-word;
+    }
+
+        .peopleinfo h5 {
+            font-size: 12px;
+            margin: 2px 0;
+            display: block;
+        }
+
+        .peopleinfo a {
+            color: #1d6ec0 !important;
+            display: block;
+        }
+
+        .peopleinfo span {
+            font-size: 11px;
+        }
+
+    #mainDivAreaClientmaster tr th,
+    #mainDivAreaClientmaster tr td {
+        padding: 3px 4px !important;
+    }
+
+        #mainDivAreaClientmaster tr td span {
+            font-size: 12px;
+        }
+
+
+    .tabulator .tabulator-tableHolder::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+
+    .tabulator .tabulator-tableHolder::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        width: 3px;
+        height: 3px;
+    }
+
+    .tabulator .tabulator-tableHolder::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+        .tabulator .tabulator-tableHolder::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+    /**tree design***/
+
+    .treesec {
+        overflow: auto;
+        max-height: 378px;
+        min-height: 378px;
+        border: 1px solid #cccccc69;
+        padding: 15px 1px;
+        background: #f9f9f9a1;
+        margin-left:0 !important;
+    }
+    
+   .tablecovrs{
+        overflow: auto;
+        max-height: 378px;
+        min-height: 378px;
+        padding:0px;
+        border:1px solid #ccc;
+        border-radius:3px;
+    } 
+    
+	.tablecovrs::-webkit-scrollbar-thumb {
+	border: 2px solid transparent;
+	border-radius: 10px;
+	background-color: #666;
+	background-clip: content-box;
+	-webkit-background-clip: content-box;
+	
+	}
+	
+	
+	.tablecovrs::-webkit-scrollbar-thumb:hover {
+	background-color: #666;;
+	background-clip: border-box;
+	-webkit-background-clip: border-box;
+	
+	}
+	
+	.tablecovrs::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: transparent;
+	}  
+
+
+
+    .heightmanage {
+        overflow: auto;
+        max-height: 296px;
+        margin-bottom: 0px !important;
+    }
+
+    div.tabulator-col[tabulator-field="EMail"],
+    div.tabulator-cell[tabulator-field="EMail"] {
+        border-right: none !Important;
+    }
+
+    .radiosect .radio-inline input[type="radio"] {
+        position: relative;
+        top: 1.5px;
+    }
+    
+.mangheighttable{
+  max-height: 378px;
+  overflow-y: scroll;
+  min-height: 378px;	
+}    
+
+
+
+@media(min-width:992px){
+	
+#copymove .modal-dialog{
+  width:85%;	
+} 
+
+.padright{
+ padding-right:10px;	
+}
+
+.padleft{
+ padding-right:10px;	
+}
+	
+	
+}
+
+    
+
+@media(max-width: 991px) {
+
+    table.newgridtable {
+        min-width: 901px !important;
+    }
+ 
+#copymove .modal-dialog{
+  width:95%;	
+}
+
+.tablecovrs{
+ margin-top:15px;	
+} 
+       
+        
+
+}
+
+    @media(max-width:520px) {
+
+        .client-name-search #queryCustomer {
+            width: 100%;
+        }
+    }
+
+    /**end new table*/
+
+    .ProjectchkList,
+    #mainDivAreaClientmaster input[type="radio"] {
+        width: 15px;
+        height: 15px;
+    }
+
+
+    #otherProjectSearch .modal-header button {
+        color: #000 !important;
+    }
+
+    .my_new_task_box .panel-heading.panel-head-4 .panel-title {
+        top: 0 !important;
+    }
+
+
+    tbody.ProjectTables > tr > td,
+    tbody.ProjectTables > tr > td {
+        padding: 3px 5px !important;
+    }
+
+    #TableProjects tr th,
+    #TableProjects tr td {
+        border: none !important;
+    }
+
+    #TableProjects tr {
+        border: 1px solid #dedddd;
+    }
+
+    .poadust {
+        position: absolute;
+        right: 15px;
+        bottom: -23px;
+        font-size: 12px;
+        color: #cf1057e6;
+        font-weight: 600;
+    }
+
+    /*****oct-3-21*******/
+    .weekly {
+        text-align: left;
+        display: none;
+    }
+
+    .daywise {
+        text-align: left;
+        padding: 0px 0 10px 0;
+        display: none;
+    }
+
+    .yearwise {
+        text-align: left;
+        display: none;
+    }
+
+        .yearwise.activate,
+        .daywise.activate,
+        .weekly.activate,
+        .fulladd {
+            display: block;
+        }
+
+
+    #newtab-1 label {
+        margin-bottom: 0px !important;
+        padding-top: 0;
+    }
+
+    #newtab-2 {
+        margin-bottom: 12px;
+    }
+
+    .radiosect label.radio-inline {
+        margin-bottom: 11px !important;
+    }
+
+    .radioajust input[type=radio],
+    .checkboxajust input[type=radio] {
+        margin-top: 0 !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .radioajust input[type=checkbox],
+    .checkboxajust input[type=checkbox] {
+        margin-top: 0 !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    #newtab-4 .coverbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    #newtab-4 .leftsection,
+    #newtab-4 .rightsection {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 32%;
+    }
+
+        #newtab-4 .leftsection select,
+        #newtab-4 .rightsection select {
+            margin-left: 5px;
+        }
+
+    #newtab-4 .rightsection {
+        margin: 0 7px;
+        width: 37%;
+    }
+
+    .flexingbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .flexingbox label {
+            margin-right: 5px;
+        }
+
+    .scrllajustment {
+        max-height: 380px;
+        overflow-y: auto;
+    }
+
+    .modal .modal-header .bg-white-round-btn {
+        color: #333 !important;
+    }
+
+    /****11-1-21*****/
+
+    .covertwosec,
+    .dividorbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .checkboxinside {
+        padding-right: 10px;
+    }
+
+        .checkboxinside input[type="radio"] {
+            width: 15px;
+            height: 15px;
+        }
+
+    .daskboxsec h4 {
+        font-size: 13px;
+        margin: 0 0 3px 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .projectsec span {
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dutesection.reddate {
+        color: #ff0000;
+    }
+
+    #copymove table.table tbody td,
+    #successortask table.table tbody td {
+        border-bottom: 1px solid #d1d1d1;
+    }
+
+    #copymove table.table tbody tr td,
+    #successortask table.table tbody tr td {
+        padding: 3.4px 5px !important;
+    }
+
+        #successortask table.table tbody tr td:nth-child(3),
+        #successortask table.table tbody tr td:nth-child(2) {
+            text-align: center;
+        }
+
+.seemorebox,
+.assignprimg img,
+.assignprimg .seemorebox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 3px;
+    display: inline-block;
+}
+
+.seemorebox,
+.assignprimg .seemorebox {
+    text-align: center;
+    padding: 5px 1px;
+    min-width: 35px !important;
+    height: 35px;
+    background: #e3e3e3;
+    box-shadow: 1px 2px 2px #b9b9b9;
+    border: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    transition: 0.5s;
+    font-weight:600;
+}
+
+.seemorebox{
+ cursor:pointer;	
+}
+
+
+        .seemorebox:hover,
+        .assignprimg .seemorebox:hover {
+            background: #55608047;
+        }
+
+    .dutesection {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #copymove .modal-footer,
+    #successortask .modal-footer {
+        padding: 10px !important;
+        margin-top: 5px !important;
+    }
+
+    #copymove table.table {
+        border: 1px solid #dbdada;
+    }
+
+        #copymove table.table tr td {
+            border-top: 1px solid #dbdada;
+        }
+
+            #copymove table.table tr td:first-child {
+                width: 7%;
+            }
+
+    .covertwosec h4 {
+        margin: 0 0 3px 0;
+        padding: 0;
+        font-size: 13px;
+        color: #333;
+    }
+
+    .treesec h3 {
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .topheadingsec h4 {
+        font-size: 15px;
+        padding: 0;
+        margin: 5px 0;
+        color: #333;
+    }
+
+    .multeventbox {
+        font-size: 12px;
+    }
+
+    .dropajust {
+        background: transparent;
+    }
+
+        .dropajust .fa-angle-down {
+            font-size: 18px;
+            position: relative;
+            top: 2px;
+        }
+
+        .dropajust:hover {
+            background: transparent;
+        }
+
+    .mg-mange {
+        margin-bottom: 10px;
+    }
+
+    .assignimgbox,
+    .coveringbox {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .assignimgbox img,
+        .coveringbox img {
+            width: 35px;
+            height: 35px;
+            box-shadow: 0px 1px 4px #afadad;
+            border-radius: 50%;
+            margin-right: 4px;
+            display: block;
+        }
+
+        .coveringbox h3 {
+            font-size: 12px;
+            margin: 2px 0;
+            display: block;
+        }
+
+        .assignimgbox a#linkReassignee {
+            padding: 7px 15px;
+            margin-left: 12px;
+            border-radius: 3px;
+        }
+
+    .upload-chip a.LinkView {
+        margin-right: 4px;
+    }
+    
+#tblFiles tbody tr th{
+  position:sticky;
+  top:-1px;	
+}   
+  
+.group-chat-head-title h3{
+ margin:5px 0 !important;	
+}
+
+.a_a_50a7110f:not(.b_a_50a7110f){
+  margin:10px 0px !important;	
+}
+
+
+#Succtablefooter{
+ padding:10px 0;	
+}
+
+#Succtablefooter #Succtablenav{
+ float:left;	
+}
+
+#Succtablefooter #Succtablelocation{
+ float:right;	
+}
+
+#Succtablefooter #Succtablelocation div:first-child{
+ margin-right:4px;	
+}
+
+#Succtablefooter #Succtablelocation div{
+ float:left;	
+}
+
+
+#Succtablefooter #Succtablenav div{
+	float:left;
+}
+
+#Succtablefooter #Succtablenav div:nth-child(2),
+#Succtablefooter #Succtablenav div:nth-child(3){
+	margin-left:4px;
+	margin-right:4px;
+}
+
+#ui-datepicker-div{
+ z-index:1099 !important;	
+} 
+
+#SendNotiPicker .sp-peoplepicker-topLevel,
+#SendNotiPicker .sp-peoplepicker-editorInput{
+ width:100% !important;	
+}
+
+#SendNotiPicker .sp-peoplepicker-editorInput{
+ border:none !important;	
+}
+
+.panel-head-text {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+    color: #333 !important;
+}
+/**feb/18/22**/
+
+#AttachmentView .embed-responsive-16by9 {
+    padding-bottom: 56.25% !important;
+}
+
+#AttachmentView .embed-responsive{
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#AttachmentView .embed-responsive iframe{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#AttachmentView .modal-footer{
+  padding:5px !important;
+  margin-top:0px !important;	
+}
+
+#AttachmentView .modal-dialog{
+  margin:10px auto !important;	
+}
+
+#taskGroupItem1	 .group-taks-item {
+    padding:relative !important;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius:0 0 5px 5px;
+    box-shadow: 0 2px 8px 0 rgb(0, 0, 0, 0.17);
+    z-index: 10;
+    overflow: auto;
+    max-height: 280px;
+    max-width: 300px;
+    margin: 0px auto !important;
+    bottom:0 !important;
+    left:0 !important;
+}
+
+#assignToUserList li {
+    padding: 6px 3px;
+}
+
+.employeesection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 4px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 5px;
+    min-height: 95px;
+}
+
+#taskGroupItem1 ul li .employeesection {
+    min-height: auto;
+    background: transparent !important;
+}
+
+#taskGroupItem1 ul li img.empoyeeimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+
+#taskGroupItem1 ul li .Assignedcontents p {
+    margin-bottom: 2px;
+}
+
+#taskGroupItem1 ul li .Assignedcontents a {
+    color: #1d6ec0 !important;
+    text-decoration: none;
+}
+
+
+#DepFileName .DepdncyFile {
+    display: inline-block;
+    margin: 4px;
+    border: 1px solid #979797;
+    padding: 3px 5px;
+    border-radius: 15px;
+}
+
+#DepFileName .DepdncyFile .fa-paperclip{
+  font-size:15px !important;	
+}
+
+
+@media(min-width: 992px){
+
+#AttachmentView .modal-dialog{
+  width:75% !important;	
+} 	
+
+	
+}
+
+/***feb/18/22**/
+
+
+@media(max-width:456px){
+	
+#Succtablelocation{
+ padding:5px 0;	
+}	
+
+	
+}
+
+  
+
+    /***oct-3-21 over****/
+
+    @media(max-width:767px) {
+
+        .row.peopleboxajust {
+            max-height: 170px;
+        }
+
+
+        .flexingbox select,
+        .flexingbox input {
+            width: 80px;
+        }
+
+        #copymove table.table,
+        #successortask table.table {
+            min-width: 767px;
+        }
+
+        .assignimgbox {
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+            .assignimgbox img,
+            .assignimgbox button {
+                margin-bottom: 10px;
+            }
+    }
+
+
+    @media(min-width:992px) {
+
+        .padright {
+            padding-right: 0;
+        }
+
+        .padjstnow {
+            padding: 7px 2px 0 15px;
+        }
+
+        #successortask .modal-body {
+            padding: 30px !important;
+        }
+    }
+
+    @media(max-width:1199px) {
+
+        #newtab-4 .coverbox {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #newtab-4 .leftsection,
+        #newtab-4 .rightsection {
+            display: block;
+            width: 100%;
+            margin: 10px 0 !Important;
+        }
+
+            #newtab-4 .leftsection select, #newtab-4 .rightsection select {
+                width: 100%;
+                margin: 0 !important;
+            }
+    }
+
+
+    /**notificationlist*/
+
+    .notificationlist {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+        .notificationlist li {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+            .notificationlist li:last-child {
+                margin-bottom: 0px;
+            }
+
+            .notificationlist li:hover {
+                background: #f1f1f1cc;
+                transition: background 0.5s;
+            }
+
+            .notificationlist li input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
+                float: right;
+            }
+
+    .notificationimg {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+
+    .flexitem {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+        .flexitem h4 {
+            font-size: 12px;
+            margin: 2px 0;
+            display: block;
+            color: #333;
+        }
+
+        .flexitem a {
+            font-size: 11px;
+        }
+
+    .listcoverbox {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+
+    .monthlycoverbox {
+        width: 32%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+#Notificationlist .modal-footer{
+ padding:10px !important;
+ margin-top:0 !important;	
+}
+
+#SendNotiPicker{
+  margin:15px 0 5px; 	
+}
+
+.panel-head h1.panel-head-text {
+    color: #333 !important;
+}
+
+.panel-head-text {
+    font-size: 24px;
+    margin: 0;
+    font-weight: 400;
+}
+
+@media(min-width: 768px) {
+
+#Notificationlist .modal-dialog {
+    width: 53%;
+}
+
+.botheventwork label:not(:last-child){
+ margin-right:25px;	
+}
+
+}
+
+    @media(max-width: 500px) {
+
+        #Notificationlist .flexitem {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    }
+
+    @media(max-width:439px) {
+
+        .radiosect label.radio-inline:last-child {
+            margin-left: 0;
+        }
+    }
+    
+body #s4-workspace {
+    height: auto !important;
+    min-height: auto !important;
+}
+</style>
+
+<!-- display: none; -->
+<div class="loader"></div>
+<div class="row" id="create_task_with_comts" style="display:none">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default shadow2">
+                    <div class="">
+                        <div class="panel-head" style="top:0;">
+                            <h1 class="panel-head-text">Task Details</h1>
+                        </div>
+                    </div>
+                    <div class="panel-body" style="padding-top:5px;">
+                        <div class="row">
+                            <div class="col-sm-6 left-panel">
+                                <div class="form-group custom-form-group">
+                                    <label for="TaskName" class="font-12 required" data-localize="Title">Title:</label>
+                                    <input type="text" class="form-control" id="TaskName" autocomplete="off">
+                                </div>
+                                <div class="form-group custom-form-group" id="projectTitleName">
+                                    <label for="TaskType" class="font-12 mb-0 required">Project:</label>
+                                    <input type="text" class="form-control" id="ProjectName">
+                                </div>
+
+                                <div class="form-group custom-form-group" id="ClientTitleName">
+                                    <label for="client" class="font-12 mb-0">Client:</label>
+                                    <input type="text" class="form-control" id="ClientTitle">
+                                </div>
+
+
+                                <div class="form-group custom-form-group clientNameDiv">
+                                    <label for="" class="control-label required" data-localize="Customer"> Customer</label>
+                                    <div class="" id="CustomerName">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6 from-box-isPhone" id="moduleTitleDetail">
+                                        <div class="form-group custom-form-group">
+                                            <label for="" class="font-12">Module:</label>
+                                            <div id="ModuleName">
+                                                <input type="text" class="form-control" id="updateModuleName" disabled="disabled">
+                                                <!--    <select class="form-control" id="Module">
+                                                    </select>   -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 from-box-isPhone">
+                                        <div class="form-group custom-form-group">
+                                            <label for="" class="font-12">Work Type:</label>
+                                            <div id="WorkType">
+                                                <input type="text" class="form-control" id="updateCategory" disabled="disabled">
+
+                                                <!--    <select class="form-control" id="Worktype">
+                                                    </select>  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group custom-form-group">
+                                    <label for="" class="font-12">Description:</label>
+                                    <textarea class="form-control font-20 resize-none" rows="4" id="comment" placeholder="Enter description"></textarea>
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="form-group custom-form-group col-md-6">
+
+                                        <label for="" class="font-12">Assigned By:</label>
+                                        <input type="text" class="form-control" style="display:none;" value="" disabled>
+
+                                        <div class="coveringbox">
+                                            <img id="ImgAssignedBy" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/img/user-circle.png">
+                                            <div class="userboxinside"><h3 id="AssignedBy"></h3></div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row form-group custom-form-group AssignTo col-md-6">
+                                        <div class="col-xs-12" style="padding-right:2px;">
+                                            <label for="" class="font-12 required" data-localize="AssignedTo">Assigned To:</label>
+
+                                            <div class="group-taks-align" id="EmpName">
+                                                <label class="form-control" id="" style="display:none;" maxlength="500" disabled>
+                                                </label>
+                                                <div class="col-sm-9" id="AssaginTaskProjectTeam" style="display:none;"></div>
+                                                <div class="assignimgbox" id="AssignTo">
+                                                    
+                                                </div>
+                                                <a href="javascript:void(0);" id="linkReassignee">Re-Assign</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-6 from-box-isPhone">
+                                        <div class="form-group custom-form-group" >
+                                            <label class="font-12" data-localize="AssignDate">Assign Date:</label>
+                                            <input class="form-control StartDate" type="text" readonly="true" name="" id="date">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 from-box-isPhone">
+                                        <div class="form-group custom-form-group">
+                                            <label class="font-12" data-localize="DueDate">Due Date:</label>
+                                            <input class="form-control DueDate" type="text" name="">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                	<div class="form-group custom-form-group col-md-6 searchiconmanage circle-manages">
+                                        <label for="" class="font-12">Predecessor Task:</label>
+                                        <input type="text" class="form-control" disabled="disabled" id="txtPredTaskEdit">
+                                        <button type="button" class="btn custom-btn ml-8 w-87 EditSuccPred" id="btnPredTasksEdit"><i class="fa fa-search"></i></button>
+
+                                    </div>
+                                    <div class="form-group custom-form-group col-md-6 searchiconmanage circle-manages">
+                                        <label for="" class="font-12">Successor Task:</label>
+                                        <input type="text" class="form-control" disabled="disabled" id="txtSuccTaskEdit">
+                                        <button type="button" class="btn custom-btn ml-8 w-87 EditSuccPred" id="btnSuccTasksEdit"><i class="fa fa-search"></i></button>
+
+                                    </div>
+                                </div><!--row ed---->
+
+
+                                <div class="row">
+
+                                    <div class="form-group col-md-6 searchiconmanage circle-manages">
+                                        <label for="" class="font-12">Document Link:</label>
+                                        <a href="javascript:void(0);" target="_blank" style="position: static;max-width: 409px;width: 409px;" id="txtDocLinkEdit">Select Document Link</a>
+                                        <button type="button" class="btn custom-btn ml-8 w-87 EditSuccPred LibTreeStruct" id="btnAddDocLink" data-toggle="modal" data-target="#copymove"><i class="fa fa-search"></i></button>
+                                    </div>
+
+                                    <div class="form-group col-md-6" id="divURL">
+                                        <label for="CurrentPhase" class="font-12" data-localize="Reference Link" value="" style="padding:0 0">Reference Link</label>
+                                        <div class="col-lg-12 border_define fade_effect">
+                                            <input name="select" id="RefURLUpdate" class="form-control" disabled="disabled">
+                                            <a href="javascript:void(0)" id="RefLinkUpdate" style="display:none;"></a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                                <div class="form-group custom-form-group mb-8" style="clear:both;">
+                                    <label class="font-12">Attachment:</label>
+                                    <div id="drop-zone">
+                                        <div id="clickHere" class="btn custom-btn">
+                                            Click or Drop here <i class="fa fa-download pl-4"></i>
+                                            <input type="file" name="file" id="FileUpload" class="form-control" multiple="">
+                                        </div>
+                                        <div id="filename" class="oldfile" style="padding:10px 10px 0px 10px;"></div>
+                                        <div id="oldfilename" class="oldfile" style="padding:0px 0px 0px 10px;"></div>
+                                    </div>
+                                    <div class="form-group custom-form-group chip-box">
+                                        <div class="attachment-badge mt-10 chip-box" id="spanAttachmentCollection">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 right-panel">
+                                <div class="row m-0 right-top-box">
+                                    <div class="col-xs-12">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-group custom-form-group">
+                                                    <label for="" class="font-12 w-100" data-localize="Priority">Priority</label>
+                                                    <select class="form-control" id="Priority">
+                                                    	<option value="High">High</option>
+                                                        <option value="Medium" selected="selected">Medium</option>
+                                                        <option value="Low">Low</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="form-group custom-form-group">
+                                                    <label for="" class="font-12 w-100">Status</label>
+                                                    <select class="form-control" id="ProjectCurrentPhase">
+                                                        <option value="Open">Open</option>
+                                                        <option value="Completed">Completed</option>
+                                                        <option value="Hold">Hold</option>
+                                                        <option value="Cancelled">Cancelled</option>
+                                                        <option value="Close">Close</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                                                <div class="form-group custom-form-group">
+                                                    <label for="" class="font-12 w-100">Completion Date</label>
+                                                    <input class="form-control pl-8 CompletionDate" type="text" name="">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <div class="form-group custom-form-group">
+                                                    <label for="" class="font-12 w-100">Completion (%)</label>
+                                                    <div class="slidecontainer d-flex align-item-center col-sm-12">
+                                                        <input type="range" min="0" max="100" value="" class="slider col-sm-10" id="completionInPersent">
+                                                        <h2 class="col-sm-2"><span id="barVal" class="slider-txt-green "></span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row right-time-box">
+                                            <div class="col-xs-6 right-time-box-one" id="TimeHourseArea">
+                                                <div class="text-center">
+                                                    <div>
+                                                        <h2 class="m-0" id="timehours" style="cursor:pointer">00:00 (H:M)</h2>
+                                                    </div>
+                                                    <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#" onclick="timeSheetEntry()" id="btntimesheet" style="display:none">Timesheet</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 right-time-box-two">
+                                                <div class="text-center">
+                                                    <h2 class="m-0" id="txtDependencyCount"></h2>
+                                                    <button class="btn btn btn-outline-success" id="btnAddDependency" type="button">Dependencies</button>
+                                                    <!-- Dependency modal -->
+		    <div class="modal fade" id="ActionInbox" data-backdrop="static" role="dialog">
+		        <div class="modal-dialog modal-lg">
+		            <div class="modal-content">
+		                <div class="modal-header">
+		                    <button type="button" class="close close-round bg-white-round-btn btnCloseActionInbox" data-dismiss="modal">&times;</button>
+		                    <h4 class="modal-title text-left d-flex">
+		                        <label class="m-0" style="white-space: nowrap;">Task:</label>
+		                        <span class="ellipsis-1 ml-4 mr-4" id="taskTitleForLnbox"></span>
+		                    </h4>
+		                </div>
+		                <div class="modal-body">
+		                    <div class="table-responsive table-responsive-2 scrollbar-panel heightwithscroll">
+		
+		                        <table class="table mb-0 custom-table word-break-word" style="display:none;">
+		                            <thead>
+		                                <tr>
+		                                    <th class="w-50 text-center border-bottom-0" style="text-align:left">Dependency</th>
+		                                    <th class="w-20 text-center border-bottom-0">Assigned to</th>
+		                                    <th class="w-20 text-center border-bottom-0">Status</th>
+		                                    <th class="w-20 text-center border-bottom-0">Time Sheet</th>
+		                                </tr>
+		                            </thead>
+		                            <tbody id=""></tbody>
+		                        </table>
+		
+		                        <!---new dummy table section--->
+		
+		                        <table class="table mb-0 custom-table word-break-word">
+		                            <thead>
+		                                <tr>
+		                                    <th style="width:28%">Dependency</th>
+		                                    <th style="width:20%">Assigned To</th>
+		                                    <th style="width:18%">Assigned By</th>
+		                                    <th style="width:20%; text-align:center;">Status</th>
+		                                    <th style="width:14%; text-align:center;">Timesheet</th>
+		                                </tr>
+		                            </thead>
+		
+		                            <tbody id="taskDependencyTaskInbox">
+		                                
+		                            </tbody>
+		                        </table>
+		
+		                        <!---new dummy table section done--->
+		
+		                    </div>
+		                </div>
+
+                <div class="modal-footer" style="text-align:right; margin-top:0;">
+                    <button type="button" class="btn custom-btn btncolormanage AddDepedncy" id="btnaddDependencies">
+                        <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/MyTask/assets/images/plus-icon.png" alt="plus">
+                        Add Dependency
+                    </button>
+                </div><!---footer ed-->
+
+            </div>
+        </div>
+    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row m-0 right-middle-box">
+                                	<div id="chat-viewer" style="height:440px; width:"></div>
+                                    <div class="col-xs-12" style="display:none;">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div id="comment_area" class="">
+                                                    <div class="comment-box">
+                                                        <div class="px-0 comment-box-area custom-form-group">
+                                                            <span>
+                                                                <textarea id="_TextComment_" class="form-control custom-control custom-scroll" rows="2" style="resize:none;"></textarea>
+                                                            </span>
+                                                        </div>
+                                                        <div class="btn-post-box">
+                                                            <button type="button" id="AddComment" class="btn btn-post pull-right pt10" onclick="AddComments();"><label>Post</label></button>
+                                                            <button type="button" id="UpdateComment" class="btn btn-post pull-right pt10" onclick="UpdateComments();"><label>Update</label></button>
+                                                            <button type="button" id="AddAttachEditTask" class="btn btn-post pull-right pt10">
+                                                                <label for="AttachmentUploadField" class="custom-file-upload AttachmentUploadField">
+                                                                    <i class="fa fa-upload" aria-hidden="true"></i>
+                                                                </label>
+                                                                <input id="AttachmentUploadField" type="file" multiple="" style="display:none">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                                <div id="filename1" class="oldfilename1" style="padding:10px 10px 0px 16px;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="chat-main-panel scrollbar-panel">
+                                            <div id="ReplyHere">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="create_task_without_comts" style="display:none">
+    <div class="col-sm-12 my_new_task_box">
+        <div class="panel panel-default shadow2">
+            <div class="panel-head">
+                <div class="">
+                    <h1 class="panel-head-text" data-localize="NewTask">New Task</h1>
+                </div>
+            </div>
+            <div class="panel-body">
+                <div class="col-sm-12 my_new_task_data pding-ajust">
+                    <div class="row">
+                        <div class="form-horizontal">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="TaskName" class="col-md-12 col-lg-3 control-label required" data-localize="Title"> Title</label>
+                                    <div class="col-md-12 col-lg-9">
+                                        <input type="" class="form-control" id="TaskName" maxlength="100" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="TaskType" class="col-md-12 col-lg-3 control-label required" data-localize="Type">Type</label>
+                                    <div class="col-md-12 col-lg-9">
+                                        <select id="TaskType" class="form-control">
+                                            <option value="0">--Select--</option>
+                                            <!--<option value="1">Project Task</option>-->
+                                            <option value="2" >General Task</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group projectName">
+                                    <label for="" class="col-md-12 col-lg-3 control-label required" data-localize="Project"> Project</label>
+                                    <div class="col-lg-9 col-md-12 flx_ajust" id="ProjectName">
+                                    </div>
+                                </div>
+                                <div class="form-group moduleName">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="Module"> Module</label>
+                                    <div class="col-lg-9 col-md-12" id="ModuleName">
+                                        <!--     <input type="" class="form-control" id="txtModuleName" maxlength="100">-->
+                                    </div>
+                                </div>
+                                <div class="form-group workType">
+                                    <label for="" class="col-md-12 col-lg-3 control-label required" data-localize="Worktype"> Work-Type</label>
+                                    <div class="col-lg-9 col-md-12" id="WorkType">
+                                        <!--     <input type="" class="form-control" id="txtWorkName" maxlength="100">  -->
+                                    </div>
+                                </div>
+                                <div class="form-group custom-form-group Audience" style="display:none">
+                                    <label class="col-md-12 col-lg-3 control-label">Audience</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <select id="Audience" class="form-control">
+                                            <option value="1">Company</option>
+                                            <option value="2">Corporate</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group clientNameDiv">
+                                    <label for="" class="col-md-12 col-lg-3 control-label required" data-localize="Client">Client</label>
+                                    <div class="col-lg-9 col-md-12 flx_ajust" id="CustomerName">
+                                        <!--input type="text" id="txtCustomer" class="form-control" disabled="disabled" placeholder="Customer Name"-->
+                                        <select name="CategogryType" id="categoryType" class="form-control" disabled="disabled">
+                                            <option value="0">-Select-</option>
+                                        </select>
+                                        <button type="button" class="btn custom-btn ml-8 w-87" id="searchCustomer" data-toggle="modal" data-target="#otherCustomerSearch">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group ProjectTeam" style="display:none">
+                                    <label for="" class="col-md-12 col-lg-3 control-label required" data-localize="AssignTo">Assign To</label>
+                                    <div class="col-lg-9 col-md-12" id="ProjectTeam" style="display:none">
+                                    </div>
+                                    <div class="col-lg-9 col-md-12" id="AssaginTaskProjectTeam"></div>
+                                    <div class="my_create_task_search_btns">
+                                        <div id="aTaskButton" style="display:none"><a href="javaScript:void(0)" id="aTaskProjectTeam"><i class="fa fa-search"></i></a></div>
+                                    </div>
+                                    <!--   </div>   -->
+                                </div>
+
+                                <div class="form-group TaskTeam">
+                                    <label for="" class="col-md-12 col-lg-3 control-label required" data-localize="AssignTo">Assign To</label>
+                                    <div class="col-lg-9 col-md-12" id="TaskTeam" style="display:none">
+                                    </div>
+                                    <div class="col-lg-9 col-md-12" id="AssaginTaskTeam"></div>
+                                    <div class="my_create_task_search_btns"><a href="javaScript:void(0)" id="aTaskTeam"><i class="fa fa-search"></i></a></div>
+                                </div>
+
+
+                                <div class="form-group peoplepickerbox" style="display:none;">
+
+                                    <label for="" class="col-md-12 col-lg-3 control-label"></label>
+
+                                    <div class="col-lg-9 col-md-12">
+                                        <div class="row peopleboxajust" id="userHTMLBox">
+
+                                        </div>
+                                    </div><!--people pickerbox-->
+
+                                </div>
+
+                                <!--<div class="form-group">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="Description">Description</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <textarea class="form-control" rows="3" id="comment" style=" resize:none" maxlength=""></textarea>
+                                    </div>
+                                </div>-->
+
+
+                            </div>
+
+                            <!---right6box start---->
+                            <div class="col-sm-6">
+
+                                <div class="row radioajust RecursiveHide" style="margin:0 0">
+
+                                    <div class="form-group" style="margin-bottom:0px !Important;">
+                                        <label class="control-label col-md-3">Recurrence</label>
+
+                                        <div class="col-md-9 radiosect">
+
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio" id="DailyBox" data-target="newtab-1" checked>Daily
+                                            </label>
+
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio" id="WeeklyBox" data-target="newtab-2">Weekly
+                                            </label>
+
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optradio" id="MonthlyBox" data-target="newtab-3">Monthly
+                                            </label>
+
+                                            <label class="radio-inline" id="rdioYearly">
+                                                <input type="radio" name="optradio" id="YearlyBox" data-target="newtab-4">Yearly
+                                            </label>
+
+                                        </div><!--col-md-9-->
+
+                                    </div>
+                                </div><!--radiosecbox-->
+
+                                <div class="row fulladd checkboxajust RecursiveHide" id="newtab-1">
+
+                                    <div class="col-md-9 col-md-offset-3">
+                                        <div class="weekly" id="newtab-2">
+
+                                            <label class="checkbox-inline" for="monday">
+                                                <input type="checkbox" value="Mon" class="chkDayName" id="monday">Mon
+                                            </label>
+                                            <label class="checkbox-inline" for="Tue">
+                                                <input type="checkbox" value="Tue" class="chkDayName" id="tue">Tue
+                                            </label>
+                                            <label class="checkbox-inline" for="Wed">
+                                                <input type="checkbox" value="Wed" class="chkDayName" id="wed">Wed
+                                            </label>
+                                            <label class="checkbox-inline" for="Thu">
+                                                <input type="checkbox" value="Thu" class="chkDayName" id="thu">Thu
+                                            </label>
+                                            <label class="checkbox-inline" for="Fri">
+                                                <input type="checkbox" value="Fri" class="chkDayName" id="Fri">Fri
+                                            </label>
+                                            <label class="checkbox-inline" for="sat">
+                                                <input type="checkbox" value="sat" class="chkDayName" id="sat">Sat
+                                            </label>
+                                            <label class="checkbox-inline" for="sun">
+                                                <input type="checkbox" value="sun" class="chkDayName" id="sun">Sun
+                                            </label>
+
+                                        </div>
+
+                                        <div class="daywise" id="newtab-3">
+                                            <div class="flexingbox">
+
+                                                <div class="monthlycoverbox">
+                                                    <label for="day">Day:</label>
+                                                    <select class="form-control" id="MonthlyDays"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option></select>
+                                                </div>
+
+                                                <span style="margin-left:5px;">of Every Month</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="row yearwise" id="newtab-4" style="margin:0 0;">
+
+                                            <div class="coverbox">
+
+                                                <div class="leftsection">
+                                                    <label class="control-label" for="">Day:</label>
+                                                    <select class="multidays form-control" id="DayOfYear"></select>
+                                                </div>
+                                                <div class="rightsection">
+                                                    <label class="control-label" for="">Month:</label>
+                                                    <select class="form-control" id="everymonths">
+                                                        <option value="1">Jan</option>
+                                                        <option value="2">Feb</option>
+                                                        <option value="3">Mar</option>
+                                                        <option value="4">Apr</option>
+                                                        <option value="5">May</option>
+                                                        <option value="6">Jun</option>
+                                                        <option value="7">Jul</option>
+                                                        <option value="8">Aug</option>
+                                                        <option value="9">Sep</option>
+                                                        <option value="10">Oct</option>
+                                                        <option value="11">Nov</option>
+                                                        <option value="12">Dec</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                        </div><!--row ed-->
+
+                                    </div>
+
+                                </div><!---row ed-->
+
+                                <div class="row RecursiveHide">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="col-md-12 col-lg-6 control-label required" data-localize="startdate">Start Date</label>
+                                            <div class="col-md-12 col-lg-6 padright">
+                                                <input type="text" class="form-control StartDateRecursive">
+                                            </div>
+                                        </div>
+                                    </div><!--col-ed-->
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="col-md-12 col-lg-5 control-label padjstnow required" id="lblEdnDateRec" data-localize="enddate">End Date</label>
+                                            <div class="col-md-12 col-lg-7" style="position:relative">
+                                                <input type="text" class="form-control EndDateRecursive" id="edingdate">
+                                                <span class="checkbox-inline poadust">
+                                                    <input type="checkbox" id="noenddate">
+                                                    <label for="noenddate">No End Date</label>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div><!--col-ed-->
+
+                                </div><!--duedayed-->
+
+                                <div class="row RecursiveHide">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="" class="col-md-12 col-lg-6 control-label required" data-localize="startdate">Due Days</label>
+                                            <div class="col-md-12 col-lg-6 padright">
+                                                <input type="text" class="form-control multidays" id="txtDueDay">
+                                            </div>
+                                        </div>
+                                    </div><!--col-ed-->
+
+                                </div><!--row ed-->
+
+
+
+                                <div class="row AssignDateHide">
+
+                                    <div class="col-md-6">
+
+                                        <div class="form-group" style="display:none">
+                                            <label for="" class="col-md-12 col-lg-6 control-label required" data-localize="AssignDate">Assign Date</label>
+                                            <div class="col-md-12 col-lg-6 padright">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control StartDate" name="date" id="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="" class="col-md-12 col-lg-6 control-label required" data-localize="DueDate">Due Date</label>
+                                            <div class="col-md-12 col-lg-6 padright">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control DueDate" name="date">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="form-group">
+                                            <label for="" class="col-md-12 col-lg-5 control-label padjstnow" data-localize="Priority">Priority</label>
+                                            <div class="col-md-12 col-lg-7">
+                                                <select name="select2" id="Priority" class="form-control">
+                                                	<option value="High">High</option>
+                                                    <option value="Medium" selected="selected">Medium</option>
+                                                    <option value="Low">Low</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div><!--row ed-->
+
+                                <div class="row" style="display:none">
+
+                                    <div class="col-md-6">
+
+                                        
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="form-group" >
+                                            <!-- data-localize="Completion" -->
+                                            <label for="" class="col-md-12 col-lg-5 control-label padjstnow"> Distribution </label>
+                                            <div class="col-md-12 col-lg-7">
+                                                <select name="select3" id="TaskDistribution" class="form-control">
+                                                    <option value="Consolidated">Consolidated</option>
+                                                    <option value="Individual">Individual</option>
+                                                </select>
+                                            </div>
+                                            <!-- <span class="completion_per">(%)</span> -->
+                                        </div>
+
+                                    </div>
+
+                                </div><!--row ed-->
+
+                                <div class="form-group">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="Description">Description</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <textarea class="form-control" rows="3" id="comment" style=" resize:none" maxlength=""></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group CurrentPhaseHide" style="display:none;">
+                                    <label for="CurrentPhase" class="col-md-12 col-lg-3 control-label" data-localize="Status">Status</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <select name="select" id="ProjectCurrentPhase" class="form-control">
+                                            <option value="Open">Open</option>
+                                            <option value="Completed">Completed</option>
+                                            <option value="Hold">Hold </option>
+                                            <option value="Cancelled">Cancelled</option>
+                                        </select>
+                                        <div id="rateYo"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" id="ParentPredecessorTask" style="display:none;">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="">Predecessor Task</label>
+                                    <div class="col-lg-9 col-md-12 searchiconmanage">
+                                        <input type="text" class="form-control" id="txtPredTask" disabled="disabled">
+                                        <button type="button" class="btn custom-btn ml-8 w-87" id="btnPredTasks"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" id="ParentSuccessorTask" style="display:none;">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="">Successor Task</label>
+                                    <div class="col-lg-9 col-md-12 searchiconmanage">
+                                        <input type="text" class="form-control" id="txtSuccTask" disabled="disabled">
+                                        <button type="button" class="btn custom-btn ml-8 w-87" id="btnSuccTasks"><i class="fa fa-search"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="display:none;">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="">Document Link</label>
+                                    <div class="col-lg-9 col-md-12 searchiconmanage">
+                                        <input type="text" class="form-control" id="txtDocLink">
+                                        <button type="button" class="btn custom-btn ml-8 w-87 LibTreeStruct" data-toggle="modal" data-target="#copymove">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="display:none;">
+                                    <label for="CurrentPhase" class="col-md-12 col-lg-3 control-label" data-localize="Reference Link">Reference Link</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <input name="select" id="RefURL" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group AttachmentHide">
+                                    <label for="" class="col-md-12 col-lg-3 control-label" data-localize="Attachments" id="attachmentlabel">Attachment:</label>
+                                    <div class="col-lg-9 col-md-12">
+                                        <input id="uploadFile" class="upload-file blue-color" style="display:none" multiple type="file">
+                                        <div id="drop-zone">
+                                            <div id="clickHere" class="btn custom-btn">
+                                                Click or Drop here <i class="fa fa-download pl-4"></i>
+                                                <input type="file" name="file" id="FileUpload" class="form-control" multiple="">
+                                            </div>
+                                            <div id="filename" class="oldfilename1" style="padding:10px 10px 0px 10px;"></div>
+                                            <div id="oldfilename" class="oldfilename" style="padding:0px 0px 0px 10px;"></div>
+                                        </div>
+                                        <span class="form-control2" style="display:none" id="spanAttachmentCollection"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="clearfix"></div>
+<div class="row text-center" style="padding-bottom:20px;">
+    <button type="button" class="btn btn-outline-success" id="createNewTask" data-localize="Submit">Submit</button>
+    <!--button type="button" class="btn btn-outline-success" id="btnRecursiveTask" data-localize="RecursiveTask">Recursive Task</button-->
+   <!-- <button type="button" class="btn btn-outline-secondary" id="cancelTaskCreation" data-localize="Close">Close</button>-->
+
+    <!--<button type="button" class="btn btn-outline-success" id="reminderTask" data-localize="Reminder" style="display:none">Reminder</button>-->
+
+    <button type="button" class="btn btn-outline-success" id="reminderTask" data-toggle="modal" style="display:none;" data-target="#Notificationlist">Notify</button>
+
+    <button type="button" class="btn btn-outline-success" id="DeleteTask" data-localize="Delete" style="display:none;">Delete</button>
+    <!-- <button type="button" class="btn btn-outline-secondary" id="btnAttchmentsView" data-localize="Attachments">Attachments</button>-->
+</div>
+<!--------------------Document attachment -------------------->
+
+<div id="modalTitanUploadFile" class="prifile-outer-div modal fade" data-backdrop="static">
+    <div class="prifile-picture">
+        <div class="modal-content">
+            <div class="modal-header panel-head-4" style="padding:6px 15px 0 15px!important;background:#666; color:white">
+                <button style="display:none;" type="button" class="close h4-color" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title h4-color" data-localize="Attachments">Attachments</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="form-group hideOnViewUploadRemovebtn">
+
+                        <div class="col-sm-5">
+                            <button type="button" class="btn  btn-outline-success pull-right" id="btnAddAtchments" style="font-size:11px;">
+                                <label data-localize="Upload">Upload</label>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align:center">
+                    <button type="button" class="btn  btn-outline-success" id="btn1CloseAttachmentForm" style="font-size:11px;">
+                        <label data-localize="Close">Close</label>
+                    </button>
+                    <button type="button" class="btn  btn-outline-success" id="btn2CloseAttachmentForm" style="font-size:11px;">
+                        <label data-localize="Close">Close</label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content my_create_task_search_modal">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    Search Users
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+                <div class="form-group">
+                    <label class="col-sm-2 control-label" data-localize="ShowUseras">Show User as:</label>
+                    <div class="col-sm-4">
+                        <select id="ddlShowUser" class="form-control">
+                            <option value="2">Having Name Like</option>
+                            <option value="1">My Subordinates</option>
+                            <option value="3">Of Designation Like</option>
+                            <option value="4">Having Skills as</option>
+                            <option value="5">Everyone of this Company</option>
+                            <option value="6">Everyone of Department</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <select id="ddlDepartment" style="display:none" onchange="Departmentfilter('Onchange')" class="form-control">
+                            <option value="0">--Select All--</option>
+                        </select>
+                        <select id="ddlMyGroup" style="display:none" class="form-control"></select>
+                        <select class="form-control" style="display:none" id="ddlClients"></select>
+
+                    </div>
+
+                    <div class="col-sm-3" id="txtserchdiv">
+                        <input type="text" class="form-control" placeholder="Search" id="txtserch">
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-12">
+                        <div id="example-table"></div>
+                        <span id="Rowcount" class="badge" style="font-weight:bold"></span>
+                        <div id="ShowProject">Showing <span id="DiplayProject">0</span> out of <span id="TotalProject">0</span>&nbsp;employees</div>
+                        <a href="javascript:void(0)" class="ProjectSeeView" data-localize="See more..." id="SeeMoreTeam">See more...</a>
+                        <a href="javascript:void(0)" class="" data-localize="See more..." id="SeeMoreGeneral">See more...</a>
+                        <a href="javascript:void(0)" class="" data-localize="See more..." id="SeeMoreDept">See more...</a>
+                        <a href="javascript:void(0)" class="" data-localize="See more..." id="SeeMoreGuest">See more...</a>
+                        <a href="javascript:void(0)" class="" data-localize="See more..." id="SeeMoreGuestTeam">See more...</a>
+                        <!--a href="javascript:void(0)" class="" data-localize="See more..." id="SeeMoreMyGroup">See more...</a-->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" onclick="GetSelectItem()" class="btn btn-outline-success">Submit</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="AttachmentView" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" onclick="ClosedIframe()" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">
+                    Attachment View
+                </h4>
+            </div>
+            <div class="modal-body form-horizontal">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                    <div id="doc-viewer">
+                    	
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center">
+                <button type="button" class="btn btn-outline-secondary" onclick="ClosedIframe()" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--<div class="modal fade" id="AddDependencies" role="dialog" data-backdrop="static">
+    <div class="modal-dialog">
+
+        <table>
+            <div class="modal-content">
+                <div class="modal-header panel-head-4" style="padding: 10px 15px !important;">
+                    <button type="button" class="close bg-white-round-btn" data-dismiss="modal" style="margin-top: 2px !important;">×</button>
+                    <h4 class="modal-title h4-color">Dependencies</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="col-sm-12" style="margin-bottom:15px">
+                            <label class="required">Dependency Name:</label>
+                            <input type="text" class="form-control" id="txtTitle">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="margin-bottom:15px">
+                            <label class="required">Assigned To:</label>
+
+                            <input class="form-control" type="text" placeholder="Assigned to" name="" id="lbAssignTo" disabled="disabled">
+                            <div class=" form-control" id="AssaginToTaskProjectTeam"></div>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <label class="required">Details:</label>
+                            <textarea class="form-control" rows="4" style="resize: none;" id="txtDetails"></textarea>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-sm-12 button-container dependencies-save-align-top" style="text-align: center;">
+                            <button type="button" class="btn btn-outline-success" id="AddDependency" onclick="AddDependencies()">Add</button>
+                            <button type="button" class="btn btn-outline-success" id="EditDependency" onclick="UpdateDependencies()">Submit</button>
+                            <button class="btn btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </table>
+    </div>
+</div>-->
+
+
+<div id="dependenciesmodl" class="modal fade" data-backdrop="static" role="dialog" style="background:rgba(0,0,0,0.4);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round btnCloseDependency" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Dependency</h4>
+                <h4 class="modal-title" style="display:none;" id="SelectedDepId"></h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="">Dependency Name:<span style="color:#ff0000">*</span></label>
+                    <input type="text" class="form-control" id="txtTitle">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Assign To:<span style="color:#ff0000">*</span></label>
+                    <div class=" form-control" id="AssaginToDependency"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Detail:<span style="color:#ff0000">*</span></label>
+                    <textarea cols="10" rows="3" id="txtDetails" class="form-control"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7" id="StartDateHTML" >
+                        <label for="">Start date</label>
+                        <label class="checkbox-inline" style="float:right;">
+                            <input type="checkbox" value="" id="StartDateAsTask">Same as Task
+                        </label>
+                        <input type="text" class="form-control StartDependecyDate">
+                    </div>
+
+                    <div class="col-md-5">
+                        
+                        <label for=""></label>
+                        
+                        <div class="form-group">
+	                        <label class="checkbox-inline">
+	                            <input type="checkbox" value="" id="chkIsMandatory"><b>Mandatory to complete</b>
+	                        </label>
+	                    </div>
+                        
+                    </div>
+
+                </div>
+                <div class="row" style="margin-top:10px;">
+                    <div class="col-md-7" id="DueDateHTML">
+                        <label for="">Due date</label>
+                        <label class="checkbox-inline" style="float:right;">
+                            <input type="checkbox" value="" id="DueDateAsTask">Same as Task
+                        </label>
+                        <input type="text" class="form-control DueDependecyDate">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for=""></label>
+                        <input class="upload-file blue-color" style="display:none" multiple type="file">
+                        <div id="drop-zone" style="position: relative; top:5px;">
+                            <div id="clickHere" class="btn custom-btn">
+                                Attachments
+                                <input type="file" name="file" id="DependencyFileUpload" class="form-control" multiple="">
+                            </div>
+                        </div>
+                        <!-- <span class="form-control2" style="display:none" id="spanAttachmentCollection"></span>-->
+                    </div>
+
+                </div>
+                <div class="row"><div class="col-md-12" style="margin-top:10px"><span class="form-control2" id="DepFileName"></span></div></div>
+
+            </div>
+            <div class="modal-footer" style="text-align: center">
+                <button type="button" class="btn custom-btn" id="btnAddDependncy">Add</button>
+                <button type="button" class="btn custom-btn-two-cancel btnCloseDependency" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div id="DependencyViewModel" class="modal fade" role="dialog" aria-hidden="false" data-backdrop="static">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h3 class="modal-title" style="background-color: transparent !important;"><span id="ModelHeading">Detail</span></h3>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12  pb20 pl0 pr0">
+                    <div class="clearfix"></div>
+                    <div class="custom_popup_my_links_attach">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                            <p style="font-size: 15px;"><strong><span id="_TextTitle"></span></strong></p>
+                            <hr>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                            <p style="font-size: 15px;"><span id="_DpDescription"></span></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!--modal of TimeSheet-->
+<div class="modal fade " id="timeSheet" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-left d-flex">
+                    <label class="m-0">Task:</label>
+                    <span class="ellipsis-1 ml-4 mr-4" id="TaskTitleOfTimeSheet">TimeSheet</span>
+                </h4>
+            </div>
+            <div class="modal-body task-inbox-chat">
+                <div class="timesheet-entry-chat-main-panel scrollbar-panel">
+                    <div class="row m-0" id="timeSheetAllHours">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Reassignee popup starts-->
+<div class="modal fade in" id="Reassignee-Popup" role="dialog" style="display: none; padding-right: 0px;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Re-Assigned</h4>
+            </div>
+            <div class="modal-body project-inbox-istab">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group custom-form-group">
+                            <label for="txtReassignee">Assign To:</label>
+                            <div id="tempPpl">
+                                <div id="txtReassignee"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row peopleboxajust" id="ReassigneeUserBox">
+                </div><!--row ed-->
+
+            </div>
+            <div class="modal-footer project-modal-footer" style="text-align:center;">
+                <button type="button" class="btn custom-btn mr-8" id="btnOkReassign">Ok</button>
+                <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal" id="btnCancelReassign">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Reassignee popup ends-->
+<!--Customer popup starts-->
+<div class="modal fade organization-entry-search-modal in" id="otherCustomerSearch" role="dialog" style="display: none;; padding-left: 0px;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!-- <button type="button" class="close close-round" data-dismiss="modal">&times;</button> -->
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">×</span></button>
+                <h4 class="modal-title">Clients</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-8">
+
+                    <div class="col-xs-12 col-sm-12 client-status-search-add-box">
+                        <div class="client-status-search-add-group-main">
+                        </div>
+
+                        <div class="client-status-search-add-group-main" style="position:relative;">
+                            <div class="form-group custom-form-group client-name-search">
+                                <input type="text" id="queryCustomer" onkeyup="sorterTableCustomerList.search('queryCustomer')" placeholder="Search...">
+                                <div class="col-md-5 col-sm-5 col-xs-12" style="float:right; padding:0 0">
+                                    <div class="flx_ajust form-group custom-form-group">
+                                        <label for="CustomerStatus" style="margin:5px 7px;">Status:</label>
+                                        <select class="form-control" id="CustomerStatus">
+                                            <option value="Active">Active</option>
+                                            <option value="InActive">Inactive</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="client-status-search-add-group-main">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 table-responsive client-name-table-box">
+                        <div id="tablewrapper">
+                            <div id="tableheader" style="height: auto !important;">
+                                <div class="search" style="display:none;">
+
+                                </div>
+                                <div>
+                                    <span class="details">
+                                        <div style="display:none;">Records  <span id="startrecordMyCustomer">1</span>-<span id="endrecordMyCustomer">6</span> PagesOf  <span id="totalrecordsMyCustomer">6</span></div>
+                                        <div style="display:none;"><a href="javascript:sorterTableCustomerList.reset()">Reset </a></div>
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+
+                                <div id="mainTablearea" class="table-responsive">
+                                    <table cellpadding="0" cellspacing="0" border="1" id="TempTableClientMaster" class="table-width tinytable table table-bordered table-striped table-hover js-basic-example dataTable no-footer mydptdoc_table">
+                                        <thead class="panel-heading ">
+                                            <tr>
+                                                <th width="30px" class="head"></th>
+                                                <th class="head"><h6>Client Name</h6></th>
+                                                <th style="display:none;" class="head"><h6 data-localize="Ref Code">Customer ID</h6></th>
+                                                <th class="head" style="width:12%"><h6>Ref Code</h6></th>
+                                                <th class="head"><h6>Attn Name</h6></th>
+                                                <th class="head" style="width:12%"><h6>Type</h6></th>
+                                            </tr>
+
+
+                                        </thead>
+                                        <tbody class="panel mainDivClientName" id="mainDivAreaClientmaster"></tbody>
+                                    </table>
+                                    <div style="text-align: center; font-size: 14px; display: none;" id="NoRecordFoundclientmaster" data-localize="NoRecordFound">No Record Found</div>
+
+                                </div>
+                                <div id="tablefooterMyCustomer" style="margin-bottom: 10px;">
+                                    <div id="tablenavMyCustomer" style="display: none;">
+                                        <div>
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif?ctag=210422" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1,true)" data-themekey="#">
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif?ctag=210422" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(-1)" data-themekey="#">
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif?ctag=210422" width="16" height="16" alt="First Page" onclick="sorterTableCustomerList.move(1)" data-themekey="#">
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif?ctag=210422" width="16" height="16" alt="Last Page" onclick="sorterTableCustomerList.move(1,true)" data-themekey="#">
+                                        </div>
+                                        <div class="ajustment_sec">
+                                            <select id="pagedropdownMyCustomer" onchange="sorterTableCustomerList.goto(this.value)"><option value="1">1</option></select>
+                                        </div>
+                                        <div class="ajustment_sec">
+                                            <a href="javascript:sorterTableCustomerList.showall()" data-localize="ViewAll">View All</a>
+                                        </div>
+                                    </div>
+                                    <div id="tablelocationMyCustomer">
+                                        <div>
+                                            <span data-localize="LinesPerPage">Lines Per Page</span>
+                                            <select class="myListPagingValue" onchange="sorterTableCustomerList.size(this.value)">
+                                                <option value="5">5</option>
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="20">20</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                        </div>
+                                        <div class="" style="margin-top:5px; display:inline-block;"><span data-localize="Page">Page</span><span id="currentpageMyCustomer">1</span><span data-localize="Of" style="margin:0 4px">Of</span><span id="totalpagesMyCustomer">1</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer clients-footer-btn-group footer-btn-group">
+                    <button type="button" class="btn custom-btn w-87" id="btnSelectCustomer">Select</button>
+                    <button type="button" class="btn custom-btn-two-cancel w-70" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Customer popup ends-->
+
+<!-- successortask -->
+<div id="successortask" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="txtModalTaskHeader">Successor Task</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="row mg-mange">
+                    <div class="col-md-8 col-md-push-4" style="text-align:right;">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle dropajust" type="button" data-toggle="dropdown">
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/img/sort-icon.png" style="width:16px;">Sort
+                                <span class="fa fa-angle-down"></span>
+                            </button>
+                            <ul class="dropdown-menu pull-right" style="text-align:left;">
+                                <li><a href="javascript:void(0);" class="SortPredSucc">Task Name</a></li>
+                                <li><a href="javascript:void(0);" class="SortPredSucc">Recent Task</a></li>
+                                <li><a href="javascript:void(0);" class="SortPredSucc">Due Date</a></li>
+                                <li><a href="javascript:void(0);" class="SortPredSucc">Task Status</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-pull-8">
+                        <input type="text" id="queryTask" onkeyup="sorter.search('queryTask')" placeholder="Type here for search..." class="doc-search timeline_search" style="width:100%">
+
+                    </div>
+                </div><!--row ed-->
+
+
+                <div class="">
+                    <div id="Succtablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+                        <div id="Succtableheader" style="height: auto !important;">
+                            <div class="search" style="display:none;">
+                                <select style="display:none;" id="Succcolumns" onchange="sorter.search('query')"></select>
+                            </div>
+                            <div>
+                                <span class="details">
+                                    <div style="display:none;">Records  <span id="SuccStartrecord"></span>-<span id="Succendrecord"></span> &nbsp; PagesOf &nbsp; <span id="Succtotalrecords"></span></div>
+                                    <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="table-responsive scrollbar-panel scrllajustment">
+
+                            <table cellpadding='0' cellspacing='0' border='1' id='SuccTableTask' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover newgridtable'>
+                                <thead class='panel-heading '>
+                                    <tr>
+                                        <th id="SortTaskTitle" style="text-align:center"><h6 data-localize="Task">Task</h6></th>
+                                        <th><h6 data-localize="Assigned To" style="text-align:center">Assigned To</h6></th>
+                                        <th class=""><h6 data-localize="Status" style="text-align:center">Status</h6></th>
+                                        <th id="SortTaskRecent" style="display:none;"><h6 data-localize="">Recent Task</h6></th>
+                                        <th id="SortTaskDue" style="display:none;"><h6 data-localize="">Due Date</h6></th>
+                                        <th id="SortTaskPhase" style="display:none;"><h6 data-localize="">Status</h6></th>
+                                    </tr>
+                                </thead>
+                                <tbody class='panel SuccPredTaskTables'></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div id="Succtablefooter" style="margin-bottom: 10px;">
+                        <div id="Succtablenav">
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                            </div>
+                            <div>
+                                <select id="pagedropdownSucc" style=""></select>
+                            </div>
+                            <div>
+                                <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                            </div>
+                        </div>
+                        <div style="display:none; float:left !important;"><span>Showing Items :&nbsp</span><span id="TotalItemscountSucc"></span></div>
+                        <div id="Succtablelocation">
+
+                            <div>
+
+                                <span data-localize="LinesPerPage"></span>
+                                <select onchange="sorter.size(this.value)">
+                                    <option value="5" selected="selected">5</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpageSucc"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpagesSucc"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div><!---scrllajustment---->
+            
+           <div style="clear:both"></div> 
+
+        <div class="modal-footer" style="text-align: center;">
+            <button type="button" class="btn custom-btn mr-8" id="btnSelectPredSuccTask">Submit</button>
+            <button type="button" class="btn custom-btn mr-8" id="btnClearPredSuccTask">Clear</button>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!-- successortask done -->
+<!-- Other Project Search Modal-->
+<div class="modal fade timesheet-entry-search-modal" id="otherProjectSearch" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Projects</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row inbox-istab">
+
+                    <div class="col-md-3">
+
+                        <div class="form-group custom-form-group search-box" style="max-width:100% !important">
+                            <label style="opacity:0;">Search</label>
+                            <input type="text" id="queryProject" onkeyup="sorter.search('queryProject')" placeholder="Type here for search..." class="doc-search timeline_search" style="width:100%">
+                            <!--<input class="form-control" type="text" name="" placeholder="Search">-->
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="row">
+
+                            <div class="col-sm-4">
+                                <div class="form-group custom-form-group">
+                                    <label for="Project">Status:</label>
+                                    <select class="form-control" id="StatusProj">
+                                        <option value="All">All</option>
+                                        <option value="Live" selected="selected">Live</option>
+                                        <option value="Completed">Completed</option>
+                                        <option value="Terminated">Terminated</option>
+                                        <option value="OnHold">OnHold</option>OnHold
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="form-group custom-form-group">
+                                    <label for="Project">Department:</label>
+                                    <select class="form-control" id="DepartmentsProject"></select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 pd-ajusting paddajust">
+                                <div class="add-task-position" style="text-align:right;">
+
+                                    <a class="btn pr-8 hide" data-toggle="modal" data-target="#Inbox" id="FilterProject">
+                                        <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/img/filter-icon.png" style="width:16px;"> Filter
+                                    </a>
+                                    <!---dummy sort icon--->
+                                    <div class="dropdown sortingsec" style="display:inline-block;">
+                                        <button class="btn  dropdown-toggle" type="button" data-toggle="dropdown">
+                                            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Projects/ProjectNewTask/img/sort-icon.png" style="width:16px;"> Sort <i class="fa fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right" style="text-align:left;">
+                                            <li><a href="javascript:void(0);"><span class="SortProject">Project Name</span></a></li>
+                                            <li><a href="javascript:void(0);"><span class="SortProject">Customer</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <!---dummy sort icon--->
+                                </div>
+                            </div>
+
+                        </div><!--row 9 ed-->
+                    </div><!--col 9 ed-->
+
+                </div>
+                <div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+                    <div id="tableheader" style="height: auto !important;">
+                        <div class="search" style="display:none;">
+                            <select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+                        </div>
+                        <div>
+                            <span class="details">
+                                <div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+                                <div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="table-responsive scrollbar-panel scrllajustment">
+
+                        <table cellpadding='0' cellspacing='0' border='1' id='TableProjects' class='table custom-table custom-table-border table-width tinytable table table-bordered table-striped table-hover newgridtable'>
+                            <thead class='panel-heading '>
+                                <tr>
+                                    <th style="width:5%" class=""><h6 data-localize=""></h6></th>
+                                    <th id="ProjectSort"><h6 data-localize="ProjectName">Project Name</h6></th>
+                                    <th id='CustomerProjSort'><h6 data-localize="Customer">Customer</h6></th>
+                                    <th class=""><h6 data-localize="ProjectManager">Project Manager</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody class='panel' id="ProjectTables"></tbody>
+                        </table>
+
+                        <div id="mainDivAllAnnouncements">
+                        </div>
+                    </div>
+                    <div id="tablefooter" style="margin-bottom: 10px;">
+                        <div id="tablenav">
+                            <div>
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+                                <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+                            </div>
+                            <div>
+                                <select id="pagedropdownProject" style=""></select>
+                            </div>
+                            <div>
+                                <a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+                            </div>
+                        </div>
+                        <div style="display:none; float:left !important;"><span>Showing Items :&nbsp</span><span id="TotalItemscountProject"></span></div>
+                        <div id="tablelocation">
+
+                            <div>
+
+                                <span data-localize="LinesPerPage"></span>
+                                <select onchange="sorter.size(this.value)">
+                                    <option value="5" selected="selected">5</option>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div>
+                            <div class=""><span data-localize="Page">&nbsp;</span><span id="currentpageProj"></span>&nbsp;<span data-localize="Of"></span>&nbsp;<span id="totalpagesProj"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer timesheet-entry-footer-btn-group footer-btn-group">
+                <a class="btn custom-btn w-87" id="btnProjectSelect">Select</a>
+                <button type="button" class="btn custom-btn custom-btn-two-danger w-87" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Document Link -->
+<div id="copymove" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5);">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+                <h4 class="modal-title" id="">Document Link</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <h4 style="margin:10px 0;" class="destinationlibrary hidesection">Select the Destination Library</h4>
+
+                <div class="table-responsive document-table document-table2 scrollbar-panel mt-0 hidesection destinationLibrary mangheighttable" style="border:none !important">
+
+                    <table id="copyfilesnow" class="table table-striped table-hover">
+                        <tbody id="tbdyCopyFileLib"></tbody>
+
+                    </table>
+					
+
+
+                </div><!--responsive class end-->
+                <!--tree section start-->
+
+                <caption style="padding:5px 10px; background:#1d6ec014; border:1px solid #ccc; border-bottom:none !important;">
+                    <h4 class="FolderCaption" style="display:none; margin-bottom:10px;">Select Folder</h4>
+                    <h4 class="FolderCaption" id="FolderNameCopy" style="display:none; margin:0;"></h4>
+                </caption>
+                
+                <div class="row" id="TreeArea" style="display:none;">
+                	<div class="col-md-4 padright">
+                	
+                		<div class="treesec scrollbar-panel" style="display: none"></div>
+	                
+	                </div>
+	                
+	               <div class="col-md-8 padleft">
+	               
+		               <div class="tablecovrs">
+	 
+			                <table id="tblFiles" style="display:none;" class="table table-striped table-hover">
+			                	<th></th>
+								<th>File Name</th>
+								<th>Title</th>
+								<th style="width:15%;">Document Type</th>
+								<th>Reference</th>
+			                    <tbody id="tbdyFiles"></tbody>
+			                </table>
+			                
+			           </div>     
+                
+              	   </div>
+                
+                </div>
+                 <!--row ed-->
+                
+				
+            </div><!--body ed-->
+
+            <div class="modal-footer" style="text-align:center">
+                <button class="btn custom-btn" type="button" id="nextbtn">Next</button><h4 id="txtPleaseWait" style="display:none;float:right;"> Please wait...</h4>
+                <button class="btn btn-secondary" type="button" id="Backbtn" style="display:none;">Back</button>
+                <button class="btn btn-secondary" type="button" id="btnSelect" style="display: none;">Select</button>
+                <button class="btn custom-btn" type="button" id="btnSubmitLink" style="display: none;">Submit</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="msgText" style="display:none"></div>
+<!-- Document Link -->
+
+	<!-- Assigned to modal -->
+    <div class="modal fade" id="AssignedToModal" role="dialog">
+      
+      <div id="taskGroupItem1" class="modal-dialog modal-sm">
+        <div class="modal-header">
+            <button type="button" id="taskGroupCrs" class="close close-round bg-white-round-btn" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">
+                <label class="m-0">Assigned To</label>
+            </h4>
+        </div>
+        <div class="modal-body" style="padding:0 !important">
+            <ul class="group-taks-item scrollbar-panel group-taks-item-panel" id="assignToUserList"></ul>
+        </div>    
+            
+        </div>
+    </div>
+
+<!-- Notificationlist -->
+
+<div id="Notificationlist" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Notification</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="">Message<span style="color:red;">*</span></label>
+                        <textarea id="txtTaskNotify" cols="10" rows="3" class="form-control" style="min-height:170px; max-height:170px"></textarea>
+                    </div>
+                    <div class="row">
+                    
+                    <div class="col-md-12">
+                    <label>Mail send to</label><label>:</label>
+                        <div class="botheventwork" style="">
+                            <label class="radio-inline">
+                                <input type="radio" class="hideSelective SelectMailSend" id="chkAllUser" value="All" name="rdoSendMail" checked="checked"> All
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" class="hideSelective SelectMailSend" value="All Assignee" name="rdoSendMail"> All Assignee
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" class="hideSelective SelectMailSend" value="All Dependency" name="rdoSendMail"> All Dependency
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" class="SelectMailSend hideSelective" value="Selective" name="rdoSendMail"> Selective
+                                <!-----<div id="SendNotiPicker" style="display:none;"></div>------>
+                            </label>
+                            
+                         <div id="SendNotiPicker" style="display:none;"></div>   
+
+                        </div><!---box event--->
+
+                    </div>
+                    
+                    </div>
+                    
+                </div>
+
+                <div class="modal-footer" style="text-align: center">
+                    <button type="button" class="btn custom-btn" id="btnSendNotify">Send Mail</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!---Notificationlist ed----->
+
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#_TextComment_").emojioneArea({
+            pickerPosition: "right",
+            tonesStyle: "bullet",
+            events: {
+                keyup: function (editor, event) {
+                    console.log(editor.html());
+                    console.log(this.getText());
+                }
+            }
+        });
+
+        $(".pjecname").each(function (i) {
+
+            len = $(this).text().length;
+            if (len > 130) {
+                $(this).text($(this).text().substr(0, 130) + '...');
+            }
+
+        });
+
+        $("p.customernamshow").each(function () {
+
+            len = $(this).text().length;
+            if (len > 75) {
+                $(this).text($(this).text().substr(0, 75) + '...');
+            }
+
+        });
+
+
+        $(".projectlg").each(function (i) {
+            len = $(this).text().length;
+            if (len > 30) {
+                $(this).text($(this).text().substr(0, 30) + '...');
+            }
+
+        });
+    });
+</script>
+
+
+
+<!---new section add js--->
+
+<script>
+
+    $(function () {
+
+
+
+        $('.radiosect input[type="radio"]').click(function () {
+
+            var store = $('.radiosect input[type="radio"]:checked');
+            store.each(function () {
+                var attstore = $(this).attr('data-target');
+
+                if (attstore == 'newtab-1') {
+                    $('#newtab-1').hide();
+                }
+                else {
+                    $('#newtab-1').show();
+                    $('#' + attstore).addClass('activate').siblings().removeClass('activate');
+                }
+
+
+            })
+
+        });
+
+
+        $('#noenddate').click(function () {
+            if ($(this).is(':checked')) {
+                $('#edingdate').attr('disabled', true);
+                $('#edingdate').val('');
+                $("#lblEdnDateRec").removeClass('required');
+            }
+            else {
+                $('#edingdate').attr('disabled', false);
+                $("#lblEdnDateRec").addClass('required');
+            }
+
+        });
+    });
+
+</script>
+
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title></title>
+
+    <style>
+        .form-group.TaskTeam .my_create_task_search_btns {
+            right: 18px;
+        }
+
+            .form-group.TaskTeam .my_create_task_search_btns #aTaskTeam {
+                width: 23px;
+                height: 23px;
+                border-radius: 50%;
+                background-color: #1d6ec0;
+                color: #fff;
+                display: block;
+                text-align: center;
+                line-height: 22px;
+                transition: 0.5s;
+                font-size: 14px;
+            }
+
+                .form-group.TaskTeam .my_create_task_search_btns #aTaskTeam:hover {
+                    color: #1d6ec0;
+                    background: transparent;
+                    border: 1px solid #1d6ec0;
+                }
+
+
+
+        @media(max-width:1199px) {
+
+            #create_task_without_comts .form-horizontal .control-label {
+                text-align: left !important;
+            }
+        }
+
+        .form-group.TaskTeam {
+            position: relative !important;
+        }
+
+            .form-group.TaskTeam .my_create_task_search_btns {
+                position: absolute;
+                bottom: 5px !important;
+            }
+
+        .form-group.ProjectTeam {
+            position: relative !important;
+        }
+
+        .form-group .my_create_task_search_btns {
+            position: absolute;
+            bottom: 3px !important;
+        }
+
+        #AssaginTaskTeam_TopSpan_EditorInput {
+            border: none !important;
+            width: 96% !important;
+        }
+
+
+        #AssaginTaskProjectTeam_TopSpan_EditorInput {
+            border: none !important;
+            width: 96% !important;
+        }
+
+        #myModal button.close {
+            min-width: 2rem !important;
+            color: #000;
+            background: #fff;
+            opacity: 1;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+        button.close:hover {
+            background: #000 !important;
+            color: #fff !important;
+        }
+
+        @media(max-width:767px) {
+
+            .panel-body {
+                padding: 15px 5px !important;
+            }
+        }
+    </style>
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5120</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9002270a-94f5-4735-b96a-78f379d48466</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5120, ADMIN-1645029823-5120</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Subhankar Goswami</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">32600.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100AA9C04D3BC02534394A1512A2B3659FE</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

@@ -1,0 +1,581 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+<script src='https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/Permission/CheckUserAuthentication.js'></script>
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/Plugin/jquery.richtext.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/Plugin/richtext.min.css">
+
+<style>
+
+#btnDelete{
+	color: #fff;
+    background-color: #dc3545;
+    background-image: none;
+    border-color: #dc3545 !important;
+    padding: 4.5px 12px !important;
+}
+
+.richText-editor{
+	    height: 150px !important;
+	    padding:20px !important;
+	   }
+
+
+label.required:after {content: " *"; color: red;}
+
+.browse{ padding:5px; border:1px solid #ddd !important; width:100%; background:transparent}
+.panel-group .panel {
+border-radius: 5px;
+border-color: #EEEEEE;
+padding:0;
+
+}
+.panel-group {
+margin-bottom: 10px;
+}
+
+.panel-title {
+font-size: 14px;
+}
+
+.panel-title > a {
+display: block;
+padding: 10px;
+text-decoration: none;
+}
+
+/* new css addded on 18/3/2020 */
+
+.attachment-badge {
+display: block;
+text-align: center;
+}
+.attachment-badge a {
+font-size: 12px;
+margin-top: 3px;
+margin-left: 3px;
+padding: 5px 10px;
+color: #666 !important;
+background-color: transparent !important;
+border: 1px solid #666 !important;
+width: auto;
+float: left;
+border-radius: 20px;
+}
+.Announce_pub_date_box .input-group {
+    width: 100%;
+}
+.Announce_exp_date_box .input-group {
+    width: 100%;
+}
+
+/* new css added on 23/3/2020 */
+
+.my_announce_department_list .dropdown-toggle {
+    margin-right: 0;
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    color: #444;
+    position: relative;
+    text-align: left;
+}
+.my_announce_department_list .dropdown-toggle:hover, .my_announce_department_list.open .dropdown-toggle {
+    background-color: transparent;
+}
+.my_announce_department_list .dropdown-toggle .caret {
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-top: 6px solid;
+    border-right: 3px solid transparent;
+    border-left: 3px solid transparent;
+}
+.my_announce_department_list .dropdown-menu {
+    /*width: 90%;*/
+    left: 15px;
+}
+.my_announce_department_list .dropdown-menu li>a span {
+    padding-left: 10px;
+}
+.form-horizontal .required {
+    font-weight: normal;
+    margin-bottom: 3px;
+}
+
+/* css added on 24/3/2020 */
+
+.my_announce_department_list .dropdown-menu {
+    padding: 5px 10px;
+}
+.my_announce_department_list .dropdown-menu li {
+    padding-left: 10px;
+    font-size: 12px;
+}
+.my_announce_department_list .dropdown-menu li input[type="checkbox"] {
+    position: relative;
+    left: -9px;
+    top: -3px;
+}
+#SelectedItems {
+    overflow: auto;
+    display: block;
+    width: 96%;
+    font-size: 14px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    padding-bottom: 2px;
+}
+
+/* css added on 29/6/2020 */
+
+/*#Imagefilename div, #filename div {
+    padding: 3px 10px 7px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#OldImagename div, #oldfilename tr {
+    padding: 7px 10px 7px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#Imagefilename div .closeBtn, #filename div .closeBtn {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+#OldImagename div .closeBtn, #oldfilename tr .closeBtn {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+#oldfilename tr .closeBtn .glyphicon-remove {
+    color: #fff !important;
+}
+#OldImagename div span.fa-stack {
+    margin-top: -5px;
+}
+#OldImagename div strong.fa-stack-1x {
+    color: #000 !important;
+    margin-left: 8px;
+}*/
+
+#filename div {
+    padding: 7px 10px 10px 10px;
+    background: linear-gradient(to bottom,#fff,#ccc);
+    background: -webkit-linear-gradient(to bottom,#fff,#ccc);
+    background: -moz-linear-gradient(to bottom,#fff,#ccc);
+    background: -o-linear-gradient(to bottom,#fff,#ccc);
+    border: 1px solid #ccc;
+    display: inline-block;
+    clear: both;
+    margin: 5px 5px;
+    border-radius: 30px;
+}
+#filename div .closeBtn {
+    color: #fff !important;
+    padding: 2px 3px;
+    background: #1d6ec0;
+    font-weight: 400;
+    display: inline;
+    border-radius: 50%;
+    font-size: 12px;
+    cursor: pointer;
+}
+#filename div span.fa-stack {
+    margin-top: -4px;
+}
+#filename div strong.fa-stack-1x {
+    color: #000 !important;
+    margin-left: 8px;
+}
+
+.pending {
+    opacity: 0;
+}
+/* responsive css START */
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+	.my_announce_department_main_box {
+    	margin-top: 10px;
+	}
+
+}
+
+/* responsive css END */
+
+
+/**************22/11/2021****************/
+#DpdownData{
+    width: 95% !important;
+    list-style-type: none !important;
+    max-height: 210px;
+    overflow-y: auto;
+}
+
+#DpdownData::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+background-color: transparent;
+}
+
+#DpdownData::-webkit-scrollbar-thumb {
+border: 3px solid transparent;
+border-radius: 10px;
+background-color: grey;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+#DpdownData::-webkit-scrollbar-thumb:hover {
+background-color: black;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+/* new css added on 19-JAN-2023 */
+
+.panel-default>.panel-heading.entry-QA-heading-box {
+    background-color: #fff;
+}
+.entry-QA-heading-box .entry-QA-heading {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+</style>
+
+
+<div class="row department-header" style="display: none;"> 
+	<ol class="breadcrumb">    
+		<li><h4 data-localize="Question"><b>Question</b></h4></li>           
+	</ol>
+</div>	
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">                          
+			<div class="panel-heading entry-QA-heading-box">
+				<div class="panel-title">
+					<h4 class="entry-QA-heading" data-localize="Questions & Answers">Question</h4>
+				</div>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+			   		<div class="col-md-12">
+				  		<div class="form-horizontal">
+				  			<div class="form-group">
+					   			<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Title">Title</label>
+									<div class="Announce_title_box">
+										<input id="Title" type="text" class="form-control ViewMode">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<label for="" class="control-label" data-localize="AnswerReply">Reply</label>
+									<div class="Announce_title_box">
+										<select class="Allow-Comments-ChkBox form-control ViewMode" id="allowAnswer">
+				                         	<option value="Allowed">Allowed</option>
+				                         	<option value="Not Allowed">Not Allowed</option>
+				                         	<option value="Stop">Stop</option>
+			                            </select>
+									</div>
+								</div>
+						 	</div>
+						 	<div class="form-group">
+								<div class="col-sm-12 ViewMode">
+									<label for="" class="control-label required" data-localize="Details">Details</label>
+									<div class="ViewMode">
+								  		<textarea id="Detail" class="form-control ViewMode content" rows="8"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+							
+							    <div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Category">Category</label>
+
+									<div class="">
+										
+										<select class="form-control ViewMode" id="ddlCategory">
+										
+										</select>
+										
+									</div>
+								</div>
+							
+					   			<div class="col-sm-6">
+									<label for="" class="control-label" data-localize="Publish By">Publish By</label>
+									<div class="Announce_title_box">
+										<input id="PublishBy" type="text" maxlength="100" class="form-control ViewMode">
+									</div>
+								</div>
+								
+								
+						 	</div>						 
+						 	<div class="form-group">
+						 		<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Display From">Display From</label>
+									<div class="Announce_pub_date_box">
+										<div class="input-group">
+											<input id="ActiveFrom" type="text" class="form-control ViewMode" name="date">
+										</div>
+									</div>
+								</div>
+						 		<div class="col-sm-6">
+									<label for="" class="control-label required" data-localize="Display To">Display To</label>
+									<div class="Announce_exp_date_box">
+										<div class="input-group">
+											<input id="ActiveTo" type="text" class="form-control ViewMode" name="date">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group" >
+								<div class="col-sm-6">
+									<label class="">Audience</label>
+									<select id="Audience" class="form-control ViewMode" onchange="DisplayDepartmentBox(this.value);">
+								  		<option value="Corporate">All Companies</option>
+								  		<option value="Company">Company</option>
+								  		<option value="Department">Department</option>
+									</select>
+								</div>
+								<div class="col-sm-6 my_announce_department_main_box" id="DepartmentListBox" style="display:none;">
+									<label class="required" id="DropLable">Department</label>
+									<div class="button-group my_announce_department_list">
+								        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span id="SelectedItems">Select</span><span class="caret"></span></button>
+										<ul class="dropdown-menu" style="width:95% !important;" id="DpdownData"></ul>
+								  	</div>
+								</div>
+							</div>
+							<div class="form-group">
+                     			<div class="col-sm-6" id="questionChckBox" style="display:none">
+                         			<label class="ViewMode">Active</label>&nbsp;&nbsp;<input type="checkbox" id="chkActive" class="ViewMode" name="" value="" checked="checked">
+                   				</div>
+                 			</div>
+							<!-- Note For Developer - This Below Multiple Attachments Section Is Static only, you need to make it dynamic for uploading multiple attachments -->
+							<div class="form-group" id="Attachmentbox">
+								<div class="col-sm-12">
+									<label class="">Attachments</label>
+									<div id="drop-zone">
+  										<div id="clickHere"><input type="file" name="file" id="FileUpload" class="form-control ViewMode" multiple /></div>
+  										<div id='filename' class="oldfilename1" style="padding:10px 10px 0px 0px;"></div>
+  										<div id='oldfilename' class="oldfilename" style="padding:0px 0px 0px 0px;"></div>
+  									</div>
+								</div>
+							</div>
+  							<div class="clearfix"></div>
+							<div class="row text-center top20">
+							 	<input id="Submit" type="button" style="font-size:13px;" class="btn btn-outline-success button ViewMode" value="Submit" onclick="SetButtonControl();">
+                  				<input id="Close" type="button" style="font-size:13px" class="btn btn-outline-secondary button" value="Close">
+                  				<input id="btnDelete" type="button" style="font-size:13px; display:none" class="btn btn-outline-danger button ViewMode"  onclick="changesQuestionStatus()" value="Delete">							
+							</div> 
+				  		</div>
+					</div>
+			 	</div>
+		   	</div>
+		</div>
+	</div>
+
+	<!-- <div class="col-md-6">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group" role="tablist" aria-multiselectable="true">
+					<div class="otherLanguages" id="accordion"></div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+</div>
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/QuestionAnswer/AddQuestionAnswer.js">	</script>
+<script>
+	$(document).ready(function() {
+		ChangeLabels();
+  	});
+  	/***********************Lable setting code**************************************************************/
+
+//change label as per the 'LabelSettings' list
+
+var LabelDefaultLangauge = [];
+var labels = [];
+function ChangeLabels() {
+	var preferredLanguage = 'DefaultLanguage';
+    if (LabelDefaultLangauge.length == 0) {
+        var RestQuery = "?$select=Title,Key,DefaultLanguage&$top=5000&$filter=Title eq 'Home Page' ";
+        $.when(CommonFunction.getItemsWithQueryItem("LabelsSettings", RestQuery)).done(function (LabelsSettings) {
+            try {
+                //alert("test");
+                LabelDefaultLangauge = LabelsSettings.results;
+                SetDMSText(LabelsSettings.results, preferredLanguage);
+
+            } catch (e) {
+                alert("Recommended to clear the browsing data and cookies for smooth and fast browsing. Please press Ctrl + H to clear cookies.");
+            }
+
+        });
+    }
+    else {
+        SetDMSText(LabelDefaultLangauge, preferredLanguage);
+    }
+}
+
+function SetDMSText(results, preferredLanguage) {
+    labels = [];
+    $.each(results, function (i, value) {
+        var actualText = value['Key'];
+        var convertedText = value[preferredLanguage];
+        if (convertedText == null || convertedText == "" || convertedText == undefined)
+            convertedText = value['DefaultLanguage'];
+
+        var label = {
+            labelText_Actual: actualText,
+            lableText_Converted: convertedText
+        };
+        labels.push(label);
+    });
+
+    DetectBrowser(); // First Detect Browser then Change All Headings as per selected language.
+}
+
+function DetectBrowser() {
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+    // Internet Explorer 6-11
+    var isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isSafari || isIE) {
+        ChangeWebPartsHeadings_OldBrowser();
+    } else {
+        ChangeWebPartsHeadings();
+    }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////// For Latest Browser //////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = labels.find(function (e) {
+                    return e.labelText_Actual.trim() === controlLabelText;
+                }).lableText_Converted;
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                } else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                } else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                } else if ($(this).hasClass("button")) {
+                    $(this).attr('value', convertedText);
+                } else {
+                    $(this).html(convertedText);
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+//////////////////////////////////////////////////////////////////////
+////////////////// IE Browser and Windows Safar 5.1.7 ////////////////
+//////////////////////////////////////////////////////////////////////
+function ChangeWebPartsHeadings_OldBrowser() {
+    try {
+        $("[data-localize]").each(function (i, el) {
+            try {
+                var controlLabelText = $(this).attr('data-localize');
+                var convertedText = findObjectByKey(labels, controlLabelText, controlLabelText);
+
+                if ($(this).find('a').length > 0) {
+                    $(this).find('a').html(convertedText);
+                }
+                else if ($(this).find('b').length > 0) {
+                    $(this).find('b').html(convertedText);
+                }
+                else if ($(this).find('p').length > 0) {
+                    $(this).find('p').html(convertedText);
+                }
+                else if ($(this).hasClass("button")) {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") {
+                        $(this).attr('value', convertedText);
+                    }
+                    else {
+                        $(this).attr("value", $(this).val());
+                    }
+                } else {
+                    if (convertedText != null && convertedText != "null" && convertedText != "") { 
+                        $(this).html(convertedText);
+                    }
+                    else {
+                        $(this).html($(this).text());
+                    }
+                }
+            } catch (ex) {
+                console.log("Multilingual : " + controlLabelText + " key not found.");
+                $(this).attr("value", $(this).val());
+            }
+        });
+    } catch (error) {
+        console.log("Multilingual : " + error);
+    }
+}
+
+function findObjectByKey(array, key, value) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i].labelText_Actual == value) {
+            //alert(array[i].labelText_Actual);
+
+            return array[i].lableText_Converted;
+        }
+    }
+    return null;
+}
+</script>
+
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-1227</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">c108574b-0202-47ab-9587-0701aa9a0cb5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-1227, ADMIN-1645029823-1227</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>

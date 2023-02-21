@@ -1,0 +1,186 @@
+
+ #accordGroup .panel-title-box span[class^="groupName"] {
+    line-height: 1.5;
+    color: #333 !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+}
+
+#accordionGroup .panel-title-box>span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333 !important;
+}
+    
+h4.h4-color, h4.panel-title > a {
+    color: #ffffff;
+    font-weight: normal;
+    font-family: 'Microsoft JhengHei UI';
+    font-size: 17px;
+}
+    
+#accordGroup .panel-title-box span[class^="groupName"] {
+    line-height: 1.5;
+    color: #333 !important;
+    /* font-weight: 600; */
+}
+    
+ #accordionGroup .panel-title-box>span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333 !important;
+}   
+ .custom-panel-heading {
+    padding: 0 !important;
+}   
+
+    #accordionGroup .panel-title-box {
+    padding: 10px 15px !important;
+}
+
+#accordionGroup .panel-title-box {
+    padding: 10px 15px !important;
+}
+    
+.panel-title-box>i {
+    transition: all 0.5s;
+}
+#accordionGroup .panel-title-box>span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333 !important;
+}    
+
+#accordionGroup .panel-title-box {
+    padding: 10px 15px !important;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+}
+
+#accordionGroup .panel-title-box>span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333 !important;
+}
+
+.panel-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+.panel-title-box>i {
+    position: relative;
+    top: 5px;
+}
+.panel-title-box[aria-expanded="true"]>i {
+    transform: rotate(180deg);
+}
+
+.panel-title-box[aria-expanded="true"]>i {
+    transform-origin: center center;
+    top: -3px;
+    position: relative;
+}
+
+#accordGroup .custom-panel-heading .panel-title a {
+    padding-right: 1px !important;
+    text-decoration: none;
+}
+
+<!-----card_group----->
+
+.groups-card {
+    border: 1px solid #cccccc;
+    padding: 10px 10px 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.groups-card-head {
+    max-width: 60px;
+    min-width: 60px;
+    height: 60px;
+    /* border: 2px solid #bbbbbb; */
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+.groups-card-head>img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    object-fit: cover;
+}
+
+.groups-card-body {
+    padding-left: 12px;
+    width: calc(100% - 60px);
+    display: flex;
+    align-items: flex-start;
+}
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.member-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.member-deg, .member-dep {
+    margin-bottom: 6px;
+}
+.member-deg, .member-dep, .member-email {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.btn-form-group {
+    margin-top: 20px;
+}
+
+.groups-card {
+    border: 1px solid #cccccc;
+    padding: 10px 10px 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+}
+
+.groups-card-body-info {
+    width: calc(100% - 19px);
+}
+
+
+@media(max-width:767px){
+  
+.btn-form-group {
+    margin-top: 5px;
+}
+
+}

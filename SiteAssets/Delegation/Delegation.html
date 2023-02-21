@@ -1,0 +1,1059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled 1</title>
+<script type="text/javascript" src="_layouts/15/clienttemplates.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientforms.js"></script>  
+<script type="text/javascript" src="_layouts/15/clientpeoplepicker.js"></script>  
+<script type="text/javascript" src="_layouts/15/autofill.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/font-awesome/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/css/drag-drop.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/css/padding.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/css/styles.css"/>
+<link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"/>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/Mytable.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/tableStyle.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/jquery.richtext.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/richtext.min.css"/>
+
+
+
+<style>
+
+.navbar-custom{
+  position:relative;
+  z-index:50;	
+}
+
+.ms-webpart-chrome-title,
+h2.ms-webpart-titleText{
+ display:none;	
+}
+
+
+.all-align-gap .article-content{
+ margin:0 !important;	
+}
+
+.ms-webpart-chrome-vertical,
+div.ms-webpart-cell-vertical-inline-table {
+    display: block !important;
+}
+
+.hidebox2,
+.hidebox,
+.one_box{
+ display: none;
+}
+
+.hidebox2.active,
+.hidebox.active,
+.one_box.active{
+	display: block;
+}
+
+.control-searchicon button.custom-btn {
+    position: absolute;
+    top: 4px;
+    right: 0px;
+    border-radius: 50% !important;
+    min-width: 0.5em !important;
+    height: 26px;
+    width: 26px;
+    text-align: center;
+    padding: 0;
+    margin-top: 0 !important;
+    cursor:pointer !important;
+    z-index:5;
+}
+
+.richText .richText-editor {
+    height: 120px !important;
+    outline: none;
+    font-size: 13px;
+    color: #333;
+}
+
+body #s4-workspace {
+    overflow: inherit !Important;
+}
+
+
+body.modal-open {
+    height: 100vh;
+}
+
+#s4-workspace {
+    height: 100vh !important;
+    min-height: 100vh !important;
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -4px;
+    overflow: visible !important;
+}
+#s4-bodyContainer {
+    min-height: calc( 100vh - 38px ) !important;
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5052</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">d492ae52-c328-4426-a1ef-06679224a1c5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5052, ADMIN-1645029823-5052</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+
+	 <div class="container-fluid" style="">
+        <div class="custom-panel top_mrg" style="">
+            <div class="panel-head">
+                <h1 class="panel-head-text">Approval Delegation</h1>
+            </div>
+            <div class="panel-body pb0" style="padding-top:0;">
+
+        	<ul id="myTabs" class="nav custom-nav nav-pills custom-nav-main" role="tablist"
+                data-tabs="tabs">
+                <li id="" class="active">
+                    <a href="#My_Delegates" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="true">
+                        <h4 class="m0 nav-text-isPhone">
+                            <span>My Delegates</span>
+                        </h4>
+                    </a>
+                </li>
+                <li id="">
+                    <a href="#Delegated_me" data-toggle="tab" class="in-out-tab approval-in-out-tab" aria-expanded="true">
+                        <h4 class="m0 nav-text-isPhone">
+                            <span>User who Delegated me</span>
+                        </h4>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content tab-pane-main">
+                <!-- Approval Inbox tab -->
+                <div role="tabpane5" class="tab-pane fade active in" id="My_Delegates">
+                    <div class="custom-panel custom-panel-box approval-inbox-custom-panel">
+                        <div class="panel-body">
+                           
+                           <div class="row">
+                           	<div class="col-md-9">
+                            <div class="dashboard-deta-btn-panel d-flex">
+								 <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+	                                <button class="btn" type="button" data-toggle="modal" data-target="#add_deligation">
+	                                    <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/add.png" alt="add" data-themekey="#"/>
+	                                    <span>Add Delegation</span>
+	                                </button>
+	                            </div>
+
+	                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+	                                <button class="btn" type="button">
+	                                    <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/filter-icon.png"alt="add" data-themekey="#"/>
+	                                    <span>Filter</span>
+	                                </button>
+	                            </div>
+
+                                <div class="dropdown dashboard-table-btn">
+									 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/sort-icon.png" alt="sort" data-themekey="#"/>
+                                        <span>Sort</span>
+                                        <img class="dashboard-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/expand-arrow-icon.png" alt="expand arrow" data-themekey="#"/>
+                                    </button>
+									<ul class="dropdown-menu dropdown-color-menu-icon">
+										  <li>
+                                            <a href="#">
+                                                <span class="">dummy list</span>
+                                            </a>
+                                         </li>
+                                    </ul>
+                                </div>    	
+                        	</div><!---button group--->
+							</div>
+							<div class="col-md-3">
+								<div class="form-group custom-form-group" style="text-align:right;">
+									<input type="text" id="queryDependency" onkeyup="sorter1.search('queryDependency')" placeholder="Type here for search..." class="doc-search"/>
+								</div>
+							</div>
+                           </div><!---row ed--->
+                        	<!----table Area----->	
+                        	
+                        	<!----table Area----->
+            	<!--<div class="row inbox-istab" style="margin-bottom:0;">
+		    		<div class="col-md-4">
+						<div class="">
+							<div class="">
+								<div class="form-group custom-form-group">
+									<label for="Search" style="margin-right:5px;">Search :</label>
+									<input type="text" id="queryDependency5" onkeyup="sorter.search('queryDependency4')" placeholder="Type here for search..." class="doc-search" />
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>-->
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="approval_doms" style="">
+						<table cellpadding='0' cellspacing='0' border='1' id='MyDelegatesListTable' class='table tinytable js-basic-example dataTable no-footer' style="border-top-color:transparent !important">
+							<thead class='panel-heading '>
+								<tr>
+									<th style="width:15%"><h6 data-localize="Approval">Approval</h6></th>
+									<th style="width:13%"><h6 data-localize="Date From">Date From</h6></th>
+									<th style="width:13%"><h6 data-localize="Date To">Date To</h6></th>
+									<th style="width:10%"><h6 data-localize="Action" >Action</h6></th>
+									<th style="width:10%"><h6 data-localize="Delegated User" >Delegated User</h6></th>
+									<th style="width:10%"><h6 data-localize="Scope" >Scope</h6></th>
+									<th style="width:10%"><h6 data-localize="Acknowledge" >Acknowledge</h6></th>								
+									<th class='nosort' style="width:13%"><h6 data-localize="Status" >Status</h6></th>								
+									
+								</tr>
+							</thead>
+							<tbody class='panel' id="MyDelegatesListTB">			
+							</tbody>
+						</table>
+						<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter1.move(-1,true)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter1.move(-1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter1.move(1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter1.move(1,true)" />
+							</div>
+							<div style="display:none">
+								<select id="PageDropdownMyProcess"></select>
+							</div>
+							<div style="display:none">
+								<a href="javascript:sorter1.showall()" data-localize="ViewAll"></a>
+							</div>
+						</div>
+						<div style="float:left !important;"><span>Total Items &nbsp</span><span id="TotalItemsMyDeligation"></span></div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage"></span>
+								<select onchange="sorter1.size(this.value)">
+									<option value="5">5</option>
+									<option value="10" selected="selected">10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">&nbsp;</span><span id="CurrentPageMyProcess"></span>&nbsp;<span data-localize="Of"> of </span>&nbsp;<span id="TotalPagesMyProcess"></span></div>
+						</div>
+					</div>					
+				</div>	
+                        	
+                        </div><!---panel-body--->
+                    </div>
+                </div> 
+
+                <div role="tabpane6" class="tab-pane fade" id="Delegated_me">
+                    <div class="custom-panel custom-panel-box approval-outbox-custom-panel">
+                        <div class="panel-body">
+                         <div class="row">
+                           	<div class="col-md-9">
+                           	<div class="dashboard-deta-btn-panel d-flex">
+								 <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+	                                <button class="btn" type="button" data-toggle="modal" data-target="#add_deligation">
+	                                    <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/add.png" alt="add" data-themekey="#"/>
+	                                    <span>Add Delegation</span>
+	                                </button>
+	                            </div>
+
+	                            <div class="dropdown dashboard-table-btn new-temp-approval-hide">
+	                                <button class="btn" type="button">
+	                                    <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/filter-icon.png"alt="add" data-themekey="#"/>
+	                                    <span>Filter</span>
+	                                </button>
+	                            </div>
+
+                                <div class="dropdown dashboard-table-btn">
+									 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img class="dashboard-icon-info mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/sort-icon.png" alt="sort" data-themekey="#"/>
+                                        <span>Sort</span>
+                                        <img class="dashboard-icon-info ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/images/expand-arrow-icon.png" alt="expand arrow" data-themekey="#"/>
+                                    </button>
+									<ul class="dropdown-menu dropdown-color-menu-icon">
+										  <li>
+                                            <a href="#">
+                                                <span class="">dummy list</span>
+                                            </a>
+                                         </li>
+                                    </ul>
+                                </div>    	
+                        	</div><!---button group--->
+                        	
+                        	</div>
+                        	<div class="col-md-3">
+								<div class="form-group custom-form-group" style="text-align:right;">
+									<input type="text" id="queryDependency1" onkeyup="sorter.search('queryDependency1')" placeholder="Type here for search..." class="doc-search"/>
+								</div>
+							</div>
+                         
+                         </div><!---row ed--->
+                         
+                        	<!----table Area----->	
+                        	
+                        	<!----table Area----->
+                    <div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="approval_doms" style="">
+						<table cellpadding='0' cellspacing='0' border='1' id='ProcessListTable4Me' class='table tinytable js-basic-example dataTable no-footer' style="border-top-color:transparent !important">
+							<thead class='panel-heading '>
+								<tr>
+									<th style="width:15%"><h6 data-localize="Approval">Approval</h6></th>
+									<th style="width:13%"><h6 data-localize="Date From">Date From</h6></th>
+									<th style="width:13%"><h6 data-localize="Date To">Date To</h6></th>								
+									<th style="width:10%"><h6 data-localize="Action">Action</h6></th>								
+									<th style="width:10%;"><h6 data-localize="Delegator">Delegator</h6></th>
+									<th style="width:10%"><h6 data-localize="Scope">Scope</h6></th>
+									<th style="width:10%"><h6 data-localize="Status">Status</h6></th>
+									<th class='nosort' style="width:13%"><h6 data-localize="Action">Action</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel' id="ProcessList4ME">			
+							</tbody>
+						</table>
+						<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1,true)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorter.move(-1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorter.move(1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorter.move(1,true)" />
+							</div>
+							<div style="display:none">
+								<select id="PageDropdownProcess4Me"></select>
+							</div>
+							<div style="display:none">
+								<a href="javascript:sorter.showall()" data-localize="ViewAll"></a>
+							</div>
+						</div>
+						<div style="float:left !important;"><span>Total Items &nbsp</span><span id="TotalItemsProcess4Me"></span></div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage"></span>
+								<select onchange="sorter.size(this.value)">
+									<option value="5" selected="selected">5</option>
+									<option value="10" >10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">&nbsp;</span><span id="CurrentPageProcess4Me"></span>&nbsp;<span data-localize="Of"> of </span>&nbsp;<span id="TotalPagesProcess4Me"></span></div>
+						</div>
+					</div>					
+				</div>
+			</div>	
+                       	</div><!-----panel-body---->
+                    </div>
+                </div>           	
+       		</div>
+          </div><!----panel-body ed--->
+        </div>
+	
+
+
+<!------popup area---->
+
+
+<!---- Add Deligation ---->
+<div id="add_deligation" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+        	<span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Add Delegation</h4>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="flexingtwo_frombx">
+        	<div class="left_bxs">
+        		<label for="">Approval</label>
+        	</div>
+        	<div class="right_bxs">
+        		<label class="radio-inline eventbtnsection">
+        			<input type="radio" name="approvalopt" value="Document_Approval" checked="checked"/>
+        			Document Approval
+        		</label>
+        		<label class="radio-inline eventbtnsection">
+        			<input type="radio" name="approvalopt" value="process_approval"/>
+        			Process Approval 
+        		</label>
+        	</div>
+        </div>
+        <!----tab1 content---->
+        <div class="one_box Document_Approval active">
+			 <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">From Date</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <input type="text" id="FromDate" name="" class="form-control"/>		
+	        	</div>
+	    	</div>
+
+	        <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">To Date</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <input type="text" id="EndDate" name="" class="form-control"/>		
+	        	</div>
+	        </div>
+
+	         <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">Condition</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <select class="form-control" id="ConditionDDL">
+	        	 	<option value="Always">Always</option>
+	        	 	<option value="If no parallel stakeholder">If no parallel stakeholder</option>
+	        	 </select>		
+	        	</div>
+	        </div>
+	        
+	        <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">Authority</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <select class="form-control" id="AuthorityDDL">
+	        	 	<option value="Delegation">Delegation</option>
+	        	 	<option value="AutoReply">Auto Reply</option>
+	        	 	<option value="AutoApprove">Auto Approve</option>
+	        	 </select>		
+	        	</div>
+	        </div>
+
+	        <!-----delgationbox----->
+		        <div class="hidebox Delegation active">
+
+			        <div class="flexingtwo_frombx">
+			        	<div class="left_bxs">
+			        		<label for="">Delegate To</label>
+			        	</div>
+			        	<div class="right_bxs">
+			        	 <div name="" id="DelegatePPL" class="form-control"></div>		
+			        	</div>
+			        </div>
+
+			         <div class="flexingtwo_frombx">
+			        	<div class="left_bxs">
+			        		<label for="">Successor</label>
+			        	</div>
+			        	<div class="right_bxs">
+			        		<div class="dividorbx">
+				        	 	<input type="checkbox" id="SuccessorChk"/>
+				        	 	<div class="groupingbtnbx">
+				        	 		<span>After</span>
+				        	 		<input type="text" name="SuccessorDays" placeholder="integer" class="form-control" id="SuccessorDays"/>
+				        	 		<span>days</span>
+				        	 	</div>
+			        	 	</div>
+			        	 	<div id="SuccessorPPL" class="form-control"></div>		
+			        	</div>
+			        </div>
+
+				    <div class="flexingtwo_frombx">
+			        	<div class="left_bxs">
+			        		<label for="">Message</label>
+			        	</div>
+			        	<div class="right_bxs">
+			        	 <textarea class="form-control contentMessageText" style="resize: none; height:110px;" id="MessageText"></textarea>		
+			        	</div>
+			        </div>
+				</div>    
+		    <!-----delgationbox----->    
+		    
+		    <!---AutoReplybox--->
+		    <div class="hidebox AutoReply">
+		    	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Reply To</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <select class="form-control" id="ReplyToDDL">
+		        	 	<option value="Initiator only">Initiator only</option>
+		        	 	<option value="All stakeholder">All stakeholder</option>
+		        	 </select>		
+		        	</div>
+		        </div>
+		       <div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">CC Reply to</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <div id="CCReply" class="form-control"></div>		
+		        	</div>
+		        </div>
+		        <div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Reply Text</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <textarea id="ReplyTextBox" class="form-control ReplyTextBoxContent" style="resize: none; height:110px;"></textarea>		
+		        	</div>
+		        </div>
+			</div><!---AutoReplybox ed--->
+
+		    <!---AutoApprove--->
+		    <div class="hidebox AutoApprove">
+		    	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Trigger at</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        		<div class="dividorbx">
+			        	 	<label style="font-weight: 400;">
+			        	 		<input type="radio" value="Immediate" name="Immediate_action" checked="checked"/> Immediate
+			        	 	</label>
+			        	 	<div class="groupingbtnbx">
+			        	 		<input type="radio" value="After" name="Immediate_action"/>
+			        	 		<span>After</span>
+			        	 		<input type="text" name="TriggerAfter" id="TriggerAfter" placeholder="integer" class="form-control"/>
+			        	 		<span>days</span>
+			        	 	</div>
+		        	 	</div>
+		        	</div>
+	        	</div>
+				<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">My Sign</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 	<input type="File" name="filename" id="MySignFile" class="form-control"/>		
+		        	</div>
+	        	</div>
+	        	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Comments</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <textarea class="form-control AutoApproveCommentsContent" id="AutoApproveComments" style="resize: none; height:110px;"></textarea>		
+		        	</div>
+	        	</div>
+		    </div><!---AutoApprove ed--->
+       </div>
+	   
+	   <!----tab2 content---->
+       <div class="one_box process_approval">
+       		<div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">From Date</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <input type="text" id="PrFromDate" name="" class="form-control"/>		
+	        	</div>
+	    	</div>
+		    <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">To Date</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <input type="text" id="PrEndDate" name="" class="form-control"/>		
+	        	</div>
+	        </div>
+	        <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">Condition</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <select class="form-control" id="PrConditionDDL">
+	        	 	<option value="Always">Always</option>
+	        	 	<option value="If no parallel stakeholder">If no parallel stakeholder</option>
+	        	 </select>		
+	        	</div>
+	        </div>
+
+	        <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">Scope</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <select class="form-control" id="PrScope" onchange="SetSpecificProcess(this.value)">
+	        	 	<option value="All Process">All Process</option>
+	        	 	<option value="Specific Process">Specific Process</option>
+	        	 </select>		
+	        	</div>
+	        </div>
+	        
+			<div id="PrSpecificName" style="display:none; width:100%;">
+	        	 <div class="flexingtwo_frombx">	
+					<div class="left_bxs">
+		        		<label for="">Process Name</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        		<div class="control-searchicon" style="position:relative">
+		        			<input type="text" name="" id="PrName" placeholder="Process Name" class="form-control" disabled="disabled"/>
+		        			<button type="button" class="btn custom-btn w-87" data-toggle="modal" data-target="#searching_areas">
+							 <i class="fa fa-search"></i>
+							</button>
+		        		</div>		
+		        	</div>
+		        </div>
+		    </div>
+
+	        <div class="flexingtwo_frombx">
+	        	<div class="left_bxs">
+	        		<label for="">Authority</label>
+	        	</div>
+	        	<div class="right_bxs">
+	        	 <select class="form-control" id="PrAuthorityDDL">
+	        	 	<option value="Delegation_select">Delegation</option>
+	        	 	<option value="AutoReply_select">Auto Reply</option>
+	        	 	<option value="AutoApprove_select">Auto Approve</option>
+	        	 </select>		
+	        	</div>
+	        </div>
+
+	        <!---Process Approval Delegation--> 
+			<div class="hidebox2 Delegation_select active">
+				<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Delegate To</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <div class="form-control" placeholder="people picker" id="PrDelegateTo"></div>		
+		        	</div>
+	        	</div>
+	        	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Successor</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        		<div class="dividorbx">
+			        	 	<input type="checkbox" id="PrSuccessorChk"/>
+			        	 	<div class="groupingbtnbx">
+			        	 		<span>After</span>
+			        	 		<input type="text" name="PrSuccessorDays" id="PrSuccessorDays" placeholder="integer" class="form-control"/>
+			        	 		<span>days</span>
+			        	 	</div>
+		        	 	</div>
+		        	 	<div class="form-control" placeholder="people picker" id="PrSuccessor"></div>		
+		        	</div>
+	        	</div>
+
+			    <div class="flexingtwo_frombx">
+			    	<div class="left_bxs">
+			    		<label for="">Action</label>
+			    	</div>
+			    	<div class="right_bxs multicheckbx">
+			    	  <label>
+			    	  	<input type="checkbox" name="PrDelegateAction" value="Edit and Approve"/>Edit and Approve	
+			    	  </label>
+			    	  <label>
+			    	  	<input type="checkbox" name="PrDelegateAction" value="Edit and Sign"/>Edit and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input type="checkbox" name="PrDelegateAction" value="Review and Sign"/>Review and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input type="checkbox" name="PrDelegateAction" value="Review Only"/>Review Only	
+			    	  </label>		
+			    	</div>
+		    	</div>
+
+			    <div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Message</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <textarea class="form-control PrMessageDeligationContent" style="resize: none; height:120px;" id="PrMessageDeligation"></textarea>		
+		        	</div>
+		        </div>
+
+			</div>	
+
+			<!---Process Approval AutoReply-->
+			<div class="hidebox2 AutoReply_select">
+				 <div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Reply To</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <select class="form-control" id="PrReplyToDDL">
+		        	 	<option value="Initiator only">Initiator only</option>
+		        	 	<option value="All stakeholder">All stakeholder</option>
+		        	 </select>		
+		        	</div>
+		        </div>
+				<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">CC Reply to</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <div class="form-control" id="PrCCReply"></div>		
+		        	</div>
+		        </div>
+		        <div class="flexingtwo_frombx">
+			    	<div class="left_bxs">
+			    		<label for="">Action</label>
+			    	</div>
+			    	<div class="right_bxs multicheckbx">
+			    	  <label>
+			    	  	<input name="PrAutoReplyAction" value="Edit and Approve" type="checkbox"/>Edit and Approve	
+			    	  </label>
+			    	  <label>
+			    	  	<input name="PrAutoReplyAction" value="Edit and Sign" type="checkbox"/>Edit and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input name="PrAutoReplyAction" value="Review and Sign" type="checkbox"/>Review and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input name="PrAutoReplyAction" value="Review Only" type="checkbox"/>Review Only	
+			    	  </label>		
+			    	</div>
+		    	</div>
+		    	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Reply Text</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <textarea class="form-control PrReplyTextBoxContent" id="PrReplyTextBox" style="resize: none; height:110px;"></textarea>		
+		        	</div>
+		        </div>
+			</div>
+			<!---Process Approval AutoApprove-->
+			<div class="hidebox2 AutoApprove_select">
+				<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Trigger at</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        		<div class="dividorbx">
+			        	 	<label style="font-weight: 400;">
+			        	 		<input type="radio" value="Immediate" name="Immediate_act" checked/> Immediate
+			        	 	</label>
+			        	 	<div class="groupingbtnbx">
+			        	 		<input type="radio" value="After" name="Immediate_act"/>
+			        	 		<span>After</span>
+			        	 		<input type="text" name="PrTriggerAfter" id="PrTriggerAfter" placeholder="integer" class="form-control"/>
+			        	 		<span>days</span>
+			        	 	</div>
+		        	 	</div>
+		        	</div>
+		        </div>
+		        <div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">My Sign</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 	<input type="File" id="PrSignFile" name="filename" class="form-control"/>		
+		        	</div>
+	        	</div>
+	        	<div class="flexingtwo_frombx">
+			    	<div class="left_bxs">
+			    		<label for="">Action</label>
+			    	</div>
+			    	<div class="right_bxs multicheckbx">
+			    	  <label>
+			    	  	<input value="Edit and Approve" name="PrAutoApprove" type="checkbox"/>Edit and Approve	
+			    	  </label>
+			    	  <label>
+			    	  	<input value="Edit and Sign" name="PrAutoApprove" type="checkbox"/>Edit and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input value="Review and Sign" name="PrAutoApprove" type="checkbox"/>Review and Sign	
+			    	  </label>
+			    	  <label>
+			    	  	<input value="Review Only" name="PrAutoApprove" type="checkbox"/>Review Only	
+			    	  </label>		
+			    	</div>
+		    	</div>
+		    	
+	        	<div class="flexingtwo_frombx">
+		        	<div class="left_bxs">
+		        		<label for="">Comments</label>
+		        	</div>
+		        	<div class="right_bxs">
+		        	 <textarea class="form-control PrAutoApproveCommentsContent" id="PrAutoApproveComments" style="resize: none; height:110px;"></textarea>		
+		        	</div>
+	        	</div>
+			</div>
+
+	   </div><!----tab2 content ed----> 
+
+      </div><!---body ed--->
+      <div class="modal-footer" style="text-align: center;">
+      	<a type="button" class="btn custom-btn mr-8 wpx-80" id="PushDelegates">Submit</a>
+        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!---- Add Deligation ---->
+
+
+
+<div id="edit_action" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+        	<span class="close-icon">&times;</span>
+        </button>
+        <h4 class="modal-title">Response</h4>
+      </div>
+      <div class="modal-body">
+	    <div class=" row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">Approval</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="ApprovalTitle">Document / Process</span>		
+	    	</div>
+	    </div>
+	    <div class=" row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">From Date </label><label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="MFromDate">Dec  12, 2022</span>		
+	    	</div>
+	    </div>
+	    <div class=" row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">To Date</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="MEndDate">Jan 10, 2023</span>		
+	    	</div>
+	    </div>
+	    <div class="row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">Scope</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="Scopes">All Process</span>		
+	    	</div>
+	    </div>
+	    <div class="row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">Process Name</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="ProcessName">Process name</span>		
+	    	</div>
+	    </div>
+	    <div class="row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">Action</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="ActionTypes">Edit/Sign/Approve/Review</span>		
+	    	</div>
+	    </div>
+	    <div class="row form-group" style="margin-left:0; margin-right:0;">
+	    	<div class="col-sm-4">
+	    		<label for="">Message</label> <label class="dottonly">:</label>
+	    	</div>
+	    	<div class="col-sm-8">
+	    	 <span id="RemarkText">message text</span>		
+	    	</div>
+	    </div>
+	    <div class="row from-group">
+	    	<div class="col-sm-8 col-sm-offset-4">
+	    		<label class="radio-inline eventbtnsection" style="font-weight: 600">
+	    			<input type="radio" id="AgreeRadio" name="choose_agree" value="Agreed" style="position: relative; margin-top:0px; width:15px; height:15px;"/>
+	    			I agree
+	    		</label>
+	    		<label class="radio-inline eventbtnsection" style="font-weight: 600">
+	    			<input type="radio" id="DisAgreeRadio" name="choose_agree"  value="Disagreed" style="position: relative; margin-top:0px; width:15px; height:15px;"/>
+	    			I disagree
+	    		</label>
+	    	</div>
+	    </div>
+	    
+      </div><!---modal-body--->
+      <div class="modal-footer" style="text-align: center;">
+      	<a type="button" class="btn custom-btn mr-8 wpx-80" hreflang="" id="SubmitNotify" onclick="NotifyDelegate(this)">Submit</a>
+        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--- edit_action ed ---->
+
+
+<!--- approval_doms st--->
+<div id="searching_areas" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)" data-backdrop="static" data-keyboard="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+    			<button type="button" class="close close-round" data-dismiss="modal"><span class="close-icon">&times;</span></button>
+        		<h4 class="modal-title">Process</h4>
+      		</div>
+      		<div class="modal-body">
+		    	<div class="row inbox-istab" style="margin-bottom:0;">
+		    		<div class="col-md-4">
+						<div class="">
+							<div class="">
+								<div class="form-group custom-form-group">
+									<label for="Search" style="margin-right:5px;">Search :</label>
+									<input type="text" id="queryDependency2" onkeyup="sorterMyPr.search('queryDependency2')" placeholder="Type here for search..." class="doc-search" />
+								</div>
+							</div>	
+						</div><!--row inner-->
+					</div><!--col ed-->
+				</div>
+				<div id="tablewrapper" ng-app="myApp" ng-controller="myCtrl" data-ng-init="PageLoad()">
+					<div id="tableheader" style="height: auto !important;">
+						<div class="search" style="display:none;">
+							<select style="display:none;" id="columns" onchange="sorter.search('query')"></select>
+						</div>
+						<div>
+							<span class="details">
+								<div style="display:none;">Records  <span id="startrecord"></span>-<span id="endrecord"></span> &nbsp; PagesOf &nbsp; <span id="totalrecords"></span></div>
+								<div style="display:none;"><a href="javascript:sorter.reset()">Reset </a></div>
+							</span>
+						</div>
+					</div>
+					<div class="approval_doms" style="">
+						<table cellpadding='0' cellspacing='0' border='1' id='MyProcessListTable' class='table tinytable js-basic-example dataTable no-footer' style="border-top-color:transparent !important">
+							<thead class='panel-heading '>
+								<tr>
+									<th style="width:5%"><h6 data-localize="" ></h6></th>
+									<th style="width:6%"><h6 data-localize="" ></h6></th>
+									<th style="width:20%"><h6 data-localize="Title" >Title</h6></th>								
+									<th style="width:20%"><h6 data-localize="Process for" >Process for</h6></th>								
+									<th class='nosort' style="width:20%;"><h6 data-localize="Template Name">Template Name</h6></th>
+								</tr>
+							</thead>
+							<tbody class='panel' id="MyProcessListTB">			
+							</tbody>
+						</table>
+						<div class="NoRecordFound" style='text-align: center;font-size:14px;' data-localize='NoRecordFound'></div>
+					</div>
+					<div id="tablefooter" style="margin-bottom: 10px;">
+						<div id="tablenav">
+							<div>
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/first.gif" width="16" height="16" alt="First Page" onclick="sorterMyPr.move(-1,true)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/previous.gif" width="16" height="16" alt="First Page" onclick="sorterMyPr.move(-1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/next.gif" width="16" height="16" alt="First Page" onclick="sorterMyPr.move(1)" />
+								<img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/table/last.gif" width="16" height="16" alt="Last Page" onclick="sorterMyPr.move(1,true)" />
+							</div>
+							<div style="display:none">
+								<select id="PageDropdownMyProcessMyPr" ></select>
+							</div>
+							<div style="display:none">
+								<a href="javascript:sorterMyPr.showall()" data-localize="ViewAll"></a>
+							</div>
+						</div>
+						<div style="float:left !important;"><span>Total Items &nbsp</span><span id="TotalItemsDependencyMyPr"></span></div>
+						<div id="tablelocation">
+							<div>
+								<span data-localize="LinesPerPage"></span>
+								<select onchange="sorterMyPr.size(this.value)">
+									<option value="5" selected="selected">5</option>
+									<option value="10" >10</option>
+									<option value="20">20</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+							</div>						
+							<div class=""><span data-localize="Page">&nbsp;</span><span id="CurrentPageMyProcessMyPr"></span>&nbsp;<span data-localize="Of"> of </span>&nbsp;<span id="TotalPagesMyProcessMyPr"></span></div>
+						</div>
+					</div>					
+				</div>
+			</div>
+	        <div class="modal-footer timesheet-entry-footer-btn-group footer-btn-group">
+	        	<a type="button" class="btn custom-btn mr-8 wpx-80" id="SelectedTemplates">Select</a>
+		        <button type="button" class="btn custom-btn-two-cancel wpx-80" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+    </div>
+    <div style="clear:both"></div>
+</div><!----fluid ed---->
+
+
+<!---- searchbox---->
+
+
+
+<!------popup area---->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/CommonMethods.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/Delegation/assets/Script/Delegation.js"></script>
+<script type="text/javascript">
+	
+$(function(){
+	$('.eventbtnsection input[type="radio"]	').click(function(){
+		var valstore = $(this).val();
+		
+		if($(this).is(':checked')){
+			$('.one_box').not('.'+valstore).removeClass('active');
+			$('.'+valstore).addClass('active');
+		}
+	});
+	
+	$('#AuthorityDDL').on('change', function(){
+			var store_selectval = $('#AuthorityDDL option:selected').val();
+			$('.hidebox').not('.'+store_selectval).removeClass('active');
+			$('.'+store_selectval).addClass('active');
+	});
+
+	$('#PrAuthorityDDL').on('change', function(){
+			var store_selectval = $('#PrAuthorityDDL option:selected').val();
+			$('.hidebox2').not('.'+store_selectval).removeClass('active');
+			$('.'+store_selectval).addClass('active');
+	});
+
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>

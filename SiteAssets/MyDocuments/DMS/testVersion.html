@@ -1,0 +1,209 @@
+<script type="text/javascript">
+$(document).ready(function () {
+
+    getListItemByVersionPage('')
+        .done(function (versionArray) {
+            var htmlDiv = "";
+            for (var idx = 0; idx < versionArray.length; idx++) {
+
+                var item = versionArray[idx];
+                var itemdate = new Date(item.Modified);
+                //console.log(String.format("Trimmed - Version: {0} By: {2}", item.Label, item.Editor));
+                if(item.vprops.length>0)
+                 htmlDiv += "<div>"+item.Label+" - " + item.Editor + " (" + itemdate + ")<ul>";
+                for (var jdx = 0; jdx < item.vprops.length; jdx++) {
+                   // htmlDiv += "<div>" + item.Editor + " (" + moment(itemdate).format('MM/DD/YYYY, h:mm a') + ")" + item.vprops[jdx].FieldValue + "</div>";
+                   var fVal='';
+                   if(item.vprops[jdx].FieldValue==''&&item.vprops[jdx].FieldValue==null&&item.vprops[jdx].FieldValue==undefined)
+                    fVal='NA';
+                    else
+                        fVal=item.vprops[jdx].FieldValue;
+
+                    //htmlDiv += "<div>" + item.Editor + " (" + itemdate + ")"+ item.vprops[jdx].title+ ":"  + fVal + "</div>";
+                    htmlDiv += "<li>"+ item.vprops[jdx].title+ ":"  + fVal + "</li>";
+                }
+                 htmlDiv += "</ul></div>";
+            }
+            jQuery("#divVersion").html(htmlDiv);
+        })
+        .fail(function (sender, args) {
+
+            console.log(args);
+        });
+       // getItemVersion();
+       //getDocumentVersion();
+        
+});
+function getItemVersion()
+{
+   var webURL = "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/"+ "/_api/web/Lists/getbytitle('DocumentManagementSystem')/items(15799)/versions?$expand=fields";     
+   //  var webURL = "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/"+ "/_api/web/Lists/getbytitle('DocumentManagementSystem')/items(15799)/versions/2048?$expand=fields";     
+   
+    $.ajax({
+            url: webURL,
+            headers: {
+                Accept: "application/json;odata=verbose"
+            },
+            async: false,
+            success: function (data) {
+                var itemsVersion = data.d.results;
+                console.log(itemsVersion);
+              var Version = '';    
+                $("#divVersion").empty();
+                if (itemsVersion.length > 0) {
+                    Version='<table border="1"><thead><tr><td>No</td><td>Modified</td><td>Size</td><td>Comments</td></tr></thead><tbody>';
+                        for (ver = 0; ver < itemsVersion.length; ver++) {
+
+                        Version=Version+'<tr>'; 
+                           Version=Version+'<td>'+itemsVersion[ver].VersionLabel+'</td>';
+                           Version=Version+'<td>'+itemsVersion[ver].Modified;
+                           Version=Version+'<ol>';
+                           Version=Version+'<li> Acknowledgement : '+itemsVersion[ver].Acknowledgement+'</li>';
+                           Version=Version+'<li> Details : ' +itemsVersion[ver].Details +'</li>';
+                           Version=Version+'<li> DocumentNo : '+itemsVersion[ver].DocumentNo+'</li>';
+                           Version=Version+'<li> DocumentType : '+itemsVersion[ver].DocumentType+'</li>';
+                           Version=Version+'<li> Title : '+itemsVersion[ver].Title+'</li></ol>';
+                           Version=Version+'</td>';
+                           Version=Version+'<td>'+itemsVersion[ver].File_x005f_x0020_x005f_Size +' Bytes </td>';
+                           Version=Version+'<td>'+itemsVersion[ver].VersionId+'</td>';
+                       Version=Version+'</tr>'; 
+                        }
+                         Version=Version+'</tbody></table>';
+                        $("#divVersion").html(Version);
+                        }},
+                        eror: function (data) {
+                                console.log(JSON.stringify(data));
+                        }
+                }); 
+}
+function getDocumentVersion()
+{
+     var webURL = "https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_api/Web/GetFileByServerRelativeUrl('/sites/Titan_2_2_1_DEV/DocumentManagementSystem/bhawana.singh@titan4work.com/testVersion.html')/Versions?$select=*&$expand=fields";
+   // var webURL = SiteURL + "/_api/Web/GetFileByServerRelativeUrl('" + itemURL + "')/Versions?$select=*&$expand=fields";
+    $.ajax({
+        url: webURL,
+        headers: {
+            Accept: "application/json;odata=verbose"
+        },
+        async: false,
+        success: function (data) {
+            var itemsVersion = data.d.results;
+             console.log(itemsVersion);
+              var Version = '';    
+                $("#divDocVersion").empty();
+                if (itemsVersion.length > 0) {
+                    Version='<table border="1"><thead><tr><td>No</td><td>Modified</td><td>Size</td><td>Comments</td></tr></thead><tbody>';
+                        for (ver = 0; ver < itemsVersion.length; ver++) {
+
+                        Version=Version+'<tr>'; 
+                           Version=Version+'<td>'+itemsVersion[ver].VersionLabel+'</td>';
+                           Version=Version+'<td>'+itemsVersion[ver].Modified;
+                           Version=Version+'<ol>';
+                           Version=Version+'<li> Acknowledgement : '+itemsVersion[ver].Acknowledgement+'</li>';
+                           Version=Version+'<li> Details : ' +itemsVersion[ver].Details +'</li>';
+                           Version=Version+'<li> DocumentNo : '+itemsVersion[ver].DocumentNo+'</li>';
+                           Version=Version+'<li> DocumentType : '+itemsVersion[ver].DocumentType+'</li>';
+                           Version=Version+'<li> Title : '+itemsVersion[ver].Title+'</li></ol>';
+                           Version=Version+'</td>';
+                           Version=Version+'<td>'+itemsVersion[ver].File_x005f_x0020_x005f_Size +' Bytes </td>';
+                           Version=Version+'<td>'+itemsVersion[ver].ID+'</td>';
+                       Version=Version+'</tr>'; 
+                        }
+                         Version=Version+'</tbody></table>';
+                        $("#divDocVersion").html(Version);
+                        }
+        },
+         eror: function (data) {
+                                console.log(JSON.stringify(data));
+                        }
+    });
+
+}
+
+
+/*
+*/
+
+function getListItemByVersionPage(fieldName) {
+
+    var glibvpdef = new jQuery.Deferred();
+
+    //var versionsUrl = listWebUrl + '/_layouts/versions.aspx?list=' + listId + '&ID=' + listItemId;
+    var versionsUrl ="https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/versions.aspx?list=8aaab423-bead-4ca1-b6df-eac10e9d9dca&ID=15799";
+
+    jQuery.get(versionsUrl)
+     .done(function (data) {
+
+         var entries = [];
+         var versionList = $(data).find('table.ms-settingsframe');
+         if (typeof (versionList) !== typeof (undefined) && versionList !== null) {
+
+             versionList.find('tbody > tr').each(function (i, trval) {
+                 // pulls every 2 rows
+                // if (i > 0 && (i - 1) % 2 == 0)
+                 {
+                     try {
+                         var verRow = $(this); //get version row
+                         var versionLabel = verRow.find('td:first').html().trim();
+                         var versionDateElement = verRow.find('table[ctxname=\"ctxVer\"] a'); // Date for modification
+                         var versionUserElement = verRow.find('.ms-imnSpan a:nth-child(2)'); // User for Modification
+                         if (versionLabel !== ""
+                             && (versionDateElement !== null && versionDateElement.length > 0)
+                             && (versionUserElement !== null && versionUserElement.length > 0)) {
+                             var versionDate = versionDateElement.html().trim();
+                             var versionUser = versionUserElement.html().trim();
+                             var versionNumber=versionLabel.split('<span aria-hidden=\"true\">')[1].split('</span>')[0];
+
+                             var propsRow = verRow.next(); //get properties row
+                             var properties = propsRow.find("table[role=\"presentation\"] tr").map(function (index, val) {
+
+                                 var trproperty = jQuery(val);
+                                 //if (val.id.indexOf(fieldName) !== -1)
+                                  {
+                                     var entryProperties = {
+                                         id: val.id,
+                                         title: trproperty.find("td:first").html().trim(),
+                                         FieldValue: trproperty.find("td:nth-child(2)").html().trim()
+                                     };
+                                     return (entryProperties);
+                                 }
+                             });
+                             var entry = {
+                                 Label: versionNumber,
+                                 Modified: versionDate,
+                                 Editor: versionUser,
+                                 vprops: properties
+                             };
+                             entries.push(entry);
+                         }
+                     } catch (error) {
+                         console.log("parse error " + error.message);
+                     }
+                 }
+             });
+         }
+        console.log(entries);
+         glibvpdef.resolve(entries);
+     })
+    .fail(function (sender, args) {
+        glibvpdef.reject(sender, args);
+    });
+
+    return glibvpdef.promise();
+}
+</script>
+
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<div id="divVersion">
+</div>
+<div id="divDocVersion">
+</div>
+<head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4980</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">6a184027-45ce-4441-8213-2cb58411d8d5</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4980, ADMIN-1645029823-4980</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head></html>

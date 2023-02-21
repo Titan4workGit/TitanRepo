@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title>Career Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/padding.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/CommonMethod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/Application.js"></script>
+
+
+    <!--[if gte mso 9]><xml>
+    <mso:CustomDocumentProperties>
+    <mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4464</mso:_dlc_DocId>
+    <mso:_dlc_DocIdItemGuid msdt:dt="string">6fa65c14-14b4-4e53-bfab-a955fdc52a3a</mso:_dlc_DocIdItemGuid>
+    <mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4464, ADMIN-1645029823-4464</mso:_dlc_DocIdUrl>
+    </mso:CustomDocumentProperties>
+    </xml><![endif]-->
+    
+<style>
+
+.col-sm-12.all-align-gap{
+ padding:0 0px; 
+}
+.custom-panel{
+ margin-top:0;  
+}
+
+.wraping_areabox{
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex; 	
+}
+
+
+/***readmore setting*****/
+
+.coverboxlist::-webkit-scrollbar-thumb {
+border: 2px solid transparent;
+border-radius: 10px;
+background-color: #666;
+background-clip: content-box;
+-webkit-background-clip: content-box;
+
+}
+
+
+.coverboxlist::-webkit-scrollbar-thumb:hover {
+background-color: #666;;
+background-clip: border-box;
+-webkit-background-clip: border-box;
+
+}
+
+.coverboxlist::-webkit-scrollbar {
+width: 8px;
+height: 8px;
+background-color: transparent;
+}
+
+.cover_areabox {
+    width: 100%;
+    max-height: 78vh;
+    overflow: auto;
+}
+
+
+/***readmore setting ed*****/
+
+
+@media(max-width:767px){
+
+.flexwrapboxnow{
+ -webkit-flex-wrap: wrap;
+-ms-flex-wrap: wrap;
+ flex-wrap: wrap	
+}
+
+.wraping_areabox .application-th-card-head {
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+}
+
+.wraping_areabox .application-th-card-head .application-th-email {
+    font-size: 12px;
+    line-height: 1.3;
+    margin-bottom: 0px;
+}
+.wraping_areabox .application-th-card-body {
+    padding-left: 5px;
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: flex-start;
+}
+
+#btnShowEmployeeDet{
+  margin-top:10px;	
+}
+	
+.all-align-ms-tasks-gap{
+ padding:0 2px;	
+}
+
+}
+
+
+@media(max-width:380px){
+
+#btnShowEmployeeDet{
+  margin-left:0px !important;	
+}
+	
+}
+
+</style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="custom-panel">
+            <div class="panel-head">
+                <h1 class="panel-head-text" style="color:#333">Application</h1>
+            </div>
+            <div class="panel-body pl0 pr0">
+                <div class="application-title-box flexbsectnow">
+                   <div class="titlebx">
+                       <div class="titlbox1">
+                            <h3 class="application-title">
+                                <!--label>Job Title:</label-->
+		                        <div class="ellipsis-2" id="txtJobTitle"></div>
+		                    </h3>
+	                    </div>
+	                    <div class="titlbox2">
+	                          <!--label>Job Description:</label-->
+	                          <div class="common-popup-description-text">	
+	                          <p id="VacantJobDes">
+		                          
+								  
+	                          </p>
+                          </div>
+                        </div>  
+		            </div>
+                    <div class="rightsec">
+                        <div class="application-code mt5">
+                            <div class="mr5">Code:</div>
+                            <div id="EmpCodeName"></div>
+                        </div>
+                        <div class="application-department mt5">
+                            <div class="mr5">Department:</div>
+                            <div id="DeptName"></div>
+                        </div>
+                        
+                        <div class="application-position mt5">
+                            <div class="mr5">Job Position:</div>
+                            <div id="txtJobPosition"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pl15 pr15 pt15" id="SelfDetails">
+                    <div class="application-th-card flexwrapboxnow">
+                     <div class="wraping_areabox">	
+                        <div class="application-th-card-head flexwrapping">
+                            <img id="profileImage" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/img-21.jpg" alt="user">
+                        </div>
+                        <div class="application-th-card-body">
+                            <div class="application-th-card-body-info text-ellipsis">
+                            	<h3 class="application-th-name text-ellipsis" id="selfEmpName"></h3>
+                                <p class="application-th-email text-ellipsis mb5" id="selfEmpEmail">
+                                </p>
+                                <p class="application-th-email text-ellipsis">
+                                    <span id="referbyDesignation"></span><span class="ml5 mr5" >|</span><span id="referbyDept"></span>
+                                </p>
+                                <p class="application-th-email text-ellipsis">
+                                	<span>Date Of Joining: </span> <span id="referbyDOJ"></span>
+                                </p>
+                                <p class="application-th-email text-ellipsis">
+                                	<span>Employee Code: </span> <span id="referbyEmpCode"></span>
+                                </p>
+                                <p class="application-th-email text-ellipsis">
+                                	<span>Office Location: </span> <span id="referbyEmpLoc"></span>
+                                </p>
+                            </div>
+						 </div>
+					</div>	 
+						<button id="btnShowEmployeeDet" type="button" class="btn custom-btn mr5 wpx-90" style="margin-left:auto; display:none;">Details</button> 
+						 
+                    </div>
+                </div>
+                <div class="pl15 pr15 pt15">
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-sm-6 col-xs-12 magpading">
+                            <label class="radio-inline" id="ParentSelf">
+                                <input type="radio" name="optradio" value="Self" id="rdoSelfApp" checked>Self Application
+                            </label>
+                            <label class="radio-inline" id="ParentRefer">
+                                <input type="radio" name="optradio" value="Others" id="rdoRefer">Refer
+                            </label>
+                        </div>
+                    </div>
+                    <!----dividinbox ed---->
+
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Name:<span class="color-red">*</span></label>
+                                <input id="txtAppName" class="form-control ClearValueRefer NoEdit" disabled="disabled">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label>Email:<span class="color-red">*</span></label>
+                                <input id="txtAppEmail" type="text" class="form-control ClearValueRefer NoEdit" disabled="disabled">
+                            </div>
+                        </div>
+                        
+                         <div class="col-md-4 col-sm-6 col-xs-12">
+	                        <div class="form-group custom-form-group">
+	                            <label>Mobile Number:<span class="color-red">*</span></label>
+	                            <input type="text" class="form-control ClearValueSelf NoEdit" id="txtContactNumber">
+	                        </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Designation">Designation</label><span style="font-weight:600; position:relative; top:-1px;">:</span><span class="color-red onlyforRefer" style="display:inline-block">*</span>
+                                <input id="txtAppDesigtion" type="text" class="form-control ClearValueRefer NoEdit" name="">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Organization">Organization</label><span style="font-weight:600; position:relative; top:-1px;">:</span><span class="color-red onlyforRefer" style="display:inline-block">*</span>
+                                <input id="txtAppOrg" type="text" class="form-control ClearValueRefer NoEdit" disabled="disabled">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Telephone">Alternate Number:</label>
+                                <input id="txtAppMobile" type="text" class="form-control ClearValueRefer NoEdit" maxlength="10">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Qualification">Qualification</label><span style="font-weight:600; position:relative; top:-1.5px;">:</span><span class="color-red" style="display:inline-block">*</span>
+                                <input id="txtAppQua" type="text" class="form-control ClearValueSelf NoEdit" name="">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 col-xs-12" id="PerentAppGender">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Gender">Gender</label><span style="font-weight:600; position:relative; top:-1.5px;">:</span><span class="color-red">*</span>
+                                <select id="ddlAppGender" class="form-control NoEdit">
+                                    <option value="-Select-">-Select-</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Non-Binary">Non-Binary</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Experience">Total Experience (In Years)</label><span style="font-weight:600; position:relative; top:-1px;">:</span><span class="color-red">*</span>
+                                <input id="txtAppExp" type="text" class="form-control ClearValueSelf NoEdit" name="" onkeypress="validate(event)">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" id="ParentMarital">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Marital Status">Marital Status:</label>
+                                <select id="ddlMStatus" class="form-control NoEdit">
+                                    <option value="Single">Single</option>
+                                    <option value="Married">Married</option>
+                                    <option value="Widowed">Widowed</option>
+                                    <option value="Divorced">Divorced</option>
+                                </select>
+                            </div>
+                        </div>
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Current Location">Current Location</label><span style="font-weight:600; position:relative; top:-1.5px;">:</span><span class="color-red onlyforRefer" style="display:inline-block">*</span>
+                                <input type="text" class="form-control ClearValueSelf NoEdit" id="txtCurrentLocation">
+                            </div>
+                        </div>
+                         <div class="col-md-4 col-sm-6 col-xs-12" id="ParentDOB">
+                            <div class="form-group custom-form-group">
+                                <label>Date of Birth:<span class="color-red" id="MandDOB" style="display:none;">*</span></label>
+                                <input id="dteDOB" type="text" class="form-control ClearValueRefer NoEdit" name="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Notice Period">Notice Period:</label>
+                                <input type="text" class="form-control ClearValueSelf NoEdit" id="txtNoticePeriod">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label data-localize="Nationality">Nationality:</label>
+                                <input type="text" class="form-control ClearValueSelf NoEdit" id="txtNationality">
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" id="LocationBoxDiv">
+                            <div class="form-group custom-form-group">
+                                <label for="">Preferred Location:</label><span class="color-red">*</span>
+                                <div class="d-flex align-items-center">
+                                    <div class="dropdown location-dropdown" style="width:88%">
+                                        <input class="form-control NoEdit" id="selectedLocation" disabled="disabled">
+                                    </div>
+                                    <div id="parentLocTable">
+                                        <button type="button" class="btn custom-btn ml10 NoEditbtn" id="btnShowLocTable" data-toggle="modal" data-target="#location-modal" style="min-width:1em !important;">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-12" style="display:none;" id="parentApplicntStatus">
+	                        <div class="form-group custom-form-group">
+	                            <label for="">Applicant Status:</label>
+	                            <select class="form-control" id="ddlApplicantStatus">
+									<option value="Applied">Applied</option>
+									<option value="Shortlisted">Shortlisted</option>
+									<option value="Rejected">Not Shortlisted</option>
+									<option value="On Hold">On Hold</option>
+									<option value="Hired">Hired</option>
+									<option value="Offered">Offered</option>
+									<option value="Under Review">Under Review</option>
+	                            </select>
+	                        </div>
+	                    </div>
+
+                    </div>
+
+                    <div class="row mt15">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="required-skill-table-title mb10">
+                                <h4 class="mt0 mb0" style="margin-left:0 !important; color:#333;" data-localize="Skill Set">Skill Set</h4>
+
+                            </div>
+                            <div class="table-responsive career-table skill-set-table scrollbar-panel">
+                                <table class="table mb0 custom-table" id="tblSkills">
+                                    <thead>
+                                        <tr>
+                                            <th data-localize="Skills">Skills Required</th>
+                                            <th data-localize="Experience">Required Experience (Year)</th>
+                                            <th data-localize="Proficiency">Proficiency</th>
+                                            <th data-localize="Necessity">Necessity</th>
+                                            <th>My<span data-localize="Experience"> Experiences (Year)</span></th>
+                                            <th class="w-5"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbdySkills"></tbody>
+                                </table>
+                            </div>
+                            <div class="dropdown career-table-btn mt10 mr0 mb0">
+                                <button class="btn ml-auto NoEditbtn" type="button" id="btnAddSkill">
+                                    <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/add.png" alt="sorting">
+                                    <span>Add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt15">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label id="txtReasonSelf" data-localize="Reason to Apply Self">Why would you like to apply for the Job?:</label>
+                                <label id="txtReasonRefer" data-localize="Reason to Apply Refer" style="display:none;">Reason for Referring:</label>
+
+                                <textarea id="txtJobReason" class="form-control NoEdit" rows="4" style="resize:none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label id="txtAchimntsSelf" data-localize="Key Achievements Self">Your key achievements in current role (Any 2):</label>
+                                <label id="txtAchimntsRefer" data-localize="Key Achievements Refer" style="display:none;">Your key achievements in current role (Any 2):</label>
+                                <textarea id="txtKeyAch" class="form-control NoEdit" rows="4" style="resize:none;"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="" class="control-label" data-localize="Attach supporting documents and resume" id="attachmentlabel">Attach supporting documents and resume<span class="color-red">*</span></label>
+                            <div class="">
+                                <input id="uploadFile" class="upload-file blue-color" style="display:none" multiple="" type="file">
+                                <div id="drop-zone">
+                                    <div id="clickHere" class="btn custom-btn">
+                                        Click or Drop here <i class="fa fa-download pl-4"></i>
+                                        <input type="file" name="file" id="FileUpload" class="form-control" multiple="">
+                                    </div>
+                                    <div id="filename" class="oldfilename1" style="padding:10px 10px 0px 10px;"></div>
+                                    <div id="oldfilename" class="oldfilename" style="padding:0px 0px 0px 10px;"></div>
+                                </div>
+                                <span class="form-control2 attachment-badge mt-10 chip-box" style="display:none" id="spanAttachmentCollection"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt20 text-center">
+                    <button id="btnSubmit" type="button" class="btn custom-btn mr5 wpx-90">Submit</button>
+                    <button id="btnUpdate" type="button" class="btn custom-btn mr5 wpx-90">Update</button>
+                    <button id="btnClose" type="button" class="btn custom-btn-two-cancel wpx-90">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location-modal -->
+    <div class="modal fade" id="location-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round cancelNewLoc" data-dismiss="modal">
+                        <span class="close-icon">×</span>
+                    </button>
+                    <h4 class="modal-title">Locations</h4>
+                </div>
+                <div class="modal-body" id="LocationsBody">
+                    <div class="table-responsive locationbox scrollbar-panel">
+                        <table class="table table-bordered table-striped" id="tblJobLocations">
+                            <thead>
+                                <tr>
+                                    <th style="width:6%"><input type="checkbox" style="display:none;" class="checknew"></th>
+                                    <th>Job Location</th>
+                                    <th>Location Type</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th style="display:none;"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbdyJobLocations"></tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="modal-footer text-center" style="margin-top:5px; text-align:center">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" data-dismiss="modal" id="btnSelectLocation">Save</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90 cancelNewLoc">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="AttachmentView" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" onclick="ClosedIframe()" data-dismiss="modal">
+                    	<span class="close-icon">&times;</span>
+                    </button>
+                    <h4 class="modal-title">
+                        Attachment View
+                    </h4>
+                </div>
+                <div class="modal-body form-horizontal">
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <!--<iframe name="iframe_a" id="Iframeview" class="embed-responsive-item" style="width: 99%;height: 423px;"></iframe>-->
+                        <div id="doc-viewer">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer" style="margin-top:0; text-align:center">
+                    <button type="button" class="btn btn-outline-secondary" onclick="ClosedIframe()" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+<!-----readMoreModal settting----->
+
+<div id="readMoreModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close close-round" data-dismiss="modal">
+            <span class="close-icon">&times;</span>
+            </button>
+            <h4 class="modal-title">Read More</h4>
+          </div>
+          <div class="modal-body">
+            <div class="cover_areabox coverboxlist">
+             <p>Lorem ipsum dolor sit amet consectetur</p> 
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-----readMoreModal settting----->
+    
+    
+
+    <script>
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+
+
+</body>
+
+</html>

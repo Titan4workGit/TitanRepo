@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+   <head>
+      <title>Document Upload</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/_layouts/15/SP.RequestExecutor.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/UploadFilestoDocument/UploadDoc.js"></script>
+      
+   
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-2619</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">6d32926f-e26c-46b6-aa42-4eb05ae3fa4a</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-2619, ADMIN-1645029823-2619</mso:_dlc_DocIdUrl>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+   
+   <body>
+   
+   <h1>Folder upload</h1>
+
+<script type="text/javascript">
+
+
+
+$(document).on('change', '.folder', function() {
+  // Does some stuff and logs the event to the console
+  alert(this);
+  debugger
+$("#up").html("");
+
+  var files = event.target.files;
+
+  for (var i=0; i<files.length; i++) {
+    var item = document.createElement("li");
+    item.innerHTML = files[i].webkitRelativePath;
+    $("#up").append(item);
+  }
+});
+
+
+</script>
+
+
+<h2>Selected Files</h2>
+
+<ul id="up">
+</ul>
+   
+   
+   
+      <div style="margin-top: 10%;">
+         <input id = "attachment" type="file" class="folder" webkitdirectory multiple  >
+		 <br/>
+         <div>
+            <button  id = "addFileButton" type = "button" class="btn btn-primary" onclick = "uploadDocument()">Upload</button>
+            
+            
+ 
+    
+
+
+         </div>
+      </div>
+       <div style="display:none">
+      <input id="filePicker" type="file">
+      
+      
+      
+      <input id="getFile1" type="file" multiple><br >
+<input id="addFileButton1" type="button" value="Upload" onclick="upload()">
+
+<input id="getFile" type="file"><br >  
+<input id="displayName" type="text" value="Enter a unique name" ><br >  
+<input id="addFileButton" type="button" value="Upload" onclick="uploadFile()">  
+ </div>
+   </body>
+</html>

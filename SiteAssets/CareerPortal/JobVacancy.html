@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <title>Career Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/padding.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/richtext.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/CommonMethod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/JobVacancy.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/jquery.richtext.js"></script>
+    
+
+<style>
+ 
+    
+.form-group button.custom-btn {
+    min-width: auto;
+}
+
+.col-sm-12.all-align-gap{
+ padding:0 0px; 
+}
+.custom-panel{
+ margin-top:0;  
+}     
+
+
+/****dec-1-22-****/
+.manage_labl label{
+  white-space: nowrap;	
+}
+#pplRequestBy, #pplManager {
+    padding: 2px !important;
+    position: relative;
+    border: 1px solid #ccc;
+    padding:0 !important;
+    height:auto;
+    min-height:34px;
+}
+
+#pplRequestBy .sp-peoplepicker-topLevel, 
+#pplManager .sp-peoplepicker-topLevel {
+    width: 100% !important;
+    border: none !important;
+    padding: 6px;
+}
+
+#pplRequestBy .sp-peoplepicker-topLevel .sp-peoplepicker-initialHelpText, 
+#pplManager .sp-peoplepicker-topLevel .sp-peoplepicker-initialHelpText {
+    top: 5px;
+}
+
+
+#pplRequestBy .sp-peoplepicker-editorInput, 
+#pplManager .sp-peoplepicker-editorInput {
+    width: auto !important;
+    border: none !important;
+}
+
+
+
+/****editor****/
+.description-box-add-announcement .richText-dropdown-outer ul.richText-dropdown {
+    z-index: 9;
+}
+.richText-editor{
+      height:380px !important;
+      padding:10px 26px 10px 10px !important;
+}
+.richText-editor{
+      border-left: #FFFFFF solid 0px;
+}
+
+.richText .richText-toolbar ul li a {
+    color: #585757;
+}
+
+.richText .richText-editor:focus{
+ border:none !important;	
+}
+
+.wrapingboxsec{
+ position:relative;	
+}
+
+.wrapingboxsec .richText-editor{
+   height: 114px !important;	
+}
+
+.wrapingboxsec .close_texeditor{
+  display:none;	
+}
+.wrapingboxsec.bigsize .close_texeditor{
+ display:block;
+ opacity:0.7;	
+}
+
+.wrapingboxsec.bigsize .optn_texeditor{
+  display:none;	
+}
+
+.wrapingboxsec.bigsize .richText-editor{
+   height: 380px !important;	
+}
+
+.wrapingboxsec .richText-toolbar{
+ display:none;	
+}
+
+.wrapingboxsec.bigsize .richText-toolbar{
+ display:block;	
+}
+
+.wrapingboxsec button {
+    position: absolute;
+    top:10px;
+    right: 17px;
+    padding: 0;
+    width: 21px;
+    height: 21px;
+    min-width: 26px !important;
+    border: none;
+    opacity: 0.8;
+    z-index: 5;
+    cursor: pointer;
+}
+.wrapingboxsec button:focus,
+.wrapingboxsec button:hover{
+  border:none !important;
+  box-shadow:none !important;
+  background:none !important;	
+}
+
+.wrapingboxsec button img{
+  width:21px;
+  cursor:pointer !important;	
+}
+
+.wrapingboxsec textarea{
+  padding-right:28px;	
+}
+
+.richText-toolbar ul li:nth-last-child(1),
+.richText-toolbar ul li:nth-last-child(2),
+.richText-toolbar ul li:nth-last-child(3),
+.richText-toolbar ul li:nth-last-child(4),
+.richText-toolbar ul li:nth-last-child(5),
+.richText-toolbar ul li:nth-last-child(6),
+.richText-toolbar ul li:nth-last-child(7){
+  display:none;	
+}
+
+#btnShowLocTable{
+  padding: 5px 8px !important;	
+}
+#btnShowLocTable img{
+ width:20px;
+ filter:brightness(0) invert(1);	
+}
+
+#btnShowLocTable:hover img{
+ filter:invert(28%) sepia(95%) saturate(1091%) hue-rotate(187deg) brightness(101%) contrast(88%);
+}
+
+.richText .richText-help{
+  display:none;	
+}
+
+
+@media(min-width:992px){
+	
+#text_editors .modal-dialog{
+ width:75%;	
+}
+	
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .my_announce_department_main_box {
+      margin-top: 10px;
+  }
+  .description-box-add-announcement .richText .richText-editor {
+    width: 100%;
+  }
+
+}
+
+/***editor ed***/
+
+@media (max-width: 450px){
+
+#pplRequestBy, #pplManager {
+    min-height:34px !important;
+}
+
+}
+
+/****dec-1-22-****/
+
+
+        @media(min-width: 992px) {
+            .row.colajust .col-md-4 {
+                min-height: 77px;
+            }
+        }
+
+        @media(min-width: 768px) {
+            .row.colajust .col-sm-6 {
+                min-height: 77px;
+            }
+        }
+
+        @media(max-width:992px) {
+
+            .ms-webpart-zone,
+            .ms-webpart-cell-horizontal {
+                display: block !important;
+            }
+
+            .locationbox table {
+                min-width: 800px !important;
+            }
+        }
+  
+
+.readonly{
+	-webkit-user-modify: read-only !important;
+}
+ 
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4465</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">9b1439da-dd98-44fd-bafc-d4f5ad573158</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4465, ADMIN-1645029823-4465</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="custom-panel">
+            <div class="panel-head">
+                <h1 class="panel-head-text" style="color:#333" data-localize="Job Vacancy">Job Vacancy</h1>
+            </div>
+            <div class="panel-body">
+                <div class="row colajust">
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Title">Job Title:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control NoEdit" id="txtJobTitle" maxlength="200">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Code">Job Code:</label>
+                            <input type="text" class="form-control NoEdit" id="txtJobCode" maxlength="50">
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                    
+                        <div class="form-group custom-form-group">
+                          <label for="" data-localize="Job Validity">Validity:</label><span class="color-red">*</span>
+                          
+                          <div class="d-flex align-items-center manage_labl">
+                            
+                            <div class="form-group d-flex align-items-center mr15 mb0">
+                              <label for="" class="mb0 mr5" data-localize="Validity From">From:</label>
+                              <input type="text" class="form-control NoEdit" id="dteValidFrom">
+                            </div>
+                            
+                            <div class="form-group d-flex align-items-center mr15 mb0">
+	                            <label for="" class="mb0 mr5" data-localize="Validity To">Validity To:</label>
+	                            <input type="text" class="form-control NoEdit" id="dteValidTo">
+                            </div>
+                            
+                          </div>  
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Type">Job Type:</label><span class="color-red">*</span>
+                            <select class="form-control NoEdit" id="ddlJobType">
+                                <option value="Full Time">Full Time</option>
+                                <option value="Part Time">Part Time</option>
+                                <option value="Contract">Contract</option>
+                                <option value="Intern">Intern</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Shift">Job Shift:</label>
+                            <div class="d-flex align-items-center">
+                                <select class="form-control NoEdit" id="ddlWorkHours"></select>
+                                <button type="button" class="btn custom-btn ml10 NoEdit" data-toggle="modal" data-target="#working-hours-modal" id="AddShiftModal">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Total Vacancies">No. of Vacancies:</label><span class="color-red">*</span>
+                            <input type="number" class="form-control NoEdit" id="NumbVacancies" onkeypress="validateVacancy(event)" onkeyup="PreventFirstZero(event)">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Position">Position:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control NoEdit" id="txtJobPos" maxlength="200">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Department">Department:</label>
+                            <select class="form-control NoEdit" id="ddlJobDept">
+                                <option>HR</option>
+                                <option>Development</option>
+                                <option>Product</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Recruiter Name">Recruiter's Name:</label>
+                            <div class="form-control" id="pplRequestBy"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for=""data-localize="Reporting Manager">Reporting Manager:</label>
+                            <div class="form-control" id="pplManager"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Qualification">Qualification:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control NoEdit" id="txtQualification" maxlength="200">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Experience">Experience: (Years)</label><span class="color-red">*</span>
+                            <div class="d-flex align-items-center">
+                                <div class="form-group d-flex align-items-center mr15 mb0">
+                                    <label class="mb0 mr5">Min:</label>
+                                    <input type="text" id="txtExpMin" class="form-control ValidString NoEdit" maxlength="7" onkeypress="validate(event)">
+                                </div>
+                                <div class="form-group d-flex align-items-center mb0">
+                                    <label class="mb0 mr5">Max:</label>
+                                    <input type="text" id="txtExpMax" class="form-control ValidString NoEdit" maxlength="7" onkeypress="validate(event)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Gender">Gender:</label>
+                            <select class="form-control NoEdit" id="ddlGender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Non-Binary">Non-Binary</option>
+                                <option value="Anyone" selected="selected">Anyone</option>
+                                <option value="Not Applicable">Not Applicable</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Age Limit">Age Limit: (Years)</label><span class="color-red">*</span>
+                            <div class="d-flex align-items-center">
+                                <div class="form-group d-flex align-items-center mr15 mb0">
+                                    <label class="mb0 mr5" data-localize="Min">Min:</label>
+                                    <input type="text" id="txtAgeMin" class="form-control ValidStringAge NoEdit" maxlength="7" onkeypress="validate(event)">
+                                </div>
+                                <div class="form-group d-flex align-items-center mb0">
+                                    <label class="mb0 mr5" data-localize="Max">Max:</label>
+                                    <input type="text" id="txtAgeMax" class="form-control ValidStringAge NoEdit" maxlength="7" onkeypress="validate(event)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Marital Status">Marital Status:</label>
+                            <select class="form-control NoEdit" id="ddlMartialStatus">
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                                <option value="Any" selected="selected">Any</option>
+                                <option value="Not Applicable">Not Applicable</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Posting mode">Job Posting mode:</label>
+                            <select class="form-control NoEdit" id="ddlApplyFor">
+                                <option value="Internal">Open for Internal employee</option>
+                                <option value="External">Open for Referral</option>
+                                <option value="Anyone" selected="selected">Open for Internal and Referral</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Mode">Job Mode:</label><span class="color-red">*</span>
+                            <select class="form-control NoEdit" id="ddlJobMode">
+                                <option value="On Line">Remote</option>
+                                <option value="Off Line">On-site</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Description">Job Description:</label>
+                            <div class="wrapingboxsec">
+                             <button type="button" class="resizingnow">
+                              <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/shift_files.png" class="optn_texeditor">
+                              <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/close_now.png" class="close_texeditor">
+                             </button>
+                             <!--<textarea class="form-control NoEdit" id="txtJobDescrption" rows="3" style="resize:none; min-height:110px;"></textarea>-->
+                             <textarea class="content" id="txtJobDescrption" rows="3" name="example"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="LocationBoxDiv" style="display:none;">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Location">Prefered Location:</label><span class="color-red">*</span>
+                            <div class="d-flex align-items-center">
+                                <div class="dropdown location-dropdown" style="width:100%">
+                                    <input class="form-control NoEdit" id="selectedLocation" disabled="disabled">
+                                </div>
+                                <div id="parentLocTable">
+	                                <button type="button" class="btn custom-btn ml10 NoEditbtn" id="btnShowLocTable" data-toggle="modal" data-target="#location-modal">
+	                                    <i class="fa fa-plus">lakhan</i>lakhan
+	                                </button>
+	                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12" style="display:none;" id="parentJobStatus">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Job Status">Job Status:</label>
+                            <select class="form-control NoEdit" id="ddlJobStatus">
+                                <option value="Open">Open</option>
+                                <option value="Hold">Hold</option>
+                                <option value="Cancelled">Cancelled</option>
+                                <option value="Closed">Closed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12" id="parentGrade">
+                        <div class="form-group custom-form-group">
+                            <label for="" data-localize="Grade">Band:</label>
+                            <input type="text" id="txtGrade" class="form-control NoEdit" maxlength="100">
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="required-skill-table-title mb5">
+                            <h4 class="mt0 mb0" style="margin-left:0 !important;" data-localize="Skill Set">Required Skill Set</h4>
+                            <div class="dropdown career-table-btn mb5 mr0">
+                                <button class="btn NoEdit" type="button" data-toggle="modal" data-target="#add-detail-modal" id="AddSkillPopup">
+                                    <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/add.png" alt="sorting">
+                                    <span>Add</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="table-responsive career-table required-skill-set-table scrollbar-panel">
+                            <table class="table mb0 custom-table" id="tblSkills">
+                                <thead>
+                                    <tr>
+                                        <th data-localize="Skills">Skills Required</th>
+                                        <th data-localize="Experience">Experience (Year)</th>
+                                        <th data-localize="Proficiency">Proficiency</th>
+                                        <th>Required</th>
+                                        <th class="w-5"></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbdySkills">
+                                    <tr><td colspan="5" style="text-align:center;">No skills added</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt20 text-center">
+                     <div class="attachments_area">
+                     	
+                       <input type="file" id="attachment_clickevent" style="display:none;" multiple>	
+                       <label for="attachment_clickevent" class="attachment_clickevent" style="color:#1d6ec0; margin-top:10px; display:block; width:200px; cursor:pointer; font-weight:400;">
+                        Attach Support Files
+                       </label>
+                       
+                       <div class="attachment-badge chip-box">
+		                  <!--<div href="#" class="m-0  upload-chip"> <span class="pr-8 chip-text-box">Img3.png</span> <span class="chip-icon-box"> <i class="fa fa-eye cursor-pointer mr-4"></i><i class="fa fa-times cursor-pointer"></i></span> </div>
+		                  <div href="#" class="m-0  upload-chip"> <span class="pr-8 chip-text-box">Img3.png</span> <span class="chip-icon-box"> <i class="fa fa-eye cursor-pointer mr-4"></i><i class="fa fa-times cursor-pointer"></i></span> </div>-->
+	                  </div>
+	                  <div id="oldfilename"></div>
+	                  <div style="clear:both"></div>
+                     </div>
+                    
+                    <button type="button" class="btn custom-btn mr5 wpx-90 NoEditbtn" id="btnSubmitDetails">Submit</button>
+                    <button type="button" class="btn custom-btn mr5 wpx-90 NoEditbtn" id="btnUpdateDetails">Update</button>
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="btnApplyJob">Apply</button>
+                    <a href="javascript:void(0);" type="button" class="btn custom-btn-two-cancel wpx-90 visitnone" id="btnPageClose">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- working-hours-modal -->
+    <div class="modal fade" id="working-hours-modal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round closeupdteShift" data-dismiss="modal">
+                        <span class="close-icon">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Working Hours</h4>
+                </div>
+                <div class="modal-body" id="JobShiftBody">
+                </div>
+            
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="btnSaveNewShift">Save</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90 closeupdteShift">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- Update shift -modal -->
+    <div class="modal fade" id="UpdateShiftModal" role="dialog" data-backdrop="static" style="background:rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">
+                        <span class="close-icon">×</span>
+                    </button>
+                    <h4 class="modal-title">Update shift</h4>
+                </div>
+                <div class="modal-body" id="">
+                	<input type="text" maxlength="200" id="txtUpdateShift">
+                </div>
+                <div class="modal-footer text-center" id="parentUpdateShift">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="btnUpdateShift">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Location-modal -->
+    <div class="modal fade" id="location-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round cancelNewLoc" data-dismiss="modal">
+                        <span class="close-icon">×</span>
+                    </button>
+                    <h4 class="modal-title">Job Locations</h4>
+                </div>
+                <div class="modal-body" id="LocationsBody">
+
+                    <button type="button" class="btn btn-default"  id="btnShowLocation" data-toggle="modal" data-target="#addlocations"
+                            style="float: right; border: 1px solid #ccc; padding: 3px 10px; margin-bottom: 12px;">
+                        <i class="fa fa-plus"></i>
+                        Add New
+                    </button>
+
+                    <div class="table-responsive locationbox scrollbar-panel">
+                        <table class="table table-bordered table-striped" id="tblJobLocations">
+                            <thead>
+                                <tr>
+                                    <th style="width:6%"><input type="checkbox" style="display:none;" class="checknew"></th>
+                                    <th>Job Location</th>
+                                    <th>Location Type</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th style="display:none;"></th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbdyJobLocations">
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="modal-footer text-center" style="margin-top:5px; text-align:center">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" data-dismiss="modal" id="btnSelectLocation">Save</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90 cancelNewLoc">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- addlocations -->
+    <div id="addlocations" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.7)">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round closeLocModal" data-dismiss="modal"><span class="close-icon">×</span></button>
+                    <h4 class="modal-title">Add Location</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+
+                        <div class="form-group col-md-6">
+                            <label for="">Job Location:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control" id="txtJobLocation" maxlength="200">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="">Location Type:</label><span class="color-red">*</span>
+                            <select class="form-control" id="ddlLocType">
+	                            <option value="Self Office">Self Office</option>
+	                            <option value="Customer Office">Customer Office</option>
+	                            <option value="Project Site">Project Site</option>
+	                            <option value="Factory">Factory</option>
+	                            <option value="Others">Others</option>
+                            </select>
+                        </div>
+
+                    </div>
+				    
+                    <div class="row">
+					     <div class="form-group col-md-6">
+                            <label>City:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control" id="txtCityName" maxlength="200">
+                        </div>
+                        
+                       <div class="form-group col-md-6">
+                            <label>State:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control" id="txtStateName" maxlength="100">
+                        </div>
+                    </div>
+                    
+                   <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Country:</label><span class="color-red">*</span>
+                            <input type="text" class="form-control" id="txtCountry" maxlength="100">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer" style="margin-top:5px; text-align:center">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="addLocNew">Submit</button>
+                    <button type="button" class="btn custom-btn-two-cancel wpx-90 closeLocModal" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- addlocations ed-->
+    <div class="modal fade" id="add-detail-modal" role="dialog" data-backdrop="static">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal">
+                        <span class="close-icon">×</span>
+                    </button>
+                    <h4 class="modal-title" data-localize="Skill Set">Skill Set</h4>
+                    <h4 class="currentRowId" style="display:none;"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Skills">Skills Required:</label><span class="color-red">*</span>
+                                <input type="text" class="form-control" id="txtSkillOn" maxlength="250">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Experience">Experience: (Years)</label>
+                                <div class="d-flex align-items-center">
+                                    <div class="form-group d-flex align-items-center mr15 mb0 w-50">
+                                        <label class="mb0 mr5">Min:</label>
+                                        <input type="text" id="txtSkillExpMin" class="form-control ValidStringSkill" maxlength="7" onkeypress="validate(event)">
+                                    </div>
+                                    <div class="form-group d-flex align-items-center mb0 w-50">
+                                        <label class="mb0 mr5" data-localize="Max">Max:</label>
+                                        <input type="text" id="txtSkillExpMax" class="form-control ValidStringSkill" maxlength="7" onkeypress="validate(event)">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Proficiency">Proficiency:</label>
+                                <select class="form-control" id="ddlProficiency">
+						<option value=null>--Select--</option>
+                                    <option value="Beginner">Beginner</option>
+                                    <option value="Intermediate">Intermediate</option>
+                                    <option id="Advanced">Advanced</option>
+                                    <option id="Highly Advanced">Highly Advanced</option>
+                                    <option id="Mastery">Mastery</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <label class="mb0" data-localize="Necessity">Necessity:</label>
+                            <div class="text-left">
+                                <label class="radio-inline"><input type="radio" name="optradio" id="rdoMandatory" value="Mandatory" checked="checked">Mandatory</label>
+                                <label class="radio-inline"><input type="radio" id="rdoGoodToHave" name="optradio" value="Desirable">Desirable</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="btnAddSkills">Save</button>
+                    <button type="button" class="btn custom-btn mr5 wpx-90" id="btnEditSkill">Edit</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90" id="btnCancelSkills">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Trigger the modal with a button -->
+<!-- reachtext -->
+<div id="text_editors" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+      </button>
+        <h4 class="modal-title">Editor</h4>
+      </div>
+      <div class="modal-body">
+        <!-------<textarea class="content" name="example"></textarea>------>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- reachtext -->
+
+
+<script type="text/javascript">
+  
+$(document).ready(function(){
+
+  $('.content').richText();
+  
+$('.resizingnow').click(function(){
+	$('.wrapingboxsec').toggleClass('bigsize');
+});
+
+})
+
+
+
+</script>
+    
+    
+    
+    
+    <script>
+        $('body').on('click', '.remove', function () {
+            $(this).parent('.block').remove();
+        });
+    </script>
+    
+    <script>
+        $(document).on('click', '.dropdown-menu', function (e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+
+</html>

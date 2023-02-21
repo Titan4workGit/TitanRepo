@@ -1,0 +1,165 @@
+<style>
+    @import "https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/License/LicenseSetup/css_new/LicenceSetup_nw.css";
+</style>
+
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/License/LicenseSetup/LicenseSetup.js"></script>
+
+<div class="panel panel-default shadow2 widthmanage" style="margin-top:10px;">
+    <div class="panel-heading" style="background:transparent !important;">
+        <div class="panel-title">
+            <img src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/AdminPortal/License/LicenseManager/img/Titan-Logo-hrz.png" class="mainlogosec" style="">
+        </div>
+    </div>
+
+    <div class="panel-body padajust">
+        <div class="col-md-11 col-md-offset-1">
+            <div class="form-horizontal bttommange">
+                <div class="form-group">
+                    <div class="col-sm-3">Product <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg">Titan Workspace</div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-3">License Type <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg">Subscription</div>
+                </div>
+
+                <div class="form-group paddingajustiment mangalign" style="margin-bottom:5px !important;">
+                    <div class="col-sm-3">License Agreement <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg flxmanage">
+                        <label class="radio-inline" style="padding-top:0;">
+                            <input type="checkbox" style="margin-left:-18px; margin-top:0;" disabled="" onclick="chekrbdclick(0)" id="Accept" name="LicenseAgreement">
+                        </label> <span id="spnAccept"> Accept</span>
+                        <span>
+                            <a id="LiceneceAgreement" class="btn custom-btn" style="margin-left:97px; color:#fff;">
+                                View Agreement
+                            </a>
+                        </span>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-3">Valid Upto <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg"><span id="licenseValidTill"></span></div>
+                </div>
+                <div class="form-group" style="display:none">
+                    <div class="col-sm-3">Customer ID <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg">012354</div>
+                </div>
+                <div class="form-group" style="display:none">
+                    <div class="col-sm-3">Supplier <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg">Name of seller</div>
+                </div>
+                <!----lic_box----->
+                <div class="lic_box">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:25%">Modules</th>
+                                <th style="width:13%">Licenses</th>
+                                <th style="width:13%">Consumed</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label><input type="radio" id="rdoEnterprise" name="optnw"> Enterprise (Full version)</label></td>
+                                <td><div class="squarebox">100</div></td>
+                                <td><div class="squarebox disable_color">80</div></td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="4"><label><input type="radio" id="rdoCustomize" name="optnw"> Customize</label></td>
+                            </tr>
+
+                            <tr>
+                                <td><label style="margin-left:20px;"><input type="checkbox" class="chkAllCustom" name="" disabled="disabled"> Intranet</label></td>
+                                <td><div class="squarebox">50</div></td>
+                                <td><div class="squarebox disable_color">10</div></td>
+                                <td><a href="javascript:void(0);">Assign Users</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <label style="margin-left:20px;">
+                                        <input type="checkbox" class="chkAllCustom" id="chkDMSVersion" name=""> DMS
+                                    </label>
+                                </td>
+                                <td><div class="squarebox">60</div></td>
+                                <td><div class="squarebox disable_color">34</div></td>
+                                <td><a href="javascript:void(0);">Assign Users</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><label style="margin-left:20px;"><input type="checkbox" class="chkAllCustom" name="" disabled="disabled"> Project & Task</label></td>
+                                <td><div class="squarebox">40</div></td>
+                                <td><div class="squarebox disable_color">14</div></td>
+                                <td><a href="javascript:void(0);">Assign Users</a></td>
+                            </tr>
+                            <tr>
+                                <td><label style="margin-left:40px;"><input type="checkbox" class="chkAllCustom" name="" disabled="disabled"> Timesheet</label></td>
+                            </tr>
+                            <tr>
+                                <td><label style="margin-left:40px;"><input type="checkbox" class="chkAllCustom" name="" disabled="disabled"> Attendance</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label style="margin-left:20px;"><input type="checkbox" class="chkAllCustom" id="chkBusProcVersion"> Business Process</label>
+                                    <div style="text-align:center">(Number of Processes)</div>
+                                </td>
+                                <td><div class="squarebox">40</div></td>
+                                <td><div class="squarebox disable_color">14</div></td>
+                                <td><a href="javascript:void(0);">Assign Users</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!----lic_box ed--->
+                <div class="form-group">
+                    <input id="txtLicenseId" disabled="" type="hidden">
+                    <div class="col-sm-3">Enter the License Key <span class="twodott">:</span></div>
+                    <div class="col-sm-9 padmg positionmanaging"><span class="widthmanagesection"> <input type="text" id="LicenseDescription" class="" name="LicenseKey" placeholder="Enter the License Key"> <input type="button" class="btn btn-primary btn-outline-primary" id="btnApply" onclick="webdevLicenced.LicenseSubmit();" value="Apply"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6" style="display:none;">
+            <div class="form-horizontal">
+                <div class="row">
+                    <div class="form-group top30">
+                        <div class="col-sm-8">
+                            <br>
+                            <br>
+                            <br>
+                            <a id="PrivatePolicy" class="btn btn-success top15" style="width:200px; display:none;">Privacy Policy</a>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12" style="text-align:center; margin-top:30px;">
+        	<button type="button" class="btn custom-btn mr-8 wpx-87" id="btnSubModules">Submit</button>
+            <button type="button" id="closeLicenceManager" style="font-size:13px;" class="btn btn-outline-secondary" data-localize="Close">Close</button>
+        </div>
+    </div>
+</div>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><head>
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:MediaServiceImageTags msdt:dt="string"></mso:MediaServiceImageTags>
+<mso:lcf76f155ced4ddcb4097134ff3c332f msdt:dt="string"></mso:lcf76f155ced4ddcb4097134ff3c332f>
+<mso:TaxCatchAll msdt:dt="string"></mso:TaxCatchAll>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4410</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">1ed217fd-92da-4492-a2ab-41be4a8408df</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4410, ADMIN-1645029823-4410</mso:_dlc_DocIdUrl>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">Priyanshu Pandey</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">45900.0000000000</mso:Order>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">Rakesh Khambra</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:ContentTypeId msdt:dt="string">0x010100767E0F213A8F8542B95D9160C5D83BF9</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title>Untitled 1</title></head>

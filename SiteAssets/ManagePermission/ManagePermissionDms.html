@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"/> -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>-->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/assets/css/padding.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/assets/css/styles.css"/>
+    <style>
+       .bootstrap-select button.dropdown-toggle{
+		   border:1px solid #ccc !important;
+        }
+        .ui-dialog .ui-dialog-titlebar-close{
+        min-width:20px;	
+        }
+        
+        #myIframeTeam{
+            width: 850px !important;
+            height: 650px !important;
+        }
+        @media(min-width:1046px){
+        
+        .ui-dialog{
+        width:1044px !important;	
+        }
+        
+        }
+
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4386</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">11ab78a7-3c38-4488-aab4-a08a9f1bbc68</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4386, ADMIN-1645029823-4386</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container-fluid all-align-gap-container">
+        <div class="row">
+        <div class="col-sm-12 all-align-gap-sub-container">
+            <div class="custom-panel">
+                <div class="panel-head">
+                    <h1 class="panel-head-text">Manage Permission</h1>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <ul class="activating">
+                                <li class="newitem active" active-color="#548dcb" data-toggle="pill"
+                                    data-target="#corporate-permissions">
+                                    <span>Corporate Permissions</span>
+                                    <img class="permission-tab-icon" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/assets/images/Corporate-Permissions.png"/>
+                                </li>
+                                <li class="newitem" active-color="#548dcb" data-toggle="pill" data-target="#departmental-permission">
+                                    <span>Departmental Permission</span>
+                                    <img class="permission-tab-icon" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/assets/images/Departmental-Permission.png"/>
+                                </li>
+                                <!-- <li class="newitem active" active-color="#548dcb" data-toggle="pill"
+                                    data-target="#process-admin">
+                                    <span>Process Admin</span>
+                                    <img class="permission-tab-icon" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/assets/images/Corporate-Permissions.png"/>
+                                </li> -->
+                                <span class="slidesec"></span>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12 dms-conditionshow">
+                             <div class="form-group custom-form-group search-box">
+                                <!--<input type="text" id="" placeholder="Search..." style="width:100%">-->  
+                                <span style="width:100%" id="serchUser"></span>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="tab-content pt20">
+                        <div id="corporate-permissions" class="tab-pane fade in active">
+                            <h4 class="mobile-tab-title">Corporate Permissions</h4>
+                            <div class="row ml0 mr0">
+                                <div class="col-md-6 col-sm-12 col-xs-12 thadmin-container-box mb15">
+                                    <div class="admin-th-modal-search-box-panel">
+                                        <h4 class="mb15 mt0">Tech Admin</h4>
+                                    </div>
+                                    <div
+                                        class="row admin-th-iu-box tech-admin-panel custom-scroll panel-scrollbar-panel-hover" id="techAdminUser">
+                                        <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <div class="admin-user-detail-add-user custom-form-group">										
+                                        <!--<input type="text"
+                                            class="form-control admin-add-user-input tadmin-add-user-input">-->
+                                        <div id="TechPplPicker" class="effecinput form-control admin-add-user-input tadmin-add-user-input"></div>	
+                                        <button type="button"
+                                            class="btn custom-btn custom-btn-circle admin-add-user-btn">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12 thadmin-container-box mb15">
+                                    <div class="admin-th-modal-search-box-panel">
+                                        <h4 class="mb15 mt0">HR Admin</h4>
+                                    </div>
+                                    <div
+                                        class="row admin-th-iu-box hr-admin-panel custom-scroll panel-scrollbar-panel-hover" id="hrAdmin">
+                                        <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <div class="admin-th-card">
+                                                <div class="admin-th-card-head">
+                                                    <img src="assets/images/img-21.jpg" alt="user">
+                                                </div>
+                                                <div class="admin-th-card-body">
+                                                    <div class="admin-th-card-body-info text-ellipsis">
+                                                        <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                        </h3>
+                                                        <p class="admin-th-email text-ellipsis">
+                                                            d.goswami@adapt-india.com</p>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <button
+                                                            class="btn remove-group-btn remove-btn close close-round"><i
+                                                                class="fa fa-times"
+                                                                aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                                    <div class="admin-user-detail-add-user custom-form-group">
+                                        <!--<input type="text"
+                                            class="form-control admin-add-user-input hr-add-user-input">-->
+                                        <div id="HrPplPicker" class="effecinput form-control admin-add-user-input hr-add-user-input"></div>					                                	
+                                        <button type="button"
+                                            class="btn custom-btn custom-btn-circle hr-add-user-btn">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12 thadmin-container-box mb15">
+                                    <div class="admin-th-modal-search-box-panel">
+                                        <h4 class="mb15 mt0">Process Admin</h4>
+                                    </div>
+                                    <div
+                                        class="row admin-th-iu-box hr-admin-panel custom-scroll panel-scrollbar-panel-hover" id="processAdmin">
+                                    </div>
+                                    <div class="admin-user-detail-add-user custom-form-group">
+                                        <!--<input type="text"
+                                            class="form-control admin-add-user-input hr-add-user-input">-->
+                                        <div id="processPplPicker" class="effecinput form-control admin-add-user-input process-add-user-input"></div>                                                     
+                                        <button type="button"
+                                            class="btn custom-btn custom-btn-circle Process-add-user-btn">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-right pt10 dms-site-admins-optn">
+                                <!-- <a href="#" type="button" id="Openmngsiteadmin" onclick="Openmngsiteadmins()">Site Admins</a> -->
+                                <a href="#" type="button" onclick="Openmngsiteadmins()" data-toggle="modal" data-target="#Openmngsiteadmin">Site Admins</a>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="mt10 text-center">
+                                        <button type="button" id="btnSubmit_Admin" class="btn custom-btn wpx-90">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="departmental-permission" class="tab-pane fade">
+                            <h4 class="mobile-tab-title">Departmental Permission</h4>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-left-container">
+                                    <div class="admin-container-box mb15">
+                                        <div class="form-group custom-form-group department-search-dropdown">
+                                            <label class="b-400">Department:</label>
+                                              <select class="form-control" id="ddlDepartments">
+                                                <!--<option data-tokens="IT">IT</option>data-live-search="true"
+                                                <option data-tokens="Purchase">Purchase</option>
+                                                <option data-tokens="Networking">Networking</option>
+                                                <option data-tokens="Hardware">Hardware</option>
+                                                <option data-tokens="Human Resource">Human Resource</option>
+                                                <option data-tokens="Finance">Finance</option>
+                                                <option data-tokens="Admin">Admin</option>
+                                                <option data-tokens="Information Technology">Information Technology</option>-->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-right-container">
+                                    <div class="admin-container-box mb15">
+                                        <h4 class="mb15 mt0">Sharing with Everyone</h4>
+                                        <div class="admin-th-modal-search-box-panel dms-sharing-everyone-optns">
+                                            <div class="mb0">
+                                                <label class="radio-inline"><input type="radio" name="UpdateEmp"
+                                                        id="radioHod" value="4" checked="">HOD</label>
+                                                <label class="radio-inline"><input type="radio" name="UpdateEmp"
+                                                        id="radioAllContr" value="3">All Contributors</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-left-container">
+                                    <div class="admin-container-box mb15">
+                                        <div class="admin-th-modal-search-box-panel">
+                                            <h4 class="mb15 mt0">Contributors (Add, Edit, Delete)</h4>
+                                        </div>
+                                        <div
+                                            class="row admin-th-iu-box custom-scroll panel-scrollbar-panel-hover contributors-document-panel" id="deptContributors">
+                                            <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="admin-user-detail-add-user custom-form-group">
+                                            <!--<input type="text"
+                                                class="form-control admin-add-user-input contributors-add-user-input">-->
+                                            <div id="deptContributorsPplPicker" class="effecinput form-control admin-add-user-input contributors-add-user-input"></div>	
+                                            <button type="button"
+                                                class="btn custom-btn custom-btn-circle contributors-add-user-btn">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-right-container">
+                                    <div class="admin-container-box mb15">
+                                        <div class="admin-th-modal-search-box-panel">
+                                            <h4 class="mb15 mt0">Head of the Department</h4>
+                                        </div>
+                                        <div
+                                            class="row admin-th-iu-box custom-scroll panel-scrollbar-panel-hover head-of-the-department-panel" id="headOfDepartment">
+                                            <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="admin-user-detail-add-user custom-form-group">
+                                            <!--<input type="text"
+                                                class="form-control admin-add-user-input hod-add-user-input">-->
+                                            <div id="headOfDeptPplPicker" class="form-control admin-add-user-input hod-add-user-input"></div>	
+                                            <button type="button"
+                                                class="btn custom-btn custom-btn-circle hod-add-user-btn">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-left-container">
+                                    <div class="admin-container-box mb15">
+                                        <div class="admin-th-modal-search-box-panel">
+                                            <h4 class="mb15 mt0">Contributors from Other Department</h4>
+                                        </div>
+                                        <div
+                                            class="row admin-th-iu-box custom-scroll panel-scrollbar-panel-hover contributor-access-panel" id="otherDeptContributors">
+                                            <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="admin-user-detail-add-user custom-form-group">
+                                            <!--<input type="text"
+                                                class="form-control admin-add-user-input contributor-other-dept-input">-->
+                                            <div id="otherDeptContriPplPicker" class="form-control admin-add-user-input contributor-other-dept-input"></div>	
+                                            <button type="button"
+                                                class="btn custom-btn custom-btn-circle contributor-other-dept-btn">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 col-xs-12 departmental-right-container">
+                                    <div class="admin-container-box">
+                                        <div class="admin-th-modal-search-box-panel">
+                                            <h4 class="mb15 mt0">Readers from Other Department</h4>
+                                        </div>
+                                        <div
+                                            class="row admin-th-iu-box custom-scroll panel-scrollbar-panel-hover contributor-access-panel" id="readerOtherDept">
+                                            <!--<div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                                <div class="admin-th-card">
+                                                    <div class="admin-th-card-head">
+                                                        <img src="assets/images/img-21.jpg" alt="user">
+                                                    </div>
+                                                    <div class="admin-th-card-body">
+                                                        <div class="admin-th-card-body-info text-ellipsis">
+                                                            <h3 class="admin-th-name text-ellipsis">Dipankar Goswami
+                                                            </h3>
+                                                            <p class="admin-th-email text-ellipsis">
+                                                                d.goswami@adapt-india.com</p>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button
+                                                                class="btn remove-group-btn remove-btn close close-round"><i
+                                                                    class="fa fa-times"
+                                                                    aria-hidden="true"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="admin-user-detail-add-user custom-form-group">
+                                            <!--<input type="text"
+                                                class="form-control admin-add-user-input readers-other-dept-input">-->
+                                            <div id="readerPplPicker" class="effecinput form-control admin-add-user-input readers-other-dept-input"></div>	
+                                            <button type="button"
+                                                class="btn custom-btn custom-btn-circle readers-other-dept-btn">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="mt10 text-center">
+                                        <button type="button" class="btn custom-btn wpx-90" id="btnSubmit_DepartmentDocument">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- <div id="process-admin" class="tab-pane fade">
+                            <h4 class="mobile-tab-title">Process Admin</h4>
+                            <div class="row">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!--Dont remove this input------>
+        <input id="deptsiteurl" type="hidden" />
+        </div>
+    </div>
+    
+    <!--<div id="genericPopup" style="display:none"></div>-->
+
+    <!-- Modal for site admins -->
+    <div class="modal fade" id="Openmngsiteadmin" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Site Collection Administration</h4>
+                </div>
+                <div class="modal-body" id="genericPopup">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn custom-btn-two-cancel" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ManagePermission/ManagePermissionDms.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/CommonJS.js?ctag=220418"></script>
+            
+    <!---snake effect--->
+    <script>
+        var indicator = document.querySelector('.slidesec');
+        var items = document.querySelectorAll('.newitem');
+
+        function handleIndicator(el) {
+            items.forEach(function (item) {
+                item.classList.remove('active');
+                item.removeAttribute('style');
+            });
+            indicator.style.width = "".concat(el.offsetWidth, "px");
+            indicator.style.left = "".concat(el.offsetLeft, "px");
+            indicator.style.backgroundColor = el.getAttribute('active-color');
+            el.classList.add('active');
+            el.style.color = el.getAttribute('active-color');
+        }
+
+
+
+        items.forEach(function (item, index) {
+            item.addEventListener('click', function (e) {
+                handleIndicator(e.target);
+            });
+            item.classList.contains('active') && handleIndicator(item);
+        });
+    </script>
+    <!---snake effect--->
+
+    <script>
+    $(document).ready(function () {
+        $(".admin-add-user-btn").click(function () {
+            $(".tadmin-add-user-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".Process-add-user-btn").click(function () {
+            $(".process-add-user-input").toggleClass("admin-add-user-input-active");
+        });
+        
+        $(".hr-add-user-btn").click(function () {
+            $(".hr-add-user-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".contributors-add-user-btn").click(function () {
+            $(".contributors-add-user-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".hod-add-user-btn").click(function () {
+            $(".hod-add-user-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".contributor-other-dept-btn").click(function () {
+            $(".contributor-other-dept-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".readers-other-dept-btn").click(function () {
+            $(".readers-other-dept-input").toggleClass("admin-add-user-input-active");
+        });
+        $(".approval-required-yes-user-btn").click(function () {
+            $(".approval-required-yes-user-input").toggleClass("admin-add-user-input-active");
+        });
+    });
+</script>
+</body>
+</html>

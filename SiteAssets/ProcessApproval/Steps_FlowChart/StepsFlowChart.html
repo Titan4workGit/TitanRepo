@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/ProcessApproval/Steps_FlowChart/svgDraw.js"></script>
+
+<style>
+/*Now the CSS*/
+* {margin: 0; padding: 0;}
+
+.tree ul {
+	padding-top:30px; 
+    position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	display:flex;
+}
+
+.tree li {
+	float: left; text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 10px 0 10px;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 2px solid #bdbdbd;
+	width: 50%; height: 20px;
+}
+.tree li::after{
+	right: auto; left: 50%;
+	border-left: 2px solid #bdbdbd;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+	display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+	border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+	border-right: 2px solid #bdbdbd;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 2px solid #ccc;
+	width: 0; height: 30px;
+}
+
+.tree li a {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: arial, verdana, tahoma;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    width: 160px;
+    height: 80px;
+    background: #e4eaed;
+    position: relative;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li a:hover, .tree li a:hover+ul li a {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+/*Connector styles on hover*/
+.tree li a:hover+ul li::after, 
+.tree li a:hover+ul li::before, 
+.tree li a:hover+ul::before, 
+.tree li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+
+.tree{
+    display: flex;
+    justify-content: center;
+    clear:both;
+}
+
+
+/**svg container setting****/
+
+#svgContainer { 
+  z-index: -10;
+  position:absolute;
+  opacity:1;
+}
+
+svg#svg1 {
+ 
+    width: calc(100% + 15px) !important;
+
+}
+
+
+/*****flow setting*******/
+
+.left_flow, 
+.right_flow {
+    width: 1px;
+    height: 2px;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+
+.left_flow{
+ left: -20px;
+ top: 50%;	
+}
+
+
+.right_flow {
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.right_flow::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    background: #397eab;
+    right: -0.2px;
+}    
+
+.left_flow::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 0px;
+    left: 0px;
+    background: #397eab;
+    transform: rotate(180deg);
+}
+
+.top_flow {
+    width: 2px;
+    height: 20px;
+    background:#397eab;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -15px;
+}
+
+.bottom_flow {
+    width:0px;
+    height:2px;
+    background:#397eab;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    bottom:-15px;
+}
+
+.bottom_flow::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    bottom: 0px;
+    background: #397eab;
+    top: -12px;
+    left: -1px;
+}
+
+
+
+/*****arrow setting*******/
+
+.arrow_bottom,
+.arrow_left,
+.arrow_right{
+  position:absolute;
+  border:7px solid transparent;
+}
+
+.arrow_left{
+  left:-6px;
+  top:50%;
+  border-left-color:#000;
+  transform: translateY(-50%);	
+}
+
+.arrow_right {
+    right: -6px;
+    top: 50%;
+    border-right-color: #000;
+    transform: translateY(-50%);
+}
+
+.arrow_bottom {
+    left: 50%;
+    bottom: -5px;
+    border-bottom-color: #000;
+    transform: translateX(-50%);
+}
+
+/*****arrow setting*******/
+
+path {
+    stroke: #397eab;
+
+}
+
+.cover_tree {
+    overflow: auto;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.ms-webpart-zone,
+.ms-webpart-cell-horizontal{
+    display: block !important;
+}
+
+</style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-5200</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">fd30a548-2d18-4f13-99e8-25f3c4c606ec</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-5200, ADMIN-1645029823-5200</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+	
+</body>
+
+<div class="cover_tree">
+<div id="svgContainer" style="margin: 50px 50px;">
+</div>
+
+<div class="tree" style="margin:0 auto">
+	<ul id="InitialNodeChild">		
+	</ul>
+</div>
+
+<div style="clear:both"></div>
+</div>
+
+<script type="text/javascript">
+
+</script>

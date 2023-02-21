@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+    <title>Career Dashboard</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/padding.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/d3-instant-charts.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/d3.min_Myapps.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/JS/d3pie_MyApps.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/EmployeeSynchronous/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/CommonMethod.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/CustomJS/CareerDashboard.js"></script>
+    
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:_dlc_DocId msdt:dt="string">ADMIN-1645029823-4463</mso:_dlc_DocId>
+<mso:_dlc_DocIdItemGuid msdt:dt="string">be5e12d3-4de7-45e0-9ea3-d1bd87253997</mso:_dlc_DocIdItemGuid>
+<mso:_dlc_DocIdUrl msdt:dt="string">https://adaptindia.sharepoint.com/sites/Titan_2_2_1_DEV/_layouts/15/DocIdRedir.aspx?ID=ADMIN-1645029823-4463, ADMIN-1645029823-4463</mso:_dlc_DocIdUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+
+
+<style>
+
+.col-sm-12.all-align-gap{
+ padding:0 0px;	
+}
+.custom-panel{
+ margin-top:0;	
+}
+
+</style>
+
+</head>
+
+<body>	
+    <div class="container padjust">
+        <div class="custom-panel">
+            <div class="panel-body pt0">
+                <div class="d-flex career-top-panel">
+                      <div class="left_secbox">
+	                       <div class="panel-head marginmangetop" style="padding:0 !important;">
+			                 <h1 class="panel-head-text" style="color:#333;" data-localize="Dashboard">Recruitment Dashboard</h1>
+			               </div>
+	           			   <ul class="activating">
+	                        <li class="newitem active" active-color="#548dcb" data-toggle="pill" data-target="#job-postings" id="liPostedJob">
+	                            <span>Posted Job</span>
+	                        </li>
+	                        <li class="newitem" active-color="#548dcb" data-toggle="pill" data-target="#my-applications" id="liMyApps">
+	                            <span>My Application</span>
+	                        </li>
+	                        <span class="slidesec"></span>
+	                     </ul>
+                    </div> 
+                    <div class="pieJobsec">
+                      <div class="dashboard-graph" id="pieJobs"></div>
+                      <ul class="posted_jobs">
+						 <li><span class="open"></span> Open</li>
+						 <li><span class="hold"></span> Hold</li>
+						 <li><span class="cancelled"></span> Cancelled</li>
+						 <li><span class="closed"></span> Closed</li>
+					  </ul>
+                    </div>
+                    <div class="pieMyAppsec" style="display:none;">
+                      <div class="dashboard-graph" id="pieMyApps" style="display:none;"></div>
+                      <ul class="my_applicationsec">
+						  <li><span class="shortlisted"></span>Shortlisted</li>
+						  <li><span class="rejected"></span>Not Shortlisted</li>
+						  <li><span class="on_hold"></span>On Hold</li>
+						  <li><span class="hired"></span>Hired</li>
+						  <li><span class="offered"></span>Offered</li>
+						  <li><span class="applied"></span>Applied</li>
+						  <li><span class="under_review"></span>Under Review</li>
+					 </ul>
+                    </div>
+                </div>
+                <div class="tab-content pt10">
+                    <div id="job-postings" class="tab-pane fade in active">
+                        <div class="row">
+                        	<div class="col-xs-12">
+                        		<h4 class="tab-title-mobile">Job Postings</h4>
+                        	</div>
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-12 col-xs-12 career-top-panel-box-istad">
+                                        <div class="career-deta-btn-panel d-flex">
+                                            <div class="dropdown career-table-btn">
+                                                <a class="btn dropdown-toggle btnJobVacPage HRADMIN" type="button" href="javascript:void(0);" id="">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/add.png" alt="sorting">
+                                                  <span>Job Vacancy</span>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown career-table-btn">
+                                                <button class="btn dropdown-toggle btnFilter" id="btnFilterPosted" type="button" data-toggle="modal" data-target="#job-postings-filter-modal">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/filter.png" alt="filter">
+                                                  <span>Filter</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/sorting.png" alt="sorting">
+                                                  <span>Sort</span>
+                                                  <img class="career-button-image-icon ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/down-arrow.png" alt="down arrow">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li>
+                                                    <a href="javascript:void(0);" type="button" id="iTitle" name="=asc" onclick="SortPostedJobs('SortJobTitle', this,1);" data-localize="Job Title">
+                                                      Job Title
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="javascript:void(0);" type="button" id="iJobType" name="=asc" onclick="SortPostedJobs('SortJobType', this, 2);" data-localize="Job Type">
+                                                      Job Type
+                                                    </a>
+                                                  </li>
+                                                  <li id="SortValidity">
+                                                    <a href="javascript:void(0);" type="button" id="iValidity" name="=desc" onclick="SortPostedJobs('SortValidity', this, 4);" data-localize="Job Validity">
+                                                      Vaidity
+                                                    </a>
+                                                  </li>
+													<li id="SortVacancies">
+                                                    <a href="javascript:void(0);" type="button" id="iVacancy" name="=desc" onclick="SortPostedJobs('SortVacancies', this, 5);">
+                                                      Vacancies
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/excel.png" alt="excel">
+                                                  <span>Export</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/alert.png" alt="alert">
+                                                  <span>Reminders</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/report.png" alt="report">
+                                                  <span>Report</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 col-xs-12 career-top-panel-box-istad">
+                                        <div class="form-group custom-form-group search-box" style="max-width:90%;">
+                                          <input class="form-control" type="text" id="JobsSearchText" placeholder="Search">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin:0;">
+	                                <div class="col-xs-12" style="padding:0 0">
+	                                    <div class="">
+	                                        <div class="chip-box" id="PostedJobChips"></div>
+	                                    </div>
+		                            </div>
+	                            </div>
+                                <div class="table-responsive career-table scrollbar-panel" id="PostedJob">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="my-applications" class="tab-pane fade">
+                    	<div class="row">
+                    		<div class="col-xs-12">
+                        		<h4 class="tab-title-mobile">My Applications</h4>
+                        	</div>
+                    		<div class="col-xs-12">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-12 col-xs-12 career-top-panel-box-istad">
+                                        <div class="career-deta-btn-panel d-flex">
+                                            <div class="dropdown career-table-btn">
+                                                <a class="btn dropdown-toggle btnJobVacPage HRADMIN" type="button" href="javascript:void(0);">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/add.png" alt="sorting">
+                                                  <span>Job Vacancy</span>
+                                                </a>
+                                            </div>
+                                            <div class="dropdown career-table-btn">
+                                                <button class="btn dropdown-toggle btnFilter" type="button" data-toggle="modal" data-target="#job-postings-filter-modal">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/filter.png" alt="filter">
+                                                  <span>Filter</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn">
+                                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/sorting.png" alt="sorting">
+                                                  <span>Sort</span>
+                                                  <img class="career-button-image-icon ml2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/down-arrow.png" alt="down arrow">
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                  <li>
+                                                    <a href="javascript:void(0);" type="button" id="iTitleApps" name="=asc" onclick="SortMyApps('SortJobTitle', this,1);" data-localize="Job Title">
+                                                      Job Title
+                                                    </a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="javascript:void(0);" type="button" id="iJobTypeApps" name="=asc" onclick="SortMyApps('SortJobType', this, 2);"data-localize="Job Type">
+                                                      Job Type
+                                                    </a>
+                                                  </li>
+                                                  <li id="SortValidity">
+                                                    <a href="javascript:void(0);" type="button" id="iSubmission" name="=desc" onclick="SortMyApps('SortSubmission', this, 4);">
+                                                      Submission
+                                                    </a>
+                                                  </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/excel.png" alt="excel">
+                                                  <span>Export</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/alert.png" alt="alert">
+                                                  <span>Reminders</span>
+                                                </button>
+                                            </div>
+                                            <div class="dropdown career-table-btn" style="display:none;">
+                                                <button class="btn dropdown-toggle" type="button">
+                                                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/report.png" alt="report">
+                                                  <span>Report</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 col-xs-12 career-top-panel-box-istad">
+                                        <div class="form-group custom-form-group search-box" style="max-width:90%;">
+                                          <input class="form-control" type="text" name="" placeholder="Search" id="AppsSearchText">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="margin:0;">
+	                                <div class="col-xs-12" style="padding:0 0">
+	                                    <div class="">
+	                                        <div class="chip-box" id="MyAppsChips"></div>
+	                                    </div>
+										
+		                            </div>
+	                            </div>
+                                <div class="table-responsive career-table scrollbar-panel" id="ApplicationsBox">
+                                </div>
+                            </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- filter modal -->
+    <div class="modal fade" id="job-postings-filter-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round" data-dismiss="modal"><span
+                            class="close-icon">×</span></button>
+                    <h4 class="modal-title">Filter</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Job Type">Job Type:</label>
+                                <select class="form-control" id="ddlJobType">
+                                	<option value="All">All</option>
+	                                <option value="Full Time">Full Time</option>
+	                                <option value="Part Time">Part Time</option>
+	                                <option value="Contract">Contract</option>
+	                                <option value="Intern">Intern</option>
+	                                <option value="Other">Other</option>
+                            	</select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Department">Department:</label>
+                                <select class="form-control" id="ddlJobDept">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Job Location">Location:</label>
+                                <select class="form-control" id="ddlLocations">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Validity From">Valid Form:</label>
+                                <input type="text" class="form-control" id="dteValidFrom">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Validity To">Valid To:</label>
+                                <input type="text" class="form-control" id="dteValidTo">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="form-group custom-form-group">
+                                <label for="" data-localize="Job Designation">Designation:</label>
+                                <input type="text" class="form-control" id="txtJobPos">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="ParentStatusJobs">
+                            <div class="form-group custom-form-group">
+                                <label for="">Status:</label>
+                                <select class="form-control" id="ddlJobStatus">
+                                	<option value="All">All</option>
+                                	<option value="Open" selected="selected">Open</option>
+                                	<option value="Hold">Hold</option>
+                                	<option value="Cancelled">Cancelled</option>
+                                	<option value="Closed">Closed</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="ParentStatusApps" style="display:none;">
+                            <div class="form-group custom-form-group">
+                                <label for="">Status:</label>
+                                <select class="form-control" id="ddlAppsStatus">
+                                <option value="All">All</option>
+                                <option value="Shortlisted">Shortlisted</option>
+                                <option value="Rejected">Not Shortlisted</option>
+                                <option value="On Hold">On Hold</option>
+                                <option value="Hired">Hired</option>
+                                <option value="Offered">Offered</option>
+                                <option value="Applied">Applied</option>
+                                <option value="Under Review">Under Review</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="ParentApplyFor" style="display:none;">
+                            <div class="form-group custom-form-group">
+                                <label for="">Apply For:</label>
+                                <select class="form-control" id="ddlApplyFor">
+                                	<option value="All applications">All applications</option>
+                                	<option value="Self">Self-applications</option>
+                                	<option value="Others">Referred candidates</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-center">
+                    <button type="button" data-dismiss="modal" class="btn custom-btn mr5 wpx-90" id="btnFilterJobs">Apply</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn mr5 wpx-90" id="btnFilterApps" style="display:none;">Apply</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90" id="btnCloseJobs">Close</button>
+                    <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90" style="display:none;" id="btnCloseApps">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- applicationlisting -->
+<div id="applicationlisting" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">&times;</span>
+        </button>
+
+        <h4 class="modal-title">List of Applications</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="row" style="margin-bottom:5px;">
+               <div class="col-md-3">
+               
+                <div class="form-group">
+                
+	                <label>Status:</label>
+	                <select name="" id="ddlFilterStatus" class="form-control">
+	                	<option value="All">All</option>
+	                	<option value="Applied">Applied</option>
+	                 	<option value="Shortlisted">Shortlisted</option>
+			           <option value="Rejected">Not Shortlisted</option>
+			           <option value="On Hold">On Hold</option>
+			           <option value="Hired">Hired</option>
+			           <option value="Offered">Offered</option>
+			           <option value="Under Review">Under Review</option>
+	                </select>
+	                
+                </div>
+                
+              </div>
+
+              <div class="col-md-3">
+                 <div class="form-group">
+	                <label>Qualification:</label>
+	                <input id="txtFilterQual" type="text" class="form-control" placeholder="Qualification">
+	               </div> 
+	          </div>
+              
+              <div class="col-md-3">
+                 <div class="form-group">
+	              <label data-localize="Experience">Experience: (In years)</label>
+                  <input type="text" class="form-control" id="txtExperience" placeholder="Experience">
+                 </div> 
+              </div> 
+
+              <div class="col-md-2" style="display:none;">
+                <label style="opacity: 0; display: block;">Filter</label>
+                <button type="button" class="btn btn-default filtering" id="btnApplicantFilter">
+                  <img class="career-button-image-icon mr2" src="https://cdn.jsdelivr.net/gh/Titan4workGit/TitanRepo@main/SiteAssets/CareerPortal/assets/images/filter.png" alt="filter"> Filter
+                </button>
+              </div>
+        
+        </div>
+
+        <div class="table-responsive locationbox scrollbar-panel">
+          <table class="table table-bordered table-striped" id="tblApplicants">
+            <thead>
+              <tr>
+                <th><input type="checkbox" id="chkSelectAll"></th>
+                <th>Applicant</th>
+                <th>Apply Type</th>
+                <th>Contact</th>
+                <th>Qualification</th>
+                <th>Prefered Location</th>
+                <th style="text-align:center;">Status</th>
+                <th></th>
+             </tr>
+            </thead>
+            <tbody id="tbdyApplicants">
+            </tbody>
+          </table>
+        </div>
+      
+      </div>
+
+      <div class="modal-footer text-center" style="margin-top:5px; text-align:center; padding:5px;">
+        <button type="button" class="btn custom-btn mr5 wpx-90" id="btnAction" style="cursor:pointer">Action</button>
+
+        <button type="button" data-dismiss="modal" class="btn custom-btn-two-cancel wpx-90">Cancel</button>
+        
+      </div>
+      
+    </div>
+
+  </div>
+</div>
+
+<!-- applicationlisting ed -->
+
+<!-- statusde box -->
+<div id="statusdefine" class="modal fade" role="dialog" style="background:rgba(0,0,0,0.5)">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-round" data-dismiss="modal">
+          <span class="close-icon">×</span>
+        </button>
+        <h4 class="modal-title">Status</h4>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="form-group">
+          <label>Status:</label>
+          <select name="" id="ddlAppStatus" class="form-control">
+           <option value="Shortlisted">Shortlisted</option>
+           <option value="Rejected">Not Shortlisted</option>
+           <option value="On Hold">On Hold</option>
+           <option value="Hired">Hired</option>
+           <option value="Offered">Offered</option>
+           <option value="Under Review">Under Review</option>
+           
+          </select>
+        </div>  
+
+         <div class="form-group">
+          <label>Remarks:</label>
+          <textarea id="txtRemarks" rows="5" class="form-control"></textarea>
+         </div>
+
+         <div class="form-group">
+          <label class="checkbox-inline">
+           <input type="checkbox" id="chkSendMail" value=""> Send Notification to Applicants
+          </label> 
+         </div>  
+
+      </div>
+
+      <div class="modal-footer text-center" style="margin-top:5px; text-align:center; padding:5px;" id="ParentChangeStatus">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Location-modal -->
+    <div class="modal fade" id="location-modal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close close-round cancelNewLoc" data-dismiss="modal">
+                        <span class="close-icon">×</span>
+                    </button>
+                    <h4 class="modal-title">Locations</h4>
+                </div>
+                <div class="modal-body" id="LocationsBody">
+                    <div class="table-responsive locationbox scrollbar-panel">
+                        <table class="table table-bordered table-striped" id="tblJobLocations">
+                            <thead>
+                                <tr>
+                                    <th>Job Location</th>
+                                    <th>Location Type</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbdyJobLocations"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- statusde box -->
+
+
+
+
+
+
+
+
+    <!---snake effect--->
+    <script>
+        var indicator = document.querySelector('.slidesec');
+        var items = document.querySelectorAll('.newitem');
+
+        function handleIndicator(el) {
+            items.forEach(function (item) {
+                item.classList.remove('active');
+                item.removeAttribute('style');
+            });
+            indicator.style.width = "".concat(el.offsetWidth, "px");
+            indicator.style.left = "".concat(el.offsetLeft, "px");
+            indicator.style.backgroundColor = el.getAttribute('active-color');
+            el.classList.add('active');
+            el.style.color = el.getAttribute('active-color');
+        }
+        items.forEach(function (item, index) {
+            item.addEventListener('click', function (e) {
+                handleIndicator(e.target);
+            });
+            item.classList.contains('active') && handleIndicator(item);
+        });
+    </script>
+</body>
+
+</html>
